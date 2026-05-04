@@ -10,79 +10,78 @@ const learningPaths = [
     title: "JLPT",
     japanese: "日本語",
     description: "Uji kemampuan mu dengan mengerjakan soal JLPT",
-    image: "/images/a.jpg", // Ganti a.jpg dengan nama file gambar N1 Anda
+    image: "/my-jlpt-web/images/a.jpg",
     character: "Teacher A",
     level: "Pemula",
-    //lessons: 24,//
     color: "from-pink-500/20 to-rose-500/20",
     borderColor: "border-pink-400/50",
-    offsetX: "lg:-translate-x-4",
-    offsetY: "",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
   {
     id: 2,
     title: "N1",
     japanese: "レベル1",
     description: "Level tertinggi JLPT. Kuasai bahasa Jepang profesional!",
-    image: "/my-jlpt-web/asset/n1.jpg", // Ganti b.jpg dengan nama file gambar N1 Anda
+    image: "/my-jlpt-web/asset/n1.jpg",
     character: "Master B",
     level: "Tingkat Lanjut",
     color: "from-sky-500/20 to-cyan-500/20",
     borderColor: "border-sky-400/50",
-    offsetX: "lg:translate-x-8",
-    offsetY: "lg:-translate-y-8",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
   {
     id: 3,
     title: "N2",
     japanese: "レベル2",
     description: "Mahir dalam percakapan profesional dan media cetak.",
-    image: "/my-jlpt-web/asset/n2.jpg", // Ganti c.jpg dengan nama file gambar N2 Anda
+    image: "/my-jlpt-web/asset/n2.jpg",
     character: "Coach C",
     level: "Lanjut",
     color: "from-indigo-500/20 to-violet-500/20",
     borderColor: "border-indigo-400/50",
-    offsetX: "lg:-translate-x-6",
-    offsetY: "lg:translate-y-4",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
   {
     id: 4,
     title: "N3",
     japanese: "レベル3",
     description: "Pahami topik sehari-hari dan percakapan praktis.",
-    image: "/my-jlpt-web/asset/n3.jpg", // Ganti d.jpg dengan nama file gambar N3 Anda
+    image: "/my-jlpt-web/asset/n3.jpg",
     character: "Guide D",
     level: "Menengah",
     color: "from-orange-500/20 to-amber-500/20",
     borderColor: "border-orange-400/50",
-    offsetX: "lg:translate-x-12",
-    offsetY: "",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
   {
     id: 5,
     title: "N4",
     japanese: "レベル4",
     description: "Komunikasi dasar dalam situasi sehari-hari.",
-    image: "/my-jlpt-web/asset/n4.jpg", // Ganti e.jpg dengan nama file gambar N4 Anda
+    image: "/my-jlpt-web/asset/n4.jpg",
     character: "Helper E",
     level: "Dasar",
     color: "from-purple-500/20 to-fuchsia-500/20",
     borderColor: "border-purple-400/50",
-    offsetX: "lg:-translate-x-8",
-    offsetY: "lg:-translate-y-4",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
   {
     id: 6,
     title: "N5",
     japanese: "レベル5",
     description: "Pemula - Pelajari dasar-dasar bahasa Jepang dengan mudah!",
-    image: "/my-jlpt-web/asset/n5.jpg", // Ganti f.jpg dengan nama file gambar N5 Anda
+    image: "/my-jlpt-web/asset/n5.jpg",
     character: "Friend F",
     level: "Pemula",
     color: "from-emerald-500/20 to-teal-500/20",
     borderColor: "border-emerald-400/50",
-    offsetX: "lg:translate-x-4",
-    offsetY: "lg:translate-y-6",
+    offsetX: "",  // ← KOSONG
+    offsetY: "",  // ← KOSONG
   },
 ];
 
