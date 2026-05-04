@@ -5,6 +5,14 @@ import { jlptData, categoryInfo } from "@/data/jlpt-data";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 
+export function generateStaticParams() {
+  return [
+    { category: "kanji" },
+    { category: "bunpou" },
+    { category: "dokkai" },
+  ];
+}
+
 export default function JLPTCategoryPage({ params }: { params: { category: string } }) {
   const category = params.category as keyof typeof jlptData;
   const questions = jlptData[category] || [];
