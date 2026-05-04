@@ -150,9 +150,9 @@ export function LearningCards() {
 
                 {/* Hover overlay */}
                 <div className={`absolute inset-0 bg-primary/10 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                  <button className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    Mulai Belajar →
-                  </button>
+                  <Link href="/jlpt" className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 inline-block">
+  Mulai Belajar →
+</Link>
                 </div>
               </div>
             </Card>
