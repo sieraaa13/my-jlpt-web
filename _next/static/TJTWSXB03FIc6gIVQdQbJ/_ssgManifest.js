@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fjlpt\u002F[category]","\u002Fjlpt\u002F[year]\u002F[period]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
