@@ -1,4 +1,4 @@
 :HL["/my-jlpt-web/_next/static/chunks/13m_6z131cjqf.css","style"]
 :HL["/my-jlpt-web/_next/static/chunks/16mzyw-r0mlf2.css","style"]
 :HL["/my-jlpt-web/_next/static/chunks/0qk5.g7zi31b_.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7rPKJ6Qv8jYQ4CbbcJ5XJ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"hbTd5b3r8q7eFKAQQ9FPJ"}
