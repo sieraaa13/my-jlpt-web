@@ -84,7 +84,7 @@ const learningPaths = [
     offsetY: "",  // ← KOSONG
   },
 ];
-
+import Link from "next/link";
 export function LearningCards() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
