@@ -58,46 +58,27 @@ export function FeaturesSection() {
             </div>
           </div>
 
-          {/* Right - Anime showcase with asymmetric layout */}
-          <div className="relative h-[500px] hidden lg:block">
-            {/* Main large image */}
+          {/* Main large image - JLPT */}
             <div className="absolute top-0 right-0 w-72 h-72 rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <Image 
-                src="/images/grammar-mage.jpg" 
-                alt="Grammar Mage" 
+                src="/my-jlpt-web/asset/JLPT.jpg" 
+                alt="JLPT" 
                 fill 
                 className="object-cover"
               />
             </div>
             
-            {/* Secondary image - offset */}
+           {/* Secondary image - N5 */}
             <div className="absolute bottom-0 left-0 w-56 h-56 rounded-3xl overflow-hidden border-4 border-accent/30 shadow-2xl transform -rotate-6 hover:rotate-0 transition-transform duration-500">
               <Image 
-                src="/images/conversation-idol.jpg" 
-                alt="Conversation Idol" 
+                src="/my-jlpt-web/asset/n5.jpg" 
+                alt="N5 Level" 
                 fill 
                 className="object-cover"
               />
             </div>
             
-            {/* Floating card */}
-            <div className="absolute top-1/2 left-1/3 -translate-y-1/2 bg-card/90 backdrop-blur-sm p-4 rounded-2xl border border-border shadow-xl">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/50">
-                  <Image 
-                    src="/images/hiragana-sensei.jpg" 
-                    alt="Sakura" 
-                    width={48} 
-                    height={48} 
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Sakura Sensei</p>
-                  <p className="text-xs text-primary">Selamat! +100 XP 🎉</p>
-                </div>
-              </div>
-            </div>
+          
 
             {/* Decorative Japanese text */}
             <div className="absolute bottom-20 right-10 text-6xl text-primary/20 font-bold">
