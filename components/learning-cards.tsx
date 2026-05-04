@@ -143,13 +143,10 @@ export function LearningCards() {
                   </p>
                   
                   <div className="flex justify-center items-center gap-2 text-xs text-muted-foreground">
-                    <span className="bg-card/50 px-2 py-1 rounded">
-                      👤 {path.character}
-                    </span>
-                    <span className="bg-card/50 px-2 py-1 rounded">
-                      📚 {path.lessons} Pelajaran
-                    </span>
-                  </div>
+  <span className="bg-card/50 px-2 py-1 rounded">
+    👤 {path.character}
+  </span>
+</div>
                 </div>
 
                 {/* Hover overlay */}
