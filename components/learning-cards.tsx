@@ -7,13 +7,13 @@ import { useState } from "react";
 const learningPaths = [
   {
     id: 1,
-    title: "Hiragana",
-    japanese: "ひらがな",
-    description: "Dasar penulisan Jepang. Pelajari 46 karakter dasar dengan cara yang menyenangkan!",
-    image: "/images/hiragana-sensei.jpg",
-    character: "Sakura Sensei",
+    title: "JLPT",
+    japanese: "日本語",
+    description: "Uji kemampuan mu dengan mengerjakan soal JLPT",
+    image: "/images/a.jpg", // Ganti a.jpg dengan nama file gambar N1 Anda
+    character: "Teacher A",
     level: "Pemula",
-    lessons: 24,
+    //lessons: 24,//
     color: "from-pink-500/20 to-rose-500/20",
     borderColor: "border-pink-400/50",
     offsetX: "lg:-translate-x-4",
@@ -21,13 +21,13 @@ const learningPaths = [
   },
   {
     id: 2,
-    title: "Katakana",
-    japanese: "カタカナ",
-    description: "Karakter untuk kata serapan asing. Ninja Kaze akan membimbingmu!",
-    image: "/images/katakana-ninja.jpg",
-    character: "Ninja Kaze",
-    level: "Pemula",
-    lessons: 24,
+    title: "N1",
+    japanese: "レベル1",
+    description: "Level tertinggi JLPT. Kuasai bahasa Jepang profesional!",
+    image: "/assset/n1.jpg", // Ganti b.jpg dengan nama file gambar N1 Anda
+    character: "Master B",
+    level: "Tingkat Lanjut",
+    //lessons: 100,//
     color: "from-sky-500/20 to-cyan-500/20",
     borderColor: "border-sky-400/50",
     offsetX: "lg:translate-x-8",
@@ -35,13 +35,13 @@ const learningPaths = [
   },
   {
     id: 3,
-    title: "Kanji",
-    japanese: "漢字",
-    description: "Karakter Tiongkok dalam bahasa Jepang. Samurai Kenji mengajarkan kebijaksanaan!",
-    image: "/images/kanji-samurai.jpg",
-    character: "Samurai Kenji",
-    level: "Menengah",
-    lessons: 100,
+    title: "N2",
+    japanese: "レベル2",
+    description: "Mahir dalam percakapan profesional dan media cetak.",
+    image: "/assset/n2.jpg", // Ganti c.jpg dengan nama file gambar N2 Anda
+    character: "Coach C",
+    level: "Lanjut",
+    //lessons: 80,//
     color: "from-indigo-500/20 to-violet-500/20",
     borderColor: "border-indigo-400/50",
     offsetX: "lg:-translate-x-6",
@@ -49,13 +49,13 @@ const learningPaths = [
   },
   {
     id: 4,
-    title: "Kosakata",
-    japanese: "語彙",
-    description: "Perbanyak perbendaharaan kata dengan Chef Yuki dan tema makanan Jepang!",
-    image: "/images/vocab-chef.jpg",
-    character: "Chef Yuki",
-    level: "Semua Level",
-    lessons: 80,
+    title: "N3",
+    japanese: "レベル3",
+    description: "Pahami topik sehari-hari dan percakapan praktis.",
+    image: "/assset/n3.jpg", // Ganti d.jpg dengan nama file gambar N3 Anda
+    character: "Guide D",
+    level: "Menengah",
+    //lessons: 70,//
     color: "from-orange-500/20 to-amber-500/20",
     borderColor: "border-orange-400/50",
     offsetX: "lg:translate-x-12",
@@ -63,13 +63,13 @@ const learningPaths = [
   },
   {
     id: 5,
-    title: "Tata Bahasa",
-    japanese: "文法",
-    description: "Kuasai struktur kalimat Jepang dengan panduan Mage Bunpo yang bijaksana!",
-    image: "/images/grammar-mage.jpg",
-    character: "Mage Bunpo",
-    level: "Menengah",
-    lessons: 60,
+    title: "N4",
+    japanese: "レベル4",
+    description: "Komunikasi dasar dalam situasi sehari-hari.",
+    image: "/assset/n4.jpg", // Ganti e.jpg dengan nama file gambar N4 Anda
+    character: "Helper E",
+    level: "Dasar",
+    //lessons: 60,//
     color: "from-purple-500/20 to-fuchsia-500/20",
     borderColor: "border-purple-400/50",
     offsetX: "lg:-translate-x-8",
@@ -77,13 +77,13 @@ const learningPaths = [
   },
   {
     id: 6,
-    title: "Percakapan",
-    japanese: "会話",
-    description: "Praktekkan dialog sehari-hari bersama Idol Hana yang ceria!",
-    image: "/images/conversation-idol.jpg",
-    character: "Idol Hana",
-    level: "Semua Level",
-    lessons: 50,
+    title: "N5",
+    japanese: "レベル5",
+    description: "Pemula - Pelajari dasar-dasar bahasa Jepang dengan mudah!",
+    image: "/assset/n5.jpg", // Ganti f.jpg dengan nama file gambar N5 Anda
+    character: "Friend F",
+    level: "Pemula",
+    //lessons: 50,//
     color: "from-emerald-500/20 to-teal-500/20",
     borderColor: "border-emerald-400/50",
     offsetX: "lg:translate-x-4",
