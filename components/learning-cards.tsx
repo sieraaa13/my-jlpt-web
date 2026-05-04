@@ -10,7 +10,7 @@ const learningPaths = [
     title: "JLPT",
     japanese: "日本語",
     description: "Uji kemampuan mu dengan mengerjakan soal JLPT",
-    image: "/my-jlpt-web/images/a.jpg",
+    image: "/my-jlpt-web/asset/JLPT.jpg",
     character: "Teacher A",
     level: "Pemula",
     color: "from-pink-500/20 to-rose-500/20",
