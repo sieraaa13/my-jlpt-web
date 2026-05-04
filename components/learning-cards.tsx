@@ -24,7 +24,7 @@ const learningPaths = [
     title: "N1",
     japanese: "レベル1",
     description: "Level tertinggi JLPT. Kuasai bahasa Jepang profesional!",
-    image: "/asset/n1.jpg", // Ganti b.jpg dengan nama file gambar N1 Anda
+    image: "/my-jlpt-web/asset/n1.jpg", // Ganti b.jpg dengan nama file gambar N1 Anda
     character: "Master B",
     level: "Tingkat Lanjut",
     color: "from-sky-500/20 to-cyan-500/20",
@@ -37,7 +37,7 @@ const learningPaths = [
     title: "N2",
     japanese: "レベル2",
     description: "Mahir dalam percakapan profesional dan media cetak.",
-    image: "/asset/n2.jpg", // Ganti c.jpg dengan nama file gambar N2 Anda
+    image: "/my-jlpt-web/asset/n2.jpg", // Ganti c.jpg dengan nama file gambar N2 Anda
     character: "Coach C",
     level: "Lanjut",
     color: "from-indigo-500/20 to-violet-500/20",
@@ -50,7 +50,7 @@ const learningPaths = [
     title: "N3",
     japanese: "レベル3",
     description: "Pahami topik sehari-hari dan percakapan praktis.",
-    image: "/asset/n3.jpg", // Ganti d.jpg dengan nama file gambar N3 Anda
+    image: "/my-jlpt-web/asset/n3.jpg", // Ganti d.jpg dengan nama file gambar N3 Anda
     character: "Guide D",
     level: "Menengah",
     color: "from-orange-500/20 to-amber-500/20",
@@ -63,7 +63,7 @@ const learningPaths = [
     title: "N4",
     japanese: "レベル4",
     description: "Komunikasi dasar dalam situasi sehari-hari.",
-    image: "/asset/n4.jpg", // Ganti e.jpg dengan nama file gambar N4 Anda
+    image: "/my-jlpt-web/asset/n4.jpg", // Ganti e.jpg dengan nama file gambar N4 Anda
     character: "Helper E",
     level: "Dasar",
     color: "from-purple-500/20 to-fuchsia-500/20",
@@ -76,7 +76,7 @@ const learningPaths = [
     title: "N5",
     japanese: "レベル5",
     description: "Pemula - Pelajari dasar-dasar bahasa Jepang dengan mudah!",
-    image: "/asset/n5.jpg", // Ganti f.jpg dengan nama file gambar N5 Anda
+    image: "/my-jlpt-web/asset/n5.jpg", // Ganti f.jpg dengan nama file gambar N5 Anda
     character: "Friend F",
     level: "Pemula",
     color: "from-emerald-500/20 to-teal-500/20",
