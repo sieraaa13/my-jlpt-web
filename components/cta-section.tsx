@@ -35,27 +35,7 @@ export function CTASection() {
                 </div>
               </div>
 
-              {/* Right - Character collage */}
-              <div className="relative h-64 lg:h-80 hidden lg:block">
-                <div className="absolute top-0 left-0 w-24 h-24 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-lg transform -rotate-6">
-                  <Image src="/images/hiragana-sensei.jpg" alt="Sakura" fill className="object-cover" />
-                </div>
-                <div className="absolute top-4 left-1/3 w-28 h-28 rounded-2xl overflow-hidden border-2 border-accent/50 shadow-lg transform rotate-3">
-                  <Image src="/images/katakana-ninja.jpg" alt="Ninja" fill className="object-cover" />
-                </div>
-                <div className="absolute top-12 right-0 w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-lg transform rotate-12">
-                  <Image src="/images/kanji-samurai.jpg" alt="Samurai" fill className="object-cover" />
-                </div>
-                <div className="absolute bottom-0 left-10 w-26 h-26 rounded-2xl overflow-hidden border-2 border-accent/50 shadow-lg transform rotate-6">
-                  <Image src="/images/vocab-chef.jpg" alt="Chef" width={104} height={104} className="object-cover" />
-                </div>
-                <div className="absolute bottom-4 right-1/4 w-24 h-24 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-lg transform -rotate-3">
-                  <Image src="/images/grammar-mage.jpg" alt="Mage" fill className="object-cover" />
-                </div>
-                <div className="absolute bottom-12 right-0 w-20 h-20 rounded-2xl overflow-hidden border-2 border-accent/50 shadow-lg transform -rotate-12">
-                  <Image src="/images/conversation-idol.jpg" alt="Idol" fill className="object-cover" />
-                </div>
-              </div>
+              {/* Right - Removed character collage */}
             </div>
           </div>
         </div>
