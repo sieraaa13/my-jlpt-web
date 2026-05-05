@@ -1,8 +1,5 @@
-"use client";
-
 import { ExamContent } from "./exam-content";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { getExamData } from "@/data/exams-manifest";
 
 const YEARS = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 const PERIODS = ["07", "12"];
@@ -17,41 +14,12 @@ export async function generateStaticParams() {
   return params;
 }
 
-export default function ExamPage() {
-  const pathname = usePathname();
-  const parts = pathname.split("/").filter(Boolean);
-  const year = parts[parts.length - 2] || "";
-  const period = parts[parts.length - 1] || "";
-
-  const [examData, setExamData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function loadExamData() {
-      try {
-        const url = `/my-jlpt-web/asset/n3/${year}/${period}.json`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Failed to load exam data");
-        const data = await response.json();
-        setExamData(data);
-      } catch (error) {
-        console.error("Error:", error);
-        setExamData(null);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    if (year && period) loadExamData();
-  }, [year, period]);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-        <p className="text-white">Memuat soal...</p>
-      </div>
-    );
-  }
+export default async function ExamPage({
+  params,
+}: {
+  params: { year: string; period: string };
+}) {
+  const examData = await getExamData(params.year, params.period);
 
   if (!examData) {
     return (
@@ -64,6 +32,6 @@ export default function ExamPage() {
     );
   }
 
-  const examLabel = `${period === "07" ? "Juli" : "Desember"} ${year}`;
+  const examLabel = `${params.period === "07" ? "Juli" : "Desember"} ${params.year}`;
   return <ExamContent examData={examData} examLabel={examLabel} />;
 }
