@@ -1,27 +1,37 @@
 import { exam201107 } from "../data/exams/2011/07";
 import { exam201112 } from "../data/exams/2011/12";
 import { exam201207 } from "../data/exams/2012/07";
-// ❌ HAPUS BARIS INI:
-// import { exam201307 } from "../data/exams/2013/07";
+import { exam201212 } from "../data/exams/2012/12";
+import { exam201307 } from "../data/exams/2013/07";
+import { exam201407 } from "../data/exams/2014/07";
+import { exam201507 } from "../data/exams/2015/07";
 
+/**
+ * Data manifest - all available exams
+ */
 const EXAMS_DATA: Record<string, any> = {
   "2011-07": exam201107,
   "2011-12": exam201112,
   "2012-07": exam201207,
-  // ❌ HAPUS JUGA INI:
-  // "2013-07": exam201307,
+  "2012-12": exam201212,
+  "2013-07": exam201307,
+  "2014-07": exam201407,
+  "2015-07": exam201507,
 };
 
+/**
+ * Get exam data berdasarkan tahun dan periode
+ * @param year - Format: "2011", "2012", dll
+ * @param period - Format: "07" (Juli), "12" (Desember)
+ * @returns Object dengan struktur { kanji, bunpou, dokkai } atau null jika tidak ditemukan
+ */
 export async function getExamData(year: string, period: string) {
   const key = `${year}-${period}`;
   const examData = EXAMS_DATA[key];
-  if (!examData) return null;
-  if (!examData.kanji || !examData.bunpou || !examData.dokkai) {
-    console.error(`Invalid data structure for ${key}`);
+
+  if (!examData) {
     return null;
   }
-  return examData;
-}
 
   // Validasi struktur data
   if (!examData.kanji || !examData.bunpou || !examData.dokkai) {
