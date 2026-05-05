@@ -30,11 +30,12 @@ const EXAMS_REGISTRY = {
   "2024-12": "/asset/n3/2024/12.json",
   "2025-07": "/asset/n3/2025/07.json",
   "2025-12": "/asset/n3/2025/12.json",
-};
+} as const;
 
-// Fetch soal di build time (static)
+type ExamKey = keyof typeof EXAMS_REGISTRY;
+
 export async function getExamData(year: string, period: string) {
-  const key = `${year}-${period}`;
+  const key = `${year}-${period}` as ExamKey;
   const filePath = EXAMS_REGISTRY[key];
   
   if (!filePath) return null;
@@ -42,7 +43,7 @@ export async function getExamData(year: string, period: string) {
   try {
     const baseUrl = "https://sieraaa13.github.io/my-jlpt-web";
     const response = await fetch(`${baseUrl}${filePath}`, {
-      next: { revalidate: 86400 }, // cache 1 hari
+      next: { revalidate: 86400 },
     });
     
     if (!response.ok) return null;
