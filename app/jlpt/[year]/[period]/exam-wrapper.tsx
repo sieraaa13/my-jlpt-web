@@ -8,13 +8,17 @@ export function ExamWrapper({
 }: {
   params: { year: string; period: string };
 }) {
+  console.log("ExamWrapper params:", params);
+  
   const [examData, setExamData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadExamData() {
       try {
+        console.log("Loading with:", { year: params.year, period: params.period });
         const url = `/my-jlpt-web/asset/n3/${params.year}/${params.period}.json`;
+        console.log("Fetch URL:", url);
         const response = await fetch(url);
         if (!response.ok) throw new Error("Failed to load exam data");
         const data = await response.json();
