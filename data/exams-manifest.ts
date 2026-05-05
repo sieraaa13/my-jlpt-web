@@ -1,4 +1,4 @@
-import { exam201107 } from "./exams/exam-2011-07";
+import { exam201107 } from "./exams/2011/07";
 
 // Data manifest - direct import dari TypeScript files
 const EXAMS_DATA: Record<string, any> = {
