@@ -1,4 +1,4 @@
-import { exam201107 } from "../data/exams/exam-2011-07";
+import { exam201107 } from "../data/exams/2011/07";
 // import { exam201112 } from "../data/exams/exam-2011-12"; // Uncomment saat file dibuat
 // import { exam201207 } from "../data/exams/exam-2012-07"; // Uncomment saat file dibuat
 
