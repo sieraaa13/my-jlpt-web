@@ -18,5 +18,5 @@ export default function ExamPage({
 }: {
   params: { year: string; period: string };
 }) {
-  return <ExamWrapper params={params} />;
+  return <ExamWrapper year={params.year} period={params.period} />;
 }
