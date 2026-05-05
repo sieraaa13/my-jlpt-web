@@ -2,21 +2,29 @@ import { exam201107 } from "../data/exams/2011/07";
 import { exam201112 } from "../data/exams/2011/12";
 import { exam201207 } from "../data/exams/2012/07";
 import { exam201212 } from "../data/exams/2012/12";
+import { exam201107 } from "../data/exams/2013/07";
+import { exam201112 } from "../data/exams/2013/12";
+import { exam201207 } from "../data/exams/2014/07";
+import { exam201212 } from "../data/exams/2014/12";
+import { exam201107 } from "../data/exams/2015/07";
+import { exam201112 } from "../data/exams/2015/12";
+import { exam201207 } from "../data/exams/2016/07";
+import { exam201212 } from "../data/exams/2016/12";
 
-/**
- * Data manifest - HANYA file yang sudah upload ke GitHub
- * 
- * Exams tersedia:
- * - 2011 July
- * - 2011 December
- * - 2012 July
- * - 2012 December
- */
+
 const EXAMS_DATA: Record<string, any> = {
   "2011-07": exam201107,
   "2011-12": exam201112,
   "2012-07": exam201207,
   "2012-12": exam201212,
+  "2013-07": exam201307,
+  "2013-12": exam201312,
+  "2014-07": exam201407,
+  "2014-12": exam201412,
+  "2015-07": exam201507,
+  "2015-12": exam201512,
+  "2016-07": exam201607,
+  "2016-12": exam201612,
 };
 
 /**
