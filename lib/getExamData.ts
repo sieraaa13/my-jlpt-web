@@ -15,7 +15,6 @@ import { exam201812 } from "../data/exams/2018/12";
 import { exam201907 } from "../data/exams/2019/07";
 import { exam202212 } from "../data/exams/2022/12";
 
-
 const EXAMS_DATA: Record<string, any> = {
   "2011-07": exam201107,
   "2011-12": exam201112,
@@ -28,8 +27,8 @@ const EXAMS_DATA: Record<string, any> = {
   "2015-12": exam201512,
   "2016-07": exam201607,
   "2016-12": exam201612,
-  "2017-07": exam201607,
-  "2017-12": exam201612,
+  "2017-07": exam201707,
+  "2017-12": exam201712,
   "2018-12": exam201812,
   "2019-07": exam201907,
   "2022-12": exam202212,
