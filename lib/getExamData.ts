@@ -1,6 +1,33 @@
 import { exam201107 } from "../data/exams/2011/07";
-// import { exam201112 } from "../data/exams/exam-2011-12"; // Uncomment saat file dibuat
-// import { exam201207 } from "../data/exams/exam-2012-07"; // Uncomment saat file dibuat
+import { exam201112 } from "../data/exams/2011/12"; 
+import { exam201207 } from "../data/exams/2012/07";
+import { exam201212 } from "../data/exams/2013/07";
+import { exam201307 } from "../data/exams/2011/07";
+import { exam201312 } from "../data/exams/2011/12"; 
+import { exam201407 } from "../data/exams/2012/07";
+import { exam201412 } from "../data/exams/2013/07";
+import { exam201507 } from "../data/exams/2011/07";
+import { exam201512 } from "../data/exams/2011/12"; 
+import { exam201607 } from "../data/exams/2012/07";
+import { exam201612 } from "../data/exams/2013/07";
+import { exam201707 } from "../data/exams/2011/07";
+import { exam201712 } from "../data/exams/2011/12"; 
+import { exam201807 } from "../data/exams/2012/07";
+import { exam201812 } from "../data/exams/2013/07";
+import { exam201907 } from "../data/exams/2012/07";
+import { exam201912 } from "../data/exams/2013/07";
+import { exam202007 } from "../data/exams/2011/07";
+import { exam202012 } from "../data/exams/2011/12"; 
+import { exam202107 } from "../data/exams/2012/07";
+import { exam202112 } from "../data/exams/2013/07";
+import { exam202207 } from "../data/exams/2011/07";
+import { exam202212 } from "../data/exams/2011/12"; 
+import { exam202307 } from "../data/exams/2012/07";
+import { exam202312 } from "../data/exams/2013/07";
+import { exam202407 } from "../data/exams/2011/07";
+import { exam202412 } from "../data/exams/2011/12"; 
+import { exam202507 } from "../data/exams/2012/07";
+import { exam202512 } from "../data/exams/2013/07";
 
 // Data manifest - direct import dari TypeScript files
 const EXAMS_DATA: Record<string, any> = {
