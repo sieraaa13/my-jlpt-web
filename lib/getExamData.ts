@@ -32,9 +32,35 @@ import { exam202512 } from "../data/exams/2013/07";
 // Data manifest - direct import dari TypeScript files
 const EXAMS_DATA: Record<string, any> = {
   "2011-07": exam201107,
-  // "2011-12": exam201112,  // Uncomment saat file dibuat
-  // "2012-07": exam201207,  // Uncomment saat file dibuat
-  // Tambahkan ujian lain di sini
+  "2011-12": exam201112,
+  "2012-07": exam201207, 
+  "2012-12": exam201212,
+  "2013-07": exam201307,
+  "2013-12": exam201312,
+  "2014-07": exam201407,
+  "2014-12": exam201412,
+  "2015-07": exam201507, 
+  "2015-12": exam201512,
+  "2016-07": exam201607,
+  "2016-12": exam201612,
+  "2017-07": exam201707,
+  "2017-12": exam201712,
+  "2018-07": exam201807, 
+  "2018-12": exam201812,
+  "2019-07": exam201907,
+  "2019-12": exam201912,
+  "2020-07": exam202007,
+  "2020-12": exam202012,
+  "2021-07": exam202107, 
+  "2021-12": exam202112,
+  "2022-07": exam202207,
+  "2022-12": exam202212,
+  "2023-07": exam202307,
+  "2023-12": exam202312,
+  "2024-07": exam202407, 
+  "2024-12": exam202412,
+  "2025-07": exam202507,
+  "2025-12": exam202512,
 };
 
 /**
