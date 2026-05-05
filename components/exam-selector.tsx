@@ -7,10 +7,22 @@ import { getExamData } from "@/lib/getExamData";
 import ExamQuestions from "./exam-questions";
 import Link from "next/link";
 
+interface Question {
+  q: string;
+  options: string[];
+  correct: number;
+}
+
+interface DakkaiSection {
+  title: string;
+  text: string;
+  questions: Question[];
+}
+
 interface ExamData {
-  kanji: Array<{ q: string; options: string[]; correct: number }>;
-  bunpou: Array<{ q: string; options: string[]; correct: number }>;
-  dokkai: Array<{ q: string; options: string[]; correct: number }>;
+  kanji: Question[];
+  bunpou: Question[];
+  dokkai: DakkaiSection[];
 }
 
 const examYears = [
