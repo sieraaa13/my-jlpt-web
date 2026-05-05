@@ -4,11 +4,13 @@ import { ExamContent } from "./exam-content";
 import { useState, useEffect } from "react";
 
 export function ExamWrapper({
-  params,
+  year,
+  period,
 }: {
-  params: { year: string; period: string };
+  year: string;
+  period: string;
 }) {
-  console.log("ExamWrapper params:", params);
+  console.log("ExamWrapper year:", year, "period:", period);
   
   const [examData, setExamData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -16,13 +18,14 @@ export function ExamWrapper({
   useEffect(() => {
     async function loadExamData() {
       try {
-        console.log("Loading with:", { year: params.year, period: params.period });
-        const url = `/my-jlpt-web/asset/n3/${params.year}/${params.period}.json`;
+        console.log("Loading with:", { year, period });
+        const url = `/my-jlpt-web/asset/n3/${year}/${period}.json`;
         console.log("Fetch URL:", url);
         const response = await fetch(url);
         if (!response.ok) throw new Error("Failed to load exam data");
         const data = await response.json();
         setExamData(data);
+        console.log("Data loaded successfully!");
       } catch (error) {
         console.error("Error loading exam:", error);
         setExamData(null);
@@ -32,7 +35,7 @@ export function ExamWrapper({
     }
 
     loadExamData();
-  }, [params.year, params.period]);
+  }, [year, period]);
 
   if (loading) {
     return (
@@ -55,7 +58,7 @@ export function ExamWrapper({
     );
   }
 
-  const examLabel = `${params.period === "07" ? "Juli" : "Desember"} ${params.year}`;
+  const examLabel = `${period === "07" ? "Juli" : "Desember"} ${year}`;
 
   return <ExamContent examData={examData} examLabel={examLabel} />;
 }
