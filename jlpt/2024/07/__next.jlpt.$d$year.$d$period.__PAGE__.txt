@@ -1,5 +1,7 @@
 1:"$Sreact.fragment"
-2:I[97367,["/my-jlpt-web/_next/static/chunks/0iwz~d34oj_si.js","/my-jlpt-web/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex items-center justify-center","children":["$","div",null,{"className":"text-center","children":[["$","h1",null,{"className":"text-2xl font-bold mb-4","children":"Soal tidak ditemukan"}],["$","p",null,{"className":"text-muted-foreground","children":"Silakan coba periode lain"}]]}]}],[["$","script","script-0",{"src":"/my-jlpt-web/_next/static/chunks/0yrlloz7_gim~.js","async":true}],["$","script","script-1",{"src":"/my-jlpt-web/_next/static/chunks/098js9~-1-bov.js","async":true}]],["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"7asSqMKSB5ykBYy7oOpfV"}
-4:null
+2:I[99311,["/my-jlpt-web/_next/static/chunks/0iwz~d34oj_si.js","/my-jlpt-web/_next/static/chunks/0n4z.7yu76je-.js","/my-jlpt-web/_next/static/chunks/10pvko~8uvvvk.js","/my-jlpt-web/_next/static/chunks/098js9~-1-bov.js"],"ExamWrapper"]
+4:I[97367,["/my-jlpt-web/_next/static/chunks/0iwz~d34oj_si.js","/my-jlpt-web/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","script","script-0",{"src":"/my-jlpt-web/_next/static/chunks/10pvko~8uvvvk.js","async":true}],["$","script","script-1",{"src":"/my-jlpt-web/_next/static/chunks/098js9~-1-bov.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"b2KO7X3q5PWaZNDHJbhpv"}
+3:{"year":"2024","period":"07"}
+6:null
