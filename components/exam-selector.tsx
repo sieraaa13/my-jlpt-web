@@ -17,6 +17,18 @@ const examYears = [
   { year: "2011", label: "Tahun 2011" },
   { year: "2012", label: "Tahun 2012" },
   { year: "2013", label: "Tahun 2013" },
+  { year: "2014", label: "Tahun 2014" },
+  { year: "2015", label: "Tahun 2015" },
+  { year: "2016", label: "Tahun 2016" },
+  { year: "2017", label: "Tahun 2017" },
+  { year: "2018", label: "Tahun 2018" },
+  { year: "2019", label: "Tahun 2019" },
+  { year: "2020", label: "Tahun 2020" },
+  { year: "2021", label: "Tahun 2021" },
+  { year: "2022", label: "Tahun 2022" },
+  { year: "2023", label: "Tahun 2023" },
+  { year: "2024", label: "Tahun 2024" },
+  { year: "2025", label: "Tahun 2025" },
 ];
 
 const examMonths = [
