@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
@@ -68,6 +68,16 @@ export default function ExamQuestions({
   const { correct, total } = calculateScore();
   const percentage = Math.round((correct / total) * 100);
 
+  // Fungsi untuk mendapatkan level JLPT berdasarkan tahun
+  const getJLPTLevel = (yearStr: string): string => {
+    const yearNum = parseInt(yearStr);
+    // Simpel logic - bisa disesuaikan sesuai kebutuhan
+    if (yearStr === "2011") return "N3";
+    if (yearStr === "2012") return "N3";
+    if (yearStr === "2013") return "N2";
+    return "N3"; // Default
+  };
+
   return (
     <section className="min-h-screen bg-background py-8">
       <div className="container mx-auto px-6">
@@ -76,7 +86,7 @@ export default function ExamQuestions({
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold">
               <span className="text-foreground">JLPT </span>
-              <span className="text-primary">{year === "2011" ? "N3" : "N" + (year % 6)}</span>
+              <span className="text-primary">{getJLPTLevel(year)}</span>
             </h1>
             <p className="text-muted-foreground mt-2">
               {month === "07" ? "Juli" : "Desember"} {year}
@@ -100,13 +110,13 @@ export default function ExamQuestions({
                 Progress: {Object.keys(answers).length} / {total}
               </span>
               <span className="text-xs text-primary">
-                {Math.round((Object.keys(answers).length / total) * 100)}%
+                {total > 0 ? Math.round((Object.keys(answers).length / total) * 100) : 0}%
               </span>
             </div>
             <div className="w-full bg-background rounded-full h-2">
               <div
                 className="bg-primary h-2 rounded-full transition-all duration-300"
-                style={{ width: `${(Object.keys(answers).length / total) * 100}%` }}
+                style={{ width: `${total > 0 ? (Object.keys(answers).length / total) * 100 : 0}%` }}
               />
             </div>
           </div>
