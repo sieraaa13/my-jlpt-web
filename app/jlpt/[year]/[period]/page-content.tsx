@@ -2,14 +2,27 @@
 
 import { ExamContent } from "./exam-content";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
-export function PageContent({
-  year,
-  period,
-}: {
-  year: string;
-  period: string;
-}) {
+const YEARS = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
+const PERIODS = ["07", "12"];
+
+export async function generateStaticParams() {
+  const params = [];
+  for (const year of YEARS) {
+    for (const period of PERIODS) {
+      params.push({ year, period });
+    }
+  }
+  return params;
+}
+
+export default function ExamPage() {
+  const pathname = usePathname();
+  const parts = pathname.split("/").filter(Boolean);
+  const year = parts[parts.length - 2] || "";
+  const period = parts[parts.length - 1] || "";
+
   const [examData, setExamData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +42,7 @@ export function PageContent({
       }
     }
 
-    loadExamData();
+    if (year && period) loadExamData();
   }, [year, period]);
 
   if (loading) {
