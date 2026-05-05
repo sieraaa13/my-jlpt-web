@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
@@ -11,11 +11,17 @@ interface Question {
   correct: number;
 }
 
+interface DakkaiSection {
+  title: string;
+  text: string;
+  questions: Question[];
+}
+
 interface ExamQuestionsProps {
   data: {
     kanji: Question[];
     bunpou: Question[];
-    dokkai: Question[];
+    dokkai: DakkaiSection[];
   };
   year: string;
   month: string;
@@ -33,12 +39,10 @@ export default function ExamQuestions({
   const [showResults, setShowResults] = useState(false);
 
   const sections = [
-    { id: "kanji", label: "Kanji", icon: "漢", data: data.kanji },
-    { id: "bunpou", label: "Bunpou", icon: "文", data: data.bunpou },
-    { id: "dokkai", label: "Dokkai", icon: "読", data: data.dokkai },
+    { id: "kanji", label: "Kanji", icon: "漢", data: data.kanji, isDakkai: false },
+    { id: "bunpou", label: "Bunpou", icon: "文", data: data.bunpou, isDakkai: false },
+    { id: "dokkai", label: "Dokkai", icon: "読", data: data.dokkai, isDakkai: true },
   ];
-
-  const currentSection = sections.find((s) => s.id === activeTab);
 
   const handleAnswer = (questionIndex: number, optionIndex: number) => {
     const questionKey = `${activeTab}-${questionIndex}`;
@@ -53,13 +57,29 @@ export default function ExamQuestions({
     let total = 0;
 
     sections.forEach((section) => {
-      section.data.forEach((question, index) => {
-        const key = `${section.id}-${index}`;
-        total++;
-        if (answers[key] === question.correct) {
-          correct++;
-        }
-      });
+      if (section.isDakkai) {
+        // Dokkai: hitung dari array of sections
+        const dokkaiData = section.data as DakkaiSection[];
+        dokkaiData.forEach((dakkai) => {
+          dakkai.questions.forEach((question, index) => {
+            const key = `${section.id}-${dakkai.title}-${index}`;
+            total++;
+            if (answers[key] === question.correct) {
+              correct++;
+            }
+          });
+        });
+      } else {
+        // Kanji/Bunpou: hitung dari array of questions
+        const questionData = section.data as Question[];
+        questionData.forEach((question, index) => {
+          const key = `${section.id}-${index}`;
+          total++;
+          if (answers[key] === question.correct) {
+            correct++;
+          }
+        });
+      }
     });
 
     return { correct, total };
@@ -68,15 +88,12 @@ export default function ExamQuestions({
   const { correct, total } = calculateScore();
   const percentage = Math.round((correct / total) * 100);
 
-  // Fungsi untuk mendapatkan level JLPT berdasarkan tahun
-  const getJLPTLevel = (yearStr: string): string => {
-    const yearNum = parseInt(yearStr);
-    // Simpel logic - bisa disesuaikan sesuai kebutuhan
+  function getJLPTLevel(yearStr: string): string {
     if (yearStr === "2011") return "N3";
     if (yearStr === "2012") return "N3";
     if (yearStr === "2013") return "N2";
-    return "N3"; // Default
-  };
+    return "N3";
+  }
 
   return (
     <section className="min-h-screen bg-background py-8">
@@ -137,152 +154,188 @@ export default function ExamQuestions({
             ))}
           </TabsList>
 
-          {/* Questions Content */}
-          {sections.map((section) => (
-            <TabsContent key={section.id} value={section.id} className="space-y-6 mt-8">
-              {showResults ? (
-                // Results View
-                <div className="space-y-4">
-                  {section.data.map((question, index) => {
-                    const questionKey = `${section.id}-${index}`;
-                    const userAnswer = answers[questionKey];
-                    const isCorrect = userAnswer === question.correct;
+          {/* Kanji Section */}
+          <TabsContent value="kanji" className="space-y-6 mt-8">
+            {showResults ? (
+              // Results View
+              <div className="space-y-4">
+                {(data.kanji as Question[]).map((question, index) => {
+                  const questionKey = `kanji-${index}`;
+                  const userAnswer = answers[questionKey];
+                  const isCorrect = userAnswer === question.correct;
 
-                    return (
-                      <Card
-                        key={index}
-                        className={`p-6 border-2 transition-all ${
-                          isCorrect
-                            ? "bg-green-500/10 border-green-500/30"
-                            : userAnswer !== undefined
-                            ? "bg-red-500/10 border-red-500/30"
-                            : "bg-secondary/20 border-border"
-                        }`}
-                      >
-                        <div className="flex items-start gap-4">
-                          <div className="text-2xl font-bold text-primary min-w-fit">
-                            {index + 1}.
-                          </div>
-                          <div className="flex-1">
-                            <p className="font-medium text-foreground mb-4">
-                              {question.q}
-                            </p>
+                  return (
+                    <ResultCard
+                      key={index}
+                      index={index}
+                      question={question}
+                      userAnswer={userAnswer}
+                      isCorrect={isCorrect}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              // Question Input View
+              <>
+                {(data.kanji as Question[]).map((question, index) => {
+                  const questionKey = `kanji-${index}`;
+                  const userAnswer = answers[questionKey];
 
-                            <div className="space-y-2">
-                              {question.options.map((option, optIndex) => {
-                                const isUserAnswer = userAnswer === optIndex;
-                                const isCorrectAnswer = optIndex === question.correct;
+                  return (
+                    <QuestionCard
+                      key={index}
+                      index={index}
+                      question={question}
+                      userAnswer={userAnswer}
+                      onAnswer={(optionIndex) => handleAnswer(index, optionIndex)}
+                    />
+                  );
+                })}
 
-                                return (
-                                  <div
-                                    key={optIndex}
-                                    className={`p-3 rounded-lg border-2 transition-all ${
-                                      isCorrectAnswer
-                                        ? "bg-green-500/20 border-green-500/50"
-                                        : isUserAnswer
-                                        ? "bg-red-500/20 border-red-500/50"
-                                        : "bg-background border-border"
-                                    }`}
-                                  >
-                                    <div className="flex items-center gap-3">
-                                      <div
-                                        className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold ${
-                                          isCorrectAnswer
-                                            ? "bg-green-500 text-white border-green-500"
-                                            : isUserAnswer
-                                            ? "bg-red-500 text-white border-red-500"
-                                            : "border-border text-muted-foreground"
-                                        }`}
-                                      >
-                                        {optIndex === question.correct ? "✓" : optIndex + 1}
-                                      </div>
-                                      <span className="text-foreground">{option}</span>
-                                    </div>
-                                  </div>
-                                );
-                              })}
-                            </div>
+                {/* Submit Button */}
+                <Button
+                  onClick={() => setShowResults(true)}
+                  disabled={Object.keys(answers).length < total}
+                  className="w-full py-6 text-lg rounded-xl bg-primary hover:bg-primary/90"
+                >
+                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
+                </Button>
+              </>
+            )}
+          </TabsContent>
 
-                            {userAnswer !== undefined && !isCorrect && (
-                              <p className="mt-3 text-sm text-red-600 font-medium">
-                                ✗ Jawaban salah. Jawaban benar adalah opsi {question.correct + 1}
-                              </p>
-                            )}
-                            {isCorrect && (
-                              <p className="mt-3 text-sm text-green-600 font-medium">
-                                ✓ Benar!
-                              </p>
-                            )}
-                          </div>
-                        </div>
-                      </Card>
-                    );
-                  })}
-                </div>
-              ) : (
-                // Question Input View
-                <>
-                  {section.data.map((question, index) => {
-                    const questionKey = `${section.id}-${index}`;
-                    const userAnswer = answers[questionKey];
+          {/* Bunpou Section */}
+          <TabsContent value="bunpou" className="space-y-6 mt-8">
+            {showResults ? (
+              <div className="space-y-4">
+                {(data.bunpou as Question[]).map((question, index) => {
+                  const questionKey = `bunpou-${index}`;
+                  const userAnswer = answers[questionKey];
+                  const isCorrect = userAnswer === question.correct;
 
-                    return (
-                      <Card
-                        key={index}
-                        className="p-6 border-2 border-border hover:border-primary/50 transition-all"
-                      >
-                        <div className="flex items-start gap-4">
-                          <div className="text-2xl font-bold text-primary min-w-fit">
-                            {index + 1}.
-                          </div>
-                          <div className="flex-1">
-                            <p className="font-medium text-foreground mb-4">
-                              {question.q}
-                            </p>
+                  return (
+                    <ResultCard
+                      key={index}
+                      index={index}
+                      question={question}
+                      userAnswer={userAnswer}
+                      isCorrect={isCorrect}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              <>
+                {(data.bunpou as Question[]).map((question, index) => {
+                  const questionKey = `bunpou-${index}`;
+                  const userAnswer = answers[questionKey];
 
-                            <div className="space-y-2">
-                              {question.options.map((option, optIndex) => (
-                                <Button
-                                  key={optIndex}
-                                  onClick={() => handleAnswer(index, optIndex)}
-                                  className={`w-full justify-start text-left h-auto py-3 px-4 rounded-lg transition-all border-2 ${
-                                    userAnswer === optIndex
-                                      ? "bg-primary text-primary-foreground border-primary"
-                                      : "bg-background border-border hover:border-primary/50"
-                                  }`}
-                                  variant="outline"
-                                >
-                                  <span
-                                    className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0 ${
-                                      userAnswer === optIndex
-                                        ? "bg-primary-foreground text-primary border-primary-foreground"
-                                        : "border-muted-foreground text-muted-foreground"
-                                    }`}
-                                  >
-                                    {optIndex + 1}
-                                  </span>
-                                  {option}
-                                </Button>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </Card>
-                    );
-                  })}
+                  return (
+                    <QuestionCard
+                      key={index}
+                      index={index}
+                      question={question}
+                      userAnswer={userAnswer}
+                      onAnswer={(optionIndex) => handleAnswer(index, optionIndex)}
+                    />
+                  );
+                })}
 
-                  {/* Submit Button */}
-                  <Button
-                    onClick={() => setShowResults(true)}
-                    disabled={Object.keys(answers).length < total}
-                    className="w-full py-6 text-lg rounded-xl bg-primary hover:bg-primary/90"
-                  >
-                    Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
-                  </Button>
-                </>
-              )}
-            </TabsContent>
-          ))}
+                <Button
+                  onClick={() => setShowResults(true)}
+                  disabled={Object.keys(answers).length < total}
+                  className="w-full py-6 text-lg rounded-xl bg-primary hover:bg-primary/90"
+                >
+                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
+                </Button>
+              </>
+            )}
+          </TabsContent>
+
+          {/* Dokkai Section */}
+          <TabsContent value="dokkai" className="space-y-6 mt-8">
+            {showResults ? (
+              // Results View dengan text
+              <div className="space-y-8">
+                {(data.dokkai as DakkaiSection[]).map((dakkai) => (
+                  <div key={dakkai.title} className="space-y-4">
+                    {/* Title */}
+                    <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
+                      <h3 className="text-lg font-bold text-primary">{dakkai.title}</h3>
+                    </div>
+
+                    {/* Text */}
+                    <Card className="bg-secondary/20 border border-border p-6">
+                      <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed">
+                        {dakkai.text}
+                      </p>
+                    </Card>
+
+                    {/* Questions */}
+                    {dakkai.questions.map((question, index) => {
+                      const questionKey = `dokkai-${dakkai.title}-${index}`;
+                      const userAnswer = answers[questionKey];
+                      const isCorrect = userAnswer === question.correct;
+
+                      return (
+                        <ResultCard
+                          key={index}
+                          index={index}
+                          question={question}
+                          userAnswer={userAnswer}
+                          isCorrect={isCorrect}
+                        />
+                      );
+                    })}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              // Question Input View dengan text
+              <>
+                {(data.dokkai as DakkaiSection[]).map((dakkai) => (
+                  <div key={dakkai.title} className="space-y-4">
+                    {/* Title */}
+                    <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
+                      <h3 className="text-lg font-bold text-primary">{dakkai.title}</h3>
+                    </div>
+
+                    {/* Text */}
+                    <Card className="bg-secondary/20 border border-border p-6">
+                      <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed">
+                        {dakkai.text}
+                      </p>
+                    </Card>
+
+                    {/* Questions */}
+                    {dakkai.questions.map((question, index) => {
+                      const questionKey = `dokkai-${dakkai.title}-${index}`;
+                      const userAnswer = answers[questionKey];
+
+                      return (
+                        <QuestionCard
+                          key={index}
+                          index={index}
+                          question={question}
+                          userAnswer={userAnswer}
+                          onAnswer={(optionIndex) => handleAnswer(index, optionIndex)}
+                        />
+                      );
+                    })}
+                  </div>
+                ))}
+
+                <Button
+                  onClick={() => setShowResults(true)}
+                  disabled={Object.keys(answers).length < total}
+                  className="w-full py-6 text-lg rounded-xl bg-primary hover:bg-primary/90"
+                >
+                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
+                </Button>
+              </>
+            )}
+          </TabsContent>
         </Tabs>
 
         {/* Results Summary */}
@@ -294,12 +347,29 @@ export default function ExamQuestions({
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
                 {sections.map((section) => {
                   let sectionCorrect = 0;
-                  section.data.forEach((question, index) => {
-                    const key = `${section.id}-${index}`;
-                    if (answers[key] === question.correct) {
-                      sectionCorrect++;
-                    }
-                  });
+                  let sectionTotal = 0;
+
+                  if (section.isDakkai) {
+                    const dokkaiData = section.data as DakkaiSection[];
+                    dokkaiData.forEach((dakkai) => {
+                      dakkai.questions.forEach((question, index) => {
+                        const key = `${section.id}-${dakkai.title}-${index}`;
+                        sectionTotal++;
+                        if (answers[key] === question.correct) {
+                          sectionCorrect++;
+                        }
+                      });
+                    });
+                  } else {
+                    const questionData = section.data as Question[];
+                    questionData.forEach((question, index) => {
+                      const key = `${section.id}-${index}`;
+                      sectionTotal++;
+                      if (answers[key] === question.correct) {
+                        sectionCorrect++;
+                      }
+                    });
+                  }
 
                   return (
                     <div
@@ -310,7 +380,7 @@ export default function ExamQuestions({
                         {section.label}
                       </p>
                       <p className="text-3xl font-bold text-foreground">
-                        {sectionCorrect}/{section.data.length}
+                        {sectionCorrect}/{sectionTotal}
                       </p>
                     </div>
                   );
@@ -349,3 +419,140 @@ export default function ExamQuestions({
     </section>
   );
 }
+
+/* Helper Components */
+
+function QuestionCard({
+  index,
+  question,
+  userAnswer,
+  onAnswer,
+}: {
+  index: number;
+  question: Question;
+  userAnswer?: number;
+  onAnswer: (optionIndex: number) => void;
+}) {
+  return (
+    <Card className="p-6 border-2 border-border hover:border-primary/50 transition-all">
+      <div className="flex items-start gap-4">
+        <div className="text-2xl font-bold text-primary min-w-fit">
+          {index + 1}.
+        </div>
+        <div className="flex-1">
+          <p className="font-medium text-foreground mb-4">
+            {question.q}
+          </p>
+
+          <div className="space-y-2">
+            {question.options.map((option, optIndex) => (
+              <Button
+                key={optIndex}
+                onClick={() => onAnswer(optIndex)}
+                className={`w-full justify-start text-left h-auto py-3 px-4 rounded-lg transition-all border-2 ${
+                  userAnswer === optIndex
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background border-border hover:border-primary/50"
+                }`}
+                variant="outline"
+              >
+                <span
+                  className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0 ${
+                    userAnswer === optIndex
+                      ? "bg-primary-foreground text-primary border-primary-foreground"
+                      : "border-muted-foreground text-muted-foreground"
+                  }`}
+                >
+                  {optIndex + 1}
+                </span>
+                {option}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+function ResultCard({
+  index,
+  question,
+  userAnswer,
+  isCorrect,
+}: {
+  index: number;
+  question: Question;
+  userAnswer?: number;
+  isCorrect: boolean;
+}) {
+  return (
+    <Card
+      className={`p-6 border-2 transition-all ${
+        isCorrect
+          ? "bg-green-500/10 border-green-500/30"
+          : userAnswer !== undefined
+          ? "bg-red-500/10 border-red-500/30"
+          : "bg-secondary/20 border-border"
+      }`}
+    >
+      <div className="flex items-start gap-4">
+        <div className="text-2xl font-bold text-primary min-w-fit">
+          {index + 1}.
+        </div>
+        <div className="flex-1">
+          <p className="font-medium text-foreground mb-4">
+            {question.q}
+          </p>
+
+          <div className="space-y-2">
+            {question.options.map((option, optIndex) => {
+              const isUserAnswer = userAnswer === optIndex;
+              const isCorrectAnswer = optIndex === question.correct;
+
+              return (
+                <div
+                  key={optIndex}
+                  className={`p-3 rounded-lg border-2 transition-all ${
+                    isCorrectAnswer
+                      ? "bg-green-500/20 border-green-500/50"
+                      : isUserAnswer
+                      ? "bg-red-500/20 border-red-500/50"
+                      : "bg-background border-border"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <div
+                      className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold ${
+                        isCorrectAnswer
+                          ? "bg-green-500 text-white border-green-500"
+                          : isUserAnswer
+                          ? "bg-red-500 text-white border-red-500"
+                          : "border-border text-muted-foreground"
+                      }`}
+                    >
+                      {optIndex === question.correct ? "✓" : optIndex + 1}
+                    </div>
+                    <span className="text-foreground">{option}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {userAnswer !== undefined && !isCorrect && (
+            <p className="mt-3 text-sm text-red-600 font-medium">
+              ✗ Jawaban salah. Jawaban benar adalah opsi {question.correct + 1}
+            </p>
+          )}
+          {isCorrect && (
+            <p className="mt-3 text-sm text-green-600 font-medium">
+              ✓ Benar!
+            </p>
+          )}
+        </div>
+      </div>
+    </Card>
+  );
+}
+
