@@ -1,15 +1,21 @@
-import { ExamSelector } from "@/components/exam-selector";
 import { Navbar } from "@/components/navbar";
+import { HeroSection } from "@/components/hero-section";
+import { LearningCards } from "@/components/learning-cards";
+import { FeaturesSection } from "@/components/features-section";
+import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 
-export default function JLPTPage() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
       <div className="pt-16">
-        <ExamSelector />
+        <HeroSection />
+        <LearningCards />
+        <FeaturesSection />
+        <CTASection />
+        <Footer />
       </div>
-      <Footer />
     </main>
   );
 }
