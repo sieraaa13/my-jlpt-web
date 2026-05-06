@@ -1,0 +1,181 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N3 Grammar",
+      "week": 1,
+      "day": 3,
+      "header": {
+        "main_title": "女らしい",
+        "sub_title": "女みたいだ、春らしい、大人っぽい",
+        "translation": "Feminin (Onna-rashii) — Ekspresi perumpamaan & kesan: seperti~, khas~, kelihatan~"
+      },
+      "illustration_text": {
+        "child": "彼の話し方は、女みたいだ。",
+        "mother": "今日は、春らしい暖かい日でしたね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "女みたいだ (Onna Mitai da) - Seperti Perempuan",
+          "pattern_meaning": "女みたいだ = seperti perempuan | 〜みたいだ／〜みたいに／〜みたいなN = seperti~ / sepertinya~",
+          "description_box": {
+            "formula": "$$ \\text{N／V／A／na+N} \\begin{cases} \\text{みたいだ} \\;(\\text{akhir kalimat}) \\\\ \\text{みたいに} \\;(\\text{modifikasi V/A}) \\\\ \\text{みたいな + N} \\;(\\text{modifikasi N}) \\end{cases} $$",
+            "explanation": "Pola 〜みたいだ digunakan untuk menyatakan 'seperti~' atau 'sepertinya~'. Pola ini menyerupai 〜ようだ, tetapi 〜みたいだ lebih kasual dan sering dipakai dalam percakapan sehari-hari (話しことば的).\n\nFungsi & Pola:\n• Akhir kalimat → 〜みたいだ\n• Modifikasi kata kerja/sifat → 〜みたいに\n• Modifikasi kata benda → 〜みたいな + N",
+            "explanation_en": "The pattern 〜みたいだ expresses 'like ~' or 'it seems ~'. It is similar to 〜ようだ, but 〜みたいだ is more casual and commonly used in everyday spoken Japanese."
+          },
+          "examples": [
+            {
+              "jp": "彼の話し方は、女みたいだ。",
+              "en": "Kare no hanashikata wa, onna mitai da. — 'Cara bicaranya seperti perempuan.'",
+              "explanation": "📝 Membandingkan cara bicara dengan perempuan secara kasual. (=女のようだ)"
+            },
+            {
+              "jp": "ここの砂は星みたいな形をしている。",
+              "en": "Koko no suna wa hoshi mitai na katachi o shite iru. — 'Pasir di sini bentuknya seperti bintang.'",
+              "explanation": "📝 みたいな digunakan karena diikuti kata benda (形). (=星のような)"
+            },
+            {
+              "jp": "このアパートはだれも住んでいないみたいだ。",
+              "en": "Kono apaato wa daremo sunde inai mitai da. — 'Sepertinya tidak ada seorang pun yang tinggal di apartemen ini.'",
+              "explanation": "📝 Mengungkapkan dugaan/perkiraan berdasarkan pengamatan. (=住んでいないようだ)"
+            },
+            {
+              "jp": "明日は雨みたいね。",
+              "en": "Ashita wa ame mitai ne. — 'Sepertinya besok akan hujan ya.'",
+              "explanation": "📝 (=雨のよう)"
+            },
+            {
+              "jp": "リンさんみたいに日本語がうまくなりたい。",
+              "en": "Rin-san mitai ni nihongo ga umaku naritai. — 'Aku ingin pandai bahasa Jepang seperti Lin-san.'",
+              "explanation": "📝 みたいに digunakan karena memodifikasi kata sifat (うまく). (=リンさんのように)"
+            }
+          ]
+        },
+        {
+          "pattern_title": "春らしい (Haru-rashii) - Seperti Musim Semi",
+          "pattern_meaning": "春らしい = khas musim semi | Nらしい = benar-benar terasa seperti~ / khas~",
+          "description_box": {
+            "formula": "$$ \\text{N + らしい} $$",
+            "explanation": "Pola Nらしい digunakan untuk menunjukkan bahwa sesuatu memiliki ciri-ciri khas dari kata benda tersebut. Maknanya adalah 'benar-benar terasa seperti~' atau 'khas~'.\n\nContoh penggunaan:\n• 子どもらしい (khas anak-anak)\n• 男らしい／女らしい (khas laki-laki／perempuan)\n• 私らしい／君らしい (khas diriku／khas dirimu)",
+            "explanation_en": "The pattern Nらしい indicates that something genuinely possesses the characteristic qualities of the noun. It means 'truly feels like ~' or 'typical of ~'."
+          },
+          "examples": [
+            {
+              "jp": "今日は、春らしい暖かい日でした。",
+              "en": "Kyou wa, haru-rashii atatakai hi deshita. — 'Hari ini adalah hari yang hangat, sungguh terasa seperti musim semi.'",
+              "explanation": "📝 Menyatakan bahwa hari itu benar-benar memiliki ciri-ciri khas musim semi. (=本当に春と感じる)"
+            },
+            {
+              "jp": "私は女性らしい洋服はあまり着ない。",
+              "en": "Watashi wa josei-rashii youfuku wa amari kinai. — 'Aku jarang memakai pakaian yang feminin (khas perempuan).'",
+              "explanation": "📝 Pakaian yang oleh semua orang dianggap khas pakaian perempuan. (=みんなが女性の服だと感じる)"
+            }
+          ]
+        },
+        {
+          "pattern_title": "大人っぽい (Otona-ppoi) - Kelihatan Dewasa",
+          "pattern_meaning": "大人っぽい = kelihatan dewasa | Nっぽい = memberi kesan/terlihat seperti~ / cenderung~",
+          "description_box": {
+            "formula": "$$ \\text{N + っぽい} $$",
+            "explanation": "Pola Nっぽい digunakan untuk menyatakan bahwa sesuatu memberi kesan/terlihat seperti~ atau memiliki kecenderungan~. Berbeda dengan 〜らしい, pola 〜っぽい lebih menekankan pada kesan visual atau perasaan subjektif, dan sering digunakan untuk hal-hal yang belum sepenuhnya seperti itu.\n\nContoh penggunaan:\n• 子どもっぽい (kekanak-kanakan) — bisa untuk orang dewasa\n• 男っぽい／女っぽい (kelelakian／kewanitaan)\n• 黒っぽい／白っぽい (kehitaman／keputihan)\n• 水っぽい (encer／seperti air)\n\n⚠️ Catatan Penting (ダメ): TIDAK BISA dipakai dengan kata-kata seperti むりっぽい atau いいっぽい ❌",
+            "explanation_en": "The pattern Nっぽい expresses that something gives off the impression of ~ or has a tendency toward ~. Unlike 〜らしい, 〜っぽい emphasizes visual impression or subjective feeling, and is often used for things that are not fully that way yet."
+          },
+          "examples": [
+            {
+              "jp": "あの小学生は、大人っぽい。",
+              "en": "Ano shougakusei wa, otona-ppoi. — 'Anak SD itu kelihatan dewasa (untuk seukurannya).'",
+              "explanation": "📝 Anak itu sebenarnya bukan orang dewasa, tetapi memberikan kesan dewasa. (=大人みたいだ)"
+            },
+            {
+              "jp": "この料理は油っぽくていやだ。",
+              "en": "Kono ryouri wa abura-ppokute iya da. — 'Masakan ini terlalu berminyak, aku tidak suka.'",
+              "explanation": "📝 Memberi kesan banyak mengandung minyak. (=油が多い感じがして)"
+            }
+          ]
+        }
+      ],
+      "summary_table": {
+        "title": "💡 Perbedaan ようだ vs みたいだ vs らしい vs っぽい",
+        "rows": [
+          {
+            "pattern": "〜ようだ",
+            "characteristic": "Formal, tertulis (書きことば的)",
+            "example": "雨が降るようだ"
+          },
+          {
+            "pattern": "〜みたいだ",
+            "characteristic": "Kasual, percakapan (話しことば的)",
+            "example": "雨みたいだ"
+          },
+          {
+            "pattern": "Nらしい",
+            "characteristic": "Memiliki ciri khas asli dari N",
+            "example": "春らしい日"
+          },
+          {
+            "pattern": "Nっぽい",
+            "characteristic": "Memberi kesan/cenderung seperti N",
+            "example": "子どもっぽい"
+          }
+        ]
+      },
+      "exercises": {
+        "title": "📝 れんしゅう (Latihan) - 3日目",
+        "section_1": {
+          "instruction": "I. 正しいほうに〇をつけなさい。 (Lingkari jawaban yang benar.)",
+          "questions": [
+            {
+              "number": 1,
+              "question": "冬なのに今日は暖かくて（a. 春らしい　b. 春みたい）です。",
+              "options": ["a. 春らしい", "b. 春みたい"]
+            },
+            {
+              "number": 2,
+              "question": "母はいつも（a. 子どもらしい　b. 子どもっぽい）服を着ている。",
+              "options": ["a. 子どもらしい", "b. 子どもっぽい"]
+            },
+            {
+              "number": 3,
+              "question": "逃げたのは（a. 黒っぽい　b. 黒みたいな）車でした。",
+              "options": ["a. 黒っぽい", "b. 黒みたいな"]
+            },
+            {
+              "number": 4,
+              "question": "試験を受けたけど、合格は（a. 無理みたい　b. 無理っぽい）です。",
+              "options": ["a. 無理みたい", "b. 無理っぽい"]
+            },
+            {
+              "number": 5,
+              "question": "うちの子には（a. 子どもみたいに　b. 子どもらしく）元気に育ってほしい。",
+              "options": ["a. 子どもみたいに", "b. 子どもらしく"]
+            }
+          ]
+        },
+        "section_2": {
+          "instruction": "II. 下の語を並べ替えて正しい文を作りなさい。＿＿に数字を書きなさい。 (Susunlah kata-kata di bawah menjadi kalimat yang benar. Tulis angka pada bagian ＿＿.)",
+          "questions": [
+            {
+              "number": 6,
+              "question": "今からお話しするのは、うそ ＿＿ ＿＿ ＿＿ ＿＿ 話です。",
+              "words": [
+                {"id": 1, "word": "みたい"},
+                {"id": 2, "word": "の"},
+                {"id": 3, "word": "本当"},
+                {"id": 4, "word": "な"}
+              ]
+            },
+            {
+              "number": 7,
+              "question": "明日は ＿＿ ＿＿ ＿＿ ＿＿ 天気になるでしょう。",
+              "words": [
+                {"id": 1, "word": "らしい"},
+                {"id": 2, "word": "秋"},
+                {"id": 3, "word": "晴れて"},
+                {"id": 4, "word": "よく"}
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

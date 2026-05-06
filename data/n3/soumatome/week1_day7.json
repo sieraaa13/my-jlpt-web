@@ -1,0 +1,312 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N3 Grammar",
+      "week": 1,
+      "day": 7,
+      "header": {
+        "main_title": "まとめの問題",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 1 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "child": "1週間の文法、覚えてるかな？",
+        "mother": "問題を解いてみましょう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "30分だけここに車を（　　）もらえませんか。",
+              "options": [
+                {"id": 1, "text": "止められて"},
+                {"id": 2, "text": "止めさせて"},
+                {"id": 3, "text": "止まらせて"},
+                {"id": 4, "text": "止まられて"}
+              ],
+              "hint": "📝 Petunjuk materi: Pola permintaan izin V(さ)せてもらえませんか (3日目)."
+            },
+            {
+              "number": 2,
+              "question": "どうして悪いところを（　　）としないんですか。",
+              "options": [
+                {"id": 1, "text": "直しよう"},
+                {"id": 2, "text": "直ろう"},
+                {"id": 3, "text": "直そう"},
+                {"id": 4, "text": "直られよう"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk volisional + としない Vようとしない (6日目)."
+            },
+            {
+              "number": 3,
+              "question": "もっと話そうとしたら、電話が（　　）。",
+              "options": [
+                {"id": 1, "text": "切らせた"},
+                {"id": 2, "text": "切っといた"},
+                {"id": 3, "text": "切らないと"},
+                {"id": 4, "text": "切れちゃった"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk percakapan Vちゃった (=Vてしまった) (2日目)."
+            },
+            {
+              "number": 4,
+              "question": "このグラフからもわかる（　　）人口は減っています。",
+              "options": [
+                {"id": 1, "text": "ために"},
+                {"id": 2, "text": "ように"},
+                {"id": 3, "text": "らしく"},
+                {"id": 4, "text": "みたい"}
+              ],
+              "hint": "📝 Petunjuk materi: Pembuka penjelasan 〜ように (5日目)."
+            },
+            {
+              "number": 5,
+              "question": "新しい車が（　　）ように貯金しています。",
+              "options": [
+                {"id": 1, "text": "買えない"},
+                {"id": 2, "text": "買う"},
+                {"id": 3, "text": "買わない"},
+                {"id": 4, "text": "買える"}
+              ],
+              "hint": "📝 Petunjuk materi: Pola tujuan Vれる + ように (4日目)."
+            },
+            {
+              "number": 6,
+              "question": "この写真（　　）ヘアースタイルにしてください。",
+              "options": [
+                {"id": 1, "text": "みたいな"},
+                {"id": 2, "text": "みたいに"},
+                {"id": 3, "text": "みたいの"},
+                {"id": 4, "text": "みたく"}
+              ],
+              "hint": "📝 Petunjuk materi: Nみたいな + N (memodifikasi kata benda) (3日目)."
+            },
+            {
+              "number": 7,
+              "question": "ちゃんと世話をしないと、金魚は（　　）よ。",
+              "options": [
+                {"id": 1, "text": "死んちゃった"},
+                {"id": 2, "text": "死んちゃう"},
+                {"id": 3, "text": "死んじゃった"},
+                {"id": 4, "text": "死んじゃう"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk percakapan Vじゃう untuk masa depan (=死んでしまう) (2日目)."
+            },
+            {
+              "number": 8,
+              "question": "間に合わなくなってしまうよ。早く準備(　　)!",
+              "options": [
+                {"id": 1, "text": "されると"},
+                {"id": 2, "text": "しちゃうと"},
+                {"id": 3, "text": "しないと"},
+                {"id": 4, "text": "しとくと"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk percakapan Vないと (=しなければならない) (2日目)."
+            },
+            {
+              "number": 9,
+              "question": "みなさんの国でよく（　　）日本人はだれですか。",
+              "options": [
+                {"id": 1, "text": "知らされている"},
+                {"id": 2, "text": "知らせている"},
+                {"id": 3, "text": "知られている"},
+                {"id": 4, "text": "知らせさせている"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk pasif Vれる untuk fakta umum (1日目)."
+            },
+            {
+              "number": 10,
+              "question": "シャワーを（　　）としたが、水が出なかった。",
+              "options": [
+                {"id": 1, "text": "あばよう"},
+                {"id": 2, "text": "あびよう"},
+                {"id": 3, "text": "あびろう"},
+                {"id": 4, "text": "あばろう"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk volisional Vようとする dari kata 浴びる (6日目)."
+            },
+            {
+              "number": 11,
+              "question": "折り紙を図（　　）折ります。",
+              "options": [
+                {"id": 1, "text": "っぽく"},
+                {"id": 2, "text": "みたいな"},
+                {"id": 3, "text": "らしく"},
+                {"id": 4, "text": "のように"}
+              ],
+              "hint": "📝 Petunjuk materi: Nのように (sebagaimana/seperti) (5日目)."
+            },
+            {
+              "number": 12,
+              "question": "習った日本語はすぐに（　　）しましょう。",
+              "options": [
+                {"id": 1, "text": "使って"},
+                {"id": 2, "text": "使おう"},
+                {"id": 3, "text": "使わない"},
+                {"id": 4, "text": "使うように"}
+              ],
+              "hint": "📝 Petunjuk materi: Pola Vるようにする (membiasakan) (4日目)."
+            },
+            {
+              "number": 13,
+              "question": "この牛乳はちょっとうすくて（　　）。",
+              "options": [
+                {"id": 1, "text": "水っぽい"},
+                {"id": 2, "text": "水っぽくない"},
+                {"id": 3, "text": "水らしい"},
+                {"id": 4, "text": "水らしくない"}
+              ],
+              "hint": "📝 Petunjuk materi: Nっぽい (memberi kesan) (3日目)."
+            },
+            {
+              "number": 14,
+              "question": "テレビ、見ないなら（　　）。",
+              "options": [
+                {"id": 1, "text": "ついといて"},
+                {"id": 2, "text": "消しといて"},
+                {"id": 3, "text": "つけといて"},
+                {"id": 4, "text": "消えといて"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk percakapan Vとく (=Vておく) (2日目)."
+            },
+            {
+              "number": 15,
+              "question": "そこに（　　）じゃまだから、向こうに行って。",
+              "options": [
+                {"id": 1, "text": "いさせると"},
+                {"id": 2, "text": "いられると"},
+                {"id": 3, "text": "いさせないと"},
+                {"id": 4, "text": "いられないと"}
+              ],
+              "hint": "📝 Petunjuk materi: Bentuk pasif penderita (Nに)Vれる (orang lain melakukan sesuatu yang mengganggu) (1日目)."
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "ここで ＿＿ ＿＿ ★ ＿＿ されています。",
+              "words": [
+                {"id": 1, "word": "多くの国に"},
+                {"id": 2, "word": "車は"},
+                {"id": 3, "word": "輸出"},
+                {"id": 4, "word": "作られた"}
+              ]
+            },
+            {
+              "number": 17,
+              "question": "あの学生は日本語が ＿＿ ＿＿ ★ ＿＿ みたい。",
+              "words": [
+                {"id": 1, "word": "明るくなった"},
+                {"id": 2, "word": "ように"},
+                {"id": 3, "word": "なってから"},
+                {"id": 4, "word": "わかる"}
+              ]
+            },
+            {
+              "number": 18,
+              "question": "忘れちゃうと ＿＿ ＿＿ ★ ＿＿ なくしちゃった。",
+              "words": [
+                {"id": 1, "word": "のに"},
+                {"id": 2, "word": "メモしといた"},
+                {"id": 3, "word": "いけないから"},
+                {"id": 4, "word": "そのメモを"}
+              ]
+            },
+            {
+              "number": 19,
+              "question": "この子は ＿＿ ＿＿ ★ ＿＿ らしくない。",
+              "words": [
+                {"id": 1, "word": "大人"},
+                {"id": 2, "word": "子ども"},
+                {"id": 3, "word": "話し方をして"},
+                {"id": 4, "word": "みたいな"}
+              ]
+            },
+            {
+              "number": 20,
+              "question": "安売りセールで、買おうと ＿＿ ＿＿ ★ ＿＿ しまいました。",
+              "words": [
+                {"id": 1, "word": "シャツを"},
+                {"id": 2, "word": "買われて"},
+                {"id": 3, "word": "思っていた"},
+                {"id": 4, "word": "ほかの人に"}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "今日、電車はとても混んでいました。でも、よく見ると、中のほうはすいていました。それで、中のほうへ [21] が、行けませんでした。ドアのところに立っている人たちが [22] からです。「中に [23] ください」と言って、やっと入れました。混んでいるときは、 [24] としてもなかなか降りられないので、ドアの近くに立っているのかもしれません。でも、乗る人のことも考えて、なるべく中へ [25] ようにしたほうがいいと思いました。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "'Hari ini kereta sangat ramai. Tapi kalau dilihat baik-baik, bagian tengahnya kosong. Jadi, aku [21] ke arah tengah, tapi tidak bisa pergi. Karena orang-orang yang berdiri di dekat pintu [22]. Setelah aku berkata \"Tolong [23] ke dalam\", akhirnya aku bisa masuk. Mungkin saat kereta penuh, walaupun [24] tetap susah turun, jadi mereka berdiri di dekat pintu. Tapi menurutku, sebaiknya juga memikirkan orang yang akan naik, dan sebisa mungkin [25] ke dalam.'"
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                {"id": 1, "text": "行くようになりました"},
+                {"id": 2, "text": "行こうとしました"},
+                {"id": 3, "text": "行かせました"},
+                {"id": 4, "text": "行かれました"}
+              ]
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                {"id": 1, "text": "動かせた"},
+                {"id": 2, "text": "動かれた"},
+                {"id": 3, "text": "動くようになった"},
+                {"id": 4, "text": "動こうとしない"}
+              ]
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                {"id": 1, "text": "入らないで"},
+                {"id": 2, "text": "入らせて"},
+                {"id": 3, "text": "入らないと"},
+                {"id": 4, "text": "入られて"}
+              ]
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                {"id": 1, "text": "降りた"},
+                {"id": 2, "text": "降りろう"},
+                {"id": 3, "text": "降りよう"},
+                {"id": 4, "text": "降ります"}
+              ]
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                {"id": 1, "text": "入る"},
+                {"id": 2, "text": "入れる"},
+                {"id": 3, "text": "入らない"},
+                {"id": 4, "text": "入れない"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
