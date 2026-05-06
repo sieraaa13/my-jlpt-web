@@ -105,6 +105,7 @@ export default function ExamQuestions({
 
   const { correct, total } = calculateScore();
   const percentage = Math.round((correct / total) * 100);
+  const answeredCount = Object.keys(answers).length;
 
   function getJLPTLevel(yearStr: string): string {
     if (yearStr === "2011") return "N3";
@@ -123,78 +124,78 @@ export default function ExamQuestions({
   const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
   const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
   const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
-  const buttonHover = isDarkMode ? "hover:bg-slate-800" : "hover:bg-slate-100";
 
   return (
-    <section className={`min-h-screen ${bgColor} ${textColor} py-8 transition-colors duration-300`}>
-      <div className="container mx-auto px-6">
-        {/* Header dengan Theme Toggle */}
-        <div className="mb-8 flex items-center justify-between">
-          <div>
-            <h1 className="text-5xl lg:text-6xl font-bold">
-              <span>JLPT </span>
-              <span className="text-cyan-500">{getJLPTLevel(year)}</span>
-            </h1>
-            <p className={`${mutedText} mt-2 text-lg`}>
-              {month === "07" ? "Juli" : "Desember"} {year}
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3">
-            {/* Theme Toggle Button */}
-            <Button
-              onClick={toggleTheme}
-              className={`rounded-lg px-4 py-2 border-2 font-semibold transition-all ${
-                isDarkMode
-                  ? "border-slate-600 bg-slate-800 hover:bg-slate-700 text-yellow-400"
-                  : "border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-700"
-              }`}
-              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-            >
-              {isDarkMode ? "☀️ Light" : "🌙 Dark"}
-            </Button>
-
-            <Button
+    <section className={`min-h-screen ${bgColor} ${textColor} pb-32 transition-colors duration-300`}>
+      {/* STICKY HEADER - mobile friendly */}
+      <div className={`sticky top-0 z-30 ${bgColor} border-b ${cardBorder} backdrop-blur-sm bg-opacity-95`}>
+        <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-2">
+            <button
               onClick={onBack}
-              className={`rounded-lg px-4 py-2 border-2 font-semibold transition-all ${
-                isDarkMode
-                  ? "border-slate-600 bg-slate-800 hover:bg-slate-700 text-slate-200"
-                  : "border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-700"
+              className={`flex items-center gap-1.5 text-sm font-medium px-3 py-2 rounded-lg transition-colors ${
+                isDarkMode ? "hover:bg-slate-800 text-slate-300" : "hover:bg-slate-100 text-slate-700"
               }`}
+              aria-label="Kembali"
             >
-              ← Kembali
-            </Button>
+              <span>←</span>
+              <span className="hidden sm:inline">Kembali</span>
+            </button>
+
+            <div className="flex-1 text-center min-w-0 px-2">
+              <h1 className="text-lg sm:text-2xl font-bold truncate">
+                JLPT <span className="text-cyan-500">{getJLPTLevel(year)}</span>
+              </h1>
+              <p className={`text-xs sm:text-sm ${mutedText}`}>
+                {month === "07" ? "Juli" : "Desember"} {year}
+              </p>
+            </div>
+
+            <button
+              onClick={toggleTheme}
+              className={`text-lg p-2 rounded-lg transition-colors ${
+                isDarkMode ? "hover:bg-slate-800 text-yellow-400" : "hover:bg-slate-100 text-slate-700"
+              }`}
+              title={isDarkMode ? "Mode Terang" : "Mode Gelap"}
+              aria-label="Toggle theme"
+            >
+              {isDarkMode ? "☀️" : "🌙"}
+            </button>
           </div>
+
+          {/* Compact Progress bar di header */}
+          {!showResults && (
+            <div className="mt-3">
+              <div className="flex justify-between items-center mb-1.5">
+                <span className={`text-xs font-medium ${mutedText}`}>
+                  {answeredCount} dari {total} terjawab
+                </span>
+                <span className="text-xs font-semibold text-cyan-500">
+                  {total > 0 ? Math.round((answeredCount / total) * 100) : 0}%
+                </span>
+              </div>
+              <div className={`w-full rounded-full h-1.5 overflow-hidden ${isDarkMode ? "bg-slate-800" : "bg-slate-200"}`}>
+                <div
+                  className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full rounded-full transition-all duration-300"
+                  style={{ width: `${total > 0 ? (answeredCount / total) * 100 : 0}%` }}
+                />
+              </div>
+            </div>
+          )}
         </div>
+      </div>
 
-        {/* Progress Bar */}
-        {!showResults && (
-          <div className={`mb-8 border-2 rounded-xl p-5 transition-colors ${cardBg} ${cardBorder}`}>
-            <div className="flex justify-between items-center mb-3">
-              <span className="text-sm font-semibold">
-                Progress: {Object.keys(answers).length} / {total}
-              </span>
-              <span className="text-xs font-medium text-cyan-500">
-                {total > 0 ? Math.round((Object.keys(answers).length / total) * 100) : 0}%
-              </span>
-            </div>
-            <div className={`w-full rounded-full h-3 overflow-hidden ${isDarkMode ? "bg-slate-800" : "bg-slate-200"}`}>
-              <div
-                className="bg-gradient-to-r from-cyan-500 to-blue-500 h-3 rounded-full transition-all duration-300"
-                style={{ width: `${total > 0 ? (Object.keys(answers).length / total) * 100 : 0}%` }}
-              />
-            </div>
-          </div>
-        )}
-
+      <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
         {/* Tabs */}
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-8">
-          <TabsList className={`grid w-full grid-cols-3 rounded-lg border-2 p-1 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-200"}`}>
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
+          <TabsList className={`grid w-full grid-cols-3 rounded-lg border-2 p-1 transition-colors ${
+            isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-200"
+          }`}>
             {sections.map((section) => (
               <TabsTrigger
                 key={section.id}
                 value={section.id}
-                className={`text-base font-semibold rounded-md transition-all ${
+                className={`text-sm sm:text-base font-semibold rounded-md transition-all py-2 ${
                   activeTab === section.id
                     ? isDarkMode
                       ? "bg-slate-900 text-cyan-400"
@@ -202,16 +203,16 @@ export default function ExamQuestions({
                     : mutedText
                 }`}
               >
-                <span className="mr-2">{section.icon}</span>
-                {section.label}
+                <span className="mr-1 sm:mr-2">{section.icon}</span>
+                <span className="hidden xs:inline sm:inline">{section.label}</span>
               </TabsTrigger>
             ))}
           </TabsList>
 
           {/* Kanji Section */}
-          <TabsContent value="kanji" className="space-y-6 mt-8">
+          <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults ? (
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {(data.kanji as Question[]).map((question, index) => {
                   const questionKey = `kanji-${index}`;
                   const userAnswer = answers[questionKey];
@@ -246,22 +247,14 @@ export default function ExamQuestions({
                     />
                   );
                 })}
-
-                <Button
-                  onClick={() => setShowResults(true)}
-                  disabled={Object.keys(answers).length < total}
-                  className="w-full py-6 text-lg rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold disabled:opacity-50"
-                >
-                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
-                </Button>
               </>
             )}
           </TabsContent>
 
           {/* Bunpou Section */}
-          <TabsContent value="bunpou" className="space-y-6 mt-8">
+          <TabsContent value="bunpou" className="space-y-4 mt-6">
             {showResults ? (
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {(data.bunpou as Question[]).map((question, index) => {
                   const questionKey = `bunpou-${index}`;
                   const userAnswer = answers[questionKey];
@@ -296,30 +289,24 @@ export default function ExamQuestions({
                     />
                   );
                 })}
-
-                <Button
-                  onClick={() => setShowResults(true)}
-                  disabled={Object.keys(answers).length < total}
-                  className="w-full py-6 text-lg rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold disabled:opacity-50"
-                >
-                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
-                </Button>
               </>
             )}
           </TabsContent>
 
           {/* Dokkai Section */}
-          <TabsContent value="dokkai" className="space-y-6 mt-8">
+          <TabsContent value="dokkai" className="space-y-6 mt-6">
             {showResults ? (
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {(data.dokkai as DakkaiSection[]).map((dakkai) => (
-                  <div key={dakkai.title} className="space-y-4">
-                    <div className={`border-2 rounded-lg p-4 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"}`}>
-                      <h3 className="text-lg font-bold text-cyan-500">{dakkai.title}</h3>
+                  <div key={dakkai.title} className="space-y-3">
+                    <div className={`border-2 rounded-lg p-3 sm:p-4 transition-colors ${
+                      isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"
+                    }`}>
+                      <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dakkai.title}</h3>
                     </div>
 
-                    <Card className={`border-2 rounded-lg p-6 transition-colors ${cardBg} ${cardBorder}`}>
-                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium`}>
+                    <Card className={`border-2 rounded-lg p-4 sm:p-6 transition-colors ${cardBg} ${cardBorder}`}>
+                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium break-words`}>
                         {dakkai.text}
                       </p>
                     </Card>
@@ -346,13 +333,15 @@ export default function ExamQuestions({
             ) : (
               <>
                 {(data.dokkai as DakkaiSection[]).map((dakkai) => (
-                  <div key={dakkai.title} className="space-y-4">
-                    <div className={`border-2 rounded-lg p-4 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"}`}>
-                      <h3 className="text-lg font-bold text-cyan-500">{dakkai.title}</h3>
+                  <div key={dakkai.title} className="space-y-3">
+                    <div className={`border-2 rounded-lg p-3 sm:p-4 transition-colors ${
+                      isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"
+                    }`}>
+                      <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dakkai.title}</h3>
                     </div>
 
-                    <Card className={`border-2 rounded-lg p-6 transition-colors ${cardBg} ${cardBorder}`}>
-                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium`}>
+                    <Card className={`border-2 rounded-lg p-4 sm:p-6 transition-colors ${cardBg} ${cardBorder}`}>
+                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium break-words`}>
                         {dakkai.text}
                       </p>
                     </Card>
@@ -374,14 +363,6 @@ export default function ExamQuestions({
                     })}
                   </div>
                 ))}
-
-                <Button
-                  onClick={() => setShowResults(true)}
-                  disabled={Object.keys(answers).length < total}
-                  className="w-full py-6 text-lg rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold disabled:opacity-50"
-                >
-                  Lihat Hasil ({Object.keys(answers).length}/{total} Terjawab)
-                </Button>
               </>
             )}
           </TabsContent>
@@ -389,11 +370,22 @@ export default function ExamQuestions({
 
         {/* Results Summary */}
         {showResults && (
-          <Card className={`sticky bottom-0 left-0 right-0 border-2 p-8 mt-8 rounded-2xl transition-colors ${isDarkMode ? "bg-gradient-to-r from-slate-800 to-slate-900 border-slate-700" : "bg-gradient-to-r from-blue-50 to-cyan-50 border-slate-200"}`}>
+          <Card className={`border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl transition-colors ${
+            isDarkMode
+              ? "bg-gradient-to-br from-slate-800 to-slate-900 border-slate-700"
+              : "bg-gradient-to-br from-blue-50 to-cyan-50 border-slate-200"
+          }`}>
             <div className="text-center space-y-4">
-              <h2 className={`text-4xl font-bold ${textColor}`}>Hasil Ujian</h2>
+              <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${textColor}`}>Hasil Ujian</h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+              <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
+                {percentage}%
+              </div>
+              <p className={`text-base sm:text-lg ${mutedText}`}>
+                {correct} dari {total} soal benar
+              </p>
+
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 my-6">
                 {sections.map((section) => {
                   let sectionCorrect = 0;
                   let sectionTotal = 0;
@@ -423,12 +415,14 @@ export default function ExamQuestions({
                   return (
                     <div
                       key={section.id}
-                      className={`rounded-xl p-6 border-2 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-white border-slate-300"}`}
+                      className={`rounded-xl p-3 sm:p-4 border-2 transition-colors ${
+                        isDarkMode ? "bg-slate-800 border-slate-600" : "bg-white border-slate-300"
+                      }`}
                     >
-                      <p className="text-lg font-semibold text-cyan-500 mb-2">
+                      <p className="text-xs sm:text-sm font-semibold text-cyan-500 mb-1">
                         {section.label}
                       </p>
-                      <p className={`text-4xl font-bold ${textColor}`}>
+                      <p className={`text-xl sm:text-2xl md:text-3xl font-bold ${textColor}`}>
                         {sectionCorrect}/{sectionTotal}
                       </p>
                     </div>
@@ -436,28 +430,19 @@ export default function ExamQuestions({
                 })}
               </div>
 
-              <div className="space-y-3">
-                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
-                  {percentage}%
-                </div>
-                <p className={`text-xl ${mutedText}`}>
-                  Total: {correct} dari {total} soal benar
-                </p>
-              </div>
-
-              <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
                 <Button
                   onClick={() => {
                     setAnswers({});
                     setShowResults(false);
                   }}
-                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3"
+                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6"
                 >
-                  Ulangi Ujian
+                  🔄 Ulangi Ujian
                 </Button>
                 <Button
                   onClick={onBack}
-                  className={`rounded-xl font-semibold py-3 border-2 transition-all ${
+                  className={`rounded-xl font-semibold py-3 px-6 border-2 transition-all ${
                     isDarkMode
                       ? "border-slate-600 bg-slate-800 hover:bg-slate-700 text-slate-200"
                       : "border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-700"
@@ -470,6 +455,23 @@ export default function ExamQuestions({
           </Card>
         )}
       </div>
+
+      {/* STICKY BOTTOM SUBMIT BUTTON (mobile-friendly) */}
+      {!showResults && (
+        <div className={`fixed bottom-0 left-0 right-0 z-40 border-t ${cardBorder} ${bgColor} backdrop-blur-sm bg-opacity-95 p-3 sm:p-4`}>
+          <div className="max-w-5xl mx-auto">
+            <Button
+              onClick={() => setShowResults(true)}
+              disabled={answeredCount === 0}
+              className="w-full py-4 sm:py-5 text-base sm:text-lg rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold disabled:opacity-50 shadow-lg"
+            >
+              {answeredCount === total
+                ? "✓ Lihat Hasil"
+                : `Lihat Hasil (${answeredCount}/${total})`}
+            </Button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -495,30 +497,33 @@ function QuestionCard({
   const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
 
   return (
-    <Card className={`p-8 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
-      <div className="flex items-start gap-6">
-        <div className="text-3xl font-bold text-cyan-500 min-w-fit">
+    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
+      <div className="flex items-start gap-3 sm:gap-4">
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
           {index + 1}.
         </div>
-        <div className="flex-1">
-          <p className={`font-semibold text-lg leading-relaxed mb-6 ${textColor}`}>
+        <div className="flex-1 min-w-0">
+          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>
             {question.q}
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((option, optIndex) => (
-              <Button
+              <button
                 key={optIndex}
                 onClick={() => onAnswer(optIndex)}
-                className={`w-full justify-start text-left h-auto py-4 px-5 rounded-lg transition-all border-2 text-base font-medium ${
+                className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${
                   userAnswer === optIndex
-                    ? "bg-cyan-500/20 text-cyan-400 border-cyan-500"
-                    : `${cardBg} ${cardBorder} ${textColor} hover:border-cyan-400/50`
+                    ? isDarkMode
+                      ? "bg-cyan-500/20 text-cyan-300 border-cyan-500"
+                      : "bg-cyan-50 text-cyan-700 border-cyan-500"
+                    : isDarkMode
+                    ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50 active:bg-slate-700"
+                    : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50 active:bg-slate-100"
                 }`}
-                variant="outline"
               >
                 <span
-                  className={`w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold mr-4 flex-shrink-0 ${
+                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
                     userAnswer === optIndex
                       ? "bg-cyan-500 text-white border-cyan-500"
                       : `border-slate-400 ${mutedText}`
@@ -526,8 +531,8 @@ function QuestionCard({
                 >
                   {optIndex + 1}
                 </span>
-                {option}
-              </Button>
+                <span className="flex-1 break-words leading-relaxed">{option}</span>
+              </button>
             ))}
           </div>
         </div>
@@ -549,13 +554,12 @@ function ResultCard({
   isCorrect: boolean;
   isDarkMode: boolean;
 }) {
-  const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
   const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
   const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
 
   return (
     <Card
-      className={`p-8 border-2 rounded-xl transition-all ${
+      className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${
         isCorrect
           ? isDarkMode
             ? "bg-green-950/30 border-green-700/50"
@@ -564,19 +568,21 @@ function ResultCard({
           ? isDarkMode
             ? "bg-red-950/30 border-red-700/50"
             : "bg-red-50 border-red-300"
-          : `${cardBg} border-slate-700`
+          : isDarkMode
+          ? "bg-slate-900 border-slate-700"
+          : "bg-slate-50 border-slate-200"
       }`}
     >
-      <div className="flex items-start gap-6">
-        <div className="text-3xl font-bold text-cyan-500 min-w-fit">
+      <div className="flex items-start gap-3 sm:gap-4">
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
           {index + 1}.
         </div>
-        <div className="flex-1">
-          <p className={`font-semibold text-lg leading-relaxed mb-6 ${textColor}`}>
+        <div className="flex-1 min-w-0">
+          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>
             {question.q}
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-2">
             {question.options.map((option, optIndex) => {
               const isUserAnswer = userAnswer === optIndex;
               const isCorrectAnswer = optIndex === question.correct;
@@ -584,7 +590,7 @@ function ResultCard({
               return (
                 <div
                   key={optIndex}
-                  className={`p-4 rounded-lg border-2 transition-all ${
+                  className={`p-3 rounded-lg border-2 transition-all flex items-start gap-2.5 sm:gap-3 ${
                     isCorrectAnswer
                       ? isDarkMode
                         ? "bg-green-900/30 border-green-600"
@@ -598,32 +604,32 @@ function ResultCard({
                       : "bg-slate-100 border-slate-300"
                   }`}
                 >
-                  <div className="flex items-center gap-4">
-                    <div
-                      className={`w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 ${
-                        isCorrectAnswer
-                          ? "bg-green-500 text-white border-green-500"
-                          : isUserAnswer
-                          ? "bg-red-500 text-white border-red-500"
-                          : `border-slate-400 ${mutedText}`
-                      }`}
-                    >
-                      {optIndex === question.correct ? "✓" : optIndex + 1}
-                    </div>
-                    <span className={`text-base font-medium ${textColor}`}>{option}</span>
+                  <div
+                    className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
+                      isCorrectAnswer
+                        ? "bg-green-500 text-white border-green-500"
+                        : isUserAnswer
+                        ? "bg-red-500 text-white border-red-500"
+                        : `border-slate-400 ${mutedText}`
+                    }`}
+                  >
+                    {isCorrectAnswer ? "✓" : optIndex + 1}
                   </div>
+                  <span className={`text-sm sm:text-base font-medium flex-1 break-words leading-relaxed ${textColor}`}>
+                    {option}
+                  </span>
                 </div>
               );
             })}
           </div>
 
           {userAnswer !== undefined && !isCorrect && (
-            <p className="mt-4 text-sm font-semibold text-red-500">
-              ✗ Jawaban salah. Jawaban benar adalah opsi {question.correct + 1}
+            <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500 break-words">
+              ✗ Salah. Jawaban benar: opsi {question.correct + 1}
             </p>
           )}
           {isCorrect && (
-            <p className="mt-4 text-sm font-semibold text-green-500">
+            <p className="mt-3 text-xs sm:text-sm font-semibold text-green-500">
               ✓ Benar!
             </p>
           )}
