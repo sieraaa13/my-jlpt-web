@@ -2,6 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const learningPaths = [
@@ -15,8 +16,9 @@ const learningPaths = [
     level: "Pemula",
     color: "from-pink-500/20 to-rose-500/20",
     borderColor: "border-pink-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt",
+    offsetX: "",
+    offsetY: "",
   },
   {
     id: 2,
@@ -28,8 +30,9 @@ const learningPaths = [
     level: "Tingkat Lanjut",
     color: "from-sky-500/20 to-cyan-500/20",
     borderColor: "border-sky-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt/n1",
+    offsetX: "",
+    offsetY: "",
   },
   {
     id: 3,
@@ -41,8 +44,9 @@ const learningPaths = [
     level: "Lanjut",
     color: "from-indigo-500/20 to-violet-500/20",
     borderColor: "border-indigo-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt/n2",
+    offsetX: "",
+    offsetY: "",
   },
   {
     id: 4,
@@ -54,8 +58,9 @@ const learningPaths = [
     level: "Menengah",
     color: "from-orange-500/20 to-amber-500/20",
     borderColor: "border-orange-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt/n3",
+    offsetX: "",
+    offsetY: "",
   },
   {
     id: 5,
@@ -67,8 +72,9 @@ const learningPaths = [
     level: "Dasar",
     color: "from-purple-500/20 to-fuchsia-500/20",
     borderColor: "border-purple-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt/n4",
+    offsetX: "",
+    offsetY: "",
   },
   {
     id: 6,
@@ -80,11 +86,12 @@ const learningPaths = [
     level: "Pemula",
     color: "from-emerald-500/20 to-teal-500/20",
     borderColor: "border-emerald-400/50",
-    offsetX: "",  // ← KOSONG
-    offsetY: "",  // ← KOSONG
+    link: "/jlpt/n5",
+    offsetX: "",
+    offsetY: "",
   },
 ];
-import Link from "next/link";
+
 export function LearningCards() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
@@ -142,17 +149,17 @@ export function LearningCards() {
                   </p>
                   
                   <div className="flex justify-center items-center gap-2 text-xs text-muted-foreground">
-  <span className="bg-card/50 px-2 py-1 rounded">
-    👤 {path.character}
-  </span>
-</div>
+                    <span className="bg-card/50 px-2 py-1 rounded">
+                      👤 {path.character}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Hover overlay */}
                 <div className={`absolute inset-0 bg-primary/10 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                  <Link href="/jlpt" className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 inline-block">
-  Mulai Belajar →
-</Link>
+                  <Link href={path.link} className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 inline-block">
+                    Mulai Belajar →
+                  </Link>
                 </div>
               </div>
             </Card>
