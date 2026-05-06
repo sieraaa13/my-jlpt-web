@@ -73,10 +73,10 @@ export function HeroSection() {
           <div className="relative hidden lg:block">
             <div className="relative w-full h-[600px]">
               {/* Main character */}
-               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80">
                 <div className="relative w-full h-full rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border-4 border-primary/30">
                   <Image 
-                    src="/my-jlpt-web/asset/n1.jpg" 
+                    src="/asset/n1.jpg" 
                     alt="N1 Level" 
                     fill 
                     className="object-cover"
@@ -87,7 +87,7 @@ export function HeroSection() {
               {/* Floating smaller characters - N2 */}
               <div className="absolute top-8 right-12 w-24 h-24 rounded-full overflow-hidden border-2 border-accent/50 shadow-lg animate-pulse">
                 <Image 
-                  src="/my-jlpt-web/asset/n2.jpg" 
+                  src="/asset/n2.jpg" 
                   alt="N2 Level" 
                   fill 
                   className="object-cover"
@@ -97,7 +97,7 @@ export function HeroSection() {
               {/* N3 */}
               <div className="absolute bottom-20 left-8 w-28 h-28 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg animate-pulse" style={{ animationDelay: "0.5s" }}>
                 <Image 
-                  src="/my-jlpt-web/asset/n3.jpg" 
+                  src="/asset/n3.jpg" 
                   alt="N3 Level" 
                   fill 
                   className="object-cover"
@@ -107,7 +107,7 @@ export function HeroSection() {
               {/* N4 */}
               <div className="absolute top-24 left-0 w-20 h-20 rounded-full overflow-hidden border-2 border-accent/40 shadow-lg animate-pulse" style={{ animationDelay: "1s" }}>
                 <Image 
-                  src="/my-jlpt-web/asset/n4.jpg" 
+                  src="/asset/n4.jpg" 
                   alt="N4 Level" 
                   fill 
                   className="object-cover"
