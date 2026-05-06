@@ -63,7 +63,7 @@ export function FeaturesSection() {
             {/* Main large image - JLPT */}
             <div className="absolute top-0 right-0 w-72 h-72 rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <Image 
-                src="/my-jlpt-web/asset/JLPT.jpg" 
+                src="/asset/JLPT.jpg" 
                 alt="JLPT" 
                 fill 
                 className="object-cover"
@@ -73,7 +73,7 @@ export function FeaturesSection() {
             {/* Secondary image - N5 */}
             <div className="absolute bottom-0 left-0 w-56 h-56 rounded-3xl overflow-hidden border-4 border-accent/30 shadow-2xl transform -rotate-6 hover:rotate-0 transition-transform duration-500">
               <Image 
-                src="/my-jlpt-web/asset/n5.jpg" 
+                src="/asset/n5.jpg" 
                 alt="N5 Level" 
                 fill 
                 className="object-cover"
