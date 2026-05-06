@@ -1,7 +1,0 @@
-{
-  "buildCommand": "next build",
-  "outputDirectory": "out",
-  "env": {
-    "MY_JLPT": "@MY_JLPT"
-  }
-}
