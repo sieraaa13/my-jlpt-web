@@ -2,6 +2,6 @@
   "buildCommand": "next build",
   "outputDirectory": "out",
   "env": {
-    "ANTHROPIC_API_KEY": "@ANTHROPIC_API_KEY"
+    "MY_JLPT": "@MY_JLPT"
   }
 }
