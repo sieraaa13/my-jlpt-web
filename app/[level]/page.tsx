@@ -2,8 +2,22 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
+// TAmbahakan fungsi ini agar tidak error saat deploy
+export function generateStaticParams() {
+  return [
+    { level: 'n1' },
+    { level: 'n2' },
+    { level: 'n3' },
+    { level: 'n4' },
+    { level: 'n5' },
+    { level: 'jlpt' },
+  ];
+}
+
 export default function LevelPage({ params }: { params: { level: string } }) {
   const level = params.level?.toUpperCase() || "N1";
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -18,6 +32,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           <p className="text-2xl text-muted-foreground mb-12">
             Selamat datang di petualangan level {level}. Di sini kamu akan mempelajari kanji, tata bahasa, dan pemahaman bacaan yang sesuai.
           </p>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {["Kanji", "Bunpou", "Dokkai"].map((section) => (
               <div key={section} className="p-8 rounded-3xl border border-border bg-card hover:border-primary/50 transition-colors">
@@ -29,6 +44,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           </div>
         </div>
       </div>
+
       <Footer />
     </main>
   );
