@@ -5,9 +5,8 @@ import { lessons } from "@/data/n3/soumatome/lessons";
 export function generateStaticParams() {
   const params: { id: string }[] = [];
   
-  // Karena struktur lessons adalah Record<string, Record<string, LessonFile>>
-  // (Week -> Day -> Data)
-  // Kita harus iterasi kedua level tersebut
+  // Debug: Print structure to build logs
+  console.log("Lessons structure in build:", JSON.stringify(lessons, null, 2));
   Object.keys(lessons).forEach((week) => {
     Object.keys(lessons[week]).forEach((day) => {
       params.push({ id: day }); 
@@ -17,12 +16,15 @@ export function generateStaticParams() {
   return params;
 }
 export default function LessonDetailPage({ params }: { params: { id: string } }) {
-  // Mencari data di semua minggu untuk ID (day) yang diberikan
-  let lessonFile = null;
+  // Let's debug what's happening at runtime
+  console.log("Params ID:", params.id);
+  console.log("Full Lessons Object:", lessons);
   let foundData = null;
+  // Let's try to find the data by looking at all weeks
   for (const week in lessons) {
     if (lessons[week][params.id]) {
-      lessonFile = lessons[week][params.id];
+      const lessonFile = lessons[week][params.id];
+      console.log("Found file for ID", params.id, ":", lessonFile);
       foundData = lessonFile.levels[0];
       break;
     }
@@ -31,6 +33,7 @@ export default function LessonDetailPage({ params }: { params: { id: string } })
     return (
       <main className="min-h-screen bg-background flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-4">Materi tidak ditemukan</h1>
+        <p className="mb-4">ID yang dicari: {params.id}</p>
         <Link href="/n3" className="text-primary underline">Kembali ke N3</Link>
       </main>
     );
