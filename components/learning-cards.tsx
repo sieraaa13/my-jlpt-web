@@ -1,168 +1,137 @@
 "use client";
-
-import { Card } from "@/components/ui/card";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-
+import { cn } from "@/lib/utils";
 const learningPaths = [
   {
-    id: 1,
+    id: "jlpt",
+    level: "Pemula",
     title: "JLPT",
     japanese: "日本語",
     description: "Uji kemampuan mu dengan mengerjakan soal JLPT",
-    image: "/asset/JLPT.jpg",
     character: "Teacher A",
-    level: "Pemula",
-    color: "from-pink-500/20 to-rose-500/20",
-    borderColor: "border-pink-400/50",
-    link: "/jlpt",
-    offsetX: "",
-    offsetY: "",
+    image: "/asset/JLPT.jpg",
+    color: "from-blue-500/20 to-cyan-500/20",
+    href: "/jlpt"
   },
   {
-    id: 2,
+    id: "n1",
+    level: "Tingkat Lanjut",
     title: "N1",
     japanese: "レベル1",
     description: "Level tertinggi JLPT. Kuasai bahasa Jepang profesional!",
-    image: "/asset/n1.jpg",
     character: "Master B",
-    level: "Tingkat Lanjut",
-    color: "from-sky-500/20 to-cyan-500/20",
-    borderColor: "border-sky-400/50",
-    link: "/jlpt/n1",
-    offsetX: "",
-    offsetY: "",
+    image: "/asset/n1.jpg",
+    color: "from-purple-500/20 to-pink-500/20",
+    href: "/n1"
   },
   {
-    id: 3,
+    id: "n2",
+    level: "Lanjut",
     title: "N2",
     japanese: "レベル2",
     description: "Mahir dalam percakapan profesional dan media cetak.",
-    image: "/asset/n2.jpg",
     character: "Coach C",
-    level: "Lanjut",
-    color: "from-indigo-500/20 to-violet-500/20",
-    borderColor: "border-indigo-400/50",
-    link: "/jlpt/n2",
-    offsetX: "",
-    offsetY: "",
+    image: "/asset/n2.jpg",
+    color: "from-indigo-500/20 to-blue-500/20",
+    href: "/n2"
   },
   {
-    id: 4,
+    id: "n3",
+    level: "Menengah",
     title: "N3",
     japanese: "レベル3",
     description: "Pahami topik sehari-hari dan percakapan praktis.",
-    image: "/asset/n3.jpg",
     character: "Guide D",
-    level: "Menengah",
-    color: "from-orange-500/20 to-amber-500/20",
-    borderColor: "border-orange-400/50",
-    link: "/jlpt/n3",
-    offsetX: "",
-    offsetY: "",
+    image: "/asset/n3.jpg",
+    color: "from-emerald-500/20 to-teal-500/20",
+    href: "/n3"
   },
   {
-    id: 5,
+    id: "n4",
+    level: "Dasar",
     title: "N4",
     japanese: "レベル4",
     description: "Komunikasi dasar dalam situasi sehari-hari.",
-    image: "/asset/n4.jpg",
     character: "Helper E",
-    level: "Dasar",
-    color: "from-purple-500/20 to-fuchsia-500/20",
-    borderColor: "border-purple-400/50",
-    link: "/jlpt/n4",
-    offsetX: "",
-    offsetY: "",
+    image: "/asset/n4.jpg",
+    color: "from-orange-500/20 to-yellow-500/20",
+    href: "/n4"
   },
   {
-    id: 6,
+    id: "n5",
+    level: "Pemula",
     title: "N5",
     japanese: "レベル5",
     description: "Pemula - Pelajari dasar-dasar bahasa Jepang dengan mudah!",
-    image: "/asset/n5.jpg",
     character: "Friend F",
-    level: "Pemula",
-    color: "from-emerald-500/20 to-teal-500/20",
-    borderColor: "border-emerald-400/50",
-    link: "/jlpt/n5",
-    offsetX: "",
-    offsetY: "",
-  },
+    image: "/asset/n5.jpg",
+    color: "from-red-500/20 to-orange-500/20",
+    href: "/n5"
+  }
 ];
-
 export function LearningCards() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
-
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6 bg-background">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">
-            Jalur Pembelajaran
-          </span>
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4 mb-6 text-balance">
-            Pilih <span className="text-primary">Petualangan</span>mu
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Setiap karakter anime akan membimbingmu dalam perjalanan menguasai bahasa Jepang
-          </p>
+        <div className="max-w-3xl mb-16">
+          <p className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Jalur Pembelajaran</p>
+          <h2 className="text-4xl md:text-5xl font-black mb-6">Pilih <span className="text-primary">Petualangan</span>mu</h2>
+          <p className="text-xl text-muted-foreground">Setiap karakter anime akan membimbingmu dalam perjalanan menguasai bahasa Jepang</p>
         </div>
-
-        {/* Asymmetric grid layout */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {learningPaths.map((path) => (
-            <Card
+            <Link 
               key={path.id}
-              className={`group relative overflow-hidden bg-gradient-to-br ${path.color} backdrop-blur-sm border-2 ${path.borderColor} hover:border-primary/70 transition-all duration-500 cursor-pointer ${path.offsetX} ${path.offsetY}`}
+              href={path.href}
+              className={cn(
+                "relative group overflow-hidden rounded-3xl transition-all duration-500 border",
+                "bg-card text-card-foreground border-border hover:shadow-2xl hover:shadow-primary/20",
+                hoveredId === path.id ? "scale-[1.02] -translate-y-2" : "scale-100"
+              )}
               onMouseEnter={() => setHoveredId(path.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="p-6">
-                {/* Character image - asymmetric positioning */}
-                <div className={`relative w-32 h-32 mx-auto mb-4 rounded-2xl overflow-hidden border-2 ${path.borderColor} shadow-xl transform transition-transform duration-500 ${hoveredId === path.id ? 'scale-110 rotate-3' : ''}`}>
-                  <Image 
-                    src={path.image} 
-                    alt={path.character} 
-                    fill 
-                    className="object-cover"
-                  />
-                </div>
+              <div className="aspect-[4/5] relative">
+                <Image
+                  src={path.image}
+                  alt={path.character}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className={cn("absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent", path.color)} />
                 
-                {/* Level badge - positioned asymmetrically */}
-                <div className="absolute top-4 right-4">
-                  <span className="bg-secondary/80 backdrop-blur-sm text-secondary-foreground text-xs px-3 py-1 rounded-full">
+                <div className="absolute top-6 left-6">
+                  <span className="px-4 py-1.5 rounded-full bg-primary/90 text-primary-foreground text-xs font-bold backdrop-blur-md">
                     {path.level}
                   </span>
                 </div>
-
-                {/* Content */}
-                <div className="text-center space-y-3">
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">{path.title}</h3>
-                    <p className="text-primary text-lg">{path.japanese}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <div className="flex justify-between items-end mb-4">
+                    <div>
+                      <h3 className="text-3xl font-black">{path.title}</h3>
+                      <p className="text-primary font-bold">{path.japanese}</p>
+                    </div>
                   </div>
-                  
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground line-clamp-2 mb-4 group-hover:text-foreground transition-colors">
                     {path.description}
                   </p>
-                  
-                  <div className="flex justify-center items-center gap-2 text-xs text-muted-foreground">
-                    <span className="bg-card/50 px-2 py-1 rounded">
-                      👤 {path.character}
-                    </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium text-foreground/80">👤 {path.character}</span>
                   </div>
                 </div>
-
-                {/* Hover overlay */}
-                <div className={`absolute inset-0 bg-primary/10 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                  <Link href={path.link} className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 inline-block">
+                <div className={cn(
+                  "absolute inset-0 bg-primary/10 backdrop-blur-[2px] flex items-center justify-center transition-opacity duration-300",
+                  hoveredId === path.id ? "opacity-100" : "opacity-0"
+                )}>
+                  <div className="bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     Mulai Belajar →
-                  </Link>
+                  </div>
                 </div>
               </div>
-            </Card>
+            </Link>
           ))}
         </div>
       </div>
