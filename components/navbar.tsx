@@ -1,11 +1,9 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-
+import { ModeToggle } from "./mode-toggle";
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
@@ -18,25 +16,24 @@ export function Navbar() {
               <span className="text-accent">GO!</span>
             </span>
           </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+              Beranda
+            </a>
+            <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors">
+              Ujian JLPT
+            </a>
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               Pelajaran
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Karakter
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Komunitas
             </a>
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               Tentang
             </a>
           </div>
-
-          {/* CTA Buttons */}
+          {/* CTA Buttons & Theme Toggle */}
           <div className="hidden md:flex items-center gap-3">
+            <ModeToggle />
             <Button variant="ghost" className="text-foreground hover:text-primary">
               Masuk
             </Button>
@@ -44,7 +41,6 @@ export function Navbar() {
               Daftar Gratis
             </Button>
           </div>
-
           {/* Mobile menu button */}
           <button 
             className="md:hidden p-2 text-foreground"
@@ -59,22 +55,19 @@ export function Navbar() {
             </svg>
           </button>
         </div>
-
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                Pelajaran
+              <div className="flex justify-between items-center px-2">
+                <span className="text-sm font-medium">Ubah Tema</span>
+                <ModeToggle />
+              </div>
+              <a href="/" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+                Beranda
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                Karakter
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                Komunitas
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                Tentang
+              <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+                Ujian JLPT
               </a>
               <div className="flex gap-3 pt-2">
                 <Button variant="ghost" className="text-foreground hover:text-primary flex-1">
