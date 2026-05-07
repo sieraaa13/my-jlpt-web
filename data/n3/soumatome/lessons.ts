@@ -3,11 +3,9 @@
 // =================================================================
 //
 // CARA MENAMBAH LESSON BARU:
-// 1. Upload file JSON ke folder data/n3/soumatome/ di GitHub
-// 2. Tambah 1 baris import di bawah (contoh: import w1d8 from "./week1_day8.json")
+// 1. Upload file JSON ke folder ini (data/n3/soumatome/)
+// 2. Tambah 1 baris import di bawah
 // 3. Tambah ke object `lessons` di bawah
-//
-// Itu saja! Halaman akan auto-generate.
 // =================================================================
 
 // Week 1
@@ -21,68 +19,82 @@ import w1d7 from "./week1_day7.json";
 
 // Tambah Week 2 di sini saat sudah punya:
 // import w2d1 from "./week2_day1.json";
-// import w2d2 from "./week2_day2.json";
 // dst...
 
 // =================================================================
-// Type definition
+// Type definition (fleksibel - support grammar lesson DAN exercise day)
 // =================================================================
-type LessonFile = {
-  levels: Array<{
-    name: string;
-    week: number;
-    day: number;
-    header: {
-      main_title: string;
-      sub_title: string;
-      translation: string;
-    };
-    illustration_text?: Record<string, string | undefined>;
-    grammar_sections: Array<{
-      pattern_title: string;
-      pattern_meaning: string;
-      description_box: {
-        formula: string;
-        explanation: string;
-        explanation_en?: string;
-      };
-      examples: Array<{
-        jp: string;
-        en: string;
-        explanation?: string;
-      }>;
-    }>;
+export type GrammarSection = {
+  pattern_title: string;
+  pattern_meaning: string;
+  description_box: {
+    formula: string;
+    explanation: string;
+    explanation_en?: string;
+  };
+  examples: Array<{
+    jp: string;
+    en: string;
+    explanation?: string;
   }>;
 };
 
-// =================================================================
-// 🗂️ Kumpulan semua lesson — TAMBAH DI SINI saat ada file baru
-// =================================================================
-export const lessons: Record<string, Record<string, LessonFile>> = {
-  "1": {
-    "1": w1d1,
-    "2": w1d2,
-    "3": w1d3,
-    "4": w1d4,
-    "5": w1d5,
-    "6": w1d6,
-    "7": w1d7,
-  },
-  // Saat Week 2 sudah lengkap, hapus comment ini dan tambah:
-  // "2": {
-  //   "1": w2d1,
-  //   "2": w2d2,
-  //   ...
-  // },
+export type ExerciseGroup = {
+  title: string;
+  instruction: string;
+  type: string;
+  questions: Array<Record<string, unknown>>;
+  passage?: string;
+};
+
+export type LessonLevel = {
+  name: string;
+  week: number;
+  day: number;
+  header: {
+    main_title: string;
+    sub_title: string;
+    translation: string;
+  };
+  illustration_text?: Record<string, string | undefined>;
+  // Support BOTH formats:
+  grammar_sections?: GrammarSection[];
+  exercise_groups?: ExerciseGroup[];
+};
+
+export type LessonFile = {
+  levels: LessonLevel[];
 };
 
 // =================================================================
-// Helper: dapat list lesson terurut untuk halaman daftar
+// 🗂️ Kumpulan semua lesson
+// =================================================================
+// Pakai 'any' untuk type assertion karena JSON import + variasi struktur
+// (day 7 = exercise, day 1-6 = grammar)
+export const lessons: Record<string, Record<string, LessonFile>> = {
+  "1": {
+    "1": w1d1 as LessonFile,
+    "2": w1d2 as LessonFile,
+    "3": w1d3 as LessonFile,
+    "4": w1d4 as LessonFile,
+    "5": w1d5 as LessonFile,
+    "6": w1d6 as LessonFile,
+    "7": w1d7 as LessonFile,
+  },
+};
+
+// =================================================================
+// Helper: list lesson terurut untuk halaman daftar
 // =================================================================
 export function getOrganizedLessons() {
   const weeks: Array<{
     week: string;
-    lessons: Array<{ day: string; title: string; subtitle: string }>;
+    lessons: Array<{
+      day: string;
+      title: string;
+      subtitle: string;
+      type: "grammar" | "exercise";
+    }>;
   }> = [];
 
   const sortedWeeks = Object.keys(lessons).sort((a, b) => Number(a) - Number(b));
@@ -99,6 +111,7 @@ export function getOrganizedLessons() {
           day,
           title: data.header.main_title,
           subtitle: data.header.sub_title,
+          type: data.exercise_groups ? "exercise" : "grammar",
         };
       }),
     });
