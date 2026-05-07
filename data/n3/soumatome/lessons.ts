@@ -56,7 +56,20 @@ import w6d5 from "./week6_day5.json";
 import w6d6 from "./week6_day6.json";
 import w6d7 from "./week6_day7.json";
 
-export type GrammarSection = { pattern_title: string; pattern_meaning: string; description_box: { formula: string; explanation: string; explanation_en?: string; }; examples: Array<{ jp: string; en: string; explanation?: string; }>; };
+export type GrammarSection = {
+  pattern_title: string;
+  pattern_meaning?: string; // <--- Tambahkan tanda tanya di sini
+  description_box: {
+    formula: string;
+    explanation: string;
+    explanation_en?: string;
+  };
+  examples: Array<{
+    jp: string;
+    en: string;
+    explanation?: string;
+  }>;
+};
 export type ExerciseGroup = { title: string; instruction: string; type: string; questions: Array<Record<string, unknown>>; passage?: string; };
 export type LessonLevel = { name: string; week: number; day: number; header: { main_title: string; sub_title: string; translation: string; }; illustration_text?: Record<string, string | undefined>; grammar_sections?: GrammarSection[]; exercise_groups?: ExerciseGroup[]; };
 export type LessonFile = { levels: LessonLevel[]; };
