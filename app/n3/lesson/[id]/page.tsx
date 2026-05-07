@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons"; 
 
-// 1. Pastikan generateStaticParams mengembalikan array yang konsisten
 export function generateStaticParams() {
   const params: { id: string }[] = [];
   Object.keys(lessons).forEach(week => {
@@ -14,25 +13,13 @@ export function generateStaticParams() {
   return params;
 }
 
-// 2. Gunakan tipe data yang eksplisit
-interface PageProps {
-  params: Promise<{ id: string }>; // Next.js 15+ menggunakan Promise untuk params
-}
-
-export default async function LessonDetailPage({ params }: PageProps) {
-  // Await params karena di versi Next.js terbaru ini adalah Promise
+export default async function LessonDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
   const [week, day] = resolvedParams.id.split('-');
-  
   const lessonFile = lessons[week]?.[day];
 
   if (!lessonFile) {
-    return (
-      <main className="min-h-screen bg-background flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-4">Materi tidak ditemukan</h1>
-        <Link href="/n3" className="text-primary underline">Kembali ke N3</Link>
-      </main>
-    );
+    return <main className="p-24 text-center">Materi tidak ditemukan</main>;
   }
 
   const data = lessonFile.levels[0];
@@ -41,13 +28,35 @@ export default async function LessonDetailPage({ params }: PageProps) {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="container mx-auto px-6 pt-32 pb-24">
-        <Link href="/n3" className="text-primary underline mb-8 inline-block">← Kembali</Link>
-        <h1 className="text-4xl font-black">{data.header.main_title}</h1>
-        <p className="text-xl mb-8">{data.header.translation}</p>
+        <Link href="/n3" className="text-primary hover:underline mb-8 inline-block">← Kembali ke daftar materi</Link>
         
-        <div className="prose dark:prose-invert max-w-none p-6 bg-card border rounded-2xl">
-           <h2 className="text-2xl font-bold mb-4">Penjelasan</h2>
-           <p className="whitespace-pre-wrap">{data.header.translation}</p>
+        {/* Header */}
+        <h1 className="text-5xl font-black mb-2">{data.header.main_title}</h1>
+        <p className="text-2xl text-muted-foreground mb-12">{data.header.sub_title}</p>
+        
+        {/* Render Grammar Sections */}
+        <div className="space-y-8">
+          {data.grammar_sections?.map((section, idx) => (
+            <div key={idx} className="p-8 bg-card border border-border rounded-3xl">
+              <h2 className="text-2xl font-bold text-primary mb-2">{section.pattern_title}</h2>
+              <p className="text-muted-foreground mb-6">{section.pattern_meaning}</p>
+              
+              <div className="bg-background/50 p-6 rounded-2xl mb-6 border">
+                <p className="font-bold mb-2">Rumus: {section.description_box.formula}</p>
+                <p>{section.description_box.explanation}</p>
+              </div>
+
+              <div className="space-y-4">
+                <h4 className="font-bold">Contoh:</h4>
+                {section.examples.map((ex, eIdx) => (
+                  <div key={eIdx} className="border-l-4 border-primary pl-4 py-1">
+                    <p className="font-semibold text-lg">{ex.jp}</p>
+                    <p className="text-muted-foreground">{ex.en}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />
