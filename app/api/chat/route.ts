@@ -4,6 +4,18 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
+    if (!process.env.MY_JLPT) {
+      throw new Error("OPENAI API key is missing");
+    }
+
+    const messages = [
+      {
+        role: "system",
+        content: body.system || "Kamu adalah asisten yang membantu belajar JLPT.",
+      },
+      ...(body.messages || []),
+    ];
+
     const res = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -12,9 +24,9 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
-        messages: body.messages,
-        max_tokens: body.max_tokens || 1000,
-        system: body.system || "Kamu adalah asisten yang membantu.",
+        messages,
+        max_tokens: body.max_tokens || 500,
+        temperature: 0.7,
       }),
     });
 
@@ -27,15 +39,10 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Transform OpenAI response ke format yang sama
     return NextResponse.json({
-      content: [
-        {
-          type: "text",
-          text: data.choices?.[0]?.message?.content || "Tidak ada respons",
-        },
-      ],
+      content: data.choices?.[0]?.message?.content || "Tidak ada respons",
     });
+
   } catch (error) {
     console.error("API error:", error);
     return NextResponse.json(
