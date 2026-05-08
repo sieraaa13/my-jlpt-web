@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002F[level]","\u002Fjlpt\u002F[category]","\u002Fjlpt\u002F[year]\u002F[period]","\u002Fjlpt\u002Fn3\u002Fsoumatome\u002F[week]\u002F[day]","\u002Fn3\u002Flesson\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
