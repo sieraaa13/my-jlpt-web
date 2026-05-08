@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
             {
               role: "system",
               content:
-                "Kamu adalah tutor JLPT profesional. Jawab dengan jelas, ringkas, dan gunakan contoh kalimat Jepang jika perlu.",
+                "Kamu adalah tutor JLPT profesional. Jawab dengan jelas dan ringkas.",
             },
             ...(body.messages || []),
           ],
@@ -52,6 +52,7 @@ export async function POST(req: NextRequest) {
       content:
         data.choices?.[0]?.message?.content || "Tidak ada respons",
     });
+
   } catch (error) {
     console.error("API error:", error);
     return NextResponse.json(
