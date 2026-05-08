@@ -1,3 +1,3 @@
 :HL["/my-jlpt-web/_next/static/chunks/05qmwjqau64bz.css","style"]
 :HL["/my-jlpt-web/_next/static/chunks/0s_d7_6m5p0vp.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"QO2Gz0MYFoTlTjYFRYzsH"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"It4_4afmcxGJGRgv4zIQ-"}
