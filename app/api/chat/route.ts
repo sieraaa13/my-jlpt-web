@@ -1,50 +1,55 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    const apiKey = process.env.MY_JLPT;
 
-    if (!process.env.MY_JLPT) {
-      throw new Error("OPENAI API key is missing");
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "API key tidak ditemukan." },
+        { status: 500 }
+      );
     }
 
-    const messages = [
-      {
-        role: "system",
-        content: body.system || "Kamu adalah asisten yang membantu belajar JLPT.",
-      },
-      ...(body.messages || []),
-    ];
+    const body = await req.json();
 
-    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    const response = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.MY_JLPT}`,
+        Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "gpt-4o-mini",
-        messages,
-        max_tokens: body.max_tokens || 500,
-        temperature: 0.7,
+        model: "gpt-4.1-mini",
+        input: [
+          {
+            role: "system",
+            content:
+              "Kamu adalah tutor JLPT profesional. Jawab dengan jelas dan ringkas.",
+          },
+          ...(body.messages || []),
+        ],
       }),
     });
 
-    const data = await res.json();
+    const data = await response.json();
 
-    if (!res.ok) {
+    if (!response.ok) {
+      console.error("OpenAI Error:", data);
       return NextResponse.json(
         { error: data.error?.message || "OpenAI API error" },
-        { status: res.status }
+        { status: response.status }
       );
     }
 
     return NextResponse.json({
-      content: data.choices?.[0]?.message?.content || "Tidak ada respons",
+      content: data.output_text || "Tidak ada respons",
     });
 
   } catch (error) {
-    console.error("API error:", error);
+    console.error("SERVER ERROR:", error);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }
