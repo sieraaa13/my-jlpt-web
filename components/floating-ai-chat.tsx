@@ -1,58 +1,119 @@
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-// Kita panggil komponen Chat yang sudah punya logika AI
-import FloatingAIChat from "@/components/floating-ai-chat"; 
+"use client";
 
-export function generateStaticParams() {
-  return [
-    { level: 'n1' }, { level: 'n2' }, { level: 'n3' }, 
-    { level: 'n4' }, { level: 'n5' }, { level: 'jlpt' },
-  ];
+import { useState, useRef, useEffect } from "react";
+import { MessageCircle, X, ChevronDown, Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+interface Message {
+  role: "user" | "assistant";
+  content: string;
 }
 
-export default function LevelPage({ params }: { params: { level: string } }) {
-  const level = params.level?.toUpperCase() || "N1";
+// PERBAIKAN DI SINI: Definisikan props secara eksplisit
+interface FloatingAIChatProps {
+  level: string;
+}
+
+export default function FloatingAIChat({ level }: FloatingAIChatProps) {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [loading, setLoading] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // ... (Logika handleSend, useEffect, dll tetap sama seperti sebelumnya) ...
+  
+  const handleSend = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim() || loading) return;
+
+    const userMsg: Message = { role: "user", content: input };
+    setMessages(prev => [...prev, userMsg]);
+    setInput("");
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: [...messages, userMsg] }),
+      });
+      const data = await res.json();
+      setMessages(prev => [...prev, { role: "assistant", content: data.content }]);
+    } catch (error) {
+      setMessages(prev => [...prev, { role: "assistant", content: "Maaf, sistem sedang sibuk." }]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <main className="flex flex-col md:flex-row h-screen overflow-hidden bg-background text-foreground">
-      
-      {/* AREA KIRI: MATERI (Tetap Sesuai Kodinganmu) */}
-      <div className="flex-1 overflow-y-auto flex flex-col">
-        <Navbar />
-        
-        <div className="container mx-auto px-6 pt-32 pb-24 flex-1">
-          <Link href="/" className="text-primary hover:underline mb-8 inline-block">
-            ← Kembali ke Beranda
-          </Link>
-          
-          <div className="max-w-4xl">
-            <h1 className="text-6xl font-black mb-4">
-              Level <span className="text-primary">{level}</span>
-            </h1>
-            <p className="text-2xl text-muted-foreground mb-12">
-              Selamat datang di petualangan level {level}. Di sini kamu akan mempelajari kanji, tata bahasa, dan pemahaman bacaan yang sesuai.
-            </p>
+    <>
+      {!isChatOpen && (
+        <button
+          onClick={() => setIsChatOpen(true)}
+          className="fixed bottom-6 right-6 p-4 bg-primary text-primary-foreground rounded-full shadow-2xl z-50 hover:scale-110 transition-transform border-2 border-white"
+        >
+          <MessageCircle size={28} />
+        </button>
+      )}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {["Kanji", "Bunpou", "Dokkai"].map((section) => (
-                <div key={section} className="p-8 rounded-3xl border border-border bg-card hover:border-primary/50 transition-colors">
-                  <h3 className="text-2xl font-bold mb-2">{section}</h3>
-                  <p className="text-muted-foreground mb-6">Mulai pelajari materi {section} untuk persiapan ujian.</p>
-                  <Button className="w-full rounded-xl">Mulai Belajar</Button>
-                </div>
-              ))}
+      {isChatOpen && (
+        <div className={`
+          fixed inset-x-0 bottom-0 z-50 flex flex-col bg-card shadow-[0_-5px_30px_rgba(0,0,0,0.15)] transition-all duration-300 border-t
+          h-[40vh] md:relative md:h-full md:w-[350px] md:border-l md:border-t-0
+        `}>
+          {/* Header */}
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/30">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <span className="font-bold text-sm text-foreground">AI Tutor {level}</span>
             </div>
+            <button onClick={() => setIsChatOpen(false)} className="hover:bg-muted p-1 rounded">
+              <ChevronDown className="md:hidden" />
+              <X className="hidden md:block text-muted-foreground" size={20} />
+            </button>
           </div>
+
+          {/* Messages Area */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 text-sm bg-background">
+            {messages.length === 0 && (
+              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground">
+                Halo! Aku tutor AI kamu untuk Level {level}. Apa yang ingin kamu pelajari hari ini?
+              </div>
+            )}
+            {messages.map((msg, i) => (
+              <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+                <div className={`p-3 rounded-2xl max-w-[85%] ${
+                  msg.role === "user" ? "bg-primary text-primary-foreground rounded-tr-none" : "bg-muted rounded-tl-none text-foreground"
+                }`}>
+                  {msg.content}
+                </div>
+              </div>
+            ))}
+            {loading && (
+               <div className="flex justify-start">
+                  <div className="bg-muted p-3 rounded-2xl animate-pulse">Mengetik...</div>
+               </div>
+            )}
+            <div ref={scrollRef} />
+          </div>
+
+          {/* Input Area */}
+          <form onSubmit={handleSend} className="p-4 border-t bg-card flex gap-2">
+            <input 
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Tanyakan sesuatu..." 
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+            />
+            <Button type="submit" size="icon" className="rounded-full shrink-0" disabled={loading}>
+              <Send size={16} />
+            </Button>
+          </form>
         </div>
-
-        <Footer />
-      </div>
-
-      {/* AREA KANAN: AI CHAT PANEL (Logic AI ada di dalam sini) */}
-      <FloatingAIChat level={level} />
-      
-    </main>
+      )}
+    </>
   );
 }
