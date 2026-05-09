@@ -20,12 +20,10 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Auto scroll
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
-  // Tutup pakai ESC
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsChatOpen(false);
@@ -66,7 +64,6 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
 
   return (
     <>
-      {/* Tombol Floating */}
       {!isChatOpen && (
         <button
           type="button"
@@ -78,7 +75,6 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
         </button>
       )}
 
-      {/* Overlay (hanya untuk mobile, agar bisa close klik luar) */}
       {isChatOpen && (
         <div
           onClick={() => setIsChatOpen(false)}
@@ -87,21 +83,88 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
         />
       )}
 
-      {/* Panel Chat */}
       {isChatOpen && (
-        <div
-          className="
-            fixed z-[9999] flex flex-col bg-card border shadow-2xl
-            transition-all duration-300
-
-            /* MOBILE: nempel bawah layar, tinggi 75vh */
-            inset-x-0 bottom-0 h-[75vh] rounded-t-2xl border-t
-
-            /* DESKTOP: floating sidebar di kanan bawah */
-            md:inset-x-auto md:bottom-6 md:right-6 md:top-auto
-            md:h-[600px] md:max-h-[80vh] md:w-[380px]
-            md:rounded-2xl md:border
-          "
-        >
+        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[75vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
           {/* Header */}
-          <div className="flex items-center justify-between 
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/30 rounded-t-2xl">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <span className="font-bold text-sm text-foreground italic">
+                AI Tutor {level}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsChatOpen(false)}
+              aria-label="Tutup chat"
+              className="hover:bg-muted p-1 rounded text-muted-foreground"
+            >
+              <ChevronDown size={20} className="md:hidden" />
+              <X size={20} className="hidden md:block" />
+            </button>
+          </div>
+
+          {/* Body Pesan */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 text-sm bg-background">
+            {messages.length === 0 && (
+              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground">
+                Halo! Aku tutor AI kamu{" "}
+                {level !== "General" ? `untuk Level ${level}` : ""}. Ada yang
+                bisa aku bantu?
+              </div>
+            )}
+
+            {messages.map((msg, i) => (
+              <div
+                key={i}
+                className={`flex ${
+                  msg.role === "user" ? "justify-end" : "justify-start"
+                }`}
+              >
+                <div
+                  className={`p-3 rounded-2xl max-w-[85%] whitespace-pre-wrap ${
+                    msg.role === "user"
+                      ? "bg-primary text-primary-foreground rounded-tr-none"
+                      : "bg-muted rounded-tl-none text-foreground border"
+                  }`}
+                >
+                  {msg.content}
+                </div>
+              </div>
+            ))}
+
+            {loading && (
+              <div className="flex justify-start">
+                <div className="bg-muted p-3 rounded-2xl animate-pulse text-xs">
+                  AI sedang berpikir...
+                </div>
+              </div>
+            )}
+            <div ref={scrollRef} />
+          </div>
+
+          {/* Input */}
+          <form
+            onSubmit={handleSend}
+            className="p-3 border-t bg-card flex gap-2 rounded-b-2xl"
+          >
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Tanyakan sesuatu..."
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+            />
+            <Button
+              type="submit"
+              size="icon"
+              className="rounded-full shrink-0"
+              disabled={loading || !input.trim()}
+            >
+              <Send size={16} />
+            </Button>
+          </form>
+        </div>
+      )}
+    </>
+  );
+}
