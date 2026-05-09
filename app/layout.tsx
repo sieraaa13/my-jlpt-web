@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import FloatingAIChat from "@/components/floating-ai-chat";
 import { ExamProvider } from "@/components/exam-context";
+import { AuthProvider } from "@/components/auth-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,10 +27,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ExamProvider>
-            {children}
-            <FloatingAIChat />
-          </ExamProvider>
+          <AuthProvider>
+            <ExamProvider>
+              {children}
+              <FloatingAIChat />
+            </ExamProvider>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
