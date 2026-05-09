@@ -40,7 +40,7 @@ export default function FloatingAIChat() {
       return "";
     }
 
-    let ctx = `User sedang mengerjakan ujian JLPT ${level}`;
+    let ctx = `User sedang di halaman ujian JLPT ${level}`;
     if (examData.title) ctx += ` periode ${examData.title}`;
     if (examData.section) {
       const sectionName =
@@ -103,6 +103,7 @@ export default function FloatingAIChat() {
           messages: [...messages, userMsg],
           examContext,
           level,
+          isExamFinished: examData?.isExamFinished || false,
         }),
       });
 
@@ -129,8 +130,6 @@ export default function FloatingAIChat() {
     }
   };
 
-  const hasExamData = examData?.questions && examData.questions.length > 0;
-
   return (
     <>
       {!isChatOpen && (
@@ -142,7 +141,7 @@ export default function FloatingAIChat() {
         >
           <Image
             src="/asset/ai_chat.jpg"
-            alt="AI Chat"
+            alt="Siera"
             width={64}
             height={64}
             className="w-16 h-16 object-cover"
@@ -154,21 +153,11 @@ export default function FloatingAIChat() {
       {isChatOpen && (
         <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[40vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
           <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
-            <div className="flex items-center gap-2 flex-wrap">
+            <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0" />
               <span className="font-bold text-sm text-foreground italic">
-                AI Tutor {level}
+                Siera
               </span>
-              {hasExamData && (
-                <span className="text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
-                  {examData!.questions!.length} Soal
-                </span>
-              )}
-              {examData?.activeQuestion && (
-                <span className="text-[10px] font-medium bg-amber-500 text-white px-2 py-0.5 rounded-full">
-                  No.{examData.activeQuestion.number}
-                </span>
-              )}
             </div>
             <button
               type="button"
@@ -182,47 +171,6 @@ export default function FloatingAIChat() {
           </div>
 
           <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
-            {messages.length === 0 && (
-              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm leading-relaxed shadow-sm">
-                Halo! Aku tutor AI kamu untuk JLPT {level}.
-                {hasExamData ? (
-                  <>
-                    <br />
-                    <br />
-                    Aku sudah baca <b>{examData!.questions!.length} soal</b> di bagian{" "}
-                    <b>
-                      {examData!.section === "kanji"
-                        ? "Kanji"
-                        : examData!.section === "bunpou"
-                        ? "Bunpou"
-                        : "Dokkai"}
-                    </b>
-                    .
-                    {examData!.activeQuestion && (
-                      <>
-                        <br />
-                        Sekarang kamu di soal <b>No.{examData!.activeQuestion.number}</b>.
-                      </>
-                    )}
-                    <br />
-                    <br />
-                    Contoh pertanyaan:
-                    <ul className="list-disc pl-4 mt-1 space-y-1">
-                      <li>"Bantu jawab soal ini"</li>
-                      <li>"Jelaskan kenapa jawabannya B"</li>
-                      <li>"Apa arti soal nomor 5?"</li>
-                    </ul>
-                  </>
-                ) : (
-                  <>
-                    <br />
-                    <br />
-                    Ada yang bisa aku bantu seputar bahasa Jepang? Tanya apa saja, ya!
-                  </>
-                )}
-              </div>
-            )}
-
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -246,7 +194,7 @@ export default function FloatingAIChat() {
               <div className="flex justify-start items-center gap-2">
                 <Image
                   src="/asset/wait_icon.gif"
-                  alt="AI sedang berpikir"
+                  alt="Siera sedang berpikir"
                   width={48}
                   height={48}
                   unoptimized
