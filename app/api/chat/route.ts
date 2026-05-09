@@ -13,31 +13,38 @@ export async function POST(req: NextRequest) {
     const { messages, examContext, level } = await req.json();
 
     // Build system prompt
-    let systemPrompt = `Kamu adalah tutor JLPT yang ramah dan ahli bahasa Jepang. 
-Jawab dengan singkat, jelas, dan mudah dipahami pelajar Indonesia.
-Selalu beri penjelasan dalam Bahasa Indonesia, kecuali user minta sebaliknya.
-Saat menjelaskan kata/kanji Jepang, sertakan: tulisan Jepang, romaji, dan arti.`;
+    let systemPrompt = `Kamu adalah tutor JLPT yang ramah, sabar, dan ahli bahasa Jepang.
+Tugasmu membantu user belajar bahasa Jepang dan menyelesaikan soal JLPT.
+
+ATURAN MENJAWAB:
+1. Selalu jawab dalam Bahasa Indonesia (kecuali user minta lain).
+2. Jawaban harus singkat, jelas, dan mudah dipahami pelajar.
+3. Saat menyebut kata Jepang, sertakan: tulisan Jepang + romaji + arti.
+   Contoh: 学校 (gakkou) artinya "sekolah".
+4. Jangan terlalu panjang lebar — fokus ke poin pertanyaan.`;
 
     if (level && level !== "General") {
-      systemPrompt += `\nUser sedang belajar level JLPT ${level}.`;
+      systemPrompt += `\n\nUser sedang belajar level JLPT ${level}.`;
     }
 
     if (examContext && examContext.trim().length > 0) {
       systemPrompt += `
 
-===== KONTEKS SOAL UJIAN =====
+===== KONTEKS SOAL UJIAN YANG SEDANG DIKERJAKAN =====
 ${examContext}
 ===== AKHIR KONTEKS =====
 
-Saat user bertanya tentang nomor soal tertentu (misal "bantu jawab nomor 1"),
-gunakan data soal di atas. Jelaskan jawaban dengan langkah-langkah:
-1. Sebutkan kembali soalnya
-2. Beri jawaban yang benar
-3. Jelaskan alasannya
-4. Beri tips supaya mudah ingat`;
+PANDUAN MEMBANTU SOAL:
+- Jika user bertanya "bantu jawab nomor X" atau "soal ini" → gunakan data soal di atas.
+- Jika user hanya bilang "soal ini" atau "yang sekarang" tanpa nomor → bantu soal yang ditandai dengan 📍 SAAT INI.
+- Saat menjelaskan jawaban, gunakan format:
+  1. Sebutkan ulang soalnya (singkat).
+  2. Sebutkan jawaban yang benar (huruf + isi pilihan).
+  3. Jelaskan kenapa jawaban itu benar (bahas grammar/kosakata/konteks).
+  4. (Opsional) Beri tips supaya user mudah ingat.
+- Jangan langsung kasih jawaban tanpa penjelasan — user perlu paham, bukan cuma tahu.`;
     }
 
-    // Gabungkan system prompt + messages dari user
     const fullMessages = [
       { role: "system", content: systemPrompt },
       ...messages,
@@ -47,13 +54,13 @@ gunakan data soal di atas. Jelaskan jawaban dengan langkah-langkah:
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
+        Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
         messages: fullMessages,
         temperature: 0.7,
-        max_tokens: 800,
+        max_tokens: 1000,
       }),
     });
 
