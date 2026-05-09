@@ -13,8 +13,6 @@ interface Message {
 
 export default function FloatingAIChat() {
   const { examData } = useExamContext();
-  console.log("🟢 FloatingAIChat READ examData:", examData);
-
   const level = examData?.level || "General";
 
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -98,14 +96,6 @@ export default function FloatingAIChat() {
     try {
       const examContext = buildExamContext();
 
-      console.log("📤 HANDLE SEND, snapshot examData:", examData);
-      console.log("Mengirim ke AI:");
-      console.log("- Level:", level);
-      console.log("- Section:", examData?.section);
-      console.log("- Soal aktif:", examData?.activeQuestion?.number);
-      console.log("- Total soal:", examData?.questions?.length || 0);
-      console.log("- Panjang konteks:", examContext.length);
-
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -162,14 +152,7 @@ export default function FloatingAIChat() {
       )}
 
       {isChatOpen && (
-        <div
-          onClick={() => setIsChatOpen(false)}
-          className="fixed inset-0 bg-black/30 z-[9998] backdrop-blur-sm md:hidden transition-opacity duration-300"
-        />
-      )}
-
-      {isChatOpen && (
-        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[33vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
+        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[40vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
           <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
             <div className="flex items-center gap-2 flex-wrap">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0" />
