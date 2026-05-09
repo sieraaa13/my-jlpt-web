@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useMemo } from "react";
 import { Card } from "@/components/ui/card";
+import FloatingAIChat from "@/components/floating-ai-chat";
 
 interface Question {
   q: string;
@@ -110,6 +111,31 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     bunpou: "border-sky-400/50",
     dokkai: "border-purple-400/50",
   };
+
+  // === DATA UNTUK AI CHAT ===
+  // Build daftar soal section yang sedang aktif untuk dikirim ke AI
+  const aiQuestions = useMemo(() => {
+    return currentQuestions.map((q, idx) => ({
+      number: idx + 1,
+      q: q.q,
+      options: q.options,
+      correct: q.correct,
+      section: activeSection,
+      passage: q.text, // text di dokkai = bacaan/passage
+    }));
+  }, [currentQuestions, activeSection]);
+
+  // Soal yang sedang dilihat user (biar AI tahu fokusnya di mana)
+  const activeQuestionInfo = useMemo(() => {
+    if (!question) return null;
+    return {
+      number: currentQuestion + 1,
+      section: activeSection,
+      userAnswer: currentAnswer !== undefined && currentAnswer !== null
+        ? `pilihan ke-${(currentAnswer as number) + 1} (${question.options[currentAnswer as number]})`
+        : "belum dijawab",
+    };
+  }, [question, currentQuestion, activeSection, currentAnswer]);
 
   return (
     <div className="min-h-screen py-12 px-6 relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
@@ -356,7 +382,17 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
           </>
         )}
       </div>
+
+      {/* Floating AI Chat dengan konteks soal */}
+      <FloatingAIChat
+        level="N3"
+        examData={{
+          title: examLabel,
+          section: activeSection,
+          questions: aiQuestions,
+          activeQuestion: activeQuestionInfo,
+        }}
+      />
     </div>
   );
 }
-
