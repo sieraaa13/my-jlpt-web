@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import FloatingAIChat from "@/components/floating-ai-chat";
+import { useExamContext } from "@/components/exam-context";
 
 interface Question {
   q: string;
@@ -26,6 +26,8 @@ interface ExamContentProps {
 }
 
 export function ExamContent({ examData, examLabel }: ExamContentProps) {
+  const { setExamData: setContextExamData } = useExamContext();
+
   const sections = {
     kanji: examData.kanji || [],
     bunpou: examData.bunpou || [],
@@ -74,7 +76,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     setCurrentQuestion(0);
   };
 
-  // Calculate results
   const results = useMemo(() => {
     const calc = (section: "kanji" | "bunpou" | "dokkai") => {
       const questions = sections[section];
@@ -112,8 +113,7 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     dokkai: "border-purple-400/50",
   };
 
-  // === DATA UNTUK AI CHAT ===
-  // Build daftar soal section yang sedang aktif untuk dikirim ke AI
+  // Build daftar soal section yang sedang aktif
   const aiQuestions = useMemo(() => {
     return currentQuestions.map((q, idx) => ({
       number: idx + 1,
@@ -121,21 +121,38 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
       options: q.options,
       correct: q.correct,
       section: activeSection,
-      passage: q.text, // text di dokkai = bacaan/passage
+      passage: q.text,
     }));
   }, [currentQuestions, activeSection]);
 
-  // Soal yang sedang dilihat user (biar AI tahu fokusnya di mana)
+  // Soal yang sedang dilihat user
   const activeQuestionInfo = useMemo(() => {
     if (!question) return null;
     return {
       number: currentQuestion + 1,
       section: activeSection,
-      userAnswer: currentAnswer !== undefined && currentAnswer !== null
-        ? `pilihan ke-${(currentAnswer as number) + 1} (${question.options[currentAnswer as number]})`
-        : "belum dijawab",
+      userAnswer:
+        currentAnswer !== undefined && currentAnswer !== null
+          ? `pilihan ke-${(currentAnswer as number) + 1} (${question.options[currentAnswer as number]})`
+          : "belum dijawab",
     };
   }, [question, currentQuestion, activeSection, currentAnswer]);
+
+  // KIRIM DATA KE CONTEXT supaya FloatingAIChat bisa baca
+  useEffect(() => {
+    setContextExamData({
+      level: "N3",
+      title: examLabel,
+      section: activeSection,
+      questions: aiQuestions,
+      activeQuestion: activeQuestionInfo,
+    });
+
+    // Bersihkan saat keluar dari halaman ujian
+    return () => {
+      setContextExamData(null);
+    };
+  }, [examLabel, activeSection, aiQuestions, activeQuestionInfo, setContextExamData]);
 
   return (
     <div className="min-h-screen py-12 px-6 relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
@@ -214,7 +231,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
             <Card
               className={`bg-gradient-to-br ${sectionColors[activeSection]} backdrop-blur-sm border-2 ${sectionBorders[activeSection]} p-8 mb-8`}
             >
-              {/* Question Text */}
               <div className="mb-8">
                 <p className="text-xl lg:text-2xl font-semibold text-foreground leading-relaxed">
                   {question?.q}
@@ -226,7 +242,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
                 )}
               </div>
 
-              {/* Options */}
               <div className="space-y-3 mb-8">
                 {question?.options.map((option: string, idx: number) => (
                   <button
@@ -259,7 +274,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
                 ))}
               </div>
 
-              {/* Answer feedback */}
               {isAnswered && (
                 <div
                   className={`p-4 rounded-lg ${
@@ -274,7 +288,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
                 </div>
               )}
 
-              {/* Navigation */}
               <div className="flex gap-4 mt-8">
                 <button
                   onClick={handlePrev}
@@ -305,11 +318,9 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
           </>
         ) : (
           <>
-            {/* Result Summary */}
             <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 p-12 text-center mb-8">
               <h2 className="text-4xl font-bold mb-8">Hasil Ujian Selesai!</h2>
 
-              {/* Results Grid */}
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <div className="p-6 bg-pink-500/10 border border-pink-400/50 rounded-xl">
                   <p className="text-pink-600 text-sm font-medium mb-2">KANJI</p>
@@ -340,7 +351,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
                 </div>
               </div>
 
-              {/* Total Score */}
               <div className="mb-12 p-8 bg-background/50 rounded-xl border border-border">
                 <p className="text-muted-foreground text-sm mb-2">Total Skor</p>
                 <p className="text-5xl font-bold text-primary mb-2">
@@ -359,7 +369,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
                 </p>
               </div>
 
-              {/* Actions */}
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link
                   href="/jlpt"
@@ -382,17 +391,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
           </>
         )}
       </div>
-
-      {/* Floating AI Chat dengan konteks soal */}
-      <FloatingAIChat
-        level="N3"
-        examData={{
-          title: examLabel,
-          section: activeSection,
-          questions: aiQuestions,
-          activeQuestion: activeQuestionInfo,
-        }}
-      />
     </div>
   );
 }
