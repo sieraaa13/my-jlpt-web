@@ -13,6 +13,8 @@ interface Message {
 
 export default function FloatingAIChat() {
   const { examData } = useExamContext();
+  console.log("🟢 FloatingAIChat READ examData:", examData);
+
   const level = examData?.level || "General";
 
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -56,7 +58,7 @@ export default function FloatingAIChat() {
     ctx += `.\n\n`;
 
     if (examData.activeQuestion) {
-      ctx += `SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
+      ctx += `📍 SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
       ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
     }
 
@@ -96,6 +98,7 @@ export default function FloatingAIChat() {
     try {
       const examContext = buildExamContext();
 
+      console.log("📤 HANDLE SEND, snapshot examData:", examData);
       console.log("Mengirim ke AI:");
       console.log("- Level:", level);
       console.log("- Section:", examData?.section);
