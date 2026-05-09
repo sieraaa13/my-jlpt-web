@@ -3,11 +3,15 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import FloatingAIChat from "@/components/floating-ai-chat";
+import { ExamProvider } from "@/components/exam-context";
+
 const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "NihonGO! - Belajar JLPT dengan Anime",
   description: "Platform belajar bahasa Jepang JLPT N1-N5",
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -22,11 +26,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ExamProvider>
+            {children}
+            <FloatingAIChat />
+          </ExamProvider>
         </ThemeProvider>
-        <FloatingAIChat />
       </body>
     </html>
   );
 }
-
