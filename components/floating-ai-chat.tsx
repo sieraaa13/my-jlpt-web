@@ -5,27 +5,31 @@ import Image from "next/image";
 import { X, ChevronDown, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// --- Interface / Tipe Data ---
+
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
 
-// TIPE SOAL - sesuaikan dengan struktur data ujian kamu
+// Struktur data soal (sesuaikan dengan struktur data ujian kamu)
 interface ExamQuestion {
   number: number;
   question: string;
   options?: string[];
-  passage?: string; // untuk reading
+  passage?: string; // Untuk reading comprehension
 }
 
 interface FloatingAIChatProps {
   level?: string;
   examData?: {
     title?: string;
-    section?: string; // contoh: "Vocabulary", "Grammar", "Reading"
+    section?: string;
     questions?: ExamQuestion[];
   };
 }
+
+// --- Komponen Utama ---
 
 export default function FloatingAIChat({
   level = "General",
@@ -37,10 +41,14 @@ export default function FloatingAIChat({
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Auto scroll ke bawah saat ada pesan baru atau loading
   useEffect(() => {
-    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   }, [messages, loading]);
 
+  // Tutup chat dengan tombol ESC
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsChatOpen(false);
@@ -49,7 +57,8 @@ export default function FloatingAIChat({
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Buat konteks soal untuk dikirim ke AI
+  // --- Fungsi Membangun Konteks Soal ---
+  // Ini penting agar AI tahu soal apa yang sedang dikerjakan user
   const buildExamContext = (): string => {
     if (!examData || !examData.questions || examData.questions.length === 0) {
       return "";
@@ -57,14 +66,15 @@ export default function FloatingAIChat({
 
     let ctx = `Saat ini user sedang mengerjakan ujian JLPT ${level}`;
     if (examData.title) ctx += ` - ${examData.title}`;
-    if (examData.section) ctx += ` (Section: ${examData.section})`;
-    ctx += `.\n\nDaftar soal:\n`;
+    if (examData.section) ctx += ` (Bagian: ${examData.section})`;
+    ctx += `.\n\nDaftar soal yang sedang aktif:\n`;
 
     examData.questions.forEach((q) => {
-      ctx += `\n--- Soal No. ${q.number} ---\n`;
-      if (q.passage) ctx += `Passage: ${q.passage}\n`;
+      ctx += `\n--- No. ${q.number} ---\n`;
+      if (q.passage) ctx += `Bacaan: ${q.passage}\n`;
       ctx += `Pertanyaan: ${q.question}\n`;
       if (q.options && q.options.length > 0) {
+        ctx += `Pilihan Jawaban:\n`;
         q.options.forEach((opt, idx) => {
           ctx += `${idx + 1}. ${opt}\n`;
         });
@@ -74,16 +84,20 @@ export default function FloatingAIChat({
     return ctx;
   };
 
+  // --- Fungsi Kirim Pesan ---
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || loading) return;
 
     const userMsg: Message = { role: "user", content: input };
+    
+    // Update UI lokal dulu
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
     setLoading(true);
 
     try {
+      // Siapkan konteks soal untuk dikirim ke backend
       const examContext = buildExamContext();
 
       const res = await fetch("/api/chat", {
@@ -91,33 +105,46 @@ export default function FloatingAIChat({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: [...messages, userMsg],
-          examContext, // <-- kirim konteks soal
-          level,
+          examContext, // Kirim soal
+          level,       // Kirim level N5/N4 dll
         }),
       });
+
       const data = await res.json();
+
+      // Handle response
+      if (!res.ok || data.error) {
+        throw new Error(data.error || "Terjadi kesalahan pada server");
+      }
+
       setMessages((prev) => [
         ...prev,
         { role: "assistant", content: data.content },
       ]);
-    } catch (error) {
+
+    } catch (error: any) {
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: "Maaf, sistem sedang sibuk." },
+        { 
+          role: "assistant", 
+          content: `⚠️ Maaf, terjadi kesalahan: ${error.message}` 
+        },
       ]);
     } finally {
       setLoading(false);
     }
   };
 
+  // --- Render UI ---
   return (
     <>
+      {/* Tombol Floating */}
       {!isChatOpen && (
         <button
           type="button"
           onClick={() => setIsChatOpen(true)}
           aria-label="Buka chat AI"
-          className="fixed bottom-6 right-6 rounded-full shadow-2xl z-[9999] hover:scale-110 transition-transform border-2 border-white overflow-hidden bg-white"
+          className="fixed bottom-6 right-6 rounded-full shadow-2xl z-[9999] hover:scale-110 transition-transform border-2 border-white overflow-hidden bg-white ring-2 ring-offset-2 ring-primary/50"
         >
           <Image
             src="/asset/ai_chat.jpg"
@@ -130,42 +157,63 @@ export default function FloatingAIChat({
         </button>
       )}
 
+      {/* Overlay Hitam (Hanya muncul di HP supaya fokus ke chat) */}
+      {isChatOpen && (
+        <div
+          onClick={() => setIsChatOpen(false)}
+          className="fixed inset-0 bg-black/30 z-[9998] backdrop-blur-sm md:hidden transition-opacity duration-300"
+        />
+      )}
+
+      {/* Panel Chat */}
       {isChatOpen && (
         <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[33vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
+          
+          {/* Header */}
           <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="font-bold text-sm text-foreground italic">
                 AI Tutor {level}
-                {examData?.questions && examData.questions.length > 0 && (
-                  <span className="ml-1 text-[10px] text-green-600 not-italic">
-                    📖 {examData.questions.length} soal
-                  </span>
-                )}
               </span>
+              {/* Indikator jumlah soal */}
+              {examData?.questions && examData.questions.length > 0 && (
+                <span className="ml-1 text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
+                  📖 {examData.questions.length} Soal
+                </span>
+              )}
             </div>
             <button
               type="button"
               onClick={() => setIsChatOpen(false)}
               aria-label="Tutup chat"
-              className="hover:bg-muted p-1 rounded text-muted-foreground"
+              className="hover:bg-muted p-1 rounded text-muted-foreground transition-colors"
             >
               <ChevronDown size={20} className="md:hidden" />
               <X size={20} className="hidden md:block" />
             </button>
           </div>
 
-          <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
+          {/* Body Pesan */}
+          <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-muted-foreground/50">
+            
+            {/* Pesan Awal */}
             {messages.length === 0 && (
-              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm">
+              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm leading-relaxed shadow-sm">
                 Halo! Aku tutor AI kamu{" "}
                 {level !== "General" ? `untuk Level ${level}` : ""}.
+                
                 {examData?.questions && examData.questions.length > 0 ? (
                   <>
+                    <br /><br />
+                    Aku sudah membaca {examData.questions.length} soal di halaman ini.
                     <br />
-                    Aku sudah baca semua soal yang sedang kamu kerjakan. Tanya
-                    aja, misal: <i>"bantu jawab nomor 1"</i> atau{" "}
-                    <i>"jelaskan soal no 3"</i>.
+                    Kamu bisa bertanya langsung seperti:
+                    <ul className="list-disc pl-4 mt-2 space-y-1">
+                      <li>"Jawaban nomor 1 itu apa?"</li>
+                      <li>"Jelaskan kenapa jawabannya B"</li>
+                      <li>"Arti kata sulit di soal no 3"</li>
+                    </ul>
                   </>
                 ) : (
                   <> Ada yang bisa aku bantu?</>
@@ -173,6 +221,7 @@ export default function FloatingAIChat({
               </div>
             )}
 
+            {/* Riwayat Pesan */}
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -181,10 +230,10 @@ export default function FloatingAIChat({
                 }`}
               >
                 <div
-                  className={`p-2.5 rounded-2xl max-w-[85%] whitespace-pre-wrap text-xs md:text-sm ${
+                  className={`p-2.5 rounded-2xl max-w-[85%] whitespace-pre-wrap text-xs md:text-sm shadow-sm ${
                     msg.role === "user"
-                      ? "bg-primary text-primary-foreground rounded-tr-none"
-                      : "bg-muted rounded-tl-none text-foreground border"
+                      ? "bg-primary text-primary-foreground rounded-tr-none font-medium"
+                      : "bg-muted rounded-tl-none text-foreground border border-border"
                   }`}
                 >
                   {msg.content}
@@ -192,41 +241,49 @@ export default function FloatingAIChat({
               </div>
             ))}
 
+            {/* Indikator Loading (GIF) */}
             {loading && (
-              <div className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2 animate-in fade-in zoom-in duration-200">
                 <Image
                   src="/asset/wait_icon.gif"
                   alt="AI sedang berpikir"
                   width={48}
                   height={48}
-                  unoptimized
-                  className="w-12 h-12 object-contain"
+                  unoptimized // Penting agar animasi GIF jalan normal
+                  className="w-12 h-12 object-contain drop-shadow-md"
                 />
-                <span className="text-xs text-muted-foreground italic">
-                  sedang berpikir...
+                <span className="text-xs text-muted-foreground italic font-medium">
+                  Sedang berpikir...
                 </span>
               </div>
             )}
+            
+            {/* Anchor untuk auto-scroll */}
             <div ref={scrollRef} />
           </div>
 
-          <form
-            onSubmit={handleSend}
-            className="p-2 border-t bg-card flex gap-2 rounded-b-2xl shrink-0"
-          >
+          {/* Input Form */}
+          <form onSubmit={handleSend} className="p-3 border-t bg-card flex gap-2 rounded-b-2xl shrink-0 items-center">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Tanyakan sesuatu..."
-              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+              onKeyDown={(e) => {
+                if(e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  handleSend(e);
+                }
+              }}
+              placeholder="Ketik pertanyaanmu..."
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground placeholder:text-muted-foreground/70 transition-all"
             />
             <Button
               type="submit"
               size="icon"
-              className="rounded-full shrink-0"
+              variant="default"
+              className="rounded-full shrink-0 w-10 h-10 hover:scale-105 transition-transform active:scale-95"
               disabled={loading || !input.trim()}
             >
-              <Send size={16} />
+              <Send size={16} className="ml-0.5" />
             </Button>
           </form>
         </div>
