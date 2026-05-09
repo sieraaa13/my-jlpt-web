@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, ChevronDown, Send } from "lucide-react";
+import Image from "next/image";
+import { X, ChevronDown, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Message {
@@ -69,24 +70,23 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
           type="button"
           onClick={() => setIsChatOpen(true)}
           aria-label="Buka chat AI"
-          className="fixed bottom-6 right-6 p-4 bg-primary text-primary-foreground rounded-full shadow-2xl z-[9999] hover:scale-110 transition-transform border-2 border-white"
+          className="fixed bottom-6 right-6 rounded-full shadow-2xl z-[9999] hover:scale-110 transition-transform border-2 border-white overflow-hidden bg-white"
         >
-          <MessageCircle size={28} />
+          <Image
+            src="/asset/ai_chat.jpg"
+            alt="AI Chat"
+            width={64}
+            height={64}
+            className="w-16 h-16 object-cover"
+            priority
+          />
         </button>
       )}
 
       {isChatOpen && (
-        <div
-          onClick={() => setIsChatOpen(false)}
-          className="fixed inset-0 bg-black/40 z-[9998] md:hidden"
-          aria-hidden="true"
-        />
-      )}
-
-      {isChatOpen && (
-        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[75vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
+        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[33vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/30 rounded-t-2xl">
+          <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="font-bold text-sm text-foreground italic">
@@ -105,12 +105,11 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
           </div>
 
           {/* Body Pesan */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 text-sm bg-background">
+          <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
             {messages.length === 0 && (
-              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground">
+              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm">
                 Halo! Aku tutor AI kamu{" "}
-                {level !== "General" ? `untuk Level ${level}` : ""}. Ada yang
-                bisa aku bantu?
+                {level !== "General" ? `untuk Level ${level}` : ""}. Ada yang bisa aku bantu?
               </div>
             )}
 
@@ -122,7 +121,7 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
                 }`}
               >
                 <div
-                  className={`p-3 rounded-2xl max-w-[85%] whitespace-pre-wrap ${
+                  className={`p-2.5 rounded-2xl max-w-[85%] whitespace-pre-wrap text-xs md:text-sm ${
                     msg.role === "user"
                       ? "bg-primary text-primary-foreground rounded-tr-none"
                       : "bg-muted rounded-tl-none text-foreground border"
@@ -135,7 +134,7 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-muted p-3 rounded-2xl animate-pulse text-xs">
+                <div className="bg-muted p-2.5 rounded-2xl animate-pulse text-xs">
                   AI sedang berpikir...
                 </div>
               </div>
@@ -146,13 +145,13 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
           {/* Input */}
           <form
             onSubmit={handleSend}
-            className="p-3 border-t bg-card flex gap-2 rounded-b-2xl"
+            className="p-2 border-t bg-card flex gap-2 rounded-b-2xl shrink-0"
           >
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Tanyakan sesuatu..."
-              className="flex-1 bg-muted rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
             />
             <Button
               type="submit"
