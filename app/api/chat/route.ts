@@ -1,43 +1,57 @@
 import { NextRequest, NextResponse } from "next/server";
+import OpenAI from "openai";
 
-export const runtime = "nodejs";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 export async function POST(req: NextRequest) {
   try {
-    const apiKey = process.env.MY_JLPT;
+    const { messages, examContext, level } = await req.json();
 
-    if (!apiKey) {
-      return NextResponse.json({ error: "API Key missing" }, { status: 500 });
+    // System prompt
+    let systemPrompt = `Kamu adalah tutor JLPT yang ramah dan ahli bahasa Jepang. 
+Jawab dengan singkat, jelas, dan mudah dipahami pelajar Indonesia.
+Selalu beri penjelasan dalam Bahasa Indonesia, kecuali user minta sebaliknya.
+Saat menjelaskan kata/kanji Jepang, sertakan: tulisan Jepang, romaji, dan arti.`;
+
+    if (level && level !== "General") {
+      systemPrompt += `\nUser sedang belajar level JLPT ${level}.`;
     }
 
-    const { messages } = await req.json();
-
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: "gpt-3.5-turbo",
-        messages: messages, // Pastikan formatnya array: [{role: "user", content: "..."}]
-      }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      return NextResponse.json({ error: data.error?.message || "OpenAI Error" }, { status: response.status });
+    // Tambahkan konteks soal kalau ada
+    if (examContext && examContext.trim().length > 0) {
+      systemPrompt += `\n\n===== KONTEKS SOAL UJIAN =====\n${examContext}\n===== AKHIR KONTEKS =====\n
+Saat user bertanya tentang nomor soal tertentu (misal "bantu jawab nomor 1"),
+gunakan data soal di atas. Jelaskan jawaban dengan langkah-langkah:
+1. Sebutkan kembali soalnya
+2. Beri jawaban yang benar
+3. Jelaskan alasannya
+4. Beri tips supaya mudah ingat`;
     }
 
-    // Kirim content jawaban AI saja ke frontend
-    return NextResponse.json({ 
-      role: "assistant", 
-      content: data.choices[0].message.content 
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o-mini", // atau model lain yang kamu pakai
+      messages: [
+        { role: "system", content: systemPrompt },
+        ...messages.map((m: { role: string; content: string }) => ({
+          role: m.role,
+          content: m.content,
+        })),
+      ],
+      temperature: 0.7,
+      max_tokens: 800,
     });
 
-  } catch (error: any) {
-    console.error("Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const content =
+      completion.choices[0]?.message?.content || "Maaf, tidak ada jawaban.";
+
+    return NextResponse.json({ content });
+  } catch (error) {
+    console.error("Chat API error:", error);
+    return NextResponse.json(
+      { content: "Maaf, terjadi kesalahan di server." },
+      { status: 500 }
+    );
   }
 }
