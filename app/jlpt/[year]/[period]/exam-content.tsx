@@ -113,7 +113,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     dokkai: "border-purple-400/50",
   };
 
-  // Build daftar soal section yang sedang aktif
   const aiQuestions = useMemo(() => {
     return currentQuestions.map((q, idx) => ({
       number: idx + 1,
@@ -125,7 +124,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     }));
   }, [currentQuestions, activeSection]);
 
-  // Soal yang sedang dilihat user
   const activeQuestionInfo = useMemo(() => {
     if (!question) return null;
     return {
@@ -138,8 +136,14 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
     };
   }, [question, currentQuestion, activeSection, currentAnswer]);
 
-  // KIRIM DATA KE CONTEXT supaya FloatingAIChat bisa baca
   useEffect(() => {
+    console.log("🔵 ExamContent SEND ke context:", {
+      level: "N3",
+      section: activeSection,
+      questionsCount: aiQuestions.length,
+      activeQuestion: activeQuestionInfo,
+    });
+
     setContextExamData({
       level: "N3",
       title: examLabel,
@@ -148,8 +152,8 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
       activeQuestion: activeQuestionInfo,
     });
 
-    // Bersihkan saat keluar dari halaman ujian
     return () => {
+      console.log("🟠 ExamContent CLEANUP context");
       setContextExamData(null);
     };
   }, [examLabel, activeSection, aiQuestions, activeQuestionInfo, setContextExamData]);
@@ -160,7 +164,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
       <div className="absolute bottom-1/4 left-20 text-7xl opacity-5">日</div>
 
       <div className="container mx-auto max-w-5xl relative z-10">
-        {/* Header */}
         <div className="mb-8">
           <Link
             href="/jlpt"
@@ -179,7 +182,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
           </div>
         </div>
 
-        {/* Section Tabs */}
         <div className="flex gap-4 mb-8 flex-wrap">
           {(["kanji", "bunpou", "dokkai"] as const).map((section) => (
             <button
@@ -207,7 +209,6 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
           ))}
         </div>
 
-        {/* Progress Bar */}
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-muted-foreground">
@@ -226,169 +227,164 @@ export function ExamContent({ examData, examLabel }: ExamContentProps) {
         </div>
 
         {!showResult ? (
-          <>
-            {/* Question Card */}
-            <Card
-              className={`bg-gradient-to-br ${sectionColors[activeSection]} backdrop-blur-sm border-2 ${sectionBorders[activeSection]} p-8 mb-8`}
-            >
-              <div className="mb-8">
-                <p className="text-xl lg:text-2xl font-semibold text-foreground leading-relaxed">
-                  {question?.q}
-                </p>
-                {question?.text && (
-                  <div className="mt-6 p-4 bg-background/50 rounded-lg border border-border">
-                    <p className="text-sm text-foreground whitespace-pre-wrap">{question.text}</p>
-                  </div>
-                )}
-              </div>
-
-              <div className="space-y-3 mb-8">
-                {question?.options.map((option: string, idx: number) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(idx)}
-                    disabled={isAnswered}
-                    className={`w-full p-4 text-left rounded-xl border-2 transition-all ${
-                      currentAnswer === idx
-                        ? isCorrect
-                          ? "border-green-500 bg-green-500/10"
-                          : "border-red-500 bg-red-500/10"
-                        : isAnswered && idx === question.correct
-                        ? "border-green-500 bg-green-500/10"
-                        : "border-border hover:border-primary/50 hover:bg-secondary/50"
-                    } disabled:cursor-default`}
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="font-semibold text-sm mt-1">
-                        {String.fromCharCode(65 + idx)}.
-                      </span>
-                      <span className="text-foreground">{option}</span>
-                      {isAnswered && idx === question.correct && (
-                        <span className="ml-auto text-green-500">✓</span>
-                      )}
-                      {isAnswered && currentAnswer === idx && !isCorrect && (
-                        <span className="ml-auto text-red-500">✗</span>
-                      )}
-                    </div>
-                  </button>
-                ))}
-              </div>
-
-              {isAnswered && (
-                <div
-                  className={`p-4 rounded-lg ${
-                    isCorrect
-                      ? "bg-green-500/10 border border-green-500/50 text-green-700"
-                      : "bg-red-500/10 border border-red-500/50 text-red-700"
-                  }`}
-                >
-                  {isCorrect
-                    ? "✓ Jawaban benar!"
-                    : `✗ Jawaban salah. Pilihan yang benar adalah: ${String.fromCharCode(65 + (question?.correct || 0))}`}
+          <Card
+            className={`bg-gradient-to-br ${sectionColors[activeSection]} backdrop-blur-sm border-2 ${sectionBorders[activeSection]} p-8 mb-8`}
+          >
+            <div className="mb-8">
+              <p className="text-xl lg:text-2xl font-semibold text-foreground leading-relaxed">
+                {question?.q}
+              </p>
+              {question?.text && (
+                <div className="mt-6 p-4 bg-background/50 rounded-lg border border-border">
+                  <p className="text-sm text-foreground whitespace-pre-wrap">{question.text}</p>
                 </div>
               )}
+            </div>
 
-              <div className="flex gap-4 mt-8">
+            <div className="space-y-3 mb-8">
+              {question?.options.map((option: string, idx: number) => (
                 <button
-                  onClick={handlePrev}
-                  disabled={currentQuestion === 0}
-                  className="flex-1 px-6 py-3 bg-secondary hover:bg-secondary/80 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl font-medium transition"
+                  key={idx}
+                  onClick={() => handleAnswer(idx)}
+                  disabled={isAnswered}
+                  className={`w-full p-4 text-left rounded-xl border-2 transition-all ${
+                    currentAnswer === idx
+                      ? isCorrect
+                        ? "border-green-500 bg-green-500/10"
+                        : "border-red-500 bg-red-500/10"
+                      : isAnswered && idx === question.correct
+                      ? "border-green-500 bg-green-500/10"
+                      : "border-border hover:border-primary/50 hover:bg-secondary/50"
+                  } disabled:cursor-default`}
                 >
-                  ← Sebelumnya
+                  <div className="flex items-start gap-3">
+                    <span className="font-semibold text-sm mt-1">
+                      {String.fromCharCode(65 + idx)}.
+                    </span>
+                    <span className="text-foreground">{option}</span>
+                    {isAnswered && idx === question.correct && (
+                      <span className="ml-auto text-green-500">✓</span>
+                    )}
+                    {isAnswered && currentAnswer === idx && !isCorrect && (
+                      <span className="ml-auto text-red-500">✗</span>
+                    )}
+                  </div>
                 </button>
-                {currentQuestion === currentQuestions.length - 1 ? (
-                  <button
-                    onClick={() => setShowResult(true)}
-                    disabled={!allAnswered}
-                    className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
-                  >
-                    Lihat Hasil
-                  </button>
-                ) : (
-                  <button
-                    onClick={handleNext}
-                    disabled={!isAnswered}
-                    className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
-                  >
-                    Selanjutnya →
-                  </button>
-                )}
+              ))}
+            </div>
+
+            {isAnswered && (
+              <div
+                className={`p-4 rounded-lg ${
+                  isCorrect
+                    ? "bg-green-500/10 border border-green-500/50 text-green-700"
+                    : "bg-red-500/10 border border-red-500/50 text-red-700"
+                }`}
+              >
+                {isCorrect
+                  ? "✓ Jawaban benar!"
+                  : `✗ Jawaban salah. Pilihan yang benar adalah: ${String.fromCharCode(65 + (question?.correct || 0))}`}
               </div>
-            </Card>
-          </>
+            )}
+
+            <div className="flex gap-4 mt-8">
+              <button
+                onClick={handlePrev}
+                disabled={currentQuestion === 0}
+                className="flex-1 px-6 py-3 bg-secondary hover:bg-secondary/80 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl font-medium transition"
+              >
+                ← Sebelumnya
+              </button>
+              {currentQuestion === currentQuestions.length - 1 ? (
+                <button
+                  onClick={() => setShowResult(true)}
+                  disabled={!allAnswered}
+                  className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
+                >
+                  Lihat Hasil
+                </button>
+              ) : (
+                <button
+                  onClick={handleNext}
+                  disabled={!isAnswered}
+                  className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
+                >
+                  Selanjutnya →
+                </button>
+              )}
+            </div>
+          </Card>
         ) : (
-          <>
-            <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 p-12 text-center mb-8">
-              <h2 className="text-4xl font-bold mb-8">Hasil Ujian Selesai!</h2>
+          <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 p-12 text-center mb-8">
+            <h2 className="text-4xl font-bold mb-8">Hasil Ujian Selesai!</h2>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
-                <div className="p-6 bg-pink-500/10 border border-pink-400/50 rounded-xl">
-                  <p className="text-pink-600 text-sm font-medium mb-2">KANJI</p>
-                  <p className="text-4xl font-bold text-pink-600 mb-1">
-                    {results.kanji.correct}/{results.kanji.total}
-                  </p>
-                  <p className="text-pink-500 text-xs">
-                    {Math.round((results.kanji.correct / results.kanji.total) * 100)}%
-                  </p>
-                </div>
-                <div className="p-6 bg-sky-500/10 border border-sky-400/50 rounded-xl">
-                  <p className="text-sky-600 text-sm font-medium mb-2">BUNPOU</p>
-                  <p className="text-4xl font-bold text-sky-600 mb-1">
-                    {results.bunpou.correct}/{results.bunpou.total}
-                  </p>
-                  <p className="text-sky-500 text-xs">
-                    {Math.round((results.bunpou.correct / results.bunpou.total) * 100)}%
-                  </p>
-                </div>
-                <div className="p-6 bg-purple-500/10 border border-purple-400/50 rounded-xl">
-                  <p className="text-purple-600 text-sm font-medium mb-2">DOKKAI</p>
-                  <p className="text-4xl font-bold text-purple-600 mb-1">
-                    {results.dokkai.correct}/{results.dokkai.total}
-                  </p>
-                  <p className="text-purple-500 text-xs">
-                    {Math.round((results.dokkai.correct / results.dokkai.total) * 100)}%
-                  </p>
-                </div>
-              </div>
-
-              <div className="mb-12 p-8 bg-background/50 rounded-xl border border-border">
-                <p className="text-muted-foreground text-sm mb-2">Total Skor</p>
-                <p className="text-5xl font-bold text-primary mb-2">
-                  {results.kanji.correct + results.bunpou.correct + results.dokkai.correct}/
-                  {results.kanji.total + results.bunpou.total + results.dokkai.total}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="p-6 bg-pink-500/10 border border-pink-400/50 rounded-xl">
+                <p className="text-pink-600 text-sm font-medium mb-2">KANJI</p>
+                <p className="text-4xl font-bold text-pink-600 mb-1">
+                  {results.kanji.correct}/{results.kanji.total}
                 </p>
-                <p className="text-lg text-muted-foreground">
-                  {Math.round(
-                    ((results.kanji.correct +
-                      results.bunpou.correct +
-                      results.dokkai.correct) /
-                      (results.kanji.total + results.bunpou.total + results.dokkai.total)) *
-                      100
-                  )}
-                  % Benar
+                <p className="text-pink-500 text-xs">
+                  {Math.round((results.kanji.correct / results.kanji.total) * 100)}%
                 </p>
               </div>
-
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Link
-                  href="/jlpt"
-                  className="px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition"
-                >
-                  Kembali ke Periode Lain
-                </Link>
-                <button
-                  onClick={() => {
-                    setShowResult(false);
-                    setCurrentQuestion(0);
-                    setAnswers({ kanji: {}, bunpou: {}, dokkai: {} });
-                  }}
-                  className="px-8 py-3 bg-secondary rounded-xl font-medium hover:bg-secondary/80 transition"
-                >
-                  Ulang Ujian
-                </button>
+              <div className="p-6 bg-sky-500/10 border border-sky-400/50 rounded-xl">
+                <p className="text-sky-600 text-sm font-medium mb-2">BUNPOU</p>
+                <p className="text-4xl font-bold text-sky-600 mb-1">
+                  {results.bunpou.correct}/{results.bunpou.total}
+                </p>
+                <p className="text-sky-500 text-xs">
+                  {Math.round((results.bunpou.correct / results.bunpou.total) * 100)}%
+                </p>
               </div>
-            </Card>
-          </>
+              <div className="p-6 bg-purple-500/10 border border-purple-400/50 rounded-xl">
+                <p className="text-purple-600 text-sm font-medium mb-2">DOKKAI</p>
+                <p className="text-4xl font-bold text-purple-600 mb-1">
+                  {results.dokkai.correct}/{results.dokkai.total}
+                </p>
+                <p className="text-purple-500 text-xs">
+                  {Math.round((results.dokkai.correct / results.dokkai.total) * 100)}%
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-12 p-8 bg-background/50 rounded-xl border border-border">
+              <p className="text-muted-foreground text-sm mb-2">Total Skor</p>
+              <p className="text-5xl font-bold text-primary mb-2">
+                {results.kanji.correct + results.bunpou.correct + results.dokkai.correct}/
+                {results.kanji.total + results.bunpou.total + results.dokkai.total}
+              </p>
+              <p className="text-lg text-muted-foreground">
+                {Math.round(
+                  ((results.kanji.correct +
+                    results.bunpou.correct +
+                    results.dokkai.correct) /
+                    (results.kanji.total + results.bunpou.total + results.dokkai.total)) *
+                    100
+                )}
+                % Benar
+              </p>
+            </div>
+
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Link
+                href="/jlpt"
+                className="px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition"
+              >
+                Kembali ke Periode Lain
+              </Link>
+              <button
+                onClick={() => {
+                  setShowResult(false);
+                  setCurrentQuestion(0);
+                  setAnswers({ kanji: {}, bunpou: {}, dokkai: {} });
+                }}
+                className="px-8 py-3 bg-secondary rounded-xl font-medium hover:bg-secondary/80 transition"
+              >
+                Ulang Ujian
+              </button>
+            </div>
+          </Card>
         )}
       </div>
     </div>
