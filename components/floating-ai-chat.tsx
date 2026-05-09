@@ -80,7 +80,7 @@ export default function FloatingAIChat({
     ctx += `.\n\n`;
 
     if (examData.activeQuestion) {
-      ctx += `📍 SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
+      ctx += `SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
       ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
     }
 
@@ -120,12 +120,12 @@ export default function FloatingAIChat({
     try {
       const examContext = buildExamContext();
 
-      console.log("📤 Mengirim ke AI:");
+      console.log("Mengirim ke AI:");
       console.log("- Level:", level);
       console.log("- Section:", examData?.section);
       console.log("- Soal aktif: No.", examData?.activeQuestion?.number);
-      console.log("- Total soal di section:", examData?.questions?.length || 0);
-      console.log("- Panjang konteks:", examContext.length, "karakter");
+      console.log("- Total soal:", examData?.questions?.length || 0);
+      console.log("- Panjang konteks:", examContext.length);
 
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -152,7 +152,7 @@ export default function FloatingAIChat({
         ...prev,
         {
           role: "assistant",
-          content: `⚠️ Maaf, terjadi kesalahan: ${error.message}`,
+          content: `Maaf, terjadi kesalahan: ${error.message}`,
         },
       ]);
     } finally {
@@ -197,12 +197,12 @@ export default function FloatingAIChat({
               </span>
               {examData?.questions && examData.questions.length > 0 && (
                 <span className="text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
-                  📖 {examData.questions.length} Soal
+                  {examData.questions.length} Soal
                 </span>
               )}
               {examData?.activeQuestion && (
                 <span className="text-[10px] font-medium bg-amber-500 text-white px-2 py-0.5 rounded-full">
-                  📍 No.{examData.activeQuestion.number}
+                  No.{examData.activeQuestion.number}
                 </span>
               )}
             </div>
@@ -225,8 +225,7 @@ export default function FloatingAIChat({
                   <>
                     <br />
                     <br />
-                    Aku sudah baca <b>{examData.questions.length} soal</b> di
-                    bagian{" "}
+                    Aku sudah baca <b>{examData.questions.length} soal</b> di bagian{" "}
                     <b>
                       {examData.section === "kanji"
                         ? "Kanji"
@@ -238,8 +237,7 @@ export default function FloatingAIChat({
                     {examData.activeQuestion && (
                       <>
                         <br />
-                        Sekarang kamu di soal{" "}
-                        <b>No.{examData.activeQuestion.number}</b>.
+                        Sekarang kamu di soal <b>No.{examData.activeQuestion.number}</b>.
                       </>
                     )}
                     <br />
@@ -256,7 +254,7 @@ export default function FloatingAIChat({
                     <br />
                     <br />
                     <span className="text-red-500 font-semibold">
-                      ⚠️ Belum ada soal yang terdeteksi.
+                      Belum ada soal yang terdeteksi.
                     </span>
                   </>
                 )}
@@ -308,4 +306,19 @@ export default function FloatingAIChat({
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ketik pertanyaanmu..."
-              
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+            />
+            <Button
+              type="submit"
+              size="icon"
+              className="rounded-full shrink-0 w-10 h-10"
+              disabled={loading || !input.trim()}
+            >
+              <Send size={16} />
+            </Button>
+          </form>
+        </div>
+      )}
+    </>
+  );
+}
