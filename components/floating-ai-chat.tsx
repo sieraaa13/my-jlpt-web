@@ -16,14 +16,22 @@ interface ExamQuestion {
   options: string[];
   correct?: number;
   section?: string;
-  passage?: string; // untuk soal Dokkai/Reading
+  passage?: string;
+}
+
+interface ActiveQuestionInfo {
+  number: number;
+  section: string;
+  userAnswer: string;
 }
 
 interface FloatingAIChatProps {
   level?: string;
   examData?: {
     title?: string;
+    section?: string;
     questions?: ExamQuestion[];
+    activeQuestion?: ActiveQuestionInfo | null;
   };
 }
 
@@ -51,26 +59,52 @@ export default function FloatingAIChat({
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Format data soal agar mudah dibaca AI
+  // Build konteks soal yang akan dikirim ke AI
   const buildExamContext = (): string => {
-    if (!examData?.questions || examData.questions.length === 0) return "";
+    if (!examData?.questions || examData.questions.length === 0) {
+      return "";
+    }
 
     let ctx = `User sedang mengerjakan ujian JLPT ${level}`;
-    if (examData.title) ctx += ` (${examData.title})`;
-    ctx += `.\n\nBerikut adalah daftar soal yang sedang aktif:\n`;
+    if (examData.title) ctx += ` periode ${examData.title}`;
+    if (examData.section) {
+      const sectionName =
+        examData.section === "kanji"
+          ? "Kanji (Kosakata)"
+          : examData.section === "bunpou"
+          ? "Bunpou (Tata Bahasa)"
+          : examData.section === "dokkai"
+          ? "Dokkai (Reading)"
+          : examData.section;
+      ctx += ` di bagian ${sectionName}`;
+    }
+    ctx += `.\n\n`;
+
+    // Info soal yang sedang dilihat user
+    if (examData.activeQuestion) {
+      ctx += `📍 SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
+      ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
+    }
+
+    ctx += `=== DAFTAR SEMUA SOAL DI BAGIAN INI ===\n`;
 
     examData.questions.forEach((q) => {
-      ctx += `\n[Soal No.${q.number} - Bagian ${q.section?.toUpperCase()}]\n`;
-      if (q.passage) ctx += `Bacaan/Teks: ${q.passage}\n`;
+      ctx += `\n--- Soal No. ${q.number} ---\n`;
+      if (q.passage && q.passage.trim().length > 0) {
+        ctx += `[Bacaan/Teks]\n${q.passage}\n\n`;
+      }
       ctx += `Pertanyaan: ${q.q}\n`;
       if (q.options && q.options.length > 0) {
         ctx += `Pilihan jawaban:\n`;
         q.options.forEach((opt, idx) => {
-          ctx += `  ${idx}. ${opt}\n`;
+          const label = String.fromCharCode(65 + idx); // A, B, C, D
+          ctx += `  ${label}. ${opt}\n`;
         });
       }
+      // Sertakan jawaban benar untuk referensi AI
       if (typeof q.correct === "number") {
-        ctx += `Jawaban benar: pilihan ke-${q.correct} (${q.options[q.correct]})\n`;
+        const correctLabel = String.fromCharCode(65 + q.correct);
+        ctx += `Jawaban benar: ${correctLabel} (${q.options[q.correct]})\n`;
       }
     });
 
@@ -88,6 +122,14 @@ export default function FloatingAIChat({
 
     try {
       const examContext = buildExamContext();
+
+      // DEBUG: cek di browser console
+      console.log("📤 Mengirim ke AI:");
+      console.log("- Level:", level);
+      console.log("- Section:", examData?.section);
+      console.log("- Soal aktif: No.", examData?.activeQuestion?.number);
+      console.log("- Total soal di section:", examData?.questions?.length || 0);
+      console.log("- Panjang konteks:", examContext.length, "karakter");
 
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -143,23 +185,36 @@ export default function FloatingAIChat({
       )}
 
       {isChatOpen && (
+        <div
+          onClick={() => setIsChatOpen(false)}
+          className="fixed inset-0 bg-black/30 z-[9998] backdrop-blur-sm md:hidden transition-opacity duration-300"
+        />
+      )}
+
+      {isChatOpen && (
         <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[33vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
           <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <div className="flex items-center gap-2 flex-wrap">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shrink-0" />
               <span className="font-bold text-sm text-foreground italic">
                 AI Tutor {level}
               </span>
               {examData?.questions && examData.questions.length > 0 && (
-                <span className="ml-1 text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
+                <span className="text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
                   📖 {examData.questions.length} Soal
+                </span>
+              )}
+              {examData?.activeQuestion && (
+                <span className="text-[10px] font-medium bg-amber-500 text-white px-2 py-0.5 rounded-full">
+                  📍 No.{examData.activeQuestion.number}
                 </span>
               )}
             </div>
             <button
               type="button"
               onClick={() => setIsChatOpen(false)}
-              className="hover:bg-muted p-1 rounded text-muted-foreground transition-colors"
+              aria-label="Tutup chat"
+              className="hover:bg-muted p-1 rounded text-muted-foreground transition-colors shrink-0"
             >
               <ChevronDown size={20} className="md:hidden" />
               <X size={20} className="hidden md:block" />
@@ -169,18 +224,44 @@ export default function FloatingAIChat({
           <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
             {messages.length === 0 && (
               <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm leading-relaxed shadow-sm">
-                Halo! Aku tutor AI kamu.
+                Halo! Aku tutor AI kamu untuk JLPT {level}.
                 {examData?.questions && examData.questions.length > 0 ? (
                   <>
-                    <br /><br />
-                    Aku sudah membaca semua soal di ujian ini. Tanya saja:
-                    <ul className="list-disc pl-4 mt-2 space-y-1">
-                      <li>"Jelaskan jawaban Kanji soal nomor 3"</li>
-                      <li>"Arti teks di soal Dokkai nomor 24"</li>
+                    <br />
+                    <br />
+                    Aku sudah baca <b>{examData.questions.length} soal</b> di
+                    bagian{" "}
+                    <b>
+                      {examData.section === "kanji"
+                        ? "Kanji"
+                        : examData.section === "bunpou"
+                        ? "Bunpou"
+                        : "Dokkai"}
+                    </b>
+                    .
+                    {examData.activeQuestion && (
+                      <>
+                        <br />
+                        Sekarang kamu di soal <b>No.{examData.activeQuestion.number}</b>.
+                      </>
+                    )}
+                    <br />
+                    <br />
+                    Contoh pertanyaan:
+                    <ul className="list-disc pl-4 mt-1 space-y-1">
+                      <li>"Bantu jawab soal ini"</li>
+                      <li>"Jelaskan kenapa jawabannya B"</li>
+                      <li>"Apa arti soal nomor 5?"</li>
                     </ul>
                   </>
                 ) : (
-                  <> Ada yang bisa aku bantu?</>
+                  <>
+                    <br />
+                    <br />
+                    <span className="text-red-500 font-semibold">
+                      ⚠️ Belum ada soal yang terdeteksi.
+                    </span>
+                  </>
                 )}
               </div>
             )}
@@ -188,7 +269,9 @@ export default function FloatingAIChat({
             {messages.map((msg, i) => (
               <div
                 key={i}
-                className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+                className={`flex ${
+                  msg.role === "user" ? "justify-end" : "justify-start"
+                }`}
               >
                 <div
                   className={`p-2.5 rounded-2xl max-w-[85%] whitespace-pre-wrap text-xs md:text-sm shadow-sm ${
@@ -210,7 +293,7 @@ export default function FloatingAIChat({
                   width={48}
                   height={48}
                   unoptimized
-                  className="w-12 h-12 object-contain"
+                  className="w-12 h-12 object-contain drop-shadow-md"
                 />
                 <span className="text-xs text-muted-foreground italic font-medium">
                   Sedang berpikir...
@@ -227,7 +310,7 @@ export default function FloatingAIChat({
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Tanya soal ke AI..."
+              placeholder="Ketik pertanyaanmu..."
               className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
             />
             <Button
