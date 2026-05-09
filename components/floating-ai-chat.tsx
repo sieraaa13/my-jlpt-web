@@ -59,7 +59,6 @@ export default function FloatingAIChat({
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Build konteks soal yang akan dikirim ke AI
   const buildExamContext = (): string => {
     if (!examData?.questions || examData.questions.length === 0) {
       return "";
@@ -80,7 +79,6 @@ export default function FloatingAIChat({
     }
     ctx += `.\n\n`;
 
-    // Info soal yang sedang dilihat user
     if (examData.activeQuestion) {
       ctx += `📍 SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
       ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
@@ -97,11 +95,10 @@ export default function FloatingAIChat({
       if (q.options && q.options.length > 0) {
         ctx += `Pilihan jawaban:\n`;
         q.options.forEach((opt, idx) => {
-          const label = String.fromCharCode(65 + idx); // A, B, C, D
+          const label = String.fromCharCode(65 + idx);
           ctx += `  ${label}. ${opt}\n`;
         });
       }
-      // Sertakan jawaban benar untuk referensi AI
       if (typeof q.correct === "number") {
         const correctLabel = String.fromCharCode(65 + q.correct);
         ctx += `Jawaban benar: ${correctLabel} (${q.options[q.correct]})\n`;
@@ -123,7 +120,6 @@ export default function FloatingAIChat({
     try {
       const examContext = buildExamContext();
 
-      // DEBUG: cek di browser console
       console.log("📤 Mengirim ke AI:");
       console.log("- Level:", level);
       console.log("- Section:", examData?.section);
@@ -242,7 +238,8 @@ export default function FloatingAIChat({
                     {examData.activeQuestion && (
                       <>
                         <br />
-                        Sekarang kamu di soal <b>No.{examData.activeQuestion.number}</b>.
+                        Sekarang kamu di soal{" "}
+                        <b>No.{examData.activeQuestion.number}</b>.
                       </>
                     )}
                     <br />
@@ -311,19 +308,4 @@ export default function FloatingAIChat({
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ketik pertanyaanmu..."
-              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
-            />
-            <Button
-              type="submit"
-              size="icon"
-              className="rounded-full shrink-0 w-10 h-10"
-              disabled={loading || !input.trim()}
-            >
-              <Send size={16} />
-            </Button>
-          </form>
-        </div>
-      )}
-    </>
-  );
-}
+              
