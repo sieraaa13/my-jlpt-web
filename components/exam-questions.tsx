@@ -120,8 +120,6 @@ export default function ExamQuestions({
   const level = getJLPTLevel(year);
   const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
-  // ============ AI CONTEXT ============
-  // Build daftar soal di section yang sedang aktif (flatten untuk Dokkai)
   const aiQuestions = useMemo(() => {
     if (activeTab === "dokkai") {
       const result: Array<{
@@ -158,13 +156,11 @@ export default function ExamQuestions({
     }
   }, [activeTab, data]);
 
-  // Soal terakhir yang user jawab di section ini (sebagai "active question")
   const activeQuestionInfo = useMemo(() => {
     const sectionAnswers = Object.entries(answers).filter(([key]) =>
       key.startsWith(`${activeTab}-`)
     );
     if (sectionAnswers.length === 0) {
-      // Default: soal pertama
       const firstQ = aiQuestions[0];
       if (!firstQ) return null;
       return {
@@ -173,7 +169,6 @@ export default function ExamQuestions({
         userAnswer: "belum dijawab",
       };
     }
-    // Ambil soal terakhir yang dijawab
     const lastEntry = sectionAnswers[sectionAnswers.length - 1];
     const [key, optionIdx] = lastEntry;
     const parts = key.split("-");
@@ -186,29 +181,29 @@ export default function ExamQuestions({
     };
   }, [answers, activeTab, aiQuestions]);
 
-  // Kirim ke ExamContext setiap kali tab/section berubah atau jawaban berubah
+  // Kirim status ke context, termasuk apakah ujian sudah selesai
   useEffect(() => {
-    console.log("🔵 ExamQuestions SEND ke context:", {
-      level,
-      section: activeTab,
-      questionsCount: aiQuestions.length,
-      activeQuestion: activeQuestionInfo,
-    });
-
     setContextExamData({
       level,
       title: examLabel,
       section: activeTab,
       questions: aiQuestions,
       activeQuestion: activeQuestionInfo,
+      isExamFinished: showResults,
     });
 
     return () => {
-      console.log("🟠 ExamQuestions CLEANUP context");
       setContextExamData(null);
     };
-  }, [level, examLabel, activeTab, aiQuestions, activeQuestionInfo, setContextExamData]);
-  // ============ END AI CONTEXT ============
+  }, [
+    level,
+    examLabel,
+    activeTab,
+    aiQuestions,
+    activeQuestionInfo,
+    setContextExamData,
+    showResults,
+  ]);
 
   if (!mounted) {
     return null;
@@ -240,9 +235,7 @@ export default function ExamQuestions({
               <h1 className="text-lg sm:text-2xl font-bold truncate">
                 JLPT <span className="text-cyan-500">{level}</span>
               </h1>
-              <p className={`text-xs sm:text-sm ${mutedText}`}>
-                {examLabel}
-              </p>
+              <p className={`text-xs sm:text-sm ${mutedText}`}>{examLabel}</p>
             </div>
 
             <button
