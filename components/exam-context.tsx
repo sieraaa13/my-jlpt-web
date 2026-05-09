@@ -36,7 +36,14 @@ const ExamContext = createContext<ExamContextType>({
 });
 
 export function ExamProvider({ children }: { children: ReactNode }) {
-  const [examData, setExamData] = useState<ExamContextData | null>(null);
+  const [examData, setExamDataState] = useState<ExamContextData | null>(null);
+
+  const setExamData = (data: ExamContextData | null) => {
+    console.log("🟡 PROVIDER setExamData dipanggil:", data);
+    setExamDataState(data);
+  };
+
+  console.log("🔴 PROVIDER render, current examData:", examData);
 
   return (
     <ExamContext.Provider value={{ examData, setExamData }}>
