@@ -1,398 +1,246 @@
 "use client";
 
-import Link from "next/link";
-import { useState, useMemo } from "react";
-import { Card } from "@/components/ui/card";
-import FloatingAIChat from "@/components/floating-ai-chat";
+import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import { X, ChevronDown, Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-interface Question {
+interface Message {
+  role: "user" | "assistant";
+  content: string;
+}
+
+interface ExamQuestion {
+  number: number;
   q: string;
-  category?: string;
   options: string[];
-  correct: number;
-  section_title?: string;
-  text?: string;
+  correct?: number;
+  section?: string;
+  passage?: string; // untuk soal Dokkai/Reading
 }
 
-interface ExamData {
-  kanji?: Question[];
-  bunpou?: Question[];
-  dokkai?: Question[];
+interface FloatingAIChatProps {
+  level?: string;
+  examData?: {
+    title?: string;
+    questions?: ExamQuestion[];
+  };
 }
 
-interface ExamContentProps {
-  examData: ExamData;
-  examLabel: string;
-}
+export default function FloatingAIChat({
+  level = "General",
+  examData,
+}: FloatingAIChatProps) {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [loading, setLoading] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-export function ExamContent({ examData, examLabel }: ExamContentProps) {
-  const sections = {
-    kanji: examData.kanji || [],
-    bunpou: examData.bunpou || [],
-    dokkai: examData.dokkai || [],
+  useEffect(() => {
+    setTimeout(() => {
+      scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }, [messages, loading]);
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsChatOpen(false);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
+  // Format data soal agar mudah dibaca AI
+  const buildExamContext = (): string => {
+    if (!examData?.questions || examData.questions.length === 0) return "";
+
+    let ctx = `User sedang mengerjakan ujian JLPT ${level}`;
+    if (examData.title) ctx += ` (${examData.title})`;
+    ctx += `.\n\nBerikut adalah daftar soal yang sedang aktif:\n`;
+
+    examData.questions.forEach((q) => {
+      ctx += `\n[Soal No.${q.number} - Bagian ${q.section?.toUpperCase()}]\n`;
+      if (q.passage) ctx += `Bacaan/Teks: ${q.passage}\n`;
+      ctx += `Pertanyaan: ${q.q}\n`;
+      if (q.options && q.options.length > 0) {
+        ctx += `Pilihan jawaban:\n`;
+        q.options.forEach((opt, idx) => {
+          ctx += `  ${idx}. ${opt}\n`;
+        });
+      }
+      if (typeof q.correct === "number") {
+        ctx += `Jawaban benar: pilihan ke-${q.correct} (${q.options[q.correct]})\n`;
+      }
+    });
+
+    return ctx;
   };
 
-  const [activeSection, setActiveSection] = useState<"kanji" | "bunpou" | "dokkai">("kanji");
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, Record<number, number | null>>>({
-    kanji: {},
-    bunpou: {},
-    dokkai: {},
-  });
-  const [showResult, setShowResult] = useState(false);
+  const handleSend = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim() || loading) return;
 
-  const currentQuestions = sections[activeSection];
-  const question = currentQuestions[currentQuestion];
-  const currentAnswer = answers[activeSection][currentQuestion];
-  const isAnswered = currentAnswer !== undefined && currentAnswer !== null;
-  const isCorrect = isAnswered && currentAnswer === question?.correct;
+    const userMsg: Message = { role: "user", content: input };
+    setMessages((prev) => [...prev, userMsg]);
+    setInput("");
+    setLoading(true);
 
-  const handleAnswer = (index: number) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [activeSection]: {
-        ...prev[activeSection],
-        [currentQuestion]: index,
-      },
-    }));
-  };
+    try {
+      const examContext = buildExamContext();
 
-  const handleNext = () => {
-    if (currentQuestion < currentQuestions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentQuestion > 0) {
-      setCurrentQuestion(currentQuestion - 1);
-    }
-  };
-
-  const handleSectionChange = (section: "kanji" | "bunpou" | "dokkai") => {
-    setActiveSection(section);
-    setCurrentQuestion(0);
-  };
-
-  // Calculate results
-  const results = useMemo(() => {
-    const calc = (section: "kanji" | "bunpou" | "dokkai") => {
-      const questions = sections[section];
-      let correct = 0;
-      questions.forEach((q, idx) => {
-        if (answers[section][idx] === q.correct) {
-          correct++;
-        }
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: [...messages, userMsg],
+          examContext,
+          level,
+        }),
       });
-      return { correct, total: questions.length };
-    };
 
-    return {
-      kanji: calc("kanji"),
-      bunpou: calc("bunpou"),
-      dokkai: calc("dokkai"),
-    };
-  }, [answers, sections]);
+      const data = await res.json();
 
-  const allAnswered =
-    Object.values(answers)
-      .flatMap(Object.values)
-      .filter((a) => a !== undefined && a !== null).length ===
-    Object.values(sections).reduce((acc, s) => acc + s.length, 0);
+      if (!res.ok || data.error) {
+        throw new Error(data.error || "Server error");
+      }
 
-  const sectionColors = {
-    kanji: "from-pink-500/20 to-rose-500/20",
-    bunpou: "from-sky-500/20 to-cyan-500/20",
-    dokkai: "from-purple-500/20 to-fuchsia-500/20",
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: data.content },
+      ]);
+    } catch (error: any) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: `⚠️ Maaf, terjadi kesalahan: ${error.message}`,
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
   };
-
-  const sectionBorders = {
-    kanji: "border-pink-400/50",
-    bunpou: "border-sky-400/50",
-    dokkai: "border-purple-400/50",
-  };
-
-  // === DATA UNTUK AI CHAT ===
-  // Build daftar soal section yang sedang aktif untuk dikirim ke AI
-  const aiQuestions = useMemo(() => {
-    return currentQuestions.map((q, idx) => ({
-      number: idx + 1,
-      q: q.q,
-      options: q.options,
-      correct: q.correct,
-      section: activeSection,
-      passage: q.text, // text di dokkai = bacaan/passage
-    }));
-  }, [currentQuestions, activeSection]);
-
-  // Soal yang sedang dilihat user (biar AI tahu fokusnya di mana)
-  const activeQuestionInfo = useMemo(() => {
-    if (!question) return null;
-    return {
-      number: currentQuestion + 1,
-      section: activeSection,
-      userAnswer: currentAnswer !== undefined && currentAnswer !== null
-        ? `pilihan ke-${(currentAnswer as number) + 1} (${question.options[currentAnswer as number]})`
-        : "belum dijawab",
-    };
-  }, [question, currentQuestion, activeSection, currentAnswer]);
 
   return (
-    <div className="min-h-screen py-12 px-6 relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-      <div className="absolute top-20 right-10 text-8xl opacity-5">あ</div>
-      <div className="absolute bottom-1/4 left-20 text-7xl opacity-5">日</div>
+    <>
+      {!isChatOpen && (
+        <button
+          type="button"
+          onClick={() => setIsChatOpen(true)}
+          aria-label="Buka chat AI"
+          className="fixed bottom-6 right-6 rounded-full shadow-2xl z-[9999] hover:scale-110 transition-transform border-2 border-white overflow-hidden bg-white ring-2 ring-offset-2 ring-primary/50"
+        >
+          <Image
+            src="/asset/ai_chat.jpg"
+            alt="AI Chat"
+            width={64}
+            height={64}
+            className="w-16 h-16 object-cover"
+            priority
+          />
+        </button>
+      )}
 
-      <div className="container mx-auto max-w-5xl relative z-10">
-        {/* Header */}
-        <div className="mb-8">
-          <Link
-            href="/jlpt"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 hover:bg-secondary/70 rounded-lg transition mb-6"
-          >
-            ← Kembali
-          </Link>
-
-          <div className="space-y-2">
-            <h1 className="text-4xl lg:text-5xl font-bold">
-              JLPT N3 <span className="text-primary">{examLabel}</span>
-            </h1>
-            <p className="text-muted-foreground text-lg">
-              Total {Object.values(sections).reduce((a, b) => a + b.length, 0)} soal | 3 section
-            </p>
-          </div>
-        </div>
-
-        {/* Section Tabs */}
-        <div className="flex gap-4 mb-8 flex-wrap">
-          {(["kanji", "bunpou", "dokkai"] as const).map((section) => (
+      {isChatOpen && (
+        <div className="fixed z-[9999] flex flex-col bg-card border shadow-2xl transition-all duration-300 inset-x-0 bottom-0 h-[33vh] rounded-t-2xl border-t md:inset-x-auto md:bottom-6 md:right-6 md:top-auto md:h-[600px] md:max-h-[80vh] md:w-[380px] md:rounded-2xl md:border">
+          <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/30 rounded-t-2xl shrink-0">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <span className="font-bold text-sm text-foreground italic">
+                AI Tutor {level}
+              </span>
+              {examData?.questions && examData.questions.length > 0 && (
+                <span className="ml-1 text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
+                  📖 {examData.questions.length} Soal
+                </span>
+              )}
+            </div>
             <button
-              key={section}
-              onClick={() => handleSectionChange(section)}
-              className={`px-6 py-3 rounded-lg font-medium transition ${
-                activeSection === section
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/50 hover:bg-secondary text-foreground"
-              }`}
+              type="button"
+              onClick={() => setIsChatOpen(false)}
+              className="hover:bg-muted p-1 rounded text-muted-foreground transition-colors"
             >
-              <div className="flex items-center gap-2">
-                <span>
-                  {section === "kanji"
-                    ? "漢字 (Kanji)"
-                    : section === "bunpou"
-                    ? "文法 (Bunpou)"
-                    : "読解 (Dokkai)"}
-                </span>
-                <span className="text-xs bg-white/20 px-2 py-1 rounded">
-                  {results[section].correct}/{results[section].total}
-                </span>
-              </div>
+              <ChevronDown size={20} className="md:hidden" />
+              <X size={20} className="hidden md:block" />
             </button>
-          ))}
-        </div>
-
-        {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-medium text-muted-foreground">
-              Soal {currentQuestion + 1} dari {currentQuestions.length}
-            </span>
-            <span className="text-sm font-medium text-primary">
-              {Math.round(((currentQuestion + 1) / currentQuestions.length) * 100)}%
-            </span>
           </div>
-          <div className="w-full bg-secondary rounded-full h-2 overflow-hidden">
-            <div
-              className="bg-gradient-to-r from-primary to-accent h-full transition-all duration-300"
-              style={{ width: `${((currentQuestion + 1) / currentQuestions.length) * 100}%` }}
-            />
-          </div>
-        </div>
 
-        {!showResult ? (
-          <>
-            {/* Question Card */}
-            <Card
-              className={`bg-gradient-to-br ${sectionColors[activeSection]} backdrop-blur-sm border-2 ${sectionBorders[activeSection]} p-8 mb-8`}
-            >
-              {/* Question Text */}
-              <div className="mb-8">
-                <p className="text-xl lg:text-2xl font-semibold text-foreground leading-relaxed">
-                  {question?.q}
-                </p>
-                {question?.text && (
-                  <div className="mt-6 p-4 bg-background/50 rounded-lg border border-border">
-                    <p className="text-sm text-foreground whitespace-pre-wrap">{question.text}</p>
-                  </div>
+          <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
+            {messages.length === 0 && (
+              <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm leading-relaxed shadow-sm">
+                Halo! Aku tutor AI kamu.
+                {examData?.questions && examData.questions.length > 0 ? (
+                  <>
+                    <br /><br />
+                    Aku sudah membaca semua soal di ujian ini. Tanya saja:
+                    <ul className="list-disc pl-4 mt-2 space-y-1">
+                      <li>"Jelaskan jawaban Kanji soal nomor 3"</li>
+                      <li>"Arti teks di soal Dokkai nomor 24"</li>
+                    </ul>
+                  </>
+                ) : (
+                  <> Ada yang bisa aku bantu?</>
                 )}
               </div>
+            )}
 
-              {/* Options */}
-              <div className="space-y-3 mb-8">
-                {question?.options.map((option: string, idx: number) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(idx)}
-                    disabled={isAnswered}
-                    className={`w-full p-4 text-left rounded-xl border-2 transition-all ${
-                      currentAnswer === idx
-                        ? isCorrect
-                          ? "border-green-500 bg-green-500/10"
-                          : "border-red-500 bg-red-500/10"
-                        : isAnswered && idx === question.correct
-                        ? "border-green-500 bg-green-500/10"
-                        : "border-border hover:border-primary/50 hover:bg-secondary/50"
-                    } disabled:cursor-default`}
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="font-semibold text-sm mt-1">
-                        {String.fromCharCode(65 + idx)}.
-                      </span>
-                      <span className="text-foreground">{option}</span>
-                      {isAnswered && idx === question.correct && (
-                        <span className="ml-auto text-green-500">✓</span>
-                      )}
-                      {isAnswered && currentAnswer === idx && !isCorrect && (
-                        <span className="ml-auto text-red-500">✗</span>
-                      )}
-                    </div>
-                  </button>
-                ))}
-              </div>
-
-              {/* Answer feedback */}
-              {isAnswered && (
+            {messages.map((msg, i) => (
+              <div
+                key={i}
+                className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+              >
                 <div
-                  className={`p-4 rounded-lg ${
-                    isCorrect
-                      ? "bg-green-500/10 border border-green-500/50 text-green-700"
-                      : "bg-red-500/10 border border-red-500/50 text-red-700"
+                  className={`p-2.5 rounded-2xl max-w-[85%] whitespace-pre-wrap text-xs md:text-sm shadow-sm ${
+                    msg.role === "user"
+                      ? "bg-primary text-primary-foreground rounded-tr-none font-medium"
+                      : "bg-muted rounded-tl-none text-foreground border border-border"
                   }`}
                 >
-                  {isCorrect
-                    ? "✓ Jawaban benar!"
-                    : `✗ Jawaban salah. Pilihan yang benar adalah: ${String.fromCharCode(65 + (question?.correct || 0))}`}
-                </div>
-              )}
-
-              {/* Navigation */}
-              <div className="flex gap-4 mt-8">
-                <button
-                  onClick={handlePrev}
-                  disabled={currentQuestion === 0}
-                  className="flex-1 px-6 py-3 bg-secondary hover:bg-secondary/80 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl font-medium transition"
-                >
-                  ← Sebelumnya
-                </button>
-                {currentQuestion === currentQuestions.length - 1 ? (
-                  <button
-                    onClick={() => setShowResult(true)}
-                    disabled={!allAnswered}
-                    className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
-                  >
-                    Lihat Hasil
-                  </button>
-                ) : (
-                  <button
-                    onClick={handleNext}
-                    disabled={!isAnswered}
-                    className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-primary-foreground rounded-xl font-medium transition"
-                  >
-                    Selanjutnya →
-                  </button>
-                )}
-              </div>
-            </Card>
-          </>
-        ) : (
-          <>
-            {/* Result Summary */}
-            <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 p-12 text-center mb-8">
-              <h2 className="text-4xl font-bold mb-8">Hasil Ujian Selesai!</h2>
-
-              {/* Results Grid */}
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
-                <div className="p-6 bg-pink-500/10 border border-pink-400/50 rounded-xl">
-                  <p className="text-pink-600 text-sm font-medium mb-2">KANJI</p>
-                  <p className="text-4xl font-bold text-pink-600 mb-1">
-                    {results.kanji.correct}/{results.kanji.total}
-                  </p>
-                  <p className="text-pink-500 text-xs">
-                    {Math.round((results.kanji.correct / results.kanji.total) * 100)}%
-                  </p>
-                </div>
-                <div className="p-6 bg-sky-500/10 border border-sky-400/50 rounded-xl">
-                  <p className="text-sky-600 text-sm font-medium mb-2">BUNPOU</p>
-                  <p className="text-4xl font-bold text-sky-600 mb-1">
-                    {results.bunpou.correct}/{results.bunpou.total}
-                  </p>
-                  <p className="text-sky-500 text-xs">
-                    {Math.round((results.bunpou.correct / results.bunpou.total) * 100)}%
-                  </p>
-                </div>
-                <div className="p-6 bg-purple-500/10 border border-purple-400/50 rounded-xl">
-                  <p className="text-purple-600 text-sm font-medium mb-2">DOKKAI</p>
-                  <p className="text-4xl font-bold text-purple-600 mb-1">
-                    {results.dokkai.correct}/{results.dokkai.total}
-                  </p>
-                  <p className="text-purple-500 text-xs">
-                    {Math.round((results.dokkai.correct / results.dokkai.total) * 100)}%
-                  </p>
+                  {msg.content}
                 </div>
               </div>
+            ))}
 
-              {/* Total Score */}
-              <div className="mb-12 p-8 bg-background/50 rounded-xl border border-border">
-                <p className="text-muted-foreground text-sm mb-2">Total Skor</p>
-                <p className="text-5xl font-bold text-primary mb-2">
-                  {results.kanji.correct + results.bunpou.correct + results.dokkai.correct}/
-                  {results.kanji.total + results.bunpou.total + results.dokkai.total}
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  {Math.round(
-                    ((results.kanji.correct +
-                      results.bunpou.correct +
-                      results.dokkai.correct) /
-                      (results.kanji.total + results.bunpou.total + results.dokkai.total)) *
-                      100
-                  )}
-                  % Benar
-                </p>
+            {loading && (
+              <div className="flex justify-start items-center gap-2">
+                <Image
+                  src="/asset/wait_icon.gif"
+                  alt="AI sedang berpikir"
+                  width={48}
+                  height={48}
+                  unoptimized
+                  className="w-12 h-12 object-contain"
+                />
+                <span className="text-xs text-muted-foreground italic font-medium">
+                  Sedang berpikir...
+                </span>
               </div>
+            )}
+            <div ref={scrollRef} />
+          </div>
 
-              {/* Actions */}
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Link
-                  href="/jlpt"
-                  className="px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition"
-                >
-                  Kembali ke Periode Lain
-                </Link>
-                <button
-                  onClick={() => {
-                    setShowResult(false);
-                    setCurrentQuestion(0);
-                    setAnswers({ kanji: {}, bunpou: {}, dokkai: {} });
-                  }}
-                  className="px-8 py-3 bg-secondary rounded-xl font-medium hover:bg-secondary/80 transition"
-                >
-                  Ulang Ujian
-                </button>
-              </div>
-            </Card>
-          </>
-        )}
-      </div>
-
-      {/* Floating AI Chat dengan konteks soal */}
-      <FloatingAIChat
-        level="N3"
-        examData={{
-          title: examLabel,
-          section: activeSection,
-          questions: aiQuestions,
-          activeQuestion: activeQuestionInfo,
-        }}
-      />
-    </div>
+          <form
+            onSubmit={handleSend}
+            className="p-3 border-t bg-card flex gap-2 rounded-b-2xl shrink-0 items-center"
+          >
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Tanya soal ke AI..."
+              className="flex-1 bg-muted rounded-full px-4 py-2 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+            />
+            <Button
+              type="submit"
+              size="icon"
+              className="rounded-full shrink-0 w-10 h-10"
+              disabled={loading || !input.trim()}
+            >
+              <Send size={16} />
+            </Button>
+          </form>
+        </div>
+      )}
+    </>
   );
 }
