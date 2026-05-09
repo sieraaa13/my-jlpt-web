@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useExamContext } from "@/components/exam-context";
 
 interface Question {
   q: string;
@@ -34,13 +35,14 @@ export default function ExamQuestions({
   month,
   onBack,
 }: ExamQuestionsProps) {
+  const { setExamData: setContextExamData } = useExamContext();
+
   const [activeTab, setActiveTab] = useState("kanji");
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
 
-  // Load theme preference from localStorage
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem("nihongo-exam-theme");
@@ -51,7 +53,6 @@ export default function ExamQuestions({
     }
   }, []);
 
-  // Toggle theme function
   const toggleTheme = () => {
     const newIsDark = !isDarkMode;
     setIsDarkMode(newIsDark);
@@ -64,8 +65,10 @@ export default function ExamQuestions({
     { id: "dokkai", label: "Dokkai", icon: "読", data: data.dokkai, isDakkai: true },
   ];
 
-  const handleAnswer = (questionIndex: number, optionIndex: number) => {
-    const questionKey = `${activeTab}-${questionIndex}`;
+  const handleAnswer = (questionIndex: number, optionIndex: number, dakkaiTitle?: string) => {
+    const questionKey = dakkaiTitle
+      ? `${activeTab}-${dakkaiTitle}-${questionIndex}`
+      : `${activeTab}-${questionIndex}`;
     setAnswers((prev) => ({
       ...prev,
       [questionKey]: optionIndex,
@@ -104,7 +107,7 @@ export default function ExamQuestions({
   };
 
   const { correct, total } = calculateScore();
-  const percentage = Math.round((correct / total) * 100);
+  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
   const answeredCount = Object.keys(answers).length;
 
   function getJLPTLevel(yearStr: string): string {
@@ -114,11 +117,103 @@ export default function ExamQuestions({
     return "N3";
   }
 
+  const level = getJLPTLevel(year);
+  const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
+
+  // ============ AI CONTEXT ============
+  // Build daftar soal di section yang sedang aktif (flatten untuk Dokkai)
+  const aiQuestions = useMemo(() => {
+    if (activeTab === "dokkai") {
+      const result: Array<{
+        number: number;
+        q: string;
+        options: string[];
+        correct: number;
+        section: string;
+        passage?: string;
+      }> = [];
+      let counter = 1;
+      (data.dokkai as DakkaiSection[]).forEach((dakkai) => {
+        dakkai.questions.forEach((q) => {
+          result.push({
+            number: counter++,
+            q: q.q,
+            options: q.options,
+            correct: q.correct,
+            section: "dokkai",
+            passage: dakkai.text,
+          });
+        });
+      });
+      return result;
+    } else {
+      const arr = activeTab === "kanji" ? data.kanji : data.bunpou;
+      return (arr as Question[]).map((q, idx) => ({
+        number: idx + 1,
+        q: q.q,
+        options: q.options,
+        correct: q.correct,
+        section: activeTab,
+      }));
+    }
+  }, [activeTab, data]);
+
+  // Soal terakhir yang user jawab di section ini (sebagai "active question")
+  const activeQuestionInfo = useMemo(() => {
+    const sectionAnswers = Object.entries(answers).filter(([key]) =>
+      key.startsWith(`${activeTab}-`)
+    );
+    if (sectionAnswers.length === 0) {
+      // Default: soal pertama
+      const firstQ = aiQuestions[0];
+      if (!firstQ) return null;
+      return {
+        number: 1,
+        section: activeTab,
+        userAnswer: "belum dijawab",
+      };
+    }
+    // Ambil soal terakhir yang dijawab
+    const lastEntry = sectionAnswers[sectionAnswers.length - 1];
+    const [key, optionIdx] = lastEntry;
+    const parts = key.split("-");
+    const lastNumber = parseInt(parts[parts.length - 1], 10) + 1;
+    const targetQ = aiQuestions.find((q) => q.number === lastNumber) || aiQuestions[0];
+    return {
+      number: targetQ.number,
+      section: activeTab,
+      userAnswer: `pilihan ke-${optionIdx + 1} (${targetQ.options[optionIdx as number]})`,
+    };
+  }, [answers, activeTab, aiQuestions]);
+
+  // Kirim ke ExamContext setiap kali tab/section berubah atau jawaban berubah
+  useEffect(() => {
+    console.log("🔵 ExamQuestions SEND ke context:", {
+      level,
+      section: activeTab,
+      questionsCount: aiQuestions.length,
+      activeQuestion: activeQuestionInfo,
+    });
+
+    setContextExamData({
+      level,
+      title: examLabel,
+      section: activeTab,
+      questions: aiQuestions,
+      activeQuestion: activeQuestionInfo,
+    });
+
+    return () => {
+      console.log("🟠 ExamQuestions CLEANUP context");
+      setContextExamData(null);
+    };
+  }, [level, examLabel, activeTab, aiQuestions, activeQuestionInfo, setContextExamData]);
+  // ============ END AI CONTEXT ============
+
   if (!mounted) {
     return null;
   }
 
-  // Theme color variables
   const bgColor = isDarkMode ? "bg-slate-950" : "bg-white";
   const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
   const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
@@ -127,7 +222,6 @@ export default function ExamQuestions({
 
   return (
     <section className={`min-h-screen ${bgColor} ${textColor} pb-32 transition-colors duration-300`}>
-      {/* STICKY HEADER - mobile friendly */}
       <div className={`sticky top-0 z-30 ${bgColor} border-b ${cardBorder} backdrop-blur-sm bg-opacity-95`}>
         <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-2">
@@ -144,10 +238,10 @@ export default function ExamQuestions({
 
             <div className="flex-1 text-center min-w-0 px-2">
               <h1 className="text-lg sm:text-2xl font-bold truncate">
-                JLPT <span className="text-cyan-500">{getJLPTLevel(year)}</span>
+                JLPT <span className="text-cyan-500">{level}</span>
               </h1>
               <p className={`text-xs sm:text-sm ${mutedText}`}>
-                {month === "07" ? "Juli" : "Desember"} {year}
+                {examLabel}
               </p>
             </div>
 
@@ -163,7 +257,6 @@ export default function ExamQuestions({
             </button>
           </div>
 
-          {/* Compact Progress bar di header */}
           {!showResults && (
             <div className="mt-3">
               <div className="flex justify-between items-center mb-1.5">
@@ -186,7 +279,6 @@ export default function ExamQuestions({
       </div>
 
       <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
-        {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
           <TabsList className={`grid w-full grid-cols-3 rounded-lg border-2 p-1 transition-colors ${
             isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-200"
@@ -209,7 +301,6 @@ export default function ExamQuestions({
             ))}
           </TabsList>
 
-          {/* Kanji Section */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults ? (
               <div className="space-y-4">
@@ -217,7 +308,6 @@ export default function ExamQuestions({
                   const questionKey = `kanji-${index}`;
                   const userAnswer = answers[questionKey];
                   const isCorrect = userAnswer === question.correct;
-
                   return (
                     <ResultCard
                       key={index}
@@ -235,7 +325,6 @@ export default function ExamQuestions({
                 {(data.kanji as Question[]).map((question, index) => {
                   const questionKey = `kanji-${index}`;
                   const userAnswer = answers[questionKey];
-
                   return (
                     <QuestionCard
                       key={index}
@@ -251,7 +340,6 @@ export default function ExamQuestions({
             )}
           </TabsContent>
 
-          {/* Bunpou Section */}
           <TabsContent value="bunpou" className="space-y-4 mt-6">
             {showResults ? (
               <div className="space-y-4">
@@ -259,7 +347,6 @@ export default function ExamQuestions({
                   const questionKey = `bunpou-${index}`;
                   const userAnswer = answers[questionKey];
                   const isCorrect = userAnswer === question.correct;
-
                   return (
                     <ResultCard
                       key={index}
@@ -277,7 +364,6 @@ export default function ExamQuestions({
                 {(data.bunpou as Question[]).map((question, index) => {
                   const questionKey = `bunpou-${index}`;
                   const userAnswer = answers[questionKey];
-
                   return (
                     <QuestionCard
                       key={index}
@@ -293,7 +379,6 @@ export default function ExamQuestions({
             )}
           </TabsContent>
 
-          {/* Dokkai Section */}
           <TabsContent value="dokkai" className="space-y-6 mt-6">
             {showResults ? (
               <div className="space-y-6">
@@ -315,7 +400,6 @@ export default function ExamQuestions({
                       const questionKey = `dokkai-${dakkai.title}-${index}`;
                       const userAnswer = answers[questionKey];
                       const isCorrect = userAnswer === question.correct;
-
                       return (
                         <ResultCard
                           key={index}
@@ -349,14 +433,13 @@ export default function ExamQuestions({
                     {dakkai.questions.map((question, index) => {
                       const questionKey = `dokkai-${dakkai.title}-${index}`;
                       const userAnswer = answers[questionKey];
-
                       return (
                         <QuestionCard
                           key={index}
                           index={index}
                           question={question}
                           userAnswer={userAnswer}
-                          onAnswer={(optionIndex) => handleAnswer(index, optionIndex)}
+                          onAnswer={(optionIndex) => handleAnswer(index, optionIndex, dakkai.title)}
                           isDarkMode={isDarkMode}
                         />
                       );
@@ -368,7 +451,6 @@ export default function ExamQuestions({
           </TabsContent>
         </Tabs>
 
-        {/* Results Summary */}
         {showResults && (
           <Card className={`border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl transition-colors ${
             isDarkMode
@@ -456,7 +538,6 @@ export default function ExamQuestions({
         )}
       </div>
 
-      {/* STICKY BOTTOM SUBMIT BUTTON (mobile-friendly) */}
       {!showResults && (
         <div className={`fixed bottom-0 left-0 right-0 z-40 border-t ${cardBorder} ${bgColor} backdrop-blur-sm bg-opacity-95 p-3 sm:p-4`}>
           <div className="max-w-5xl mx-auto">
@@ -475,8 +556,6 @@ export default function ExamQuestions({
     </section>
   );
 }
-
-/* Helper Components */
 
 function QuestionCard({
   index,
