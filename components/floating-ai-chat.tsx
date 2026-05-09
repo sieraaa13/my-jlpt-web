@@ -4,41 +4,17 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { X, ChevronDown, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useExamContext } from "@/components/exam-context";
 
 interface Message {
   role: "user" | "assistant";
   content: string;
 }
 
-interface ExamQuestion {
-  number: number;
-  q: string;
-  options: string[];
-  correct?: number;
-  section?: string;
-  passage?: string;
-}
+export default function FloatingAIChat() {
+  const { examData } = useExamContext();
+  const level = examData?.level || "General";
 
-interface ActiveQuestionInfo {
-  number: number;
-  section: string;
-  userAnswer: string;
-}
-
-interface FloatingAIChatProps {
-  level?: string;
-  examData?: {
-    title?: string;
-    section?: string;
-    questions?: ExamQuestion[];
-    activeQuestion?: ActiveQuestionInfo | null;
-  };
-}
-
-export default function FloatingAIChat({
-  level = "General",
-  examData,
-}: FloatingAIChatProps) {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -123,7 +99,7 @@ export default function FloatingAIChat({
       console.log("Mengirim ke AI:");
       console.log("- Level:", level);
       console.log("- Section:", examData?.section);
-      console.log("- Soal aktif: No.", examData?.activeQuestion?.number);
+      console.log("- Soal aktif:", examData?.activeQuestion?.number);
       console.log("- Total soal:", examData?.questions?.length || 0);
       console.log("- Panjang konteks:", examContext.length);
 
@@ -160,6 +136,8 @@ export default function FloatingAIChat({
     }
   };
 
+  const hasExamData = examData?.questions && examData.questions.length > 0;
+
   return (
     <>
       {!isChatOpen && (
@@ -195,9 +173,9 @@ export default function FloatingAIChat({
               <span className="font-bold text-sm text-foreground italic">
                 AI Tutor {level}
               </span>
-              {examData?.questions && examData.questions.length > 0 && (
+              {hasExamData && (
                 <span className="text-[10px] font-medium bg-primary text-primary-foreground px-2 py-0.5 rounded-full">
-                  {examData.questions.length} Soal
+                  {examData!.questions!.length} Soal
                 </span>
               )}
               {examData?.activeQuestion && (
@@ -221,23 +199,23 @@ export default function FloatingAIChat({
             {messages.length === 0 && (
               <div className="bg-muted p-3 rounded-2xl rounded-tl-none mr-8 text-muted-foreground text-xs md:text-sm leading-relaxed shadow-sm">
                 Halo! Aku tutor AI kamu untuk JLPT {level}.
-                {examData?.questions && examData.questions.length > 0 ? (
+                {hasExamData ? (
                   <>
                     <br />
                     <br />
-                    Aku sudah baca <b>{examData.questions.length} soal</b> di bagian{" "}
+                    Aku sudah baca <b>{examData!.questions!.length} soal</b> di bagian{" "}
                     <b>
-                      {examData.section === "kanji"
+                      {examData!.section === "kanji"
                         ? "Kanji"
-                        : examData.section === "bunpou"
+                        : examData!.section === "bunpou"
                         ? "Bunpou"
                         : "Dokkai"}
                     </b>
                     .
-                    {examData.activeQuestion && (
+                    {examData!.activeQuestion && (
                       <>
                         <br />
-                        Sekarang kamu di soal <b>No.{examData.activeQuestion.number}</b>.
+                        Sekarang kamu di soal <b>No.{examData!.activeQuestion.number}</b>.
                       </>
                     )}
                     <br />
@@ -253,9 +231,7 @@ export default function FloatingAIChat({
                   <>
                     <br />
                     <br />
-                    <span className="text-red-500 font-semibold">
-                      Belum ada soal yang terdeteksi.
-                    </span>
+                    Ada yang bisa aku bantu seputar bahasa Jepang? Tanya apa saja, ya!
                   </>
                 )}
               </div>
