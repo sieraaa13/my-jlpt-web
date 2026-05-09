@@ -133,10 +133,18 @@ export default function FloatingAIChat({ level = "General" }: FloatingAIChatProp
             ))}
 
             {loading && (
-              <div className="flex justify-start">
-                <div className="bg-muted p-2.5 rounded-2xl animate-pulse text-xs">
-                  AI sedang berpikir...
-                </div>
+              <div className="flex justify-start items-center gap-2">
+                <Image
+                  src="/asset/wait_icon.gif"
+                  alt="AI sedang berpikir"
+                  width={48}
+                  height={48}
+                  unoptimized
+                  className="w-12 h-12 object-contain"
+                />
+                <span className="text-xs text-muted-foreground italic">
+                  sedang berpikir...
+                </span>
               </div>
             )}
             <div ref={scrollRef} />
