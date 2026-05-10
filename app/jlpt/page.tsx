@@ -16,9 +16,9 @@ const LEVELS = [
 export default function JLPTLevelPage() {
   const router = useRouter();
 
-  const handleSelectLevel = (level: string) => {
-    router.push(`/jlpt/${level}`);
-  };
+ const handleSelectLevel = (level: string) => {
+  router.push(`/jlpt/${level}?type=exam`);
+};
 
   return (
     <main className="min-h-screen bg-background">
