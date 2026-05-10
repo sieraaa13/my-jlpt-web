@@ -2,7 +2,9 @@
 
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Navbar } from "@/components/navbar";
+import { ExamSelector } from "@/components/exam-selector";
 
 const materials = [
   {
@@ -31,19 +33,46 @@ const materials = [
     japanese: "練習問題",
     description: "Kerjakan soal-soal JLPT N3 dari tahun 2011-2025",
     icon: "✍️",
-    link: "/jlpt",
+    link: "/jlpt/n3?type=exam",
     color: "from-orange-500/20 to-amber-500/20",
     borderColor: "border-orange-400/50",
   },
 ];
 
 export default function N3Page() {
+  const searchParams = useSearchParams();
+  const type = searchParams.get("type");
+
+  if (type === "exam") {
+    return (
+      <main className="min-h-screen bg-background">
+        <Navbar />
+        <div className="pt-16">
+          <div className="bg-card border-b border-border py-6 mb-8">
+            <div className="max-w-6xl mx-auto px-4">
+              <Link 
+                href="/jlpt" 
+                className="text-primary hover:underline text-sm inline-block mb-2"
+              >
+                ← Kembali ke Pilih Level
+              </Link>
+              <h1 className="text-3xl font-bold">JLPT N3 - Latihan Soal</h1>
+              <p className="text-muted-foreground text-sm mt-1">Menengah - Topik Sehari-hari</p>
+            </div>
+          </div>
+          <div className="max-w-6xl mx-auto px-4">
+            <ExamSelector level="n3" />
+          </div>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
       <div className="pt-24 pb-16 px-6">
         <div className="container mx-auto">
-          {/* Header */}
           <div className="text-center mb-12">
             <Link 
               href="/" 
@@ -64,8 +93,7 @@ export default function N3Page() {
               Pahami topik sehari-hari dan percakapan praktis. Pilih materi belajar di bawah ini.
             </p>
           </div>
-
-          {/* Materials Grid */}
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {materials.map((material) => (
               <Link key={material.id} href={material.link}>
@@ -87,7 +115,6 @@ export default function N3Page() {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {material.description}
                     </p>
-
                     <div className="pt-4">
                       <span className="inline-block bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                         Mulai Belajar →
