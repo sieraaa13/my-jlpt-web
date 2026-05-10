@@ -25,6 +25,10 @@ interface ExamData {
   dokkai: DakkaiSection[];
 }
 
+interface ExamSelectorProps {
+  level?: string;
+}
+
 const examYears = [
   { year: "2011", label: "Tahun 2011" },
   { year: "2012", label: "Tahun 2012" },
@@ -48,7 +52,7 @@ const examMonths = [
   { month: "12", label: "Desember", color: "from-purple-500/20 to-pink-500/20", borderColor: "border-purple-400/50" },
 ];
 
-export function ExamSelector() {
+export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
   const [selectedYear, setSelectedYear] = useState("2011");
   const [selectedMonth, setSelectedMonth] = useState("");
   const [examData, setExamData] = useState<ExamData | null>(null);
@@ -61,13 +65,12 @@ export function ExamSelector() {
     setError(null);
     
     try {
-      // Call getExamData dengan format yang benar: "2011" dan "07"
-      const data = await getExamData(selectedYear, month);
+      const data = await getExamData(selectedYear, month, level);
       
       if (data) {
         setExamData(data);
       } else {
-        setError(`Data ujian tidak ditemukan untuk ${selectedYear}-${month}`);
+        setError(`Data ujian JLPT ${level.toUpperCase()} tidak ditemukan untuk ${selectedYear}-${month}`);
         setExamData(null);
       }
     } catch (err) {
@@ -93,7 +96,7 @@ export function ExamSelector() {
             href="/jlpt" 
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
           >
-            <span>←</span> Kembali ke Beranda
+            <span>←</span> Kembali ke Pilih Level
           </Link>
 
           <h1 className="text-5xl lg:text-6xl font-bold mb-4">
@@ -101,7 +104,7 @@ export function ExamSelector() {
             <span className="text-primary">試験問題</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Pilih tahun dan periode untuk memulai ujian JLPT. Setiap ujian terdiri dari 3 section: Kanji, Bunpou, dan Dokkai.
+            Pilih tahun dan periode untuk memulai ujian JLPT {level.toUpperCase()}. Setiap ujian terdiri dari 3 section: Kanji, Bunpou, dan Dokkai.
           </p>
         </div>
 
@@ -114,8 +117,9 @@ export function ExamSelector() {
                 key={year.year}
                 onClick={() => {
                   setSelectedYear(year.year);
-                  setSelectedMonth(""); // Reset bulan saat ganti tahun
+                  setSelectedMonth("");
                   setExamData(null);
+                  setError(null);
                 }}
                 className={`py-6 text-lg rounded-xl transition-all ${
                   selectedYear === year.year
@@ -138,14 +142,16 @@ export function ExamSelector() {
               <div className="inline-block">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
               </div>
-              <p className="mt-4 text-muted-foreground">Memuat data ujian...</p>
+              <p className="mt-4 text-muted-foreground">Memuat data ujian {level.toUpperCase()}...</p>
             </div>
           )}
 
           {error && (
             <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-6">
               <p className="text-red-600 font-medium">{error}</p>
-              <p className="text-sm text-red-600/70 mt-1">Silakan pilih periode lain atau coba beberapa saat kemudian.</p>
+              <p className="text-sm text-red-600/70 mt-1">
+                Data ujian untuk periode ini belum tersedia. Silakan pilih periode lain atau coba beberapa saat kemudian.
+              </p>
             </div>
           )}
 
@@ -168,7 +174,7 @@ export function ExamSelector() {
                     </h3>
                     
                     <p className="text-muted-foreground">
-                      Lengkap dengan 3 section: Kanji, Bunpou, dan Dokkai
+                      JLPT {level.toUpperCase()} - Lengkap dengan 3 section: Kanji, Bunpou, dan Dokkai
                     </p>
                     
                     <div className="pt-4 flex items-center justify-between">
@@ -197,6 +203,7 @@ export function ExamSelector() {
             <li>✓ Hasil langsung ditampilkan setelah menyelesaikan ujian</li>
             <li>✓ Kamu bisa mengulang ujian berkali-kali</li>
             <li>✓ Tidak ada batasan waktu untuk menjawab</li>
+            <li>✓ Data ujianmu akan tersimpan untuk reference</li>
           </ul>
         </div>
       </div>
