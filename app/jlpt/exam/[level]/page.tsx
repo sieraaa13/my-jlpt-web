@@ -1,54 +1,33 @@
 "use client";
 
 import { ExamSelector } from "@/components/exam-selector";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import { useParams } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
-
-const LEVEL_INFO: Record<string, { label: string; description: string }> = {
-  n5: { label: "N5", description: "Pemula - Dasar-dasar Bahasa Jepang" },
-  n4: { label: "N4", description: "Dasar - Komunikasi Sehari-hari" },
-  n3: { label: "N3", description: "Menengah - Topik Umum" },
-  n2: { label: "N2", description: "Lanjut - Percakapan Profesional" },
-  n1: { label: "N1", description: "Profesional - Level Tertinggi" },
-};
+import { useRouter } from "next/navigation";
 
 export default function JLPTExamPage() {
   const params = useParams();
+  const router = useRouter();
   const level = (params.level as string)?.toUpperCase() || "N3";
-  const levelInfo = LEVEL_INFO[(params.level as string)?.toLowerCase() || "n3"];
 
   return (
     <main className="min-h-screen bg-background">
-      <Navbar />
-      <div className="pt-16">
-        {/* Header dengan level info */}
-        <div className="bg-card border-b border-border py-6 mb-8">
-          <div className="max-w-6xl mx-auto px-4">
-            <Link 
-              href="/jlpt" 
-              className="inline-flex items-center gap-2 text-primary hover:underline text-sm mb-2"
+      {/* Level Header */}
+      <div className="bg-card border-b border-border py-4 sticky top-0 z-40">
+        <div className="container mx-auto px-6 flex items-center justify-between">
+          <div>
+            <button
+              onClick={() => router.back()}
+              className="text-primary hover:underline text-sm mb-2 inline-block"
             >
-              <ArrowLeft size={16} />
-              Kembali ke Pilih Level
-            </Link>
-            <h1 className="text-3xl font-bold">
-              JLPT {level}
-            </h1>
-            <p className="text-muted-foreground mt-1">
-              {levelInfo?.description}
-            </p>
+              ← Kembali
+            </button>
+            <h1 className="text-2xl font-bold">JLPT {level}</h1>
           </div>
         </div>
-        
-        {/* ExamSelector */}
-        <div className="max-w-6xl mx-auto px-4">
-          <ExamSelector />
-        </div>
       </div>
-      <Footer />
+
+      {/* ExamSelector Component */}
+      <ExamSelector />
     </main>
   );
 }
