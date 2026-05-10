@@ -7,11 +7,7 @@ const EXAMS_DATA: Record<string, any> = {
   // Tambahkan data lain sesuai ketersediaan file
 };
 
-export async function getExamData(year: string, period: string, level?: string)
-  year: string,
-  period: string,
-  level?: string
-) {
+export async function getExamData(year: string, period: string, level?: string){
   const key = `${year}-${period}`;
   const examData = EXAMS_DATA[key];
 
