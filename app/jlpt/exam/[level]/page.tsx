@@ -4,6 +4,8 @@ import { ExamSelector } from "@/components/exam-selector";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { useParams } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 const LEVEL_INFO: Record<string, { label: string; description: string }> = {
   n5: { label: "N5", description: "Pemula - Dasar-dasar Bahasa Jepang" },
@@ -25,11 +27,13 @@ export default function JLPTExamPage() {
         {/* Header dengan level info */}
         <div className="bg-card border-b border-border py-6 mb-8">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="flex items-center gap-4 mb-2">
-              <a href="/jlpt" className="text-primary hover:underline text-sm">
-                ← Kembali ke Pilih Level
-              </a>
-            </div>
+            <Link 
+              href="/jlpt" 
+              className="inline-flex items-center gap-2 text-primary hover:underline text-sm mb-2"
+            >
+              <ArrowLeft size={16} />
+              Kembali ke Pilih Level
+            </Link>
             <h1 className="text-3xl font-bold">
               JLPT {level}
             </h1>
