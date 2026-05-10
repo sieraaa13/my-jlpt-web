@@ -3,19 +3,20 @@
 import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
 import { ModeToggle } from "./mode-toggle";
-import { useAuth } from "@/components/auth-context";
+import { useAuth, getRemainingTimeMs } from "@/components/auth-context";
 import LoginModal from "@/components/login-modal";
-import { User, LogOut, ChevronDown } from "lucide-react";
+import { User, LogOut, ChevronDown, History } from "lucide-react";
+import Link from "next/link";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [remainingTime, setRemainingTime] = useState("");
 
   const { user, logout, isLoaded } = useAuth();
   const userMenuRef = useRef<HTMLDivElement>(null);
 
-  // Tutup dropdown user kalau klik di luar
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (userMenuRef.current && !userMenuRef.current.contains(e.target as Node)) {
@@ -26,20 +27,33 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Update sisa waktu setiap detik
+  useEffect(() => {
+    if (!user) {
+      setRemainingTime("");
+      return;
+    }
+
+    const updateTime = () => {
+      const ms = getRemainingTimeMs();
+      if (ms <= 0) {
+        setRemainingTime("Expired");
+        return;
+      }
+      const hours = Math.floor(ms / (60 * 60 * 1000));
+      const minutes = Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000));
+      setRemainingTime(`${hours}j ${minutes}m`);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 60 * 1000);
+    return () => clearInterval(interval);
+  }, [user]);
+
   const handleLogout = () => {
     logout();
     setIsUserMenuOpen(false);
     setIsMenuOpen(false);
-  };
-
-  // Format sisa waktu (jam:menit)
-  const getRemainingTime = () => {
-    if (!user) return "";
-    const remaining = user.expiredAt - Date.now();
-    if (remaining <= 0) return "Expired";
-    const hours = Math.floor(remaining / (60 * 60 * 1000));
-    const minutes = Math.floor((remaining % (60 * 60 * 1000)) / (60 * 1000));
-    return `${hours}j ${minutes}m`;
   };
 
   return (
@@ -47,7 +61,6 @@ export function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
             <div className="flex items-center gap-2">
               <span className="text-3xl">🎌</span>
               <span className="text-2xl font-bold">
@@ -56,7 +69,6 @@ export function Navbar() {
               </span>
             </div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
                 Beranda
@@ -72,15 +84,12 @@ export function Navbar() {
               </a>
             </div>
 
-            {/* CTA Buttons & Theme Toggle */}
             <div className="hidden md:flex items-center gap-3">
               <ModeToggle />
 
               {!isLoaded ? (
-                // Skeleton saat loading
                 <div className="w-24 h-9 bg-muted rounded-xl animate-pulse" />
               ) : user ? (
-                // Sudah login → tampilkan dropdown user
                 <div className="relative" ref={userMenuRef}>
                   <button
                     onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
@@ -89,32 +98,37 @@ export function Navbar() {
                     <div className="w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
                       {user.name.charAt(0).toUpperCase()}
                     </div>
-                    <span className="font-medium text-sm">
-                      Halo, {user.name}!
-                    </span>
+                    <span className="font-medium text-sm">Halo, {user.name}!</span>
                     <ChevronDown
                       size={14}
-                      className={`transition-transform ${
-                        isUserMenuOpen ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform ${isUserMenuOpen ? "rotate-180" : ""}`}
                     />
                   </button>
 
-                  {/* Dropdown */}
                   {isUserMenuOpen && (
-                    <div className="absolute right-0 top-full mt-2 w-56 bg-card border border-border rounded-xl shadow-xl overflow-hidden">
+                    <div className="absolute right-0 top-full mt-2 w-60 bg-card border border-border rounded-xl shadow-xl overflow-hidden">
                       <div className="px-4 py-3 border-b border-border bg-muted/30">
                         <div className="flex items-center gap-2">
                           <User size={14} className="text-primary" />
                           <span className="text-sm font-semibold">{user.name}</span>
                         </div>
                         <p className="text-[11px] text-muted-foreground mt-1">
-                          ⏱ Sisa: {getRemainingTime()}
+                          ⏱ Sisa sesi: {remainingTime}
                         </p>
                       </div>
+
+                      <Link
+                        href="/riwayat"
+                        onClick={() => setIsUserMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-4 py-3 text-sm hover:bg-muted/50 transition-colors"
+                      >
+                        <History size={14} className="text-primary" />
+                        Riwayat Ujian
+                      </Link>
+
                       <button
                         onClick={handleLogout}
-                        className="w-full flex items-center gap-2 px-4 py-3 text-sm text-red-500 hover:bg-red-500/10 transition-colors"
+                        className="w-full flex items-center gap-2 px-4 py-3 text-sm text-red-500 hover:bg-red-500/10 transition-colors border-t border-border"
                       >
                         <LogOut size={14} />
                         Keluar
@@ -123,7 +137,6 @@ export function Navbar() {
                   )}
                 </div>
               ) : (
-                // Belum login → tombol Masuk
                 <Button
                   variant="ghost"
                   onClick={() => setIsLoginOpen(true)}
@@ -134,37 +147,20 @@ export function Navbar() {
               )}
             </div>
 
-            {/* Mobile menu button */}
             <button
               className="md:hidden p-2 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>
           </div>
 
-          {/* Mobile menu */}
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col gap-4">
@@ -173,32 +169,19 @@ export function Navbar() {
                   <ModeToggle />
                 </div>
 
-                <a
-                  href="/"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                >
+                <a href="/" className="text-muted-foreground hover:text-foreground transition-colors py-2">
                   Beranda
                 </a>
-                <a
-                  href="/jlpt"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                >
+                <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors py-2">
                   Ujian JLPT
                 </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                >
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
                   Pelajaran
                 </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                >
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
                   Tentang
                 </a>
 
-                {/* Auth section mobile */}
                 <div className="pt-2 border-t border-border">
                   {!isLoaded ? (
                     <div className="w-full h-10 bg-muted rounded-xl animate-pulse" />
@@ -209,14 +192,22 @@ export function Navbar() {
                           {user.name.charAt(0).toUpperCase()}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-sm truncate">
-                            Halo, {user.name}!
-                          </p>
+                          <p className="font-semibold text-sm truncate">Halo, {user.name}!</p>
                           <p className="text-[11px] text-muted-foreground">
-                            ⏱ Sisa: {getRemainingTime()}
+                            ⏱ Sisa sesi: {remainingTime}
                           </p>
                         </div>
                       </div>
+
+                      <Link
+                        href="/riwayat"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium hover:bg-muted/50 transition-colors"
+                      >
+                        <History size={16} className="text-primary" />
+                        Riwayat Ujian
+                      </Link>
+
                       <Button
                         onClick={handleLogout}
                         variant="ghost"
@@ -244,7 +235,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Login Modal */}
       <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
     </>
   );
