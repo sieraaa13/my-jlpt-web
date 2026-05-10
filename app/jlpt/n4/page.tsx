@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -31,7 +32,7 @@ const materials = [
     id: 3,
     title: "Latihan Soal",
     japanese: "練習問題",
-    description: "Kerjakan soal-soal JLPT n4 dari tahun 2011-2025",
+    description: "Kerjakan soal-soal JLPT N4 dari tahun 2011-2025",
     icon: "✍️",
     link: "/jlpt/n4?type=exam",
     color: "from-orange-500/20 to-amber-500/20",
@@ -39,7 +40,7 @@ const materials = [
   },
 ];
 
-export default function n4Page() {
+function N4PageContent() {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
 
@@ -56,8 +57,8 @@ export default function n4Page() {
               >
                 ← Kembali ke Pilih Level
               </Link>
-              <h1 className="text-3xl font-bold">JLPT n4 - Latihan Soal</h1>
-              <p className="text-muted-foreground text-sm mt-1">Dasar - Topik Sehari-hari</p>
+              <h1 className="text-3xl font-bold">JLPT N4 - Latihan Soal</h1>
+              <p className="text-muted-foreground text-sm mt-1">Dasar - Komunikasi Sehari-hari</p>
             </div>
           </div>
           <div className="max-w-6xl mx-auto px-4">
@@ -86,11 +87,11 @@ export default function n4Page() {
             </span>
             <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6">
               <span className="text-foreground">JLPT </span>
-              <span className="text-primary">n4</span>
+              <span className="text-primary">N4</span>
             </h1>
-            <p className="text-2xl text-accent mb-3">レベル3</p>
+            <p className="text-2xl text-accent mb-3">レベル4</p>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Pahami topik sehari-hari dan percakapan praktis. Pilih materi belajar di bawah ini.
+              Komunikasi dasar dalam situasi sehari-hari. Pilih materi belajar di bawah ini.
             </p>
           </div>
           
@@ -128,5 +129,13 @@ export default function n4Page() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function N4Page() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center"><div className="text-muted-foreground">Loading...</div></div>}>
+      <N4PageContent />
+    </Suspense>
   );
 }
