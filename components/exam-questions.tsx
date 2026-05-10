@@ -5,6 +5,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useExamContext } from "@/components/exam-context";
+import { useAuth } from "@/components/auth-context";
+import { supabase } from "@/lib/supabase";
 
 interface Question {
   q: string;
@@ -36,12 +38,14 @@ export default function ExamQuestions({
   onBack,
 }: ExamQuestionsProps) {
   const { setExamData: setContextExamData } = useExamContext();
+  const { user } = useAuth();
 
   const [activeTab, setActiveTab] = useState("kanji");
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
+  const [savedToDb, setSavedToDb] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -120,6 +124,7 @@ export default function ExamQuestions({
   const level = getJLPTLevel(year);
   const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
+  // ============ AI CONTEXT ============
   const aiQuestions = useMemo(() => {
     if (activeTab === "dokkai") {
       const result: Array<{
@@ -181,7 +186,7 @@ export default function ExamQuestions({
     };
   }, [answers, activeTab, aiQuestions]);
 
-  // Kirim status ke context, termasuk apakah ujian sudah selesai
+  // Kirim ke ExamContext setiap kali tab/section berubah atau jawaban berubah
   useEffect(() => {
     setContextExamData({
       level,
@@ -204,6 +209,84 @@ export default function ExamQuestions({
     setContextExamData,
     showResults,
   ]);
+  // ============ END AI CONTEXT ============
+
+  // ============ AUTO-SAVE KE SUPABASE ============
+  useEffect(() => {
+    if (!showResults || !user || savedToDb) return;
+    if (total === 0) return;
+
+    const saveExamResult = async () => {
+      try {
+        // Hitung skor per section
+        const sectionScores = {
+          kanji: { correct: 0, total: 0 },
+          bunpou: { correct: 0, total: 0 },
+          dokkai: { correct: 0, total: 0 },
+        };
+
+        sections.forEach((section) => {
+          if (section.isDakkai) {
+            const dokkaiData = section.data as DakkaiSection[];
+            dokkaiData.forEach((dakkai) => {
+              dakkai.questions.forEach((question, index) => {
+                const key = `${section.id}-${dakkai.title}-${index}`;
+                sectionScores[section.id as "dokkai"].total++;
+                if (answers[key] === question.correct) {
+                  sectionScores[section.id as "dokkai"].correct++;
+                }
+              });
+            });
+          } else {
+            const questionData = section.data as Question[];
+            questionData.forEach((question, index) => {
+              const key = `${section.id}-${index}`;
+              sectionScores[section.id as "kanji" | "bunpou"].total++;
+              if (answers[key] === question.correct) {
+                sectionScores[section.id as "kanji" | "bunpou"].correct++;
+              }
+            });
+          }
+        });
+
+        const { error } = await supabase.from("exam_history").insert({
+          user_id: user.id,
+          year,
+          month,
+          level,
+          total_score: correct,
+          total_questions: total,
+          percentage,
+          section_scores: sectionScores,
+          answers,
+        });
+
+        if (error) {
+          console.error("Gagal simpan ke Supabase:", error);
+        } else {
+          setSavedToDb(true);
+          console.log("✅ Hasil ujian tersimpan ke Supabase");
+        }
+      } catch (err) {
+        console.error("Save error:", err);
+      }
+    };
+
+    saveExamResult();
+  }, [
+    showResults,
+    user,
+    savedToDb,
+    total,
+    correct,
+    percentage,
+    level,
+    year,
+    month,
+    answers,
+    sections,
+  ]);
+  // ============ END AUTO-SAVE ============
 
   if (!mounted) {
     return null;
@@ -217,6 +300,7 @@ export default function ExamQuestions({
 
   return (
     <section className={`min-h-screen ${bgColor} ${textColor} pb-32 transition-colors duration-300`}>
+      {/* STICKY HEADER */}
       <div className={`sticky top-0 z-30 ${bgColor} border-b ${cardBorder} backdrop-blur-sm bg-opacity-95`}>
         <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-2">
@@ -272,6 +356,7 @@ export default function ExamQuestions({
       </div>
 
       <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
+        {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
           <TabsList className={`grid w-full grid-cols-3 rounded-lg border-2 p-1 transition-colors ${
             isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-200"
@@ -294,6 +379,7 @@ export default function ExamQuestions({
             ))}
           </TabsList>
 
+          {/* Kanji Section */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults ? (
               <div className="space-y-4">
@@ -333,6 +419,7 @@ export default function ExamQuestions({
             )}
           </TabsContent>
 
+          {/* Bunpou Section */}
           <TabsContent value="bunpou" className="space-y-4 mt-6">
             {showResults ? (
               <div className="space-y-4">
@@ -372,6 +459,7 @@ export default function ExamQuestions({
             )}
           </TabsContent>
 
+          {/* Dokkai Section */}
           <TabsContent value="dokkai" className="space-y-6 mt-6">
             {showResults ? (
               <div className="space-y-6">
@@ -444,6 +532,7 @@ export default function ExamQuestions({
           </TabsContent>
         </Tabs>
 
+        {/* Results Summary */}
         {showResults && (
           <Card className={`border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl transition-colors ${
             isDarkMode
@@ -452,6 +541,23 @@ export default function ExamQuestions({
           }`}>
             <div className="text-center space-y-4">
               <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${textColor}`}>Hasil Ujian</h2>
+
+              {/* Status Save */}
+              {user && savedToDb && (
+                <p className="text-xs text-green-500 font-medium">
+                  ✓ Hasil tersimpan ke akun {user.name}
+                </p>
+              )}
+              {user && !savedToDb && total > 0 && (
+                <p className="text-xs text-muted-foreground italic">
+                  💾 Menyimpan hasil...
+                </p>
+              )}
+              {!user && (
+                <p className="text-xs text-amber-500 font-medium">
+                  💡 Login untuk menyimpan hasil ujian secara permanen
+                </p>
+              )}
 
               <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                 {percentage}%
@@ -510,6 +616,7 @@ export default function ExamQuestions({
                   onClick={() => {
                     setAnswers({});
                     setShowResults(false);
+                    setSavedToDb(false);
                   }}
                   className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6"
                 >
@@ -531,6 +638,7 @@ export default function ExamQuestions({
         )}
       </div>
 
+      {/* STICKY BOTTOM SUBMIT BUTTON */}
       {!showResults && (
         <div className={`fixed bottom-0 left-0 right-0 z-40 border-t ${cardBorder} ${bgColor} backdrop-blur-sm bg-opacity-95 p-3 sm:p-4`}>
           <div className="max-w-5xl mx-auto">
@@ -549,6 +657,8 @@ export default function ExamQuestions({
     </section>
   );
 }
+
+/* Helper Components */
 
 function QuestionCard({
   index,
