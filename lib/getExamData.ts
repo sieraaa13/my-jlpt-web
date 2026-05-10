@@ -1,13 +1,15 @@
-import { exam201107 } from "./exams/2011/07";
+// Re-export dari exams-manifest
+import { exam201107 } from "../data/exams/2011/07";
 
-// Data manifest - saat ini hanya N3 yang ada datanya
 const EXAMS_DATA: Record<string, any> = {
   "2011-07": exam201107,
-  // "2011-12": exam201112,
-  // Tambahkan data lain sesuai ketersediaan file
 };
 
-export async function getExamData(year: string, period: string, level?: string){
+export async function getExamData(
+  year: string,
+  period: string,
+  level?: string
+) {
   const key = `${year}-${period}`;
   const examData = EXAMS_DATA[key];
 
@@ -17,6 +19,6 @@ export async function getExamData(year: string, period: string, level?: string){
     return null;
   }
 
-  console.log(`Loaded exam data for ${key}${level ? ` - Level: ${level.toUpperCase()}` : ""}`);
+  console.log(`Loaded exam data for ${key}`);
   return examData;
 }
