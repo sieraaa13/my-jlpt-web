@@ -42,17 +42,29 @@ export const categoryInfo: Record<string, any> = {
     title: "総まとめ",
     description: "Materi belajar terstruktur per minggu dengan target waktu jelas",
     icon: "📚",
+    questions: [],  // Empty by default - akan diisi dari data source lain
   },
   shinkanzen: {
     id: "shinkanzen",
     title: "新完全マスター",
     description: "Buku latihan komprehensif untuk persiapan JLPT",
     icon: "📖",
+    questions: [],  // Empty by default - akan diisi dari data source lain
   },
   pratiksoal: {
     id: "pratiksoal",
     title: "Latihan Soal",
     description: "Kerjakan soal-soal JLPT dari tahun 2011-2025",
     icon: "✍️",
+    questions: [],  // Empty by default - akan diisi dari data source lain
   },
+};
+
+// Fallback categories jika category tidak ditemukan
+export const defaultCategory = {
+  id: "unknown",
+  title: "Kategori Tidak Ditemukan",
+  description: "Kategori yang Anda cari tidak tersedia",
+  icon: "❓",
+  questions: [],
 };
