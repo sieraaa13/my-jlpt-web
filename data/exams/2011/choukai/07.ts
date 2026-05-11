@@ -1,48 +1,25 @@
-// ============================================================
-// JLPT N3 聴解 (Choukai) - 2011年07月
-// 
-// CARA PENGGUNAAN AUDIO:
-//   Setiap soal memiliki properti `audio` dengan path file audio.
-//   Ganti nilai string path sesuai lokasi file audio kamu.
-//   Contoh: audio: "/audio/choukai/mondai1/01.mp3"
-// ============================================================
+// /data/exams/2011/choukai/07.ts
 
 export const exam201107_choukai = {
-
-  // ============================================================
-  // 問題 1
-  // まず質問を聞いてください。それから話を聞いて、
-  // 問題用紙の１から４の中から、最もよいものを一つえらんでください。
-  // ============================================================
-  mondai1: {
-    instruction:
-      "まず質問を聞いてください。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。",
-    questions: [
-      {
-        q: "1番",
-        // ↓ Ganti path audio di bawah ini sesuai file kamu
-        audio: "/audio/choukai/mondai1/01.mp3",
-        // Diagram: のり→ア、ボールペン→イ、ノート→ウ、封筒→エ、コピー用紙→オ
-        hasDiagram: true,
-        diagram: {
-          items: [
-            { label: "のり", key: "ア" },
-            { label: "ボールペン", key: "イ" },
-            { label: "ノート", key: "ウ" },
-            { label: "封筒", key: "エ" },
-            { label: "コピー用紙", key: "オ" },
-          ],
-        },
-        options: ["アイウ", "アウエ", "アウオ", "アエオ"],
-        correct: null, // ← isi jawaban benar (0-3) setelah tahu dari audio
-      },
-      {
-        q: "2番",
-        // ↓ Ganti path audio di bawah ini sesuai file kamu
-        audio: "/audio/choukai/mondai1/02.mp3",
-        options: ["赤ちゃんのふく", "赤ちゃんのおもちゃ", "友だちのふく", "友だちのバッグ"],
-        correct: null, // ← isi jawaban benar (0-3) setelah tahu dari audio
-      },
+  choukai: [
+    {
+      q: "問題1: ...", // Ambil dari mondai1 questions
+      audio: "/audio/choukai/mondai1/01.mp3",
+      options: ["1番", "2番", "3番", "4番"],
+      correct: 0,  // Index jawaban benar (0-3)
+    },
+    {
+      q: "問題2: ...",
+      audio: "/audio/choukai/mondai1/02.mp3",
+      options: ["1番", "2番", "3番", "4番"],
+      correct: 1,
+    },
+    {
+      q: "問題3: ...",
+      audio: "/audio/choukai/mondai2/01.mp3",
+      options: ["1番", "2番", "3番", "4番"],
+      correct: 2,
+    },
       {
         q: "3番",
         // ↓ Ganti path audio di bawah ini sesuai file kamu
