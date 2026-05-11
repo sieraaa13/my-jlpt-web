@@ -2,6 +2,7 @@
 // JLPT N3 聴解 (Choukai) - 2011年07月
 // Format: Flattened choukai array untuk component
 // Total: 28 soal (Mondai 1-5)
+// Audio path: /asset/audio/2011/07/{mondai}-{nomor}.mp3
 // ============================================================
 
 export const exam201107_choukai = {
@@ -11,7 +12,7 @@ export const exam201107_choukai = {
     // ============================================================
     {
       q: "【問題1-1番】のり、ボールペン、ノート、封筒、コピー用紙の中から、最も良いものを選んでください。",
-      audio: "/audio/choukai/mondai1/01.mp3",
+      audio: "/asset/audio/2011/07/1-1.mp3",
       options: ["アイウ", "アウエ", "アウオ", "アエオ"],
       correct: 0,  // 実際の答えに合わせて変更してください
       mondai: 1,
@@ -19,7 +20,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題1-2番】何を買いますか。",
-      audio: "/audio/choukai/mondai1/02.mp3",
+      audio: "/asset/audio/2011/07/1-2.mp3",
       options: ["赤ちゃんのふく", "赤ちゃんのおもちゃ", "友だちのふく", "友だちのバッグ"],
       correct: 0,
       mondai: 1,
@@ -27,7 +28,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題1-3番】何をしますか。",
-      audio: "/audio/choukai/mondai1/03.mp3",
+      audio: "/asset/audio/2011/07/1-3.mp3",
       options: [
         "友だちにれんらくする",
         "レストランをよやくする",
@@ -40,7 +41,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題1-4番】男の人は何をしますか。",
-      audio: "/audio/choukai/mondai1/04.mp3",
+      audio: "/asset/audio/2011/07/1-4.mp3",
       options: ["映画を見る", "にもつを出す", "本屋に行く", "ご飯を食べる"],
       correct: 0,
       mondai: 1,
@@ -48,7 +49,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題1-5番】女の人は何をしますか。",
-      audio: "/audio/choukai/mondai1/05.mp3",
+      audio: "/asset/audio/2011/07/1-5.mp3",
       options: [
         "かさを用意する",
         "リビングのエアコンをけす",
@@ -61,7 +62,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題1-6番】これから何をすることになりますか。",
-      audio: "/audio/choukai/mondai1/06.mp3",
+      audio: "/asset/audio/2011/07/1-6.mp3",
       options: [
         "アンケートをとる",
         "行く場所をさがす",
@@ -78,7 +79,7 @@ export const exam201107_choukai = {
     // ============================================================
     {
       q: "【問題2-1番】クッキングクラスはいつから始まりますか。",
-      audio: "/audio/choukai/mondai2/01.mp3",
+      audio: "/asset/audio/2011/07/2-1.mp3",
       options: ["来週の月曜日", "来週の火曜日", "来週の水曜日", "来週の木曜日"],
       correct: 0,
       mondai: 2,
@@ -86,7 +87,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題2-2番】女の人がこのクラスを選んだ理由は何ですか。",
-      audio: "/audio/choukai/mondai2/02.mp3",
+      audio: "/asset/audio/2011/07/2-2.mp3",
       options: [
         "いろいろな国の料理が作れるから",
         "へいじつに教室があるから",
@@ -99,7 +100,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題2-3番】男の人が前の仕事をやめた理由は何ですか。",
-      audio: "/audio/choukai/mondai2/03.mp3",
+      audio: "/asset/audio/2011/07/2-3.mp3",
       options: [
         "朝早い仕事だったから",
         "じきゅうが安かったから",
@@ -112,7 +113,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題2-4番】会社では何ができないことが問題ですか。",
-      audio: "/audio/choukai/mondai2/04.mp3",
+      audio: "/asset/audio/2011/07/2-4.mp3",
       options: [
         "インターネットを使うこと",
         "メールをすること",
@@ -125,7 +126,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題2-5番】女の人がこのイベントに参加できない理由は何ですか。",
-      audio: "/audio/choukai/mondai2/05.mp3",
+      audio: "/asset/audio/2011/07/2-5.mp3",
       options: [
         "もうしこみのしめきりがすぎたから",
         "2回目のさんかだから",
@@ -138,7 +139,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題2-6番】女の人にとって良いニュースは何ですか。",
-      audio: "/audio/choukai/mondai2/06.mp3",
+      audio: "/asset/audio/2011/07/2-6.mp3",
       options: [
         "新しい店ではたらけること",
         "車を使って仕事ができること",
@@ -156,7 +157,7 @@ export const exam201107_choukai = {
     // ============================================================
     {
       q: "【問題3-1番】全体としてどんな内容ですか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai3/01.mp3",
+      audio: "/asset/audio/2011/07/3-1.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番", "（音声で選択肢を聞いてください）4番"],
       correct: 0,
       mondai: 3,
@@ -165,7 +166,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題3-2番】全体としてどんな内容ですか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai3/02.mp3",
+      audio: "/asset/audio/2011/07/3-2.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番", "（音声で選択肢を聞いてください）4番"],
       correct: 0,
       mondai: 3,
@@ -174,7 +175,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題3-3番】全体としてどんな内容ですか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai3/03.mp3",
+      audio: "/asset/audio/2011/07/3-3.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番", "（音声で選択肢を聞いてください）4番"],
       correct: 0,
       mondai: 3,
@@ -188,7 +189,7 @@ export const exam201107_choukai = {
     // ============================================================
     {
       q: "【問題4-1番】やじるし（→）の人は何と言いますか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai4/01.mp3",
+      audio: "/asset/audio/2011/07/4-1.mp3",
       image: "/images/choukai/mondai4/01.png",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
@@ -199,7 +200,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題4-2番】やじるし（→）の人は何と言いますか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai4/02.mp3",
+      audio: "/asset/audio/2011/07/4-2.mp3",
       image: "/images/choukai/mondai4/02.png",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
@@ -210,7 +211,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題4-3番】やじるし（→）の人は何と言いますか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai4/03.mp3",
+      audio: "/asset/audio/2011/07/4-3.mp3",
       image: "/images/choukai/mondai4/03.png",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
@@ -221,7 +222,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題4-4番】やじるし（→）の人は何と言いますか。（選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai4/04.mp3",
+      audio: "/asset/audio/2011/07/4-4.mp3",
       image: "/images/choukai/mondai4/04.png",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
@@ -237,7 +238,7 @@ export const exam201107_choukai = {
     // ============================================================
     {
       q: "【問題5-1番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/01.mp3",
+      audio: "/asset/audio/2011/07/5-1.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -246,7 +247,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-2番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/02.mp3",
+      audio: "/asset/audio/2011/07/5-2.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -255,7 +256,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-3番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/03.mp3",
+      audio: "/asset/audio/2011/07/5-3.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -264,7 +265,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-4番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/04.mp3",
+      audio: "/asset/audio/2011/07/5-4.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -273,7 +274,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-5番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/05.mp3",
+      audio: "/asset/audio/2011/07/5-5.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -282,7 +283,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-6番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/06.mp3",
+      audio: "/asset/audio/2011/07/5-6.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -291,7 +292,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-7番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/07.mp3",
+      audio: "/asset/audio/2011/07/5-7.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -300,7 +301,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-8番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/08.mp3",
+      audio: "/asset/audio/2011/07/5-8.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
@@ -309,7 +310,7 @@ export const exam201107_choukai = {
     },
     {
       q: "【問題5-9番】（文と選択肢は音声で聞いてください）",
-      audio: "/audio/choukai/mondai5/09.mp3",
+      audio: "/asset/audio/2011/07/5-9.mp3",
       options: ["（音声で選択肢を聞いてください）1番", "（音声で選択肢を聞いてください）2番", "（音声で選択肢を聞いてください）3番"],
       correct: 0,
       mondai: 5,
