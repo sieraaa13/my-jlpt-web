@@ -1,6 +1,6 @@
 // ============================================================
 // /data/jlpt-data.ts
-// Data struktur kategori JLPT untuk level selection
+// DIPERBAIKI: Tambah questions property ke categoryInfo
 // ============================================================
 
 export const jlptData = {
@@ -36,35 +36,26 @@ export const jlptData = {
   },
 };
 
-export const categoryInfo: Record<string, any> = {
+export const categoryInfo = {
   soumatome: {
     id: "soumatome",
     title: "総まとめ",
     description: "Materi belajar terstruktur per minggu dengan target waktu jelas",
     icon: "📚",
-    questions: [],  // Empty by default - akan diisi dari data source lain
+    questions: [],  // ← DITAMBAH
   },
   shinkanzen: {
     id: "shinkanzen",
     title: "新完全マスター",
     description: "Buku latihan komprehensif untuk persiapan JLPT",
     icon: "📖",
-    questions: [],  // Empty by default - akan diisi dari data source lain
+    questions: [],  // ← DITAMBAH
   },
   pratiksoal: {
     id: "pratiksoal",
     title: "Latihan Soal",
     description: "Kerjakan soal-soal JLPT dari tahun 2011-2025",
     icon: "✍️",
-    questions: [],  // Empty by default - akan diisi dari data source lain
+    questions: [],  // ← DITAMBAH
   },
-};
-
-// Fallback categories jika category tidak ditemukan
-export const defaultCategory = {
-  id: "unknown",
-  title: "Kategori Tidak Ditemukan",
-  description: "Kategori yang Anda cari tidak tersedia",
-  icon: "❓",
-  questions: [],
-};
+} as const;
