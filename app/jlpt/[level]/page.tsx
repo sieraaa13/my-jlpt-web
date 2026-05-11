@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import ExamSelector from "@/components/exam-selector";
+import { ExamSelector } from "@/components/exam-selector";
 
 interface Props {
   params: Promise<{
