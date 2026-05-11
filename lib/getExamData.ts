@@ -15,11 +15,20 @@ import { exam201812 } from "../data/exams/2018/12";
 import { exam201907 } from "../data/exams/2019/07";
 import { exam202212 } from "../data/exams/2022/12";
 
+// ============ IMPORT CHOUKAI DATA ============
+import { exam201107_choukai } from "../data/exams/2011/choukai/07";
+// import { exam201112_choukai } from "../data/exams/2011/choukai/12";
+// import { exam201207_choukai } from "../data/exams/2012/choukai/07";
+// ... nanti tambah sesuai file choukai yang ada
+
 // Data exam dipisah per level
 // N3 punya banyak data, level lain belum tersedia
 const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
   n3: {
-    "2011-07": exam201107,
+    "2011-07": {
+      ...exam201107,
+      choukai: exam201107_choukai.choukai,  // Merge choukai data
+    },
     "2011-12": exam201112,
     "2012-07": exam201207,
     "2012-12": exam201212,
