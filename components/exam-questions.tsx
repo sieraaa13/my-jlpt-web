@@ -23,7 +23,7 @@ interface DakkaiSection {
 interface ChoukaiQuestion {
   q: string;
   audio: string;
-  introAudio?: string;        // ← TAMBAH BARIS INI
+  introAudio?: string;   // ← TAMBAH INI
   options: string[];
   correct: number;
   transcript?: string;
@@ -503,22 +503,188 @@ export default function ExamQuestions({
 
 /* ============ HELPER COMPONENTS ============ */
 
-function QuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: { index: number; question: Question; userAnswer?: number; onAnswer: (optionIndex: number) => void; isDarkMode: boolean; }) {
+function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: {
+  index: number;
+  question: ChoukaiQuestion;
+  userAnswer?: number;
+  onAnswer: (optionIndex: number) => void;
+  isDarkMode: boolean;
+}) {
+  const [isPlayingIntro, setIsPlayingIntro] = useState(false);
+  const [isPlayingSoal, setIsPlayingSoal] = useState(false);
+  const [playCountSoal, setPlayCountSoal] = useState(0);
+
   const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
   const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
   const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
   const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
 
+  // ---- Refs ----
+  const introRef = useRef<HTMLAudioElement | null>(null);
+  const soalRef = useRef<HTMLAudioElement | null>(null);
+
+  // ---- Stop semua audio lain saat mulai play ----
+  const stopAll = () => {
+    introRef.current?.pause();
+    soalRef.current?.pause();
+    setIsPlayingIntro(false);
+    setIsPlayingSoal(false);
+  };
+
+  // ---- Play / Pause Intro ----
+  const handleIntro = () => {
+    if (!introRef.current) return;
+    if (isPlayingIntro) {
+      introRef.current.pause();
+      setIsPlayingIntro(false);
+    } else {
+      stopAll();
+      introRef.current.currentTime = 0;
+      introRef.current.play();
+      setIsPlayingIntro(true);
+    }
+  };
+
+  // ---- Play / Pause Soal ----
+  const handleSoal = () => {
+    if (!soalRef.current) return;
+    if (isPlayingSoal) {
+      soalRef.current.pause();
+      setIsPlayingSoal(false);
+    } else {
+      stopAll();
+      soalRef.current.play();
+      setIsPlayingSoal(true);
+      setPlayCountSoal((c) => c + 1);
+    }
+  };
+
+  // ---- Ulangi soal dari awal ----
+  const handleReplay = () => {
+    if (!soalRef.current) return;
+    stopAll();
+    soalRef.current.currentTime = 0;
+    soalRef.current.play();
+    setIsPlayingSoal(true);
+    setPlayCountSoal((c) => c + 1);
+  };
+
   return (
     <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
       <div className="flex items-start gap-3 sm:gap-4">
-        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
+          {index + 1}.
+        </div>
         <div className="flex-1 min-w-0">
-          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>{question.q}</p>
+          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>
+            {question.q}
+          </p>
+
+          {/* Audio Player */}
+          <div className={`rounded-xl p-4 mb-4 border-2 space-y-3 ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-cyan-50 border-cyan-200"}`}>
+
+            {/* Hidden audio elements */}
+            {question.introAudio && (
+              <audio
+                ref={introRef}
+                src={question.introAudio}
+                onEnded={() => setIsPlayingIntro(false)}
+                preload="metadata"
+              />
+            )}
+            <audio
+              ref={soalRef}
+              src={question.audio}
+              onEnded={() => setIsPlayingSoal(false)}
+              preload="metadata"
+            />
+
+            {/* INTRO - tampil hanya jika ada introAudio */}
+            {question.introAudio && (
+              <div className={`flex items-center gap-2 p-3 rounded-lg border ${isDarkMode ? "bg-slate-700 border-slate-600" : "bg-white border-cyan-200"}`}>
+                <span className="text-base">📢</span>
+                <span className={`text-sm font-medium flex-1 ${textColor}`}>
+                  Instruksi Soal
+                </span>
+                <Button
+                  size="sm"
+                  onClick={handleIntro}
+                  variant={isPlayingIntro ? "secondary" : "outline"}
+                  className={`gap-1 text-xs ${isDarkMode ? "border-slate-500 text-slate-200" : "border-cyan-300"}`}
+                >
+                  {isPlayingIntro ? "⏸ Pause" : "▶ Putar"}
+                </Button>
+              </div>
+            )}
+
+            {/* SOAL AUDIO */}
+            <div className={`flex items-center gap-2 p-3 rounded-lg border ${isDarkMode ? "bg-slate-700 border-slate-600" : "bg-white border-cyan-200"}`}>
+              <span className="text-base">🎧</span>
+              <span className={`text-sm font-medium flex-1 ${textColor}`}>
+                Audio Soal
+                {playCountSoal > 0 && (
+                  <span className={`ml-2 text-xs ${mutedText}`}>
+                    (diputar {playCountSoal}x)
+                  </span>
+                )}
+              </span>
+              <div className="flex gap-1">
+                <Button
+                  size="sm"
+                  onClick={handleSoal}
+                  className="gap-1 text-xs bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
+                >
+                  {isPlayingSoal ? "⏸ Pause" : playCountSoal > 0 ? "▶ Lanjut" : "▶ Putar"}
+                </Button>
+                {playCountSoal > 0 && (
+                  <Button
+                    size="sm"
+                    onClick={handleReplay}
+                    variant="outline"
+                    className={`gap-1 text-xs ${isDarkMode ? "border-slate-500 text-slate-200" : "border-slate-300"}`}
+                  >
+                    🔄
+                  </Button>
+                )}
+              </div>
+            </div>
+
+            {/* Transcript */}
+            {question.transcript && (
+              <details className="mt-1">
+                <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>
+                  📝 Lihat Transcript
+                </summary>
+                <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>
+                  {question.transcript}
+                </p>
+              </details>
+            )}
+          </div>
+
+          {/* Pilihan Jawaban */}
           <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((option, optIndex) => (
-              <button key={optIndex} onClick={() => onAnswer(optIndex)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === optIndex ? (isDarkMode ? "bg-cyan-500/20 text-cyan-300 border-cyan-500" : "bg-cyan-50 text-cyan-700 border-cyan-500") : (isDarkMode ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50" : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50")}`}>
-                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${userAnswer === optIndex ? "bg-cyan-500 text-white border-cyan-500" : `border-slate-400 ${mutedText}`}`}>{optIndex + 1}</span>
+              <button
+                key={optIndex}
+                onClick={() => onAnswer(optIndex)}
+                className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${
+                  userAnswer === optIndex
+                    ? isDarkMode
+                      ? "bg-cyan-500/20 text-cyan-300 border-cyan-500"
+                      : "bg-cyan-50 text-cyan-700 border-cyan-500"
+                    : isDarkMode
+                    ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50"
+                    : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50"
+                }`}
+              >
+                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
+                  userAnswer === optIndex
+                    ? "bg-cyan-500 text-white border-cyan-500"
+                    : `border-slate-400 ${mutedText}`
+                }`}>
+                  {optIndex + 1}
+                </span>
                 <span className="flex-1 break-words leading-relaxed">{option}</span>
               </button>
             ))}
