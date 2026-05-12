@@ -1,264 +1,344 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { useAuth } from "@/components/auth-context";
-import {
-  getDailyState,
-  saveDailyState,
-  recordAnswer,
-  changeTopic,
-  changeLevel,
-  isQuotaFull,
-  isTopicLocked,
-  getTimeUntilReset,
-} from "@/lib/quiz-store";
-import { generateQuizQuestions, getImageUrl } from "@/lib/quiz-ai";
-import { QUIZ_LEVELS, QUIZ_TOPICS, MAX_QUESTIONS_PER_DAY, MAX_TOPIC_CHANGES_PER_DAY } from "@/lib/quiz-config";
-import type { QuizQuestion, QuizDailyState } from "@/types/quiz";
+import { useState, useEffect } from "react";
+import { Navbar }   from "@/components/navbar";
+import { Footer }   from "@/components/footer";
+import { Card }     from "@/components/ui/card";
+import { Button }   from "@/components/ui/button";
+import { useAuth }  from "@/components/auth-context";
+import { supabase } from "@/lib/supabase";
+import { getPlayerLevel, getProgressToNext, getPtsToNext, PLAYER_LEVELS } from "@/lib/quiz-levels";
 
+// ─── CONSTANTS ───────────────────────────────────────────────
+const MAX_Q   = 5;
+const MAX_T   = 2;
+
+const QUIZ_LEVELS = [
+  { name:"N5", label:"N5 Pemula",      ptCorrect:1, ptStreak:3, color:"#1D9E75" },
+  { name:"N4", label:"N4 Dasar",       ptCorrect:2, ptStreak:3, color:"#534AB7" },
+  { name:"N3", label:"N3 Menengah",    ptCorrect:3, ptStreak:3, color:"#BA7517" },
+  { name:"N2", label:"N2 Lanjut",      ptCorrect:4, ptStreak:5, color:"#D85A30" },
+  { name:"N1", label:"N1 Profesional", ptCorrect:5, ptStreak:5, color:"#A32D2D" },
+];
+
+const TOPICS = [
+  { id:"budaya",   name:"Budaya Umum",          icon:"🎌", desc:"Tradisi & kehidupan sehari-hari" },
+  { id:"makanan",  name:"Makanan & Kuliner",     icon:"🍜", desc:"Kuliner khas Jepang" },
+  { id:"anime",    name:"Anime & Manga",         icon:"⛩️", desc:"Pop culture Jepang" },
+  { id:"tempat",   name:"Tempat Instagrammable", icon:"📸", desc:"Spot foto & wisata populer" },
+  { id:"festival", name:"Festival & Tradisi",    icon:"🎆", desc:"Matsuri & perayaan khas" },
+  { id:"modern",   name:"Jepang Modern",         icon:"🚅", desc:"Teknologi & gaya hidup kini" },
+];
+
+// ─── TYPES ───────────────────────────────────────────────────
+interface Question {
+  q: string; opts: string[]; ans: number;
+  img_keyword: string; img_cat: string; explain: string;
+}
+interface DailyState {
+  date: string; qUsed: number; tUsed: number;
+  pts: number; streak: number; topicId: string; lvl: number;
+  totalPtsAlltime: number; usedTopics: string[];
+}
+type Phase = "home"|"loading"|"quiz"|"result"|"done";
+
+// ─── HELPERS ─────────────────────────────────────────────────
+function today() { return new Date().toISOString().slice(0,10); }
+function resetIn() {
+  const now=new Date(), tmr=new Date(now);
+  tmr.setDate(tmr.getDate()+1); tmr.setHours(0,0,0,0);
+  const d=Math.round((tmr.getTime()-now.getTime())/60000);
+  return `${Math.floor(d/60)}j ${d%60}m`;
+}
+
+// ─── SUPABASE ────────────────────────────────────────────────
+async function loadState(uid: string): Promise<DailyState> {
+  const { data } = await supabase
+    .from("quiz_daily").select("*")
+    .eq("user_id", uid).eq("date", today()).single();
+  if (!data) return {
+    date:today(), qUsed:0, tUsed:0, pts:0, streak:0,
+    topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
+  };
+  return {
+    date: data.date, qUsed: data.q_used, tUsed: data.t_used,
+    pts: data.total_pts, streak: data.streak,
+    topicId: data.topic_id, lvl: data.level,
+    totalPtsAlltime: data.total_pts_alltime ?? 0,
+    usedTopics: data.used_topics ?? [],
+  };
+}
+
+async function saveState(uid: string, s: DailyState) {
+  await supabase.from("quiz_daily").upsert({
+    user_id: uid, date: s.date, q_used: s.qUsed, t_used: s.tUsed,
+    total_pts: s.pts, streak: s.streak, topic_id: s.topicId, level: s.lvl,
+    total_pts_alltime: s.totalPtsAlltime, used_topics: s.usedTopics,
+  }, { onConflict: "user_id,date" });
+}
+
+// ─── COMPONENT ───────────────────────────────────────────────
 export default function QuizPage() {
   const { user } = useAuth();
 
-  const [state, setState] = useState<QuizDailyState>({
-    date: new Date().toISOString().slice(0, 10),
-    qUsed: 0,
-    tUsed: 0,
-    pts: 0,
-    streak: 0,
-    topicId: "budaya",
-    lvl: 1,
-  });
+  const empty: DailyState = {
+    date:today(), qUsed:0, tUsed:0, pts:0, streak:0,
+    topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
+  };
 
-  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
-  const [curQ, setCurQ] = useState(0);
-  const [answered, setAnswered] = useState(false);
-  const [selectedOpt, setSelectedOpt] = useState<number | null>(null);
-  const [phase, setPhase] = useState<"home" | "loading" | "quiz" | "result" | "done">("home");
-  const [imgLoaded, setImgLoaded] = useState(false);
-  const [floatPts, setFloatPts] = useState<number | null>(null);
+  const [state,     setState]     = useState<DailyState>(empty);
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [curQ,      setCurQ]      = useState(0);
+  const [answered,  setAnswered]  = useState(false);
+  const [selected,  setSelected]  = useState<number|null>(null);
+  const [phase,     setPhase]     = useState<Phase>("home");
+  const [imgOk,     setImgOk]     = useState(false);
+  const [floatPts,  setFloatPts]  = useState<number|null>(null);
   const [resetTime, setResetTime] = useState("");
+  const [showLevels,setShowLevels]= useState(false);
 
-  // Load state dari Supabase
   useEffect(() => {
     if (!user) return;
-    getDailyState(user.id).then((s) => {
+    loadState(user.id).then(s => {
       setState(s);
-      if (isQuotaFull(s)) setPhase("done");
+      if (s.qUsed >= MAX_Q) setPhase("done");
     });
   }, [user]);
 
-  // Update countdown timer
   useEffect(() => {
-    setResetTime(getTimeUntilReset());
-    const interval = setInterval(() => setResetTime(getTimeUntilReset()), 60000);
-    return () => clearInterval(interval);
+    setResetTime(resetIn());
+    const t = setInterval(()=>setResetTime(resetIn()), 60000);
+    return () => clearInterval(t);
   }, []);
 
-  const lvl = QUIZ_LEVELS[state.lvl];
-  const topic = QUIZ_TOPICS.find((t) => t.id === state.topicId)!;
+  const lv    = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[1];
+  const topic = TOPICS.find(t=>t.id===state.topicId) ?? TOPICS[0];
+  const q     = questions[curQ];
+  const plLvl = getPlayerLevel(state.totalPtsAlltime);
+  const prog  = getProgressToNext(state.totalPtsAlltime);
+  const toNext= getPtsToNext(state.totalPtsAlltime);
 
-  // ── START QUIZ ──────────────────────────────────────────────
+  // ── Start quiz ──────────────────────────────────────────────
   async function startQuiz() {
     if (!user) return;
-    setPhase("loading");
-    setQuestions([]);
-    setCurQ(0);
-    setAnswered(false);
-    setSelectedOpt(null);
 
+    // Hitung topik — HANYA saat mulai quiz, bukan saat pilih topik
+    let newTUsed = state.tUsed;
+    let newUsedTopics = [...state.usedTopics];
+    if (!newUsedTopics.includes(state.topicId)) {
+      newUsedTopics.push(state.topicId);
+      newTUsed = newUsedTopics.length;
+    }
+
+    const updated = { ...state, tUsed: newTUsed, usedTopics: newUsedTopics };
+    setState(updated);
+    await saveState(user.id, updated);
+
+    setPhase("loading");
+    setQuestions([]); setCurQ(0); setAnswered(false); setSelected(null); setImgOk(false);
     try {
-      const remaining = MAX_QUESTIONS_PER_DAY - state.qUsed;
-      const n = Math.min(remaining, 5);
-      const qs = await generateQuizQuestions(state.lvl, state.topicId, n);
+      const n = Math.min(MAX_Q - state.qUsed, 5);
+      const res = await fetch("/api/generate-quiz", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ levelIndex: state.lvl, topicId: state.topicId, count: n }),
+      });
+      if (!res.ok) throw new Error("API error " + res.status);
+      const { questions: qs } = await res.json();
       setQuestions(qs);
       setPhase("quiz");
-      setImgLoaded(false);
-    } catch (e) {
+    } catch(e) {
       console.error(e);
+      alert("Gagal memuat soal. Pastikan koneksi internet dan coba lagi.");
       setPhase("home");
-      alert("Gagal memuat soal. Coba lagi.");
     }
   }
 
-  // ── CHOOSE ANSWER ───────────────────────────────────────────
-  async function choose(optIdx: number) {
+  // ── Choose answer ───────────────────────────────────────────
+  async function choose(idx: number) {
     if (!user || answered) return;
-    setAnswered(true);
-    setSelectedOpt(optIdx);
+    setAnswered(true); setSelected(idx);
 
-    const q = questions[curQ];
-    const correct = optIdx === q.ans;
-    const bonus = correct && state.streak >= 2 ? lvl.ptStreak : 0;
-    const pts = correct ? lvl.ptCorrect + bonus : 0;
+    const correct = idx === q.ans;
+    const bonus   = correct && state.streak >= 2 ? lv.ptStreak : 0;
+    const pts     = correct ? lv.ptCorrect + bonus : 0;
 
-    if (pts > 0) {
-      setFloatPts(pts);
-      setTimeout(() => setFloatPts(null), 900);
-    }
+    if (pts > 0) { setFloatPts(pts); setTimeout(()=>setFloatPts(null), 900); }
 
-    const newState = await recordAnswer(user.id, state, correct, pts);
-    setState(newState);
+    const ns: DailyState = {
+      ...state,
+      qUsed:           state.qUsed + 1,
+      pts:             state.pts + pts,
+      streak:          correct ? state.streak + 1 : 0,
+      totalPtsAlltime: state.totalPtsAlltime + pts,
+    };
+    setState(ns);
+    await saveState(user.id, ns);
   }
 
-  // ── NEXT QUESTION ───────────────────────────────────────────
+  // ── Next question ───────────────────────────────────────────
   function nextQ() {
-    if (isQuotaFull(state)) {
-      setPhase("done");
-      return;
-    }
-    if (curQ + 1 >= questions.length) {
-      setPhase("result");
-      return;
-    }
-    setCurQ((c) => c + 1);
-    setAnswered(false);
-    setSelectedOpt(null);
-    setImgLoaded(false);
+    if (state.qUsed >= MAX_Q) { setPhase("done"); return; }
+    if (curQ + 1 >= questions.length) { setPhase("result"); return; }
+    setCurQ(c=>c+1); setAnswered(false); setSelected(null); setImgOk(false);
   }
 
-  // ── CHANGE TOPIC ────────────────────────────────────────────
-  async function handleChangeTopic(topicId: string) {
-    if (!user || topicId === state.topicId || isTopicLocked(state)) return;
-    const newState = await changeTopic(user.id, state, topicId);
-    if (newState) {
-      setState(newState);
-      setPhase("home");
-    }
+  // ── Change topic — hanya update pilihan, belum hitung tUsed ─
+  async function handleChangeTopic(id: string) {
+    if (!user || id === state.topicId) return;
+    // Cek apakah sudah mencapai limit (berdasarkan topik yang sudah digunakan)
+    const wouldExceed = !state.usedTopics.includes(id) && state.usedTopics.length >= MAX_T;
+    if (wouldExceed) return;
+    const ns = { ...state, topicId: id };
+    setState(ns);
+    await saveState(user.id, ns);
+    setPhase("home");
   }
 
-  // ── CHANGE LEVEL ────────────────────────────────────────────
-  async function handleChangeLevel(lvlIdx: number) {
-    if (!user || lvlIdx === state.lvl) return;
-    const newState = await changeLevel(user.id, state, lvlIdx);
-    setState(newState);
+  // ── Change level ────────────────────────────────────────────
+  async function handleChangeLevel(i: number) {
+    if (!user || i === state.lvl) return;
+    const ns = { ...state, lvl: i };
+    setState(ns);
+    await saveState(user.id, ns);
   }
 
-  // ── CURRENT QUESTION ────────────────────────────────────────
-  const q = questions[curQ];
-  const qGlobal = state.qUsed - questions.length + curQ + 1;
-
-  // ────────────────────────────────────────────────────────────
-  // RENDER
-  // ────────────────────────────────────────────────────────────
+  // ─── RENDER ──────────────────────────────────────────────────
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <div className="pt-20 pb-20 max-w-2xl mx-auto px-4">
+      <div className="pt-20 pb-24 max-w-2xl mx-auto px-4">
 
-        {/* ── HEADER ── */}
+        {/* HEADER */}
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-bold">Quiz Harian Jepang</h1>
-          <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
-            ✦ Claude AI
-          </span>
+          <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">✦ AI Powered</span>
         </div>
 
-        {/* ── DAILY QUOTA ── */}
+        {/* PLAYER LEVEL CARD */}
+        <Card className="p-4 mb-4 cursor-pointer" onClick={()=>setShowLevels(!showLevels)}>
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-4xl">{plLvl.icon}</span>
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <span className="text-base font-semibold">{plLvl.name}</span>
+                <span className="text-xs px-2 py-0.5 rounded-full font-medium"
+                  style={{ background:`${plLvl.color}20`, color:plLvl.color }}>
+                  Level {plLvl.num}
+                </span>
+                <span className="text-xs text-muted-foreground ml-auto">
+                  {showLevels ? "▲ Tutup" : "▼ Lihat semua level"}
+                </span>
+              </div>
+              <p className="text-xs text-muted-foreground">{plLvl.jp} • {state.totalPtsAlltime} poin total</p>
+            </div>
+          </div>
+          <div className="h-2 bg-muted rounded-full overflow-hidden mb-1">
+            <div className="h-full rounded-full transition-all duration-500"
+              style={{ width:`${prog}%`, background:plLvl.color }} />
+          </div>
+          <p className="text-xs text-muted-foreground">
+            {plLvl.num < 10 ? `${toNext} poin lagi untuk Level ${plLvl.num + 1}` : "Level maksimal tercapai! 👑"}
+          </p>
+        </Card>
+
+        {/* LEVEL PROGRESSION PANEL */}
+        {showLevels && (
+          <Card className="p-4 mb-4">
+            <p className="text-sm font-medium mb-3">Semua Level</p>
+            <div className="grid grid-cols-5 gap-2">
+              {PLAYER_LEVELS.map(pl => {
+                const reached = state.totalPtsAlltime >= pl.minPts;
+                const isCurrent = pl.num === plLvl.num;
+                return (
+                  <div key={pl.num}
+                    className={`rounded-xl p-2 text-center border transition-all ${isCurrent ? "border-2" : "border-border"}`}
+                    style={isCurrent ? { borderColor:pl.color } : {}}>
+                    <div className={`text-2xl mb-1 ${!reached ? "opacity-30 grayscale" : ""}`}>{pl.icon}</div>
+                    <div className="text-xs font-medium" style={{ color: reached ? pl.color : "var(--color-text-tertiary)" }}>
+                      Lv.{pl.num}
+                    </div>
+                    <div className="text-[10px] text-muted-foreground leading-tight">{pl.name}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </Card>
+        )}
+
+        {/* DAILY QUOTA */}
         <Card className="p-4 mb-4">
           <div className="grid grid-cols-2 gap-3">
-            <div className="bg-muted rounded-lg p-3">
-              <p className="text-xs text-muted-foreground mb-1">Soal hari ini</p>
-              <p className="text-sm font-medium mb-2">{state.qUsed} / {MAX_QUESTIONS_PER_DAY} soal</p>
-              <div className="h-1.5 bg-background rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-all duration-500"
-                  style={{
-                    width: `${(state.qUsed / MAX_QUESTIONS_PER_DAY) * 100}%`,
-                    background: state.qUsed >= MAX_QUESTIONS_PER_DAY ? "#E24B4A" : lvl.color,
-                  }}
-                />
+            {[
+              { label:"Soal hari ini", used:state.qUsed, max:MAX_Q, color:state.qUsed>=MAX_Q?"#E24B4A":lv.color },
+              { label:"Topik digunakan", used:state.usedTopics.length, max:MAX_T, color:state.usedTopics.length>=MAX_T?"#E24B4A":"#1D9E75" },
+            ].map(item => (
+              <div key={item.label} className="bg-muted rounded-lg p-3">
+                <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
+                <p className="text-sm font-medium mb-2">{item.used} / {item.max}</p>
+                <div className="h-1.5 bg-background rounded-full overflow-hidden">
+                  <div className="h-full rounded-full transition-all duration-500"
+                    style={{ width:`${(item.used/item.max)*100}%`, background:item.color }} />
+                </div>
               </div>
-            </div>
-            <div className="bg-muted rounded-lg p-3">
-              <p className="text-xs text-muted-foreground mb-1">Ganti topik</p>
-              <p className="text-sm font-medium mb-2">{state.tUsed} / {MAX_TOPIC_CHANGES_PER_DAY} kali</p>
-              <div className="h-1.5 bg-background rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-all duration-500"
-                  style={{
-                    width: `${(state.tUsed / MAX_TOPIC_CHANGES_PER_DAY) * 100}%`,
-                    background: state.tUsed >= MAX_TOPIC_CHANGES_PER_DAY ? "#E24B4A" : "#1D9E75",
-                  }}
-                />
-              </div>
-            </div>
+            ))}
           </div>
           <p className="text-xs text-muted-foreground text-right mt-2">Reset dalam {resetTime}</p>
         </Card>
 
-        {/* ── LEVEL SELECTOR ── */}
+        {/* JLPT LEVEL SELECTOR */}
         <div className="flex gap-2 flex-wrap mb-2">
-          {QUIZ_LEVELS.map((l, i) => (
-            <button
-              key={l.name}
-              onClick={() => handleChangeLevel(i)}
+          {QUIZ_LEVELS.map((l,i) => (
+            <button key={l.name} onClick={()=>handleChangeLevel(i)}
               className="px-4 py-1.5 rounded-full text-sm font-medium border transition-all"
-              style={
-                i === state.lvl
-                  ? { background: l.color, color: "#fff", borderColor: l.color }
-                  : { borderColor: "var(--border)", color: "var(--muted-foreground)", background: "transparent" }
-              }
-            >
+              style={i===state.lvl
+                ? { background:l.color, color:"#fff", borderColor:l.color }
+                : { borderColor:"var(--border)", background:"transparent" }}>
               {l.name}
             </button>
           ))}
         </div>
-
-        {/* POINTS HINT */}
         <div className="flex gap-2 flex-wrap mb-4">
-          {QUIZ_LEVELS.map((l, i) => (
-            <span
-              key={l.name}
-              className="text-xs px-2.5 py-0.5 rounded-full border"
-              style={
-                i === state.lvl
-                  ? { background: `${l.color}20`, borderColor: `${l.color}60`, color: l.color, fontWeight: 500 }
-                  : { borderColor: "var(--border)", color: "var(--muted-foreground)" }
-              }
-            >
+          {QUIZ_LEVELS.map((l,i) => (
+            <span key={l.name} className="text-xs px-2.5 py-0.5 rounded-full border"
+              style={i===state.lvl
+                ? { background:`${l.color}20`, borderColor:`${l.color}60`, color:l.color, fontWeight:500 }
+                : { borderColor:"var(--border)", color:"var(--color-text-secondary)" }}>
               {l.name}: +{l.ptCorrect}pt, streak +{l.ptStreak}
             </span>
           ))}
         </div>
 
-        {/* ── TOPIC SELECTOR ── */}
-        {isTopicLocked(state) && (
+        {/* TOPIC SELECTOR */}
+        {state.usedTopics.length >= MAX_T && (
           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 dark:bg-amber-950/30 dark:border-amber-800 dark:text-amber-400 rounded-lg px-3 py-2 mb-3">
-            Kamu sudah {MAX_TOPIC_CHANGES_PER_DAY}x ganti topik hari ini. Topik terkunci sampai besok.
+            Kamu sudah menggunakan {MAX_T} topik berbeda hari ini. Topik terkunci sampai besok.
           </div>
         )}
         <div className="grid grid-cols-2 gap-2 mb-4">
-          {QUIZ_TOPICS.map((t) => {
-            const isActive = t.id === state.topicId;
-            const isLocked = isTopicLocked(state) && !isActive;
+          {TOPICS.map(t => {
+            const active   = t.id === state.topicId;
+            const used     = state.usedTopics.includes(t.id);
+            const wouldExceed = !used && !active && state.usedTopics.length >= MAX_T;
             return (
-              <button
-                key={t.id}
-                onClick={() => handleChangeTopic(t.id)}
-                disabled={isLocked}
+              <button key={t.id} onClick={()=>handleChangeTopic(t.id)}
+                disabled={wouldExceed}
                 className={`flex items-center gap-2 p-3 rounded-xl border text-left transition-all ${
-                  isActive
-                    ? "border-primary bg-primary/10"
-                    : isLocked
-                    ? "opacity-40 cursor-not-allowed border-border"
-                    : "border-border hover:bg-muted"
-                }`}
-              >
+                  active ? "border-primary bg-primary/10"
+                  : wouldExceed ? "opacity-40 cursor-not-allowed border-border"
+                  : "border-border hover:bg-muted"}`}>
                 <span className="text-xl">{t.icon}</span>
-                <div>
-                  <p className={`text-sm font-medium ${isActive ? "text-primary" : "text-foreground"}`}>{t.name}</p>
+                <div className="flex-1 min-w-0">
+                  <p className={`text-sm font-medium ${active?"text-primary":"text-foreground"}`}>{t.name}</p>
                   <p className="text-xs text-muted-foreground">{t.desc}</p>
                 </div>
+                {used && !active && <span className="text-xs text-muted-foreground">✓</span>}
               </button>
             );
           })}
         </div>
 
-        {/* ── XP BAR ── */}
+        {/* TODAY POINTS */}
         <Card className="p-4 mb-4 bg-muted/50">
           <div className="flex justify-between items-center mb-2">
             <div>
@@ -266,50 +346,41 @@ export default function QuizPage() {
               <span className="text-xs text-muted-foreground ml-1">poin hari ini</span>
             </div>
             <div className="text-right">
-              <span className="text-2xl font-bold" style={{ color: "#BA7517" }}>
-                {state.streak}{state.streak >= 3 ? "🔥" : ""}
+              <span className="text-2xl font-bold" style={{color:"#BA7517"}}>
+                {state.streak}{state.streak>=3?"🔥":""}
               </span>
               <p className="text-xs text-muted-foreground">streak</p>
             </div>
           </div>
           <div className="h-1.5 bg-background rounded-full overflow-hidden">
-            <div
-              className="h-full rounded-full transition-all duration-500"
-              style={{
-                width: `${Math.min(100, (state.pts / (MAX_QUESTIONS_PER_DAY * lvl.ptCorrect)) * 100)}%`,
-                background: lvl.color,
-              }}
-            />
+            <div className="h-full rounded-full transition-all duration-500"
+              style={{ width:`${Math.min(100,(state.pts/(MAX_Q*lv.ptCorrect))*100)}%`, background:lv.color }} />
           </div>
         </Card>
 
-        {/* ── FLOAT PTS ANIMATION ── */}
-        {floatPts && (
-          <div
-            className="fixed top-1/2 left-1/2 z-50 pointer-events-none font-bold text-xl animate-bounce"
-            style={{ color: lvl.color, transform: "translate(-50%, -50%)" }}
-          >
+        {/* FLOAT PTS */}
+        {floatPts !== null && (
+          <div className="fixed top-1/2 left-1/2 z-50 pointer-events-none font-bold text-2xl animate-bounce"
+            style={{ color:lv.color, transform:"translate(-50%,-50%)" }}>
             +{floatPts}pt
           </div>
         )}
 
-        {/* ══════════════════════════════════════════════════════ */}
-        {/* PHASE: HOME                                           */}
-        {/* ══════════════════════════════════════════════════════ */}
+        {/* ── HOME ── */}
         {phase === "home" && (
           <Card className="p-6 text-center">
             <div className="text-5xl mb-3">{topic.icon}</div>
             <h2 className="text-lg font-semibold mb-1">{topic.name}</h2>
-            <p className="text-sm text-muted-foreground mb-4">
-              {lvl.label} • Sisa {MAX_QUESTIONS_PER_DAY - state.qUsed} soal hari ini
+            <p className="text-sm text-muted-foreground mb-1">{lv.label}</p>
+            <p className="text-xs text-muted-foreground mb-4">
+              Sisa {MAX_Q - state.qUsed} soal hari ini
+              {!state.usedTopics.includes(state.topicId) && state.usedTopics.length < MAX_T
+                ? " · Topik ini belum pernah dimainkan hari ini"
+                : ""}
             </p>
             {user ? (
-              <Button
-                onClick={startQuiz}
-                disabled={isQuotaFull(state)}
-                className="w-full text-white font-semibold py-3"
-                style={{ background: lvl.color }}
-              >
+              <Button onClick={startQuiz} disabled={state.qUsed >= MAX_Q}
+                className="w-full text-white font-semibold py-3" style={{ background:lv.color }}>
                 Mulai Quiz →
               </Button>
             ) : (
@@ -318,160 +389,119 @@ export default function QuizPage() {
           </Card>
         )}
 
-        {/* ══════════════════════════════════════════════════════ */}
-        {/* PHASE: LOADING                                        */}
-        {/* ══════════════════════════════════════════════════════ */}
+        {/* ── LOADING ── */}
         {phase === "loading" && (
           <Card className="p-8 text-center">
-            <div
-              className="w-8 h-8 rounded-full border-4 border-t-transparent mx-auto mb-4 animate-spin"
-              style={{ borderColor: `${lvl.color}40`, borderTopColor: lvl.color }}
-            />
-            <p className="text-sm text-muted-foreground">Claude AI membuat soal {lvl.name}...</p>
+            <div className="w-8 h-8 rounded-full border-4 border-t-transparent mx-auto mb-4 animate-spin"
+              style={{ borderColor:`${lv.color}40`, borderTopColor:lv.color }} />
+            <p className="text-sm text-muted-foreground">AI sedang membuat soal {lv.name}...</p>
             <p className="text-xs text-muted-foreground mt-1">{topic.name}</p>
           </Card>
         )}
 
-        {/* ══════════════════════════════════════════════════════ */}
-        {/* PHASE: QUIZ                                           */}
-        {/* ══════════════════════════════════════════════════════ */}
+        {/* ── QUIZ ── */}
         {phase === "quiz" && q && (
           <>
             <Card className="overflow-hidden mb-3">
-              {/* IMAGE */}
               <div className="relative h-48 bg-muted flex items-center justify-center overflow-hidden">
-                <img
-                  src={getImageUrl(q.img_keyword)}
-                  alt={q.img_keyword}
-                  className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
-                  onLoad={() => setImgLoaded(true)}
-                  onError={(e) => (e.currentTarget.style.display = "none")}
-                />
+                <img src={`https://source.unsplash.com/640x360/?${encodeURIComponent(q.img_keyword+" japan")}`}
+                  alt=""
+                  className={`w-full h-full object-cover transition-opacity duration-500 ${imgOk?"opacity-100":"opacity-0"}`}
+                  onLoad={()=>setImgOk(true)}
+                  onError={e=>{ e.currentTarget.style.display="none"; }} />
                 <span className="absolute top-2 left-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
-                  style={{ background: "rgba(83,74,183,0.85)" }}>
-                  {q.img_cat}
-                </span>
+                  style={{ background:"rgba(83,74,183,.85)" }}>{q.img_cat}</span>
                 <span className="absolute top-2 right-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
-                  style={{ background: lvl.color }}>
-                  {lvl.name} • +{lvl.ptCorrect}pt
-                </span>
+                  style={{ background:lv.color }}>{lv.name} • +{lv.ptCorrect}pt</span>
               </div>
-
-              {/* QUESTION */}
               <div className="p-5">
                 <p className="text-base font-semibold leading-relaxed mb-4">{q.q}</p>
                 <div className="grid grid-cols-2 gap-2">
-                  {q.opts.map((opt, i) => {
-                    let variant: "default" | "outline" = "outline";
-                    let extraClass = "";
+                  {q.opts.map((opt,i) => {
+                    let cls = "border-border hover:bg-muted hover:border-primary/50";
                     if (answered) {
-                      if (i === q.ans) extraClass = "bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300";
-                      else if (i === selectedOpt) extraClass = "bg-red-100 border-red-500 text-red-800 dark:bg-red-900/30 dark:text-red-300";
+                      if (i===q.ans) cls="bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600";
+                      else if (i===selected) cls="bg-red-100 border-red-500 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-600";
+                      else cls="opacity-50 border-border";
                     }
                     return (
-                      <button
-                        key={i}
-                        onClick={() => choose(i)}
-                        disabled={answered}
-                        className={`p-3 rounded-xl border-2 text-sm text-left transition-all leading-snug disabled:cursor-not-allowed ${
-                          answered ? extraClass || "opacity-60 border-border" : "border-border hover:bg-muted hover:border-primary/50"
-                        }`}
-                      >
-                        <span className="text-muted-foreground text-xs mr-1">{i + 1}.</span> {opt}
+                      <button key={i} onClick={()=>choose(i)} disabled={answered}
+                        className={`p-3 rounded-xl border-2 text-sm text-left transition-all leading-snug disabled:cursor-not-allowed ${cls}`}>
+                        <span className="text-muted-foreground text-xs mr-1">{i+1}.</span>{opt}
                       </button>
                     );
                   })}
                 </div>
               </div>
-
-              {/* FEEDBACK */}
               {answered && (
-                <div className="px-5 pb-5 flex items-start gap-3">
-                  <span className="text-lg flex-shrink-0">{selectedOpt === q.ans ? "✓" : "✗"}</span>
+                <div className="px-5 pb-5 flex items-start gap-3 border-t border-border pt-4">
+                  <span className="text-lg flex-shrink-0">{selected===q.ans?"✓":"✗"}</span>
                   <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{q.explain}</p>
-                  {selectedOpt === q.ans && (
-                    <span className="text-sm font-semibold whitespace-nowrap" style={{ color: lvl.color }}>
-                      +{lvl.ptCorrect + (state.streak >= 3 ? 0 : 0)}pt
+                  {selected===q.ans && (
+                    <span className="text-sm font-semibold whitespace-nowrap" style={{color:lv.color}}>
+                      +{lv.ptCorrect+(state.streak>2?lv.ptStreak:0)}pt
                     </span>
                   )}
                 </div>
               )}
             </Card>
-
-            {/* NAV */}
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-sm text-muted-foreground">Soal {qGlobal} dari {MAX_QUESTIONS_PER_DAY}</p>
-                <p className="text-xs" style={{ color: "#BA7517" }}>
-                  {state.streak >= 3 ? `🔥 Streak ${state.streak}x! +${lvl.ptStreak} bonus` : state.streak > 0 ? `Streak ${state.streak}x` : ""}
+                <p className="text-sm text-muted-foreground">Soal {state.qUsed} dari {MAX_Q}</p>
+                <p className="text-xs" style={{color:"#BA7517"}}>
+                  {state.streak>=3?`🔥 Streak ${state.streak}x! +${lv.ptStreak} bonus`:state.streak>0?`Streak ${state.streak}x`:""}
                 </p>
               </div>
-              <Button
-                onClick={nextQ}
-                disabled={!answered}
-                className="text-white"
-                style={{ background: lvl.color }}
-              >
+              <Button onClick={nextQ} disabled={!answered} className="text-white" style={{background:lv.color}}>
                 Selanjutnya →
               </Button>
             </div>
           </>
         )}
 
-        {/* ══════════════════════════════════════════════════════ */}
-        {/* PHASE: RESULT                                         */}
-        {/* ══════════════════════════════════════════════════════ */}
+        {/* ── RESULT ── */}
         {phase === "result" && (
           <Card className="p-8 text-center">
             <div className="text-5xl mb-3">🎉</div>
             <h2 className="text-xl font-bold mb-1">Soal selesai!</h2>
-            <p className="text-sm text-muted-foreground mb-6">{lvl.label} • {topic.name}</p>
+            <p className="text-sm text-muted-foreground mb-6">{lv.label} • {topic.name}</p>
             <div className="grid grid-cols-3 gap-3 mb-6">
-              {[
-                { val: state.pts, lbl: "Poin hari ini" },
-                { val: questions.length, lbl: "Soal dijawab" },
-                { val: `${state.streak}${state.streak >= 3 ? "🔥" : ""}`, lbl: "Streak" },
-              ].map((s) => (
-                <div key={s.lbl} className="bg-muted rounded-xl p-3">
-                  <p className="text-2xl font-bold">{s.val}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.lbl}</p>
-                </div>
+              {[{v:state.pts,l:"Poin hari ini"},{v:questions.length,l:"Soal dijawab"},{v:String(state.streak)+(state.streak>=3?"🔥":""),l:"Streak"}]
+                .map(s=>(
+                  <div key={s.l} className="bg-muted rounded-xl p-3">
+                    <p className="text-2xl font-bold">{s.v}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
+                  </div>
               ))}
             </div>
-            {isQuotaFull(state) ? (
+            {state.qUsed >= MAX_Q ? (
               <Button disabled className="w-full opacity-50">Kuota habis — kembali besok</Button>
             ) : (
-              <Button onClick={startQuiz} className="w-full text-white" style={{ background: lvl.color }}>
-                Lanjut {MAX_QUESTIONS_PER_DAY - state.qUsed} soal tersisa →
+              <Button onClick={startQuiz} className="w-full text-white" style={{background:lv.color}}>
+                Lanjut {MAX_Q - state.qUsed} soal tersisa →
               </Button>
             )}
           </Card>
         )}
 
-        {/* ══════════════════════════════════════════════════════ */}
-        {/* PHASE: DONE                                           */}
-        {/* ══════════════════════════════════════════════════════ */}
+        {/* ── DONE ── */}
         {phase === "done" && (
           <Card className="p-8 text-center">
             <div className="text-5xl mb-3">🌙</div>
-            <h2 className="text-xl font-bold mb-1">Kuota harian selesai!</h2>
+            <h2 className="text-xl font-bold mb-2">Kuota harian selesai!</h2>
             <p className="text-sm text-muted-foreground mb-6">
-              Kamu telah menjawab <strong>{MAX_QUESTIONS_PER_DAY} soal</strong> hari ini.
-              Kembali besok untuk soal baru!
+              Kamu telah menjawab <strong>{MAX_Q} soal</strong> hari ini. Kembali besok!
             </p>
-            <div className="grid grid-cols-3 gap-3 mb-6">
-              {[
-                { val: state.pts, lbl: "Total Poin" },
-                { val: MAX_QUESTIONS_PER_DAY, lbl: "Soal Selesai" },
-                { val: `${state.streak}${state.streak >= 3 ? "🔥" : ""}`, lbl: "Streak Akhir" },
-              ].map((s) => (
-                <div key={s.lbl} className="bg-muted rounded-xl p-3">
-                  <p className="text-2xl font-bold">{s.val}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.lbl}</p>
-                </div>
+            <div className="grid grid-cols-3 gap-3 mb-4">
+              {[{v:state.pts,l:"Poin hari ini"},{v:MAX_Q,l:"Soal selesai"},{v:String(state.streak)+(state.streak>=3?"🔥":""),l:"Streak akhir"}]
+                .map(s=>(
+                  <div key={s.l} className="bg-muted rounded-xl p-3">
+                    <p className="text-2xl font-bold">{s.v}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
+                  </div>
               ))}
             </div>
-            <p className="text-xs text-muted-foreground">Reset kuota dalam {resetTime}</p>
+            <p className="text-xs text-muted-foreground">Reset dalam {resetTime}</p>
           </Card>
         )}
       </div>
