@@ -23,7 +23,7 @@ interface DakkaiSection {
 interface ChoukaiQuestion {
   q: string;
   audio: string;
-  introAudio?: string;   // ← TAMBAH INI
+  introAudio?: string;
   options: string[];
   correct: number;
   transcript?: string;
@@ -44,250 +44,142 @@ interface ExamQuestionsProps {
   onBack: () => void;
 }
 
-export default function ExamQuestions({
-  data,
-  year,
-  month,
-  onBack,
-}: ExamQuestionsProps) {
+export default function ExamQuestions({ data, year, month, onBack }: ExamQuestionsProps) {
   const { setExamData: setContextExamData } = useExamContext();
   const { user } = useAuth();
 
   const [activeTab, setActiveTab] = useState("kanji");
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
   const [savedToDb, setSavedToDb] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    const savedTheme = localStorage.getItem("nihongo-exam-theme");
-    if (savedTheme === "light") setIsDarkMode(false);
-    else setIsDarkMode(true);
-  }, []);
+  useEffect(() => { setMounted(true); }, []);
 
-  const toggleTheme = () => {
-    const newIsDark = !isDarkMode;
-    setIsDarkMode(newIsDark);
-    localStorage.setItem("nihongo-exam-theme", newIsDark ? "dark" : "light");
-  };
-
-  // Cek apakah ada data choukai
   const hasChoukai = data.choukai && data.choukai.length > 0;
 
   const sections = [
-    { id: "kanji", label: "Kanji", icon: "漢", data: data.kanji, isDakkai: false, isChoukai: false },
-    { id: "bunpou", label: "Bunpou", icon: "文", data: data.bunpou, isDakkai: false, isChoukai: false },
-    { id: "dokkai", label: "Dokkai", icon: "読", data: data.dokkai, isDakkai: true, isChoukai: false },
+    { id: "kanji",   label: "Kanji",   icon: "漢", data: data.kanji,    isDakkai: false, isChoukai: false },
+    { id: "bunpou",  label: "Bunpou",  icon: "文", data: data.bunpou,   isDakkai: false, isChoukai: false },
+    { id: "dokkai",  label: "Dokkai",  icon: "読", data: data.dokkai,   isDakkai: true,  isChoukai: false },
     ...(hasChoukai
       ? [{ id: "choukai", label: "Choukai", icon: "聴", data: data.choukai!, isDakkai: false, isChoukai: true }]
       : []),
   ];
 
   const handleAnswer = (questionIndex: number, optionIndex: number, dakkaiTitle?: string) => {
-    const questionKey = dakkaiTitle
+    const key = dakkaiTitle
       ? `${activeTab}-${dakkaiTitle}-${questionIndex}`
       : `${activeTab}-${questionIndex}`;
-    setAnswers((prev) => ({ ...prev, [questionKey]: optionIndex }));
+    setAnswers((prev) => ({ ...prev, [key]: optionIndex }));
   };
 
   const calculateScore = () => {
-    let correct = 0;
-    let total = 0;
-
+    let correct = 0; let total = 0;
     sections.forEach((section) => {
       if (section.isDakkai) {
-        const dokkaiData = section.data as DakkaiSection[];
-        dokkaiData.forEach((dakkai) => {
-          dakkai.questions.forEach((question, index) => {
-            const key = `${section.id}-${dakkai.title}-${index}`;
+        (section.data as DakkaiSection[]).forEach((dakkai) => {
+          dakkai.questions.forEach((q, i) => {
             total++;
-            if (answers[key] === question.correct) correct++;
+            if (answers[`${section.id}-${dakkai.title}-${i}`] === q.correct) correct++;
           });
         });
       } else {
-        const questionData = section.data as (Question | ChoukaiQuestion)[];
-        questionData.forEach((question, index) => {
-          const key = `${section.id}-${index}`;
+        (section.data as (Question | ChoukaiQuestion)[]).forEach((q, i) => {
           total++;
-          if (answers[key] === question.correct) correct++;
+          if (answers[`${section.id}-${i}`] === q.correct) correct++;
         });
       }
     });
-
     return { correct, total };
   };
 
   const { correct, total } = calculateScore();
-  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const percentage  = total > 0 ? Math.round((correct / total) * 100) : 0;
   const answeredCount = Object.keys(answers).length;
 
-  function getJLPTLevel(yearStr: string): string {
-    if (yearStr === "2011") return "N3";
-    if (yearStr === "2012") return "N3";
-    if (yearStr === "2013") return "N2";
+  function getJLPTLevel(y: string) {
+    if (y === "2011" || y === "2012") return "N3";
+    if (y === "2013") return "N2";
     return "N3";
   }
-
   const level = getJLPTLevel(year);
   const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
-  // ============ AI CONTEXT ============
+  // ── AI CONTEXT ──────────────────────────────────────────────
   const aiQuestions = useMemo(() => {
     if (activeTab === "dokkai") {
-      const result: Array<{
-        number: number;
-        q: string;
-        options: string[];
-        correct: number;
-        section: string;
-        passage?: string;
-      }> = [];
-      let counter = 1;
-      (data.dokkai as DakkaiSection[]).forEach((dakkai) => {
-        dakkai.questions.forEach((q) => {
-          result.push({
-            number: counter++,
-            q: q.q,
-            options: q.options,
-            correct: q.correct,
-            section: "dokkai",
-            passage: dakkai.text,
-          });
+      const result: any[] = []; let counter = 1;
+      (data.dokkai as DakkaiSection[]).forEach((d) => {
+        d.questions.forEach((q) => {
+          result.push({ number: counter++, q: q.q, options: q.options, correct: q.correct, section: "dokkai", passage: d.text });
         });
       });
       return result;
     } else if (activeTab === "choukai" && data.choukai) {
-      return data.choukai.map((q, idx) => ({
-        number: idx + 1,
-        q: q.q,
-        options: q.options,
-        correct: q.correct,
-        section: "choukai",
-      }));
+      return data.choukai.map((q, i) => ({ number: i + 1, q: q.q, options: q.options, correct: q.correct, section: "choukai" }));
     } else {
       const arr = activeTab === "kanji" ? data.kanji : data.bunpou;
-      return (arr as Question[]).map((q, idx) => ({
-        number: idx + 1,
-        q: q.q,
-        options: q.options,
-        correct: q.correct,
-        section: activeTab,
-      }));
+      return (arr as Question[]).map((q, i) => ({ number: i + 1, q: q.q, options: q.options, correct: q.correct, section: activeTab }));
     }
   }, [activeTab, data]);
 
   const activeQuestionInfo = useMemo(() => {
-    const sectionAnswers = Object.entries(answers).filter(([key]) =>
-      key.startsWith(`${activeTab}-`)
-    );
-    if (sectionAnswers.length === 0) {
-      const firstQ = aiQuestions[0];
-      if (!firstQ) return null;
-      return { number: 1, section: activeTab, userAnswer: "belum dijawab" };
-    }
-    const lastEntry = sectionAnswers[sectionAnswers.length - 1];
-    const [key, optionIdx] = lastEntry;
-    const parts = key.split("-");
-    const lastNumber = parseInt(parts[parts.length - 1], 10) + 1;
-    const targetQ = aiQuestions.find((q) => q.number === lastNumber) || aiQuestions[0];
-    return {
-      number: targetQ.number,
-      section: activeTab,
-      userAnswer: `pilihan ke-${optionIdx + 1} (${targetQ.options[optionIdx as number]})`,
-    };
+    const sa = Object.entries(answers).filter(([k]) => k.startsWith(`${activeTab}-`));
+    if (!sa.length) return aiQuestions[0] ? { number: 1, section: activeTab, userAnswer: "belum dijawab" } : null;
+    const [k, v] = sa[sa.length - 1];
+    const n = parseInt(k.split("-").pop()!, 10) + 1;
+    const t = aiQuestions.find((q) => q.number === n) || aiQuestions[0];
+    return { number: t.number, section: activeTab, userAnswer: `pilihan ke-${+v + 1} (${t.options[+v]})` };
   }, [answers, activeTab, aiQuestions]);
 
   useEffect(() => {
-    setContextExamData({
-      level,
-      title: examLabel,
-      section: activeTab,
-      questions: aiQuestions,
-      activeQuestion: activeQuestionInfo,
-      isExamFinished: showResults,
-    });
+    setContextExamData({ level, title: examLabel, section: activeTab, questions: aiQuestions, activeQuestion: activeQuestionInfo, isExamFinished: showResults });
     return () => setContextExamData(null);
   }, [level, examLabel, activeTab, aiQuestions, activeQuestionInfo, setContextExamData, showResults]);
-  // ============ END AI CONTEXT ============
 
-  // ============ AUTO-SAVE KE SUPABASE ============
+  // ── AUTO-SAVE ────────────────────────────────────────────────
   useEffect(() => {
-    if (!showResults || !user || savedToDb) return;
-    if (total === 0) return;
-
-    const saveExamResult = async () => {
+    if (!showResults || !user || savedToDb || total === 0) return;
+    const save = async () => {
       try {
-        const sectionScores: Record<string, { correct: number; total: number }> = {
-          kanji: { correct: 0, total: 0 },
-          bunpou: { correct: 0, total: 0 },
-          dokkai: { correct: 0, total: 0 },
-          choukai: { correct: 0, total: 0 },
+        const ss: Record<string, { correct: number; total: number }> = {
+          kanji: { correct: 0, total: 0 }, bunpou: { correct: 0, total: 0 },
+          dokkai: { correct: 0, total: 0 }, choukai: { correct: 0, total: 0 },
         };
-
-        sections.forEach((section) => {
-          if (section.isDakkai) {
-            const dokkaiData = section.data as DakkaiSection[];
-            dokkaiData.forEach((dakkai) => {
-              dakkai.questions.forEach((question, index) => {
-                const key = `${section.id}-${dakkai.title}-${index}`;
-                sectionScores[section.id].total++;
-                if (answers[key] === question.correct) sectionScores[section.id].correct++;
+        sections.forEach((s) => {
+          if (s.isDakkai) {
+            (s.data as DakkaiSection[]).forEach((d) => {
+              d.questions.forEach((q, i) => {
+                ss[s.id].total++;
+                if (answers[`${s.id}-${d.title}-${i}`] === q.correct) ss[s.id].correct++;
               });
             });
           } else {
-            const questionData = section.data as (Question | ChoukaiQuestion)[];
-            questionData.forEach((question, index) => {
-              const key = `${section.id}-${index}`;
-              sectionScores[section.id].total++;
-              if (answers[key] === question.correct) sectionScores[section.id].correct++;
+            (s.data as (Question | ChoukaiQuestion)[]).forEach((q, i) => {
+              ss[s.id].total++;
+              if (answers[`${s.id}-${i}`] === q.correct) ss[s.id].correct++;
             });
           }
         });
-
-        const { error } = await supabase.from("exam_history").insert({
-          user_id: user.id,
-          year,
-          month,
-          level,
-          total_score: correct,
-          total_questions: total,
-          percentage,
-          section_scores: sectionScores,
-          answers,
-        });
-
-        if (error) console.error("Gagal simpan ke Supabase:", error);
-        else {
-          setSavedToDb(true);
-          console.log("✅ Hasil ujian tersimpan ke Supabase");
-        }
-      } catch (err) {
-        console.error("Save error:", err);
-      }
+        const { error } = await supabase.from("exam_history").insert({ user_id: user.id, year, month, level, total_score: correct, total_questions: total, percentage, section_scores: ss, answers });
+        if (!error) { setSavedToDb(true); console.log("✅ Tersimpan"); }
+      } catch (e) { console.error(e); }
     };
-
-    saveExamResult();
-  }, [showResults, user, savedToDb, total, correct, percentage, level, year, month, answers, sections]);
-  // ============ END AUTO-SAVE ============
+    save();
+  }, [showResults, user, savedToDb, total]);
 
   if (!mounted) return null;
 
-  const bgColor = isDarkMode ? "bg-slate-950" : "bg-white";
-  const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
-  const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
-  const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
-  const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
   const tabColumns = hasChoukai ? "grid-cols-4" : "grid-cols-3";
 
   return (
-    <section className={`min-h-screen ${bgColor} ${textColor} pb-32 transition-colors duration-300`}>
+    <section className="min-h-screen bg-background text-foreground pb-32 transition-colors duration-300">
       {/* STICKY HEADER */}
-      <div className={`sticky top-0 z-30 ${bgColor} border-b ${cardBorder} backdrop-blur-sm bg-opacity-95`}>
+      <div className="sticky top-0 z-30 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-2">
-            <button onClick={onBack} className={`flex items-center gap-1.5 text-sm font-medium px-3 py-2 rounded-lg transition-colors ${isDarkMode ? "hover:bg-slate-800 text-slate-300" : "hover:bg-slate-100 text-slate-700"}`}>
+            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-medium px-3 py-2 rounded-lg transition-colors hover:bg-muted text-muted-foreground">
               <span>←</span>
               <span className="hidden sm:inline">Kembali</span>
             </button>
@@ -295,20 +187,19 @@ export default function ExamQuestions({
               <h1 className="text-lg sm:text-2xl font-bold truncate">
                 JLPT <span className="text-cyan-500">{level}</span>
               </h1>
-              <p className={`text-xs sm:text-sm ${mutedText}`}>{examLabel}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">{examLabel}</p>
             </div>
-            <button onClick={toggleTheme} className={`text-lg p-2 rounded-lg transition-colors ${isDarkMode ? "hover:bg-slate-800 text-yellow-400" : "hover:bg-slate-100 text-slate-700"}`}>
-              {isDarkMode ? "☀️" : "🌙"}
-            </button>
+            {/* Kosong - dark mode dihandle Navbar */}
+            <div className="w-10" />
           </div>
 
           {!showResults && (
             <div className="mt-3">
               <div className="flex justify-between items-center mb-1.5">
-                <span className={`text-xs font-medium ${mutedText}`}>{answeredCount} dari {total} terjawab</span>
+                <span className="text-xs font-medium text-muted-foreground">{answeredCount} dari {total} terjawab</span>
                 <span className="text-xs font-semibold text-cyan-500">{total > 0 ? Math.round((answeredCount / total) * 100) : 0}%</span>
               </div>
-              <div className={`w-full rounded-full h-1.5 overflow-hidden ${isDarkMode ? "bg-slate-800" : "bg-slate-200"}`}>
+              <div className="w-full rounded-full h-1.5 overflow-hidden bg-muted">
                 <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full rounded-full transition-all duration-300" style={{ width: `${total > 0 ? (answeredCount / total) * 100 : 0}%` }} />
               </div>
             </div>
@@ -318,170 +209,97 @@ export default function ExamQuestions({
 
       <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-6">
-          <TabsList className={`grid w-full ${tabColumns} rounded-lg border-2 p-1 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-200"}`}>
-            {sections.map((section) => (
-              <TabsTrigger key={section.id} value={section.id} className={`text-sm sm:text-base font-semibold rounded-md transition-all py-2 ${activeTab === section.id ? (isDarkMode ? "bg-slate-900 text-cyan-400" : "bg-white text-cyan-600") : mutedText}`}>
-                <span className="mr-1 sm:mr-2">{section.icon}</span>
-                <span className="hidden xs:inline sm:inline">{section.label}</span>
+          <TabsList className={`grid w-full ${tabColumns} rounded-lg border-2 p-1 bg-muted border-border`}>
+            {sections.map((s) => (
+              <TabsTrigger key={s.id} value={s.id} className={`text-sm sm:text-base font-semibold rounded-md transition-all py-2 ${activeTab === s.id ? "bg-background text-cyan-500" : "text-muted-foreground"}`}>
+                <span className="mr-1 sm:mr-2">{s.icon}</span>
+                <span className="hidden xs:inline sm:inline">{s.label}</span>
               </TabsTrigger>
             ))}
           </TabsList>
 
-          {/* Kanji Section */}
+          {/* KANJI */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
-            {showResults ? (
-              <div className="space-y-4">
-                {(data.kanji as Question[]).map((question, index) => {
-                  const userAnswer = answers[`kanji-${index}`];
-                  const isCorrect = userAnswer === question.correct;
-                  return <ResultCard key={index} index={index} question={question} userAnswer={userAnswer} isCorrect={isCorrect} isDarkMode={isDarkMode} />;
-                })}
-              </div>
-            ) : (
-              <>
-                {(data.kanji as Question[]).map((question, index) => {
-                  const userAnswer = answers[`kanji-${index}`];
-                  return <QuestionCard key={index} index={index} question={question} userAnswer={userAnswer} onAnswer={(optionIndex) => handleAnswer(index, optionIndex)} isDarkMode={isDarkMode} />;
-                })}
-              </>
-            )}
+            {showResults
+              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} />)
+              : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
           </TabsContent>
 
-          {/* Bunpou Section */}
+          {/* BUNPOU */}
           <TabsContent value="bunpou" className="space-y-4 mt-6">
-            {showResults ? (
-              <div className="space-y-4">
-                {(data.bunpou as Question[]).map((question, index) => {
-                  const userAnswer = answers[`bunpou-${index}`];
-                  const isCorrect = userAnswer === question.correct;
-                  return <ResultCard key={index} index={index} question={question} userAnswer={userAnswer} isCorrect={isCorrect} isDarkMode={isDarkMode} />;
-                })}
-              </div>
-            ) : (
-              <>
-                {(data.bunpou as Question[]).map((question, index) => {
-                  const userAnswer = answers[`bunpou-${index}`];
-                  return <QuestionCard key={index} index={index} question={question} userAnswer={userAnswer} onAnswer={(optionIndex) => handleAnswer(index, optionIndex)} isDarkMode={isDarkMode} />;
-                })}
-              </>
-            )}
+            {showResults
+              ? (data.bunpou as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} isCorrect={answers[`bunpou-${i}`] === q.correct} />)
+              : (data.bunpou as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
           </TabsContent>
 
-          {/* Dokkai Section */}
+          {/* DOKKAI */}
           <TabsContent value="dokkai" className="space-y-6 mt-6">
             {showResults ? (
-              <div className="space-y-6">
-                {(data.dokkai as DakkaiSection[]).map((dakkai) => (
-                  <div key={dakkai.title} className="space-y-3">
-                    <div className={`border-2 rounded-lg p-3 sm:p-4 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"}`}>
-                      <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dakkai.title}</h3>
-                    </div>
-                    <Card className={`border-2 rounded-lg p-4 sm:p-6 transition-colors ${cardBg} ${cardBorder}`}>
-                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium break-words`}>{dakkai.text}</p>
-                    </Card>
-                    {dakkai.questions.map((question, index) => {
-                      const userAnswer = answers[`dokkai-${dakkai.title}-${index}`];
-                      const isCorrect = userAnswer === question.correct;
-                      return <ResultCard key={index} index={index} question={question} userAnswer={userAnswer} isCorrect={isCorrect} isDarkMode={isDarkMode} />;
-                    })}
+              (data.dokkai as DakkaiSection[]).map((dk) => (
+                <div key={dk.title} className="space-y-3">
+                  <div className="border-2 rounded-lg p-3 sm:p-4 bg-muted border-border">
+                    <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dk.title}</h3>
                   </div>
-                ))}
-              </div>
+                  <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
+                    <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed font-medium break-words">{dk.text}</p>
+                  </Card>
+                  {dk.questions.map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} isCorrect={answers[`dokkai-${dk.title}-${i}`] === q.correct} />)}
+                </div>
+              ))
             ) : (
-              <>
-                {(data.dokkai as DakkaiSection[]).map((dakkai) => (
-                  <div key={dakkai.title} className="space-y-3">
-                    <div className={`border-2 rounded-lg p-3 sm:p-4 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-700" : "bg-blue-50 border-blue-200"}`}>
-                      <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dakkai.title}</h3>
-                    </div>
-                    <Card className={`border-2 rounded-lg p-4 sm:p-6 transition-colors ${cardBg} ${cardBorder}`}>
-                      <p className={`${mutedText} whitespace-pre-wrap text-sm leading-relaxed font-medium break-words`}>{dakkai.text}</p>
-                    </Card>
-                    {dakkai.questions.map((question, index) => {
-                      const userAnswer = answers[`dokkai-${dakkai.title}-${index}`];
-                      return <QuestionCard key={index} index={index} question={question} userAnswer={userAnswer} onAnswer={(optionIndex) => handleAnswer(index, optionIndex, dakkai.title)} isDarkMode={isDarkMode} />;
-                    })}
+              (data.dokkai as DakkaiSection[]).map((dk) => (
+                <div key={dk.title} className="space-y-3">
+                  <div className="border-2 rounded-lg p-3 sm:p-4 bg-muted border-border">
+                    <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dk.title}</h3>
                   </div>
-                ))}
-              </>
+                  <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
+                    <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed font-medium break-words">{dk.text}</p>
+                  </Card>
+                  {dk.questions.map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} onAnswer={(o) => handleAnswer(i, o, dk.title)} />)}
+                </div>
+              ))
             )}
           </TabsContent>
 
-          {/* CHOUKAI Section (Listening) */}
+          {/* CHOUKAI */}
           {hasChoukai && (
             <TabsContent value="choukai" className="space-y-4 mt-6">
-              {showResults ? (
-                <div className="space-y-4">
-                  {(data.choukai as ChoukaiQuestion[]).map((question, index) => {
-                    const userAnswer = answers[`choukai-${index}`];
-                    const isCorrect = userAnswer === question.correct;
-                    return <ChoukaiResultCard key={index} index={index} question={question} userAnswer={userAnswer} isCorrect={isCorrect} isDarkMode={isDarkMode} />;
-                  })}
-                </div>
-              ) : (
-                <>
-                  {(data.choukai as ChoukaiQuestion[]).map((question, index) => {
-                    const userAnswer = answers[`choukai-${index}`];
-                    return <ChoukaiQuestionCard key={index} index={index} question={question} userAnswer={userAnswer} onAnswer={(optionIndex) => handleAnswer(index, optionIndex)} isDarkMode={isDarkMode} />;
-                  })}
-                </>
-              )}
+              {showResults
+                ? (data.choukai as ChoukaiQuestion[]).map((q, i) => <ChoukaiResultCard key={i} index={i} question={q} userAnswer={answers[`choukai-${i}`]} isCorrect={answers[`choukai-${i}`] === q.correct} />)
+                : (data.choukai as ChoukaiQuestion[]).map((q, i) => <ChoukaiQuestionCard key={i} index={i} question={q} userAnswer={answers[`choukai-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
             </TabsContent>
           )}
         </Tabs>
 
-        {/* Results Summary */}
+        {/* HASIL */}
         {showResults && (
-          <Card className={`border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl transition-colors ${isDarkMode ? "bg-gradient-to-br from-slate-800 to-slate-900 border-slate-700" : "bg-gradient-to-br from-blue-50 to-cyan-50 border-slate-200"}`}>
+          <Card className="border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl bg-gradient-to-br from-card to-muted border-border">
             <div className="text-center space-y-4">
-              <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${textColor}`}>Hasil Ujian</h2>
-
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Hasil Ujian</h2>
               {user && savedToDb && <p className="text-xs text-green-500 font-medium">✓ Hasil tersimpan ke akun {user.name}</p>}
               {user && !savedToDb && total > 0 && <p className="text-xs text-muted-foreground italic">💾 Menyimpan hasil...</p>}
               {!user && <p className="text-xs text-amber-500 font-medium">💡 Login untuk menyimpan hasil ujian secara permanen</p>}
-
               <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">{percentage}%</div>
-              <p className={`text-base sm:text-lg ${mutedText}`}>{correct} dari {total} soal benar</p>
-
+              <p className="text-base sm:text-lg text-muted-foreground">{correct} dari {total} soal benar</p>
               <div className={`grid ${hasChoukai ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"} gap-2 sm:gap-4 my-6`}>
-                {sections.map((section) => {
-                  let sectionCorrect = 0;
-                  let sectionTotal = 0;
-
-                  if (section.isDakkai) {
-                    const dokkaiData = section.data as DakkaiSection[];
-                    dokkaiData.forEach((dakkai) => {
-                      dakkai.questions.forEach((question, index) => {
-                        const key = `${section.id}-${dakkai.title}-${index}`;
-                        sectionTotal++;
-                        if (answers[key] === question.correct) sectionCorrect++;
-                      });
-                    });
+                {sections.map((s) => {
+                  let sc = 0; let st = 0;
+                  if (s.isDakkai) {
+                    (s.data as DakkaiSection[]).forEach((d) => d.questions.forEach((q, i) => { st++; if (answers[`${s.id}-${d.title}-${i}`] === q.correct) sc++; }));
                   } else {
-                    const questionData = section.data as (Question | ChoukaiQuestion)[];
-                    questionData.forEach((question, index) => {
-                      const key = `${section.id}-${index}`;
-                      sectionTotal++;
-                      if (answers[key] === question.correct) sectionCorrect++;
-                    });
+                    (s.data as (Question | ChoukaiQuestion)[]).forEach((q, i) => { st++; if (answers[`${s.id}-${i}`] === q.correct) sc++; });
                   }
-
                   return (
-                    <div key={section.id} className={`rounded-xl p-3 sm:p-4 border-2 transition-colors ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-white border-slate-300"}`}>
-                      <p className="text-xs sm:text-sm font-semibold text-cyan-500 mb-1">{section.label}</p>
-                      <p className={`text-xl sm:text-2xl md:text-3xl font-bold ${textColor}`}>{sectionCorrect}/{sectionTotal}</p>
+                    <div key={s.id} className="rounded-xl p-3 sm:p-4 border-2 bg-card border-border">
+                      <p className="text-xs sm:text-sm font-semibold text-cyan-500 mb-1">{s.label}</p>
+                      <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">{sc}/{st}</p>
                     </div>
                   );
                 })}
               </div>
-
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
-                <Button onClick={() => { setAnswers({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">
-                  🔄 Ulangi Ujian
-                </Button>
-                <Button onClick={onBack} className={`rounded-xl font-semibold py-3 px-6 border-2 transition-all ${isDarkMode ? "border-slate-600 bg-slate-800 hover:bg-slate-700 text-slate-200" : "border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-700"}`}>
-                  Pilih Ujian Lain
-                </Button>
+                <Button onClick={() => { setAnswers({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
+                <Button onClick={onBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
               </div>
             </div>
           </Card>
@@ -489,7 +307,7 @@ export default function ExamQuestions({
       </div>
 
       {!showResults && (
-        <div className={`fixed bottom-0 left-0 right-0 z-40 border-t ${cardBorder} ${bgColor} backdrop-blur-sm bg-opacity-95 p-3 sm:p-4`}>
+        <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-background/95 backdrop-blur-sm p-3 sm:p-4">
           <div className="max-w-5xl mx-auto">
             <Button onClick={() => setShowResults(true)} disabled={answeredCount === 0} className="w-full py-4 sm:py-5 text-base sm:text-lg rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold disabled:opacity-50 shadow-lg">
               {answeredCount === total ? "✓ Lihat Hasil" : `Lihat Hasil (${answeredCount}/${total})`}
@@ -501,191 +319,19 @@ export default function ExamQuestions({
   );
 }
 
-/* ============ HELPER COMPONENTS ============ */
-
-function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: {
-  index: number;
-  question: ChoukaiQuestion;
-  userAnswer?: number;
-  onAnswer: (optionIndex: number) => void;
-  isDarkMode: boolean;
-}) {
-  const [isPlayingIntro, setIsPlayingIntro] = useState(false);
-  const [isPlayingSoal, setIsPlayingSoal] = useState(false);
-  const [playCountSoal, setPlayCountSoal] = useState(0);
-
-  const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
-  const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
-  const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
-  const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
-
-  // ---- Refs ----
-  const introRef = useRef<HTMLAudioElement | null>(null);
-  const soalRef = useRef<HTMLAudioElement | null>(null);
-
-  // ---- Stop semua audio lain saat mulai play ----
-  const stopAll = () => {
-    introRef.current?.pause();
-    soalRef.current?.pause();
-    setIsPlayingIntro(false);
-    setIsPlayingSoal(false);
-  };
-
-  // ---- Play / Pause Intro ----
-  const handleIntro = () => {
-    if (!introRef.current) return;
-    if (isPlayingIntro) {
-      introRef.current.pause();
-      setIsPlayingIntro(false);
-    } else {
-      stopAll();
-      introRef.current.currentTime = 0;
-      introRef.current.play();
-      setIsPlayingIntro(true);
-    }
-  };
-
-  // ---- Play / Pause Soal ----
-  const handleSoal = () => {
-    if (!soalRef.current) return;
-    if (isPlayingSoal) {
-      soalRef.current.pause();
-      setIsPlayingSoal(false);
-    } else {
-      stopAll();
-      soalRef.current.play();
-      setIsPlayingSoal(true);
-      setPlayCountSoal((c) => c + 1);
-    }
-  };
-
-  // ---- Ulangi soal dari awal ----
-  const handleReplay = () => {
-    if (!soalRef.current) return;
-    stopAll();
-    soalRef.current.currentTime = 0;
-    soalRef.current.play();
-    setIsPlayingSoal(true);
-    setPlayCountSoal((c) => c + 1);
-  };
-
+/* ── QUESTION CARD ───────────────────────────────────────────── */
+function QuestionCard({ index, question, userAnswer, onAnswer }: { index: number; question: Question; userAnswer?: number; onAnswer: (o: number) => void; }) {
   return (
-    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
+    <Card className="p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all bg-card border-border hover:border-cyan-500/50">
       <div className="flex items-start gap-3 sm:gap-4">
-        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
-          {index + 1}.
-        </div>
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>
-            {question.q}
-          </p>
-
-          {/* Audio Player */}
-          <div className={`rounded-xl p-4 mb-4 border-2 space-y-3 ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-cyan-50 border-cyan-200"}`}>
-
-            {/* Hidden audio elements */}
-            {question.introAudio && (
-              <audio
-                ref={introRef}
-                src={question.introAudio}
-                onEnded={() => setIsPlayingIntro(false)}
-                preload="metadata"
-              />
-            )}
-            <audio
-              ref={soalRef}
-              src={question.audio}
-              onEnded={() => setIsPlayingSoal(false)}
-              preload="metadata"
-            />
-
-            {/* INTRO - tampil hanya jika ada introAudio */}
-            {question.introAudio && (
-              <div className={`flex items-center gap-2 p-3 rounded-lg border ${isDarkMode ? "bg-slate-700 border-slate-600" : "bg-white border-cyan-200"}`}>
-                <span className="text-base">📢</span>
-                <span className={`text-sm font-medium flex-1 ${textColor}`}>
-                  Instruksi Soal
-                </span>
-                <Button
-                  size="sm"
-                  onClick={handleIntro}
-                  variant={isPlayingIntro ? "secondary" : "outline"}
-                  className={`gap-1 text-xs ${isDarkMode ? "border-slate-500 text-slate-200" : "border-cyan-300"}`}
-                >
-                  {isPlayingIntro ? "⏸ Pause" : "▶ Putar"}
-                </Button>
-              </div>
-            )}
-
-            {/* SOAL AUDIO */}
-            <div className={`flex items-center gap-2 p-3 rounded-lg border ${isDarkMode ? "bg-slate-700 border-slate-600" : "bg-white border-cyan-200"}`}>
-              <span className="text-base">🎧</span>
-              <span className={`text-sm font-medium flex-1 ${textColor}`}>
-                Audio Soal
-                {playCountSoal > 0 && (
-                  <span className={`ml-2 text-xs ${mutedText}`}>
-                    (diputar {playCountSoal}x)
-                  </span>
-                )}
-              </span>
-              <div className="flex gap-1">
-                <Button
-                  size="sm"
-                  onClick={handleSoal}
-                  className="gap-1 text-xs bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
-                >
-                  {isPlayingSoal ? "⏸ Pause" : playCountSoal > 0 ? "▶ Lanjut" : "▶ Putar"}
-                </Button>
-                {playCountSoal > 0 && (
-                  <Button
-                    size="sm"
-                    onClick={handleReplay}
-                    variant="outline"
-                    className={`gap-1 text-xs ${isDarkMode ? "border-slate-500 text-slate-200" : "border-slate-300"}`}
-                  >
-                    🔄
-                  </Button>
-                )}
-              </div>
-            </div>
-
-            {/* Transcript */}
-            {question.transcript && (
-              <details className="mt-1">
-                <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>
-                  📝 Lihat Transcript
-                </summary>
-                <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>
-                  {question.transcript}
-                </p>
-              </details>
-            )}
-          </div>
-
-          {/* Pilihan Jawaban */}
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
           <div className="space-y-2 sm:space-y-2.5">
-            {question.options.map((option, optIndex) => (
-              <button
-                key={optIndex}
-                onClick={() => onAnswer(optIndex)}
-                className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${
-                  userAnswer === optIndex
-                    ? isDarkMode
-                      ? "bg-cyan-500/20 text-cyan-300 border-cyan-500"
-                      : "bg-cyan-50 text-cyan-700 border-cyan-500"
-                    : isDarkMode
-                    ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50"
-                    : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50"
-                }`}
-              >
-                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
-                  userAnswer === optIndex
-                    ? "bg-cyan-500 text-white border-cyan-500"
-                    : `border-slate-400 ${mutedText}`
-                }`}>
-                  {optIndex + 1}
-                </span>
-                <span className="flex-1 break-words leading-relaxed">{option}</span>
+            {question.options.map((opt, oi) => (
+              <button key={oi} onClick={() => onAnswer(oi)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === oi ? "bg-cyan-500/20 text-cyan-600 border-cyan-500 dark:text-cyan-300" : "bg-background border-border text-foreground hover:border-cyan-400/50"}`}>
+                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${userAnswer === oi ? "bg-cyan-500 text-white border-cyan-500" : "border-muted-foreground text-muted-foreground"}`}>{oi + 1}</span>
+                <span className="flex-1 break-words leading-relaxed">{opt}</span>
               </button>
             ))}
           </div>
@@ -695,29 +341,27 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
   );
 }
 
-function ResultCard({ index, question, userAnswer, isCorrect, isDarkMode }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; isDarkMode: boolean; }) {
-  const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
-  const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
-
+/* ── RESULT CARD ─────────────────────────────────────────────── */
+function ResultCard({ index, question, userAnswer, isCorrect }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; }) {
   return (
-    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? (isDarkMode ? "bg-green-950/30 border-green-700/50" : "bg-green-50 border-green-300") : userAnswer !== undefined ? (isDarkMode ? "bg-red-950/30 border-red-700/50" : "bg-red-50 border-red-300") : (isDarkMode ? "bg-slate-900 border-slate-700" : "bg-slate-50 border-slate-200")}`}>
+    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : userAnswer !== undefined ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
       <div className="flex items-start gap-3 sm:gap-4">
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>{question.q}</p>
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
           <div className="space-y-2">
-            {question.options.map((option, optIndex) => {
-              const isUserAnswer = userAnswer === optIndex;
-              const isCorrectAnswer = optIndex === question.correct;
+            {question.options.map((opt, oi) => {
+              const isUser = userAnswer === oi;
+              const isCorrectAns = oi === question.correct;
               return (
-                <div key={optIndex} className={`p-3 rounded-lg border-2 transition-all flex items-start gap-2.5 sm:gap-3 ${isCorrectAnswer ? (isDarkMode ? "bg-green-900/30 border-green-600" : "bg-green-100 border-green-400") : isUserAnswer ? (isDarkMode ? "bg-red-900/30 border-red-600" : "bg-red-100 border-red-400") : (isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-300")}`}>
-                  <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isCorrectAnswer ? "bg-green-500 text-white border-green-500" : isUserAnswer ? "bg-red-500 text-white border-red-500" : `border-slate-400 ${mutedText}`}`}>{isCorrectAnswer ? "✓" : optIndex + 1}</div>
-                  <span className={`text-sm sm:text-base font-medium flex-1 break-words leading-relaxed ${textColor}`}>{option}</span>
+                <div key={oi} className={`p-3 rounded-lg border-2 flex items-start gap-2.5 sm:gap-3 ${isCorrectAns ? "bg-green-500/20 border-green-500" : isUser ? "bg-red-500/20 border-red-500" : "bg-muted border-border"}`}>
+                  <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isCorrectAns ? "bg-green-500 text-white border-green-500" : isUser ? "bg-red-500 text-white border-red-500" : "border-muted-foreground text-muted-foreground"}`}>{isCorrectAns ? "✓" : oi + 1}</div>
+                  <span className="text-sm sm:text-base font-medium flex-1 break-words leading-relaxed text-foreground">{opt}</span>
                 </div>
               );
             })}
           </div>
-          {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500 break-words">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
+          {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
           {isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-green-500">✓ Benar!</p>}
         </div>
       </div>
@@ -725,198 +369,84 @@ function ResultCard({ index, question, userAnswer, isCorrect, isDarkMode }: { in
   );
 }
 
-/* ============ CHOUKAI (LISTENING) COMPONENTS ============ */
-
-function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: {
-  index: number;
-  question: ChoukaiQuestion;
-  userAnswer?: number;
-  onAnswer: (optionIndex: number) => void;
-  isDarkMode: boolean;
-}) {
-  const [introPlayed, setIntroPlayed] = useState(false);
+/* ── CHOUKAI QUESTION CARD ───────────────────────────────────── */
+function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer }: { index: number; question: ChoukaiQuestion; userAnswer?: number; onAnswer: (o: number) => void; }) {
   const [isPlayingIntro, setIsPlayingIntro] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [playCount, setPlayCount] = useState(0);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const introAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [isPlayingSoal, setIsPlayingSoal] = useState(false);
+  const [playCount, setPlayCount]           = useState(0);
+  const introRef = useRef<HTMLAudioElement | null>(null);
+  const soalRef  = useRef<HTMLAudioElement | null>(null);
 
-  const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
-  const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
-  const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
-  const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
-
-  // Auto-play intro setelah intro selesai → langsung play soal
-  const handleIntroEnded = () => {
+  const stopAll = () => {
+    introRef.current?.pause();
+    soalRef.current?.pause();
     setIsPlayingIntro(false);
-    setIntroPlayed(true);
-    // Auto-play audio soal setelah intro selesai
-    if (audioRef.current) {
-      audioRef.current.play();
-      setIsPlaying(true);
-      setPlayCount((c) => c + 1);
-    }
+    setIsPlayingSoal(false);
   };
 
-  // Play intro dulu, lalu soal
-  const handlePlayWithIntro = () => {
-    if (question.introAudio && !introPlayed) {
-      // Play intro dulu
-      if (introAudioRef.current) {
-        introAudioRef.current.play();
-        setIsPlayingIntro(true);
-      }
-    } else {
-      // Langsung play soal
-      handlePlaySoal();
-    }
+  const handleIntro = () => {
+    if (!introRef.current) return;
+    if (isPlayingIntro) { introRef.current.pause(); setIsPlayingIntro(false); }
+    else { stopAll(); introRef.current.currentTime = 0; introRef.current.play(); setIsPlayingIntro(true); }
   };
 
-  const handlePlaySoal = () => {
-    if (!audioRef.current) return;
-    if (audioRef.current.paused) {
-      audioRef.current.play();
-      setIsPlaying(true);
-      setPlayCount((c) => c + 1);
-    } else {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    }
+  const handleSoal = () => {
+    if (!soalRef.current) return;
+    if (isPlayingSoal) { soalRef.current.pause(); setIsPlayingSoal(false); }
+    else { stopAll(); soalRef.current.play(); setIsPlayingSoal(true); setPlayCount((c) => c + 1); }
   };
 
   const handleReplay = () => {
-    if (!audioRef.current) return;
-    audioRef.current.currentTime = 0;
-    audioRef.current.play();
-    setIsPlaying(true);
-    setPlayCount((c) => c + 1);
-  };
-
-  const handleReplayIntro = () => {
-    if (!introAudioRef.current) return;
-    introAudioRef.current.currentTime = 0;
-    introAudioRef.current.play();
-    setIsPlayingIntro(true);
-    setIntroPlayed(false);
+    if (!soalRef.current) return;
+    stopAll(); soalRef.current.currentTime = 0; soalRef.current.play(); setIsPlayingSoal(true); setPlayCount((c) => c + 1);
   };
 
   return (
-    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
+    <Card className="p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all bg-card border-border hover:border-cyan-500/50">
       <div className="flex items-start gap-3 sm:gap-4">
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>{question.q}</p>
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
 
-          {/* Audio Player */}
-          <div className={`rounded-xl p-4 mb-4 border-2 ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-cyan-50 border-cyan-200"}`}>
-            
-            {/* Hidden audio elements */}
-            {question.introAudio && (
-              <audio
-                ref={introAudioRef}
-                src={question.introAudio}
-                onEnded={handleIntroEnded}
-                preload="metadata"
-              />
-            )}
-            <audio
-              ref={audioRef}
-              src={question.audio}
-              onEnded={() => setIsPlaying(false)}
-              preload="metadata"
-            />
+          <div className="rounded-xl p-4 mb-4 border-2 space-y-2 bg-cyan-500/5 border-cyan-500/20">
+            {/* Hidden audio */}
+            {question.introAudio && <audio ref={introRef} src={question.introAudio} onEnded={() => setIsPlayingIntro(false)} preload="metadata" />}
+            <audio ref={soalRef} src={question.audio} onEnded={() => setIsPlayingSoal(false)} preload="metadata" />
 
-            {/* Intro Status */}
+            {/* INSTRUKSI */}
             {question.introAudio && (
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-sm">📢</span>
-                <span className={`text-xs font-medium ${introPlayed ? "text-green-400" : mutedText}`}>
-                  {isPlayingIntro ? "⏵ Memutar instruksi soal..." : introPlayed ? "✓ Instruksi selesai" : "Instruksi belum diputar"}
-                </span>
-                {introPlayed && (
-                  <button
-                    onClick={handleReplayIntro}
-                    className={`text-xs ml-auto ${mutedText} hover:text-cyan-500`}
-                  >
-                    🔄 Ulang instruksi
-                  </button>
-                )}
+              <div className="flex items-center gap-2 p-2 rounded-lg bg-background border border-border">
+                <span>📢</span>
+                <span className="text-sm font-medium flex-1 text-foreground">Instruksi Soal</span>
+                <Button size="sm" onClick={handleIntro} variant={isPlayingIntro ? "secondary" : "outline"} className="text-xs">
+                  {isPlayingIntro ? "⏸ Pause" : "▶ Putar"}
+                </Button>
               </div>
             )}
 
-            {/* Play Status */}
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-lg">🎧</span>
-              <span className={`text-sm font-semibold ${textColor}`}>Audio Soal</span>
-              {playCount > 0 && (
-                <span className={`text-xs ml-auto ${mutedText}`}>Diputar {playCount}x</span>
-              )}
+            {/* AUDIO SOAL */}
+            <div className="flex items-center gap-2 p-2 rounded-lg bg-background border border-border">
+              <span>🎧</span>
+              <span className="text-sm font-medium flex-1 text-foreground">
+                Audio Soal {playCount > 0 && <span className="text-xs text-muted-foreground ml-1">({playCount}x)</span>}
+              </span>
+              <div className="flex gap-1">
+                <Button size="sm" onClick={handleSoal} className="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white">
+                  {isPlayingSoal ? "⏸ Pause" : playCount > 0 ? "▶ Lanjut" : "▶ Putar"}
+                </Button>
+                {playCount > 0 && (
+                  <Button size="sm" onClick={handleReplay} variant="outline" className="text-xs">🔄</Button>
+                )}
+              </div>
             </div>
-
-            {/* Controls */}
-            <div className="flex items-center gap-2">
-              <Button
-                onClick={handlePlayWithIntro}
-                className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
-                disabled={isPlayingIntro}
-              >
-                {isPlayingIntro
-                  ? "⏵ Instruksi..."
-                  : isPlaying
-                  ? "⏸ Pause"
-                  : question.introAudio && !introPlayed
-                  ? "▶ Putar (+ Instruksi)"
-                  : playCount > 0
-                  ? "▶ Lanjutkan"
-                  : "▶ Putar Audio"}
-              </Button>
-
-              <Button
-                onClick={handleReplay}
-                variant="outline"
-                disabled={playCount === 0 || isPlayingIntro}
-                className={isDarkMode ? "border-slate-600 text-slate-200" : "border-slate-300"}
-              >
-                🔄 Ulangi
-              </Button>
-            </div>
-
-            {question.transcript && (
-              <details className="mt-3">
-                <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>
-                  📝 Lihat Transcript
-                </summary>
-                <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>
-                  {question.transcript}
-                </p>
-              </details>
-            )}
           </div>
 
-          {/* Pilihan Jawaban */}
+          {/* PILIHAN */}
           <div className="space-y-2 sm:space-y-2.5">
-            {question.options.map((option, optIndex) => (
-              <button
-                key={optIndex}
-                onClick={() => onAnswer(optIndex)}
-                className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${
-                  userAnswer === optIndex
-                    ? isDarkMode
-                      ? "bg-cyan-500/20 text-cyan-300 border-cyan-500"
-                      : "bg-cyan-50 text-cyan-700 border-cyan-500"
-                    : isDarkMode
-                    ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50"
-                    : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50"
-                }`}
-              >
-                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
-                  userAnswer === optIndex
-                    ? "bg-cyan-500 text-white border-cyan-500"
-                    : `border-slate-400 ${mutedText}`
-                }`}>
-                  {optIndex + 1}
-                </span>
-                <span className="flex-1 break-words leading-relaxed">{option}</span>
+            {question.options.map((opt, oi) => (
+              <button key={oi} onClick={() => onAnswer(oi)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === oi ? "bg-cyan-500/20 text-cyan-600 border-cyan-500 dark:text-cyan-300" : "bg-background border-border text-foreground hover:border-cyan-400/50"}`}>
+                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${userAnswer === oi ? "bg-cyan-500 text-white border-cyan-500" : "border-muted-foreground text-muted-foreground"}`}>{oi + 1}</span>
+                <span className="flex-1 break-words leading-relaxed">{opt}</span>
               </button>
             ))}
           </div>
@@ -925,57 +455,42 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
     </Card>
   );
 }
-function ChoukaiResultCard({ index, question, userAnswer, isCorrect, isDarkMode }: { index: number; question: ChoukaiQuestion; userAnswer?: number; isCorrect: boolean; isDarkMode: boolean; }) {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+/* ── CHOUKAI RESULT CARD ─────────────────────────────────────── */
+function ChoukaiResultCard({ index, question, userAnswer, isCorrect }: { index: number; question: ChoukaiQuestion; userAnswer?: number; isCorrect: boolean; }) {
+  const soalRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-
-  const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
-  const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
-
   const handlePlay = () => {
-    if (!audioRef.current) return;
-    if (audioRef.current.paused) {
-      audioRef.current.play();
-      setIsPlaying(true);
-    } else {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    }
+    if (!soalRef.current) return;
+    if (soalRef.current.paused) { soalRef.current.play(); setIsPlaying(true); }
+    else { soalRef.current.pause(); setIsPlaying(false); }
   };
 
   return (
-    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? (isDarkMode ? "bg-green-950/30 border-green-700/50" : "bg-green-50 border-green-300") : userAnswer !== undefined ? (isDarkMode ? "bg-red-950/30 border-red-700/50" : "bg-red-50 border-red-300") : (isDarkMode ? "bg-slate-900 border-slate-700" : "bg-slate-50 border-slate-200")}`}>
+    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : userAnswer !== undefined ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
       <div className="flex items-start gap-3 sm:gap-4">
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className={`font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words ${textColor}`}>{question.q}</p>
-
-          <div className={`rounded-xl p-3 mb-4 border-2 ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-cyan-50 border-cyan-200"}`}>
-            <audio ref={audioRef} src={question.audio} onEnded={() => setIsPlaying(false)} preload="metadata" />
-            <div className="flex items-center gap-2">
-              <Button onClick={handlePlay} size="sm" variant="outline" className="gap-2">{isPlaying ? "⏸ Pause" : "▶"} Audio</Button>
-              {question.transcript && (
-                <details className="flex-1">
-                  <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>📝 Lihat Transcript</summary>
-                  <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>{question.transcript}</p>
-                </details>
-              )}
-            </div>
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
+          <div className="flex items-center gap-2 p-2 rounded-lg mb-4 bg-cyan-500/5 border border-cyan-500/20">
+            <audio ref={soalRef} src={question.audio} onEnded={() => setIsPlaying(false)} preload="metadata" />
+            <Button size="sm" onClick={handlePlay} variant="outline" className="text-xs gap-1">
+              {isPlaying ? "⏸ Pause" : "▶"} Audio
+            </Button>
           </div>
-
           <div className="space-y-2">
-            {question.options.map((option, optIndex) => {
-              const isUserAnswer = userAnswer === optIndex;
-              const isCorrectAnswer = optIndex === question.correct;
+            {question.options.map((opt, oi) => {
+              const isUser = userAnswer === oi;
+              const isCorrectAns = oi === question.correct;
               return (
-                <div key={optIndex} className={`p-3 rounded-lg border-2 transition-all flex items-start gap-2.5 sm:gap-3 ${isCorrectAnswer ? (isDarkMode ? "bg-green-900/30 border-green-600" : "bg-green-100 border-green-400") : isUserAnswer ? (isDarkMode ? "bg-red-900/30 border-red-600" : "bg-red-100 border-red-400") : (isDarkMode ? "bg-slate-800 border-slate-700" : "bg-slate-100 border-slate-300")}`}>
-                  <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isCorrectAnswer ? "bg-green-500 text-white border-green-500" : isUserAnswer ? "bg-red-500 text-white border-red-500" : `border-slate-400 ${mutedText}`}`}>{isCorrectAnswer ? "✓" : optIndex + 1}</div>
-                  <span className={`text-sm sm:text-base font-medium flex-1 break-words leading-relaxed ${textColor}`}>{option}</span>
+                <div key={oi} className={`p-3 rounded-lg border-2 flex items-start gap-2.5 sm:gap-3 ${isCorrectAns ? "bg-green-500/20 border-green-500" : isUser ? "bg-red-500/20 border-red-500" : "bg-muted border-border"}`}>
+                  <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isCorrectAns ? "bg-green-500 text-white border-green-500" : isUser ? "bg-red-500 text-white border-red-500" : "border-muted-foreground text-muted-foreground"}`}>{isCorrectAns ? "✓" : oi + 1}</div>
+                  <span className="text-sm sm:text-base font-medium flex-1 break-words leading-relaxed text-foreground">{opt}</span>
                 </div>
               );
             })}
           </div>
-          {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500 break-words">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
+          {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
           {isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-green-500">✓ Benar!</p>}
         </div>
       </div>
