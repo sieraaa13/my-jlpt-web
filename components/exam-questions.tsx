@@ -23,9 +23,13 @@ interface DakkaiSection {
 interface ChoukaiQuestion {
   q: string;
   audio: string;
+  introAudio?: string;        // ← TAMBAH BARIS INI
   options: string[];
   correct: number;
   transcript?: string;
+  mondai?: number;
+  questionNumber?: number;
+  audioOnlyOptions?: boolean;
 }
 
 interface ExamQuestionsProps {
@@ -557,17 +561,52 @@ function ResultCard({ index, question, userAnswer, isCorrect, isDarkMode }: { in
 
 /* ============ CHOUKAI (LISTENING) COMPONENTS ============ */
 
-function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: { index: number; question: ChoukaiQuestion; userAnswer?: number; onAnswer: (optionIndex: number) => void; isDarkMode: boolean; }) {
+function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode }: {
+  index: number;
+  question: ChoukaiQuestion;
+  userAnswer?: number;
+  onAnswer: (optionIndex: number) => void;
+  isDarkMode: boolean;
+}) {
+  const [introPlayed, setIntroPlayed] = useState(false);
+  const [isPlayingIntro, setIsPlayingIntro] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [playCount, setPlayCount] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const introAudioRef = useRef<HTMLAudioElement | null>(null);
 
   const cardBg = isDarkMode ? "bg-slate-900" : "bg-slate-50";
   const cardBorder = isDarkMode ? "border-slate-700" : "border-slate-200";
   const textColor = isDarkMode ? "text-slate-100" : "text-slate-900";
   const mutedText = isDarkMode ? "text-slate-400" : "text-slate-600";
 
-  const handlePlay = () => {
+  // Auto-play intro setelah intro selesai → langsung play soal
+  const handleIntroEnded = () => {
+    setIsPlayingIntro(false);
+    setIntroPlayed(true);
+    // Auto-play audio soal setelah intro selesai
+    if (audioRef.current) {
+      audioRef.current.play();
+      setIsPlaying(true);
+      setPlayCount((c) => c + 1);
+    }
+  };
+
+  // Play intro dulu, lalu soal
+  const handlePlayWithIntro = () => {
+    if (question.introAudio && !introPlayed) {
+      // Play intro dulu
+      if (introAudioRef.current) {
+        introAudioRef.current.play();
+        setIsPlayingIntro(true);
+      }
+    } else {
+      // Langsung play soal
+      handlePlaySoal();
+    }
+  };
+
+  const handlePlaySoal = () => {
     if (!audioRef.current) return;
     if (audioRef.current.paused) {
       audioRef.current.play();
@@ -587,6 +626,14 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
     setPlayCount((c) => c + 1);
   };
 
+  const handleReplayIntro = () => {
+    if (!introAudioRef.current) return;
+    introAudioRef.current.currentTime = 0;
+    introAudioRef.current.play();
+    setIsPlayingIntro(true);
+    setIntroPlayed(false);
+  };
+
   return (
     <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${cardBg} ${cardBorder} hover:border-cyan-500/50`}>
       <div className="flex items-start gap-3 sm:gap-4">
@@ -596,27 +643,86 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
 
           {/* Audio Player */}
           <div className={`rounded-xl p-4 mb-4 border-2 ${isDarkMode ? "bg-slate-800 border-slate-600" : "bg-cyan-50 border-cyan-200"}`}>
+            
+            {/* Hidden audio elements */}
+            {question.introAudio && (
+              <audio
+                ref={introAudioRef}
+                src={question.introAudio}
+                onEnded={handleIntroEnded}
+                preload="metadata"
+              />
+            )}
+            <audio
+              ref={audioRef}
+              src={question.audio}
+              onEnded={() => setIsPlaying(false)}
+              preload="metadata"
+            />
+
+            {/* Intro Status */}
+            {question.introAudio && (
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-sm">📢</span>
+                <span className={`text-xs font-medium ${introPlayed ? "text-green-400" : mutedText}`}>
+                  {isPlayingIntro ? "⏵ Memutar instruksi soal..." : introPlayed ? "✓ Instruksi selesai" : "Instruksi belum diputar"}
+                </span>
+                {introPlayed && (
+                  <button
+                    onClick={handleReplayIntro}
+                    className={`text-xs ml-auto ${mutedText} hover:text-cyan-500`}
+                  >
+                    🔄 Ulang instruksi
+                  </button>
+                )}
+              </div>
+            )}
+
+            {/* Play Status */}
             <div className="flex items-center gap-2 mb-3">
               <span className="text-lg">🎧</span>
               <span className={`text-sm font-semibold ${textColor}`}>Audio Soal</span>
-              {playCount > 0 && <span className={`text-xs ml-auto ${mutedText}`}>Diputar {playCount}x</span>}
+              {playCount > 0 && (
+                <span className={`text-xs ml-auto ${mutedText}`}>Diputar {playCount}x</span>
+              )}
             </div>
 
-            <audio ref={audioRef} src={question.audio} onEnded={() => setIsPlaying(false)} preload="metadata" />
-
+            {/* Controls */}
             <div className="flex items-center gap-2">
-              <Button onClick={handlePlay} className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white">
-                {isPlaying ? "⏸ Pause" : playCount > 0 ? "▶ Lanjutkan" : "▶ Putar Audio"}
+              <Button
+                onClick={handlePlayWithIntro}
+                className="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white"
+                disabled={isPlayingIntro}
+              >
+                {isPlayingIntro
+                  ? "⏵ Instruksi..."
+                  : isPlaying
+                  ? "⏸ Pause"
+                  : question.introAudio && !introPlayed
+                  ? "▶ Putar (+ Instruksi)"
+                  : playCount > 0
+                  ? "▶ Lanjutkan"
+                  : "▶ Putar Audio"}
               </Button>
-              <Button onClick={handleReplay} variant="outline" disabled={playCount === 0} className={isDarkMode ? "border-slate-600 text-slate-200" : "border-slate-300"}>
+
+              <Button
+                onClick={handleReplay}
+                variant="outline"
+                disabled={playCount === 0 || isPlayingIntro}
+                className={isDarkMode ? "border-slate-600 text-slate-200" : "border-slate-300"}
+              >
                 🔄 Ulangi
               </Button>
             </div>
 
             {question.transcript && (
               <details className="mt-3">
-                <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>📝 Lihat Transcript</summary>
-                <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>{question.transcript}</p>
+                <summary className={`text-xs cursor-pointer ${mutedText} hover:text-cyan-500`}>
+                  📝 Lihat Transcript
+                </summary>
+                <p className={`text-sm mt-2 p-3 rounded-lg whitespace-pre-line ${isDarkMode ? "bg-slate-950" : "bg-white"} ${textColor}`}>
+                  {question.transcript}
+                </p>
               </details>
             )}
           </div>
@@ -624,8 +730,26 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
           {/* Pilihan Jawaban */}
           <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((option, optIndex) => (
-              <button key={optIndex} onClick={() => onAnswer(optIndex)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === optIndex ? (isDarkMode ? "bg-cyan-500/20 text-cyan-300 border-cyan-500" : "bg-cyan-50 text-cyan-700 border-cyan-500") : (isDarkMode ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50" : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50")}`}>
-                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${userAnswer === optIndex ? "bg-cyan-500 text-white border-cyan-500" : `border-slate-400 ${mutedText}`}`}>{optIndex + 1}</span>
+              <button
+                key={optIndex}
+                onClick={() => onAnswer(optIndex)}
+                className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${
+                  userAnswer === optIndex
+                    ? isDarkMode
+                      ? "bg-cyan-500/20 text-cyan-300 border-cyan-500"
+                      : "bg-cyan-50 text-cyan-700 border-cyan-500"
+                    : isDarkMode
+                    ? "bg-slate-800 border-slate-700 text-slate-200 hover:border-cyan-400/50"
+                    : "bg-white border-slate-200 text-slate-700 hover:border-cyan-400/50"
+                }`}
+              >
+                <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${
+                  userAnswer === optIndex
+                    ? "bg-cyan-500 text-white border-cyan-500"
+                    : `border-slate-400 ${mutedText}`
+                }`}>
+                  {optIndex + 1}
+                </span>
                 <span className="flex-1 break-words leading-relaxed">{option}</span>
               </button>
             ))}
@@ -635,7 +759,6 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer, isDarkMode
     </Card>
   );
 }
-
 function ChoukaiResultCard({ index, question, userAnswer, isCorrect, isDarkMode }: { index: number; question: ChoukaiQuestion; userAnswer?: number; isCorrect: boolean; isDarkMode: boolean; }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
