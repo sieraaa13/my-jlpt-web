@@ -17,7 +17,7 @@ export const exam201107_choukai = {
     {
       q: "【問題1-1番】のり、ボールペン、ノート、封筒、コピー用紙の中から、最も良いものを選んでください。",
       audio: `${BASE}/1_1.mp3`,
-      introAudio: `${BASE}/intro_soal_1.mp3`,
+      introAudio: `${BASE}/intro_soal_1_1.mp3`,
       options: ["アイウ", "アウエ", "アウオ", "アエオ"],
       correct: 0,
       mondai: 1,
@@ -72,7 +72,7 @@ export const exam201107_choukai = {
     {
       q: "【問題2-1番】クッキングクラスはいつから始まりますか。",
       audio: `${BASE}/2_1.mp3`,
-      introAudio: `${BASE}/intro_soal_2.mp3`,
+      introAudio: `${BASE}/intro_soal_2_1.mp3`,
       options: ["来週の月曜日", "来週の火曜日", "来週の水曜日", "来週の木曜日"],
       correct: 0,
       mondai: 2,
@@ -129,7 +129,7 @@ export const exam201107_choukai = {
     {
       q: "【問題3-1番】全体としてどんな内容ですか。（選択肢は音声で聞いてください）",
       audio: `${BASE}/3_1.mp3`,
-      introAudio: `${BASE}/intro_soal_3.mp3`,
+      introAudio: `${BASE}/intro_soal_3_1.mp3`,
       options: ["1番", "2番", "3番", "4番"],
       correct: 0,
       mondai: 3,
@@ -164,7 +164,7 @@ export const exam201107_choukai = {
     {
       q: "【問題4-1番】やじるし（→）の人は何と言いますか。（選択肢は音声で聞いてください）",
       audio: `${BASE}/4_1.mp3`,
-      introAudio: `${BASE}/intro_soal_4.mp3`,
+      introAudio: `${BASE}/intro_soal_4_1.mp3`,
       options: ["1番", "2番", "3番"],
       correct: 0,
       mondai: 4,
@@ -208,7 +208,7 @@ export const exam201107_choukai = {
     {
       q: "【問題5-1番】（文と選択肢は音声で聞いてください）",
       audio: `${BASE}/5_1.mp3`,
-      introAudio: `${BASE}/intro_soal_5.mp3`,
+      introAudio: `${BASE}/intro_soal_5_1.mp3`,
       options: ["1番", "2番", "3番"],
       correct: 0,
       mondai: 5,
