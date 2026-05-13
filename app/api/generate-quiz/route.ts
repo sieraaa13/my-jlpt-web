@@ -4,10 +4,13 @@ export const runtime = "nodejs"; // ← FIX: paksa Node.js runtime untuk Buffer 
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+// Lazy init — hanya dibuat saat handler dipanggil, bukan saat build time
+function getAdmin() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
+}
 
 const MAX_BANK = 120;
 
@@ -161,13 +164,13 @@ async function uploadToSupabase(tempUrl: string, questionId: string): Promise<st
     const buffer   = Buffer.from(arrayBuf);
     const filename = `quiz/${questionId}.png`;
 
-    const { error } = await supabaseAdmin.storage
+    const { error } = await getAdmin().storage
       .from("quiz-images")
       .upload(filename, buffer, { contentType: "image/png", upsert: true });
 
     if (error) return "";
 
-    const { data } = supabaseAdmin.storage
+    const { data } = getAdmin().storage
       .from("quiz-images")
       .getPublicUrl(filename);
 
@@ -179,7 +182,7 @@ async function uploadToSupabase(tempUrl: string, questionId: string): Promise<st
 
 // ── 4. CEK JUMLAH BANK SOAL ──────────────────────────────────
 async function getBankCount(levelIndex: number, topicId: string): Promise<number> {
-  const { count } = await supabaseAdmin
+  const { count } = await getAdmin()
     .from("quiz_questions")
     .select("*", { count: "exact", head: true })
     .eq("category", topicId)
@@ -194,14 +197,14 @@ async function getUnplayedQuestions(
   topicId: string,
   count: number
 ): Promise<Record<string, unknown>[]> {
-  const { data: played } = await supabaseAdmin
+  const { data: played } = await getAdmin()
     .from("quiz_user_played")
     .select("question_id")
     .eq("user_id", userId);
 
   const playedIds = played?.map((p: { question_id: string }) => p.question_id) || [];
 
-  let query = supabaseAdmin
+  let query = getAdmin()
     .from("quiz_questions")
     .select("*")
     .eq("category", topicId)
@@ -245,7 +248,7 @@ export async function POST(req: NextRequest) {
       // Simpan ke DB dan upload gambar
       const saved = await Promise.all(
         newQs.map(async (q, i) => {
-          const { data, error } = await supabaseAdmin
+          const { data, error } = await getAdmin()
             .from("quiz_questions")
             .insert({
               category:    topicId,
@@ -266,7 +269,7 @@ export async function POST(req: NextRequest) {
           const imgUrl = await uploadToSupabase(imgUrls[i], data.id);
 
           if (imgUrl) {
-            await supabaseAdmin
+            await getAdmin()
               .from("quiz_questions")
               .update({ img_url: imgUrl })
               .eq("id", data.id);
@@ -281,7 +284,7 @@ export async function POST(req: NextRequest) {
 
     // 3. Jika semua 120 soal sudah dimainkan → reset cycle (acak ulang)
     if (questions.length < count) {
-      const { data: allQs } = await supabaseAdmin
+      const { data: allQs } = await getAdmin()
         .from("quiz_questions")
         .select("id")
         .eq("category", topicId)
@@ -290,7 +293,7 @@ export async function POST(req: NextRequest) {
       const allIds = allQs?.map((q: { id: string }) => q.id) || [];
 
       if (allIds.length > 0) {
-        await supabaseAdmin
+        await getAdmin()
           .from("quiz_user_played")
           .delete()
           .eq("user_id", userId)
@@ -324,7 +327,7 @@ export async function PUT(req: NextRequest) {
   try {
     const { userId, questionId } = await req.json();
 
-    await supabaseAdmin
+    await getAdmin()
       .from("quiz_user_played")
       .upsert(
         { user_id: userId, question_id: questionId },
