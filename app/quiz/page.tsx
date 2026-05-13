@@ -7,7 +7,7 @@ import { Card }     from "@/components/ui/card";
 import { Button }   from "@/components/ui/button";
 import { useAuth }  from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
-import { getPlayerLevel, getProgressToNext, getPtsToNext, PLAYER_LEVELS } from "@/lib/quiz-levels";
+import { getPlayerLevel, getProgressPct, getPtsToNext, PLAYER_LEVELS } from "@/lib/quiz-levels";
 
 // ─── CONSTANTS ───────────────────────────────────────────────
 const MAX_Q   = 5;
@@ -32,14 +32,27 @@ const TOPICS = [
 
 // ─── TYPES ───────────────────────────────────────────────────
 interface Question {
-  q: string; opts: string[]; ans: number;
-  img_keyword: string; img_cat: string; explain: string;
+  id:      string;
+  q:       string;
+  opts:    string[];
+  ans:     number;
+  explain: string;
+  img_url: string;
+  img_cat: string;
 }
+
 interface DailyState {
-  date: string; qUsed: number; tUsed: number;
-  pts: number; streak: number; topicId: string; lvl: number;
-  totalPtsAlltime: number; usedTopics: string[];
+  date:            string;
+  qUsed:           number;
+  tUsed:           number;
+  pts:             number;
+  streak:          number;
+  topicId:         string;
+  lvl:             number;
+  totalPtsAlltime: number;
+  usedTopics:      string[];
 }
+
 type Phase = "home"|"loading"|"quiz"|"result"|"done";
 
 // ─── HELPERS ─────────────────────────────────────────────────
@@ -52,7 +65,7 @@ function resetIn() {
 }
 
 // ─── SUPABASE ────────────────────────────────────────────────
-async function loadState(uid: string): Promise<DailyState> {
+async function loadDailyState(uid: string): Promise<DailyState> {
   const { data } = await supabase
     .from("quiz_daily").select("*")
     .eq("user_id", uid).eq("date", today()).single();
@@ -61,20 +74,27 @@ async function loadState(uid: string): Promise<DailyState> {
     topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
   };
   return {
-    date: data.date, qUsed: data.q_used, tUsed: data.t_used,
-    pts: data.total_pts, streak: data.streak,
-    topicId: data.topic_id, lvl: data.level,
-    totalPtsAlltime: data.total_pts_alltime ?? 0,
-    usedTopics: data.used_topics ?? [],
+    date:data.date, qUsed:data.q_used, tUsed:data.t_used,
+    pts:data.total_pts, streak:data.streak, topicId:data.topic_id,
+    lvl:data.level, totalPtsAlltime:data.total_pts_alltime??0,
+    usedTopics:data.used_topics??[],
   };
 }
 
-async function saveState(uid: string, s: DailyState) {
+async function saveDailyState(uid: string, s: DailyState) {
   await supabase.from("quiz_daily").upsert({
-    user_id: uid, date: s.date, q_used: s.qUsed, t_used: s.tUsed,
-    total_pts: s.pts, streak: s.streak, topic_id: s.topicId, level: s.lvl,
-    total_pts_alltime: s.totalPtsAlltime, used_topics: s.usedTopics,
-  }, { onConflict: "user_id,date" });
+    user_id:uid, date:s.date, q_used:s.qUsed, t_used:s.tUsed,
+    total_pts:s.pts, streak:s.streak, topic_id:s.topicId, level:s.lvl,
+    total_pts_alltime:s.totalPtsAlltime, used_topics:s.usedTopics,
+  }, { onConflict:"user_id,date" });
+}
+
+async function markPlayed(userId: string, questionId: string) {
+  await fetch("/api/generate-quiz", {
+    method:  "PUT",
+    headers: { "Content-Type":"application/json" },
+    body:    JSON.stringify({ userId, questionId }),
+  });
 }
 
 // ─── COMPONENT ───────────────────────────────────────────────
@@ -86,20 +106,20 @@ export default function QuizPage() {
     topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
   };
 
-  const [state,     setState]     = useState<DailyState>(empty);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [curQ,      setCurQ]      = useState(0);
-  const [answered,  setAnswered]  = useState(false);
-  const [selected,  setSelected]  = useState<number|null>(null);
-  const [phase,     setPhase]     = useState<Phase>("home");
-  const [imgOk,     setImgOk]     = useState(false);
-  const [floatPts,  setFloatPts]  = useState<number|null>(null);
-  const [resetTime, setResetTime] = useState("");
-  const [showLevels,setShowLevels]= useState(false);
+  const [state,      setState]      = useState<DailyState>(empty);
+  const [questions,  setQuestions]  = useState<Question[]>([]);
+  const [curQ,       setCurQ]       = useState(0);
+  const [answered,   setAnswered]   = useState(false);
+  const [selected,   setSelected]   = useState<number|null>(null);
+  const [phase,      setPhase]      = useState<Phase>("home");
+  const [imgError,   setImgError]   = useState(false);
+  const [floatPts,   setFloatPts]   = useState<number|null>(null);
+  const [resetTime,  setResetTime]  = useState("");
+  const [showLevels, setShowLevels] = useState(false);
 
   useEffect(() => {
     if (!user) return;
-    loadState(user.id).then(s => {
+    loadDailyState(user.id).then(s => {
       setState(s);
       if (s.qUsed >= MAX_Q) setPhase("done");
     });
@@ -107,41 +127,47 @@ export default function QuizPage() {
 
   useEffect(() => {
     setResetTime(resetIn());
-    const t = setInterval(()=>setResetTime(resetIn()), 60000);
+    const t = setInterval(() => setResetTime(resetIn()), 60000);
     return () => clearInterval(t);
   }, []);
 
-  const lv    = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[1];
-  const topic = TOPICS.find(t=>t.id===state.topicId) ?? TOPICS[0];
-  const q     = questions[curQ];
-  const plLvl = getPlayerLevel(state.totalPtsAlltime);
-  const prog  = getProgressToNext(state.totalPtsAlltime);
-  const toNext= getPtsToNext(state.totalPtsAlltime);
+  const lv     = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[1];
+  const topic  = TOPICS.find(t => t.id===state.topicId) ?? TOPICS[0];
+  const q      = questions[curQ];
+  const plLvl  = getPlayerLevel(state.totalPtsAlltime);
+  const prog   = getProgressPct(state.totalPtsAlltime);
+  const toNext = getPtsToNext(state.totalPtsAlltime);
 
-  // ── Start quiz ──────────────────────────────────────────────
+  // ── START QUIZ ───────────────────────────────────────────────
   async function startQuiz() {
     if (!user) return;
 
-    // Hitung topik — HANYA saat mulai quiz, bukan saat pilih topik
-    let newTUsed = state.tUsed;
+    // Catat topik yang digunakan SAAT mulai quiz (bukan saat pilih)
     let newUsedTopics = [...state.usedTopics];
+    let newTUsed = state.tUsed;
     if (!newUsedTopics.includes(state.topicId)) {
       newUsedTopics.push(state.topicId);
       newTUsed = newUsedTopics.length;
     }
-
     const updated = { ...state, tUsed: newTUsed, usedTopics: newUsedTopics };
     setState(updated);
-    await saveState(user.id, updated);
+    await saveDailyState(user.id, updated);
 
     setPhase("loading");
-    setQuestions([]); setCurQ(0); setAnswered(false); setSelected(null); setImgOk(false);
+    setQuestions([]); setCurQ(0); setAnswered(false);
+    setSelected(null); setImgError(false);
+
     try {
-      const n = Math.min(MAX_Q - state.qUsed, 5);
+      const n   = Math.min(MAX_Q - state.qUsed, 5);
       const res = await fetch("/api/generate-quiz", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ levelIndex: state.lvl, topicId: state.topicId, count: n }),
+        method:  "POST",
+        headers: { "Content-Type":"application/json" },
+        body:    JSON.stringify({
+          levelIndex: state.lvl,
+          topicId:    state.topicId,
+          count:      n,
+          userId:     user.id,
+        }),
       });
       if (!res.ok) throw new Error("API error " + res.status);
       const { questions: qs } = await res.json();
@@ -149,12 +175,12 @@ export default function QuizPage() {
       setPhase("quiz");
     } catch(e) {
       console.error(e);
-      alert("Gagal memuat soal. Pastikan koneksi internet dan coba lagi.");
+      alert("Gagal memuat soal. Coba lagi.");
       setPhase("home");
     }
   }
 
-  // ── Choose answer ───────────────────────────────────────────
+  // ── ANSWER ───────────────────────────────────────────────────
   async function choose(idx: number) {
     if (!user || answered) return;
     setAnswered(true); setSelected(idx);
@@ -163,7 +189,10 @@ export default function QuizPage() {
     const bonus   = correct && state.streak >= 2 ? lv.ptStreak : 0;
     const pts     = correct ? lv.ptCorrect + bonus : 0;
 
-    if (pts > 0) { setFloatPts(pts); setTimeout(()=>setFloatPts(null), 900); }
+    if (pts > 0) { setFloatPts(pts); setTimeout(() => setFloatPts(null), 900); }
+
+    // Tandai soal sebagai sudah dimainkan
+    await markPlayed(user.id, q.id);
 
     const ns: DailyState = {
       ...state,
@@ -173,37 +202,36 @@ export default function QuizPage() {
       totalPtsAlltime: state.totalPtsAlltime + pts,
     };
     setState(ns);
-    await saveState(user.id, ns);
+    await saveDailyState(user.id, ns);
   }
 
-  // ── Next question ───────────────────────────────────────────
+  // ── NEXT ─────────────────────────────────────────────────────
   function nextQ() {
     if (state.qUsed >= MAX_Q) { setPhase("done"); return; }
     if (curQ + 1 >= questions.length) { setPhase("result"); return; }
-    setCurQ(c=>c+1); setAnswered(false); setSelected(null); setImgOk(false);
+    setCurQ(c => c+1); setAnswered(false); setSelected(null); setImgError(false);
   }
 
-  // ── Change topic — hanya update pilihan, belum hitung tUsed ─
+  // ── CHANGE TOPIC (hanya update pilihan, belum hitung tUsed) ──
   async function handleChangeTopic(id: string) {
     if (!user || id === state.topicId) return;
-    // Cek apakah sudah mencapai limit (berdasarkan topik yang sudah digunakan)
     const wouldExceed = !state.usedTopics.includes(id) && state.usedTopics.length >= MAX_T;
     if (wouldExceed) return;
     const ns = { ...state, topicId: id };
     setState(ns);
-    await saveState(user.id, ns);
+    await saveDailyState(user.id, ns);
     setPhase("home");
   }
 
-  // ── Change level ────────────────────────────────────────────
+  // ── CHANGE LEVEL ─────────────────────────────────────────────
   async function handleChangeLevel(i: number) {
     if (!user || i === state.lvl) return;
     const ns = { ...state, lvl: i };
     setState(ns);
-    await saveState(user.id, ns);
+    await saveDailyState(user.id, ns);
   }
 
-  // ─── RENDER ──────────────────────────────────────────────────
+  // ── RENDER ───────────────────────────────────────────────────
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -212,50 +240,52 @@ export default function QuizPage() {
         {/* HEADER */}
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-bold">Quiz Harian Jepang</h1>
-          <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">✦ AI Powered</span>
+          <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
+            ✦ AI Powered
+          </span>
         </div>
 
         {/* PLAYER LEVEL CARD */}
-        <Card className="p-4 mb-4 cursor-pointer" onClick={()=>setShowLevels(!showLevels)}>
+        <Card className="p-4 mb-4 cursor-pointer" onClick={() => setShowLevels(!showLevels)}>
           <div className="flex items-center gap-3 mb-3">
             <span className="text-4xl">{plLvl.icon}</span>
             <div className="flex-1">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-base font-semibold">{plLvl.name}</span>
                 <span className="text-xs px-2 py-0.5 rounded-full font-medium"
                   style={{ background:`${plLvl.color}20`, color:plLvl.color }}>
                   Level {plLvl.num}
                 </span>
                 <span className="text-xs text-muted-foreground ml-auto">
-                  {showLevels ? "▲ Tutup" : "▼ Lihat semua level"}
+                  {showLevels ? "▲ Tutup" : "▼ Lihat semua"}
                 </span>
               </div>
               <p className="text-xs text-muted-foreground">{plLvl.jp} • {state.totalPtsAlltime} poin total</p>
             </div>
           </div>
           <div className="h-2 bg-muted rounded-full overflow-hidden mb-1">
-            <div className="h-full rounded-full transition-all duration-500"
+            <div className="h-full rounded-full transition-all duration-700"
               style={{ width:`${prog}%`, background:plLvl.color }} />
           </div>
           <p className="text-xs text-muted-foreground">
-            {plLvl.num < 10 ? `${toNext} poin lagi untuk Level ${plLvl.num + 1}` : "Level maksimal tercapai! 👑"}
+            {plLvl.num < 10 ? `${toNext} poin lagi untuk Level ${plLvl.num+1}` : "Level maksimal! 👑"}
           </p>
         </Card>
 
-        {/* LEVEL PROGRESSION PANEL */}
+        {/* LEVEL PROGRESSION */}
         {showLevels && (
           <Card className="p-4 mb-4">
             <p className="text-sm font-medium mb-3">Semua Level</p>
             <div className="grid grid-cols-5 gap-2">
               {PLAYER_LEVELS.map(pl => {
-                const reached = state.totalPtsAlltime >= pl.minPts;
+                const reached  = state.totalPtsAlltime >= pl.minPts;
                 const isCurrent = pl.num === plLvl.num;
                 return (
                   <div key={pl.num}
                     className={`rounded-xl p-2 text-center border transition-all ${isCurrent ? "border-2" : "border-border"}`}
                     style={isCurrent ? { borderColor:pl.color } : {}}>
-                    <div className={`text-2xl mb-1 ${!reached ? "opacity-30 grayscale" : ""}`}>{pl.icon}</div>
-                    <div className="text-xs font-medium" style={{ color: reached ? pl.color : "var(--color-text-tertiary)" }}>
+                    <div className={`text-2xl mb-1 ${!reached ? "opacity-25 grayscale" : ""}`}>{pl.icon}</div>
+                    <div className="text-xs font-medium" style={{ color:reached ? pl.color : "var(--color-text-tertiary)" }}>
                       Lv.{pl.num}
                     </div>
                     <div className="text-[10px] text-muted-foreground leading-tight">{pl.name}</div>
@@ -270,8 +300,8 @@ export default function QuizPage() {
         <Card className="p-4 mb-4">
           <div className="grid grid-cols-2 gap-3">
             {[
-              { label:"Soal hari ini", used:state.qUsed, max:MAX_Q, color:state.qUsed>=MAX_Q?"#E24B4A":lv.color },
-              { label:"Topik digunakan", used:state.usedTopics.length, max:MAX_T, color:state.usedTopics.length>=MAX_T?"#E24B4A":"#1D9E75" },
+              { label:"Soal hari ini",    used:state.qUsed,            max:MAX_Q, color:state.qUsed>=MAX_Q?"#E24B4A":lv.color },
+              { label:"Topik digunakan",  used:state.usedTopics.length, max:MAX_T, color:state.usedTopics.length>=MAX_T?"#E24B4A":"#1D9E75" },
             ].map(item => (
               <div key={item.label} className="bg-muted rounded-lg p-3">
                 <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
@@ -286,10 +316,10 @@ export default function QuizPage() {
           <p className="text-xs text-muted-foreground text-right mt-2">Reset dalam {resetTime}</p>
         </Card>
 
-        {/* JLPT LEVEL SELECTOR */}
+        {/* JLPT LEVEL */}
         <div className="flex gap-2 flex-wrap mb-2">
           {QUIZ_LEVELS.map((l,i) => (
-            <button key={l.name} onClick={()=>handleChangeLevel(i)}
+            <button key={l.name} onClick={() => handleChangeLevel(i)}
               className="px-4 py-1.5 rounded-full text-sm font-medium border transition-all"
               style={i===state.lvl
                 ? { background:l.color, color:"#fff", borderColor:l.color }
@@ -312,16 +342,16 @@ export default function QuizPage() {
         {/* TOPIC SELECTOR */}
         {state.usedTopics.length >= MAX_T && (
           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 dark:bg-amber-950/30 dark:border-amber-800 dark:text-amber-400 rounded-lg px-3 py-2 mb-3">
-            Kamu sudah menggunakan {MAX_T} topik berbeda hari ini. Topik terkunci sampai besok.
+            Kamu sudah menggunakan {MAX_T} topik hari ini. Topik terkunci sampai besok.
           </div>
         )}
         <div className="grid grid-cols-2 gap-2 mb-4">
           {TOPICS.map(t => {
-            const active   = t.id === state.topicId;
-            const used     = state.usedTopics.includes(t.id);
+            const active      = t.id === state.topicId;
+            const used        = state.usedTopics.includes(t.id);
             const wouldExceed = !used && !active && state.usedTopics.length >= MAX_T;
             return (
-              <button key={t.id} onClick={()=>handleChangeTopic(t.id)}
+              <button key={t.id} onClick={() => handleChangeTopic(t.id)}
                 disabled={wouldExceed}
                 className={`flex items-center gap-2 p-3 rounded-xl border text-left transition-all ${
                   active ? "border-primary bg-primary/10"
@@ -329,10 +359,10 @@ export default function QuizPage() {
                   : "border-border hover:bg-muted"}`}>
                 <span className="text-xl">{t.icon}</span>
                 <div className="flex-1 min-w-0">
-                  <p className={`text-sm font-medium ${active?"text-primary":"text-foreground"}`}>{t.name}</p>
+                  <p className={`text-sm font-medium ${active ? "text-primary" : "text-foreground"}`}>{t.name}</p>
                   <p className="text-xs text-muted-foreground">{t.desc}</p>
                 </div>
-                {used && !active && <span className="text-xs text-muted-foreground">✓</span>}
+                {used && !active && <span className="text-xs text-green-500">✓</span>}
               </button>
             );
           })}
@@ -374,9 +404,6 @@ export default function QuizPage() {
             <p className="text-sm text-muted-foreground mb-1">{lv.label}</p>
             <p className="text-xs text-muted-foreground mb-4">
               Sisa {MAX_Q - state.qUsed} soal hari ini
-              {!state.usedTopics.includes(state.topicId) && state.usedTopics.length < MAX_T
-                ? " · Topik ini belum pernah dimainkan hari ini"
-                : ""}
             </p>
             {user ? (
               <Button onClick={startQuiz} disabled={state.qUsed >= MAX_Q}
@@ -392,10 +419,15 @@ export default function QuizPage() {
         {/* ── LOADING ── */}
         {phase === "loading" && (
           <Card className="p-8 text-center">
-            <div className="w-8 h-8 rounded-full border-4 border-t-transparent mx-auto mb-4 animate-spin"
-              style={{ borderColor:`${lv.color}40`, borderTopColor:lv.color }} />
-            <p className="text-sm text-muted-foreground">AI sedang membuat soal {lv.name}...</p>
-            <p className="text-xs text-muted-foreground mt-1">{topic.name}</p>
+            <div className="w-10 h-10 rounded-full border-4 border-t-transparent mx-auto mb-4 animate-spin"
+              style={{ borderColor:`${lv.color}30`, borderTopColor:lv.color }} />
+            <p className="text-sm font-medium text-foreground mb-1">
+              AI sedang menyiapkan soal {lv.name}...
+            </p>
+            <p className="text-xs text-muted-foreground">{topic.name}</p>
+            <p className="text-xs text-muted-foreground mt-3">
+              Termasuk generate gambar, mohon tunggu ~10 detik
+            </p>
           </Card>
         )}
 
@@ -403,29 +435,41 @@ export default function QuizPage() {
         {phase === "quiz" && q && (
           <>
             <Card className="overflow-hidden mb-3">
-              <div className="relative h-48 bg-muted flex items-center justify-center overflow-hidden">
-                <img src={`https://source.unsplash.com/640x360/?${encodeURIComponent(q.img_keyword+" japan")}`}
-                  alt=""
-                  className={`w-full h-full object-cover transition-opacity duration-500 ${imgOk?"opacity-100":"opacity-0"}`}
-                  onLoad={()=>setImgOk(true)}
-                  onError={e=>{ e.currentTarget.style.display="none"; }} />
-                <span className="absolute top-2 left-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
-                  style={{ background:"rgba(83,74,183,.85)" }}>{q.img_cat}</span>
-                <span className="absolute top-2 right-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
-                  style={{ background:lv.color }}>{lv.name} • +{lv.ptCorrect}pt</span>
-              </div>
+              {/* IMAGE */}
+              {q.img_url && !imgError ? (
+                <div className="relative h-48 bg-muted overflow-hidden">
+                  <img
+                    src={q.img_url}
+                    alt={q.img_cat}
+                    className="w-full h-full object-cover"
+                    onError={() => setImgError(true)}
+                  />
+                  <span className="absolute top-2 left-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
+                    style={{ background:"rgba(83,74,183,.85)" }}>{q.img_cat}</span>
+                  <span className="absolute top-2 right-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
+                    style={{ background:lv.color }}>{lv.name} • +{lv.ptCorrect}pt</span>
+                </div>
+              ) : (
+                <div className="relative h-32 flex items-center justify-center bg-muted">
+                  <span className="text-xs text-muted-foreground">Gambar tidak tersedia</span>
+                  <span className="absolute top-2 right-2 text-xs px-2.5 py-1 rounded-full text-white font-medium"
+                    style={{ background:lv.color }}>{lv.name} • +{lv.ptCorrect}pt</span>
+                </div>
+              )}
+
+              {/* QUESTION */}
               <div className="p-5">
                 <p className="text-base font-semibold leading-relaxed mb-4">{q.q}</p>
                 <div className="grid grid-cols-2 gap-2">
-                  {q.opts.map((opt,i) => {
+                  {q.opts.map((opt, i) => {
                     let cls = "border-border hover:bg-muted hover:border-primary/50";
                     if (answered) {
-                      if (i===q.ans) cls="bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600";
-                      else if (i===selected) cls="bg-red-100 border-red-500 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-600";
-                      else cls="opacity-50 border-border";
+                      if (i===q.ans) cls = "bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600";
+                      else if (i===selected) cls = "bg-red-100 border-red-500 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-600";
+                      else cls = "opacity-50 border-border";
                     }
                     return (
-                      <button key={i} onClick={()=>choose(i)} disabled={answered}
+                      <button key={i} onClick={() => choose(i)} disabled={answered}
                         className={`p-3 rounded-xl border-2 text-sm text-left transition-all leading-snug disabled:cursor-not-allowed ${cls}`}>
                         <span className="text-muted-foreground text-xs mr-1">{i+1}.</span>{opt}
                       </button>
@@ -433,23 +477,27 @@ export default function QuizPage() {
                   })}
                 </div>
               </div>
+
+              {/* FEEDBACK */}
               {answered && (
                 <div className="px-5 pb-5 flex items-start gap-3 border-t border-border pt-4">
-                  <span className="text-lg flex-shrink-0">{selected===q.ans?"✓":"✗"}</span>
+                  <span className="text-lg flex-shrink-0">{selected===q.ans ? "✓" : "✗"}</span>
                   <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{q.explain}</p>
                   {selected===q.ans && (
                     <span className="text-sm font-semibold whitespace-nowrap" style={{color:lv.color}}>
-                      +{lv.ptCorrect+(state.streak>2?lv.ptStreak:0)}pt
+                      +{lv.ptCorrect + (state.streak > 2 ? lv.ptStreak : 0)}pt
                     </span>
                   )}
                 </div>
               )}
             </Card>
+
+            {/* NAV */}
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-muted-foreground">Soal {state.qUsed} dari {MAX_Q}</p>
                 <p className="text-xs" style={{color:"#BA7517"}}>
-                  {state.streak>=3?`🔥 Streak ${state.streak}x! +${lv.ptStreak} bonus`:state.streak>0?`Streak ${state.streak}x`:""}
+                  {state.streak>=3 ? `🔥 Streak ${state.streak}x! +${lv.ptStreak} bonus` : state.streak>0 ? `Streak ${state.streak}x` : ""}
                 </p>
               </div>
               <Button onClick={nextQ} disabled={!answered} className="text-white" style={{background:lv.color}}>
@@ -466,19 +514,18 @@ export default function QuizPage() {
             <h2 className="text-xl font-bold mb-1">Soal selesai!</h2>
             <p className="text-sm text-muted-foreground mb-6">{lv.label} • {topic.name}</p>
             <div className="grid grid-cols-3 gap-3 mb-6">
-              {[{v:state.pts,l:"Poin hari ini"},{v:questions.length,l:"Soal dijawab"},{v:String(state.streak)+(state.streak>=3?"🔥":""),l:"Streak"}]
-                .map(s=>(
-                  <div key={s.l} className="bg-muted rounded-xl p-3">
-                    <p className="text-2xl font-bold">{s.v}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
-                  </div>
+              {[{v:state.pts,l:"Poin hari ini"},{v:questions.length,l:"Soal dijawab"},{v:`${state.streak}${state.streak>=3?"🔥":""}`,l:"Streak"}].map(s=>(
+                <div key={s.l} className="bg-muted rounded-xl p-3">
+                  <p className="text-2xl font-bold">{s.v}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
+                </div>
               ))}
             </div>
             {state.qUsed >= MAX_Q ? (
               <Button disabled className="w-full opacity-50">Kuota habis — kembali besok</Button>
             ) : (
               <Button onClick={startQuiz} className="w-full text-white" style={{background:lv.color}}>
-                Lanjut {MAX_Q - state.qUsed} soal tersisa →
+                Lanjut {MAX_Q-state.qUsed} soal tersisa →
               </Button>
             )}
           </Card>
@@ -493,17 +540,17 @@ export default function QuizPage() {
               Kamu telah menjawab <strong>{MAX_Q} soal</strong> hari ini. Kembali besok!
             </p>
             <div className="grid grid-cols-3 gap-3 mb-4">
-              {[{v:state.pts,l:"Poin hari ini"},{v:MAX_Q,l:"Soal selesai"},{v:String(state.streak)+(state.streak>=3?"🔥":""),l:"Streak akhir"}]
-                .map(s=>(
-                  <div key={s.l} className="bg-muted rounded-xl p-3">
-                    <p className="text-2xl font-bold">{s.v}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
-                  </div>
+              {[{v:state.pts,l:"Total Poin"},{v:MAX_Q,l:"Soal Selesai"},{v:`${state.streak}${state.streak>=3?"🔥":""}`,l:"Streak Akhir"}].map(s=>(
+                <div key={s.l} className="bg-muted rounded-xl p-3">
+                  <p className="text-2xl font-bold">{s.v}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
+                </div>
               ))}
             </div>
             <p className="text-xs text-muted-foreground">Reset dalam {resetTime}</p>
           </Card>
         )}
+
       </div>
       <Footer />
     </main>
