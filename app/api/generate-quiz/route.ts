@@ -4,38 +4,36 @@ export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
-// ── LAZY INIT SUPABASE CLIENT ────────────────────────────────
+// ── LAZY INIT ─────────────────────────────────────────────────
 function getAdmin() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) {
-    throw new Error("Missing Supabase env vars: NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY");
-  }
-  return createClient(url, key);
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
 }
 
 const MAX_BANK = 120;
 
 const LEVEL_CONFIG = [
   { name: "N5", diff: "very easy, for absolute beginners",
-    instruction: "Ask only very well-known things. Options must be clearly different (1 correct, 3 obviously wrong)." },
+    guide: "Ask only very well-known things. Options clearly different." },
   { name: "N4", diff: "easy, for basic level learners",
-    instruction: "Ask things known by people who studied basic Japanese. Options similar but distinguishable." },
+    guide: "Ask things known by people who studied basic Japanese." },
   { name: "N3", diff: "intermediate level",
-    instruction: "Ask specific details requiring deeper knowledge. Counts, years, origins, specific functions." },
+    guide: "Ask specific details requiring deeper knowledge." },
   { name: "N2", diff: "difficult, for advanced learners",
-    instruction: "Ask cultural context, history, or philosophy. All options plausible." },
+    guide: "Ask cultural context, history, or philosophy." },
   { name: "N1", diff: "very difficult, professional level",
-    instruction: "Ask deep concepts, cultural nuances, or academic facts. Requires deep analysis." },
+    guide: "Ask deep concepts, cultural nuances, or academic facts." },
 ];
 
-const TOPIC_CONFIG: Record<string, string> = {
+const TOPICS: Record<string, string> = {
   budaya:   "Japanese culture, traditions, and daily life customs",
   makanan:  "Japanese food and culinary traditions",
   anime:    "Anime, manga, and Japanese pop culture",
-  tempat:   "Famous Instagrammable spots, iconic tourist destinations, beautiful scenery in Japan",
+  tempat:   "Famous Instagrammable spots, iconic tourist destinations in Japan",
   festival: "Japanese festivals (matsuri) and traditional celebrations",
-  modern:   "Modern Japan: technology, convenience stores, transportation, contemporary lifestyle",
+  modern:   "Modern Japan: technology, convenience stores, transportation, lifestyle",
 };
 
 // ═══════════════════════════════════════════════════════════════
@@ -48,20 +46,19 @@ async function generateQuestions(
   count: number
 ): Promise<Record<string, unknown>[]> {
   const lv    = LEVEL_CONFIG[levelIndex];
-  const topic = TOPIC_CONFIG[topicId] || topicId;
+  const topic = TOPICS[topicId];
 
   const prompt = `You are an expert quiz creator for a Japanese culture learning platform.
 Create exactly ${count} multiple-choice quiz questions.
 Topic: ${topic}
-Difficulty: ${lv.diff} (${lv.name})
-Guidelines: ${lv.instruction}
+Difficulty: ${lv.diff}
+Guidelines: ${lv.guide}
 
 RULES:
 - 100% factually accurate
 - Each question UNIQUE
 - ALL questions and explanations in Indonesian (Bahasa Indonesia)
-- img_prompt in English, detailed, photorealistic
-- img_prompt example: "Fushimi Inari shrine Kyoto Japan, vermilion torii gates path, photorealistic"
+- img_keyword: 1-3 English words for photo search (e.g., "fushimi inari kyoto", "ramen bowl", "sakura blossom")
 
 Respond ONLY with valid JSON array, no markdown:
 [
@@ -70,7 +67,7 @@ Respond ONLY with valid JSON array, no markdown:
     "options": ["A","B","C","D"],
     "answer": 0,
     "explanation": "penjelasan dalam bahasa Indonesia",
-    "img_prompt": "detailed english DALL-E prompt",
+    "img_keyword": "english keywords for photo search",
     "img_cat": "kategori singkat"
   }
 ]`;
@@ -93,120 +90,59 @@ Respond ONLY with valid JSON array, no markdown:
     }),
   });
 
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`[GPT] Error ${res.status}:`, err);
-    throw new Error(`GPT error: ${res.status}`);
-  }
-
-  const data    = await res.json();
+  if (!res.ok) throw new Error(`GPT error: ${res.status}`);
+  const data   = await res.json();
   const content = data.choices?.[0]?.message?.content || "";
-  const parsed  = JSON.parse(content.replace(/```json|```/g, "").trim());
+  const parsed = JSON.parse(content.replace(/```json|```/g, "").trim());
   console.log(`[GPT] ✓ Generated ${parsed.length} questions`);
   return parsed;
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 2. GENERATE GAMBAR via DALL-E 2 (dengan logging detail)
+// 2. GET FOTO dari UNSPLASH (GRATIS!)
 // ═══════════════════════════════════════════════════════════════
-async function generateImage(apiKey: string, prompt: string): Promise<string> {
-  console.log(`[DALLE] Starting image gen for: "${prompt.slice(0, 60)}..."`);
+async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<string> {
+  console.log(`[UNSPLASH] Searching for: "${keyword}"`);
 
   try {
-    const res = await fetch("https://api.openai.com/v1/images/generations", {
-      method: "POST",
-      headers: {
-        "Content-Type":  "application/json",
-        "Authorization": `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model:           "dall-e-2",
-        prompt:          `${prompt}, clean illustration, no text overlay, family-friendly`,
-        n:               1,
-        size:            "512x512",
-        response_format: "url",
-      }),
-    });
+    // Tambah "japan" untuk hasil lebih relevan
+    const query = `${keyword} japan`;
+    const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&client_id=${accessKey}`;
 
+    const res = await fetch(url);
     if (!res.ok) {
-      const errText = await res.text();
-      console.error(`[DALLE] ✗ Failed ${res.status}:`, errText.slice(0, 200));
+      console.error(`[UNSPLASH] Error ${res.status}`);
       return "";
     }
 
     const data = await res.json();
-    const url  = data.data?.[0]?.url || "";
-    console.log(`[DALLE] ✓ Got URL (length: ${url.length})`);
-    return url;
+    const photo = data.results?.[0];
+
+    if (!photo) {
+      console.warn(`[UNSPLASH] No photos found for "${query}"`);
+      return "";
+    }
+
+    // Ambil URL regular (kualitas bagus, ukuran sedang)
+    const imgUrl = photo.urls.regular;
+    console.log(`[UNSPLASH] ✓ Found photo by ${photo.user.name}`);
+    return imgUrl;
+
   } catch (err) {
-    console.error(`[DALLE] ✗ Exception:`, err);
+    console.error(`[UNSPLASH] Exception:`, err);
     return "";
   }
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 3. UPLOAD GAMBAR ke SUPABASE STORAGE (dengan logging detail)
-// ═══════════════════════════════════════════════════════════════
-async function uploadToSupabase(tempUrl: string, questionId: string): Promise<string> {
-  if (!tempUrl || !questionId) {
-    console.warn(`[UPLOAD] ⚠ Skipped — empty tempUrl or questionId`);
-    return "";
-  }
-
-  console.log(`[UPLOAD] Starting for question ${questionId}`);
-
-  try {
-    // 1. Download dari DALL-E URL temporary
-    const imgRes = await fetch(tempUrl);
-    if (!imgRes.ok) {
-      console.error(`[UPLOAD] ✗ Download failed: ${imgRes.status}`);
-      return "";
-    }
-
-    const arrayBuf = await imgRes.arrayBuffer();
-    const buffer   = Buffer.from(arrayBuf);
-    console.log(`[UPLOAD] Downloaded ${buffer.length} bytes`);
-
-    const filename = `quiz/${questionId}.png`;
-
-    // 2. Upload ke Supabase Storage
-    const { error: uploadErr } = await getAdmin().storage
-      .from("quiz-images")
-      .upload(filename, buffer, {
-        contentType: "image/png",
-        upsert:      true,
-      });
-
-    if (uploadErr) {
-      console.error(`[UPLOAD] ✗ Supabase error:`, uploadErr);
-      return "";
-    }
-
-    // 3. Ambil public URL permanen
-    const { data: urlData } = getAdmin().storage
-      .from("quiz-images")
-      .getPublicUrl(filename);
-
-    const publicUrl = urlData?.publicUrl || "";
-    console.log(`[UPLOAD] ✓ Uploaded: ${publicUrl}`);
-    return publicUrl;
-  } catch (err) {
-    console.error(`[UPLOAD] ✗ Exception:`, err);
-    return "";
-  }
-}
-
-// ═══════════════════════════════════════════════════════════════
-// 4. HELPER FUNCTIONS — Supabase queries
+// 3. HELPER FUNCTIONS
 // ═══════════════════════════════════════════════════════════════
 async function getBankCount(levelIndex: number, topicId: string): Promise<number> {
-  const { count, error } = await getAdmin()
+  const { count } = await getAdmin()
     .from("quiz_questions")
     .select("*", { count: "exact", head: true })
     .eq("category", topicId)
-    .eq("level",    levelIndex);
-
-  if (error) console.error(`[DB] getBankCount error:`, error);
+    .eq("level", levelIndex);
   return count || 0;
 }
 
@@ -227,33 +163,31 @@ async function getUnplayedQuestions(
     .from("quiz_questions")
     .select("*")
     .eq("category", topicId)
-    .eq("level",    levelIndex);
+    .eq("level", levelIndex);
 
   if (playedIds.length > 0) {
     query = query.not("id", "in", `(${playedIds.join(",")})`);
   }
 
-  const { data, error } = await query.limit(count * 3);
-  if (error) {
-    console.error(`[DB] getUnplayedQuestions error:`, error);
-    return [];
-  }
+  const { data } = await query.limit(count * 3);
   if (!data || data.length === 0) return [];
-
   return data.sort(() => Math.random() - 0.5).slice(0, count);
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 5. PROSES SATU SOAL: insert DB → generate image → upload → update
+// 4. PROSES SATU SOAL
 // ═══════════════════════════════════════════════════════════════
 async function processSingleQuestion(
-  apiKey: string,
+  unsplashKey: string,
   q: Record<string, unknown>,
   levelIndex: number,
   topicId: string
 ): Promise<Record<string, unknown>> {
-  // STEP 1: Insert soal dulu (tanpa img_url) → dapat ID
-  const { data: inserted, error: insertErr } = await getAdmin()
+  // Get foto dari Unsplash
+  const imgUrl = await getUnsplashPhoto(q.img_keyword as string, unsplashKey);
+
+  // Insert ke database (langsung dengan img_url dari Unsplash)
+  const { data, error } = await getAdmin()
     .from("quiz_questions")
     .insert({
       category:    topicId,
@@ -262,48 +196,20 @@ async function processSingleQuestion(
       options:     q.options,
       answer:      q.answer,
       explanation: q.explanation,
-      img_prompt:  q.img_prompt,
+      img_prompt:  q.img_keyword, // simpan keyword di field img_prompt
       img_cat:     q.img_cat || "",
-      img_url:     "",
+      img_url:     imgUrl,
     })
     .select("id")
     .single();
 
-  if (insertErr || !inserted) {
-    console.error(`[DB] Insert failed:`, insertErr);
+  if (error || !data) {
+    console.error(`[DB] Insert failed:`, error);
     return { ...q, id: "", img_url: "" };
   }
 
-  const questionId = inserted.id;
-  console.log(`[DB] ✓ Inserted question ${questionId}`);
-
-  // STEP 2: Generate gambar dari DALL-E
-  const dalleUrl = await generateImage(apiKey, q.img_prompt as string);
-  if (!dalleUrl) {
-    console.warn(`[FLOW] No image URL — skipping upload for ${questionId}`);
-    return { ...q, id: questionId, img_url: "" };
-  }
-
-  // STEP 3: Upload ke Supabase Storage
-  const publicUrl = await uploadToSupabase(dalleUrl, questionId);
-  if (!publicUrl) {
-    console.warn(`[FLOW] Upload failed for ${questionId}`);
-    return { ...q, id: questionId, img_url: "" };
-  }
-
-  // STEP 4: Update img_url di DB
-  const { error: updateErr } = await getAdmin()
-    .from("quiz_questions")
-    .update({ img_url: publicUrl })
-    .eq("id", questionId);
-
-  if (updateErr) {
-    console.error(`[DB] Update img_url failed:`, updateErr);
-  } else {
-    console.log(`[FLOW] ✓ Complete for ${questionId}`);
-  }
-
-  return { ...q, id: questionId, img_url: publicUrl };
+  console.log(`[FLOW] ✓ Saved question ${data.id} with ${imgUrl ? "photo" : "no photo"}`);
+  return { ...q, id: data.id, img_url: imgUrl };
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -312,52 +218,46 @@ async function processSingleQuestion(
 export async function POST(req: NextRequest) {
   try {
     const { levelIndex, topicId, count, userId } = await req.json();
-    console.log(`\n=== NEW QUIZ REQUEST ===`);
-    console.log(`User: ${userId}, Level: ${levelIndex}, Topic: ${topicId}, Count: ${count}`);
+    console.log(`\n=== QUIZ REQUEST: User ${userId}, ${LEVEL_CONFIG[levelIndex].name}, ${topicId} ===`);
 
-    const apiKey = process.env.MY_JLPT;
-    if (!apiKey) {
-      console.error(`[ENV] MY_JLPT not configured`);
-      return NextResponse.json({ error: "API key not configured" }, { status: 500 });
+    const openaiKey   = process.env.MY_JLPT;
+    const unsplashKey = process.env.UNSPLASH_ACCESS_KEY;
+
+    if (!openaiKey || !unsplashKey) {
+      console.error(`[ENV] Missing keys`);
+      return NextResponse.json({ error: "API keys not configured" }, { status: 500 });
     }
 
     // ── STEP 1: Ambil soal yang belum dimainkan
     let questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     console.log(`[FLOW] Found ${questions.length} unplayed questions`);
 
-    // ── STEP 2: Generate baru jika kurang & bank belum penuh
+    // ── STEP 2: Generate baru jika kurang
     const needed    = count - questions.length;
     const bankCount = await getBankCount(levelIndex, topicId);
-    console.log(`[FLOW] Bank: ${bankCount}/${MAX_BANK}, Need: ${needed} more`);
 
     if (needed > 0 && bankCount < MAX_BANK) {
       const toGen = Math.min(needed, MAX_BANK - bankCount);
       console.log(`[FLOW] Generating ${toGen} new questions`);
 
-      // Generate soal via GPT
-      const newQs = await generateQuestions(apiKey, levelIndex, topicId, toGen);
-
-      // Proses tiap soal PARALEL (insert → generate img → upload → update)
+      const newQs = await generateQuestions(openaiKey, levelIndex, topicId, toGen);
       const processed = await Promise.all(
-        newQs.map((q) => processSingleQuestion(apiKey, q, levelIndex, topicId))
+        newQs.map((q) => processSingleQuestion(unsplashKey, q, levelIndex, topicId))
       );
 
       questions = [...questions, ...processed];
-      console.log(`[FLOW] Total questions now: ${questions.length}`);
     }
 
-    // ── STEP 3: Reset cycle jika semua soal sudah dimainkan
+    // ── STEP 3: Reset cycle jika habis
     if (questions.length < count) {
-      console.log(`[FLOW] Resetting cycle — user has played all questions`);
-
+      console.log(`[FLOW] Resetting cycle`);
       const { data: allQs } = await getAdmin()
         .from("quiz_questions")
         .select("id")
         .eq("category", topicId)
-        .eq("level",    levelIndex);
+        .eq("level", levelIndex);
 
       const allIds = allQs?.map((q: { id: string }) => q.id) || [];
-
       if (allIds.length > 0) {
         await getAdmin()
           .from("quiz_user_played")
@@ -365,7 +265,6 @@ export async function POST(req: NextRequest) {
           .eq("user_id", userId)
           .in("question_id", allIds);
       }
-
       questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     }
 
@@ -380,45 +279,32 @@ export async function POST(req: NextRequest) {
       img_cat: q.img_cat || "",
     }));
 
-    const withImages    = result.filter(r => r.img_url).length;
-    const withoutImages = result.length - withImages;
-    console.log(`[RESPONSE] ${withImages} with images, ${withoutImages} without`);
-    console.log(`=== END REQUEST ===\n`);
+    const withPhotos = result.filter(r => r.img_url).length;
+    console.log(`[RESPONSE] ${withPhotos}/${result.length} with photos`);
+    console.log(`=== END ===\n`);
 
     return NextResponse.json({ questions: result });
 
   } catch (err) {
-    console.error(`[FATAL] Quiz generation error:`, err);
+    console.error(`[FATAL]`, err);
     return NextResponse.json({ error: String(err) }, { status: 500 });
   }
 }
 
 // ═══════════════════════════════════════════════════════════════
-// PUT — Tandai soal sebagai sudah dimainkan
+// PUT — Mark as played
 // ═══════════════════════════════════════════════════════════════
 export async function PUT(req: NextRequest) {
   try {
     const { userId, questionId } = await req.json();
-
-    if (!userId || !questionId) {
-      return NextResponse.json({ error: "Missing userId or questionId" }, { status: 400 });
-    }
-
-    const { error } = await getAdmin()
+    await getAdmin()
       .from("quiz_user_played")
       .upsert(
         { user_id: userId, question_id: questionId },
         { onConflict: "user_id,question_id" }
       );
-
-    if (error) {
-      console.error(`[DB] Mark played error:`, error);
-      return NextResponse.json({ error: String(error) }, { status: 500 });
-    }
-
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error(`[PUT] Error:`, err);
     return NextResponse.json({ error: String(err) }, { status: 500 });
   }
 }
