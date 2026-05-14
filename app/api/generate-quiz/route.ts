@@ -4,7 +4,6 @@ export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
-// ── LAZY INIT ─────────────────────────────────────────────────
 function getAdmin() {
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -15,16 +14,31 @@ function getAdmin() {
 const MAX_BANK = 120;
 
 const LEVEL_CONFIG = [
-  { name: "N5", diff: "very easy, for absolute beginners",
-    guide: "Ask only very well-known things. Options clearly different." },
-  { name: "N4", diff: "easy, for basic level learners",
-    guide: "Ask things known by people who studied basic Japanese." },
-  { name: "N3", diff: "intermediate level",
-    guide: "Ask specific details requiring deeper knowledge." },
-  { name: "N2", diff: "difficult, for advanced learners",
-    guide: "Ask cultural context, history, or philosophy." },
-  { name: "N1", diff: "very difficult, professional level",
-    guide: "Ask deep concepts, cultural nuances, or academic facts." },
+  {
+    name: "N5",
+    diff: "very easy, for absolute beginners",
+    guide: "Simple, well-known facts. Clear differences between options. Focus on basic recognition."
+  },
+  {
+    name: "N4",
+    diff: "easy, for basic level learners",
+    guide: "Practical travel tips and common knowledge. Options are similar but distinguishable with basic understanding."
+  },
+  {
+    name: "N3",
+    diff: "intermediate level",
+    guide: "Specific details, cultural context, etiquette. Requires deeper knowledge. Multiple factors to consider."
+  },
+  {
+    name: "N2",
+    diff: "difficult, for advanced learners",
+    guide: "Cultural nuances, historical background, local insights. All options plausible, requires cultural understanding."
+  },
+  {
+    name: "N1",
+    diff: "very difficult, professional level",
+    guide: "Deep cultural analysis, philosophical connections, expert-level knowledge. Requires comprehensive understanding."
+  },
 ];
 
 const TOPICS: Record<string, string> = {
@@ -37,7 +51,7 @@ const TOPICS: Record<string, string> = {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. GENERATE SOAL via GPT
+// 1. GENERATE SOAL via GPT - IMPROVED PROMPT
 // ═══════════════════════════════════════════════════════════════
 async function generateQuestions(
   apiKey: string,
@@ -50,24 +64,65 @@ async function generateQuestions(
 
   const prompt = `You are an expert quiz creator for a Japanese culture learning platform.
 Create exactly ${count} multiple-choice quiz questions.
-Topic: ${topic}
-Difficulty: ${lv.diff}
-Guidelines: ${lv.guide}
 
-RULES:
-- 100% factually accurate
-- Each question UNIQUE
+TOPIC: ${topic}
+DIFFICULTY: ${lv.diff} (${lv.name})
+LEVEL GUIDE: ${lv.guide}
+
+CRITICAL RULES:
+- 100% factually accurate about Japan
+- Each question MUST BE UNIQUE - no repeated patterns or similar structures
 - ALL questions and explanations in Indonesian (Bahasa Indonesia)
-- img_keyword: 1-3 English words for photo search (e.g., "fushimi inari kyoto", "ramen bowl", "sakura blossom")
+- img_keyword: 1-3 English words for Unsplash photo search (e.g., "fushimi inari kyoto", "ramen bowl")
+
+QUESTION VARIETY - Mix these types (DON'T repeat patterns):
+
+TRENDING & SEASONAL:
+- Trending spots: What's currently popular among young travelers/influencers?
+- Seasonal recommendations: Best places to visit in spring/summer/fall/winter
+- Hidden gems: Lesser-known spots locals recommend
+
+PRACTICAL EXPERIENCE:
+- What to do: Main activities/experiences at the location
+- Unique experiences: Once-in-a-lifetime things to try there
+- Photo spots: Best angles/locations for Instagram-worthy shots
+- Time management: How long to spend, best route to explore
+
+CULTURAL & CONTEXT:
+- Cultural significance: Why this place matters to Japanese culture
+- Historical background: Stories or legends about the location
+- Local customs: Etiquette or traditions to know
+
+PLANNING & TIPS:
+- Timing: Best time of day/season/weather to visit
+- What to bring: Essential items for the experience
+- Budget tips: How to enjoy without overspending
+- Crowd avoidance: When/how to avoid tourist crowds
+
+COMPARISONS & CHOICES:
+- Similar places: Differences between [X] vs [Y]
+- Local vs tourist: What locals do vs what tourists typically do
+
+MAKE IT RELATABLE:
+- Use "kamu" (you) to make it personal
+- Focus on real travel scenarios and practical value
+- Include insights travelers would actually use
+- Avoid pure trivia - add context and usefulness
+
+VARY QUESTION STRUCTURE:
+- Don't start all questions the same way
+- Mix interrogative words (Apa, Kapan, Mengapa, Di mana, Bagaimana)
+- Change sentence patterns and angles
+- Each question should feel fresh and different
 
 Respond ONLY with valid JSON array, no markdown:
 [
   {
-    "question": "pertanyaan dalam bahasa Indonesia",
+    "question": "pertanyaan dalam bahasa Indonesia yang relatable dan spesifik",
     "options": ["A","B","C","D"],
     "answer": 0,
-    "explanation": "penjelasan dalam bahasa Indonesia",
-    "img_keyword": "english keywords for photo search",
+    "explanation": "penjelasan singkat dalam bahasa Indonesia dengan konteks tambahan",
+    "img_keyword": "english keywords untuk foto Unsplash",
     "img_cat": "kategori singkat"
   }
 ]`;
@@ -82,10 +137,10 @@ Respond ONLY with valid JSON array, no markdown:
     },
     body: JSON.stringify({
       model:       "gpt-4o-mini",
-      temperature: 0.9,
+      temperature: 0.95, // Increased for more creativity
       messages: [
         { role: "system", content: prompt },
-        { role: "user",   content: `Generate ${count} questions now.` },
+        { role: "user",   content: `Generate ${count} UNIQUE questions with VARIED structures. Make each one different in approach, angle, and focus.` },
       ],
     }),
   });
@@ -99,11 +154,13 @@ Respond ONLY with valid JSON array, no markdown:
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 2. GET FOTO dari UNSPLASH (GRATIS!)
+// 2. GET FOTO dari UNSPLASH - IMPROVED SEARCH
 // ═══════════════════════════════════════════════════════════════
 async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<string> {
   console.log(`[UNSPLASH] Searching for: "${keyword}"`);
+
   try {
+    // Improved query for better, more Instagrammable photos
     const query = `${keyword} japan beautiful travel photography`;
     const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&order_by=popular&client_id=${accessKey}`;
 
@@ -121,7 +178,6 @@ async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<str
       return "";
     }
 
-    // Ambil URL regular (kualitas bagus, ukuran sedang)
     const imgUrl = photo.urls.regular;
     console.log(`[UNSPLASH] ✓ Found photo by ${photo.user.name}`);
     return imgUrl;
@@ -181,10 +237,8 @@ async function processSingleQuestion(
   levelIndex: number,
   topicId: string
 ): Promise<Record<string, unknown>> {
-  // Get foto dari Unsplash
   const imgUrl = await getUnsplashPhoto(q.img_keyword as string, unsplashKey);
 
-  // Insert ke database (langsung dengan img_url dari Unsplash)
   const { data, error } = await getAdmin()
     .from("quiz_questions")
     .insert({
@@ -194,7 +248,7 @@ async function processSingleQuestion(
       options:     q.options,
       answer:      q.answer,
       explanation: q.explanation,
-      img_prompt:  q.img_keyword, // simpan keyword di field img_prompt
+      img_prompt:  q.img_keyword,
       img_cat:     q.img_cat || "",
       img_url:     imgUrl,
     })
@@ -226,11 +280,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "API keys not configured" }, { status: 500 });
     }
 
-    // ── STEP 1: Ambil soal yang belum dimainkan
     let questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     console.log(`[FLOW] Found ${questions.length} unplayed questions`);
 
-    // ── STEP 2: Generate baru jika kurang
     const needed    = count - questions.length;
     const bankCount = await getBankCount(levelIndex, topicId);
 
@@ -246,7 +298,6 @@ export async function POST(req: NextRequest) {
       questions = [...questions, ...processed];
     }
 
-    // ── STEP 3: Reset cycle jika habis
     if (questions.length < count) {
       console.log(`[FLOW] Resetting cycle`);
       const { data: allQs } = await getAdmin()
@@ -266,7 +317,6 @@ export async function POST(req: NextRequest) {
       questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     }
 
-    // ── Format response
     const result = questions.slice(0, count).map((q) => ({
       id:      q.id,
       q:       q.question,
