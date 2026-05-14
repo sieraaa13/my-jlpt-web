@@ -103,11 +103,9 @@ Respond ONLY with valid JSON array, no markdown:
 // ═══════════════════════════════════════════════════════════════
 async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<string> {
   console.log(`[UNSPLASH] Searching for: "${keyword}"`);
-
   try {
-    // Tambah "japan" untuk hasil lebih relevan
-    const query = `${keyword} japan`;
-    const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&client_id=${accessKey}`;
+    const query = `${keyword} japan beautiful travel photography`;
+    const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&order_by=popular&client_id=${accessKey}`;
 
     const res = await fetch(url);
     if (!res.ok) {
