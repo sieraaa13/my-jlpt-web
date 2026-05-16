@@ -66,18 +66,49 @@ function resetIn() {
 
 // ─── SUPABASE ────────────────────────────────────────────────
 async function loadDailyState(uid: string): Promise<DailyState> {
-  const { data } = await supabase
-    .from("quiz_daily").select("*")
-    .eq("user_id", uid).eq("date", today()).single();
-  if (!data) return {
-    date:today(), qUsed:0, tUsed:0, pts:0, streak:0,
-    topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
-  };
+  // 1. Coba ambil row hari ini
+  const { data: todayData } = await supabase
+    .from("quiz_daily")
+    .select("*")
+    .eq("user_id", uid)
+    .eq("date", today())
+    .single();
+
+  // 2. Kalau ada row hari ini → pakai langsung
+  if (todayData) {
+    return {
+      date: todayData.date,
+      qUsed: todayData.q_used,
+      tUsed: todayData.t_used,
+      pts: todayData.total_pts,
+      streak: todayData.streak,
+      topicId: todayData.topic_id,
+      lvl: todayData.level,
+      totalPtsAlltime: todayData.total_pts_alltime ?? 0,
+      usedTopics: todayData.used_topics ?? [],
+    };
+  }
+
+  // 3. Kalau tidak ada (hari baru) → ambil total_pts_alltime dari row terakhir
+  const { data: lastData } = await supabase
+    .from("quiz_daily")
+    .select("total_pts_alltime, level, topic_id, streak")
+    .eq("user_id", uid)
+    .order("date", { ascending: false })
+    .limit(1)
+    .single();
+
+  // 4. Return state baru dengan total_pts_alltime dari kemarin
   return {
-    date:data.date, qUsed:data.q_used, tUsed:data.t_used,
-    pts:data.total_pts, streak:data.streak, topicId:data.topic_id,
-    lvl:data.level, totalPtsAlltime:data.total_pts_alltime??0,
-    usedTopics:data.used_topics??[],
+    date: today(),
+    qUsed: 0,
+    tUsed: 0,
+    pts: 0,
+    streak: lastData?.streak ?? 0,  // Carry over streak
+    topicId: lastData?.topic_id ?? "budaya",
+    lvl: lastData?.level ?? 1,
+    totalPtsAlltime: lastData?.total_pts_alltime ?? 0,  // ← INI FIX-NYA!
+    usedTopics: [],
   };
 }
 
