@@ -1,30 +1,34 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  const [isReady, setIsReady] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
   const initRef = useRef(false);
 
   useEffect(() => {
-    if (!isOpen || initRef.current) return;
+    if (!isOpen) return;
 
     // Load html2canvas
-    const script = document.createElement("script");
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
-    script.onload = () => {
-      setIsReady(true);
-      initRef.current = true;
-      
-      // Initialize photobooth after a short delay to ensure DOM is ready
+    if (!document.querySelector('script[src*="html2canvas"]')) {
+      const script = document.createElement("script");
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+      document.head.appendChild(script);
+    }
+
+    // Initialize photobooth class after DOM is ready
+    if (!initRef.current) {
       setTimeout(() => {
-        if (!(window as any).photobooth) {
+        if (!(window as any).UnderwaterPhotobooth) {
+          eval(PHOTOBOOTH_JS);
+        }
+        if (!(window as any).photobooth && (window as any).UnderwaterPhotobooth) {
           (window as any).photobooth = new (window as any).UnderwaterPhotobooth();
           console.log("✅ Photobooth initialized");
         }
-      }, 100);
-    };
-    document.head.appendChild(script);
+        initRef.current = true;
+      }, 200);
+    }
 
     return () => {
       // Cleanup camera stream when closing
@@ -65,21 +69,18 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           </div>
 
           {/* Photobooth Content */}
-          <div id="photobooth-root" dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
+          <div ref={containerRef} dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
         </div>
       </div>
 
       {/* Inject CSS */}
       <style jsx global>{PHOTOBOOTH_CSS}</style>
-
-      {/* Inject JS */}
-      <script dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_JS }} />
     </>
   );
 }
 
 // ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH HTML
+// PHOTOBOOTH HTML (Updated with Upload Option)
 // ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_HTML = `
 <div id="photobooth-container">
@@ -133,6 +134,10 @@ const PHOTOBOOTH_HTML = `
 
     <div class="photobooth-controls">
         <button id="photobooth-open-camera-btn" class="photobooth-btn photobooth-btn-primary">📷 BUKA KAMERA</button>
+        <label for="photobooth-upload-input" class="photobooth-btn photobooth-btn-upload">
+            🖼️ UPLOAD GAMBAR
+        </label>
+        <input type="file" id="photobooth-upload-input" accept="image/*" style="display: none;" />
     </div>
 
     <div class="photobooth-actions">
@@ -145,7 +150,7 @@ const PHOTOBOOTH_HTML = `
 `;
 
 // ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH CSS (from uploaded file)
+// PHOTOBOOTH CSS (Updated with Upload Button Style)
 // ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_CSS = `
 #photobooth-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto; }
@@ -185,12 +190,14 @@ const PHOTOBOOTH_CSS = `
 .photobooth-seaweed:nth-child(4) { animation-delay: 0.6s; }
 .photobooth-seaweed:nth-child(5) { animation-delay: 0.8s; }
 @keyframes photobooth-wave { 0%, 100% { transform: rotate(-5deg) translateY(0); } 50% { transform: rotate(5deg) translateY(-15px); } }
-.photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; }
 .photobooth-btn:hover:not(:disabled) { background: #00897b; color: white; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
 .photobooth-btn:active:not(:disabled) { transform: translateY(0); }
 .photobooth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.photobooth-btn-primary { background: #00897b; color: white; border-color: #00897b; width: 100%; padding: 15px; font-size: 16px; margin-bottom: 20px; }
+.photobooth-btn-primary { background: #00897b; color: white; border-color: #00897b; width: 100%; padding: 15px; font-size: 16px; margin-bottom: 10px; }
 .photobooth-btn-primary:hover:not(:disabled) { background: #00695c; border-color: #00695c; }
+.photobooth-btn-upload { background: #6366f1; color: white; border-color: #6366f1; width: 100%; padding: 15px; font-size: 16px; margin-bottom: 20px; cursor: pointer; }
+.photobooth-btn-upload:hover { background: #4f46e5; border-color: #4f46e5; }
 .photobooth-btn-secondary { padding: 10px 20px; font-size: 13px; }
 .photobooth-btn-download { width: 100%; padding: 15px; background: #00897b; color: white; border-color: #00897b; font-size: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 .photobooth-btn-download:hover:not(:disabled) { background: #00695c; border-color: #00695c; transform: scale(1.02); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); }
@@ -218,7 +225,7 @@ const PHOTOBOOTH_CSS = `
 `;
 
 // ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH JS (from uploaded file)
+// PHOTOBOOTH JS (Updated with Upload Feature)
 // ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_JS = `
 class UnderwaterPhotobooth {
@@ -230,6 +237,7 @@ class UnderwaterPhotobooth {
     this.initElements();
     this.attachEventListeners();
   }
+  
   initElements() {
     this.cameraVideo = document.getElementById('photobooth-camera-video');
     this.videoPreview = document.getElementById('photobooth-video-preview');
@@ -241,20 +249,46 @@ class UnderwaterPhotobooth {
     this.resetBtn = document.getElementById('photobooth-reset-btn');
     this.downloadBtn = document.getElementById('photobooth-download-btn');
     this.photoboothFrame = document.getElementById('photobooth-frame');
+    this.uploadInput = document.getElementById('photobooth-upload-input');
   }
+  
   attachEventListeners() {
-    this.openCameraBtn.addEventListener('click', () => this.openCamera());
-    this.closeCameraBtn.addEventListener('click', () => this.closeCamera());
-    this.captureBtn.addEventListener('click', () => this.capturePhoto());
-    this.clearBtn.addEventListener('click', () => this.clearAll());
-    this.resetBtn.addEventListener('click', () => this.reset());
-    this.downloadBtn.addEventListener('click', () => this.downloadFrame());
-    this.overlay.addEventListener('click', (e) => { if (e.target === this.overlay) this.closeCamera(); });
-    window.addEventListener('beforeunload', () => { if (this.stream) this.stream.getTracks().forEach(track => track.stop()); });
+    if (this.openCameraBtn) {
+      this.openCameraBtn.addEventListener('click', () => this.openCamera());
+    }
+    if (this.closeCameraBtn) {
+      this.closeCameraBtn.addEventListener('click', () => this.closeCamera());
+    }
+    if (this.captureBtn) {
+      this.captureBtn.addEventListener('click', () => this.capturePhoto());
+    }
+    if (this.clearBtn) {
+      this.clearBtn.addEventListener('click', () => this.clearAll());
+    }
+    if (this.resetBtn) {
+      this.resetBtn.addEventListener('click', () => this.reset());
+    }
+    if (this.downloadBtn) {
+      this.downloadBtn.addEventListener('click', () => this.downloadFrame());
+    }
+    if (this.overlay) {
+      this.overlay.addEventListener('click', (e) => { 
+        if (e.target === this.overlay) this.closeCamera(); 
+      });
+    }
+    if (this.uploadInput) {
+      this.uploadInput.addEventListener('change', (e) => this.handleUpload(e));
+    }
+    window.addEventListener('beforeunload', () => { 
+      if (this.stream) this.stream.getTracks().forEach(track => track.stop()); 
+    });
   }
+  
   async openCamera() {
     try {
-      this.stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } } });
+      this.stream = await navigator.mediaDevices.getUserMedia({ 
+        video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } } 
+      });
       this.cameraVideo.srcObject = this.stream;
       this.videoPreview.classList.add('active');
       this.overlay.classList.add('active');
@@ -264,14 +298,19 @@ class UnderwaterPhotobooth {
       console.error('Camera Error:', err);
     }
   }
+  
   closeCamera() {
     if (this.stream) this.stream.getTracks().forEach(track => track.stop());
     this.videoPreview.classList.remove('active');
     this.overlay.classList.remove('active');
     this.openCameraBtn.style.display = 'inline-block';
   }
+  
   capturePhoto() {
-    if (this.photoCount >= 2) { alert('✅ Maksimal 2 foto untuk frame ini!'); return; }
+    if (this.photoCount >= 2) { 
+      alert('✅ Maksimal 2 foto untuk frame ini!'); 
+      return; 
+    }
     this.previewCanvas.width = this.cameraVideo.videoWidth;
     this.previewCanvas.height = this.cameraVideo.videoHeight;
     const ctx = this.previewCanvas.getContext('2d');
@@ -279,36 +318,110 @@ class UnderwaterPhotobooth {
     this.photoCount++;
     this.photos[this.photoCount] = this.previewCanvas.toDataURL('image/png');
     this.updatePhotoSlot(this.photoCount);
-    if (this.photoCount === 2) { alert('✅ Frame lengkap! Tutup kamera untuk download.'); this.closeCamera(); } 
-    else { alert(\`✅ Foto \${this.photoCount} berhasil ditangkap. Ambil 1 foto lagi!\`); }
+    if (this.photoCount === 2) { 
+      alert('✅ Frame lengkap! Tutup kamera untuk download.'); 
+      this.closeCamera(); 
+    } else { 
+      alert(\`✅ Foto \${this.photoCount} berhasil ditangkap. Ambil 1 foto lagi!\`); 
+    }
   }
+  
+  handleUpload(e) {
+    if (this.photoCount >= 2) { 
+      alert('✅ Maksimal 2 foto untuk frame ini!'); 
+      return; 
+    }
+    
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      this.photoCount++;
+      this.photos[this.photoCount] = event.target.result;
+      this.updatePhotoSlot(this.photoCount);
+      
+      if (this.photoCount === 2) {
+        alert('✅ Frame lengkap! Download sekarang!');
+      } else {
+        alert(\`✅ Foto \${this.photoCount} berhasil di-upload. Tambah 1 foto lagi!\`);
+      }
+      
+      // Reset input
+      e.target.value = '';
+    };
+    reader.readAsDataURL(file);
+  }
+  
   updatePhotoSlot(slotNum) {
     const slot = document.getElementById(\`photobooth-photo\${slotNum}\`);
-    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
-    if (this.photoCount > 0) { this.downloadBtn.disabled = false; this.clearBtn.disabled = false; this.resetBtn.disabled = false; }
+    if (this.photos[slotNum]) {
+      slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
+    }
+    if (this.photoCount > 0) { 
+      this.downloadBtn.disabled = false; 
+      this.clearBtn.disabled = false; 
+      this.resetBtn.disabled = false; 
+    }
   }
+  
   clearAll() {
-    this.photos = {}; this.photoCount = 0;
+    this.photos = {}; 
+    this.photoCount = 0;
     document.getElementById('photobooth-photo1').innerHTML = '<div class="photobooth-empty">Ambil Foto 1 📸</div>';
     document.getElementById('photobooth-photo2').innerHTML = '<div class="photobooth-empty">Ambil Foto 2 📸</div>';
-    this.downloadBtn.disabled = true; this.clearBtn.disabled = true; this.resetBtn.disabled = true;
+    this.downloadBtn.disabled = true; 
+    this.clearBtn.disabled = true; 
+    this.resetBtn.disabled = true;
   }
-  reset() { this.clearAll(); }
+  
+  reset() { 
+    this.clearAll(); 
+  }
+  
   downloadFrame() {
-    if (typeof html2canvas === 'undefined') { alert('⚠️ Library html2canvas belum loaded. Coba refresh halaman.'); return; }
-    this.downloadBtn.disabled = true; this.downloadBtn.textContent = '⏳ Downloading...';
-    html2canvas(this.photoboothFrame, { backgroundColor: null, scale: 2, useCORS: true, logging: false }).then(canvas => {
+    if (typeof html2canvas === 'undefined') { 
+      alert('⚠️ Library html2canvas belum loaded. Coba refresh halaman.'); 
+      return; 
+    }
+    this.downloadBtn.disabled = true; 
+    this.downloadBtn.textContent = '⏳ Downloading...';
+    html2canvas(this.photoboothFrame, { 
+      backgroundColor: null, 
+      scale: 2, 
+      useCORS: true, 
+      logging: false 
+    }).then(canvas => {
       const link = document.createElement('a');
       link.href = canvas.toDataURL('image/png');
       const timestamp = new Date().toISOString().slice(0, 10);
       link.download = \`photobooth-\${timestamp}-\${new Date().getTime()}.png\`;
       link.click();
-      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; this.downloadBtn.disabled = false;
-    }).catch(err => { alert('❌ Gagal download. Coba lagi!'); console.error('Download error:', err); this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; this.downloadBtn.disabled = false; });
+      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+      this.downloadBtn.disabled = false;
+    }).catch(err => { 
+      alert('❌ Gagal download. Coba lagi!'); 
+      console.error('Download error:', err); 
+      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+      this.downloadBtn.disabled = false; 
+    });
   }
-  setTitle(newTitle) { const titleElement = document.querySelector('.photobooth-title'); if (titleElement) titleElement.textContent = newTitle; }
-  getStatus() { return { photoCount: this.photoCount, maxPhotos: 2, cameraActive: this.stream !== null, photos: Object.keys(this.photos).length }; }
+  
+  setTitle(newTitle) { 
+    const titleElement = document.querySelector('.photobooth-title'); 
+    if (titleElement) titleElement.textContent = newTitle; 
+  }
+  
+  getStatus() { 
+    return { 
+      photoCount: this.photoCount, 
+      maxPhotos: 2, 
+      cameraActive: this.stream !== null, 
+      photos: Object.keys(this.photos).length 
+    }; 
+  }
 }
+
 if (typeof window !== 'undefined') {
   window.UnderwaterPhotobooth = UnderwaterPhotobooth;
 }
