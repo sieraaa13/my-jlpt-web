@@ -3,21 +3,31 @@
 import { useEffect, useRef } from "react";
 
 export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  const containerRef = useRef<HTMLDivElement>(null);
   const initRef = useRef(false);
 
   useEffect(() => {
     if (!isOpen) return;
 
-    // Load html2canvas
-    if (!document.querySelector('script[src*="html2canvas"]')) {
-      const script = document.createElement("script");
-      script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
-      document.head.appendChild(script);
-    }
+    // Load html2canvas with proper timing
+    const loadScript = () => {
+      return new Promise((resolve) => {
+        if ((window as any).html2canvas) {
+          resolve(true);
+          return;
+        }
+        const script = document.createElement("script");
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+        script.onload = () => resolve(true);
+        document.head.appendChild(script);
+      });
+    };
 
-    // Initialize photobooth class after DOM is ready
-    if (!initRef.current) {
+    // Initialize photobooth
+    const init = async () => {
+      if (initRef.current) return;
+      
+      await loadScript();
+      
       setTimeout(() => {
         if (!(window as any).UnderwaterPhotobooth) {
           eval(PHOTOBOOTH_JS);
@@ -27,11 +37,12 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           console.log("✅ Photobooth initialized");
         }
         initRef.current = true;
-      }, 200);
-    }
+      }, 300);
+    };
+
+    init();
 
     return () => {
-      // Cleanup camera stream when closing
       if ((window as any).photobooth?.stream) {
         (window as any).photobooth.stream.getTracks().forEach((track: any) => track.stop());
       }
@@ -42,7 +53,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
   return (
     <>
-      {/* Modal Backdrop */}
       <div 
         className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 overflow-y-auto"
         onClick={(e) => {
@@ -50,7 +60,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
         }}
       >
         <div className="relative bg-white dark:bg-gray-900 rounded-2xl p-6 max-w-2xl w-full max-h-[95vh] overflow-y-auto">
-          {/* Close Button */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all"
@@ -58,30 +67,24 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
             ×
           </button>
 
-          {/* Title */}
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-primary mb-2">
               🎉 REWARD: PHOTOBOOTH! 🎉
             </h2>
             <p className="text-sm text-muted-foreground">
-              Selamat! Ambil foto kenangan kamu! 📸
+              Selamat! Ambil foto kenangan kamu di bawah laut! 🌊📸
             </p>
           </div>
 
-          {/* Photobooth Content */}
-          <div ref={containerRef} dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
+          <div dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
         </div>
       </div>
 
-      {/* Inject CSS */}
       <style jsx global>{PHOTOBOOTH_CSS}</style>
     </>
   );
 }
 
-// ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH HTML (Updated with Upload Option)
-// ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_HTML = `
 <div id="photobooth-container">
     <div class="photobooth-overlay" id="photobooth-overlay"></div>
@@ -95,20 +98,32 @@ const PHOTOBOOTH_HTML = `
     </div>
 
     <div class="photobooth-frame" id="photobooth-frame">
-        <div class="photobooth-decoration photobooth-fish1">🐠</div>
-        <div class="photobooth-decoration photobooth-fish2">🐠</div>
-        <div class="photobooth-decoration photobooth-fish3">🐡</div>
+        <!-- Animated fish -->
+        <div class="photobooth-fish swim1">🐠</div>
+        <div class="photobooth-fish swim2">🐡</div>
+        <div class="photobooth-fish swim3">🐟</div>
+        <div class="photobooth-fish swim4">🐠</div>
+        <div class="photobooth-fish swim5">🐡</div>
         
-        <div class="photobooth-bubble photobooth-bubble1"></div>
-        <div class="photobooth-bubble photobooth-bubble2"></div>
-        <div class="photobooth-bubble photobooth-bubble3"></div>
-        <div class="photobooth-bubble photobooth-bubble4"></div>
-        <div class="photobooth-bubble photobooth-bubble5"></div>
-        <div class="photobooth-bubble photobooth-bubble6"></div>
+        <!-- Jellyfish and squid -->
+        <div class="photobooth-creature float1">🦑</div>
+        <div class="photobooth-creature float2">🪼</div>
+        <div class="photobooth-creature float3">🦑</div>
+        
+        <!-- Animated bubbles -->
+        <div class="photobooth-bubble rise1"></div>
+        <div class="photobooth-bubble rise2"></div>
+        <div class="photobooth-bubble rise3"></div>
+        <div class="photobooth-bubble rise4"></div>
+        <div class="photobooth-bubble rise5"></div>
+        <div class="photobooth-bubble rise6"></div>
+        <div class="photobooth-bubble rise7"></div>
+        <div class="photobooth-bubble rise8"></div>
 
-        <div class="photobooth-shell photobooth-shell1">🐚</div>
-        <div class="photobooth-shell photobooth-shell2">🐚</div>
-        <div class="photobooth-shell photobooth-shell3">🪨</div>
+        <!-- Shells and rocks -->
+        <div class="photobooth-shell shell1">🐚</div>
+        <div class="photobooth-shell shell2">🐚</div>
+        <div class="photobooth-shell shell3">🪨</div>
 
         <div class="photobooth-header">
             <div class="photobooth-title">UNDER SEA</div>
@@ -123,12 +138,14 @@ const PHOTOBOOTH_HTML = `
             </div>
         </div>
 
+        <!-- Seaweed -->
         <div class="photobooth-seaweed-container">
-            <div class="photobooth-seaweed">🌿</div>
-            <div class="photobooth-seaweed">🌿</div>
-            <div class="photobooth-seaweed">🌿</div>
-            <div class="photobooth-seaweed">🌿</div>
-            <div class="photobooth-seaweed">🌿</div>
+            <div class="photobooth-seaweed wave1">🌿</div>
+            <div class="photobooth-seaweed wave2">🌿</div>
+            <div class="photobooth-seaweed wave3">🌿</div>
+            <div class="photobooth-seaweed wave4">🌿</div>
+            <div class="photobooth-seaweed wave5">🌿</div>
+            <div class="photobooth-seaweed wave6">🌿</div>
         </div>
     </div>
 
@@ -149,9 +166,6 @@ const PHOTOBOOTH_HTML = `
 </div>
 `;
 
-// ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH CSS (Updated with Upload Button Style)
-// ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_CSS = `
 #photobooth-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto; }
 .photobooth-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); display: none; z-index: 999; }
@@ -160,73 +174,175 @@ const PHOTOBOOTH_CSS = `
 .photobooth-video-preview.active { display: block; }
 #photobooth-camera-video { width: 100%; height: auto; display: block; border-radius: 12px 12px 0 0; }
 .photobooth-preview-controls { padding: 15px; background: black; border-radius: 0 0 12px 12px; display: flex; gap: 10px; justify-content: center; }
-.photobooth-frame { position: relative; background: linear-gradient(135deg, #a0d8d8 0%, #7bcfd4 100%); border: 12px solid #5fa7a6; border-radius: 20px; padding: 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+
+/* UNDERWATER FRAME */
+.photobooth-frame { 
+  position: relative; 
+  background: linear-gradient(180deg, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
+  border: 12px solid #2a8ab8;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 0 50px rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
 .photobooth-header { text-align: center; margin-bottom: 25px; position: relative; z-index: 10; }
-.photobooth-title { font-size: 36px; font-weight: bold; color: #ff69b4; text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7); letter-spacing: 3px; font-family: 'Comic Sans MS', cursive, sans-serif; }
+.photobooth-title { 
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #ff69b4; 
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 105, 180, 0.5);
+  letter-spacing: 3px; 
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+/* PHOTO SLOTS WITH UNDERWATER EFFECT */
 .photobooth-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 25px; position: relative; z-index: 5; }
-.photobooth-slot { position: relative; background: white; border: 4px solid #fff8dc; border-radius: 8px; aspect-ratio: 4/3; overflow: hidden; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
+.photobooth-slot { 
+  position: relative; 
+  background: rgba(255, 255, 255, 0.9);
+  border: 6px solid #87ceeb;
+  border-radius: 12px;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  box-shadow: 
+    inset 0 0 20px rgba(135, 206, 235, 0.3),
+    0 4px 15px rgba(0, 0, 0, 0.2);
+}
 .photobooth-slot img { width: 100%; height: 100%; object-fit: cover; }
-.photobooth-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: #aaa; font-size: 14px; }
-.photobooth-decoration { position: absolute; font-size: 40px; opacity: 0.8; z-index: 3; }
-.photobooth-fish1 { top: 20px; right: 20px; }
-.photobooth-fish2 { bottom: 60px; left: 15px; }
-.photobooth-fish3 { top: 120px; right: -10px; }
-.photobooth-bubble { position: absolute; border: 2px solid #fff; border-radius: 50%; opacity: 0.5; z-index: 2; }
-.photobooth-bubble1 { width: 20px; height: 20px; top: 50px; left: 30px; }
-.photobooth-bubble2 { width: 15px; height: 15px; top: 150px; right: 40px; }
-.photobooth-bubble3 { width: 25px; height: 25px; top: 200px; left: 50px; }
-.photobooth-bubble4 { width: 18px; height: 18px; top: 100px; right: 80px; }
-.photobooth-bubble5 { width: 22px; height: 22px; bottom: 100px; left: 20px; }
-.photobooth-bubble6 { width: 16px; height: 16px; top: 180px; left: 80px; }
-.photobooth-shell { position: absolute; font-size: 32px; opacity: 0.6; z-index: 3; }
-.photobooth-shell1 { bottom: 90px; right: 20px; }
-.photobooth-shell2 { bottom: 80px; left: 25px; }
-.photobooth-shell3 { top: 150px; left: 10px; }
-.photobooth-seaweed-container { position: absolute; bottom: 0; width: 100%; height: 70px; display: flex; justify-content: space-around; align-items: flex-end; padding: 0 10px; z-index: 1; }
-.photobooth-seaweed { font-size: 50px; opacity: 0.7; animation: photobooth-wave 3s ease-in-out infinite; }
-.photobooth-seaweed:nth-child(1) { animation-delay: 0s; }
-.photobooth-seaweed:nth-child(2) { animation-delay: 0.2s; }
-.photobooth-seaweed:nth-child(3) { animation-delay: 0.4s; }
-.photobooth-seaweed:nth-child(4) { animation-delay: 0.6s; }
-.photobooth-seaweed:nth-child(5) { animation-delay: 0.8s; }
-@keyframes photobooth-wave { 0%, 100% { transform: rotate(-5deg) translateY(0); } 50% { transform: rotate(5deg) translateY(-15px); } }
-.photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; }
+.photobooth-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: #6b9fbe; font-size: 14px; font-weight: 600; }
+
+/* ANIMATED FISH */
+.photobooth-fish {
+  position: absolute;
+  font-size: 40px;
+  z-index: 4;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.swim1 { top: 15%; left: -50px; animation: swim-right 8s linear infinite; }
+.swim2 { top: 35%; right: -50px; animation: swim-left 10s linear infinite; animation-delay: 2s; }
+.swim3 { top: 55%; left: -50px; animation: swim-right 12s linear infinite; animation-delay: 4s; }
+.swim4 { top: 70%; right: -50px; animation: swim-left 9s linear infinite; animation-delay: 1s; }
+.swim5 { top: 25%; left: -50px; animation: swim-right 11s linear infinite; animation-delay: 5s; }
+
+@keyframes swim-right {
+  0% { left: -50px; transform: scaleX(1); }
+  100% { left: calc(100% + 50px); transform: scaleX(1); }
+}
+@keyframes swim-left {
+  0% { right: -50px; transform: scaleX(-1); }
+  100% { right: calc(100% + 50px); transform: scaleX(-1); }
+}
+
+/* JELLYFISH & SQUID */
+.photobooth-creature {
+  position: absolute;
+  font-size: 35px;
+  z-index: 3;
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+.float1 { top: 10%; right: 15%; animation: float-gentle 6s ease-in-out infinite; }
+.float2 { top: 45%; left: 10%; animation: float-gentle 7s ease-in-out infinite; animation-delay: 2s; }
+.float3 { bottom: 120px; right: 20%; animation: float-gentle 5s ease-in-out infinite; animation-delay: 4s; }
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* ANIMATED BUBBLES */
+.photobooth-bubble {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent);
+  z-index: 6;
+}
+.rise1 { width: 15px; height: 15px; bottom: 0; left: 10%; animation: rise 4s ease-in infinite; }
+.rise2 { width: 20px; height: 20px; bottom: 0; left: 25%; animation: rise 5s ease-in infinite; animation-delay: 1s; }
+.rise3 { width: 12px; height: 12px; bottom: 0; left: 40%; animation: rise 6s ease-in infinite; animation-delay: 2s; }
+.rise4 { width: 18px; height: 18px; bottom: 0; left: 55%; animation: rise 4.5s ease-in infinite; animation-delay: 0.5s; }
+.rise5 { width: 22px; height: 22px; bottom: 0; left: 70%; animation: rise 5.5s ease-in infinite; animation-delay: 1.5s; }
+.rise6 { width: 16px; height: 16px; bottom: 0; left: 85%; animation: rise 4s ease-in infinite; animation-delay: 3s; }
+.rise7 { width: 14px; height: 14px; bottom: 0; left: 15%; animation: rise 6s ease-in infinite; animation-delay: 2.5s; }
+.rise8 { width: 19px; height: 19px; bottom: 0; left: 60%; animation: rise 5s ease-in infinite; animation-delay: 3.5s; }
+
+@keyframes rise {
+  0% { bottom: 0; opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { bottom: 100%; opacity: 0; }
+}
+
+/* SHELLS */
+.photobooth-shell {
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.7;
+  z-index: 2;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+}
+.shell1 { bottom: 15%; right: 12%; }
+.shell2 { bottom: 15%; left: 15%; }
+.shell3 { bottom: 12%; left: 40%; }
+
+/* SEAWEED */
+.photobooth-seaweed-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px;
+  z-index: 1;
+}
+.photobooth-seaweed {
+  font-size: 55px;
+  opacity: 0.6;
+  transform-origin: bottom center;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+.wave1 { animation: wave 3s ease-in-out infinite; }
+.wave2 { animation: wave 3.5s ease-in-out infinite; animation-delay: 0.3s; }
+.wave3 { animation: wave 3.2s ease-in-out infinite; animation-delay: 0.6s; }
+.wave4 { animation: wave 3.8s ease-in-out infinite; animation-delay: 0.9s; }
+.wave5 { animation: wave 3.4s ease-in-out infinite; animation-delay: 1.2s; }
+.wave6 { animation: wave 3.6s ease-in-out infinite; animation-delay: 1.5s; }
+
+@keyframes wave {
+  0%, 100% { transform: rotate(-8deg) scaleY(1); }
+  50% { transform: rotate(8deg) scaleY(1.1); }
+}
+
+/* BUTTONS */
+.photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; text-decoration: none; }
 .photobooth-btn:hover:not(:disabled) { background: #00897b; color: white; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
 .photobooth-btn:active:not(:disabled) { transform: translateY(0); }
 .photobooth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .photobooth-btn-primary { background: #00897b; color: white; border-color: #00897b; width: 100%; padding: 15px; font-size: 16px; margin-bottom: 10px; }
-.photobooth-btn-primary:hover:not(:disabled) { background: #00695c; border-color: #00695c; }
 .photobooth-btn-upload { background: #6366f1; color: white; border-color: #6366f1; width: 100%; padding: 15px; font-size: 16px; margin-bottom: 20px; cursor: pointer; }
-.photobooth-btn-upload:hover { background: #4f46e5; border-color: #4f46e5; }
 .photobooth-btn-secondary { padding: 10px 20px; font-size: 13px; }
-.photobooth-btn-download { width: 100%; padding: 15px; background: #00897b; color: white; border-color: #00897b; font-size: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-.photobooth-btn-download:hover:not(:disabled) { background: #00695c; border-color: #00695c; transform: scale(1.02); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); }
+.photobooth-btn-download { width: 100%; padding: 15px; background: #00897b; color: white; border-color: #00897b; font-size: 16px; }
 .photobooth-capture-btn { background: #ff69b4; border-color: #ff69b4; color: white; flex: 1; padding: 12px; font-size: 16px; }
-.photobooth-capture-btn:hover { background: #ff1493; border-color: #ff1493; }
 .photobooth-close-btn { background: #ff6b6b; border-color: #ff6b6b; color: white; padding: 12px 24px; font-size: 16px; }
-.photobooth-close-btn:hover { background: #ff5252; border-color: #ff5252; }
 .photobooth-controls { margin-bottom: 20px; }
 .photobooth-actions { display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
 .photobooth-actions .photobooth-btn { flex: 1; min-width: 120px; }
+
 @media (max-width: 600px) {
-  .photobooth-frame { padding: 20px; border: 10px solid #5fa7a6; }
-  .photobooth-title { font-size: 28px; letter-spacing: 2px; }
-  .photobooth-decoration { font-size: 32px; }
-  .photobooth-seaweed { font-size: 40px; }
-  .photobooth-shell { font-size: 28px; }
-  .photobooth-video-preview { width: 95%; max-width: none; }
-}
-@media (max-width: 400px) {
-  .photobooth-title { font-size: 24px; }
-  .photobooth-btn { padding: 10px 16px; font-size: 12px; }
-  .photobooth-preview-controls { flex-direction: column; gap: 8px; }
-  .photobooth-actions .photobooth-btn { min-width: auto; padding: 8px 12px; font-size: 11px; }
+  .photobooth-frame { padding: 25px 20px; }
+  .photobooth-title { font-size: 28px; }
+  .photobooth-fish { font-size: 32px; }
+  .photobooth-creature { font-size: 28px; }
+  .photobooth-seaweed { font-size: 45px; }
 }
 `;
 
-// ═══════════════════════════════════════════════════════════════
-// PHOTOBOOTH JS (Updated with Upload Feature)
-// ═══════════════════════════════════════════════════════════════
 const PHOTOBOOTH_JS = `
 class UnderwaterPhotobooth {
   constructor() {
@@ -253,48 +369,25 @@ class UnderwaterPhotobooth {
   }
   
   attachEventListeners() {
-    if (this.openCameraBtn) {
-      this.openCameraBtn.addEventListener('click', () => this.openCamera());
-    }
-    if (this.closeCameraBtn) {
-      this.closeCameraBtn.addEventListener('click', () => this.closeCamera());
-    }
-    if (this.captureBtn) {
-      this.captureBtn.addEventListener('click', () => this.capturePhoto());
-    }
-    if (this.clearBtn) {
-      this.clearBtn.addEventListener('click', () => this.clearAll());
-    }
-    if (this.resetBtn) {
-      this.resetBtn.addEventListener('click', () => this.reset());
-    }
-    if (this.downloadBtn) {
-      this.downloadBtn.addEventListener('click', () => this.downloadFrame());
-    }
-    if (this.overlay) {
-      this.overlay.addEventListener('click', (e) => { 
-        if (e.target === this.overlay) this.closeCamera(); 
-      });
-    }
-    if (this.uploadInput) {
-      this.uploadInput.addEventListener('change', (e) => this.handleUpload(e));
-    }
-    window.addEventListener('beforeunload', () => { 
-      if (this.stream) this.stream.getTracks().forEach(track => track.stop()); 
-    });
+    if (this.openCameraBtn) this.openCameraBtn.addEventListener('click', () => this.openCamera());
+    if (this.closeCameraBtn) this.closeCameraBtn.addEventListener('click', () => this.closeCamera());
+    if (this.captureBtn) this.captureBtn.addEventListener('click', () => this.capturePhoto());
+    if (this.clearBtn) this.clearBtn.addEventListener('click', () => this.clearAll());
+    if (this.resetBtn) this.resetBtn.addEventListener('click', () => this.reset());
+    if (this.downloadBtn) this.downloadBtn.addEventListener('click', () => this.downloadFrame());
+    if (this.overlay) this.overlay.addEventListener('click', (e) => { if (e.target === this.overlay) this.closeCamera(); });
+    if (this.uploadInput) this.uploadInput.addEventListener('change', (e) => this.handleUpload(e));
   }
   
   async openCamera() {
     try {
-      this.stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } } 
-      });
+      this.stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } } });
       this.cameraVideo.srcObject = this.stream;
       this.videoPreview.classList.add('active');
       this.overlay.classList.add('active');
       this.openCameraBtn.style.display = 'none';
     } catch (err) {
-      alert('⚠️ Akses kamera ditolak. Pastikan Anda sudah memberikan izin kamera di browser.');
+      alert('⚠️ Akses kamera ditolak. Pastikan Anda sudah memberikan izin kamera.');
       console.error('Camera Error:', err);
     }
   }
@@ -307,10 +400,7 @@ class UnderwaterPhotobooth {
   }
   
   capturePhoto() {
-    if (this.photoCount >= 2) { 
-      alert('✅ Maksimal 2 foto untuk frame ini!'); 
-      return; 
-    }
+    if (this.photoCount >= 2) { alert('✅ Maksimal 2 foto!'); return; }
     this.previewCanvas.width = this.cameraVideo.videoWidth;
     this.previewCanvas.height = this.cameraVideo.videoHeight;
     const ctx = this.previewCanvas.getContext('2d');
@@ -318,36 +408,21 @@ class UnderwaterPhotobooth {
     this.photoCount++;
     this.photos[this.photoCount] = this.previewCanvas.toDataURL('image/png');
     this.updatePhotoSlot(this.photoCount);
-    if (this.photoCount === 2) { 
-      alert('✅ Frame lengkap! Tutup kamera untuk download.'); 
-      this.closeCamera(); 
-    } else { 
-      alert(\`✅ Foto \${this.photoCount} berhasil ditangkap. Ambil 1 foto lagi!\`); 
-    }
+    if (this.photoCount === 2) { alert('✅ Frame lengkap!'); this.closeCamera(); } 
+    else { alert(\`✅ Foto \${this.photoCount} berhasil!\`); }
   }
   
   handleUpload(e) {
-    if (this.photoCount >= 2) { 
-      alert('✅ Maksimal 2 foto untuk frame ini!'); 
-      return; 
-    }
-    
+    if (this.photoCount >= 2) { alert('✅ Maksimal 2 foto!'); return; }
     const file = e.target.files[0];
     if (!file) return;
-    
     const reader = new FileReader();
     reader.onload = (event) => {
       this.photoCount++;
       this.photos[this.photoCount] = event.target.result;
       this.updatePhotoSlot(this.photoCount);
-      
-      if (this.photoCount === 2) {
-        alert('✅ Frame lengkap! Download sekarang!');
-      } else {
-        alert(\`✅ Foto \${this.photoCount} berhasil di-upload. Tambah 1 foto lagi!\`);
-      }
-      
-      // Reset input
+      if (this.photoCount === 2) alert('✅ Frame lengkap!');
+      else alert(\`✅ Foto \${this.photoCount} berhasil!\`);
       e.target.value = '';
     };
     reader.readAsDataURL(file);
@@ -355,9 +430,7 @@ class UnderwaterPhotobooth {
   
   updatePhotoSlot(slotNum) {
     const slot = document.getElementById(\`photobooth-photo\${slotNum}\`);
-    if (this.photos[slotNum]) {
-      slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
-    }
+    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
     if (this.photoCount > 0) { 
       this.downloadBtn.disabled = false; 
       this.clearBtn.disabled = false; 
@@ -366,59 +439,45 @@ class UnderwaterPhotobooth {
   }
   
   clearAll() {
-    this.photos = {}; 
-    this.photoCount = 0;
+    this.photos = {}; this.photoCount = 0;
     document.getElementById('photobooth-photo1').innerHTML = '<div class="photobooth-empty">Ambil Foto 1 📸</div>';
     document.getElementById('photobooth-photo2').innerHTML = '<div class="photobooth-empty">Ambil Foto 2 📸</div>';
-    this.downloadBtn.disabled = true; 
-    this.clearBtn.disabled = true; 
-    this.resetBtn.disabled = true;
+    this.downloadBtn.disabled = true; this.clearBtn.disabled = true; this.resetBtn.disabled = true;
   }
   
-  reset() { 
-    this.clearAll(); 
-  }
+  reset() { this.clearAll(); }
   
   downloadFrame() {
     if (typeof html2canvas === 'undefined') { 
-      alert('⚠️ Library html2canvas belum loaded. Coba refresh halaman.'); 
+      alert('⚠️ Loading... Coba lagi dalam 2 detik.'); 
+      setTimeout(() => this.downloadFrame(), 2000);
       return; 
     }
     this.downloadBtn.disabled = true; 
     this.downloadBtn.textContent = '⏳ Downloading...';
+    
     html2canvas(this.photoboothFrame, { 
       backgroundColor: null, 
       scale: 2, 
-      useCORS: true, 
-      logging: false 
+      useCORS: true,
+      allowTaint: true,
+      logging: false,
+      windowWidth: this.photoboothFrame.scrollWidth,
+      windowHeight: this.photoboothFrame.scrollHeight
     }).then(canvas => {
       const link = document.createElement('a');
       link.href = canvas.toDataURL('image/png');
-      const timestamp = new Date().toISOString().slice(0, 10);
-      link.download = \`photobooth-\${timestamp}-\${new Date().getTime()}.png\`;
+      link.download = \`underwater-photobooth-\${Date.now()}.png\`;
       link.click();
       this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
       this.downloadBtn.disabled = false;
+      alert('✅ Download berhasil! Cek folder Downloads kamu!');
     }).catch(err => { 
       alert('❌ Gagal download. Coba lagi!'); 
       console.error('Download error:', err); 
       this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
       this.downloadBtn.disabled = false; 
     });
-  }
-  
-  setTitle(newTitle) { 
-    const titleElement = document.querySelector('.photobooth-title'); 
-    if (titleElement) titleElement.textContent = newTitle; 
-  }
-  
-  getStatus() { 
-    return { 
-      photoCount: this.photoCount, 
-      maxPhotos: 2, 
-      cameraActive: this.stream !== null, 
-      photos: Object.keys(this.photos).length 
-    }; 
   }
 }
 
