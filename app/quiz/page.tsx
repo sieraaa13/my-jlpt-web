@@ -8,6 +8,7 @@ import { Button }   from "@/components/ui/button";
 import { useAuth }  from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
 import { getPlayerLevel, getProgressPct, getPtsToNext, PLAYER_LEVELS } from "@/lib/quiz-levels";
+import Photobooth from "@/components/Photobooth";
 
 // ─── CONSTANTS ───────────────────────────────────────────────
 const MAX_Q   = 5;
@@ -29,6 +30,7 @@ const TOPICS = [
   { id:"festival", name:"Festival & Tradisi",    icon:"🎆", desc:"Matsuri & perayaan khas" },
   { id:"modern",   name:"Jepang Modern",         icon:"🚅", desc:"Teknologi & gaya hidup kini" },
 ];
+const [showPhotobooth, setShowPhotobooth] = useState(false);
 
 // ─── TYPES ───────────────────────────────────────────────────
 interface Question {
@@ -265,6 +267,7 @@ export default function QuizPage() {
   // ── RENDER ───────────────────────────────────────────────────
   return (
     <main className="min-h-screen bg-background">
+      <Photobooth isOpen={showPhotobooth} onClose={() => setShowPhotobooth(false)} />
       <Navbar />
       <div className="pt-20 pb-24 max-w-2xl mx-auto px-4">
 
@@ -275,6 +278,14 @@ export default function QuizPage() {
             ✦ AI Powered
           </span>
         </div>
+        <button
+  onClick={() => setShowPhotobooth(true)}
+  className="w-full mb-4 px-4 py-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-bold rounded-xl shadow-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
+>
+  <span className="text-2xl">🎁</span>
+  <span>REWARD: PHOTOBOOTH!</span>
+  <span className="text-2xl">📸</span>
+</button>
 
         {/* PLAYER LEVEL CARD */}
         <Card className="p-4 mb-4 cursor-pointer" onClick={() => setShowLevels(!showLevels)}>
