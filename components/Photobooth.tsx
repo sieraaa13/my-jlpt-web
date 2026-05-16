@@ -8,7 +8,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   useEffect(() => {
     if (!isOpen) return;
 
-    // Load html2canvas with proper timing
     const loadScript = () => {
       return new Promise((resolve) => {
         if ((window as any).html2canvas) {
@@ -22,7 +21,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       });
     };
 
-    // Initialize photobooth
     const init = async () => {
       if (initRef.current) return;
       
@@ -98,19 +96,16 @@ const PHOTOBOOTH_HTML = `
     </div>
 
     <div class="photobooth-frame" id="photobooth-frame">
-        <!-- Animated fish -->
         <div class="photobooth-fish swim1">🐠</div>
         <div class="photobooth-fish swim2">🐡</div>
         <div class="photobooth-fish swim3">🐟</div>
         <div class="photobooth-fish swim4">🐠</div>
         <div class="photobooth-fish swim5">🐡</div>
         
-        <!-- Jellyfish and squid -->
         <div class="photobooth-creature float1">🦑</div>
         <div class="photobooth-creature float2">🪼</div>
         <div class="photobooth-creature float3">🦑</div>
         
-        <!-- Animated bubbles -->
         <div class="photobooth-bubble rise1"></div>
         <div class="photobooth-bubble rise2"></div>
         <div class="photobooth-bubble rise3"></div>
@@ -120,7 +115,6 @@ const PHOTOBOOTH_HTML = `
         <div class="photobooth-bubble rise7"></div>
         <div class="photobooth-bubble rise8"></div>
 
-        <!-- Shells and rocks -->
         <div class="photobooth-shell shell1">🐚</div>
         <div class="photobooth-shell shell2">🐚</div>
         <div class="photobooth-shell shell3">🪨</div>
@@ -138,7 +132,6 @@ const PHOTOBOOTH_HTML = `
             </div>
         </div>
 
-        <!-- Seaweed -->
         <div class="photobooth-seaweed-container">
             <div class="photobooth-seaweed wave1">🌿</div>
             <div class="photobooth-seaweed wave2">🌿</div>
@@ -175,14 +168,16 @@ const PHOTOBOOTH_CSS = `
 #photobooth-camera-video { width: 100%; height: auto; display: block; border-radius: 12px 12px 0 0; }
 .photobooth-preview-controls { padding: 15px; background: black; border-radius: 0 0 12px 12px; display: flex; gap: 10px; justify-content: center; }
 
-/* UNDERWATER FRAME */
+/* SIMPLIFIED FRAME - Compatible with html2canvas */
 .photobooth-frame { 
   position: relative; 
-  background: linear-gradient(180deg, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
+  background: #4db8e8;
+  background: -webkit-linear-gradient(top, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
+  background: linear-gradient(to bottom, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
   border: 12px solid #2a8ab8;
   border-radius: 20px;
   padding: 40px 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 0 50px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   margin-bottom: 30px;
   overflow: hidden;
 }
@@ -192,33 +187,28 @@ const PHOTOBOOTH_CSS = `
   font-size: 36px; 
   font-weight: bold; 
   color: #ff69b4; 
-  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 105, 180, 0.5);
   letter-spacing: 3px; 
   font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
-/* PHOTO SLOTS WITH UNDERWATER EFFECT */
 .photobooth-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 25px; position: relative; z-index: 5; }
 .photobooth-slot { 
   position: relative; 
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border: 6px solid #87ceeb;
   border-radius: 12px;
   aspect-ratio: 4/3;
   overflow: hidden;
-  box-shadow: 
-    inset 0 0 20px rgba(135, 206, 235, 0.3),
-    0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .photobooth-slot img { width: 100%; height: 100%; object-fit: cover; }
 .photobooth-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: #6b9fbe; font-size: 14px; font-weight: 600; }
 
-/* ANIMATED FISH */
+/* ANIMATED FISH - Simplified */
 .photobooth-fish {
   position: absolute;
   font-size: 40px;
   z-index: 4;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 .swim1 { top: 15%; left: -50px; animation: swim-right 8s linear infinite; }
 .swim2 { top: 35%; right: -50px; animation: swim-left 10s linear infinite; animation-delay: 2s; }
@@ -235,13 +225,11 @@ const PHOTOBOOTH_CSS = `
   100% { right: calc(100% + 50px); transform: scaleX(-1); }
 }
 
-/* JELLYFISH & SQUID */
 .photobooth-creature {
   position: absolute;
   font-size: 35px;
   z-index: 3;
   opacity: 0.8;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 .float1 { top: 10%; right: 15%; animation: float-gentle 6s ease-in-out infinite; }
 .float2 { top: 45%; left: 10%; animation: float-gentle 7s ease-in-out infinite; animation-delay: 2s; }
@@ -252,12 +240,12 @@ const PHOTOBOOTH_CSS = `
   50% { transform: translateY(-20px) rotate(5deg); }
 }
 
-/* ANIMATED BUBBLES */
+/* BUBBLES - Simplified (no gradient) */
 .photobooth-bubble {
   position: absolute;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent);
+  background: rgba(255, 255, 255, 0.2);
   z-index: 6;
 }
 .rise1 { width: 15px; height: 15px; bottom: 0; left: 10%; animation: rise 4s ease-in infinite; }
@@ -276,19 +264,16 @@ const PHOTOBOOTH_CSS = `
   100% { bottom: 100%; opacity: 0; }
 }
 
-/* SHELLS */
 .photobooth-shell {
   position: absolute;
   font-size: 28px;
   opacity: 0.7;
   z-index: 2;
-  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
 }
 .shell1 { bottom: 15%; right: 12%; }
 .shell2 { bottom: 15%; left: 15%; }
 .shell3 { bottom: 12%; left: 40%; }
 
-/* SEAWEED */
 .photobooth-seaweed-container {
   position: absolute;
   bottom: 0;
@@ -305,7 +290,6 @@ const PHOTOBOOTH_CSS = `
   font-size: 55px;
   opacity: 0.6;
   transform-origin: bottom center;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 .wave1 { animation: wave 3s ease-in-out infinite; }
 .wave2 { animation: wave 3.5s ease-in-out infinite; animation-delay: 0.3s; }
@@ -319,7 +303,6 @@ const PHOTOBOOTH_CSS = `
   50% { transform: rotate(8deg) scaleY(1.1); }
 }
 
-/* BUTTONS */
 .photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; text-decoration: none; }
 .photobooth-btn:hover:not(:disabled) { background: #00897b; color: white; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
 .photobooth-btn:active:not(:disabled) { transform: translateY(0); }
@@ -449,32 +432,39 @@ class UnderwaterPhotobooth {
   
   downloadFrame() {
     if (typeof html2canvas === 'undefined') { 
-      alert('⚠️ Loading... Coba lagi dalam 2 detik.'); 
+      alert('⚠️ Tunggu sebentar... Library sedang loading.'); 
       setTimeout(() => this.downloadFrame(), 2000);
       return; 
     }
-    this.downloadBtn.disabled = true; 
-    this.downloadBtn.textContent = '⏳ Downloading...';
     
+    this.downloadBtn.disabled = true; 
+    this.downloadBtn.textContent = '⏳ Sedang memproses...';
+    
+    // Use simpler config for better compatibility
     html2canvas(this.photoboothFrame, { 
-      backgroundColor: null, 
-      scale: 2, 
-      useCORS: true,
-      allowTaint: true,
+      backgroundColor: '#4db8e8',
+      scale: 2,
       logging: false,
-      windowWidth: this.photoboothFrame.scrollWidth,
-      windowHeight: this.photoboothFrame.scrollHeight
+      useCORS: false,
+      allowTaint: false
     }).then(canvas => {
-      const link = document.createElement('a');
-      link.href = canvas.toDataURL('image/png');
-      link.download = \`underwater-photobooth-\${Date.now()}.png\`;
-      link.click();
-      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
-      this.downloadBtn.disabled = false;
-      alert('✅ Download berhasil! Cek folder Downloads kamu!');
+      try {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = \`underwater-photobooth-\${Date.now()}.png\`;
+        link.click();
+        this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+        this.downloadBtn.disabled = false;
+        alert('✅ Download berhasil! Cek folder Downloads!');
+      } catch (err) {
+        console.error('Canvas to blob error:', err);
+        alert('❌ Gagal download. Coba lagi!');
+        this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+        this.downloadBtn.disabled = false;
+      }
     }).catch(err => { 
-      alert('❌ Gagal download. Coba lagi!'); 
-      console.error('Download error:', err); 
+      console.error('html2canvas error:', err); 
+      alert('❌ Gagal membuat gambar. Coba lagi!'); 
       this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
       this.downloadBtn.disabled = false; 
     });
