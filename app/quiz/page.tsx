@@ -30,7 +30,7 @@ const TOPICS = [
   { id:"festival", name:"Festival & Tradisi",    icon:"🎆", desc:"Matsuri & perayaan khas" },
   { id:"modern",   name:"Jepang Modern",         icon:"🚅", desc:"Teknologi & gaya hidup kini" },
 ];
-const [showPhotobooth, setShowPhotobooth] = useState(false);
+
 
 // ─── TYPES ───────────────────────────────────────────────────
 interface Question {
@@ -149,7 +149,7 @@ export default function QuizPage() {
   const [floatPts,   setFloatPts]   = useState<number|null>(null);
   const [resetTime,  setResetTime]  = useState("");
   const [showLevels, setShowLevels] = useState(false);
-
+  const [showPhotobooth, setShowPhotobooth] = useState(false);
   useEffect(() => {
     if (!user) return;
     loadDailyState(user.id).then(s => {
