@@ -45,7 +45,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           if (e.target === e.currentTarget) onClose();
         }}
       >
-        <div className="relative bg-gray-900 rounded-2xl p-6 max-w-4xl w-full">
+        <div className="relative bg-gray-900 rounded-2xl p-6 max-w-5xl w-full">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all"
@@ -58,7 +58,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               🎥 LIVE UNDERWATER PHOTOBOOTH! 🌊
             </h2>
             <p className="text-sm text-gray-400">
-              Pose dengan ikan dan cumi yang bergerak!
+              Foto akan menimpa background dengan frame lucu!
             </p>
           </div>
 
@@ -73,32 +73,49 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
 const PHOTOBOOTH_HTML = `
 <div id="live-photobooth-container">
-    <div class="live-camera-stage" id="live-camera-stage">
-        <video id="live-camera-video" autoplay playsinline muted></video>
-        <canvas id="live-decorations-canvas"></canvas>
+    <!-- Main Stage with Overlapping Photos -->
+    <div class="live-main-stage" id="live-main-stage">
+        <!-- Background Photobooth Frame -->
+        <div class="live-background-frame">
+            <div class="live-bg-title">UNDER SEA</div>
+            <div class="live-bg-decorations">
+                <div class="live-bg-slot slot-1"></div>
+                <div class="live-bg-slot slot-2"></div>
+                <div class="live-bg-slot slot-3"></div>
+            </div>
+            <div class="live-bg-seaweed">🌿🌿🌿🌿🌿</div>
+            <div class="live-bg-fish">🐠🐡🦑</div>
+        </div>
         
-        <div class="live-camera-hint">
-            💡 Pose dengan dekorasi yang bergerak!
+        <!-- Live Camera Area -->
+        <div class="live-camera-stage" id="live-camera-stage">
+            <video id="live-camera-video" autoplay playsinline muted></video>
+            <canvas id="live-decorations-canvas"></canvas>
+            
+            <div class="live-camera-hint">
+                💡 Ambil foto dan lihat hasilnya menimpa background!
+            </div>
+        </div>
+        
+        <!-- Overlapping Photo Frames (Polaroid Style) -->
+        <div class="live-photo-overlays" id="live-photo-overlays">
+            <!-- Photos will be added here as overlapping polaroid frames -->
         </div>
     </div>
 
+    <!-- Controls -->
     <div class="live-controls">
         <button id="live-start-btn" class="live-btn live-btn-primary">
-            📷 BUKA KAMERA LIVE
+            📷 BUKA KAMERA
         </button>
         <button id="live-capture-btn" class="live-btn live-btn-capture" disabled>
             📸 AMBIL FOTO
         </button>
         <button id="live-close-btn" class="live-btn live-btn-secondary" disabled>
-            ❌ TUTUP KAMERA
+            ❌ TUTUP
         </button>
-    </div>
-
-    <div class="live-gallery" id="live-gallery">
-        <h3 class="live-gallery-title">📸 Foto Hasil (Max 6)</h3>
-        <div class="live-gallery-grid" id="live-gallery-grid"></div>
         <button id="live-download-all-btn" class="live-btn live-btn-download" disabled>
-            ⬇️ DOWNLOAD SEMUA FOTO
+            ⬇️ DOWNLOAD SEMUA
         </button>
     </div>
 </div>
@@ -109,17 +126,93 @@ const PHOTOBOOTH_CSS = `
   max-width: 100%;
 }
 
-.live-camera-stage {
+/* Main Stage - Contains everything */
+.live-main-stage {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto 20px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  min-height: 600px;
+}
+
+/* Background Photobooth Frame (Like sample) */
+.live-background-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(180deg, #B8E6F0 0%, #87CEEB 100%);
+  border: 8px solid #FFB6C1;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.live-bg-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFB6C1;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.live-bg-decorations {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.live-bg-slot {
+  background: rgba(255, 255, 255, 0.5);
+  border: 4px solid #87CEEB;
+  border-radius: 8px;
+  height: 80px;
+}
+
+.slot-1 { background: linear-gradient(135deg, #FFE4E1 0%, #FFC0CB 100%); }
+.slot-2 { background: linear-gradient(135deg, #E0F7FF 0%, #B8E6F0 100%); }
+.slot-3 { background: linear-gradient(135deg, #FFFACD 0%, #FFE4B5 100%); }
+
+.live-bg-seaweed {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+}
+
+.live-bg-fish {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Live Camera Stage */
+.live-camera-stage {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 55%;
   aspect-ratio: 4/3;
-  background: linear-gradient(180deg, #87CEEB 0%, #4A90E2 100%);
+  background: linear-gradient(180deg, #4db8e8 0%, #2a7ba8 100%);
   border: 8px solid #2a8ab8;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.live-camera-stage.hidden {
+  display: none;
 }
 
 #live-camera-video {
@@ -144,23 +237,87 @@ const PHOTOBOOTH_CSS = `
 
 .live-camera-hint {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 13px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: 11px;
   text-align: center;
   z-index: 3;
+  white-space: nowrap;
 }
 
+/* Overlapping Polaroid Photo Frames */
+.live-photo-overlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.live-polaroid-frame {
+  position: absolute;
+  background: white;
+  padding: 15px 15px 50px 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  animation: polaroid-appear 0.5s ease-out;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.live-polaroid-frame:hover {
+  transform: scale(1.05) !important;
+  z-index: 10 !important;
+}
+
+.live-polaroid-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.live-polaroid-delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 0, 0, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@keyframes polaroid-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Controls */
 .live-controls {
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -204,64 +361,26 @@ const PHOTOBOOTH_CSS = `
 .live-btn-download {
   background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
   color: white;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.live-gallery {
-  margin-top: 40px;
-}
-
-.live-gallery-title {
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.live-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.live-photo-item {
-  position: relative;
-  aspect-ratio: 4/3;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 3px solid #2a8ab8;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.live-photo-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.live-photo-delete {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: rgba(255, 0, 0, 0.9);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .live-camera-hint {
-    font-size: 11px;
-    padding: 8px 12px;
+  .live-background-frame {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .live-camera-stage {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .live-main-stage {
+    min-height: auto;
   }
   
   .live-controls {
@@ -296,16 +415,15 @@ class LiveUnderwaterPhotobooth {
     this.video = document.getElementById('live-camera-video');
     this.canvas = document.getElementById('live-decorations-canvas');
     this.ctx = this.canvas.getContext('2d');
-    this.stage = document.getElementById('live-camera-stage');
+    this.cameraStage = document.getElementById('live-camera-stage');
+    this.photoOverlays = document.getElementById('live-photo-overlays');
     this.startBtn = document.getElementById('live-start-btn');
     this.captureBtn = document.getElementById('live-capture-btn');
     this.closeBtn = document.getElementById('live-close-btn');
-    this.gallery = document.getElementById('live-gallery-grid');
     this.downloadAllBtn = document.getElementById('live-download-all-btn');
   }
   
   initDecorations() {
-    // SLOWER FISH - 5x slower than before
     this.fish = [
       { emoji: '🐠', x: 0, y: 0.20, speed: 0.0006, direction: 1, size: 60 },
       { emoji: '🐡', x: 1, y: 0.40, speed: 0.0005, direction: -1, size: 58 },
@@ -314,14 +432,12 @@ class LiveUnderwaterPhotobooth {
       { emoji: '🐡', x: 0, y: 0.30, speed: 0.00065, direction: 1, size: 57 }
     ];
     
-    // SLOWER CREATURES - 5x slower
     this.creatures = [
       { emoji: '🦑', x: 0.85, y: 0.15, offsetY: 0, speed: 0.004, size: 55 },
       { emoji: '🪼', x: 0.15, y: 0.50, offsetY: 0, speed: 0.005, size: 52 },
       { emoji: '🦑', x: 0.75, y: 0.70, offsetY: 0, speed: 0.0036, size: 55 }
     ];
     
-    // SLOWER BUBBLES - 5x slower
     this.bubbles = [];
     for (let i = 0; i < 12; i++) {
       this.bubbles.push({
@@ -333,7 +449,6 @@ class LiveUnderwaterPhotobooth {
       });
     }
     
-    // SLOWER SEAWEED - 5x slower
     this.seaweed = [];
     for (let i = 0; i < 8; i++) {
       this.seaweed.push({
@@ -373,10 +488,9 @@ class LiveUnderwaterPhotobooth {
       this.captureBtn.disabled = false;
       this.closeBtn.disabled = false;
       
-      alert('✅ Kamera live aktif! Pose dengan dekorasi yang bergerak perlahan!');
+      alert('✅ Kamera aktif! Ambil foto dan lihat hasilnya menimpa background!');
     } catch (err) {
       alert('⚠️ Gagal mengakses kamera: ' + err.message);
-      console.error('Camera error:', err);
     }
   }
   
@@ -390,19 +504,16 @@ class LiveUnderwaterPhotobooth {
   }
   
   updateDecorations() {
-    // Update fish - slow smooth movement
     this.fish.forEach(fish => {
       fish.x += fish.speed * fish.direction;
       if (fish.x > 1.2) fish.x = -0.2;
       if (fish.x < -0.2) fish.x = 1.2;
     });
     
-    // Update creatures - slow gentle float
     this.creatures.forEach(creature => {
       creature.offsetY = Math.sin(Date.now() * creature.speed / 1000) * 0.04;
     });
     
-    // Update bubbles - slow rise
     this.bubbles.forEach(bubble => {
       bubble.y -= bubble.speed;
       if (bubble.y < -0.1) {
@@ -411,7 +522,6 @@ class LiveUnderwaterPhotobooth {
       }
     });
     
-    // Update seaweed - slow gentle wave
     this.seaweed.forEach(weed => {
       weed.angle = Math.sin(Date.now() * weed.speed / 1000) * 12;
     });
@@ -423,7 +533,6 @@ class LiveUnderwaterPhotobooth {
     
     this.ctx.clearRect(0, 0, w, h);
     
-    // Draw fish - SOLID, NO TRANSPARENCY
     this.ctx.font = 'bold ' + (w * 0.065) + 'px Arial';
     this.fish.forEach(fish => {
       this.ctx.save();
@@ -435,7 +544,6 @@ class LiveUnderwaterPhotobooth {
       this.ctx.restore();
     });
     
-    // Draw creatures - SOLID, NO TRANSPARENCY
     this.ctx.font = 'bold ' + (w * 0.06) + 'px Arial';
     this.creatures.forEach(creature => {
       const x = creature.x * w;
@@ -443,7 +551,6 @@ class LiveUnderwaterPhotobooth {
       this.ctx.fillText(creature.emoji, x - creature.size/2, y + creature.size/2);
     });
     
-    // Draw bubbles - MORE VISIBLE
     this.bubbles.forEach(bubble => {
       this.ctx.beginPath();
       this.ctx.arc(bubble.x * w, bubble.y * h, bubble.radius, 0, Math.PI * 2);
@@ -454,7 +561,6 @@ class LiveUnderwaterPhotobooth {
       this.ctx.stroke();
     });
     
-    // Draw seaweed - SOLID
     this.ctx.font = 'bold ' + (w * 0.09) + 'px Arial';
     this.seaweed.forEach(weed => {
       this.ctx.save();
@@ -469,7 +575,7 @@ class LiveUnderwaterPhotobooth {
   
   capturePhoto() {
     if (this.photos.length >= this.maxPhotos) {
-      alert('⚠️ Maksimal ' + this.maxPhotos + ' foto! Hapus foto lama dulu.');
+      alert('⚠️ Maksimal ' + this.maxPhotos + ' foto!');
       return;
     }
     
@@ -478,42 +584,64 @@ class LiveUnderwaterPhotobooth {
     captureCanvas.height = this.video.videoHeight;
     const captureCtx = captureCanvas.getContext('2d');
     
-    // Draw mirrored video
     captureCtx.save();
     captureCtx.scale(-1, 1);
     captureCtx.drawImage(this.video, -captureCanvas.width, 0, captureCanvas.width, captureCanvas.height);
     captureCtx.restore();
     
-    // Draw decorations overlay
     captureCtx.drawImage(this.canvas, 0, 0);
     
-    // Save photo
     const photoData = captureCanvas.toDataURL('image/png');
     this.photos.push(photoData);
-    this.updateGallery();
+    this.addPolaroidFrame(photoData, this.photos.length - 1);
+    this.downloadAllBtn.disabled = false;
     
-    alert('✅ Foto berhasil! (' + this.photos.length + '/' + this.maxPhotos + ')');
+    alert('✅ Foto ' + this.photos.length + ' ditambahkan! Lihat hasilnya menimpa background!');
   }
   
-  updateGallery() {
-    this.gallery.innerHTML = '';
-    this.photos.forEach((photo, index) => {
-      const item = document.createElement('div');
-      item.className = 'live-photo-item';
-      item.innerHTML = \`
-        <img src="\${photo}" alt="Photo \${index + 1}">
-        <button class="live-photo-delete" onclick="window.photobooth.deletePhoto(\${index})">×</button>
-      \`;
-      this.gallery.appendChild(item);
-    });
+  addPolaroidFrame(photoData, index) {
+    const polaroid = document.createElement('div');
+    polaroid.className = 'live-polaroid-frame';
+    polaroid.id = 'polaroid-' + index;
     
-    this.downloadAllBtn.disabled = this.photos.length === 0;
+    // Random position and rotation for overlapping effect
+    const positions = [
+      { top: '10%', left: '45%', rotate: '8deg', width: '250px' },
+      { top: '25%', left: '52%', rotate: '-5deg', width: '240px' },
+      { top: '40%', left: '48%', rotate: '12deg', width: '260px' },
+      { top: '15%', left: '60%', rotate: '-8deg', width: '245px' },
+      { top: '50%', left: '55%', rotate: '6deg', width: '255px' },
+      { top: '30%', left: '65%', rotate: '-10deg', width: '250px' }
+    ];
+    
+    const pos = positions[index % positions.length];
+    polaroid.style.top = pos.top;
+    polaroid.style.left = pos.left;
+    polaroid.style.transform = 'rotate(' + pos.rotate + ')';
+    polaroid.style.width = pos.width;
+    polaroid.style.zIndex = 10 + index;
+    
+    polaroid.innerHTML = \`
+      <img src="\${photoData}" alt="Photo \${index + 1}">
+      <button class="live-polaroid-delete" onclick="window.photobooth.deletePhoto(\${index})">×</button>
+    \`;
+    
+    this.photoOverlays.appendChild(polaroid);
   }
   
   deletePhoto(index) {
     if (confirm('Hapus foto ini?')) {
       this.photos.splice(index, 1);
-      this.updateGallery();
+      const polaroid = document.getElementById('polaroid-' + index);
+      if (polaroid) polaroid.remove();
+      
+      // Re-index remaining photos
+      this.photoOverlays.innerHTML = '';
+      this.photos.forEach((photo, i) => {
+        this.addPolaroidFrame(photo, i);
+      });
+      
+      this.downloadAllBtn.disabled = this.photos.length === 0;
     }
   }
   
@@ -526,6 +654,7 @@ class LiveUnderwaterPhotobooth {
     }
     
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.cameraStage.classList.add('hidden');
     this.startBtn.disabled = false;
     this.captureBtn.disabled = true;
     this.closeBtn.disabled = true;
@@ -537,7 +666,7 @@ class LiveUnderwaterPhotobooth {
     this.photos.forEach((photo, index) => {
       const link = document.createElement('a');
       link.href = photo;
-      link.download = \`underwater-live-\${Date.now()}-\${index + 1}.png\`;
+      link.download = \`underwater-\${Date.now()}-\${index + 1}.png\`;
       link.click();
     });
     
