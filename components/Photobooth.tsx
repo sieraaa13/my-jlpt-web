@@ -8,23 +8,8 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   useEffect(() => {
     if (!isOpen) return;
 
-    const loadScript = () => {
-      return new Promise((resolve) => {
-        if ((window as any).domtoimage) {
-          resolve(true);
-          return;
-        }
-        const script = document.createElement("script");
-        script.src = "https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js";
-        script.onload = () => resolve(true);
-        document.head.appendChild(script);
-      });
-    };
-
     const init = async () => {
       if (initRef.current) return;
-      
-      await loadScript();
       
       setTimeout(() => {
         if (!(window as any).UnderwaterPhotobooth) {
@@ -170,7 +155,6 @@ const PHOTOBOOTH_CSS = `
 
 .photobooth-frame { 
   position: relative; 
-  background: #4db8e8;
   background: linear-gradient(to bottom, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
   border: 12px solid #2a8ab8;
   border-radius: 20px;
@@ -207,20 +191,11 @@ const PHOTOBOOTH_CSS = `
   font-size: 40px;
   z-index: 4;
 }
-.swim1 { top: 15%; left: -50px; animation: swim-right 8s linear infinite; }
-.swim2 { top: 35%; right: -50px; animation: swim-left 10s linear infinite; animation-delay: 2s; }
-.swim3 { top: 55%; left: -50px; animation: swim-right 12s linear infinite; animation-delay: 4s; }
-.swim4 { top: 70%; right: -50px; animation: swim-left 9s linear infinite; animation-delay: 1s; }
-.swim5 { top: 25%; left: -50px; animation: swim-right 11s linear infinite; animation-delay: 5s; }
-
-@keyframes swim-right {
-  0% { left: -50px; transform: scaleX(1); }
-  100% { left: calc(100% + 50px); transform: scaleX(1); }
-}
-@keyframes swim-left {
-  0% { right: -50px; transform: scaleX(-1); }
-  100% { right: calc(100% + 50px); transform: scaleX(-1); }
-}
+.swim1 { top: 15%; left: 10%; }
+.swim2 { top: 35%; right: 15%; }
+.swim3 { top: 55%; left: 5%; }
+.swim4 { top: 70%; right: 10%; }
+.swim5 { top: 25%; left: 80%; }
 
 .photobooth-creature {
   position: absolute;
@@ -228,14 +203,9 @@ const PHOTOBOOTH_CSS = `
   z-index: 3;
   opacity: 0.8;
 }
-.float1 { top: 10%; right: 15%; animation: float-gentle 6s ease-in-out infinite; }
-.float2 { top: 45%; left: 10%; animation: float-gentle 7s ease-in-out infinite; animation-delay: 2s; }
-.float3 { bottom: 120px; right: 20%; animation: float-gentle 5s ease-in-out infinite; animation-delay: 4s; }
-
-@keyframes float-gentle {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(5deg); }
-}
+.float1 { top: 10%; right: 15%; }
+.float2 { top: 45%; left: 10%; }
+.float3 { bottom: 120px; right: 20%; }
 
 .photobooth-bubble {
   position: absolute;
@@ -244,21 +214,14 @@ const PHOTOBOOTH_CSS = `
   background: rgba(255, 255, 255, 0.2);
   z-index: 6;
 }
-.rise1 { width: 15px; height: 15px; bottom: 0; left: 10%; animation: rise 4s ease-in infinite; }
-.rise2 { width: 20px; height: 20px; bottom: 0; left: 25%; animation: rise 5s ease-in infinite; animation-delay: 1s; }
-.rise3 { width: 12px; height: 12px; bottom: 0; left: 40%; animation: rise 6s ease-in infinite; animation-delay: 2s; }
-.rise4 { width: 18px; height: 18px; bottom: 0; left: 55%; animation: rise 4.5s ease-in infinite; animation-delay: 0.5s; }
-.rise5 { width: 22px; height: 22px; bottom: 0; left: 70%; animation: rise 5.5s ease-in infinite; animation-delay: 1.5s; }
-.rise6 { width: 16px; height: 16px; bottom: 0; left: 85%; animation: rise 4s ease-in infinite; animation-delay: 3s; }
-.rise7 { width: 14px; height: 14px; bottom: 0; left: 15%; animation: rise 6s ease-in infinite; animation-delay: 2.5s; }
-.rise8 { width: 19px; height: 19px; bottom: 0; left: 60%; animation: rise 5s ease-in infinite; animation-delay: 3.5s; }
-
-@keyframes rise {
-  0% { bottom: 0; opacity: 0; }
-  10% { opacity: 0.7; }
-  90% { opacity: 0.7; }
-  100% { bottom: 100%; opacity: 0; }
-}
+.rise1 { width: 15px; height: 15px; bottom: 10%; left: 10%; }
+.rise2 { width: 20px; height: 20px; bottom: 20%; left: 25%; }
+.rise3 { width: 12px; height: 12px; bottom: 15%; left: 40%; }
+.rise4 { width: 18px; height: 18px; bottom: 25%; left: 55%; }
+.rise5 { width: 22px; height: 22px; bottom: 30%; left: 70%; }
+.rise6 { width: 16px; height: 16px; bottom: 18%; left: 85%; }
+.rise7 { width: 14px; height: 14px; bottom: 22%; left: 15%; }
+.rise8 { width: 19px; height: 19px; bottom: 28%; left: 60%; }
 
 .photobooth-shell {
   position: absolute;
@@ -285,18 +248,6 @@ const PHOTOBOOTH_CSS = `
 .photobooth-seaweed {
   font-size: 55px;
   opacity: 0.6;
-  transform-origin: bottom center;
-}
-.wave1 { animation: wave 3s ease-in-out infinite; }
-.wave2 { animation: wave 3.5s ease-in-out infinite; animation-delay: 0.3s; }
-.wave3 { animation: wave 3.2s ease-in-out infinite; animation-delay: 0.6s; }
-.wave4 { animation: wave 3.8s ease-in-out infinite; animation-delay: 0.9s; }
-.wave5 { animation: wave 3.4s ease-in-out infinite; animation-delay: 1.2s; }
-.wave6 { animation: wave 3.6s ease-in-out infinite; animation-delay: 1.5s; }
-
-@keyframes wave {
-  0%, 100% { transform: rotate(-8deg) scaleY(1); }
-  50% { transform: rotate(8deg) scaleY(1.1); }
 }
 
 .photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; text-decoration: none; }
@@ -409,7 +360,7 @@ class UnderwaterPhotobooth {
   
   updatePhotoSlot(slotNum) {
     const slot = document.getElementById(\`photobooth-photo\${slotNum}\`);
-    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" crossorigin="anonymous" alt="Photo \${slotNum}">\`;
+    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
     if (this.photoCount > 0) { 
       this.downloadBtn.disabled = false; 
       this.clearBtn.disabled = false; 
@@ -426,42 +377,133 @@ class UnderwaterPhotobooth {
   
   reset() { this.clearAll(); }
   
-  downloadFrame() {
-    if (typeof domtoimage === 'undefined') { 
-      alert('⚠️ Tunggu sebentar...'); 
-      setTimeout(() => this.downloadFrame(), 2000);
-      return; 
-    }
-    
-    this.downloadBtn.disabled = true; 
+  async downloadFrame() {
+    this.downloadBtn.disabled = true;
     this.downloadBtn.textContent = '⏳ Memproses...';
     
-    // Use dom-to-image - better emoji support!
-    domtoimage.toPng(this.photoboothFrame, { 
-      quality: 1,
-      width: this.photoboothFrame.offsetWidth * 2,
-      height: this.photoboothFrame.offsetHeight * 2,
-      style: {
-        transform: 'scale(2)',
-        transformOrigin: 'top left',
-        width: this.photoboothFrame.offsetWidth + 'px',
-        height: this.photoboothFrame.offsetHeight + 'px'
+    try {
+      const canvas = document.createElement('canvas');
+      const frame = this.photoboothFrame;
+      const scale = 2;
+      canvas.width = frame.offsetWidth * scale;
+      canvas.height = frame.offsetHeight * scale;
+      const ctx = canvas.getContext('2d');
+      ctx.scale(scale, scale);
+      
+      // Draw background gradient
+      const gradient = ctx.createLinearGradient(0, 0, 0, frame.offsetHeight);
+      gradient.addColorStop(0, '#4db8e8');
+      gradient.addColorStop(0.5, '#2a7ba8');
+      gradient.addColorStop(1, '#1a5278');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, frame.offsetWidth, frame.offsetHeight);
+      
+      // Draw title
+      ctx.font = 'bold 36px Comic Sans MS';
+      ctx.fillStyle = '#ff69b4';
+      ctx.textAlign = 'center';
+      ctx.fillText('UNDER SEA', frame.offsetWidth / 2, 60);
+      
+      // Draw photos
+      const slot1 = document.getElementById('photobooth-photo1');
+      const slot2 = document.getElementById('photobooth-photo2');
+      const img1 = slot1.querySelector('img');
+      const img2 = slot2.querySelector('img');
+      
+      if (img1) {
+        const slotRect = slot1.getBoundingClientRect();
+        const frameRect = frame.getBoundingClientRect();
+        await this.drawImage(ctx, img1.src, 
+          slotRect.left - frameRect.left, 
+          slotRect.top - frameRect.top, 
+          slotRect.width, 
+          slotRect.height);
       }
-    })
-    .then((dataUrl) => {
+      
+      if (img2) {
+        const slotRect = slot2.getBoundingClientRect();
+        const frameRect = frame.getBoundingClientRect();
+        await this.drawImage(ctx, img2.src, 
+          slotRect.left - frameRect.left, 
+          slotRect.top - frameRect.top, 
+          slotRect.width, 
+          slotRect.height);
+      }
+      
+      // Draw decorations (emoji)
+      ctx.font = '40px Arial';
+      // Fish
+      ctx.fillText('🐠', frame.offsetWidth * 0.10, frame.offsetHeight * 0.15);
+      ctx.fillText('🐡', frame.offsetWidth * 0.85, frame.offsetHeight * 0.35);
+      ctx.fillText('🐟', frame.offsetWidth * 0.05, frame.offsetHeight * 0.55);
+      ctx.fillText('🐠', frame.offsetWidth * 0.90, frame.offsetHeight * 0.70);
+      ctx.fillText('🐡', frame.offsetWidth * 0.80, frame.offsetHeight * 0.25);
+      
+      ctx.font = '35px Arial';
+      // Creatures
+      ctx.fillText('🦑', frame.offsetWidth * 0.85, frame.offsetHeight * 0.10);
+      ctx.fillText('🪼', frame.offsetWidth * 0.10, frame.offsetHeight * 0.45);
+      ctx.fillText('🦑', frame.offsetWidth * 0.80, frame.offsetHeight * 0.75);
+      
+      // Bubbles
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
+      ctx.lineWidth = 2;
+      [
+        {x: 0.10, y: 0.85, r: 7.5},
+        {x: 0.25, y: 0.75, r: 10},
+        {x: 0.40, y: 0.80, r: 6},
+        {x: 0.55, y: 0.70, r: 9},
+        {x: 0.70, y: 0.65, r: 11},
+        {x: 0.85, y: 0.78, r: 8},
+        {x: 0.15, y: 0.73, r: 7},
+        {x: 0.60, y: 0.68, r: 9.5}
+      ].forEach(b => {
+        ctx.beginPath();
+        ctx.arc(frame.offsetWidth * b.x, frame.offsetHeight * b.y, b.r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+      });
+      
+      ctx.font = '28px Arial';
+      // Shells
+      ctx.fillText('🐚', frame.offsetWidth * 0.88, frame.offsetHeight * 0.85);
+      ctx.fillText('🐚', frame.offsetWidth * 0.15, frame.offsetHeight * 0.85);
+      ctx.fillText('🪨', frame.offsetWidth * 0.40, frame.offsetHeight * 0.88);
+      
+      ctx.font = '55px Arial';
+      // Seaweed
+      const seaweedY = frame.offsetHeight - 40;
+      [0.05, 0.20, 0.35, 0.50, 0.65, 0.80, 0.95].forEach((x, i) => {
+        ctx.fillText('🌿', frame.offsetWidth * x, seaweedY);
+      });
+      
+      // Download
       const link = document.createElement('a');
       link.download = \`underwater-photobooth-\${Date.now()}.png\`;
-      link.href = dataUrl;
+      link.href = canvas.toDataURL('image/png');
       link.click();
-      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
-      this.downloadBtn.disabled = false;
+      
       alert('✅ Download berhasil!');
-    })
-    .catch((err) => {
-      console.error('dom-to-image error:', err);
-      alert('❌ Gagal download. Coba lagi!');
-      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+    } catch (err) {
+      console.error('Download error:', err);
+      alert('❌ Gagal download: ' + err.message);
+    } finally {
+      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME';
       this.downloadBtn.disabled = false;
+    }
+  }
+  
+  drawImage(ctx, src, x, y, width, height) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => {
+        ctx.drawImage(img, x, y, width, height);
+        resolve();
+      };
+      img.onerror = reject;
+      img.src = src;
     });
   }
 }
