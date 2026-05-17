@@ -58,7 +58,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               🎥 LIVE UNDERWATER PHOTOBOOTH! 🌊
             </h2>
             <p className="text-sm text-gray-400">
-              Pose dengan ikan, cumi, dan gelembung yang bergerak!
+              Pose dengan ikan dan cumi yang bergerak!
             </p>
           </div>
 
@@ -73,20 +73,15 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
 const PHOTOBOOTH_HTML = `
 <div id="live-photobooth-container">
-    <!-- Live Camera Preview with Overlay -->
     <div class="live-camera-stage" id="live-camera-stage">
         <video id="live-camera-video" autoplay playsinline muted></video>
         <canvas id="live-decorations-canvas"></canvas>
         
-        <div class="live-camera-title">UNDER SEA</div>
-        
         <div class="live-camera-hint">
-            💡 Pose sesuai dekorasi:<br>
-            Makan ikan 🐠 | Tangkap cumi 🦑 | Main gelembung ○
+            💡 Pose dengan dekorasi yang bergerak!
         </div>
     </div>
 
-    <!-- Controls -->
     <div class="live-controls">
         <button id="live-start-btn" class="live-btn live-btn-primary">
             📷 BUKA KAMERA LIVE
@@ -99,12 +94,9 @@ const PHOTOBOOTH_HTML = `
         </button>
     </div>
 
-    <!-- Photo Gallery -->
     <div class="live-gallery" id="live-gallery">
-        <h3 class="live-gallery-title">📸 Foto Hasil (Max 4)</h3>
-        <div class="live-gallery-grid" id="live-gallery-grid">
-            <!-- Photos will be added here -->
-        </div>
+        <h3 class="live-gallery-title">📸 Foto Hasil (Max 6)</h3>
+        <div class="live-gallery-grid" id="live-gallery-grid"></div>
         <button id="live-download-all-btn" class="live-btn live-btn-download" disabled>
             ⬇️ DOWNLOAD SEMUA FOTO
         </button>
@@ -123,7 +115,7 @@ const PHOTOBOOTH_CSS = `
   max-width: 800px;
   margin: 0 auto 20px;
   aspect-ratio: 4/3;
-  background: linear-gradient(180deg, #4db8e8 0%, #2a7ba8 50%, #1a5278 100%);
+  background: linear-gradient(180deg, #87CEEB 0%, #4A90E2 100%);
   border: 8px solid #2a8ab8;
   border-radius: 20px;
   overflow: hidden;
@@ -137,7 +129,7 @@ const PHOTOBOOTH_CSS = `
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scaleX(-1); /* Mirror effect */
+  transform: scaleX(-1);
 }
 
 #live-decorations-canvas {
@@ -150,28 +142,6 @@ const PHOTOBOOTH_CSS = `
   z-index: 2;
 }
 
-.live-camera-title {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 48px;
-  font-weight: bold;
-  color: #ff69b4;
-  text-shadow: 
-    3px 3px 0px rgba(255, 255, 255, 0.8),
-    0 0 30px rgba(255, 105, 180, 0.6);
-  letter-spacing: 5px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  z-index: 3;
-  animation: title-glow 2s ease-in-out infinite;
-}
-
-@keyframes title-glow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
-}
-
 .live-camera-hint {
   position: absolute;
   bottom: 20px;
@@ -179,12 +149,11 @@ const PHOTOBOOTH_CSS = `
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   z-index: 3;
-  line-height: 1.6;
 }
 
 .live-controls {
@@ -276,7 +245,7 @@ const PHOTOBOOTH_CSS = `
   position: absolute;
   top: 5px;
   right: 5px;
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(255, 0, 0, 0.9);
   color: white;
   border: none;
   border-radius: 50%;
@@ -290,13 +259,9 @@ const PHOTOBOOTH_CSS = `
 }
 
 @media (max-width: 768px) {
-  .live-camera-title {
-    font-size: 32px;
-  }
-  
   .live-camera-hint {
-    font-size: 12px;
-    padding: 10px 15px;
+    font-size: 11px;
+    padding: 8px 12px;
   }
   
   .live-controls {
@@ -315,9 +280,8 @@ class LiveUnderwaterPhotobooth {
     this.stream = null;
     this.animationId = null;
     this.photos = [];
-    this.maxPhotos = 4;
+    this.maxPhotos = 6;
     
-    // Animation state
     this.fish = [];
     this.creatures = [];
     this.bubbles = [];
@@ -341,41 +305,41 @@ class LiveUnderwaterPhotobooth {
   }
   
   initDecorations() {
-    // Initialize fish (5 fish)
+    // SLOWER FISH - 5x slower than before
     this.fish = [
-      { emoji: '🐠', x: 0, y: 0.15, speed: 0.003, direction: 1, size: 50 },
-      { emoji: '🐡', x: 1, y: 0.35, speed: 0.0025, direction: -1, size: 50 },
-      { emoji: '🐟', x: 0, y: 0.55, speed: 0.0035, direction: 1, size: 45 },
-      { emoji: '🐠', x: 1, y: 0.70, speed: 0.0028, direction: -1, size: 50 },
-      { emoji: '🐡', x: 0, y: 0.25, speed: 0.0032, direction: 1, size: 48 }
+      { emoji: '🐠', x: 0, y: 0.20, speed: 0.0006, direction: 1, size: 60 },
+      { emoji: '🐡', x: 1, y: 0.40, speed: 0.0005, direction: -1, size: 58 },
+      { emoji: '🐟', x: 0, y: 0.60, speed: 0.0007, direction: 1, size: 55 },
+      { emoji: '🐠', x: 1, y: 0.75, speed: 0.00055, direction: -1, size: 60 },
+      { emoji: '🐡', x: 0, y: 0.30, speed: 0.00065, direction: 1, size: 57 }
     ];
     
-    // Initialize creatures (3 creatures)
+    // SLOWER CREATURES - 5x slower
     this.creatures = [
-      { emoji: '🦑', x: 0.85, y: 0.10, offsetY: 0, speed: 0.02, size: 45 },
-      { emoji: '🪼', x: 0.10, y: 0.45, offsetY: 0, speed: 0.025, size: 42 },
-      { emoji: '🦑', x: 0.80, y: 0.75, offsetY: 0, speed: 0.018, size: 45 }
+      { emoji: '🦑', x: 0.85, y: 0.15, offsetY: 0, speed: 0.004, size: 55 },
+      { emoji: '🪼', x: 0.15, y: 0.50, offsetY: 0, speed: 0.005, size: 52 },
+      { emoji: '🦑', x: 0.75, y: 0.70, offsetY: 0, speed: 0.0036, size: 55 }
     ];
     
-    // Initialize bubbles (10 bubbles)
+    // SLOWER BUBBLES - 5x slower
     this.bubbles = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 12; i++) {
       this.bubbles.push({
         x: Math.random(),
-        y: 1 + Math.random() * 0.2,
-        radius: 8 + Math.random() * 12,
-        speed: 0.003 + Math.random() * 0.005,
-        opacity: 0.3 + Math.random() * 0.4
+        y: 1 + Math.random() * 0.3,
+        radius: 10 + Math.random() * 15,
+        speed: 0.0006 + Math.random() * 0.001,
+        opacity: 0.7
       });
     }
     
-    // Initialize seaweed (7 pieces)
+    // SLOWER SEAWEED - 5x slower
     this.seaweed = [];
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 8; i++) {
       this.seaweed.push({
-        x: (i + 0.5) / 7,
+        x: (i + 0.5) / 8,
         angle: 0,
-        speed: 0.03 + Math.random() * 0.02
+        speed: 0.006 + Math.random() * 0.004
       });
     }
   }
@@ -409,7 +373,7 @@ class LiveUnderwaterPhotobooth {
       this.captureBtn.disabled = false;
       this.closeBtn.disabled = false;
       
-      alert('✅ Kamera live aktif! Pose sesuai dekorasi yang bergerak!');
+      alert('✅ Kamera live aktif! Pose dengan dekorasi yang bergerak perlahan!');
     } catch (err) {
       alert('⚠️ Gagal mengakses kamera: ' + err.message);
       console.error('Camera error:', err);
@@ -426,33 +390,30 @@ class LiveUnderwaterPhotobooth {
   }
   
   updateDecorations() {
-    const w = this.canvas.width;
-    const h = this.canvas.height;
-    
-    // Update fish positions
+    // Update fish - slow smooth movement
     this.fish.forEach(fish => {
       fish.x += fish.speed * fish.direction;
       if (fish.x > 1.2) fish.x = -0.2;
       if (fish.x < -0.2) fish.x = 1.2;
     });
     
-    // Update creatures (floating)
+    // Update creatures - slow gentle float
     this.creatures.forEach(creature => {
-      creature.offsetY = Math.sin(Date.now() * creature.speed / 1000) * 0.03;
+      creature.offsetY = Math.sin(Date.now() * creature.speed / 1000) * 0.04;
     });
     
-    // Update bubbles
+    // Update bubbles - slow rise
     this.bubbles.forEach(bubble => {
       bubble.y -= bubble.speed;
       if (bubble.y < -0.1) {
-        bubble.y = 1.1;
+        bubble.y = 1.2;
         bubble.x = Math.random();
       }
     });
     
-    // Update seaweed
+    // Update seaweed - slow gentle wave
     this.seaweed.forEach(weed => {
-      weed.angle = Math.sin(Date.now() * weed.speed / 1000) * 15;
+      weed.angle = Math.sin(Date.now() * weed.speed / 1000) * 12;
     });
   }
   
@@ -462,8 +423,8 @@ class LiveUnderwaterPhotobooth {
     
     this.ctx.clearRect(0, 0, w, h);
     
-    // Draw fish
-    this.ctx.font = 'bold ' + (w * 0.06) + 'px Arial';
+    // Draw fish - SOLID, NO TRANSPARENCY
+    this.ctx.font = 'bold ' + (w * 0.065) + 'px Arial';
     this.fish.forEach(fish => {
       this.ctx.save();
       const x = fish.x * w;
@@ -474,40 +435,36 @@ class LiveUnderwaterPhotobooth {
       this.ctx.restore();
     });
     
-    // Draw creatures
-    this.ctx.font = 'bold ' + (w * 0.055) + 'px Arial';
-    this.ctx.globalAlpha = 0.9;
+    // Draw creatures - SOLID, NO TRANSPARENCY
+    this.ctx.font = 'bold ' + (w * 0.06) + 'px Arial';
     this.creatures.forEach(creature => {
       const x = creature.x * w;
       const y = (creature.y + creature.offsetY) * h;
       this.ctx.fillText(creature.emoji, x - creature.size/2, y + creature.size/2);
     });
-    this.ctx.globalAlpha = 1;
     
-    // Draw bubbles
+    // Draw bubbles - MORE VISIBLE
     this.bubbles.forEach(bubble => {
       this.ctx.beginPath();
       this.ctx.arc(bubble.x * w, bubble.y * h, bubble.radius, 0, Math.PI * 2);
-      this.ctx.fillStyle = 'rgba(255, 255, 255, ' + (bubble.opacity * 0.3) + ')';
+      this.ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
       this.ctx.fill();
-      this.ctx.strokeStyle = 'rgba(255, 255, 255, ' + (bubble.opacity * 0.6) + ')';
-      this.ctx.lineWidth = 2;
+      this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.9)';
+      this.ctx.lineWidth = 3;
       this.ctx.stroke();
     });
     
-    // Draw seaweed
-    this.ctx.font = 'bold ' + (w * 0.08) + 'px Arial';
-    this.ctx.globalAlpha = 0.7;
+    // Draw seaweed - SOLID
+    this.ctx.font = 'bold ' + (w * 0.09) + 'px Arial';
     this.seaweed.forEach(weed => {
       this.ctx.save();
       const x = weed.x * w;
-      const y = h - 40;
+      const y = h - 50;
       this.ctx.translate(x, y);
       this.ctx.rotate(weed.angle * Math.PI / 180);
-      this.ctx.fillText('🌿', -30, 0);
+      this.ctx.fillText('🌿', -35, 0);
       this.ctx.restore();
     });
-    this.ctx.globalAlpha = 1;
   }
   
   capturePhoto() {
@@ -516,13 +473,12 @@ class LiveUnderwaterPhotobooth {
       return;
     }
     
-    // Create capture canvas
     const captureCanvas = document.createElement('canvas');
     captureCanvas.width = this.video.videoWidth;
     captureCanvas.height = this.video.videoHeight;
     const captureCtx = captureCanvas.getContext('2d');
     
-    // Draw video frame (mirrored)
+    // Draw mirrored video
     captureCtx.save();
     captureCtx.scale(-1, 1);
     captureCtx.drawImage(this.video, -captureCanvas.width, 0, captureCanvas.width, captureCanvas.height);
@@ -531,22 +487,12 @@ class LiveUnderwaterPhotobooth {
     // Draw decorations overlay
     captureCtx.drawImage(this.canvas, 0, 0);
     
-    // Draw title
-    captureCtx.font = 'bold ' + (captureCanvas.width * 0.08) + 'px Comic Sans MS';
-    captureCtx.fillStyle = '#ff69b4';
-    captureCtx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
-    captureCtx.lineWidth = 3;
-    captureCtx.textAlign = 'center';
-    const titleY = captureCanvas.height * 0.08;
-    captureCtx.strokeText('UNDER SEA', captureCanvas.width / 2, titleY);
-    captureCtx.fillText('UNDER SEA', captureCanvas.width / 2, titleY);
-    
     // Save photo
     const photoData = captureCanvas.toDataURL('image/png');
     this.photos.push(photoData);
     this.updateGallery();
     
-    alert('✅ Foto berhasil diambil! (' + this.photos.length + '/' + this.maxPhotos + ')');
+    alert('✅ Foto berhasil! (' + this.photos.length + '/' + this.maxPhotos + ')');
   }
   
   updateGallery() {
