@@ -10,12 +10,12 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
     const loadScript = () => {
       return new Promise((resolve) => {
-        if ((window as any).html2canvas) {
+        if ((window as any).domtoimage) {
           resolve(true);
           return;
         }
         const script = document.createElement("script");
-        script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js";
         script.onload = () => resolve(true);
         document.head.appendChild(script);
       });
@@ -96,31 +96,28 @@ const PHOTOBOOTH_HTML = `
     </div>
 
     <div class="photobooth-frame" id="photobooth-frame">
-        <!-- Decorations that will be hidden during screenshot -->
-        <div class="photobooth-decorations">
-            <div class="photobooth-fish swim1">🐠</div>
-            <div class="photobooth-fish swim2">🐡</div>
-            <div class="photobooth-fish swim3">🐟</div>
-            <div class="photobooth-fish swim4">🐠</div>
-            <div class="photobooth-fish swim5">🐡</div>
-            
-            <div class="photobooth-creature float1">🦑</div>
-            <div class="photobooth-creature float2">🪼</div>
-            <div class="photobooth-creature float3">🦑</div>
-            
-            <div class="photobooth-bubble rise1"></div>
-            <div class="photobooth-bubble rise2"></div>
-            <div class="photobooth-bubble rise3"></div>
-            <div class="photobooth-bubble rise4"></div>
-            <div class="photobooth-bubble rise5"></div>
-            <div class="photobooth-bubble rise6"></div>
-            <div class="photobooth-bubble rise7"></div>
-            <div class="photobooth-bubble rise8"></div>
+        <div class="photobooth-fish swim1">🐠</div>
+        <div class="photobooth-fish swim2">🐡</div>
+        <div class="photobooth-fish swim3">🐟</div>
+        <div class="photobooth-fish swim4">🐠</div>
+        <div class="photobooth-fish swim5">🐡</div>
+        
+        <div class="photobooth-creature float1">🦑</div>
+        <div class="photobooth-creature float2">🪼</div>
+        <div class="photobooth-creature float3">🦑</div>
+        
+        <div class="photobooth-bubble rise1"></div>
+        <div class="photobooth-bubble rise2"></div>
+        <div class="photobooth-bubble rise3"></div>
+        <div class="photobooth-bubble rise4"></div>
+        <div class="photobooth-bubble rise5"></div>
+        <div class="photobooth-bubble rise6"></div>
+        <div class="photobooth-bubble rise7"></div>
+        <div class="photobooth-bubble rise8"></div>
 
-            <div class="photobooth-shell shell1">🐚</div>
-            <div class="photobooth-shell shell2">🐚</div>
-            <div class="photobooth-shell shell3">🪨</div>
-        </div>
+        <div class="photobooth-shell shell1">🐚</div>
+        <div class="photobooth-shell shell2">🐚</div>
+        <div class="photobooth-shell shell3">🪨</div>
 
         <div class="photobooth-header">
             <div class="photobooth-title">UNDER SEA</div>
@@ -182,9 +179,6 @@ const PHOTOBOOTH_CSS = `
   margin-bottom: 30px;
   overflow: hidden;
 }
-
-/* Decorations container - will be hidden during screenshot */
-.photobooth-decorations { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
 
 .photobooth-header { text-align: center; margin-bottom: 25px; position: relative; z-index: 10; }
 .photobooth-title { 
@@ -305,12 +299,6 @@ const PHOTOBOOTH_CSS = `
   50% { transform: rotate(8deg) scaleY(1.1); }
 }
 
-/* Hide decorations during screenshot */
-.photobooth-frame.capturing .photobooth-decorations,
-.photobooth-frame.capturing .photobooth-seaweed-container {
-  display: none !important;
-}
-
 .photobooth-btn { padding: 12px 24px; border: 2px solid #00897b; background: white; color: #00897b; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block; text-align: center; text-decoration: none; }
 .photobooth-btn:hover:not(:disabled) { background: #00897b; color: white; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
 .photobooth-btn:active:not(:disabled) { transform: translateY(0); }
@@ -421,7 +409,7 @@ class UnderwaterPhotobooth {
   
   updatePhotoSlot(slotNum) {
     const slot = document.getElementById(\`photobooth-photo\${slotNum}\`);
-    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" alt="Photo \${slotNum}">\`;
+    if (this.photos[slotNum]) slot.innerHTML = \`<img src="\${this.photos[slotNum]}" crossorigin="anonymous" alt="Photo \${slotNum}">\`;
     if (this.photoCount > 0) { 
       this.downloadBtn.disabled = false; 
       this.clearBtn.disabled = false; 
@@ -439,7 +427,7 @@ class UnderwaterPhotobooth {
   reset() { this.clearAll(); }
   
   downloadFrame() {
-    if (typeof html2canvas === 'undefined') { 
+    if (typeof domtoimage === 'undefined') { 
       alert('⚠️ Tunggu sebentar...'); 
       setTimeout(() => this.downloadFrame(), 2000);
       return; 
@@ -448,40 +436,33 @@ class UnderwaterPhotobooth {
     this.downloadBtn.disabled = true; 
     this.downloadBtn.textContent = '⏳ Memproses...';
     
-    // CRITICAL FIX: Hide emoji decorations before screenshot
-    this.photoboothFrame.classList.add('capturing');
-    
-    setTimeout(() => {
-      html2canvas(this.photoboothFrame, { 
-        backgroundColor: '#4db8e8',
-        scale: 2,
-        logging: false
-      }).then(canvas => {
-        // Show decorations back
-        this.photoboothFrame.classList.remove('capturing');
-        
-        try {
-          const link = document.createElement('a');
-          link.href = canvas.toDataURL('image/png');
-          link.download = \`underwater-photobooth-\${Date.now()}.png\`;
-          link.click();
-          this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
-          this.downloadBtn.disabled = false;
-          alert('✅ Download berhasil!');
-        } catch (err) {
-          console.error('Download error:', err);
-          alert('❌ Gagal download!');
-          this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
-          this.downloadBtn.disabled = false;
-        }
-      }).catch(err => { 
-        this.photoboothFrame.classList.remove('capturing');
-        console.error('html2canvas error:', err); 
-        alert('❌ Gagal membuat gambar!'); 
-        this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
-        this.downloadBtn.disabled = false; 
-      });
-    }, 100);
+    // Use dom-to-image - better emoji support!
+    domtoimage.toPng(this.photoboothFrame, { 
+      quality: 1,
+      width: this.photoboothFrame.offsetWidth * 2,
+      height: this.photoboothFrame.offsetHeight * 2,
+      style: {
+        transform: 'scale(2)',
+        transformOrigin: 'top left',
+        width: this.photoboothFrame.offsetWidth + 'px',
+        height: this.photoboothFrame.offsetHeight + 'px'
+      }
+    })
+    .then((dataUrl) => {
+      const link = document.createElement('a');
+      link.download = \`underwater-photobooth-\${Date.now()}.png\`;
+      link.href = dataUrl;
+      link.click();
+      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+      this.downloadBtn.disabled = false;
+      alert('✅ Download berhasil!');
+    })
+    .catch((err) => {
+      console.error('dom-to-image error:', err);
+      alert('❌ Gagal download. Coba lagi!');
+      this.downloadBtn.textContent = '⬇️ DOWNLOAD FRAME'; 
+      this.downloadBtn.disabled = false;
+    });
   }
 }
 
