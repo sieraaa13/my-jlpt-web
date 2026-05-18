@@ -70,19 +70,16 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
 const PHOTOBOOTH_HTML = `
 <div id="template-photobooth">
-    <!-- Camera View -->
     <div class="camera-section" id="camera-section">
         <video id="camera-video" autoplay playsinline muted></video>
         <div class="camera-hint">📸 Posisikan wajah kamu dengan baik</div>
     </div>
 
-    <!-- Template Preview with Photos -->
     <div class="template-section" id="template-section">
         <canvas id="template-canvas"></canvas>
-        <div class="template-hint">👆 Hasil foto kamu akan muncul di sini!</div>
+        <div class="template-hint" id="template-hint">⏳ Loading template...</div>
     </div>
 
-    <!-- Controls -->
     <div class="controls-section">
         <button id="start-camera-btn" class="btn btn-primary">
             📷 BUKA KAMERA
@@ -246,6 +243,7 @@ class TemplatePhotobooth {
     this.photos = [];
     this.maxPhotos = 2;
     this.templateImg = null;
+    this.templateLoaded = false;
     
     this.initElements();
     this.loadTemplate();
@@ -256,7 +254,7 @@ class TemplatePhotobooth {
     this.video = document.getElementById('camera-video');
     this.canvas = document.getElementById('template-canvas');
     this.ctx = this.canvas.getContext('2d');
-    this.cameraSection = document.getElementById('camera-section');
+    this.hintEl = document.getElementById('template-hint');
     this.startBtn = document.getElementById('start-camera-btn');
     this.captureBtn = document.getElementById('capture-photo-btn');
     this.resetBtn = document.getElementById('reset-btn');
@@ -265,122 +263,82 @@ class TemplatePhotobooth {
   }
   
   loadTemplate() {
+    this.hintEl.textContent = '⏳ Loading template...';
+    
     this.templateImg = new Image();
     this.templateImg.crossOrigin = 'anonymous';
+    
     this.templateImg.onload = () => {
+      console.log('✅ Template loaded!', this.templateImg.width, 'x', this.templateImg.height);
       this.canvas.width = this.templateImg.width;
       this.canvas.height = this.templateImg.height;
-      this.drawTemplate();
+      this.templateLoaded = true;
+      this.hintEl.textContent = '👆 Hasil foto kamu akan muncul di sini!';
+      this.drawComposite();
     };
-    // Load the sample template image
-    this.templateImg.src = '/asset/underwater-template.png';
     
-    // For demo, create a colored template
-    setTimeout(() => {
-      if (!this.templateImg.complete) {
-        this.createDemoTemplate();
-      }
-    }, 100);
+    this.templateImg.onerror = (err) => {
+      console.error('❌ Failed to load template:', err);
+      this.hintEl.textContent = '❌ Gagal load template!';
+      alert('Gagal load template image! Pastikan file ada di /public/asset/underwater-template.png');
+    };
+    
+    // CRITICAL: Load the actual template image
+    this.templateImg.src = '/asset/underwater-template.png';
   }
   
-  createDemoTemplate() {
-    // Create demo template if image fails to load
-    this.canvas.width = 800;
-    this.canvas.height = 600;
-    this.drawTemplate();
-  }
-  
-  drawTemplate() {
+  drawComposite() {
+    if (!this.templateLoaded) {
+      console.log('⏳ Template not loaded yet');
+      return;
+    }
+    
+    // Clear canvas
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
-    // Draw background gradient (ocean theme)
-    const gradient = this.ctx.createLinearGradient(0, 0, 0, this.canvas.height);
-    gradient.addColorStop(0, '#B8E6F0');
-    gradient.addColorStop(1, '#87CEEB');
-    this.ctx.fillStyle = gradient;
-    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    // Draw template image as background
+    this.ctx.drawImage(this.templateImg, 0, 0, this.canvas.width, this.canvas.height);
     
-    // Draw decorative frame (left side)
-    this.ctx.fillStyle = '#FFB6C1';
-    this.ctx.fillRect(20, 20, this.canvas.width * 0.35, this.canvas.height - 40);
-    
-    // Draw title
-    this.ctx.font = 'bold 32px Comic Sans MS';
-    this.ctx.fillStyle = '#FF69B4';
-    this.ctx.textAlign = 'center';
-    this.ctx.fillText('UNDER SEA', this.canvas.width * 0.2, 60);
-    
-    // Draw decorative slots
-    this.ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
-    this.ctx.fillRect(40, 100, this.canvas.width * 0.3, 80);
-    this.ctx.fillRect(40, 200, this.canvas.width * 0.3, 80);
-    this.ctx.fillRect(40, 300, this.canvas.width * 0.3, 80);
-    
-    // Draw seaweed emoji
-    this.ctx.font = 'bold 40px Arial';
-    this.ctx.fillText('🌿🌿🌿', this.canvas.width * 0.2, this.canvas.height - 30);
-    
-    // Draw fish emoji
-    this.ctx.fillText('🐠', this.canvas.width * 0.15, 150);
-    this.ctx.fillText('🐡', this.canvas.width * 0.25, 250);
-    this.ctx.fillText('🦑', this.canvas.width * 0.15, 350);
-    
-    // Draw photo frame placeholders (right side - tilted)
-    this.drawPhotoFramePlaceholder(0);
-    this.drawPhotoFramePlaceholder(1);
-    
-    // Draw user photos if any
-    this.photos.forEach((photo, index) => {
-      this.drawUserPhoto(photo, index);
+    // Draw user photos on top
+    this.photos.forEach((photoData, index) => {
+      this.drawUserPhoto(photoData, index);
     });
   }
   
-  drawPhotoFramePlaceholder(index) {
-    const positions = [
-      { x: 500, y: 100, width: 220, height: 165, rotate: 8 },
-      { x: 520, y: 320, width: 220, height: 165, rotate: -5 }
-    ];
-    
-    const pos = positions[index];
-    this.ctx.save();
-    this.ctx.translate(pos.x + pos.width/2, pos.y + pos.height/2);
-    this.ctx.rotate(pos.rotate * Math.PI / 180);
-    
-    // Draw frame border
-    this.ctx.fillStyle = 'white';
-    this.ctx.fillRect(-pos.width/2 - 15, -pos.height/2 - 15, pos.width + 30, pos.height + 50);
-    
-    // Draw inner placeholder
-    if (!this.photos[index]) {
-      this.ctx.fillStyle = '#E0E0E0';
-      this.ctx.fillRect(-pos.width/2, -pos.height/2, pos.width, pos.height);
-      
-      // Draw text
-      this.ctx.fillStyle = '#999';
-      this.ctx.font = 'bold 16px Arial';
-      this.ctx.textAlign = 'center';
-      this.ctx.fillText('Foto ' + (index + 1), 0, 0);
-    }
-    
-    this.ctx.restore();
-  }
-  
   drawUserPhoto(photoData, index) {
+    // Photo frame positions (adjust these to match your template!)
+    // Based on template size (adjust X, Y, width, height, rotation)
     const positions = [
-      { x: 500, y: 100, width: 220, height: 165, rotate: 8 },
-      { x: 520, y: 320, width: 220, height: 165, rotate: -5 }
+      // Photo 1: Top right, rotated 8 degrees
+      { 
+        x: this.canvas.width * 0.62,  // 62% from left
+        y: this.canvas.height * 0.17,  // 17% from top
+        width: this.canvas.width * 0.28, 
+        height: this.canvas.height * 0.28, 
+        rotate: 8 
+      },
+      // Photo 2: Bottom right, rotated -5 degrees
+      { 
+        x: this.canvas.width * 0.65,  // 65% from left
+        y: this.canvas.height * 0.53,  // 53% from top
+        width: this.canvas.width * 0.28, 
+        height: this.canvas.height * 0.28, 
+        rotate: -5 
+      }
     ];
     
     const pos = positions[index];
+    if (!pos) return;
+    
     const img = new Image();
     img.onload = () => {
       this.ctx.save();
-      this.ctx.translate(pos.x + pos.width/2, pos.y + pos.height/2);
-      this.ctx.rotate(pos.rotate * Math.PI / 180);
       
-      // Draw white frame
-      this.ctx.fillStyle = 'white';
-      this.ctx.fillRect(-pos.width/2 - 15, -pos.height/2 - 15, pos.width + 30, pos.height + 50);
+      // Move to center of photo position
+      this.ctx.translate(pos.x + pos.width/2, pos.y + pos.height/2);
+      
+      // Rotate
+      this.ctx.rotate(pos.rotate * Math.PI / 180);
       
       // Draw photo
       this.ctx.drawImage(img, -pos.width/2, -pos.height/2, pos.width, pos.height);
@@ -438,7 +396,7 @@ class TemplatePhotobooth {
     this.photos.push(photoData);
     
     this.updateUI();
-    this.drawTemplate();
+    this.drawComposite();
     
     const remaining = this.maxPhotos - this.photos.length;
     if (remaining === 0) {
@@ -458,7 +416,7 @@ class TemplatePhotobooth {
   reset() {
     if (confirm('Reset semua foto?')) {
       this.photos = [];
-      this.drawTemplate();
+      this.drawComposite();
       this.updateUI();
       this.captureBtn.disabled = this.stream ? false : true;
     }
