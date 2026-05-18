@@ -55,7 +55,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               🎥 UNDERWATER PHOTOBOOTH 🌊
             </h2>
             <p className="text-sm text-gray-400">
-              Ambil foto dan lihat hasilnya di template underwater!
+              Ambil 2 foto dan lihat hasilnya menutupi template!
             </p>
           </div>
 
@@ -273,30 +273,25 @@ class TemplatePhotobooth {
       this.canvas.width = this.templateImg.width;
       this.canvas.height = this.templateImg.height;
       this.templateLoaded = true;
-      this.hintEl.textContent = '👆 Hasil foto kamu akan muncul di sini!';
+      this.hintEl.textContent = '👆 Ambil 2 foto untuk menutupi frame!';
       this.drawComposite();
     };
     
     this.templateImg.onerror = (err) => {
       console.error('❌ Failed to load template:', err);
       this.hintEl.textContent = '❌ Gagal load template!';
-      alert('Gagal load template image! Pastikan file ada di /public/asset/underwater-template.png');
+      alert('Gagal load template! Pastikan /public/asset/underwater-template.png ada!');
     };
     
-    // CRITICAL: Load the actual template image
     this.templateImg.src = '/asset/underwater-template.png';
   }
   
   drawComposite() {
-    if (!this.templateLoaded) {
-      console.log('⏳ Template not loaded yet');
-      return;
-    }
+    if (!this.templateLoaded) return;
     
-    // Clear canvas
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
-    // Draw template image as background
+    // Draw template image
     this.ctx.drawImage(this.templateImg, 0, 0, this.canvas.width, this.canvas.height);
     
     // Draw user photos on top
@@ -306,24 +301,27 @@ class TemplatePhotobooth {
   }
   
   drawUserPhoto(photoData, index) {
-    // Photo frame positions (adjust these to match your template!)
-    // Based on template size (adjust X, Y, width, height, rotation)
+    // FINE-TUNED POSITIONS to cover template frames exactly
+    // Adjust these values to perfectly align with your template
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+    
     const positions = [
-      // Photo 1: Top right, rotated 8 degrees
+      // Photo 1: Top right frame (tilted right ~8 degrees)
       { 
-        x: this.canvas.width * 0.62,  // 62% from left
-        y: this.canvas.height * 0.17,  // 17% from top
-        width: this.canvas.width * 0.28, 
-        height: this.canvas.height * 0.28, 
-        rotate: 8 
+        x: w * 0.605,      // Shifted left to cover frame
+        y: h * 0.145,      // Shifted up to cover frame
+        width: w * 0.325,  // Bigger to cover frame fully
+        height: h * 0.33,  // Bigger to cover frame fully
+        rotate: 8          // Match template rotation
       },
-      // Photo 2: Bottom right, rotated -5 degrees
+      // Photo 2: Bottom right frame (tilted left ~-5 degrees)
       { 
-        x: this.canvas.width * 0.65,  // 65% from left
-        y: this.canvas.height * 0.53,  // 53% from top
-        width: this.canvas.width * 0.28, 
-        height: this.canvas.height * 0.28, 
-        rotate: -5 
+        x: w * 0.62,       // Shifted left to cover frame
+        y: h * 0.505,      // Shifted up to cover frame
+        width: w * 0.325,  // Bigger to cover frame fully
+        height: h * 0.33,  // Bigger to cover frame fully
+        rotate: -5         // Match template rotation
       }
     ];
     
@@ -337,10 +335,10 @@ class TemplatePhotobooth {
       // Move to center of photo position
       this.ctx.translate(pos.x + pos.width/2, pos.y + pos.height/2);
       
-      // Rotate
+      // Rotate to match template frame angle
       this.ctx.rotate(pos.rotate * Math.PI / 180);
       
-      // Draw photo
+      // Draw user photo
       this.ctx.drawImage(img, -pos.width/2, -pos.height/2, pos.width, pos.height);
       
       this.ctx.restore();
@@ -369,7 +367,7 @@ class TemplatePhotobooth {
       this.startBtn.disabled = true;
       this.captureBtn.disabled = false;
       
-      alert('✅ Kamera aktif! Posisikan wajah kamu lalu klik AMBIL FOTO!');
+      alert('✅ Kamera aktif! Ambil 2 foto untuk menutupi frame di template!');
     } catch (err) {
       alert('⚠️ Gagal mengakses kamera: ' + err.message);
     }
@@ -400,10 +398,11 @@ class TemplatePhotobooth {
     
     const remaining = this.maxPhotos - this.photos.length;
     if (remaining === 0) {
-      alert('✅ Foto lengkap! Klik DOWNLOAD untuk menyimpan hasil!');
+      alert('✅ Foto lengkap! Frame sudah tertutup! Klik DOWNLOAD!');
       this.captureBtn.disabled = true;
+      this.hintEl.textContent = '✅ Frame tertutup! Klik DOWNLOAD!';
     } else {
-      alert('✅ Foto ' + this.photos.length + ' berhasil! Ambil ' + remaining + ' foto lagi!');
+      alert('✅ Foto ' + this.photos.length + '! Ambil ' + remaining + ' foto lagi!');
     }
   }
   
@@ -419,6 +418,7 @@ class TemplatePhotobooth {
       this.drawComposite();
       this.updateUI();
       this.captureBtn.disabled = this.stream ? false : true;
+      this.hintEl.textContent = '👆 Ambil 2 foto untuk menutupi frame!';
     }
   }
   
