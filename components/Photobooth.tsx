@@ -273,7 +273,7 @@ class TemplatePhotobooth {
       this.drawTemplate();
     };
     // Load the sample template image
-    this.templateImg.src = '/api/placeholder/800/600'; // This will be replaced with actual template
+    this.templateImg.src = '/asset/underwater-template.png';
     
     // For demo, create a colored template
     setTimeout(() => {
