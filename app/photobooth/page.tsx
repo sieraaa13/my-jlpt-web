@@ -1,381 +1,497 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
-import Image from "next/image";
+import { useEffect, useRef } from "react";
 
-// ────────────────────────────────────────────────
-// Data template (sesuaikan path dengan file di /public/asset/photobooth/)
-// ────────────────────────────────────────────────
-const TEMPLATES = [
-  {
-    id: "templates",
-    name: "Kawaii Sticker",
-    emoji: "⭐",
-    desc: "Gaya stiker imut ala Jepang",
-    preview: "/asset/photobooth/templates.png",
-  },
-  {
-    id: "underwater",
-    name: "Underwater",
-    emoji: "🌊",
-    desc: "Putri duyung di lautan ajaib",
-    preview: "/asset/photobooth/underwater-template.png",
-  },
-  {
-    id: "sakura",
-    name: "Sakura",
-    emoji: "🌸",
-    desc: "Festival bunga sakura musim semi",
-    preview: null, // belum punya template, pakai warna saja
-  },
-  {
-    id: "school",
-    name: "School Life",
-    emoji: "📚",
-    desc: "Kehidupan sekolah ala anime",
-    preview: null,
-  },
-  {
-    id: "harajuku",
-    name: "Harajuku",
-    emoji: "🎨",
-    desc: "Fashion jalanan Harajuku Tokyo",
-    preview: null,
-  },
-  {
-    id: "kimono",
-    name: "Kimono",
-    emoji: "👘",
-    desc: "Anggun dalam kimono tradisional",
-    preview: null,
-  },
-];
+export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const initRef = useRef(false);
 
-export default function PhotoboothPage() {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [selectedTemplate, setSelectedTemplate] = useState("templates");
-  const [resultUrl, setResultUrl] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (!isOpen) return;
 
-  // ── Handle file select ──
-  const handleFile = useCallback((file: File) => {
-    if (!file.type.startsWith("image/")) {
-      setError("File harus berupa gambar (JPG, PNG, WEBP)");
-      return;
+    const init = async () => {
+      if (initRef.current) return;
+      
+      setTimeout(() => {
+        if (!(window as any).TemplatePhotobooth) {
+          eval(PHOTOBOOTH_JS);
+        }
+        if (!(window as any).photobooth && (window as any).TemplatePhotobooth) {
+          (window as any).photobooth = new (window as any).TemplatePhotobooth();
+          console.log("✅ Template Photobooth initialized");
+        }
+        initRef.current = true;
+      }, 300);
+    };
+
+    init();
+
+    return () => {
+      if ((window as any).photobooth?.stream) {
+        (window as any).photobooth.stream.getTracks().forEach((track: any) => track.stop());
+      }
+    };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
+
+  return (
+    <>
+      <div 
+        className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 overflow-y-auto"
+        onClick={(e) => {
+          if (e.target === e.currentTarget) onClose();
+        }}
+      >
+        <div className="relative bg-gray-900 rounded-2xl p-6 max-w-5xl w-full">
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all"
+          >
+            ×
+          </button>
+
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold text-white mb-2">
+              🎥 UNDERWATER PHOTOBOOTH 🌊
+            </h2>
+            <p className="text-sm text-gray-400">
+              Ambil foto → AI anime-kan → masuk ke template!
+            </p>
+          </div>
+
+          <div dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
+        </div>
+      </div>
+
+      <style jsx global>{PHOTOBOOTH_CSS}</style>
+    </>
+  );
+}
+
+const PHOTOBOOTH_HTML = `
+<div id="template-photobooth">
+    <div class="camera-section" id="camera-section">
+        <video id="camera-video" autoplay playsinline muted></video>
+        <div class="camera-hint">📸 Posisikan wajah kamu dengan baik</div>
+    </div>
+
+    <div class="template-section" id="template-section">
+        <canvas id="template-canvas"></canvas>
+        <div class="template-hint" id="template-hint">⏳ Loading template...</div>
+    </div>
+
+    <div class="ai-loading-overlay" id="ai-loading-overlay" style="display:none;">
+        <div class="ai-loading-box">
+            <div class="ai-spinner"></div>
+            <p class="ai-loading-text" id="ai-loading-text">✨ AI sedang anime-kan foto kamu...</p>
+            <p class="ai-loading-sub">Tunggu 30–60 detik ya!</p>
+        </div>
+    </div>
+
+    <div class="controls-section">
+        <button id="start-camera-btn" class="btn btn-primary">
+            📷 BUKA KAMERA
+        </button>
+        <button id="capture-photo-btn" class="btn btn-capture" disabled>
+            📸 AMBIL & ANIME-KAN <span id="photo-count">(0/2)</span>
+        </button>
+        <button id="reset-btn" class="btn btn-secondary" disabled>
+            🔄 RESET
+        </button>
+        <button id="download-btn" class="btn btn-download" disabled>
+            ⬇️ DOWNLOAD HASIL
+        </button>
+    </div>
+</div>
+`;
+
+const PHOTOBOOTH_CSS = `
+#template-photobooth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.camera-section {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid #2a8ab8;
+}
+
+#camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.camera-hint {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.template-section {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid #FFB6C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#template-canvas {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.template-hint {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 182, 193, 0.9);
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.ai-loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  grid-column: 1 / -1;
+}
+
+.ai-loading-box {
+  text-align: center;
+  padding: 2rem;
+}
+
+.ai-spinner {
+  width: 64px;
+  height: 64px;
+  border: 5px solid rgba(255, 105, 180, 0.3);
+  border-top-color: #ff69b4;
+  border-radius: 50%;
+  animation: pb-spin 1s linear infinite;
+  margin: 0 auto 1.2rem;
+}
+
+@keyframes pb-spin {
+  to { transform: rotate(360deg); }
+}
+
+.ai-loading-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ai-loading-sub {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.controls-section {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00897b 0%, #00695c 100%);
+  color: white;
+}
+
+.btn-capture {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  font-size: 18px;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #757575 0%, #616161 100%);
+  color: white;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+}
+
+#photo-count {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 968px) {
+  #template-photobooth {
+    grid-template-columns: 1fr;
+  }
+  .controls-section {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+`;
+
+const PHOTOBOOTH_JS = `
+class TemplatePhotobooth {
+  constructor() {
+    this.stream = null;
+    this.photos = [];
+    this.maxPhotos = 2;
+    this.templateImg = null;
+    this.templateLoaded = false;
+    this.isGenerating = false;
+    
+    this.initElements();
+    this.loadTemplate();
+    this.attachEventListeners();
+  }
+  
+  initElements() {
+    this.video          = document.getElementById('camera-video');
+    this.canvas         = document.getElementById('template-canvas');
+    this.ctx            = this.canvas.getContext('2d');
+    this.hintEl         = document.getElementById('template-hint');
+    this.startBtn       = document.getElementById('start-camera-btn');
+    this.captureBtn     = document.getElementById('capture-photo-btn');
+    this.resetBtn       = document.getElementById('reset-btn');
+    this.downloadBtn    = document.getElementById('download-btn');
+    this.photoCountEl   = document.getElementById('photo-count');
+    this.loadingOverlay = document.getElementById('ai-loading-overlay');
+    this.loadingText    = document.getElementById('ai-loading-text');
+  }
+  
+  loadTemplate() {
+    this.hintEl.textContent = '⏳ Loading template...';
+    
+    this.templateImg = new Image();
+    this.templateImg.crossOrigin = 'anonymous';
+    
+    this.templateImg.onload = () => {
+      console.log('✅ Template loaded!', this.templateImg.width, 'x', this.templateImg.height);
+      this.canvas.width = this.templateImg.width;
+      this.canvas.height = this.templateImg.height;
+      this.templateLoaded = true;
+      this.hintEl.textContent = '👆 Ambil 2 foto, AI akan anime-kan!';
+      this.drawComposite();
+    };
+    
+    this.templateImg.onerror = (err) => {
+      console.error('❌ Failed to load template:', err);
+      this.hintEl.textContent = '❌ Gagal load template!';
+    };
+    
+    this.templateImg.src = '/asset/underwater-template.png';
+  }
+  
+  drawComposite() {
+    if (!this.templateLoaded) return;
+    
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.ctx.drawImage(this.templateImg, 0, 0, this.canvas.width, this.canvas.height);
+    
+    this.photos.forEach((photoData, index) => {
+      this.drawUserPhoto(photoData, index);
+    });
+  }
+  
+  drawUserPhoto(photoData, index) {
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+    
+    const positions = [
+      { 
+        x: w * 0.605,
+        y: h * 0.145,
+        width: w * 0.325,
+        height: h * 0.33,
+        rotate: 8
+      },
+      { 
+        x: w * 0.62,
+        y: h * 0.505,
+        width: w * 0.325,
+        height: h * 0.33,
+        rotate: -5
+      }
+    ];
+    
+    const pos = positions[index];
+    if (!pos) return;
+    
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      this.ctx.save();
+      this.ctx.translate(pos.x + pos.width / 2, pos.y + pos.height / 2);
+      this.ctx.rotate(pos.rotate * Math.PI / 180);
+      this.ctx.drawImage(img, -pos.width / 2, -pos.height / 2, pos.width, pos.height);
+      this.ctx.restore();
+    };
+    img.src = photoData;
+  }
+  
+  attachEventListeners() {
+    this.startBtn.addEventListener('click',    () => this.startCamera());
+    this.captureBtn.addEventListener('click',  () => this.capturePhoto());
+    this.resetBtn.addEventListener('click',    () => this.reset());
+    this.downloadBtn.addEventListener('click', () => this.download());
+  }
+  
+  async startCamera() {
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          facingMode: 'user',
+          width: { ideal: 1280 },
+          height: { ideal: 720 }
+        }
+      });
+      
+      this.video.srcObject = this.stream;
+      this.startBtn.disabled   = true;
+      this.captureBtn.disabled = false;
+    } catch (err) {
+      alert('⚠️ Gagal mengakses kamera: ' + err.message);
     }
-    if (file.size > 5 * 1024 * 1024) {
-      setError("Ukuran foto maksimal 5MB");
-      return;
-    }
-    setError(null);
-    setResultUrl(null);
-    setSelectedFile(file);
-    setPreviewUrl(URL.createObjectURL(file));
-  }, []);
+  }
+  
+  async capturePhoto() {
+    if (this.photos.length >= this.maxPhotos || this.isGenerating) return;
+    
+    // 1. Capture dari webcam
+    const captureCanvas = document.createElement('canvas');
+    captureCanvas.width  = this.video.videoWidth;
+    captureCanvas.height = this.video.videoHeight;
+    const ctx = captureCanvas.getContext('2d');
+    ctx.save();
+    ctx.scale(-1, 1);
+    ctx.drawImage(this.video, -captureCanvas.width, 0);
+    ctx.restore();
+    const base64 = captureCanvas.toDataURL('image/jpeg', 0.85);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) handleFile(file);
-  };
-
-  // ── Drag & drop ──
-  const handleDragOver = (e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
-  const handleDragLeave = () => setIsDragging(false);
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragging(false);
-    const file = e.dataTransfer.files?.[0];
-    if (file) handleFile(file);
-  };
-
-  // ── Generate ──
-  const handleGenerate = async () => {
-    if (!selectedFile) return;
-    setIsLoading(true);
-    setError(null);
-    setResultUrl(null);
+    // 2. Tampilkan loading overlay
+    this.isGenerating = true;
+    this.captureBtn.disabled = true;
+    this.loadingText.textContent = '✨ AI sedang anime-kan foto ' + (this.photos.length + 1) + '...';
+    this.loadingOverlay.style.display = 'flex';
 
     try {
-      const form = new FormData();
-      form.append("image", selectedFile);
-      form.append("template", selectedTemplate);
-
-      const res = await fetch("/api/photobooth", {
-        method: "POST",
-        body: form,
+      // 3. Kirim ke API → Replicate
+      const res = await fetch('/api/photobooth/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: base64, template: 'underwater' })
       });
 
       const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.error || 'Generate gagal');
 
-      if (!res.ok || !data.success) {
-        throw new Error(data.error ?? "Gagal generate. Coba lagi!");
+      // 4. Hasil AI ditempel ke canvas template
+      this.photos.push(data.imageUrl);
+      this.drawComposite();
+      this.updateUI();
+
+      const remaining = this.maxPhotos - this.photos.length;
+      if (remaining === 0) {
+        this.captureBtn.disabled = true;
+        this.hintEl.textContent  = '✅ Selesai! Klik DOWNLOAD!';
+      } else {
+        this.captureBtn.disabled = false;
+        this.hintEl.textContent  = '✅ Foto ' + this.photos.length + ' berhasil! Ambil ' + remaining + ' lagi!';
       }
 
-      setResultUrl(data.imageUrl);
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "Terjadi kesalahan.");
+    } catch (err) {
+      alert('❌ ' + err.message);
+      this.captureBtn.disabled = false;
     } finally {
-      setIsLoading(false);
+      this.isGenerating = false;
+      this.loadingOverlay.style.display = 'none';
     }
-  };
-
-  // ── Download ──
-  const handleDownload = async () => {
-    if (!resultUrl) return;
-    const a = document.createElement("a");
-    a.href = resultUrl;
-    a.download = `nihongo-photobooth-${selectedTemplate}.png`;
-    a.target = "_blank";
-    a.click();
-  };
-
-  const templateData = TEMPLATES.find((t) => t.id === selectedTemplate);
-
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 py-10 px-4">
-      <div className="max-w-4xl mx-auto">
-
-        {/* ── Header ── */}
-        <div className="text-center mb-10">
-          <div className="text-5xl mb-3">📸</div>
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
-            Anime Photobooth
-          </h1>
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
-            Upload foto kamu → pilih tema → jadikan anime! ✨
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          {/* ── Kolom Kiri: Upload + Template ── */}
-          <div className="flex flex-col gap-4">
-
-            {/* Upload zone */}
-            <div
-              onClick={() => fileInputRef.current?.click()}
-              onDragOver={handleDragOver}
-              onDragLeave={handleDragLeave}
-              onDrop={handleDrop}
-              className={`
-                relative border-2 border-dashed rounded-2xl cursor-pointer transition-all
-                flex flex-col items-center justify-center min-h-[200px] overflow-hidden
-                ${isDragging
-                  ? "border-purple-400 bg-purple-50 dark:bg-purple-900/20"
-                  : "border-pink-300 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-purple-400 hover:bg-purple-50 dark:hover:bg-gray-700"
-                }
-              `}
-            >
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                className="hidden"
-                onChange={handleInputChange}
-              />
-              {previewUrl ? (
-                <>
-                  <Image
-                    src={previewUrl}
-                    alt="Preview foto kamu"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                    <p className="text-white text-sm font-medium">Klik untuk ganti foto</p>
-                  </div>
-                </>
-              ) : (
-                <div className="text-center p-6">
-                  <div className="text-4xl mb-2">🖼️</div>
-                  <p className="text-gray-600 dark:text-gray-300 font-medium text-sm">
-                    Klik atau drag foto di sini
-                  </p>
-                  <p className="text-gray-400 text-xs mt-1">JPG, PNG, WEBP · Maks 5MB</p>
-                </div>
-              )}
-            </div>
-
-            {/* Template selector */}
-            <div>
-              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                🎭 Pilih Tema
-              </p>
-              <div className="grid grid-cols-3 gap-2">
-                {TEMPLATES.map((t) => (
-                  <button
-                    key={t.id}
-                    onClick={() => setSelectedTemplate(t.id)}
-                    className={`
-                      relative rounded-xl border-2 p-2 text-center transition-all text-xs
-                      ${selectedTemplate === t.id
-                        ? "border-purple-500 bg-purple-50 dark:bg-purple-900/30"
-                        : "border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-purple-300"
-                      }
-                    `}
-                  >
-                    {/* Template preview image */}
-                    {t.preview ? (
-                      <div className="relative w-full h-16 rounded-lg overflow-hidden mb-1">
-                        <Image src={t.preview} alt={t.name} fill className="object-cover" />
-                      </div>
-                    ) : (
-                      <div className="w-full h-16 rounded-lg bg-gradient-to-br from-pink-100 to-purple-100 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center mb-1">
-                        <span className="text-2xl">{t.emoji}</span>
-                      </div>
-                    )}
-                    <span className="font-medium text-gray-700 dark:text-gray-300 block leading-tight">
-                      {t.name}
-                    </span>
-                    {selectedTemplate === t.id && (
-                      <span className="absolute top-1 right-1 text-purple-500 text-xs">✓</span>
-                    )}
-                  </button>
-                ))}
-              </div>
-              {templateData && (
-                <p className="text-xs text-gray-400 mt-2 text-center">
-                  {templateData.emoji} {templateData.desc}
-                </p>
-              )}
-            </div>
-
-            {/* Error */}
-            {error && (
-              <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-3 text-sm text-red-600 dark:text-red-400">
-                ⚠️ {error}
-              </div>
-            )}
-
-            {/* Generate button */}
-            <button
-              onClick={handleGenerate}
-              disabled={!selectedFile || isLoading}
-              className={`
-                w-full py-3 rounded-2xl font-bold text-white transition-all text-sm
-                ${!selectedFile || isLoading
-                  ? "bg-gray-300 dark:bg-gray-600 cursor-not-allowed"
-                  : "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 shadow-lg hover:shadow-xl active:scale-95"
-                }
-              `}
-            >
-              {isLoading ? (
-                <span className="flex items-center justify-center gap-2">
-                  <span className="animate-spin inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full" />
-                  Lagi diproses... (30–60 detik)
-                </span>
-              ) : (
-                "✨ Generate Anime Photo!"
-              )}
-            </button>
-          </div>
-
-          {/* ── Kolom Kanan: Hasil ── */}
-          <div className="flex flex-col gap-4">
-            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-              🌟 Hasil Generate
-            </p>
-
-            <div className="relative rounded-2xl overflow-hidden bg-white dark:bg-gray-800 border-2 border-dashed border-pink-200 dark:border-gray-600 min-h-[300px] flex items-center justify-center">
-              {isLoading ? (
-                <div className="text-center p-8">
-                  {/* Gunakan wait_icon.gif yang sudah ada */}
-                  <Image
-                    src="/asset/wait_icon.gif"
-                    alt="Loading..."
-                    width={80}
-                    height={80}
-                    className="mx-auto mb-4"
-                    unoptimized
-                  />
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">
-                    AI lagi nge-anime-in kamu...
-                  </p>
-                  <p className="text-gray-400 text-xs mt-1">Sabar ya, butuh 30–60 detik ✨</p>
-                </div>
-              ) : resultUrl ? (
-                <Image
-                  src={resultUrl}
-                  alt="Hasil anime photobooth"
-                  fill
-                  className="object-contain"
-                />
-              ) : (
-                <div className="text-center p-8 text-gray-400">
-                  <div className="text-5xl mb-3">🎨</div>
-                  <p className="text-sm">Hasil foto akan muncul di sini</p>
-                  <p className="text-xs mt-1">Upload foto & klik Generate dulu!</p>
-                </div>
-              )}
-            </div>
-
-            {/* Download button */}
-            {resultUrl && (
-              <div className="flex gap-2">
-                <button
-                  onClick={handleDownload}
-                  className="flex-1 py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 transition-all shadow-md hover:shadow-lg active:scale-95 text-sm"
-                >
-                  ⬇️ Download Foto
-                </button>
-                <button
-                  onClick={() => {
-                    setResultUrl(null);
-                    setSelectedFile(null);
-                    setPreviewUrl(null);
-                  }}
-                  className="px-4 py-3 rounded-2xl font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all text-sm"
-                >
-                  🔄 Reset
-                </button>
-              </div>
-            )}
-
-            {/* Before/After comparison (tampil kalau ada hasil) */}
-            {resultUrl && previewUrl && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-pink-100 dark:border-gray-700">
-                <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-3 text-center">
-                  Before → After
-                </p>
-                <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <div className="relative h-28 rounded-xl overflow-hidden">
-                      <Image src={previewUrl} alt="Foto asli" fill className="object-cover" />
-                    </div>
-                    <p className="text-xs text-center text-gray-400 mt-1">Foto kamu</p>
-                  </div>
-                  <div>
-                    <div className="relative h-28 rounded-xl overflow-hidden">
-                      <Image src={resultUrl} alt="Versi anime" fill className="object-cover" />
-                    </div>
-                    <p className="text-xs text-center text-gray-400 mt-1">Versi anime ✨</p>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* ── Tips ── */}
-        <div className="mt-8 bg-white dark:bg-gray-800 rounded-2xl p-4 border border-pink-100 dark:border-gray-700">
-          <p className="text-xs font-semibold text-gray-600 dark:text-gray-300 mb-2">
-            💡 Tips biar hasilnya keren:
-          </p>
-          <ul className="text-xs text-gray-500 dark:text-gray-400 space-y-1 list-disc list-inside">
-            <li>Gunakan foto wajah yang jelas dan tidak buram</li>
-            <li>Pencahayaan yang baik = hasil yang lebih bagus</li>
-            <li>Foto close-up wajah (selfie) lebih optimal</li>
-            <li>Hindari foto dengan banyak orang di belakang</li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  );
+  }
+  
+  updateUI() {
+    this.photoCountEl.textContent = '(' + this.photos.length + '/' + this.maxPhotos + ')';
+    this.resetBtn.disabled    = this.photos.length === 0;
+    this.downloadBtn.disabled = this.photos.length === 0;
+  }
+  
+  reset() {
+    if (confirm('Reset semua foto?')) {
+      this.photos = [];
+      this.drawComposite();
+      this.updateUI();
+      this.captureBtn.disabled = this.stream ? false : true;
+      this.hintEl.textContent  = '👆 Ambil 2 foto, AI akan anime-kan!';
+    }
+  }
+  
+  download() {
+    if (this.photos.length === 0) return;
+    setTimeout(() => {
+      const link = document.createElement('a');
+      link.download = 'underwater-anime-' + Date.now() + '.png';
+      link.href = this.canvas.toDataURL('image/png');
+      link.click();
+    }, 500);
+  }
 }
+
+if (typeof window !== 'undefined') {
+  window.TemplatePhotobooth = TemplatePhotobooth;
+}
+`;
