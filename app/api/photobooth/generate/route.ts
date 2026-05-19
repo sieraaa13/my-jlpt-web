@@ -18,22 +18,19 @@ export async function POST(req: NextRequest) {
       .jpeg({ quality: 90 })
       .toBuffer();
 
-    // Ganti prompt
-const stylePrompts: Record<string, string> = {
-  underwater: "portrait photo, underwater theme, blue ocean lighting, soft teal and pink tones, coral reef background, professional photography",
-  templates:  "portrait photo, colorful photobooth style, bright cheerful lighting, soft pastel background, professional photography",
-  sakura:     "portrait photo, cherry blossom garden, soft pink natural lighting, spring atmosphere, professional photography",
-  school:     "portrait photo, school setting, clean natural lighting, soft background, professional photography",
-};
-
+    const stylePrompts: Record<string, string> = {
+      underwater: "portrait photo, underwater theme, blue ocean lighting, soft teal and pink tones, coral reef background, professional photography",
+      templates:  "portrait photo, colorful photobooth style, bright cheerful lighting, soft pastel background, professional photography",
+      sakura:     "portrait photo, cherry blossom garden, soft pink natural lighting, spring atmosphere, professional photography",
+      school:     "portrait photo, school setting, clean natural lighting, soft background, professional photography",
+    };
 
     const prompt = stylePrompts[template ?? "underwater"] ?? stylePrompts.underwater;
 
     const formData = new FormData();
     formData.append("image", new Blob([userBuffer], { type: "image/jpeg" }), "user.jpg");
     formData.append("prompt", prompt);
-    formData.append("negative_prompt", "realistic, photo, ugly, deformed, blurry, watermark, 3d");
-    formData.append("control_strength", "0.9");
+    formData.append("negative_prompt", "ugly, deformed, blurry, watermark");
     formData.append("output_format", "png");
 
     const res = await fetch(
