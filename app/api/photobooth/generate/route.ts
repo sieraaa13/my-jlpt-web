@@ -28,7 +28,8 @@ export async function POST(req: NextRequest) {
     const blob = new Blob([imageBuffer], { type: "image/jpeg" });
     formData.append("init_image", blob, "photo.jpg");
     formData.append("init_image_mode", "IMAGE_STRENGTH");
-    formData.append("image_strength", "0.4");
+    formData.append("width", "1024");
+    formData.append("height", "1024");
     formData.append("text_prompts[0][text]", `${prompt}, anime style, high quality illustration`);
     formData.append("text_prompts[0][weight]", "1");
     formData.append("text_prompts[1][text]", "ugly, deformed, blurry, bad quality, realistic photo, watermark");
