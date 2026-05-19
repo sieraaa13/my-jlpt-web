@@ -20,10 +20,10 @@ export async function POST(req: NextRequest) {
 
     // Ganti prompt
 const stylePrompts: Record<string, string> = {
-  underwater: "anime portrait, soft watercolor illustration, semi-realistic face, detailed eyes, natural skin tone, underwater mermaid theme, pastel colors, high quality",
-  templates:  "anime portrait, soft illustration style, semi-realistic face, detailed eyes, natural skin tone, photobooth theme, pastel colors",
-  sakura:     "anime portrait, soft illustration style, semi-realistic face, cherry blossom background, natural skin tone, pastel pink",
-  school:     "anime portrait, soft illustration style, semi-realistic face, school uniform, natural skin tone",
+  underwater: "portrait photo, underwater theme, blue ocean lighting, soft teal and pink tones, coral reef background, professional photography",
+  templates:  "portrait photo, colorful photobooth style, bright cheerful lighting, soft pastel background, professional photography",
+  sakura:     "portrait photo, cherry blossom garden, soft pink natural lighting, spring atmosphere, professional photography",
+  school:     "portrait photo, school setting, clean natural lighting, soft background, professional photography",
 };
 
 
