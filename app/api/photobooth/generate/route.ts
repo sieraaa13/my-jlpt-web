@@ -126,7 +126,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          version: "a07f252abbbd832009640b27f063ea52d87d7a23ce5cac7c14a4e2b74a4f6a8",
+          version: "a07f252abbbd832009640b27f063ea52d87d7a23a185ca165bec23b5adc8deaf",
           input: {
             image,
             style: "3D",
