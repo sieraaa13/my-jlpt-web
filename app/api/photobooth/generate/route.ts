@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 
 export const maxDuration = 60;
 
@@ -12,7 +10,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    // 1. Resize foto user ke 1024x1024
+    // Resize foto user ke 1024x1024
     const sharp = (await import("sharp")).default;
     const base64Data = image.replace(/^data:image\/\w+;base64,/, "");
     const userBuffer = await sharp(Buffer.from(base64Data, "base64"))
@@ -20,36 +18,23 @@ export async function POST(req: NextRequest) {
       .jpeg({ quality: 90 })
       .toBuffer();
 
-    // 2. Baca file template dari public folder
-    const templateName = template === "templates" 
-      ? "templates.png" 
-      : "underwater-template.png";
-    const templatePath = path.join(process.cwd(), "public/asset/photobooth", templateName);
-    const templateBuffer = fs.readFileSync(templatePath);
-    const templateResized = await sharp(templateBuffer)
-      .resize(1024, 1024, { fit: "cover" })
-      .jpeg({ quality: 90 })
-      .toBuffer();
+    const stylePrompts: Record<string, string> = {
+      underwater: "kawaii chibi anime girl illustration, flat colors, thick black outlines, pastel blue pink colors, underwater mermaid cute art style, simple clean illustration",
+      templates:  "kawaii chibi anime girl sticker illustration, flat colors, thick black outlines, colorful pastel, cute photobooth sticker art style",
+      sakura:     "kawaii chibi anime girl illustration, cherry blossom style, soft pink pastel, flat colors, thick outlines, cute japanese art",
+      school:     "kawaii chibi anime school girl illustration, flat colors, thick outlines, pastel colors, cute simple art style",
+    };
 
-    // 3. Kirim ke Stability AI — structure control
-    // Foto user sebagai structure (wajah dipertahankan)
-    // Style dari template
+    const prompt = stylePrompts[template ?? "underwater"] ?? stylePrompts.underwater;
+
     const formData = new FormData();
-    formData.append(
-      "image",
-      new Blob([userBuffer], { type: "image/jpeg" }),
-      "user.jpg"
-    );
-    formData.append("prompt", 
-      "kawaii chibi anime illustration portrait, flat colors, thick black outlines, pastel soft colors, cute simple art style, same style as template"
-    );
-    formData.append("negative_prompt", 
-      "realistic, photo, ugly, deformed, blurry, watermark"
-    );
+    formData.append("image", new Blob([userBuffer], { type: "image/jpeg" }), "user.jpg");
+    formData.append("prompt", prompt);
+    formData.append("negative_prompt", "realistic, photo, ugly, deformed, blurry, watermark, 3d");
     formData.append("control_strength", "0.7");
     formData.append("output_format", "png");
 
-    const structureRes = await fetch(
+    const res = await fetch(
       "https://api.stability.ai/v2beta/stable-image/control/structure",
       {
         method: "POST",
@@ -61,13 +46,12 @@ export async function POST(req: NextRequest) {
       }
     );
 
-    if (!structureRes.ok) {
-      const err = await structureRes.text();
+    if (!res.ok) {
+      const err = await res.text();
       throw new Error(err ?? "Gagal generate");
     }
 
-    // 4. Response langsung berupa image binary
-    const imageArrayBuffer = await structureRes.arrayBuffer();
+    const imageArrayBuffer = await res.arrayBuffer();
     const base64Result = Buffer.from(imageArrayBuffer).toString("base64");
 
     return NextResponse.json({
