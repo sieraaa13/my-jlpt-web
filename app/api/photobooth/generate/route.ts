@@ -18,12 +18,14 @@ export async function POST(req: NextRequest) {
       .jpeg({ quality: 90 })
       .toBuffer();
 
-    const stylePrompts: Record<string, string> = {
-      underwater: "kawaii chibi anime girl illustration, flat colors, thick black outlines, pastel blue pink colors, underwater mermaid cute art style, simple clean illustration",
-      templates:  "kawaii chibi anime girl sticker illustration, flat colors, thick black outlines, colorful pastel, cute photobooth sticker art style",
-      sakura:     "kawaii chibi anime girl illustration, cherry blossom style, soft pink pastel, flat colors, thick outlines, cute japanese art",
-      school:     "kawaii chibi anime school girl illustration, flat colors, thick outlines, pastel colors, cute simple art style",
-    };
+    // Ganti prompt
+const stylePrompts: Record<string, string> = {
+  underwater: "anime portrait, soft watercolor illustration, semi-realistic face, detailed eyes, natural skin tone, underwater mermaid theme, pastel colors, high quality",
+  templates:  "anime portrait, soft illustration style, semi-realistic face, detailed eyes, natural skin tone, photobooth theme, pastel colors",
+  sakura:     "anime portrait, soft illustration style, semi-realistic face, cherry blossom background, natural skin tone, pastel pink",
+  school:     "anime portrait, soft illustration style, semi-realistic face, school uniform, natural skin tone",
+};
+
 
     const prompt = stylePrompts[template ?? "underwater"] ?? stylePrompts.underwater;
 
@@ -31,7 +33,7 @@ export async function POST(req: NextRequest) {
     formData.append("image", new Blob([userBuffer], { type: "image/jpeg" }), "user.jpg");
     formData.append("prompt", prompt);
     formData.append("negative_prompt", "realistic, photo, ugly, deformed, blurry, watermark, 3d");
-    formData.append("control_strength", "0.7");
+    formData.append("control_strength", "0.9");
     formData.append("output_format", "png");
 
     const res = await fetch(
