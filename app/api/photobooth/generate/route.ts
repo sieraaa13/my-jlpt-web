@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const maxDuration = 60;
 
+const TEMPLATE_FILES: Record<string, string> = {
+  underwater: "underwater-template.png",
+  templates:  "templates.png",
+  sakura:     "underwater-template.png",
+  school:     "underwater-template.png",
+};
+
 export async function POST(req: NextRequest) {
   try {
     const { image, template } = await req.json();
@@ -11,55 +18,54 @@ export async function POST(req: NextRequest) {
     }
 
     const sharp = (await import("sharp")).default;
+
+    // Resize foto user ke 1024x1024
     const base64Data = image.replace(/^data:image\/\w+;base64,/, "");
     const userBuffer = await sharp(Buffer.from(base64Data, "base64"))
-      .resize(512, 512, { fit: "cover", position: "center" })
-      .jpeg({ quality: 90 })
+      .resize(1024, 1024, { fit: "cover", position: "center" })
+      .png()
       .toBuffer();
 
-    const stylePrompts: Record<string, string> = {
-      underwater: "same person, underwater theme, blue ocean lighting, coral reef, keep face identical, same gender, same hair, same features",
-      templates:  "same person, colorful photobooth, pastel background, keep face identical, same gender, same hair, same features",
-      sakura:     "same person, cherry blossom garden, pink lighting, keep face identical, same gender, same hair, same features",
-      school:     "same person, school setting, keep face identical, same gender, same hair, same features",
-    };
+    // Ambil file template via URL publik
+    const templateFile = TEMPLATE_FILES[template ?? "underwater"] ?? TEMPLATE_FILES.underwater;
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
+    const templateRes = await fetch(`${baseUrl}/asset/photobooth/${templateFile}`);
 
-    const prompt = stylePrompts[template ?? "underwater"] ?? stylePrompts.underwater;
+    if (!templateRes.ok) {
+      throw new Error("Gagal load template image");
+    }
 
+    const templateBuffer = await sharp(Buffer.from(await templateRes.arrayBuffer()))
+      .resize(1024, 1024, { fit: "cover" })
+      .png()
+      .toBuffer();
+
+    // Kirim ke Stability AI replace-background
     const formData = new FormData();
-    formData.append("init_image", new Blob([userBuffer], { type: "image/jpeg" }), "user.jpg");
-    formData.append("init_image_mode", "IMAGE_STRENGTH");
-    formData.append("image_strength", "0.25");
-    formData.append("text_prompts[0][text]", prompt);
-    formData.append("text_prompts[0][weight]", "1");
-    formData.append("text_prompts[1][text]", "different person, different face, different gender, ugly, deformed, blurry, watermark, cartoon, anime");
-    formData.append("text_prompts[1][weight]", "-1");
-    formData.append("cfg_scale", "7");
-    formData.append("samples", "1");
-    formData.append("steps", "30");
-    formData.append("style_preset", "photographic");
+    formData.append("subject_image",    new Blob([userBuffer],     { type: "image/png" }), "user.png");
+    formData.append("background_image", new Blob([templateBuffer], { type: "image/png" }), "template.png");
+    formData.append("foreground_ratio", "0.85");
+    formData.append("output_format",    "png");
 
     const res = await fetch(
-      "https://api.stability.ai/v1/generation/stable-diffusion-v1-6/image-to-image",
+      "https://api.stability.ai/v2beta/stable-image/edit/replace-background-and-relight",
       {
         method: "POST",
         headers: {
           Authorization: `Bearer ${process.env.STABILITY_API_KEY}`,
-          Accept: "application/json",
+          Accept: "image/*",
         },
         body: formData,
       }
     );
 
     if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err?.message ?? "Gagal generate");
+      const err = await res.text();
+      throw new Error(err ?? "Gagal generate");
     }
 
-    const data = await res.json();
-    const base64Result = data.artifacts?.[0]?.base64;
-
-    if (!base64Result) throw new Error("Tidak ada gambar");
+    const imageArrayBuffer = await res.arrayBuffer();
+    const base64Result = Buffer.from(imageArrayBuffer).toString("base64");
 
     return NextResponse.json({
       success: true,
