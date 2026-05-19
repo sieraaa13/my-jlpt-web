@@ -9,6 +9,24 @@ const PROMPTS: Record<string, string> = {
   school:     "anime school uniform, classroom background, kawaii japanese school style",
 };
 
+// Resize base64 image ke ukuran yang didukung Stability AI (1024x1024)
+async function resizeBase64(base64: string): Promise<Buffer> {
+  const base64Data = base64.replace(/^data:image\/\w+;base64,/, "");
+  const inputBuffer = Buffer.from(base64Data, "base64");
+
+  // Gunakan Canvas API bawaan browser tidak tersedia di server
+  // Pakai pendekatan: kirim ke Stability AI dengan ukuran 512x512 via crop manual
+  // Kita resize dengan membuat ulang ukuran image menggunakan sharp-like approach
+  
+  // Import sharp (tersedia di Vercel)
+  const sharp = (await import("sharp")).default;
+  
+  return sharp(inputBuffer)
+    .resize(1024, 1024, { fit: "cover", position: "center" })
+    .jpeg({ quality: 90 })
+    .toBuffer();
+}
+
 export async function POST(req: NextRequest) {
   try {
     const { image, template } = await req.json();
@@ -19,17 +37,14 @@ export async function POST(req: NextRequest) {
 
     const prompt = PROMPTS[template ?? "underwater"] ?? PROMPTS.underwater;
 
-    // Convert base64 ke buffer
-    const base64Data = image.replace(/^data:image\/\w+;base64,/, "");
-    const imageBuffer = Buffer.from(base64Data, "base64");
+    // Resize gambar ke 1024x1024
+    const resizedBuffer = await resizeBase64(image);
 
-    // Kirim ke Stability AI img2img
     const formData = new FormData();
-    const blob = new Blob([imageBuffer], { type: "image/jpeg" });
+    const blob = new Blob([resizedBuffer], { type: "image/jpeg" });
     formData.append("init_image", blob, "photo.jpg");
     formData.append("init_image_mode", "IMAGE_STRENGTH");
-    formData.append("width", "1024");
-    formData.append("height", "1024");
+    formData.append("image_strength", "0.4");
     formData.append("text_prompts[0][text]", `${prompt}, anime style, high quality illustration`);
     formData.append("text_prompts[0][weight]", "1");
     formData.append("text_prompts[1][text]", "ugly, deformed, blurry, bad quality, realistic photo, watermark");
@@ -60,10 +75,10 @@ export async function POST(req: NextRequest) {
 
     if (!base64Image) throw new Error("Tidak ada gambar yang dihasilkan");
 
-    // Stability AI return base64, bukan URL
-    const imageUrl = `data:image/png;base64,${base64Image}`;
-
-    return NextResponse.json({ success: true, imageUrl });
+    return NextResponse.json({ 
+      success: true, 
+      imageUrl: `data:image/png;base64,${base64Image}` 
+    });
 
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : "Terjadi kesalahan";
