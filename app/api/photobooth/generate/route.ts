@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     // Kirim ke Stability AI replace-background
     const formData = new FormData();
     formData.append("subject_image",    new Blob([userBuffer],     { type: "image/png" }), "user.png");
-    formData.append("background_image", new Blob([templateBuffer], { type: "image/png" }), "template.png");
+    formData.append("background_reference", new Blob([templateBuffer], { type: "image/png" }), "template.png");
     formData.append("foreground_ratio", "0.85");
     formData.append("output_format",    "png");
 
