@@ -3,9 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 export const maxDuration = 60;
 
 const PROMPTS: Record<string, string> = {
-  underwater: "anime mermaid underwater, magical ocean, glowing bubbles, ethereal pastel colors",
-  templates:  "kawaii anime photobooth, cute stickers, colorful stars and hearts, chibi style",
-  sakura:     "anime girl cherry blossom, pink petals falling, Japanese spring, dreamy",
+  underwater: "anime girl mermaid underwater, magical ocean, glowing bubbles, ethereal pastel colors, kawaii style",
+  templates:  "kawaii anime girl photobooth, cute stickers, colorful stars hearts, chibi style",
+  sakura:     "anime girl cherry blossom, pink petals falling, Japanese spring, dreamy soft colors",
   school:     "anime school uniform, classroom background, kawaii japanese school style",
 };
 
@@ -19,58 +19,50 @@ export async function POST(req: NextRequest) {
 
     const prompt = PROMPTS[template ?? "underwater"] ?? PROMPTS.underwater;
 
-    // Submit request ke fal.ai
-    const submitRes = await fetch("https://queue.fal.run/fal-ai/face-to-sticker", {
-      method: "POST",
-      headers: {
-        "Authorization": `Key ${process.env.FAL_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        image_url: image,
-        prompt: `${prompt}, anime style`,
-        negative_prompt: "ugly, deformed, blurry, bad quality, realistic",
-        instant_id_strength: 0.7,
-        upscale: false,
-      }),
-    });
+    // Convert base64 ke buffer
+    const base64Data = image.replace(/^data:image\/\w+;base64,/, "");
+    const imageBuffer = Buffer.from(base64Data, "base64");
 
-    if (!submitRes.ok) {
-      const err = await submitRes.json();
-      throw new Error(err?.detail ?? "Gagal submit ke fal.ai");
+    // Kirim ke Stability AI img2img
+    const formData = new FormData();
+    const blob = new Blob([imageBuffer], { type: "image/jpeg" });
+    formData.append("init_image", blob, "photo.jpg");
+    formData.append("init_image_mode", "IMAGE_STRENGTH");
+    formData.append("image_strength", "0.4");
+    formData.append("text_prompts[0][text]", `${prompt}, anime style, high quality illustration`);
+    formData.append("text_prompts[0][weight]", "1");
+    formData.append("text_prompts[1][text]", "ugly, deformed, blurry, bad quality, realistic photo, watermark");
+    formData.append("text_prompts[1][weight]", "-1");
+    formData.append("cfg_scale", "7");
+    formData.append("samples", "1");
+    formData.append("steps", "30");
+
+    const res = await fetch(
+      "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/image-to-image",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.STABILITY_API_KEY}`,
+          Accept: "application/json",
+        },
+        body: formData,
+      }
+    );
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err?.message ?? "Gagal generate di Stability AI");
     }
 
-    const { request_id } = await submitRes.json();
+    const data = await res.json();
+    const base64Image = data.artifacts?.[0]?.base64;
 
-    // Poll sampai selesai
-    for (let i = 0; i < 30; i++) {
-      await new Promise((r) => setTimeout(r, 2000));
+    if (!base64Image) throw new Error("Tidak ada gambar yang dihasilkan");
 
-      const statusRes = await fetch(
-        `https://queue.fal.run/fal-ai/face-to-sticker/requests/${request_id}/status`,
-        { headers: { Authorization: `Key ${process.env.FAL_KEY}` } }
-      );
-      const status = await statusRes.json();
+    // Stability AI return base64, bukan URL
+    const imageUrl = `data:image/png;base64,${base64Image}`;
 
-      if (status.status === "COMPLETED") {
-        const resultRes = await fetch(
-          `https://queue.fal.run/fal-ai/face-to-sticker/requests/${request_id}`,
-          { headers: { Authorization: `Key ${process.env.FAL_KEY}` } }
-        );
-        const result = await resultRes.json();
-        const imageUrl = result?.images?.[0]?.url ?? result?.image?.url;
-
-        if (!imageUrl) throw new Error("Tidak ada gambar dari fal.ai");
-
-        return NextResponse.json({ success: true, imageUrl });
-      }
-
-      if (status.status === "FAILED") {
-        throw new Error(status.error ?? "fal.ai prediction gagal");
-      }
-    }
-
-    throw new Error("Timeout, coba lagi!");
+    return NextResponse.json({ success: true, imageUrl });
 
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : "Terjadi kesalahan";
