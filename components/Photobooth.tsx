@@ -10,7 +10,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
     const init = async () => {
       if (initRef.current) return;
-      
       setTimeout(() => {
         if (!(window as any).TemplatePhotobooth) {
           eval(PHOTOBOOTH_JS);
@@ -35,16 +34,21 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
   return (
     <>
-      <div 
+      <div
         className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 overflow-y-auto"
         onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       >
         <div className="relative bg-gray-900 rounded-2xl p-6 max-w-5xl w-full">
-          <button onClick={onClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all">×</button>
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all"
+          >×</button>
+
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-2">🎥 UNDERWATER PHOTOBOOTH 🌊</h2>
             <p className="text-sm text-gray-400">Ambil foto → AI anime-kan → masuk ke template!</p>
           </div>
+
           <div dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
         </div>
       </div>
@@ -66,7 +70,7 @@ const PHOTOBOOTH_HTML = `
     <div class="ai-loading-overlay" id="ai-loading-overlay" style="display:none;">
         <div class="ai-loading-box">
             <div class="ai-spinner"></div>
-            <p class="ai-loading-text" id="ai-loading-text">✨ AI sedang anime-kan foto kamu...</p>
+            <p class="ai-loading-text" id="ai-loading-text">✨ AI sedang memproses foto kamu...</p>
             <p class="ai-loading-sub">Tunggu 30–60 detik ya!</p>
         </div>
     </div>
@@ -181,10 +185,10 @@ const PHOTOBOOTH_CSS = `
 }
 .btn:hover:not(:disabled) { transform: translateY(-2px); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.btn-primary  { background: linear-gradient(135deg,#00897b,#00695c); color:white; }
-.btn-capture  { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; font-size:18px; }
-.btn-secondary{ background: linear-gradient(135deg,#757575,#616161); color:white; }
-.btn-download { background: linear-gradient(135deg,#6366f1,#4f46e5); color:white; }
+.btn-primary   { background: linear-gradient(135deg,#00897b,#00695c); color:white; }
+.btn-capture   { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; font-size:18px; }
+.btn-secondary { background: linear-gradient(135deg,#757575,#616161); color:white; }
+.btn-download  { background: linear-gradient(135deg,#6366f1,#4f46e5); color:white; }
 #photo-count { font-size:14px; opacity:0.9; }
 @media (max-width: 968px) {
   #template-photobooth { grid-template-columns: 1fr; }
@@ -196,16 +200,20 @@ const PHOTOBOOTH_CSS = `
 const PHOTOBOOTH_JS = `
 class TemplatePhotobooth {
   constructor() {
-    this.stream = null;
-    this.photos = [];
-    this.maxPhotos = 2;
-    this.templateImg = null;
+    this.stream       = null;
+    this.photos       = [];
+    this.framePositions = []; // dari GPT Vision
+    this.maxPhotos    = 2;
+    this.templateImg  = null;
     this.templateLoaded = false;
     this.isGenerating = false;
+    this.currentTemplate = 'underwater';
+
     this.initElements();
     this.loadTemplate();
     this.attachEventListeners();
   }
+
   initElements() {
     this.video          = document.getElementById('camera-video');
     this.canvas         = document.getElementById('template-canvas');
@@ -219,35 +227,58 @@ class TemplatePhotobooth {
     this.loadingOverlay = document.getElementById('ai-loading-overlay');
     this.loadingText    = document.getElementById('ai-loading-text');
   }
+
   loadTemplate() {
     this.hintEl.textContent = '⏳ Loading template...';
     this.templateImg = new Image();
     this.templateImg.crossOrigin = 'anonymous';
     this.templateImg.onload = () => {
-      this.canvas.width = this.templateImg.width;
+      this.canvas.width  = this.templateImg.width;
       this.canvas.height = this.templateImg.height;
       this.templateLoaded = true;
-      this.hintEl.textContent = '👆 Ambil 2 foto, AI akan anime-kan!';
+      this.hintEl.textContent = '👆 Ambil 2 foto, AI akan proses!';
       this.drawComposite();
     };
-    this.templateImg.onerror = () => { this.hintEl.textContent = '❌ Gagal load template!'; };
-    this.templateImg.src = '/asset/underwater-template.png';
+    this.templateImg.onerror = () => {
+      this.hintEl.textContent = '❌ Gagal load template!';
+    };
+    this.templateImg.src = '/asset/photobooth/underwater-template.png';
   }
+
   drawComposite() {
     if (!this.templateLoaded) return;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.ctx.drawImage(this.templateImg, 0, 0, this.canvas.width, this.canvas.height);
     this.photos.forEach((p, i) => this.drawUserPhoto(p, i));
   }
+
   drawUserPhoto(photoData, index) {
     const w = this.canvas.width;
     const h = this.canvas.height;
-    const positions = [
-      { x: w*0.605, y: h*0.145, width: w*0.325, height: h*0.33, rotate: 8 },
-      { x: w*0.62,  y: h*0.505, width: w*0.325, height: h*0.33, rotate: -5 }
-    ];
-    const pos = positions[index];
+
+    // Gunakan framePositions dari GPT Vision kalau ada
+    // fallback ke posisi default kalau belum ada
+    let pos;
+    if (this.framePositions && this.framePositions[index]) {
+      const f = this.framePositions[index];
+      pos = {
+        x:      f.x * w,
+        y:      f.y * h,
+        width:  f.width * w,
+        height: f.height * h,
+        rotate: f.rotation ?? 0,
+      };
+    } else {
+      // Fallback default positions
+      const defaults = [
+        { x: w*0.54, y: h*0.12, width: w*0.25, height: h*0.28, rotate: 8  },
+        { x: w*0.55, y: h*0.47, width: w*0.25, height: h*0.28, rotate: -5 },
+      ];
+      pos = defaults[index];
+    }
+
     if (!pos) return;
+
     const img = new Image();
     img.crossOrigin = 'anonymous';
     img.onload = () => {
@@ -259,51 +290,74 @@ class TemplatePhotobooth {
     };
     img.src = photoData;
   }
+
   attachEventListeners() {
     this.startBtn.addEventListener('click',    () => this.startCamera());
     this.captureBtn.addEventListener('click',  () => this.capturePhoto());
     this.resetBtn.addEventListener('click',    () => this.reset());
     this.downloadBtn.addEventListener('click', () => this.download());
   }
+
   async startCamera() {
     try {
-      this.stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode:'user', width:{ideal:1280}, height:{ideal:720} } });
-      this.video.srcObject = this.stream;
-      this.startBtn.disabled = true;
+      this.stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode:'user', width:{ideal:1280}, height:{ideal:720} }
+      });
+      this.video.srcObject  = this.stream;
+      this.startBtn.disabled   = true;
       this.captureBtn.disabled = false;
-    } catch(err) { alert('⚠️ Gagal mengakses kamera: ' + err.message); }
+    } catch(err) {
+      alert('⚠️ Gagal mengakses kamera: ' + err.message);
+    }
   }
+
   async capturePhoto() {
     if (this.photos.length >= this.maxPhotos || this.isGenerating) return;
+
+    // Capture dari webcam
     const cap = document.createElement('canvas');
-    cap.width = this.video.videoWidth;
+    cap.width  = this.video.videoWidth;
     cap.height = this.video.videoHeight;
     const c = cap.getContext('2d');
     c.save(); c.scale(-1,1); c.drawImage(this.video, -cap.width, 0); c.restore();
     const base64 = cap.toDataURL('image/jpeg', 0.85);
+
+    // Tampilkan loading
     this.isGenerating = true;
     this.captureBtn.disabled = true;
-    this.loadingText.textContent = '✨ AI sedang anime-kan foto ' + (this.photos.length+1) + '...';
+    this.loadingText.textContent = '✨ AI sedang memproses foto ' + (this.photos.length+1) + '...';
     this.loadingOverlay.style.display = 'flex';
+
     try {
       const res = await fetch('/api/photobooth/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ image: base64, template: 'underwater' })
+        body: JSON.stringify({ image: base64, template: this.currentTemplate }),
       });
+
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || 'Generate gagal');
+
+      // Simpan frame positions dari GPT Vision (hanya perlu sekali)
+      if (data.frames && data.frames.length > 0 && this.framePositions.length === 0) {
+        this.framePositions = data.frames;
+        console.log('✅ Frame positions dari GPT Vision:', this.framePositions);
+      }
+
+      // Tambah foto hasil AI
       this.photos.push(data.imageUrl);
       this.drawComposite();
       this.updateUI();
+
       const remaining = this.maxPhotos - this.photos.length;
       if (remaining === 0) {
         this.captureBtn.disabled = true;
-        this.hintEl.textContent = '✅ Selesai! Klik DOWNLOAD!';
+        this.hintEl.textContent  = '✅ Selesai! Klik DOWNLOAD!';
       } else {
         this.captureBtn.disabled = false;
-        this.hintEl.textContent = '✅ Foto ' + this.photos.length + ' berhasil! Ambil ' + remaining + ' lagi!';
+        this.hintEl.textContent  = '✅ Foto ' + this.photos.length + ' berhasil! Ambil ' + remaining + ' lagi!';
       }
+
     } catch(err) {
       alert('❌ ' + err.message);
       this.captureBtn.disabled = false;
@@ -312,20 +366,24 @@ class TemplatePhotobooth {
       this.loadingOverlay.style.display = 'none';
     }
   }
+
   updateUI() {
     this.photoCountEl.textContent = '(' + this.photos.length + '/' + this.maxPhotos + ')';
-    this.resetBtn.disabled = this.photos.length === 0;
+    this.resetBtn.disabled    = this.photos.length === 0;
     this.downloadBtn.disabled = this.photos.length === 0;
   }
+
   reset() {
     if (confirm('Reset semua foto?')) {
       this.photos = [];
+      this.framePositions = [];
       this.drawComposite();
       this.updateUI();
       this.captureBtn.disabled = this.stream ? false : true;
-      this.hintEl.textContent = '👆 Ambil 2 foto, AI akan anime-kan!';
+      this.hintEl.textContent  = '👆 Ambil 2 foto, AI akan proses!';
     }
   }
+
   download() {
     if (this.photos.length === 0) return;
     setTimeout(() => {
@@ -336,5 +394,6 @@ class TemplatePhotobooth {
     }, 500);
   }
 }
+
 if (typeof window !== 'undefined') window.TemplatePhotobooth = TemplatePhotobooth;
 `;
