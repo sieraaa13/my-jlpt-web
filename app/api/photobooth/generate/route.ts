@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
         version: "a07f252abbbd832009640b27f063ea52d87d7a23a185ca165bec23b5adc8deaf",
         input: {
           image,
-          style: "Anime",
+          style: "3D",
           prompt,
           negative_prompt: "ugly, deformed, blurry, bad quality, realistic",
           num_steps: 20,
