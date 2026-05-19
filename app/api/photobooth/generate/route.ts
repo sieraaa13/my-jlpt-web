@@ -73,8 +73,6 @@ Rules:
 
   const data = await res.json();
   const content = data.choices?.[0]?.message?.content ?? "";
-
-  // Parse JSON dari response
   const clean = content.replace(/```json|```/g, "").trim();
   const parsed = JSON.parse(clean);
 
@@ -119,9 +117,8 @@ export async function POST(req: NextRequest) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
     const templateUrl = `${baseUrl}/asset/photobooth/${templateFile}`;
 
-    // Jalankan keduanya paralel untuk hemat waktu
-    const [replicateRes, frames] = await Promise.all([
-      // 1. Generate foto dengan Replicate
+    // Jalankan Replicate + GPT Vision paralel
+    const [replicateRes, framesResult] = await Promise.all([
       fetch("https://api.replicate.com/v1/predictions", {
         method: "POST",
         headers: {
@@ -142,8 +139,8 @@ export async function POST(req: NextRequest) {
           },
         }),
       }),
-      // 2. Deteksi posisi frame dengan GPT-4 Vision
-      detectFramePositions(templateUrl),
+      // Kalau GPT Vision gagal, pakai posisi default (tidak error)
+      detectFramePositions(templateUrl).catch(() => null),
     ]);
 
     if (!replicateRes.ok) {
@@ -154,10 +151,13 @@ export async function POST(req: NextRequest) {
     const prediction = await replicateRes.json();
     const imageUrl = await pollPrediction(prediction.id);
 
+    // Kalau GPT Vision berhasil pakai hasilnya, kalau tidak pakai array kosong
+    const frames = framesResult ?? [];
+
     return NextResponse.json({
       success: true,
       imageUrl,
-      frames, // koordinat frame untuk dipakai di canvas
+      frames,
     });
 
   } catch (error: unknown) {
