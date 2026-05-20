@@ -7,25 +7,20 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
   useEffect(() => {
     if (!isOpen) return;
-
     const init = async () => {
       if (initRef.current) return;
       setTimeout(() => {
-        if (!(window as any).TemplatePhotobooth) {
-          eval(PHOTOBOOTH_JS);
-        }
+        if (!(window as any).TemplatePhotobooth) eval(PHOTOBOOTH_JS);
         if (!(window as any).photobooth && (window as any).TemplatePhotobooth) {
           (window as any).photobooth = new (window as any).TemplatePhotobooth();
         }
         initRef.current = true;
       }, 300);
     };
-
     init();
-
     return () => {
       if ((window as any).photobooth?.stream) {
-        (window as any).photobooth.stream.getTracks().forEach((track: any) => track.stop());
+        (window as any).photobooth.stream.getTracks().forEach((t: any) => t.stop());
       }
     };
   }, [isOpen]);
@@ -39,16 +34,11 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
         onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       >
         <div className="relative bg-gray-900 rounded-2xl p-6 max-w-5xl w-full">
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg transition-all"
-          >×</button>
-
+          <button onClick={onClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl">×</button>
           <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold text-white mb-2">🎥 UNDERWATER PHOTOBOOTH 🌊</h2>
-            <p className="text-sm text-gray-400">Ambil foto → AI anime-kan → masuk ke template!</p>
+            <h2 className="text-3xl font-bold text-white mb-2">📸 SCRAPBOOK PHOTOBOOTH</h2>
+            <p className="text-sm text-gray-400">Ambil 6 foto → AI edit → masuk ke frame template!</p>
           </div>
-
           <div dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
         </div>
       </div>
@@ -59,27 +49,27 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
 const PHOTOBOOTH_HTML = `
 <div id="template-photobooth">
-    <div class="camera-section">
-        <video id="camera-video" autoplay playsinline muted></video>
-        <div class="camera-hint">📸 Posisikan wajah kamu dengan baik</div>
+  <div class="camera-section">
+    <video id="camera-video" autoplay playsinline muted></video>
+    <div class="camera-hint">📸 Posisikan dirimu dengan baik</div>
+  </div>
+  <div class="template-section">
+    <canvas id="template-canvas"></canvas>
+    <div class="template-hint" id="template-hint">⏳ Loading template...</div>
+  </div>
+  <div class="ai-loading-overlay" id="ai-loading-overlay" style="display:none;">
+    <div class="ai-loading-box">
+      <div class="ai-spinner"></div>
+      <p class="ai-loading-text" id="ai-loading-text">✨ AI sedang memproses...</p>
+      <p class="ai-loading-sub">Tunggu 30–60 detik ya!</p>
     </div>
-    <div class="template-section">
-        <canvas id="template-canvas"></canvas>
-        <div class="template-hint" id="template-hint">⏳ Loading template...</div>
-    </div>
-    <div class="ai-loading-overlay" id="ai-loading-overlay" style="display:none;">
-        <div class="ai-loading-box">
-            <div class="ai-spinner"></div>
-            <p class="ai-loading-text" id="ai-loading-text">✨ AI sedang memproses foto kamu...</p>
-            <p class="ai-loading-sub">Tunggu 30–60 detik ya!</p>
-        </div>
-    </div>
-    <div class="controls-section">
-        <button id="start-camera-btn" class="btn btn-primary">📷 BUKA KAMERA</button>
-        <button id="capture-photo-btn" class="btn btn-capture" disabled>📸 AMBIL & ANIME-KAN <span id="photo-count">(0/2)</span></button>
-        <button id="reset-btn" class="btn btn-secondary" disabled>🔄 RESET</button>
-        <button id="download-btn" class="btn btn-download" disabled>⬇️ DOWNLOAD HASIL</button>
-    </div>
+  </div>
+  <div class="controls-section">
+    <button id="start-camera-btn" class="btn btn-primary">📷 BUKA KAMERA</button>
+    <button id="capture-photo-btn" class="btn btn-capture" disabled>📸 AMBIL FOTO <span id="photo-count">(0/6)</span></button>
+    <button id="reset-btn" class="btn btn-secondary" disabled>🔄 RESET</button>
+    <button id="download-btn" class="btn btn-download" disabled>⬇️ DOWNLOAD</button>
+  </div>
 </div>
 `;
 
@@ -112,9 +102,9 @@ const PHOTOBOOTH_CSS = `
   transform: translateX(-50%);
   background: rgba(0,0,0,0.8);
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 13px;
   white-space: nowrap;
 }
 .template-section {
@@ -136,9 +126,9 @@ const PHOTOBOOTH_CSS = `
   transform: translateX(-50%);
   background: rgba(255,182,193,0.9);
   color: #333;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -169,27 +159,25 @@ const PHOTOBOOTH_CSS = `
 .controls-section {
   grid-column: 1 / -1;
   display: flex;
-  gap: 15px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .btn {
-  padding: 15px 30px;
+  padding: 12px 24px;
   border: none;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .btn:hover:not(:disabled) { transform: translateY(-2px); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .btn-primary   { background: linear-gradient(135deg,#00897b,#00695c); color:white; }
-.btn-capture   { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; font-size:18px; }
+.btn-capture   { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; font-size:16px; }
 .btn-secondary { background: linear-gradient(135deg,#757575,#616161); color:white; }
 .btn-download  { background: linear-gradient(135deg,#6366f1,#4f46e5); color:white; }
-#photo-count { font-size:14px; opacity:0.9; }
 @media (max-width: 968px) {
   #template-photobooth { grid-template-columns: 1fr; }
   .controls-section { flex-direction: column; }
@@ -200,14 +188,23 @@ const PHOTOBOOTH_CSS = `
 const PHOTOBOOTH_JS = `
 class TemplatePhotobooth {
   constructor() {
-    this.stream       = null;
-    this.photos       = [];
-    this.framePositions = []; // dari GPT Vision
-    this.maxPhotos    = 2;
-    this.templateImg  = null;
+    this.stream = null;
+    this.photos = [];
+    this.maxPhotos = 6;
+    this.templateImg = null;
     this.templateLoaded = false;
     this.isGenerating = false;
-    this.currentTemplate = 'underwater';
+
+    // 6 frame positions (normalized dari deteksi mask hijau)
+    // Format: { cx, cy, w, h, angle } — semua nilai 0-1 relatif terhadap canvas
+    this.FRAMES = [
+      { cx: 0.822, cy: 0.185, w: 0.375, h: 0.199, angle: -90.0 }, // 1: Lingkaran
+      { cx: 0.398, cy: 0.285, w: 0.357, h: 0.144, angle: -86.9 }, // 2: Stamp atas
+      { cx: 0.740, cy: 0.398, w: 0.269, h: 0.114, angle: -79.9 }, // 3: Polaroid kanan
+      { cx: 0.321, cy: 0.477, w: 0.505, h: 0.232, angle:  -3.9 }, // 4: Selfie besar
+      { cx: 0.254, cy: 0.713, w: 0.166, h: 0.092, angle:  -9.8 }, // 5: GameBoy
+      { cx: 0.639, cy: 0.721, w: 0.387, h: 0.128, angle: -88.5 }, // 6: Rectangle bawah
+    ];
 
     this.initElements();
     this.loadTemplate();
@@ -236,56 +233,76 @@ class TemplatePhotobooth {
       this.canvas.width  = this.templateImg.width;
       this.canvas.height = this.templateImg.height;
       this.templateLoaded = true;
-      this.hintEl.textContent = '👆 Ambil 2 foto, AI akan proses!';
+      this.hintEl.textContent = '👆 Ambil 6 foto, AI akan edit sesuai gaya!';
       this.drawComposite();
     };
     this.templateImg.onerror = () => {
       this.hintEl.textContent = '❌ Gagal load template!';
     };
-    this.templateImg.src = '/asset/photobooth/underwater-template.png';
+    // Ganti path sesuai lokasi template di /public
+    this.templateImg.src = '/asset/photobooth/scrapbook-template.jpg';
   }
 
   drawComposite() {
     if (!this.templateLoaded) return;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.ctx.drawImage(this.templateImg, 0, 0, this.canvas.width, this.canvas.height);
-    this.photos.forEach((p, i) => this.drawUserPhoto(p, i));
+    this.photos.forEach((photoData, index) => this.drawUserPhoto(photoData, index));
   }
 
   drawUserPhoto(photoData, index) {
-    const w = this.canvas.width;
-    const h = this.canvas.height;
+    const W = this.canvas.width;
+    const H = this.canvas.height;
+    const f = this.FRAMES[index];
+    if (!f) return;
 
-    // Gunakan framePositions dari GPT Vision kalau ada
-    // fallback ke posisi default kalau belum ada
-    let pos;
-    if (this.framePositions && this.framePositions[index]) {
-      const f = this.framePositions[index];
-      pos = {
-        x:      f.x * w,
-        y:      f.y * h,
-        width:  f.width * w,
-        height: f.height * h,
-        rotate: f.rotation ?? 0,
-      };
-    } else {
-      // Fallback default positions
-      const defaults = [
-        { x: w*0.54, y: h*0.12, width: w*0.25, height: h*0.28, rotate: 8  },
-        { x: w*0.55, y: h*0.47, width: w*0.25, height: h*0.28, rotate: -5 },
-      ];
-      pos = defaults[index];
-    }
-
-    if (!pos) return;
+    const cx     = f.cx * W;
+    const cy     = f.cy * H;
+    const fw     = f.w  * W;
+    const fh     = f.h  * H;
+    const angleRad = f.angle * Math.PI / 180;
 
     const img = new Image();
     img.crossOrigin = 'anonymous';
     img.onload = () => {
       this.ctx.save();
-      this.ctx.translate(pos.x + pos.width/2, pos.y + pos.height/2);
-      this.ctx.rotate(pos.rotate * Math.PI / 180);
-      this.ctx.drawImage(img, -pos.width/2, -pos.height/2, pos.width, pos.height);
+      this.ctx.translate(cx, cy);
+      this.ctx.rotate(angleRad);
+      this.ctx.drawImage(img, -fw/2, -fh/2, fw, fh);
+      this.ctx.restore();
+
+      // Setelah foto terakhir, gambar template di atas (overlay)
+      // agar elemen template tetap tampil di atas foto
+      if (index === this.photos.length - 1) {
+        this.ctx.globalAlpha = 1;
+        this.ctx.drawImage(this.templateImg, 0, 0, W, H);
+        // Gambar ulang semua foto di bawah template
+        this.photos.forEach((p, i) => this.drawPhotoBelow(p, i));
+      }
+    };
+    img.src = photoData;
+  }
+
+  drawPhotoBelow(photoData, index) {
+    // Versi sederhana: foto langsung tanpa overlay template
+    const W = this.canvas.width;
+    const H = this.canvas.height;
+    const f = this.FRAMES[index];
+    if (!f) return;
+
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      const cx = f.cx * W;
+      const cy = f.cy * H;
+      const fw = f.w  * W;
+      const fh = f.h  * H;
+      const angleRad = f.angle * Math.PI / 180;
+
+      this.ctx.save();
+      this.ctx.translate(cx, cy);
+      this.ctx.rotate(angleRad);
+      this.ctx.drawImage(img, -fw/2, -fh/2, fw, fh);
       this.ctx.restore();
     };
     img.src = photoData;
@@ -301,9 +318,9 @@ class TemplatePhotobooth {
   async startCamera() {
     try {
       this.stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode:'user', width:{ideal:1280}, height:{ideal:720} }
+        video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } }
       });
-      this.video.srcObject  = this.stream;
+      this.video.srcObject = this.stream;
       this.startBtn.disabled   = true;
       this.captureBtn.disabled = false;
     } catch(err) {
@@ -322,29 +339,23 @@ class TemplatePhotobooth {
     c.save(); c.scale(-1,1); c.drawImage(this.video, -cap.width, 0); c.restore();
     const base64 = cap.toDataURL('image/jpeg', 0.85);
 
-    // Tampilkan loading
+    // Loading
     this.isGenerating = true;
     this.captureBtn.disabled = true;
-    this.loadingText.textContent = '✨ AI sedang memproses foto ' + (this.photos.length+1) + '...';
+    const frameNum = this.photos.length + 1;
+    this.loadingText.textContent = '✨ AI sedang edit foto ' + frameNum + '/' + this.maxPhotos + '...';
     this.loadingOverlay.style.display = 'flex';
 
     try {
       const res = await fetch('/api/photobooth/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ image: base64, template: this.currentTemplate }),
+        body: JSON.stringify({ image: base64, theme: 'scrapbook' }),
       });
 
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || 'Generate gagal');
 
-      // Simpan frame positions dari GPT Vision (hanya perlu sekali)
-      if (data.frames && data.frames.length > 0 && this.framePositions.length === 0) {
-        this.framePositions = data.frames;
-        console.log('✅ Frame positions dari GPT Vision:', this.framePositions);
-      }
-
-      // Tambah foto hasil AI
       this.photos.push(data.imageUrl);
       this.drawComposite();
       this.updateUI();
@@ -352,10 +363,10 @@ class TemplatePhotobooth {
       const remaining = this.maxPhotos - this.photos.length;
       if (remaining === 0) {
         this.captureBtn.disabled = true;
-        this.hintEl.textContent  = '✅ Selesai! Klik DOWNLOAD!';
+        this.hintEl.textContent  = '✅ Semua frame terisi! Klik DOWNLOAD!';
       } else {
         this.captureBtn.disabled = false;
-        this.hintEl.textContent  = '✅ Foto ' + this.photos.length + ' berhasil! Ambil ' + remaining + ' lagi!';
+        this.hintEl.textContent  = '✅ Foto ' + this.photos.length + ' berhasil! ' + remaining + ' lagi!';
       }
 
     } catch(err) {
@@ -376,11 +387,10 @@ class TemplatePhotobooth {
   reset() {
     if (confirm('Reset semua foto?')) {
       this.photos = [];
-      this.framePositions = [];
       this.drawComposite();
       this.updateUI();
       this.captureBtn.disabled = this.stream ? false : true;
-      this.hintEl.textContent  = '👆 Ambil 2 foto, AI akan proses!';
+      this.hintEl.textContent  = '👆 Ambil 6 foto, AI akan edit sesuai gaya!';
     }
   }
 
@@ -388,7 +398,7 @@ class TemplatePhotobooth {
     if (this.photos.length === 0) return;
     setTimeout(() => {
       const link = document.createElement('a');
-      link.download = 'underwater-anime-' + Date.now() + '.png';
+      link.download = 'scrapbook-' + Date.now() + '.png';
       link.href = this.canvas.toDataURL('image/png');
       link.click();
     }, 500);
