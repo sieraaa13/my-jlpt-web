@@ -37,7 +37,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           <button onClick={onClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl">×</button>
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-white mb-2">📸 SCRAPBOOK PHOTOBOOTH</h2>
-            <p className="text-sm text-gray-400">Ambil 6 foto → AI edit → masuk ke frame template!</p>
+            <p className="text-sm text-gray-400">Pakai kamera atau upload foto → AI edit → masuk ke frame!</p>
           </div>
           <div dangerouslySetInnerHTML={{ __html: PHOTOBOOTH_HTML }} />
         </div>
@@ -64,9 +64,14 @@ const PHOTOBOOTH_HTML = `
       <p class="ai-loading-sub">Tunggu 30–60 detik ya!</p>
     </div>
   </div>
+
+  <!-- Input tersembunyi untuk upload dari device -->
+  <input type="file" id="upload-input" accept="image/*" style="display:none;" />
+
   <div class="controls-section">
     <button id="start-camera-btn" class="btn btn-primary">📷 BUKA KAMERA</button>
     <button id="capture-photo-btn" class="btn btn-capture" disabled>📸 AMBIL FOTO <span id="photo-count">(0/6)</span></button>
+    <button id="upload-photo-btn" class="btn btn-upload">🖼️ UPLOAD FOTO</button>
     <button id="reset-btn" class="btn btn-secondary" disabled>🔄 RESET</button>
     <button id="download-btn" class="btn btn-download" disabled>⬇️ DOWNLOAD</button>
   </div>
@@ -159,15 +164,15 @@ const PHOTOBOOTH_CSS = `
 .controls-section {
   grid-column: 1 / -1;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .btn {
-  padding: 12px 24px;
+  padding: 12px 20px;
   border: none;
   border-radius: 12px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -175,7 +180,8 @@ const PHOTOBOOTH_CSS = `
 .btn:hover:not(:disabled) { transform: translateY(-2px); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .btn-primary   { background: linear-gradient(135deg,#00897b,#00695c); color:white; }
-.btn-capture   { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; font-size:16px; }
+.btn-capture   { background: linear-gradient(135deg,#ff69b4,#ff1493); color:white; }
+.btn-upload    { background: linear-gradient(135deg,#f59e0b,#d97706); color:white; }
 .btn-secondary { background: linear-gradient(135deg,#757575,#616161); color:white; }
 .btn-download  { background: linear-gradient(135deg,#6366f1,#4f46e5); color:white; }
 @media (max-width: 968px) {
@@ -195,15 +201,13 @@ class TemplatePhotobooth {
     this.templateLoaded = false;
     this.isGenerating = false;
 
-    // 6 frame positions (normalized dari deteksi mask hijau)
-    // Format: { cx, cy, w, h, angle } — semua nilai 0-1 relatif terhadap canvas
     this.FRAMES = [
-      { cx: 0.822, cy: 0.185, w: 0.375, h: 0.199, angle: -90.0 }, // 1: Lingkaran
-      { cx: 0.398, cy: 0.285, w: 0.357, h: 0.144, angle: -86.9 }, // 2: Stamp atas
-      { cx: 0.740, cy: 0.398, w: 0.269, h: 0.114, angle: -79.9 }, // 3: Polaroid kanan
-      { cx: 0.321, cy: 0.477, w: 0.505, h: 0.232, angle:  -3.9 }, // 4: Selfie besar
-      { cx: 0.254, cy: 0.713, w: 0.166, h: 0.092, angle:  -9.8 }, // 5: GameBoy
-      { cx: 0.639, cy: 0.721, w: 0.387, h: 0.128, angle: -88.5 }, // 6: Rectangle bawah
+      { cx: 0.822, cy: 0.185, w: 0.375, h: 0.199, angle: -90.0 },
+      { cx: 0.398, cy: 0.285, w: 0.357, h: 0.144, angle: -86.9 },
+      { cx: 0.740, cy: 0.398, w: 0.269, h: 0.114, angle: -79.9 },
+      { cx: 0.321, cy: 0.477, w: 0.505, h: 0.232, angle:  -3.9 },
+      { cx: 0.254, cy: 0.713, w: 0.166, h: 0.092, angle:  -9.8 },
+      { cx: 0.639, cy: 0.721, w: 0.387, h: 0.128, angle: -88.5 },
     ];
 
     this.initElements();
@@ -218,6 +222,8 @@ class TemplatePhotobooth {
     this.hintEl         = document.getElementById('template-hint');
     this.startBtn       = document.getElementById('start-camera-btn');
     this.captureBtn     = document.getElementById('capture-photo-btn');
+    this.uploadBtn      = document.getElementById('upload-photo-btn');
+    this.uploadInput    = document.getElementById('upload-input');
     this.resetBtn       = document.getElementById('reset-btn');
     this.downloadBtn    = document.getElementById('download-btn');
     this.photoCountEl   = document.getElementById('photo-count');
@@ -233,13 +239,12 @@ class TemplatePhotobooth {
       this.canvas.width  = this.templateImg.width;
       this.canvas.height = this.templateImg.height;
       this.templateLoaded = true;
-      this.hintEl.textContent = '👆 Ambil 6 foto, AI akan edit sesuai gaya!';
+      this.hintEl.textContent = '👆 Ambil atau upload foto (0/' + this.maxPhotos + ')';
       this.drawComposite();
     };
     this.templateImg.onerror = () => {
       this.hintEl.textContent = '❌ Gagal load template!';
     };
-    // Ganti path sesuai lokasi template di /public
     this.templateImg.src = '/asset/photobooth/scrapbook-template.jpg';
   }
 
@@ -256,63 +261,43 @@ class TemplatePhotobooth {
     const f = this.FRAMES[index];
     if (!f) return;
 
-    const cx     = f.cx * W;
-    const cy     = f.cy * H;
-    const fw     = f.w  * W;
-    const fh     = f.h  * H;
-    const angleRad = f.angle * Math.PI / 180;
-
     const img = new Image();
     img.crossOrigin = 'anonymous';
     img.onload = () => {
       this.ctx.save();
-      this.ctx.translate(cx, cy);
-      this.ctx.rotate(angleRad);
-      this.ctx.drawImage(img, -fw/2, -fh/2, fw, fh);
-      this.ctx.restore();
-
-      // Setelah foto terakhir, gambar template di atas (overlay)
-      // agar elemen template tetap tampil di atas foto
-      if (index === this.photos.length - 1) {
-        this.ctx.globalAlpha = 1;
-        this.ctx.drawImage(this.templateImg, 0, 0, W, H);
-        // Gambar ulang semua foto di bawah template
-        this.photos.forEach((p, i) => this.drawPhotoBelow(p, i));
-      }
-    };
-    img.src = photoData;
-  }
-
-  drawPhotoBelow(photoData, index) {
-    // Versi sederhana: foto langsung tanpa overlay template
-    const W = this.canvas.width;
-    const H = this.canvas.height;
-    const f = this.FRAMES[index];
-    if (!f) return;
-
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      const cx = f.cx * W;
-      const cy = f.cy * H;
-      const fw = f.w  * W;
-      const fh = f.h  * H;
-      const angleRad = f.angle * Math.PI / 180;
-
-      this.ctx.save();
-      this.ctx.translate(cx, cy);
-      this.ctx.rotate(angleRad);
-      this.ctx.drawImage(img, -fw/2, -fh/2, fw, fh);
+      this.ctx.translate(f.cx * W, f.cy * H);
+      this.ctx.rotate(f.angle * Math.PI / 180);
+      this.ctx.drawImage(img, -(f.w * W)/2, -(f.h * H)/2, f.w * W, f.h * H);
       this.ctx.restore();
     };
     img.src = photoData;
   }
 
   attachEventListeners() {
-    this.startBtn.addEventListener('click',    () => this.startCamera());
-    this.captureBtn.addEventListener('click',  () => this.capturePhoto());
-    this.resetBtn.addEventListener('click',    () => this.reset());
-    this.downloadBtn.addEventListener('click', () => this.download());
+    this.startBtn.addEventListener('click',   () => this.startCamera());
+    this.captureBtn.addEventListener('click', () => this.capturePhoto());
+    this.resetBtn.addEventListener('click',   () => this.reset());
+    this.downloadBtn.addEventListener('click',() => this.download());
+
+    // Upload dari device
+    this.uploadBtn.addEventListener('click', () => {
+      if (this.photos.length >= this.maxPhotos || this.isGenerating) return;
+      this.uploadInput.click();
+    });
+
+    this.uploadInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      // Reset input agar bisa upload file yang sama lagi
+      e.target.value = '';
+
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const base64 = ev.target.result;
+        this.processImage(base64);
+      };
+      reader.readAsDataURL(file);
+    });
   }
 
   async startCamera() {
@@ -330,18 +315,22 @@ class TemplatePhotobooth {
 
   async capturePhoto() {
     if (this.photos.length >= this.maxPhotos || this.isGenerating) return;
-
-    // Capture dari webcam
     const cap = document.createElement('canvas');
     cap.width  = this.video.videoWidth;
     cap.height = this.video.videoHeight;
     const c = cap.getContext('2d');
     c.save(); c.scale(-1,1); c.drawImage(this.video, -cap.width, 0); c.restore();
     const base64 = cap.toDataURL('image/jpeg', 0.85);
+    await this.processImage(base64);
+  }
 
-    // Loading
+  // Fungsi utama: terima base64 → kirim ke AI → tempel ke canvas
+  async processImage(base64) {
+    if (this.photos.length >= this.maxPhotos || this.isGenerating) return;
+
     this.isGenerating = true;
     this.captureBtn.disabled = true;
+    this.uploadBtn.disabled  = true;
     const frameNum = this.photos.length + 1;
     this.loadingText.textContent = '✨ AI sedang edit foto ' + frameNum + '/' + this.maxPhotos + '...';
     this.loadingOverlay.style.display = 'flex';
@@ -363,15 +352,18 @@ class TemplatePhotobooth {
       const remaining = this.maxPhotos - this.photos.length;
       if (remaining === 0) {
         this.captureBtn.disabled = true;
+        this.uploadBtn.disabled  = true;
         this.hintEl.textContent  = '✅ Semua frame terisi! Klik DOWNLOAD!';
       } else {
-        this.captureBtn.disabled = false;
+        this.captureBtn.disabled = this.stream ? false : true;
+        this.uploadBtn.disabled  = false;
         this.hintEl.textContent  = '✅ Foto ' + this.photos.length + ' berhasil! ' + remaining + ' lagi!';
       }
 
     } catch(err) {
       alert('❌ ' + err.message);
-      this.captureBtn.disabled = false;
+      this.captureBtn.disabled = this.stream ? false : true;
+      this.uploadBtn.disabled  = false;
     } finally {
       this.isGenerating = false;
       this.loadingOverlay.style.display = 'none';
@@ -390,7 +382,8 @@ class TemplatePhotobooth {
       this.drawComposite();
       this.updateUI();
       this.captureBtn.disabled = this.stream ? false : true;
-      this.hintEl.textContent  = '👆 Ambil 6 foto, AI akan edit sesuai gaya!';
+      this.uploadBtn.disabled  = false;
+      this.hintEl.textContent  = '👆 Ambil atau upload foto (0/' + this.maxPhotos + ')';
     }
   }
 
