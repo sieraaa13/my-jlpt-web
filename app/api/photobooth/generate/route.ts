@@ -6,7 +6,11 @@ export const maxDuration = 60;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 
-// ── Step 1: Gemini 2.0 Flash analisa foto → hasilkan prompt detail ──
+// Model yang tersedia (dicek dari ListModels):
+const MODEL_ANALYZE = "gemini-2.5-flash";        // analisa foto
+const MODEL_IMAGE   = "gemini-2.5-flash-image";  // Nano Banana - generate gambar
+
+// ── Step 1: Gemini 2.5 Flash analisa foto → hasilkan prompt detail ──
 async function analyzeWithGemini(
   userBase64: string,
   userMime: string,
@@ -14,7 +18,7 @@ async function analyzeWithGemini(
   themeName: string
 ): Promise<string> {
   const res = await fetch(
-    `${GEMINI_BASE}/models/gemini-2.5-flash-preview-04-17:generateContent?key=${GEMINI_API_KEY}`,
+    `${GEMINI_BASE}/models/${MODEL_ANALYZE}:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -23,44 +27,35 @@ async function analyzeWithGemini(
           {
             parts: [
               {
-                text: `You are an expert image generation prompt writer.
+                text: `You are an expert image editing prompt writer.
 
-Look at this person's photo carefully. Note their:
-- Face shape, skin tone, hair color and style
-- Any distinctive features
-- Expression and pose
+Look at this person's photo carefully. Note their face shape, skin tone, hair color and style, distinctive features, expression, and pose.
 
-Write a detailed image generation prompt that will:
-1. Keep this person's face EXACTLY the same
+Write a detailed image editing instruction that will:
+1. Keep this person's face and identity EXACTLY the same
 2. Apply this theme: "${themeName}" — ${themePrompt}
 3. Look like a professional photo in that theme style
 
 Rules:
-- Start with "A photo of a person with [describe exact features]"
-- Include specific lighting, colors, atmosphere from the theme
-- End with "photorealistic, high quality, face preserved, same person"
-- Write ONLY the prompt, no explanation, max 150 words`,
+- Describe the person's exact features briefly first
+- Then describe lighting, colors, background, atmosphere from the theme
+- Emphasize "keep the same face and identity"
+- Write ONLY the instruction, no explanation, max 120 words`,
               },
               {
-                inline_data: {
-                  mime_type: userMime,
-                  data: userBase64,
-                },
+                inline_data: { mime_type: userMime, data: userBase64 },
               },
             ],
           },
         ],
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 300,
-        },
+        generationConfig: { temperature: 0.7, maxOutputTokens: 300 },
       }),
     }
   );
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Gemini Flash error: ${err}`);
+    throw new Error(`Gemini analyze error: ${err}`);
   }
 
   const data = await res.json();
@@ -71,14 +66,14 @@ Rules:
   return prompt.trim();
 }
 
-// ── Step 2: Gemini image generation ──
+// ── Step 2: Nano Banana (gemini-2.5-flash-image) edit foto ──
 async function generateImage(
   userBase64: string,
   userMime: string,
   prompt: string
 ): Promise<string> {
   const res = await fetch(
-    `${GEMINI_BASE}/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${GEMINI_API_KEY}`,
+    `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -87,17 +82,12 @@ async function generateImage(
           {
             parts: [
               { text: prompt },
-              {
-                inline_data: {
-                  mime_type: userMime,
-                  data: userBase64,
-                },
-              },
+              { inline_data: { mime_type: userMime, data: userBase64 } },
             ],
           },
         ],
         generationConfig: {
-          responseModalities: ["IMAGE", "TEXT"],
+          responseModalities: ["IMAGE"],
           temperature: 1,
         },
       }),
@@ -106,12 +96,10 @@ async function generateImage(
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Image generation error: ${err}`);
+    throw new Error(`Nano Banana error: ${err}`);
   }
 
   const data = await res.json();
-
-  // Cari part yang berisi gambar
   const parts = data.candidates?.[0]?.content?.parts ?? [];
   const imagePart = parts.find(
     (p: any) => p.inlineData?.mimeType?.startsWith("image/")
@@ -140,7 +128,7 @@ export async function POST(req: NextRequest) {
       ? "image/png"
       : "image/jpeg";
 
-    // Step 1: Gemini analisa foto → buat prompt detail
+    // Step 1: analisa foto → prompt detail
     const detailedPrompt = await analyzeWithGemini(
       base64Data,
       mimeType,
@@ -148,7 +136,7 @@ export async function POST(req: NextRequest) {
       theme.name
     );
 
-    // Step 2: Generate gambar dengan prompt detail
+    // Step 2: Nano Banana edit foto
     const imageUrl = await generateImage(base64Data, mimeType, detailedPrompt);
 
     return NextResponse.json({ success: true, imageUrl, themeId: theme.id });
