@@ -14,7 +14,7 @@ async function analyzeWithGemini(
   themeName: string
 ): Promise<string> {
   const res = await fetch(
-    `${GEMINI_BASE}/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+    `${GEMINI_BASE}/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
