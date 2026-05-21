@@ -5,145 +5,102 @@ export const maxDuration = 60;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
+const MODEL_IMAGE = "gemini-2.5-flash-image"; // Nano Banana
 
-// Model yang tersedia (dicek dari ListModels):
-const MODEL_ANALYZE = "gemini-2.5-flash";        // analisa foto
-const MODEL_IMAGE   = "gemini-2.5-flash-image";  // Nano Banana - generate gambar
+// Ambil template dari URL publik → base64
+async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
+  const res = await fetch(`${baseUrl}/asset/photobooth/${templateFile}`);
+  if (!res.ok) throw new Error("Gagal load template");
 
-// ── Step 1: Gemini 2.5 Flash analisa foto → hasilkan prompt detail ──
-async function analyzeWithGemini(
-  userBase64: string,
-  userMime: string,
-  themePrompt: string,
-  themeName: string
-): Promise<string> {
-  const res = await fetch(
-    `${GEMINI_BASE}/models/${MODEL_ANALYZE}:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              {
-                text: `You are an expert image editing prompt writer.
-
-Look at this person's photo carefully. Note their face shape, skin tone, hair color and style, distinctive features, expression, and pose.
-
-Write a detailed image editing instruction that will:
-1. Keep this person's face and identity EXACTLY the same
-2. Apply this theme: "${themeName}" — ${themePrompt}
-3. Look like a professional photo in that theme style
-
-Rules:
-- Describe the person's exact features briefly first
-- Then describe lighting, colors, background, atmosphere from the theme
-- Emphasize "keep the same face and identity"
-- Write ONLY the instruction, no explanation, max 120 words`,
-              },
-              {
-                inline_data: { mime_type: userMime, data: userBase64 },
-              },
-            ],
-          },
-        ],
-        generationConfig: { temperature: 0.7, maxOutputTokens: 300 },
-      }),
-    }
-  );
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Gemini analyze error: ${err}`);
-  }
-
-  const data = await res.json();
-  const prompt = data.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!prompt) throw new Error("Gemini tidak menghasilkan prompt");
-
-  console.log("[Gemini] Prompt:", prompt.trim());
-  return prompt.trim();
-}
-
-// ── Step 2: Nano Banana (gemini-2.5-flash-image) edit foto ──
-async function generateImage(
-  userBase64: string,
-  userMime: string,
-  prompt: string
-): Promise<string> {
-  const res = await fetch(
-    `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              { text: prompt },
-              { inline_data: { mime_type: userMime, data: userBase64 } },
-            ],
-          },
-        ],
-        generationConfig: {
-          responseModalities: ["IMAGE"],
-          temperature: 1,
-        },
-      }),
-    }
-  );
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Nano Banana error: ${err}`);
-  }
-
-  const data = await res.json();
-  const parts = data.candidates?.[0]?.content?.parts ?? [];
-  const imagePart = parts.find(
-    (p: any) => p.inlineData?.mimeType?.startsWith("image/")
-  );
-
-  if (!imagePart?.inlineData?.data) {
-    throw new Error("Tidak ada gambar yang dihasilkan");
-  }
-
-  return `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`;
+  const buffer = Buffer.from(await res.arrayBuffer());
+  const mime = templateFile.endsWith(".png") ? "image/png" : "image/jpeg";
+  return { data: buffer.toString("base64"), mime };
 }
 
 // ── POST /api/photobooth/generate ──
+// Body: { images: string[] (base64 array foto user), themeId: string }
 export async function POST(req: NextRequest) {
   try {
-    const { image, themeId } = await req.json();
+    const { images, themeId } = await req.json();
 
-    if (!image) {
+    if (!images || !Array.isArray(images) || images.length === 0) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
     const theme = THEMES.find((t) => t.id === themeId) ?? THEMES[0];
 
-    const base64Data = image.replace(/^data:image\/\w+;base64,/, "");
-    const mimeType = image.startsWith("data:image/png")
-      ? "image/png"
-      : "image/jpeg";
+    // 1. Ambil template
+    const template = await fetchTemplateBase64(theme.template);
 
-    // Step 1: analisa foto → prompt detail
-    const detailedPrompt = await analyzeWithGemini(
-      base64Data,
-      mimeType,
-      theme.prompt,
-      theme.name
+    // 2. Siapkan parts: instruksi + template + semua foto user
+    const parts: any[] = [
+      {
+        text: `You are editing a photobooth template image.
+
+The FIRST image is the template with ${theme.maxPhotos} empty photo frames/slots.
+The following ${images.length} image(s) are photos of people.
+
+Your task:
+- Place each person's photo naturally into the empty frames of the template
+- Keep each person's face and identity EXACTLY the same
+- Edit each photo to match this theme style: ${theme.prompt}
+- Make the people blend naturally with the template aesthetic (lighting, colors, grain)
+- Keep all template decorations, text, and stickers intact
+- The final result should look like a cohesive, professional photobook page
+
+Generate the complete final composite image.`,
+      },
+      // Template sebagai gambar pertama
+      { inline_data: { mime_type: template.mime, data: template.data } },
+    ];
+
+    // Tambahkan semua foto user
+    for (const img of images) {
+      const base64Data = img.replace(/^data:image\/\w+;base64,/, "");
+      const mimeType = img.startsWith("data:image/png") ? "image/png" : "image/jpeg";
+      parts.push({ inline_data: { mime_type: mimeType, data: base64Data } });
+    }
+
+    // 3. Kirim ke Nano Banana
+    const res = await fetch(
+      `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts }],
+          generationConfig: {
+            responseModalities: ["IMAGE"],
+            temperature: 1,
+          },
+        }),
+      }
     );
 
-    // Step 2: Nano Banana edit foto
-    const imageUrl = await generateImage(base64Data, mimeType, detailedPrompt);
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(`Nano Banana error: ${err}`);
+    }
 
-    return NextResponse.json({ success: true, imageUrl, themeId: theme.id });
+    const data = await res.json();
+    const resultParts = data.candidates?.[0]?.content?.parts ?? [];
+    const imagePart = resultParts.find(
+      (p: any) => p.inlineData?.mimeType?.startsWith("image/")
+    );
+
+    if (!imagePart?.inlineData?.data) {
+      throw new Error("Tidak ada gambar yang dihasilkan");
+    }
+
+    return NextResponse.json({
+      success: true,
+      imageUrl: `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`,
+      themeId: theme.id,
+    });
 
   } catch (error: unknown) {
-    const message =
-      error instanceof Error ? error.message : "Terjadi kesalahan";
+    const message = error instanceof Error ? error.message : "Terjadi kesalahan";
     console.error("[/api/photobooth/generate]", error);
     return NextResponse.json({ error: message }, { status: 500 });
   }
