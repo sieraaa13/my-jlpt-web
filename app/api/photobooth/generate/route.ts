@@ -7,7 +7,7 @@ export const maxDuration = 60;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 
-// Definisi model yang tepat dan stabil untuk Google AI Studio
+// PERBAIKAN: Menggunakan ID Model resmi Google AI Studio untuk Imagen 3
 const MODEL_TEXT_ANALYZER = "gemini-1.5-flash"; 
 const MODEL_IMAGE_GENERATOR = "imagen-3.0-generate-002"; 
 
@@ -64,7 +64,6 @@ export async function POST(req: NextRequest) {
       { inline_data: { mime_type: template.mime, data: template.data } }
     ];
 
-    // Ambil foto user pertama
     const base64UserFace = images[0].replace(/^data:image\/\w+;base64,/, "");
     const mimeUserFace = images[0].startsWith("data:image/png") ? "image/png" : "image/jpeg";
     analysisParts.push({ inline_data: { mime_type: mimeUserFace, data: base64UserFace } });
@@ -87,21 +86,22 @@ export async function POST(req: NextRequest) {
     const analyzeData = await geminiAnalyzeRes.json();
     let dynamicPromptText = analyzeData.candidates?.[0]?.content?.parts?.[0]?.text ?? "Kawaii anime chibi girl photobooth composite";
     
-    // Bersihkan prompt jika secara tidak sengaja Gemini memberikan format markdown backticks
+    // Bersihkan sisa format markdown backticks jika ada
     dynamicPromptText = dynamicPromptText.replace(/```json|```text|```/g, "").trim();
     console.log("Prompt Terpilih Hasil Analisis:", dynamicPromptText);
 
     // ═══════════════════════════════════════════════════════════════
-    // TAHAP 2: MEMANGGIL IMAGEN 3 DENGAN STRUKTUR PAYLOAD YANG BENAR
+    // TAHAP 2: MEMANGGIL IMAGEN 3 DENGAN PENYESUAIAN STRUKTUR PREDICATE API Studio
     // ═══════════════════════════════════════════════════════════════
-    console.log("--- Memanggil API Imagen 3 dengan Payload Resmi ---");
+    console.log("--- Memanggil API Imagen 3 via Predict Endpoint ---");
     
+    // Penyesuaian skema request body yang didukung penuh oleh Google AI Studio v1beta
     const imagenRequestBody = {
-      instances: [
+      requests: [
         {
           prompt: dynamicPromptText,
           image: {
-            imageBytes: template.data // MENGGUNAKAN KEY 'imageBytes' YANG BENAR UNTUK GOOGLE AI STUDIO
+            imageBytes: template.data // Key data biner base64 resmi
           }
         }
       ],
@@ -109,11 +109,12 @@ export async function POST(req: NextRequest) {
         sampleCount: 1,
         aspectRatio: "1:1",
         outputMimeType: "image/png",
-        guidanceScale: 10.0, // Dinaikkan ke 10.0 agar peletakan layout benar-benar dipaksa mengikuti template dasar
+        guidanceScale: 10.0, 
         personGeneration: "ALLOW_ADULT"
       }
     };
 
+    // Memanggil endpoint menggunakan format metode ':predict' yang valid untuk Imagen 3
     const imageGenerationRes = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE_GENERATOR}:predict?key=${GEMINI_API_KEY}`,
       {
@@ -130,12 +131,12 @@ export async function POST(req: NextRequest) {
 
     const finalData = await imageGenerationRes.json();
     
-    // Mengambil base64 dari struktur response predictions Google AI Studio
-    const finalImageBase64 = finalData.predictions?.[0]?.bytesBase64;
+    // Mengambil ekstraksi base64 hasil generate dari array objek predictions/outputs Google
+    const finalImageBase64 = finalData.predictions?.[0]?.bytesBase64 || finalData.outputs?.[0]?.bytesBase64;
 
     if (!finalImageBase64) {
-      console.error("Response API Mentah:", JSON.stringify(finalData));
-      throw new Error("Gagal mengambil bytesBase64 dari output Imagen");
+      console.error("Struktur Response Gagal:", JSON.stringify(finalData));
+      throw new Error("Gagal mengekstrak hasil data gambar dari response Imagen 3");
     }
 
     return NextResponse.json({
