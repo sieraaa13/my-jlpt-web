@@ -19,10 +19,10 @@
       "maxPhotos": 4
     },
     {
-      "id": "sakura",
-      "name": "Sakura Festival",
-      "template": "sakura.png",
-      "maxPhotos": 3
+      "id": "daily",
+      "name": "daily",
+      "template": "8.jpg",
+      "maxPhotos": 5
     },
     {
       "id": "harajuku",
