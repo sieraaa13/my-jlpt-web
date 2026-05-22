@@ -16,30 +16,52 @@ type Theme = {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// UNIVERSAL PROMPT - Satu untuk semua tema
-// Nano Banana akan analisa template dan tentukan style sendiri
+// IMPROVED PROMPT - Lebih spesifik untuk face preservation & quality
 // ═══════════════════════════════════════════════════════════════
-const UNIVERSAL_PROMPT = `You are editing a photobooth template image.
+const UNIVERSAL_PROMPT = `You are a professional photobooth editor creating high-quality composite images.
 
-The FIRST image is the photobooth template with empty photo frames/slots.
-The following images are photos of people.
+INPUTS:
+- Image 1: Photobooth template with empty photo frames/slots
+- Image 2+: Photos of people to be placed in the template
 
-Your task:
-1. ANALYZE the template carefully - observe its visual style, aesthetic, colors, lighting, theme, mood, and atmosphere
-2. PLACE each person's photo naturally into the empty frames in the template
-3. EDIT each person's photo to PERFECTLY MATCH the template's exact style:
-   - Match the lighting (warm/cool/dramatic/soft)
-   - Match the colors and color grading
-   - Match the grain, texture, and film quality
-   - Match the overall mood and atmosphere
-   - Match any artistic filters or effects
-4. Keep each person's FACE and IDENTITY exactly the same - do not change their facial features
-5. Make the people blend seamlessly as if they were originally photographed specifically for this template
-6. Keep ALL template decorations, borders, text, stickers, and design elements intact
+YOUR TASK:
 
-Generate the complete final composite image where the people look like they naturally belong in this template's world.`;
+1. ANALYZE THE PERSON'S FACE (Image 2+):
+   - Study their exact facial features, skin tone, hair style and color
+   - Note their distinct characteristics and expressions
+   - Memorize these features - they MUST remain identical in the output
 
-// Baca themes.json
+2. ANALYZE THE TEMPLATE STYLE (Image 1):
+   - Identify the visual aesthetic (vintage, modern, kawaii, etc.)
+   - Note the lighting style (warm, cool, dramatic, soft)
+   - Observe the color grading and mood
+   - Detect any grain, texture, or artistic effects
+
+3. PLACE AND EDIT:
+   - Place each person's photo into the empty frames naturally
+   - CRITICAL: Keep each person's face and identity EXACTLY the same - do not alter facial features
+   - Edit the photo to match the template's style perfectly:
+     * Match the exact lighting (direction, softness, color temperature)
+     * Match the exact color grading and saturation
+     * Match any film grain, texture, or vintage effects
+     * Match the overall mood and atmosphere
+   - Use professional studio lighting techniques
+   - Ensure photorealistic, high-resolution quality
+   - Make the person blend seamlessly as if originally photographed for this template
+
+4. PRESERVE TEMPLATE:
+   - Keep all decorations, borders, text, stickers, and design elements intact
+   - Maintain the template's composition and layout
+
+OUTPUT REQUIREMENTS:
+- Photorealistic quality
+- High detail and resolution
+- Consistent face across all frames
+- Professional lighting
+- Natural integration with template aesthetic
+
+Generate the final composite image.`;
+
 function loadThemes(): Theme[] {
   const themesPath = path.join(process.cwd(), "public", "asset", "photobooth", "themes.json");
   const data = fs.readFileSync(themesPath, "utf-8");
@@ -47,7 +69,6 @@ function loadThemes(): Theme[] {
   return parsed.themes;
 }
 
-// Ambil template dari URL publik → base64
 async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
   const res = await fetch(`${baseUrl}/asset/photobooth/${templateFile}`);
@@ -58,7 +79,6 @@ async function fetchTemplateBase64(templateFile: string): Promise<{ data: string
   return { data: buffer.toString("base64"), mime };
 }
 
-// ── POST /api/photobooth/generate ──
 export async function POST(req: NextRequest) {
   try {
     const { images, themeId } = await req.json();
@@ -67,27 +87,26 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    // Load themes dari JSON
     const themes = loadThemes();
     const theme = themes.find((t) => t.id === themeId) ?? themes[0];
 
-    // 1. Ambil template
+    // 1. Load template
     const template = await fetchTemplateBase64(theme.template);
 
-    // 2. Siapkan parts dengan UNIVERSAL PROMPT
+    // 2. Build parts dengan improved prompt
     const parts: any[] = [
       { text: UNIVERSAL_PROMPT },
       { inline_data: { mime_type: template.mime, data: template.data } },
     ];
 
-    // Tambahkan semua foto user
+    // Add user photos
     for (const img of images) {
       const base64Data = img.replace(/^data:image\/\w+;base64,/, "");
       const mimeType = img.startsWith("data:image/png") ? "image/png" : "image/jpeg";
       parts.push({ inline_data: { mime_type: mimeType, data: base64Data } });
     }
 
-    // 3. Kirim ke Nano Banana
+    // 3. Call Nano Banana dengan IMPROVED PARAMETERS
     const res = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
       {
@@ -97,7 +116,9 @@ export async function POST(req: NextRequest) {
           contents: [{ parts }],
           generationConfig: {
             responseModalities: ["IMAGE"],
-            temperature: 1,
+            temperature: 0.5,        // TUNED: Lebih rendah untuk konsistensi (was 1.0)
+            topP: 0.95,              // Control randomness
+            topK: 40,                // Limit token choices
           },
         }),
       }
