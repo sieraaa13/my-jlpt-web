@@ -1,11 +1,51 @@
 import { NextRequest, NextResponse } from "next/server";
-import { THEMES } from "@/data/photobooth-themes";
+import fs from "fs";
+import path from "path";
 
 export const maxDuration = 60;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 const MODEL_IMAGE = "gemini-2.5-flash-image"; // Nano Banana
+
+type Theme = {
+  id: string;
+  name: string;
+  template: string;
+  maxPhotos: number;
+};
+
+// ═══════════════════════════════════════════════════════════════
+// UNIVERSAL PROMPT - Satu untuk semua tema
+// Nano Banana akan analisa template dan tentukan style sendiri
+// ═══════════════════════════════════════════════════════════════
+const UNIVERSAL_PROMPT = `You are editing a photobooth template image.
+
+The FIRST image is the photobooth template with empty photo frames/slots.
+The following images are photos of people.
+
+Your task:
+1. ANALYZE the template carefully - observe its visual style, aesthetic, colors, lighting, theme, mood, and atmosphere
+2. PLACE each person's photo naturally into the empty frames in the template
+3. EDIT each person's photo to PERFECTLY MATCH the template's exact style:
+   - Match the lighting (warm/cool/dramatic/soft)
+   - Match the colors and color grading
+   - Match the grain, texture, and film quality
+   - Match the overall mood and atmosphere
+   - Match any artistic filters or effects
+4. Keep each person's FACE and IDENTITY exactly the same - do not change their facial features
+5. Make the people blend seamlessly as if they were originally photographed specifically for this template
+6. Keep ALL template decorations, borders, text, stickers, and design elements intact
+
+Generate the complete final composite image where the people look like they naturally belong in this template's world.`;
+
+// Baca themes.json
+function loadThemes(): Theme[] {
+  const themesPath = path.join(process.cwd(), "public", "asset", "photobooth", "themes.json");
+  const data = fs.readFileSync(themesPath, "utf-8");
+  const parsed = JSON.parse(data);
+  return parsed.themes;
+}
 
 // Ambil template dari URL publik → base64
 async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
@@ -19,7 +59,6 @@ async function fetchTemplateBase64(templateFile: string): Promise<{ data: string
 }
 
 // ── POST /api/photobooth/generate ──
-// Body: { images: string[] (base64 array foto user), themeId: string }
 export async function POST(req: NextRequest) {
   try {
     const { images, themeId } = await req.json();
@@ -28,30 +67,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    const theme = THEMES.find((t) => t.id === themeId) ?? THEMES[0];
+    // Load themes dari JSON
+    const themes = loadThemes();
+    const theme = themes.find((t) => t.id === themeId) ?? themes[0];
 
     // 1. Ambil template
     const template = await fetchTemplateBase64(theme.template);
 
-    // 2. Siapkan parts: instruksi + template + semua foto user
+    // 2. Siapkan parts dengan UNIVERSAL PROMPT
     const parts: any[] = [
-      {
-        text: `You are editing a photobooth template image.
-
-The FIRST image is the template with ${theme.maxPhotos} empty photo frames/slots.
-The following ${images.length} image(s) are photos of people.
-
-Your task:
-- Place each person's photo naturally into the empty frames of the template
-- Keep each person's face and identity EXACTLY the same
-- Edit each photo to match this theme style: ${theme.prompt}
-- Make the people blend naturally with the template aesthetic (lighting, colors, grain)
-- Keep all template decorations, text, and stickers intact
-- The final result should look like a cohesive, professional photobook page
-
-Generate the complete final composite image.`,
-      },
-      // Template sebagai gambar pertama
+      { text: UNIVERSAL_PROMPT },
       { inline_data: { mime_type: template.mime, data: template.data } },
     ];
 
