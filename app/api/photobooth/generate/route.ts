@@ -6,9 +6,7 @@ export const maxDuration = 60;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
-
-// Menggunakan model reasoning image yang tersedia di API Key Anda
-const MODEL_IMAGE = "gemini-3-pro-image-preview"; 
+const MODEL_IMAGE = "gemini-3-pro-image-preview"; // Pakai model yang kamu pilih
 
 type Theme = {
   id: string;
@@ -17,28 +15,56 @@ type Theme = {
   maxPhotos: number;
 };
 
-const UNIVERSAL_PROMPT = `You are an elite photobooth editor. You have advanced reasoning capabilities to analyze templates and placements perfectly.
+// ═══════════════════════════════════════════════════════════════
+// FIXED PROMPT - TIDAK MINTA ANIME, CUMA COMPOSITE FOTO ASLI
+// ═══════════════════════════════════════════════════════════════
+const REALISTIC_COMPOSITE_PROMPT = `You are a professional photo compositor creating photobooth images.
 
 INPUTS:
-- Image 1: The background photobooth layout/template.
-- Image 2: The user's face photograph.
+- Image 1: Illustrated photobooth template with empty photo frames
+- Image 2+: Real photographs of people
 
-YOUR TASK:
-1. LAYOUT ANALYSIS & PLACEMENT:
-   - Locate the main large central character frame/slot in Image 1. You MUST place the generated character here as the absolute focal point.
-   - Locate all the smaller photobooth strip slots. You MUST replicate the exact same character into these smaller slots.
-   - Do NOT misplace the main character into the small side frames. Follow the hierarchy of the template exactly.
+CRITICAL INSTRUCTIONS:
 
-2. CHARACTER GENERATION & FACE PRESERVATION:
-   - Generate a high-quality anime chibi / photorealistic hybrid illustration of the person from Image 2.
-   - Maintain her exact distinct facial structure, cute expression, eye shape, and black hair color across ALL frames (both large and small slots).
-   - Replicate the exact pose and props (e.g., holding a camera/prop, body angle) from the original character in Image 1.
+1. WHAT THIS IS:
+   This is a COMPOSITE image where REAL PHOTOGRAPHS are placed into an ILLUSTRATED TEMPLATE.
+   Think of it like pasting printed photos onto a cartoon scrapbook page.
 
-3. STYLE & BACKGROUND BLENDING:
-   - Keep the background grids, textures, text (like 'GAMETRADE'), stickers, and all original decorative icons from Image 1 100% untouched and intact.
-   - Blend the newly generated character seamlessly into the frames with matching lighting and color saturation so it looks natively designed for this template.
+2. PLACEMENT:
+   - Identify all photo frame slots in the template (Image 1)
+   - Place the REAL PHOTOGRAPHS from Image 2+ into these frames
+   - Main large frame gets the primary photo
+   - Smaller frames get additional photos or repeated shots
 
-Output ONLY the final high-resolution composite image.`;
+3. PHOTO PRESERVATION - MOST IMPORTANT:
+   ✓ Keep the people as REAL PHOTOGRAPHS - maintain photographic quality
+   ✓ DO NOT convert photos to anime/cartoon/illustration style
+   ✓ DO NOT apply artistic filters to the people
+   ✓ DO NOT turn the photos into drawings or paintings
+   ✓ Preserve realistic skin texture, hair detail, facial features
+   ✓ Keep natural photographic lighting on the subjects
+
+4. TEMPLATE PRESERVATION:
+   ✓ Keep the template's illustrated/cartoon style unchanged
+   ✓ Keep all decorations, text, stickers, backgrounds intact
+   ✓ Maintain the original design elements (grids, patterns, icons)
+
+5. COMPOSITING TECHNIQUE:
+   - Naturally place photos into frame slots
+   - Blend edges smoothly where photo meets frame border
+   - Adjust photo lighting/color to harmonize with template
+   - Add subtle shadows for depth
+   - Make it look like real photos inserted into frames
+
+6. WHAT NOT TO DO:
+   ✗ DO NOT stylize the people into cartoons
+   ✗ DO NOT generate anime/chibi versions
+   ✗ DO NOT create illustrations of the people
+   ✗ DO NOT apply artistic rendering to faces
+
+The result should look like REAL PRINTED PHOTOS placed in an ILLUSTRATED FRAME - a mix of photographic realism (people) and cartoon/illustration (template background).
+
+Generate the final composite image.`;
 
 function loadThemes(): Theme[] {
   const themesPath = path.join(process.cwd(), "public", "asset", "photobooth", "themes.json");
@@ -68,12 +94,11 @@ export async function POST(req: NextRequest) {
     const themes = loadThemes();
     const theme = themes.find((t) => t.id === themeId) ?? themes[0];
 
-    // 1. Ambil template dasar
     const template = await fetchTemplateBase64(theme.template);
 
-    // 2. Bangun array parts dengan penulisan camelCase (inlineData & mimeType) yang benar
+    // Pakai format camelCase sesuai kode kamu
     const parts: any[] = [
-      { text: UNIVERSAL_PROMPT },
+      { text: REALISTIC_COMPOSITE_PROMPT }, // <-- PROMPT BARU
       { 
         inlineData: { 
           mimeType: template.mime, 
@@ -82,7 +107,6 @@ export async function POST(req: NextRequest) {
       },
     ];
 
-    // Masukkan foto wajah user dengan format inlineData yang valid
     for (const img of images) {
       const base64Data = img.replace(/^data:image\/\w+;base64,/, "");
       const mimeType = img.startsWith("data:image/png") ? "image/png" : "image/jpeg";
@@ -96,7 +120,6 @@ export async function POST(req: NextRequest) {
 
     console.log(`--- Mengirim request ke ${MODEL_IMAGE} ---`);
 
-    // 3. Request ke endpoint generateContent
     const res = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
       {
@@ -105,10 +128,11 @@ export async function POST(req: NextRequest) {
         body: JSON.stringify({
           contents: [{ parts }],
           generationConfig: {
-            responseModalities: ["IMAGE"], // Meminta output berupa gambar biner langsung
-            temperature: 0.4,
-            topP: 0.95,
-            topK: 40,
+            responseModalities: ["IMAGE"],
+            temperature: 0.3,    // TURUN dari 0.4 ke 0.3
+            topP: 0.9,           // TURUN dari 0.95 ke 0.9
+            topK: 20,            // TURUN dari 40 ke 20 (lebih restrictive)
+            candidateCount: 1,
           },
         }),
       }
@@ -121,7 +145,6 @@ export async function POST(req: NextRequest) {
 
     const data = await res.json();
     
-    // Ekstraksi hasil secara aman menggunakan format camelCase dari response Google AI Studio
     const resultParts = data.candidates?.[0]?.content?.parts ?? [];
     const imagePart = resultParts.find((p: any) => p.inlineData?.mimeType?.startsWith("image/"));
 
