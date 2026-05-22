@@ -9,6 +9,32 @@ type ThemeInfo = {
   maxPhotos: number;
 };
 
+// ═══════════════════════════════════════════════════════════════
+// Resize + kompres foto agar payload tidak melebihi batas Vercel
+// ═══════════════════════════════════════════════════════════════
+async function compressImage(base64: string, maxSize = 1024, quality = 0.7): Promise<string> {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      let { width, height } = img;
+      if (width > height && width > maxSize) {
+        height = (height * maxSize) / width;
+        width = maxSize;
+      } else if (height > maxSize) {
+        width = (width * maxSize) / height;
+        height = maxSize;
+      }
+      const canvas = document.createElement("canvas");
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d")!;
+      ctx.drawImage(img, 0, 0, width, height);
+      resolve(canvas.toDataURL("image/jpeg", quality));
+    };
+    img.src = base64;
+  });
+}
+
 export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [themes, setThemes] = useState<ThemeInfo[]>([]);
   const [selectedTheme, setSelectedTheme] = useState<ThemeInfo | null>(null);
@@ -34,13 +60,9 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       .catch((err) => setError("Gagal load tema: " + err.message));
   }, [isOpen]);
 
-  // Lock body scroll saat modal terbuka
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    if (isOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
@@ -72,7 +94,8 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     }
   };
 
-  const capturePhoto = () => {
+  // Capture + kompres
+  const capturePhoto = async () => {
     if (photos.length >= maxPhotos || !videoRef.current) return;
     const video = videoRef.current;
     const canvas = document.createElement("canvas");
@@ -83,17 +106,22 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     ctx.scale(-1, 1);
     ctx.drawImage(video, -canvas.width, 0);
     ctx.restore();
-    setPhotos((p) => [...p, canvas.toDataURL("image/jpeg", 0.85)]);
+    const raw = canvas.toDataURL("image/jpeg", 0.9);
+    const compressed = await compressImage(raw);   // <-- KOMPRES
+    setPhotos((p) => [...p, compressed]);
   };
 
+  // Upload + kompres
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files ?? []);
     e.target.value = "";
     files.forEach((file) => {
       if (photos.length >= maxPhotos) return;
       const reader = new FileReader();
-      reader.onload = (ev) => {
-        setPhotos((p) => (p.length < maxPhotos ? [...p, ev.target!.result as string] : p));
+      reader.onload = async (ev) => {
+        const raw = ev.target!.result as string;
+        const compressed = await compressImage(raw);   // <-- KOMPRES
+        setPhotos((p) => (p.length < maxPhotos ? [...p, compressed] : p));
       };
       reader.readAsDataURL(file);
     });
@@ -116,6 +144,18 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ images: photos, themeId: selectedTheme.id }),
       });
+
+      // Cek kalau response bukan JSON (misal error 413)
+      const contentType = res.headers.get("content-type");
+      if (!contentType?.includes("application/json")) {
+        const text = await res.text();
+        throw new Error(
+          res.status === 413
+            ? "Foto terlalu besar. Coba kurangi jumlah foto atau pakai foto lebih kecil."
+            : `Server error: ${text.slice(0, 100)}`
+        );
+      }
+
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || "Generate gagal");
       setResult(data.imageUrl);
@@ -141,32 +181,25 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   };
 
   return (
-    // FIXED: z-index sangat tinggi (z-[9999]) agar di atas navbar website
     <div
       className="fixed inset-0 z-[9999] bg-black/95 overflow-y-auto"
       onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
     >
-      {/* FIXED: Container dengan padding top besar + margin agar tidak ketutup navbar */}
       <div className="min-h-screen flex items-start justify-center px-4 py-8">
         <div className="relative bg-gray-900 rounded-2xl p-6 max-w-6xl w-full shadow-2xl">
-          
-          {/* Tombol close - z tinggi */}
           <button onClick={handleClose} className="absolute top-4 right-4 z-[10000] bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg">×</button>
 
-          {/* Header */}
           <div className="text-center mb-6 pr-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">📸 AI PHOTOBOOTH</h2>
             <p className="text-xs text-gray-400">Pilih tema → kumpulkan foto → generate!</p>
           </div>
 
-          {/* Tema selector */}
           {themes.length > 0 && (
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <label className="text-white text-sm font-semibold">🎨 Pilih Tema:</label>
                 <span className="text-xs text-gray-400">{themes.length} tema</span>
               </div>
-              
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-72 overflow-y-auto p-2 bg-black/30 rounded-xl">
                 {themes.map((theme) => (
                   <button
@@ -201,12 +234,10 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
                     </div>
-                    
                     <div className="absolute bottom-0 inset-x-0 p-2 bg-black/90 backdrop-blur-sm">
                       <p className="text-white text-[11px] font-semibold truncate leading-tight">{theme.name}</p>
                       <p className="text-gray-400 text-[9px]">{theme.maxPhotos} foto</p>
                     </div>
-                    
                     {selectedTheme?.id === theme.id && (
                       <div className="absolute top-2 right-2 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center shadow-lg z-10">
                         <span className="text-white text-sm font-bold">✓</span>
@@ -219,14 +250,11 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           )}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {/* KIRI */}
             <div className="flex flex-col gap-3">
               <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
                 <video ref={videoRef} autoPlay playsInline muted className="w-full h-full object-cover scale-x-[-1]" />
                 {!cameraOn && (
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-500 text-sm">
-                    📷 Kamera mati
-                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center text-gray-500 text-sm">📷 Kamera mati</div>
                 )}
               </div>
 
@@ -260,7 +288,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               </button>
             </div>
 
-            {/* KANAN */}
             <div className="flex flex-col gap-3">
               <div className="relative aspect-[3/4] bg-white rounded-xl overflow-hidden border-2 border-pink-400/50 flex items-center justify-center shadow-xl">
                 {isLoading ? (
@@ -272,12 +299,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                   <img src={result} alt="hasil" className="w-full h-full object-contain" />
                 ) : selectedTheme ? (
                   <div className="relative w-full h-full">
-                    <img 
-                      src={selectedTheme.template} 
-                      alt="preview" 
-                      className="w-full h-full object-contain opacity-50"
-                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                    />
+                    <img src={selectedTheme.template} alt="preview" className="w-full h-full object-contain opacity-50" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <p className="text-gray-400 text-sm bg-white/90 px-4 py-2 rounded-lg shadow">Preview {selectedTheme.name}</p>
                     </div>
