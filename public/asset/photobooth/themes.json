@@ -3,13 +3,13 @@
     {
       "id": "scrapbook",
       "name": "Urban Scrapbook",
-      "template": "scrapbook_template.jpg",
+      "template": "scrapbook-template.jpg",
       "maxPhotos": 6
     },
     {
       "id": "underwater",
       "name": "Underwater Mermaid",
-      "template": "underwater_template.png",
+      "template": "underwater-template.png",
       "maxPhotos": 2
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "ig_story",
       "name": "ig story",
-      "template": "ig_story.png",
+      "template": "ig_story.jpg",
       "maxPhotos": 3
     },
     {
