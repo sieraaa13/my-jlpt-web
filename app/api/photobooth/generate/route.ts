@@ -6,7 +6,7 @@ export const maxDuration = 60;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
-const MODEL_IMAGE = "gemini-3-pro-image-preview"; // Pakai model yang kamu pilih
+const MODEL_IMAGE = "gemini-3-pro-image-preview";
 
 type Theme = {
   id: string;
@@ -16,55 +16,60 @@ type Theme = {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// FIXED PROMPT - TIDAK MINTA ANIME, CUMA COMPOSITE FOTO ASLI
+// CRITICAL: FRAME HARUS TETAP, JANGAN DIUBAH!
 // ═══════════════════════════════════════════════════════════════
-const REALISTIC_COMPOSITE_PROMPT = `You are a professional photo compositor creating photobooth images.
+const FRAME_LOCKED_PROMPT = `You are a professional photo compositor. Your job is to insert real photographs into pre-existing frame slots WITHOUT modifying the template structure.
 
 INPUTS:
-- Image 1: Illustrated photobooth template with empty photo frames
-- Image 2+: Real photographs of people
+- Image 1: The photobooth template (this is SACRED - DO NOT MODIFY)
+- Image 2+: Real photographs to insert
 
-CRITICAL INSTRUCTIONS:
+CRITICAL RULES - FRAME PRESERVATION:
 
-1. WHAT THIS IS:
-   This is a COMPOSITE image where REAL PHOTOGRAPHS are placed into an ILLUSTRATED TEMPLATE.
-   Think of it like pasting printed photos onto a cartoon scrapbook page.
+1. THE TEMPLATE IS LOCKED:
+   ✓ Image 1's layout is 100% FIXED and MUST NOT be altered
+   ✓ DO NOT move any frames or borders
+   ✓ DO NOT resize any frame slots
+   ✓ DO NOT change frame positions
+   ✓ DO NOT modify frame borders, decorations, or outlines
+   ✓ Keep ALL decorative elements exactly where they are (fish, seaweed, bubbles, text, etc.)
 
-2. PLACEMENT:
-   - Identify all photo frame slots in the template (Image 1)
-   - Place the REAL PHOTOGRAPHS from Image 2+ into these frames
-   - Main large frame gets the primary photo
-   - Smaller frames get additional photos or repeated shots
+2. FRAME STRUCTURE MUST REMAIN IDENTICAL:
+   ✓ If there are 3 frame slots in the template → output must have exactly 3 frame slots in the SAME positions
+   ✓ Frame shapes (rectangles, polaroid borders, etc.) must stay the same
+   ✓ Frame borders (blue outlines, decorative edges) must not change
+   ✓ Spacing between frames must remain unchanged
 
-3. PHOTO PRESERVATION - MOST IMPORTANT:
-   ✓ Keep the people as REAL PHOTOGRAPHS - maintain photographic quality
-   ✓ DO NOT convert photos to anime/cartoon/illustration style
-   ✓ DO NOT apply artistic filters to the people
-   ✓ DO NOT turn the photos into drawings or paintings
-   ✓ Preserve realistic skin texture, hair detail, facial features
-   ✓ Keep natural photographic lighting on the subjects
+3. YOUR ONLY JOB - INSERT PHOTOS:
+   ✓ Take the REAL PHOTOGRAPHS from Image 2+
+   ✓ Place them INSIDE the existing frame slots
+   ✓ Crop/fit the photos to match the frame dimensions
+   ✓ Keep the photos as REALISTIC photographs (not anime/cartoon)
 
-4. TEMPLATE PRESERVATION:
-   ✓ Keep the template's illustrated/cartoon style unchanged
-   ✓ Keep all decorations, text, stickers, backgrounds intact
-   ✓ Maintain the original design elements (grids, patterns, icons)
+4. WHAT TO PRESERVE FROM TEMPLATE:
+   ✓ Background color and patterns
+   ✓ All text ("UNDER SEA", etc.)
+   ✓ All decorative icons (fish, plants, bubbles, shells)
+   ✓ Grid lines and borders
+   ✓ Frame outlines and borders
+   ✓ Layout structure and positioning
 
 5. COMPOSITING TECHNIQUE:
-   - Naturally place photos into frame slots
-   - Blend edges smoothly where photo meets frame border
-   - Adjust photo lighting/color to harmonize with template
-   - Add subtle shadows for depth
-   - Make it look like real photos inserted into frames
+   - The photos should look like they were printed and placed inside the pre-existing frames
+   - Adjust photo brightness/color to harmonize with template
+   - Keep edges clean where photo meets frame border
+   - Maintain photographic quality of the people
 
-6. WHAT NOT TO DO:
-   ✗ DO NOT stylize the people into cartoons
-   ✗ DO NOT generate anime/chibi versions
-   ✗ DO NOT create illustrations of the people
-   ✗ DO NOT apply artistic rendering to faces
+6. ABSOLUTE PROHIBITIONS:
+   ✗ DO NOT move frames to different positions
+   ✗ DO NOT resize or reshape frames
+   ✗ DO NOT change the template layout
+   ✗ DO NOT convert photos to cartoons/anime
+   ✗ DO NOT redraw or regenerate the template
 
-The result should look like REAL PRINTED PHOTOS placed in an ILLUSTRATED FRAME - a mix of photographic realism (people) and cartoon/illustration (template background).
+Think of this like a physical photo frame: the frame stays exactly where it is, you just slide the photo inside it.
 
-Generate the final composite image.`;
+Generate the composite with LOCKED frame positions.`;
 
 function loadThemes(): Theme[] {
   const themesPath = path.join(process.cwd(), "public", "asset", "photobooth", "themes.json");
@@ -96,9 +101,8 @@ export async function POST(req: NextRequest) {
 
     const template = await fetchTemplateBase64(theme.template);
 
-    // Pakai format camelCase sesuai kode kamu
     const parts: any[] = [
-      { text: REALISTIC_COMPOSITE_PROMPT }, // <-- PROMPT BARU
+      { text: FRAME_LOCKED_PROMPT },
       { 
         inlineData: { 
           mimeType: template.mime, 
@@ -129,9 +133,9 @@ export async function POST(req: NextRequest) {
           contents: [{ parts }],
           generationConfig: {
             responseModalities: ["IMAGE"],
-            temperature: 0.3,    // TURUN dari 0.4 ke 0.3
-            topP: 0.9,           // TURUN dari 0.95 ke 0.9
-            topK: 20,            // TURUN dari 40 ke 20 (lebih restrictive)
+            temperature: 0.2,    // SANGAT RENDAH untuk preserve struktur
+            topP: 0.85,          // Lebih fokus
+            topK: 15,            // Sangat restrictive
             candidateCount: 1,
           },
         }),
