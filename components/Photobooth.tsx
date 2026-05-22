@@ -21,14 +21,12 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   const streamRef = useRef<MediaStream | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  // Load daftar tema dari API
   useEffect(() => {
     if (!isOpen) return;
     fetch("/api/photobooth/themes")
       .then((r) => r.json())
       .then((data) => {
         if (data.success && data.themes.length > 0) {
-          console.log("Loaded themes:", data.themes.length);
           setThemes(data.themes);
           setSelectedTheme(data.themes[0]);
         }
@@ -137,21 +135,23 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 overflow-y-auto"
       onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
     >
-      <div className="relative bg-gray-900 rounded-2xl p-6 max-w-6xl w-full">
-        <button onClick={handleClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl">×</button>
+      <div className="relative bg-gray-900 rounded-2xl p-6 max-w-6xl w-full my-8">
+        <button onClick={handleClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg">×</button>
 
-        <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-white mb-2">📸 AI PHOTOBOOTH</h2>
-          <p className="text-sm text-gray-400">Pilih tema → kumpulkan foto → klik Generate!</p>
+        <div className="text-center mb-5">
+          <h2 className="text-3xl font-bold text-white mb-1">📸 AI PHOTOBOOTH</h2>
+          <p className="text-xs text-gray-400">Pilih tema → kumpulkan foto → generate!</p>
         </div>
 
-        {/* Pilih Tema - FIXED: wrap + show all themes */}
+        {/* Pilih Tema - UI FIXED */}
         {themes.length > 0 && (
           <div className="mb-5">
-            <label className="block text-white text-sm font-medium mb-2">
-              🎨 Pilih Tema ({themes.length} tema tersedia):
-            </label>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-64 overflow-y-auto p-1">
+            <div className="flex items-center justify-between mb-3">
+              <label className="text-white text-sm font-semibold">🎨 Pilih Tema:</label>
+              <span className="text-xs text-gray-400">{themes.length} tema tersedia</span>
+            </div>
+            
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-72 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
               {themes.map((theme) => (
                 <button
                   key={theme.id}
@@ -160,42 +160,45 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                     setPhotos([]);
                     setResult(null);
                   }}
-                  className={`relative rounded-xl overflow-hidden border-2 transition-all hover:scale-105 ${
+                  className={`group relative rounded-lg overflow-hidden border-2 transition-all duration-200 ${
                     selectedTheme?.id === theme.id
-                      ? "border-pink-500 ring-2 ring-pink-400 shadow-lg shadow-pink-500/50"
-                      : "border-gray-600 hover:border-gray-400"
+                      ? "border-pink-500 ring-2 ring-pink-400/50 scale-105 shadow-lg shadow-pink-500/30"
+                      : "border-gray-700 hover:border-pink-400/50 hover:scale-102"
                   }`}
                 >
-                  {/* Template preview dengan fallback */}
-                  <div className="w-full aspect-[3/4] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
+                  {/* Template Image */}
+                  <div className="w-full aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900 relative">
                     <img 
                       src={theme.template} 
                       alt={theme.name}
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        // Fallback jika gambar gagal load
-                        e.currentTarget.style.display = 'none';
-                        const parent = e.currentTarget.parentElement;
-                        if (parent && !parent.querySelector('.fallback-text')) {
-                          const fallback = document.createElement('div');
-                          fallback.className = 'fallback-text text-white text-xs text-center p-2';
-                          fallback.textContent = '🖼️ Template';
-                          parent.appendChild(fallback);
+                        const target = e.currentTarget;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent && !parent.querySelector('.error-placeholder')) {
+                          const placeholder = document.createElement('div');
+                          placeholder.className = 'error-placeholder absolute inset-0 flex flex-col items-center justify-center text-gray-500 text-center p-2';
+                          placeholder.innerHTML = '<div class="text-2xl mb-1">🖼️</div><div class="text-[10px]">Template<br/>tidak ada</div>';
+                          parent.appendChild(placeholder);
                         }
                       }}
                     />
+                    
+                    {/* Subtle gradient overlay - TIDAK menutupi gambar */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
                   </div>
                   
-                  {/* Info tema */}
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-2 pt-6">
-                    <p className="text-white text-xs font-bold truncate">{theme.name}</p>
-                    <p className="text-gray-300 text-[10px]">{theme.maxPhotos} foto</p>
+                  {/* Info - hanya di bawah, TIDAK menutupi gambar */}
+                  <div className="absolute bottom-0 inset-x-0 p-2 bg-black/80 backdrop-blur-sm">
+                    <p className="text-white text-[11px] font-semibold truncate leading-tight">{theme.name}</p>
+                    <p className="text-gray-400 text-[9px]">{theme.maxPhotos} foto</p>
                   </div>
                   
-                  {/* Checkmark untuk tema terpilih */}
+                  {/* Checkmark */}
                   {selectedTheme?.id === theme.id && (
-                    <div className="absolute top-1 right-1 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                    <div className="absolute top-2 right-2 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center shadow-lg">
+                      <span className="text-white text-sm font-bold">✓</span>
                     </div>
                   )}
                 </button>
@@ -205,75 +208,80 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {/* KIRI: Input foto */}
-          <div className="flex flex-col gap-4">
-            <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600">
+          {/* KIRI */}
+          <div className="flex flex-col gap-3">
+            <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
               <video ref={videoRef} autoPlay playsInline muted className="w-full h-full object-cover scale-x-[-1]" />
               {!cameraOn && (
                 <div className="absolute inset-0 flex items-center justify-center text-gray-500 text-sm">
-                  Kamera mati
+                  📷 Kamera mati
                 </div>
               )}
             </div>
 
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2">
               {!cameraOn ? (
-                <button onClick={startCamera} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-teal-600 to-teal-800 text-sm">📷 Buka Kamera</button>
+                <button onClick={startCamera} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-sm shadow-lg">📷 Buka Kamera</button>
               ) : (
-                <button onClick={capturePhoto} disabled={photos.length >= maxPhotos} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-pink-500 to-pink-700 text-sm disabled:opacity-50">📸 Ambil ({photos.length}/{maxPhotos})</button>
+                <button onClick={capturePhoto} disabled={photos.length >= maxPhotos} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 text-sm disabled:opacity-40 shadow-lg">📸 Ambil ({photos.length}/{maxPhotos})</button>
               )}
-              <button onClick={() => fileRef.current?.click()} disabled={photos.length >= maxPhotos} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-amber-700 text-sm disabled:opacity-50">🖼️ Upload</button>
+              <button onClick={() => fileRef.current?.click()} disabled={photos.length >= maxPhotos} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-sm disabled:opacity-40 shadow-lg">🖼️ Upload</button>
               <input ref={fileRef} type="file" accept="image/*" multiple className="hidden" onChange={handleUpload} />
             </div>
 
             {photos.length > 0 && (
               <div className="grid grid-cols-4 gap-2">
                 {photos.map((p, i) => (
-                  <div key={i} className="relative aspect-square rounded-lg overflow-hidden">
-                    <img src={p} alt={`foto ${i+1}`} className="w-full h-full object-cover" />
-                    <button onClick={() => removePhoto(i)} className="absolute top-0.5 right-0.5 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">×</button>
+                  <div key={i} className="relative aspect-square rounded-lg overflow-hidden border border-gray-700">
+                    <img src={p} alt={`${i+1}`} className="w-full h-full object-cover" />
+                    <button onClick={() => removePhoto(i)} className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-lg">×</button>
                   </div>
                 ))}
               </div>
             )}
 
             {error && (
-              <div className="bg-red-900/30 border border-red-700 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
+              <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
             )}
 
-            <button onClick={handleGenerate} disabled={photos.length === 0 || isLoading || !selectedTheme} className="w-full py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-purple-500 to-indigo-600 disabled:opacity-50 text-sm md:text-base">
-              {isLoading ? "✨ AI sedang memproses... (30-60 detik)" : `✨ Generate ${selectedTheme ? `(${selectedTheme.name})` : ''}`}
+            <button onClick={handleGenerate} disabled={photos.length === 0 || isLoading || !selectedTheme} className="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
+              {isLoading ? "✨ AI memproses... (30-60 detik)" : selectedTheme ? `✨ Generate ${selectedTheme.name}` : '✨ Generate'}
             </button>
           </div>
 
-          {/* KANAN: Hasil */}
-          <div className="flex flex-col gap-4">
-            <div className="relative aspect-[3/4] bg-white rounded-xl overflow-hidden border-2 border-pink-300 flex items-center justify-center">
+          {/* KANAN */}
+          <div className="flex flex-col gap-3">
+            <div className="relative aspect-[3/4] bg-white rounded-xl overflow-hidden border-2 border-pink-400/50 flex items-center justify-center shadow-xl">
               {isLoading ? (
                 <div className="text-center p-6">
                   <div className="w-14 h-14 border-4 border-pink-300 border-t-pink-600 rounded-full animate-spin mx-auto mb-3"></div>
-                  <p className="text-gray-600 text-sm">AI menggabungkan foto...</p>
+                  <p className="text-gray-600 text-sm font-medium">AI menggabungkan foto...</p>
                 </div>
               ) : result ? (
                 <img src={result} alt="hasil" className="w-full h-full object-contain" />
               ) : selectedTheme ? (
-                <img 
-                  src={selectedTheme.template} 
-                  alt="template preview" 
-                  className="w-full h-full object-contain opacity-60"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+                <div className="relative w-full h-full">
+                  <img 
+                    src={selectedTheme.template} 
+                    alt="preview" 
+                    className="w-full h-full object-contain opacity-50"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="text-gray-400 text-sm bg-white/90 px-4 py-2 rounded-lg">Preview {selectedTheme.name}</p>
+                  </div>
+                </div>
               ) : (
-                <p className="text-gray-400 text-sm">Pilih tema dulu</p>
+                <p className="text-gray-400">Pilih tema dulu</p>
               )}
             </div>
 
             {result && (
               <div className="flex gap-2">
-                <button onClick={handleDownload} className="flex-1 py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-green-500 to-teal-500">⬇️ Download</button>
-                <button onClick={handleReset} className="px-5 py-3 rounded-2xl font-medium text-gray-200 bg-gray-700">🔄 Reset</button>
+                <button onClick={handleDownload} className="flex-1 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 shadow-lg">⬇️ Download</button>
+                <button onClick={handleReset} className="px-5 py-3 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 shadow-lg">🔄</button>
               </div>
             )}
           </div>
