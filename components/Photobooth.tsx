@@ -28,8 +28,9 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       .then((r) => r.json())
       .then((data) => {
         if (data.success && data.themes.length > 0) {
+          console.log("Loaded themes:", data.themes.length);
           setThemes(data.themes);
-          setSelectedTheme(data.themes[0]); // default tema pertama
+          setSelectedTheme(data.themes[0]);
         }
       })
       .catch((err) => setError("Gagal load tema: " + err.message));
@@ -50,7 +51,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
   const maxPhotos = selectedTheme?.maxPhotos ?? 6;
 
-  // ── Buka kamera ──
   const startCamera = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -64,7 +64,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     }
   };
 
-  // ── Ambil foto dari kamera ──
   const capturePhoto = () => {
     if (photos.length >= maxPhotos || !videoRef.current) return;
     const video = videoRef.current;
@@ -79,7 +78,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     setPhotos((p) => [...p, canvas.toDataURL("image/jpeg", 0.85)]);
   };
 
-  // ── Upload foto dari device ──
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files ?? []);
     e.target.value = "";
@@ -97,7 +95,6 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     setPhotos((p) => p.filter((_, i) => i !== idx));
   };
 
-  // ── Generate ──
   const handleGenerate = async () => {
     if (photos.length === 0 || !selectedTheme) return;
     setIsLoading(true);
@@ -148,11 +145,13 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
           <p className="text-sm text-gray-400">Pilih tema → kumpulkan foto → klik Generate!</p>
         </div>
 
-        {/* Pilih Tema */}
+        {/* Pilih Tema - FIXED: wrap + show all themes */}
         {themes.length > 0 && (
           <div className="mb-5">
-            <label className="block text-white text-sm font-medium mb-2">🎨 Pilih Tema:</label>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+            <label className="block text-white text-sm font-medium mb-2">
+              🎨 Pilih Tema ({themes.length} tema tersedia):
+            </label>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-64 overflow-y-auto p-1">
               {themes.map((theme) => (
                 <button
                   key={theme.id}
@@ -161,17 +160,44 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                     setPhotos([]);
                     setResult(null);
                   }}
-                  className={`relative rounded-xl overflow-hidden border-3 transition-all ${
+                  className={`relative rounded-xl overflow-hidden border-2 transition-all hover:scale-105 ${
                     selectedTheme?.id === theme.id
-                      ? "border-pink-500 ring-2 ring-pink-400"
+                      ? "border-pink-500 ring-2 ring-pink-400 shadow-lg shadow-pink-500/50"
                       : "border-gray-600 hover:border-gray-400"
                   }`}
                 >
-                  <img src={theme.template} alt={theme.name} className="w-full aspect-[3/4] object-cover" />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-2">
+                  {/* Template preview dengan fallback */}
+                  <div className="w-full aspect-[3/4] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
+                    <img 
+                      src={theme.template} 
+                      alt={theme.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // Fallback jika gambar gagal load
+                        e.currentTarget.style.display = 'none';
+                        const parent = e.currentTarget.parentElement;
+                        if (parent && !parent.querySelector('.fallback-text')) {
+                          const fallback = document.createElement('div');
+                          fallback.className = 'fallback-text text-white text-xs text-center p-2';
+                          fallback.textContent = '🖼️ Template';
+                          parent.appendChild(fallback);
+                        }
+                      }}
+                    />
+                  </div>
+                  
+                  {/* Info tema */}
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-2 pt-6">
                     <p className="text-white text-xs font-bold truncate">{theme.name}</p>
                     <p className="text-gray-300 text-[10px]">{theme.maxPhotos} foto</p>
                   </div>
+                  
+                  {/* Checkmark untuk tema terpilih */}
+                  {selectedTheme?.id === theme.id && (
+                    <div className="absolute top-1 right-1 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center">
+                      <span className="text-white text-xs">✓</span>
+                    </div>
+                  )}
                 </button>
               ))}
             </div>
@@ -216,7 +242,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
             )}
 
             <button onClick={handleGenerate} disabled={photos.length === 0 || isLoading || !selectedTheme} className="w-full py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-purple-500 to-indigo-600 disabled:opacity-50 text-sm md:text-base">
-              {isLoading ? "✨ AI sedang memproses... (30-60 detik)" : `✨ Generate (${photos.length} foto)`}
+              {isLoading ? "✨ AI sedang memproses... (30-60 detik)" : `✨ Generate ${selectedTheme ? `(${selectedTheme.name})` : ''}`}
             </button>
           </div>
 
@@ -231,8 +257,17 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               ) : result ? (
                 <img src={result} alt="hasil" className="w-full h-full object-contain" />
               ) : selectedTheme ? (
-                <img src={selectedTheme.template} alt="template" className="w-full h-full object-contain opacity-60" />
-              ) : null}
+                <img 
+                  src={selectedTheme.template} 
+                  alt="template preview" 
+                  className="w-full h-full object-contain opacity-60"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              ) : (
+                <p className="text-gray-400 text-sm">Pilih tema dulu</p>
+              )}
             </div>
 
             {result && (
