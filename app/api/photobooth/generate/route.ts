@@ -7,9 +7,9 @@ export const maxDuration = 60;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 
-// PISAHKAN MODEL MENJADI DUA UNTUK AKURASI MAKSIMAL
-const MODEL_TEXT_ANALYZER = "gemini-2.5-flash"; 
-const MODEL_IMAGE_GENERATOR = "imagen-3.0-generate-002"; // Menggunakan Imagen 3 Berbasis Produksi yang Stabil
+// Definisi model yang tepat dan stabil untuk Google AI Studio
+const MODEL_TEXT_ANALYZER = "gemini-1.5-flash"; 
+const MODEL_IMAGE_GENERATOR = "imagen-3.0-generate-002"; 
 
 type Theme = {
   id: string;
@@ -46,29 +46,30 @@ export async function POST(req: NextRequest) {
     const themes = loadThemes();
     const theme = themes.find((t) => t.id === themeId) ?? themes[0];
 
-    // 1. Load template gambar dasar
+    // 1. Ambil data template dasar
     const template = await fetchTemplateBase64(theme.template);
 
     // ═══════════════════════════════════════════════════════════════
-    // TAHAP 1: MEMANGGIL GEMINI UNTUK MEMBUAT PROMPT DINAMIS SECARA VISUAL
+    // TAHAP 1: GEMINI MEMBUAT PROMPT SECARA VISUAL (MENCEGAH SALAH FRAME)
     // ═══════════════════════════════════════════════════════════════
     const analysisParts: any[] = [
       { 
-        text: `Analyze the photobooth template (Image 1) and the user face (Image 2). 
-               Write a highly detailed, comprehensive English prompt for Imagen 3 to generate a composite image.
-               The prompt must specify replacing the main large character and all small photo strip slots with an identical anime chibi/photorealistic illustration matching the exact face features, expressions, and hair color of the person in Image 2.
-               Crucially, emphasize that the main character must occupy the large central frame position from Image 1, duplicating the pose and props (like holding a camera or scythe).
-               Ensure you instruct to keep all background locker grids, text, title graphics, and stickers completely untouched. 
-               Output ONLY the clean prompt string, no markdown headers.` 
+        text: `You are an expert prompt engineer for Imagen 3. Analyze the layout template (Image 1) and the user's face (Image 2). 
+               Create a highly detailed, single-paragraph English prompt to generate a new composite image.
+               The prompt must strictly demand replacing the main big character and all smaller photobooth photo slots with an identical anime chibi illustration that shares the exact facial structure, cute expression, and black hair of the person in Image 2.
+               Crucially, specify that the character must be positioned inside the main grid template exactly where the original drawing is, holding the weapon/prop.
+               All background grids, green textures, 'GAMETRADE' text, stickers, and decorative icons from Image 1 must remain completely unchanged and integrated.
+               Return ONLY the final prompt text string. Do not include any intro, markdown, or code blocks.` 
       },
       { inline_data: { mime_type: template.mime, data: template.data } }
     ];
 
-    // Masukkan foto user ke dalam analisis visual Gemini
+    // Ambil foto user pertama
     const base64UserFace = images[0].replace(/^data:image\/\w+;base64,/, "");
     const mimeUserFace = images[0].startsWith("data:image/png") ? "image/png" : "image/jpeg";
     analysisParts.push({ inline_data: { mime_type: mimeUserFace, data: base64UserFace } });
 
+    console.log("--- Memanggil Gemini untuk analisis visual prompt ---");
     const geminiAnalyzeRes = await fetch(
       `${GEMINI_BASE}/models/${MODEL_TEXT_ANALYZER}:generateContent?key=${GEMINI_API_KEY}`,
       {
@@ -84,46 +85,57 @@ export async function POST(req: NextRequest) {
     }
 
     const analyzeData = await geminiAnalyzeRes.json();
-    const dynamicPromptText = analyzeData.candidates?.[0]?.content?.parts?.[0]?.text ?? "High quality photobooth composite image";
+    let dynamicPromptText = analyzeData.candidates?.[0]?.content?.parts?.[0]?.text ?? "Kawaii anime chibi girl photobooth composite";
     
-    console.log("Generated Dynamic Prompt from Gemini:", dynamicPromptText);
+    // Bersihkan prompt jika secara tidak sengaja Gemini memberikan format markdown backticks
+    dynamicPromptText = dynamicPromptText.replace(/```json|```text|```/g, "").trim();
+    console.log("Prompt Terpilih Hasil Analisis:", dynamicPromptText);
 
     // ═══════════════════════════════════════════════════════════════
-    // TAHAP 2: MENEMBAKKAN PROMPT DINAMIS KE ENDPOINT IMAGEN (PRODUKSI)
+    // TAHAP 2: MEMANGGIL IMAGEN 3 DENGAN STRUKTUR PAYLOAD YANG BENAR
     // ═══════════════════════════════════════════════════════════════
+    console.log("--- Memanggil API Imagen 3 dengan Payload Resmi ---");
+    
+    const imagenRequestBody = {
+      instances: [
+        {
+          prompt: dynamicPromptText,
+          image: {
+            imageBytes: template.data // MENGGUNAKAN KEY 'imageBytes' YANG BENAR UNTUK GOOGLE AI STUDIO
+          }
+        }
+      ],
+      parameters: {
+        sampleCount: 1,
+        aspectRatio: "1:1",
+        outputMimeType: "image/png",
+        guidanceScale: 10.0, // Dinaikkan ke 10.0 agar peletakan layout benar-benar dipaksa mengikuti template dasar
+        personGeneration: "ALLOW_ADULT"
+      }
+    };
+
     const imageGenerationRes = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE_GENERATOR}:predict?key=${GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          instances: [
-            {
-              prompt: dynamicPromptText,
-              image: { bytesBase64: template.data } // Menyisipkan template asli sebagai landasan posisi kodingan (Img2Img)
-            }
-          ],
-          parameters: {
-            sampleCount: 1,
-            aspectRatio: "1:1",
-            outputMimeType: "image/png",
-            guidanceScale: 8.5, // Mengunci kepatuhan model gambar terhadap instruksi posisi frame besar
-            personGeneration: "allow_adult"
-          },
-        }),
+        body: JSON.stringify(imagenRequestBody),
       }
     );
 
     if (!imageGenerationRes.ok) {
-      const err = await imageGenerationRes.text();
-      throw new Error(`Imagen Generator error: ${err}`);
+      const errPayload = await imageGenerationRes.text();
+      throw new Error(`Imagen 3 API Error (Status ${imageGenerationRes.status}): ${errPayload}`);
     }
 
     const finalData = await imageGenerationRes.json();
+    
+    // Mengambil base64 dari struktur response predictions Google AI Studio
     const finalImageBase64 = finalData.predictions?.[0]?.bytesBase64;
 
     if (!finalImageBase64) {
-      throw new Error("Tidak ada data gambar base64 dari Imagen");
+      console.error("Response API Mentah:", JSON.stringify(finalData));
+      throw new Error("Gagal mengambil bytesBase64 dari output Imagen");
     }
 
     return NextResponse.json({
@@ -133,8 +145,8 @@ export async function POST(req: NextRequest) {
     });
 
   } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Terjadi kesalahan";
-    console.error("[/api/photobooth/generate]", error);
+    const message = error instanceof Error ? error.message : "Terjadi kesalahan sistem";
+    console.error("[/api/photobooth/generate] CRITICAL ERROR:", error);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
