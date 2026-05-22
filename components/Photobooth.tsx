@@ -135,23 +135,26 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 overflow-y-auto"
       onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
     >
-      <div className="relative bg-gray-900 rounded-2xl p-6 max-w-6xl w-full my-8">
-        <button onClick={handleClose} className="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg">×</button>
+      {/* FIXED: Tambah padding atas lebih banyak agar tidak tertutup */}
+      <div className="relative bg-gray-900 rounded-2xl p-6 pt-16 max-w-6xl w-full my-8">
+        <button onClick={handleClose} className="absolute top-4 right-4 z-50 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl shadow-lg">×</button>
 
-        <div className="text-center mb-5">
+        {/* Header - positioned absolute di atas */}
+        <div className="absolute top-6 left-6 right-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-1">📸 AI PHOTOBOOTH</h2>
           <p className="text-xs text-gray-400">Pilih tema → kumpulkan foto → generate!</p>
         </div>
 
-        {/* Pilih Tema - UI FIXED */}
+        {/* FIXED: Tema selector dengan spacing yang cukup dari atas */}
         {themes.length > 0 && (
           <div className="mb-5">
             <div className="flex items-center justify-between mb-3">
               <label className="text-white text-sm font-semibold">🎨 Pilih Tema:</label>
-              <span className="text-xs text-gray-400">{themes.length} tema tersedia</span>
+              <span className="text-xs text-gray-400">{themes.length} tema</span>
             </div>
             
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-72 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+            {/* FIXED: Grid tidak akan tertutup header karena parent sudah pt-16 */}
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 max-h-64 overflow-y-auto pr-2">
               {themes.map((theme) => (
                 <button
                   key={theme.id}
@@ -166,7 +169,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                       : "border-gray-700 hover:border-pink-400/50 hover:scale-102"
                   }`}
                 >
-                  {/* Template Image */}
+                  {/* Template preview */}
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900 relative">
                     <img 
                       src={theme.template} 
@@ -184,20 +187,18 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                         }
                       }}
                     />
-                    
-                    {/* Subtle gradient overlay - TIDAK menutupi gambar */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
                   </div>
                   
-                  {/* Info - hanya di bawah, TIDAK menutupi gambar */}
-                  <div className="absolute bottom-0 inset-x-0 p-2 bg-black/80 backdrop-blur-sm">
+                  {/* Info - HANYA di bawah, tidak menutupi gambar */}
+                  <div className="absolute bottom-0 inset-x-0 p-2 bg-black/90 backdrop-blur-sm">
                     <p className="text-white text-[11px] font-semibold truncate leading-tight">{theme.name}</p>
                     <p className="text-gray-400 text-[9px]">{theme.maxPhotos} foto</p>
                   </div>
                   
                   {/* Checkmark */}
                   {selectedTheme?.id === theme.id && (
-                    <div className="absolute top-2 right-2 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center shadow-lg">
+                    <div className="absolute top-2 right-2 bg-pink-500 rounded-full w-6 h-6 flex items-center justify-center shadow-lg z-10">
                       <span className="text-white text-sm font-bold">✓</span>
                     </div>
                   )}
@@ -234,7 +235,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                 {photos.map((p, i) => (
                   <div key={i} className="relative aspect-square rounded-lg overflow-hidden border border-gray-700">
                     <img src={p} alt={`${i+1}`} className="w-full h-full object-cover" />
-                    <button onClick={() => removePhoto(i)} className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-lg">×</button>
+                    <button onClick={() => removePhoto(i)} className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-lg z-10">×</button>
                   </div>
                 ))}
               </div>
@@ -270,7 +271,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-gray-400 text-sm bg-white/90 px-4 py-2 rounded-lg">Preview {selectedTheme.name}</p>
+                    <p className="text-gray-400 text-sm bg-white/90 px-4 py-2 rounded-lg shadow">Preview {selectedTheme.name}</p>
                   </div>
                 </div>
               ) : (
