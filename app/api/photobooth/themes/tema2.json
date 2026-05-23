@@ -1,0 +1,18 @@
+{
+  "themes": [
+    {
+      "id": "underwater",
+      "name": "Underwater Mermaid",
+      "template": "underwater.png",
+      "maxPhotos": 2,
+      "prompt": "Use Image 1 as the BASE CANVAS that must stay unchanged. This is an illustrated underwater 'UNDER SEA' template with tilted polaroid frames. Place the real photographs from Image 2+ into the existing frame slots, keeping the frames in their EXACT tilted positions. Keep all underwater decorations (fish, bubbles, seaweed, shells, axolotl) and text intact. Keep people as REALISTIC photos - do NOT turn them into cartoons. Only adjust photo colors slightly to harmonize with the blue underwater scene."
+    },
+    {
+      "id": "dream_diva",
+      "name": "Dream Diva",
+      "template": "dream-diva.jpg",
+      "maxPhotos": 5,
+      "prompt": "Use Image 1 as the base layout. This template has a main character that breaks OUT of the frame plus smaller photobooth slots. Replace the character's face and identity with the user's face from Image 2, keeping the EXACT same pose, clothing, and the breaking-out-of-frame 3D effect. Replicate the same person into all the smaller frame slots. Maintain the user's distinct facial features across all frames. Keep all template decorations, text, and stickers intact."
+    }
+  ]
+}

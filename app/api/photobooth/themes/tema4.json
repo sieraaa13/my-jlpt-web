@@ -1,0 +1,18 @@
+{
+  "themes": [
+    {
+      "id": "daily",
+      "name": "Daily Highlight",
+      "template": "daily.png",
+      "maxPhotos": 5,
+      "prompt": "Use Image 1 as the BASE CANVAS that must stay unchanged. Place the real photographs from Image 2+ into the existing frame slots and collage areas. Keep the casual daily-life scrapbook aesthetic: handwritten text, washi tape, polaroid frames, cute stickers. Keep all decorations and layout intact. Keep people as REALISTIC photos, do NOT convert to cartoon. Blend naturally into the collage."
+    },
+    {
+      "id": "vintage_film",
+      "name": "Vintage Film",
+      "template": "vintage-film.png",
+      "maxPhotos": 4,
+      "prompt": "Use Image 1 as the BASE CANVAS that must stay unchanged. Place the real photographs from Image 2+ into the existing film frame slots. Apply a vintage analog film mood: warm orange-brown tones, subtle film grain, light leaks, 35mm nostalgic feel. Keep all film strip decorations and frame positions intact. Keep people as REALISTIC photos, do NOT convert to cartoon."
+    }
+  ]
+}

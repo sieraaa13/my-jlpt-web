@@ -1,0 +1,18 @@
+{
+  "themes": [
+    {
+      "id": "scrapbook",
+      "name": "Urban Scrapbook",
+      "template": "scrapbook.jpg",
+      "maxPhotos": 6,
+      "prompt": "Use Image 1 as the BASE CANVAS that must stay unchanged. Place the real photographs from Image 2+ into the existing photo frame slots. Keep all decorations, borders, and frame positions exactly as shown. Keep the people as REALISTIC photographs - do NOT convert to cartoon. Apply a candid urban street photography mood: slightly desaturated colors, natural film grain, moody city atmosphere. Blend edges naturally where photo meets frame."
+    },
+    {
+      "id": "ig_story",
+      "name": "IG Story",
+      "template": "ig_story.jpg",
+      "maxPhotos": 3,
+      "prompt": "Use Image 1 as the BASE CANVAS that must stay unchanged. Place the real photographs from Image 2+ into the existing frame slots. Keep the Instagram story aesthetic: clean modern look, soft natural lighting, trendy minimal vibe. Keep all stickers, text overlays, and UI elements intact. Keep people as REALISTIC photos, do NOT convert to cartoon. Blend naturally."
+    }
+  ]
+}
