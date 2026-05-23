@@ -1,7 +1,7 @@
 {
   "themes": [
     {
-      "id": "daily",
+      "id": "dly",
       "name": "Daily Highlight",
       "template": "daily.png",
       "maxPhotos": 5,
