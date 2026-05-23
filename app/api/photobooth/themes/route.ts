@@ -1,25 +1,28 @@
 // app/api/photobooth/themes/route.ts
-// Endpoint untuk list semua tema dari semua file pembagi
+// List semua tema dari 4 file via HTTP (bukan fs)
 
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 
 const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json"];
 
+function getBaseUrl(): string {
+  return process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
+}
+
 export async function GET(req: NextRequest) {
   try {
-    const themesDir = path.join(process.cwd(), "public", "asset", "photobooth", "themes");
+    const baseUrl = getBaseUrl();
     const allThemes: any[] = [];
 
-    // Baca semua file (operasi disk lokal = GRATIS)
+    // Baca semua file via HTTP (Vercel public tidak bisa pakai fs)
     for (const file of THEME_FILES) {
       try {
-        const filePath = path.join(themesDir, file);
-        const data = fs.readFileSync(filePath, "utf-8");
-        const parsed = JSON.parse(data);
+        const res = await fetch(`${baseUrl}/asset/photobooth/themes/${file}`, {
+          cache: "no-store",
+        });
+        if (!res.ok) continue;
+        const parsed = await res.json();
         if (Array.isArray(parsed.themes)) {
-          // Ambil info dasar saja (tanpa prompt, lebih ringan untuk UI)
           const themeList = parsed.themes.map((t: any) => ({
             id: t.id,
             name: t.name,
