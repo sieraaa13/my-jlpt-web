@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 
 export const maxDuration = 60;
 
@@ -16,31 +14,34 @@ type Theme = {
   name: string;
   template: string;
   maxPhotos: number;
-  prompt: string;   // prompt KHUSUS per tema
+  prompt: string;
 };
 
-// ═══════════════════════════════════════════════════════════════
 // SETTINGS GENERAL - sama untuk semua tema
-// ═══════════════════════════════════════════════════════════════
 const GENERAL_CONFIG = {
   responseModalities: ["IMAGE"],
-  temperature: 0.2,    // SANGAT RENDAH untuk preserve struktur
-  topP: 0.85,          // Lebih fokus
-  topK: 15,            // Sangat restrictive
+  temperature: 0.2,
+  topP: 0.85,
+  topK: 15,
   candidateCount: 1,
 };
 
-// Baca SEMUA file tema lalu gabung jadi 1 array
-// (baca file = operasi disk lokal = GRATIS, tidak kena biaya AI)
-function loadAllThemes(): Theme[] {
-  const themesDir = path.join(process.cwd(), "public", "asset", "photobooth", "themes");
+function getBaseUrl(): string {
+  return process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
+}
+
+// Baca SEMUA file tema via HTTP (bukan fs - karena Vercel public tidak bisa fs)
+async function loadAllThemes(): Promise<Theme[]> {
+  const baseUrl = getBaseUrl();
   const allThemes: Theme[] = [];
 
   for (const file of THEME_FILES) {
     try {
-      const filePath = path.join(themesDir, file);
-      const data = fs.readFileSync(filePath, "utf-8");
-      const parsed = JSON.parse(data);
+      const res = await fetch(`${baseUrl}/asset/photobooth/themes/${file}`, {
+        cache: "no-store",
+      });
+      if (!res.ok) continue;
+      const parsed = await res.json();
       if (Array.isArray(parsed.themes)) {
         allThemes.push(...parsed.themes);
       }
@@ -53,8 +54,7 @@ function loadAllThemes(): Theme[] {
 }
 
 async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
-  const res = await fetch(`${baseUrl}/asset/photobooth/${templateFile}`);
+  const res = await fetch(`${getBaseUrl()}/asset/photobooth/${templateFile}`);
   if (!res.ok) throw new Error("Gagal load template");
 
   const buffer = Buffer.from(await res.arrayBuffer());
@@ -70,8 +70,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    // Baca semua tema, pilih 1 (yang dikirim ke AI cuma 1 prompt)
-    const allThemes = loadAllThemes();
+    // Baca semua tema via HTTP, pilih 1
+    const allThemes = await loadAllThemes();
     const theme = allThemes.find((t) => t.id === themeId) ?? allThemes[0];
 
     if (!theme) {
@@ -80,31 +80,20 @@ export async function POST(req: NextRequest) {
 
     const template = await fetchTemplateBase64(theme.template);
 
-    // Gabung: PROMPT KHUSUS tema + template + foto user
+    // Gabung: prompt custom + template + foto user
     const parts: any[] = [
-      { text: theme.prompt },   // <-- prompt custom dari file tema
-      { 
-        inlineData: { 
-          mimeType: template.mime, 
-          data: template.data 
-        } 
-      },
+      { text: theme.prompt },
+      { inlineData: { mimeType: template.mime, data: template.data } },
     ];
 
     for (const img of images) {
       const base64Data = img.replace(/^data:image\/\w+;base64,/, "");
       const mimeType = img.startsWith("data:image/png") ? "image/png" : "image/jpeg";
-      parts.push({ 
-        inlineData: { 
-          mimeType: mimeType, 
-          data: base64Data 
-        } 
-      });
+      parts.push({ inlineData: { mimeType, data: base64Data } });
     }
 
     console.log(`--- Generate tema "${theme.id}" dengan ${MODEL_IMAGE} ---`);
 
-    // Kirim: prompt custom + SETTINGS GENERAL
     const res = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
       {
@@ -112,7 +101,7 @@ export async function POST(req: NextRequest) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts }],
-          generationConfig: GENERAL_CONFIG,   // <-- settings general
+          generationConfig: GENERAL_CONFIG,
         }),
       }
     );
