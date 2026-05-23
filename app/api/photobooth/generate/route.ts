@@ -8,74 +8,48 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 const MODEL_IMAGE = "gemini-3-pro-image-preview";
 
+// File pembagi tema
+const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json"];
+
 type Theme = {
   id: string;
   name: string;
   template: string;
   maxPhotos: number;
+  prompt: string;   // prompt KHUSUS per tema
 };
 
 // ═══════════════════════════════════════════════════════════════
-// CRITICAL: FRAME HARUS TETAP, JANGAN DIUBAH!
+// SETTINGS GENERAL - sama untuk semua tema
 // ═══════════════════════════════════════════════════════════════
-const FRAME_LOCKED_PROMPT = `You are a professional photo compositor. Your job is to insert real photographs into pre-existing frame slots WITHOUT modifying the template structure.
+const GENERAL_CONFIG = {
+  responseModalities: ["IMAGE"],
+  temperature: 0.2,    // SANGAT RENDAH untuk preserve struktur
+  topP: 0.85,          // Lebih fokus
+  topK: 15,            // Sangat restrictive
+  candidateCount: 1,
+};
 
-INPUTS:
-- Image 1: The photobooth template (this is SACRED - DO NOT MODIFY)
-- Image 2+: Real photographs to insert
+// Baca SEMUA file tema lalu gabung jadi 1 array
+// (baca file = operasi disk lokal = GRATIS, tidak kena biaya AI)
+function loadAllThemes(): Theme[] {
+  const themesDir = path.join(process.cwd(), "public", "asset", "photobooth", "themes");
+  const allThemes: Theme[] = [];
 
-CRITICAL RULES - FRAME PRESERVATION:
+  for (const file of THEME_FILES) {
+    try {
+      const filePath = path.join(themesDir, file);
+      const data = fs.readFileSync(filePath, "utf-8");
+      const parsed = JSON.parse(data);
+      if (Array.isArray(parsed.themes)) {
+        allThemes.push(...parsed.themes);
+      }
+    } catch (e) {
+      console.warn(`[loadAllThemes] Lewati ${file}:`, e);
+    }
+  }
 
-1. THE TEMPLATE IS LOCKED:
-   ✓ Image 1's layout is 100% FIXED and MUST NOT be altered
-   ✓ DO NOT move any frames or borders
-   ✓ DO NOT resize any frame slots
-   ✓ DO NOT change frame positions
-   ✓ DO NOT modify frame borders, decorations, or outlines
-   ✓ Keep ALL decorative elements exactly where they are (fish, seaweed, bubbles, text, etc.)
-
-2. FRAME STRUCTURE MUST REMAIN IDENTICAL:
-   ✓ If there are 3 frame slots in the template → output must have exactly 3 frame slots in the SAME positions
-   ✓ Frame shapes (rectangles, polaroid borders, etc.) must stay the same
-   ✓ Frame borders (blue outlines, decorative edges) must not change
-   ✓ Spacing between frames must remain unchanged
-
-3. YOUR ONLY JOB - INSERT PHOTOS:
-   ✓ Take the REAL PHOTOGRAPHS from Image 2+
-   ✓ Place them INSIDE the existing frame slots
-   ✓ Crop/fit the photos to match the frame dimensions
-   ✓ Keep the photos as REALISTIC photographs (not anime/cartoon)
-
-4. WHAT TO PRESERVE FROM TEMPLATE:
-   ✓ Background color and patterns
-   ✓ All text ("UNDER SEA", etc.)
-   ✓ All decorative icons (fish, plants, bubbles, shells)
-   ✓ Grid lines and borders
-   ✓ Frame outlines and borders
-   ✓ Layout structure and positioning
-
-5. COMPOSITING TECHNIQUE:
-   - The photos should look like they were printed and placed inside the pre-existing frames
-   - Adjust photo brightness/color to harmonize with template
-   - Keep edges clean where photo meets frame border
-   - Maintain photographic quality of the people
-
-6. ABSOLUTE PROHIBITIONS:
-   ✗ DO NOT move frames to different positions
-   ✗ DO NOT resize or reshape frames
-   ✗ DO NOT change the template layout
-   ✗ DO NOT convert photos to cartoons/anime
-   ✗ DO NOT redraw or regenerate the template
-
-Think of this like a physical photo frame: the frame stays exactly where it is, you just slide the photo inside it.
-
-Generate the composite with LOCKED frame positions.`;
-
-function loadThemes(): Theme[] {
-  const themesPath = path.join(process.cwd(), "public", "asset", "photobooth", "themes.json");
-  const data = fs.readFileSync(themesPath, "utf-8");
-  const parsed = JSON.parse(data);
-  return parsed.themes;
+  return allThemes;
 }
 
 async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
@@ -96,13 +70,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    const themes = loadThemes();
-    const theme = themes.find((t) => t.id === themeId) ?? themes[0];
+    // Baca semua tema, pilih 1 (yang dikirim ke AI cuma 1 prompt)
+    const allThemes = loadAllThemes();
+    const theme = allThemes.find((t) => t.id === themeId) ?? allThemes[0];
+
+    if (!theme) {
+      return NextResponse.json({ error: "Tema tidak ditemukan" }, { status: 404 });
+    }
 
     const template = await fetchTemplateBase64(theme.template);
 
+    // Gabung: PROMPT KHUSUS tema + template + foto user
     const parts: any[] = [
-      { text: FRAME_LOCKED_PROMPT },
+      { text: theme.prompt },   // <-- prompt custom dari file tema
       { 
         inlineData: { 
           mimeType: template.mime, 
@@ -122,8 +102,9 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    console.log(`--- Mengirim request ke ${MODEL_IMAGE} ---`);
+    console.log(`--- Generate tema "${theme.id}" dengan ${MODEL_IMAGE} ---`);
 
+    // Kirim: prompt custom + SETTINGS GENERAL
     const res = await fetch(
       `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
       {
@@ -131,13 +112,7 @@ export async function POST(req: NextRequest) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts }],
-          generationConfig: {
-            responseModalities: ["IMAGE"],
-            temperature: 0.2,    // SANGAT RENDAH untuk preserve struktur
-            topP: 0.85,          // Lebih fokus
-            topK: 15,            // Sangat restrictive
-            candidateCount: 1,
-          },
+          generationConfig: GENERAL_CONFIG,   // <-- settings general
         }),
       }
     );
@@ -148,7 +123,6 @@ export async function POST(req: NextRequest) {
     }
 
     const data = await res.json();
-    
     const resultParts = data.candidates?.[0]?.content?.parts ?? [];
     const imagePart = resultParts.find((p: any) => p.inlineData?.mimeType?.startsWith("image/"));
 
