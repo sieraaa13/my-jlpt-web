@@ -178,5 +178,3 @@ const data = {
   ]
 };
 
-export default data;
-export const themes = data.themes;
