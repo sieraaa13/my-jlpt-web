@@ -1,23 +1,5 @@
-// ============================================================
-//  PHOTOBOOTH THEMES CONFIG (25 TEMA)
-// ------------------------------------------------------------
-//  CARA IMPORT (pilih yang sesuai kode-mu):
-//    import config from "./themes.js";   ->  config.themes
-//    import { themes } from "./themes.js"; ->  themes
-//
-//  CARA PAKAI:
-//  - Tema #1 (daily) sudah AKTIF & jadi  -> contoh kerja.
-//  - Tema #2 s/d #25 DIKOMENTARI (/* ... */) supaya TIDAK terbaca.
-//  - Mengaktifkan tema: isi "prompt", ganti "template",
-//    sesuaikan "maxPhotos", lalu HAPUS /* dan */ di sekitarnya.
-// ============================================================
-
 const data = {
   themes: [
-
-    // ============================================================
-    //  #1  DAILY ACTIVITY   <-- AKTIF (contoh prompt yang sudah jadi)
-    // ============================================================
     {
       id: "daily",
       name: "daily activity",
@@ -25,23 +7,13 @@ const data = {
       maxPhotos: 4,
       prompt: "You are doing a precise inpainting/face-swap edit on a fixed collage. Image 1 is the BASE TEMPLATE. CRITICAL OUTPUT RULE: The output MUST have the EXACT same dimensions, aspect ratio, and square 1:1 framing as Image 1. Do NOT extend, expand, stretch, or add any canvas. Do NOT duplicate, stack, or repeat any part of the collage. The output is ONE single square collage identical in size to Image 1 — only the people inside change. You receive 5 images: Image 1 = template; Images 2, 3, 4, 5 = four user photos. Fill exactly 4 positions, one photo each, NO REPEATS. ===== POSITION 1 — THE FLOATING CUTOUT (USE IMAGE 2 ONLY) ===== This is the MOST IMPORTANT instruction. The floating cut-out person on the LEFT side (the one with the white sticker outline, standing OUTSIDE and IN FRONT of all the frames) MUST be the person from IMAGE 2 — the very FIRST user photo. Take the subject of Image 2, remove their background completely, and place ONLY that person as the left cutout with the same white sticker outline, same size, and same position as the original. DO NOT use Image 3, Image 4, or Image 5 for this cutout. DO NOT reuse any frame photo for the cutout. The cutout person and the frame people must all be DIFFERENT. If Image 2's person wears a different outfit than the original cutout, that is correct and expected — show Image 2's actual person and clothing. ===== POSITION 2 (Image 3) ===== Replace the person inside the game-console frame (top-left). Keep the frame's exact size and position. ===== POSITION 3 (Image 4) ===== Replace the person inside the polaroid frame with the clipboard clip ('My first and last'). Keep the frame's exact size and position. ===== POSITION 4 (Image 5) ===== Replace the person inside the small lower framed photo (near 'no one heard a thing'). Keep it the SAME SMALL SIZE — do NOT enlarge it. COLOR GRADING: Match each user photo to the template's warm soft bright natural-light tone. PRESERVE EVERYTHING ELSE: Keep all decorations, stickers, text, frame sizes, frame positions, and layout exactly as Image 1. Do NOT add new frames. Do NOT resize any frame. Keep all subjects as realistic photographs — no anime or cartoon. FINAL CHECK before output: (1) Is the left cutout the person from Image 2? It MUST be. (2) Are all 4 people different from each other? They MUST be. (3) Is the output the same square crop as Image 1 with nothing added outside its borders?"
     },
-
-    // ============================================================
-    //  TEMA #2 - #25 DI BAWAH MASIH DIKOMENTARI.
-    //  Edit prompt + template, lalu hapus /* dan */ untuk aktifkan.
-    // ============================================================
-
-    /* ---------- #2  VINTAGE / RETRO ----------
     {
       id: "vintage",
       name: "vintage retro",
-      template: "2.jpeg",   // TODO: ganti dengan template-mu
-      maxPhotos: 4,         // TODO: sesuaikan
-      prompt: ""            // TODO: isi prompt sendiri
+      template: "2.jpeg",
+      maxPhotos: 4,
+      prompt: ""
     },
-    */
-
-    /* ---------- #3  KOREAN AESTHETIC / ULZZANG ----------
     {
       id: "korean",
       name: "korean aesthetic",
@@ -49,9 +21,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #4  BIRTHDAY CELEBRATION ----------
     {
       id: "birthday",
       name: "birthday celebration",
@@ -59,9 +28,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #5  COUPLE / ROMANTIC ----------
     {
       id: "couple",
       name: "couple romantic",
@@ -69,9 +35,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #6  TRAVEL / VACATION ----------
     {
       id: "travel",
       name: "travel vacation",
@@ -79,9 +42,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #7  CAFE / COFFEE DATE ----------
     {
       id: "cafe",
       name: "cafe coffee date",
@@ -89,9 +49,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #8  SCHOOL / CAMPUS LIFE ----------
     {
       id: "school",
       name: "school campus",
@@ -99,9 +56,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #9  SUMMER / BEACH ----------
     {
       id: "summer",
       name: "summer beach",
@@ -109,9 +63,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #10  WINTER / SNOW ----------
     {
       id: "winter",
       name: "winter snow",
@@ -119,9 +70,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #11  CHRISTMAS ----------
     {
       id: "christmas",
       name: "christmas",
@@ -129,9 +77,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #12  NEW YEAR ----------
     {
       id: "newyear",
       name: "new year",
@@ -139,9 +84,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #13  VALENTINE ----------
     {
       id: "valentine",
       name: "valentine",
@@ -149,9 +91,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #14  GRADUATION ----------
     {
       id: "graduation",
       name: "graduation",
@@ -159,9 +98,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #15  CONCERT / MUSIC ----------
     {
       id: "concert",
       name: "concert music",
@@ -169,9 +105,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #16  CYBERPUNK / NEON ----------
     {
       id: "cyberpunk",
       name: "cyberpunk neon",
@@ -179,9 +112,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #17  POLAROID / SCRAPBOOK ----------
     {
       id: "scrapbook",
       name: "polaroid scrapbook",
@@ -189,9 +119,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #18  NATURE / OUTDOOR ----------
     {
       id: "nature",
       name: "nature outdoor",
@@ -199,9 +126,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #19  KAWAII PASTEL ----------
     {
       id: "kawaii",
       name: "kawaii pastel",
@@ -209,9 +133,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #20  Y2K AESTHETIC ----------
     {
       id: "y2k",
       name: "y2k aesthetic",
@@ -219,9 +140,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #21  FILM / CINEMATIC ----------
     {
       id: "film",
       name: "film cinematic",
@@ -229,9 +147,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #22  MAGAZINE / EDITORIAL ----------
     {
       id: "magazine",
       name: "magazine editorial",
@@ -239,9 +154,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #23  FESTIVAL / PARTY ----------
     {
       id: "festival",
       name: "festival party",
@@ -249,9 +161,6 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #24  AUTUMN / FALL ----------
     {
       id: "autumn",
       name: "autumn fall",
@@ -259,21 +168,15 @@ const data = {
       maxPhotos: 4,
       prompt: ""
     },
-    */
-
-    /* ---------- #25  MINIMALIST / CLEAN ----------
     {
       id: "minimalist",
       name: "minimalist clean",
       template: "26.jpeg",
       maxPhotos: 4,
       prompt: ""
-    },
-    */
-
+    }
   ]
 };
 
-// Dukung berbagai gaya import:
-export default data;                 // import config from "./themes.js"  -> config.themes
-export const themes = data.themes;   // import { themes } from "./themes.js"
+export default data;
+export const themes = data.themes;
