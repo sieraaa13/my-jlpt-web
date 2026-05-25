@@ -1,22 +1,11 @@
 {
-
   "themes": [
-
     {
-
       "id": "daily",
-
       "name": "daily aktivity",
-
       "template": "9.jpeg",
-
-      "maxPhotos": 4,
-
-      "prompt": "You are editing a photobooth collage. Image 1 is the BASE TEMPLATE (the white vintage handheld game console collage with 'Sundate time' and 'Yujinie' text). The following images are user photos: Image 2, Image 3, Image 4, Image 5. CRITICAL - KEEP THE BASE TEMPLATE EXACTLY: Do NOT change the layout, orientation, aspect ratio, or composition of Image 1. Keep it in the SAME vertical portrait orientation. Keep ALL decorations, text ('Sundate time', 'Yujinie', 'You get all my attention', 'cutie', 'no one heard a thing', 'Pretty Yujinie'), stickers (headphones, stars, pink hearts, candy, milk carton, fried egg, rubber duck, music notes, coffee cup, white ribbon), the game console graphic, and all frame positions EXACTLY where they are. EXACT PHOTO PLACEMENT - replace ONLY the people, keep frames in place: 1) The large cutout person on the LEFT side (outside the frames, standing on the console) - replace that person with the person from Image 2. 2) The TOP framed photo - replace with the person from Image 3. 3) The MIDDLE framed photo - replace with the person from Image 4. 4) The BOTTOM framed photo - replace with the person from Image 5. STYLE MATCHING: Edit each user photo to match the visual style, color grading, lighting, and warm aesthetic of the original photos in the base template. The user photos must blend seamlessly and look like they belong in this collage. KEEP REALISTIC: All people must remain REALISTIC photographs - do NOT convert them to cartoon, anime, or illustration. Maintain their real faces and identities. Only the people inside/on the frames change - everything else in the template stays identical."
-
+      "maxPhotos": 3,
+      "prompt": "You are editing a photobooth collage. Image 1 is the BASE TEMPLATE. Images 2, 3, 4 are user photos. CRITICAL FRAME COUNT RULE: The base template has EXACTLY 3 photo positions. Do NOT add, create, or hallucinate any additional frames or photo slots beyond what already exists in Image 1. COUNT and KEEP only the exact frames visible in Image 1 - no more, no less. KEEP BASE TEMPLATE EXACTLY: Do NOT change the layout, composition, orientation, or aspect ratio of Image 1. Keep ALL decorations, stickers, text ('sundate time', 'You get all my attention', 'cutie', 'no one heard a thing', 'Pretty Yujinie', 'My first and last'), the game console graphic, all frame borders and positions EXACTLY as they are. EXACT PLACEMENT for each of the 3 photo positions: 1) The large cutout person on the LEFT (outside the frames, cut-out style without background) - replace with the person from Image 2. 2) The TOP framed photo inside the main game console screen area - replace with the person from Image 3. 3) The BOTTOM framed polaroid photo - replace with the person from Image 4. STYLE MATCHING: Edit each user photo to match the warm, soft, bright natural-light aesthetic of the original photos in the template. Apply the same warm color grading and lighting style so all photos look consistent. KEEP REALISTIC: All people must remain REALISTIC photographs - do NOT convert to cartoon or anime. ABSOLUTE PROHIBITION: Do NOT add any new frames. Do NOT duplicate frames. Do NOT create a 4th photo position. The output must have the SAME number of photo positions as the input template."
     }
-
   ]
-
-} 
-
+}
