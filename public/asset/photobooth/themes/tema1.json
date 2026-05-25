@@ -224,7 +224,7 @@
     }
     */
   ]
-};
+}
 
 // Ekspor datanya agar bisa di-import di file kodingan utama webmu
 export default themeConfig;
