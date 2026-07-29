@@ -41,12 +41,19 @@ interface ExamQuestionsProps {
   };
   year: string;
   month: string;
-  onBack: () => void;
+  onBack?: () => void;
 }
 
 export default function ExamQuestions({ data, year, month, onBack }: ExamQuestionsProps) {
   const { setExamData: setContextExamData } = useExamContext();
   const { user } = useAuth();
+
+  // Kalau onBack tidak dikirim dari parent (misal dari Server Component yang
+  // tidak boleh kirim fungsi), pakai fallback browser back di sini langsung.
+  // Aman karena komponen ini sudah "use client".
+  const handleBack = onBack ?? (() => {
+    if (typeof window !== "undefined") window.history.back();
+  });
 
   const [activeTab, setActiveTab] = useState("kanji");
   const [answers, setAnswers] = useState<Record<string, number>>({});
@@ -179,7 +186,7 @@ export default function ExamQuestions({ data, year, month, onBack }: ExamQuestio
       <div className="sticky top-0 z-30 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-5xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-2">
-            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-medium px-3 py-2 rounded-lg transition-colors hover:bg-muted text-muted-foreground">
+            <button onClick={handleBack} className="flex items-center gap-1.5 text-sm font-medium px-3 py-2 rounded-lg transition-colors hover:bg-muted text-muted-foreground">
               <span>←</span>
               <span className="hidden sm:inline">Kembali</span>
             </button>
@@ -299,7 +306,7 @@ export default function ExamQuestions({ data, year, month, onBack }: ExamQuestio
               </div>
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
                 <Button onClick={() => { setAnswers({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
-                <Button onClick={onBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
+                <Button onClick={handleBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
               </div>
             </div>
           </Card>
