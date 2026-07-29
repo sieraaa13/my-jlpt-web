@@ -24,7 +24,7 @@ const learningPaths = [
     character: "Master B",
     image: "/asset/n1.jpg",
     color: "from-purple-500/20 to-pink-500/20",
-    href: "/n1"
+    href: "/jlpt/n1?type=exam"
   },
   {
     id: "n2",
@@ -35,7 +35,7 @@ const learningPaths = [
     character: "Coach C",
     image: "/asset/n2.jpg",
     color: "from-indigo-500/20 to-blue-500/20",
-    href: "/n2"
+    href: "/jlpt/n2?type=exam"
   },
   {
     id: "n3",
@@ -57,7 +57,7 @@ const learningPaths = [
     character: "Helper E",
     image: "/asset/n4.jpg",
     color: "from-orange-500/20 to-yellow-500/20",
-    href: "/n4"
+    href: "/jlpt/n4?type=exam"
   },
   {
     id: "n5",
@@ -68,7 +68,7 @@ const learningPaths = [
     character: "Friend F",
     image: "/asset/n5.jpg",
     color: "from-red-500/20 to-orange-500/20",
-    href: "/n5"
+    href: "/jlpt/n5?type=exam"
   }
 ];
 export function LearningCards() {
