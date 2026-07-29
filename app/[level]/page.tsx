@@ -1,71 +1,27 @@
 "use client";
 
 import { useEffect } from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { useExamContext } from "@/components/exam-context";
+import { useRouter } from "next/navigation";
 
+// Halaman ini menangkap semua URL 1-segmen seperti /n1, /n2, /n4, /n5
+// (kecuali /n3 yang sudah punya halaman statis sendiri di app/n3/page.tsx).
+//
+// Dulu di sini ada halaman placeholder (Kanji/Bunpou/Dokkai) dengan tombol
+// yang tidak berfungsi. Sekarang diganti jadi redirect otomatis ke halaman
+// "Pilih Tahun Ujian" yang sudah fungsional di /jlpt/{level}?type=exam,
+// supaya siapapun yang membuka /n1, /n2, /n4, /n5 (dari link lama,
+// bookmark, atau ketik manual) langsung diarahkan ke halaman yang benar.
 export default function LevelPage({ params }: { params: { level: string } }) {
-  const level = params.level?.toUpperCase() || "N1";
-  const { setExamData } = useExamContext();
+  const router = useRouter();
+  const level = params.level?.toLowerCase() || "n1";
 
-  // Set level ke context supaya AI tau user di level berapa
   useEffect(() => {
-    setExamData({
-      level,
-      title: `Halaman Level ${level}`,
-      questions: [],
-    });
-
-    // Bersihkan saat keluar halaman
-    return () => {
-      setExamData(null);
-    };
-  }, [level, setExamData]);
+    router.replace(`/jlpt/${level}?type=exam`);
+  }, [level, router]);
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-background text-foreground">
-      <div className="flex-1 overflow-y-auto flex flex-col">
-        <Navbar />
-
-        <div className="container mx-auto px-6 pt-32 pb-24 flex-1">
-          <Link
-            href="/"
-            className="text-primary hover:underline mb-8 inline-block"
-          >
-            ← Kembali ke Beranda
-          </Link>
-
-          <div className="max-w-4xl">
-            <h1 className="text-6xl font-black mb-4">
-              Level <span className="text-primary">{level}</span>
-            </h1>
-            <p className="text-2xl text-muted-foreground mb-12">
-              Selamat datang di petualangan level {level}. Di sini kamu akan
-              mempelajari kanji, tata bahasa, dan pemahaman bacaan yang sesuai.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {["Kanji", "Bunpou", "Dokkai"].map((section) => (
-                <div
-                  key={section}
-                  className="p-8 rounded-3xl border border-border bg-card hover:border-primary/50 transition-colors"
-                >
-                  <h3 className="text-2xl font-bold mb-2">{section}</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Mulai pelajari materi {section} untuk persiapan ujian.
-                  </p>
-                  <Button className="w-full rounded-xl">Mulai Belajar</Button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <Footer />
-      </div>
+    <main className="min-h-screen bg-background flex items-center justify-center">
+      <div className="text-muted-foreground">Mengalihkan ke halaman level {level.toUpperCase()}...</div>
     </main>
   );
 }
