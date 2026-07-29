@@ -47,12 +47,6 @@ export default async function ExamPage({
       data={examData}
       year={params.year}
       month={params.period}
-      onBack={() => {
-        // Browser back
-        if (typeof window !== 'undefined') {
-          window.history.back();
-        }
-      }}
     />
   );
 }
