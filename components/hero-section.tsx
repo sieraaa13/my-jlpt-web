@@ -31,11 +31,11 @@ export function HeroSection() {
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-balance">
-              <span className="text-foreground">Belajar </span>
-              <span className="text-primary">日本語</span>
+              <span className="text-foreground">Kuasai </span>
+              <span className="text-primary">Bahasa Jepang</span>
               <br />
-              <span className="text-foreground">Jadi </span>
-              <span className="text-accent">Menyenangkan!</span>
+              <span className="text-foreground">dengan Metode </span>
+              <span className="text-accent">Interaktif dan Efektif</span>
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
