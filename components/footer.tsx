@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="py-16 px-6 bg-card border-t border-border">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
@@ -39,15 +39,6 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Perusahaan</h4>
-            <ul className="space-y-3 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Karir</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Kontak</a></li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
