@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons"; 
+import { ExerciseSection } from "@/components/exercise-section";
 
 export function generateStaticParams() {
   const params: { id: string }[] = [];
@@ -58,6 +59,21 @@ export default async function LessonDetailPage({ params }: { params: Promise<{ i
             </div>
           ))}
         </div>
+
+        {/* Render Exercise Groups (soal latihan, misal "まとめの問題") */}
+        {data.exercise_groups && data.exercise_groups.length > 0 && (
+          <div className="space-y-8">
+            {data.exercise_groups.map((group, idx) => (
+              <ExerciseSection
+                key={idx}
+                week={Number(week)}
+                day={Number(day)}
+                index={idx}
+                group={group}
+              />
+            ))}
+          </div>
+        )}
       </div>
       <Footer />
     </main>
