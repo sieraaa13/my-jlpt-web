@@ -17,87 +17,100 @@
         {
           "pattern_title": "聞いたところ",
           "description_box": {
-            "formula": "$$ \\text{V た + ところ} $$",
-            "explanation": "Pola Vたところ berarti 'setelah~ ternyata~' atau 'kalau~/coba~ ternyata~'. Digunakan untuk menyatakan bahwa setelah melakukan suatu tindakan, didapat informasi/hasil tertentu sebagai konsekuensi.\n\n📌 Sering setara dengan 〜たら／〜てみたら dalam konteks formal/tertulis.",
-            "explanation_en": "The pattern Vたところ means 'when ~, it turned out ~' or 'after ~ I found that ~'. Used to express that after performing an action, certain information/results were obtained. Often equivalent to 〜たら／〜てみたら in formal/written contexts."
+            "formula": "Vた + ところ",
+            "explanation": "Pola たところ menunjukkan penemuan setelah melakukan sesuatu — 'setelah ~, ternyata ~'.\n\nContoh:\n• 聞いたところ、もう売り切れだった (setelah bertanya, ternyata sudah habis terjual)\n• 調べたところ、問題はなかった (setelah diperiksa, ternyata tidak ada masalah)",
+            "explanation_en": "\"When I did~, I found that~\" — discovery after an action."
           },
           "examples": [
             {
               "jp": "先生に今度のテストの範囲を聞いたところ、10課までだと言われた。",
               "en": "Sensei ni kondo no tesuto no han'i o kiita tokoro, 10-ka made da to iwareta. — 'Setelah aku menanyakan cakupan ujian kepada guru, dibilang sampai pelajaran ke-10.'",
-              "explanation": "📝 (=聞いてみたら)"
+              "explanation": "📝 (=聞いてみたら)",
+              "highlight": "ところ"
             },
             {
               "jp": "歯が痛いので歯医者さんに行ったところ、ひどい虫歯になっていると言われた。",
               "en": "Ha ga itai node haisha-san ni itta tokoro, hidoi mushiba ni natte iru to iwareta. — 'Karena gigiku sakit aku pergi ke dokter gigi, ternyata dibilang gigi berlubang yang parah.'",
-              "explanation": "📝 (=行ってみたら)"
+              "explanation": "📝 (=行ってみたら)",
+              "highlight": "ところ"
             }
-          ]
+          ],
+          "pattern_meaning": "たところ = setelah melakukan ~, ternyata ~ ｜ penemuan"
         },
         {
           "pattern_title": "もう少しで遅刻するところだった",
           "description_box": {
-            "formula": "$$ \\text{V る + ところだった} \\quad \\begin{cases} \\text{もうちょっとで…ところだった} \\\\ \\text{危なく…ところだった} \\end{cases} $$",
-            "explanation": "Pola Vるところだった berarti 'hampir saja~' atau 'nyaris~'. Menyatakan bahwa suatu keadaan hampir terjadi tetapi pada akhirnya tidak terjadi (selamat dari hal yang tidak diinginkan, atau gagal mencapai sesuatu).\n\n📌 Variasi penekanan:\n• もうちょっとで…ところだった\n• 危なく…ところだった (nyaris saja~)",
-            "explanation_en": "The pattern Vるところだった means 'almost ~' or 'I nearly ~'. Expresses that a situation nearly happened but ultimately didn't occur (either escaping something undesirable, or failing to achieve something). Variations: もうちょっとで… / 危なく… (just barely/nearly)."
+            "formula": "Vる + ところだった (もうちょっとで / もう少しで / 危うく)",
+            "explanation": "Pola ところだった menunjukkan sesuatu yang nyaris terjadi tapi tidak jadi — 'hampir saja ~'.\n\nSering didahului もう少しで, もうちょっとで, atau 危うく.\n\nContoh:\n• もう少しで遅刻するところだった (hampir saja terlambat)\n• 危うく事故になるところだった (nyaris kecelakaan)",
+            "explanation_en": "\"Almost~\" / \"nearly~\" — something that almost happened."
           },
           "examples": [
             {
               "jp": "もう少しで遅刻するところだった。",
               "en": "Mou sukoshi de chikoku suru tokoro datta. — 'Hampir saja aku terlambat.'",
-              "explanation": "📝 (=遅刻しそうだったが、しなかった) — Akhirnya tidak terlambat."
+              "explanation": "📝 (=遅刻しそうだったが、しなかった) — Akhirnya tidak terlambat.",
+              "highlight": "ところだった"
             },
             {
               "jp": "あと少しで合格するところだったのに……。",
               "en": "Ato sukoshi de goukaku suru tokoro datta noni... — 'Padahal hampir lulus, tinggal sedikit lagi...'",
-              "explanation": "📝 (=合格しそうだったが、しなかった) — Akhirnya tidak lulus, gagal."
+              "explanation": "📝 (=合格しそうだったが、しなかった) — Akhirnya tidak lulus, gagal.",
+              "highlight": "ところだった"
             }
-          ]
+          ],
+          "pattern_meaning": "ところだった = hampir saja ~ ｜ nyaris terjadi"
         },
         {
           "pattern_title": "注意されてはじめて",
           "description_box": {
-            "formula": "$$ \\text{V て + はじめて} $$",
-            "explanation": "Pola Vてはじめて berarti 'baru setelah~' atau 'baru sesudah~'. Menyatakan bahwa suatu kesadaran/pengalaman/perasaan baru muncul SETELAH suatu tindakan dilakukan — bukan sebelumnya.\n\n📌 Nuansa: Sebelum tindakan A dilakukan, B tidak terjadi/tidak disadari.",
-            "explanation_en": "The pattern Vてはじめて means 'only after ~' or 'not until ~'. Indicates that a realization/experience/feeling only emerges AFTER an action is performed — not before. Nuance: Before action A, B did not occur or was not realized."
+            "formula": "Vて + はじめて",
+            "explanation": "Pola てはじめて berarti 'baru setelah melakukan ~, akhirnya ~' — menunjukkan bahwa kesadaran/kemampuan baru muncul setelah pengalaman tertentu.\n\nContoh:\n• 注意されてはじめて気づいた (baru setelah ditegur, akhirnya sadar)\n• 病気になってはじめて健康のありがたさがわかった (baru setelah sakit, akhirnya paham berharganya kesehatan)",
+            "explanation_en": "\"Only after doing~ did I realize~\" — realization through experience."
           },
           "examples": [
             {
               "jp": "先生に注意されてはじめて、漢字の間違いに気が付いた。",
               "en": "Sensei ni chuui sarete hajimete, kanji no machigai ni ki ga tsuita. — 'Baru setelah ditegur guru, aku sadar ada kesalahan dalam kanjinya.'",
-              "explanation": "📝 (=注意されたときにはじめて)"
+              "explanation": "📝 (=注意されたときにはじめて)",
+              "highlight": "てはじめて"
             },
             {
               "jp": "歌舞伎を見てはじめて、日本文化に興味を持った。",
               "en": "Kabuki o mite hajimete, nihon bunka ni kyoumi o motta. — 'Baru setelah menonton kabuki, aku jadi tertarik pada budaya Jepang.'",
-              "explanation": "📝 (=見て、それからはじめて)"
+              "explanation": "📝 (=見て、それからはじめて)",
+              "highlight": "てはじめて"
             }
-          ]
+          ],
+          "pattern_meaning": "てはじめて = baru setelah ~ ｜ baru menyadari"
         },
         {
           "pattern_title": "明るいうちに",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V ている} \\\\ \\text{V ない} \\\\ \\text{A い} \\\\ \\text{na な} \\\\ \\text{N の} \\end{cases} \\text{うちに} $$",
-            "explanation": "Pola 〜うちに berarti 'selama~' atau 'sebelum~'. Menyatakan rentang waktu di mana suatu keadaan masih berlangsung — tindakan harus dilakukan SEBELUM keadaan itu berubah.\n\n📌 Penggunaan utama:\n• Aいうちに → selama masih (kondisi sekarang)\n• Vないうちに → sebelum~ terjadi\n• Vているうちに → selama sedang~",
-            "explanation_en": "The pattern 〜うちに means 'while ~' or 'before ~'. Expresses a time range during which a state still continues — the action must be done BEFORE that state changes. Common usages: Aいうちに (while still ~), Vないうちに (before ~ happens), Vているうちに (while ~ing)."
+            "formula": "Vている / Vない / Aい / naな / Nの + うちに",
+            "explanation": "Pola うちに berarti 'selagi masih ~' — melakukan sesuatu sebelum kondisi berubah.\n\nContoh:\n• 明るいうちに帰ろう (pulang selagi masih terang)\n• 若いうちにたくさん経験した方がいい (selagi masih muda, sebaiknya banyak pengalaman)\n• 忘れないうちにメモしておく (catat selagi belum lupa)",
+            "explanation_en": "\"While still~\" — doing something before the condition changes."
           },
           "examples": [
             {
               "jp": "明るいうちに帰ってきなさい。",
               "en": "Akarui uchi ni kaette kinasai. — 'Pulanglah selama masih terang.'",
-              "explanation": "📝 (=明るい間に) — Sebelum hari menjadi gelap."
+              "explanation": "📝 (=明るい間に) — Sebelum hari menjadi gelap.",
+              "highlight": "うちに"
             },
             {
               "jp": "何度も聞いているうちに歌詞を覚えた。",
               "en": "Nando mo kiite iru uchi ni kashi o oboeta. — 'Selama mendengarkan berulang kali, aku jadi hafal liriknya.'",
-              "explanation": "📝 (=聞いている間に)"
+              "explanation": "📝 (=聞いている間に)",
+              "highlight": "うちに"
             },
             {
               "jp": "忘れないうちに、メモをしておこう。",
               "en": "Wasurenai uchi ni, memo o shite okou. — 'Sebelum lupa, ayo aku catat dulu.'",
-              "explanation": "📝 (=忘れる前に)"
+              "explanation": "📝 (=忘れる前に)",
+              "highlight": "うちに"
             }
-          ]
+          ],
+          "pattern_meaning": "うちに = selagi masih ~ ｜ sebelum kondisi berubah"
         }
       ],
       "summary_table": {
@@ -133,22 +146,34 @@
             {
               "number": 1,
               "question": "祖母が（a. 元気な　b. 元気だ）うちに、一度田舎へ帰りたい。",
-              "options": ["a. 元気な", "b. 元気だ"]
+              "options": [
+                "a. 元気な",
+                "b. 元気だ"
+              ]
             },
             {
               "number": 2,
               "question": "駅員に（a. 聞く　b. 聞いた）ところ、落とし物は届いていた。",
-              "options": ["a. 聞く", "b. 聞いた"]
+              "options": [
+                "a. 聞く",
+                "b. 聞いた"
+              ]
             },
             {
               "number": 3,
               "question": "お茶を入れましたから、冷めない（a. うちに　b. ところに）どうぞ。",
-              "options": ["a. うちに", "b. ところに"]
+              "options": [
+                "a. うちに",
+                "b. ところに"
+              ]
             },
             {
               "number": 4,
               "question": "もう少しで階段から（a. 落ちる　b. 落ちた）ところだった。",
-              "options": ["a. 落ちる", "b. 落ちた"]
+              "options": [
+                "a. 落ちる",
+                "b. 落ちた"
+              ]
             }
           ]
         },
@@ -159,30 +184,66 @@
               "number": 5,
               "question": " ＿＿ ＿＿ ＿＿ ＿＿ 日本語の勉強がおもしろくなった。",
               "words": [
-                {"id": 1, "word": "はじめて"},
-                {"id": 2, "word": "あの先生に"},
-                {"id": 3, "word": "なって"},
-                {"id": 4, "word": "習うように"}
+                {
+                  "id": 1,
+                  "word": "はじめて"
+                },
+                {
+                  "id": 2,
+                  "word": "あの先生に"
+                },
+                {
+                  "id": 3,
+                  "word": "なって"
+                },
+                {
+                  "id": 4,
+                  "word": "習うように"
+                }
               ]
             },
             {
               "number": 6,
               "question": "あとちょっとで試験問題が全部 ＿＿ ＿＿ ＿＿ ＿＿ なってしまった。",
               "words": [
-                {"id": 1, "word": "時間切れに"},
-                {"id": 2, "word": "だったのに"},
-                {"id": 3, "word": "ところ"},
-                {"id": 4, "word": "解ける"}
+                {
+                  "id": 1,
+                  "word": "時間切れに"
+                },
+                {
+                  "id": 2,
+                  "word": "だったのに"
+                },
+                {
+                  "id": 3,
+                  "word": "ところ"
+                },
+                {
+                  "id": 4,
+                  "word": "解ける"
+                }
               ]
             },
             {
               "number": 7,
               "question": "教えてくれたり、注意してくれる人が ＿＿ ＿＿ ＿＿ ＿＿ ほうがいいですよ。",
               "words": [
-                {"id": 1, "word": "うち"},
-                {"id": 2, "word": "いる"},
-                {"id": 3, "word": "勉強した"},
-                {"id": 4, "word": "に"}
+                {
+                  "id": 1,
+                  "word": "うち"
+                },
+                {
+                  "id": 2,
+                  "word": "いる"
+                },
+                {
+                  "id": 3,
+                  "word": "勉強した"
+                },
+                {
+                  "id": 4,
+                  "word": "に"
+                }
               ]
             }
           ]
