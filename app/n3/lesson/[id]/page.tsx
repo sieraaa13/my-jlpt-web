@@ -31,21 +31,23 @@ function renderHighlighted(jp: string, highlight?: string) {
 }
 
 function renderFormula(formula: string) {
-  if (formula.includes(' + ') && formula.includes(' / ')) {
-    const plusIdx = formula.indexOf(' + ');
-    const base = formula.slice(0, plusIdx);
-    const optionsStr = formula.slice(plusIdx + 3);
-    const options = optionsStr.split(' / ').map(o => o.trim());
-    return (
-      <div className="flex items-center gap-2">
-        <span className="font-bold text-lg">{base}</span>
-        <div className="border-l-2 border-foreground pl-3 py-1 space-y-0.5">
-          {options.map((opt, i) => (
-            <p key={i} className="font-bold">{opt}</p>
-          ))}
+  const plusMatch = formula.match(/^(.+?)\s*\+\s*(.+)$/);
+  if (plusMatch) {
+    const base = plusMatch[1].trim();
+    const rest = plusMatch[2].trim();
+    if (rest.includes('/')) {
+      const options = rest.split('/').map(o => o.trim());
+      return (
+        <div className="flex items-center gap-1 mb-2">
+          <span className="font-bold text-lg">{base}</span>
+          <div className="border-l-[3px] border-foreground pl-3 py-1">
+            {options.map((opt, i) => (
+              <p key={i} className="font-bold text-lg leading-relaxed">{opt}</p>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
   return <p className="font-bold mb-2">{formula}</p>;
 }
