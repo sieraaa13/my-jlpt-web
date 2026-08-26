@@ -1,3 +1,4 @@
+
 {
   "levels": [
     {
@@ -15,70 +16,77 @@
       },
       "grammar_sections": [
         {
-          "pattern_title": "やめようと思う (Yameyou to Omou) - Berpikir Akan Berhenti",
-          "pattern_meaning": "やめようと思う = berniat berhenti | Vよう + と思う = berpikir untuk~ / berniat~",
+          "pattern_title": "やめようと思う",
+          "pattern_meaning": "やめようと思う = berpikir akan berhenti ｜ V よう + と思う = berniat untuk ~",
           "description_box": {
-            "formula": "$$ \\text{V よう (意向形) + と思う／と思っている} $$",
-            "explanation": "Pola Vようと思う digunakan untuk menyatakan niat atau rencana (意志や予定) pembicara. Maknanya adalah 'berpikir untuk~' atau 'berniat~'.\n\nBentuk Vよう adalah bentuk volisional (意向形) yang menunjukkan kehendak diri sendiri:\n• 食べる → 食べよう\n• 行く → 行こう\n• する → しよう\n• 来る → 来よう\n\n📌 Catatan: 〜と思っている menunjukkan niat yang sudah dipikirkan sejak lama, sedangkan 〜と思う menunjukkan niat yang baru saja terpikirkan.\n\n⚠️ Catatan Penting tentang Bentuk Volisional (意向形):\n\n▸ Kata kerja golongan I (五段動詞):\n• 行く → 行こう\n• 帰る → 帰ろう\n• 買う → 買おう\n• 飲む → 飲もう\n\n▸ Kata kerja golongan II (一段動詞):\n• 食べる → 食べよう\n• 見る → 見よう\n• 入る (はいる) → 入ろう ⚠️ (kelihatan seperti golongan II tapi sebenarnya golongan I!)\n\n▸ Kata kerja tidak beraturan:\n• する → しよう\n• 来る (くる) → 来よう (こよう)",
-            "explanation_en": "The pattern Vようと思う expresses the speaker's intention or plan (意志や予定). It means 'to be thinking of doing ~' or 'to intend to ~'. The form Vよう is the volitional form (意向形) showing one's own will. Note: 〜と思っている indicates an intention held for some time, while 〜と思う indicates a freshly formed thought."
+            "formula": "V よう (意向形) + と思う／と思っている",
+            "explanation": "Pola Vようと思う digunakan untuk menyatakan niat atau rencana.\n\n• Vようと思う = baru saja memutuskan (niat baru)\n• Vようと思っている = sudah lama berniat (rencana yang sudah ada)\n\nContoh:\n• タバコをやめようと思う (aku berpikir akan berhenti merokok)\n• 来年日本に行こうと思っている (sudah berencana ke Jepang tahun depan)",
+            "explanation_en": "V you to omou expresses intention. と思う = just decided, と思っている = have been planning."
           },
           "examples": [
             {
               "jp": "会社をやめようと思っている。",
               "en": "Kaisha o yameyou to omotte iru. — 'Aku berpikir untuk berhenti dari perusahaan.'",
-              "explanation": "📝 Menyatakan niat yang sudah ada dalam pikiran untuk beberapa waktu. (=やめるつもりです)"
+              "explanation": "📝 Menyatakan niat yang sudah ada dalam pikiran untuk beberapa waktu. (=やめるつもりです)",
+              "highlight": "と思う"
             },
             {
               "jp": "来年、国に帰ろうと思っています。",
               "en": "Rainen, kuni ni kaerou to omotte imasu. — 'Saya berniat pulang ke negara asal tahun depan.'",
-              "explanation": "📝 Menyatakan rencana yang sudah dipertimbangkan. (=帰るつもりです)"
+              "explanation": "📝 Menyatakan rencana yang sudah dipertimbangkan. (=帰るつもりです)",
+              "highlight": "と思っている"
             }
           ]
         },
         {
-          "pattern_title": "電車に乗ろうとしたときに (Densha ni Norou to Shita Toki ni) - Ketika Akan Naik Kereta",
-          "pattern_meaning": "乗ろうとしたとき = ketika hendak naik | Vよう + とする = akan/hendak~ / mencoba untuk~",
+          "pattern_title": "電車に乗ろうとしたときに",
+          "pattern_meaning": "乗ろうとした = hendak naik ｜ V よう + とする = hendak melakukan ~",
           "description_box": {
-            "formula": "$$ \\text{V よう + とする} $$",
-            "explanation": "Pola Vようとする menunjukkan momen tepat saat mulai melakukan suatu tindakan (動作を始めたときに) atau berusaha melakukan sesuatu. Maknanya adalah 'akan/hendak~' atau 'mencoba untuk~'.\n\nPola ini sering dipakai untuk:\n① Tindakan yang akan dimulai tepat pada saat itu\n② Tindakan yang sedang dicoba dilakukan",
-            "explanation_en": "The pattern Vようとする indicates the exact moment of starting an action (動作を始めたときに) or trying to do something. It means 'about to ~' or 'trying to ~'. It is often used for actions that are just about to begin or actions being attempted."
+            "formula": "V よう + とする",
+            "explanation": "Pola Vようとする menunjukkan momen tepat saat mulai melakukan suatu tindakan ('hendak ~', 'baru mau ~').\n\nSering dipakai untuk menggambarkan situasi di mana sesuatu terjadi 'tepat saat' hendak melakukan sesuatu.\n\nContoh:\n• 電車に乗ろうとしたとき、ドアが閉まった (baru mau naik kereta, pintunya tertutup)\n• 寝ようとしたとき、電話が鳴った (baru mau tidur, telepon berbunyi)",
+            "explanation_en": "V you to suru indicates the moment of attempting or being about to do something."
           },
           "examples": [
             {
               "jp": "電車に乗ろうとしたときに、ドアが閉まって乗れなかった。",
               "en": "Densha ni norou to shita toki ni, doa ga shimatte norenakatta. — 'Ketika aku hendak naik kereta, pintunya tertutup dan aku tidak bisa naik.'",
-              "explanation": "📝 Menggambarkan momen tepat saat mulai naik kereta. (=乗る動作を始めたときに)"
+              "explanation": "📝 Menggambarkan momen tepat saat mulai naik kereta. (=乗る動作を始めたときに)",
+              "highlight": "としたときに"
             },
             {
               "jp": "あ、ポチ〈犬の名前〉が、あなたの靴をかもうとしているよ。",
               "en": "A, Pochi ga, anata no kutsu o kamou to shite iru yo. — 'Eh, Pochi (nama anjing) sedang akan menggigit sepatumu lho.'",
-              "explanation": "📝 Menunjukkan tindakan yang sedang dicoba atau hampir dilakukan. (=かみそうだ)"
+              "explanation": "📝 Menunjukkan tindakan yang sedang dicoba atau hampir dilakukan. (=かみそうだ)",
+              "highlight": "としたら"
             },
             {
               "jp": "ポチは、ぼくが出かけようとすると、ほえる。",
               "en": "Pochi wa, boku ga dekakeyou to suru to, hoeru. — 'Pochi selalu menggonggong setiap kali aku akan pergi keluar.'",
-              "explanation": "📝 Tindakan yang berulang setiap kali pembicara mau keluar. (=出かける動作を始めると)"
+              "explanation": "📝 Tindakan yang berulang setiap kali pembicara mau keluar. (=出かける動作を始めると)",
+              "highlight": "としたとき"
             }
           ]
         },
         {
-          "pattern_title": "食べようとしない (Tabeyou to Shinai) - Tidak Mau Makan",
-          "pattern_meaning": "食べようとしない = tidak mau makan | Vよう + としない = tidak mau~ / tidak berusaha untuk~",
+          "pattern_title": "食べようとしない",
+          "pattern_meaning": "食べようとしない = tidak mau makan ｜ V よう + としない = tidak ada niat untuk ~",
           "description_box": {
-            "formula": "$$ \\text{V よう + としない} $$",
-            "explanation": "Pola Vようとしない menunjukkan bahwa tidak terasa adanya niat/kemauan untuk melakukan suatu tindakan (動作や行動をする意志が感じられない). Maknanya adalah 'tidak mau~' atau 'tidak berusaha untuk~'.\n\nPola ini sering dipakai untuk mengkritik atau menggambarkan sikap orang lain yang menolak atau enggan melakukan sesuatu.\n\n📌 Contoh Pembuka Materi:\n留学しようと思っているが、父は私の話を聞こうとしない。\nRyuugaku shiyou to omotte iru ga, chichi wa watashi no hanashi o kikou to shinai.\nArti: 'Aku berniat untuk belajar di luar negeri, tetapi ayahku tidak mau mendengarkan ceritaku.'\n📝 Kalimat ini menggabungkan dua pola sekaligus:\n• 留学しようと思っている → menyatakan niat\n• 話を聞こうとしない → menggambarkan penolakan ayah",
-            "explanation_en": "The pattern Vようとしない indicates that no will or intention to do an action can be felt (動作や行動をする意志が感じられない). It means 'won't ~' or 'doesn't try to ~'. It is often used to criticize or describe someone's reluctance or refusal to do something."
+            "formula": "V よう + としない",
+            "explanation": "Pola Vようとしない menunjukkan bahwa seseorang tidak memiliki niat atau kemauan untuk melakukan sesuatu.\n\nMenggambarkan keengganan atau penolakan yang terlihat dari sikap seseorang.\n\nContoh:\n• 子どもが野菜を食べようとしない (anak itu tidak mau makan sayur)\n• 彼は謝ろうとしない (dia tidak mau minta maaf)",
+            "explanation_en": "V you to shinai indicates unwillingness — showing no intention to do something."
           },
           "examples": [
             {
               "jp": "「ポチ、どうしたんだろう。ご飯を食べようとしないんだよ。」",
               "en": "'Pochi, doushita n darou. Gohan o tabeyou to shinai n da yo.' — 'Pochi, ada apa ya? Dia tidak mau makan sama sekali.'",
-              "explanation": "📝 Menunjukkan bahwa Pochi tidak menunjukkan niat untuk makan. (=食べるつもりがない)"
+              "explanation": "📝 Menunjukkan bahwa Pochi tidak menunjukkan niat untuk makan. (=食べるつもりがない)",
+              "highlight": "としない"
             },
             {
               "jp": "彼は、自分のことは何も言おうとしない。",
               "en": "Kare wa, jibun no koto wa nani mo iou to shinai. — 'Dia tidak mau bicara apapun tentang dirinya sendiri.'",
-              "explanation": "📝 Mengungkapkan keengganan/penolakan untuk berbicara. (=言うつもりがない)"
+              "explanation": "📝 Mengungkapkan keengganan/penolakan untuk berbicara. (=言うつもりがない)",
+              "highlight": "としない"
             }
           ]
         }
@@ -111,22 +119,34 @@
             {
               "number": 1,
               "question": "おふろに（a. 入よう　b. 入ろう）としたとき、だれか来ました。",
-              "options": ["a. 入よう", "b. 入ろう"]
+              "options": [
+                "a. 入よう",
+                "b. 入ろう"
+              ]
             },
             {
               "number": 2,
               "question": "父はそれについて何も（a. 話そう　b. 話しよう）としない。",
-              "options": ["a. 話そう", "b. 話しよう"]
+              "options": [
+                "a. 話そう",
+                "b. 話しよう"
+              ]
             },
             {
               "number": 3,
               "question": "このジャムのふたは、いくら開け（a. よう　b. ろう）としても（a. 開かない　b. 開こうとしない）。",
-              "options": ["a. よう / 開かない", "b. ろう / 開こうとしない"]
+              "options": [
+                "a. よう / 開かない",
+                "b. ろう / 開こうとしない"
+              ]
             },
             {
               "number": 4,
               "question": "A「昨日は授業に来なかったね。」B「うん、（a. 来るだろう　b. 来よう）と思っていたんだけど、熱が出て休んだんだ。」",
-              "options": ["a. 来るだろう", "b. 来よう"]
+              "options": [
+                "a. 来るだろう",
+                "b. 来よう"
+              ]
             }
           ]
         },
@@ -137,20 +157,44 @@
               "number": 5,
               "question": "買おう ＿＿ ＿＿ ＿＿ ＿＿ きちゃった。",
               "words": [
-                {"id": 1, "word": "忘れて"},
-                {"id": 2, "word": "書いといた"},
-                {"id": 3, "word": "と思って"},
-                {"id": 4, "word": "メモを"}
+                {
+                  "id": 1,
+                  "word": "忘れて"
+                },
+                {
+                  "id": 2,
+                  "word": "書いといた"
+                },
+                {
+                  "id": 3,
+                  "word": "と思って"
+                },
+                {
+                  "id": 4,
+                  "word": "メモを"
+                }
               ]
             },
             {
               "number": 6,
               "question": "弟の好きな ＿＿ ＿＿ ＿＿ ＿＿ 思っています。",
               "words": [
-                {"id": 1, "word": "誕生日に"},
-                {"id": 2, "word": "買って"},
-                {"id": 3, "word": "CDを"},
-                {"id": 4, "word": "やろうと"}
+                {
+                  "id": 1,
+                  "word": "誕生日に"
+                },
+                {
+                  "id": 2,
+                  "word": "買って"
+                },
+                {
+                  "id": 3,
+                  "word": "CDを"
+                },
+                {
+                  "id": 4,
+                  "word": "やろうと"
+                }
               ]
             }
           ]
