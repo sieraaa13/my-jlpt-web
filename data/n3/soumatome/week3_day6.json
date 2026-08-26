@@ -17,62 +17,71 @@
         {
           "pattern_title": "怖がらないで",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Aがる} \\\\ \\text{naがって} \\\\ \\text{Vたくがらないで} \\end{cases} $$",
-            "explanation": "「〜がる」menunjukkan bahwa orang ketiga memperlihatkan atau mengekspresikan perasaan tertentu. 「〜がらないで」berarti jangan tunjukkan perasaan itu.",
-            "explanation_en": "'~garu' shows that a third party is displaying a certain feeling. '~garanai de' means 'please don't show that feeling'."
+            "formula": "Aがる / naがって / Vたがらないで",
+            "explanation": "Pola がる digunakan untuk menggambarkan perasaan orang lain yang terlihat dari luar (bukan perasaan sendiri).\n\nContoh:\n• 怖がらないで (jangan takut — terlihat ketakutan)\n• 子どもが遊びたがっている (anak itu kelihatan ingin bermain)\n• 彼女は寒がっている (dia kelihatan kedinginan)",
+            "explanation_en": "がる describes observable feelings/desires of others (not oneself)."
           },
           "examples": [
             {
               "jp": "怖がらないでください。",
               "en": "Jangan takut.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "がらないで"
             },
             {
               "jp": "田中さんが、あなたに会いたがっていましたよ。",
               "en": "Tanaka-san kelihatannya ingin bertemu denganmu.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "がっている"
             }
-          ]
+          ],
+          "pattern_meaning": "怖がる = bertingkah takut ｜ がる = menunjukkan perasaan secara lahir"
         },
         {
           "pattern_title": "見せてほしい",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vて} \\\\ \\text{Vないで} \\end{cases} \\begin{cases} \\text{ほしい} \\\\ \\text{もらいたい} \\end{cases} $$",
-            "explanation": "Menyatakan keinginan agar orang lain melakukan sesuatu untuk kita. Artinya 'ingin agar... melakukan...'",
-            "explanation_en": "Expresses the desire for someone else to do something for you. Means 'I want (someone) to...'."
+            "formula": "Vて / Vないで + ほしい / ほしいと思う / ほしくない",
+            "explanation": "Pola てほしい digunakan untuk menyatakan keinginan agar orang lain melakukan (atau tidak melakukan) sesuatu.\n\nContoh:\n• 見せてほしい (ingin kamu tunjukkan)\n• もっとがんばってほしい (ingin kamu lebih berusaha)\n• 遅刻しないでほしい (ingin kamu tidak terlambat)",
+            "explanation_en": "\"I want (someone) to do~\" — requesting action from others."
           },
           "examples": [
             {
               "jp": "あの、教科書を見せてほしいんですが……。",
               "en": "Permisi, bolehkah saya melihat buku teks Anda?",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "てほしい"
             },
             {
               "jp": "あなたに教えてもらいたいことがあります。",
               "en": "Ada sesuatu yang ingin saya minta kamu ajarkan kepadaku.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "てほしい"
             }
-          ]
+          ],
+          "pattern_meaning": "てほしい = ingin supaya (orang lain) melakukan ~"
         },
         {
           "pattern_title": "知っているふりをする",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A 普} \\\\ \\text{na な} \\\\ \\text{N の} \\end{cases} + \\text{ふりをする} $$",
-            "explanation": "Pola 〜ふりをする berarti 'berpura-pura~' — menyatakan bahwa seseorang menampilkan kondisi/keadaan yang sebenarnya tidak benar.\n\nAturan perubahan:\n• Kata Kerja/i-keiyoushi → bentuk biasa + ふりをする\n• na-keiyoushi → naな + ふりをする\n• Kata Benda → Nの + ふりをする",
-            "explanation_en": "The pattern 〜ふりをする means 'to pretend to ~' — expressing that someone is showing a state or condition that isn't actually true. Verbs/i-adjectives use plain form, na-adjectives use な, and nouns use の before ふりをする."
+            "formula": "V / A普 / naな / Nの + ふりをする",
+            "explanation": "Pola ふりをする berarti 'pura-pura ~' atau 'bersikap seolah-olah ~'.\n\nContoh:\n• 知っているふりをする (pura-pura tahu)\n• 聞こえないふりをした (pura-pura tidak dengar)\n• 元気なふりをする (pura-pura baik-baik saja)",
+            "explanation_en": "\"Pretend to~\" / \"act as if~\"."
           },
           "examples": [
             {
               "jp": "彼はそのことについて知っているふりをしているが、本当は知らないと思う。",
               "en": "Kare wa sono koto ni tsuite shitte iru furi o shite iru ga, hontou wa shiranai to omou. — 'Dia berpura-pura tahu tentang hal itu, tapi menurutku sebenarnya dia tidak tahu.'",
-              "explanation": "📝 (=知っていると見せている)"
+              "explanation": "📝 (=知っていると見せている)",
+              "highlight": "ふりをする"
             },
             {
               "jp": "田中さんは独身のふりをしているが、結婚していて3人も子どもがいる。",
               "en": "Tanaka-san wa dokushin no furi o shite iru ga, kekkon shite ite san-nin mo kodomo ga iru. — 'Tanaka-san berpura-pura masih lajang, padahal sudah menikah dan punya tiga anak.'",
-              "explanation": "📝 (=独身だと見せている)"
+              "explanation": "📝 (=独身だと見せている)",
+              "highlight": "ふりをした"
             }
-          ]
+          ],
+          "pattern_meaning": "ふりをする = pura-pura ~ ｜ bersikap seolah-olah ~"
         }
       ],
       "summary_table": {
@@ -108,27 +117,42 @@
             {
               "number": 1,
               "question": "兄は来られなくて、とても（a. 残念　b. 残念な）がっていました。",
-              "options": ["a. 残念", "b. 残念な"]
+              "options": [
+                "a. 残念",
+                "b. 残念な"
+              ]
             },
             {
               "number": 2,
               "question": "セールスの電話がかかってきたので、（a. 病気　b. 病気の）ふりをして切りました。",
-              "options": ["a. 病気", "b. 病気の"]
+              "options": [
+                "a. 病気",
+                "b. 病気の"
+              ]
             },
             {
               "number": 3,
               "question": "多くの人にこの本を（a. 使い　b. 使って）もらいたい。",
-              "options": ["a. 使い", "b. 使って"]
+              "options": [
+                "a. 使い",
+                "b. 使って"
+              ]
             },
             {
               "number": 4,
               "question": "国へ帰っても日本語を（a. 忘れないで　b. 忘れなくて）ほしい。",
-              "options": ["a. 忘れないで", "b. 忘れなくて"]
+              "options": [
+                "a. 忘れないで",
+                "b. 忘れなくて"
+              ]
             },
             {
               "number": 5,
               "question": "両親が（a. さびし　b. さびしい）がっているので、春休みに国へ帰ります。",
-              "options": ["a. さびし", "b. さびしい"]
+              "options": [
+                "a. さびし",
+                "b. さびしい"
+              ]
             }
           ]
         },
@@ -139,20 +163,44 @@
               "number": 6,
               "question": "できるかどうか ＿＿ ＿＿ ＿＿ ＿＿ もらいたい。",
               "words": [
-                {"id": 1, "word": "期待"},
-                {"id": 2, "word": "ないので"},
-                {"id": 3, "word": "自信が"},
-                {"id": 4, "word": "しないで"}
+                {
+                  "id": 1,
+                  "word": "期待"
+                },
+                {
+                  "id": 2,
+                  "word": "ないので"
+                },
+                {
+                  "id": 3,
+                  "word": "自信が"
+                },
+                {
+                  "id": 4,
+                  "word": "しないで"
+                }
               ]
             },
             {
               "number": 7,
               "question": "あなたが ＿＿ ＿＿ ＿＿ ＿＿ 来ましたよ。",
               "words": [
-                {"id": 1, "word": "いる"},
-                {"id": 2, "word": "会いたがって"},
-                {"id": 3, "word": "手紙が"},
-                {"id": 4, "word": "人から"}
+                {
+                  "id": 1,
+                  "word": "いる"
+                },
+                {
+                  "id": 2,
+                  "word": "会いたがって"
+                },
+                {
+                  "id": 3,
+                  "word": "手紙が"
+                },
+                {
+                  "id": 4,
+                  "word": "人から"
+                }
               ]
             }
           ]
