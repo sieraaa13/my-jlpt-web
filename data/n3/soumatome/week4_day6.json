@@ -17,82 +17,94 @@
         {
           "pattern_title": "父の兄、つまり伯父",
           "description_box": {
-            "formula": "$$ \\text{a. つまり a'.} $$",
-            "explanation": "Pola つまり digunakan ketika menyatakan ulang/menjelaskan sesuatu dengan kata-kata yang berbeda (言い換えるときに使う). Artinya 'dengan kata lain~' atau 'singkatnya~'. Dipakai untuk merangkum atau memparafrase pernyataan sebelumnya.",
-            "explanation_en": "The pattern つまり is used when restating or explaining something using different words (言い換えるときに使う). Means 'in other words ~' or 'in short ~'. Used to summarize or paraphrase a previous statement."
+            "formula": "a. つまり a'.",
+            "explanation": "つまり digunakan untuk menjelaskan ulang dengan kata lain yang lebih mudah dipahami — 'dengan kata lain', 'singkatnya'.\n\nContoh:\n• 父の兄、つまり伯父 (kakak ayah, dengan kata lain paman)\n• つまり、賛成ということですね (singkatnya, berarti setuju ya)",
+            "explanation_en": "\"In other words~\" / \"that is to say~\"."
           },
           "examples": [
             {
               "jp": "父の兄、つまり私の伯父は、医者をしている。",
               "en": "Chichi no ani, tsumari watashi no oji wa, isha o shite iru. — 'Kakak ayahku, dengan kata lain pamanku, adalah seorang dokter.'",
-              "explanation": "📝 (=別の言い方では)"
+              "explanation": "📝 (=別の言い方では)",
+              "highlight": "つまり"
             },
             {
               "jp": "田中さんは、携帯もパソコンも持っていない。つまり、メールで連絡はできないのだ。",
               "en": "Tanaka-san wa, keitai mo pasokon mo motte inai. Tsumari, meeru de renraku wa dekinai no da. — 'Tanaka-san tidak punya HP maupun PC. Dengan kata lain, kita tidak bisa menghubunginya lewat email.'",
-              "explanation": "📝 (=言い方を変えると)"
+              "explanation": "📝 (=言い方を変えると)",
+              "highlight": "つまり"
             }
-          ]
+          ],
+          "pattern_meaning": "つまり = dengan kata lain, artinya"
         },
         {
-          "pattern_title": "事故があった。そのため(に)遅れている。",
+          "pattern_title": "事故があった。そのため遅れている",
           "description_box": {
-            "formula": "$$ \\text{a 〈目的・理由〉。 そのため(に) b 〈結果〉。} \\quad (=\\text{だから}) $$",
-            "explanation": "Pola そのため(に) menghubungkan dua kalimat di mana kalimat pertama (a) menyatakan tujuan/alasan, dan kalimat kedua (b) menyatakan hasil/akibatnya. Artinya 'oleh karena itu~' atau 'untuk itu~'. Setara dengan だから tapi lebih formal.",
-            "explanation_en": "The pattern そのため(に) connects two sentences where the first (a) states a purpose/reason, and the second (b) states the result/consequence. Means 'therefore ~' or 'for that reason ~'. Equivalent to だから but more formal."
+            "formula": "a〈alasan〉。そのため(に) b〈akibat〉。(= だから)",
+            "explanation": "Pola そのために menghubungkan sebab dan akibat secara formal — 'oleh karena itu'.\n\nLebih formal dari だから.\n\nContoh:\n• 事故があった。そのため電車が遅れている (ada kecelakaan, oleh karena itu kereta terlambat)",
+            "explanation_en": "\"For that reason~\" / \"therefore~\" — formal cause-effect."
           },
           "examples": [
             {
               "jp": "隣の駅で事故があったらしい。そのために電車が遅れている。",
               "en": "Tonari no eki de jiko ga atta rashii. Sono tame ni densha ga okurete iru. — 'Sepertinya ada kecelakaan di stasiun sebelah. Karena itu kereta jadi terlambat.'",
-              "explanation": "📝 (=事故があったから) — Hubungan sebab-akibat."
+              "explanation": "📝 (=事故があったから) — Hubungan sebab-akibat.",
+              "highlight": "そのため"
             },
             {
               "jp": "留学するつもりだ。そのために、バイトしてお金をためている。",
               "en": "Ryuugaku suru tsumori da. Sono tame ni, baito shite okane o tamete iru. — 'Aku berniat studi di luar negeri. Untuk itu, aku kerja part-time dan mengumpulkan uang.'",
-              "explanation": "📝 (=留学するつもりだから) — Hubungan tujuan-tindakan."
+              "explanation": "📝 (=留学するつもりだから) — Hubungan tujuan-tindakan.",
+              "highlight": "そのため"
             }
-          ]
+          ],
+          "pattern_meaning": "そのため(に) = oleh karena itu ｜ menyatakan akibat (formal)"
         },
         {
-          "pattern_title": "努力した。その結果成功した。",
+          "pattern_title": "努力した。その結果成功した",
           "description_box": {
-            "formula": "$$ \\text{a 〈過去に起きたこと〉。その結果 b 〈aが原因／理由で起きたこと〉。} $$",
-            "explanation": "Pola その結果 menghubungkan dua kalimat di mana kalimat pertama (a) adalah sesuatu yang sudah terjadi di masa lalu, dan kalimat kedua (b) adalah hasil yang muncul akibat/karena hal tersebut. Artinya 'sebagai hasilnya~' atau 'akibatnya~'.",
-            "explanation_en": "The pattern その結果 connects two sentences where the first (a) is something that happened in the past, and the second (b) is the result that occurred because of it. Means 'as a result ~'."
+            "formula": "a〈kejadian lampau〉。その結果 b〈akibat dari a〉。",
+            "explanation": "Pola その結果 menunjukkan hasil dari kejadian sebelumnya — 'akibatnya', 'hasilnya'.\n\nContoh:\n• 努力した。その結果成功した (sudah berusaha, hasilnya berhasil)\n• 毎日練習した。その結果上手になった (latihan tiap hari, akibatnya jadi pandai)",
+            "explanation_en": "\"As a result~\" — outcome of a past event."
           },
           "examples": [
             {
               "jp": "父は、人の何倍も努力した。その結果、仕事で成功した。",
               "en": "Chichi wa, hito no nanbai mo doryoku shita. Sono kekka, shigoto de seikou shita. — 'Ayahku berusaha berkali-kali lipat dibanding orang lain. Hasilnya, dia sukses dalam pekerjaannya.'",
-              "explanation": "📝 (=努力したあとで)"
+              "explanation": "📝 (=努力したあとで)",
+              "highlight": "その結果"
             },
             {
               "jp": "3ヵ月ダイエットを続けた。その結果、5キロやせた。",
               "en": "Sankagetsu daietto o tsuzuketa. Sono kekka, 5 kiro yaseta. — 'Aku diet selama 3 bulan. Hasilnya, berat badanku turun 5 kilo.'",
-              "explanation": "📝 (=ダイエットを続けたあとで)"
+              "explanation": "📝 (=ダイエットを続けたあとで)",
+              "highlight": "その結果"
             }
-          ]
+          ],
+          "pattern_meaning": "その結果 = akibatnya, hasilnya"
         },
         {
-          "pattern_title": "帰国する。なぜなら結婚式に出席するからだ。",
+          "pattern_title": "帰国する。なぜなら結婚式に出席するからだ",
           "description_box": {
-            "formula": "$$ \\text{a 〈結論〉} + \\begin{cases} \\text{なぜなら(ば)} \\\\ \\text{なぜかというと} \\\\ \\text{どうしてかというと} \\end{cases} + \\text{b 〈原因／理由〉。} $$",
-            "explanation": "Pola なぜなら(ば)／なぜかというと／どうしてかというと digunakan untuk menyebutkan alasan/penyebab SETELAH kesimpulan diutarakan terlebih dahulu (理由・原因をあとで述べる). Artinya 'karena~' atau 'sebabnya adalah~'.\n\n📌 Sering digabungkan dengan 〜からだ di akhir kalimat:\nれい: なぜなら〜からだ。\n(=そのわけは／その理由は)",
-            "explanation_en": "The patterns なぜなら(ば)／なぜかというと／どうしてかというと are used to give a reason or cause AFTER the conclusion has been stated first (理由・原因をあとで述べる). Means 'because ~' or 'the reason is ~'. Often combined with 〜からだ at the end."
+            "formula": "a〈kesimpulan〉+ なぜなら(ば) / なぜかというと / なぜかといえば + b〈alasan〉",
+            "explanation": "Pola なぜなら digunakan untuk menjelaskan alasan setelah menyatakan kesimpulan terlebih dahulu.\n\nUrutan: kesimpulan dulu → baru alasan.\n\nContoh:\n• 帰国する。なぜなら結婚式に出席するからだ (pulang ke negara asal, karena mau menghadiri pernikahan)",
+            "explanation_en": "\"The reason is~\" / \"because~\" — stating conclusion first, then reason."
           },
           "examples": [
             {
               "jp": "来週、国に帰る予定です。なぜなら(ば)、親友の結婚式に出席するからです。",
               "en": "Raishuu, kuni ni kaeru yotei desu. Naze nara(ba), shin'yuu no kekkonshiki ni shusseki suru kara desu. — 'Minggu depan saya berencana pulang ke negara asal. Karena saya akan menghadiri pernikahan sahabat saya.'",
-              "explanation": "📝 (=国に帰る理由は)"
+              "explanation": "📝 (=国に帰る理由は)",
+              "highlight": "なぜなら"
             },
             {
               "jp": "学校を変えた。なぜかというと、ぼくのレベルのクラスがなかったからだ。",
               "en": "Gakkou o kaeta. Naze ka to iu to, boku no reberu no kurasu ga nakatta kara da. — 'Aku pindah sekolah. Karena, tidak ada kelas yang sesuai dengan levelku.'",
-              "explanation": "📝 (=学校を変えた理由は)"
+              "explanation": "📝 (=学校を変えた理由は)",
+              "highlight": "なぜかというと"
             }
-          ]
+          ],
+          "pattern_meaning": "なぜなら = karena, alasannya adalah ~"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "ほとんど勉強をしなかった。（a. その結果　b. なぜかというと）、入学試験に落ちてしまった。",
-              "options": ["a. その結果", "b. なぜかというと"]
+              "options": [
+                "a. その結果",
+                "b. なぜかというと"
+              ]
             },
             {
               "number": 2,
               "question": "来週は出張で、今週はその準備で、今日は一日中会議で、（a. つまり　b. なぜなら）しばらく忙しいです。",
-              "options": ["a. つまり", "b. なぜなら"]
+              "options": [
+                "a. つまり",
+                "b. なぜなら"
+              ]
             },
             {
               "number": 3,
               "question": "彼はもともと心臓が悪かった。（a. つまり　b. そのため）あのニュースを聞いたショックで急死したらしい。",
-              "options": ["a. つまり", "b. そのため"]
+              "options": [
+                "a. つまり",
+                "b. そのため"
+              ]
             },
             {
               "number": 4,
               "question": "仕事を辞めたくても辞められません。（a. なぜなら　b. そのために）家のローン※があるからです。※ローン: loan",
-              "options": ["a. なぜなら", "b. そのために"]
+              "options": [
+                "a. なぜなら",
+                "b. そのために"
+              ]
             },
             {
               "number": 5,
               "question": "彼は獣医、（a. つまり　b. その結果）動物のお医者さんです。",
-              "options": ["a. つまり", "b. その結果"]
+              "options": [
+                "a. つまり",
+                "b. その結果"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "どんなに苦しくても彼はあきらめなかった。 ＿＿ ＿＿ ＿＿ ＿＿ 発明が生まれたのだ。",
               "words": [
-                {"id": 1, "word": "結果"},
-                {"id": 2, "word": "偉大な"},
-                {"id": 3, "word": "このような"},
-                {"id": 4, "word": "その"}
+                {
+                  "id": 1,
+                  "word": "結果"
+                },
+                {
+                  "id": 2,
+                  "word": "偉大な"
+                },
+                {
+                  "id": 3,
+                  "word": "このような"
+                },
+                {
+                  "id": 4,
+                  "word": "その"
+                }
               ]
             },
             {
               "number": 7,
               "question": "彼女は ＿＿ ＿＿ ＿＿ ＿＿ とってはめいです。",
               "words": [
-                {"id": 1, "word": "姉の"},
-                {"id": 2, "word": "私に"},
-                {"id": 3, "word": "つまり"},
-                {"id": 4, "word": "娘"}
+                {
+                  "id": 1,
+                  "word": "姉の"
+                },
+                {
+                  "id": 2,
+                  "word": "私に"
+                },
+                {
+                  "id": 3,
+                  "word": "つまり"
+                },
+                {
+                  "id": 4,
+                  "word": "娘"
+                }
               ]
             }
           ]
