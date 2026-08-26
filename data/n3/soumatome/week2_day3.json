@@ -17,82 +17,94 @@
         {
           "pattern_title": "大きさが違う",
           "description_box": {
-            "formula": "$$ \\text{A} \\xrightarrow{} \\text{さ} \\quad (\\text{よい} \\to \\text{よさ}) / \\text{naさ} $$",
-            "explanation": "Membentuk kata benda dari kata sifat. Menunjukkan sifat, perasaan, atau tingkatan dari sesuatu.",
-            "explanation_en": "Forms a noun from an adjective. Indicates characteristics, feelings, or degree."
+            "formula": "A → Aさ (よい → よさ) / na → naさ",
+            "explanation": "Menambahkan さ di akhir kata sifat untuk mengubahnya jadi kata benda (nominalisasi).\n\nContoh:\n• 大きい → 大きさ (ukuran besar)\n• 便利 → 便利さ (tingkat kenyamanan)\n• よい → よさ (kebaikan — pengecualian)",
+            "explanation_en": "Adding さ to adjectives turns them into nouns (nominalization)."
           },
           "examples": [
             {
               "jp": "大きさは違うが、君と同じかばんを持っているよ。",
               "en": "Ukurannya berbeda, tapi aku punya tas yang sama denganmu.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "さ"
             },
             {
               "jp": "子どもに命の大切さを教えなければならない。",
               "en": "Kita harus mengajarkan kepada anak-anak betapa pentingnya kehidupan.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "さ"
             }
-          ]
+          ],
+          "pattern_meaning": "大きさ = ukuran besar ｜ A→さ / naさ = mengubah kata sifat jadi kata benda"
         },
         {
           "pattern_title": "苦しみは続く",
           "description_box": {
-            "formula": "$$ \\text{A} \\xrightarrow{} \\text{み} / \\text{na} \\xrightarrow{} \\text{み} $$",
-            "explanation": "Membentuk kata benda dari kata sifat. Menunjukkan kondisi, sifat, atau keadaan yang sedang dialami.",
-            "explanation_en": "Forms a noun from an adjective. Indicates conditions or the state of being in a particular situation."
+            "formula": "A → Aみ / na → naみ",
+            "explanation": "Menambahkan み untuk mengubah kata sifat jadi kata benda, tapi lebih berkesan 'perasaan' atau 'sensasi' dibanding さ.\n\nHanya berlaku untuk sebagian kata sifat:\n• 苦しい → 苦しみ (penderitaan)\n• 楽しい → 楽しみ (kesenangan)\n• 悲しい → 悲しみ (kesedihan)",
+            "explanation_en": "Adding み creates emotional/sensory nouns from adjectives."
           },
           "examples": [
             {
               "jp": "戦争が終わった今でも、この国の苦しみはまだ続いている。",
               "en": "Bahkan setelah perang berakhir, penderitaan negara ini masih berlanjut.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "み"
             },
             {
               "jp": "田中さんの強みは、２ヵ国語が話せるということです。",
               "en": "Kelebihan Tanaka-san adalah bisa berbicara dalam dua bahasa.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "み"
             }
-          ]
+          ],
+          "pattern_meaning": "苦しみ = penderitaan ｜ A→み / na→み = kata sifat jadi kata benda (nuansa perasaan)"
         },
         {
           "pattern_title": "テストのこと",
           "description_box": {
-            "formula": "$$ \\text{N/V/A/na/N普} \\begin{cases} \\text{こと} \\end{cases} $$",
-            "explanation": "Mengubah klausa atau kata menjadi nomina (kata benda). Digunakan untuk membicarakan 'hal tentang...'",
-            "explanation_en": "Nominalizes a clause or word. Used to talk about 'the matter of...'."
+            "formula": "N / V / A / na / N普 + こと",
+            "explanation": "こと digunakan untuk mengubah kalimat/frasa menjadi 'hal' atau 'perkara' — nominalisasi.\n\nContoh:\n• テストのことを考える (memikirkan soal tes)\n• 大切なことを忘れた (lupa hal penting)",
+            "explanation_en": "こと nominalizes phrases into \"the matter of~\" or \"the thing about~\"."
           },
           "examples": [
             {
               "jp": "来週のテストのことで、質問があります。",
               "en": "Saya ada pertanyaan tentang ujian minggu depan.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "こと"
             },
             {
               "jp": "田中さんが入院したことを知っていますか。",
               "en": "Apakah kamu tahu bahwa Tanaka-san dirawat di rumah sakit?",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "こと"
             }
-          ]
+          ],
+          "pattern_meaning": "テストのこと = soal/hal tentang tes ｜ こと = hal, perkara"
         },
         {
           "pattern_title": "電話するのを忘れた",
           "description_box": {
-            "formula": "$$ \\text{V／A／na／N + の} \\quad \\begin{cases} \\text{V} \\to \\text{Vる + の} \\\\ \\text{na-keiyoushi} \\to \\text{naな + の} \\\\ \\text{N} \\to \\text{Nな + の} \\end{cases} $$",
-            "explanation": "Pola 〜の juga mengubah kata kerja/kata sifat menjadi kata benda, mirip dengan 〜こと. Namun, 〜の lebih sering dipakai untuk:\n① Tindakan yang bisa diamati langsung (melihat, mendengar)\n② Perasaan/preferensi pribadi\n③ Pilihan dari beberapa opsi\n\n💡 Contoh Penggunaan 〜の Lainnya:\n• 見ているのが楽しい (Senang melihatnya)\n• いいのを選んでください (Pilihlah yang bagus)\n• 暑いのはきらいだ (Aku tidak suka yang panas)\n• 元気なのがいちばんだ (Yang paling penting adalah sehat)",
-            "explanation_en": "The pattern 〜の also nominalizes verbs/adjectives, similar to 〜こと. However, 〜の is more often used for: (1) directly observable actions (seeing, hearing), (2) personal feelings/preferences, and (3) choices among options."
+            "formula": "V / A / na / N + の",
+            "explanation": "の digunakan untuk nominalisasi (mirip こと), tapi lebih kasual dan sering dipakai dalam percakapan.\n\nContoh:\n• 電話するのを忘れた (lupa menelepon)\n• 走るのが好き (suka berlari)",
+            "explanation_en": "の nominalizes verbs/adjectives, more casual than こと."
           },
           "examples": [
             {
               "jp": "田中さんに電話するのをすっかり忘れていました。",
               "en": "Tanaka-san ni denwa suru no o sukkari wasurete imashita. — 'Aku benar-benar lupa menelepon Tanaka-san.'",
-              "explanation": "📝 電話するの = 'hal menelepon' — tindakan yang dilupakan. (=電話すること)"
+              "explanation": "📝 電話するの = 'hal menelepon' — tindakan yang dilupakan. (=電話すること)",
+              "highlight": "のを"
             },
             {
               "jp": "日曜日に混んだところへ行くのは、あまり好きではありません。",
               "en": "Nichiyoubi ni konda tokoro e iku no wa, amari suki dewa arimasen. — 'Aku tidak terlalu suka pergi ke tempat ramai pada hari Minggu.'",
-              "explanation": "📝 行くの = 'hal pergi' — preferensi pribadi. (=行くこと)"
+              "explanation": "📝 行くの = 'hal pergi' — preferensi pribadi. (=行くこと)",
+              "highlight": ""
             }
-          ]
+          ],
+          "pattern_meaning": "電話するの = hal menelepon ｜ V + の = nominalisasi kata kerja"
         }
       ],
       "summary_table": {
@@ -122,27 +134,42 @@
             {
               "number": 1,
               "question": "彼が作った映画には（a. やさしさ　b. やさしいさ）があふれている。",
-              "options": ["a. やさしさ", "b. やさしいさ"]
+              "options": [
+                "a. やさしさ",
+                "b. やさしいさ"
+              ]
             },
             {
               "number": 2,
               "question": "そんな（a. むりの　b. むりな）ことを言わないでください。",
-              "options": ["a. むりの", "b. むりな"]
+              "options": [
+                "a. むりの",
+                "b. むりな"
+              ]
             },
             {
               "number": 3,
               "question": "どの作品にも（a. よさ　b. いいさ）があります。",
-              "options": ["a. よさ", "b. いいさ"]
+              "options": [
+                "a. よさ",
+                "b. いいさ"
+              ]
             },
             {
               "number": 4,
               "question": "スポーツは見る（a. の　b. のこと）は好きなんですが……。",
-              "options": ["a. の", "b. のこと"]
+              "options": [
+                "a. の",
+                "b. のこと"
+              ]
             },
             {
               "number": 5,
               "question": "この手紙には書いた人の まじめ（a. み　b. さ）が表れている。",
-              "options": ["a. み", "b. さ"]
+              "options": [
+                "a. み",
+                "b. さ"
+              ]
             }
           ]
         },
@@ -153,20 +180,44 @@
               "number": 6,
               "question": "私は少し ＿＿ ＿＿ ＿＿ ＿＿ が好きです。",
               "words": [
-                {"id": 1, "word": "苦み"},
-                {"id": 2, "word": "ある"},
-                {"id": 3, "word": "コーヒー"},
-                {"id": 4, "word": "の"}
+                {
+                  "id": 1,
+                  "word": "苦み"
+                },
+                {
+                  "id": 2,
+                  "word": "ある"
+                },
+                {
+                  "id": 3,
+                  "word": "コーヒー"
+                },
+                {
+                  "id": 4,
+                  "word": "の"
+                }
               ]
             },
             {
               "number": 7,
               "question": "明日 ＿＿ ＿＿ ＿＿ ＿＿ 聞きましたか。",
               "words": [
-                {"id": 1, "word": "テスト"},
-                {"id": 2, "word": "を"},
-                {"id": 3, "word": "の"},
-                {"id": 4, "word": "のこと"}
+                {
+                  "id": 1,
+                  "word": "テスト"
+                },
+                {
+                  "id": 2,
+                  "word": "を"
+                },
+                {
+                  "id": 3,
+                  "word": "の"
+                },
+                {
+                  "id": 4,
+                  "word": "のこと"
+                }
               ]
             }
           ]
