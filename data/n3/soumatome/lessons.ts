@@ -68,6 +68,7 @@ export type GrammarSection = {
     jp: string;
     en: string;
     explanation?: string;
+    highlight?: string; // bagian teks jp yang perlu ditebalkan + digarisbawahi
   }>;
 };
 export type ExerciseGroup = { title: string; instruction: string; type: string; questions: Array<Record<string, unknown>>; passage?: string; };
