@@ -17,82 +17,94 @@
         {
           "pattern_title": "地図のとおり",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vる} \\\\ \\text{Vた} \\\\ \\text{Nの} \\end{cases} \\text{とおり / Nどおり} $$",
-            "explanation": "Menyatakan bahwa sesuatu dilakukan atau terjadi sesuai dengan acuan atau instruksi yang ada.",
-            "explanation_en": "Expresses that something is done or happens in accordance with a reference or instruction."
+            "formula": "Vる / Vた / Nの + とおり(に)",
+            "explanation": "Pola とおり berarti 'sesuai dengan ~' atau 'persis seperti ~'.\n\nContoh:\n• 地図のとおりに行く (pergi sesuai peta)\n• 言ったとおりにする (melakukan persis seperti yang dikatakan)\n• 予想どおり (sesuai dugaan)",
+            "explanation_en": "\"As~\" / \"just as~\" — following something exactly."
           },
           "examples": [
             {
               "jp": "友達がかいてくれた地図のとおりに来たが、道に迷った。",
               "en": "Aku datang mengikuti peta yang digambar temanku, tapi tetap tersesat.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "とおり"
             },
             {
               "jp": "先生が言ったとおり、試験は難しかった。",
               "en": "Seperti yang dikatakan guru, ujiannya memang sulit.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "とおり"
             }
-          ]
+          ],
+          "pattern_meaning": "とおり = sesuai dengan ~, persis seperti ~"
         },
         {
           "pattern_title": "テレビをつけたまま",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vた/Vない} \\\\ \\text{A/na/N普} \\end{cases} \\text{まま} $$",
-            "explanation": "Menyatakan bahwa suatu keadaan dibiarkan tetap seperti apa adanya tanpa perubahan, sementara tindakan lain dilakukan.",
-            "explanation_en": "Expresses that a state is left unchanged while another action takes place."
+            "formula": "Vた・Vない / A / na / N普 + まま",
+            "explanation": "Pola まま berarti 'dalam keadaan ~ (tanpa berubah)' — sesuatu dibiarkan dalam kondisi tertentu.\n\nContoh:\n• テレビをつけたまま寝た (tidur dengan TV masih menyala)\n• 靴のまま入った (masuk dengan sepatu masih dipakai)",
+            "explanation_en": "\"While still~\" / \"leaving it as~\" — unchanged state."
           },
           "examples": [
             {
               "jp": "昨夜は、テレビをつけたまま寝てしまった。",
               "en": "Semalam aku ketiduran dengan TV tetap menyala.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "まま"
             },
             {
               "jp": "この野菜は、生のまま食べてもおいしいですよ。",
               "en": "Sayuran ini enak dimakan dalam keadaan mentah apa adanya.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "まま"
             }
-          ]
+          ],
+          "pattern_meaning": "まま = dalam keadaan ~ ｜ tanpa berubah"
         },
         {
           "pattern_title": "開けっぱなし",
           "description_box": {
-            "formula": "Vっぱなし",
-            "explanation": "Menyatakan bahwa sesuatu dibiarkan dalam keadaan tertentu tanpa dibenahi. Sering mengandung makna negatif (ceroboh atau tidak bertanggung jawab).",
-            "explanation_en": "Expresses that something is left in a certain state without being fixed. Often has a negative connotation."
+            "formula": "V + っぱなし",
+            "explanation": "Pola っぱなし berarti 'dibiarkan dalam keadaan ~' — ada nuansa negatif (kelalaian, tidak bertanggung jawab).\n\nContoh:\n• ドアを開けっぱなしにしないで (jangan biarkan pintu terbuka)\n• 水を出しっぱなしだ (air dibiarkan mengalir)",
+            "explanation_en": "\"Left~\" — negligently leaving something in a state (negative nuance)."
           },
           "examples": [
             {
               "jp": "窓を開けっぱなしで出てきた。",
               "en": "Aku keluar dengan jendela tetap terbuka.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "っぱなし"
             },
             {
               "jp": "水を出しっぱなしにしないでください。",
               "en": "Tolong jangan biarkan air mengalir terus begitu saja.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "っぱなし"
             }
-          ]
+          ],
+          "pattern_meaning": "っぱなし = dibiarkan ~ (negatif) ｜ kelalaian"
         },
         {
           "pattern_title": "二人きり",
           "description_box": {
-            "formula": "$$ \\text{N + } \\begin{cases} \\text{きり} \\\\ \\text{きりだ} \\\\ \\text{っきり} \\\\ \\text{っきりだ} \\end{cases} $$",
-            "explanation": "Pola 〜きり／〜っきり digunakan dengan kata yang menunjukkan jumlah kecil untuk menyatakan 'hanya~' dengan penekanan eksklusivitas/keterbatasan.\n\nBentuk っきり lebih kasual dan menekankan dibandingkan きり.\n\nContoh penggunaan:\n• 一人(っ)きり (sendirian saja)\n• 一度(っ)きり (hanya sekali)\n• 二人(っ)きり (hanya berdua)",
-            "explanation_en": "The pattern 〜きり／〜っきり is used with words indicating small quantities to express 'only ~' with an emphasis on exclusivity or limitation. The form っきり is more casual and adds stronger emphasis compared to きり."
+            "formula": "N + きり / きりだ / っきり / っきりだ",
+            "explanation": "Pola きり berarti 'hanya ~ saja' — menekankan keterbatasan jumlah atau kesendirian.\n\nContoh:\n• 二人きりで話したい (ingin bicara berdua saja)\n• 一人っきりで寂しい (sendirian, kesepian)",
+            "explanation_en": "\"Only~\" / \"just the two of us\" — emphasizes limited number or being alone."
           },
           "examples": [
             {
               "jp": "二人(っ)きりで話をしたいです。",
               "en": "Futari(k)kiri de hanashi o shitai desu. — 'Aku ingin berbicara hanya berdua saja.'",
-              "explanation": "📝 Menekankan bahwa tidak ada orang lain. (=二人だけで)"
+              "explanation": "📝 Menekankan bahwa tidak ada orang lain. (=二人だけで)",
+              "highlight": "きり"
             },
             {
               "jp": "彼に会ったのは1回(っ)きりです。",
               "en": "Kare ni atta no wa ikkai(k)kiri desu. — 'Aku hanya bertemu dia sekali saja.'",
-              "explanation": "📝 (=1回だけ)"
+              "explanation": "📝 (=1回だけ)",
+              "highlight": "っきり"
             }
-          ]
+          ],
+          "pattern_meaning": "きり = hanya ~ saja ｜ terbatas pada ~"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "私が今から（a. 言うの　b. 言った）とおりに書いてください。",
-              "options": ["a. 言うの", "b. 言った"]
+              "options": [
+                "a. 言うの",
+                "b. 言った"
+              ]
             },
             {
               "number": 2,
               "question": "どうぞ靴の（a. きり　b. まま）、お入りください。",
-              "options": ["a. きり", "b. まま"]
+              "options": [
+                "a. きり",
+                "b. まま"
+              ]
             },
             {
               "number": 3,
               "question": "テレビがつけっ（a. ぱなし　b. まま）ですよ。見ないときは消してください。",
-              "options": ["a. ぱなし", "b. まま"]
+              "options": [
+                "a. ぱなし",
+                "b. まま"
+              ]
             },
             {
               "number": 4,
               "question": "一度（a. きり　b. とおり）の人生を大切に生きる。",
-              "options": ["a. きり", "b. とおり"]
+              "options": [
+                "a. きり",
+                "b. とおり"
+              ]
             },
             {
               "number": 5,
               "question": "妹は電気を（a. つける　b. つけた）まま寝ます。",
-              "options": ["a. つける", "b. つけた"]
+              "options": [
+                "a. つける",
+                "b. つけた"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "服を ＿＿ ＿＿ ＿＿ ＿＿ なさい。",
               "words": [
-                {"id": 1, "word": "しないで"},
-                {"id": 2, "word": "脱ぎ"},
-                {"id": 3, "word": "片付け"},
-                {"id": 4, "word": "っぱなしに"}
+                {
+                  "id": 1,
+                  "word": "しないで"
+                },
+                {
+                  "id": 2,
+                  "word": "脱ぎ"
+                },
+                {
+                  "id": 3,
+                  "word": "片付け"
+                },
+                {
+                  "id": 4,
+                  "word": "っぱなしに"
+                }
               ]
             },
             {
               "number": 7,
               "question": "日本は ＿＿ ＿＿ ＿＿ ＿＿ 国でしたか。",
               "words": [
-                {"id": 1, "word": "とおりの"},
-                {"id": 2, "word": "書いて"},
-                {"id": 3, "word": "ガイドブックに"},
-                {"id": 4, "word": "あった"}
+                {
+                  "id": 1,
+                  "word": "とおりの"
+                },
+                {
+                  "id": 2,
+                  "word": "書いて"
+                },
+                {
+                  "id": 3,
+                  "word": "ガイドブックに"
+                },
+                {
+                  "id": 4,
+                  "word": "あった"
+                }
               ]
             }
           ]
