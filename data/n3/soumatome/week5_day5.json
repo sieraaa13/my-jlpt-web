@@ -17,87 +17,100 @@
         {
           "pattern_title": "たとえ反対されても",
           "description_box": {
-            "formula": "$$ \\text{たとえ} + \\begin{cases} \\text{Vても} \\\\ \\text{Aくても} \\\\ \\text{naでも} \\\\ \\text{Nでも} \\end{cases} $$",
-            "explanation": "Pola たとえ〜ても berarti 'walaupun~' atau 'meskipun andaikata~'. Pola ini memberikan penekanan kuat pada konsesi (pengakuan) — menyatakan bahwa meskipun suatu kondisi terpenuhi, tindakan/keputusan tidak akan berubah. Sering digunakan dalam pengandaian hipotetis.",
-            "explanation_en": "The pattern たとえ〜ても means 'even if ~' or 'no matter if ~'. It strongly emphasizes concession — stating that even if a condition is met, the action/decision will not change. Often used in hypothetical assumptions."
+            "formula": "たとえ + Vても / Aくても / naでも / Nでも",
+            "explanation": "Pola たとえ～ても memperkuat konsesi — 'walaupun seandainya ~, tetap ~'.\n\nLebih hipotetis dari ても biasa.\n\nContoh:\n• たとえ反対されても、やる (walaupun ditentang sekalipun, tetap lakukan)\n• たとえ高くても買いたい (walaupun mahal sekalipun, tetap ingin beli)",
+            "explanation_en": "\"Even if~ (hypothetically)\" — strong concession."
           },
           "examples": [
             {
               "jp": "たとえ反対されても留学します。",
               "en": "Tatoe hantai sarete mo ryuugaku shimasu. — 'Walaupun ditentang, aku tetap akan studi ke luar negeri.'",
-              "explanation": "📝 (=もし反対されても)"
+              "explanation": "📝 (=もし反対されても)",
+              "highlight": "ても"
             },
             {
               "jp": "たとえ元気じゃなくても、家族への手紙には元気だと書きます。",
               "en": "Tatoe genki ja nakute mo, kazoku e no tegami ni wa genki da to kakimasu. — 'Walaupun tidak sehat, di surat untuk keluarga aku tetap menulis bahwa aku sehat.'",
-              "explanation": "📝 (=もし元気じゃなくても)"
+              "explanation": "📝 (=もし元気じゃなくても)",
+              "highlight": "ても"
             }
-          ]
+          ],
+          "pattern_meaning": "たとえ～ても = walaupun seandainya ~ ｜ pengandaian ekstrem"
         },
         {
-          "pattern_title": "もしかするとうそかもしれない。",
+          "pattern_title": "もしかするとうそかもしれない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{もしかすると} \\\\ \\text{もしかしたら} \\end{cases} \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{N／na} \\end{cases} \\text{かもしれない} $$",
-            "explanation": "Pola もしかすると／もしかしたら〜かもしれない menyatakan kemungkinan yang lemah/tidak pasti — 'mungkin saja~' atau 'jangan-jangan~'. Pola ini memperkuat nuansa ketidakpastian/keraguan dibandingkan hanya menggunakan 〜かもしれない.",
-            "explanation_en": "The pattern もしかすると／もしかしたら〜かもしれない expresses a weak/uncertain possibility — 'perhaps ~' or 'it might be that ~'. This pattern strengthens the nuance of uncertainty/doubt compared to using 〜かもしれない alone."
+            "formula": "もしかすると / もしかしたら + かもしれない / かも",
+            "explanation": "Pola もしかすると digunakan untuk menyatakan kemungkinan yang tidak pasti — 'mungkin saja ~'.\n\nContoh:\n• もしかするとうそかもしれない (mungkin saja itu bohong)\n• もしかしたら来ないかもしれない (bisa jadi dia tidak datang)",
+            "explanation_en": "\"Perhaps~\" / \"maybe~\" — uncertain possibility."
           },
           "examples": [
             {
               "jp": "もしかすると彼の話はうそかもしれない。",
               "en": "Moshikasuru to kare no hanashi wa uso kamoshirenai. — 'Mungkin saja cerita dia itu bohong.'",
-              "explanation": "📝 (=うその可能性がある)"
+              "explanation": "📝 (=うその可能性がある)",
+              "highlight": "もしかすると"
             },
             {
               "jp": "もしかしたら、明日行けないかもしれません。",
               "en": "Moshikashitara, ashita ikenai kamoshiremasen. — 'Jangan-jangan, besok aku tidak bisa pergi.'",
-              "explanation": "📝 (=行けない可能性がある)"
+              "explanation": "📝 (=行けない可能性がある)",
+              "highlight": "もしかしたら"
             }
-          ]
+          ],
+          "pattern_meaning": "もしかすると = mungkin saja, bisa jadi"
         },
         {
-          "pattern_title": "必ずしもいいとは限らない。",
+          "pattern_title": "必ずしもいいとは限らない",
           "description_box": {
-            "formula": "$$ \\text{必ずしも} + \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{N／na} \\end{cases} \\text{とは限らない} $$",
-            "explanation": "Pola 必ずしも〜とは限らない berarti 'tidak selalu~' atau 'belum tentu~'. Digunakan untuk menyangkal anggapan umum/stereotip — menyatakan bahwa hal yang terlihat benar tidak selalu benar dalam semua kasus.",
-            "explanation_en": "The pattern 必ずしも〜とは限らない means 'not necessarily ~' or 'not always ~'. Used to deny common assumptions/stereotypes — stating that what seems to be true is not always true in every case."
+            "formula": "必ずしも + V / A / na / N普 + とは限らない / わけではない",
+            "explanation": "Pola 必ずしも～とは限らない berarti 'belum tentu ~' atau 'tidak selalu ~' — menolak generalisasi.\n\nContoh:\n• 高いものが必ずしもいいとは限らない (barang mahal belum tentu bagus)\n• 必ずしも全員が賛成するわけではない (belum tentu semua orang setuju)",
+            "explanation_en": "\"Not necessarily~\" — rejecting a generalization."
           },
           "examples": [
             {
               "jp": "(お)金持ちが必ずしも幸福だとは限らない。",
               "en": "(O)kanemochi ga kanarazushimo koufuku da to wa kagiranai. — 'Orang kaya belum tentu bahagia.'",
-              "explanation": "📝 (=必ず「幸福だ」とは言えない。幸福でないこともある。)"
+              "explanation": "📝 (=必ず「幸福だ」とは言えない。幸福でないこともある。)",
+              "highlight": "必ずしも"
             },
             {
               "jp": "高いものが必ずしもいいものだとは限らない。",
               "en": "Takai mono ga kanarazushimo ii mono da to wa kagiranai. — 'Barang yang mahal belum tentu barang yang bagus.'",
-              "explanation": "📝 (=必ず「いいものだ」とは言えない。よくないものもある。)"
+              "explanation": "📝 (=必ず「いいものだ」とは言えない。よくないものもある。)",
+              "highlight": "必ずしも"
             }
-          ]
+          ],
+          "pattern_meaning": "必ずしも～とは限らない = belum tentu ~ ｜ tidak selalu"
         },
         {
           "pattern_title": "まるで夢のよう",
           "description_box": {
-            "formula": "$$ \\text{まるで} + \\begin{cases} \\text{Nの／V普} \\;+ \\text{よう} \\\\ \\text{V／A／na／N普} \\;+ \\text{みたい} \\\\ \\text{Nな／naな} \\end{cases} $$",
-            "explanation": "Pola まるで〜よう／みたい berarti 'persis seperti~' atau 'seakan-akan~'. Pola ini memperkuat perumpamaan yang sudah ada di 〜ようだ／みたいだ — menekankan kemiripan yang sangat kuat.\n\n📌 Variasi penggunaan:\n• まるで外国に来たようだ (seakan-akan datang ke luar negeri)\n• まるで私の家じゃないみたい (seperti bukan rumahku)\n• まるで私が悪いみたい (seakan-akan aku yang salah)\n\n📌 もっと! まるで〜ない = sama sekali tidak~\n例: あなたの言うことはまるで理解できない。 (=全然理解できない)",
-            "explanation_en": "The pattern まるで〜よう／みたい means 'just like ~' or 'as if ~'. It strengthens the metaphor/simile already in 〜ようだ／みたいだ — emphasizing a very strong resemblance. Note: まるで〜ない (with negative) means 'not at all ~'."
+            "formula": "まるで + Nの・V普 + よう / V / A / na普 + みたい",
+            "explanation": "Pola まるで memperkuat perumpamaan — 'seolah-olah ~', 'persis seperti ~'.\n\nDigunakan bersama よう atau みたい.\n\nContoh:\n• まるで夢のようだ (seolah-olah mimpi)\n• まるで子どもみたいだ (persis seperti anak kecil)\n• まるで本物のように見える (kelihatan persis seperti asli)",
+            "explanation_en": "\"Just like~\" / \"as if~\" — emphasizing a simile."
           },
           "examples": [
             {
               "jp": "合格した！まるで夢のようだ。",
               "en": "Goukaku shita! Marude yume no you da. — 'Aku lulus! Rasanya persis seperti mimpi.'",
-              "explanation": "📝 (=ちょうど夢のようだ)"
+              "explanation": "📝 (=ちょうど夢のようだ)",
+              "highlight": "まるで"
             },
             {
               "jp": "彼の日本語はまるで日本人が話しているみたいに聞こえる。",
               "en": "Kare no nihongo wa marude nihonjin ga hanashite iru mitai ni kikoeru. — 'Bahasa Jepangnya terdengar persis seperti orang Jepang yang sedang bicara.'",
-              "explanation": "📝 (=ちょうど日本人が話しているように)"
+              "explanation": "📝 (=ちょうど日本人が話しているように)",
+              "highlight": "まるで"
             },
             {
               "jp": "あなたの言うことはまるで理解できない。",
               "en": "Anata no iu koto wa marude rikai dekinai. — 'Aku sama sekali tidak bisa memahami apa yang kamu katakan.'",
-              "explanation": "📝 もっと! (=全然理解できない) — まるで + bentuk negatif = sama sekali tidak~"
+              "explanation": "📝 もっと! (=全然理解できない) — まるで + bentuk negatif = sama sekali tidak~",
+              "highlight": "まるで"
             }
-          ]
+          ],
+          "pattern_meaning": "まるで = seolah-olah, persis seperti"
         }
       ],
       "summary_table": {
@@ -133,27 +146,42 @@
             {
               "number": 1,
               "question": "（a. まるで　b. もしかすると）あそこに座っている人は有名な人かもしれない。",
-              "options": ["a. まるで", "b. もしかすると"]
+              "options": [
+                "a. まるで",
+                "b. もしかすると"
+              ]
             },
             {
               "number": 2,
               "question": "（a. たとえ　b. かならずしも）給料が高くてもあんな仕事はしたくない。",
-              "options": ["a. たとえ", "b. かならずしも"]
+              "options": [
+                "a. たとえ",
+                "b. かならずしも"
+              ]
             },
             {
               "number": 3,
               "question": "私が聞いたのは（a. まるで　b. もしかしたら）うそのような本当の話なんです。",
-              "options": ["a. まるで", "b. もしかしたら"]
+              "options": [
+                "a. まるで",
+                "b. もしかしたら"
+              ]
             },
             {
               "number": 4,
               "question": "日本人の日本語が（a. たとえ　b. 必ずしも）すべて正しいとは限らない。",
-              "options": ["a. たとえ", "b. 必ずしも"]
+              "options": [
+                "a. たとえ",
+                "b. 必ずしも"
+              ]
             },
             {
               "number": 5,
               "question": "あの二人は（a. まるで　b. たとえ）兄弟のようによく似ている。",
-              "options": ["a. まるで", "b. たとえ"]
+              "options": [
+                "a. まるで",
+                "b. たとえ"
+              ]
             }
           ]
         },
@@ -164,20 +192,44 @@
               "number": 6,
               "question": "たとえ ＿＿ ＿＿ ＿＿ ＿＿ 結婚します。",
               "words": [
-                {"id": 1, "word": "されても"},
-                {"id": 2, "word": "両親に"},
-                {"id": 3, "word": "彼女と"},
-                {"id": 4, "word": "反対"}
+                {
+                  "id": 1,
+                  "word": "されても"
+                },
+                {
+                  "id": 2,
+                  "word": "両親に"
+                },
+                {
+                  "id": 3,
+                  "word": "彼女と"
+                },
+                {
+                  "id": 4,
+                  "word": "反対"
+                }
               ]
             },
             {
               "number": 7,
               "question": "親や ＿＿ ＿＿ ＿＿ ＿＿ 限らない。",
               "words": [
-                {"id": 1, "word": "言うことが"},
-                {"id": 2, "word": "先生の"},
-                {"id": 3, "word": "とは"},
-                {"id": 4, "word": "正しい"}
+                {
+                  "id": 1,
+                  "word": "言うことが"
+                },
+                {
+                  "id": 2,
+                  "word": "先生の"
+                },
+                {
+                  "id": 3,
+                  "word": "とは"
+                },
+                {
+                  "id": 4,
+                  "word": "正しい"
+                }
               ]
             }
           ]
