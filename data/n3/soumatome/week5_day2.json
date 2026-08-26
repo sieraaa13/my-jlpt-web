@@ -17,87 +17,100 @@
         {
           "pattern_title": "書き上げる",
           "description_box": {
-            "formula": "$$ \\text{V ます + } \\begin{cases} \\text{上げる} \\\\ \\text{上がる} \\end{cases} $$",
-            "explanation": "Pola Vます + 上げる／上がる berarti 'menyelesaikan~ sepenuhnya' (その仕事を完全に終えるという意味). Menunjukkan bahwa suatu pekerjaan/tindakan telah selesai dengan tuntas.\n\n📌 Contoh kombinasi:\n• 書き上げる／書き上がる (selesai menulis)\n• 編み上がる (selesai dirajut)\n• 作り上げる (selesai membuat)\n• 調べ上げる (selesai memeriksa)\n• 育て上げる (selesai membesarkan)",
-            "explanation_en": "The pattern Vます + 上げる／上がる means 'to completely finish ~'. It indicates that a task/action has been fully completed. Used to mean 'something has just been finished/completed thoroughly'."
+            "formula": "Vます + 上げる / 上がる",
+            "explanation": "Menambahkan 上げる/上がる ke kata kerja menunjukkan 'menyelesaikan sampai tuntas'.\n\n• 上げる = transitif (ada objek): 書き上げる (menyelesaikan tulisan)\n• 上がる = intransitif: 出来上がる (selesai jadi)\n\nContoh:\n• レポートを書き上げた (menyelesaikan laporan)\n• 料理が出来上がった (masakan sudah jadi)",
+            "explanation_en": "\"Finish doing~\" — completion of an action."
           },
           "examples": [
             {
               "jp": "やっとレポートを書き上げた。",
               "en": "Yatto repooto o kakiageta. — 'Akhirnya laporannya selesai kutulis.'",
-              "explanation": "📝 (=全部書いた)"
+              "explanation": "📝 (=全部書いた)",
+              "highlight": "上げた"
             },
             {
               "jp": "ケーキが焼き上がりましたよ。",
               "en": "Keeki ga yakiagarimashita yo. — 'Kuenya sudah selesai dipanggang!'",
-              "explanation": "📝 (=焼き終わりました)"
+              "explanation": "📝 (=焼き終わりました)",
+              "highlight": "上がった"
             }
-          ]
+          ],
+          "pattern_meaning": "上げる/上がる = menyelesaikan ~ sampai tuntas"
         },
         {
           "pattern_title": "食べ切れない",
           "description_box": {
-            "formula": "$$ \\text{V ます + } \\begin{cases} \\text{切る} \\\\ \\text{切れる} \\end{cases} \\quad \\text{V ます + 切れない} \\;(=\\text{完了しない}) $$",
-            "explanation": "Pola Vます + 切る／切れる berarti 'menghabiskan/menyelesaikan~ sampai tuntas' (全部使って、残っていないようす). Bentuk negatif Vます + 切れない berarti 'tidak bisa ~ sampai habis'.\n\n📌 Contoh kombinasi:\n• 飲み切る／読み切る／走り切る\n• 泳ぎ切る／売り切れる",
-            "explanation_en": "The pattern Vます + 切る／切れる means 'to completely use up ~' or 'to finish ~ entirely', showing nothing is left. The negative form Vます + 切れない means 'cannot finish ~' or 'too much to ~'."
+            "formula": "Vます + 切る / 切れる / 切れない",
+            "explanation": "Menambahkan 切る menunjukkan 'melakukan sampai habis/sepenuhnya'.\n\n• 切る = berhasil menyelesaikan\n• 切れない = tidak sanggup menyelesaikan\n\nContoh:\n• 食べ切れない (tidak sanggup menghabiskan makan)\n• 走り切った (berhasil berlari sampai akhir)\n• 使い切る (memakai sampai habis)",
+            "explanation_en": "\"Do~ completely\" / \"can't finish doing~\"."
           },
           "examples": [
             {
               "jp": "ご飯の量が多くて、食べ切れないよ。",
               "en": "Gohan no ryou ga ookute, tabekirenai yo. — 'Porsi nasinya banyak banget, nggak bisa habis.'",
-              "explanation": "📝 (=全部食べられない)"
+              "explanation": "📝 (=全部食べられない)",
+              "highlight": "切れない"
             },
             {
               "jp": "長い小説を、2日間で読み切った。",
               "en": "Nagai shousetsu o, futsukakan de yomikitta. — 'Aku habiskan novel panjang itu hanya dalam 2 hari.'",
-              "explanation": "📝 (=全部読んだ)"
+              "explanation": "📝 (=全部読んだ)",
+              "highlight": "切った"
             },
             {
               "jp": "疲れ切ったようす",
               "en": "Tsukarekitta yousu — 'Tampak benar-benar lelah / kelelahan parah'",
-              "explanation": "📝 もっと! (=ひどく疲れたようす) — Bisa juga untuk menekankan tingkat ekstrem suatu kondisi."
+              "explanation": "📝 もっと! (=ひどく疲れたようす) — Bisa juga untuk menekankan tingkat ekstrem suatu kondisi.",
+              "highlight": "切る"
             }
-          ]
+          ],
+          "pattern_meaning": "切る/切れない = melakukan ~ sampai habis/sepenuhnya"
         },
         {
           "pattern_title": "読みかけの本",
           "description_box": {
-            "formula": "$$ \\text{V ます + } \\begin{cases} \\text{かける} \\\\ \\text{かけのN} \\\\ \\text{かけだ} \\end{cases} $$",
-            "explanation": "Pola Vます + かける／かけのN／かけだ menyatakan tindakan yang sudah dimulai tetapi belum selesai (途中で). Artinya 'sedang dalam proses~' atau 'baru mulai~ tapi belum selesai'.\n\n📌 Contoh kombinasi:\n• 食べかける／帰りかける\n• 落ちかける／失敗しかける",
-            "explanation_en": "The pattern Vます + かける／かけのN／かけだ expresses an action that has started but is not yet finished (still in progress). Means 'in the middle of ~' or 'about to ~ but not done yet'."
+            "formula": "Vます + かける / かけのN / かけだ",
+            "explanation": "Menambahkan かける menunjukkan 'baru mulai tapi belum selesai' atau 'setengah jalan'.\n\nContoh:\n• 読みかけの本 (buku yang baru setengah dibaca)\n• 食べかけのケーキ (kue yang baru setengah dimakan)\n• 言いかけてやめた (baru mau bilang tapi batal)",
+            "explanation_en": "\"Half-done~\" / \"in the middle of doing~\"."
           },
           "examples": [
             {
               "jp": "この本はまだ読みかけだ。",
               "en": "Kono hon wa mada yomikake da. — 'Buku ini masih dibaca / belum selesai dibaca.'",
-              "explanation": "📝 (=読んでいる途中だ)"
+              "explanation": "📝 (=読んでいる途中だ)",
+              "highlight": "かけの"
             },
             {
               "jp": "おふろに入りかけたときに電話が鳴った。",
               "en": "Ofuro ni hairikaketa toki ni denwa ga natta. — 'Pas aku mau masuk ke bak mandi, telepon berdering.'",
-              "explanation": "📝 (=入ろうとしたときに)"
+              "explanation": "📝 (=入ろうとしたときに)",
+              "highlight": "かけの"
             }
-          ]
+          ],
+          "pattern_meaning": "かける = baru setengah jalan, belum selesai"
         },
         {
           "pattern_title": "焼きたてのパン",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V ますたてのN} \\\\ \\text{V ますたてだ} \\end{cases} $$",
-            "explanation": "Pola Vます + たて menyatakan 'baru saja~' atau 'baru saja selesai~' (してすぐあとの／したばかりの). Menunjukkan bahwa suatu tindakan baru saja dilakukan dan keadaannya masih segar/baru.\n\n📌 Contoh kombinasi:\n• 炊きたて(のご飯) — nasi yang baru saja matang\n• ペンキ塗りたて — cat yang baru saja dilapisi\n• 入社したて — baru saja masuk perusahaan\n• 習いたて — baru saja belajar\n\n⚠️ Catatan ダメ: TIDAK BISA dipakai dengan kata kerja seperti:\n❌ 〜たてる\n❌ 読みたて／寝たて／食べたて\n(Hanya dipakai dengan kata kerja yang menghasilkan keadaan baru.)",
-            "explanation_en": "The pattern Vます + たて means 'just done ~' or 'fresh from ~' (immediately after doing something). It shows that an action has just been performed and the state is still fresh/new. Note: This pattern cannot be used with all verbs — only with verbs that produce a new state (like cooking, painting, joining, etc.)."
+            "formula": "Vます + たてのN / たてだ",
+            "explanation": "Menambahkan たて menunjukkan 'baru saja selesai dilakukan' — masih dalam kondisi segar/baru.\n\nContoh:\n• 焼きたてのパン (roti yang baru saja dipanggang)\n• 炊きたてのご飯 (nasi yang baru saja dimasak)\n• 出来たてのビール (bir yang baru saja dibuat)",
+            "explanation_en": "\"Freshly done~\" — just completed, still fresh."
           },
           "examples": [
             {
               "jp": "焼きたてのパンはおいしい。",
               "en": "Yakitate no pan wa oishii. — 'Roti yang baru selesai dipanggang itu enak.'",
-              "explanation": "📝 (=焼いてすぐあとの／焼いたばかりの)"
+              "explanation": "📝 (=焼いてすぐあとの／焼いたばかりの)",
+              "highlight": "たての"
             },
             {
               "jp": "あのスーパーは、とりたての新鮮な野菜を売っている。",
               "en": "Ano suupaa wa, toritate no shinsen na yasai o utte iru. — 'Supermarket itu menjual sayuran segar yang baru saja dipanen.'",
-              "explanation": "📝 (=とってすぐあとの／とったばかりの)"
+              "explanation": "📝 (=とってすぐあとの／とったばかりの)",
+              "highlight": "たての"
             }
-          ]
+          ],
+          "pattern_meaning": "たて = baru saja selesai ~ (masih segar)"
         }
       ],
       "summary_table": {
@@ -133,27 +146,42 @@
             {
               "number": 1,
               "question": "彼は何か（a. 言いかけて　b. 言い上げて）やめた。",
-              "options": ["a. 言いかけて", "b. 言い上げて"]
+              "options": [
+                "a. 言いかけて",
+                "b. 言い上げて"
+              ]
             },
             {
               "number": 2,
               "question": "（a. 炊きかけ　b. 炊きたて）のご飯はおいしい。",
-              "options": ["a. 炊きかけ", "b. 炊きたて"]
+              "options": [
+                "a. 炊きかけ",
+                "b. 炊きたて"
+              ]
             },
             {
               "number": 3,
               "question": "長い間かかって作っていた作品が、やっと（a. できあげ　b. できあがり）ました。",
-              "options": ["a. できあげ", "b. できあがり"]
+              "options": [
+                "a. できあげ",
+                "b. できあがり"
+              ]
             },
             {
               "number": 4,
               "question": "そこに（a. 書き切れない　b. 書き上げない）場合は、裏も使ってください。",
-              "options": ["a. 書き切れない", "b. 書き上げない"]
+              "options": [
+                "a. 書き切れない",
+                "b. 書き上げない"
+              ]
             },
             {
               "number": 5,
               "question": "姉はプレゼントにするマフラーを一晩で（a. 編みたてた　b. 編み上げた）。",
-              "options": ["a. 編みたてた", "b. 編み上げた"]
+              "options": [
+                "a. 編みたてた",
+                "b. 編み上げた"
+              ]
             }
           ]
         },
@@ -164,20 +192,44 @@
               "number": 6,
               "question": "新しいのを ＿＿ ＿＿ ＿＿ ＿＿ 母に言われた。",
               "words": [
-                {"id": 1, "word": "ですよと"},
-                {"id": 2, "word": "使いかけのを"},
-                {"id": 3, "word": "買うのは"},
-                {"id": 4, "word": "使い切ってから"}
+                {
+                  "id": 1,
+                  "word": "ですよと"
+                },
+                {
+                  "id": 2,
+                  "word": "使いかけのを"
+                },
+                {
+                  "id": 3,
+                  "word": "買うのは"
+                },
+                {
+                  "id": 4,
+                  "word": "使い切ってから"
+                }
               ]
             },
             {
               "number": 7,
               "question": "課長は ＿＿ ＿＿ ＿＿ ＿＿ いる。",
               "words": [
-                {"id": 1, "word": "指導で"},
-                {"id": 2, "word": "社員の"},
-                {"id": 3, "word": "疲れきって"},
-                {"id": 4, "word": "入社したての"}
+                {
+                  "id": 1,
+                  "word": "指導で"
+                },
+                {
+                  "id": 2,
+                  "word": "社員の"
+                },
+                {
+                  "id": 3,
+                  "word": "疲れきって"
+                },
+                {
+                  "id": 4,
+                  "word": "入社したての"
+                }
               ]
             }
           ]
