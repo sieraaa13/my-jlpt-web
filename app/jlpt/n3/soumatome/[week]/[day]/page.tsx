@@ -8,6 +8,7 @@ import {
 } from "@/data/n3/soumatome/lessons";
 import { ExerciseSection } from "@/components/exercise-section";
 import { WeekChecklist } from "@/components/week-checklist";
+import { PracticeQuiz } from "@/components/practice-quiz";
 
 // Pre-render semua lesson saat build
 export function generateStaticParams() {
@@ -194,6 +195,18 @@ export default async function Page({
             <>
               <div className="mt-12">
                 <WeekChecklist week={Number(week)} />
+              </div>
+
+              {/* Quiz interaktif 実戦問題 */}
+              <div className="mt-16">
+                <div className="text-center mb-8">
+                  <span className="inline-block bg-foreground text-background text-sm font-bold px-4 py-1.5 rounded-full mb-3">
+                    7日目
+                  </span>
+                  <h2 className="text-3xl font-black">実戦問題</h2>
+                  <p className="text-muted-foreground mt-1">制限時間：15分 ｜ 1問4点 × 25問 ／100</p>
+                </div>
+                <PracticeQuiz groups={data.exercise_groups as any} />
               </div>
 
               {/* Semua materi grammar minggu ini (dari hari 1-6) */}
