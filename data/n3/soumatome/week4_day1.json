@@ -17,92 +17,106 @@
         {
           "pattern_title": "あなたにとって",
           "description_box": {
-            "formula": "$$ \\text{Nに} \\begin{cases} \\text{とって} \\\\ \\text{とっては} \\\\ \\text{とっても} \\end{cases} $$",
-            "explanation": "Menyatakan sudut pandang atau perspektif dari N. Artinya 'bagi N' atau 'untuk N', yaitu menempatkan diri pada posisi/kondisi N untuk menilai sesuatu.",
-            "explanation_en": "Expresses the viewpoint or perspective of N. Means 'for N' or 'from N's standpoint', placing oneself in N's position to evaluate something."
+            "formula": "Nに + とって / とっては / とっても",
+            "explanation": "Pola にとって berarti 'bagi ~' — menunjukkan sudut pandang atau penilaian seseorang.\n\nContoh:\n• あなたにとって大切なもの (hal penting bagi kamu)\n• 学生にとっては高い (bagi mahasiswa, itu mahal)",
+            "explanation_en": "\"For~\" / \"from the perspective of~\"."
           },
           "examples": [
             {
               "jp": "あなたにとって、いちばん大切なものは何ですか。",
               "en": "Anata ni totte, ichiban taisetsu na mono wa nan desu ka. — 'Bagi Anda, apa hal yang paling penting?'",
-              "explanation": "📝 (=あなたの場合)"
+              "explanation": "📝 (=あなたの場合)",
+              "highlight": "にとって"
             },
             {
               "jp": "このあたりの人々にとっては、車は必需品です。",
               "en": "Kono atari no hitobito ni totte wa, kuruma wa hitsujuhin desu. — 'Bagi orang-orang di sekitar sini, mobil adalah barang kebutuhan pokok.'",
-              "explanation": "📝 (=このあたりの人々には)"
+              "explanation": "📝 (=このあたりの人々には)",
+              "highlight": "にとっては"
             }
-          ]
+          ],
+          "pattern_meaning": "にとって = bagi ~, dari sudut pandang ~"
         },
         {
           "pattern_title": "年のわりには",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{Nの} \\\\ \\text{naな} \\end{cases} \\begin{cases} \\text{わりに} \\\\ \\text{わりには} \\end{cases} $$",
-            "explanation": "Menyatakan perasaan tidak terduga (意外な気持ち). Artinya 'untuk ukuran~' atau 'padahal~', yaitu kenyataan tidak sesuai dengan apa yang diperkirakan dari kondisi/standar tertentu.\n\nContoh penggunaan tambahan:\n• 売れたわりには (untuk yang terjual~)\n• そのわりには (untuk yang seperti itu~)",
-            "explanation_en": "Expresses an unexpected feeling (意外な気持ち). Means 'for ~' or 'considering ~', indicating that reality doesn't match what one would expect from a given condition or standard."
+            "formula": "V / A / na / N普 / Nの / naな + わりに(は)",
+            "explanation": "Pola わりに berarti hasilnya tidak sebanding dengan apa yang diharapkan — 'untuk ukuran ~, ternyata ~'.\n\nContoh:\n• 年のわりには若く見える (untuk ukuran umurnya, kelihatan muda)\n• 練習したわりには上手にならない (padahal sudah latihan, tapi tidak pandai juga)",
+            "explanation_en": "\"Considering~\" / \"for~\" — result is disproportionate to expectation."
           },
           "examples": [
             {
               "jp": "年のわりには若く見える。",
               "en": "Toshi no wari ni wa wakaku mieru. — 'Untuk ukuran usianya, dia kelihatan muda.'",
-              "explanation": "📝 (=その年に思えないくらい)"
+              "explanation": "📝 (=その年に思えないくらい)",
+              "highlight": "わりには"
             },
             {
               "jp": "お金がない（と言っている）わりに、よく買い物をするね。",
               "en": "Okane ga nai (to itte iru) wari ni, yoku kaimono o suru ne. — 'Padahal bilangnya nggak punya uang, tapi sering banget belanja ya.'",
-              "explanation": "📝 (=お金がないと思えないくらい)"
+              "explanation": "📝 (=お金がないと思えないくらい)",
+              "highlight": "わりには"
             }
-          ]
+          ],
+          "pattern_meaning": "わりには = untuk ukuran ~, dibanding ~ ｜ di luar proporsi"
         },
         {
           "pattern_title": "知っているくせに",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{Nの} \\\\ \\text{naな} \\end{cases} \\text{くせに} $$",
-            "explanation": "Menyatakan perasaan menyalahkan atau mengkritik (非難の気持ち). Artinya 'padahal~' atau 'meskipun~', mirip dengan のに tetapi mengandung nuansa kritik/celaan.\n\nContoh penggunaan tambahan:\n• 学生のくせに (padahal masih pelajar~)\n• できないくせに (padahal nggak bisa~)",
-            "explanation_en": "Expresses a feeling of blame or criticism (非難の気持ち). Means 'even though ~' or 'despite being ~', similar to のに but with a critical/reproachful nuance."
+            "formula": "V / A / na / N普 / Nの / naな + くせに",
+            "explanation": "Pola くせに berarti 'padahal ~' dengan nuansa kritik atau ketidakpuasan.\n\nLebih kasar dari のに. Jangan dipakai ke atasan.\n\nContoh:\n• 知っているくせに教えない (padahal tahu, tapi tidak mau ajarkan)\n• 子どものくせに生意気だ (padahal masih anak-anak, sudah sok)",
+            "explanation_en": "\"Even though~\" / \"despite~\" — with criticism or dissatisfaction."
           },
           "examples": [
             {
               "jp": "知っているくせに、教えてくれない。",
               "en": "Shitte iru kuse ni, oshiete kurenai. — 'Padahal tahu, tapi nggak mau ngasih tahu.'",
-              "explanation": "📝 (=知っているのに)"
+              "explanation": "📝 (=知っているのに)",
+              "highlight": "くせに"
             },
             {
               "jp": "元気なくせに、病気のふりをしている。",
               "en": "Genki na kuse ni, byouki no furi o shite iru. — 'Padahal sehat, tapi pura-pura sakit.'",
-              "explanation": "📝 (=元気なのに)"
+              "explanation": "📝 (=元気なのに)",
+              "highlight": "くせに"
             }
-          ]
+          ],
+          "pattern_meaning": "くせに = padahal ~ ｜ kritik/ketidakpuasan"
         },
         {
           "pattern_title": "お化粧なんか",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{N} \\\\ \\text{na／Nで} \\\\ \\text{Vて} \\\\ \\text{Aく} \\end{cases} \\begin{cases} \\text{なんか} \\\\ \\text{なんて} \\\\ \\text{など} \\end{cases} $$",
-            "explanation": "Menekankan perasaan tidak terduga atau perasaan negatif (意外な気持ち、否定的な気持ちの強調). Sering diikuti oleh kata-kata negatif (否定的なことばが続く).\n\n📌 Variasi:\n• N + なんか／なんて／など\n• Vて + なんか／など\n• Aく + なんか／など\n• [文] + なんて／など",
-            "explanation_en": "Emphasizes an unexpected feeling or a negative feeling. Negative words usually follow. Used to express surprise, disbelief, or contempt about the noun/situation mentioned."
+            "formula": "N / naで / Vて / Aく + なんか / なんて",
+            "explanation": "Pola なんか/なんて punya 2 makna:\n\n① Meremehkan: 'hal seperti ~ (tidak penting)'\n② Terkejut: 'hal seperti ~ (tidak disangka)'\n\nContoh:\n• お化粧なんかしなくていい (tidak perlu dandan segala)\n• 合格するなんて信じられない (tidak percaya bisa lulus)",
+            "explanation_en": "\"Something like~\" — belittling or expressing surprise."
           },
           "examples": [
             {
               "jp": "お化粧なんかしてはいけません。",
               "en": "Okeshou nanka shite wa ikemasen. — 'Tidak boleh pakai make-up segala!'",
-              "explanation": "📝 Menekankan ketidaksetujuan terhadap tindakan memakai make-up."
+              "explanation": "📝 Menekankan ketidaksetujuan terhadap tindakan memakai make-up.",
+              "highlight": "なんか"
             },
             {
               "jp": "納豆なんて嫌いだ。",
               "en": "Nattou nante kirai da. — 'Natto sih aku benci banget.'",
-              "explanation": "📝 Menekankan rasa benci dengan nuansa meremehkan."
+              "explanation": "📝 Menekankan rasa benci dengan nuansa meremehkan.",
+              "highlight": "なんて"
             },
             {
               "jp": "「泣いてるの？」「泣いてなんかいないよ！」",
               "en": "'Naite ru no?' / 'Naite nanka inai yo!' — '\"Lagi nangis ya?\" \"Nggak nangis kok!\"'",
-              "explanation": "📝 Penyangkalan dengan tegas — sama sekali tidak melakukan hal itu."
+              "explanation": "📝 Penyangkalan dengan tegas — sama sekali tidak melakukan hal itu.",
+              "highlight": "なんか"
             },
             {
               "jp": "日本語でスピーチなどできません。",
               "en": "Nihongo de supiichi nado dekimasen. — 'Saya nggak mungkin bisa pidato dalam bahasa Jepang.'",
-              "explanation": "📝 など lebih formal dibandingkan なんか／なんて."
+              "explanation": "📝 など lebih formal dibandingkan なんか／なんて.",
+              "highlight": "なんて"
             }
-          ]
+          ],
+          "pattern_meaning": "なんか / なんて = hal seperti ~ ｜ meremehkan / terkejut"
         }
       ],
       "summary_table": {
@@ -138,27 +152,42 @@
             {
               "number": 1,
               "question": "安い（a. くせ　b. わり）にはおいしい。",
-              "options": ["a. くせ", "b. わり"]
+              "options": [
+                "a. くせ",
+                "b. わり"
+              ]
             },
             {
               "number": 2,
               "question": "カラオケ（a. なんか　b. にとって）行きたくない。",
-              "options": ["a. なんか", "b. にとって"]
+              "options": [
+                "a. なんか",
+                "b. にとって"
+              ]
             },
             {
               "number": 3,
               "question": "男の（a. くせ　b. わり）に、女みたいだ。",
-              "options": ["a. くせ", "b. わり"]
+              "options": [
+                "a. くせ",
+                "b. わり"
+              ]
             },
             {
               "number": 4,
               "question": "タバコの煙やにおいは、吸わない人（a. にとっても　b. にとっては）苦痛だ。",
-              "options": ["a. にとっても", "b. にとっては"]
+              "options": [
+                "a. にとっても",
+                "b. にとっては"
+              ]
             },
             {
               "number": 5,
               "question": "テストの勉強をしなかった（a. わり　b. など）には、よくできた。",
-              "options": ["a. わり", "b. など"]
+              "options": [
+                "a. わり",
+                "b. など"
+              ]
             }
           ]
         },
@@ -169,20 +198,44 @@
               "number": 6,
               "question": "あの学生は試験の成績が ＿＿ ＿＿ ＿＿ ＿＿ 。",
               "words": [
-                {"id": 1, "word": "日本語が"},
-                {"id": 2, "word": "いい"},
-                {"id": 3, "word": "通じない"},
-                {"id": 4, "word": "わりには"}
+                {
+                  "id": 1,
+                  "word": "日本語が"
+                },
+                {
+                  "id": 2,
+                  "word": "いい"
+                },
+                {
+                  "id": 3,
+                  "word": "通じない"
+                },
+                {
+                  "id": 4,
+                  "word": "わりには"
+                }
               ]
             },
             {
               "number": 7,
               "question": "本当は ＿＿ ＿＿ ＿＿ ＿＿ 。",
               "words": [
-                {"id": 1, "word": "好きな"},
-                {"id": 2, "word": "と言う"},
-                {"id": 3, "word": "きらいだ"},
-                {"id": 4, "word": "くせに"}
+                {
+                  "id": 1,
+                  "word": "好きな"
+                },
+                {
+                  "id": 2,
+                  "word": "と言う"
+                },
+                {
+                  "id": 3,
+                  "word": "きらいだ"
+                },
+                {
+                  "id": 4,
+                  "word": "くせに"
+                }
               ]
             }
           ]
