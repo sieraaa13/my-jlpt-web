@@ -17,82 +17,94 @@
         {
           "pattern_title": "勉強はもちろん",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{N₁はもちろん N₂も} \\\\ \\text{[文]のはもちろん 〜(も)} \\end{cases} $$",
-            "explanation": "Pola 〜はもちろん menyatakan 'tidak hanya~ tapi juga~' atau 'sudah pasti~, bahkan~'. Digunakan untuk menyatakan bahwa selain hal pertama yang sudah jelas/wajar, hal lain juga berlaku.",
-            "explanation_en": "The pattern 〜はもちろん means 'not only ~ but also ~' or 'of course ~, and even ~'. Used to express that in addition to the first thing which is obvious/given, something else also applies."
+            "formula": "N₁はもちろん N₂も / [文]のはもちろん ～も",
+            "explanation": "Pola はもちろん berarti 'tidak hanya A, tapi B juga' — A sudah pasti, B juga termasuk.\n\nContoh:\n• 英語はもちろん中国語も話せる (tidak hanya bahasa Inggris, bahasa Mandarin pun bisa)\n• 勉強はもちろん、スポーツもできる (bukan cuma belajar, olahraga juga bisa)",
+            "explanation_en": "\"Not only~ but also~\" — A is obvious, B is additionally true."
           },
           "examples": [
             {
               "jp": "彼は、勉強はもちろんスポーツもよくできる。",
               "en": "Kare wa, benkyou wa mochiron supootsu mo yoku dekiru. — 'Dia tidak hanya pintar belajar, tapi juga jago olahraga.'",
-              "explanation": "📝 (=もちろん勉強もできるし)"
+              "explanation": "📝 (=もちろん勉強もできるし)",
+              "highlight": "はもちろん"
             },
             {
               "jp": "キャベツは炒めて食べるのはもちろん、生で食べてもおいしいです。",
               "en": "Kyabetsu wa itamete taberu no wa mochiron, nama de tabete mo oishii desu. — 'Kubis sudah pasti enak ditumis, dimakan mentah pun juga enak.'",
-              "explanation": "📝 (=もちろん炒めて食べるのはおいしいし)"
+              "explanation": "📝 (=もちろん炒めて食べるのはおいしいし)",
+              "highlight": "はもちろん"
             }
-          ]
+          ],
+          "pattern_meaning": "はもちろん～も = tidak hanya ~ tapi juga ~"
         },
         {
           "pattern_title": "味が悪いばかりか",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{naな} \\\\ \\text{N} \\end{cases} \\begin{cases} \\text{ばかりか…(も)} \\\\ \\text{ばかりでなく…(も)} \\end{cases} $$",
-            "explanation": "Pola 〜ばかりか／〜ばかりでなく berarti 'tidak hanya~ bahkan~'. Mirip dengan 〜だけでなく, tapi memberikan penekanan lebih kuat dengan menambahkan informasi yang lebih ekstrem/lebih dari yang diperkirakan.",
-            "explanation_en": "The pattern 〜ばかりか／〜ばかりでなく means 'not only ~ but also ~'. Similar to 〜だけでなく, but with stronger emphasis, adding information that is more extreme/beyond expectation."
+            "formula": "V / A / na / N普 / naな / N + ばかりか / ばかりでなく",
+            "explanation": "Pola ばかりか berarti 'bukan hanya A, bahkan B juga' — menambahkan informasi yang lebih ekstrem.\n\nLebih kuat dari はもちろん.\n\nContoh:\n• 味が悪いばかりか、値段も高い (bukan cuma rasanya buruk, harganya juga mahal)\n• 英語ばかりかフランス語も話せる (bukan cuma Inggris, bahkan Prancis pun bisa)",
+            "explanation_en": "\"Not only~ but even~\" — adding an even more extreme point."
           },
           "examples": [
             {
               "jp": "あの店は、味が悪いばかりか、店員の態度もひどい。",
               "en": "Ano mise wa, aji ga warui bakari ka, ten'in no taido mo hidoi. — 'Restoran itu bukan cuma rasanya yang jelek, sikap pelayannya pun parah.'",
-              "explanation": "📝 (=味が悪いだけでなく)"
+              "explanation": "📝 (=味が悪いだけでなく)",
+              "highlight": "ばかりか"
             },
             {
               "jp": "私は、漢字ばかりか、まだひらがなも書けません。",
               "en": "Watashi wa, kanji bakari ka, mada hiragana mo kakemasen. — 'Jangankan kanji, hiragana saja saya belum bisa menulis.'",
-              "explanation": "📝 (=漢字だけでなく)"
+              "explanation": "📝 (=漢字だけでなく)",
+              "highlight": "ばかりか"
             }
-          ]
+          ],
+          "pattern_meaning": "ばかりか = bukan hanya ~ ｜ bahkan lebih buruk/baik"
         },
         {
           "pattern_title": "昨年に比べて",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nに} \\\\ \\text{[文]のに} \\end{cases} \\begin{cases} \\text{比べて} \\\\ \\text{比べ} \\end{cases} $$",
-            "explanation": "Pola 〜に比べて berarti 'dibandingkan dengan~' atau 'jika dibandingkan~'. Digunakan untuk membandingkan dua hal secara langsung.\n\n📌 Variasi umum: これ／それに比べ(て) (dibandingkan dengan ini/itu)",
-            "explanation_en": "The pattern 〜に比べて means 'compared to ~' or 'in comparison with ~'. Used to directly compare two things."
+            "formula": "Nに / [文]のに + 比べて / 比べると / 比べれば",
+            "explanation": "Pola に比べて digunakan untuk membandingkan — 'dibandingkan dengan ~'.\n\nContoh:\n• 昨年に比べて売上が増えた (dibandingkan tahun lalu, penjualan naik)\n• 東京に比べて大阪は物価が安い (dibandingkan Tokyo, harga barang di Osaka lebih murah)",
+            "explanation_en": "\"Compared to~\" — making a comparison."
           },
           "examples": [
             {
               "jp": "試験問題は昨年に比べて易しくなった。",
               "en": "Shiken mondai wa sakunen ni kurabete yasashiku natta. — 'Soal ujian jadi lebih mudah dibandingkan tahun lalu.'",
-              "explanation": "📝 (=昨年より)"
+              "explanation": "📝 (=昨年より)",
+              "highlight": "に比べて"
             },
             {
               "jp": "店で買うのに比べ、通信販売は便利だが、欠点もある。",
               "en": "Mise de kau no ni kurabe, tsuushin hanbai wa benri da ga, ketten mo aru. — 'Dibandingkan dengan beli di toko, belanja online memang praktis, tapi ada juga kekurangannya.'",
-              "explanation": "📝 (=買うより)"
+              "explanation": "📝 (=買うより)",
+              "highlight": "に比べて"
             }
-          ]
+          ],
+          "pattern_meaning": "に比べて = dibandingkan dengan ~"
         },
         {
           "pattern_title": "生徒に対して",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nに} \\\\ \\text{[文]のに} \\end{cases} \\begin{cases} \\text{対して} \\\\ \\text{対し} \\\\ \\text{対しては} \\\\ \\text{対しても} \\\\ \\text{対するN} \\end{cases} $$",
-            "explanation": "Pola 〜に対して memiliki dua makna utama:\n① Menyatakan objek/sasaran tindakan — 'terhadap N' atau 'kepada N'\n② Menyatakan kontras/perbandingan — 'sebaliknya~' atau 'sementara itu~'\n\n📌 Variasi umum: これ／それに対して (sebaliknya/di sisi lain)",
-            "explanation_en": "The pattern 〜に対して has two main meanings: (1) Indicating the target/object of an action — 'toward N' or 'to N', and (2) Expressing contrast — 'in contrast' or 'on the other hand'."
+            "formula": "Nに / [文]のに + 対して / 対しては / 対しても / 対するN",
+            "explanation": "Pola に対して berarti 'terhadap ~' — menunjukkan objek dari suatu tindakan atau sikap.\n\nContoh:\n• 生徒に対して厳しい (tegas terhadap murid)\n• この問題に対する意見 (pendapat terhadap masalah ini)",
+            "explanation_en": "\"Toward~\" / \"against~\" — indicating the target of an action or attitude."
           },
           "examples": [
             {
               "jp": "田中先生は、生徒に対して厳しい。",
               "en": "Tanaka-sensei wa, seito ni taishite kibishii. — 'Pak Tanaka itu tegas terhadap murid-muridnya.'",
-              "explanation": "📝 (=生徒に) — Menyatakan sasaran tindakan."
+              "explanation": "📝 (=生徒に) — Menyatakan sasaran tindakan.",
+              "highlight": "に対して"
             },
             {
               "jp": "まじめな長男に対して、次男は遊んでばかりで学校もよく休む。",
               "en": "Majime na chounan ni taishite, jinan wa asonde bakari de gakkou mo yoku yasumu. — 'Berbeda dengan anak sulung yang rajin, anak keduanya cuma main-main dan sering bolos sekolah.'",
-              "explanation": "📝 (=まじめな長男とは反対に) — Menyatakan kontras."
+              "explanation": "📝 (=まじめな長男とは反対に) — Menyatakan kontras.",
+              "highlight": "に対する"
             }
-          ]
+          ],
+          "pattern_meaning": "に対して = terhadap ~, kepada ~"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "動物のオスはメス（a. に比べて　b. ばかりか）派手できれいな場合が多い。",
-              "options": ["a. に比べて", "b. ばかりか"]
+              "options": [
+                "a. に比べて",
+                "b. ばかりか"
+              ]
             },
             {
               "number": 2,
               "question": "私のふるさとは（a. 不便　b. 不便な）ばかりでなく、寒さがきびしい。",
-              "options": ["a. 不便", "b. 不便な"]
+              "options": [
+                "a. 不便",
+                "b. 不便な"
+              ]
             },
             {
               "number": 3,
               "question": "あの店は休みの日（a. ばかりでなく　b. に対して）ふだんの日も混んでいます。",
-              "options": ["a. ばかりでなく", "b. に対して"]
+              "options": [
+                "a. ばかりでなく",
+                "b. に対して"
+              ]
             },
             {
               "number": 4,
               "question": "彼のアニメ作品は子ども（a. に比べて　b. はもちろん）大人も楽しめる。",
-              "options": ["a. に比べて", "b. はもちろん"]
+              "options": [
+                "a. に比べて",
+                "b. はもちろん"
+              ]
             },
             {
               "number": 5,
               "question": "この店を利用する人は、昼間は主婦が多い。それ（a. に対して　b. ばかりか）夕方は会社員が多い。",
-              "options": ["a. に対して", "b. ばかりか"]
+              "options": [
+                "a. に対して",
+                "b. ばかりか"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "駅員は乗客に ＿＿ ＿＿ ＿＿ ＿＿ 説明した。",
               "words": [
-                {"id": 1, "word": "遅れている"},
-                {"id": 2, "word": "電車が"},
-                {"id": 3, "word": "対して"},
-                {"id": 4, "word": "理由を"}
+                {
+                  "id": 1,
+                  "word": "遅れている"
+                },
+                {
+                  "id": 2,
+                  "word": "電車が"
+                },
+                {
+                  "id": 3,
+                  "word": "対して"
+                },
+                {
+                  "id": 4,
+                  "word": "理由を"
+                }
               ]
             },
             {
               "number": 7,
               "question": "新しく買った携帯電話はおしゃれできれいだが、 ＿＿ ＿＿ ＿＿ ＿＿ 使いにくい。",
               "words": [
-                {"id": 1, "word": "のに"},
-                {"id": 2, "word": "前のが"},
-                {"id": 3, "word": "比べて"},
-                {"id": 4, "word": "使いやすかった"}
+                {
+                  "id": 1,
+                  "word": "のに"
+                },
+                {
+                  "id": 2,
+                  "word": "前のが"
+                },
+                {
+                  "id": 3,
+                  "word": "比べて"
+                },
+                {
+                  "id": 4,
+                  "word": "使いやすかった"
+                }
               ]
             }
           ]
