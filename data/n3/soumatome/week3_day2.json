@@ -17,82 +17,94 @@
         {
           "pattern_title": "日本代表として",
           "description_box": {
-            "formula": "$$ \\text{Nと} \\begin{cases} \\text{して} \\\\ \\text{しては} \\\\ \\text{しても} \\\\ \\text{してのN} \\end{cases} $$",
-            "explanation": "Menyatakan posisi, peran, atau kapasitas seseorang/sesuatu. Artinya 'sebagai...' atau 'dalam kapasitas sebagai...'",
-            "explanation_en": "Expresses the position, role, or capacity of someone/something. Means 'as...' or 'in the capacity of...'."
+            "formula": "Nと + して / しては / しても / してのN",
+            "explanation": "Pola として berarti 'sebagai ~' — menunjukkan peran, kapasitas, atau status.\n\nContoh:\n• 日本代表として参加する (berpartisipasi sebagai perwakilan Jepang)\n• 先生としてのアドバイス (saran sebagai guru)",
+            "explanation_en": "\"As~\" — indicates role, capacity, or status."
           },
           "examples": [
             {
               "jp": "彼は外国人だが、日本代表として試合に出る。",
               "en": "Dia orang asing, tapi tampil dalam pertandingan sebagai wakil Jepang.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "として"
             },
             {
               "jp": "彼女は女性としても女優としても最高だが、妻としてはどうだろう。",
               "en": "Sebagai wanita dan sebagai aktris dia luar biasa, tapi bagaimana sebagai istri ya?",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "として"
             }
-          ]
+          ],
+          "pattern_meaning": "として = sebagai ~ ｜ dalam kapasitas sebagai ~"
         },
         {
           "pattern_title": "外国人にしては",
           "description_box": {
-            "formula": "$$ \\text{V/A/na/N普に / naに / N普に} \\begin{cases} \\text{しては} \\\\ \\text{それにしては} \\end{cases} $$",
-            "explanation": "Menyatakan perasaan tidak terduga atau mengejutkan. Artinya 'untuk ukuran...', terasa di luar ekspektasi.",
-            "explanation_en": "Expresses an unexpected feeling. Means 'for a...' or 'considering that...', implying surprise."
+            "formula": "V / A / na / N普 + にしては / それにしては",
+            "explanation": "Pola にしては menunjukkan bahwa kenyataannya di luar ekspektasi — 'untuk ukuran ~, ternyata ~'.\n\nContoh:\n• 外国人にしては日本語が上手だ (untuk ukuran orang asing, bahasa Jepangnya pandai)\n• 初めてにしてはよくできた (untuk pertama kali, sudah cukup bagus)",
+            "explanation_en": "\"For~ / considering~\" — reality differs from expectation."
           },
           "examples": [
             {
               "jp": "外国人にしては日本語が上手だ。",
               "en": "Untuk ukuran orang asing, bahasa Jepangnya sangat bagus.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "にしては"
             },
             {
               "jp": "洗ったの？それにしてはきれいじゃないね。",
               "en": "Sudah dicuci? Tapi untuk yang sudah dicuci, masih tidak bersih ya.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "にしては"
             }
-          ]
+          ],
+          "pattern_meaning": "にしては = untuk ukuran ~ ｜ di luar ekspektasi"
         },
         {
           "pattern_title": "100円にしても",
           "description_box": {
-            "formula": "$$ \\text{V/A/na/N普に / naに / N普に} \\begin{cases} \\text{しても} \\\\ \\text{それにしても} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa meskipun mempertimbangkan suatu kondisi, hasilnya tetap sama atau mengejutkan.",
-            "explanation_en": "Expresses that even taking a condition into account, the result is still surprising or unchanged."
+            "formula": "V / A / na / N普 + にしても / それにしても",
+            "explanation": "Pola にしても berarti 'meskipun ~ sekalipun' — mengakui satu hal tapi menekankan hal lain.\n\nContoh:\n• 安いにしても品質が悪い (meskipun murah, kualitasnya buruk)\n• それにしても高すぎる (meskipun begitu, tetap terlalu mahal)",
+            "explanation_en": "\"Even if~ / even so~\" — conceding a point while emphasizing another."
           },
           "examples": [
             {
               "jp": "これは、100円にしても、高いと思う。",
               "en": "Untuk harga 100 yen pun, menurutku masih mahal.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "にしても"
             },
             {
               "jp": "遅れるとは聞いていたけど、それにしても田中さん、遅いね。",
               "en": "Aku dengar dia akan terlambat, tapi tetap saja, Tanaka-san benar-benar terlambat ya.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "にしても"
             }
-          ]
+          ],
+          "pattern_meaning": "にしても = meskipun ~ sekalipun ｜ konsesi"
         },
         {
           "pattern_title": "本当だとしたら",
           "description_box": {
-            "formula": "$$ \\text{N／na／A／V + と} \\begin{cases} \\text{したら} \\\\ \\text{すれば} \\end{cases} $$",
-            "explanation": "Pola 〜としたら／〜とすれば berarti 'kalau~' atau 'andaikan~'. Pola ini digunakan untuk menyatakan pengandaian/hipotesis — 'jika kita anggap/asumsikan suatu hal, maka...'.",
-            "explanation_en": "The pattern 〜としたら／〜とすれば means 'if ~' or 'supposing ~'. It is used to express a hypothesis or assumption — 'if we assume/suppose something, then...'."
+            "formula": "N / na / A / V + としたら / とすれば",
+            "explanation": "Pola としたら/とすれば digunakan untuk pengandaian — 'kalau misalnya ~ benar, maka ~'.\n\nContoh:\n• 本当だとしたら大変だ (kalau itu benar, gawat)\n• 留学するとすれば費用はいくら？ (kalau misalnya kuliah di luar negeri, biayanya berapa?)",
+            "explanation_en": "\"If we assume that~\" — hypothetical supposition."
           },
           "examples": [
             {
               "jp": "その話が本当だとしたら、うれしいです。",
               "en": "Sono hanashi ga hontou da to shitara, ureshii desu. — 'Kalau cerita itu benar, aku senang sekali.'",
-              "explanation": "📝 (=本当なら)"
+              "explanation": "📝 (=本当なら)",
+              "highlight": "としたら"
             },
             {
               "jp": "飛行機で行くとしたら、いくらぐらいかかりますか。",
               "en": "Hikouki de iku to shitara, ikura gurai kakarimasu ka. — 'Kalau pergi naik pesawat, kira-kira berapa biayanya?'",
-              "explanation": "📝 Mengandaikan situasi pergi dengan pesawat. (=行く場合は)"
+              "explanation": "📝 Mengandaikan situasi pergi dengan pesawat. (=行く場合は)",
+              "highlight": "とすれば"
             }
-          ]
+          ],
+          "pattern_meaning": "としたら = kalau misalnya ~ ｜ pengandaian"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "日本に来たことがない（a. にしては　b. にしても）、日本をよく知っている。",
-              "options": ["a. にしては", "b. にしても"]
+              "options": [
+                "a. にしては",
+                "b. にしても"
+              ]
             },
             {
               "number": 2,
               "question": "友人（a. としたら　b. として）、アドバイスしたいことがあります。",
-              "options": ["a. としたら", "b. として"]
+              "options": [
+                "a. としたら",
+                "b. として"
+              ]
             },
             {
               "number": 3,
               "question": "この時間の電車はいつも混んでいるが、（a. それにしても　b. それにしては）混みすぎている。何かあったのだろうか。",
-              "options": ["a. それにしても", "b. それにしては"]
+              "options": [
+                "a. それにしても",
+                "b. それにしては"
+              ]
             },
             {
               "number": 4,
               "question": "日本に来なかった（a. としたら　b. とする）、アメリカに行っていたと思う。",
-              "options": ["a. としたら", "b. とする"]
+              "options": [
+                "a. としたら",
+                "b. とする"
+              ]
             },
             {
               "number": 5,
               "question": "お菓子は会社などへのお土産（a. にして　b. として）最適です。",
-              "options": ["a. にして", "b. として"]
+              "options": [
+                "a. にして",
+                "b. として"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "本当にそんな ＿＿ ＿＿ ＿＿ ＿＿ 理由は何だろう。",
               "words": [
-                {"id": 1, "word": "彼が"},
-                {"id": 2, "word": "としたら"},
-                {"id": 3, "word": "した"},
-                {"id": 4, "word": "ことを"}
+                {
+                  "id": 1,
+                  "word": "彼が"
+                },
+                {
+                  "id": 2,
+                  "word": "としたら"
+                },
+                {
+                  "id": 3,
+                  "word": "した"
+                },
+                {
+                  "id": 4,
+                  "word": "ことを"
+                }
               ]
             },
             {
               "number": 7,
               "question": "ペットを飼うなら、 ＿＿ ＿＿ ＿＿ ＿＿ 持ってほしい。",
               "words": [
-                {"id": 1, "word": "責任を"},
-                {"id": 2, "word": "として"},
-                {"id": 3, "word": "飼い主"},
-                {"id": 4, "word": "の"}
+                {
+                  "id": 1,
+                  "word": "責任を"
+                },
+                {
+                  "id": 2,
+                  "word": "として"
+                },
+                {
+                  "id": 3,
+                  "word": "飼い主"
+                },
+                {
+                  "id": 4,
+                  "word": "の"
+                }
               ]
             }
           ]
