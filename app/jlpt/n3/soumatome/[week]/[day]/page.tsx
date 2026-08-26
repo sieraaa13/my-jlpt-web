@@ -30,6 +30,40 @@ function renderHighlighted(jp: string, highlight?: string) {
   );
 }
 
+// Render formula: kalau ada " + " dan " / ", tampilkan sebagai
+// base + bracket { opsi1 / opsi2 / opsi3 } mirip buku
+function renderFormula(formula: string) {
+  if (formula.includes(' + ') && formula.includes(' / ')) {
+    const plusIdx = formula.indexOf(' + ');
+    const base = formula.slice(0, plusIdx);
+    const optionsStr = formula.slice(plusIdx + 3);
+    const options = optionsStr.split(' / ').map(o => o.trim());
+    return (
+      <div className="flex items-center gap-2">
+        <span className="font-bold text-lg">{base}</span>
+        <div className="border-l-2 border-foreground pl-3 py-1 space-y-0.5">
+          {options.map((opt, i) => (
+            <p key={i} className="font-bold">{opt}</p>
+          ))}
+        </div>
+      </div>
+    );
+  }
+  return <p className="font-bold mb-2">{formula}</p>;
+}
+
+// Render teks dengan line break (\n)
+function renderText(text: string, className: string) {
+  const parts = text.split('\n').filter(Boolean);
+  return (
+    <div className={className}>
+      {parts.map((part, i) => (
+        <p key={i} className={i > 0 ? "mt-2" : ""}>{part}</p>
+      ))}
+    </div>
+  );
+}
+
 export default async function Page({
   params,
 }: {
@@ -136,8 +170,8 @@ export default async function Page({
 
                   {/* Kolom kanan: kotak rumus & penjelasan */}
                   <div className="bg-card border border-border rounded-2xl p-5 h-fit">
-                    <p className="font-bold mb-2">{section.description_box.formula}</p>
-                    <p className="text-sm text-muted-foreground">{section.description_box.explanation}</p>
+                    {renderFormula(section.description_box.formula)}
+                    {renderText(section.description_box.explanation, "text-sm text-muted-foreground")}
                     {section.description_box.explanation_en && (
                       <p className="text-xs text-muted-foreground/70 mt-2 italic">
                         {section.description_box.explanation_en}
@@ -206,8 +240,8 @@ export default async function Page({
                                 </div>
 
                                 <div className="bg-card border border-border rounded-2xl p-5 h-fit">
-                                  <p className="font-bold mb-2">{section.description_box.formula}</p>
-                                  <p className="text-sm text-muted-foreground">{section.description_box.explanation}</p>
+                                  {renderFormula(section.description_box.formula)}
+                                  {renderText(section.description_box.explanation, "text-sm text-muted-foreground")}
                                   {section.description_box.explanation_en && (
                                     <p className="text-xs text-muted-foreground/70 mt-2 italic">
                                       {section.description_box.explanation_en}
