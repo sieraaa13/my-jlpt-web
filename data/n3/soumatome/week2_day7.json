@@ -28,166 +28,361 @@
               "number": 1,
               "question": "このクラブには大人（　　）入れません。",
               "options": [
-                {"id": 1, "text": "というか"},
-                {"id": 2, "text": "によって"},
-                {"id": 3, "text": "ばかり"},
-                {"id": 4, "text": "だけしか"}
+                {
+                  "id": 1,
+                  "text": "というか"
+                },
+                {
+                  "id": 2,
+                  "text": "によって"
+                },
+                {
+                  "id": 3,
+                  "text": "ばかり"
+                },
+                {
+                  "id": 4,
+                  "text": "だけしか"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola penekanan Nだけしか〜ない (1日目)."
+              "hint": "📝 Petunjuk materi: Pola penekanan Nだけしか〜ない (1日目).",
+              "answer": 3
             },
             {
               "number": 2,
               "question": "祖父は私の名前を間違えて（　　）います。",
               "options": [
-                {"id": 1, "text": "ばかり"},
-                {"id": 2, "text": "さえ"},
-                {"id": 3, "text": "こそ"},
-                {"id": 4, "text": "だけ"}
+                {
+                  "id": 1,
+                  "text": "ばかり"
+                },
+                {
+                  "id": 2,
+                  "text": "さえ"
+                },
+                {
+                  "id": 3,
+                  "text": "こそ"
+                },
+                {
+                  "id": 4,
+                  "text": "だけ"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Vてばかりいる (terus-menerus melakukan~) (1日目)."
+              "hint": "📝 Petunjuk materi: Pola Vてばかりいる (terus-menerus melakukan~) (1日目).",
+              "answer": 4
             },
             {
               "number": 3,
               "question": "商品に（　　）お問い合わせはこちらにどうぞ。",
               "options": [
-                {"id": 1, "text": "よれば"},
-                {"id": 2, "text": "ついて"},
-                {"id": 3, "text": "関する"},
-                {"id": 4, "text": "さえ"}
+                {
+                  "id": 1,
+                  "text": "よれば"
+                },
+                {
+                  "id": 2,
+                  "text": "ついて"
+                },
+                {
+                  "id": 3,
+                  "text": "関する"
+                },
+                {
+                  "id": 4,
+                  "text": "さえ"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Nに関する + N (memodifikasi kata benda) (2日目)."
+              "hint": "📝 Petunjuk materi: Pola Nに関する + N (memodifikasi kata benda) (2日目).",
+              "answer": 2
             },
             {
               "number": 4,
               "question": "（　　）ことは知っていたが、−40℃とは驚いた。",
               "options": [
-                {"id": 1, "text": "寒さ"},
-                {"id": 2, "text": "寒み"},
-                {"id": 3, "text": "寒く"},
-                {"id": 4, "text": "寒い"}
+                {
+                  "id": 1,
+                  "text": "寒さ"
+                },
+                {
+                  "id": 2,
+                  "text": "寒み"
+                },
+                {
+                  "id": 3,
+                  "text": "寒く"
+                },
+                {
+                  "id": 4,
+                  "text": "寒い"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola modifikasi kata sifat + こと (3日目)."
+              "hint": "📝 Petunjuk materi: Pola modifikasi kata sifat + こと (3日目).",
+              "answer": 1
             },
             {
               "number": 5,
               "question": "彼女はお茶（　　）入れたことがないのだから、料理なんてできないでしょう。",
               "options": [
-                {"id": 1, "text": "だけ"},
-                {"id": 2, "text": "ばかり"},
-                {"id": 3, "text": "さえ"},
-                {"id": 4, "text": "こそ"}
+                {
+                  "id": 1,
+                  "text": "だけ"
+                },
+                {
+                  "id": 2,
+                  "text": "ばかり"
+                },
+                {
+                  "id": 3,
+                  "text": "さえ"
+                },
+                {
+                  "id": 4,
+                  "text": "こそ"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Nさえ (bahkan~) untuk contoh ekstrem (1日目)."
+              "hint": "📝 Petunjuk materi: Pola Nさえ (bahkan~) untuk contoh ekstrem (1日目).",
+              "answer": 3
             },
             {
               "number": 6,
               "question": "野球やサッカーを見る（　　）好きです。",
               "options": [
-                {"id": 1, "text": "のを"},
-                {"id": 2, "text": "のが"},
-                {"id": 3, "text": "のに"},
-                {"id": 4, "text": "ので"}
+                {
+                  "id": 1,
+                  "text": "のを"
+                },
+                {
+                  "id": 2,
+                  "text": "のが"
+                },
+                {
+                  "id": 3,
+                  "text": "のに"
+                },
+                {
+                  "id": 4,
+                  "text": "ので"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Nominalisasi Vるの sebagai subjek (3日目)."
+              "hint": "📝 Petunjuk materi: Nominalisasi Vるの sebagai subjek (3日目).",
+              "answer": 2
             },
             {
               "number": 7,
               "question": "よくかんでゆっくり（　　）ように医者に言われた。",
               "options": [
-                {"id": 1, "text": "食べる"},
-                {"id": 2, "text": "食べ"},
-                {"id": 3, "text": "食べて"},
-                {"id": 4, "text": "食べろ"}
+                {
+                  "id": 1,
+                  "text": "食べる"
+                },
+                {
+                  "id": 2,
+                  "text": "食べ"
+                },
+                {
+                  "id": 3,
+                  "text": "食べて"
+                },
+                {
+                  "id": 4,
+                  "text": "食べろ"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Vるように言う (6日目)."
+              "hint": "📝 Petunjuk materi: Pola Vるように言う (6日目).",
+              "answer": 4
             },
             {
               "number": 8,
               "question": "だまっていないで、言いたいことを言って（　　）。",
               "options": [
-                {"id": 1, "text": "ないと"},
-                {"id": 2, "text": "させて"},
-                {"id": 3, "text": "ごらん"},
-                {"id": 4, "text": "ちゃって"}
+                {
+                  "id": 1,
+                  "text": "ないと"
+                },
+                {
+                  "id": 2,
+                  "text": "させて"
+                },
+                {
+                  "id": 3,
+                  "text": "ごらん"
+                },
+                {
+                  "id": 4,
+                  "text": "ちゃって"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Vてごらん (cobalah~) (6日目)."
+              "hint": "📝 Petunjuk materi: Pola Vてごらん (cobalah~) (6日目).",
+              "answer": 1
             },
             {
               "number": 9,
               "question": "この洗濯機のいい点は音の（　　）。",
               "options": [
-                {"id": 1, "text": "静かさだ"},
-                {"id": 2, "text": "静かみだ"},
-                {"id": 3, "text": "静からしい"},
-                {"id": 4, "text": "静かっぽい"}
+                {
+                  "id": 1,
+                  "text": "静かさだ"
+                },
+                {
+                  "id": 2,
+                  "text": "静かみだ"
+                },
+                {
+                  "id": 3,
+                  "text": "静からしい"
+                },
+                {
+                  "id": 4,
+                  "text": "静かっぽい"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola na + さ (mengubah kata sifat menjadi kata benda) (3日目)."
+              "hint": "📝 Petunjuk materi: Pola na + さ (mengubah kata sifat menjadi kata benda) (3日目).",
+              "answer": 3
             },
             {
               "number": 10,
               "question": "管理人さん、上の階の人に夜遅く騒がない（　　）ください。",
               "options": [
-                {"id": 1, "text": "ようにして"},
-                {"id": 2, "text": "ようになって"},
-                {"id": 3, "text": "ように言って"},
-                {"id": 4, "text": "ようとしないで"}
+                {
+                  "id": 1,
+                  "text": "ようにして"
+                },
+                {
+                  "id": 2,
+                  "text": "ようになって"
+                },
+                {
+                  "id": 3,
+                  "text": "ように言って"
+                },
+                {
+                  "id": 4,
+                  "text": "ようとしないで"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Vないように言う (6日目)."
+              "hint": "📝 Petunjuk materi: Pola Vないように言う (6日目).",
+              "answer": 2
             },
             {
               "number": 11,
               "question": "色は青が好きです。青（　　）深みのある青です。",
               "options": [
-                {"id": 1, "text": "といっても"},
-                {"id": 2, "text": "というより"},
-                {"id": 3, "text": "といえば"},
-                {"id": 4, "text": "というと"}
+                {
+                  "id": 1,
+                  "text": "といっても"
+                },
+                {
+                  "id": 2,
+                  "text": "というより"
+                },
+                {
+                  "id": 3,
+                  "text": "といえば"
+                },
+                {
+                  "id": 4,
+                  "text": "というと"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜といっても (walaupun dibilang~) (5日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜といっても (walaupun dibilang~) (5日目).",
+              "answer": 4
             },
             {
               "number": 12,
               "question": "注意書き（　　）、この薬を飲むと眠くなるらしい。",
               "options": [
-                {"id": 1, "text": "によって"},
-                {"id": 2, "text": "によれば"},
-                {"id": 3, "text": "による"},
-                {"id": 4, "text": "について"}
+                {
+                  "id": 1,
+                  "text": "によって"
+                },
+                {
+                  "id": 2,
+                  "text": "によれば"
+                },
+                {
+                  "id": 3,
+                  "text": "による"
+                },
+                {
+                  "id": 4,
+                  "text": "について"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Nによれば (menurut~) sebagai sumber informasi (2日目)."
+              "hint": "📝 Petunjuk materi: Pola Nによれば (menurut~) sebagai sumber informasi (2日目).",
+              "answer": 1
             },
             {
               "number": 13,
               "question": "この事故（　　）影響で、各線に遅れが出ています。",
               "options": [
-                {"id": 1, "text": "によって"},
-                {"id": 2, "text": "によれば"},
-                {"id": 3, "text": "により"},
-                {"id": 4, "text": "による"}
+                {
+                  "id": 1,
+                  "text": "によって"
+                },
+                {
+                  "id": 2,
+                  "text": "によれば"
+                },
+                {
+                  "id": 3,
+                  "text": "により"
+                },
+                {
+                  "id": 4,
+                  "text": "による"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Nによる + N (memodifikasi kata benda) (2日目)."
+              "hint": "📝 Petunjuk materi: Pola Nによる + N (memodifikasi kata benda) (2日目).",
+              "answer": 3
             },
             {
               "number": 14,
               "question": "明日のことは、明日にならないとわからない。（　　）、生きている意味があるのかもしれない。",
               "options": [
-                {"id": 1, "text": "わかるものの"},
-                {"id": 2, "text": "わかるものだから"},
-                {"id": 3, "text": "わからないからこそ"},
-                {"id": 4, "text": "わからないものなら"}
+                {
+                  "id": 1,
+                  "text": "わかるものの"
+                },
+                {
+                  "id": 2,
+                  "text": "わかるものだから"
+                },
+                {
+                  "id": 3,
+                  "text": "わからないからこそ"
+                },
+                {
+                  "id": 4,
+                  "text": "わからないものなら"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜からこそ (justru karena~) (1日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜からこそ (justru karena~) (1日目).",
+              "answer": 2
             },
             {
               "number": 15,
               "question": "この小学校は地域の人々に開放されている。（　　）、地域全体で子どもたちを守り育てようとしているのである。",
               "options": [
-                {"id": 1, "text": "それによれば"},
-                {"id": 2, "text": "それについて"},
-                {"id": 3, "text": "それによって"},
-                {"id": 4, "text": "それにしては"}
+                {
+                  "id": 1,
+                  "text": "それによれば"
+                },
+                {
+                  "id": 2,
+                  "text": "それについて"
+                },
+                {
+                  "id": 3,
+                  "text": "それによって"
+                },
+                {
+                  "id": 4,
+                  "text": "それにしては"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola Nによって (dengan/melalui~) sebagai cara/metode (2日目)."
+              "hint": "📝 Petunjuk materi: Pola Nによって (dengan/melalui~) sebagai cara/metode (2日目).",
+              "answer": 4
             }
           ]
         },
@@ -200,51 +395,116 @@
               "number": 16,
               "question": "先生たちのなかで、フランス語が ＿＿ ＿＿ ★ ＿＿ いません。",
               "words": [
-                {"id": 1, "word": "ひとり"},
-                {"id": 2, "word": "しか"},
-                {"id": 3, "word": "人は"},
-                {"id": 4, "word": "話せる"}
-              ]
+                {
+                  "id": 1,
+                  "word": "ひとり"
+                },
+                {
+                  "id": 2,
+                  "word": "しか"
+                },
+                {
+                  "id": 3,
+                  "word": "人は"
+                },
+                {
+                  "id": 4,
+                  "word": "話せる"
+                }
+              ],
+              "answer": 3
             },
             {
               "number": 17,
               "question": "彼がUFOを ＿＿ ＿＿ ★ ＿＿ うそだった。",
               "words": [
-                {"id": 1, "word": "という"},
-                {"id": 2, "word": "見た"},
-                {"id": 3, "word": "は"},
-                {"id": 4, "word": "の"}
-              ]
+                {
+                  "id": 1,
+                  "word": "という"
+                },
+                {
+                  "id": 2,
+                  "word": "見た"
+                },
+                {
+                  "id": 3,
+                  "word": "は"
+                },
+                {
+                  "id": 4,
+                  "word": "の"
+                }
+              ],
+              "answer": 2
             },
             {
               "number": 18,
               "question": "学生たちに辞書を ＿＿ ＿＿ ★ ＿＿ 忘れました。",
               "words": [
-                {"id": 1, "word": "のを"},
-                {"id": 2, "word": "ように"},
-                {"id": 3, "word": "持ってくる"},
-                {"id": 4, "word": "言う"}
-              ]
+                {
+                  "id": 1,
+                  "word": "のを"
+                },
+                {
+                  "id": 2,
+                  "word": "ように"
+                },
+                {
+                  "id": 3,
+                  "word": "持ってくる"
+                },
+                {
+                  "id": 4,
+                  "word": "言う"
+                }
+              ],
+              "answer": 1
             },
             {
               "number": 19,
               "question": "夜遅く大きい ＿＿ ＿＿ ★ ＿＿ と注意された。",
               "words": [
-                {"id": 1, "word": "テレビを"},
-                {"id": 2, "word": "見ないで"},
-                {"id": 3, "word": "くれ"},
-                {"id": 4, "word": "音で"}
-              ]
+                {
+                  "id": 1,
+                  "word": "テレビを"
+                },
+                {
+                  "id": 2,
+                  "word": "見ないで"
+                },
+                {
+                  "id": 3,
+                  "word": "くれ"
+                },
+                {
+                  "id": 4,
+                  "word": "音で"
+                }
+              ],
+              "answer": 4
             },
             {
               "number": 20,
               "question": "この地震 ＿＿ ＿＿ ★ ＿＿ はありません。",
               "words": [
-                {"id": 1, "word": "心配"},
-                {"id": 2, "word": "つなみの"},
-                {"id": 3, "word": "よる"},
-                {"id": 4, "word": "に"}
-              ]
+                {
+                  "id": 1,
+                  "word": "心配"
+                },
+                {
+                  "id": 2,
+                  "word": "つなみの"
+                },
+                {
+                  "id": 3,
+                  "word": "よる"
+                },
+                {
+                  "id": 4,
+                  "word": "に"
+                }
+              ],
+              "answer": 3
             }
           ]
         },
@@ -263,56 +523,121 @@
               "number": 21,
               "blank": "[21]",
               "options": [
-                {"id": 1, "text": "によれば"},
-                {"id": 2, "text": "という"},
-                {"id": 3, "text": "というより"},
-                {"id": 4, "text": "というと"}
+                {
+                  "id": 1,
+                  "text": "によれば"
+                },
+                {
+                  "id": 2,
+                  "text": "という"
+                },
+                {
+                  "id": 3,
+                  "text": "というより"
+                },
+                {
+                  "id": 4,
+                  "text": "というと"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜というと untuk asosiasi/topik (5日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜というと untuk asosiasi/topik (5日目).",
+              "answer": 2
             },
             {
               "number": 22,
               "blank": "[22]",
               "options": [
-                {"id": 1, "text": "そんなことはない"},
-                {"id": 2, "text": "そのとおりらしい"},
-                {"id": 3, "text": "そうだろうと思う"},
-                {"id": 4, "text": "そのように聞いた"}
+                {
+                  "id": 1,
+                  "text": "そんなことはない"
+                },
+                {
+                  "id": 2,
+                  "text": "そのとおりらしい"
+                },
+                {
+                  "id": 3,
+                  "text": "そうだろうと思う"
+                },
+                {
+                  "id": 4,
+                  "text": "そのように聞いた"
+                }
               ],
-              "hint": "📝 Petunjuk: Mencari kalimat yang berlawanan dengan asumsi sebelumnya."
+              "hint": "📝 Petunjuk: Mencari kalimat yang berlawanan dengan asumsi sebelumnya.",
+              "answer": 3
             },
             {
               "number": 23,
               "blank": "[23]",
               "options": [
-                {"id": 1, "text": "といっても"},
-                {"id": 2, "text": "さえ"},
-                {"id": 3, "text": "だけしか"},
-                {"id": 4, "text": "によって"}
+                {
+                  "id": 1,
+                  "text": "といっても"
+                },
+                {
+                  "id": 2,
+                  "text": "さえ"
+                },
+                {
+                  "id": 3,
+                  "text": "だけしか"
+                },
+                {
+                  "id": 4,
+                  "text": "によって"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜といっても (walaupun disebut~) (5日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜といっても (walaupun disebut~) (5日目).",
+              "answer": 1
             },
             {
               "number": 24,
               "blank": "[24]",
               "options": [
-                {"id": 1, "text": "ばかり"},
-                {"id": 2, "text": "というより"},
-                {"id": 3, "text": "こそ"},
-                {"id": 4, "text": "について"}
+                {
+                  "id": 1,
+                  "text": "ばかり"
+                },
+                {
+                  "id": 2,
+                  "text": "というより"
+                },
+                {
+                  "id": 3,
+                  "text": "こそ"
+                },
+                {
+                  "id": 4,
+                  "text": "について"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜というより (daripada~) untuk koreksi ekspresi (5日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜というより (daripada~) untuk koreksi ekspresi (5日目).",
+              "answer": 4
             },
             {
               "number": 25,
               "blank": "[25]",
               "options": [
-                {"id": 1, "text": "のこと"},
-                {"id": 2, "text": "という"},
-                {"id": 3, "text": "ばかり"},
-                {"id": 4, "text": "といっても"}
+                {
+                  "id": 1,
+                  "text": "のこと"
+                },
+                {
+                  "id": 2,
+                  "text": "という"
+                },
+                {
+                  "id": 3,
+                  "text": "ばかり"
+                },
+                {
+                  "id": 4,
+                  "text": "といっても"
+                }
               ],
-              "hint": "📝 Petunjuk materi: Pola 〜という + N untuk mendefinisikan/menamai (4日目)."
+              "hint": "📝 Petunjuk materi: Pola 〜という + N untuk mendefinisikan/menamai (4日目).",
+              "answer": 2
             }
           ]
         }
