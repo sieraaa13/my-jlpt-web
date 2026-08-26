@@ -15,75 +15,83 @@
       },
       "grammar_sections": [
         {
-          "pattern_title": "ご存じのように (Gozonji no You ni) - Seperti yang Anda Ketahui",
-          "pattern_meaning": "ご存じのように = seperti yang Anda ketahui | Nの／V + ように = seperti~ / sebagaimana~ (pembuka penjelasan)",
+          "pattern_title": "ご存じのように",
+          "pattern_meaning": "ご存じのように = seperti yang Anda ketahui ｜ N の/V + ように = pembuka kalimat",
           "description_box": {
-            "formula": "$$ \\text{N の／V + ように} $$",
-            "explanation": "Pola ini sering digunakan sebagai kalimat pembuka penjelasan (説明の前置き), yang berarti 'seperti~' atau 'sebagaimana~'. Berfungsi untuk merujuk pada informasi yang sudah diketahui bersama atau sudah disampaikan sebelumnya.\n\nContoh penggunaan:\n• 図のように (seperti pada gambar)\n• 前にお話したように (seperti yang saya ceritakan sebelumnya)\n• 田中さんが言ったように (seperti yang dikatakan Tanaka-san)",
-            "explanation_en": "This pattern is often used as an opening phrase before an explanation (説明の前置き), meaning 'as ~' or 'just like ~'. It refers to information that is already shared knowledge or has been mentioned before."
+            "formula": "N の／V + ように",
+            "explanation": "Pola ini sering digunakan sebagai kalimat pembuka penjelasan, artinya 'seperti yang (sudah diketahui/dikatakan)'.\n\nSering muncul di awal kalimat dalam konteks formal atau penjelasan.\n\nContoh:\n• ご存じのように (seperti yang Anda ketahui)\n• テレビで見たように (seperti yang dilihat di TV)\n• 先生が言ったように (seperti yang guru katakan)",
+            "explanation_en": "Used as a sentence opener meaning 'as (you know/was said/was seen)'."
           },
           "examples": [
             {
               "jp": "皆様ご存じのように、試験の内容が変わります。",
               "en": "Minasama gozonji no you ni, shiken no naiyou ga kawarimasu. — 'Seperti yang Anda semua ketahui, isi ujian akan berubah.'",
-              "explanation": "📝 Pembukaan formal yang merujuk pada pengetahuan bersama. (=知っている内容と同じで)"
+              "explanation": "📝 Pembukaan formal yang merujuk pada pengetahuan bersama. (=知っている内容と同じで)",
+              "highlight": "ように"
             },
             {
               "jp": "ここに書いてあるように、今度の木曜日、授業は午前中だけです。",
               "en": "Koko ni kaite aru you ni, kondo no mokuyoubi, jugyou wa gozenchuu dake desu. — 'Seperti yang tertulis di sini, hari Kamis nanti pelajaran hanya di pagi hari saja.'",
-              "explanation": "📝 (=書いてある内容と同じで)"
+              "explanation": "📝 (=書いてある内容と同じで)",
+              "highlight": "ように"
             },
             {
               "jp": "前にお話ししたように、来年から授業料が値上がりします。",
               "en": "Mae ni ohanashi shita you ni, rainen kara jugyouryou ga neagari shimasu. — 'Seperti yang sudah saya sampaikan sebelumnya, mulai tahun depan biaya kuliah akan naik.'",
-              "explanation": "📝 (=前に話した内容と同じで)"
+              "explanation": "📝 (=前に話した内容と同じで)",
+              "highlight": "ように"
             }
           ]
         },
         {
-          "pattern_title": "早く来るように (Hayaku Kuru You ni) - Datanglah Lebih Awal",
-          "pattern_meaning": "早く来るように = datanglah lebih awal | Vる／Vない + ように = perintah/larangan halus",
+          "pattern_title": "早く来るように",
+          "pattern_meaning": "来るように = supaya datang ｜ V る/V ない + ように = perintah halus/permintaan tidak langsung",
           "description_box": {
-            "formula": "$$ \\text{V る／V ない + ように} $$",
-            "explanation": "Pola ini digunakan untuk menyampaikan perintah secara halus (軽い命令) — seperti permintaan/instruksi yang tidak terlalu langsung. Sering digunakan oleh guru, atasan, atau orang tua kepada anak/bawahan.\n\nVariasi:\n• するようにしましょう (Mari kita lakukan ~)\n• するようにしなさい (Lakukanlah ~)",
-            "explanation_en": "This pattern is used to give a soft, indirect command (軽い命令) — like a request or instruction that isn't too direct. It is commonly used by teachers, superiors, or parents toward students, subordinates, or children."
+            "formula": "V る／V ない + ように",
+            "explanation": "Pola ini digunakan untuk menyampaikan perintah secara halus atau menyampaikan pesan dari orang lain (伝達).\n\nLebih sopan daripada perintah langsung dengan 〜てください.\n\nContoh:\n• 早く来るように (tolong datang lebih awal — nada halus)\n• 遅刻しないように (tolong jangan terlambat — nada halus)",
+            "explanation_en": "Used for giving indirect/polite instructions or relaying someone else's request."
           },
           "examples": [
             {
               "jp": "「明日はもっと早く来るように。」「わかりました。」",
               "en": "'Ashita wa motto hayaku kuru you ni.' / 'Wakarimashita.' — 'Besok datanglah lebih awal ya.' / 'Baik, saya mengerti.'",
-              "explanation": "📝 Bentuk perintah halus yang sering dipakai guru atau atasan. (=来なさい)"
+              "explanation": "📝 Bentuk perintah halus yang sering dipakai guru atau atasan. (=来なさい)",
+              "highlight": "ように"
             },
             {
               "jp": "ここで、たばこを吸わないように。",
               "en": "Koko de, tabako o suwanai you ni. — 'Tolong tidak merokok di sini ya.'",
-              "explanation": "📝 Larangan halus yang lebih sopan daripada langsung berkata 'jangan merokok'. (=吸わないでください)"
+              "explanation": "📝 Larangan halus yang lebih sopan daripada langsung berkata 'jangan merokok'. (=吸わないでください)",
+              "highlight": "ように"
             }
           ]
         },
         {
-          "pattern_title": "合格しますように (Goukaku Shimasu You ni) - Semoga Lulus",
-          "pattern_meaning": "合格しますように = semoga (saya) lulus | Vます／Vません／Vれます + ように = harapan/doa",
+          "pattern_title": "合格しますように",
+          "pattern_meaning": "合格しますように = semoga lulus ｜ V ます/V ません + ように = harapan/doa",
           "description_box": {
-            "formula": "$$ \\text{V ます／V ません／V れます + ように} $$",
-            "explanation": "Pola ini digunakan untuk menyatakan harapan atau doa (願望) — sesuatu yang diinginkan terjadi. Sering digunakan saat berdoa, membuat permohonan, atau mengungkapkan harapan yang tulus.\n\n✨ Ciri khas: Berbeda dengan pola ように lainnya, pola ini menggunakan bentuk ます (bukan bentuk kamus), karena nuansanya lebih sopan dan formal seperti doa.\n\nContoh penggunaan:\n• 勝ちますように (semoga menang)\n• 勝てますように (semoga bisa menang)\n• 負けませんように (semoga tidak kalah)",
-            "explanation_en": "This pattern is used to express a wish or prayer (願望) — something the speaker hopes will happen. It is often used when praying, making a wish, or expressing sincere hopes. Note that this pattern uniquely uses the polite ます-form (not the dictionary form) because of its formal, prayer-like nuance."
+            "formula": "V ます／V ません／V れます + ように",
+            "explanation": "Pola ini digunakan untuk menyatakan harapan atau doa (願望) — sesuatu yang di luar kendali pembicara.\n\nSering digunakan saat berdoa di kuil atau menuliskan harapan.\n\nContoh:\n• 合格しますように (semoga lulus)\n• 病気が早く治りますように (semoga penyakitnya cepat sembuh)\n• 雨が降りませんように (semoga tidak hujan)",
+            "explanation_en": "Used to express wishes or prayers — things beyond the speaker's direct control."
           },
           "examples": [
             {
               "jp": "合格しますように。",
               "en": "Goukaku shimasu you ni. — 'Semoga aku lulus (ujian).'",
-              "explanation": "📝 Mengungkapkan harapan/doa untuk lulus ujian. (=合格することを望んでいます)"
+              "explanation": "📝 Mengungkapkan harapan/doa untuk lulus ujian. (=合格することを望んでいます)",
+              "highlight": "ように"
             },
             {
               "jp": "母の病気が治りますように。",
               "en": "Haha no byouki ga naorimasu you ni. — 'Semoga penyakit ibu saya cepat sembuh.'",
-              "explanation": "📝 Doa yang tulus untuk kesembuhan seseorang. (=治ることを望んでいます)"
+              "explanation": "📝 Doa yang tulus untuk kesembuhan seseorang. (=治ることを望んでいます)",
+              "highlight": "ように"
             },
             {
               "jp": "インフルエンザにかかりませんように。",
               "en": "Infuruenza ni kakarimasen you ni. — 'Semoga aku tidak terkena flu.'",
-              "explanation": "📝 Untuk hal yang tidak diinginkan terjadi, gunakan bentuk negatif 〜ません + ように. (=かからないことを望んでいません)"
+              "explanation": "📝 Untuk hal yang tidak diinginkan terjadi, gunakan bentuk negatif 〜ません + ように. (=かからないことを望んでいません)",
+              "highlight": "ように"
             }
           ]
         }
@@ -131,27 +139,42 @@
             {
               "number": 1,
               "question": "遅れる場合は（a. 連絡する　b. 連絡できる）ように。",
-              "options": ["a. 連絡する", "b. 連絡できる"]
+              "options": [
+                "a. 連絡する",
+                "b. 連絡できる"
+              ]
             },
             {
               "number": 2,
               "question": "いい仕事が（a. 見つかる　b. 見つかります）ように。",
-              "options": ["a. 見つかる", "b. 見つかります"]
+              "options": [
+                "a. 見つかる",
+                "b. 見つかります"
+              ]
             },
             {
               "number": 3,
               "question": "次（a. ように　b. のように）修正してください。",
-              "options": ["a. ように", "b. のように"]
+              "options": [
+                "a. ように",
+                "b. のように"
+              ]
             },
             {
               "number": 4,
               "question": "今、テレビなどでコマーシャルを（a. する　b. している）ように、これの新製品がもうすぐ発売されます。",
-              "options": ["a. する", "b. している"]
+              "options": [
+                "a. する",
+                "b. している"
+              ]
             },
             {
               "number": 5,
               "question": "雪が降っていますから、（a. 転ぶ　b. 転ばない）ように注意して出かけてください。",
-              "options": ["a. 転ぶ", "b. 転ばない"]
+              "options": [
+                "a. 転ぶ",
+                "b. 転ばない"
+              ]
             }
           ]
         },
@@ -162,20 +185,44 @@
               "number": 6,
               "question": "私が作った曲を ＿＿ ＿＿ ＿＿ ＿＿ 。",
               "words": [
-                {"id": 1, "word": "喜んで"},
-                {"id": 2, "word": "皆さんが"},
-                {"id": 3, "word": "ように"},
-                {"id": 4, "word": "くれます"}
+                {
+                  "id": 1,
+                  "word": "喜んで"
+                },
+                {
+                  "id": 2,
+                  "word": "皆さんが"
+                },
+                {
+                  "id": 3,
+                  "word": "ように"
+                },
+                {
+                  "id": 4,
+                  "word": "くれます"
+                }
               ]
             },
             {
               "number": 7,
               "question": "いつも ＿＿ ＿＿ ＿＿ ＿＿ ように。",
               "words": [
-                {"id": 1, "word": "無理を"},
-                {"id": 2, "word": "ように"},
-                {"id": 3, "word": "言っている"},
-                {"id": 4, "word": "しすぎない"}
+                {
+                  "id": 1,
+                  "word": "無理を"
+                },
+                {
+                  "id": 2,
+                  "word": "ように"
+                },
+                {
+                  "id": 3,
+                  "word": "言っている"
+                },
+                {
+                  "id": 4,
+                  "word": "しすぎない"
+                }
               ]
             }
           ]
