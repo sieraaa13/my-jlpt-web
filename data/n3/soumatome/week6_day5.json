@@ -16,92 +16,106 @@
         {
           "pattern_title": "決してあきらめない",
           "description_box": {
-            "formula": "$$ \\text{決して} + \\begin{cases} \\text{V ない} \\\\ \\text{A くない} \\\\ \\text{na でない} \\\\ \\text{N でない} \\end{cases} $$",
-            "explanation": "Pola 決して〜ない berarti 'sama sekali tidak~' atau 'sekali-kali tidak~'. Digunakan untuk menyatakan TEKAD KUAT atau JANJI MUTLAK pembicara — penegasan yang sangat tegas bahwa sesuatu tidak akan dilakukan/terjadi. Sering muncul dalam janji, sumpah, atau pernyataan resmi.\n\n📌 決して〜ない = 絶対に〜ない (mutlak tidak~)",
-            "explanation_en": "The pattern 決して〜ない means 'absolutely not~' or 'never~'. Used to express the speaker's STRONG DETERMINATION or ABSOLUTE PROMISE — a very firm assertion that something will not be done/happen. Often appears in promises, oaths, or formal statements. Equivalent to 'never under any circumstances'."
+            "formula": "決して + Vない / Aくない / naじゃない",
+            "explanation": "Pola 決して～ない menunjukkan penolakan/negasi yang sangat kuat — 'sama sekali tidak ~', 'tidak akan pernah ~'.\n\nContoh:\n• 決してあきらめない (tidak akan pernah menyerah)\n• 決して忘れない (sama sekali tidak akan lupa)",
+            "explanation_en": "\"Never~\" / \"absolutely not~\" — strong negation with determination."
           },
           "examples": [
             {
               "jp": "私は決して夢をあきらめません。",
               "en": "Watashi wa kesshite yume o akiramemasen. — 'Aku sama sekali tidak akan menyerah pada mimpiku.'",
-              "explanation": "📝 (=絶対夢をあきらめない)"
+              "explanation": "📝 (=絶対夢をあきらめない)",
+              "highlight": "決して"
             },
             {
               "jp": "「うそは決して申しません。」と彼は言った。",
               "en": "'Uso wa kesshite moushimasen.' to kare wa itta. — '\"Aku sekali-kali tidak akan berbohong,\" katanya.'",
-              "explanation": "📝 (=絶対言わない)"
+              "explanation": "📝 (=絶対言わない)",
+              "highlight": "決して"
             }
-          ]
+          ],
+          "pattern_meaning": "決して～ない = sama sekali tidak ~ ｜ penolakan kuat"
         },
         {
           "pattern_title": "まったく泳げない",
           "description_box": {
-            "formula": "$$ \\text{まったく} + \\begin{cases} \\text{V ない} \\\\ \\text{A くない} \\\\ \\text{na でない} \\end{cases} $$",
-            "explanation": "Pola まったく〜ない berarti 'sama sekali tidak~' atau 'sedikit pun tidak~'. Penegasan negasi yang KUAT — menunjukkan bahwa sesuatu benar-benar tidak ada/tidak terjadi sedikit pun. Setara dengan 全然〜ない.\n\n📌 まったく〜ない = 全然〜ない (sama sekali tidak~)\n\n⭐ もっと: まったく + kata sifat positif = 'benar-benar~/sepenuhnya~' (=完全に)",
-            "explanation_en": "The pattern まったく〜ない means 'not at all~' or 'not in the slightest~'. A STRONG negation emphasizer — shows that something does not exist/happen even a tiny bit. Equivalent to 全然〜ない.\n\n⭐ More: まったく + positive word = 'completely~/totally~' (=完全に)"
+            "formula": "まったく + Vない / Aくない / naじゃない / Nじゃない",
+            "explanation": "Pola まったく～ない menunjukkan negasi total — 'sama sekali tidak ~'.\n\nBerbeda dari 決して (tekad), まったく lebih ke fakta/keadaan.\n\nContoh:\n• まったく泳げない (sama sekali tidak bisa berenang)\n• まったくわからない (sama sekali tidak mengerti)\n• まったく問題ない (sama sekali tidak ada masalah)",
+            "explanation_en": "\"Not at all~\" / \"completely not~\" — total negation of fact."
           },
           "examples": [
             {
               "jp": "私はまったく泳げない。",
               "en": "Watashi wa mattaku oyogenai. — 'Aku sama sekali tidak bisa berenang.'",
-              "explanation": "📝 (=全然泳げない)"
+              "explanation": "📝 (=全然泳げない)",
+              "highlight": "まったく"
             },
             {
               "jp": "彼が怒っている理由は、私にはまったくわからない。",
               "en": "Kare ga okotte iru riyuu wa, watashi ni wa mattaku wakaranai. — 'Aku sama sekali tidak mengerti kenapa dia marah.'",
-              "explanation": "📝 (=全然わからない)"
+              "explanation": "📝 (=全然わからない)",
+              "highlight": "まったく"
             },
             {
               "jp": "前とは違うまったく新しい計画を立てた。",
               "en": "Mae to wa chigau mattaku atarashii keikaku o tateta. — 'Aku menyusun rencana yang benar-benar baru, berbeda dari sebelumnya.'",
-              "explanation": "⭐ もっと: (=完全に) — まったく di sini berarti 'sepenuhnya' bukan negasi."
+              "explanation": "⭐ もっと: (=完全に) — まったく di sini berarti 'sepenuhnya' bukan negasi.",
+              "highlight": "まったく"
             }
-          ]
+          ],
+          "pattern_meaning": "まったく～ない = sama sekali tidak ~ ｜ negasi total"
         },
         {
           "pattern_title": "めったにない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{N は めったにない} \\\\ \\text{めったに V ない} \\end{cases} $$",
-            "explanation": "Pola めったに〜ない berarti 'jarang sekali~' atau 'hampir tidak pernah~'. Menyatakan bahwa FREKUENSI/JUMLAH sesuatu sangat sedikit — bukan negasi total, tetapi kejadian yang sangat langka.\n\n📌 めったに〜ない = ほとんど〜ない (hampir tidak pernah~)\n\n◆ 回数が少ないことを表す (Menyatakan jumlah/frekuensi yang sedikit)",
-            "explanation_en": "The pattern めったに〜ない means 'rarely~' or 'hardly ever~'. Indicates that the FREQUENCY/AMOUNT of something is very low — not a total negation, but a very rare occurrence. Equivalent to ほとんど〜ない.\n\n◆ Expresses small number/frequency."
+            "formula": "Nはめったにない / めったに Vない",
+            "explanation": "Pola めったに～ない berarti 'jarang sekali ~' — frekuensi sangat rendah.\n\nContoh:\n• こんなチャンスはめったにない (kesempatan seperti ini jarang sekali ada)\n• めったに外食しない (jarang sekali makan di luar)",
+            "explanation_en": "\"Rarely~\" / \"seldom~\" — very low frequency."
           },
           "examples": [
             {
               "jp": "こんなチャンスはめったにないよ。",
               "en": "Konna chansu wa metta ni nai yo. — 'Kesempatan seperti ini jarang sekali ada lho.'",
-              "explanation": "📝 (=ほとんどない)"
+              "explanation": "📝 (=ほとんどない)",
+              "highlight": "めったに"
             },
             {
               "jp": "忙しくてめったに休みが取れない。",
               "en": "Isogashikute metta ni yasumi ga torenai. — 'Aku terlalu sibuk sampai jarang sekali bisa libur.'",
-              "explanation": "📝 (=ほとんど休みがとれない)"
+              "explanation": "📝 (=ほとんど休みがとれない)",
+              "highlight": "めったに"
             }
-          ]
+          ],
+          "pattern_meaning": "めったに～ない = jarang sekali ~"
         },
         {
           "pattern_title": "少しもわからない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{少しも} \\\\ \\text{ちっとも} \\end{cases} + \\begin{cases} \\text{V ない} \\\\ \\text{A くない} \\\\ \\text{na でない} \\end{cases} $$",
-            "explanation": "Pola 少しも〜ない／ちっとも〜ない berarti 'sedikit pun tidak~' atau 'sama sekali tidak~'. Digunakan untuk MENEKANKAN NEGASI — menyatakan bahwa tidak ada sedikit pun dari sesuatu. ちっとも lebih kasual/colloquial dibanding 少しも.\n\n📌 少しも〜ない = 全然〜ない (sama sekali tidak~)\n\n◆ 否定を強調する (Menekankan negasi)\n\n⭐ もっと: 少ししか〜ない = 'sedikit saja~' (ほとんど〜ない／少し〜)",
-            "explanation_en": "The pattern 少しも〜ない／ちっとも〜ない means 'not even a little~' or 'not at all~'. Used to EMPHASIZE NEGATION — states there isn't even a tiny bit of something. ちっとも is more casual/colloquial than 少しも.\n\n◆ To emphasize the negative.\n\n⭐ More: 少ししか〜ない = 'only a little~'"
+            "formula": "少しも / ちっとも + Vない / Aくない / naじゃない",
+            "explanation": "Pola 少しも/ちっとも～ない berarti 'sedikitpun tidak ~' — bahkan jumlah paling kecil pun tidak.\n\nちっとも = versi lebih kasual.\n\nContoh:\n• 少しもわからない (sedikitpun tidak mengerti)\n• ちっとも面白くない (sama sekali tidak menarik)\n• 少しも変わっていない (sedikitpun tidak berubah)",
+            "explanation_en": "\"Not even a little~\" / \"not in the slightest~\"."
           },
           "examples": [
             {
               "jp": "あの人が話す英語は少しもわからない。",
               "en": "Ano hito ga hanasu eigo wa sukoshi mo wakaranai. — 'Bahasa Inggris yang dia bicarakan sedikit pun tidak kumengerti.'",
-              "explanation": "📝 (=全然わからない)"
+              "explanation": "📝 (=全然わからない)",
+              "highlight": "少しも"
             },
             {
               "jp": "スタイルのことは、少しも気にならない。",
               "en": "Sutairu no koto wa, sukoshi mo ki ni naranai. — 'Soal bentuk tubuh, aku sama sekali tidak peduli.'",
-              "explanation": "📝 (=全然気にしない)"
+              "explanation": "📝 (=全然気にしない)",
+              "highlight": "ちっとも"
             },
             {
               "jp": "日本語は少ししか話せません。",
               "en": "Nihongo wa sukoshi shika hanasemasen. — 'Aku hanya bisa bicara bahasa Jepang sedikit.'",
-              "explanation": "⭐ もっと: (=ほとんど話せない／少し話せる) — 少ししか〜ない berbeda dengan 少しも〜ない."
+              "explanation": "⭐ もっと: (=ほとんど話せない／少し話せる) — 少ししか〜ない berbeda dengan 少しも〜ない.",
+              "highlight": "少しも"
             }
-          ]
+          ],
+          "pattern_meaning": "少しも/ちっとも～ない = sedikitpun tidak ~"
         }
       ],
       "summary_table": {
@@ -142,27 +156,42 @@
             {
               "number": 1,
               "question": "今が大変で、将来のことは（a. まったく　b. めったに）考えられない。",
-              "options": ["a. まったく", "b. めったに"]
+              "options": [
+                "a. まったく",
+                "b. めったに"
+              ]
             },
             {
               "number": 2,
               "question": "食事の量を減らしてダイエットをしているのに、（a. めったに　b. ちっとも）やせないんです。",
-              "options": ["a. めったに", "b. ちっとも"]
+              "options": [
+                "a. めったに",
+                "b. ちっとも"
+              ]
             },
             {
               "number": 3,
               "question": "いろいろお世話になりました。親切にしていただいたことは（a. 全く　b. 決して）忘れません。",
-              "options": ["a. 全く", "b. 決して"]
+              "options": [
+                "a. 全く",
+                "b. 決して"
+              ]
             },
             {
               "number": 4,
               "question": "昨日、何時間も歩いたが、（a. 少しも　b. めったに）疲れていない。",
-              "options": ["a. 少しも", "b. めったに"]
+              "options": [
+                "a. 少しも",
+                "b. めったに"
+              ]
             },
             {
               "number": 5,
               "question": "彼女はじょうぶで（a. 決して　b. めったに）病気をしないのに、インフルエンザにかかったらしい。",
-              "options": ["a. 決して", "b. めったに"]
+              "options": [
+                "a. 決して",
+                "b. めったに"
+              ]
             }
           ]
         },
@@ -173,20 +202,44 @@
               "number": 6,
               "question": "私には彼の ＿＿ ＿＿ ＿＿ ＿＿ 理解できない。",
               "words": [
-                {"id": 1, "word": "こと"},
-                {"id": 2, "word": "が"},
-                {"id": 3, "word": "まったく"},
-                {"id": 4, "word": "言う"}
+                {
+                  "id": 1,
+                  "word": "こと"
+                },
+                {
+                  "id": 2,
+                  "word": "が"
+                },
+                {
+                  "id": 3,
+                  "word": "まったく"
+                },
+                {
+                  "id": 4,
+                  "word": "言う"
+                }
               ]
             },
             {
               "number": 7,
               "question": " ＿＿ ＿＿ ＿＿ ＿＿ うれしい。",
               "words": [
-                {"id": 1, "word": "先生に"},
-                {"id": 2, "word": "めったに"},
-                {"id": 3, "word": "ほめられて"},
-                {"id": 4, "word": "ほめない"}
+                {
+                  "id": 1,
+                  "word": "先生に"
+                },
+                {
+                  "id": 2,
+                  "word": "めったに"
+                },
+                {
+                  "id": 3,
+                  "word": "ほめられて"
+                },
+                {
+                  "id": 4,
+                  "word": "ほめない"
+                }
               ]
             }
           ]
