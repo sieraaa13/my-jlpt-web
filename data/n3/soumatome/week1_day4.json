@@ -15,65 +15,71 @@
       },
       "grammar_sections": [
         {
-          "pattern_title": "忘れ物をしないようにしましょう (Wasuremono o Shinai You ni Shimashou)",
-          "pattern_meaning": "しないようにする = berusaha untuk tidak melakukan | Vる/Vない + ようにする = berusaha/membiasakan~",
+          "pattern_title": "忘れ物をしないようにしましょう",
+          "pattern_meaning": "ようにする = berusaha agar ~ ｜ V る/V ない + ようにする = berusaha melakukan/tidak melakukan ~",
           "description_box": {
-            "formula": "$$ \\text{V る／V ない + ようにする} $$",
-            "explanation": "Pola 〜ようにする digunakan untuk menyatakan kebiasaan, kesadaran/niat, atau usaha (努力) untuk melakukan atau tidak melakukan sesuatu. Pola ini menunjukkan bahwa pembicara berusaha secara sadar untuk menjadikan sesuatu sebagai kebiasaan.",
-            "explanation_en": "The pattern 〜ようにする is used to express a habit, conscious intention, or effort (努力) to do or not do something. It shows that the speaker is consciously making an effort to turn something into a habit."
+            "formula": "V る／V ない + ようにする",
+            "explanation": "Pola 〜ようにする digunakan untuk menyatakan kebiasaan atau usaha sadar untuk melakukan (atau tidak melakukan) sesuatu.\n\nBerbeda dengan 〜ことにする (keputusan), ようにする lebih menekankan 'berusaha agar menjadi kebiasaan'.\n\nContoh:\n• 毎日運動するようにしている (berusaha olahraga setiap hari)\n• 忘れ物をしないようにする (berusaha agar tidak lupa bawa barang)",
+            "explanation_en": "Pattern ~you ni suru expresses making an effort or habit to do/not do something."
           },
           "examples": [
             {
               "jp": "忘れ物をしないようにしましょう。",
               "en": "Wasuremono o shinai you ni shimashou. — 'Mari kita berusaha untuk tidak meninggalkan/melupakan barang.'",
-              "explanation": "📝 (=忘れ物をしない努力をしましょう)"
+              "explanation": "📝 (=忘れ物をしない努力をしましょう)",
+              "highlight": "ようにしましょう"
             },
             {
               "jp": "毎食後、歯をみがくようにしています。",
               "en": "Maishokugo, ha o migaku you ni shite imasu. — 'Saya berusaha menyikat gigi setiap habis makan.'",
-              "explanation": "📝 Menunjukkan kebiasaan yang dibangun secara sadar. (=歯をみがく努力をしています)"
+              "explanation": "📝 Menunjukkan kebiasaan yang dibangun secara sadar. (=歯をみがく努力をしています)",
+              "highlight": "ようにしている"
             }
           ]
         },
         {
-          "pattern_title": "聞こえるように話す (Kikoeru You ni Hanasu)",
-          "pattern_meaning": "聞こえるように = supaya bisa terdengar | Vる/Vない/Vれる + ように = agar~ / supaya~",
+          "pattern_title": "聞こえるように話す",
+          "pattern_meaning": "ように = agar ~, supaya ~ ｜ V る/V ない + ように = tujuan",
           "description_box": {
-            "formula": "$$ \\text{V る／V ない／V れる + ように} $$",
-            "explanation": "Pola ini berarti 'agar~' atau 'supaya~', menunjukkan tujuan menjadikan suatu keadaan tertentu (その状態にすることが目的で). Berbeda dengan ために (yang menunjukkan tujuan tindakan aktif), ように digunakan untuk keadaan yang tidak bisa dikontrol langsung (seperti bisa/tidak bisa, kemampuan, kondisi).\n\n⚠️ Perbedaan ように vs ために (PENTING!)\n\n❌ Salah: 家を買うように貯金をしている。\n✅ Benar: 家を買うために貯金をしている。\n('Aku menabung untuk membeli rumah.')\n📝 Alasan: 'Membeli rumah' adalah tujuan tindakan aktif yang bisa dikontrol → gunakan ために.\n\n❌ Salah: 働くように学校をやめた。\n✅ Benar: 働くために学校をやめた。\n('Aku berhenti sekolah untuk bekerja.')\n\nPerbedaan Pola:\n• Vるために → Tujuan tindakan aktif (yang dikontrol) — niat\n• Vる/Vないように → Tujuan keadaan/hasil (di luar kontrol langsung) — harapan",
-            "explanation_en": "This pattern means 'so that ~' or 'in order for ~', showing the purpose of bringing about a certain state. Unlike ために (which shows the purpose of an active, controllable action), ように is used for states that cannot be directly controlled — such as ability, possibility, or conditions."
+            "formula": "V る／V ない／V れる + ように",
+            "explanation": "Pola ini berarti 'agar~' atau 'supaya~', menunjukkan tujuan dari suatu tindakan.\n\nDigunakan ketika kata kerja tujuannya bukan kehendak langsung (intransitif, bentuk potensial, atau bentuk negatif).\n\nContoh:\n• 聞こえるように話す (berbicara supaya terdengar)\n• 遅れないように早く出る (berangkat awal supaya tidak terlambat)",
+            "explanation_en": "Pattern ~you ni expresses purpose — 'so that~' or 'in order to~'."
           },
           "examples": [
             {
               "jp": "みんなに聞こえるようにもっと大きな声で話してください。",
               "en": "Minna ni kikoeru you ni motto ookina koe de hanashite kudasai. — 'Tolong bicara dengan suara yang lebih besar agar semua orang bisa mendengar.'",
-              "explanation": "📝 (=聞こえないと困るから)"
+              "explanation": "📝 (=聞こえないと困るから)",
+              "highlight": "ように"
             },
             {
               "jp": "忘れないように、手帳に書いておこう。",
               "en": "Wasurenai you ni, techou ni kaite okou. — 'Ayo aku tulis di buku catatan agar tidak lupa.'",
-              "explanation": "📝 (=忘れると困るから)"
+              "explanation": "📝 (=忘れると困るから)",
+              "highlight": "ように"
             }
           ]
         },
         {
-          "pattern_title": "使えるようになった (Tsukaeru You ni Natta)",
-          "pattern_meaning": "使えるようになった = (sekarang) sudah bisa dipakai | Vる + ようになる = menjadi bisa/terbiasa~",
+          "pattern_title": "使えるようになった",
+          "pattern_meaning": "ようになる = menjadi bisa ~ ｜ V る + ようになる = perubahan keadaan",
           "description_box": {
-            "formula": "$$ \\text{V る + ようになる} $$",
-            "explanation": "Pola 〜ようになる menunjukkan perubahan keadaan — dari sebelumnya tidak bisa/tidak terjadi, menjadi bisa/terjadi. Maknanya adalah 'menjadi (bisa/terbiasa)~'.",
-            "explanation_en": "The pattern 〜ようになる indicates a change of state — from previously not being able to do something (or it not happening) to now being able to (or it happening). It means 'to come to be able to ~' or 'to become accustomed to ~'."
+            "formula": "V る + ようになる",
+            "explanation": "Pola 〜ようになる menunjukkan perubahan keadaan — dari sebelumnya tidak bisa, sekarang menjadi bisa (atau sebaliknya).\n\nMenggambarkan perubahan alami/bertahap, bukan keputusan mendadak.\n\nContoh:\n• 日本語が話せるようになった (sudah bisa berbicara bahasa Jepang)\n• パソコンが使えるようになった (sudah bisa menggunakan komputer)",
+            "explanation_en": "Pattern ~you ni naru indicates a change of state — becoming able or unable to do something."
           },
           "examples": [
             {
               "jp": "「このDVDプレーヤー、こわれているんだよね。」「いや、直してもらったから、使えるようになったよ。」",
               "en": "'Kono DVD pureeyaa, kowarete iru n da yo ne.' / 'Iya, naoshite moratta kara, tsukaeru you ni natta yo.' — 'DVD player ini rusak, kan?' / 'Tidak, sudah aku perbaiki, jadi sekarang bisa dipakai.'",
-              "explanation": "📝 (=使える状態になった)"
+              "explanation": "📝 (=使える状態になった)",
+              "highlight": "ようになった"
             },
             {
               "jp": "ここの電気は人が通るとつくようになっています。",
               "en": "Koko no denki wa hito ga tooru to tsuku you ni natte imasu. — 'Lampu di sini akan menyala saat ada orang lewat.'",
-              "explanation": "📝 Menyatakan keadaan/sistem yang sudah diatur sedemikian rupa. (=つく状態になっている)"
+              "explanation": "📝 Menyatakan keadaan/sistem yang sudah diatur sedemikian rupa. (=つく状態になっている)",
+              "highlight": "ようになった"
             }
           ]
         }
@@ -106,27 +112,42 @@
             {
               "number": 1,
               "question": "風が入らない（a. ために　b. ように）窓を閉めておきましょう。",
-              "options": ["a. ために", "b. ように"]
+              "options": [
+                "a. ために",
+                "b. ように"
+              ]
             },
             {
               "number": 2,
               "question": "健康のために野菜を食べるように（a. して　b. なって）います。",
-              "options": ["a. して", "b. なって"]
+              "options": [
+                "a. して",
+                "b. なって"
+              ]
             },
             {
               "number": 3,
               "question": "大学に合格できる（a. ように　b. ために）一生懸命勉強しています。",
-              "options": ["a. ように", "b. ために"]
+              "options": [
+                "a. ように",
+                "b. ために"
+              ]
             },
             {
               "number": 4,
               "question": "日本人みたいに日本語が（a. 話す　b. 話せる）ようになりたい。",
-              "options": ["a. 話す", "b. 話せる"]
+              "options": [
+                "a. 話す",
+                "b. 話せる"
+              ]
             },
             {
               "number": 5,
               "question": "このインターホンは留守にだれが来たか（a. わかる　b. わかれる）ようになっている。",
-              "options": ["a. わかる", "b. わかれる"]
+              "options": [
+                "a. わかる",
+                "b. わかれる"
+              ]
             }
           ]
         },
@@ -137,20 +158,44 @@
               "number": 6,
               "question": "インフルエンザに ＿＿ ＿＿ ＿＿ ＿＿ ようにしています。",
               "words": [
-                {"id": 1, "word": "する"},
-                {"id": 2, "word": "ように"},
-                {"id": 3, "word": "うがいや手洗いを"},
-                {"id": 4, "word": "ならない"}
+                {
+                  "id": 1,
+                  "word": "する"
+                },
+                {
+                  "id": 2,
+                  "word": "ように"
+                },
+                {
+                  "id": 3,
+                  "word": "うがいや手洗いを"
+                },
+                {
+                  "id": 4,
+                  "word": "ならない"
+                }
               ]
             },
             {
               "number": 7,
               "question": "たいていの電気製品は1年以内なら ＿＿ ＿＿ ＿＿ ＿＿ なっている。",
               "words": [
-                {"id": 1, "word": "もらえる"},
-                {"id": 2, "word": "こわれても"},
-                {"id": 3, "word": "ように"},
-                {"id": 4, "word": "ただで直して"}
+                {
+                  "id": 1,
+                  "word": "もらえる"
+                },
+                {
+                  "id": 2,
+                  "word": "こわれても"
+                },
+                {
+                  "id": 3,
+                  "word": "ように"
+                },
+                {
+                  "id": 4,
+                  "word": "ただで直して"
+                }
               ]
             }
           ]
