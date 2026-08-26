@@ -44,7 +44,6 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
 
   const handleSubmit = () => {
     setShowResults(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleReset = () => {
@@ -69,36 +68,6 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
 
   return (
     <div className="space-y-12">
-      {/* Skor (muncul setelah submit) */}
-      {showResults && (
-        <div className="bg-card border border-border rounded-2xl p-6 text-center">
-          <p className="text-3xl font-black mb-2">
-            {correctCount} / {totalQuestions}
-          </p>
-          <p className="text-muted-foreground mb-1">
-            Skor: {Math.round((correctCount / totalQuestions) * 100)} / 100
-          </p>
-          <p className="text-sm text-muted-foreground mb-4">
-            ({correctCount} benar × 4 poin = {correctCount * 4} poin)
-          </p>
-          <div className="w-full h-3 bg-secondary rounded-full overflow-hidden mb-4">
-            <div
-              className="h-full rounded-full transition-all"
-              style={{
-                width: `${(correctCount / totalQuestions) * 100}%`,
-                backgroundColor: correctCount / totalQuestions >= 0.7 ? "#22c55e" : correctCount / totalQuestions >= 0.4 ? "#f59e0b" : "#ef4444",
-              }}
-            />
-          </div>
-          <button
-            onClick={handleReset}
-            className="px-6 py-2 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
-          >
-            🔄 Coba Lagi
-          </button>
-        </div>
-      )}
-
       {groups.map((group, gIdx) => (
         <div key={gIdx}>
           {/* Judul grup soal */}
@@ -182,6 +151,36 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
             className="px-8 py-3 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             📝 Periksa Jawaban
+          </button>
+        </div>
+      )}
+
+      {/* Skor (muncul di bawah setelah submit) */}
+      {showResults && (
+        <div className="bg-card border border-border rounded-2xl p-6 text-center">
+          <p className="text-3xl font-black mb-2">
+            {correctCount} / {totalQuestions}
+          </p>
+          <p className="text-muted-foreground mb-1">
+            Skor: {Math.round((correctCount / totalQuestions) * 100)} / 100
+          </p>
+          <p className="text-sm text-muted-foreground mb-4">
+            ({correctCount} benar × 4 poin = {correctCount * 4} poin)
+          </p>
+          <div className="w-full h-3 bg-secondary rounded-full overflow-hidden mb-4">
+            <div
+              className="h-full rounded-full transition-all"
+              style={{
+                width: `${(correctCount / totalQuestions) * 100}%`,
+                backgroundColor: correctCount / totalQuestions >= 0.7 ? "#22c55e" : correctCount / totalQuestions >= 0.4 ? "#f59e0b" : "#ef4444",
+              }}
+            />
+          </div>
+          <button
+            onClick={handleReset}
+            className="px-6 py-2 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
+          >
+            🔄 Coba Lagi
           </button>
         </div>
       )}
