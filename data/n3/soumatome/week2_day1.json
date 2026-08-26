@@ -17,82 +17,94 @@
         {
           "pattern_title": "女性ばかり",
           "description_box": {
-            "formula": "$$ \\text{N / Vて} \\begin{cases} \\text{ばかり} \\\\ \\text{ばかりだ} \\\\ \\text{ばかりのN} \\\\ \\text{ばかりで} \\\\ \\text{Vてばかりいる(ー)} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa sesuatu hanya terdiri dari satu hal, atau seseorang terus-menerus melakukan satu hal saja.",
-            "explanation_en": "Expresses that something consists only of one thing, or someone keeps doing only one thing."
+            "formula": "N / Vて + ばかり / ばかりだ / ばかりのN / ばかりいる",
+            "explanation": "Pola ばかり menunjukkan bahwa sesuatu 'hanya itu saja' atau 'terus-terusan melakukan sesuatu'.\n\nContoh:\n• 女性ばかり (perempuan melulu)\n• 遊んでばかりいる (main terus-terusan)",
+            "explanation_en": "Indicates \"nothing but~\" or \"always doing~\"."
           },
           "examples": [
             {
               "jp": "この店のお客さんは、女性ばかりですね。",
               "en": "Pelanggan toko ini semuanya perempuan ya.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ばかり"
             },
             {
               "jp": "息子は仕事もしないで遊んでばかりいる。",
               "en": "Anakku tidak bekerja dan hanya bermain saja.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ばかり"
             }
-          ]
+          ],
+          "pattern_meaning": "女性ばかり = perempuan melulu ｜ N/Vて + ばかり = hanya ~, terus-terusan ~"
         },
         {
           "pattern_title": "会員だけしか",
           "description_box": {
-            "formula": "Nだけしか Vない",
-            "explanation": "Menekankan makna 「〜だけ」(hanya). Digunakan untuk memperkuat batasan.",
-            "explanation_en": "To emphasize '~dake' (only)."
+            "formula": "N + だけしか + Vない",
+            "explanation": "Pola だけしか...ない adalah bentuk penegasan dari だけ. Maknanya 'benar-benar hanya ~ saja, tidak ada yang lain'.\n\nLebih kuat nuansanya dibanding だけ saja.",
+            "explanation_en": "Emphatic form of だけ, meaning \"absolutely only~\"."
           },
           "examples": [
             {
               "jp": "このコンサートは、会員だけしか入れません。",
               "en": "Konser ini hanya bisa dimasuki oleh anggota saja.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "だけしか"
             },
             {
               "jp": "今日はお客様が一人だけしか来ませんでした。",
               "en": "Hari ini hanya ada satu pelanggan yang datang.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "だけしか"
             }
-          ]
+          ],
+          "pattern_meaning": "会員だけしか = hanya anggota saja ｜ Nだけしか + Vない = benar-benar hanya ~"
         },
         {
           "pattern_title": "ひらがなさえ",
           "description_box": {
-            "formula": "$$ \\text{N} \\begin{cases} \\\\ \\text{Nに} \\\\ \\text{Nで} \\end{cases} \\text{さえ} $$",
-            "explanation": "Menunjukkan contoh ekstrem; jika hal minimal ini saja terpenuhi atau tidak terpenuhi, maka hal lainnya sudah jelas.",
-            "explanation_en": "Shows an extreme example; if even this minimum condition is met/not met, other things are obvious."
+            "formula": "N / Nに / Nで + さえ",
+            "explanation": "Pola さえ menunjukkan 'bahkan ~ saja' — menekankan kasus paling ekstrem/minimal.\n\nKalau bahkan hal paling mudah saja tidak bisa, apalagi yang lain.\n\nContoh:\n• ひらがなさえ書けない (bahkan hiragana saja tidak bisa menulis)",
+            "explanation_en": "Emphasizes an extreme case: \"even~ (can't/won't)\"."
           },
           "examples": [
             {
               "jp": "ひらがなさえ書けないんですから、漢字なんて書けません。",
               "en": "Bahkan hiragana saja tidak bisa ditulis, apalagi kanji.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "さえ"
             },
             {
               "jp": "そんなこと、子どもでさえ知っている。",
               "en": "Hal seperti itu bahkan anak kecil pun tahu.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "さえ"
             }
-          ]
+          ],
+          "pattern_meaning": "ひらがなさえ = hiragana saja pun ｜ N + さえ = bahkan ~ saja"
         },
         {
           "pattern_title": "明日こそ",
           "description_box": {
-            "formula": "$$ \\text{N + こそ} \\;／\\; \\text{〜から (理由) + こそ} $$",
-            "explanation": "Pola 〜こそ digunakan untuk menekankan kata yang ada di depannya. Maknanya seperti 'justru~', 'yang pasti adalah~', atau 'benar-benar karena~'.",
-            "explanation_en": "The pattern 〜こそ is used to strongly emphasize the word in front of it. It conveys nuances like 'precisely ~', 'definitely ~', or 'it is exactly because ~'."
+            "formula": "N + こそ / ～からこそ",
+            "explanation": "Pola こそ digunakan untuk menekankan sesuatu dengan kuat — 'justru ini', 'kali ini pasti'.\n\nSering digunakan untuk menunjukkan tekad atau alasan yang kuat.\n\nContoh:\n• 明日こそ早く起きる (besok pasti bangun pagi)\n• 好きだからこそ厳しくする (justru karena sayang, makanya tegas)",
+            "explanation_en": "Emphasizes \"this very~\", \"precisely because~\"."
           },
           "examples": [
             {
               "jp": "明日こそ勉強するぞ！",
               "en": "Ashita koso benkyou suru zo! — 'Besok pasti aku akan belajar!'",
-              "explanation": "📝 Menekankan tekad kuat bahwa 'besok' benar-benar akan belajar (mungkin karena hari-hari sebelumnya tidak belajar). (=明日はきっと)"
+              "explanation": "📝 Menekankan tekad kuat bahwa 'besok' benar-benar akan belajar (mungkin karena hari-hari sebelumnya tidak belajar). (=明日はきっと)",
+              "highlight": "こそ"
             },
             {
               "jp": "愛情があるからこそ、しかるんです。",
               "en": "Aijou ga aru kara koso, shikaru n desu. — 'Justru karena ada rasa sayang, makanya aku memarahi(mu).'",
-              "explanation": "📝 Menekankan bahwa alasan sebenarnya adalah rasa sayang, bukan benci. (=本当にあるから)"
+              "explanation": "📝 Menekankan bahwa alasan sebenarnya adalah rasa sayang, bukan benci. (=本当にあるから)",
+              "highlight": "こそ"
             }
-          ]
+          ],
+          "pattern_meaning": "明日こそ = besok pasti ｜ N + こそ = justru ~, pasti kali ini ~"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "忙しくて、昼ごはんを食べる時間（a. さえ　b. こそ）ない。",
-              "options": ["a. さえ", "b. こそ"]
+              "options": [
+                "a. さえ",
+                "b. こそ"
+              ]
             },
             {
               "number": 2,
               "question": "うちのねこは（a. 寝る　b. 寝て）ばかりいる。",
-              "options": ["a. 寝る", "b. 寝て"]
+              "options": [
+                "a. 寝る",
+                "b. 寝て"
+              ]
             },
             {
               "number": 3,
               "question": "このクラスでは日本語（a. さえ　b. だけ）しか使わないように。",
-              "options": ["a. さえ", "b. だけ"]
+              "options": [
+                "a. さえ",
+                "b. だけ"
+              ]
             },
             {
               "number": 4,
               "question": "リンさんは、日本人で（a. さえ　b. こそ）読めない漢字が読める。",
-              "options": ["a. さえ", "b. こそ"]
+              "options": [
+                "a. さえ",
+                "b. こそ"
+              ]
             },
             {
               "number": 5,
               "question": "そんなに（a. 働く　b. 働いて）ばかりいては体をこわしますよ。",
-              "options": ["a. 働く", "b. 働いて"]
+              "options": [
+                "a. 働く",
+                "b. 働いて"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "難しい ＿＿ ＿＿ ＿＿ ＿＿ と友人は言った。",
               "words": [
-                {"id": 1, "word": "こそ"},
-                {"id": 2, "word": "おもしろい"},
-                {"id": 3, "word": "仕事"},
-                {"id": 4, "word": "だから"}
+                {
+                  "id": 1,
+                  "word": "こそ"
+                },
+                {
+                  "id": 2,
+                  "word": "おもしろい"
+                },
+                {
+                  "id": 3,
+                  "word": "仕事"
+                },
+                {
+                  "id": 4,
+                  "word": "だから"
+                }
               ]
             },
             {
               "number": 7,
               "question": "家族 ＿＿ ＿＿ ＿＿ ＿＿ もある。",
               "words": [
-                {"id": 1, "word": "言えない"},
-                {"id": 2, "word": "に"},
-                {"id": 3, "word": "さえ"},
-                {"id": 4, "word": "こと"}
+                {
+                  "id": 1,
+                  "word": "言えない"
+                },
+                {
+                  "id": 2,
+                  "word": "に"
+                },
+                {
+                  "id": 3,
+                  "word": "さえ"
+                },
+                {
+                  "id": 4,
+                  "word": "こと"
+                }
               ]
             }
           ]
