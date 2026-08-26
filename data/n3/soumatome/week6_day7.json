@@ -5,9 +5,9 @@
       "week": 6,
       "day": 7,
       "header": {
-        "main_title": "もっとがんばることにした",
-        "sub_title": "実戦問題",
-        "translation": "Soal Latihan Ujian (Practice Exercise)"
+        "main_title": "実戦問題",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Soal Latihan Praktis Minggu 6"
       },
       "exam_info": {
         "title": "📋 Informasi Ujian",
@@ -28,150 +28,330 @@
               "number": 1,
               "question": "娘の学校では、規則で携帯電話を学校に持っていってはいけない（　　）。",
               "options": [
-                {"id": 1, "text": "ことにしている"},
-                {"id": 2, "text": "ことになっている"},
-                {"id": 3, "text": "わけがない"},
-                {"id": 4, "text": "わけにはいかない"}
+                {
+                  "id": 1,
+                  "text": "ことにしている"
+                },
+                {
+                  "id": 2,
+                  "text": "ことになっている"
+                },
+                {
+                  "id": 3,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 4,
+                  "text": "わけにはいかない"
+                }
               ]
             },
             {
               "number": 2,
               "question": "もう少しでお弁当を忘れて行く（　　）だった。",
               "options": [
-                {"id": 1, "text": "もの"},
-                {"id": 2, "text": "こと"},
-                {"id": 3, "text": "ところ"},
-                {"id": 4, "text": "わけ"}
+                {
+                  "id": 1,
+                  "text": "もの"
+                },
+                {
+                  "id": 2,
+                  "text": "こと"
+                },
+                {
+                  "id": 3,
+                  "text": "ところ"
+                },
+                {
+                  "id": 4,
+                  "text": "わけ"
+                }
               ]
             },
             {
               "number": 3,
               "question": "手伝って（　　）けれど、それでは君のためにならない。",
               "options": [
-                {"id": 1, "text": "あげないことはない"},
-                {"id": 2, "text": "あげることはない"},
-                {"id": 3, "text": "あげないことじゃない"},
-                {"id": 4, "text": "あげないことにする"}
+                {
+                  "id": 1,
+                  "text": "あげないことはない"
+                },
+                {
+                  "id": 2,
+                  "text": "あげることはない"
+                },
+                {
+                  "id": 3,
+                  "text": "あげないことじゃない"
+                },
+                {
+                  "id": 4,
+                  "text": "あげないことにする"
+                }
               ]
             },
             {
               "number": 4,
               "question": "試験を受けた（　　）、合格した。",
               "options": [
-                {"id": 1, "text": "それと"},
-                {"id": 2, "text": "うちに"},
-                {"id": 3, "text": "ところ"},
-                {"id": 4, "text": "としても"}
+                {
+                  "id": 1,
+                  "text": "それと"
+                },
+                {
+                  "id": 2,
+                  "text": "うちに"
+                },
+                {
+                  "id": 3,
+                  "text": "ところ"
+                },
+                {
+                  "id": 4,
+                  "text": "としても"
+                }
               ]
             },
             {
               "number": 5,
               "question": "今夜は早く寝て、あした早く起きて（　　）。",
               "options": [
-                {"id": 1, "text": "勉強することにしよう"},
-                {"id": 2, "text": "勉強するところだった"},
-                {"id": 3, "text": "勉強するわけだ"},
-                {"id": 4, "text": "勉強すればよかった"}
+                {
+                  "id": 1,
+                  "text": "勉強することにしよう"
+                },
+                {
+                  "id": 2,
+                  "text": "勉強するところだった"
+                },
+                {
+                  "id": 3,
+                  "text": "勉強するわけだ"
+                },
+                {
+                  "id": 4,
+                  "text": "勉強すればよかった"
+                }
               ]
             },
             {
               "number": 6,
               "question": "朝早く目が（　　）が、またすぐに寝てしまいました。",
               "options": [
-                {"id": 1, "text": "覚めたことはあるのです"},
-                {"id": 2, "text": "覚めないことはないのです"},
-                {"id": 3, "text": "覚めたことは覚めたのです"},
-                {"id": 4, "text": "覚めたことはないのです"}
+                {
+                  "id": 1,
+                  "text": "覚めたことはあるのです"
+                },
+                {
+                  "id": 2,
+                  "text": "覚めないことはないのです"
+                },
+                {
+                  "id": 3,
+                  "text": "覚めたことは覚めたのです"
+                },
+                {
+                  "id": 4,
+                  "text": "覚めたことはないのです"
+                }
               ]
             },
             {
               "number": 7,
               "question": "彼の職場は（　　）女性とは縁がない。",
               "options": [
-                {"id": 1, "text": "まったく"},
-                {"id": 2, "text": "めったに"},
-                {"id": 3, "text": "決して"},
-                {"id": 4, "text": "はじめて"}
+                {
+                  "id": 1,
+                  "text": "まったく"
+                },
+                {
+                  "id": 2,
+                  "text": "めったに"
+                },
+                {
+                  "id": 3,
+                  "text": "決して"
+                },
+                {
+                  "id": 4,
+                  "text": "はじめて"
+                }
               ]
             },
             {
               "number": 8,
               "question": "あなたがいくら許してやれといっても、彼を（　　）。",
               "options": [
-                {"id": 1, "text": "許すわけだ"},
-                {"id": 2, "text": "許すわけにはいかない"},
-                {"id": 3, "text": "許さないわけにはいかない"},
-                {"id": 4, "text": "許さないわけがない"}
+                {
+                  "id": 1,
+                  "text": "許すわけだ"
+                },
+                {
+                  "id": 2,
+                  "text": "許すわけにはいかない"
+                },
+                {
+                  "id": 3,
+                  "text": "許さないわけにはいかない"
+                },
+                {
+                  "id": 4,
+                  "text": "許さないわけがない"
+                }
               ]
             },
             {
               "number": 9,
               "question": "両親が（　　）うちに、旅行に連れていきたい。",
               "options": [
-                {"id": 1, "text": "元気"},
-                {"id": 2, "text": "元気だ"},
-                {"id": 3, "text": "元気に"},
-                {"id": 4, "text": "元気な"}
+                {
+                  "id": 1,
+                  "text": "元気"
+                },
+                {
+                  "id": 2,
+                  "text": "元気だ"
+                },
+                {
+                  "id": 3,
+                  "text": "元気に"
+                },
+                {
+                  "id": 4,
+                  "text": "元気な"
+                }
               ]
             },
             {
               "number": 10,
               "question": "これは古いから、もし（　　）またすぐ壊れると思いますよ。",
               "options": [
-                {"id": 1, "text": "修理したら"},
-                {"id": 2, "text": "修理すれば"},
-                {"id": 3, "text": "修理したとしても"},
-                {"id": 4, "text": "修理するなら"}
+                {
+                  "id": 1,
+                  "text": "修理したら"
+                },
+                {
+                  "id": 2,
+                  "text": "修理すれば"
+                },
+                {
+                  "id": 3,
+                  "text": "修理したとしても"
+                },
+                {
+                  "id": 4,
+                  "text": "修理するなら"
+                }
               ]
             },
             {
               "number": 11,
               "question": "目の悪い彼女にあんな遠くの小さい文字が（　　）。",
               "options": [
-                {"id": 1, "text": "見えないわけがない"},
-                {"id": 2, "text": "見えるわけにはいかない"},
-                {"id": 3, "text": "見えることは見える"},
-                {"id": 4, "text": "見えるわけがない"}
+                {
+                  "id": 1,
+                  "text": "見えないわけがない"
+                },
+                {
+                  "id": 2,
+                  "text": "見えるわけにはいかない"
+                },
+                {
+                  "id": 3,
+                  "text": "見えることは見える"
+                },
+                {
+                  "id": 4,
+                  "text": "見えるわけがない"
+                }
               ]
             },
             {
               "number": 12,
               "question": "旅行会社に聞いて（　　）ところ、安い切符が買えた。",
               "options": [
-                {"id": 1, "text": "みる"},
-                {"id": 2, "text": "みた"},
-                {"id": 3, "text": "みない"},
-                {"id": 4, "text": "みなかった"}
+                {
+                  "id": 1,
+                  "text": "みる"
+                },
+                {
+                  "id": 2,
+                  "text": "みた"
+                },
+                {
+                  "id": 3,
+                  "text": "みない"
+                },
+                {
+                  "id": 4,
+                  "text": "みなかった"
+                }
               ]
             },
             {
               "number": 13,
               "question": "寒い（　　）。窓が少し開いているよ。",
               "options": [
-                {"id": 1, "text": "わけではない"},
-                {"id": 2, "text": "わけがない"},
-                {"id": 3, "text": "わけだ"},
-                {"id": 4, "text": "わけにはいかない"}
+                {
+                  "id": 1,
+                  "text": "わけではない"
+                },
+                {
+                  "id": 2,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 3,
+                  "text": "わけだ"
+                },
+                {
+                  "id": 4,
+                  "text": "わけにはいかない"
+                }
               ]
             },
             {
               "number": 14,
               "question": "眠い。（　　）10分寝かせて。",
               "options": [
-                {"id": 1, "text": "あと"},
-                {"id": 2, "text": "それと"},
-                {"id": 3, "text": "もっと"},
-                {"id": 4, "text": "その上"}
+                {
+                  "id": 1,
+                  "text": "あと"
+                },
+                {
+                  "id": 2,
+                  "text": "それと"
+                },
+                {
+                  "id": 3,
+                  "text": "もっと"
+                },
+                {
+                  "id": 4,
+                  "text": "その上"
+                }
               ]
             },
             {
               "number": 15,
               "question": "どんなことがあっても、（　　）この箱を開けてはいけません。",
               "options": [
-                {"id": 1, "text": "まったく"},
-                {"id": 2, "text": "決して"},
-                {"id": 3, "text": "めったに"},
-                {"id": 4, "text": "少しも"}
+                {
+                  "id": 1,
+                  "text": "まったく"
+                },
+                {
+                  "id": 2,
+                  "text": "決して"
+                },
+                {
+                  "id": 3,
+                  "text": "めったに"
+                },
+                {
+                  "id": 4,
+                  "text": "少しも"
+                }
               ]
             }
           ]
@@ -186,50 +366,110 @@
               "number": 16,
               "question": "コーヒーは先に ＿＿ ＿＿ ★ ＿＿ なさいますか。",
               "options": [
-                {"id": 1, "text": "しましょうか"},
-                {"id": 2, "text": "お持ち"},
-                {"id": 3, "text": "あとに"},
-                {"id": 4, "text": "それとも"}
+                {
+                  "id": 1,
+                  "text": "しましょうか"
+                },
+                {
+                  "id": 2,
+                  "text": "お持ち"
+                },
+                {
+                  "id": 3,
+                  "text": "あとに"
+                },
+                {
+                  "id": 4,
+                  "text": "それとも"
+                }
               ]
             },
             {
               "number": 17,
               "question": "私は入社試験に全部落ちて ＿＿ ＿＿ ★ ＿＿ なった。",
               "options": [
-                {"id": 1, "text": "つぐ"},
-                {"id": 2, "text": "父の"},
-                {"id": 3, "text": "ことに"},
-                {"id": 4, "text": "店を"}
+                {
+                  "id": 1,
+                  "text": "つぐ"
+                },
+                {
+                  "id": 2,
+                  "text": "父の"
+                },
+                {
+                  "id": 3,
+                  "text": "ことに"
+                },
+                {
+                  "id": 4,
+                  "text": "店を"
+                }
               ]
             },
             {
               "number": 18,
               "question": " ＿＿ ＿＿ ★ ＿＿ はじめて発音が悪いことを知った。",
               "options": [
-                {"id": 1, "text": "聞いて"},
-                {"id": 2, "text": "自分の"},
-                {"id": 3, "text": "日本語を"},
-                {"id": 4, "text": "録音した"}
+                {
+                  "id": 1,
+                  "text": "聞いて"
+                },
+                {
+                  "id": 2,
+                  "text": "自分の"
+                },
+                {
+                  "id": 3,
+                  "text": "日本語を"
+                },
+                {
+                  "id": 4,
+                  "text": "録音した"
+                }
               ]
             },
             {
               "number": 19,
               "question": " ＿＿ ＿＿ ★ ＿＿ ぜひ遊びに来てください。",
               "options": [
-                {"id": 1, "text": "いる"},
-                {"id": 2, "text": "日本に"},
-                {"id": 3, "text": "僕が"},
-                {"id": 4, "text": "うちに"}
+                {
+                  "id": 1,
+                  "text": "いる"
+                },
+                {
+                  "id": 2,
+                  "text": "日本に"
+                },
+                {
+                  "id": 3,
+                  "text": "僕が"
+                },
+                {
+                  "id": 4,
+                  "text": "うちに"
+                }
               ]
             },
             {
               "number": 20,
               "question": " ＿＿ ＿＿ ★ ＿＿ まだよく理解していません。",
               "options": [
-                {"id": 1, "text": "復習した"},
-                {"id": 2, "text": "ことは"},
-                {"id": 3, "text": "が"},
-                {"id": 4, "text": "しました"}
+                {
+                  "id": 1,
+                  "text": "復習した"
+                },
+                {
+                  "id": 2,
+                  "text": "ことは"
+                },
+                {
+                  "id": 3,
+                  "text": "が"
+                },
+                {
+                  "id": 4,
+                  "text": "しました"
+                }
               ]
             }
           ]
@@ -248,50 +488,110 @@
               "number": 21,
               "question": "[21] に入るもの",
               "options": [
-                {"id": 1, "text": "決して"},
-                {"id": 2, "text": "たとえ"},
-                {"id": 3, "text": "もしかすると"},
-                {"id": 4, "text": "もしも"}
+                {
+                  "id": 1,
+                  "text": "決して"
+                },
+                {
+                  "id": 2,
+                  "text": "たとえ"
+                },
+                {
+                  "id": 3,
+                  "text": "もしかすると"
+                },
+                {
+                  "id": 4,
+                  "text": "もしも"
+                }
               ]
             },
             {
               "number": 22,
               "question": "[22] に入るもの",
               "options": [
-                {"id": 1, "text": "わけにはいかない"},
-                {"id": 2, "text": "ことになっている"},
-                {"id": 3, "text": "わけがない"},
-                {"id": 4, "text": "ことにしている"}
+                {
+                  "id": 1,
+                  "text": "わけにはいかない"
+                },
+                {
+                  "id": 2,
+                  "text": "ことになっている"
+                },
+                {
+                  "id": 3,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 4,
+                  "text": "ことにしている"
+                }
               ]
             },
             {
               "number": 23,
               "question": "[23] に入るもの",
               "options": [
-                {"id": 1, "text": "変わる"},
-                {"id": 2, "text": "変わった"},
-                {"id": 3, "text": "変わらない"},
-                {"id": 4, "text": "変わらなかった"}
+                {
+                  "id": 1,
+                  "text": "変わる"
+                },
+                {
+                  "id": 2,
+                  "text": "変わった"
+                },
+                {
+                  "id": 3,
+                  "text": "変わらない"
+                },
+                {
+                  "id": 4,
+                  "text": "変わらなかった"
+                }
               ]
             },
             {
               "number": 24,
               "question": "[24] に入るもの",
               "options": [
-                {"id": 1, "text": "その上"},
-                {"id": 2, "text": "それとも"},
-                {"id": 3, "text": "少しも"},
-                {"id": 4, "text": "あと"}
+                {
+                  "id": 1,
+                  "text": "その上"
+                },
+                {
+                  "id": 2,
+                  "text": "それとも"
+                },
+                {
+                  "id": 3,
+                  "text": "少しも"
+                },
+                {
+                  "id": 4,
+                  "text": "あと"
+                }
               ]
             },
             {
               "number": 25,
               "question": "[25] に入るもの",
               "options": [
-                {"id": 1, "text": "たとえ"},
-                {"id": 2, "text": "まったく"},
-                {"id": 3, "text": "もしかすると"},
-                {"id": 4, "text": "もしも"}
+                {
+                  "id": 1,
+                  "text": "たとえ"
+                },
+                {
+                  "id": 2,
+                  "text": "まったく"
+                },
+                {
+                  "id": 3,
+                  "text": "もしかすると"
+                },
+                {
+                  "id": 4,
+                  "text": "もしも"
+                }
               ]
             }
           ]
@@ -375,7 +675,634 @@
             "usage": "Menambah info atau pilihan"
           }
         ]
-      }
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "娘の学校では、規則で携帯電話を学校に持っていってはいけない（　　）。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "ことにしている"
+                },
+                {
+                  "id": 2,
+                  "text": "ことになっている"
+                },
+                {
+                  "id": 3,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 4,
+                  "text": "わけにはいかない"
+                }
+              ],
+              "answer": 2,
+              "hint": "ことになっている = sudah ditetapkan (keputusan pihak lain/aturan). (Week 6 Day 2)"
+            },
+            {
+              "number": 2,
+              "question": "もう少しでお弁当を忘れて行く（　　）だった。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "もの"
+                },
+                {
+                  "id": 2,
+                  "text": "こと"
+                },
+                {
+                  "id": 3,
+                  "text": "ところ"
+                },
+                {
+                  "id": 4,
+                  "text": "わけ"
+                }
+              ],
+              "answer": 3,
+              "hint": "ところだった = hampir saja ~. (Week 6 Day 3)"
+            },
+            {
+              "number": 3,
+              "question": "手伝って（　　）けれど、それでは君のためにならない。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "あげないことはない"
+                },
+                {
+                  "id": 2,
+                  "text": "あげることはない"
+                },
+                {
+                  "id": 3,
+                  "text": "あげないことじゃない"
+                },
+                {
+                  "id": 4,
+                  "text": "あげないことにする"
+                }
+              ],
+              "answer": 1,
+              "hint": "ないことはない = bukan berarti tidak ~ (double negative). (Week 6 Day 2)"
+            },
+            {
+              "number": 4,
+              "question": "試験を受けた（　　）、合格した。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "それと"
+                },
+                {
+                  "id": 2,
+                  "text": "うちに"
+                },
+                {
+                  "id": 3,
+                  "text": "ところ"
+                },
+                {
+                  "id": 4,
+                  "text": "としても"
+                }
+              ],
+              "answer": 3,
+              "hint": "たところ = setelah melakukan ~, ternyata ~. (Week 6 Day 3)"
+            },
+            {
+              "number": 5,
+              "question": "今夜は早く寝て、あした早く起きて（　　）。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "勉強することにしよう"
+                },
+                {
+                  "id": 2,
+                  "text": "勉強するところだった"
+                },
+                {
+                  "id": 3,
+                  "text": "勉強するわけだ"
+                },
+                {
+                  "id": 4,
+                  "text": "勉強すればよかった"
+                }
+              ],
+              "answer": 1,
+              "hint": "ことにする = memutuskan untuk ~. (Week 6 Day 2)"
+            },
+            {
+              "number": 6,
+              "question": "朝早く目が（　　）が、またすぐに寝てしまいました。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "覚めたことはあるのです"
+                },
+                {
+                  "id": 2,
+                  "text": "覚めないことはないのです"
+                },
+                {
+                  "id": 3,
+                  "text": "覚めたことは覚めたのです"
+                },
+                {
+                  "id": 4,
+                  "text": "覚めたことはないのです"
+                }
+              ],
+              "answer": 3,
+              "hint": "ことは～が = memang sih ~, tapi ~. (Week 6 Day 2)"
+            },
+            {
+              "number": 7,
+              "question": "彼の職場は（　　）女性とは縁がない。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "まったく"
+                },
+                {
+                  "id": 2,
+                  "text": "めったに"
+                },
+                {
+                  "id": 3,
+                  "text": "決して"
+                },
+                {
+                  "id": 4,
+                  "text": "はじめて"
+                }
+              ],
+              "answer": 1,
+              "hint": "まったく～ない = sama sekali tidak ~. (Week 6 Day 5)"
+            },
+            {
+              "number": 8,
+              "question": "あなたがいくら許してやれといっても、彼を（　　）。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "許すわけだ"
+                },
+                {
+                  "id": 2,
+                  "text": "許すわけにはいかない"
+                },
+                {
+                  "id": 3,
+                  "text": "許さないわけにはいかない"
+                },
+                {
+                  "id": 4,
+                  "text": "許さないわけがない"
+                }
+              ],
+              "answer": 2,
+              "hint": "わけにはいかない = tidak bisa seenaknya ~. (Week 6 Day 4)"
+            },
+            {
+              "number": 9,
+              "question": "両親が（　　）うちに、旅行に連れていきたい。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "元気"
+                },
+                {
+                  "id": 2,
+                  "text": "元気だ"
+                },
+                {
+                  "id": 3,
+                  "text": "元気に"
+                },
+                {
+                  "id": 4,
+                  "text": "元気な"
+                }
+              ],
+              "answer": 4,
+              "hint": "naな + うちに = selagi masih ~. (Week 6 Day 3)"
+            },
+            {
+              "number": 10,
+              "question": "これは古いから、もし（　　）またすぐ壊れると思いますよ。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "修理したら"
+                },
+                {
+                  "id": 2,
+                  "text": "修理すれば"
+                },
+                {
+                  "id": 3,
+                  "text": "修理したとしても"
+                },
+                {
+                  "id": 4,
+                  "text": "修理するなら"
+                }
+              ],
+              "answer": 3,
+              "hint": "もし～としても = meskipun seandainya ~. (Week 6 Day 1)"
+            },
+            {
+              "number": 11,
+              "question": "目の悪い彼女にあんな遠くの小さい文字が（　　）。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "見えないわけがない"
+                },
+                {
+                  "id": 2,
+                  "text": "見えるわけにはいかない"
+                },
+                {
+                  "id": 3,
+                  "text": "見えることは見える"
+                },
+                {
+                  "id": 4,
+                  "text": "見えるわけがない"
+                }
+              ],
+              "answer": 4,
+              "hint": "わけがない = mustahil ~, tidak mungkin ~. (Week 6 Day 4)"
+            },
+            {
+              "number": 12,
+              "question": "旅行会社に聞いて（　　）ところ、安い切符が買えた。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "みる"
+                },
+                {
+                  "id": 2,
+                  "text": "みた"
+                },
+                {
+                  "id": 3,
+                  "text": "みない"
+                },
+                {
+                  "id": 4,
+                  "text": "みなかった"
+                }
+              ],
+              "answer": 2,
+              "hint": "Vてみたところ = setelah mencoba ~, ternyata ~. (Week 6 Day 3)"
+            },
+            {
+              "number": 13,
+              "question": "寒い（　　）。窓が少し開いているよ。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "わけではない"
+                },
+                {
+                  "id": 2,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 3,
+                  "text": "わけだ"
+                },
+                {
+                  "id": 4,
+                  "text": "わけにはいかない"
+                }
+              ],
+              "answer": 3,
+              "hint": "わけだ = pantas saja ~. (Week 6 Day 4)"
+            },
+            {
+              "number": 14,
+              "question": "眠い。（　　）10分寝かせて。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "あと"
+                },
+                {
+                  "id": 2,
+                  "text": "それと"
+                },
+                {
+                  "id": 3,
+                  "text": "もっと"
+                },
+                {
+                  "id": 4,
+                  "text": "その上"
+                }
+              ],
+              "answer": 1,
+              "hint": "あと = lagi, tambahan. (Week 6 Day 6)"
+            },
+            {
+              "number": 15,
+              "question": "どんなことがあっても、（　　）この箱を開けてはいけません。",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "まったく"
+                },
+                {
+                  "id": 2,
+                  "text": "決して"
+                },
+                {
+                  "id": 3,
+                  "text": "めったに"
+                },
+                {
+                  "id": 4,
+                  "text": "少しも"
+                }
+              ],
+              "answer": 2,
+              "hint": "決して～ない = sama sekali tidak boleh ~. (Week 6 Day 5)"
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Susunlah kata-kata berikut menjadi kalimat yang benar, lalu pilih kata yang masuk di posisi ★.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "コーヒーは先に ＿＿ ＿＿ ★ ＿＿ なさいますか。",
+              "words": [
+                {
+                  "id": 1,
+                  "word": "しましょうか"
+                },
+                {
+                  "id": 2,
+                  "word": "お持ち"
+                },
+                {
+                  "id": 3,
+                  "word": "あとに"
+                },
+                {
+                  "id": 4,
+                  "word": "それとも"
+                }
+              ],
+              "answer": 3,
+              "hint": "コーヒーは先にお持ちしましょうか それとも ★あとに なさいますか"
+            },
+            {
+              "number": 17,
+              "question": "私は入社試験に全部落ちて ＿＿ ＿＿ ★ ＿＿ なった。",
+              "words": [
+                {
+                  "id": 1,
+                  "word": "つぐ"
+                },
+                {
+                  "id": 2,
+                  "word": "父の"
+                },
+                {
+                  "id": 3,
+                  "word": "ことに"
+                },
+                {
+                  "id": 4,
+                  "word": "店を"
+                }
+              ],
+              "answer": 3,
+              "hint": "父の 店を つぐ ★ことに なった"
+            },
+            {
+              "number": 18,
+              "question": "＿＿ ＿＿ ★ ＿＿ はじめて発音が悪いことを知った。",
+              "words": [
+                {
+                  "id": 1,
+                  "word": "聞いて"
+                },
+                {
+                  "id": 2,
+                  "word": "自分の"
+                },
+                {
+                  "id": 3,
+                  "word": "日本語を"
+                },
+                {
+                  "id": 4,
+                  "word": "録音した"
+                }
+              ],
+              "answer": 1,
+              "hint": "録音した 自分の 日本語を ★聞いて はじめて"
+            },
+            {
+              "number": 19,
+              "question": "＿＿ ＿＿ ★ ＿＿ ぜひ遊びに来てください。",
+              "words": [
+                {
+                  "id": 1,
+                  "word": "いる"
+                },
+                {
+                  "id": 2,
+                  "word": "日本に"
+                },
+                {
+                  "id": 3,
+                  "word": "僕が"
+                },
+                {
+                  "id": 4,
+                  "word": "うちに"
+                }
+              ],
+              "answer": 4,
+              "hint": "僕が 日本に いる ★うちに ぜひ遊びに来てください"
+            },
+            {
+              "number": 20,
+              "question": "＿＿ ＿＿ ★ ＿＿ まだよく理解していません。",
+              "words": [
+                {
+                  "id": 1,
+                  "word": "復習した"
+                },
+                {
+                  "id": 2,
+                  "word": "ことは"
+                },
+                {
+                  "id": 3,
+                  "word": "が"
+                },
+                {
+                  "id": 4,
+                  "word": "しました"
+                }
+              ],
+              "answer": 3,
+              "hint": "復習した ことは しました ★が まだよく理解していません"
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Bacalah teks berikut, lalu pilih jawaban yang paling tepat untuk mengisi bagian [21] sampai [25].",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "信号と車",
+            "jp_text": "信号を守っていたのに車にひかれたことがある。それ以来、私は [21] 車も信号も信用しない [22]。\n\n信号が青に [23] うちに「もう行ける」と動き出す車。もう黄色から赤になっているのに「まだ行ける」と無理をする車。 [24] 1分とか30秒がどうして待てないのだろうか。そんなに忙しい人たちなのだろうか。\n\n私には [25] 理解ができない。"
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "決して"
+                },
+                {
+                  "id": 2,
+                  "text": "たとえ"
+                },
+                {
+                  "id": 3,
+                  "text": "もしかすると"
+                },
+                {
+                  "id": 4,
+                  "text": "もしも"
+                }
+              ],
+              "answer": 1,
+              "hint": "決して～ない = sama sekali tidak ~ (Week 6 Day 5)"
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "わけにはいかない"
+                },
+                {
+                  "id": 2,
+                  "text": "ことになっている"
+                },
+                {
+                  "id": 3,
+                  "text": "わけがない"
+                },
+                {
+                  "id": 4,
+                  "text": "ことにしている"
+                }
+              ],
+              "answer": 4,
+              "hint": "ことにしている = sudah memutuskan untuk ~ (kebiasaan). (Week 6 Day 2)"
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "変わる"
+                },
+                {
+                  "id": 2,
+                  "text": "変わった"
+                },
+                {
+                  "id": 3,
+                  "text": "変わらない"
+                },
+                {
+                  "id": 4,
+                  "text": "変わらなかった"
+                }
+              ],
+              "answer": 3,
+              "hint": "変わらないうちに = selagi belum berubah (Week 6 Day 3)"
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "その上"
+                },
+                {
+                  "id": 2,
+                  "text": "それとも"
+                },
+                {
+                  "id": 3,
+                  "text": "少しも"
+                },
+                {
+                  "id": 4,
+                  "text": "あと"
+                }
+              ],
+              "answer": 4,
+              "hint": "あと1分 = tinggal 1 menit lagi saja"
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "たとえ"
+                },
+                {
+                  "id": 2,
+                  "text": "まったく"
+                },
+                {
+                  "id": 3,
+                  "text": "もしかすると"
+                },
+                {
+                  "id": 4,
+                  "text": "もしも"
+                }
+              ],
+              "answer": 2,
+              "hint": "まったく理解ができない = sama sekali tidak bisa mengerti (Week 6 Day 5)"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
