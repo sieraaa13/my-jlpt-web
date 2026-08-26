@@ -17,82 +17,94 @@
         {
           "pattern_title": "あやまることはない",
           "description_box": {
-            "formula": "$$ \\text{V る + ことはない} $$",
-            "explanation": "Pola Vることはない berarti 'tidak perlu~' atau 'tidak ada gunanya~'. Digunakan untuk memberi tahu lawan bicara bahwa suatu tindakan tidak diperlukan/tidak dibutuhkan, sering bernuansa menenangkan.",
-            "explanation_en": "The pattern Vることはない means 'there is no need to ~' or 'you don't have to ~'. Used to tell the listener that an action is unnecessary, often with a reassuring nuance."
+            "formula": "Vる + ことはない",
+            "explanation": "Pola ことはない berarti 'tidak perlu ~' — meyakinkan bahwa sesuatu tidak harus dilakukan.\n\nContoh:\n• あやまることはない (tidak perlu minta maaf)\n• そんなに心配することはない (tidak perlu sekhawatir itu)",
+            "explanation_en": "\"There is no need to~\" — reassuring someone."
           },
           "examples": [
             {
               "jp": "君があやまることはないよ。",
               "en": "Kimi ga ayamaru koto wa nai yo. — 'Kamu nggak perlu minta maaf kok.'",
-              "explanation": "📝 (=あやまらなくていい)"
+              "explanation": "📝 (=あやまらなくていい)",
+              "highlight": "ことはない"
             },
             {
               "jp": "来ることはありません。郵送でいいですよ。",
               "en": "Kuru koto wa arimasen. Yuusou de ii desu yo. — 'Tidak perlu datang. Cukup dikirim lewat pos saja.'",
-              "explanation": "📝 (=来なくていいです)"
+              "explanation": "📝 (=来なくていいです)",
+              "highlight": "ことはない"
             }
-          ]
+          ],
+          "pattern_meaning": "ことはない = tidak perlu ~ ｜ tidak ada keharusan"
         },
         {
           "pattern_title": "遅れるということだ",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{N} \\end{cases} \\text{ということだ} $$",
-            "explanation": "Pola 〜ということだ memiliki dua makna utama:\n① Menyampaikan informasi yang didengar dari orang lain (=〜そうだ)\n② Menjelaskan/menarik kesimpulan (=〜という意味だ)\n\n📌 Catatan: V命令形, 意向形 など もOK. (Bisa digunakan untuk bentuk perintah verbal, bentuk volisional, dll.)",
-            "explanation_en": "The pattern 〜ということだ has two main meanings: (1) Conveying information heard from someone else (=〜そうだ), and (2) Explaining or drawing a conclusion (=〜という意味だ). Note: It can be used for verbal commands, volitional forms, etc."
+            "formula": "V / A / na / N普 / N + ということだ",
+            "explanation": "Pola ということだ punya 2 makna:\n\n① Kesimpulan: 'artinya ~', 'berarti ~'\n② Kabar tidak langsung: 'katanya ~', 'dengar-dengar ~'\n\nContoh:\n• 電車が遅れるということだ (katanya kereta terlambat)\n• つまり無理だということだ (artinya mustahil)",
+            "explanation_en": "\"It means that~\" (conclusion) / \"I heard that~\" (hearsay)."
           },
           "examples": [
             {
               "jp": "田中さんから電話があって、少し遅れるということです。",
               "en": "Tanaka-san kara denwa ga atte, sukoshi okureru to iu koto desu. — 'Tanaka-san telepon, katanya akan sedikit terlambat.'",
-              "explanation": "📝 (=遅れるそうです) — Menyampaikan informasi dari orang lain."
+              "explanation": "📝 (=遅れるそうです) — Menyampaikan informasi dari orang lain.",
+              "highlight": "ということだ"
             },
             {
               "jp": "試験の結果は70%、つまり合格ということだ。",
               "en": "Shiken no kekka wa 70%, tsumari goukaku to iu koto da. — 'Hasil ujiannya 70%, dengan kata lain berarti lulus.'",
-              "explanation": "📝 もっと! (=合格だという意味だ) — Menarik kesimpulan."
+              "explanation": "📝 もっと! (=合格だという意味だ) — Menarik kesimpulan.",
+              "highlight": "ということだ"
             }
-          ]
+          ],
+          "pattern_meaning": "ということだ = artinya ~, katanya ~ ｜ kesimpulan / kabar"
         },
         {
           "pattern_title": "休むことだ",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V る} \\\\ \\text{V ない} \\end{cases} \\text{ことだ} $$",
-            "explanation": "Pola Vる/Vないことだ digunakan untuk memberikan saran atau nasihat (助言) — 'sebaiknya~' atau 'lebih baik~'. Pola ini memberikan kesan saran yang lebih kuat dibanding 〜ほうがいい.",
-            "explanation_en": "The pattern Vる/Vないことだ is used when giving suggestions or advice (助言). Means 'you should ~' or 'it's best to ~'. This pattern gives a stronger advisory tone than 〜ほうがいい."
+            "formula": "Vる / Vない + ことだ",
+            "explanation": "Pola ことだ digunakan untuk memberi nasihat atau saran tegas — 'yang penting adalah ~'.\n\nContoh:\n• 風邪を引いたら休むことだ (kalau flu, yang penting istirahat)\n• あきらめないことだ (yang penting jangan menyerah)",
+            "explanation_en": "\"The thing to do is~\" — giving firm advice."
           },
           "examples": [
             {
               "jp": "暖かくして、ゆっくり休むことだ。",
               "en": "Atatakaku shite, yukkuri yasumu koto da. — 'Hangatkan badanmu dan istirahatlah dengan tenang.'",
-              "explanation": "📝 (=休んだほうがいい)"
+              "explanation": "📝 (=休んだほうがいい)",
+              "highlight": "ことだ"
             },
             {
               "jp": "無理をしないことです。",
               "en": "Muri o shinai koto desu. — 'Sebaiknya jangan memaksakan diri.'",
-              "explanation": "📝 (=しないほうがいいです)"
+              "explanation": "📝 (=しないほうがいいです)",
+              "highlight": "ことだ"
             }
-          ]
+          ],
+          "pattern_meaning": "ことだ = seharusnya ~ ｜ nasihat / saran tegas"
         },
         {
           "pattern_title": "どんなにうれしいことか",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{どんなに} \\\\ \\text{どれだけ} \\\\ \\text{どれほど} \\\\ \\text{何度} \\\\ \\text{何時間} \\end{cases} \\begin{cases} \\text{Aいことか} \\\\ \\text{Aかったことか} \\\\ \\text{naなことか} \\\\ \\text{naだったことか} \\\\ \\text{Vることか} \\\\ \\text{Vたことか} \\end{cases} $$",
-            "explanation": "Pola どんなに〜ことか menyatakan tingkat ekstrem dari suatu perasaan/pengalaman. Berfungsi sebagai penekanan emosional — 'betapa~!' atau 'sungguh sangat~!'. Sering digunakan untuk mengekspresikan perasaan yang kuat (gembira, sedih, khawatir, dll.).",
-            "explanation_en": "The pattern どんなに〜ことか expresses an extreme degree of feeling/experience. It functions as an emotional emphasis — 'how (very) ~!' or 'so very ~!'. Often used to express strong emotions (joy, sadness, worry, etc.)."
+            "formula": "どんなに / どれだけ / どれほど / 何度 + ことか",
+            "explanation": "Pola ことか menunjukkan perasaan yang sangat kuat — 'betapa ~nya'.\n\nSering didahului kata tanya (どんなに, どれだけ).\n\nContoh:\n• どんなにうれしいことか (betapa senangnya)\n• 何度やめようと思ったことか (sudah berapa kali berpikir ingin berhenti)",
+            "explanation_en": "\"How~!\" — expressing strong emotion with exclamation."
           },
           "examples": [
             {
               "jp": "合格できたら、どんなにうれしいことか。",
               "en": "Goukaku dekitara, donna ni ureshii koto ka. — 'Kalau bisa lulus, betapa senangnya aku!'",
-              "explanation": "📝 (=とてもうれしい)"
+              "explanation": "📝 (=とてもうれしい)",
+              "highlight": "ことか"
             },
             {
               "jp": "何度注意したことか。",
               "en": "Nando chuui shita koto ka. — 'Sudah berapa kali aku memperingatkanmu!'",
-              "explanation": "📝 (=何度も注意した)"
+              "explanation": "📝 (=何度も注意した)",
+              "highlight": "ことか"
             }
-          ]
+          ],
+          "pattern_meaning": "ことか = betapa ~nya ｜ ekspresi perasaan kuat"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "急ぐ（a. ことだ　b. ことはない）。ゆっくりでいい。",
-              "options": ["a. ことだ", "b. ことはない"]
+              "options": [
+                "a. ことだ",
+                "b. ことはない"
+              ]
             },
             {
               "number": 2,
               "question": "一度に全部は無理だ。毎日少しずつ勉強する（a. ことだ　b. ことはない）。",
-              "options": ["a. ことだ", "b. ことはない"]
+              "options": [
+                "a. ことだ",
+                "b. ことはない"
+              ]
             },
             {
               "number": 3,
               "question": "遅かったね。どれだけ心配した（a. ことか　b. ことはない）。",
-              "options": ["a. ことか", "b. ことはない"]
+              "options": [
+                "a. ことか",
+                "b. ことはない"
+              ]
             },
             {
               "number": 4,
               "question": "昨日、東京で地震があった（a. ことだ　b. ということだ）。",
-              "options": ["a. ことだ", "b. ということだ"]
+              "options": [
+                "a. ことだ",
+                "b. ということだ"
+              ]
             },
             {
               "number": 5,
               "question": "（a. 買う　b. 買わない）ことはないよ。貸してあげるから。",
-              "options": ["a. 買う", "b. 買わない"]
+              "options": [
+                "a. 買う",
+                "b. 買わない"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "禁煙というのは、 ＿＿ ＿＿ ＿＿ ＿＿ ことだ。",
               "words": [
-                {"id": 1, "word": "吸っては"},
-                {"id": 2, "word": "いけない"},
-                {"id": 3, "word": "タバコを"},
-                {"id": 4, "word": "という"}
+                {
+                  "id": 1,
+                  "word": "吸っては"
+                },
+                {
+                  "id": 2,
+                  "word": "いけない"
+                },
+                {
+                  "id": 3,
+                  "word": "タバコを"
+                },
+                {
+                  "id": 4,
+                  "word": "という"
+                }
               ]
             },
             {
               "number": 7,
               "question": "お酒は少しなら ＿＿ ＿＿ ＿＿ ＿＿ ことだ。",
               "words": [
-                {"id": 1, "word": "悪くない"},
-                {"id": 2, "word": "すぎない"},
-                {"id": 3, "word": "体に"},
-                {"id": 4, "word": "飲み"}
+                {
+                  "id": 1,
+                  "word": "悪くない"
+                },
+                {
+                  "id": 2,
+                  "word": "すぎない"
+                },
+                {
+                  "id": 3,
+                  "word": "体に"
+                },
+                {
+                  "id": 4,
+                  "word": "飲み"
+                }
               ]
             }
           ]
