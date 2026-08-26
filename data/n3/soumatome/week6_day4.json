@@ -17,82 +17,94 @@
         {
           "pattern_title": "暑いわけだ",
           "description_box": {
-            "formula": "$$ \\text{A／na／V 普 + わけだ} \\quad \\begin{cases} \\text{✅ Vている／Vていた} \\\\ \\text{✅ Vられる／Vさせる} \\end{cases} $$",
-            "explanation": "Pola 〜わけだ berarti 'pantas saja~' atau 'jadinya wajar kalau~'. Digunakan untuk menyatakan kesimpulan logis yang masuk akal — pembicara MENGERTI alasan/penyebab dari suatu keadaan setelah mengetahui faktanya.\n\n📌 〜わけだ = 〜のは当たり前だ (wajar/masuk akal kalau~)",
-            "explanation_en": "The pattern 〜わけだ means 'no wonder ~' or 'that's why ~'. Used to express a logical, reasonable conclusion — the speaker UNDERSTANDS the reason/cause of a situation after learning the facts. Equivalent to 'that makes sense' or 'naturally ~'."
+            "formula": "A / na / V普 + わけだ",
+            "explanation": "Pola わけだ menunjukkan kesimpulan logis setelah mengetahui fakta — 'pantas saja ~', 'jadi begitu, makanya ~'.\n\nContoh:\n• エアコンが壊れている。暑いわけだ (AC-nya rusak. Pantas saja panas)\n• 3年日本にいた。日本語が上手なわけだ (sudah 3 tahun di Jepang. Pantas Jepangnya pandai)",
+            "explanation_en": "\"No wonder~\" / \"that explains why~\" — logical conclusion."
           },
           "examples": [
             {
               "jp": "暑いわけだ。気温が36度もある。",
               "en": "Atsui wake da. Kion ga 36-do mo aru. — 'Pantas saja panas. Suhunya sampai 36 derajat lho.'",
-              "explanation": "📝 (=暑いのは当たり前だ)"
+              "explanation": "📝 (=暑いのは当たり前だ)",
+              "highlight": "わけだ"
             },
             {
               "jp": "「田中さん、彼女にふられたらしいよ。」「なるほど、それで、元気がないわけだ。」",
               "en": "'Tanaka-san, kanojo ni furareta rashii yo.' / 'Naruhodo, sorede, genki ga nai wake da.' — '\"Katanya Tanaka diputus pacarnya lho.\" \"Oh pantas, makanya dia kelihatan lesu.\"'",
-              "explanation": "📝 (=元気がないのは当たり前だ)"
+              "explanation": "📝 (=元気がないのは当たり前だ)",
+              "highlight": "わけだ"
             }
-          ]
+          ],
+          "pattern_meaning": "わけだ = pantas saja ~ ｜ kesimpulan logis"
         },
         {
           "pattern_title": "きらいなわけではない",
           "description_box": {
-            "formula": "$$ \\text{A／na／V 普 + わけでは ない} \\quad \\begin{cases} \\text{✅ Vている／Vていた} \\\\ \\text{✅ Vられる／Vさせる} \\end{cases} $$",
-            "explanation": "Pola 〜わけではない berarti 'bukannya~' atau 'tidak berarti bahwa~'. Penyangkalan parsial yang HALUS — menyangkal sebagian/keseluruhan kesimpulan yang mungkin diambil orang lain, tetapi tidak terlalu tegas.\n\n📌 〜わけではない = 特に〜ではない / 必ずしも〜ではない",
-            "explanation_en": "The pattern 〜わけではない means 'it's not that ~' or 'it doesn't mean ~'. A SOFT partial denial — denies part or all of a conclusion others might draw, but not too forcefully. Equivalent to 'it's not particularly ~' or 'not necessarily ~'."
+            "formula": "A / na / V普 + わけではない",
+            "explanation": "Pola わけではない digunakan untuk mengoreksi kesalahpahaman — 'bukan berarti ~'.\n\nContoh:\n• きらいなわけではない (bukan berarti benci)\n• 行きたくないわけではない (bukan berarti tidak mau pergi)",
+            "explanation_en": "\"It doesn't mean that~\" / \"it's not that~\" — correcting a misunderstanding."
           },
           "examples": [
             {
               "jp": "きらいなわけではないが、肉はあまり食べない。",
               "en": "Kirai na wake dewa nai ga, niku wa amari tabenai. — 'Bukannya benci sih, tapi aku jarang makan daging.'",
-              "explanation": "📝 (=特にきらいではないが…)"
+              "explanation": "📝 (=特にきらいではないが…)",
+              "highlight": "わけではない"
             },
             {
               "jp": "テレビは見ないわけではないが、音楽を聴いているほうが多い。",
               "en": "Terebi wa minai wake dewa nai ga, ongaku o kiite iru hou ga ooi. — 'Bukannya nggak pernah nonton TV, tapi lebih sering mendengarkan musik.'",
-              "explanation": "📝 (=見ることもあるが)"
+              "explanation": "📝 (=見ることもあるが)",
+              "highlight": "わけではない"
             }
-          ]
+          ],
+          "pattern_meaning": "わけではない = bukan berarti ~ ｜ mengoreksi kesalahpahaman"
         },
         {
           "pattern_title": "勝てるわけがない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N 普} \\\\ \\text{na な／N の} \\end{cases} \\begin{cases} \\text{わけが ない} \\\\ \\text{わけは ない} \\end{cases} \\;\\; \\begin{cases} \\text{✅ Vている／Vていた} \\\\ \\text{✅ Vられる／Vさせる} \\end{cases} $$",
-            "explanation": "Pola 〜わけがない／わけはない berarti 'mustahil~' atau 'tidak mungkin~'. Penyangkalan yang KUAT — pembicara yakin 100% bahwa sesuatu tidak mungkin terjadi/benar. Lebih tegas dibanding 〜わけではない.\n\n📌 〜わけがない = 〜はずがない／絶対に〜ないと思う",
-            "explanation_en": "The pattern 〜わけがない／わけはない means 'there's no way ~' or 'impossible that ~'. A STRONG denial — the speaker is 100% certain that something cannot happen/be true. More forceful than 〜わけではない. Equivalent to 'absolutely not ~' or 'no way ~'."
+            "formula": "V / A / na / N普 / naな / Nの + わけがない",
+            "explanation": "Pola わけがない menunjukkan keyakinan kuat bahwa sesuatu tidak mungkin — 'mustahil ~'.\n\nContoh:\n• そんな簡単に勝てるわけがない (mustahil bisa menang semudah itu)\n• 彼がうそをつくわけがない (tidak mungkin dia bohong)",
+            "explanation_en": "\"There is no way~\" / \"it's impossible that~\"."
           },
           "examples": [
             {
               "jp": "あの強い相手に勝てるわけがない。",
               "en": "Ano tsuyoi aite ni kateru wake ga nai. — 'Mustahil aku bisa menang melawan lawan yang kuat itu.'",
-              "explanation": "📝 (=勝てるはずがない／絶対に勝てないと思う)"
+              "explanation": "📝 (=勝てるはずがない／絶対に勝てないと思う)",
+              "highlight": "わけがない"
             },
             {
               "jp": "「このパン、古くない？」「古いわけないよ。昨日買ったんだから。」",
               "en": "'Kono pan, furukunai?' / 'Furui wake nai yo. Kinou katta n da kara.' — '\"Roti ini nggak basi tuh?\" \"Mustahil basi. Aku beli kemarin kok.\"'",
-              "explanation": "📝 (=古いはずがない／絶対に古くない)"
+              "explanation": "📝 (=古いはずがない／絶対に古くない)",
+              "highlight": "わけがない"
             }
-          ]
+          ],
+          "pattern_meaning": "わけがない = mustahil ~, tidak mungkin ~"
         },
         {
           "pattern_title": "休むわけにはいかない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V る} \\\\ \\text{V ない} \\\\ \\text{V ている} \\\\ \\text{V させる} \\end{cases} \\begin{cases} \\text{わけには いかない} \\\\ \\text{わけにも いかない} \\end{cases} $$",
-            "explanation": "Pola 〜わけにはいかない berarti 'tidak bisa~' atau 'tidak boleh~' karena alasan SOSIAL/MORAL/SITUASIONAL. Berbeda dengan 〜られない (tidak bisa secara fisik), pola ini menunjukkan ketidakmungkinan karena tanggung jawab, etika, atau situasi yang tidak memungkinkan.\n\n📌 〜わけにはいかない = 〜ことはできない (karena alasan moral/situasi)",
-            "explanation_en": "The pattern 〜わけにはいかない means 'cannot ~' or 'must not ~' due to SOCIAL/MORAL/SITUATIONAL reasons. Unlike 〜られない (cannot physically), this pattern shows impossibility due to responsibility, ethics, or circumstances. Equivalent to '(I) can't ~' (because of duty/morality)."
+            "formula": "Vる / Vない / Vている / Vた + わけにはいかない",
+            "explanation": "Pola わけにはいかない berarti 'tidak bisa seenaknya ~' — ada alasan sosial/moral yang menghalangi.\n\nContoh:\n• 明日試験だから、休むわけにはいかない (besok ujian, jadi tidak bisa seenaknya istirahat)\n• 約束したから、行かないわけにはいかない (sudah janji, jadi tidak bisa tidak pergi)",
+            "explanation_en": "\"Can't just~\" — social/moral obligation prevents it."
           },
           "examples": [
             {
               "jp": "大事な会議があるから、休むわけにはいかない。",
               "en": "Daiji na kaigi ga aru kara, yasumu wake ni wa ikanai. — 'Karena ada rapat penting, aku nggak bisa absen.'",
-              "explanation": "📝 (=休むことはできない) — Tidak bisa absen karena tanggung jawab."
+              "explanation": "📝 (=休むことはできない) — Tidak bisa absen karena tanggung jawab.",
+              "highlight": "わけにはいかない"
             },
             {
               "jp": "社長の命令だから、従わないわけにはいかない。",
               "en": "Shachou no meirei da kara, shitagawanai wake ni wa ikanai. — 'Karena ini perintah presiden, mau tidak mau harus dipatuhi.'",
-              "explanation": "📝 (=従わないことはできない) — Harus mematuhi karena posisi/hierarki."
+              "explanation": "📝 (=従わないことはできない) — Harus mematuhi karena posisi/hierarki.",
+              "highlight": "わけにはいかない"
             }
-          ]
+          ],
+          "pattern_meaning": "わけにはいかない = tidak bisa seenaknya ~ ｜ kewajiban sosial"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "こんなところで工事をしていたのか。渋滞する（a. わけだ　b. わけがない）。",
-              "options": ["a. わけだ", "b. わけがない"]
+              "options": [
+                "a. わけだ",
+                "b. わけがない"
+              ]
             },
             {
               "number": 2,
               "question": "眠っていた（a. わけだ　b. わけではない）が、ほかのことを考えていた。",
-              "options": ["a. わけだ", "b. わけではない"]
+              "options": [
+                "a. わけだ",
+                "b. わけではない"
+              ]
             },
             {
               "number": 3,
               "question": "規則ですから、30分以上遅刻した場合は、試験を受けさせる（a. わけではない　b. わけにはいかない）んです。",
-              "options": ["a. わけではない", "b. わけにはいかない"]
+              "options": [
+                "a. わけではない",
+                "b. わけにはいかない"
+              ]
             },
             {
               "number": 4,
               "question": "うそばかりついている彼が、みんなに信用される（a. わけが　b. わけでは）ないでしょう。",
-              "options": ["a. わけが", "b. わけでは"]
+              "options": [
+                "a. わけが",
+                "b. わけでは"
+              ]
             },
             {
               "number": 5,
               "question": "あ、顔にご飯粒がついていたんだ。みんなにクスクス（a. 笑われて　b. 笑って）いたわけだ。",
-              "options": ["a. 笑われて", "b. 笑って"]
+              "options": [
+                "a. 笑われて",
+                "b. 笑って"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": " ＿＿ ＿＿ ＿＿ ＿＿ 試験に落ちてしまった。",
               "words": [
-                {"id": 1, "word": "わけの"},
-                {"id": 2, "word": "落ちる"},
-                {"id": 3, "word": "学生が"},
-                {"id": 4, "word": "ない"}
+                {
+                  "id": 1,
+                  "word": "わけの"
+                },
+                {
+                  "id": 2,
+                  "word": "落ちる"
+                },
+                {
+                  "id": 3,
+                  "word": "学生が"
+                },
+                {
+                  "id": 4,
+                  "word": "ない"
+                }
               ]
             },
             {
               "number": 7,
               "question": "窓を少し開けてもいいですか。 ＿＿ ＿＿ ＿＿ ＿＿ 空気を入れ替えたいんです。",
               "words": [
-                {"id": 1, "word": "わけ"},
-                {"id": 2, "word": "なくて"},
-                {"id": 3, "word": "暑い"},
-                {"id": 4, "word": "では"}
+                {
+                  "id": 1,
+                  "word": "わけ"
+                },
+                {
+                  "id": 2,
+                  "word": "なくて"
+                },
+                {
+                  "id": 3,
+                  "word": "暑い"
+                },
+                {
+                  "id": 4,
+                  "word": "では"
+                }
               ]
             }
           ]
