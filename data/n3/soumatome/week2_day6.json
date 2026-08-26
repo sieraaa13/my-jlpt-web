@@ -17,82 +17,94 @@
         {
           "pattern_title": "聞いてごらん",
           "description_box": {
-            "formula": "Vてごらん(なさい)",
-            "explanation": "Digunakan oleh atasan kepada bawahan untuk menyuruh mencoba melakukan sesuatu. Lebih lembut dari 'Vてみなさい'.",
-            "explanation_en": "Used to address subordinates, suggesting they try doing something."
+            "formula": "Vて + ごらん(なさい)",
+            "explanation": "Pola てごらん adalah cara lembut untuk menyuruh seseorang mencoba sesuatu.\n\nLebih halus dari てみて, sering dipakai oleh orang tua atau guru ke anak/murid.\n\nContoh:\n• 食べてごらん (coba makan)\n• やってごらんなさい (coba lakukan — lebih sopan)",
+            "explanation_en": "\"Try doing~\" — gentle encouragement, softer than てみて."
           },
           "examples": [
             {
               "jp": "わからなかったら、先生に聞いてごらん。",
               "en": "Kalau tidak mengerti, coba tanyakan pada gurumu.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "てごらん"
             },
             {
               "jp": "もう一度やってごらんなさい。",
               "en": "Coba lakukan sekali lagi.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "てごらん"
             }
-          ]
+          ],
+          "pattern_meaning": "聞いてごらん = coba dengarkan ｜ Vてごらん = coba lakukan ~"
         },
         {
           "pattern_title": "来るように言う",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vるよう(に)} \\\\ \\text{Vないよう(に)} \\end{cases} \\begin{cases} \\text{言う} \\\\ \\text{頼む} \\end{cases} $$",
-            "explanation": "Menyampaikan perintah, permintaan, atau instruksi secara tidak langsung kepada orang ketiga.",
-            "explanation_en": "Relays a command, request, or instruction indirectly to a third party."
+            "formula": "Vるよう(に) / Vないよう(に) + 言う / 頼む / 注意する",
+            "explanation": "Pola ini digunakan untuk melaporkan perintah/permintaan orang lain secara tidak langsung.\n\nContoh:\n• 先生が来るように言った (guru menyuruh supaya datang)\n• 医者に薬を飲むように言われた (dokter bilang supaya minum obat)",
+            "explanation_en": "Indirect command reporting: \"told (someone) to do~\"."
           },
           "examples": [
             {
               "jp": "田中さんに、私の部屋に来るよう(に)言ってください。",
               "en": "Tolong sampaikan kepada Tanaka-san agar datang ke kamarku.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": ""
             },
             {
               "jp": "妻に、家ではたばこを吸わないよう(に)言われています。",
               "en": "Istriku menyuruhku untuk tidak merokok di rumah.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": ""
             }
-          ]
+          ],
+          "pattern_meaning": "ように言う = menyuruh supaya ~ ｜ menyampaikan perintah secara tidak langsung"
         },
         {
           "pattern_title": "飲むなと言われた",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V[命令形]と} \\\\ \\text{Vるなと} \\end{cases} \\begin{cases} \\text{言われる} \\\\ \\text{注意される} \\\\ \\text{しかられる} \\\\ \\text{怒られる} \\end{cases} $$",
-            "explanation": "Menyampaikan isi perintah atau larangan yang diterima dari orang lain. Meski menggunakan bentuk perintah, keseluruhan kalimat tidak terdengar kasar.",
-            "explanation_en": "Relays the content of an order or prohibition received from someone else."
+            "formula": "V[命令形] + と / Vるな + と + 言う / 言われた",
+            "explanation": "Pola ini mengutip perintah secara langsung (direct quote) — berbeda dari ように言う yang tidak langsung.\n\n• V命令形 + と = kutipan perintah positif\n• Vるな + と = kutipan larangan\n\nContoh:\n• 「飲むな」と言われた (dibilang \"jangan minum\")\n• 「早くしろ」と言われた (dibilang \"cepat lakukan\")",
+            "explanation_en": "Direct quote of commands: \"was told (command/prohibition)\"."
           },
           "examples": [
             {
               "jp": "医者に酒を飲むなと言われた。",
               "en": "Dokter melarangku untuk minum alkohol.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "と言われた"
             },
             {
               "jp": "先生に、もっと勉強しろと言われた。",
               "en": "Guru menyuruhku untuk belajar lebih giat.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "と言われた"
             }
-          ]
+          ],
+          "pattern_meaning": "飲むなと言われた = dibilang jangan minum ｜ kutipan perintah langsung"
         },
         {
           "pattern_title": "教えてくれと頼まれた",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V てくれ} \\\\ \\text{V ないでくれ} \\end{cases} + \\text{と} + \\begin{cases} \\text{頼まれる} \\\\ \\text{言われる} \\end{cases} $$",
-            "explanation": "Pola ini menggunakan bentuk 〜てくれ (bentuk perintah dari 〜てください) untuk menyampaikan permintaan langsung yang diterima dari orang lain.\n\nBentuk:\n• Vてくれ = bentuk kasual/perintah dari Vてください\n• Vないでくれ = bentuk kasual/perintah dari Vないでください",
-            "explanation_en": "This pattern uses the form 〜てくれ (the imperative form of 〜てください) to relay a direct request received from someone else. Vてくれ is the casual/imperative form of Vてください, and Vないでくれ is the casual/imperative form of Vないでください."
+            "formula": "Vてくれ / Vないでくれ + と + 言う / 頼む / 頼まれた",
+            "explanation": "Pola ini mengutip permintaan secara langsung — dengan てくれ (tolong lakukan) atau ないでくれ (tolong jangan).\n\nContoh:\n• 教えてくれと頼まれた (diminta tolong ajarkan)\n• 誰にも言わないでくれと言われた (diminta tolong jangan bilang siapa-siapa)",
+            "explanation_en": "Direct quote of requests using てくれ: \"was asked to do~\"."
           },
           "examples": [
             {
               "jp": "友達に、田中さんの電話番号を教えてくれと頼まれた。",
               "en": "Tomodachi ni, Tanaka-san no denwa bangou o oshiete kure to tanomareta. — 'Aku diminta teman untuk memberitahukan nomor telepon Tanaka-san.'",
-              "explanation": "📝 教えてくれ adalah bentuk lebih kasual dari 教えてください. (=「教えてください」と)"
+              "explanation": "📝 教えてくれ adalah bentuk lebih kasual dari 教えてください. (=「教えてください」と)",
+              "highlight": "と頼まれた"
             },
             {
               "jp": "大家に、玄関の前に自転車を置かないでくれと言われた。",
               "en": "Ooya ni, genkan no mae ni jitensha o okanai de kure to iwareta. — 'Aku disuruh pemilik rumah untuk tidak meletakkan sepeda di depan pintu masuk.'",
-              "explanation": "📝 (=「置かないでください」と)"
+              "explanation": "📝 (=「置かないでください」と)",
+              "highlight": "と言われた"
             }
-          ]
+          ],
+          "pattern_meaning": "てくれと頼まれた = diminta tolong ajarkan ｜ kutipan permintaan"
         }
       ],
       "summary_table": {
@@ -143,27 +155,42 @@
             {
               "number": 1,
               "question": "医者にたばこを吸い（a. すぎるな　b. すぎろ）と注意されました。",
-              "options": ["a. すぎるな", "b. すぎろ"]
+              "options": [
+                "a. すぎるな",
+                "b. すぎろ"
+              ]
             },
             {
               "number": 2,
               "question": "明日は8時までに会社に（a. くろ　b. こい）と言われました。",
-              "options": ["a. くろ", "b. こい"]
+              "options": [
+                "a. くろ",
+                "b. こい"
+              ]
             },
             {
               "number": 3,
               "question": "田中さんに、あまり無理を（a. しないように　b. するな）言ってください。",
-              "options": ["a. しないように", "b. するな"]
+              "options": [
+                "a. しないように",
+                "b. するな"
+              ]
             },
             {
               "number": 4,
               "question": "この資料を50部コピーする（a. ように　b. くれと）頼まれました。",
-              "options": ["a. ように", "b. くれと"]
+              "options": [
+                "a. ように",
+                "b. くれと"
+              ]
             },
             {
               "number": 5,
               "question": "できるかできないか、とにかくやって（a. くれ　b. ごらん）なさい。",
-              "options": ["a. くれ", "b. ごらん"]
+              "options": [
+                "a. くれ",
+                "b. ごらん"
+              ]
             }
           ]
         },
@@ -174,20 +201,44 @@
               "number": 6,
               "question": "このことはだれにも ＿＿ ＿＿ ＿＿ ＿＿ んです。",
               "words": [
-                {"id": 1, "word": "くれ"},
-                {"id": 2, "word": "言われた"},
-                {"id": 3, "word": "と"},
-                {"id": 4, "word": "言わないで"}
+                {
+                  "id": 1,
+                  "word": "くれ"
+                },
+                {
+                  "id": 2,
+                  "word": "言われた"
+                },
+                {
+                  "id": 3,
+                  "word": "と"
+                },
+                {
+                  "id": 4,
+                  "word": "言わないで"
+                }
               ]
             },
             {
               "number": 7,
               "question": "「あれはどういう意味ですか。」「お酒を ＿＿ ＿＿ ＿＿ ＿＿ という意味です。」",
               "words": [
-                {"id": 1, "word": "お酒を飲むな"},
-                {"id": 2, "word": "運転するなら"},
-                {"id": 3, "word": "飲んだら"},
-                {"id": 4, "word": "運転するな"}
+                {
+                  "id": 1,
+                  "word": "お酒を飲むな"
+                },
+                {
+                  "id": 2,
+                  "word": "運転するなら"
+                },
+                {
+                  "id": 3,
+                  "word": "飲んだら"
+                },
+                {
+                  "id": 4,
+                  "word": "運転するな"
+                }
               ]
             }
           ]
