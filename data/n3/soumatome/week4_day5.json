@@ -17,82 +17,94 @@
         {
           "pattern_title": "来週だっけ？",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nだ／Nだったっけ} \\\\ \\text{naだ／naだったっけ} \\\\ \\text{Aかったっけ} \\\\ \\text{Vたっけ} \\end{cases} \\quad \\text{✅ でしたっけ／ましたっけ} $$",
-            "explanation": "Pola 〜っけ digunakan untuk menanyakan/mengkonfirmasi sesuatu yang sudah pernah didengar tetapi sudah lupa atau tidak yakin. Artinya 'kalau nggak salah ~ ya?' atau 'tadi/dulu ~ ya?'. Pola ini bersifat kasual dan sering digunakan dalam percakapan.",
-            "explanation_en": "The pattern 〜っけ is used to ask or confirm something that was heard before but has been forgotten or is uncertain. Means 'wasn't it ~?' or 'was it ~ again?'. This is casual and commonly used in conversation."
+            "formula": "Nだ・Nだった / naだ・naだった / Aかった / Vた + っけ",
+            "explanation": "Pola っけ digunakan saat lupa dan ingin mengkonfirmasi ulang — '~ ya?', '~ bukan?'\n\nContoh:\n• 来週だっけ？(minggu depan ya?)\n• あの人、だれだっけ？(orang itu siapa ya?)",
+            "explanation_en": "\"Was it~?\" — confirming something you forgot."
           },
           "examples": [
             {
               "jp": "国へ帰るのは、来週だ(った)っけ？",
               "en": "Kuni e kaeru no wa, raishuu da(tta)kke? — 'Pulang ke negara asal itu kalau nggak salah minggu depan ya?'",
-              "explanation": "📝 (=確か、来週？)"
+              "explanation": "📝 (=確か、来週？)",
+              "highlight": "だっけ"
             },
             {
               "jp": "明日のパーティーのこと、話し(まし)たっけ？",
               "en": "Ashita no paatii no koto, hanashi(mashi)takke? — 'Soal pesta besok, aku udah cerita ke kamu nggak ya?'",
-              "explanation": "📝 (=私、話しましたか)"
+              "explanation": "📝 (=私、話しましたか)",
+              "highlight": "だっけ"
             }
-          ]
+          ],
+          "pattern_meaning": "だっけ = ~ ya? (lupa, mau konfirmasi ulang)"
         },
         {
           "pattern_title": "やるしかない",
           "description_box": {
-            "formula": "$$ \\text{V る + しかない} $$",
-            "explanation": "Pola Vるしかない berarti 'tidak ada pilihan lain selain~' atau 'mau tidak mau harus~'. Menyatakan bahwa hanya ada satu pilihan yang tersisa, biasanya dalam situasi terdesak.",
-            "explanation_en": "The pattern Vるしかない means 'there's no choice but to ~' or 'must ~ (no other option)'. Indicates that only one option remains, usually in a forced/desperate situation."
+            "formula": "Vる + しかない",
+            "explanation": "Pola しかない berarti 'tidak ada pilihan lain selain ~' — menunjukkan satu-satunya opsi.\n\nContoh:\n• やるしかない (mau tidak mau harus lakukan)\n• 歩くしかない (tidak ada pilihan selain jalan kaki)",
+            "explanation_en": "\"Have no choice but to~\" — the only option available."
           },
           "examples": [
             {
               "jp": "できるまで、やるしかない。",
               "en": "Dekiru made, yaru shika nai. — 'Sampai bisa, mau tidak mau harus terus dilakukan.'",
-              "explanation": "📝 (=やるだけだ)"
+              "explanation": "📝 (=やるだけだ)",
+              "highlight": "しかない"
             },
             {
               "jp": "直せないから、新しいのを買うしかなかった。",
               "en": "Naosenai kara, atarashii no o kau shika nakatta. — 'Karena tidak bisa diperbaiki, terpaksa beli yang baru.'",
-              "explanation": "📝 (=買わなければならなかった)"
+              "explanation": "📝 (=買わなければならなかった)",
+              "highlight": "しかない"
             }
-          ]
+          ],
+          "pattern_meaning": "しかない = tidak ada pilihan lain selain ~ ｜ terpaksa"
         },
         {
           "pattern_title": "結婚してるんだって",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A 普 (んだ)って} \\\\ \\text{na／N 普 (んだ)って} \\end{cases} \\quad \\text{N／naだ → N／na(なん)だって} $$",
-            "explanation": "Pola 〜んだって／〜だって digunakan untuk menyampaikan informasi yang didengar dari orang lain dalam percakapan kasual. Setara dengan 〜そうです tapi lebih informal.\n\n📌 Variasi:\n• 〜までだって／〜からだって／〜だけだって など\n\n📝 Catatan: 女性はよく「ですって」を使う。 (Perempuan sering menggunakan ですって.)",
-            "explanation_en": "The pattern 〜んだって／〜だって is used to convey information heard from someone else in casual conversation. Equivalent to 〜そうです but more informal. Note: Women often use 「ですって」for a more polished casual tone."
+            "formula": "V / A普 (んだ)って / na / N普 (んだ)って",
+            "explanation": "Pola んだって digunakan untuk menyampaikan informasi yang didengar dari orang lain — 'katanya ~'.\n\nBentuk kasual dari ということだ / そうだ.\n\nContoh:\n• 結婚してるんだって (katanya sudah menikah)\n• 来月引っ越すんだって (katanya bulan depan pindah)",
+            "explanation_en": "\"I heard that~\" — casual hearsay."
           },
           "examples": [
             {
               "jp": "「田中さん、結婚してるんだって。」「へー、知らなかった。」",
               "en": "'Tanaka-san, kekkon shite ru n datte.' / 'Hee, shiranakatta.' — '\"Katanya Tanaka-san sudah menikah lho.\" \"Hah, aku nggak tahu.\"'",
-              "explanation": "📝 (=結婚しているそうです)"
+              "explanation": "📝 (=結婚しているそうです)",
+              "highlight": "んだって"
             },
             {
               "jp": "「試験の範囲は、教科書の最初から50ページまでだって。」",
               "en": "'Shiken no han'i wa, kyoukasho no saisho kara 50 peeji made datte.' — '\"Katanya cakupan ujian dari awal buku teks sampai halaman 50 lho.\"'",
-              "explanation": "📝 (=50ページまでだそうです)"
+              "explanation": "📝 (=50ページまでだそうです)",
+              "highlight": "んだって"
             }
-          ]
+          ],
+          "pattern_meaning": "んだって = katanya ~ ｜ kabar dari orang lain (kasual)"
         },
         {
           "pattern_title": "だってまずいんだもん",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A 普 (んだ)もん} \\\\ \\text{na／N 普 (んだ)もん} \\end{cases} \\quad \\text{na／Nだ → N／na(なん)だもん} $$",
-            "explanation": "Pola 〜んだもん／〜もん digunakan untuk menyatakan alasan/pembelaan diri (理由を表す) — 'soalnya~' atau 'habisnya~'. Pola ini bersifat kasual dan sering bernada manja/membela diri, terutama digunakan oleh perempuan dan anak-anak.\n\n📌 Sering digabungkan: だって〜(んだ)もん (soalnya~)",
-            "explanation_en": "The pattern 〜んだもん／〜もん is used to express a reason or self-justification (理由を表す) — 'because ~' or 'it's just that ~'. This pattern is casual and often has a childish/defensive tone, commonly used by women and children. Often combined: だって〜(んだ)もん."
+            "formula": "V / A普 (んだ)もん / na / N普 (んだ)もん",
+            "explanation": "Pola んだもん digunakan untuk memberi alasan atau membela diri — 'habisnya ~ sih', 'soalnya ~ sih'.\n\nSangat kasual, sering dipakai anak-anak atau nada manja.\n\nContoh:\n• だってまずいんだもん (habisnya nggak enak sih)\n• だって寒いんだもん (habisnya dingin sih)",
+            "explanation_en": "\"Because~!\" — casual self-justification, often childish tone."
           },
           "examples": [
             {
               "jp": "「どうして食べないの？」「だって、まずいんだもん。」",
               "en": "'Doushite tabenai no?' / 'Datte, mazui n da mon.' — '\"Kenapa nggak dimakan?\" \"Soalnya nggak enak sih.\"'",
-              "explanation": "📝 (=まずいから)"
+              "explanation": "📝 (=まずいから)",
+              "highlight": "んだもん"
             },
             {
               "jp": "今日の試験、できなかった……。勉強しなかったんだもん、仕方がない。",
               "en": "Kyou no shiken, dekinakatta... Benkyou shinakatta n da mon, shikata ga nai. — 'Ujian hari ini nggak bisa... Habisnya nggak belajar sih, ya udah lah.'",
-              "explanation": "📝 (=勉強しなかったから)"
+              "explanation": "📝 (=勉強しなかったから)",
+              "highlight": "んだもん"
             }
-          ]
+          ],
+          "pattern_meaning": "んだもん = habisnya ~ sih ｜ alasan / pembelaan diri (kasual)"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "「あの店員さん、苦手だな。（a. さて　b. だって）、怖いんだもん。」",
-              "options": ["a. さて", "b. だって"]
+              "options": [
+                "a. さて",
+                "b. だって"
+              ]
             },
             {
               "number": 2,
               "question": "A「彼女、前からあんなに（a. きれい　b. きれいだった）っけ。」B「婚約した（a. んだって　b. っぽいよ）。」",
-              "options": ["a. きれい / んだって", "b. きれいだった / っぽいよ"]
+              "options": [
+                "a. きれい / んだって",
+                "b. きれいだった / っぽいよ"
+              ]
             },
             {
               "number": 3,
               "question": "バスも電車も止まってしまったから、（a. 歩くしかない　b. 歩こうとしない）。",
-              "options": ["a. 歩くしかない", "b. 歩こうとしない"]
+              "options": [
+                "a. 歩くしかない",
+                "b. 歩こうとしない"
+              ]
             },
             {
               "number": 4,
               "question": "A「ここはずいぶんにぎやかだね。」B「でも、夜は（a. 静か　b. 静かな）んですって。」",
-              "options": ["a. 静か", "b. 静かな"]
+              "options": [
+                "a. 静か",
+                "b. 静かな"
+              ]
             },
             {
               "number": 5,
               "question": "「1月って、こんなに（a. あったかかった　b. あったかいだ）っけ。」",
-              "options": ["a. あったかかった", "b. あったかいだ"]
+              "options": [
+                "a. あったかかった",
+                "b. あったかいだ"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "父は ＿＿ ＿＿ ＿＿ ＿＿ 食べない。",
               "words": [
-                {"id": 1, "word": "料理"},
-                {"id": 2, "word": "しか"},
-                {"id": 3, "word": "作った"},
-                {"id": 4, "word": "母が"}
+                {
+                  "id": 1,
+                  "word": "料理"
+                },
+                {
+                  "id": 2,
+                  "word": "しか"
+                },
+                {
+                  "id": 3,
+                  "word": "作った"
+                },
+                {
+                  "id": 4,
+                  "word": "母が"
+                }
               ]
             },
             {
               "number": 7,
               "question": "「めずらしいね、君が怒るなんて。」「だって ＿＿ ＿＿ ＿＿ ＿＿ んだもの。」",
               "words": [
-                {"id": 1, "word": "ことを"},
-                {"id": 2, "word": "あまりにも"},
-                {"id": 3, "word": "言われた"},
-                {"id": 4, "word": "失礼な"}
+                {
+                  "id": 1,
+                  "word": "ことを"
+                },
+                {
+                  "id": 2,
+                  "word": "あまりにも"
+                },
+                {
+                  "id": 3,
+                  "word": "言われた"
+                },
+                {
+                  "id": 4,
+                  "word": "失礼な"
+                }
               ]
             }
           ]
