@@ -17,82 +17,94 @@
         {
           "pattern_title": "映画が始まるまで",
           "description_box": {
-            "formula": "$$ \\text{V る + まで} $$",
-            "explanation": "Pola Vるまで berarti 'sampai~' — menunjukkan batas waktu hingga suatu kejadian terjadi. Tindakan utama berlangsung terus-menerus sampai titik waktu yang ditunjukkan oleh kata kerja sebelumnya.\n\n📌 Catatan perbedaan:\n• 〜まで = sampai~ (terus berlangsung)\n• 〜までに = paling lambat~ (batas waktu deadline)",
-            "explanation_en": "The pattern Vるまで means 'until ~' — indicating a time limit until a certain event occurs. The main action continues until the time point indicated by the verb. Note: 〜まで means 'continuing until ~', while 〜までに means 'by ~ (deadline)'."
+            "formula": "Vる + まで",
+            "explanation": "Pola Vるまで berarti 'sampai ~ terjadi' — menunjukkan batas waktu.\n\nContoh:\n• 映画が始まるまで待つ (menunggu sampai film dimulai)\n• 終わるまで帰らない (tidak pulang sampai selesai)",
+            "explanation_en": "\"Until~\" — time limit for an action."
           },
           "examples": [
             {
               "jp": "映画が始まるまで30分あります。",
               "en": "Eiga ga hajimaru made 30 pun arimasu. — 'Sampai filmnya dimulai masih ada 30 menit lagi.'",
-              "explanation": "📝 (=今から映画が始まる時間まで)"
+              "explanation": "📝 (=今から映画が始まる時間まで)",
+              "highlight": "まで"
             },
             {
               "jp": "連絡があるまで待っています。",
               "en": "Renraku ga aru made matte imasu. — 'Aku akan terus menunggu sampai ada kabar.'",
-              "explanation": "📝 (=連絡があるときまでずっと)"
+              "explanation": "📝 (=連絡があるときまでずっと)",
+              "highlight": "まで"
             }
-          ]
+          ],
+          "pattern_meaning": "まで = sampai ~ (waktu)"
         },
         {
           "pattern_title": "骨まで食べられる",
           "description_box": {
-            "formula": "$$ \\text{N + まで} $$",
-            "explanation": "Pola Nまで menyatakan 'bahkan~' atau 'sampai-sampai~'. Memberikan contoh ekstrem (極端な例) untuk mengungkapkan keterkejutan dengan makna 'sampai sebegitunya' atau 'sebatas itu'.\n\n📌 極端な例を出して、「それまで、そこまで」という驚きの意味を表す。",
-            "explanation_en": "The pattern Nまで means 'even ~' or 'to that extent ~'. It provides an extreme example to express surprise with the meaning of 'that much' or 'to that extent', often combined with extreme examples."
+            "formula": "N + まで",
+            "explanation": "Pola Nまで dengan kata benda menunjukkan batas yang ekstrem — 'bahkan sampai ~'.\n\nContoh:\n• 骨まで食べられる (bahkan tulangnya pun bisa dimakan)\n• 駅まで歩く (jalan kaki sampai stasiun)",
+            "explanation_en": "\"Even~\" / \"all the way to~\" — extreme extent."
           },
           "examples": [
             {
               "jp": "この魚は骨まで食べられますよ。",
               "en": "Kono sakana wa hone made taberaremasu yo. — 'Ikan ini bahkan tulangnya pun bisa dimakan lho.'",
-              "explanation": "📝 (=骨も)"
+              "explanation": "📝 (=骨も)",
+              "highlight": "まで"
             },
             {
               "jp": "あなたまで私を疑うのですか。",
               "en": "Anata made watashi o utagau no desu ka. — 'Bahkan kamu pun meragukanku?'",
-              "explanation": "📝 (=あなたも) — Ekspresi keterkejutan."
+              "explanation": "📝 (=あなたも) — Ekspresi keterkejutan.",
+              "highlight": "まで"
             }
-          ]
+          ],
+          "pattern_meaning": "Nまで = bahkan sampai ~ ｜ batas ekstrem"
         },
         {
           "pattern_title": "昼から夕方にかけて",
           "description_box": {
-            "formula": "$$ \\text{N₁から N₂にかけて} \\quad \\text{(N: 時・場所)} $$",
-            "explanation": "Pola N₁からN₂にかけて menyatakan 'dari N₁ sampai N₂' untuk rentang waktu atau wilayah/tempat. Berbeda dengan 〜まで yang menyatakan batas akhir tegas, pola ini menunjukkan rentang yang lebih luas/menyeluruh.\n\n📌 N harus berupa 時 (waktu) atau 場所 (tempat).",
-            "explanation_en": "The pattern N₁からN₂にかけて means 'from N₁ through N₂' — indicating a range of time or area/location. Unlike 〜まで which marks a definite endpoint, this pattern shows a broader, continuous range. N must be a time or location."
+            "formula": "N₁から N₂にかけて (N: waktu/tempat)",
+            "explanation": "Pola にかけて menunjukkan rentang waktu atau tempat — 'mulai dari A sampai B'.\n\nContoh:\n• 昼から夕方にかけて雨が降る (hujan mulai siang sampai sore)\n• 関東から東北にかけて地震があった (gempa dari Kanto sampai Tohoku)",
+            "explanation_en": "\"From~ through~\" — a range of time or place."
           },
           "examples": [
             {
               "jp": "明日は昼から夕方にかけて雨でしょう。",
               "en": "Ashita wa hiru kara yuugata ni kakete ame deshou. — 'Besok dari siang sampai sore akan hujan.'",
-              "explanation": "📝 (=昼から夕方まで) — Rentang waktu."
+              "explanation": "📝 (=昼から夕方まで) — Rentang waktu.",
+              "highlight": "にかけて"
             },
             {
               "jp": "九州から本州にかけて梅雨入りしました。",
               "en": "Kyuushuu kara Honshuu ni kakete tsuyu-iri shimashita. — 'Wilayah dari Kyushu sampai Honshu memasuki musim hujan.'",
-              "explanation": "📝 (=九州地方から本州までの地域が) — Rentang wilayah."
+              "explanation": "📝 (=九州地方から本州までの地域が) — Rentang wilayah.",
+              "highlight": "にかけて"
             }
-          ]
+          ],
+          "pattern_meaning": "にかけて = mulai dari ~ sampai ~ ｜ rentang waktu/tempat"
         },
         {
           "pattern_title": "大阪において",
           "description_box": {
-            "formula": "$$ \\text{N に + おいて} $$",
-            "explanation": "Pola Nにおいて berarti 'di N' — menyatakan tempat atau ruang lingkup terjadinya suatu peristiwa. Ini adalah versi yang lebih formal/kaku (硬い表現) dari partikel で.\n\n📌 「で」より少し硬い表現 — sering dipakai dalam konteks formal seperti konferensi, pengumuman resmi, atau tulisan akademik.",
-            "explanation_en": "The pattern Nにおいて means 'at/in N' — indicating the place or scope where an event takes place. It is a slightly more formal/stiff expression than the particle で. Often used in formal contexts like conferences, official announcements, or academic writing."
+            "formula": "Nに + おいて / おいては / おいても / おけるN",
+            "explanation": "Pola において berarti 'di ~' atau 'pada ~' — versi formal dari で.\n\nSering dipakai di tulisan resmi, pidato, atau berita.\n\nContoh:\n• 大阪において会議が開かれた (rapat diadakan di Osaka)\n• この分野における研究 (penelitian di bidang ini)",
+            "explanation_en": "\"At~\" / \"in~\" — formal version of で."
           },
           "examples": [
             {
               "jp": "大阪において、国際会議が行われた。",
               "en": "Oosaka ni oite, kokusai kaigi ga okonawareta. — 'Di Osaka, telah dilangsungkan konferensi internasional.'",
-              "explanation": "📝 (=大阪で)"
+              "explanation": "📝 (=大阪で)",
+              "highlight": "において"
             },
             {
               "jp": "結果はホームページにおいて発表されます。",
               "en": "Kekka wa hoomu peeji ni oite happyou saremasu. — 'Hasilnya akan diumumkan di situs web resmi.'",
-              "explanation": "📝 (=ホームページで)"
+              "explanation": "📝 (=ホームページで)",
+              "highlight": "における"
             }
-          ]
+          ],
+          "pattern_meaning": "において = di ~, pada ~ ｜ formal"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "合格する（a. まで　b. までに）絶対にあきらめないと決めた。",
-              "options": ["a. まで", "b. までに"]
+              "options": [
+                "a. まで",
+                "b. までに"
+              ]
             },
             {
               "number": 2,
               "question": "母にマッサージをしてあげた。首から肩（a. にかけて　b. において）かなり、こっていた。",
-              "options": ["a. にかけて", "b. において"]
+              "options": [
+                "a. にかけて",
+                "b. において"
+              ]
             },
             {
               "number": 3,
               "question": "帰国する（a. まで　b. までに）なんとか日本語を習得したい。",
-              "options": ["a. まで", "b. までに"]
+              "options": [
+                "a. まで",
+                "b. までに"
+              ]
             },
             {
               "number": 4,
               "question": "忙しいのはわかりますが、お正月（a. まで　b. までに）働くんですか。",
-              "options": ["a. まで", "b. までに"]
+              "options": [
+                "a. まで",
+                "b. までに"
+              ]
             },
             {
               "number": 5,
               "question": "小学校（a. において　b. にかけて）防災訓練を行います。ご参加ください。",
-              "options": ["a. において", "b. にかけて"]
+              "options": [
+                "a. において",
+                "b. にかけて"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "大雨 ＿＿ ＿＿ ＿＿ ＿＿ しまった。",
               "words": [
-                {"id": 1, "word": "中まで"},
-                {"id": 2, "word": "のせいで"},
-                {"id": 3, "word": "かばんの"},
-                {"id": 4, "word": "ぬれて"}
+                {
+                  "id": 1,
+                  "word": "中まで"
+                },
+                {
+                  "id": 2,
+                  "word": "のせいで"
+                },
+                {
+                  "id": 3,
+                  "word": "かばんの"
+                },
+                {
+                  "id": 4,
+                  "word": "ぬれて"
+                }
               ]
             },
             {
               "number": 7,
               "question": "2月から ＿＿ ＿＿ ＿＿ ＿＿ そうです。",
               "words": [
-                {"id": 1, "word": "にかけて"},
-                {"id": 2, "word": "飛ぶ"},
-                {"id": 3, "word": "花粉が"},
-                {"id": 4, "word": "4月"}
+                {
+                  "id": 1,
+                  "word": "にかけて"
+                },
+                {
+                  "id": 2,
+                  "word": "飛ぶ"
+                },
+                {
+                  "id": 3,
+                  "word": "花粉が"
+                },
+                {
+                  "id": 4,
+                  "word": "4月"
+                }
               ]
             }
           ]
