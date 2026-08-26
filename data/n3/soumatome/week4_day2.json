@@ -1,3 +1,4 @@
+
 {
   "levels": [
     {
@@ -17,82 +18,94 @@
         {
           "pattern_title": "先生のおかげで",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／i／na／N普} \\\\ \\text{naな} \\\\ \\text{Nの} \\end{cases} \\begin{cases} \\text{おかげで} \\\\ \\text{おかげだ} \\end{cases} $$",
-            "explanation": "Menyatakan hasil yang baik bagi pembicara (話し手にとって良い結果). Artinya 'berkat~' atau 'karena~ (positif)', menunjukkan rasa terima kasih atau pengakuan terhadap penyebab hal yang baik.",
-            "explanation_en": "Expresses a good result for the speaker (話し手にとって良い結果). Means 'thanks to ~' or 'as a result of ~', showing gratitude or acknowledgment for the cause of something positive."
+            "formula": "V / A / na / N普 / naな / Nの + おかげで / おかげだ",
+            "explanation": "Pola おかげで berarti 'berkat ~' — menunjukkan penyebab dari hasil yang positif.\n\nContoh:\n• 先生のおかげで合格した (berkat guru, lulus)\n• 薬のおかげで元気になった (berkat obat, jadi sehat)",
+            "explanation_en": "\"Thanks to~\" — positive cause leading to a good result."
           },
           "examples": [
             {
               "jp": "先生のおかげで合格できました。",
               "en": "Sensei no okage de goukaku dekimashita. — 'Berkat (jasa) guru, saya bisa lulus.'",
-              "explanation": "📝 (=先生がいたから)"
+              "explanation": "📝 (=先生がいたから)",
+              "highlight": "おかげで"
             },
             {
               "jp": "日本へ来たおかげで、日本語が上手になった。",
               "en": "Nihon e kita okage de, nihongo ga jouzu ni natta. — 'Berkat datang ke Jepang, bahasa Jepang saya jadi mahir.'",
-              "explanation": "📝 (=日本へ来たから)"
+              "explanation": "📝 (=日本へ来たから)",
+              "highlight": "おかげで"
             }
-          ]
+          ],
+          "pattern_meaning": "おかげで = berkat ~ ｜ penyebab positif"
         },
         {
           "pattern_title": "遅れたせいで",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／i／na／N普} \\\\ \\text{naな} \\\\ \\text{Nの} \\end{cases} \\begin{cases} \\text{せいで} \\\\ \\text{せいか} \\\\ \\text{せいだ} \\end{cases} $$",
-            "explanation": "Menyatakan hasil yang buruk bagi pembicara (話し手にとって悪い結果). Artinya 'gara-gara~' atau 'karena~ (negatif)', menunjukkan keluhan atau menyalahkan suatu penyebab.\n\n📌 Variasi:\n• 〜せいで → karena~ (penyebab pasti)\n• 〜せいか → mungkin karena~ (tidak yakin)\n• 〜せいだ → ini karena~ (di akhir kalimat)",
-            "explanation_en": "Expresses a bad result for the speaker (話し手にとって悪い結果). Means 'because of ~' or 'due to ~ (negative)', showing complaint or blame towards a cause. Variations: せいで (definite cause), せいか (uncertain cause), せいだ (sentence-ending form)."
+            "formula": "V / A / na / N普 / naな / Nの + せいで / せいだ",
+            "explanation": "Pola せいで berarti 'gara-gara ~' — menunjukkan penyebab dari hasil yang negatif.\n\nKebalikan dari おかげで.\n\nContoh:\n• 遅れたせいで電車に乗れなかった (gara-gara terlambat, tidak bisa naik kereta)\n• 雨のせいで中止になった (gara-gara hujan, dibatalkan)",
+            "explanation_en": "\"Because of~ (negative)\" — blame for a bad result."
           },
           "examples": [
             {
               "jp": "バスが遅れたせいで、約束の時間に間に合わなかった。",
               "en": "Basu ga okureta sei de, yakusoku no jikan ni ma ni awanakatta. — 'Gara-gara busnya telat, saya nggak sempat ke janji tepat waktu.'",
-              "explanation": "📝 (=遅れたために)"
+              "explanation": "📝 (=遅れたために)",
+              "highlight": "せいで"
             },
             {
               "jp": "疲れたせいか、頭が痛い。",
               "en": "Tsukareta sei ka, atama ga itai. — 'Mungkin karena lelah, kepalaku sakit.'",
-              "explanation": "📝 (=疲れたためかわからないが) — Penyebab tidak pasti, hanya dugaan."
+              "explanation": "📝 (=疲れたためかわからないが) — Penyebab tidak pasti, hanya dugaan.",
+              "highlight": "せいで"
             }
-          ]
+          ],
+          "pattern_meaning": "せいで = gara-gara ~ ｜ penyebab negatif"
         },
         {
           "pattern_title": "ビールのかわりに",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V／A／na／N普} \\\\ \\text{naな} \\\\ \\text{Nの} \\end{cases} \\begin{cases} \\text{かわりに} \\\\ \\text{そのかわり(に)} \\end{cases} $$",
-            "explanation": "Menyatakan pertukaran/pengganti — 'sebagai ganti~' atau 'bukan ~, tapi ~'. Menunjukkan bahwa sesuatu dilakukan/dipilih sebagai pengganti hal lain.",
-            "explanation_en": "Expresses substitution/replacement — 'instead of ~' or 'in place of ~'. Indicates that something is done or chosen as a replacement for something else."
+            "formula": "V / A / na / N普 / naな / Nの + かわりに",
+            "explanation": "Pola かわりに berarti 'sebagai pengganti ~' atau 'sebagai gantinya'.\n\nContoh:\n• ビールのかわりにジュースを飲む (minum jus sebagai pengganti bir)\n• 手伝ってくれたかわりにご飯をおごる (sebagai gantinya telah membantu, saya traktir makan)",
+            "explanation_en": "\"Instead of~\" / \"in exchange for~\"."
           },
           "examples": [
             {
               "jp": "車で来たので、ビールのかわりにジュースをください。",
               "en": "Kuruma de kita node, biiru no kawari ni juusu o kudasai. — 'Karena saya bawa mobil, tolong jusnya saja sebagai ganti bir.'",
-              "explanation": "📝 (=ビールではなくジュース)"
+              "explanation": "📝 (=ビールではなくジュース)",
+              "highlight": "かわりに"
             },
             {
               "jp": "日曜日に働いたかわりに、今日休みを取りました。",
               "en": "Nichiyoubi ni hataraita kawari ni, kyou yasumi o torimashita. — 'Sebagai ganti karena bekerja hari Minggu, hari ini saya ambil libur.'",
-              "explanation": "📝 (=日曜日に働いたので日曜ではなく、今日)"
+              "explanation": "📝 (=日曜日に働いたので日曜ではなく、今日)",
+              "highlight": "かわりに"
             }
-          ]
+          ],
+          "pattern_meaning": "かわりに = sebagai pengganti ~ ｜ substitusi"
         },
         {
           "pattern_title": "部長にかわって",
           "description_box": {
-            "formula": "$$ \\text{Nに} \\begin{cases} \\text{かわって} \\\\ \\text{かわり} \\end{cases} $$",
-            "explanation": "Menyatakan 'menggantikan N' atau 'atas nama N' — yaitu seseorang/sesuatu mengambil peran/posisi N.\n\n⚠️ Catatan Penting:\n• ❌ ダメ: ビールにかわってジュースをください。 (TIDAK BISA pakai pola ini untuk pertukaran benda biasa)\n• ✅ OK: 部長のかわりに私が～ / 野球のかわりにサッカーが～\n\n📌 Pola Nにかわって／かわり digunakan khusus untuk konteks formal seperti menggantikan orang/peran/era, BUKAN untuk pertukaran benda sehari-hari.",
-            "explanation_en": "Means 'on behalf of N' or 'replacing N' — someone/something takes over the role/position of N. Note: This pattern is used for formal contexts like replacing a person, role, or era — NOT for everyday substitution of objects (use のかわりに for that)."
+            "formula": "Nに + かわって / かわり",
+            "explanation": "Pola にかわって berarti 'menggantikan ~' — seseorang bertindak atas nama orang lain.\n\nBerbeda dari かわりに (substitusi benda), ini lebih ke representasi orang.\n\nContoh:\n• 部長にかわって挨拶する (memberikan sambutan menggantikan manajer)\n• 母にかわり、お礼を申し上げます (mewakili ibu, saya ucapkan terima kasih)",
+            "explanation_en": "\"On behalf of~\" / \"in place of~ (person)\"."
           },
           "examples": [
             {
               "jp": "出張中の部長にかわって、私がごあいさつさせていただきます。",
               "en": "Shucchouchuu no buchou ni kawatte, watashi ga goaisatsu sasete itadakimasu. — 'Atas nama Bapak Manajer yang sedang dinas luar, izinkan saya menyampaikan kata sambutan.'",
-              "explanation": "📝 (=部長ではなく私)"
+              "explanation": "📝 (=部長ではなく私)",
+              "highlight": "にかわって"
             },
             {
               "jp": "野球にかわり、サッカーがさかんになってきた。",
               "en": "Yakyuu ni kawari, sakkaa ga sakan ni natte kita. — 'Menggantikan baseball, sepak bola jadi semakin populer.'",
-              "explanation": "📝 (=野球ではなくサッカー) — Konteks pergeseran tren/era."
+              "explanation": "📝 (=野球ではなくサッカー) — Konteks pergeseran tren/era.",
+              "highlight": "にかわり"
             }
-          ]
+          ],
+          "pattern_meaning": "にかわって = menggantikan ~ ｜ mewakili ~"
         }
       ],
       "summary_table": {
@@ -128,27 +141,42 @@
             {
               "number": 1,
               "question": "「やっと降りましたね。」「ええ、この雨の（a. せいで　b. おかげで）作物も元気になるでしょう。」",
-              "options": ["a. せいで", "b. おかげで"]
+              "options": [
+                "a. せいで",
+                "b. おかげで"
+              ]
             },
             {
               "number": 2,
               "question": "「父に（a. かわりに　b. かわって）一言お礼申し上げます。」",
-              "options": ["a. かわりに", "b. かわって"]
+              "options": [
+                "a. かわりに",
+                "b. かわって"
+              ]
             },
             {
               "number": 3,
               "question": "事故（a. のせいで　b. にかわり）約束の時間に遅れてしまった。",
-              "options": ["a. のせいで", "b. にかわり"]
+              "options": [
+                "a. のせいで",
+                "b. にかわり"
+              ]
             },
             {
               "number": 4,
               "question": "あなたの国では水の（a. せいで　b. かわりに）ビールを飲むって本当ですか。",
-              "options": ["a. せいで", "b. かわりに"]
+              "options": [
+                "a. せいで",
+                "b. かわりに"
+              ]
             },
             {
               "number": 5,
               "question": "ビデオ（a. にかわり　b. のおかげで）DVDが使われるようになった。",
-              "options": ["a. にかわり", "b. のおかげで"]
+              "options": [
+                "a. にかわり",
+                "b. のおかげで"
+              ]
             }
           ]
         },
@@ -159,20 +187,44 @@
               "number": 6,
               "question": "いい医者に ＿＿ ＿＿ ＿＿ ＿＿ 治った。",
               "words": [
-                {"id": 1, "word": "もらった"},
-                {"id": 2, "word": "みて"},
-                {"id": 3, "word": "病気が"},
-                {"id": 4, "word": "おかげで"}
+                {
+                  "id": 1,
+                  "word": "もらった"
+                },
+                {
+                  "id": 2,
+                  "word": "みて"
+                },
+                {
+                  "id": 3,
+                  "word": "病気が"
+                },
+                {
+                  "id": 4,
+                  "word": "おかげで"
+                }
               ]
             },
             {
               "number": 7,
               "question": "友達に引っ越しの ＿＿ ＿＿ ＿＿ ＿＿ 夕食をごちそうした。",
               "words": [
-                {"id": 1, "word": "かわりに"},
-                {"id": 2, "word": "もらう"},
-                {"id": 3, "word": "して"},
-                {"id": 4, "word": "手伝いを"}
+                {
+                  "id": 1,
+                  "word": "かわりに"
+                },
+                {
+                  "id": 2,
+                  "word": "もらう"
+                },
+                {
+                  "id": 3,
+                  "word": "して"
+                },
+                {
+                  "id": 4,
+                  "word": "手伝いを"
+                }
               ]
             }
           ]
