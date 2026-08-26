@@ -3,6 +3,39 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons"; 
 
+// Judul tiap minggu diambil dari main_title hari pertama
+function getWeekTitle(week: string) {
+  const weekData = lessons[week];
+  if (!weekData) return "";
+  const firstDay = Object.keys(weekData).sort((a, b) => Number(a) - Number(b))[0];
+  return weekData[firstDay]?.levels[0]?.header?.main_title || "";
+}
+
+// Sub-judul: kumpulkan pattern_title dari semua hari (Day 1-6)
+function getWeekSubtitles(week: string) {
+  const weekData = lessons[week];
+  if (!weekData) return "";
+  const patterns: string[] = [];
+  Object.keys(weekData)
+    .sort((a, b) => Number(a) - Number(b))
+    .forEach((day) => {
+      const sections = weekData[day]?.levels[0]?.grammar_sections;
+      if (sections) {
+        sections.forEach((s) => patterns.push(s.pattern_title));
+      }
+    });
+  return patterns.slice(0, 4).join("、") + (patterns.length > 4 ? "…" : "");
+}
+
+const weekLabels: Record<string, string> = {
+  "1": "第一週",
+  "2": "第二週",
+  "3": "第三週",
+  "4": "第四週",
+  "5": "第五週",
+  "6": "第六週",
+};
+
 export default function N3Page() {
   const sortedWeeks = Object.keys(lessons).sort((a, b) => Number(a) - Number(b));
 
@@ -13,39 +46,30 @@ export default function N3Page() {
         <Link href="/" className="text-primary hover:underline mb-8 inline-block">← Kembali ke Beranda</Link>
         <h1 className="text-5xl font-black mb-12">JLPT <span className="text-primary">N3</span></h1>
 
-        <div className="space-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sortedWeeks.map((week) => {
-            const days = Object.keys(lessons[week]).sort((a, b) => Number(a) - Number(b));
-            return (
-              <div key={week}>
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold">
-                    Bab {week}
-                  </h2>
-                  <Link
-                    href={`/jlpt/n3/soumatome/${week}`}
-                    className="text-sm font-medium text-primary hover:underline flex items-center gap-1"
-                  >
-                    Lihat Ringkasan Bab {week} →
-                  </Link>
-                </div>
+            // Cari hari ke-7 (まとめの問題) untuk link langsung ke sana
+            const hasDay7 = !!lessons[week]?.["7"];
+            const href = hasDay7
+              ? `/jlpt/n3/soumatome/${week}/7`
+              : `/jlpt/n3/soumatome/${week}/1`;
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {days.map((day) => {
-                    const data = lessons[week][day].levels[0];
-                    return (
-                      <Link
-                        key={`${week}-${day}`}
-                        href={`/n3/lesson/${week}-${day}`}
-                        className="p-6 rounded-3xl border border-border bg-card hover:border-primary/50 transition-all"
-                      >
-                        <h3 className="text-xl font-bold mb-2">{data.header.main_title}</h3>
-                        <p className="text-muted-foreground">{data.header.sub_title}</p>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
+            return (
+              <Link
+                key={week}
+                href={href}
+                className="p-6 rounded-3xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all group"
+              >
+                <span className="inline-block bg-foreground text-background text-xs font-bold px-3 py-1 rounded-full mb-3">
+                  {weekLabels[week] || `第${week}週`}
+                </span>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                  {getWeekTitle(week)}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {getWeekSubtitles(week)}
+                </p>
+              </Link>
             );
           })}
         </div>
