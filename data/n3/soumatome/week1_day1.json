@@ -26,12 +26,22 @@
             {
               "jp": "この本には、くわしい説明は書かれていません。",
               "en": "Tidak ada penjelasan rinci dalam buku ini.",
-              "explanation": ""
+              "explanation": "(= 〈筆者が〉書いていない) — Maksudnya: penulisnya tidak menuliskan itu."
             },
             {
               "jp": "入学式は、このホールで行われます。",
               "en": "Upacara penerimaan akan diadakan di aula ini.",
-              "explanation": ""
+              "explanation": "(= 〈学校が〉行う) — Maksudnya: pihak sekolah yang menyelenggarakannya."
+            },
+            {
+              "jp": "これは、世界でいちばん大きいダイヤモンドだと言われています。",
+              "en": "Ini dikatakan sebagai berlian terbesar di dunia.",
+              "explanation": "(= 〈だれかが〉言っている) — Maksudnya: ada orang yang mengatakan hal itu."
+            },
+            {
+              "jp": "昔は、その考えが正しいと思われていた。",
+              "en": "Dulu, pemikiran itu dianggap benar.",
+              "explanation": "(= 〈昔の人は〉思っていた) — Maksudnya: orang-orang zaman dulu yang menganggap begitu."
             }
           ]
         },
@@ -52,6 +62,11 @@
             {
               "jp": "雨に降られて、服がぬれてしまった。",
               "en": "Kehujanan, bajuku jadi basah kuyup.",
+              "explanation": ""
+            },
+            {
+              "jp": "父に死なれて、大学を続けられなくなりました。",
+              "en": "Karena ayah saya meninggal, saya jadi tidak bisa melanjutkan kuliah.",
               "explanation": ""
             }
           ]
