@@ -17,77 +17,89 @@
         {
           "pattern_title": "もし受験していたなら",
           "description_box": {
-            "formula": "$$ \\text{もし} + \\begin{cases} \\text{Vた(な)ら} \\\\ \\text{Aかった(な)ら} \\\\ \\text{na／Nだった(な)ら} \\end{cases} $$",
-            "explanation": "Pola もし〜たら／なら menyatakan pengandaian terbalik (反事実) — 'andai saja~' atau 'seandainya~'. Setara dengan 'wishful thinking' dalam bahasa Inggris — kenyataannya tidak demikian, tetapi pembicara membayangkan situasi yang berbeda.\n\n📌 現実はそうではないが、もしそうであったら。\n(Equivalent to 'wishful thinking' — kenyataan tidak begitu, tapi seandainya begitu.)",
-            "explanation_en": "The pattern もし〜たら／なら expresses a counterfactual hypothesis (反事実) — 'if only ~' or 'had it been ~'. Equivalent to 'wishful thinking' in English — the reality isn't so, but the speaker imagines a different situation."
+            "formula": "もし + Vた(な)ら / Aかった(な)ら / naだった(な)ら / Nだった(な)ら",
+            "explanation": "Pola もし～たなら digunakan untuk pengandaian tentang hal yang sudah lewat (kontrafaktual) — 'andai saja ~'.\n\nContoh:\n• もし受験していたなら合格したかもしれない (andai saja ikut ujian, mungkin lulus)\n• もし私じゃなかったら、どうなっていただろう (andai bukan saya, bagaimana jadinya ya)",
+            "explanation_en": "\"If~ had happened\" — counterfactual past condition."
           },
           "examples": [
             {
               "jp": "もし試験を受けていたなら、合格していたと思う。",
               "en": "Moshi shiken o ukete ita nara, goukaku shite ita to omou. — 'Andai aku ikut ujian, pasti aku akan lulus.'",
-              "explanation": "📝 (=実際は、受けなかったが、もし試験を受けていたら) — Kenyataan: tidak ikut ujian."
+              "explanation": "📝 (=実際は、受けなかったが、もし試験を受けていたら) — Kenyataan: tidak ikut ujian.",
+              "highlight": "たなら"
             },
             {
               "jp": "もし彼が社長でなかったなら、会社はつぶれていたと思う。",
               "en": "Moshi kare ga shachou de nakatta nara, kaisha wa tsuburete ita to omou. — 'Seandainya bukan dia yang menjadi presiden, perusahaan ini pasti sudah bangkrut.'",
-              "explanation": "📝 (=実際は、彼が社長だけれど、もし彼が社長でなかったとしたら) — Kenyataan: dia adalah presiden."
+              "explanation": "📝 (=実際は、彼が社長だけれど、もし彼が社長でなかったとしたら) — Kenyataan: dia adalah presiden.",
+              "highlight": "なかったら"
             },
             {
               "jp": "もし、留学しなかったなら、今ごろは国で結婚しているだろう。",
               "en": "Moshi, ryuugaku shinakatta nara, imagoro wa kuni de kekkon shite iru darou. — 'Andai aku tidak studi ke luar negeri, sekarang mungkin sudah menikah di negara asal.'",
-              "explanation": "📝 (=実際は留学したが、もし留学しなかったとしたら) — Kenyataan: studi ke luar negeri."
+              "explanation": "📝 (=実際は留学したが、もし留学しなかったとしたら) — Kenyataan: studi ke luar negeri.",
+              "highlight": "なら"
             }
-          ]
+          ],
+          "pattern_meaning": "もし～たなら = andai saja ~ ｜ pengandaian masa lalu"
         },
         {
           "pattern_title": "もし休みが取れたとしても",
           "description_box": {
-            "formula": "$$ \\text{もし} + \\text{V／A／na／N普} + \\begin{cases} \\text{としても} \\\\ \\text{としたって} \\end{cases} $$",
-            "explanation": "Pola もし〜としても／としたって berarti 'walaupun andaikan~' atau 'meskipun seandainya~'. Pola ini menggabungkan pengandaian (もし) dengan konsesi (〜ても), menekankan bahwa walaupun kondisi tersebut terpenuhi, hasilnya tetap sama.\n\n📌 実現する可能性が低い場合によく使う。\n(Sering dipakai untuk situasi yang kemungkinannya rendah terjadi.)",
-            "explanation_en": "The pattern もし〜としても／としたって means 'even if ~ (hypothetically)' or 'even supposing ~'. This pattern combines hypothesis (もし) with concession (〜ても), emphasizing that even if the condition is met, the result remains the same. Often used when the probability is low."
+            "formula": "もし + V / A / na / N普 + としても / としたって",
+            "explanation": "Pola もし～としても menggabungkan pengandaian + konsesi — 'meskipun seandainya ~, tetap ~'.\n\nContoh:\n• もし休みが取れたとしても、旅行する金がない (meskipun seandainya dapat libur, tidak ada uang untuk traveling)\n• もし失敗したとしても、後悔しない (meskipun seandainya gagal, tidak akan menyesal)",
+            "explanation_en": "\"Even if~ were to happen\" — hypothetical concession."
           },
           "examples": [
             {
               "jp": "もし休みが取れたとしても、旅行には行かないつもりです。",
               "en": "Moshi yasumi ga toreta to shitemo, ryokou ni wa ikanai tsumori desu. — 'Walaupun andaikan saya bisa ambil cuti, saya tidak berniat pergi jalan-jalan.'",
-              "explanation": "📝 (=休みが取れた場合でも)"
+              "explanation": "📝 (=休みが取れた場合でも)",
+              "highlight": "としても"
             },
             {
               "jp": "もしお金がたくさんあったとしても、そんなものは買わない。",
               "en": "Moshi okane ga takusan atta to shitemo, sonna mono wa kawanai. — 'Walaupun andaikan punya banyak uang, aku tidak akan beli barang seperti itu.'",
-              "explanation": "📝 (=もしお金がたくさんあった場合でも)"
+              "explanation": "📝 (=もしお金がたくさんあった場合でも)",
+              "highlight": "としても"
             },
             {
               "jp": "もし決勝戦に残ったとしたって、優勝は難しいでしょう。",
               "en": "Moshi kesshousen ni nokotta to shitatte, yuushou wa muzukashii deshou. — 'Walaupun seandainya bisa lolos ke final, untuk juara sepertinya susah.'",
-              "explanation": "📝 (=決勝戦に残った場合でも)"
+              "explanation": "📝 (=決勝戦に残った場合でも)",
+              "highlight": "としても"
             }
-          ]
+          ],
+          "pattern_meaning": "もし～としても = meskipun seandainya ~ ｜ konsesi hipotetis"
         },
         {
           "pattern_title": "もしも生まれ変われるなら",
           "description_box": {
-            "formula": "$$ \\text{もしも} + \\begin{cases} \\text{V／A／na／N普なら} \\\\ \\text{na／Nなら} \\\\ \\text{V／A／na／Nたら} \\\\ \\text{V／Aても} \\\\ \\text{na／Nでも} \\end{cases} $$",
-            "explanation": "Pola もしも adalah versi PENEKANAN dari もし — artinya 'andaikata~' atau 'seandainya saja~'. Memberikan nuansa pengandaian yang lebih kuat dan sering digunakan untuk situasi yang sangat tidak mungkin terjadi.\n\n📌 「もし」を強調 (Memberi penekanan pada もし)\n\n📌 もっと! Variasi khusus:\n• もしものことがあったら (kalau-kalau terjadi sesuatu yang tak diinginkan)\n• もしもの場合／もしもの時 (kalau-kalau terjadi sesuatu)",
-            "explanation_en": "The pattern もしも is an EMPHASIZED version of もし — meaning 'should it happen that ~' or 'if by any chance ~'. It gives a stronger hypothetical nuance and is often used for very unlikely situations. Special expression: もしものことがあったら means 'if something unexpected/bad happens'."
+            "formula": "もしも + V / A / na / N普 + なら / na・Nなら",
+            "explanation": "もしも adalah versi lebih kuat/dramatis dari もし — 'seandainya saja ~'.\n\nSering dipakai untuk pengandaian yang tidak realistis.\n\nContoh:\n• もしも生まれ変われるなら、鳥になりたい (seandainya bisa terlahir kembali, ingin jadi burung)\n• もしも魔法が使えたら (seandainya bisa pakai sihir)",
+            "explanation_en": "\"If only~\" — stronger/more dramatic version of もし."
           },
           "examples": [
             {
               "jp": "もしも生まれ変われるなら、男になりたい。",
               "en": "Moshimo umarekawareru nara, otoko ni naritai. — 'Andaikan bisa terlahir kembali, aku ingin jadi laki-laki.'",
-              "explanation": "📝 (=もし生まれ変われるとしたら)"
+              "explanation": "📝 (=もし生まれ変われるとしたら)",
+              "highlight": "もしも"
             },
             {
               "jp": "もしも地震が起きても、この家、丈夫だから倒れないでしょう。",
               "en": "Moshimo jishin ga okite mo, kono ie, joubu da kara taorenai deshou. — 'Andaikan terjadi gempa pun, rumah ini kuat jadi tidak akan roboh.'",
-              "explanation": "📝 (=もし地震が起きたとしても)"
+              "explanation": "📝 (=もし地震が起きたとしても)",
+              "highlight": "もしも"
             },
             {
               "jp": "あの子にもしものことがあったら、どうしよう。",
               "en": "Ano ko ni moshimo no koto ga attara, dou shiyou. — 'Kalau-kalau terjadi apa-apa pada anak itu, bagaimana ya?'",
-              "explanation": "📝 もっと! (=予想しない大変な出来事) — もしものこと = sesuatu yang tak terduga/buruk."
+              "explanation": "📝 もっと! (=予想しない大変な出来事) — もしものこと = sesuatu yang tak terduga/buruk.",
+              "highlight": "もしも"
             }
-          ]
+          ],
+          "pattern_meaning": "もしも～なら = seandainya saja ~ ｜ pengandaian kuat"
         }
       ],
       "summary_table": {
@@ -123,27 +135,42 @@
             {
               "number": 1,
               "question": "（a. もし　b. たとえ）あの飛行機に乗っていたら、死んでいたでしょう。",
-              "options": ["a. もし", "b. たとえ"]
+              "options": [
+                "a. もし",
+                "b. たとえ"
+              ]
             },
             {
               "number": 2,
               "question": "もし、あの会社から採用通知が来た（a. としたら　b. としても）入らないつもりです。",
-              "options": ["a. としたら", "b. としても"]
+              "options": [
+                "a. としたら",
+                "b. としても"
+              ]
             },
             {
               "number": 3,
               "question": "なぜそんなことをするのですか。もしも私があなた（a. でも　b. なら）、絶対にしないでしょう。",
-              "options": ["a. でも", "b. なら"]
+              "options": [
+                "a. でも",
+                "b. なら"
+              ]
             },
             {
               "number": 4,
               "question": "勉強しなければ、何度受けた（a. なら　b. としたって）受からないでしょう。",
-              "options": ["a. なら", "b. としたって"]
+              "options": [
+                "a. なら",
+                "b. としたって"
+              ]
             },
             {
               "number": 5,
               "question": "（a. もしも　b. もしかして）の場合には、この引き出しを開けて私の手紙を読んでください。",
-              "options": ["a. もしも", "b. もしかして"]
+              "options": [
+                "a. もしも",
+                "b. もしかして"
+              ]
             }
           ]
         },
@@ -154,20 +181,44 @@
               "number": 6,
               "question": "もしも明日 ＿＿ ＿＿ ＿＿ ＿＿ しますか。",
               "words": [
-                {"id": 1, "word": "どう"},
-                {"id": 2, "word": "地球が"},
-                {"id": 3, "word": "としたら"},
-                {"id": 4, "word": "なくなる"}
+                {
+                  "id": 1,
+                  "word": "どう"
+                },
+                {
+                  "id": 2,
+                  "word": "地球が"
+                },
+                {
+                  "id": 3,
+                  "word": "としたら"
+                },
+                {
+                  "id": 4,
+                  "word": "なくなる"
+                }
               ]
             },
             {
               "number": 7,
               "question": "保険というのは ＿＿ ＿＿ ＿＿ ＿＿ 入るものです。",
               "words": [
-                {"id": 1, "word": "ことを"},
-                {"id": 2, "word": "もしもの"},
-                {"id": 3, "word": "考えて"},
-                {"id": 4, "word": "ときの"}
+                {
+                  "id": 1,
+                  "word": "ことを"
+                },
+                {
+                  "id": 2,
+                  "word": "もしもの"
+                },
+                {
+                  "id": 3,
+                  "word": "考えて"
+                },
+                {
+                  "id": 4,
+                  "word": "ときの"
+                }
               ]
             }
           ]
