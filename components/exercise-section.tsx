@@ -1,144 +1,162 @@
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import Link from "next/link";
-import { lessons } from "@/data/n3/soumatome/lessons"; 
-import { ExerciseSection } from "@/components/exercise-section";
+"use client";
 
-export function generateStaticParams() {
-  const params: { id: string }[] = [];
-  Object.keys(lessons).forEach(week => {
-    Object.keys(lessons[week]).forEach(day => {
-      params.push({ id: `${week}-${day}` });
-    });
-  });
-  return params;
-}
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/components/auth-context";
+import type { ExerciseGroup } from "@/data/n3/soumatome/lessons";
 
-// Pecah teks Jepang jadi 2 bagian di sekitar substring "highlight",
-// supaya bagian itu bisa ditebalkan + digarisbawahi seperti buku aslinya.
-function renderHighlighted(jp: string, highlight?: string) {
-  if (!highlight || !jp.includes(highlight)) return jp;
-  const idx = jp.indexOf(highlight);
-  const before = jp.slice(0, idx);
-  const after = jp.slice(idx + highlight.length);
+export function ExerciseSection({
+  week,
+  day,
+  index,
+  group,
+}: {
+  week: number;
+  day: number;
+  index: number;
+  group: ExerciseGroup;
+}) {
+  const { user } = useAuth();
+  const [checked, setChecked] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+
+  useEffect(() => {
+    if (!user) {
+      setLoading(false);
+      return;
+    }
+    const load = async () => {
+      const { data, error } = await supabase
+        .from("checklist_progress")
+        .select("checked")
+        .eq("user_id", user.id)
+        .eq("week", week)
+        .eq("day", day)
+        .eq("item_index", index)
+        .maybeSingle();
+
+      if (!error && data) setChecked(!!data.checked);
+      setLoading(false);
+    };
+    load();
+  }, [user, week, day, index]);
+
+  const toggle = async () => {
+    if (!user || saving) return;
+    const next = !checked;
+    setChecked(next);
+    setSaving(true);
+
+    try {
+      if (next) {
+        const { error } = await supabase.from("checklist_progress").upsert(
+          {
+            user_id: user.id,
+            week,
+            day,
+            item_index: index,
+            checked: true,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "user_id,week,day,item_index" }
+        );
+        if (error) throw error;
+      } else {
+        const { error } = await supabase
+          .from("checklist_progress")
+          .delete()
+          .eq("user_id", user.id)
+          .eq("week", week)
+          .eq("day", day)
+          .eq("item_index", index);
+        if (error) throw error;
+      }
+    } catch (err) {
+      console.error("Gagal simpan status soal:", err);
+      setChecked(!next);
+    } finally {
+      setSaving(false);
+    }
+  };
+
   return (
-    <>
-      {before}
-      <strong className="underline decoration-2 underline-offset-2">{highlight}</strong>
-      {after}
-    </>
-  );
-}
-
-export default async function LessonDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params;
-  const [week, day] = resolvedParams.id.split('-');
-  const lessonFile = lessons[week]?.[day];
-
-  if (!lessonFile) {
-    return <main className="p-24 text-center">Materi tidak ditemukan</main>;
-  }
-
-  const data = lessonFile.levels[0];
-
-  return (
-    <main className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <div className="container mx-auto px-6 pt-32 pb-24 max-w-4xl">
-        <Link href="/n3" className="text-primary hover:underline mb-8 inline-block">← Kembali ke daftar materi</Link>
-
-        {/* Header ala buku: badge minggu + judul */}
-        <div className="text-center mb-8">
-          <span className="inline-block bg-foreground text-background text-sm font-bold px-4 py-1.5 rounded-full mb-4">
-            第{week}週　{data.header.main_title}
+    <div className="p-8 bg-card border border-border rounded-3xl">
+      {/* Judul + checkbox status selesai */}
+      <div className="flex flex-wrap items-center gap-3 mb-2">
+        <h2 className="text-2xl font-bold text-primary">{group.title}</h2>
+        <button
+          type="button"
+          disabled={!user || saving || loading}
+          onClick={toggle}
+          className={`flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-full border transition-colors disabled:cursor-not-allowed ${
+            checked
+              ? "bg-primary/10 border-primary"
+              : "bg-background border-border hover:border-primary/50"
+          }`}
+          title={!user ? "Masuk dulu untuk menyimpan progres" : "Tandai sudah dikerjakan"}
+        >
+          <span
+            className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${
+              checked ? "bg-primary border-primary text-primary-foreground" : "border-border"
+            }`}
+          >
+            {checked && (
+              <svg viewBox="0 0 12 12" className="w-3.5 h-3.5" fill="none">
+                <path d="M2 6l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            )}
           </span>
-          <h1 className="text-3xl sm:text-4xl font-black mb-1">
-            {day}日目　{data.header.sub_title}
-          </h1>
-          {data.header.translation && (
-            <p className="text-muted-foreground">{data.header.translation}</p>
-          )}
-        </div>
-
-        {/* Percakapan ilustrasi (pengganti gambar komik) */}
-        {data.illustration_text && (
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            {data.illustration_text.child && (
-              <div className="flex-1 bg-secondary/40 border border-border rounded-2xl rounded-bl-none p-4">
-                <p className="text-xs text-muted-foreground mb-1">👦 Anak</p>
-                <p className="font-medium">{data.illustration_text.child}</p>
-              </div>
-            )}
-            {data.illustration_text.mother && (
-              <div className="flex-1 bg-secondary/40 border border-border rounded-2xl rounded-br-none p-4">
-                <p className="text-xs text-muted-foreground mb-1">👩 Ibu</p>
-                <p className="font-medium">{data.illustration_text.mother}</p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* Render Grammar Sections, layout ala buku: judul bar hitam +
-            contoh di kiri, kotak rumus/penjelasan di kanan */}
-        <div className="space-y-12">
-          {data.grammar_sections?.map((section, idx) => (
-            <div key={idx}>
-              {/* Judul pola dalam bar hitam */}
-              <div className="inline-block bg-foreground text-background text-2xl font-bold px-5 py-2 rounded-xl mb-2">
-                {section.pattern_title}
-              </div>
-              {section.pattern_meaning && (
-                <p className="text-muted-foreground mb-6">{section.pattern_meaning}</p>
-              )}
-
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* Kolom kiri: contoh kalimat (2/3 lebar) */}
-                <div className="md:col-span-2 space-y-5">
-                  {section.examples.map((ex, eIdx) => (
-                    <div key={eIdx}>
-                      <p className="font-semibold text-lg leading-relaxed">
-                        {renderHighlighted(ex.jp, ex.highlight)}
-                      </p>
-                      <p className="text-muted-foreground text-sm">{ex.en}</p>
-                      {ex.explanation && (
-                        <p className="text-sm text-muted-foreground/80 mt-0.5">💡 {ex.explanation}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                {/* Kolom kanan: kotak rumus & penjelasan */}
-                <div className="bg-card border border-border rounded-2xl p-5 h-fit">
-                  <p className="font-bold mb-2">{section.description_box.formula}</p>
-                  <p className="text-sm text-muted-foreground">{section.description_box.explanation}</p>
-                  {section.description_box.explanation_en && (
-                    <p className="text-xs text-muted-foreground/70 mt-2 italic">
-                      {section.description_box.explanation_en}
-                    </p>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Render soal latihan (misal まとめの問題) sebagai soal quiz sungguhan,
-            masing-masing dengan checkbox "Tandai Selesai" sendiri */}
-        {data.exercise_groups && data.exercise_groups.length > 0 && (
-          <div className="space-y-8 mt-12">
-            {data.exercise_groups.map((group, idx) => (
-              <ExerciseSection
-                key={idx}
-                week={Number(week)}
-                day={Number(day)}
-                index={idx}
-                group={group}
-              />
-            ))}
-          </div>
-        )}
+          <span className="text-sm font-medium text-foreground">{checked ? "Selesai" : "Tandai Selesai"}</span>
+        </button>
       </div>
-      <Footer />
-    </main>
+
+      <p className="text-muted-foreground mb-6">{group.instruction}</p>
+
+      {/* Bacaan (khusus tipe reading_cloze) */}
+      {group.passage && (
+        <div className="bg-background/50 p-6 rounded-2xl mb-6 border space-y-3">
+          <p className="font-bold">{(group.passage as any).title}</p>
+          <p className="leading-relaxed">{(group.passage as any).jp_text}</p>
+          <p className="font-bold pt-2">{(group.passage as any).translation_title}</p>
+          <p className="text-muted-foreground leading-relaxed">{(group.passage as any).translation}</p>
+        </div>
+      )}
+
+      {/* Daftar soal */}
+      <div className="space-y-5">
+        {group.questions.map((q: any, qIdx: number) => (
+          <div key={qIdx} className="border-l-4 border-primary pl-4 py-1">
+            <p className="font-semibold text-lg mb-2">
+              {q.number}. {q.question || q.blank}
+            </p>
+
+            {/* Pilihan ganda / bacaan (pakai "options") */}
+            {q.options && (
+              <ul className="space-y-1 mb-2">
+                {q.options.map((opt: any) => (
+                  <li key={opt.id} className="text-foreground">
+                    {opt.id}. {opt.text}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {/* Susun kalimat (pakai "words") */}
+            {q.words && (
+              <ul className="flex flex-wrap gap-2 mb-2">
+                {q.words.map((w: any) => (
+                  <li key={w.id} className="px-3 py-1 bg-background/50 border border-border rounded-lg text-sm">
+                    {w.id}. {w.word}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {q.hint && <p className="text-xs text-muted-foreground">{q.hint}</p>}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
