@@ -17,82 +17,94 @@
         {
           "pattern_title": "行われることになっている",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V る} \\\\ \\text{V ない} \\end{cases} \\text{ことに なる} $$",
-            "explanation": "Pola Vる／Vないことになる berarti 'telah ditetapkan/diputuskan~' atau 'jadinya~'. Menunjukkan keputusan atau hasil yang dibuat oleh orang lain atau situasi (bukan keputusan pribadi pembicara).\n\n📌 Bentuk lanjutan ことになっている = sudah menjadi aturan/jadwal yang berlaku.",
-            "explanation_en": "The pattern Vる／Vないことになる means 'it has been decided that ~' or 'it turns out that ~'. It shows decisions or results made by others or by situations (not the speaker's personal decision). The form ことになっている indicates an established rule or schedule."
+            "formula": "Vる / Vない + ことになる",
+            "explanation": "Pola ことになる menunjukkan keputusan yang dibuat oleh pihak lain atau secara otomatis — 'diputuskan bahwa ~'.\n\nBerbeda dari ことにする (keputusan sendiri).\n\nContoh:\n• 来月から転勤することになった (diputuskan pindah tugas mulai bulan depan)\n• 毎年ここで行われることになっている (sudah ditetapkan diadakan di sini setiap tahun)",
+            "explanation_en": "\"It has been decided that~\" — decision made by others or naturally."
           },
           "examples": [
             {
               "jp": "明日、新しい企画についての会議が行われることになっている。",
               "en": "Ashita, atarashii kikaku ni tsuite no kaigi ga okonawareru koto ni natte iru. — 'Besok, sudah dijadwalkan akan diadakan rapat tentang proyek baru.'",
-              "explanation": "📝 (=行われることが決まっている)"
+              "explanation": "📝 (=行われることが決まっている)",
+              "highlight": "ことになった"
             },
             {
               "jp": "今度、大阪に転勤することになりました。",
               "en": "Kondo, Oosaka ni tenkin suru koto ni narimashita. — 'Saya jadinya akan dipindahtugaskan ke Osaka.'",
-              "explanation": "📝 (=転勤することが決まりました) — Keputusan dari perusahaan, bukan pribadi."
+              "explanation": "📝 (=転勤することが決まりました) — Keputusan dari perusahaan, bukan pribadi.",
+              "highlight": "ことになっている"
             }
-          ]
+          ],
+          "pattern_meaning": "ことになる = diputuskan bahwa ~ ｜ keputusan (bukan oleh diri sendiri)"
         },
         {
           "pattern_title": "ジョギングすることにしている",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V る} \\\\ \\text{V ない} \\end{cases} \\text{ことに する} $$",
-            "explanation": "Pola Vる／Vないことにする berarti 'memutuskan untuk~'. Menunjukkan keputusan PRIBADI yang diambil oleh pembicara sendiri (berbeda dengan ことになる yang menunjukkan keputusan dari pihak lain).\n\n📌 Bentuk lanjutan ことにしている = membiasakan diri untuk~ (kebiasaan yang sudah jadi rutinitas).",
-            "explanation_en": "The pattern Vる／Vないことにする means 'to decide to ~'. It shows a PERSONAL decision made by the speaker themselves (different from ことになる which shows decisions made by others). The form ことにしている indicates 'I make it a habit to ~'."
+            "formula": "Vる / Vない + ことにする",
+            "explanation": "Pola ことにする menunjukkan keputusan yang dibuat oleh diri sendiri.\n\n• ことにする = baru memutuskan\n• ことにしている = sudah jadi kebiasaan (keputusan yang dipertahankan)\n\nContoh:\n• 毎朝ジョギングすることにしている (sudah memutuskan jogging tiap pagi — jadi kebiasaan)\n• 甘いものを食べないことにした (memutuskan untuk tidak makan manis)",
+            "explanation_en": "\"I decided to~\" / \"I make it a rule to~\"."
           },
           "examples": [
             {
               "jp": "毎朝、30分ジョギングすることにしています。",
               "en": "Maiasa, 30 pun jogingu suru koto ni shite imasu. — 'Saya membiasakan diri untuk jogging 30 menit setiap pagi.'",
-              "explanation": "📝 (=ジョギングすることを決めて、習慣にしています)"
+              "explanation": "📝 (=ジョギングすることを決めて、習慣にしています)",
+              "highlight": "ことにしている"
             },
             {
               "jp": "「あれ？買い物に行かないの？」「うん、明日行くことにした。」",
               "en": "'Are? Kaimono ni ikanai no?' / 'Un, ashita iku koto ni shita.' — '\"Lho? Nggak jadi belanja?\" \"Iya, aku putuskan besok aja perginya.\"'",
-              "explanation": "📝 (=明日、行くことに決めた) — Keputusan pribadi."
+              "explanation": "📝 (=明日、行くことに決めた) — Keputusan pribadi.",
+              "highlight": "ことにした"
             }
-          ]
+          ],
+          "pattern_meaning": "ことにする = memutuskan untuk ~ ｜ keputusan sendiri"
         },
         {
           "pattern_title": "弾けることは弾けるが…",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{V ることは V る} \\\\ \\text{A いことは A い} \\\\ \\text{na なことは na だ} \\end{cases} + \\begin{cases} \\text{が} \\\\ \\text{けれど} \\end{cases} $$",
-            "explanation": "Pola 〜ことは〜が／けれど berarti 'memang sih~, tapi~' atau 'kalau~, ya~ sih, tapi~'. Pola pengulangan ini digunakan untuk MENGAKUI sebagian dari suatu keadaan tetapi sekaligus memberi reservasi/penolakan halus.\n\n📌 Nuansa: Setelah pola ini, biasanya ada tambahan informasi negatif atau pembatas.",
-            "explanation_en": "The pattern 〜ことは〜が／けれど means 'it's true that ~, but ~' or 'sure I do ~, but ~'. This repetition pattern is used to ADMIT part of a situation while simultaneously providing reservation or soft denial. Usually followed by negative or limiting information."
+            "formula": "Vることは Vる / AいことはAい / naなことはnaな + が・けど",
+            "explanation": "Pola ini mengakui sesuatu, tapi segera menambahkan batasan — 'memang sih bisa, tapi tidak sempurna'.\n\nKata kerja/sifat diulang.\n\nContoh:\n• 弾けることは弾けるが、上手じゃない (memang bisa main, tapi tidak pandai)\n• おいしいことはおいしいけど、高い (memang enak sih, tapi mahal)",
+            "explanation_en": "\"It's true that~ but~\" — acknowledging with reservation."
           },
           "examples": [
             {
               "jp": "ピアノは、弾けることは弾けますが、うまくありません。",
               "en": "Piano wa, hikeru koto wa hikemasu ga, umaku arimasen. — 'Piano memang bisa main sih, tapi nggak jago.'",
-              "explanation": "📝 (=弾けるのは否定しないが)"
+              "explanation": "📝 (=弾けるのは否定しないが)",
+              "highlight": "ことは"
             },
             {
               "jp": "このバッグ、高いことは高いけれど、すごく使いやすいです。",
               "en": "Kono baggu, takai koto wa takai keredo, sugoku tsukaiyasui desu. — 'Tas ini memang mahal sih, tapi sangat nyaman dipakai.'",
-              "explanation": "📝 (=高いことは否定しないが)"
+              "explanation": "📝 (=高いことは否定しないが)",
+              "highlight": "ことは"
             }
-          ]
+          ],
+          "pattern_meaning": "ことは～が = memang sih ~, tapi ~ ｜ mengakui dengan syarat"
         },
         {
           "pattern_title": "食べないことはない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{A くない} \\\\ \\text{na じゃない} \\\\ \\text{V ない} \\\\ \\text{V られない} \\end{cases} \\text{ことは ない} $$",
-            "explanation": "Pola 〜ないことはない adalah pola DOUBLE NEGATIVE yang berarti 'bukannya tidak~' atau 'sebenarnya bisa/mau saja~'. Digunakan untuk menyatakan keadaan yang sebenarnya bisa/mau dilakukan, tetapi dengan sedikit keraguan/kondisi tertentu.",
-            "explanation_en": "The pattern 〜ないことはない is a DOUBLE NEGATIVE meaning 'it's not that ~ not' or 'it's not impossible to ~'. Used to express a state that can/will actually be done, but with some hesitation or condition."
+            "formula": "Aくない / naじゃない / Vない / Nじゃない + ことはない",
+            "explanation": "Pola ないことはない menggunakan double negative untuk afirmasi yang lemah — 'bukan berarti tidak ~' (= sedikit bisa/mau).\n\nContoh:\n• 食べないことはない (bukan berarti tidak mau makan — mau sih, sedikit)\n• できないことはないが、時間がかかる (bukan berarti tidak bisa, tapi butuh waktu)",
+            "explanation_en": "\"It's not that I can't/won't~\" — weak affirmation via double negative."
           },
           "examples": [
             {
               "jp": "鶏肉は、食べないことはないですが、あまり好きではありません。",
               "en": "Toriniku wa, tabenai koto wa nai desu ga, amari suki dewa arimasen. — 'Daging ayam, bukannya nggak makan sih, tapi nggak terlalu suka.'",
-              "explanation": "📝 (=食べると言っていいですが)"
+              "explanation": "📝 (=食べると言っていいですが)",
+              "highlight": "ことはない"
             },
             {
               "jp": "「走れば間に合わないことはないよ。急ごう！」",
               "en": "'Hashireba ma ni awanai koto wa nai yo. Isogou!' — '\"Kalau lari, bukannya nggak bisa nyampe tepat waktu kok. Ayo cepat!\"'",
-              "explanation": "📝 (=きっと間に合う) — Bukan tidak bisa, jadi kemungkinannya ada."
+              "explanation": "📝 (=きっと間に合う) — Bukan tidak bisa, jadi kemungkinannya ada.",
+              "highlight": "ことはない"
             }
-          ]
+          ],
+          "pattern_meaning": "ないことはない = bukan berarti tidak ~ ｜ afirmasi lemah"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "明日は家に（a. いる　b. いない）ことはいますが、家で仕事をしないといけないんです。",
-              "options": ["a. いる", "b. いない"]
+              "options": [
+                "a. いる",
+                "b. いない"
+              ]
             },
             {
               "number": 2,
               "question": "急に国へ帰ることに（a. なりました　b. なっています）。",
-              "options": ["a. なりました", "b. なっています"]
+              "options": [
+                "a. なりました",
+                "b. なっています"
+              ]
             },
             {
               "number": 3,
               "question": "太らないように夜9時を過ぎたら、私は食べないことに（a. して　b. なって）います。",
-              "options": ["a. して", "b. なって"]
+              "options": [
+                "a. して",
+                "b. なって"
+              ]
             },
             {
               "number": 4,
               "question": "車を運転（a. できる　b. できない）ことはないんですが、ほとんどしません。",
-              "options": ["a. できる", "b. できない"]
+              "options": [
+                "a. できる",
+                "b. できない"
+              ]
             },
             {
               "number": 5,
               "question": "携帯電話は便利な（a. こと　b. もの）は便利ですが、なくてもいいと思っています。",
-              "options": ["a. こと", "b. もの"]
+              "options": [
+                "a. こと",
+                "b. もの"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "日本では車は ＿＿ ＿＿ ＿＿ ＿＿ なっています。",
               "words": [
-                {"id": 1, "word": "ことに"},
-                {"id": 2, "word": "左側を"},
-                {"id": 3, "word": "道路の"},
-                {"id": 4, "word": "運転する"}
+                {
+                  "id": 1,
+                  "word": "ことに"
+                },
+                {
+                  "id": 2,
+                  "word": "左側を"
+                },
+                {
+                  "id": 3,
+                  "word": "道路の"
+                },
+                {
+                  "id": 4,
+                  "word": "運転する"
+                }
               ]
             },
             {
               "number": 7,
               "question": "生活 ＿＿ ＿＿ ＿＿ ＿＿ 経済的に苦しいです。",
               "words": [
-                {"id": 1, "word": "んですが"},
-                {"id": 2, "word": "ない"},
-                {"id": 3, "word": "ことは"},
-                {"id": 4, "word": "できない"}
+                {
+                  "id": 1,
+                  "word": "んですが"
+                },
+                {
+                  "id": 2,
+                  "word": "ない"
+                },
+                {
+                  "id": 3,
+                  "word": "ことは"
+                },
+                {
+                  "id": 4,
+                  "word": "できない"
+                }
               ]
             }
           ]
