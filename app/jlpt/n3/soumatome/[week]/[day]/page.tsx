@@ -7,6 +7,7 @@ import {
   getAdjacentLessons,
 } from "@/data/n3/soumatome/lessons";
 import { ExerciseSection } from "@/components/exercise-section";
+import { WeekChecklist } from "@/components/week-checklist";
 
 // Pre-render semua lesson saat build
 export function generateStaticParams() {
@@ -148,18 +149,11 @@ export default async function Page({
             ))}
           </div>
 
-          {/* Render soal latihan (misal まとめの問題) */}
+          {/* Kalau ini halaman exercise (misal まとめの問題), tampilkan
+              checklist 今週の表現 per hari, bukan soal quiz */}
           {data.exercise_groups && data.exercise_groups.length > 0 && (
-            <div className="space-y-8 mt-12">
-              {data.exercise_groups.map((group, idx) => (
-                <ExerciseSection
-                  key={idx}
-                  week={Number(week)}
-                  day={Number(day)}
-                  index={idx}
-                  group={group}
-                />
-              ))}
+            <div className="mt-12">
+              <WeekChecklist week={Number(week)} />
             </div>
           )}
 
