@@ -83,17 +83,21 @@ export function ExerciseSection({
   return (
     <div className="p-8 bg-card border border-border rounded-3xl">
       {/* Judul + checkbox status selesai */}
-      <div className="flex items-start justify-between gap-4 mb-2">
+      <div className="flex flex-wrap items-center gap-3 mb-2">
         <h2 className="text-2xl font-bold text-primary">{group.title}</h2>
         <button
           type="button"
           disabled={!user || saving || loading}
           onClick={toggle}
-          className="flex-shrink-0 flex items-center gap-2 disabled:cursor-not-allowed"
+          className={`flex-shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-full border transition-colors disabled:cursor-not-allowed ${
+            checked
+              ? "bg-primary/10 border-primary"
+              : "bg-background border-border hover:border-primary/50"
+          }`}
           title={!user ? "Masuk dulu untuk menyimpan progres" : "Tandai sudah dikerjakan"}
         >
           <span
-            className={`w-6 h-6 rounded-lg border flex items-center justify-center transition-colors ${
+            className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${
               checked ? "bg-primary border-primary text-primary-foreground" : "border-border"
             }`}
           >
@@ -103,7 +107,7 @@ export function ExerciseSection({
               </svg>
             )}
           </span>
-          <span className="text-sm text-muted-foreground">{checked ? "Selesai" : "Tandai selesai"}</span>
+          <span className="text-sm font-medium text-foreground">{checked ? "Selesai" : "Tandai Selesai"}</span>
         </button>
       </div>
 
