@@ -17,62 +17,71 @@
         {
           "pattern_title": "調べてもわからなかった",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vても} \\\\ \\text{Aくても} \\\\ \\text{na/Nでも} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa meskipun kondisi A terpenuhi, kondisi B tetap tidak berubah. Artinya 'meskipun' atau 'walau pun'.",
-            "explanation_en": "Expresses that even if condition A is met, condition B remains unchanged. Means 'even if' or 'even though'."
+            "formula": "Vても / Aくても / na・Nでも",
+            "explanation": "Pola ても menunjukkan 'meskipun ~, tetap ~'. Hasilnya tidak berubah walau kondisi terpenuhi.\n\nContoh:\n• 調べてもわからなかった (meskipun sudah dicari, tetap tidak mengerti)\n• 高くても買う (meskipun mahal, tetap beli)",
+            "explanation_en": "\"Even if~\" — the result doesn't change regardless of the condition."
           },
           "examples": [
             {
               "jp": "調べてもわからなかったので、先生に聞いた。",
               "en": "Meskipun sudah mencari tahu, tetap tidak mengerti, jadi aku bertanya kepada guru.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ても"
             },
             {
               "jp": "必要なので、高くても買います。",
               "en": "Karena dibutuhkan, aku akan membelinya meski mahal.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ても"
             }
-          ]
+          ],
+          "pattern_meaning": "調べても = meskipun sudah diteliti ｜ Vても/Aくても/na・Nでも = meskipun ~"
         },
         {
           "pattern_title": "どんなに練習しても",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{どんなに} \\\\ \\text{いくら} \\end{cases} \\begin{cases} \\text{Vても} \\\\ \\text{Aくても} \\\\ \\text{naでも} \\\\ \\text{Nでも} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa tidak peduli seberapa banyak atau seberapa besar, hasilnya tetap sama.",
-            "explanation_en": "Expresses that no matter how much or how extreme, the result remains the same."
+            "formula": "どんなに / いくら + Vても / Aくても / na・Nでも",
+            "explanation": "Pola ini memperkuat ても — 'seberapa pun ~, tetap ~'. Menunjukkan bahwa bahkan usaha maksimal pun tidak mengubah hasil.\n\nContoh:\n• どんなに練習しても上手にならない (seberapa pun latihan, tetap tidak pandai)\n• いくら安くても買わない (seberapa pun murahnya, tetap tidak beli)",
+            "explanation_en": "\"No matter how much~\" — emphasizes futility despite maximum effort."
           },
           "examples": [
             {
               "jp": "ギターを習い始めたが、どんなに練習しても全然うまくならない。",
               "en": "Aku mulai belajar gitar, tapi tidak peduli seberapa banyak berlatih, tetap tidak mahir.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "しても"
             },
             {
               "jp": "私は、いくらお酒を飲んでも顔色が変わらない。",
               "en": "Wajahku tidak berubah merah no matter how much aku minum.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ても"
             }
-          ]
+          ],
+          "pattern_meaning": "どんなに～ても = seberapa pun ~ ｜ penegasan \"meskipun\""
         },
         {
           "pattern_title": "辞書を使わずに",
           "description_box": {
-            "formula": "$$ \\text{V な + ずに} \\quad \\begin{cases} \\text{使わない} \\to \\text{使わずに} \\\\ \\text{食べない} \\to \\text{食べずに} \\\\ \\text{しない} \\to \\text{せずに} \\;⚠️ \\end{cases} $$",
-            "explanation": "Pola 〜ずに adalah bentuk lebih formal/tertulis dari 〜ないで yang berarti 'tanpa melakukan~'. Maknanya adalah melakukan suatu tindakan tanpa melakukan tindakan lain yang seharusnya dilakukan.\n\nAturan perubahan:\n• 使わない → 使わずに\n• 食べない → 食べずに\n• しない → せずに ⚠️ (pengecualian!)\n\n⚠️ Catatan Penting (ダメ): TIDAK ADA bentuk ❌ しずに. Bentuk yang benar adalah ✅ せずに.",
-            "explanation_en": "The pattern 〜ずに is a more formal/written form of 〜ないで, meaning 'without doing ~'. It indicates performing an action without doing another action that should have been done. Note the exception: しない becomes せずに (NOT しずに)."
+            "formula": "Vな + ずに (する → せずに)",
+            "explanation": "Pola ずに berarti 'tanpa melakukan ~'. Ini adalah bentuk lebih formal dari ないで.\n\nPerhatian khusus: する → せずに (bukan しずに)\n\nContoh:\n• 辞書を使わずに読む (membaca tanpa kamus)\n• 何も食べずに出かけた (pergi tanpa makan apapun)",
+            "explanation_en": "\"Without doing~\" — more formal version of ないで."
           },
           "examples": [
             {
               "jp": "辞書を使わずに書いたので、自信がありません。",
               "en": "Jisho o tsukawazu ni kaita node, jishin ga arimasen. — 'Karena aku menulisnya tanpa menggunakan kamus, aku jadi tidak percaya diri.'",
-              "explanation": "📝 (=使わないで)"
+              "explanation": "📝 (=使わないで)",
+              "highlight": "ずに"
             },
             {
               "jp": "昨夜、歯をみがかずに寝てしまった。",
               "en": "Sakuya, ha o migakazu ni nete shimatta. — 'Tadi malam, aku tertidur tanpa menyikat gigi.'",
-              "explanation": "📝 Menyatakan bahwa tindakan 'menyikat gigi' yang seharusnya dilakukan, tidak dilakukan. (=みがかないで)"
+              "explanation": "📝 Menyatakan bahwa tindakan 'menyikat gigi' yang seharusnya dilakukan, tidak dilakukan. (=みがかないで)",
+              "highlight": "ずに"
             }
-          ]
+          ],
+          "pattern_meaning": "使わずに = tanpa menggunakan ｜ Vずに = tanpa melakukan ~"
         }
       ],
       "summary_table": {
@@ -108,27 +117,42 @@
             {
               "number": 1,
               "question": "田中さんの部屋は（a. いつ　b. いくら）行っても片づいている。",
-              "options": ["a. いつ", "b. いくら"]
+              "options": [
+                "a. いつ",
+                "b. いくら"
+              ]
             },
             {
               "number": 2,
               "question": "家族に相談（a. しずに　b. せずに）留学を決めた。",
-              "options": ["a. しずに", "b. せずに"]
+              "options": [
+                "a. しずに",
+                "b. せずに"
+              ]
             },
             {
               "number": 3,
               "question": "（a. 便利　b. 便利な）でも、携帯電話は使いません。",
-              "options": ["a. 便利", "b. 便利な"]
+              "options": [
+                "a. 便利",
+                "b. 便利な"
+              ]
             },
             {
               "number": 4,
               "question": "ランナーは（a. どうに　b. どんなに）苦しくてもあきらめませんでした。",
-              "options": ["a. どうに", "b. どんなに"]
+              "options": [
+                "a. どうに",
+                "b. どんなに"
+              ]
             },
             {
               "number": 5,
               "question": "約束の時間に来なければ（a. 待たずに　b. 待ちずに）出発します。",
-              "options": ["a. 待たずに", "b. 待ちずに"]
+              "options": [
+                "a. 待たずに",
+                "b. 待ちずに"
+              ]
             }
           ]
         },
@@ -139,20 +163,44 @@
               "number": 6,
               "question": "彼女の ＿＿ ＿＿ ＿＿ ＿＿ おかしい。",
               "words": [
-                {"id": 1, "word": "ことは"},
-                {"id": 2, "word": "言っている"},
-                {"id": 3, "word": "考えても"},
-                {"id": 4, "word": "どう"}
+                {
+                  "id": 1,
+                  "word": "ことは"
+                },
+                {
+                  "id": 2,
+                  "word": "言っている"
+                },
+                {
+                  "id": 3,
+                  "word": "考えても"
+                },
+                {
+                  "id": 4,
+                  "word": "どう"
+                }
               ]
             },
             {
               "number": 7,
               "question": "健康のため、 ＿＿ ＿＿ ＿＿ ＿＿ しています。",
               "words": [
-                {"id": 1, "word": "ように"},
-                {"id": 2, "word": "歩く"},
-                {"id": 3, "word": "乗らずに"},
-                {"id": 4, "word": "車に"}
+                {
+                  "id": 1,
+                  "word": "ように"
+                },
+                {
+                  "id": 2,
+                  "word": "歩く"
+                },
+                {
+                  "id": 3,
+                  "word": "乗らずに"
+                },
+                {
+                  "id": 4,
+                  "word": "車に"
+                }
               ]
             }
           ]
