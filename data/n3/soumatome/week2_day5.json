@@ -17,62 +17,71 @@
         {
           "pattern_title": "走るというより",
           "description_box": {
-            "formula": "$$ \\text{N/na/V/A普} \\begin{cases} \\text{というより} \\\\ \\text{というか} \\end{cases} $$",
-            "explanation": "Digunakan untuk mengoreksi atau memperhalus ungkapan sebelumnya. Artinya 'lebih tepatnya...' atau 'atau lebih seperti...'",
-            "explanation_en": "Used to correct or refine a previous statement. Means 'rather than...' or 'more like...'."
+            "formula": "N / na / V / A普 + というより / というか",
+            "explanation": "Pola というより digunakan untuk mengoreksi atau memperhalus pernyataan — 'bukan A, tapi lebih tepatnya B'.\n\nというか = versi lebih ragu/kasual.\n\nContoh:\n• 走るというより歩いている (lebih tepatnya jalan, bukan lari)\n• 優しいというか、甘い (bukan baik, lebih ke memanjakan)",
+            "explanation_en": "\"Rather than~\" or \"more precisely~\" — correcting a description."
           },
           "examples": [
             {
               "jp": "前の車は遅すぎて、走るというよりはっているようだ。",
               "en": "Mobil di depan terlalu lambat, lebih seperti merayap daripada berlari.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "というより"
             },
             {
               "jp": "今日は涼しいというより寒いくらいだった。",
               "en": "Hari ini rasanya bukan sejuk, lebih seperti dingin.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "というより"
             }
-          ]
+          ],
+          "pattern_meaning": "というより = lebih tepatnya ~, bukan ~ tapi lebih ke ~"
         },
         {
           "pattern_title": "京都というと",
           "description_box": {
-            "formula": "$$ \\text{N/na/V/A普} \\begin{cases} \\text{いうと} \\\\ \\text{いえば} \\\\ \\text{いったら} \\end{cases} $$",
-            "explanation": "Digunakan untuk memulai topik atau mengasosiasikan sesuatu dengan hal lain yang langsung terpikirkan.",
-            "explanation_en": "Used to start a topic or associate something with what first comes to mind."
+            "formula": "N / na / V / A普 + いうと / いえば / いったら",
+            "explanation": "Pola というと/といえば digunakan untuk mengangkat topik — 'kalau bicara soal ~'.\n\nSering dipakai untuk memulai asosiasi atau ingatan.\n\nContoh:\n• 京都といえばお寺 (kalau bicara soal Kyoto, ya kuil)\n• 夏というとスイカ (kalau bicara soal musim panas, ya semangka)",
+            "explanation_en": "\"Speaking of~\" or \"when it comes to~\" — topic association."
           },
           "examples": [
             {
               "jp": "京都というと、お寺をイメージします。",
               "en": "Kalau bicara soal Kyoto, yang terbayang adalah kuil.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "というと"
             },
             {
               "jp": "夏の果物といったら、やっぱりスイカだね。",
               "en": "Kalau bicara buah musim panas, ya tetap saja semangka.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "といったら"
             }
-          ]
+          ],
+          "pattern_meaning": "というと = kalau bicara soal ~ ｜ berbicara tentang topik"
         },
         {
           "pattern_title": "旅行といっても",
           "description_box": {
-            "formula": "$$ \\text{N／na／V／A + といっても} $$",
-            "explanation": "Pola 〜といっても berarti 'walaupun dibilang~' atau 'meskipun disebut~'. Pola ini digunakan untuk menyatakan bahwa kenyataan tidak sebesar/seekstrem kesan dari kata yang digunakan.",
-            "explanation_en": "The pattern 〜といっても means 'although it's called ~' or 'even if I say ~'. It is used to indicate that the actual situation is not as significant or extreme as the impression given by the word used."
+            "formula": "N / na / V / A + といっても",
+            "explanation": "Pola といっても digunakan untuk mengoreksi ekspektasi — 'meskipun disebut A, sebenarnya tidak sehebat itu'.\n\nContoh:\n• 旅行といっても近くの温泉です (meskipun bilang traveling, cuma onsen dekat sini)\n• 料理が得意といっても卵料理だけ (meskipun bilang pandai masak, cuma masakan telur)",
+            "explanation_en": "\"Even though I say~\" — lowering expectations about a claim."
           },
           "examples": [
             {
               "jp": "週末は旅行しました。旅行といっても、近くの温泉に行っただけですが。",
               "en": "Shuumatsu wa ryokou shimashita. Ryokou to itte mo, chikaku no onsen ni itta dake desu ga. — 'Akhir pekan kemarin aku jalan-jalan. Tapi yang dimaksud jalan-jalan, sebenarnya cuma pergi ke pemandian air panas terdekat saja.'",
-              "explanation": "📝 Mengoreksi kesan bahwa 'jalan-jalan' itu sesuatu yang besar/jauh. (=旅行と言えるものじゃなく)"
+              "explanation": "📝 Mengoreksi kesan bahwa 'jalan-jalan' itu sesuatu yang besar/jauh. (=旅行と言えるものじゃなく)",
+              "highlight": "といっても"
             },
             {
               "jp": "今週は忙しい、といっても先週ほどじゃない。",
               "en": "Konshuu wa isogashii, to itte mo senshuu hodo ja nai. — 'Minggu ini sibuk, tapi tidak sesibuk minggu lalu.'",
-              "explanation": "📝 Mengakui keadaan sibuk, tapi memberi penjelasan bahwa tidak terlalu ekstrem. (=忙しいが)"
+              "explanation": "📝 Mengakui keadaan sibuk, tapi memberi penjelasan bahwa tidak terlalu ekstrem. (=忙しいが)",
+              "highlight": "といっても"
             }
-          ]
+          ],
+          "pattern_meaning": "といっても = meskipun bilang ~, kenyataannya ~"
         }
       ],
       "summary_table": {
@@ -108,27 +117,42 @@
             {
               "number": 1,
               "question": "庭がある（a. というより　b. といっても）、とても小さいです。",
-              "options": ["a. というより", "b. といっても"]
+              "options": [
+                "a. というより",
+                "b. といっても"
+              ]
             },
             {
               "number": 2,
               "question": "息子の部屋は、部屋（a. というと　b. というより）ゴミ箱だ。",
-              "options": ["a. というと", "b. というより"]
+              "options": [
+                "a. というと",
+                "b. というより"
+              ]
             },
             {
               "number": 3,
               "question": "代表的な日本料理（a. といっても　b. というと）、すしや天ぷらでしょうか。",
-              "options": ["a. といっても", "b. というと"]
+              "options": [
+                "a. といっても",
+                "b. というと"
+              ]
             },
             {
               "number": 4,
               "question": "彼の失礼な態度に、怒る（a. というより　b. といっても）あきれてしまった。",
-              "options": ["a. というより", "b. といっても"]
+              "options": [
+                "a. というより",
+                "b. といっても"
+              ]
             },
             {
               "number": 5,
               "question": "日本の山（a. といったら　b. といっても）、富士山です。",
-              "options": ["a. といったら", "b. といっても"]
+              "options": [
+                "a. といったら",
+                "b. といっても"
+              ]
             }
           ]
         },
@@ -139,20 +163,44 @@
               "number": 6,
               "question": "子どもの ＿＿ ＿＿ ＿＿ ＿＿ でしょうか。",
               "words": [
-                {"id": 1, "word": "象"},
-                {"id": 2, "word": "好きな"},
-                {"id": 3, "word": "というと"},
-                {"id": 4, "word": "動物"}
+                {
+                  "id": 1,
+                  "word": "象"
+                },
+                {
+                  "id": 2,
+                  "word": "好きな"
+                },
+                {
+                  "id": 3,
+                  "word": "というと"
+                },
+                {
+                  "id": 4,
+                  "word": "動物"
+                }
               ]
             },
             {
               "number": 7,
               "question": "「頭が痛いの？」「いや、 ＿＿ ＿＿ ＿＿ ＿＿ んだ。」",
               "words": [
-                {"id": 1, "word": "重い"},
-                {"id": 2, "word": "と"},
-                {"id": 3, "word": "痛い"},
-                {"id": 4, "word": "いうか"}
+                {
+                  "id": 1,
+                  "word": "重い"
+                },
+                {
+                  "id": 2,
+                  "word": "と"
+                },
+                {
+                  "id": 3,
+                  "word": "痛い"
+                },
+                {
+                  "id": 4,
+                  "word": "いうか"
+                }
               ]
             }
           ]
