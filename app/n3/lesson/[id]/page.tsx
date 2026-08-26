@@ -53,6 +53,9 @@ export default async function LessonDetailPage({ params }: { params: Promise<{ i
                   <div key={eIdx} className="border-l-4 border-primary pl-4 py-1">
                     <p className="font-semibold text-lg">{ex.jp}</p>
                     <p className="text-muted-foreground">{ex.en}</p>
+                    {ex.explanation && (
+                      <p className="text-sm text-muted-foreground/80 mt-1">💡 {ex.explanation}</p>
+                    )}
                   </div>
                 ))}
               </div>
