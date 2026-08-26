@@ -26,22 +26,26 @@
             {
               "jp": "この本には、くわしい説明は書かれていません。",
               "en": "Tidak ada penjelasan rinci dalam buku ini.",
-              "explanation": "(= 〈筆者が〉書いていない) — Maksudnya: penulisnya tidak menuliskan itu."
+              "explanation": "(= 〈筆者が〉書いていない) — Maksudnya: penulisnya tidak menuliskan itu.",
+              "highlight": "書かれていません"
             },
             {
               "jp": "入学式は、このホールで行われます。",
               "en": "Upacara penerimaan akan diadakan di aula ini.",
-              "explanation": "(= 〈学校が〉行う) — Maksudnya: pihak sekolah yang menyelenggarakannya."
+              "explanation": "(= 〈学校が〉行う) — Maksudnya: pihak sekolah yang menyelenggarakannya.",
+              "highlight": "行われます"
             },
             {
               "jp": "これは、世界でいちばん大きいダイヤモンドだと言われています。",
               "en": "Ini dikatakan sebagai berlian terbesar di dunia.",
-              "explanation": "(= 〈だれかが〉言っている) — Maksudnya: ada orang yang mengatakan hal itu."
+              "explanation": "(= 〈だれかが〉言っている) — Maksudnya: ada orang yang mengatakan hal itu.",
+              "highlight": "言われています"
             },
             {
               "jp": "昔は、その考えが正しいと思われていた。",
               "en": "Dulu, pemikiran itu dianggap benar.",
-              "explanation": "(= 〈昔の人は〉思っていた) — Maksudnya: orang-orang zaman dulu yang menganggap begitu."
+              "explanation": "(= 〈昔の人は〉思っていた) — Maksudnya: orang-orang zaman dulu yang menganggap begitu.",
+              "highlight": "思われていた"
             }
           ]
         },
@@ -57,17 +61,20 @@
             {
               "jp": "友達の赤ちゃんを抱っこしたら、泣かれてしまった。",
               "en": "Ketika aku menggendong bayi temanku, bayinya menangis.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "泣かれてしまった"
             },
             {
               "jp": "雨に降られて、服がぬれてしまった。",
               "en": "Kehujanan, bajuku jadi basah kuyup.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "降られて"
             },
             {
               "jp": "父に死なれて、大学を続けられなくなりました。",
               "en": "Karena ayah saya meninggal, saya jadi tidak bisa melanjutkan kuliah.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "死なれて"
             }
           ]
         },
@@ -83,12 +90,14 @@
             {
               "jp": "ちょっと気分が悪いので、早く帰らせてください。",
               "en": "Karena kurang enak badan, tolong izinkan saya pulang lebih awal.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "帰らせてください"
             },
             {
               "jp": "手を洗わせてください。",
               "en": "Izinkan saya mencuci tangan.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "洗わせてください"
             }
           ]
         }
