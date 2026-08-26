@@ -2,7 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons"; 
-import { ExerciseSection } from "@/components/exercise-section";
+import { WeekChecklist } from "@/components/week-checklist";
 
 export function generateStaticParams() {
   const params: { id: string }[] = [];
@@ -122,19 +122,11 @@ export default async function LessonDetailPage({ params }: { params: Promise<{ i
           ))}
         </div>
 
-        {/* Render soal latihan (misal まとめの問題) sebagai soal quiz sungguhan,
-            masing-masing dengan checkbox "Tandai Selesai" sendiri */}
+        {/* Kalau ini halaman exercise (misal まとめの問題), tampilkan
+            checklist 今週の表現 per hari */}
         {data.exercise_groups && data.exercise_groups.length > 0 && (
-          <div className="space-y-8 mt-12">
-            {data.exercise_groups.map((group, idx) => (
-              <ExerciseSection
-                key={idx}
-                week={Number(week)}
-                day={Number(day)}
-                index={idx}
-                group={group}
-              />
-            ))}
+          <div className="mt-12">
+            <WeekChecklist week={Number(week)} />
           </div>
         )}
       </div>
