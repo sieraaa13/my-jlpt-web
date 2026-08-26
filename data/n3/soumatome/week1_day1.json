@@ -82,8 +82,8 @@
           "pattern_title": "早く帰らせてください",
           "pattern_meaning": "帰らせて = biarkan saya pulang | させる = menyuruh/mengizinkan melakukan | ください = tolong",
           "description_box": {
-            "formula": "$$ \\text{V(さ)せて} \\begin{cases} \\text{ください} \\\\ \\text{もらえますか} \\\\ \\text{もらえませんか} \\end{cases} $$",
-            "explanation": "Ekspresi untuk meminta izin kepada orang lain agar kita diperbolehkan melakukan sesuatu.",
+            "formula": "V(さ)せて + ください / もらえますか / もらえませんか",
+            "explanation": "自分の行動について、相手から許可を得る表現。\n\nEkspresi untuk meminta izin dari orang lain agar kita diperbolehkan melakukan sesuatu.",
             "explanation_en": "Expression used when asking for permission from the other person."
           },
           "examples": [
