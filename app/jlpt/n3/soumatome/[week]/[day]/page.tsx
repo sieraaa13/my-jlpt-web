@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/navbar";
-import { LessonView, LessonData } from "@/components/lesson-view";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -7,10 +6,27 @@ import {
   getAllLessonParams,
   getAdjacentLessons,
 } from "@/data/n3/soumatome/lessons";
+import { ExerciseSection } from "@/components/exercise-section";
 
 // Pre-render semua lesson saat build
 export function generateStaticParams() {
   return getAllLessonParams();
+}
+
+// Pecah teks Jepang jadi 2 bagian di sekitar substring "highlight",
+// supaya bagian itu bisa ditebalkan + digarisbawahi seperti buku aslinya.
+function renderHighlighted(jp: string, highlight?: string) {
+  if (!highlight || !jp.includes(highlight)) return jp;
+  const idx = jp.indexOf(highlight);
+  const before = jp.slice(0, idx);
+  const after = jp.slice(idx + highlight.length);
+  return (
+    <>
+      {before}
+      <strong className="underline decoration-2 underline-offset-2">{highlight}</strong>
+      {after}
+    </>
+  );
 }
 
 export default async function Page({
@@ -25,11 +41,11 @@ export default async function Page({
     notFound();
   }
 
-  const lesson = lessonFile.levels[0] as LessonData;
+  const data = lessonFile.levels[0];
   const { prev, next, current, total } = getAdjacentLessons(week, day);
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="pt-24 pb-16 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl">
@@ -57,10 +73,97 @@ export default async function Page({
             </span>
           </div>
 
-          {/* Lesson Content */}
-          <LessonView data={lesson} />
+          {/* Header ala buku: badge minggu + judul */}
+          <div className="text-center mb-8">
+            <span className="inline-block bg-foreground text-background text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+              第{week}週　{data.header.main_title}
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-black mb-1">
+              {day}日目　{data.header.sub_title}
+            </h1>
+            {data.header.translation && (
+              <p className="text-muted-foreground">{data.header.translation}</p>
+            )}
+          </div>
 
-          {/* Navigation */}
+          {/* Percakapan ilustrasi (pengganti gambar komik) */}
+          {data.illustration_text && (
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              {data.illustration_text.child && (
+                <div className="flex-1 bg-secondary/40 border border-border rounded-2xl rounded-bl-none p-4">
+                  <p className="text-xs text-muted-foreground mb-1">👦 Anak</p>
+                  <p className="font-medium">{data.illustration_text.child}</p>
+                </div>
+              )}
+              {data.illustration_text.mother && (
+                <div className="flex-1 bg-secondary/40 border border-border rounded-2xl rounded-br-none p-4">
+                  <p className="text-xs text-muted-foreground mb-1">👩 Ibu</p>
+                  <p className="font-medium">{data.illustration_text.mother}</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Render Grammar Sections, layout ala buku: judul bar hitam +
+              contoh di kiri, kotak rumus/penjelasan di kanan */}
+          <div className="space-y-12">
+            {data.grammar_sections?.map((section, idx) => (
+              <div key={idx}>
+                {/* Judul pola dalam bar hitam */}
+                <div className="inline-block bg-foreground text-background text-2xl font-bold px-5 py-2 rounded-xl mb-2">
+                  {section.pattern_title}
+                </div>
+                {section.pattern_meaning && (
+                  <p className="text-muted-foreground mb-6">{section.pattern_meaning}</p>
+                )}
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* Kolom kiri: contoh kalimat (2/3 lebar) */}
+                  <div className="md:col-span-2 space-y-5">
+                    {section.examples.map((ex, eIdx) => (
+                      <div key={eIdx}>
+                        <p className="font-semibold text-lg leading-relaxed">
+                          {renderHighlighted(ex.jp, ex.highlight)}
+                        </p>
+                        <p className="text-muted-foreground text-sm">{ex.en}</p>
+                        {ex.explanation && (
+                          <p className="text-sm text-muted-foreground/80 mt-0.5">💡 {ex.explanation}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Kolom kanan: kotak rumus & penjelasan */}
+                  <div className="bg-card border border-border rounded-2xl p-5 h-fit">
+                    <p className="font-bold mb-2">{section.description_box.formula}</p>
+                    <p className="text-sm text-muted-foreground">{section.description_box.explanation}</p>
+                    {section.description_box.explanation_en && (
+                      <p className="text-xs text-muted-foreground/70 mt-2 italic">
+                        {section.description_box.explanation_en}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Render soal latihan (misal まとめの問題) */}
+          {data.exercise_groups && data.exercise_groups.length > 0 && (
+            <div className="space-y-8 mt-12">
+              {data.exercise_groups.map((group, idx) => (
+                <ExerciseSection
+                  key={idx}
+                  week={Number(week)}
+                  day={Number(day)}
+                  index={idx}
+                  group={group}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Navigation prev/next */}
           <div className="mt-12 flex flex-col sm:flex-row gap-3 justify-between items-stretch sm:items-center">
             {prev ? (
               <Link
