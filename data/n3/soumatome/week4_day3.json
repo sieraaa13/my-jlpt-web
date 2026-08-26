@@ -1,3 +1,4 @@
+
 {
   "levels": [
     {
@@ -17,92 +18,106 @@
         {
           "pattern_title": "米粒くらい／米粒ほど",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{N} \\\\ \\text{naな} \\\\ \\text{Aい} \\\\ \\text{Vる} \\end{cases} \\begin{cases} \\text{くらい／ぐらい} \\\\ \\text{ほど} \\end{cases} \\begin{cases} \\text{だ} \\\\ \\text{に} \\\\ \\text{のN} \\end{cases} $$",
-            "explanation": "Menyatakan tingkat/derajat suatu hal dengan membandingkan atau memberi contoh konkret. Artinya 'kira-kira sebesar~' atau 'sampai-sampai~'. くらい／ぐらい dan ほど bisa saling menggantikan dalam pola ini.",
-            "explanation_en": "Expresses the degree or extent of something by comparison or giving a concrete example. Means 'about as much as ~' or 'to the extent that ~'. くらい／ぐらい and ほど are interchangeable in this pattern."
+            "formula": "N / naな / Aい / Vる + くらい・ぐらい / ほど",
+            "explanation": "Pola くらい/ほど digunakan untuk menyatakan perkiraan ukuran atau derajat.\n\nDalam makna ini, くらい dan ほど bisa saling menggantikan.\n\nContoh:\n• 米粒くらい小さい (sekecil butir beras)\n• 死ぬほど疲れた (capek setengah mati)",
+            "explanation_en": "\"About the size of~\" / \"to the extent of~\" — approximation."
           },
           "examples": [
             {
               "jp": "それは米粒くらいの大きさです。",
               "en": "Sore wa kometsubu kurai no ookisa desu. — 'Ukurannya kira-kira sebesar butir beras.'",
-              "explanation": "📝 (=だいたい米粒の)"
+              "explanation": "📝 (=だいたい米粒の)",
+              "highlight": "くらい"
             },
             {
               "jp": "この洗剤は、おもしろいほど汚れが落ちる。",
               "en": "Kono senzai wa, omoshiroi hodo yogore ga ochiru. — 'Deterjen ini bisa menghilangkan noda sampai bikin terheran-heran.'",
-              "explanation": "📝 Menyatakan tingkat ekstrem yang mengejutkan."
+              "explanation": "📝 Menyatakan tingkat ekstrem yang mengejutkan.",
+              "highlight": "ほど"
             },
             {
               "jp": "あきるほど食べた。",
               "en": "Akiru hodo tabeta. — 'Aku makan sampai bosan.'",
-              "explanation": "📝 Menunjukkan tingkat ekstrem hingga sampai bosan."
+              "explanation": "📝 Menunjukkan tingkat ekstrem hingga sampai bosan.",
+              "highlight": "くらい"
             },
             {
               "jp": "宿題が多すぎて、泣きたいくらいだ。",
               "en": "Shukudai ga oosugite, nakitai kurai da. — 'PR-nya kebanyakan, sampai-sampai pengen nangis.'",
-              "explanation": "📝 もっと! Menyatakan perasaan ekstrem."
+              "explanation": "📝 もっと! Menyatakan perasaan ekstrem.",
+              "highlight": "ほど"
             }
-          ]
+          ],
+          "pattern_meaning": "くらい/ほど = kira-kira sebesar ~, seukuran ~"
         },
         {
-          "pattern_title": "若い人ほど (≠くらい)",
+          "pattern_title": "若い人ほど",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Aい} \\\\ \\text{naな} \\end{cases} \\text{ほど ／ Nほど} $$",
-            "explanation": "Menyatakan 'semakin~ semakin~' atau 'semakin~ makin~'. Pola ini menunjukkan bahwa semakin tinggi tingkatan A, hasilnya juga akan lebih kuat/banyak.\n\n⚠️ Catatan: Pola 〜ほど ini TIDAK BISA diganti dengan くらい (≠くらい).",
-            "explanation_en": "Expresses 'the more ~, the more ~'. This pattern indicates that as the degree of A increases, the result also becomes stronger/greater. Note: This 〜ほど pattern CANNOT be replaced with くらい."
+            "formula": "Aい / naな + ほど / Nほど",
+            "explanation": "Dalam pola ini, ほど menunjukkan proporsi — 'semakin A, semakin B'.\n\nDi sini ほど TIDAK bisa diganti くらい.\n\nContoh:\n• 若い人ほど元気だ (semakin muda, semakin energik)\n• 安いほどいい (semakin murah, semakin bagus)",
+            "explanation_en": "\"The more~, the more~\" — proportional relationship (ほど only)."
           },
           "examples": [
             {
               "jp": "若い人ほど朝寝坊をする。",
               "en": "Wakai hito hodo asanebou o suru. — 'Semakin muda seseorang, semakin sering bangun kesiangan.'",
-              "explanation": "📝 (=若い人のほうが)"
+              "explanation": "📝 (=若い人のほうが)",
+              "highlight": "ほど"
             },
             {
               "jp": "伝統的なものは、古いほど価値がある。",
               "en": "Dentouteki na mono wa, furui hodo kachi ga aru. — 'Untuk barang tradisional, semakin tua semakin tinggi nilainya.'",
-              "explanation": "📝 (=古いほうが)"
+              "explanation": "📝 (=古いほうが)",
+              "highlight": "ほど"
             }
-          ]
+          ],
+          "pattern_meaning": "ほど = semakin ~ semakin ~ ｜ proporsi (hanya ほど)"
         },
         {
-          "pattern_title": "知れば知るほど (≠くらい)",
+          "pattern_title": "知れば知るほど",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Vば Vるほど} \\\\ \\text{Aければ Aいほど} \\\\ \\text{naならば naなほど} \\end{cases} $$",
-            "explanation": "Menyatakan 'semakin~ semakin~' dengan menggunakan bentuk pengulangan kata kerja/sifat (bentuk ば + bentuk dasar/く + ほど). Pola ini menekankan korelasi paralel antara dua hal.\n\n⚠️ Catatan: Pola ini TIDAK BISA diganti dengan くらい (≠くらい).",
-            "explanation_en": "Expresses 'the more ~, the more ~' using a repeated form of the verb/adjective (ば-form + dictionary/く-form + ほど). This pattern emphasizes the parallel correlation between two things."
+            "formula": "Vば Vるほど / Aければ Aいほど / naならば naなほど",
+            "explanation": "Pola Vば Vるほど menunjukkan 'semakin melakukan A, semakin terasa B' — ada pengulangan kata kerja.\n\nContoh:\n• 知れば知るほど面白い (semakin tahu, semakin menarik)\n• 見れば見るほど好きになる (semakin dilihat, semakin suka)",
+            "explanation_en": "\"The more you do~, the more~\" — repeated verb emphasizes increasing degree."
           },
           "examples": [
             {
               "jp": "彼のことを知れば知るほど好きになる。",
               "en": "Kare no koto o shireba shiru hodo suki ni naru. — 'Semakin aku mengenalnya, semakin aku menyukainya.'",
-              "explanation": "📝 (=よく知るともっと)"
+              "explanation": "📝 (=よく知るともっと)",
+              "highlight": "知れば知るほど"
             },
             {
               "jp": "荷物は少なければ少ないほどいい。",
               "en": "Nimotsu wa sukunakereba sukunai hodo ii. — 'Bawaan semakin sedikit, semakin baik.'",
-              "explanation": "📝 (=少ないほうが)"
+              "explanation": "📝 (=少ないほうが)",
+              "highlight": "見れば見るほど"
             }
-          ]
+          ],
+          "pattern_meaning": "Vば Vるほど = semakin ~ semakin ~ ｜ pengulangan"
         },
         {
           "pattern_title": "彼女くらい親切な人はいない",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nくらい} \\\\ \\text{Nほど} \\end{cases} \\begin{cases} \\text{N[人]はいない} \\\\ \\text{N[物・事]はない} \\end{cases} $$",
-            "explanation": "Pola superlatif yang menyatakan 'tidak ada yang seperti N' = 'N adalah yang paling~'. Digunakan untuk menyatakan bahwa N adalah yang paling unggul dalam suatu kualitas.\n\n📌 Aturan:\n• Untuk orang → N[人]はいない\n• Untuk benda/hal → N[物・事]はない",
-            "explanation_en": "A superlative pattern meaning 'there is no one/nothing like N' = 'N is the most ~'. Used to express that N is the most outstanding in a certain quality. Use はいない for people and はない for things/matters."
+            "formula": "Nくらい / Nほど + ～はない / ～はいない",
+            "explanation": "Pola ini berarti 'tidak ada yang se-A seperti B' — cara menyatakan superlatif.\n\nくらい dan ほど bisa saling ganti di sini.\n\nContoh:\n• 彼女くらい親切な人はいない (tidak ada orang sebaik dia)\n• これほど難しい問題はない (tidak ada soal sesulit ini)",
+            "explanation_en": "\"There is nothing/no one as~ as~\" — superlative expression."
           },
           "examples": [
             {
               "jp": "彼女くらい親切な人はいない。",
               "en": "Kanojo kurai shinsetsu na hito wa inai. — 'Tidak ada orang sebaik dia.'",
-              "explanation": "📝 (=彼女ほど親切な人はいない／彼女がいちばん親切だ)"
+              "explanation": "📝 (=彼女ほど親切な人はいない／彼女がいちばん親切だ)",
+              "highlight": "くらい"
             },
             {
               "jp": "今年ほど雪の降った年はなかった。",
               "en": "Kotoshi hodo yuki no futta toshi wa nakatta. — 'Belum pernah ada tahun yang saljunya seberat tahun ini.'",
-              "explanation": "📝 (=今年は今まででいちばん雪が降った)"
+              "explanation": "📝 (=今年は今まででいちばん雪が降った)",
+              "highlight": "ほど"
             }
-          ]
+          ],
+          "pattern_meaning": "くらい/ほど～はない = tidak ada yang se-~ dia ｜ superlatif"
         }
       ],
       "summary_table": {
@@ -138,27 +153,42 @@
             {
               "number": 1,
               "question": "この本は、読めば読む（a. ほど　b. くらい）おもしろい。",
-              "options": ["a. ほど", "b. くらい"]
+              "options": [
+                "a. ほど",
+                "b. くらい"
+              ]
             },
             {
               "number": 2,
               "question": "びっくりする（a. ほど　b. くらい）大きい赤ちゃん。",
-              "options": ["a. ほど", "b. くらい"]
+              "options": [
+                "a. ほど",
+                "b. くらい"
+              ]
             },
             {
               "number": 3,
               "question": "野菜は新しい（a. ほど　b. くらい）おいしい。",
-              "options": ["a. ほど", "b. くらい"]
+              "options": [
+                "a. ほど",
+                "b. くらい"
+              ]
             },
             {
               "number": 4,
               "question": "「どの（a. ほど　b. くらい）練習したんですか。」「手が痛くなる（a. ほど　b. くらい）です。」",
-              "options": ["a. ほど", "b. くらい"]
+              "options": [
+                "a. ほど",
+                "b. くらい"
+              ]
             },
             {
               "number": 5,
               "question": "あの人（a. くらい　b. ほど）まじめな人はいない。",
-              "options": ["a. くらい", "b. ほど"]
+              "options": [
+                "a. くらい",
+                "b. ほど"
+              ]
             }
           ]
         },
@@ -169,20 +199,44 @@
               "number": 6,
               "question": "家やアパートは、 ＿＿ ＿＿ ＿＿ ＿＿ 高い。",
               "words": [
-                {"id": 1, "word": "ほど"},
-                {"id": 2, "word": "駅に"},
-                {"id": 3, "word": "便利な"},
-                {"id": 4, "word": "近くて"}
+                {
+                  "id": 1,
+                  "word": "ほど"
+                },
+                {
+                  "id": 2,
+                  "word": "駅に"
+                },
+                {
+                  "id": 3,
+                  "word": "便利な"
+                },
+                {
+                  "id": 4,
+                  "word": "近くて"
+                }
               ]
             },
             {
               "number": 7,
               "question": "フランス語 ＿＿ ＿＿ ＿＿ ＿＿ と私は思う。",
               "words": [
-                {"id": 1, "word": "美しい"},
-                {"id": 2, "word": "言語は"},
-                {"id": 3, "word": "ほど"},
-                {"id": 4, "word": "ない"}
+                {
+                  "id": 1,
+                  "word": "美しい"
+                },
+                {
+                  "id": 2,
+                  "word": "言語は"
+                },
+                {
+                  "id": 3,
+                  "word": "ほど"
+                },
+                {
+                  "id": 4,
+                  "word": "ない"
+                }
               ]
             }
           ]
