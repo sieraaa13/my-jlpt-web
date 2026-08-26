@@ -17,82 +17,94 @@
         {
           "pattern_title": "散歩のついでに",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nの} \\\\ \\text{Vる/Vた} \\end{cases} \\text{ついでに} $$",
-            "explanation": "Menyatakan memanfaatkan kesempatan dari suatu kegiatan untuk melakukan hal lain sekaligus.",
-            "explanation_en": "Expresses taking advantage of an opportunity from one activity to do something else at the same time."
+            "formula": "Nの / Vる・Vた + ついでに",
+            "explanation": "Pola ついでに berarti 'sekalian' — memanfaatkan kesempatan saat melakukan hal utama untuk melakukan hal tambahan.\n\nContoh:\n• 散歩のついでに買い物をした (sekalian jalan-jalan, belanja)\n• 出張に行ったついでに観光した (sekalian perjalanan dinas, jalan-jalan)",
+            "explanation_en": "\"While I'm at it~\" / \"taking the opportunity to~\"."
           },
           "examples": [
             {
               "jp": "散歩のついでに、この手紙を出してきてくれませんか。",
               "en": "Karena kebetulan sedang jalan-jalan, bisakah kamu kirimkan surat ini sekalian?",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ついでに"
             },
             {
               "jp": "郵便局へ行ったついでに、はがきを買ってきた。",
               "en": "Sekalian pergi ke kantor pos, aku beli kartu pos.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "ついでに"
             }
-          ]
+          ],
+          "pattern_meaning": "ついでに = sekalian ~, sambil ~"
         },
         {
           "pattern_title": "買い物のたびに",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{Nの} \\\\ \\text{Vる} \\\\ \\text{Vる。その} \\end{cases} \\begin{cases} \\text{たびに} \\\\ \\text{たび} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa setiap kali suatu peristiwa terjadi, hal lain selalu mengikutinya.",
-            "explanation_en": "Expresses that every time a certain event occurs, something else always follows."
+            "formula": "Nの / Vる / Vる。その + たびに",
+            "explanation": "Pola たびに berarti 'setiap kali ~' — setiap kali kejadian A terjadi, B juga terjadi.\n\nContoh:\n• 会うたびに太っている (setiap kali bertemu, makin gemuk)\n• 旅行のたびにお土産を買う (setiap kali traveling, beli oleh-oleh)",
+            "explanation_en": "\"Every time~\" — each time A happens, B also happens."
           },
           "examples": [
             {
               "jp": "買い物のたびに、袋をたくさんもらう。",
               "en": "Setiap kali belanja, aku selalu mendapat banyak kantong.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "たびに"
             },
             {
               "jp": "この曲を聞くたびに、ふるさとを思い出す。",
               "en": "Setiap kali mendengar lagu ini, aku teringat kampung halaman.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "たびに"
             }
-          ]
+          ],
+          "pattern_meaning": "たびに = setiap kali ~"
         },
         {
           "pattern_title": "開けたとたん",
           "description_box": {
-            "formula": "$$ \\text{Vた} \\begin{cases} \\text{とたん} \\\\ \\text{とたんに} \\end{cases} $$",
-            "explanation": "Menyatakan bahwa segera setelah suatu tindakan selesai, kejadian lain langsung terjadi secara tak terduga.",
-            "explanation_en": "Expresses that immediately after an action is completed, something else happens unexpectedly right away."
+            "formula": "Vた + とたん / とたんに",
+            "explanation": "Pola とたん menunjukkan sesuatu terjadi tepat setelah tindakan selesai — 'begitu ~ langsung ~'.\n\nKejadian kedua biasanya tidak terduga.\n\nContoh:\n• ドアを開けたとたん猫が飛び出した (begitu buka pintu, kucing langsung lompat keluar)\n• 立ったとたんめまいがした (begitu berdiri, langsung pusing)",
+            "explanation_en": "\"The moment~\" / \"as soon as~\" — something unexpected happens immediately after."
           },
           "examples": [
             {
               "jp": "窓を開けたとたん、強い風が入ってきた。",
               "en": "Begitu jendela dibuka, angin kencang langsung masuk.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "とたん"
             },
             {
               "jp": "お酒を飲んだとたん、顔が赤くなった。",
               "en": "Begitu minum alkohol, wajahnya langsung memerah.",
-              "explanation": ""
+              "explanation": "",
+              "highlight": "とたん"
             }
-          ]
+          ],
+          "pattern_meaning": "とたん(に) = begitu ~, tepat setelah ~"
         },
         {
           "pattern_title": "食事の最中に",
           "description_box": {
-            "formula": "$$ \\begin{cases} \\text{N の} \\\\ \\text{V ている} \\end{cases} + \\begin{cases} \\text{最中に} \\\\ \\text{最中だ} \\end{cases} $$",
-            "explanation": "Pola 〜最中に berarti 'di tengah-tengah~' atau 'saat sedang asyik~'. Pola ini menyatakan bahwa suatu kejadian terjadi tepat di tengah saat sedang melakukan sesuatu.\n\n📌 Perbedaan dengan 〜とき:\n• 〜とき = saat (umum)\n• 〜最中に = saat sedang asyik / di puncak suatu aktivitas",
-            "explanation_en": "The pattern 〜最中に means 'in the middle of ~' or 'while in the midst of ~'. It indicates that an event occurs precisely while someone is fully engaged in doing something. Different from 〜とき which is more general — 〜最中に specifically emphasizes being at the peak/most engaged moment of an activity."
+            "formula": "Nの / Vている + 最中に / 最中だ",
+            "explanation": "Pola 最中に berarti 'sedang di tengah-tengah ~' — sesuatu terjadi saat kegiatan sedang berlangsung.\n\nBiasanya kejadian yang mengganggu.\n\nContoh:\n• 食事の最中に電話がかかってきた (sedang makan, telepon masuk)\n• 試験の最中に地震があった (sedang ujian, ada gempa)",
+            "explanation_en": "\"In the middle of~\" — an interruption occurs during an activity."
           },
           "examples": [
             {
               "jp": "食事の最中に、お客さんが来た。",
               "en": "Shokuji no saichuu ni, okyaku-san ga kita. — 'Saat sedang asyik makan, tamu datang.'",
-              "explanation": "📝 (=食事しているちょうどそのとき)"
+              "explanation": "📝 (=食事しているちょうどそのとき)",
+              "highlight": "最中に"
             },
             {
               "jp": "会議をしている最中に、携帯電話が鳴った。",
               "en": "Kaigi o shite iru saichuu ni, keitai denwa ga natta. — 'Tepat di tengah-tengah rapat, ponselku berdering.'",
-              "explanation": "📝 Menekankan bahwa kejadian terjadi pada momen yang sedang sibuk/penting. (=会議をしているちょうどそのとき)"
+              "explanation": "📝 Menekankan bahwa kejadian terjadi pada momen yang sedang sibuk/penting. (=会議をしているちょうどそのとき)",
+              "highlight": "最中に"
             }
-          ]
+          ],
+          "pattern_meaning": "最中に = sedang di tengah-tengah ~"
         }
       ],
       "summary_table": {
@@ -128,27 +140,42 @@
             {
               "number": 1,
               "question": "電話で（a. 話す　b. 話している）最中に、ほかの電話が鳴った。",
-              "options": ["a. 話す", "b. 話している"]
+              "options": [
+                "a. 話す",
+                "b. 話している"
+              ]
             },
             {
               "number": 2,
               "question": "「お子さん、会う（a. ついでに　b. たびに）大きくなられますね。」",
-              "options": ["a. ついでに", "b. たびに"]
+              "options": [
+                "a. ついでに",
+                "b. たびに"
+              ]
             },
             {
               "number": 3,
               "question": "（a. 立ち上がった　b. 立ち上がる）とたんに、目まいがした。",
-              "options": ["a. 立ち上がった", "b. 立ち上がる"]
+              "options": [
+                "a. 立ち上がった",
+                "b. 立ち上がる"
+              ]
             },
             {
               "number": 4,
               "question": "お隣の人は旅行の（a. たびに　b. ついでに）お土産を買ってきてくれます。",
-              "options": ["a. たびに", "b. ついでに"]
+              "options": [
+                "a. たびに",
+                "b. ついでに"
+              ]
             },
             {
               "number": 5,
               "question": "「明日、近くへ行く（a. ついでに　b. たびに）忘れ物を届けますよ。」",
-              "options": ["a. ついでに", "b. たびに"]
+              "options": [
+                "a. ついでに",
+                "b. たびに"
+              ]
             }
           ]
         },
@@ -159,20 +186,44 @@
               "number": 6,
               "question": "彼女の声が出なくなってしまったのは ＿＿ ＿＿ ＿＿ ＿＿ でした。",
               "words": [
-                {"id": 1, "word": "いる"},
-                {"id": 2, "word": "歌って"},
-                {"id": 3, "word": "テレビ番組で"},
-                {"id": 4, "word": "最中"}
+                {
+                  "id": 1,
+                  "word": "いる"
+                },
+                {
+                  "id": 2,
+                  "word": "歌って"
+                },
+                {
+                  "id": 3,
+                  "word": "テレビ番組で"
+                },
+                {
+                  "id": 4,
+                  "word": "最中"
+                }
               ]
             },
             {
               "number": 7,
               "question": "「時刻表ない？」「ないけど、駅へ ＿＿ ＿＿ ＿＿ ＿＿ あげるよ。」",
               "words": [
-                {"id": 1, "word": "きて"},
-                {"id": 2, "word": "ついでに"},
-                {"id": 3, "word": "もらって"},
-                {"id": 4, "word": "行く"}
+                {
+                  "id": 1,
+                  "word": "きて"
+                },
+                {
+                  "id": 2,
+                  "word": "ついでに"
+                },
+                {
+                  "id": 3,
+                  "word": "もらって"
+                },
+                {
+                  "id": 4,
+                  "word": "行く"
+                }
               ]
             }
           ]
