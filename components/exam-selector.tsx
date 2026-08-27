@@ -83,8 +83,9 @@ export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
   };
 
   // Jika sudah ada data, tampilkan soal
+  // ★ PERUBAHAN: tambah prop level={level} supaya ExamQuestions tahu ini N1/N2/N3/dll
   if (examData) {
-    return <ExamQuestions data={examData} year={selectedYear} month={selectedMonth} onBack={() => setExamData(null)} />;
+    return <ExamQuestions data={examData} year={selectedYear} month={selectedMonth} level={level} onBack={() => setExamData(null)} />;
   }
 
   return (
