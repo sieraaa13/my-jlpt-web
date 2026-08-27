@@ -41,16 +41,14 @@ interface ExamQuestionsProps {
   };
   year: string;
   month: string;
+  level?: string; // ★ BARU: terima level dari parent
   onBack?: () => void;
 }
 
-export default function ExamQuestions({ data, year, month, onBack }: ExamQuestionsProps) {
+export default function ExamQuestions({ data, year, month, level: levelProp, onBack }: ExamQuestionsProps) {
   const { setExamData: setContextExamData } = useExamContext();
   const { user } = useAuth();
 
-  // Kalau onBack tidak dikirim dari parent (misal dari Server Component yang
-  // tidak boleh kirim fungsi), pakai fallback browser back di sini langsung.
-  // Aman karena komponen ini sudah "use client".
   const handleBack = onBack ?? (() => {
     if (typeof window !== "undefined") window.history.back();
   });
@@ -105,12 +103,8 @@ export default function ExamQuestions({ data, year, month, onBack }: ExamQuestio
   const percentage  = total > 0 ? Math.round((correct / total) * 100) : 0;
   const answeredCount = Object.keys(answers).length;
 
-  function getJLPTLevel(y: string) {
-    if (y === "2011" || y === "2012") return "N3";
-    if (y === "2013") return "N2";
-    return "N3";
-  }
-  const level = getJLPTLevel(year);
+  // ★ PERUBAHAN: pakai level dari props, bukan hardcode dari tahun
+  const level = levelProp ? levelProp.toUpperCase() : "N3";
   const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
   // ── AI CONTEXT ──────────────────────────────────────────────
@@ -416,11 +410,9 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer }: { index:
           <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
 
           <div className="rounded-xl p-4 mb-4 border-2 space-y-2 bg-cyan-500/5 border-cyan-500/20">
-            {/* Hidden audio */}
             {question.introAudio && <audio ref={introRef} src={question.introAudio} onEnded={() => setIsPlayingIntro(false)} preload="metadata" />}
             <audio ref={soalRef} src={question.audio} onEnded={() => setIsPlayingSoal(false)} preload="metadata" />
 
-            {/* INSTRUKSI */}
             {question.introAudio && (
               <div className="flex items-center gap-2 p-2 rounded-lg bg-background border border-border">
                 <span>📢</span>
@@ -431,7 +423,6 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer }: { index:
               </div>
             )}
 
-            {/* AUDIO SOAL */}
             <div className="flex items-center gap-2 p-2 rounded-lg bg-background border border-border">
               <span>🎧</span>
               <span className="text-sm font-medium flex-1 text-foreground">
@@ -448,7 +439,6 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer }: { index:
             </div>
           </div>
 
-          {/* PILIHAN */}
           <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((opt, oi) => (
               <button key={oi} onClick={() => onAnswer(oi)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === oi ? "bg-cyan-500/20 text-cyan-600 border-cyan-500 dark:text-cyan-300" : "bg-background border-border text-foreground hover:border-cyan-400/50"}`}>
