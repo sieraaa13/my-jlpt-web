@@ -111,6 +111,10 @@ Siera: "Maaf ya, Siera sudah kasih 3 clue maksimal untuk soal ini. Coba jawab du
 
     // ====== MODE 2: UJIAN SUDAH SELESAI ======
     else if (examContext && examContext.trim().length > 0 && isExamFinished) {
+
+      // Cek apakah soal yang sedang aktif adalah DOKKAI (ada passage/bacaan)
+      const isDokkai = examContext.includes("[Bacaan/Teks]");
+
       systemPrompt += `
 
 ===== KONTEKS SOAL UJIAN YANG SUDAH SELESAI =====
@@ -126,11 +130,68 @@ PANDUAN MENJAWAB:
 2. ✅ WAJIB jelaskan ALASAN kenapa jawaban itu benar.
 3. ✅ Bahas grammar/kosakata/konteks yang relevan.
 4. ✅ Beri tips supaya user mudah ingat.
-5. ✅ Kalau user bertanya kenapa pilihan lain salah, jelaskan juga.
+5. ✅ Kalau user bertanya kenapa pilihan lain salah, jelaskan juga.`;
+
+      // ====== PROMPT KHUSUS DOKKAI ======
+      if (isDokkai) {
+        systemPrompt += `
+
+📖 ATURAN KHUSUS UNTUK SOAL DOKKAI (READING):
+
+Karena soal ini adalah DOKKAI (bacaan), kamu WAJIB ikuti struktur ini:
+
+**LANGKAH 1 — Ulangi pertanyaan secara singkat**
+Tulis ulang inti pertanyaannya dalam 1-2 kalimat bahasa Indonesia supaya user paham apa yang ditanyakan.
+
+**LANGKAH 2 — Kutip bagian paragraf yang relevan**
+Cari kalimat atau bagian paragraf yang LANGSUNG berhubungan dengan soal.
+- Kutip kalimat asli Jepang-nya dalam tanda「...」
+- Beri tahu posisinya: "Di paragraf ke-X" atau "Di kalimat ke-X dari atas"
+- Terjemahkan kutipan itu ke bahasa Indonesia
+
+**LANGKAH 3 — Jawaban benar + alasan**
+- Sebutkan jawaban yang benar
+- Jelaskan KENAPA itu benar, sambungkan langsung ke kutipan paragraf dari Langkah 2
+- Tunjukkan hubungan logis antara teks bacaan → pertanyaan → jawaban benar
+
+**LANGKAH 4 — Kenapa opsi lain salah**
+Untuk SETIAP opsi yang salah, jelaskan singkat:
+- Apakah itu distraktor (mirip tapi beda makna)?
+- Apakah itu informasi yang tidak ada di teks?
+- Apakah itu salah tangkap konteks/makna?
+- Apakah itu benar sebagian tapi tidak menjawab pertanyaan?
+
+⚠️ JANGAN mengarang alasan yang TIDAK DIDUKUNG oleh teks paragraf.
+Semua penjelasan harus bisa dibuktikan dari teks bacaan yang ada.
+
+FORMAT JAWABAN DOKKAI:
+
+"**📌 Soal No.X**
+[ulangi pertanyaan singkat dalam bahasa Indonesia]
+
+**📄 Bagian teks yang relevan:**
+Di paragraf ke-Y: 「kutipan kalimat Jepang」
+→ Artinya: [terjemahan Indonesia]
+
+**✅ Jawaban benar: [huruf]. [isi pilihan]**
+[penjelasan kenapa benar, dikaitkan ke kutipan paragraf]
+
+**❌ Kenapa opsi lain salah:**
+- [huruf]. [isi pilihan] → [alasan singkat kenapa salah]
+- [huruf]. [isi pilihan] → [alasan singkat kenapa salah]
+- [huruf]. [isi pilihan] → [alasan singkat kenapa salah]
+
+**💡 Tips:**
+[cara mudah mengingat / strategi baca dokkai untuk tipe soal ini]"`;
+      }
+
+      // ====== PROMPT UNTUK KANJI / BUNPOU / CHOUKAI (non-dokkai) ======
+      else {
+        systemPrompt += `
 
 FORMAT JAWABAN PEMBAHASAN:
 
-**📌 Soal No.X**
+"**📌 Soal No.X**
 [sebutkan singkat soalnya]
 
 **✅ Jawaban benar:** [huruf]. [isi pilihan]
@@ -138,8 +199,13 @@ FORMAT JAWABAN PEMBAHASAN:
 **📖 Penjelasan:**
 [kenapa jawaban itu benar - bahas grammar/arti kata]
 
+**❌ Kenapa opsi lain salah:**
+- [huruf]. [isi pilihan] → [alasan singkat]
+- [huruf]. [isi pilihan] → [alasan singkat]
+- [huruf]. [isi pilihan] → [alasan singkat]
+
 **💡 Tips:**
-[cara mudah mengingat]
+[cara mudah mengingat]"
 
 CONTOH:
 "**📌 Soal No.1**
@@ -153,8 +219,14 @@ CONTOH:
 - 都 (to) = kota besar
 Jadi 首都 = kota utama / ibukota.
 
+**❌ Kenapa opsi lain salah:**
+- A. しゅうと → ini cara baca 舅 (mertua laki-laki), bukan 首都
+- B. しゅど → tidak ada kata ini dalam bahasa Jepang
+- D. すと → cara baca yang salah, 首 tidak pernah dibaca "su" di sini
+
 **💡 Tips:**
 Ingat aja, "shuto" mirip kata "shoot" — pusat tembakan = pusat negara!"`;
+      }
     }
 
     const fullMessages = [
