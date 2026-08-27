@@ -19,8 +19,15 @@ import { exam202212 } from "../data/exams/2022/12";
 import { exam201107_choukai } from "../data/exams/2011/choukai/07";
 
 // ============ IMPORT N1 DATA ============
-import { examN1_241225 } from "../data/exams/n1/2024/12";
+import { examN1_2212 } from "../data/exams/n1/2022/12";
 
+n1: {
+  "2022-12": examN1_2212,
+  "2023-07": examN1_2307,
+  "2023-12": examN1_2312,
+  "2024-07": examN1_2407,
+  "2024-12": examN1_241225,
+},
 // ==========================================================
 // CONVERTER: format mondai1-13 (N1) → kanji/bunpou/dokkai
 // Supaya kompatibel dengan exam-questions.tsx tanpa ubah UI
