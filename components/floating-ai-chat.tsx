@@ -35,6 +35,8 @@ export default function FloatingAIChat() {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  // ★ PERUBAHAN UTAMA: kirim hanya soal yang sedang aktif + beberapa soal sekitar
+  // Bukan seluruh daftar soal, supaya tidak melebihi token limit
   const buildExamContext = (): string => {
     if (!examData?.questions || examData.questions.length === 0) {
       return "";
@@ -60,12 +62,32 @@ export default function FloatingAIChat() {
       ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
     }
 
-    ctx += `=== DAFTAR SEMUA SOAL DI BAGIAN INI ===\n`;
+    // ★ Ambil soal yang sedang aktif (dan beberapa soal sekitarnya)
+    const activeNum = examData.activeQuestion?.number || 1;
+    const CONTEXT_RANGE = 3; // kirim 3 soal sebelum & sesudah soal aktif
 
-    examData.questions.forEach((q) => {
+    // Filter: hanya kirim soal di sekitar soal aktif
+    const nearbyQuestions = examData.questions.filter((q) => {
+      return Math.abs(q.number - activeNum) <= CONTEXT_RANGE;
+    });
+
+    // Kalau section bukan dokkai, bisa kirim lebih banyak (soal pendek)
+    const questionsToSend =
+      examData.section === "dokkai" ? nearbyQuestions : examData.questions.slice(0, 30);
+
+    ctx += `=== SOAL-SOAL DI BAGIAN INI ===\n`;
+    ctx += `(Total ${examData.questions.length} soal, menampilkan ${questionsToSend.length} soal terdekat)\n`;
+
+    questionsToSend.forEach((q) => {
       ctx += `\n--- Soal No. ${q.number} ---\n`;
       if (q.passage && q.passage.trim().length > 0) {
-        ctx += `[Bacaan/Teks]\n${q.passage}\n\n`;
+        // ★ Untuk passage dokkai: potong kalau terlalu panjang (max 1500 karakter)
+        const maxPassageLength = 1500;
+        const passageText =
+          q.passage.length > maxPassageLength
+            ? q.passage.substring(0, maxPassageLength) + "\n... (teks dipotong untuk efisiensi)"
+            : q.passage;
+        ctx += `[Bacaan/Teks]\n${passageText}\n\n`;
       }
       ctx += `Pertanyaan: ${q.q}\n`;
       if (q.options && q.options.length > 0) {
@@ -96,11 +118,14 @@ export default function FloatingAIChat() {
     try {
       const examContext = buildExamContext();
 
+      // ★ Batasi history chat yang dikirim (max 10 pesan terakhir)
+      const recentMessages = [...messages, userMsg].slice(-10);
+
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: [...messages, userMsg],
+          messages: recentMessages,
           examContext,
           level,
           isExamFinished: examData?.isExamFinished || false,
