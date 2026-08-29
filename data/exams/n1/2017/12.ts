@@ -1,4 +1,4 @@
-export const examN1_1707 = {
+export const examN1_1712 = {
 
   mondai1: [
     { q: "1. 新しい販売ルートを開拓した。", options: ["かいたく", "かいだく", "かいせき", "かいぜき"], correct: 0 },
