@@ -19,6 +19,24 @@ import { exam202212 } from "../data/exams/2022/12";
 import { exam201107_choukai } from "../data/exams/2011/choukai/07";
 
 // ============ IMPORT N1 DATA ============
+import { examN1_1007 } from "../data/exams/n1/2010/07";
+import { examN1_1012 } from "../data/exams/n1/2010/12";
+import { examN1_1107 } from "../data/exams/n1/2011/07";
+import { examN1_1112 } from "../data/exams/n1/2011/12";
+import { examN1_1207 } from "../data/exams/n1/2012/07";
+import { examN1_1212 } from "../data/exams/n1/2012/12";
+import { examN1_1307 } from "../data/exams/n1/2013/07";
+import { examN1_1312 } from "../data/exams/n1/2013/12";
+import { examN1_1407 } from "../data/exams/n1/2014/07";
+import { examN1_1412 } from "../data/exams/n1/2014/12";
+import { examN1_1507 } from "../data/exams/n1/2015/07";
+import { examN1_1512 } from "../data/exams/n1/2015/12";
+import { examN1_1607 } from "../data/exams/n1/2016/07";
+import { examN1_1612 } from "../data/exams/n1/2016/12";
+import { examN1_1707 } from "../data/exams/n1/2017/07";
+import { examN1_1712 } from "../data/exams/n1/2017/12";
+import { examN1_1807 } from "../data/exams/n1/2018/07";
+import { examN1_1812 } from "../data/exams/n1/2018/12";
 import { examN1_2212 } from "../data/exams/n1/2022/12";
 import { examN1_2307 } from "../data/exams/n1/2023/07";
 import { examN1_2312 } from "../data/exams/n1/2023/12";
@@ -136,6 +154,24 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
   },
 
   n1: {
+    "2010-07": examN1_1007,
+    "2010-12": examN1_1012,
+    "2011-07": examN1_1107,
+    "2011-12": examN1_1112,
+    "2012-07": examN1_1207,
+    "2012-12": examN1_1212,
+    "2013-07": examN1_1307,
+    "2013-12": examN1_1312,
+    "2014-07": examN1_1407,
+    "2014-12": examN1_1412,
+    "2015-07": examN1_1507,
+    "2015-12": examN1_1512,
+    "2016-07": examN1_1607,
+    "2016-12": examN1_1612,
+    "2017-07": examN1_1707,
+    "2017-12": examN1_1712,
+    "2018-07": examN1_1807,
+    "2018-12": examN1_1812,
     "2022-12": examN1_2212,
     "2023-07": examN1_2307,
     "2023-12": examN1_2312,
@@ -181,4 +217,21 @@ export async function getExamData(
 
   console.log(`Loaded exam data for JLPT ${levelKey.toUpperCase()} - ${key}`);
   return examData;
+}
+
+// ==========================================================
+// HELPER: daftar periode yang tersedia untuk satu level
+// Berguna untuk dropdown/selector supaya otomatis update
+// tanpa perlu edit komponen tiap kali data baru ditambahkan
+// ==========================================================
+export function getAvailablePeriods(level: string): string[] {
+  const levelData = EXAMS_DATA_BY_LEVEL[level.toLowerCase()];
+  if (!levelData) return [];
+  return Object.keys(levelData).sort((a, b) => b.localeCompare(a));
+}
+
+export function getAvailableLevels(): string[] {
+  return Object.keys(EXAMS_DATA_BY_LEVEL).filter(
+    (level) => Object.keys(EXAMS_DATA_BY_LEVEL[level]).length > 0
+  );
 }
