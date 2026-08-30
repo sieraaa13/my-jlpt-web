@@ -1,12 +1,13 @@
 import w1d1 from "./week1_day1.json";
 
-export type KanjiRadical = { character: string; name: string; meaning: string };
+export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
 export type KanjiEntry = {
   character: string;
   reading: string;
+  meaning: string;
+  components: KanjiComponent[];
   examples: KanjiExample[];
-  radical: KanjiRadical;
   note?: string;
 };
 export type KanjiGroup = {
@@ -14,18 +15,11 @@ export type KanjiGroup = {
   sharedReading: string;
   kanjiList: KanjiEntry[];
 };
-export type KanjiQuiz = {
-  question: string;
-  targetKanji: string;
-  choices: string[];
-  answer: string;
-};
 export type KanjiLessonDay = {
   week: number;
   day: number;
   title: string;
   subtitle: string;
-  quiz: KanjiQuiz;
   groups: KanjiGroup[];
 };
 

@@ -3,12 +3,6 @@
   "day": 1,
   "title": "五・語・悟",
   "subtitle": "Kanji dengan bagian yang sama & cara baca on'yomi yang sama ①",
-  "quiz": {
-    "question": "___ cara baca on'yomi-nya apa?",
-    "targetKanji": "語",
-    "choices": ["ゴ", "コ", "シュ"],
-    "answer": "ゴ"
-  },
   "groups": [
     {
       "sharedComponent": "古",
@@ -17,47 +11,68 @@
         {
           "character": "古",
           "reading": "コ",
+          "meaning": "kuno, lama, zaman dahulu",
+          "components": [
+            { "character": "十", "meaning": "sepuluh" },
+            { "character": "口", "meaning": "mulut" }
+          ],
           "examples": [
             { "word": "古典", "reading": "こてん", "meaning": "karya klasik" },
             { "word": "古代", "reading": "こだい", "meaning": "zaman kuno" }
-          ],
-          "radical": { "character": "口", "name": "くち (kuchi)", "meaning": "mulut" }
+          ]
         },
         {
           "character": "固",
           "reading": "コ",
+          "meaning": "kokoh, kuat, memadat",
+          "components": [
+            { "character": "囗", "meaning": "bingkai/pagar" },
+            { "character": "古", "meaning": "kuno (unsur fonetik, bunyi コ)" }
+          ],
           "examples": [
             { "word": "固定", "reading": "こてい", "meaning": "tetap, terpasang" },
             { "word": "固有", "reading": "こゆう", "meaning": "khas, unik miliknya sendiri" }
-          ],
-          "radical": { "character": "囗", "name": "くにがまえ (kunigamae)", "meaning": "bingkai/pagar" }
+          ]
         },
         {
           "character": "個",
           "reading": "コ",
+          "meaning": "satuan, individu (kata bantu bilangan untuk benda/orang)",
+          "components": [
+            { "character": "亻", "meaning": "orang" },
+            { "character": "固", "meaning": "kokoh (unsur fonetik, bunyi コ)" }
+          ],
           "examples": [
             { "word": "個性", "reading": "こせい", "meaning": "kepribadian" },
             { "word": "個別", "reading": "こべつ", "meaning": "secara individual" }
-          ],
-          "radical": { "character": "亻", "name": "にんべん (ninben)", "meaning": "orang" }
+          ]
         },
         {
           "character": "故",
           "reading": "コ",
+          "meaning": "sebab, alasan; juga bermakna \"almarhum\"",
+          "components": [
+            { "character": "古", "meaning": "kuno (unsur fonetik, bunyi コ)" },
+            { "character": "攵", "meaning": "memukul/bertindak" }
+          ],
           "examples": [
             { "word": "事故", "reading": "じこ", "meaning": "kecelakaan" },
             { "word": "故人", "reading": "こじん", "meaning": "almarhum" }
-          ],
-          "radical": { "character": "攵", "name": "ぼくづくり (bokuzukuri)", "meaning": "memukul/bertindak" }
+          ]
         },
         {
           "character": "湖",
           "reading": "コ",
+          "meaning": "danau",
+          "components": [
+            { "character": "氵", "meaning": "air" },
+            { "character": "古", "meaning": "kuno (unsur fonetik, bunyi コ)" },
+            { "character": "月", "meaning": "daging/tubuh" }
+          ],
           "examples": [
             { "word": "湖畔", "reading": "こはん", "meaning": "tepi danau" },
             { "word": "湖水", "reading": "こすい", "meaning": "air danau" }
-          ],
-          "radical": { "character": "氵", "name": "さんずい (sanzui)", "meaning": "air" }
+          ]
         }
       ]
     },
@@ -68,28 +83,41 @@
         {
           "character": "五",
           "reading": "ゴ",
+          "meaning": "lima (angka 5)",
+          "components": [
+            { "character": "五", "meaning": "lima (karakter tunggal, tidak terpecah lagi)" }
+          ],
           "examples": [
             { "word": "五十音", "reading": "ごじゅうおん", "meaning": "50 bunyi dasar Jepang" },
             { "word": "五感", "reading": "ごかん", "meaning": "lima indra" }
-          ],
-          "radical": { "character": "二", "name": "に (ni)", "meaning": "dua" }
+          ]
         },
         {
           "character": "語",
           "reading": "ゴ",
+          "meaning": "bahasa, kata-kata, berbicara",
+          "components": [
+            { "character": "言", "meaning": "perkataan" },
+            { "character": "五", "meaning": "lima (unsur fonetik, bunyi ゴ)" },
+            { "character": "口", "meaning": "mulut" }
+          ],
           "examples": [
             { "word": "言語", "reading": "げんご", "meaning": "bahasa" },
             { "word": "語句", "reading": "ごく", "meaning": "kata dan frasa" }
-          ],
-          "radical": { "character": "言", "name": "ごんべん (gonben)", "meaning": "perkataan" }
+          ]
         },
         {
           "character": "悟",
           "reading": "ゴ",
+          "meaning": "menyadari, memahami, pencerahan",
+          "components": [
+            { "character": "忄", "meaning": "hati/perasaan" },
+            { "character": "五", "meaning": "lima (unsur fonetik, bunyi ゴ)" },
+            { "character": "口", "meaning": "mulut" }
+          ],
           "examples": [
             { "word": "覚悟", "reading": "かくご", "meaning": "kesiapan mental, tekad" }
-          ],
-          "radical": { "character": "忄", "name": "りっしんべん (risshinben)", "meaning": "hati/perasaan" }
+          ]
         }
       ]
     },
@@ -100,29 +128,41 @@
         {
           "character": "未",
           "reading": "ミ",
+          "meaning": "belum",
+          "components": [
+            { "character": "一", "meaning": "satu/garis" },
+            { "character": "木", "meaning": "pohon/kayu" }
+          ],
           "examples": [
             { "word": "未知", "reading": "みち", "meaning": "belum diketahui" },
             { "word": "未定", "reading": "みてい", "meaning": "belum ditentukan" }
-          ],
-          "radical": { "character": "木", "name": "き (ki)", "meaning": "pohon/kayu" }
+          ]
         },
         {
           "character": "味",
           "reading": "ミ",
+          "meaning": "rasa",
+          "components": [
+            { "character": "口", "meaning": "mulut" },
+            { "character": "未", "meaning": "belum (unsur fonetik, bunyi ミ)" }
+          ],
           "examples": [
             { "word": "味覚", "reading": "みかく", "meaning": "indra perasa" },
             { "word": "意味", "reading": "いみ", "meaning": "arti, makna" }
-          ],
-          "radical": { "character": "口", "name": "くちへん (kuchihen)", "meaning": "mulut" }
+          ]
         },
         {
           "character": "魅",
           "reading": "ミ",
+          "meaning": "pesona, daya tarik",
+          "components": [
+            { "character": "鬼", "meaning": "hantu/roh" },
+            { "character": "未", "meaning": "belum (unsur fonetik, bunyi ミ)" }
+          ],
           "examples": [
             { "word": "魅力", "reading": "みりょく", "meaning": "daya tarik, pesona" },
             { "word": "魅了", "reading": "みりょう", "meaning": "memukau" }
-          ],
-          "radical": { "character": "鬼", "name": "きにょう (kinyou)", "meaning": "hantu/roh" }
+          ]
         }
       ]
     },
@@ -133,64 +173,91 @@
         {
           "character": "工",
           "reading": "コウ",
+          "meaning": "kerja, pekerjaan, kerajinan",
+          "components": [
+            { "character": "工", "meaning": "kerja (karakter tunggal, tidak terpecah lagi)" }
+          ],
           "examples": [
             { "word": "加工", "reading": "かこう", "meaning": "pengolahan" },
             { "word": "人工", "reading": "じんこう", "meaning": "buatan manusia" }
-          ],
-          "radical": { "character": "工", "name": "たくみ (takumi)", "meaning": "kerajinan/pekerjaan" }
+          ]
         },
         {
           "character": "紅",
           "reading": "コウ",
+          "meaning": "merah",
+          "components": [
+            { "character": "糸", "meaning": "benang" },
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" }
+          ],
           "examples": [
             { "word": "紅葉", "reading": "こうよう", "meaning": "daun musim gugur" },
             { "word": "紅茶", "reading": "こうちゃ", "meaning": "teh hitam" }
-          ],
-          "radical": { "character": "糸", "name": "いとへん (itohen)", "meaning": "benang" }
+          ]
         },
         {
           "character": "功",
           "reading": "コウ",
+          "meaning": "jasa, prestasi, keberhasilan",
+          "components": [
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" },
+            { "character": "力", "meaning": "tenaga/kekuatan" }
+          ],
           "examples": [
             { "word": "成功", "reading": "せいこう", "meaning": "kesuksesan" },
             { "word": "功績", "reading": "こうせき", "meaning": "jasa, prestasi" }
-          ],
-          "radical": { "character": "力", "name": "ちから (chikara)", "meaning": "tenaga/kekuatan" }
+          ]
         },
         {
           "character": "巧",
           "reading": "コウ",
+          "meaning": "terampil, cerdik, lihai",
+          "components": [
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" },
+            { "character": "丂", "meaning": "unsur fonetik kuno" }
+          ],
           "examples": [
             { "word": "巧妙", "reading": "こうみょう", "meaning": "cerdik, licik" },
             { "word": "精巧", "reading": "せいこう", "meaning": "presisi, rumit halus" }
-          ],
-          "radical": { "character": "工", "name": "たくみへん (takumihen)", "meaning": "kerajinan/pekerjaan" }
+          ]
         },
         {
           "character": "項",
           "reading": "コウ",
+          "meaning": "pasal, butir/item; juga \"tengkuk\"",
+          "components": [
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" },
+            { "character": "頁", "meaning": "kepala" }
+          ],
           "examples": [
             { "word": "項目", "reading": "こうもく", "meaning": "poin, item" },
             { "word": "事項", "reading": "じこう", "meaning": "hal, perkara" }
-          ],
-          "radical": { "character": "頁", "name": "おおがい (oogai)", "meaning": "kepala" }
+          ]
         },
         {
           "character": "攻",
           "reading": "コウ",
+          "meaning": "menyerang",
+          "components": [
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" },
+            { "character": "攵", "meaning": "memukul/bertindak" }
+          ],
           "examples": [
             { "word": "専攻", "reading": "せんこう", "meaning": "jurusan, spesialisasi" },
             { "word": "攻撃", "reading": "こうげき", "meaning": "serangan" }
-          ],
-          "radical": { "character": "攵", "name": "のぶん (nobun)", "meaning": "memukul/bertindak" }
+          ]
         },
         {
           "character": "貢",
           "reading": "コウ",
+          "meaning": "memberi upeti/persembahan, berkontribusi",
+          "components": [
+            { "character": "工", "meaning": "kerja (unsur fonetik, bunyi コウ)" },
+            { "character": "貝", "meaning": "kerang/harta" }
+          ],
           "examples": [
             { "word": "貢献", "reading": "こうけん", "meaning": "kontribusi" }
-          ],
-          "radical": { "character": "貝", "name": "かい (kai)", "meaning": "kerang/harta" }
+          ]
         }
       ]
     },
@@ -201,20 +268,29 @@
         {
           "character": "取",
           "reading": "シュ",
+          "meaning": "mengambil",
+          "components": [
+            { "character": "耳", "meaning": "telinga" },
+            { "character": "又", "meaning": "tangan" }
+          ],
           "examples": [
             { "word": "取材", "reading": "しゅざい", "meaning": "liputan, pengumpulan data" },
             { "word": "取得", "reading": "しゅとく", "meaning": "memperoleh" }
           ],
-          "radical": { "character": "又", "name": "また (mata)", "meaning": "tangan" }
+          "note": "Asalnya menggambarkan tangan memegang telinga hasil buruan (kebiasaan berburu kuno)."
         },
         {
           "character": "趣",
           "reading": "シュ",
+          "meaning": "minat, ketertarikan, keasyikan",
+          "components": [
+            { "character": "走", "meaning": "berlari" },
+            { "character": "取", "meaning": "mengambil (unsur fonetik, bunyi シュ)" }
+          ],
           "examples": [
             { "word": "趣味", "reading": "しゅみ", "meaning": "hobi" },
             { "word": "趣向", "reading": "しゅこう", "meaning": "gagasan, ide unik" }
-          ],
-          "radical": { "character": "走", "name": "そうにょう (sounyou)", "meaning": "berlari" }
+          ]
         }
       ]
     },
@@ -225,29 +301,41 @@
         {
           "character": "章",
           "reading": "ショウ",
+          "meaning": "bab, lambang/emblem",
+          "components": [
+            { "character": "立", "meaning": "berdiri" },
+            { "character": "早", "meaning": "pagi/dini" }
+          ],
           "examples": [
             { "word": "文章", "reading": "ぶんしょう", "meaning": "kalimat, karangan" },
             { "word": "第一章", "reading": "だいいっしょう", "meaning": "bab pertama" }
-          ],
-          "radical": { "character": "立", "name": "たつ (tatsu)", "meaning": "berdiri" }
+          ]
         },
         {
           "character": "障",
           "reading": "ショウ",
+          "meaning": "menghalangi, rintangan",
+          "components": [
+            { "character": "阝", "meaning": "bukit/gundukan tanah" },
+            { "character": "章", "meaning": "bab (unsur fonetik, bunyi ショウ)" }
+          ],
           "examples": [
             { "word": "故障", "reading": "こしょう", "meaning": "kerusakan" },
             { "word": "障害", "reading": "しょうがい", "meaning": "hambatan, gangguan" }
-          ],
-          "radical": { "character": "阝", "name": "こざとへん (kozatohen)", "meaning": "bukit/gundukan tanah" }
+          ]
         },
         {
           "character": "彰",
           "reading": "ショウ",
+          "meaning": "menampakkan, jelas/nyata",
+          "components": [
+            { "character": "章", "meaning": "bab (unsur fonetik, bunyi ショウ)" },
+            { "character": "彡", "meaning": "corak/garis rambut" }
+          ],
           "examples": [
             { "word": "表彰", "reading": "ひょうしょう", "meaning": "penghargaan resmi" },
             { "word": "表彰状", "reading": "ひょうしょうじょう", "meaning": "piagam penghargaan" }
-          ],
-          "radical": { "character": "彡", "name": "さんづくり (sanzukuri)", "meaning": "corak/garis rambut" }
+          ]
         }
       ]
     },
@@ -258,37 +346,53 @@
         {
           "character": "補",
           "reading": "ホ",
+          "meaning": "menambal, melengkapi, memperbaiki",
+          "components": [
+            { "character": "衤", "meaning": "pakaian" },
+            { "character": "甫", "meaning": "permulaan (unsur fonetik, bunyi ホ)" }
+          ],
           "examples": [
             { "word": "補足", "reading": "ほそく", "meaning": "tambahan, pelengkap" },
             { "word": "補習", "reading": "ほしゅう", "meaning": "les tambahan" }
-          ],
-          "radical": { "character": "衤", "name": "ころもへん (koromohen)", "meaning": "pakaian" }
+          ]
         },
         {
           "character": "捕",
           "reading": "ホ",
+          "meaning": "menangkap",
+          "components": [
+            { "character": "扌", "meaning": "tangan" },
+            { "character": "甫", "meaning": "permulaan (unsur fonetik, bunyi ホ)" }
+          ],
           "examples": [
             { "word": "捕獲", "reading": "ほかく", "meaning": "penangkapan" },
             { "word": "捕虜", "reading": "ほりょ", "meaning": "tawanan" }
-          ],
-          "radical": { "character": "扌", "name": "てへん (tehen)", "meaning": "tangan" }
+          ]
         },
         {
           "character": "舗",
           "reading": "ホ",
+          "meaning": "toko",
+          "components": [
+            { "character": "舎", "meaning": "rumah/bangunan" },
+            { "character": "甫", "meaning": "permulaan (unsur fonetik, bunyi ホ)" }
+          ],
           "examples": [
             { "word": "舗装", "reading": "ほそう", "meaning": "pengaspalan" },
             { "word": "店舗", "reading": "てんぽ", "meaning": "toko, outlet" }
-          ],
-          "radical": { "character": "舌", "name": "した (shita)", "meaning": "lidah" }
+          ]
         },
         {
           "character": "浦",
           "reading": "うら",
+          "meaning": "tepi sungai/teluk",
+          "components": [
+            { "character": "氵", "meaning": "air" },
+            { "character": "甫", "meaning": "permulaan (unsur fonetik, bunyi ホ)" }
+          ],
           "examples": [
             { "word": "浦和", "reading": "うらわ", "meaning": "nama tempat (Urawa)" }
           ],
-          "radical": { "character": "氵", "name": "さんずい (sanzui)", "meaning": "air" },
           "note": "Kanji ini umumnya dibaca dengan kun'yomi (うら), sering muncul di nama tempat."
         }
       ]
