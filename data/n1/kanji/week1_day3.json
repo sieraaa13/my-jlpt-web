@@ -5,7 +5,7 @@
   "subtitle": "Kanji yang bisa terbaca kalau tahu bagian bunyinya ①",
   "groups": [
     {
-      "sharedComponent": "僉",
+      "sharedComponent": "㑒",
       "sharedReading": "ケン",
       "kanjiList": [
         {
@@ -18,8 +18,8 @@
               "meaning": "kuda"
             },
             {
-              "character": "僉",
-              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+              "character": "㑒",
+              "meaning": "banyak orang, versi shinjitai (unsur fonetik, bunyi ケン)"
             }
           ],
           "examples": [
@@ -45,8 +45,8 @@
               "meaning": "bukit/gundukan tanah"
             },
             {
-              "character": "僉",
-              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+              "character": "㑒",
+              "meaning": "banyak orang, versi shinjitai (unsur fonetik, bunyi ケン)"
             }
           ],
           "examples": [
@@ -72,8 +72,8 @@
               "meaning": "pohon/kayu"
             },
             {
-              "character": "僉",
-              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+              "character": "㑒",
+              "meaning": "banyak orang, versi shinjitai (unsur fonetik, bunyi ケン)"
             }
           ],
           "examples": [
@@ -99,8 +99,8 @@
               "meaning": "pisau"
             },
             {
-              "character": "僉",
-              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+              "character": "㑒",
+              "meaning": "banyak orang, versi shinjitai (unsur fonetik, bunyi ケン)"
             }
           ],
           "examples": [
@@ -126,8 +126,8 @@
               "meaning": "orang"
             },
             {
-              "character": "僉",
-              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+              "character": "㑒",
+              "meaning": "banyak orang, versi shinjitai (unsur fonetik, bunyi ケン)"
             }
           ],
           "examples": [
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "sharedComponent": "氏",
+      "sharedComponent": "氐",
       "sharedReading": "テイ",
       "kanjiList": [
         {
@@ -350,8 +350,8 @@
               "meaning": "orang"
             },
             {
-              "character": "氏",
-              "meaning": "unsur fonetik, bunyi テイ"
+              "character": "氐",
+              "meaning": "akar/dasar (unsur fonetik, bunyi テイ) — beda dari 氏 (marga)"
             }
           ],
           "examples": [
@@ -377,8 +377,8 @@
               "meaning": "bangunan/atap"
             },
             {
-              "character": "氏",
-              "meaning": "unsur fonetik, bunyi テイ"
+              "character": "氐",
+              "meaning": "akar/dasar (unsur fonetik, bunyi テイ) — beda dari 氏 (marga)"
             }
           ],
           "examples": [
@@ -404,8 +404,8 @@
               "meaning": "tangan"
             },
             {
-              "character": "氏",
-              "meaning": "unsur fonetik, bunyi テイ"
+              "character": "氐",
+              "meaning": "akar/dasar (unsur fonetik, bunyi テイ) — beda dari 氏 (marga)"
             }
           ],
           "examples": [
@@ -427,8 +427,8 @@
           "meaning": "kediaman/rumah besar",
           "components": [
             {
-              "character": "氏",
-              "meaning": "unsur fonetik, bunyi テイ"
+              "character": "氐",
+              "meaning": "akar/dasar (unsur fonetik, bunyi テイ) — beda dari 氏 (marga)"
             },
             {
               "character": "阝",
