@@ -917,5 +917,111 @@
         }
       ]
     }
-  ]
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      {
+        "question": "係員の＿＿に従って避難してください。",
+        "optionA": "拒否",
+        "optionAReading": "きょひ",
+        "optionB": "指示",
+        "optionBReading": "しじ",
+        "answer": "B"
+      },
+      {
+        "question": "彼は英語の＿＿クラスに通っている。",
+        "optionA": "上級",
+        "optionAReading": "じょうきゅう",
+        "optionB": "巨大",
+        "optionBReading": "きょだい",
+        "answer": "A"
+      },
+      {
+        "question": "他人のプライバシーに＿＿するべきではない。",
+        "optionA": "担当",
+        "optionAReading": "たんとう",
+        "optionB": "干渉",
+        "optionBReading": "かんしょう",
+        "answer": "B"
+      },
+      {
+        "question": "彼はその意見に強い＿＿感を示した。",
+        "optionA": "嫌悪",
+        "optionAReading": "けんお",
+        "optionB": "謙虚",
+        "optionBReading": "けんきょ",
+        "answer": "A"
+      },
+      {
+        "question": "彼は会社員をしながら作家業を＿＿している。",
+        "optionA": "謙虚",
+        "optionAReading": "けんきょ",
+        "optionB": "兼業",
+        "optionBReading": "けんぎょう",
+        "answer": "B"
+      }
+    ],
+    "dragQuestions": [
+      {
+        "reading": "しじ",
+        "fixedKanji": "示",
+        "blankPosition": "before",
+        "choices": [
+          "指",
+          "脂",
+          "旨",
+          "巨"
+        ],
+        "answer": "指"
+      },
+      {
+        "reading": "きゅうしゅう",
+        "fixedKanji": "収",
+        "blankPosition": "before",
+        "choices": [
+          "吸",
+          "級",
+          "及",
+          "泡"
+        ],
+        "answer": "吸"
+      },
+      {
+        "reading": "きょり",
+        "fixedKanji": "離",
+        "blankPosition": "before",
+        "choices": [
+          "距",
+          "巨",
+          "拒",
+          "幹"
+        ],
+        "answer": "距"
+      },
+      {
+        "reading": "しょうたい",
+        "fixedKanji": "待",
+        "blankPosition": "before",
+        "choices": [
+          "招",
+          "召",
+          "紹",
+          "昭"
+        ],
+        "answer": "招"
+      },
+      {
+        "reading": "かんぶ",
+        "fixedKanji": "部",
+        "blankPosition": "before",
+        "choices": [
+          "幹",
+          "肝",
+          "刊",
+          "汗"
+        ],
+        "answer": "幹"
+      }
+    ]
+  }
 }

@@ -982,5 +982,111 @@
         }
       ]
     }
-  ]
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      {
+        "question": "彼の＿＿的な考え方には驚かされる。",
+        "optionA": "固定",
+        "optionAReading": "こてい",
+        "optionB": "反響",
+        "optionBReading": "はんきょう",
+        "answer": "A"
+      },
+      {
+        "question": "毎年家族で＿＿へ旅行に行く。",
+        "optionA": "事故",
+        "optionAReading": "じこ",
+        "optionB": "湖畔",
+        "optionBReading": "こはん",
+        "answer": "B"
+      },
+      {
+        "question": "彼は不慮の＿＿で会社を休んだ。",
+        "optionA": "事故",
+        "optionAReading": "じこ",
+        "optionB": "故郷",
+        "optionBReading": "こきょう",
+        "answer": "A"
+      },
+      {
+        "question": "お盆には＿＿に帰る人が多い。",
+        "optionA": "個性",
+        "optionAReading": "こせい",
+        "optionB": "故郷",
+        "optionBReading": "こきょう",
+        "answer": "B"
+      },
+      {
+        "question": "この歌手のデビュー曲は若者の間で大きな＿＿を呼んだ。",
+        "optionA": "反響",
+        "optionAReading": "はんきょう",
+        "optionB": "固定",
+        "optionBReading": "こてい",
+        "answer": "A"
+      }
+    ],
+    "dragQuestions": [
+      {
+        "reading": "せいこう",
+        "fixedKanji": "成",
+        "blankPosition": "after",
+        "choices": [
+          "功",
+          "巧",
+          "攻",
+          "貢"
+        ],
+        "answer": "功"
+      },
+      {
+        "reading": "こうけん",
+        "fixedKanji": "献",
+        "blankPosition": "before",
+        "choices": [
+          "貢",
+          "項",
+          "攻",
+          "功"
+        ],
+        "answer": "貢"
+      },
+      {
+        "reading": "しゅこう",
+        "fixedKanji": "向",
+        "blankPosition": "before",
+        "choices": [
+          "趣",
+          "取",
+          "朱",
+          "珠"
+        ],
+        "answer": "趣"
+      },
+      {
+        "reading": "ほそう",
+        "fixedKanji": "装",
+        "blankPosition": "before",
+        "choices": [
+          "舗",
+          "補",
+          "捕",
+          "浦"
+        ],
+        "answer": "舗"
+      },
+      {
+        "reading": "こしょう",
+        "fixedKanji": "故",
+        "blankPosition": "after",
+        "choices": [
+          "障",
+          "彰",
+          "響",
+          "滞"
+        ],
+        "answer": "障"
+      }
+    ]
+  }
 }

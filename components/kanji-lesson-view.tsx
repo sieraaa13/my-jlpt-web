@@ -65,7 +65,7 @@ export function KanjiLessonView({ lesson }: { lesson: KanjiLessonDay }) {
         ))}
       </div>
 
-      <KanjiExercises lesson={lesson} />
+      <KanjiExercises exercises={lesson.exercises} />
     </div>
   );
 }

@@ -16,12 +16,32 @@ export type KanjiGroup = {
   sharedReading: string;
   kanjiList: KanjiEntry[];
 };
+export type ChoiceQuestion = {
+  question: string;
+  optionA: string;
+  optionAReading: string;
+  optionB: string;
+  optionBReading: string;
+  answer: "A" | "B";
+};
+export type DragQuestion = {
+  reading: string;
+  fixedKanji: string;
+  blankPosition: "before" | "after";
+  choices: string[];
+  answer: string;
+};
+export type KanjiExercises = {
+  choiceQuestions: ChoiceQuestion[];
+  dragQuestions: DragQuestion[];
+};
 export type KanjiLessonDay = {
   week: number;
   day: number;
   title: string;
   subtitle: string;
   groups: KanjiGroup[];
+  exercises: KanjiExercises;
 };
 
 export const kanjiLessons: Record<string, Record<string, KanjiLessonDay>> = {

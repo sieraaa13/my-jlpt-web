@@ -1,42 +1,9 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import type { KanjiLessonDay } from "@/data/n1/kanji/lessons";
-
-type ChoiceQuestion = {
-  question: string;
-  optionA: string;
-  optionAReading: string;
-  optionB: string;
-  optionBReading: string;
-  answer: "A" | "B";
-};
-
-type DragQuestion = {
-  reading: string;
-  fixedKanji: string;
-  blankPosition: "before" | "after";
-  choices: string[];
-  answer: string;
-};
-
-type ExerciseData = {
-  choiceQuestions: ChoiceQuestion[];
-  dragQuestions: DragQuestion[];
-};
-
-function flattenKanji(lesson: KanjiLessonDay) {
-  return lesson.groups.flatMap((g) =>
-    g.kanjiList.map((k) => ({
-      character: k.character,
-      reading: k.reading,
-      meaning: k.meaning,
-      examples: k.examples,
-    }))
-  );
-}
+import type { ChoiceQuestion, DragQuestion, KanjiExercises as KanjiExercisesData } from "@/data/n1/kanji/lessons";
 
 function ChoiceQuestionCard({ q, index }: { q: ChoiceQuestion; index: number }) {
   const [selected, setSelected] = useState<"A" | "B" | null>(null);
@@ -153,81 +120,32 @@ function DragQuestionCard({ q, index }: { q: DragQuestion; index: number }) {
   );
 }
 
-export function KanjiExercises({ lesson }: { lesson: KanjiLessonDay }) {
-  const [data, setData] = useState<ExerciseData | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const generate = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await fetch("/api/generate-kanji-exercise", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kanjiList: flattenKanji(lesson) }),
-      });
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.error || "Gagal membuat soal");
-      setData(json);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Gagal membuat soal");
-    } finally {
-      setLoading(false);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lesson.week, lesson.day]);
-
-  useEffect(() => {
-    setData(null);
-    generate();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lesson.week, lesson.day]);
+export function KanjiExercises({ exercises }: { exercises: KanjiExercisesData }) {
+  if (!exercises) return null;
 
   return (
     <Card className="p-6 bg-card">
-      <div className="flex items-center justify-between mb-4 gap-3 flex-wrap">
-        <h3 className="text-xl font-bold">練習問題</h3>
-        <button
-          onClick={generate}
-          disabled={loading}
-          className="px-4 py-2 rounded-xl bg-primary text-primary-foreground text-sm font-bold disabled:opacity-50"
-        >
-          {loading ? "Membuat soal..." : "Buat soal baru"}
-        </button>
-      </div>
+      <h3 className="text-xl font-bold mb-4">練習問題</h3>
 
-      {error && (
-        <p className="text-sm text-red-500 mb-3">
-          {error}. Pastikan API key sudah dikonfigurasi di server.
-        </p>
-      )}
-
-      {loading && !data && (
-        <p className="text-sm text-muted-foreground">Sedang membuat soal dari AI...</p>
-      )}
-
-      {data && (
-        <div className="space-y-8">
-          <div>
-            <p className="text-sm text-muted-foreground mb-2">Bagian 1 — Pilih kata yang tepat</p>
-            <div className="space-y-5">
-              {data.choiceQuestions.map((q, i) => (
-                <ChoiceQuestionCard key={i} q={q} index={i} />
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className="text-sm text-muted-foreground mb-2">Bagian 2 — Lengkapi kanjinya</p>
-            <div className="space-y-5">
-              {data.dragQuestions.map((q, i) => (
-                <DragQuestionCard key={i} q={q} index={i} />
-              ))}
-            </div>
+      <div className="space-y-8">
+        <div>
+          <p className="text-sm text-muted-foreground mb-2">Bagian 1 — Pilih kata yang tepat</p>
+          <div className="space-y-5">
+            {exercises.choiceQuestions.map((q, i) => (
+              <ChoiceQuestionCard key={i} q={q} index={i} />
+            ))}
           </div>
         </div>
-      )}
+
+        <div>
+          <p className="text-sm text-muted-foreground mb-2">Bagian 2 — Lengkapi kanjinya</p>
+          <div className="space-y-5">
+            {exercises.dragQuestions.map((q, i) => (
+              <DragQuestionCard key={i} q={q} index={i} />
+            ))}
+          </div>
+        </div>
+      </div>
     </Card>
   );
 }
