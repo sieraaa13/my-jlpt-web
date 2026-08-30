@@ -16,18 +16,12 @@ export type KanjiGroup = {
   sharedReading: string;
   kanjiList: KanjiEntry[];
 };
-export type KanjiExercise = {
-  question: string;
-  choices: string[];
-  answer: string;
-};
 export type KanjiLessonDay = {
   week: number;
   day: number;
   title: string;
   subtitle: string;
   groups: KanjiGroup[];
-  exercises: KanjiExercise[];
 };
 
 export const kanjiLessons: Record<string, Record<string, KanjiLessonDay>> = {
