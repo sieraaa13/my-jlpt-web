@@ -17,6 +17,28 @@ export function KanjiTab() {
 
   return (
     <div className="space-y-6">
+      {weeks.length > 1 && (
+        <div className="flex flex-wrap gap-2">
+          {weeks.map((w) => (
+            <button
+              key={w.week}
+              onClick={() => {
+                setSelectedWeek(w.week);
+                setSelectedDay(w.days[0]?.day ?? "1");
+              }}
+              className={cn(
+                "px-4 py-2 rounded-xl border-2 text-sm font-bold transition-colors",
+                selectedWeek === w.week
+                  ? "bg-foreground text-background border-foreground"
+                  : "border-border hover:border-primary/50"
+              )}
+            >
+              第{w.week}週
+            </button>
+          ))}
+        </div>
+      )}
+
       <div className="flex flex-wrap gap-2">
         {currentWeek?.days.map((d) => (
           <button
