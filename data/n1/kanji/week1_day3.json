@@ -1,0 +1,1056 @@
+{
+  "week": 1,
+  "day": 3,
+  "title": "講・構・購",
+  "subtitle": "Kanji yang bisa terbaca kalau tahu bagian bunyinya ①",
+  "groups": [
+    {
+      "sharedComponent": "僉",
+      "sharedReading": "ケン",
+      "kanjiList": [
+        {
+          "character": "験",
+          "reading": "ケン",
+          "meaning": "bukti, ujian, pengalaman",
+          "components": [
+            {
+              "character": "馬",
+              "meaning": "kuda"
+            },
+            {
+              "character": "僉",
+              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "体験",
+              "reading": "たいけん",
+              "meaning": "pengalaman"
+            },
+            {
+              "word": "実験",
+              "reading": "じっけん",
+              "meaning": "eksperimen"
+            }
+          ]
+        },
+        {
+          "character": "険",
+          "reading": "ケン",
+          "meaning": "berbahaya, terjal",
+          "components": [
+            {
+              "character": "阝",
+              "meaning": "bukit/gundukan tanah"
+            },
+            {
+              "character": "僉",
+              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "危険",
+              "reading": "きけん",
+              "meaning": "berbahaya"
+            },
+            {
+              "word": "険悪",
+              "reading": "けんあく",
+              "meaning": "tegang/mengancam"
+            }
+          ]
+        },
+        {
+          "character": "検",
+          "reading": "ケン",
+          "meaning": "memeriksa",
+          "components": [
+            {
+              "character": "木",
+              "meaning": "pohon/kayu"
+            },
+            {
+              "character": "僉",
+              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "検査",
+              "reading": "けんさ",
+              "meaning": "pemeriksaan"
+            },
+            {
+              "word": "点検",
+              "reading": "てんけん",
+              "meaning": "inspeksi"
+            }
+          ]
+        },
+        {
+          "character": "剣",
+          "reading": "ケン",
+          "meaning": "pedang",
+          "components": [
+            {
+              "character": "刂",
+              "meaning": "pisau"
+            },
+            {
+              "character": "僉",
+              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "真剣",
+              "reading": "しんけん",
+              "meaning": "serius sungguh-sungguh"
+            },
+            {
+              "word": "剣道",
+              "reading": "けんどう",
+              "meaning": "kendo"
+            }
+          ]
+        },
+        {
+          "character": "倹",
+          "reading": "ケン",
+          "meaning": "hemat, berhati-hati dengan uang",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "僉",
+              "meaning": "banyak orang (unsur fonetik, bunyi ケン)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "倹約",
+              "reading": "けんやく",
+              "meaning": "berhemat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "冓",
+      "sharedReading": "コウ",
+      "kanjiList": [
+        {
+          "character": "講",
+          "reading": "コウ",
+          "meaning": "ceramah, membahas",
+          "components": [
+            {
+              "character": "言",
+              "meaning": "perkataan"
+            },
+            {
+              "character": "冓",
+              "meaning": "unsur fonetik, bunyi コウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "講義",
+              "reading": "こうぎ",
+              "meaning": "kuliah/ceramah"
+            },
+            {
+              "word": "聴講",
+              "reading": "ちょうこう",
+              "meaning": "menghadiri kuliah"
+            }
+          ]
+        },
+        {
+          "character": "構",
+          "reading": "コウ",
+          "meaning": "menyusun, struktur",
+          "components": [
+            {
+              "character": "木",
+              "meaning": "pohon/kayu"
+            },
+            {
+              "character": "冓",
+              "meaning": "unsur fonetik, bunyi コウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "構成",
+              "reading": "こうせい",
+              "meaning": "susunan, komposisi"
+            },
+            {
+              "word": "構造",
+              "reading": "こうぞう",
+              "meaning": "struktur"
+            }
+          ]
+        },
+        {
+          "character": "購",
+          "reading": "コウ",
+          "meaning": "membeli",
+          "components": [
+            {
+              "character": "貝",
+              "meaning": "kerang/harta"
+            },
+            {
+              "character": "冓",
+              "meaning": "unsur fonetik, bunyi コウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "購買",
+              "reading": "こうばい",
+              "meaning": "pembelian"
+            },
+            {
+              "word": "購入",
+              "reading": "こうにゅう",
+              "meaning": "pembelian"
+            }
+          ]
+        },
+        {
+          "character": "溝",
+          "reading": "コウ",
+          "meaning": "parit, selokan",
+          "components": [
+            {
+              "character": "氵",
+              "meaning": "air"
+            },
+            {
+              "character": "冓",
+              "meaning": "unsur fonetik, bunyi コウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "側溝",
+              "reading": "そっこう",
+              "meaning": "selokan pinggir jalan"
+            },
+            {
+              "word": "排水溝",
+              "reading": "はいすいこう",
+              "meaning": "saluran pembuangan air"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "票",
+      "sharedReading": "ヒョウ",
+      "kanjiList": [
+        {
+          "character": "標",
+          "reading": "ヒョウ",
+          "meaning": "tanda, target",
+          "components": [
+            {
+              "character": "木",
+              "meaning": "pohon/kayu"
+            },
+            {
+              "character": "票",
+              "meaning": "unsur fonetik, bunyi ヒョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "目標",
+              "reading": "もくひょう",
+              "meaning": "tujuan/target"
+            },
+            {
+              "word": "標準",
+              "reading": "ひょうじゅん",
+              "meaning": "standar"
+            }
+          ]
+        },
+        {
+          "character": "票",
+          "reading": "ヒョウ",
+          "meaning": "suara, kartu suara",
+          "components": [
+            {
+              "character": "示",
+              "meaning": "pertanda/altar"
+            },
+            {
+              "character": "覀",
+              "meaning": "penutup (unsur, bunyi ヒョウ)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "投票",
+              "reading": "とうひょう",
+              "meaning": "voting/pemungutan suara"
+            }
+          ]
+        },
+        {
+          "character": "漂",
+          "reading": "ヒョウ",
+          "meaning": "mengapung, terdampar",
+          "components": [
+            {
+              "character": "氵",
+              "meaning": "air"
+            },
+            {
+              "character": "票",
+              "meaning": "unsur fonetik, bunyi ヒョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "漂流",
+              "reading": "ひょうりゅう",
+              "meaning": "terapung-apung/terdampar"
+            },
+            {
+              "word": "漂白剤",
+              "reading": "ひょうはくざい",
+              "meaning": "pemutih"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "氏",
+      "sharedReading": "テイ",
+      "kanjiList": [
+        {
+          "character": "低",
+          "reading": "テイ",
+          "meaning": "rendah",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "氏",
+              "meaning": "unsur fonetik, bunyi テイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "低下",
+              "reading": "ていか",
+              "meaning": "penurunan"
+            },
+            {
+              "word": "低気圧",
+              "reading": "ていきあつ",
+              "meaning": "tekanan udara rendah"
+            }
+          ]
+        },
+        {
+          "character": "底",
+          "reading": "テイ",
+          "meaning": "dasar, alas",
+          "components": [
+            {
+              "character": "广",
+              "meaning": "bangunan/atap"
+            },
+            {
+              "character": "氏",
+              "meaning": "unsur fonetik, bunyi テイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "海底",
+              "reading": "かいてい",
+              "meaning": "dasar laut"
+            },
+            {
+              "word": "徹底",
+              "reading": "てってい",
+              "meaning": "menyeluruh, tuntas"
+            }
+          ]
+        },
+        {
+          "character": "抵",
+          "reading": "テイ",
+          "meaning": "menolak, melawan",
+          "components": [
+            {
+              "character": "扌",
+              "meaning": "tangan"
+            },
+            {
+              "character": "氏",
+              "meaning": "unsur fonetik, bunyi テイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "抵抗",
+              "reading": "ていこう",
+              "meaning": "perlawanan"
+            },
+            {
+              "word": "大抵",
+              "reading": "たいてい",
+              "meaning": "umumnya"
+            }
+          ]
+        },
+        {
+          "character": "邸",
+          "reading": "テイ",
+          "meaning": "kediaman/rumah besar",
+          "components": [
+            {
+              "character": "氏",
+              "meaning": "unsur fonetik, bunyi テイ"
+            },
+            {
+              "character": "阝",
+              "meaning": "kota/wilayah"
+            }
+          ],
+          "examples": [
+            {
+              "word": "邸宅",
+              "reading": "ていたく",
+              "meaning": "rumah besar"
+            },
+            {
+              "word": "官邸",
+              "reading": "かんてい",
+              "meaning": "kediaman resmi pejabat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "采",
+      "sharedReading": "サイ",
+      "kanjiList": [
+        {
+          "character": "菜",
+          "reading": "サイ",
+          "meaning": "sayuran",
+          "components": [
+            {
+              "character": "艹",
+              "meaning": "tanaman"
+            },
+            {
+              "character": "采",
+              "meaning": "unsur fonetik, bunyi サイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "野菜",
+              "reading": "やさい",
+              "meaning": "sayuran"
+            },
+            {
+              "word": "菜食主義",
+              "reading": "さいしょくしゅぎ",
+              "meaning": "vegetarianisme"
+            }
+          ]
+        },
+        {
+          "character": "採",
+          "reading": "サイ",
+          "meaning": "memetik, merekrut",
+          "components": [
+            {
+              "character": "扌",
+              "meaning": "tangan"
+            },
+            {
+              "character": "采",
+              "meaning": "unsur fonetik, bunyi サイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "採用",
+              "reading": "さいよう",
+              "meaning": "perekrutan"
+            },
+            {
+              "word": "採算",
+              "reading": "さいさん",
+              "meaning": "perhitungan untung-rugi"
+            }
+          ]
+        },
+        {
+          "character": "彩",
+          "reading": "サイ",
+          "meaning": "warna, corak",
+          "components": [
+            {
+              "character": "采",
+              "meaning": "unsur fonetik, bunyi サイ"
+            },
+            {
+              "character": "彡",
+              "meaning": "corak/garis"
+            }
+          ],
+          "examples": [
+            {
+              "word": "色彩",
+              "reading": "しきさい",
+              "meaning": "warna"
+            },
+            {
+              "word": "多彩",
+              "reading": "たさい",
+              "meaning": "beraneka warna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "同",
+      "sharedReading": "ドウ",
+      "kanjiList": [
+        {
+          "character": "同",
+          "reading": "ドウ",
+          "meaning": "sama",
+          "components": [
+            {
+              "character": "冂",
+              "meaning": "bingkai"
+            },
+            {
+              "character": "口",
+              "meaning": "mulut"
+            }
+          ],
+          "examples": [
+            {
+              "word": "同意",
+              "reading": "どうい",
+              "meaning": "setuju"
+            },
+            {
+              "word": "同情",
+              "reading": "どうじょう",
+              "meaning": "simpati"
+            }
+          ]
+        },
+        {
+          "character": "銅",
+          "reading": "ドウ",
+          "meaning": "tembaga",
+          "components": [
+            {
+              "character": "金",
+              "meaning": "logam"
+            },
+            {
+              "character": "同",
+              "meaning": "unsur fonetik, bunyi ドウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "銅像",
+              "reading": "どうぞう",
+              "meaning": "patung perunggu"
+            },
+            {
+              "word": "銅メダル",
+              "reading": "どうめだる",
+              "meaning": "medali perunggu"
+            }
+          ]
+        },
+        {
+          "character": "胴",
+          "reading": "ドウ",
+          "meaning": "badan, torso",
+          "components": [
+            {
+              "character": "月",
+              "meaning": "daging/tubuh"
+            },
+            {
+              "character": "同",
+              "meaning": "unsur fonetik, bunyi ドウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "胴",
+              "reading": "どう",
+              "meaning": "badan/torso"
+            },
+            {
+              "word": "胴体",
+              "reading": "どうたい",
+              "meaning": "badan/torso"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "厤",
+      "sharedReading": "レキ",
+      "kanjiList": [
+        {
+          "character": "歴",
+          "reading": "レキ",
+          "meaning": "melewati, riwayat",
+          "components": [
+            {
+              "character": "厤",
+              "meaning": "unsur fonetik, bunyi レキ"
+            },
+            {
+              "character": "止",
+              "meaning": "berhenti/kaki"
+            }
+          ],
+          "examples": [
+            {
+              "word": "履歴",
+              "reading": "りれき",
+              "meaning": "riwayat"
+            },
+            {
+              "word": "経歴",
+              "reading": "けいれき",
+              "meaning": "riwayat karier"
+            }
+          ]
+        },
+        {
+          "character": "暦",
+          "reading": "レキ",
+          "meaning": "kalender",
+          "components": [
+            {
+              "character": "厤",
+              "meaning": "unsur fonetik, bunyi レキ"
+            },
+            {
+              "character": "日",
+              "meaning": "matahari/hari"
+            }
+          ],
+          "examples": [
+            {
+              "word": "西暦",
+              "reading": "せいれき",
+              "meaning": "tahun Masehi"
+            },
+            {
+              "word": "還暦",
+              "reading": "かんれき",
+              "meaning": "ulang tahun ke-60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "県",
+      "sharedReading": "ケン",
+      "kanjiList": [
+        {
+          "character": "県",
+          "reading": "ケン",
+          "meaning": "prefektur",
+          "components": [
+            {
+              "character": "県",
+              "meaning": "karakter tunggal, tidak terpecah lagi"
+            }
+          ],
+          "examples": [
+            {
+              "word": "県庁",
+              "reading": "けんちょう",
+              "meaning": "kantor prefektur"
+            },
+            {
+              "word": "都道府県",
+              "reading": "とどうふけん",
+              "meaning": "prefektur-prefektur Jepang"
+            }
+          ]
+        },
+        {
+          "character": "懸",
+          "reading": "ケン",
+          "meaning": "menggantung, mengkhawatirkan",
+          "components": [
+            {
+              "character": "県",
+              "meaning": "unsur fonetik, bunyi ケン"
+            },
+            {
+              "character": "心",
+              "meaning": "hati"
+            }
+          ],
+          "examples": [
+            {
+              "word": "懸命",
+              "reading": "けんめい",
+              "meaning": "sekuat tenaga"
+            },
+            {
+              "word": "懸念",
+              "reading": "けねん",
+              "meaning": "kekhawatiran"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "表",
+      "sharedReading": "ヒョウ",
+      "kanjiList": [
+        {
+          "character": "表",
+          "reading": "ヒョウ",
+          "meaning": "permukaan, tabel, mengekspresikan",
+          "components": [
+            {
+              "character": "表",
+              "meaning": "karakter tunggal, tidak terpecah lagi"
+            }
+          ],
+          "examples": [
+            {
+              "word": "時刻表",
+              "reading": "じこくひょう",
+              "meaning": "jadwal waktu"
+            },
+            {
+              "word": "辞表",
+              "reading": "じひょう",
+              "meaning": "surat pengunduran diri"
+            }
+          ]
+        },
+        {
+          "character": "俵",
+          "reading": "ヒョウ",
+          "meaning": "karung/keranjang jerami",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "表",
+              "meaning": "unsur fonetik, bunyi ヒョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "土俵",
+              "reading": "どひょう",
+              "meaning": "arena sumo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "俞",
+      "sharedReading": "ユ",
+      "kanjiList": [
+        {
+          "character": "輸",
+          "reading": "ユ",
+          "meaning": "mengangkut",
+          "components": [
+            {
+              "character": "車",
+              "meaning": "kendaraan"
+            },
+            {
+              "character": "俞",
+              "meaning": "unsur fonetik, bunyi ユ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "輸出入",
+              "reading": "ゆしゅつにゅう",
+              "meaning": "ekspor-impor"
+            },
+            {
+              "word": "運輸",
+              "reading": "うんゆ",
+              "meaning": "transportasi"
+            }
+          ]
+        },
+        {
+          "character": "愉",
+          "reading": "ユ",
+          "meaning": "senang, gembira",
+          "components": [
+            {
+              "character": "忄",
+              "meaning": "hati"
+            },
+            {
+              "character": "俞",
+              "meaning": "unsur fonetik, bunyi ユ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "愉快",
+              "reading": "ゆかい",
+              "meaning": "menyenangkan"
+            }
+          ]
+        },
+        {
+          "character": "癒",
+          "reading": "ユ",
+          "meaning": "sembuh",
+          "components": [
+            {
+              "character": "疒",
+              "meaning": "sakit"
+            },
+            {
+              "character": "俞",
+              "meaning": "unsur fonetik, bunyi ユ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "治癒",
+              "reading": "ちゆ",
+              "meaning": "penyembuhan"
+            },
+            {
+              "word": "癒着",
+              "reading": "ゆちゃく",
+              "meaning": "perlengketan, kolusi"
+            }
+          ]
+        },
+        {
+          "character": "諭",
+          "reading": "ユ",
+          "meaning": "menasihati",
+          "components": [
+            {
+              "character": "言",
+              "meaning": "perkataan"
+            },
+            {
+              "character": "俞",
+              "meaning": "unsur fonetik, bunyi ユ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "教諭",
+              "reading": "きょうゆ",
+              "meaning": "guru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "倉",
+      "sharedReading": "ソウ",
+      "kanjiList": [
+        {
+          "character": "倉",
+          "reading": "ソウ",
+          "meaning": "gudang",
+          "components": [
+            {
+              "character": "倉",
+              "meaning": "karakter tunggal, tidak terpecah lagi"
+            }
+          ],
+          "examples": [
+            {
+              "word": "倉庫",
+              "reading": "そうこ",
+              "meaning": "gudang"
+            }
+          ]
+        },
+        {
+          "character": "創",
+          "reading": "ソウ",
+          "meaning": "menciptakan, luka",
+          "components": [
+            {
+              "character": "倉",
+              "meaning": "unsur fonetik, bunyi ソウ"
+            },
+            {
+              "character": "刂",
+              "meaning": "pisau"
+            }
+          ],
+          "examples": [
+            {
+              "word": "創作",
+              "reading": "そうさく",
+              "meaning": "karya cipta"
+            },
+            {
+              "word": "創立",
+              "reading": "そうりつ",
+              "meaning": "pendirian"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      {
+        "question": "水泳選手は毎日体の＿＿をしている。",
+        "optionA": "危険",
+        "optionAReading": "きけん",
+        "optionB": "点検",
+        "optionBReading": "てんけん",
+        "answer": "B"
+      },
+      {
+        "question": "この道は夜になると少し＿＿な雰囲気になる。",
+        "optionA": "危険",
+        "optionAReading": "きけん",
+        "optionB": "倹約",
+        "optionBReading": "けんやく",
+        "answer": "A"
+      },
+      {
+        "question": "新しいアパートの＿＿を家具店で見てもらった。",
+        "optionA": "構造",
+        "optionAReading": "こうぞう",
+        "optionB": "購入",
+        "optionBReading": "こうにゅう",
+        "answer": "A"
+      },
+      {
+        "question": "毎月の給料から少しずつ＿＿している。",
+        "optionA": "倹約",
+        "optionAReading": "けんやく",
+        "optionB": "講義",
+        "optionBReading": "こうぎ",
+        "answer": "A"
+      },
+      {
+        "question": "台風で船が沖に＿＿してしまった。",
+        "optionA": "漂流",
+        "optionAReading": "ひょうりゅう",
+        "optionB": "標準",
+        "optionBReading": "ひょうじゅん",
+        "answer": "A"
+      }
+    ],
+    "dragQuestions": [
+      {
+        "reading": "こうぎ",
+        "fixedKanji": "義",
+        "blankPosition": "before",
+        "choices": [
+          "講",
+          "構",
+          "購",
+          "溝"
+        ],
+        "answer": "講"
+      },
+      {
+        "reading": "ていこう",
+        "fixedKanji": "抗",
+        "blankPosition": "before",
+        "choices": [
+          "低",
+          "底",
+          "抵",
+          "邸"
+        ],
+        "answer": "抵"
+      },
+      {
+        "reading": "さいよう",
+        "fixedKanji": "用",
+        "blankPosition": "before",
+        "choices": [
+          "菜",
+          "採",
+          "彩",
+          "際"
+        ],
+        "answer": "採"
+      },
+      {
+        "reading": "どうぞう",
+        "fixedKanji": "像",
+        "blankPosition": "before",
+        "choices": [
+          "同",
+          "銅",
+          "胴",
+          "道"
+        ],
+        "answer": "銅"
+      },
+      {
+        "reading": "けんちょう",
+        "fixedKanji": "庁",
+        "blankPosition": "before",
+        "choices": [
+          "県",
+          "懸",
+          "検",
+          "験"
+        ],
+        "answer": "県"
+      }
+    ]
+  }
+}

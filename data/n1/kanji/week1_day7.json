@@ -1,0 +1,43 @@
+{
+  "week": 1,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 1 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "彼は不慮の事故で入院した。", "target": "事故", "choices": ["じこ", "じご", "こじ", "こご"], "answer": "じこ" },
+    { "sentence": "新商品は若者の間で大きな反響を呼んだ。", "target": "反響", "choices": ["ばんきょう", "はんきょう", "ばんごう", "はんごう"], "answer": "はんきょう" },
+    { "sentence": "彼女はいつも謙虚な態度で人と接する。", "target": "謙虚", "choices": ["げんきょ", "げんこ", "けんこ", "けんきょ"], "answer": "けんきょ" },
+    { "sentence": "台風の接近で漁船が沿岸に避難した。", "target": "沿岸", "choices": ["えんかん", "ねんがん", "えんがん", "ねんかん"], "answer": "えんがん" },
+    { "sentence": "彼は事業の失敗で多くのものを犠牲にした。", "target": "犠牲", "choices": ["きせい", "ぎしょう", "きしょう", "ぎせい"], "answer": "ぎせい" },
+    { "sentence": "この薬は副作用に警戒が必要だ。", "target": "警戒", "choices": ["きょうかい", "けいがい", "けいかい", "きょうがい"], "answer": "けいかい" },
+    { "sentence": "新しい橋の建設現場では妥協のない安全管理が行われている。", "target": "妥協", "choices": ["たきょう", "だきょう", "たごう", "だごう"], "answer": "だきょう" },
+    { "sentence": "彼は組織の中で孤立していると感じていた。", "target": "孤立", "choices": ["ごりつ", "ころつ", "ごろつ", "こりつ"], "answer": "こりつ" },
+    { "sentence": "その研究者は骨髄バンクに登録した。", "target": "骨髄", "choices": ["こつすい", "こつじゅい", "こつずい", "こつしゅい"], "answer": "こつずい" },
+    { "sentence": "深夜まで働いて、彼はすっかり消耗してしまった。", "target": "消耗", "choices": ["せいこう", "しょうもう", "せいもう", "しょうこう"], "answer": "しょうもう" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "彼は貴重なたいけんをした。", "reading": "たいけん", "choices": ["対検", "体験", "態険", "大倹"], "answer": "体験" },
+    { "sentence": "新しい家具をこうにゅうした。", "reading": "こうにゅう", "choices": ["構入", "溝入", "購入", "講入"], "answer": "購入" },
+    { "sentence": "しつこいかんゆうの電話に困っている。", "reading": "かんゆう", "choices": ["歓誘", "観誘", "勧誘", "韓誘"], "answer": "勧誘" },
+    { "sentence": "彼は小説をそうさくするのが好きだ。", "reading": "そうさく", "choices": ["捜索", "創作", "操作", "総作"], "answer": "創作" },
+    { "sentence": "毎日をじゅうじつした気持ちで過ごしたい。", "reading": "じゅうじつ", "choices": ["銃実", "充実", "汁実", "十実"], "answer": "充実" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "彼は生徒に人生の教＿を与えた。", "target": "教諭", "choices": ["論", "諭", "輸", "愉"], "answer": "諭" },
+    { "sentence": "この村では＿産業として牛や豚を育てている。", "target": "畜産業", "choices": ["蓄", "畜", "縮", "筑"], "answer": "畜" },
+    { "sentence": "研究費を毎年少しずつ＿積してきた。", "target": "蓄積", "choices": ["畜", "蓄", "築", "逐"], "answer": "蓄" },
+    { "sentence": "空港で荷物を＿入するのに時間がかかった。", "target": "搬入", "choices": ["般", "搬", "飯", "阪"], "answer": "搬" },
+    { "sentence": "会議で意見が矛＿している。", "target": "矛盾", "choices": ["循", "盾", "純", "準"], "answer": "盾" }
+  ],
+  "passageQuestion": {
+    "passage": "私の[21]には、[22]な山々に囲まれた小さな町がある。町には[23]的な建物が今も残り、秋になると山は[24]で真っ赤に染まる。その[25]豊かな景色を見るために、毎年多くの観光客が訪れる。",
+    "wordBank": ["こきょう", "そうだい", "こてん", "こうよう", "しきさい", "こんらん", "ふきゅう"],
+    "blanks": [
+      { "number": 21, "answer": "こきょう", "answerKanji": "故郷" },
+      { "number": 22, "answer": "そうだい", "answerKanji": "壮大" },
+      { "number": 23, "answer": "こてん", "answerKanji": "古典" },
+      { "number": 24, "answer": "こうよう", "answerKanji": "紅葉" },
+      { "number": 25, "answer": "しきさい", "answerKanji": "色彩" }
+    ]
+  }
+}

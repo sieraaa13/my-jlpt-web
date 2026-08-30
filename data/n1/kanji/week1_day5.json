@@ -1,0 +1,1024 @@
+{
+  "week": 1,
+  "day": 5,
+  "title": "麻・磨・摩・魔",
+  "subtitle": "Perhatikan bagian yang berbeda ①",
+  "groups": [
+    {
+      "sharedComponent": "尞",
+      "sharedReading": "リョウ",
+      "kanjiList": [
+        {
+          "character": "療",
+          "reading": "リョウ",
+          "meaning": "mengobati",
+          "components": [
+            {
+              "character": "疒",
+              "meaning": "sakit"
+            },
+            {
+              "character": "尞",
+              "meaning": "unsur fonetik, bunyi リョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "治療",
+              "reading": "ちりょう",
+              "meaning": "pengobatan"
+            },
+            {
+              "word": "療養",
+              "reading": "りょうよう",
+              "meaning": "perawatan kesehatan"
+            }
+          ]
+        },
+        {
+          "character": "僚",
+          "reading": "リョウ",
+          "meaning": "rekan kerja, kolega",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "尞",
+              "meaning": "unsur fonetik, bunyi リョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "同僚",
+              "reading": "どうりょう",
+              "meaning": "rekan kerja"
+            },
+            {
+              "word": "官僚",
+              "reading": "かんりょう",
+              "meaning": "birokrat"
+            }
+          ]
+        },
+        {
+          "character": "寮",
+          "reading": "リョウ",
+          "meaning": "asrama",
+          "components": [
+            {
+              "character": "宀",
+              "meaning": "atap"
+            },
+            {
+              "character": "尞",
+              "meaning": "unsur fonetik, bunyi リョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "寮",
+              "reading": "りょう",
+              "meaning": "asrama"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "麻",
+      "sharedReading": "マ",
+      "kanjiList": [
+        {
+          "character": "麻",
+          "reading": "マ",
+          "meaning": "rami, ganja",
+          "components": [
+            {
+              "character": "广",
+              "meaning": "atap"
+            },
+            {
+              "character": "林",
+              "meaning": "dua batang serat"
+            }
+          ],
+          "examples": [
+            {
+              "word": "麻酔",
+              "reading": "ますい",
+              "meaning": "anestesi/bius"
+            },
+            {
+              "word": "麻薬",
+              "reading": "まやく",
+              "meaning": "narkoba"
+            }
+          ]
+        },
+        {
+          "character": "磨",
+          "reading": "マ",
+          "meaning": "mengasah, menggosok",
+          "components": [
+            {
+              "character": "麻",
+              "meaning": "unsur fonetik, bunyi マ"
+            },
+            {
+              "character": "石",
+              "meaning": "batu"
+            }
+          ],
+          "examples": [
+            {
+              "word": "研磨剤",
+              "reading": "けんまざい",
+              "meaning": "bahan pengasah/pemoles"
+            }
+          ]
+        },
+        {
+          "character": "摩",
+          "reading": "マ",
+          "meaning": "menggosok, gesekan",
+          "components": [
+            {
+              "character": "麻",
+              "meaning": "unsur fonetik, bunyi マ"
+            },
+            {
+              "character": "手",
+              "meaning": "tangan"
+            }
+          ],
+          "examples": [
+            {
+              "word": "摩擦",
+              "reading": "まさつ",
+              "meaning": "gesekan/friksi"
+            }
+          ]
+        },
+        {
+          "character": "魔",
+          "reading": "マ",
+          "meaning": "setan, sihir",
+          "components": [
+            {
+              "character": "麻",
+              "meaning": "unsur fonetik, bunyi マ"
+            },
+            {
+              "character": "鬼",
+              "meaning": "hantu/roh"
+            }
+          ],
+          "examples": [
+            {
+              "word": "邪魔",
+              "reading": "じゃま",
+              "meaning": "gangguan/menghalangi"
+            },
+            {
+              "word": "魔法",
+              "reading": "まほう",
+              "meaning": "sihir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "曼",
+      "sharedReading": "マン",
+      "kanjiList": [
+        {
+          "character": "慢",
+          "reading": "マン",
+          "meaning": "lambat, sombong",
+          "components": [
+            {
+              "character": "忄",
+              "meaning": "hati"
+            },
+            {
+              "character": "曼",
+              "meaning": "unsur fonetik, bunyi マン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "自慢",
+              "reading": "じまん",
+              "meaning": "kesombongan/bangga diri"
+            },
+            {
+              "word": "我慢",
+              "reading": "がまん",
+              "meaning": "menahan diri/sabar"
+            }
+          ]
+        },
+        {
+          "character": "漫",
+          "reading": "マン",
+          "meaning": "berlebihan tanpa tujuan, komik",
+          "components": [
+            {
+              "character": "氵",
+              "meaning": "air"
+            },
+            {
+              "character": "曼",
+              "meaning": "unsur fonetik, bunyi マン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "漫画",
+              "reading": "まんが",
+              "meaning": "komik/manga"
+            },
+            {
+              "word": "散漫",
+              "reading": "さんまん",
+              "meaning": "tidak fokus/ceroboh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "雚",
+      "sharedReading": "カン",
+      "kanjiList": [
+        {
+          "character": "観",
+          "reading": "カン",
+          "meaning": "memandang, pandangan",
+          "components": [
+            {
+              "character": "雚",
+              "meaning": "unsur fonetik, bunyi カン"
+            },
+            {
+              "character": "見",
+              "meaning": "melihat"
+            }
+          ],
+          "examples": [
+            {
+              "word": "観察",
+              "reading": "かんさつ",
+              "meaning": "pengamatan"
+            },
+            {
+              "word": "価値観",
+              "reading": "かちかん",
+              "meaning": "pandangan nilai"
+            }
+          ]
+        },
+        {
+          "character": "歓",
+          "reading": "カン",
+          "meaning": "gembira",
+          "components": [
+            {
+              "character": "雚",
+              "meaning": "unsur fonetik, bunyi カン"
+            },
+            {
+              "character": "欠",
+              "meaning": "menguap/kekurangan"
+            }
+          ],
+          "examples": [
+            {
+              "word": "歓迎",
+              "reading": "かんげい",
+              "meaning": "penyambutan"
+            },
+            {
+              "word": "歓声",
+              "reading": "かんせい",
+              "meaning": "sorak-sorai"
+            }
+          ]
+        },
+        {
+          "character": "勧",
+          "reading": "カン",
+          "meaning": "mendorong, menganjurkan",
+          "components": [
+            {
+              "character": "雚",
+              "meaning": "unsur fonetik, bunyi カン"
+            },
+            {
+              "character": "力",
+              "meaning": "tenaga"
+            }
+          ],
+          "examples": [
+            {
+              "word": "勧誘",
+              "reading": "かんゆう",
+              "meaning": "ajakan/rayuan"
+            },
+            {
+              "word": "勧告",
+              "reading": "かんこく",
+              "meaning": "anjuran resmi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "襄",
+      "sharedReading": "ジョウ",
+      "kanjiList": [
+        {
+          "character": "譲",
+          "reading": "ジョウ",
+          "meaning": "mengalah, menyerahkan",
+          "components": [
+            {
+              "character": "言",
+              "meaning": "perkataan"
+            },
+            {
+              "character": "襄",
+              "meaning": "unsur fonetik, bunyi ジョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "譲渡",
+              "reading": "じょうと",
+              "meaning": "pengalihan/transfer"
+            },
+            {
+              "word": "譲歩",
+              "reading": "じょうほ",
+              "meaning": "kompromi/mengalah"
+            }
+          ]
+        },
+        {
+          "character": "嬢",
+          "reading": "ジョウ",
+          "meaning": "nona, gadis",
+          "components": [
+            {
+              "character": "女",
+              "meaning": "perempuan"
+            },
+            {
+              "character": "襄",
+              "meaning": "unsur fonetik, bunyi ジョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "お嬢さん",
+              "reading": "おじょうさん",
+              "meaning": "nona, anak perempuan orang"
+            }
+          ]
+        },
+        {
+          "character": "壌",
+          "reading": "ジョウ",
+          "meaning": "tanah, lapisan tanah",
+          "components": [
+            {
+              "character": "土",
+              "meaning": "tanah"
+            },
+            {
+              "character": "襄",
+              "meaning": "unsur fonetik, bunyi ジョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "土壌",
+              "reading": "どじょう",
+              "meaning": "lapisan tanah"
+            }
+          ]
+        },
+        {
+          "character": "醸",
+          "reading": "ジョウ",
+          "meaning": "menyeduh, meragikan",
+          "components": [
+            {
+              "character": "酉",
+              "meaning": "tempayan arak"
+            },
+            {
+              "character": "襄",
+              "meaning": "unsur fonetik, bunyi ジョウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "醸造",
+              "reading": "じょうぞう",
+              "meaning": "peragian (pembuatan bir/kecap dll)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "且",
+      "sharedReading": "ソ",
+      "kanjiList": [
+        {
+          "character": "組",
+          "reading": "ソ",
+          "meaning": "menyusun, kelompok",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "且",
+              "meaning": "unsur fonetik, bunyi ソ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "組織",
+              "reading": "そしき",
+              "meaning": "organisasi"
+            },
+            {
+              "word": "組閣",
+              "reading": "そかく",
+              "meaning": "pembentukan kabinet"
+            }
+          ]
+        },
+        {
+          "character": "祖",
+          "reading": "ソ",
+          "meaning": "leluhur",
+          "components": [
+            {
+              "character": "礻",
+              "meaning": "altar/dewa"
+            },
+            {
+              "character": "且",
+              "meaning": "unsur fonetik, bunyi ソ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "祖父母",
+              "reading": "そふぼ",
+              "meaning": "kakek-nenek"
+            },
+            {
+              "word": "祖先",
+              "reading": "そせん",
+              "meaning": "leluhur"
+            }
+          ]
+        },
+        {
+          "character": "阻",
+          "reading": "ソ",
+          "meaning": "menghalangi",
+          "components": [
+            {
+              "character": "阝",
+              "meaning": "bukit"
+            },
+            {
+              "character": "且",
+              "meaning": "unsur fonetik, bunyi ソ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "阻止",
+              "reading": "そし",
+              "meaning": "menghalangi/mencegah"
+            }
+          ]
+        },
+        {
+          "character": "粗",
+          "reading": "ソ",
+          "meaning": "kasar",
+          "components": [
+            {
+              "character": "米",
+              "meaning": "beras"
+            },
+            {
+              "character": "且",
+              "meaning": "unsur fonetik, bunyi ソ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "粗品",
+              "reading": "そしな",
+              "meaning": "hadiah kecil"
+            },
+            {
+              "word": "粗悪",
+              "reading": "そあく",
+              "meaning": "kualitas buruk"
+            }
+          ]
+        },
+        {
+          "character": "租",
+          "reading": "ソ",
+          "meaning": "sewa, pajak",
+          "components": [
+            {
+              "character": "禾",
+              "meaning": "padi"
+            },
+            {
+              "character": "且",
+              "meaning": "unsur fonetik, bunyi ソ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "租税",
+              "reading": "そぜい",
+              "meaning": "pajak"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "扁",
+      "sharedReading": "ヘン",
+      "kanjiList": [
+        {
+          "character": "編",
+          "reading": "ヘン",
+          "meaning": "merangkai, mengedit",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "扁",
+              "meaning": "unsur fonetik, bunyi ヘン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "編集",
+              "reading": "へんしゅう",
+              "meaning": "penyuntingan"
+            },
+            {
+              "word": "長編",
+              "reading": "ちょうへん",
+              "meaning": "karya panjang"
+            }
+          ]
+        },
+        {
+          "character": "遍",
+          "reading": "ヘン",
+          "meaning": "menyeluruh, kali/putaran",
+          "components": [
+            {
+              "character": "辶",
+              "meaning": "berjalan"
+            },
+            {
+              "character": "扁",
+              "meaning": "unsur fonetik, bunyi ヘン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "普遍",
+              "reading": "ふへん",
+              "meaning": "universal"
+            }
+          ]
+        },
+        {
+          "character": "偏",
+          "reading": "ヘン",
+          "meaning": "berat sebelah, bias",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "扁",
+              "meaning": "unsur fonetik, bunyi ヘン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "偏見",
+              "reading": "へんけん",
+              "meaning": "prasangka"
+            },
+            {
+              "word": "偏差値",
+              "reading": "へんさち",
+              "meaning": "nilai standar deviasi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "賁",
+      "sharedReading": "フン",
+      "kanjiList": [
+        {
+          "character": "噴",
+          "reading": "フン",
+          "meaning": "menyembur",
+          "components": [
+            {
+              "character": "口",
+              "meaning": "mulut"
+            },
+            {
+              "character": "賁",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "噴水",
+              "reading": "ふんすい",
+              "meaning": "air mancur"
+            },
+            {
+              "word": "噴火",
+              "reading": "ふんか",
+              "meaning": "letusan gunung berapi"
+            }
+          ]
+        },
+        {
+          "character": "憤",
+          "reading": "フン",
+          "meaning": "marah, geram",
+          "components": [
+            {
+              "character": "忄",
+              "meaning": "hati"
+            },
+            {
+              "character": "賁",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "憤慨",
+              "reading": "ふんがい",
+              "meaning": "kemarahan/kejengkelan"
+            }
+          ]
+        },
+        {
+          "character": "墳",
+          "reading": "フン",
+          "meaning": "makam, gundukan tanah",
+          "components": [
+            {
+              "character": "土",
+              "meaning": "tanah"
+            },
+            {
+              "character": "賁",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "古墳",
+              "reading": "こふん",
+              "meaning": "makam kuno"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "蒦",
+      "sharedReading": "カク",
+      "kanjiList": [
+        {
+          "character": "獲",
+          "reading": "カク",
+          "meaning": "menangkap, memperoleh",
+          "components": [
+            {
+              "character": "犭",
+              "meaning": "hewan/anjing"
+            },
+            {
+              "character": "蒦",
+              "meaning": "unsur fonetik, bunyi カク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "獲得",
+              "reading": "かくとく",
+              "meaning": "perolehan"
+            },
+            {
+              "word": "捕獲",
+              "reading": "ほかく",
+              "meaning": "penangkapan"
+            }
+          ]
+        },
+        {
+          "character": "穫",
+          "reading": "カク",
+          "meaning": "memanen",
+          "components": [
+            {
+              "character": "禾",
+              "meaning": "padi"
+            },
+            {
+              "character": "蒦",
+              "meaning": "unsur fonetik, bunyi カク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "収穫",
+              "reading": "しゅうかく",
+              "meaning": "panen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "菐",
+      "sharedReading": "ボク",
+      "kanjiList": [
+        {
+          "character": "僕",
+          "reading": "ボク",
+          "meaning": "saya (laki-laki), pelayan",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "菐",
+              "meaning": "unsur fonetik, bunyi ボク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "僕",
+              "reading": "ぼく",
+              "meaning": "saya (dipakai laki-laki)"
+            }
+          ]
+        },
+        {
+          "character": "撲",
+          "reading": "ボク",
+          "meaning": "memukul, menghancurkan",
+          "components": [
+            {
+              "character": "扌",
+              "meaning": "tangan"
+            },
+            {
+              "character": "菐",
+              "meaning": "unsur fonetik, bunyi ボク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "撲滅",
+              "reading": "ぼくめつ",
+              "meaning": "pemusnahan"
+            },
+            {
+              "word": "打撲",
+              "reading": "だぼく",
+              "meaning": "memar/benturan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "卒",
+      "sharedReading": "スイ",
+      "kanjiList": [
+        {
+          "character": "酔",
+          "reading": "スイ",
+          "meaning": "mabuk",
+          "components": [
+            {
+              "character": "酉",
+              "meaning": "tempayan arak"
+            },
+            {
+              "character": "卒",
+              "meaning": "unsur fonetik, bunyi スイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "麻酔",
+              "reading": "ますい",
+              "meaning": "anestesi/bius"
+            }
+          ]
+        },
+        {
+          "character": "粋",
+          "reading": "スイ",
+          "meaning": "murni, elegan",
+          "components": [
+            {
+              "character": "米",
+              "meaning": "beras"
+            },
+            {
+              "character": "卒",
+              "meaning": "unsur fonetik, bunyi スイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "純粋",
+              "reading": "じゅんすい",
+              "meaning": "murni"
+            }
+          ]
+        },
+        {
+          "character": "枠",
+          "reading": "わく",
+          "meaning": "bingkai, batas",
+          "components": [
+            {
+              "character": "木",
+              "meaning": "pohon/kayu"
+            },
+            {
+              "character": "卆",
+              "meaning": "unsur kuno, tanpa bunyi on'yomi"
+            }
+          ],
+          "examples": [
+            {
+              "word": "枠組み",
+              "reading": "わくぐみ",
+              "meaning": "kerangka/framework"
+            },
+            {
+              "word": "予算の枠",
+              "reading": "よさんのわく",
+              "meaning": "batas anggaran"
+            }
+          ],
+          "note": "Kanji buatan Jepang (kokuji), tidak memiliki cara baca on'yomi."
+        }
+      ]
+    }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      {
+        "question": "手術の前に医師が丁寧に＿＿の説明をした。",
+        "optionA": "麻酔",
+        "optionAReading": "ますい",
+        "optionB": "摩擦",
+        "optionBReading": "まさつ",
+        "answer": "A"
+      },
+      {
+        "question": "彼はいつも自分の成績を＿＿する。",
+        "optionA": "自慢",
+        "optionAReading": "じまん",
+        "optionB": "我慢",
+        "optionBReading": "がまん",
+        "answer": "A"
+      },
+      {
+        "question": "空港で外国人観光客を温かく＿＿した。",
+        "optionA": "勧告",
+        "optionAReading": "かんこく",
+        "optionB": "歓迎",
+        "optionBReading": "かんげい",
+        "answer": "B"
+      },
+      {
+        "question": "台風で畑の土が雨に流され、＿＿が薄くなった。",
+        "optionA": "土壌",
+        "optionAReading": "どじょう",
+        "optionB": "醸造",
+        "optionBReading": "じょうぞう",
+        "answer": "A"
+      },
+      {
+        "question": "彼女は毎朝新しい記事を書くために資料を＿＿する。",
+        "optionA": "編集",
+        "optionAReading": "へんしゅう",
+        "optionB": "偏見",
+        "optionBReading": "へんけん",
+        "answer": "A"
+      }
+    ],
+    "dragQuestions": [
+      {
+        "reading": "じゃま",
+        "fixedKanji": "邪",
+        "blankPosition": "after",
+        "choices": [
+          "魔",
+          "摩",
+          "磨",
+          "麻"
+        ],
+        "answer": "魔"
+      },
+      {
+        "reading": "かんさつ",
+        "fixedKanji": "察",
+        "blankPosition": "before",
+        "choices": [
+          "観",
+          "歓",
+          "勧",
+          "監"
+        ],
+        "answer": "観"
+      },
+      {
+        "reading": "そしき",
+        "fixedKanji": "織",
+        "blankPosition": "before",
+        "choices": [
+          "組",
+          "祖",
+          "阻",
+          "粗"
+        ],
+        "answer": "組"
+      },
+      {
+        "reading": "ふんすい",
+        "fixedKanji": "水",
+        "blankPosition": "before",
+        "choices": [
+          "噴",
+          "憤",
+          "墳",
+          "分"
+        ],
+        "answer": "噴"
+      },
+      {
+        "reading": "かくとく",
+        "fixedKanji": "得",
+        "blankPosition": "before",
+        "choices": [
+          "穫",
+          "獲",
+          "確",
+          "拡"
+        ],
+        "answer": "獲"
+      }
+    ]
+  }
+}
