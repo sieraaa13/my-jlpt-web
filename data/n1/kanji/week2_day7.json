@@ -1,0 +1,43 @@
+{
+  "week": 2,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 2 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "この地図の縮尺はどれくらいですか。", "target": "縮尺", "choices": ["しゅくしゃく", "しゅくやく", "しゅくたく", "しゅくちゃく"], "answer": "しゅくしゃく" },
+    { "sentence": "彼は最新の技術を駆使して作品を作った。", "target": "駆使", "choices": ["おうし", "すうし", "くし", "こうし"], "answer": "くし" },
+    { "sentence": "その計画は未遂に終わった。", "target": "未遂", "choices": ["みたい", "みつい", "みすい", "みずい"], "answer": "みすい" },
+    { "sentence": "セミの幼虫は成長する過程で脱皮を繰り返す。", "target": "脱皮", "choices": ["だっぱ", "だつひ", "だつは", "だっぴ"], "answer": "だっぴ" },
+    { "sentence": "彼は新入りながら根性がある。", "target": "根性", "choices": ["こんせい", "こんじょう", "こせい", "ねしょう"], "answer": "こんじょう" },
+    { "sentence": "激しい運動の後は疲労がたまりやすい。", "target": "疲労", "choices": ["はろう", "ひろう", "ふろう", "へろう"], "answer": "ひろう" },
+    { "sentence": "彼は難しい試験に挑戦し続けている。", "target": "挑戦", "choices": ["ちょうせん", "とうせん", "ちゅうせん", "ふんせん"], "answer": "ちょうせん" },
+    { "sentence": "その美しい渓谷は観光地として有名だ。", "target": "渓谷", "choices": ["けいゆう", "けいよく", "けいぞく", "けいこく"], "answer": "けいこく" },
+    { "sentence": "その主張には根拠が乏しい。", "target": "根拠", "choices": ["こんきょ", "こんしょ", "こんこ", "こんちょ"], "answer": "こんきょ" },
+    { "sentence": "この店は値段も安く、雰囲気もいい。", "target": "雰囲気", "choices": ["ぶいき", "ぶんいき", "ふいき", "ふんいき"], "answer": "ふんいき" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "偶然に旧友と再会した。", "reading": "ぐうぜん", "choices": ["隅然", "偶然", "遇然", "愚然"], "answer": "偶然" },
+    { "sentence": "事故で意識不明になった。", "reading": "いしき", "choices": ["意織", "意職", "意識", "意熾"], "answer": "意識" },
+    { "sentence": "頂上からの眺めは最高だった。", "reading": "ちょうじょう", "choices": ["停上", "訂上", "庁上", "頂上"], "answer": "頂上" },
+    { "sentence": "彼の第一印象は強烈だった。", "reading": "きょうれつ", "choices": ["強列", "強例", "強烈", "強裂"], "answer": "強烈" },
+    { "sentence": "大統領は軍事クーデターで失脚した。", "reading": "しっきゃく", "choices": ["失脚", "秩脚", "鉄脚", "迭脚"], "answer": "失脚" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "お昼ご飯は（　）自でご用意ください。", "target": "各自", "choices": ["個", "毎", "各", "全"], "answer": "各" },
+    { "sentence": "彼は年上ですが、職場では後（　）になります。", "target": "後輩", "choices": ["生", "方", "君", "輩"], "answer": "輩" },
+    { "sentence": "2（　）3日の旅行に行く。", "target": "2泊3日", "choices": ["百", "拍", "宿", "泊"], "answer": "泊" },
+    { "sentence": "（　）質な材料だけで作った商品は味が違う。", "target": "良質", "choices": ["生", "良", "正", "直"], "answer": "良" },
+    { "sentence": "学生（　）を見せてください。", "target": "学生証", "choices": ["証", "番", "丁", "兆"], "answer": "証" }
+  ],
+  "passageQuestion": {
+    "passage": "医学生は動物や[21]を[22]して、体内の[23]や仕組みを学ぶ。近年、性能を存分に[24]する精密な顕微鏡のおかげで、細胞の動きまで観察できるようになった。この分野の研究は17[25]ごろから発展してきたと言われている。",
+    "wordBank": ["そしき", "しょくぶつ", "はっき", "ちしき", "かいぼう", "せいき", "かつやく"],
+    "blanks": [
+      { "number": 21, "answer": "しょくぶつ", "answerKanji": "植物" },
+      { "number": 22, "answer": "かいぼう", "answerKanji": "解剖" },
+      { "number": 23, "answer": "そしき", "answerKanji": "組織" },
+      { "number": 24, "answer": "はっき", "answerKanji": "発揮" },
+      { "number": 25, "answer": "せいき", "answerKanji": "世紀" }
+    ]
+  }
+}
