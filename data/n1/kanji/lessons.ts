@@ -1,4 +1,5 @@
 import w1d1 from "./week1_day1.json";
+import w1d2 from "./week1_day2.json";
 
 export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
@@ -15,16 +16,25 @@ export type KanjiGroup = {
   sharedReading: string;
   kanjiList: KanjiEntry[];
 };
+export type KanjiExercise = {
+  question: string;
+  choices: string[];
+  answer: string;
+};
 export type KanjiLessonDay = {
   week: number;
   day: number;
   title: string;
   subtitle: string;
   groups: KanjiGroup[];
+  exercises: KanjiExercise[];
 };
 
 export const kanjiLessons: Record<string, Record<string, KanjiLessonDay>> = {
-  "1": { "1": w1d1 as KanjiLessonDay },
+  "1": {
+    "1": w1d1 as KanjiLessonDay,
+    "2": w1d2 as KanjiLessonDay,
+  },
 };
 
 export function getOrganizedKanjiLessons() {

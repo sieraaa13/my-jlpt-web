@@ -396,6 +396,137 @@
           "note": "Kanji ini umumnya dibaca dengan kun'yomi (うら), sering muncul di nama tempat."
         }
       ]
+    },
+    {
+      "sharedComponent": "郷",
+      "sharedReading": "キョウ",
+      "kanjiList": [
+        {
+          "character": "郷",
+          "reading": "キョウ",
+          "meaning": "kampung halaman, desa",
+          "components": [
+            { "character": "阝", "meaning": "desa/wilayah (oozato)" },
+            { "character": "乡", "meaning": "unsur fonetik kuno" }
+          ],
+          "examples": [
+            { "word": "故郷", "reading": "こきょう", "meaning": "kampung halaman" },
+            { "word": "帰郷", "reading": "ききょう", "meaning": "pulang kampung" }
+          ]
+        },
+        {
+          "character": "響",
+          "reading": "キョウ",
+          "meaning": "bergema, bunyi, berdampak",
+          "components": [
+            { "character": "郷", "meaning": "kampung halaman (unsur fonetik, bunyi キョウ)" },
+            { "character": "音", "meaning": "suara" }
+          ],
+          "examples": [
+            { "word": "影響", "reading": "えいきょう", "meaning": "pengaruh, dampak" },
+            { "word": "反響", "reading": "はんきょう", "meaning": "gaung, respons" }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "帯",
+      "sharedReading": "タイ",
+      "kanjiList": [
+        {
+          "character": "帯",
+          "reading": "タイ",
+          "meaning": "sabuk, obi, zona/kawasan",
+          "components": [
+            { "character": "冖", "meaning": "penutup" },
+            { "character": "巾", "meaning": "kain" }
+          ],
+          "examples": [
+            { "word": "世帯", "reading": "せたい", "meaning": "rumah tangga" },
+            { "word": "携帯", "reading": "けいたい", "meaning": "membawa, ponsel" }
+          ]
+        },
+        {
+          "character": "滞",
+          "reading": "タイ",
+          "meaning": "tersendat, menetap",
+          "components": [
+            { "character": "氵", "meaning": "air" },
+            { "character": "帯", "meaning": "sabuk/zona (unsur fonetik, bunyi タイ)" }
+          ],
+          "examples": [
+            { "word": "渋滞", "reading": "じゅうたい", "meaning": "kemacetan" },
+            { "word": "滞在", "reading": "たいざい", "meaning": "tinggal sementara" }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "朱",
+      "sharedReading": "シュ",
+      "kanjiList": [
+        {
+          "character": "朱",
+          "reading": "シュ",
+          "meaning": "merah cinnabar (merah tua)",
+          "components": [
+            { "character": "朱", "meaning": "merah cinnabar (karakter tunggal, tidak terpecah lagi)" }
+          ],
+          "examples": [
+            { "word": "朱色", "reading": "しゅいろ", "meaning": "warna merah cinnabar" }
+          ]
+        },
+        {
+          "character": "珠",
+          "reading": "シュ",
+          "meaning": "mutiara, benda bulat",
+          "components": [
+            { "character": "王", "meaning": "giok/permata" },
+            { "character": "朱", "meaning": "merah cinnabar (unsur fonetik, bunyi シュ)" }
+          ],
+          "examples": [
+            { "word": "珠算", "reading": "しゅざん", "meaning": "berhitung sempoa" },
+            { "word": "真珠", "reading": "しんじゅ", "meaning": "mutiara" }
+          ]
+        },
+        {
+          "character": "殊",
+          "reading": "シュ",
+          "meaning": "istimewa, berbeda",
+          "components": [
+            { "character": "歹", "meaning": "kematian/tulang" },
+            { "character": "朱", "meaning": "merah cinnabar (unsur fonetik, bunyi シュ)" }
+          ],
+          "examples": [
+            { "word": "特殊", "reading": "とくしゅ", "meaning": "khusus, istimewa" }
+          ]
+        },
+        {
+          "character": "株",
+          "reading": "かぶ",
+          "meaning": "tunggul pohon, saham",
+          "components": [
+            { "character": "木", "meaning": "pohon/kayu" },
+            { "character": "朱", "meaning": "merah cinnabar (unsur fonetik, bunyi シュ)" }
+          ],
+          "examples": [
+            { "word": "株", "reading": "かぶ", "meaning": "saham, tunggul pohon" }
+          ],
+          "note": "Kanji ini umumnya dibaca dengan kun'yomi (かぶ), bukan シュ."
+        }
+      ]
     }
+  ],
+  "exercises": [
+    { "question": "湖 cara baca on'yomi-nya apa?", "choices": ["コ", "ゴ", "ミ", "コウ"], "answer": "コ" },
+    { "question": "悟 cara baca on'yomi-nya apa?", "choices": ["ゴ", "コ", "ミ", "ショウ"], "answer": "ゴ" },
+    { "question": "魅 cara baca on'yomi-nya apa?", "choices": ["ミ", "コ", "ゴ", "ホ"], "answer": "ミ" },
+    { "question": "項 cara baca on'yomi-nya apa?", "choices": ["コウ", "シュ", "ショウ", "タイ"], "answer": "コウ" },
+    { "question": "趣 cara baca on'yomi-nya apa?", "choices": ["シュ", "ショウ", "ホ", "コウ"], "answer": "シュ" },
+    { "question": "彰 cara baca on'yomi-nya apa?", "choices": ["ショウ", "コウ", "シュ", "タイ"], "answer": "ショウ" },
+    { "question": "捕 cara baca on'yomi-nya apa?", "choices": ["ホ", "コ", "ゴ", "シュ"], "answer": "ホ" },
+    { "question": "響 cara baca on'yomi-nya apa?", "choices": ["キョウ", "タイ", "シュ", "ホ"], "answer": "キョウ" },
+    { "question": "滞 cara baca on'yomi-nya apa?", "choices": ["タイ", "キョウ", "コウ", "ミ"], "answer": "タイ" },
+    { "question": "珠 cara baca on'yomi-nya apa?", "choices": ["シュ", "ショウ", "ホ", "ゴ"], "answer": "シュ" }
   ]
 }

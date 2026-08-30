@@ -3,8 +3,7 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExamSelector } from "@/components/exam-selector";
-import { KanjiLessonView } from "@/components/kanji-lesson-view";
-import { kanjiLessons } from "@/data/n1/kanji/lessons";
+import { KanjiTab } from "@/components/kanji-tab";
 
 export default function N1Page() {
   return (
@@ -28,7 +27,7 @@ export default function N1Page() {
           </TabsContent>
 
           <TabsContent value="kanji">
-            <KanjiLessonView lesson={kanjiLessons["1"]["1"]} />
+            <KanjiTab />
           </TabsContent>
 
           <TabsContent value="soal">
