@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
-import { lessons } from "@/data/n3/soumatome/lessons"; 
+import { lessons } from "@/data/n3/soumatome/lessons";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Judul tiap minggu diambil dari main_title hari pertama
 function getWeekTitle(week: string) {
@@ -37,7 +38,6 @@ const weekLabels: Record<string, string> = {
 };
 
 const upcomingMaterials = [
-  { title: "Bunpou", japanese: "文法" },
   { title: "Kanji", japanese: "漢字" },
   { title: "Soal", japanese: "問題" },
 ];
@@ -52,46 +52,54 @@ export default function N3Page() {
         <Link href="/" className="text-primary hover:underline mb-8 inline-block">← Kembali ke Beranda</Link>
         <h1 className="text-5xl font-black mb-12">JLPT <span className="text-primary">N3</span></h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sortedWeeks.map((week) => {
-            // Cari hari ke-7 (まとめの問題) untuk link langsung ke sana
-            const hasDay7 = !!lessons[week]?.["7"];
-            const href = hasDay7
-              ? `/jlpt/n3/soumatome/${week}/7`
-              : `/jlpt/n3/soumatome/${week}/1`;
+        <Tabs defaultValue="bunpou">
+          <TabsList className="mb-8">
+            <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
+            {upcomingMaterials.map((material) => (
+              <TabsTrigger key={material.title} value={material.title.toLowerCase()}>
+                {material.title}
+              </TabsTrigger>
+            ))}
+          </TabsList>
 
-            return (
-              <Link
-                key={week}
-                href={href}
-                className="p-6 rounded-3xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all group"
-              >
-                <span className="inline-block bg-foreground text-background text-xs font-bold px-3 py-1 rounded-full mb-3">
-                  {weekLabels[week] || `第${week}週`}
-                </span>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {getWeekTitle(week)}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {getWeekSubtitles(week)}
-                </p>
-              </Link>
-            );
-          })}
+          <TabsContent value="bunpou">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedWeeks.map((week) => {
+                // Cari hari ke-7 (まとめの問題) untuk link langsung ke sana
+                const hasDay7 = !!lessons[week]?.["7"];
+                const href = hasDay7
+                  ? `/jlpt/n3/soumatome/${week}/7`
+                  : `/jlpt/n3/soumatome/${week}/1`;
+
+                return (
+                  <Link
+                    key={week}
+                    href={href}
+                    className="p-6 rounded-3xl border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all group"
+                  >
+                    <span className="inline-block bg-foreground text-background text-xs font-bold px-3 py-1 rounded-full mb-3">
+                      {weekLabels[week] || `第${week}週`}
+                    </span>
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                      {getWeekTitle(week)}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {getWeekSubtitles(week)}
+                    </p>
+                  </Link>
+                );
+              })}
+            </div>
+          </TabsContent>
 
           {upcomingMaterials.map((material) => (
-            <div
-              key={material.title}
-              className="p-6 rounded-3xl border border-dashed border-border bg-card/50 opacity-70 cursor-not-allowed"
-            >
-              <span className="inline-block bg-muted text-muted-foreground text-xs font-bold px-3 py-1 rounded-full mb-3">
-                Segera Hadir
-              </span>
-              <h3 className="text-xl font-bold mb-2">{material.title}</h3>
-              <p className="text-sm text-muted-foreground">{material.japanese}</p>
-            </div>
+            <TabsContent key={material.title} value={material.title.toLowerCase()}>
+              <div className="p-6 rounded-3xl border border-dashed border-border bg-card/50 text-center text-muted-foreground">
+                Materi {material.title} ({material.japanese}) segera hadir.
+              </div>
+            </TabsContent>
           ))}
-        </div>
+        </Tabs>
       </div>
       <Footer />
     </main>
