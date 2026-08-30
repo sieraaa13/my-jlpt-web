@@ -1,0 +1,57 @@
+{
+  "week": 3,
+  "day": 2,
+  "title": "平たい・平らな",
+  "subtitle": "Kanji dengan lebih dari satu cara baca kun'yomi ②",
+  "entries": [
+    { "word": "平たい", "reading": "ひらたい", "example": "この箱は平たい形をしているので重ねやすい。", "meaning": "pipih, datar", "relatedForms": [] },
+    { "word": "平らな", "reading": "たいらな", "example": "テントを張るには平らな場所を探す必要がある。", "meaning": "rata, datar", "relatedForms": [] },
+    { "word": "訪れる", "reading": "おとずれる", "example": "毎年多くの観光客がこの島を訪れる。", "meaning": "mengunjungi", "relatedForms": [] },
+    { "word": "訪ねる", "reading": "たずねる", "example": "休暇を利用して祖父母の家を訪ねた。", "meaning": "mengunjungi (seseorang/tempat)", "relatedForms": [] },
+    { "word": "負かす", "reading": "まかす", "example": "彼は議論で相手を見事に言い負かした。", "meaning": "mengalahkan (dalam perdebatan/permainan)", "relatedForms": ["負ける"] },
+    { "word": "負う", "reading": "おう", "example": "プロジェクトの失敗の責任を負うことになった。", "meaning": "menanggung (tanggung jawab)", "relatedForms": ["負ける"] },
+    { "word": "老いる", "reading": "おいる", "example": "老いた両親の世話を続けている。", "meaning": "menjadi tua", "relatedForms": [] },
+    { "word": "老ける", "reading": "ふける", "example": "彼は実年齢より老けて見える。", "meaning": "terlihat tua", "relatedForms": [] },
+    { "word": "交わる", "reading": "まじわる", "example": "留学中はさまざまな文化の人と交わる機会が多かった。", "meaning": "bergaul, berbaur", "relatedForms": ["交ざる", "交じる", "交ぜる"] },
+    { "word": "交える", "reading": "まじえる", "example": "会議では率直な意見を交えて話し合った。", "meaning": "menyertakan, bertukar (pendapat)", "relatedForms": ["交ざる", "交じる", "交ぜる"] },
+    { "word": "交わす", "reading": "かわす", "example": "両社は正式に契約を交わした。", "meaning": "bertukar, menandatangani (kontrak)", "relatedForms": ["交ざる", "交じる", "交ぜる"] },
+    { "word": "厳しい", "reading": "きびしい", "example": "今年の冬は例年より厳しい寒さが続いている。", "meaning": "ketat, keras, ekstrem", "relatedForms": [] },
+    { "word": "厳かな", "reading": "おごそかな", "example": "式典は厳かな雰囲気の中で執り行われた。", "meaning": "khidmat", "relatedForms": [] },
+    { "word": "染みる", "reading": "しみる", "example": "工場の煙が目に染みて涙が出た。", "meaning": "perih, meresap (menyakitkan)", "relatedForms": ["染める"] },
+    { "word": "染まる", "reading": "そまる", "example": "夕日で空全体がオレンジ色に染まった。", "meaning": "berubah warna, terwarnai", "relatedForms": ["染める"] },
+    { "word": "潜る", "reading": "もぐる", "example": "彼はダイビングが趣味で、よく海に潜る。", "meaning": "menyelam", "relatedForms": [] },
+    { "word": "潜む", "reading": "ひそむ", "example": "この問題の裏には根深い原因が潜んでいる。", "meaning": "tersembunyi, mengintai (masalah)", "relatedForms": [] },
+    { "word": "焦げる", "reading": "こげる", "example": "目を離した隙にご飯が焦げてしまった。", "meaning": "gosong", "relatedForms": ["焦がす"] },
+    { "word": "焦る", "reading": "あせる", "example": "締め切りが近いので気持ちばかり焦る。", "meaning": "tidak sabar, panik", "relatedForms": ["焦がす"] },
+    { "word": "弾く", "reading": "ひく", "example": "彼女は幼い頃からピアノを弾いている。", "meaning": "memainkan (alat musik senar)", "relatedForms": [] },
+    { "word": "弾む", "reading": "はずむ", "example": "久しぶりに会った友人との会話が弾んだ。", "meaning": "bersemangat, memantul", "relatedForms": [] },
+    { "word": "弾", "reading": "たま", "example": "犯人は拳銃の弾を一発も撃たなかった。", "meaning": "peluru", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "凍った道で滑って転びそうになった。", "meaning": "meluncur, tergelincir", "relatedForms": [] },
+    { "word": "滑らかな", "reading": "なめらかな", "example": "このクリームは肌に滑らかな触感を与える。", "meaning": "halus", "relatedForms": [] },
+    { "word": "覆う", "reading": "おおう", "example": "彼女は驚きのあまり両手で顔を覆った。", "meaning": "menutupi", "relatedForms": [] },
+    { "word": "覆す", "reading": "くつがえす", "example": "その発見はこれまでの常識を覆すものだった。", "meaning": "membalikkan, menggulingkan", "relatedForms": [] },
+    { "word": "盛んな", "reading": "さかんな", "example": "この地域は昔から漁業が盛んだ。", "meaning": "berkembang pesat, populer", "relatedForms": [] },
+    { "word": "盛り", "reading": "さかり", "example": "夏の暑い盛りに旅行するのは大変だ。", "meaning": "puncak (musim)", "relatedForms": ["目盛り", "大盛"] },
+    { "word": "盛る", "reading": "もる", "example": "彼は器に料理を丁寧に盛った。", "meaning": "menyajikan, menuang (makanan)", "relatedForms": ["目盛り", "大盛"] },
+    { "word": "怠ける", "reading": "なまける", "example": "彼は最近仕事を怠けてばかりいる。", "meaning": "malas (dalam bekerja)", "relatedForms": ["怠け者"] },
+    { "word": "怠る", "reading": "おこたる", "example": "健康管理を怠ると後で後悔する。", "meaning": "mengabaikan (kewajiban)", "relatedForms": ["怠け者"] },
+    { "word": "跳ぶ", "reading": "とぶ", "example": "彼は幅跳びの選手として活躍している。", "meaning": "melompat", "relatedForms": ["棒高跳び"] },
+    { "word": "跳ねる", "reading": "はねる", "example": "公園でウサギが元気に跳ねていた。", "meaning": "melompat-lompat, memantul", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "会議の途中で率直な意見を＿＿話し合った。", "optionA": "交わして", "optionAReading": "かわして", "optionB": "交えて", "optionBReading": "まじえて", "answer": "B" },
+      { "question": "両社は正式に契約を＿＿。", "optionA": "交わした", "optionAReading": "かわした", "optionB": "交えた", "optionBReading": "まじえた", "answer": "A" },
+      { "question": "工場の煙が目に＿＿涙が出た。", "optionA": "染まって", "optionAReading": "そまって", "optionB": "染みて", "optionBReading": "しみて", "answer": "B" },
+      { "question": "夕日で空全体がオレンジ色に＿＿。", "optionA": "染まった", "optionAReading": "そまった", "optionB": "染みた", "optionBReading": "しみた", "answer": "A" },
+      { "question": "締め切りが近いので気持ちばかり＿＿。", "optionA": "焦げる", "optionAReading": "こげる", "optionB": "焦る", "optionBReading": "あせる", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "たずねる", "fixedKanji": "訪", "blankPosition": "after", "choices": ["ねる", "れる", "う", "かす"], "answer": "ねる" },
+      { "reading": "おいる", "fixedKanji": "老", "blankPosition": "after", "choices": ["いる", "ける", "う", "める"], "answer": "いる" },
+      { "reading": "もぐる", "fixedKanji": "潜", "blankPosition": "after", "choices": ["る", "む", "める", "まる"], "answer": "る" },
+      { "reading": "なまける", "fixedKanji": "怠", "blankPosition": "after", "choices": ["ける", "る", "い", "かる"], "answer": "ける" },
+      { "reading": "はねる", "fixedKanji": "跳", "blankPosition": "after", "choices": ["ねる", "ぶ", "ばす", "ねく"], "answer": "ねる" }
+    ]
+  }
+}

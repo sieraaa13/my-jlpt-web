@@ -1,0 +1,59 @@
+{
+  "week": 3,
+  "day": 4,
+  "title": "伴う・狂う・誓う",
+  "subtitle": "Kata kerja kun'yomi ①",
+  "entries": [
+    { "word": "扱う", "reading": "あつかう", "example": "この店では海外の商品も扱っている。", "meaning": "menangani, menjual", "relatedForms": [] },
+    { "word": "伴う", "reading": "ともなう", "example": "彼は家族を伴って新しい町に引っ越した。", "meaning": "disertai, membawa serta", "relatedForms": [] },
+    { "word": "狂う", "reading": "くるう", "example": "急な依頼のせいで今日の予定が狂ってしまった。", "meaning": "berantakan, kacau", "relatedForms": [] },
+    { "word": "誓う", "reading": "ちかう", "example": "彼は上司に忠誠を誓った。", "meaning": "bersumpah", "relatedForms": [] },
+    { "word": "奪う", "reading": "うばう", "example": "独裁政権は国民から自由を奪った。", "meaning": "merampas", "relatedForms": [] },
+    { "word": "慕う", "reading": "したう", "example": "後輩たちは彼を先輩として慕っている。", "meaning": "mengagumi, menghormati", "relatedForms": [] },
+    { "word": "繕う", "reading": "つくろう", "example": "彼は失敗を隠すために体裁を繕った。", "meaning": "menjaga penampilan/gengsi", "relatedForms": [] },
+    { "word": "償う", "reading": "つぐなう", "example": "彼は事故の損害を全て償うと約束した。", "meaning": "menebus, mengganti rugi", "relatedForms": [] },
+    { "word": "縫う", "reading": "ぬう", "example": "母は私のために洋服を縫ってくれた。", "meaning": "menjahit", "relatedForms": ["縫い物"] },
+    { "word": "補う", "reading": "おぎなう", "example": "資料が足りない部分は口頭で補うことにした。", "meaning": "menutupi kekurangan, melengkapi", "relatedForms": [] },
+    { "word": "賄う", "reading": "まかなう", "example": "その団体は寄付金で活動費を賄っている。", "meaning": "membiayai, mengelola (keuangan)", "relatedForms": [] },
+    { "word": "損なう", "reading": "そこなう", "example": "無理なダイエットは健康を損なう恐れがある。", "meaning": "merusak (kesehatan)", "relatedForms": ["受け損なう"] },
+    { "word": "履く", "reading": "はく", "example": "外出前に新しい靴を履いた。", "meaning": "memakai (sepatu/celana)", "relatedForms": [] },
+    { "word": "敷く", "reading": "しく", "example": "客のために客間に布団を敷いた。", "meaning": "menggelar, membentangkan", "relatedForms": [] },
+    { "word": "渇く", "reading": "かわく", "example": "長時間歩いたせいで喉が渇いた。", "meaning": "kering, haus", "relatedForms": [] },
+    { "word": "描く", "reading": "えがく", "example": "画家はキャンバスに美しい弧を描いた。", "meaning": "menggambar, melukis", "relatedForms": [] },
+    { "word": "裁く", "reading": "さばく", "example": "その事件は最終的に法で裁かれることになった。", "meaning": "mengadili", "relatedForms": [] },
+    { "word": "嘆く", "reading": "なげく", "example": "彼は自分の不運を嘆いてばかりいる。", "meaning": "meratapi", "relatedForms": [] },
+    { "word": "導く", "reading": "みちびく", "example": "優れたコーチはチームを勝利へ導いた。", "meaning": "membimbing, memimpin", "relatedForms": [] },
+    { "word": "驚く", "reading": "おどろく", "example": "誰もが突然の発表に驚いた。", "meaning": "terkejut", "relatedForms": [] },
+    { "word": "貫く", "reading": "つらぬく", "example": "彼はどんな困難があっても初心を貫いた。", "meaning": "mempertahankan (niat), menembus", "relatedForms": ["弾が頭を貫く"] },
+    { "word": "赴く", "reading": "おもむく", "example": "彼は来月、海外の新しい任地に赴く予定だ。", "meaning": "berangkat (ke tempat tugas)", "relatedForms": [] },
+    { "word": "輝く", "reading": "かがやく", "example": "夜空に無数の星が輝いていた。", "meaning": "bersinar, gemerlap", "relatedForms": [] },
+    { "word": "注ぐ", "reading": "そそぐ", "example": "彼女は我が子に深い愛情を注いでいる。", "meaning": "mencurahkan, menuangkan", "relatedForms": ["愛情を注ぐ"] },
+    { "word": "担ぐ", "reading": "かつぐ", "example": "祖母は縁起を担いで毎朝神社に参る。", "meaning": "memikul; percaya takhayul", "relatedForms": [] },
+    { "word": "防ぐ", "reading": "ふせぐ", "example": "定期点検は事故を防ぐために欠かせない。", "meaning": "mencegah", "relatedForms": [] },
+    { "word": "稼ぐ", "reading": "かせぐ", "example": "彼はアルバイトで生活費を稼いでいる。", "meaning": "mencari nafkah", "relatedForms": [] },
+    { "word": "卸す", "reading": "おろす", "example": "この会社は地元の農産物を全国に卸している。", "meaning": "menjual secara grosir", "relatedForms": [] },
+    { "word": "脅す", "reading": "おどす", "example": "犯人は店員を脅して金銭を奪おうとした。", "meaning": "mengancam", "relatedForms": [] },
+    { "word": "崩す", "reading": "くずす", "example": "無理を続けたせいで体調を崩してしまった。", "meaning": "merusak (kondisi)", "relatedForms": [] },
+    { "word": "志す", "reading": "こころざす", "example": "彼は幼い頃から医師を志していた。", "meaning": "bercita-cita", "relatedForms": [] },
+    { "word": "催す", "reading": "もよおす", "example": "会社は毎年、社員のために懇親会を催している。", "meaning": "menyelenggarakan", "relatedForms": ["吐き気を催す"] },
+    { "word": "促す", "reading": "うながす", "example": "担当者は取引先に支払いを促す連絡をした。", "meaning": "mendesak, mendorong", "relatedForms": [] },
+    { "word": "浸す", "reading": "ひたす", "example": "使う前に布を水に浸しておいた。", "meaning": "merendam", "relatedForms": [] },
+    { "word": "施す", "reading": "ほどこす", "example": "その団体は被災者に金銭を施す活動を続けている。", "meaning": "memberi (sedekah/bantuan)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "無理なダイエットは健康を＿＿恐れがある。", "optionA": "損なう", "optionAReading": "そこなう", "optionB": "補う", "optionBReading": "おぎなう", "answer": "A" },
+      { "question": "資料が足りない部分は口頭で＿＿ことにした。", "optionA": "損なう", "optionAReading": "そこなう", "optionB": "補う", "optionBReading": "おぎなう", "answer": "B" },
+      { "question": "無理を続けたせいで体調を＿＿しまった。", "optionA": "崩して", "optionAReading": "くずして", "optionB": "催して", "optionBReading": "もよおして", "answer": "A" },
+      { "question": "会社は毎年、社員のために懇親会を＿＿いる。", "optionA": "崩して", "optionAReading": "くずして", "optionB": "催して", "optionBReading": "もよおして", "answer": "B" },
+      { "question": "彼はどんな困難があっても初心を＿＿。", "optionA": "貫いた", "optionAReading": "つらぬいた", "optionB": "導いた", "optionBReading": "みちびいた", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ともなう", "fixedKanji": "伴", "blankPosition": "after", "choices": ["う", "く", "す", "ぐ"], "answer": "う" },
+      { "reading": "つぐなう", "fixedKanji": "償", "blankPosition": "after", "choices": ["う", "く", "す", "ぐ"], "answer": "う" },
+      { "reading": "おもむく", "fixedKanji": "赴", "blankPosition": "after", "choices": ["く", "う", "す", "ぐ"], "answer": "く" },
+      { "reading": "うながす", "fixedKanji": "促", "blankPosition": "after", "choices": ["す", "く", "う", "ぐ"], "answer": "す" },
+      { "reading": "かせぐ", "fixedKanji": "稼", "blankPosition": "after", "choices": ["ぐ", "く", "す", "う"], "answer": "ぐ" }
+    ]
+  }
+}

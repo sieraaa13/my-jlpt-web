@@ -1,0 +1,60 @@
+{
+  "week": 3,
+  "day": 3,
+  "title": "憎い・幼い・快い",
+  "subtitle": "Kata benda & kata sifat kun'yomi",
+  "entries": [
+    { "word": "辺り", "reading": "あたり", "example": "駅の辺りを見回したが、彼の姿はなかった。", "meaning": "sekitar, sekeliling", "relatedForms": [] },
+    { "word": "怒り", "reading": "いかり", "example": "彼は不当な扱いに怒りをあらわにした。", "meaning": "kemarahan", "relatedForms": [] },
+    { "word": "周り", "reading": "まわり", "example": "彼女はいつも周りに気を配っている。", "meaning": "sekitar, sekeliling", "relatedForms": [] },
+    { "word": "狩り", "reading": "かり", "example": "この地域では冬になると狩りをする人が多い。", "meaning": "berburu", "relatedForms": [] },
+    { "word": "誇り", "reading": "ほこり", "example": "彼は自分の仕事に誇りを持っている。", "meaning": "kebanggaan", "relatedForms": [] },
+    { "word": "勢い", "reading": "いきおい", "example": "新チームは飛ぶ鳥を落とす勢いで勝ち進んでいる。", "meaning": "momentum, kekuatan", "relatedForms": [] },
+    { "word": "潤い", "reading": "うるおい", "example": "趣味を持つことで生活に潤いが生まれる。", "meaning": "kelembapan, kenyamanan (hidup)", "relatedForms": [] },
+    { "word": "斜め", "reading": "ななめ", "example": "この棚は縦、横、斜めのどの向きにも設置できる。", "meaning": "diagonal, miring", "relatedForms": [] },
+    { "word": "眺め", "reading": "ながめ", "example": "山頂からの眺めは息をのむほど美しかった。", "meaning": "pemandangan", "relatedForms": [] },
+    { "word": "細やかな", "reading": "こまやかな", "example": "彼女はいつも細やかな心遣いを忘れない。", "meaning": "penuh perhatian, teliti", "relatedForms": [] },
+    { "word": "健やかな", "reading": "すこやかな", "example": "子どもたちが健やかな笑顔を見せてくれた。", "meaning": "sehat, ceria", "relatedForms": [] },
+    { "word": "速やかな", "reading": "すみやかな", "example": "問題が起きたら速やかな対応が求められる。", "meaning": "cepat, segera", "relatedForms": [] },
+    { "word": "和やかな", "reading": "なごやかな", "example": "両国代表による和やかな話し合いが続いた。", "meaning": "harmonis, ramah", "relatedForms": [] },
+    { "word": "憎い", "reading": "にくい", "example": "彼女にとって彼は憎い相手だった。", "meaning": "dibenci", "relatedForms": [] },
+    { "word": "幼い", "reading": "おさない", "example": "幼い子どもが公園で遊んでいる。", "meaning": "masih kecil, muda", "relatedForms": [] },
+    { "word": "快い", "reading": "こころよい", "example": "彼は私の提案を快く受け入れてくれた。", "meaning": "senang hati, menyenangkan", "relatedForms": [] },
+    { "word": "貴い", "reading": "とうとい", "example": "戦争は多くの貴い命を奪った。", "meaning": "berharga, mulia", "relatedForms": [] },
+    { "word": "醜い", "reading": "みにくい", "example": "遺産をめぐって醜い争いが起きた。", "meaning": "buruk, jelek (perbuatan)", "relatedForms": [] },
+    { "word": "渋い", "reading": "しぶい", "example": "祖父はいつも渋いお茶を好んで飲む。", "meaning": "kelat, sepat; juga elegan bergaya lawas", "relatedForms": ["渋柿"] },
+    { "word": "生臭い", "reading": "なまぐさい", "example": "市場に近づくと魚の生臭いにおいがした。", "meaning": "bau amis", "relatedForms": [] },
+    { "word": "久しい", "reading": "ひさしい", "example": "彼は故郷を出て久しいが、今も方言が抜けない。", "meaning": "sudah lama (sejak)", "relatedForms": [] },
+    { "word": "著しい", "reading": "いちじるしい", "example": "この地域は近年、人口減少が著しい。", "meaning": "mencolok, nyata (perubahannya)", "relatedForms": [] },
+    { "word": "寂しい", "reading": "さびしい", "example": "一人暮らしを始めてから寂しい夜が続いている。", "meaning": "sepi, kesepian", "relatedForms": [] },
+    { "word": "激しい", "reading": "はげしい", "example": "昨夜は激しい雨で電車が止まった。", "meaning": "deras, hebat, sengit", "relatedForms": [] },
+    { "word": "怪しい", "reading": "あやしい", "example": "路地に怪しい人影が見えた気がした。", "meaning": "mencurigakan", "relatedForms": [] },
+    { "word": "卑しい", "reading": "いやしい", "example": "彼のお金に対する卑しい態度にあきれた。", "meaning": "hina, rendah (perbuatan)", "relatedForms": [] },
+    { "word": "惜しい", "reading": "おしい", "example": "惜しい。合格まであと1点足りなかった。", "meaning": "sayang sekali, hampir saja", "relatedForms": [] },
+    { "word": "慌ただしい", "reading": "あわただしい", "example": "年の暮れはいつも慌ただしい日々が続く。", "meaning": "sibuk, terburu-buru", "relatedForms": [] },
+    { "word": "甚だしい", "reading": "はなはだしい", "example": "それは甚だしい勘違いだと言わざるを得ない。", "meaning": "sangat, parah (berlebihan)", "relatedForms": [] },
+    { "word": "懐かしい", "reading": "なつかしい", "example": "この曲を聞くと学生時代を思い出して懐かしい。", "meaning": "rindu, nostalgia", "relatedForms": [] },
+    { "word": "騒がしい", "reading": "さわがしい", "example": "外が騒がしいので窓を開けて確認した。", "meaning": "berisik, ribut", "relatedForms": [] },
+    { "word": "紛らわしい", "reading": "まぎらわしい", "example": "この説明書は紛らわしい表現が多くてわかりにくい。", "meaning": "membingungkan (mirip)", "relatedForms": [] },
+    { "word": "煩わしい", "reading": "わずらわしい", "example": "毎日の細かい手続きが煩わしく感じる。", "meaning": "merepotkan, menjengkelkan", "relatedForms": [] },
+    { "word": "悩ましい", "reading": "なやましい", "example": "どちらを選ぶべきか悩ましい問題だ。", "meaning": "membuat resah/galau", "relatedForms": [] },
+    { "word": "勇ましい", "reading": "いさましい", "example": "彼は火事の中、勇ましい姿で人々を助けた。", "meaning": "gagah berani", "relatedForms": [] },
+    { "word": "華々しい", "reading": "はなばなしい", "example": "彼女はオリンピックで華々しい活躍を見せた。", "meaning": "gemilang, megah", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女はいつも＿＿心遣いを忘れない。", "optionA": "健やかな", "optionAReading": "すこやかな", "optionB": "細やかな", "optionBReading": "こまやかな", "answer": "B" },
+      { "question": "子どもたちが＿＿笑顔を見せてくれた。", "optionA": "健やかな", "optionAReading": "すこやかな", "optionB": "速やかな", "optionBReading": "すみやかな", "answer": "A" },
+      { "question": "遺産をめぐって＿＿争いが起きた。", "optionA": "憎い", "optionAReading": "にくい", "optionB": "醜い", "optionBReading": "みにくい", "answer": "B" },
+      { "question": "彼女にとって彼は＿＿相手だった。", "optionA": "醜い", "optionAReading": "みにくい", "optionB": "憎い", "optionBReading": "にくい", "answer": "B" },
+      { "question": "この説明書は＿＿表現が多くてわかりにくい。", "optionA": "煩わしい", "optionAReading": "わずらわしい", "optionB": "紛らわしい", "optionBReading": "まぎらわしい", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "ながめ", "fixedKanji": "山頂からの", "blankPosition": "after", "choices": ["眺め", "斜め", "誇り", "潤い"], "answer": "眺め" },
+      { "reading": "こころよい", "fixedKanji": "快", "blankPosition": "after", "choices": ["い", "しい", "らしい", "がる"], "answer": "い" },
+      { "reading": "さびしい", "fixedKanji": "寂", "blankPosition": "after", "choices": ["しい", "い", "らしい", "やか"], "answer": "しい" },
+      { "reading": "あやしい", "fixedKanji": "怪", "blankPosition": "after", "choices": ["しい", "い", "らしい", "やか"], "answer": "しい" },
+      { "reading": "なつかしい", "fixedKanji": "懐", "blankPosition": "after", "choices": ["かしい", "ましい", "がましい", "たましい"], "answer": "かしい" }
+    ]
+  }
+}
