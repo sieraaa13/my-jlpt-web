@@ -1,0 +1,707 @@
+{
+  "week": 2,
+  "day": 6,
+  "title": "由・油・抽",
+  "subtitle": "Perhatikan pengecualiannya",
+  "groups": [
+    {
+      "sharedComponent": "白",
+      "sharedReading": "ハク",
+      "kanjiList": [
+        {
+          "character": "白",
+          "reading": "ハク",
+          "meaning": "putih",
+          "components": [
+            {
+              "character": "白",
+              "meaning": "karakter tunggal (piktograf)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "告白",
+              "reading": "こくはく",
+              "meaning": "pengakuan/pernyataan cinta"
+            }
+          ],
+          "note": "Dalam kata 白夜(びゃくや) dibaca ビャク."
+        },
+        {
+          "character": "拍",
+          "reading": "ハク",
+          "meaning": "bertepuk, ketukan irama",
+          "components": [
+            {
+              "character": "扌",
+              "meaning": "tangan"
+            },
+            {
+              "character": "白",
+              "meaning": "unsur fonetik, bunyi ハク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "拍手",
+              "reading": "はくしゅ",
+              "meaning": "tepuk tangan"
+            }
+          ],
+          "note": "Dalam kata 拍子(ひょうし) dibaca ヒョウ."
+        },
+        {
+          "character": "泊",
+          "reading": "ハク",
+          "meaning": "berlabuh, bermalam",
+          "components": [
+            {
+              "character": "氵",
+              "meaning": "air"
+            },
+            {
+              "character": "白",
+              "meaning": "unsur fonetik, bunyi ハク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "宿泊",
+              "reading": "しゅくはく",
+              "meaning": "menginap"
+            }
+          ]
+        },
+        {
+          "character": "迫",
+          "reading": "ハク",
+          "meaning": "mendesak, mendekat",
+          "components": [
+            {
+              "character": "辶",
+              "meaning": "berjalan"
+            },
+            {
+              "character": "白",
+              "meaning": "unsur fonetik, bunyi ハク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "迫害",
+              "reading": "はくがい",
+              "meaning": "penganiayaan"
+            }
+          ]
+        },
+        {
+          "character": "舶",
+          "reading": "ハク",
+          "meaning": "kapal samudra",
+          "components": [
+            {
+              "character": "舟",
+              "meaning": "perahu"
+            },
+            {
+              "character": "白",
+              "meaning": "unsur fonetik, bunyi ハク"
+            }
+          ],
+          "examples": [
+            {
+              "word": "船舶",
+              "reading": "せんぱく",
+              "meaning": "kapal laut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "由",
+      "sharedReading": "ユウ",
+      "kanjiList": [
+        {
+          "character": "由",
+          "reading": "ユウ",
+          "meaning": "sebab, kebebasan",
+          "components": [
+            {
+              "character": "由",
+              "meaning": "karakter tunggal (piktograf)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "自由",
+              "reading": "じゆう",
+              "meaning": "kebebasan"
+            }
+          ],
+          "note": "Dalam kata 経由(けいゆ) dan 由来(ゆらい) dibaca ユ; dalam kata 由緒(ゆいしょ) dibaca ユイ."
+        }
+      ]
+    },
+    {
+      "sharedComponent": "由",
+      "sharedReading": "ユ",
+      "kanjiList": [
+        {
+          "character": "油",
+          "reading": "ユ",
+          "meaning": "minyak",
+          "components": [
+            {
+              "character": "氵",
+              "meaning": "air"
+            },
+            {
+              "character": "由",
+              "meaning": "unsur fonetik, bunyi ユ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "原油",
+              "reading": "げんゆ",
+              "meaning": "minyak mentah"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "由",
+      "sharedReading": "チュウ",
+      "kanjiList": [
+        {
+          "character": "抽",
+          "reading": "チュウ",
+          "meaning": "menarik keluar",
+          "components": [
+            {
+              "character": "扌",
+              "meaning": "tangan"
+            },
+            {
+              "character": "由",
+              "meaning": "unsur fonetik, bunyi チュウ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "抽象",
+              "reading": "ちゅうしょう",
+              "meaning": "abstrak"
+            },
+            {
+              "word": "抽選",
+              "reading": "ちゅうせん",
+              "meaning": "pengundian"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "申",
+      "sharedReading": "シン",
+      "kanjiList": [
+        {
+          "character": "神",
+          "reading": "シン",
+          "meaning": "dewa, tuhan",
+          "components": [
+            {
+              "character": "礻",
+              "meaning": "altar/dewa"
+            },
+            {
+              "character": "申",
+              "meaning": "unsur fonetik, bunyi シン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "精神",
+              "reading": "せいしん",
+              "meaning": "jiwa, spirit"
+            }
+          ],
+          "note": "Dalam kata 神社(じんじゃ) dibaca ジン."
+        },
+        {
+          "character": "申",
+          "reading": "シン",
+          "meaning": "menyatakan, memperpanjang",
+          "components": [
+            {
+              "character": "申",
+              "meaning": "karakter tunggal (piktograf kilat)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "申請",
+              "reading": "しんせい",
+              "meaning": "permohonan"
+            },
+            {
+              "word": "申告",
+              "reading": "しんこく",
+              "meaning": "laporan, deklarasi"
+            }
+          ]
+        },
+        {
+          "character": "伸",
+          "reading": "シン",
+          "meaning": "merentangkan",
+          "components": [
+            {
+              "character": "亻",
+              "meaning": "orang"
+            },
+            {
+              "character": "申",
+              "meaning": "unsur fonetik, bunyi シン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "伸縮",
+              "reading": "しんしゅく",
+              "meaning": "ekspansi-kontraksi"
+            },
+            {
+              "word": "追伸",
+              "reading": "ついしん",
+              "meaning": "postscript, PS"
+            }
+          ]
+        },
+        {
+          "character": "紳",
+          "reading": "シン",
+          "meaning": "pria terhormat",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "申",
+              "meaning": "unsur fonetik, bunyi シン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "紳士",
+              "reading": "しんし",
+              "meaning": "pria terhormat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "己",
+      "sharedReading": "コ",
+      "kanjiList": [
+        {
+          "character": "己",
+          "reading": "コ",
+          "meaning": "diri sendiri",
+          "components": [
+            {
+              "character": "己",
+              "meaning": "karakter tunggal (piktograf tali)"
+            }
+          ],
+          "examples": [
+            {
+              "word": "自己",
+              "reading": "じこ",
+              "meaning": "diri sendiri"
+            }
+          ],
+          "note": "Dalam kata 克己心(こっきしん) dibaca キ."
+        }
+      ]
+    },
+    {
+      "sharedComponent": "己",
+      "sharedReading": "キ",
+      "kanjiList": [
+        {
+          "character": "記",
+          "reading": "キ",
+          "meaning": "mencatat",
+          "components": [
+            {
+              "character": "言",
+              "meaning": "perkataan"
+            },
+            {
+              "character": "己",
+              "meaning": "unsur fonetik, bunyi キ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "記述",
+              "reading": "きじゅつ",
+              "meaning": "deskripsi"
+            }
+          ]
+        },
+        {
+          "character": "紀",
+          "reading": "キ",
+          "meaning": "era, disiplin",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "己",
+              "meaning": "unsur fonetik, bunyi キ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "世紀",
+              "reading": "せいき",
+              "meaning": "abad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "圣",
+      "sharedReading": "ケイ",
+      "kanjiList": [
+        {
+          "character": "経",
+          "reading": "ケイ",
+          "meaning": "melewati, mengelola, kitab suci",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "圣",
+              "meaning": "unsur fonetik, bunyi ケイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "経費",
+              "reading": "けいひ",
+              "meaning": "biaya operasional"
+            }
+          ],
+          "note": "Dalam kata 経典/お経(きょうてん/おきょう) dibaca キョウ."
+        },
+        {
+          "character": "軽",
+          "reading": "ケイ",
+          "meaning": "ringan",
+          "components": [
+            {
+              "character": "車",
+              "meaning": "kendaraan"
+            },
+            {
+              "character": "圣",
+              "meaning": "unsur fonetik, bunyi ケイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "軽率",
+              "reading": "けいそつ",
+              "meaning": "gegabah"
+            }
+          ]
+        },
+        {
+          "character": "径",
+          "reading": "ケイ",
+          "meaning": "diameter, jalan setapak",
+          "components": [
+            {
+              "character": "彳",
+              "meaning": "berjalan"
+            },
+            {
+              "character": "圣",
+              "meaning": "unsur fonetik, bunyi ケイ"
+            }
+          ],
+          "examples": [
+            {
+              "word": "半径",
+              "reading": "はんけい",
+              "meaning": "radius"
+            },
+            {
+              "word": "直径",
+              "reading": "ちょっけい",
+              "meaning": "diameter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "分",
+      "sharedReading": "ブン",
+      "kanjiList": [
+        {
+          "character": "分",
+          "reading": "ブン",
+          "meaning": "membagi, menit",
+          "components": [
+            {
+              "character": "八",
+              "meaning": "delapan/berpisah"
+            },
+            {
+              "character": "刀",
+              "meaning": "pisau"
+            }
+          ],
+          "examples": [
+            {
+              "word": "分析",
+              "reading": "ぶんせき",
+              "meaning": "analisis"
+            }
+          ],
+          "note": "Dalam kata 5分間(ごふんかん) dibaca フン; dalam kata 五分五分(ごぶごぶ) dibaca ブ."
+        }
+      ]
+    },
+    {
+      "sharedComponent": "分",
+      "sharedReading": "フン",
+      "kanjiList": [
+        {
+          "character": "粉",
+          "reading": "フン",
+          "meaning": "bubuk, tepung",
+          "components": [
+            {
+              "character": "米",
+              "meaning": "beras"
+            },
+            {
+              "character": "分",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "粉末",
+              "reading": "ふんまつ",
+              "meaning": "bubuk"
+            },
+            {
+              "word": "花粉",
+              "reading": "かふん",
+              "meaning": "serbuk sari"
+            }
+          ]
+        },
+        {
+          "character": "紛",
+          "reading": "フン",
+          "meaning": "kacau, sengketa",
+          "components": [
+            {
+              "character": "糸",
+              "meaning": "benang"
+            },
+            {
+              "character": "分",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "紛失",
+              "reading": "ふんしつ",
+              "meaning": "kehilangan"
+            },
+            {
+              "word": "紛争",
+              "reading": "ふんそう",
+              "meaning": "konflik, sengketa"
+            }
+          ]
+        },
+        {
+          "character": "雰",
+          "reading": "フン",
+          "meaning": "suasana, kabut",
+          "components": [
+            {
+              "character": "雨",
+              "meaning": "hujan"
+            },
+            {
+              "character": "分",
+              "meaning": "unsur fonetik, bunyi フン"
+            }
+          ],
+          "examples": [
+            {
+              "word": "雰囲気",
+              "reading": "ふんいき",
+              "meaning": "suasana"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sharedComponent": "分",
+      "sharedReading": "ボン",
+      "kanjiList": [
+        {
+          "character": "盆",
+          "reading": "ボン",
+          "meaning": "nampan, baki",
+          "components": [
+            {
+              "character": "分",
+              "meaning": "unsur fonetik, bunyi ボン"
+            },
+            {
+              "character": "皿",
+              "meaning": "wadah"
+            }
+          ],
+          "examples": [
+            {
+              "word": "お盆",
+              "reading": "おぼん",
+              "meaning": "nampan; juga nama festival Obon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      {
+        "question": "彼は罪を認め、正直に＿＿した。",
+        "optionA": "拍手",
+        "optionAReading": "はくしゅ",
+        "optionB": "告白",
+        "optionBReading": "こくはく",
+        "answer": "B"
+      },
+      {
+        "question": "出張でホテルに2泊3日の予定で＿＿する。",
+        "optionA": "宿泊",
+        "optionAReading": "しゅくはく",
+        "optionB": "船舶",
+        "optionBReading": "せんぱく",
+        "answer": "A"
+      },
+      {
+        "question": "東京から大阪まで名古屋を＿＿して行く。",
+        "optionA": "自由",
+        "optionAReading": "じゆう",
+        "optionB": "経由",
+        "optionBReading": "けいゆ",
+        "answer": "B"
+      },
+      {
+        "question": "この公園では誰でも＿＿に遊ぶことができる。",
+        "optionA": "経由",
+        "optionAReading": "けいゆ",
+        "optionB": "自由",
+        "optionBReading": "じゆう",
+        "answer": "B"
+      },
+      {
+        "question": "パスポートの更新を役所に＿＿した。",
+        "optionA": "紳士",
+        "optionAReading": "しんし",
+        "optionB": "申請",
+        "optionBReading": "しんせい",
+        "answer": "B"
+      }
+    ],
+    "dragQuestions": [
+      {
+        "reading": "こくはく",
+        "fixedKanji": "告",
+        "blankPosition": "after",
+        "choices": [
+          "白",
+          "拍",
+          "泊",
+          "迫"
+        ],
+        "answer": "白"
+      },
+      {
+        "reading": "じゆう",
+        "fixedKanji": "自",
+        "blankPosition": "after",
+        "choices": [
+          "由",
+          "油",
+          "抽",
+          "曲"
+        ],
+        "answer": "由"
+      },
+      {
+        "reading": "せいしん",
+        "fixedKanji": "精",
+        "blankPosition": "after",
+        "choices": [
+          "神",
+          "申",
+          "伸",
+          "紳"
+        ],
+        "answer": "神"
+      },
+      {
+        "reading": "じこ",
+        "fixedKanji": "自",
+        "blankPosition": "after",
+        "choices": [
+          "己",
+          "記",
+          "紀",
+          "已"
+        ],
+        "answer": "己"
+      },
+      {
+        "reading": "けいひ",
+        "fixedKanji": "費",
+        "blankPosition": "before",
+        "choices": [
+          "経",
+          "軽",
+          "径",
+          "系"
+        ],
+        "answer": "経"
+      }
+    ]
+  }
+}

@@ -9,6 +9,8 @@ import w2d1 from "./week2_day1.json";
 import w2d2 from "./week2_day2.json";
 import w2d3 from "./week2_day3.json";
 import w2d4 from "./week2_day4.json";
+import w2d5 from "./week2_day5.json";
+import w2d6 from "./week2_day6.json";
 
 export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
@@ -83,6 +85,8 @@ export const kanjiLessons: Record<string, Record<string, KanjiLessonDay>> = {
     "2": w2d2 as KanjiLessonDay,
     "3": w2d3 as KanjiLessonDay,
     "4": w2d4 as KanjiLessonDay,
+    "5": w2d5 as KanjiLessonDay,
+    "6": w2d6 as KanjiLessonDay,
   },
 };
 
