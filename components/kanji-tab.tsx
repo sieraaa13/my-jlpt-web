@@ -4,7 +4,8 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { KanjiLessonView } from "@/components/kanji-lesson-view";
 import { KanjiTestView } from "@/components/kanji-test-view";
-import { getOrganizedKanjiLessons, kanjiLessons, kanjiTests } from "@/data/n1/kanji/lessons";
+import { KunyomiLessonView } from "@/components/kunyomi-lesson-view";
+import { getOrganizedKanjiLessons, kanjiLessons, kanjiTests, kunyomiLessons } from "@/data/n1/kanji/lessons";
 
 export function KanjiTab() {
   const weeks = getOrganizedKanjiLessons();
@@ -14,6 +15,7 @@ export function KanjiTab() {
   const currentWeek = weeks.find((w) => w.week === selectedWeek) ?? weeks[0];
   const lesson = kanjiLessons[selectedWeek]?.[selectedDay];
   const test = kanjiTests[selectedWeek]?.[selectedDay];
+  const kunyomiLesson = kunyomiLessons[selectedWeek]?.[selectedDay];
 
   return (
     <div className="space-y-6">
@@ -60,6 +62,8 @@ export function KanjiTab() {
         <KanjiLessonView lesson={lesson} />
       ) : test ? (
         <KanjiTestView test={test} />
+      ) : kunyomiLesson ? (
+        <KunyomiLessonView lesson={kunyomiLesson} />
       ) : (
         <div className="p-6 rounded-3xl border border-dashed border-border bg-card/50 text-center text-muted-foreground">
           Materi belum tersedia.

@@ -1,0 +1,52 @@
+{
+  "week": 3,
+  "day": 1,
+  "title": "生かす・生やす",
+  "subtitle": "Kanji dengan lebih dari satu cara baca kun'yomi ①",
+  "entries": [
+    { "word": "生かす", "reading": "いかす", "example": "この経験を今後の仕事に生かしたい。", "meaning": "memanfaatkan (keahlian/pengalaman)", "relatedForms": ["生きる", "生まれる"] },
+    { "word": "生やす", "reading": "はやす", "example": "祖父は白いひげを生やしている。", "meaning": "menumbuhkan (jenggot, rambut)", "relatedForms": ["生みの親", "生卵"] },
+    { "word": "開ける", "reading": "ひらける", "example": "この丘からは開けた景色が見える。", "meaning": "terbuka luas, berkembang", "relatedForms": ["ドアを開ける", "ドアが開く"] },
+    { "word": "閉ざす", "reading": "とざす", "example": "彼はショックのあまり心を閉ざしてしまった。", "meaning": "menutup (hati)", "relatedForms": ["目を閉じる", "ドアを閉める"] },
+    { "word": "映える", "reading": "はえる", "example": "青空に紅葉が映えてとても美しい。", "meaning": "tampak kontras/indah", "relatedForms": ["映す", "映る"] },
+    { "word": "教わる", "reading": "おそわる", "example": "彼女は有名なシェフに料理を教わった。", "meaning": "belajar dari (seseorang)", "relatedForms": ["英語を教える"] },
+    { "word": "試みる", "reading": "こころみる", "example": "新しい方法での治療を試みることにした。", "meaning": "mencoba", "relatedForms": ["新しいソフトを試す"] },
+    { "word": "新たな", "reading": "あらたな", "example": "彼は卒業後、新たな道を歩み始めた。", "meaning": "baru", "relatedForms": ["新しい発見"] },
+    { "word": "強いる", "reading": "しいる", "example": "会社は社員に長時間労働を強いていた。", "meaning": "memaksa", "relatedForms": ["強い"] },
+    { "word": "好む", "reading": "このむ", "example": "彼は辛い食べ物を好む傾向がある。", "meaning": "menyukai, gemar", "relatedForms": ["好きな食べ物"] },
+    { "word": "重なる", "reading": "かさなる", "example": "その日は結婚式と出張の日程が重なってしまった。", "meaning": "bertumpuk, bertabrakan (jadwal)", "relatedForms": ["重い", "重ねる"] },
+    { "word": "外す", "reading": "はずす", "example": "会議の途中で少し席を外した。", "meaning": "melepas, meninggalkan (tempat)", "relatedForms": ["窓の外", "ボタンが外れる"] },
+    { "word": "後", "reading": "のち", "example": "詳しい内容は後ほどメールでお知らせします。", "meaning": "nanti, kemudian", "relatedForms": ["後で", "後ろ"] },
+    { "word": "冷える", "reading": "ひえる", "example": "夜になると急に空気が冷えてきた。", "meaning": "menjadi dingin", "relatedForms": ["お湯が冷める"] },
+    { "word": "冷ます", "reading": "さます", "example": "熱いスープを少し冷ましてから飲んだ。", "meaning": "mendinginkan", "relatedForms": ["冷たい", "冷やす"] },
+    { "word": "汚す", "reading": "よごす", "example": "子どもが泥で服を汚してしまった。", "meaning": "mengotori", "relatedForms": ["汚い", "服が汚れる"] },
+    { "word": "汚す", "reading": "けがす", "example": "その不正行為は会社の名を汚す結果となった。", "meaning": "mencoreng (nama baik)", "relatedForms": ["汚れたお金"] },
+    { "word": "逃がす", "reading": "にがす", "example": "釣った魚を海に逃がしてあげた。", "meaning": "melepaskan (agar lolos)", "relatedForms": ["逃げる"] },
+    { "word": "逃す", "reading": "のがす", "example": "彼は絶好のチャンスを逃してしまった。", "meaning": "melewatkan (kesempatan)", "relatedForms": ["敵から逃れる"] },
+    { "word": "抱く", "reading": "いだく", "example": "彼女は将来への希望を抱いている。", "meaning": "memendam (harapan, perasaan)", "relatedForms": ["赤ん坊を抱く"] },
+    { "word": "抱える", "reading": "かかえる", "example": "彼は重い荷物を両手に抱えて歩いていた。", "meaning": "memikul, menggendong", "relatedForms": ["大きな問題を抱える"] },
+    { "word": "危うい", "reading": "あやうい", "example": "彼は事故に遭う危ういところだった。", "meaning": "nyaris (bahaya), genting", "relatedForms": ["命が危ない"] },
+    { "word": "危ぶむ", "reading": "あやぶむ", "example": "専門家たちはその計画の実現を危ぶんでいる。", "meaning": "mengkhawatirkan", "relatedForms": ["命が危ない"] },
+    { "word": "触れる", "reading": "ふれる", "example": "展示品には手を触れないでください。", "meaning": "menyentuh", "relatedForms": ["触るな"] },
+    { "word": "凍える", "reading": "こごえる", "example": "寒さで手足が凍えるほど冷たかった。", "meaning": "membeku kedinginan", "relatedForms": ["池が凍る"] },
+    { "word": "頼る", "reading": "たよる", "example": "困ったときはお互いに頼ることが大切だ。", "meaning": "mengandalkan", "relatedForms": ["仕事を頼む"] },
+    { "word": "頼もしい", "reading": "たのもしい", "example": "彼はいつも頼もしい存在だ。", "meaning": "bisa diandalkan", "relatedForms": ["仕事を頼む"] },
+    { "word": "連なる", "reading": "つらなる", "example": "地平線には山々が連なっている。", "meaning": "berjajar, bersambung", "relatedForms": ["家族連れ", "犬を連れていく"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女は将来への希望を＿＿いる。", "optionA": "抱いて", "optionAReading": "いだいて", "optionB": "抱えて", "optionBReading": "かかえて", "answer": "A" },
+      { "question": "彼は重い荷物を両手に＿＿歩いていた。", "optionA": "抱いて", "optionAReading": "いだいて", "optionB": "抱えて", "optionBReading": "かかえて", "answer": "B" },
+      { "question": "子どもが泥で服を＿＿しまった。", "optionA": "汚して", "optionAReading": "よごして", "optionB": "汚して", "optionBReading": "けがして", "answer": "A" },
+      { "question": "その不正行為は会社の名を＿＿結果となった。", "optionA": "汚す", "optionAReading": "よごす", "optionB": "汚す", "optionBReading": "けがす", "answer": "B" },
+      { "question": "会議の途中で少し席を＿＿。", "optionA": "外した", "optionAReading": "はずした", "optionB": "逃した", "optionBReading": "のがした", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "いかす", "fixedKanji": "生", "blankPosition": "after", "choices": ["かす", "やす", "きる", "まれる"], "answer": "かす" },
+      { "reading": "とざす", "fixedKanji": "閉", "blankPosition": "after", "choices": ["ざす", "める", "じる", "まる"], "answer": "ざす" },
+      { "reading": "このむ", "fixedKanji": "好", "blankPosition": "after", "choices": ["む", "き", "もう", "める"], "answer": "む" },
+      { "reading": "あやぶむ", "fixedKanji": "危", "blankPosition": "after", "choices": ["ぶむ", "うい", "ない", "ぶない"], "answer": "ぶむ" },
+      { "reading": "たのもしい", "fixedKanji": "頼", "blankPosition": "after", "choices": ["もしい", "る", "む", "もる"], "answer": "もしい" }
+    ]
+  }
+}

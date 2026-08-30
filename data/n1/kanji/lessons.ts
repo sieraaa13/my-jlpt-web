@@ -12,6 +12,7 @@ import w2d4 from "./week2_day4.json";
 import w2d5 from "./week2_day5.json";
 import w2d6 from "./week2_day6.json";
 import w2d7 from "./week2_day7.json";
+import w3d1 from "./week3_day1.json";
 
 export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
@@ -72,6 +73,22 @@ export type KanjiTestDay = {
   passageQuestion: PassageQuestion;
 };
 
+export type KunyomiEntry = {
+  word: string;
+  reading: string;
+  example: string;
+  meaning: string;
+  relatedForms: string[];
+};
+export type KunyomiLessonDay = {
+  week: number;
+  day: number;
+  title: string;
+  subtitle: string;
+  entries: KunyomiEntry[];
+  exercises: KanjiExercises;
+};
+
 export const kanjiLessons: Record<string, Record<string, KanjiLessonDay>> = {
   "1": {
     "1": w1d1 as KanjiLessonDay,
@@ -100,18 +117,30 @@ export const kanjiTests: Record<string, Record<string, KanjiTestDay>> = {
   },
 };
 
+export const kunyomiLessons: Record<string, Record<string, KunyomiLessonDay>> = {
+  "3": {
+    "1": w3d1 as KunyomiLessonDay,
+  },
+};
+
 export function getOrganizedKanjiLessons() {
   const weeks: Array<{ week: string; days: Array<{ day: string; title: string; subtitle: string }> }> = [];
-  const sortedWeeks = Object.keys(kanjiLessons).sort((a, b) => Number(a) - Number(b));
+  const allWeeks = new Set([
+    ...Object.keys(kanjiLessons),
+    ...Object.keys(kanjiTests),
+    ...Object.keys(kunyomiLessons),
+  ]);
+  const sortedWeeks = Array.from(allWeeks).sort((a, b) => Number(a) - Number(b));
   for (const week of sortedWeeks) {
-    const lessonDays = kanjiLessons[week];
+    const lessonDays = kanjiLessons[week] || {};
     const testDays = kanjiTests[week] || {};
-    const allDayKeys = [...Object.keys(lessonDays), ...Object.keys(testDays)];
+    const kunyomiDays = kunyomiLessons[week] || {};
+    const allDayKeys = [...Object.keys(lessonDays), ...Object.keys(testDays), ...Object.keys(kunyomiDays)];
     const sortedDays = allDayKeys.sort((a, b) => Number(a) - Number(b));
     weeks.push({
       week,
       days: sortedDays.map((day) => {
-        const source = lessonDays[day] || testDays[day];
+        const source = lessonDays[day] || testDays[day] || kunyomiDays[day];
         return { day, title: source.title, subtitle: source.subtitle };
       }),
     });
