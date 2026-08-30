@@ -36,6 +36,12 @@ const weekLabels: Record<string, string> = {
   "6": "第六週",
 };
 
+const upcomingMaterials = [
+  { title: "Bunpou", japanese: "文法" },
+  { title: "Kanji", japanese: "漢字" },
+  { title: "Soal", japanese: "問題" },
+];
+
 export default function N3Page() {
   const sortedWeeks = Object.keys(lessons).sort((a, b) => Number(a) - Number(b));
 
@@ -72,6 +78,19 @@ export default function N3Page() {
               </Link>
             );
           })}
+
+          {upcomingMaterials.map((material) => (
+            <div
+              key={material.title}
+              className="p-6 rounded-3xl border border-dashed border-border bg-card/50 opacity-70 cursor-not-allowed"
+            >
+              <span className="inline-block bg-muted text-muted-foreground text-xs font-bold px-3 py-1 rounded-full mb-3">
+                Segera Hadir
+              </span>
+              <h3 className="text-xl font-bold mb-2">{material.title}</h3>
+              <p className="text-sm text-muted-foreground">{material.japanese}</p>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />
