@@ -160,8 +160,8 @@
               "meaning": "baju zirah"
             },
             {
-              "character": "丿",
-              "meaning": "tangan"
+              "character": "𠂇",
+              "meaning": "tangan (kiri)"
             }
           ],
           "examples": [
@@ -834,7 +834,7 @@
       ]
     },
     {
-      "sharedComponent": "隋",
+      "sharedComponent": "迶",
       "sharedReading": "ズイ",
       "kanjiList": [
         {
@@ -847,8 +847,8 @@
               "meaning": "bukit"
             },
             {
-              "character": "隋",
-              "meaning": "unsur fonetik, bunyi ズイ"
+              "character": "迶",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ズイ"
             }
           ],
           "examples": [
@@ -874,8 +874,8 @@
               "meaning": "tulang"
             },
             {
-              "character": "隋",
-              "meaning": "unsur fonetik, bunyi ズイ"
+              "character": "迶",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ズイ"
             }
           ],
           "examples": [

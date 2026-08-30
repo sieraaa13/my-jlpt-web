@@ -96,8 +96,8 @@
           "meaning": "rami, ganja",
           "components": [
             {
-              "character": "广",
-              "meaning": "atap"
+              "character": "厂",
+              "meaning": "tebing/bangunan sederhana"
             },
             {
               "character": "林",
@@ -261,7 +261,7 @@
           "components": [
             {
               "character": "雚",
-              "meaning": "unsur fonetik, bunyi カン"
+              "meaning": "unsur fonetik asal (etimologis), bunyi カン"
             },
             {
               "character": "見",
@@ -288,7 +288,7 @@
           "components": [
             {
               "character": "雚",
-              "meaning": "unsur fonetik, bunyi カン"
+              "meaning": "unsur fonetik asal (etimologis), bunyi カン"
             },
             {
               "character": "欠",
@@ -315,7 +315,7 @@
           "components": [
             {
               "character": "雚",
-              "meaning": "unsur fonetik, bunyi カン"
+              "meaning": "unsur fonetik asal (etimologis), bunyi カン"
             },
             {
               "character": "力",
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "sharedComponent": "襄",
+      "sharedComponent": "㐮",
       "sharedReading": "ジョウ",
       "kanjiList": [
         {
@@ -351,8 +351,8 @@
               "meaning": "perkataan"
             },
             {
-              "character": "襄",
-              "meaning": "unsur fonetik, bunyi ジョウ"
+              "character": "㐮",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ジョウ"
             }
           ],
           "examples": [
@@ -378,8 +378,8 @@
               "meaning": "perempuan"
             },
             {
-              "character": "襄",
-              "meaning": "unsur fonetik, bunyi ジョウ"
+              "character": "㐮",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ジョウ"
             }
           ],
           "examples": [
@@ -400,8 +400,8 @@
               "meaning": "tanah"
             },
             {
-              "character": "襄",
-              "meaning": "unsur fonetik, bunyi ジョウ"
+              "character": "㐮",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ジョウ"
             }
           ],
           "examples": [
@@ -422,8 +422,8 @@
               "meaning": "tempayan arak"
             },
             {
-              "character": "襄",
-              "meaning": "unsur fonetik, bunyi ジョウ"
+              "character": "㐮",
+              "meaning": "unsur fonetik (versi shinjitai), bunyi ジョウ"
             }
           ],
           "examples": [
@@ -837,7 +837,7 @@
       ]
     },
     {
-      "sharedComponent": "卒",
+      "sharedComponent": "卆",
       "sharedReading": "スイ",
       "kanjiList": [
         {
@@ -850,8 +850,8 @@
               "meaning": "tempayan arak"
             },
             {
-              "character": "卒",
-              "meaning": "unsur fonetik, bunyi スイ"
+              "character": "卆",
+              "meaning": "unsur fonetik (varian 卒), bunyi スイ"
             }
           ],
           "examples": [
@@ -872,8 +872,8 @@
               "meaning": "beras"
             },
             {
-              "character": "卒",
-              "meaning": "unsur fonetik, bunyi スイ"
+              "character": "卆",
+              "meaning": "unsur fonetik (varian 卒), bunyi スイ"
             }
           ],
           "examples": [
