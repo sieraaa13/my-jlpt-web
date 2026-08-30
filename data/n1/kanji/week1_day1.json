@@ -1,0 +1,297 @@
+{
+  "week": 1,
+  "day": 1,
+  "title": "五・語・悟",
+  "subtitle": "Kanji dengan bagian yang sama & cara baca on'yomi yang sama ①",
+  "quiz": {
+    "question": "___ cara baca on'yomi-nya apa?",
+    "targetKanji": "語",
+    "choices": ["ゴ", "コ", "シュ"],
+    "answer": "ゴ"
+  },
+  "groups": [
+    {
+      "sharedComponent": "古",
+      "sharedReading": "コ",
+      "kanjiList": [
+        {
+          "character": "古",
+          "reading": "コ",
+          "examples": [
+            { "word": "古典", "reading": "こてん", "meaning": "karya klasik" },
+            { "word": "古代", "reading": "こだい", "meaning": "zaman kuno" }
+          ],
+          "radical": { "character": "口", "name": "くち (kuchi)", "meaning": "mulut" }
+        },
+        {
+          "character": "固",
+          "reading": "コ",
+          "examples": [
+            { "word": "固定", "reading": "こてい", "meaning": "tetap, terpasang" },
+            { "word": "固有", "reading": "こゆう", "meaning": "khas, unik miliknya sendiri" }
+          ],
+          "radical": { "character": "囗", "name": "くにがまえ (kunigamae)", "meaning": "bingkai/pagar" }
+        },
+        {
+          "character": "個",
+          "reading": "コ",
+          "examples": [
+            { "word": "個性", "reading": "こせい", "meaning": "kepribadian" },
+            { "word": "個別", "reading": "こべつ", "meaning": "secara individual" }
+          ],
+          "radical": { "character": "亻", "name": "にんべん (ninben)", "meaning": "orang" }
+        },
+        {
+          "character": "故",
+          "reading": "コ",
+          "examples": [
+            { "word": "事故", "reading": "じこ", "meaning": "kecelakaan" },
+            { "word": "故人", "reading": "こじん", "meaning": "almarhum" }
+          ],
+          "radical": { "character": "攵", "name": "ぼくづくり (bokuzukuri)", "meaning": "memukul/bertindak" }
+        },
+        {
+          "character": "湖",
+          "reading": "コ",
+          "examples": [
+            { "word": "湖畔", "reading": "こはん", "meaning": "tepi danau" },
+            { "word": "湖水", "reading": "こすい", "meaning": "air danau" }
+          ],
+          "radical": { "character": "氵", "name": "さんずい (sanzui)", "meaning": "air" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "五",
+      "sharedReading": "ゴ",
+      "kanjiList": [
+        {
+          "character": "五",
+          "reading": "ゴ",
+          "examples": [
+            { "word": "五十音", "reading": "ごじゅうおん", "meaning": "50 bunyi dasar Jepang" },
+            { "word": "五感", "reading": "ごかん", "meaning": "lima indra" }
+          ],
+          "radical": { "character": "二", "name": "に (ni)", "meaning": "dua" }
+        },
+        {
+          "character": "語",
+          "reading": "ゴ",
+          "examples": [
+            { "word": "言語", "reading": "げんご", "meaning": "bahasa" },
+            { "word": "語句", "reading": "ごく", "meaning": "kata dan frasa" }
+          ],
+          "radical": { "character": "言", "name": "ごんべん (gonben)", "meaning": "perkataan" }
+        },
+        {
+          "character": "悟",
+          "reading": "ゴ",
+          "examples": [
+            { "word": "覚悟", "reading": "かくご", "meaning": "kesiapan mental, tekad" }
+          ],
+          "radical": { "character": "忄", "name": "りっしんべん (risshinben)", "meaning": "hati/perasaan" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "未",
+      "sharedReading": "ミ",
+      "kanjiList": [
+        {
+          "character": "未",
+          "reading": "ミ",
+          "examples": [
+            { "word": "未知", "reading": "みち", "meaning": "belum diketahui" },
+            { "word": "未定", "reading": "みてい", "meaning": "belum ditentukan" }
+          ],
+          "radical": { "character": "木", "name": "き (ki)", "meaning": "pohon/kayu" }
+        },
+        {
+          "character": "味",
+          "reading": "ミ",
+          "examples": [
+            { "word": "味覚", "reading": "みかく", "meaning": "indra perasa" },
+            { "word": "意味", "reading": "いみ", "meaning": "arti, makna" }
+          ],
+          "radical": { "character": "口", "name": "くちへん (kuchihen)", "meaning": "mulut" }
+        },
+        {
+          "character": "魅",
+          "reading": "ミ",
+          "examples": [
+            { "word": "魅力", "reading": "みりょく", "meaning": "daya tarik, pesona" },
+            { "word": "魅了", "reading": "みりょう", "meaning": "memukau" }
+          ],
+          "radical": { "character": "鬼", "name": "きにょう (kinyou)", "meaning": "hantu/roh" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "工",
+      "sharedReading": "コウ",
+      "kanjiList": [
+        {
+          "character": "工",
+          "reading": "コウ",
+          "examples": [
+            { "word": "加工", "reading": "かこう", "meaning": "pengolahan" },
+            { "word": "人工", "reading": "じんこう", "meaning": "buatan manusia" }
+          ],
+          "radical": { "character": "工", "name": "たくみ (takumi)", "meaning": "kerajinan/pekerjaan" }
+        },
+        {
+          "character": "紅",
+          "reading": "コウ",
+          "examples": [
+            { "word": "紅葉", "reading": "こうよう", "meaning": "daun musim gugur" },
+            { "word": "紅茶", "reading": "こうちゃ", "meaning": "teh hitam" }
+          ],
+          "radical": { "character": "糸", "name": "いとへん (itohen)", "meaning": "benang" }
+        },
+        {
+          "character": "功",
+          "reading": "コウ",
+          "examples": [
+            { "word": "成功", "reading": "せいこう", "meaning": "kesuksesan" },
+            { "word": "功績", "reading": "こうせき", "meaning": "jasa, prestasi" }
+          ],
+          "radical": { "character": "力", "name": "ちから (chikara)", "meaning": "tenaga/kekuatan" }
+        },
+        {
+          "character": "巧",
+          "reading": "コウ",
+          "examples": [
+            { "word": "巧妙", "reading": "こうみょう", "meaning": "cerdik, licik" },
+            { "word": "精巧", "reading": "せいこう", "meaning": "presisi, rumit halus" }
+          ],
+          "radical": { "character": "工", "name": "たくみへん (takumihen)", "meaning": "kerajinan/pekerjaan" }
+        },
+        {
+          "character": "項",
+          "reading": "コウ",
+          "examples": [
+            { "word": "項目", "reading": "こうもく", "meaning": "poin, item" },
+            { "word": "事項", "reading": "じこう", "meaning": "hal, perkara" }
+          ],
+          "radical": { "character": "頁", "name": "おおがい (oogai)", "meaning": "kepala" }
+        },
+        {
+          "character": "攻",
+          "reading": "コウ",
+          "examples": [
+            { "word": "専攻", "reading": "せんこう", "meaning": "jurusan, spesialisasi" },
+            { "word": "攻撃", "reading": "こうげき", "meaning": "serangan" }
+          ],
+          "radical": { "character": "攵", "name": "のぶん (nobun)", "meaning": "memukul/bertindak" }
+        },
+        {
+          "character": "貢",
+          "reading": "コウ",
+          "examples": [
+            { "word": "貢献", "reading": "こうけん", "meaning": "kontribusi" }
+          ],
+          "radical": { "character": "貝", "name": "かい (kai)", "meaning": "kerang/harta" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "取",
+      "sharedReading": "シュ",
+      "kanjiList": [
+        {
+          "character": "取",
+          "reading": "シュ",
+          "examples": [
+            { "word": "取材", "reading": "しゅざい", "meaning": "liputan, pengumpulan data" },
+            { "word": "取得", "reading": "しゅとく", "meaning": "memperoleh" }
+          ],
+          "radical": { "character": "又", "name": "また (mata)", "meaning": "tangan" }
+        },
+        {
+          "character": "趣",
+          "reading": "シュ",
+          "examples": [
+            { "word": "趣味", "reading": "しゅみ", "meaning": "hobi" },
+            { "word": "趣向", "reading": "しゅこう", "meaning": "gagasan, ide unik" }
+          ],
+          "radical": { "character": "走", "name": "そうにょう (sounyou)", "meaning": "berlari" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "章",
+      "sharedReading": "ショウ",
+      "kanjiList": [
+        {
+          "character": "章",
+          "reading": "ショウ",
+          "examples": [
+            { "word": "文章", "reading": "ぶんしょう", "meaning": "kalimat, karangan" },
+            { "word": "第一章", "reading": "だいいっしょう", "meaning": "bab pertama" }
+          ],
+          "radical": { "character": "立", "name": "たつ (tatsu)", "meaning": "berdiri" }
+        },
+        {
+          "character": "障",
+          "reading": "ショウ",
+          "examples": [
+            { "word": "故障", "reading": "こしょう", "meaning": "kerusakan" },
+            { "word": "障害", "reading": "しょうがい", "meaning": "hambatan, gangguan" }
+          ],
+          "radical": { "character": "阝", "name": "こざとへん (kozatohen)", "meaning": "bukit/gundukan tanah" }
+        },
+        {
+          "character": "彰",
+          "reading": "ショウ",
+          "examples": [
+            { "word": "表彰", "reading": "ひょうしょう", "meaning": "penghargaan resmi" },
+            { "word": "表彰状", "reading": "ひょうしょうじょう", "meaning": "piagam penghargaan" }
+          ],
+          "radical": { "character": "彡", "name": "さんづくり (sanzukuri)", "meaning": "corak/garis rambut" }
+        }
+      ]
+    },
+    {
+      "sharedComponent": "甫",
+      "sharedReading": "ホ",
+      "kanjiList": [
+        {
+          "character": "補",
+          "reading": "ホ",
+          "examples": [
+            { "word": "補足", "reading": "ほそく", "meaning": "tambahan, pelengkap" },
+            { "word": "補習", "reading": "ほしゅう", "meaning": "les tambahan" }
+          ],
+          "radical": { "character": "衤", "name": "ころもへん (koromohen)", "meaning": "pakaian" }
+        },
+        {
+          "character": "捕",
+          "reading": "ホ",
+          "examples": [
+            { "word": "捕獲", "reading": "ほかく", "meaning": "penangkapan" },
+            { "word": "捕虜", "reading": "ほりょ", "meaning": "tawanan" }
+          ],
+          "radical": { "character": "扌", "name": "てへん (tehen)", "meaning": "tangan" }
+        },
+        {
+          "character": "舗",
+          "reading": "ホ",
+          "examples": [
+            { "word": "舗装", "reading": "ほそう", "meaning": "pengaspalan" },
+            { "word": "店舗", "reading": "てんぽ", "meaning": "toko, outlet" }
+          ],
+          "radical": { "character": "舌", "name": "した (shita)", "meaning": "lidah" }
+        },
+        {
+          "character": "浦",
+          "reading": "うら",
+          "examples": [
+            { "word": "浦和", "reading": "うらわ", "meaning": "nama tempat (Urawa)" }
+          ],
+          "radical": { "character": "氵", "name": "さんずい (sanzui)", "meaning": "air" },
+          "note": "Kanji ini umumnya dibaca dengan kun'yomi (うら), sering muncul di nama tempat."
+        }
+      ]
+    }
+  ]
+}
