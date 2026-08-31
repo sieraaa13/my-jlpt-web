@@ -1,0 +1,58 @@
+{
+  "week": 5,
+  "day": 4,
+  "title": "招待・正体",
+  "subtitle": "On'yomi ① (kata berbeda, cara baca sama)",
+  "entries": [
+    { "word": "対象", "reading": "たいしょう", "example": "このアンケートは全社員を対象に実施される。", "meaning": "subjek, sasaran", "relatedForms": ["対称", "対照"] },
+    { "word": "対称", "reading": "たいしょう", "example": "この建物は左右対称のデザインになっている。", "meaning": "simetris", "relatedForms": ["対象", "対照"] },
+    { "word": "対照", "reading": "たいしょう", "example": "二人の性格は対照的だ。", "meaning": "kontras, perbandingan", "relatedForms": ["対象", "対称"] },
+    { "word": "招待", "reading": "しょうたい", "example": "結婚式に友人を招待した。", "meaning": "undangan", "relatedForms": ["正体"] },
+    { "word": "正体", "reading": "しょうたい", "example": "犯人はついに正体を現した。", "meaning": "identitas asli, wujud sebenarnya", "relatedForms": ["招待"] },
+    { "word": "最近", "reading": "さいきん", "example": "最近、運動不足を感じている。", "meaning": "baru-baru ini", "relatedForms": ["細菌"] },
+    { "word": "細菌", "reading": "さいきん", "example": "この傷口から細菌が入る恐れがある。", "meaning": "bakteri", "relatedForms": ["最近"] },
+    { "word": "後退", "reading": "こうたい", "example": "景気は依然として後退している。", "meaning": "kemunduran, mundur", "relatedForms": ["交代", "交替"] },
+    { "word": "交代", "reading": "こうたい", "example": "世代交代が急速に進んでいる。", "meaning": "pergantian (generasi/giliran)", "relatedForms": ["後退", "交替"] },
+    { "word": "交替", "reading": "こうたい", "example": "二人は交替で運転することにした。", "meaning": "bergantian", "relatedForms": ["後退", "交代"] },
+    { "word": "不振", "reading": "ふしん", "example": "今期は営業成績が不振だ。", "meaning": "lesu, kurang baik (kinerja)", "relatedForms": ["不信", "不審"] },
+    { "word": "不信", "reading": "ふしん", "example": "度重なる裏切りが政治不信を招いた。", "meaning": "ketidakpercayaan", "relatedForms": ["不振", "不審"] },
+    { "word": "不審", "reading": "ふしん", "example": "警備員は不審な人物に声をかけた。", "meaning": "mencurigakan", "relatedForms": ["不振", "不信"] },
+    { "word": "保証", "reading": "ほしょう", "example": "この製品には1年間の保証が付いている。", "meaning": "jaminan, garansi", "relatedForms": ["保障", "補償"] },
+    { "word": "保障", "reading": "ほしょう", "example": "政府は国民の社会保障を充実させる方針だ。", "meaning": "jaminan (sosial)", "relatedForms": ["保証", "補償"] },
+    { "word": "補償", "reading": "ほしょう", "example": "会社は事故の被害者に補償金を支払った。", "meaning": "kompensasi", "relatedForms": ["保証", "保障"] },
+    { "word": "開放", "reading": "かいほう", "example": "学校は週末、体育館を地域住民に開放している。", "meaning": "membuka (untuk umum)", "relatedForms": ["解放", "介抱"] },
+    { "word": "解放", "reading": "かいほう", "example": "人質は無事に解放された。", "meaning": "pembebasan", "relatedForms": ["開放", "介抱"] },
+    { "word": "介抱", "reading": "かいほう", "example": "彼女は酔いつぶれた友人を介抱した。", "meaning": "merawat (orang sakit/mabuk)", "relatedForms": ["開放", "解放"] },
+    { "word": "加工", "reading": "かこう", "example": "この工場では魚を加工して製品にしている。", "meaning": "pengolahan", "relatedForms": ["下降", "河口", "火口"] },
+    { "word": "下降", "reading": "かこう", "example": "飛行機はゆっくりと下降を始めた。", "meaning": "penurunan", "relatedForms": ["加工", "河口", "火口"] },
+    { "word": "河口", "reading": "かこう", "example": "この川の河口には港が広がっている。", "meaning": "muara sungai", "relatedForms": ["加工", "下降", "火口"] },
+    { "word": "火口", "reading": "かこう", "example": "登山者たちは火山の火口を見下ろした。", "meaning": "kawah gunung berapi", "relatedForms": ["加工", "下降", "河口"] },
+    { "word": "家庭", "reading": "かてい", "example": "彼は温かい家庭で育った。", "meaning": "keluarga, rumah tangga", "relatedForms": ["過程", "仮定", "課程"] },
+    { "word": "過程", "reading": "かてい", "example": "結果よりも過程を大切にしたい。", "meaning": "proses", "relatedForms": ["家庭", "仮定", "課程"] },
+    { "word": "仮定", "reading": "かてい", "example": "この計画はあくまで仮定に基づいている。", "meaning": "asumsi", "relatedForms": ["家庭", "過程", "課程"] },
+    { "word": "課程", "reading": "かてい", "example": "彼は大学院の博士課程に進んだ。", "meaning": "kurikulum, jenjang pendidikan", "relatedForms": ["家庭", "過程", "仮定"] },
+    { "word": "期限", "reading": "きげん", "example": "レポートの提出期限は明日までだ。", "meaning": "batas waktu", "relatedForms": ["機嫌", "起源"] },
+    { "word": "機嫌", "reading": "きげん", "example": "彼は今日、朝から機嫌が悪い。", "meaning": "suasana hati", "relatedForms": ["期限", "起源"] },
+    { "word": "起源", "reading": "きげん", "example": "この祭りの起源は江戸時代にさかのぼる。", "meaning": "asal-usul", "relatedForms": ["期限", "機嫌"] },
+    { "word": "進行", "reading": "しんこう", "example": "司会は式の進行を丁寧に行った。", "meaning": "kemajuan, jalannya (acara)", "relatedForms": ["振興", "新興", "信仰"] },
+    { "word": "振興", "reading": "しんこう", "example": "市は地域産業の振興に力を入れている。", "meaning": "pengembangan, promosi (industri)", "relatedForms": ["進行", "新興", "信仰"] },
+    { "word": "新興", "reading": "しんこう", "example": "この地域は新興住宅地として発展している。", "meaning": "baru berkembang", "relatedForms": ["進行", "振興", "信仰"] },
+    { "word": "信仰", "reading": "しんこう", "example": "彼は昔から篤い信仰を持っている。", "meaning": "kepercayaan (agama)", "relatedForms": ["進行", "振興", "新興"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "この建物は左右＿＿のデザインになっている。", "optionA": "対称", "optionAReading": "たいしょう", "optionB": "対照", "optionBReading": "たいしょう", "answer": "A" },
+      { "question": "二人の性格は＿＿的だ。", "optionA": "対称", "optionAReading": "たいしょう", "optionB": "対照", "optionBReading": "たいしょう", "answer": "B" },
+      { "question": "犯人はついに＿＿を現した。", "optionA": "正体", "optionAReading": "しょうたい", "optionB": "招待", "optionBReading": "しょうたい", "answer": "A" },
+      { "question": "結婚式に友人を＿＿した。", "optionA": "正体", "optionAReading": "しょうたい", "optionB": "招待", "optionBReading": "しょうたい", "answer": "B" },
+      { "question": "警備員は＿＿な人物に声をかけた。", "optionA": "不審", "optionAReading": "ふしん", "optionB": "不振", "optionBReading": "ふしん", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ちょうさたいしょう", "fixedKanji": "調査対", "blankPosition": "after", "choices": ["象", "称", "照", "処"], "answer": "象" },
+      { "reading": "さゆうたいしょう", "fixedKanji": "左右対", "blankPosition": "after", "choices": ["称", "象", "照", "比"], "answer": "称" },
+      { "reading": "ひかくたいしょう", "fixedKanji": "比較対", "blankPosition": "after", "choices": ["照", "象", "称", "比"], "answer": "照" },
+      { "reading": "しょうたいじょう", "fixedKanji": "招待", "blankPosition": "after", "choices": ["状", "券", "書", "票"], "answer": "状" },
+      { "reading": "しょうたいふめい", "fixedKanji": "正体", "blankPosition": "after", "choices": ["不明", "未詳", "行方", "失踪"], "answer": "不明" }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "week": 5,
+  "day": 3,
+  "title": "攻める・責める",
+  "subtitle": "Kun'yomi ③ (kanji berbeda, cara baca sama)",
+  "entries": [
+    { "word": "望む", "reading": "のぞむ", "example": "誰もが平和な未来を望んでいる。", "meaning": "mengharapkan", "relatedForms": ["臨む"] },
+    { "word": "臨む", "reading": "のぞむ", "example": "彼は落ち着いて試験に臨んだ。", "meaning": "menghadapi (situasi penting)", "relatedForms": ["望む"] },
+    { "word": "攻める", "reading": "せめる", "example": "相手チームは前半から積極的に攻めてきた。", "meaning": "menyerang", "relatedForms": ["責める"] },
+    { "word": "責める", "reading": "せめる", "example": "彼はミスをした部下を厳しく責めた。", "meaning": "menyalahkan", "relatedForms": ["攻める"] },
+    { "word": "差す", "reading": "さす", "example": "雨が降ってきたので傘を差した。", "meaning": "membuka (payung)", "relatedForms": ["挿す", "指す", "刺す"] },
+    { "word": "挿す", "reading": "さす", "example": "花瓶に花を挿した。", "meaning": "menancapkan (bunga)", "relatedForms": ["差す", "指す", "刺す"] },
+    { "word": "指す", "reading": "さす", "example": "彼は地図で目的地を指した。", "meaning": "menunjuk", "relatedForms": ["差す", "挿す", "刺す"] },
+    { "word": "刺す", "reading": "さす", "example": "蚊に刺されて腕がかゆい。", "meaning": "menyengat, menusuk", "relatedForms": ["差す", "挿す", "指す"] },
+    { "word": "絶つ", "reading": "たつ", "example": "彼は故郷との連絡を絶った。", "meaning": "memutuskan (hubungan)", "relatedForms": ["断つ", "裁つ"] },
+    { "word": "断つ", "reading": "たつ", "example": "彼は健康のために酒を断った。", "meaning": "memutuskan (kebiasaan)", "relatedForms": ["絶つ", "裁つ"] },
+    { "word": "裁つ", "reading": "たつ", "example": "職人は生地を型紙通りに裁った。", "meaning": "memotong (kain)", "relatedForms": ["絶つ", "断つ"] },
+    { "word": "閉める", "reading": "しめる", "example": "寒いのでドアを閉めてください。", "meaning": "menutup", "relatedForms": ["締める", "絞める", "占める"] },
+    { "word": "締める", "reading": "しめる", "example": "出かける前にネクタイを締めた。", "meaning": "mengencangkan", "relatedForms": ["閉める", "絞める", "占める"] },
+    { "word": "絞める", "reading": "しめる", "example": "犯人は被害者の首を絞めようとした。", "meaning": "mencekik", "relatedForms": ["閉める", "締める", "占める"] },
+    { "word": "占める", "reading": "しめる", "example": "反対意見が過半数を占めている。", "meaning": "menempati, menduduki (porsi)", "relatedForms": ["閉める", "締める", "絞める"] },
+    { "word": "計る", "reading": "はかる", "example": "ストップウォッチで時間を計った。", "meaning": "mengukur (waktu/jumlah)", "relatedForms": ["測る", "量る", "諮る", "謀る", "図る"] },
+    { "word": "測る", "reading": "はかる", "example": "医師は患者の体温を測った。", "meaning": "mengukur (suhu/panjang)", "relatedForms": ["計る", "量る", "諮る", "謀る", "図る"] },
+    { "word": "量る", "reading": "はかる", "example": "キッチンスケールで小麦粉の重さを量った。", "meaning": "menimbang", "relatedForms": ["計る", "測る", "諮る", "謀る", "図る"] },
+    { "word": "諮る", "reading": "はかる", "example": "この案件は審議会に諮ることになった。", "meaning": "berkonsultasi (dengan dewan)", "relatedForms": ["計る", "測る", "量る", "謀る", "図る"] },
+    { "word": "謀る", "reading": "はかる", "example": "反乱軍は王の暗殺を謀った。", "meaning": "merencanakan (kejahatan)", "relatedForms": ["計る", "測る", "量る", "諮る", "図る"] },
+    { "word": "図る", "reading": "はかる", "example": "会社は業務の効率化を図っている。", "meaning": "mengupayakan", "relatedForms": ["計る", "測る", "量る", "諮る", "謀る"] },
+    { "word": "犯す", "reading": "おかす", "example": "彼は若い頃に罪を犯したことを後悔している。", "meaning": "melakukan (kejahatan)", "relatedForms": ["冒す", "侵す"] },
+    { "word": "冒す", "reading": "おかす", "example": "彼は危険を冒して救助に向かった。", "meaning": "mengambil risiko", "relatedForms": ["犯す", "侵す"] },
+    { "word": "侵す", "reading": "おかす", "example": "敵軍は国境を侵して進軍した。", "meaning": "melanggar, menyerbu (wilayah)", "relatedForms": ["犯す", "冒す"] },
+    { "word": "顧みる", "reading": "かえりみる", "example": "彼は忙しさのあまり家庭を顧みなかった。", "meaning": "memperhatikan (keluarga/masa lalu)", "relatedForms": ["省みる"] },
+    { "word": "省みる", "reading": "かえりみる", "example": "彼は自分の行動を静かに省みた。", "meaning": "merenungkan (diri sendiri)", "relatedForms": ["顧みる"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は落ち着いて試験に＿＿。", "optionA": "臨んだ", "optionAReading": "のぞんだ", "optionB": "望んだ", "optionBReading": "のぞんだ", "answer": "A" },
+      { "question": "誰もが平和な未来を＿＿いる。", "optionA": "臨んで", "optionAReading": "のぞんで", "optionB": "望んで", "optionBReading": "のぞんで", "answer": "B" },
+      { "question": "反対意見が過半数を＿＿いる。", "optionA": "占めて", "optionAReading": "しめて", "optionB": "締めて", "optionBReading": "しめて", "answer": "A" },
+      { "question": "出かける前にネクタイを＿＿。", "optionA": "占めた", "optionAReading": "しめた", "optionB": "締めた", "optionBReading": "しめた", "answer": "B" },
+      { "question": "彼は忙しさのあまり家庭を＿＿なかった。", "optionA": "顧み", "optionAReading": "かえりみ", "optionB": "省み", "optionBReading": "かえりみ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ぜっしょく", "fixedKanji": "絶", "blankPosition": "after", "choices": ["食", "飲", "命", "望"], "answer": "食" },
+      { "reading": "だんじき", "fixedKanji": "断", "blankPosition": "after", "choices": ["食", "酒", "絶", "裁"], "answer": "食" },
+      { "reading": "あんさつ", "fixedKanji": "暗", "blankPosition": "after", "choices": ["殺", "示", "黙", "号"], "answer": "殺" },
+      { "reading": "りんかい", "fixedKanji": "臨", "blankPosition": "after", "choices": ["海", "時", "場", "機"], "answer": "海" },
+      { "reading": "きぼう", "fixedKanji": "希", "blankPosition": "after", "choices": ["望", "求", "願", "待"], "answer": "望" }
+    ]
+  }
+}
