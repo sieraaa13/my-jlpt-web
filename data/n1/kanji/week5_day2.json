@@ -1,0 +1,53 @@
+{
+  "week": 5,
+  "day": 2,
+  "title": "絶える・耐える・堪える",
+  "subtitle": "Kun'yomi ② (kanji berbeda, cara baca sama)",
+  "entries": [
+    { "word": "勤める", "reading": "つとめる", "example": "兄は大手企業に勤めている。", "meaning": "bekerja (di perusahaan)", "relatedForms": ["務める", "努める"] },
+    { "word": "務める", "reading": "つとめる", "example": "彼女は結婚式の司会を務めた。", "meaning": "menjabat, berperan sebagai", "relatedForms": ["勤める", "努める"] },
+    { "word": "努める", "reading": "つとめる", "example": "彼は問題解決に努めている。", "meaning": "berusaha keras", "relatedForms": ["勤める", "務める"] },
+    { "word": "絶える", "reading": "たえる", "example": "事故以来、彼との連絡が絶えている。", "meaning": "terputus", "relatedForms": ["耐える", "堪える"] },
+    { "word": "耐える", "reading": "たえる", "example": "この建物は大きな地震にも耐えられる設計だ。", "meaning": "tahan (terhadap tekanan)", "relatedForms": ["絶える", "堪える"] },
+    { "word": "堪える", "reading": "たえる", "example": "それは見るに堪えないひどい光景だった。", "meaning": "tak tertahankan (untuk disaksikan)", "relatedForms": ["絶える", "耐える"] },
+    { "word": "澄む", "reading": "すむ", "example": "山の湖は驚くほど澄んでいた。", "meaning": "jernih", "relatedForms": ["住む", "済む"] },
+    { "word": "住む", "reading": "すむ", "example": "彼は長年、東京に住んでいる。", "meaning": "tinggal (di suatu tempat)", "relatedForms": ["澄む", "済む"] },
+    { "word": "済む", "reading": "すむ", "example": "用事が済んだら電話してください。", "meaning": "selesai", "relatedForms": ["澄む", "住む"] },
+    { "word": "扇ぐ", "reading": "あおぐ", "example": "暑いので扇子で顔を扇いだ。", "meaning": "mengipasi", "relatedForms": ["仰ぐ"] },
+    { "word": "仰ぐ", "reading": "あおぐ", "example": "彼は空を仰いで深呼吸した。", "meaning": "menengadah", "relatedForms": ["扇ぐ"] },
+    { "word": "打つ", "reading": "うつ", "example": "大工は釘を打って板を固定した。", "meaning": "memukul, memaku", "relatedForms": ["撃つ", "討つ"] },
+    { "word": "撃つ", "reading": "うつ", "example": "警察官は威嚇のため空に向けて撃った。", "meaning": "menembak", "relatedForms": ["打つ", "討つ"] },
+    { "word": "討つ", "reading": "うつ", "example": "武士は主君の仇を討った。", "meaning": "menyerang, membalas dendam (musuh)", "relatedForms": ["打つ", "撃つ"] },
+    { "word": "謝る", "reading": "あやまる", "example": "彼は失言をすぐに謝った。", "meaning": "meminta maaf", "relatedForms": ["誤る"] },
+    { "word": "誤る", "reading": "あやまる", "example": "彼は判断を誤って大きな損失を出した。", "meaning": "salah (menilai/memutuskan)", "relatedForms": ["謝る"] },
+    { "word": "尋ねる", "reading": "たずねる", "example": "通行人に駅までの道を尋ねた。", "meaning": "bertanya (arah/informasi)", "relatedForms": ["訪ねる"] },
+    { "word": "訪ねる", "reading": "たずねる", "example": "週末に祖父母の家を訪ねた。", "meaning": "mengunjungi", "relatedForms": ["尋ねる"] },
+    { "word": "取る", "reading": "とる", "example": "彼は棚から本を取った。", "meaning": "mengambil", "relatedForms": ["捕る", "採る", "撮る", "執る"] },
+    { "word": "捕る", "reading": "とる", "example": "猫がねずみを捕った。", "meaning": "menangkap (hewan)", "relatedForms": ["取る", "採る", "撮る", "執る"] },
+    { "word": "採る", "reading": "とる", "example": "研究のために昆虫を採った。", "meaning": "mengumpulkan, memungut (spesimen)", "relatedForms": ["取る", "捕る", "撮る", "執る"] },
+    { "word": "撮る", "reading": "とる", "example": "家族で記念写真を撮った。", "meaning": "memotret", "relatedForms": ["取る", "捕る", "採る", "執る"] },
+    { "word": "執る", "reading": "とる", "example": "彼は長年、この会社の指揮を執ってきた。", "meaning": "memegang (kendali/pena)", "relatedForms": ["取る", "捕る", "採る", "撮る"] },
+    { "word": "避ける", "reading": "さける", "example": "彼は人混みを避けて裏道を通った。", "meaning": "menghindari", "relatedForms": ["裂ける"] },
+    { "word": "裂ける", "reading": "さける", "example": "古い布が引っ張った拍子に裂けた。", "meaning": "robek", "relatedForms": ["避ける"] },
+    { "word": "納める", "reading": "おさめる", "example": "期限内に税金を納めた。", "meaning": "membayar (pajak)", "relatedForms": ["収める", "治める", "修める"] },
+    { "word": "収める", "reading": "おさめる", "example": "彼のビジネスは大きな利益を収めた。", "meaning": "meraih (hasil/keuntungan)", "relatedForms": ["納める", "治める", "修める"] },
+    { "word": "治める", "reading": "おさめる", "example": "王は長年この国を治めてきた。", "meaning": "memerintah", "relatedForms": ["納める", "収める", "修める"] },
+    { "word": "修める", "reading": "おさめる", "example": "彼は大学で経済学を修めた。", "meaning": "menyelesaikan, menguasai (studi)", "relatedForms": ["納める", "収める", "治める"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は問題解決に＿＿いる。", "optionA": "努めて", "optionAReading": "つとめて", "optionB": "務めて", "optionBReading": "つとめて", "answer": "A" },
+      { "question": "彼女は結婚式の司会を＿＿た。", "optionA": "努め", "optionAReading": "つとめ", "optionB": "務め", "optionBReading": "つとめ", "answer": "B" },
+      { "question": "彼は判断を＿＿て大きな損失を出した。", "optionA": "誤っ", "optionAReading": "あやまっ", "optionB": "謝っ", "optionBReading": "あやまっ", "answer": "A" },
+      { "question": "彼は失言をすぐに＿＿た。", "optionA": "誤っ", "optionAReading": "あやまっ", "optionB": "謝っ", "optionBReading": "あやまっ", "answer": "B" },
+      { "question": "それは見るに＿＿ないひどい光景だった。", "optionA": "堪え", "optionAReading": "たえ", "optionB": "耐え", "optionBReading": "たえ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "きんむ", "fixedKanji": "勤", "blankPosition": "after", "choices": ["務", "労", "職", "勉"], "answer": "務" },
+      { "reading": "ひなん", "fixedKanji": "避", "blankPosition": "after", "choices": ["難", "災", "険", "危"], "answer": "難" },
+      { "reading": "さいよう", "fixedKanji": "採", "blankPosition": "after", "choices": ["用", "集", "取", "択"], "answer": "用" },
+      { "reading": "さつえい", "fixedKanji": "撮", "blankPosition": "after", "choices": ["影", "像", "写", "画"], "answer": "影" },
+      { "reading": "のうぜい", "fixedKanji": "納", "blankPosition": "after", "choices": ["税", "金", "品", "入"], "answer": "税" }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "week": 5,
+  "day": 1,
+  "title": "酢・巣",
+  "subtitle": "Kun'yomi ① (kanji berbeda, cara baca sama)",
+  "entries": [
+    { "word": "皮", "reading": "かわ", "example": "りんごの皮を薄くむいた。", "meaning": "kulit (buah/kulit luar alami)", "relatedForms": ["革"] },
+    { "word": "革", "reading": "かわ", "example": "この財布は本革でできている。", "meaning": "kulit (samak, bahan)", "relatedForms": ["皮"] },
+    { "word": "酢", "reading": "す", "example": "サラダには酢をかけて食べる。", "meaning": "cuka", "relatedForms": ["巣"] },
+    { "word": "巣", "reading": "す", "example": "軒下に鳥が巣を作っていた。", "meaning": "sarang", "relatedForms": ["酢"] },
+    { "word": "墨", "reading": "すみ", "example": "書道の授業で墨をすった。", "meaning": "tinta bak (kaligrafi)", "relatedForms": ["隅", "炭"] },
+    { "word": "隅", "reading": "すみ", "example": "荷物は部屋の隅に置いてください。", "meaning": "sudut, pojok (ruangan)", "relatedForms": ["墨", "炭"] },
+    { "word": "炭", "reading": "すみ", "example": "キャンプでは炭を使ってバーベキューをした。", "meaning": "arang", "relatedForms": ["墨", "隅"] },
+    { "word": "影", "reading": "かげ", "example": "夕方になると影が長く伸びる。", "meaning": "bayangan (dari cahaya)", "relatedForms": ["陰"] },
+    { "word": "陰", "reading": "かげ", "example": "木の陰で少し休憩した。", "meaning": "tempat teduh, naungan", "relatedForms": ["影"] },
+    { "word": "油", "reading": "あぶら", "example": "フライパンに油を引いて野菜を炒めた。", "meaning": "minyak (goreng)", "relatedForms": ["脂"] },
+    { "word": "脂", "reading": "あぶら", "example": "この魚は脂がのっていて美味しい。", "meaning": "lemak (ikan/daging)", "relatedForms": ["油"] },
+    { "word": "暑い", "reading": "あつい", "example": "今年の夏はいつもより暑い。", "meaning": "panas (cuaca)", "relatedForms": ["熱い", "厚い"] },
+    { "word": "熱い", "reading": "あつい", "example": "熱いお茶でやけどしそうになった。", "meaning": "panas (benda/cairan)", "relatedForms": ["暑い", "厚い"] },
+    { "word": "厚い", "reading": "あつい", "example": "この辞書はとても厚い。", "meaning": "tebal", "relatedForms": ["暑い", "熱い"] },
+    { "word": "固い", "reading": "かたい", "example": "彼は頭が固くて意見を変えない。", "meaning": "keras kepala, kaku (pikiran)", "relatedForms": ["硬い", "堅い"] },
+    { "word": "硬い", "reading": "かたい", "example": "この鉛筆の芯は硬い。", "meaning": "keras (benda fisik)", "relatedForms": ["固い", "堅い"] },
+    { "word": "堅い", "reading": "かたい", "example": "彼は口が堅いので秘密を話しても安心だ。", "meaning": "dapat dipercaya, kokoh (sifat)", "relatedForms": ["固い", "硬い"] },
+    { "word": "荒い", "reading": "あらい", "example": "彼は気が荒く、すぐに怒る。", "meaning": "kasar (sifat/temperamen)", "relatedForms": ["粗い"] },
+    { "word": "粗い", "reading": "あらい", "example": "この網は目が粗いので小さい魚は逃げてしまう。", "meaning": "kasar (tekstur/jaring)", "relatedForms": ["荒い"] },
+    { "word": "移す", "reading": "うつす", "example": "荷物を別の部屋に移した。", "meaning": "memindahkan (tempat)", "relatedForms": ["写す", "映す"] },
+    { "word": "写す", "reading": "うつす", "example": "黒板の内容をノートに写した。", "meaning": "menyalin, memotret", "relatedForms": ["移す", "映す"] },
+    { "word": "映す", "reading": "うつす", "example": "彼は鏡に自分の姿を映した。", "meaning": "memantulkan, memproyeksikan", "relatedForms": ["移す", "写す"] },
+    { "word": "聞く", "reading": "きく", "example": "知らない道を人に聞いた。", "meaning": "mendengar, bertanya", "relatedForms": ["聴く", "効く", "利く"] },
+    { "word": "聴く", "reading": "きく", "example": "彼はクラシック音楽を聴くのが好きだ。", "meaning": "menyimak (dengan saksama)", "relatedForms": ["聞く", "効く", "利く"] },
+    { "word": "効く", "reading": "きく", "example": "この薬はよく効く。", "meaning": "manjur, berkhasiat", "relatedForms": ["聞く", "聴く", "利く"] },
+    { "word": "利く", "reading": "きく", "example": "彼は気が利く人だ。", "meaning": "berfungsi baik, cerdas/peka", "relatedForms": ["聞く", "聴く", "効く"] },
+    { "word": "止まる", "reading": "とまる", "example": "信号が赤で電車が止まった。", "meaning": "berhenti", "relatedForms": ["泊まる"] },
+    { "word": "泊まる", "reading": "とまる", "example": "出張先のホテルに一泊した。", "meaning": "menginap", "relatedForms": ["止まる"] },
+    { "word": "捜す", "reading": "さがす", "example": "警察は行方不明者を捜している。", "meaning": "mencari (orang hilang)", "relatedForms": ["探す"] },
+    { "word": "探す", "reading": "さがす", "example": "彼は新しい仕事を探している。", "meaning": "mencari (barang/pekerjaan)", "relatedForms": ["捜す"] },
+    { "word": "表す", "reading": "あらわす", "example": "彼女は言葉で気持ちを表すのが苦手だ。", "meaning": "mengungkapkan (perasaan)", "relatedForms": ["現す", "著す"] },
+    { "word": "現す", "reading": "あらわす", "example": "犯人はついに正体を現した。", "meaning": "menampakkan (wujud/identitas)", "relatedForms": ["表す", "著す"] },
+    { "word": "著す", "reading": "あらわす", "example": "彼はこの分野で有名な書物を著した。", "meaning": "menulis (buku/karya)", "relatedForms": ["表す", "現す"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は頭が＿＿意見を変えない。", "optionA": "固くて", "optionAReading": "かたくて", "optionB": "硬くて", "optionBReading": "かたくて", "answer": "A" },
+      { "question": "この鉛筆の芯は＿＿。", "optionA": "固い", "optionAReading": "かたい", "optionB": "硬い", "optionBReading": "かたい", "answer": "B" },
+      { "question": "彼は気が＿＿すぐに怒る。", "optionA": "荒く", "optionAReading": "あらく", "optionB": "粗く", "optionBReading": "あらく", "answer": "A" },
+      { "question": "この網は目が＿＿ので小さい魚は逃げてしまう。", "optionA": "荒い", "optionAReading": "あらい", "optionB": "粗い", "optionBReading": "あらい", "answer": "B" },
+      { "question": "犯人はついに正体を＿＿。", "optionA": "現した", "optionAReading": "あらわした", "optionB": "表した", "optionBReading": "あらわした", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "けがわ", "fixedKanji": "毛", "blankPosition": "after", "choices": ["皮", "革", "布", "糸"], "answer": "皮" },
+      { "reading": "あきす", "fixedKanji": "空き", "blankPosition": "after", "choices": ["巣", "家", "地", "室"], "answer": "巣" },
+      { "reading": "ひとかげ", "fixedKanji": "人", "blankPosition": "after", "choices": ["影", "陰", "形", "姿"], "answer": "影" },
+      { "reading": "ひだりきき", "fixedKanji": "左", "blankPosition": "after", "choices": ["利き", "聞き", "効き", "聴き"], "answer": "利き" },
+      { "reading": "かわせいひん", "fixedKanji": "革", "blankPosition": "after", "choices": ["製品", "商品", "工房", "細工"], "answer": "製品" }
+    ]
+  }
+}
