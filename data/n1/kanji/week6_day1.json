@@ -1,0 +1,58 @@
+{
+  "week": 6,
+  "day": 1,
+  "title": "弓・矢・盾",
+  "subtitle": "Kata benda satu kanji",
+  "entries": [
+    { "word": "弓", "reading": "ゆみ", "example": "彼は的に向かって弓を引いた。", "meaning": "busur panah", "relatedForms": [] },
+    { "word": "矢", "reading": "や", "example": "猟師は獲物に向かって矢を放った。", "meaning": "anak panah", "relatedForms": [] },
+    { "word": "盾", "reading": "たて", "example": "兵士は盾を構えて敵の攻撃に備えた。", "meaning": "perisai", "relatedForms": [] },
+    { "word": "旗", "reading": "はた", "example": "応援団は旗を振って選手を励ました。", "meaning": "bendera", "relatedForms": [] },
+    { "word": "傘", "reading": "かさ", "example": "雨が降ってきたので傘をさした。", "meaning": "payung", "relatedForms": [] },
+    { "word": "綱", "reading": "つな", "example": "運動会で綱引きをした。", "meaning": "tali besar, tambang", "relatedForms": ["縄"] },
+    { "word": "縄", "reading": "なわ", "example": "子どもたちは公園で縄跳びをして遊んだ。", "meaning": "tali", "relatedForms": ["綱"] },
+    { "word": "鎖", "reading": "くさり", "example": "自転車を鎖でフェンスにつないだ。", "meaning": "rantai", "relatedForms": [] },
+    { "word": "網", "reading": "あみ", "example": "漁師は網で魚を捕った。", "meaning": "jaring", "relatedForms": [] },
+    { "word": "塊", "reading": "かたまり", "example": "道の真ん中に土の塊が転がっていた。", "meaning": "gumpalan", "relatedForms": [] },
+    { "word": "渦", "reading": "うず", "example": "川の合流地点には渦ができていた。", "meaning": "pusaran air", "relatedForms": [] },
+    { "word": "泡", "reading": "あわ", "example": "石鹸をよく泡立ててから体を洗った。", "meaning": "busa", "relatedForms": [] },
+    { "word": "穴", "reading": "あな", "example": "庭に穴を掘って木を植えた。", "meaning": "lubang", "relatedForms": [] },
+    { "word": "公", "reading": "おおやけ", "example": "隠されていた事実がついに公になった。", "meaning": "publik, terbuka", "relatedForms": [] },
+    { "word": "恥", "reading": "はじ", "example": "彼は人前で恥をかいてしまった。", "meaning": "malu", "relatedForms": ["罪"] },
+    { "word": "罪", "reading": "つみ", "example": "彼は自分の犯した罪の重さを痛感した。", "meaning": "dosa, kesalahan", "relatedForms": ["恥"] },
+    { "word": "趣", "reading": "おもむき", "example": "この庭園には独特の趣がある。", "meaning": "nuansa, cita rasa", "relatedForms": [] },
+    { "word": "技", "reading": "わざ", "example": "彼は日々の練習で技を磨いている。", "meaning": "keahlian, teknik", "relatedForms": [] },
+    { "word": "志", "reading": "こころざし", "example": "彼はついに医師になるという志を果たした。", "meaning": "cita-cita", "relatedForms": [] },
+    { "word": "暇", "reading": "ひま", "example": "最近忙しくて、暇をつぶす時間もない。", "meaning": "waktu luang", "relatedForms": [] },
+    { "word": "源", "reading": "みなもと", "example": "家族の笑顔が私の元気の源だ。", "meaning": "sumber", "relatedForms": [] },
+    { "word": "魂", "reading": "たましい", "example": "彼のパフォーマンスには魂がこもっていた。", "meaning": "jiwa, roh", "relatedForms": [] },
+    { "word": "幻", "reading": "まぼろし", "example": "それは幻のように一瞬で消えてしまった。", "meaning": "ilusi, khayalan", "relatedForms": [] },
+    { "word": "雷", "reading": "かみなり", "example": "遠くで雷が鳴っている。", "meaning": "petir, guntur", "relatedForms": [] },
+    { "word": "霧", "reading": "きり", "example": "朝は霧が出ていて視界が悪かった。", "meaning": "kabut", "relatedForms": ["霜"] },
+    { "word": "霜", "reading": "しも", "example": "今朝は庭の草に霜が降りていた。", "meaning": "embun beku", "relatedForms": ["霧"] },
+    { "word": "舌", "reading": "した", "example": "彼は悔しくて舌を噛んだ。", "meaning": "lidah", "relatedForms": ["唇"] },
+    { "word": "唇", "reading": "くちびる", "example": "寒さで唇が乾燥している。", "meaning": "bibir", "relatedForms": ["舌"] },
+    { "word": "姿", "reading": "すがた", "example": "彼は人混みの中に姿を消した。", "meaning": "sosok, wujud", "relatedForms": [] },
+    { "word": "襟", "reading": "えり", "example": "シャツの襟を整えてから出かけた。", "meaning": "kerah", "relatedForms": [] },
+    { "word": "丈", "reading": "たけ", "example": "このコートは丈が少し長い。", "meaning": "panjang (pakaian)", "relatedForms": [] },
+    { "word": "絹", "reading": "きぬ", "example": "彼女は絹のスカーフを首に巻いた。", "meaning": "sutra", "relatedForms": [] },
+    { "word": "紫", "reading": "むらさき", "example": "彼女は紫色のセーターを着ていた。", "meaning": "ungu", "relatedForms": ["紺"] },
+    { "word": "紺", "reading": "こん", "example": "彼は紺色のスーツで面接に臨んだ。", "meaning": "biru tua (navy)", "relatedForms": ["紫"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "運動会で＿＿引きをした。", "optionA": "綱", "optionAReading": "つな", "optionB": "縄", "optionBReading": "なわ", "answer": "A" },
+      { "question": "子どもたちは公園で＿＿跳びをして遊んだ。", "optionA": "綱", "optionAReading": "つな", "optionB": "縄", "optionBReading": "なわ", "answer": "B" },
+      { "question": "彼は自分の犯した＿＿の重さを痛感した。", "optionA": "罪", "optionAReading": "つみ", "optionB": "恥", "optionBReading": "はじ", "answer": "A" },
+      { "question": "彼は人前で＿＿をかいてしまった。", "optionA": "罪", "optionAReading": "つみ", "optionB": "恥", "optionBReading": "はじ", "answer": "B" },
+      { "question": "朝は＿＿が出ていて視界が悪かった。", "optionA": "霧", "optionAReading": "きり", "optionB": "霜", "optionBReading": "しも", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "よこづな", "fixedKanji": "横", "blankPosition": "after", "choices": ["綱", "縄", "鎖", "網"], "answer": "綱" },
+      { "reading": "なわばり", "fixedKanji": "縄", "blankPosition": "after", "choices": ["張り", "跳び", "引き", "結び"], "answer": "張り" },
+      { "reading": "うずしお", "fixedKanji": "渦", "blankPosition": "after", "choices": ["潮", "巻き", "波", "流"], "answer": "潮" },
+      { "reading": "あわだてる", "fixedKanji": "泡", "blankPosition": "after", "choices": ["立てる", "巻く", "がる", "める"], "answer": "立てる" },
+      { "reading": "えりをただす", "fixedKanji": "襟を", "blankPosition": "after", "choices": ["正す", "直す", "治す", "質す"], "answer": "正す" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "week": 6,
+  "day": 2,
+  "title": "返済・返却・返還",
+  "subtitle": "Kata bersinonim, dibedakan menurut penggunaan ①",
+  "entries": [
+    { "word": "復旧", "reading": "ふっきゅう", "example": "停電した地域の電気が復旧した。", "meaning": "pemulihan (infrastruktur)", "relatedForms": ["回復", "復帰", "復活", "復興"] },
+    { "word": "回復", "reading": "かいふく", "example": "彼は手術後、順調に回復している。", "meaning": "pemulihan (kesehatan/kondisi)", "relatedForms": ["復旧", "復帰", "復活", "復興"] },
+    { "word": "復帰", "reading": "ふっき", "example": "彼女は産休を終えて仕事に復帰した。", "meaning": "kembali (ke posisi semula)", "relatedForms": ["復旧", "回復", "復活", "復興"] },
+    { "word": "復活", "reading": "ふっかつ", "example": "昔の行事が今年復活することになった。", "meaning": "kebangkitan kembali", "relatedForms": ["復旧", "回復", "復帰", "復興"] },
+    { "word": "復興", "reading": "ふっこう", "example": "被災地の復興には長い年月がかかる。", "meaning": "rekonstruksi (setelah bencana)", "relatedForms": ["復旧", "回復", "復帰", "復活"] },
+    { "word": "返済", "reading": "へんさい", "example": "彼は毎月少しずつ借金を返済している。", "meaning": "pembayaran kembali (utang)", "relatedForms": ["返却", "返還"] },
+    { "word": "返却", "reading": "へんきゃく", "example": "図書館の本を期限内に返却した。", "meaning": "pengembalian (barang pinjaman)", "relatedForms": ["返済", "返還"] },
+    { "word": "返還", "reading": "へんかん", "example": "その領土は元の持ち主に返還された。", "meaning": "pengembalian (wilayah/hak)", "relatedForms": ["返済", "返却"] },
+    { "word": "遠慮", "reading": "えんりょ", "example": "彼はお土産を遠慮なく受け取った。", "meaning": "sungkan, menahan diri", "relatedForms": ["考慮", "配慮"] },
+    { "word": "考慮", "reading": "こうりょ", "example": "指摘された点を考慮に入れて計画を見直した。", "meaning": "pertimbangan", "relatedForms": ["遠慮", "配慮"] },
+    { "word": "配慮", "reading": "はいりょ", "example": "彼はいつも周囲への配慮を欠かさない。", "meaning": "perhatian, kepedulian", "relatedForms": ["遠慮", "考慮"] },
+    { "word": "修正", "reading": "しゅうせい", "example": "間違ったところを修正した。", "meaning": "koreksi (kesalahan kecil)", "relatedForms": ["改正", "訂正", "是正"] },
+    { "word": "改正", "reading": "かいせい", "example": "来月からバスの料金が改正される。", "meaning": "amandemen (aturan/tarif)", "relatedForms": ["修正", "訂正", "是正"] },
+    { "word": "訂正", "reading": "ていせい", "example": "記事の間違いを訂正した。", "meaning": "koreksi (teks/pernyataan)", "relatedForms": ["修正", "改正", "是正"] },
+    { "word": "是正", "reading": "ぜせい", "example": "会社は労働環境の悪い点を是正することにした。", "meaning": "perbaikan (kondisi buruk)", "relatedForms": ["修正", "改正", "訂正"] },
+    { "word": "申請", "reading": "しんせい", "example": "彼はビザの申請を行った。", "meaning": "pengajuan permohonan", "relatedForms": ["申告"] },
+    { "word": "申告", "reading": "しんこく", "example": "毎年3月に税金を申告する。", "meaning": "pelaporan (resmi)", "relatedForms": ["申請"] },
+    { "word": "翻訳", "reading": "ほんやく", "example": "彼はこの小説を日本語に翻訳した。", "meaning": "penerjemahan (teks)", "relatedForms": ["通訳"] },
+    { "word": "通訳", "reading": "つうやく", "example": "会議では通訳を通して話し合った。", "meaning": "penerjemahan lisan", "relatedForms": ["翻訳"] },
+    { "word": "消化", "reading": "しょうか", "example": "食べすぎて消化に時間がかかった。", "meaning": "pencernaan", "relatedForms": ["消費", "消耗"] },
+    { "word": "消費", "reading": "しょうひ", "example": "この家電は電力の消費が少ない。", "meaning": "konsumsi", "relatedForms": ["消化", "消耗"] },
+    { "word": "消耗", "reading": "しょうもう", "example": "長時間の会議で体力を消耗した。", "meaning": "kehabisan (tenaga)", "relatedForms": ["消化", "消費"] },
+    { "word": "推薦", "reading": "すいせん", "example": "先生に推薦状を書いてもらった。", "meaning": "rekomendasi (formal)", "relatedForms": ["推奨"] },
+    { "word": "推奨", "reading": "すいしょう", "example": "この解決策は専門家に推奨されている。", "meaning": "anjuran, rekomendasi (umum)", "relatedForms": ["推薦"] },
+    { "word": "障害", "reading": "しょうがい", "example": "サーバーに障害が発生し、サイトが利用できなくなった。", "meaning": "gangguan, hambatan (teknis)", "relatedForms": ["支障"] },
+    { "word": "支障", "reading": "ししょう", "example": "腰痛がひどく、日常生活に支障を来している。", "meaning": "hambatan (aktivitas)", "relatedForms": ["障害"] },
+    { "word": "所定", "reading": "しょてい", "example": "所定の用紙に必要事項を記入した。", "meaning": "yang ditentukan", "relatedForms": ["規定"] },
+    { "word": "規定", "reading": "きてい", "example": "規定の料金を支払った。", "meaning": "peraturan, ketentuan", "relatedForms": ["所定"] },
+    { "word": "窮屈な", "reading": "きゅうくつな", "example": "このスーツは肩周りが窮屈だ。", "meaning": "sempit, sesak", "relatedForms": ["退屈な"] },
+    { "word": "退屈な", "reading": "たいくつな", "example": "することがなく退屈な一日を過ごした。", "meaning": "membosankan", "relatedForms": ["窮屈な"] },
+    { "word": "怠慢な", "reading": "たいまんな", "example": "彼は職務怠慢で減給になった。", "meaning": "lalai (tugas)", "relatedForms": ["緩慢な"] },
+    { "word": "緩慢な", "reading": "かんまんな", "example": "彼の動作は緩慢で苛立たしい。", "meaning": "lamban", "relatedForms": ["怠慢な"] },
+    { "word": "散漫な", "reading": "さんまんな", "example": "最近、注意が散漫になっている。", "meaning": "tidak fokus, ceroboh", "relatedForms": ["爛漫"] },
+    { "word": "爛漫", "reading": "らんまん", "example": "桜が咲き誇る春爛漫の季節がやってきた。", "meaning": "mekar dengan indah (musim semi)", "relatedForms": ["散漫な"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は毎月少しずつ借金を＿＿している。", "optionA": "返済", "optionAReading": "へんさい", "optionB": "返却", "optionBReading": "へんきゃく", "answer": "A" },
+      { "question": "図書館の本を期限内に＿＿した。", "optionA": "返済", "optionAReading": "へんさい", "optionB": "返却", "optionBReading": "へんきゃく", "answer": "B" },
+      { "question": "来月からバスの料金が＿＿される。", "optionA": "改正", "optionAReading": "かいせい", "optionB": "訂正", "optionBReading": "ていせい", "answer": "A" },
+      { "question": "記事の間違いを＿＿した。", "optionA": "改正", "optionAReading": "かいせい", "optionB": "訂正", "optionBReading": "ていせい", "answer": "B" },
+      { "question": "サーバーに＿＿が発生し、サイトが利用できなくなった。", "optionA": "障害", "optionAReading": "しょうがい", "optionB": "支障", "optionBReading": "ししょう", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ふっきゅう", "fixedKanji": "復", "blankPosition": "after", "choices": ["旧", "活", "興", "帰"], "answer": "旧" },
+      { "reading": "へんきゃく", "fixedKanji": "返", "blankPosition": "after", "choices": ["却", "済", "還", "答"], "answer": "却" },
+      { "reading": "こうりょ", "fixedKanji": "考", "blankPosition": "after", "choices": ["慮", "案", "量", "査"], "answer": "慮" },
+      { "reading": "しんせい", "fixedKanji": "申", "blankPosition": "after", "choices": ["請", "告", "込", "立"], "answer": "請" },
+      { "reading": "すいせん", "fixedKanji": "推", "blankPosition": "after", "choices": ["薦", "奨", "進", "挙"], "answer": "薦" }
+    ]
+  }
+}
