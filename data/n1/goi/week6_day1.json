@@ -1,0 +1,48 @@
+{
+  "week": 6,
+  "day": 1,
+  "title": "受ける・滑る・つながる",
+  "subtitle": "Kosakata dengan banyak makna (受ける・滑る・つながる・挟む)",
+  "entries": [
+    { "word": "受ける", "reading": "うける", "example": "彼は両手でボールを受けた。", "meaning": "menangkap, menerima (benda)", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "彼は先生の影響を強く受けている。", "meaning": "menerima pengaruh", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "先生は学生から相談を受けた。", "meaning": "menerima (konsultasi/permintaan)", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "彼はその知らせにショックを受けた。", "meaning": "mengalami (keterkejutan)", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "彼女は友人の結婚式の招待を受けた。", "meaning": "menerima (undangan)", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "毎年、健康診断で検査を受けている。", "meaning": "menjalani (pemeriksaan)", "relatedForms": [] },
+    { "word": "受ける", "reading": "うける", "example": "このアニメは若者に受けている。", "meaning": "digemari, populer", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "彼は毎年冬にスキーで滑る。", "meaning": "meluncur (ski/es)", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "雨の日に足が滑って転んだ。", "meaning": "terpeleset", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "手が滑ってコップを落としてしまった。", "meaning": "terlepas dari tangan (licin)", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "つい口が滑って秘密を話してしまった。", "meaning": "keceplosan bicara", "relatedForms": [] },
+    { "word": "滑る", "reading": "すべる", "example": "試験に滑ってしまい、がっかりしている。", "meaning": "gagal (ujian)", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "何度もかけ直して、やっと電話がつながった。", "meaning": "tersambung (telepon/jaringan)", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "この道は隣町につながっている。", "meaning": "terhubung (jalan/lokasi)", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "渋滞で車がずっとつながっている。", "meaning": "beruntun, mengular (kemacetan)", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "彼はミスをしたが、まだ首はつながっている。", "meaning": "masih mempertahankan posisi/pekerjaan", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "この情報は事件の解決につながるかもしれない。", "meaning": "berkaitan, mengarah pada (sesuatu)", "relatedForms": [] },
+    { "word": "つながる", "reading": "つながる", "example": "彼とは遠い親戚で、血がつながっている。", "meaning": "memiliki hubungan darah", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "彼女は本にしおりを挟んだ。", "meaning": "menyelipkan (di antara)", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "二人はテーブルを挟んで向かい合って座った。", "meaning": "duduk berhadapan dengan sesuatu di tengah", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "彼は毛虫をはしで挟んで捨てた。", "meaning": "menjepit (dengan alat)", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "急いでいて、指をドアに挟んでしまった。", "meaning": "terjepit", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "彼は会話に口を挟むのが好きではない。", "meaning": "menyela (pembicaraan)", "relatedForms": [] },
+    { "word": "挟む", "reading": "はさむ", "example": "彼はうわさを耳に挟んだだけで、詳しくは知らない。", "meaning": "mendengar sepintas (kebetulan)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼のギャグは全然＿＿。", "optionA": "うけなかった", "optionAReading": "うけなかった", "optionB": "つながらなかった", "optionBReading": "つながらなかった", "answer": "A" },
+      { "question": "会議は10分の休憩を＿＿再開します。", "optionA": "挟んで", "optionAReading": "はさんで", "optionB": "つなげて", "optionBReading": "つなげて", "answer": "A" },
+      { "question": "そのときの経験が、今の自信に＿＿。", "optionA": "つながっている", "optionAReading": "つながっている", "optionB": "うけている", "optionBReading": "うけている", "answer": "A" },
+      { "question": "ドアを開けるとき、手が＿＿持っていた本を落とした。", "optionA": "すべって", "optionAReading": "すべって", "optionB": "はさんで", "optionBReading": "はさんで", "answer": "A" },
+      { "question": "試験に＿＿がっかりしている。", "optionA": "すべって", "optionAReading": "すべって", "optionB": "うけて", "optionBReading": "うけて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "しょうたいをうける", "fixedKanji": "招待を", "blankPosition": "after", "choices": ["受ける", "滑る", "つながる", "挟む"], "answer": "受ける" },
+      { "reading": "あしがすべる", "fixedKanji": "足が", "blankPosition": "after", "choices": ["滑る", "受ける", "つながる", "挟む"], "answer": "滑る" },
+      { "reading": "でんわがつながる", "fixedKanji": "電話が", "blankPosition": "after", "choices": ["つながる", "受ける", "滑る", "挟む"], "answer": "つながる" },
+      { "reading": "ゆびをはさむ", "fixedKanji": "指を", "blankPosition": "after", "choices": ["挟む", "受ける", "滑る", "つながる"], "answer": "挟む" },
+      { "reading": "うわさをみみにはさむ", "fixedKanji": "うわさを耳に", "blankPosition": "after", "choices": ["挟む", "つなげる", "受ける", "回す"], "answer": "挟む" }
+    ]
+  }
+}

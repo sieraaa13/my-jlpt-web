@@ -1,0 +1,47 @@
+{
+  "week": 6,
+  "day": 2,
+  "title": "通る・引く・回す",
+  "subtitle": "Kosakata dengan banyak makna (通る・引く・乗る・回す)",
+  "entries": [
+    { "word": "通る", "reading": "とおる", "example": "町の中心に高速道路が通ることになった。", "meaning": "melintas, dibangun melintasi (jalan)", "relatedForms": [] },
+    { "word": "通る", "reading": "とおる", "example": "彼はマイクなしでも声がよく通る。", "meaning": "terdengar jelas/nyaring (suara)", "relatedForms": [] },
+    { "word": "通る", "reading": "とおる", "example": "温かいお茶を飲んだら、詰まっていた鼻が通った。", "meaning": "menjadi lega (hidung tersumbat)", "relatedForms": [] },
+    { "word": "通る", "reading": "とおる", "example": "何度も修正した結果、議案がついに国会を通った。", "meaning": "disahkan, lolos (di lembaga resmi)", "relatedForms": [] },
+    { "word": "通る", "reading": "とおる", "example": "この肉はまだ火がよく通っていない。", "meaning": "matang merata (dimasak)", "relatedForms": [] },
+    { "word": "通る", "reading": "とおる", "example": "彼の言うことはいつも筋が通っている。", "meaning": "masuk akal, logis", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "漁師たちは力を合わせて綱を引いた。", "meaning": "menarik (tali/benda)", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "この地域にようやく水道を引くことになった。", "meaning": "memasang saluran (air/listrik)", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "初詣で神社のおみくじを引いた。", "meaning": "mengundi (nasib)", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "薬を飲んだら、熱が引いて平熱になった。", "meaning": "mereda (demam)", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "彼は注意を引くためにわざと大声を出した。", "meaning": "menarik (perhatian)", "relatedForms": [] },
+    { "word": "引く", "reading": "ひく", "example": "彼はイギリス人の血を引いていると聞いた。", "meaning": "mewarisi (garis keturunan)", "relatedForms": [] },
+    { "word": "乗る", "reading": "のる", "example": "彼女はリズムに乗って楽しそうに踊っている。", "meaning": "mengikuti irama", "relatedForms": [] },
+    { "word": "乗る", "reading": "のる", "example": "先輩はいつも後輩の相談に乗ってくれる。", "meaning": "memberi saran, membantu", "relatedForms": [] },
+    { "word": "乗る", "reading": "のる", "example": "調子に乗っていると、いつか失敗するよ。", "meaning": "kelewat percaya diri, terbawa suasana", "relatedForms": [] },
+    { "word": "乗る", "reading": "のる", "example": "桜の花びらが風に乗って遠くまで運ばれていった。", "meaning": "terbawa (angin)", "relatedForms": [] },
+    { "word": "乗る", "reading": "のる", "example": "誘われたが、あまり気分が乗らないので断った。", "meaning": "tidak begitu berminat, tidak mood", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "びんのふたを左に回すと開いた。", "meaning": "memutar", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "彼は疲れた彼女の肩にそっと手を回した。", "meaning": "merangkulkan (tangan)", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "母は毎晩、寝る前に洗濯機を回している。", "meaning": "menjalankan (mesin)", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "今日中に終わらない仕事は明日に回すことにした。", "meaning": "menunda, melimpahkan ke lain waktu", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "受付は問い合わせの電話を社長室に回した。", "meaning": "menyambungkan (telepon)", "relatedForms": [] },
+    { "word": "回す", "reading": "まわす", "example": "彼は交渉がうまくいくよう、事前に手を回しておいた。", "meaning": "mengatur di belakang layar (sebelumnya)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "何度も修正した議案が、ついに国会を＿＿。", "optionA": "通った", "optionAReading": "とおった", "optionB": "引いた", "optionBReading": "ひいた", "answer": "A" },
+      { "question": "彼はイギリス人の血を＿＿いると聞いた。", "optionA": "引いて", "optionAReading": "ひいて", "optionB": "通って", "optionBReading": "とおって", "answer": "A" },
+      { "question": "調子に＿＿いると、失敗するよ。", "optionA": "乗って", "optionAReading": "のって", "optionB": "回して", "optionBReading": "まわして", "answer": "A" },
+      { "question": "交渉がうまくいくよう、事前に手を＿＿おいた。", "optionA": "回して", "optionAReading": "まわして", "optionB": "引いて", "optionBReading": "ひいて", "answer": "A" },
+      { "question": "彼の言うことはいつも筋が＿＿いる。", "optionA": "通って", "optionAReading": "とおって", "optionB": "乗って", "optionBReading": "のって", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ぎあんがこっかいをとおる", "fixedKanji": "議案が国会を", "blankPosition": "after", "choices": ["通る", "引く", "乗る", "回す"], "answer": "通る" },
+      { "reading": "つなをひく", "fixedKanji": "綱を", "blankPosition": "after", "choices": ["引く", "通る", "乗る", "回す"], "answer": "引く" },
+      { "reading": "リズムにのる", "fixedKanji": "リズムに", "blankPosition": "after", "choices": ["乗る", "引く", "通る", "回す"], "answer": "乗る" },
+      { "reading": "せんたくきをまわす", "fixedKanji": "洗濯機を", "blankPosition": "after", "choices": ["回す", "通す", "引く", "乗せる"], "answer": "回す" },
+      { "reading": "ねつがひく", "fixedKanji": "熱が", "blankPosition": "after", "choices": ["引く", "通る", "乗る", "回る"], "answer": "引く" }
+    ]
+  }
+}
