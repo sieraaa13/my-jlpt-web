@@ -1,0 +1,48 @@
+{
+  "week": 2,
+  "day": 2,
+  "title": "どんな様子？②",
+  "subtitle": "Kata kerja untuk keadaan benda dan situasi",
+  "entries": [
+    { "word": "かする", "reading": "かする", "example": "弾が耳をかすった。", "meaning": "menyerempet (peluru/benda)", "relatedForms": ["すり傷"] },
+    { "word": "ぶれる", "reading": "ぶれる", "example": "手が震えて写真がぶれてしまった。", "meaning": "buram (goyang saat foto)", "relatedForms": [] },
+    { "word": "ぼやける", "reading": "ぼやける", "example": "遠くの字がぼやけてよく見えない。", "meaning": "kabur, tidak jelas", "relatedForms": [] },
+    { "word": "かさむ", "reading": "かさむ", "example": "旅行の費用が予想以上にかさんだ。", "meaning": "membengkak (biaya)", "relatedForms": [] },
+    { "word": "かさばる", "reading": "かさばる", "example": "冬服は荷物がかさばって持ち運びにくい。", "meaning": "memakan tempat (barang besar)", "relatedForms": [] },
+    { "word": "重なる", "reading": "かさなる", "example": "今週は予定が重なってしまった。", "meaning": "bertumpuk, bertabrakan", "relatedForms": ["重ねる"] },
+    { "word": "そびえる", "reading": "そびえる", "example": "遠くに高層ビルがそびえているのが見えた。", "meaning": "menjulang tinggi", "relatedForms": [] },
+    { "word": "たるむ", "reading": "たるむ", "example": "洗濯物を干すロープがたるんでいる。", "meaning": "kendur, longgar", "relatedForms": [] },
+    { "word": "とろける", "reading": "とろける", "example": "このチーズは口の中でとろける。", "meaning": "meleleh", "relatedForms": [] },
+    { "word": "はげる", "reading": "はげる", "example": "古い塀のペンキがはげてきた。", "meaning": "mengelupas (cat)", "relatedForms": [] },
+    { "word": "さえずる", "reading": "さえずる", "example": "朝になると小鳥がさえずり始める。", "meaning": "berkicau", "relatedForms": [] },
+    { "word": "きしむ", "reading": "きしむ", "example": "古い床が歩くたびにきしむ。", "meaning": "berderit", "relatedForms": [] },
+    { "word": "弾く", "reading": "はじく", "example": "この布は水をよく弾く。", "meaning": "menolak, memantulkan (air)", "relatedForms": [] },
+    { "word": "はぐ", "reading": "はぐ", "example": "漁師は魚の皮をはいだ。", "meaning": "mengupas kulit", "relatedForms": [] },
+    { "word": "潤う", "reading": "うるおう", "example": "保湿クリームで肌が潤った。", "meaning": "lembap, terhidrasi; juga makmur", "relatedForms": [] },
+    { "word": "繕う", "reading": "つくろう", "example": "母は靴下のほころびを繕ってくれた。", "meaning": "menjahit/memperbaiki (kain); menjaga penampilan", "relatedForms": [] },
+    { "word": "はかどる", "reading": "はかどる", "example": "集中できたおかげで仕事がはかどった。", "meaning": "berjalan lancar/maju (pekerjaan)", "relatedForms": [] },
+    { "word": "差し掛かる", "reading": "さしかかる", "example": "プロジェクトは重要な局面に差し掛かっている。", "meaning": "mendekati (titik penting)", "relatedForms": [] },
+    { "word": "引きずる", "reading": "ひきずる", "example": "彼はけがをした足を引きずって歩いた。", "meaning": "menyeret", "relatedForms": [] },
+    { "word": "反る", "reading": "そる", "example": "湿気で木の板が反ってしまった。", "meaning": "melengkung", "relatedForms": [] },
+    { "word": "とがる", "reading": "とがる", "example": "鉛筆の先がとがっている。", "meaning": "runcing", "relatedForms": [] },
+    { "word": "はれる", "reading": "はれる", "example": "泣きすぎてまぶたがはれてしまった。", "meaning": "membengkak", "relatedForms": [] },
+    { "word": "ずれる", "reading": "ずれる", "example": "メガネがずれて見えにくい。", "meaning": "bergeser, melenceng", "relatedForms": [] },
+    { "word": "いかれる", "reading": "いかれる", "example": "古い車のエンジンがいかれてしまった。", "meaning": "rusak (bahasa gaul)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "最近、先の＿＿靴がはやっているようだ。", "optionA": "そびえた", "optionAReading": "そびえた", "optionB": "とがった", "optionBReading": "とがった", "answer": "B" },
+      { "question": "戸が＿＿キーキーうるさい音がする。", "optionA": "きしんで", "optionAReading": "きしんで", "optionB": "さえずって", "optionBReading": "さえずって", "answer": "A" },
+      { "question": "このシチューは牛肉が＿＿ようにやわらかくて、とてもおいしい。", "optionA": "たるむ", "optionAReading": "たるむ", "optionB": "とろける", "optionBReading": "とろける", "answer": "B" },
+      { "question": "母が穴の空いた靴下を＿＿くれた。", "optionA": "うるおって", "optionAReading": "うるおって", "optionB": "つくろって", "optionBReading": "つくろって", "answer": "B" },
+      { "question": "バットを振ったが、ボールは＿＿だけで飛ばなかった。", "optionA": "かすった", "optionAReading": "かすった", "optionB": "さしかかった", "optionBReading": "さしかかった", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "さしかかる", "fixedKanji": "差し", "blankPosition": "after", "choices": ["掛かる", "迫る", "詰まる", "近づく"], "answer": "掛かる" },
+      { "reading": "ひきずる", "fixedKanji": "足を", "blankPosition": "after", "choices": ["引きずる", "反る", "とがる", "はれる"], "answer": "引きずる" },
+      { "reading": "うるおう", "fixedKanji": "肌が", "blankPosition": "after", "choices": ["潤う", "かさむ", "かさばる", "重なる"], "answer": "潤う" },
+      { "reading": "はかどる", "fixedKanji": "仕事が", "blankPosition": "after", "choices": ["はかどる", "きしむ", "たるむ", "ぶれる"], "answer": "はかどる" },
+      { "reading": "つくろう", "fixedKanji": "体裁を", "blankPosition": "after", "choices": ["繕う", "はぐ", "はじく", "かする"], "answer": "繕う" }
+    ]
+  }
+}

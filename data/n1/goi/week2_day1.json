@@ -1,0 +1,53 @@
+{
+  "week": 2,
+  "day": 1,
+  "title": "どんな様子？①",
+  "subtitle": "Kata kerja untuk keadaan dan perilaku seseorang",
+  "entries": [
+    { "word": "強がる", "reading": "つよがる", "example": "彼は痛いはずなのに強がっている。", "meaning": "berlagak kuat/tegar", "relatedForms": [] },
+    { "word": "くたびれる", "reading": "くたびれる", "example": "一日中歩き回ってくたびれた。", "meaning": "kelelahan", "relatedForms": [] },
+    { "word": "ばてる", "reading": "ばてる", "example": "残業続きでばてている。", "meaning": "kehabisan tenaga", "relatedForms": [] },
+    { "word": "とぼける", "reading": "とぼける", "example": "彼は何も知らないととぼけた。", "meaning": "berpura-pura tidak tahu", "relatedForms": [] },
+    { "word": "ぼける", "reading": "ぼける", "example": "年とともにぼけてくるのは自然なことだ。", "meaning": "menjadi pikun", "relatedForms": [] },
+    { "word": "どもる", "reading": "どもる", "example": "彼は緊張するとスピーチでどもる。", "meaning": "gagap", "relatedForms": [] },
+    { "word": "しくじる", "reading": "しくじる", "example": "彼は入試でしくじってしまった。", "meaning": "gagal", "relatedForms": [] },
+    { "word": "察する", "reading": "さっする", "example": "彼は空気を察して話題を変えた。", "meaning": "merasakan, menyadari (situasi)", "relatedForms": [] },
+    { "word": "ささげる", "reading": "ささげる", "example": "彼は研究に一生をささげた。", "meaning": "mengabdikan (hidup)", "relatedForms": [] },
+    { "word": "おびえる", "reading": "おびえる", "example": "子どもは物音におびえていた。", "meaning": "ketakutan", "relatedForms": [] },
+    { "word": "こみあげる", "reading": "こみあげる", "example": "感動で涙がこみあげてきた。", "meaning": "meluap (emosi)", "relatedForms": [] },
+    { "word": "うぬぼれる", "reading": "うぬぼれる", "example": "彼女は自分が美人だとうぬぼれている。", "meaning": "membanggakan diri berlebihan", "relatedForms": [] },
+    { "word": "ぼうぜんとする", "reading": "ぼうぜんとする", "example": "彼は驚いてぼうぜんとした。", "meaning": "terpana, tercengang", "relatedForms": [] },
+    { "word": "赤らめる", "reading": "あからめる", "example": "彼女は恥ずかしそうに顔を赤らめた。", "meaning": "memerah (wajah)", "relatedForms": [] },
+    { "word": "凝る", "reading": "こる", "example": "彼は最近釣りに凝っている。", "meaning": "keranjingan (hobi)", "relatedForms": [] },
+    { "word": "懲りる", "reading": "こりる", "example": "彼は一度の失敗に懲りて二度と挑戦しなかった。", "meaning": "kapok", "relatedForms": [] },
+    { "word": "こだわる", "reading": "こだわる", "example": "彼は味にこだわってレストランを選ぶ。", "meaning": "sangat memperhatikan (detail)", "relatedForms": [] },
+    { "word": "戸惑う", "reading": "とまどう", "example": "慣れない仕事に戸惑っている。", "meaning": "kebingungan", "relatedForms": [] },
+    { "word": "嘆く", "reading": "なげく", "example": "彼は自分の失敗を嘆いた。", "meaning": "meratapi", "relatedForms": [] },
+    { "word": "ぼやく", "reading": "ぼやく", "example": "彼は「給料が安い」とぼやいている。", "meaning": "menggerutu", "relatedForms": [] },
+    { "word": "まごつく", "reading": "まごつく", "example": "やり方がわからなくてまごついた。", "meaning": "bingung, gugup", "relatedForms": [] },
+    { "word": "任す", "reading": "まかす", "example": "彼に仕事を任すことにした。", "meaning": "mempercayakan", "relatedForms": [] },
+    { "word": "和む", "reading": "なごむ", "example": "猫を見ていると心が和む。", "meaning": "menjadi tenang, damai", "relatedForms": [] },
+    { "word": "こもる", "reading": "こもる", "example": "彼は最近、家にこもりがちだ。", "meaning": "mengurung diri", "relatedForms": [] },
+    { "word": "ごまかす", "reading": "ごまかす", "example": "彼は質問をごまかして答えなかった。", "meaning": "mengelabui", "relatedForms": [] },
+    { "word": "さえる", "reading": "さえる", "example": "朝は頭がさえていて集中しやすい。", "meaning": "jernih, tajam (pikiran)", "relatedForms": [] },
+    { "word": "かなう", "reading": "かなう", "example": "水泳では、彼にかなう者はいない。", "meaning": "menandingi; juga terkabul (impian)", "relatedForms": ["かなえる"] },
+    { "word": "意気込む", "reading": "いきごむ", "example": "彼は「今度こそ勝つぞ」と意気込んでいる。", "meaning": "bersemangat", "relatedForms": [] },
+    { "word": "老ける", "reading": "ふける", "example": "彼は年のわりには老けて見える。", "meaning": "terlihat tua", "relatedForms": ["老いる"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "駅で電車の乗り換えに＿＿。", "optionA": "おびえた", "optionAReading": "おびえた", "optionB": "まごついた", "optionBReading": "まごついた", "answer": "B" },
+      { "question": "ピントが合っていない＿＿写真。", "optionA": "ぼけた", "optionAReading": "ぼけた", "optionB": "とぼけた", "optionBReading": "とぼけた", "answer": "A" },
+      { "question": "彼は自分に才能があると＿＿いる。", "optionA": "こだわって", "optionAReading": "こだわって", "optionB": "うぬぼれて", "optionBReading": "うぬぼれて", "answer": "B" },
+      { "question": "1時間待ってもバスが来ない。もう待ち＿＿よ。", "optionA": "くたびれた", "optionAReading": "くたびれた", "optionB": "ばてた", "optionBReading": "ばてた", "answer": "A" },
+      { "question": "彼は自分の失敗を＿＿。", "optionA": "なげいた", "optionAReading": "なげいた", "optionB": "ぼうぜんとした", "optionBReading": "ぼうぜんとした", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "さっする", "fixedKanji": "危険を", "blankPosition": "after", "choices": ["察する", "感じる", "恐れる", "避ける"], "answer": "察する" },
+      { "reading": "いきごむ", "fixedKanji": "意気", "blankPosition": "after", "choices": ["込む", "張る", "盛る", "乗る"], "answer": "込む" },
+      { "reading": "こりる", "fixedKanji": "失敗に", "blankPosition": "after", "choices": ["懲りる", "凝る", "慣れる", "飽きる"], "answer": "懲りる" },
+      { "reading": "ふける", "fixedKanji": "老", "blankPosition": "after", "choices": ["ける", "いる", "う", "む"], "answer": "ける" },
+      { "reading": "かなう", "fixedKanji": "夢が", "blankPosition": "after", "choices": ["かなう", "こもる", "ばてる", "さえる"], "answer": "かなう" }
+    ]
+  }
+}
