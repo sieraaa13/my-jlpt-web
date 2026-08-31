@@ -1,0 +1,52 @@
+{
+  "week": 6,
+  "day": 6,
+  "title": "先・道・種",
+  "subtitle": "Kosakata dengan banyak makna (あたり・筋・先・道・種)",
+  "entries": [
+    { "word": "あたり", "reading": "あたり", "example": "この辺りは静かな住宅地が多い。", "meaning": "sekitar (lokasi)", "relatedForms": [] },
+    { "word": "あたり", "reading": "あたり", "example": "今月の末辺りに両親が遊びに来る予定だ。", "meaning": "sekitar (waktu)", "relatedForms": [] },
+    { "word": "あたり", "reading": "あたり", "example": "最近、彼への風当たりが強くなっている。", "meaning": "kritik/tekanan (yang keras)", "relatedForms": [] },
+    { "word": "あたり", "reading": "あたり", "example": "彼女は人当たりがいいので、初対面でも話しやすい。", "meaning": "ramah dalam bersikap", "relatedForms": [] },
+    { "word": "あたり", "reading": "あたり", "example": "刑事は犯人について当たりをつけた。", "meaning": "menduga, memperkirakan", "relatedForms": [] },
+    { "word": "あたり", "reading": "あたり", "example": "運よくくじに当たって、旅行券をもらった。", "meaning": "menang (undian)", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "急に走ったせいで足の筋を痛めた。", "meaning": "otot, urat", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "この肉は筋が多くて硬い。", "meaning": "berserat, alot", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "野菜の筋を取ってから調理した。", "meaning": "serat (sayuran)", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "彼は筋がいいから、上達が早いだろう。", "meaning": "bakat, potensi", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "彼の説明は筋の通った、分かりやすいものだった。", "meaning": "masuk akal, logis", "relatedForms": [] },
+    { "word": "筋", "reading": "すじ", "example": "この物語の筋はとても複雑だ。", "meaning": "alur cerita", "relatedForms": [] },
+    { "word": "先", "reading": "さき", "example": "トンボが指の先にそっと止まった。", "meaning": "ujung", "relatedForms": [] },
+    { "word": "先", "reading": "さき", "example": "登山者たちは目的地を目指して先へ進んだ。", "meaning": "ke depan, menuju tujuan", "relatedForms": [] },
+    { "word": "先", "reading": "さき", "example": "名簿の先のほうに彼の名前が出ていた。", "meaning": "bagian awal/depan", "relatedForms": [] },
+    { "word": "先", "reading": "さき", "example": "先にお知らせしたとおり、来月から料金が変わります。", "meaning": "sebelumnya", "relatedForms": [] },
+    { "word": "先", "reading": "さき", "example": "先のことは誰にもわからない。", "meaning": "masa depan", "relatedForms": [] },
+    { "word": "取引先", "reading": "とりひきさき", "example": "彼は毎月、取引先を訪問している。", "meaning": "mitra bisnis, rekanan", "relatedForms": [] },
+    { "word": "道", "reading": "みち", "example": "分かれ道に着いたら右に進んでください。", "meaning": "persimpangan jalan", "relatedForms": [] },
+    { "word": "道", "reading": "みち", "example": "難関大学への道は険しい。", "meaning": "jalan menuju (perjuangan)", "relatedForms": [] },
+    { "word": "道", "reading": "みち", "example": "彼女はお金の使い道をよく考えている。", "meaning": "cara pemakaian", "relatedForms": [] },
+    { "word": "道", "reading": "みち", "example": "彼はうそをついて、人の道に外れたことをした。", "meaning": "menyimpang dari jalan yang benar (moral)", "relatedForms": [] },
+    { "word": "道", "reading": "みち", "example": "彼はその道の権威として知られている。", "meaning": "bidang keahlian", "relatedForms": [] },
+    { "word": "種", "reading": "たね", "example": "春になったら花の種をまく予定だ。", "meaning": "benih, biji", "relatedForms": [] },
+    { "word": "種", "reading": "たね", "example": "将来のことは悩みの種だ。", "meaning": "sumber kekhawatiran", "relatedForms": [] },
+    { "word": "種", "reading": "たね", "example": "この店ではすしの種を毎朝仕入れている。", "meaning": "bahan (sushi)", "relatedForms": [] },
+    { "word": "種", "reading": "たね", "example": "その話題は今日の食事会でいい話の種になった。", "meaning": "bahan obrolan", "relatedForms": [] },
+    { "word": "種", "reading": "たね", "example": "マジシャンはついに手品の種を明かした。", "meaning": "trik, rahasia (sulap)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "首相はきちんと＿＿説明をした。", "optionA": "筋の通った", "optionAReading": "すじのとおった", "optionB": "道の通った", "optionBReading": "みちのとおった", "answer": "A" },
+      { "question": "彼はその＿＿の権威だ。", "optionA": "道", "optionAReading": "みち", "optionB": "先", "optionBReading": "さき", "answer": "A" },
+      { "question": "＿＿に、新しくできたレストランへ行ってみた。", "optionA": "話の種", "optionAReading": "はなしのたね", "optionB": "話の先", "optionBReading": "はなしのさき", "answer": "A" },
+      { "question": "刑事は犯人の＿＿をつけて捜査を始めた。", "optionA": "当たり", "optionAReading": "あたり", "optionB": "筋", "optionBReading": "すじ", "answer": "A" },
+      { "question": "一人前になるまでの＿＿は長い。", "optionA": "道", "optionAReading": "みち", "optionB": "種", "optionBReading": "たね", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "かぜあたり", "fixedKanji": "風", "blankPosition": "after", "choices": ["当たり", "筋", "先", "道"], "answer": "当たり" },
+      { "reading": "ものがたりのすじ", "fixedKanji": "物語の", "blankPosition": "after", "choices": ["筋", "当たり", "先", "種"], "answer": "筋" },
+      { "reading": "とりひきさき", "fixedKanji": "取引", "blankPosition": "after", "choices": ["先", "道", "種", "筋"], "answer": "先" },
+      { "reading": "ひとのみち", "fixedKanji": "人の", "blankPosition": "after", "choices": ["道", "筋", "種", "先"], "answer": "道" },
+      { "reading": "なやみのたね", "fixedKanji": "悩みの", "blankPosition": "after", "choices": ["種", "道", "筋", "当たり"], "answer": "種" }
+    ]
+  }
+}

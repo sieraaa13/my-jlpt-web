@@ -1,0 +1,50 @@
+{
+  "week": 6,
+  "day": 5,
+  "title": "強い・ばか・あと",
+  "subtitle": "Kosakata dengan banyak makna (強い・ばか・あと・根・波)",
+  "entries": [
+    { "word": "強い", "reading": "つよい", "example": "彼はひもを強く結んで固定した。", "meaning": "kencang, kuat", "relatedForms": [] },
+    { "word": "強い", "reading": "つよい", "example": "この木は寒さに強く、雪国でもよく育つ。", "meaning": "tahan terhadap", "relatedForms": [] },
+    { "word": "強い", "reading": "つよい", "example": "彼は意志が強く、決めたことを最後までやり抜く。", "meaning": "kuat kemauan", "relatedForms": [] },
+    { "word": "強い", "reading": "つよい", "example": "兄は機械に強くて、故障してもすぐ直せる。", "meaning": "ahli, menguasai", "relatedForms": [] },
+    { "word": "強い", "reading": "つよい", "example": "彼女は気が強く、簡単には人に流されない。", "meaning": "berkemauan keras, gigih", "relatedForms": [] },
+    { "word": "強い", "reading": "つよい", "example": "先生は学生に強く注意した。", "meaning": "dengan keras, tegas", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "そんなばかなことをするのはやめなさい。", "meaning": "hal bodoh", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "彼は友人にばかにされて悔しがっていた。", "meaning": "diremehkan", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "通うのはいいが、交通費がばかにならない。", "meaning": "tidak bisa dianggap remeh (jumlahnya lumayan)", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "確認を怠って、自分だけがばかを見た。", "meaning": "hanya diri sendiri yang rugi", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "長年使ったねじがばかになってしまった。", "meaning": "aus, tidak berfungsi lagi", "relatedForms": [] },
+    { "word": "ばか", "reading": "ばか", "example": "今日はばかに寒いから、コートを着ていこう。", "meaning": "sangat, luar biasa", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "彼は若いころ、夢を追って故郷を後にした。", "meaning": "meninggalkan (kampung halaman)", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "面倒なことは後に回さず、早めに片付けよう。", "meaning": "menunda (untuk nanti)", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "あと5分でイベントが始まる。", "meaning": "(waktu) lagi", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "この地域では同じような事故が後を絶たない。", "meaning": "terus terjadi berturut-turut", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "彼はやがて父の会社の後を継ぐ予定だ。", "meaning": "meneruskan (jabatan/usaha)", "relatedForms": [] },
+    { "word": "あと", "reading": "あと", "example": "今日は半分だけ支払い、後は来月払います。", "meaning": "sisanya", "relatedForms": [] },
+    { "word": "根", "reading": "ね", "example": "庭師は雑草を根から抜いた。", "meaning": "akar", "relatedForms": [] },
+    { "word": "根", "reading": "ね", "example": "この問題の根は思ったより深い。", "meaning": "akar masalah", "relatedForms": [] },
+    { "word": "根", "reading": "ね", "example": "彼は口は悪いが、根は正直な人だ。", "meaning": "pada dasarnya, pembawaan", "relatedForms": [] },
+    { "word": "根", "reading": "ね", "example": "彼女はいまだに昔のことを根に持っている。", "meaning": "menyimpan dendam", "relatedForms": [] },
+    { "word": "波", "reading": "なみ", "example": "台風が近づいていて波が高くなっている。", "meaning": "ombak (tinggi)", "relatedForms": [] },
+    { "word": "波", "reading": "なみ", "example": "彼は感情に波があり、機嫌が読みにくい。", "meaning": "naik turun (suasana hati)", "relatedForms": [] },
+    { "word": "波", "reading": "なみ", "example": "駅前で大勢の人の波に押されて歩きにくかった。", "meaning": "arus/kerumunan orang", "relatedForms": [] },
+    { "word": "波", "reading": "なみ", "example": "この会社は国際化の波にうまく乗っている。", "meaning": "mengikuti tren/arus", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は昔のことをいつまでも＿＿持っている。", "optionA": "根に", "optionAReading": "ねに", "optionB": "波に", "optionBReading": "なみに", "answer": "A" },
+      { "question": "台風が近づいていて＿＿高い。", "optionA": "波が", "optionAReading": "なみが", "optionB": "根が", "optionBReading": "ねが", "answer": "A" },
+      { "question": "この地域では事故が＿＿絶たない。", "optionA": "後を", "optionAReading": "あとを", "optionB": "根を", "optionBReading": "ねを", "answer": "A" },
+      { "question": "通うのはいいが、交通費が＿＿ならない。", "optionA": "バカに", "optionAReading": "ばかに", "optionB": "強く", "optionBReading": "つよく", "answer": "A" },
+      { "question": "兄は機械に＿＿、故障してもすぐ直せる。", "optionA": "強くて", "optionAReading": "つよくて", "optionB": "あまくて", "optionBReading": "あまくて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "じこがあとをたたない", "fixedKanji": "事故が", "blankPosition": "after", "choices": ["後を絶たない", "根に持つ", "波に乗る", "強くなる"], "answer": "後を絶たない" },
+      { "reading": "もんだいのねがふかい", "fixedKanji": "問題の", "blankPosition": "after", "choices": ["根が深い", "あとが心配だ", "波が高い", "強くなる"], "answer": "根が深い" },
+      { "reading": "たいふうでなみがたかい", "fixedKanji": "台風で", "blankPosition": "after", "choices": ["波が高い", "根が深い", "あとが心配だ", "強くなる"], "answer": "波が高い" },
+      { "reading": "こうつうひがばかにならない", "fixedKanji": "交通費が", "blankPosition": "after", "choices": ["バカにならない", "根に持つ", "波に乗る", "あとを絶たない"], "answer": "バカにならない" },
+      { "reading": "きかいにつよい", "fixedKanji": "機械に", "blankPosition": "after", "choices": ["強い", "ばかだ", "あとがある", "根がある"], "answer": "強い" }
+    ]
+  }
+}
