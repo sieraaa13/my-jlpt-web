@@ -1,0 +1,54 @@
+{
+  "week": 3,
+  "day": 6,
+  "title": "至る・遮る",
+  "subtitle": "Kata kerja kun'yomi ③ (berakhiran う・る)",
+  "entries": [
+    { "word": "至る", "reading": "いたる", "example": "議論の末、結論に至った。", "meaning": "mencapai, sampai", "relatedForms": [] },
+    { "word": "陥る", "reading": "おちいる", "example": "会社は経営難に陥った。", "meaning": "terjerumus", "relatedForms": ["陥れる"] },
+    { "word": "陥れる", "reading": "おとしいれる", "example": "彼はライバルを陥れようとした。", "meaning": "menjerumuskan", "relatedForms": ["陥る"] },
+    { "word": "遮る", "reading": "さえぎる", "example": "彼は話の途中で私を遮った。", "meaning": "memotong (pembicaraan), menghalangi", "relatedForms": [] },
+    { "word": "悟る", "reading": "さとる", "example": "彼は自分の間違いを悟った。", "meaning": "menyadari", "relatedForms": [] },
+    { "word": "罵る", "reading": "ののしる", "example": "彼は怒りに任せて相手を罵った。", "meaning": "memaki", "relatedForms": [] },
+    { "word": "蘇る", "reading": "よみがえる", "example": "昔の記憶が鮮明に蘇った。", "meaning": "bangkit kembali, teringat kembali", "relatedForms": [] },
+    { "word": "遡る", "reading": "さかのぼる", "example": "この習慣は江戸時代まで遡る。", "meaning": "menelusuri kembali (waktu/sejarah)", "relatedForms": [] },
+    { "word": "承る", "reading": "うけたまわる", "example": "ご注文を承りました。", "meaning": "menerima (dengan hormat, keigo)", "relatedForms": ["賜る"] },
+    { "word": "賜る", "reading": "たまわる", "example": "社長よりお言葉を賜った。", "meaning": "menerima (dari atasan, keigo)", "relatedForms": ["承る"] },
+    { "word": "練る", "reading": "ねる", "example": "チームは新しい戦略を練った。", "meaning": "menyusun matang-matang (rencana)", "relatedForms": [] },
+    { "word": "装う", "reading": "よそおう", "example": "彼は平静を装っていたが、内心動揺していた。", "meaning": "berpura-pura, berdandan", "relatedForms": [] },
+    { "word": "惑う", "reading": "まどう", "example": "彼は突然の質問に惑ってしまった。", "meaning": "bingung", "relatedForms": [] },
+    { "word": "漂う", "reading": "ただよう", "example": "部屋にコーヒーの香りが漂っていた。", "meaning": "mengambang, tercium (aroma)", "relatedForms": [] },
+    { "word": "敬う", "reading": "うやまう", "example": "彼は年長者を敬う気持ちを大切にしている。", "meaning": "menghormati", "relatedForms": [] },
+    { "word": "争う", "reading": "あらそう", "example": "両者は優勝をかけて争った。", "meaning": "bertikai, bersaing", "relatedForms": [] },
+    { "word": "憂える", "reading": "うれえる", "example": "彼は国の将来を憂えている。", "meaning": "mengkhawatirkan, meresahkan", "relatedForms": [] },
+    { "word": "従う", "reading": "したがう", "example": "彼は規則に従うことを重視している。", "meaning": "mematuhi", "relatedForms": ["従える"] },
+    { "word": "従える", "reading": "したがえる", "example": "王は多くの家来を従えていた。", "meaning": "membawa (bawahan), menaklukkan", "relatedForms": ["従う"] },
+    { "word": "見合う", "reading": "みあう", "example": "給料に見合う仕事量ではない。", "meaning": "sepadan, seimbang", "relatedForms": [] },
+    { "word": "携わる", "reading": "たずさわる", "example": "彼は長年、教育に携わってきた。", "meaning": "terlibat dalam (pekerjaan)", "relatedForms": ["携える"] },
+    { "word": "携える", "reading": "たずさえる", "example": "彼は家族を携えて帰国した。", "meaning": "membawa serta", "relatedForms": ["携わる"] },
+    { "word": "隔たる", "reading": "へだたる", "example": "二人の考え方は大きく隔たっている。", "meaning": "berjarak, terpisah, berbeda jauh", "relatedForms": ["隔てる"] },
+    { "word": "隔てる", "reading": "へだてる", "example": "川が二つの町を隔てている。", "meaning": "memisahkan", "relatedForms": ["隔たる"] },
+    { "word": "群がる", "reading": "むらがる", "example": "蟻が砂糖に群がっていた。", "meaning": "berkerumun", "relatedForms": [] },
+    { "word": "逆らう", "reading": "さからう", "example": "彼は親に逆らったことがない。", "meaning": "melawan", "relatedForms": ["抗う"] },
+    { "word": "抗う", "reading": "あらがう", "example": "運命に抗うのは容易ではない。", "meaning": "melawan (takdir/arus)", "relatedForms": ["逆らう"] },
+    { "word": "見失う", "reading": "みうしなう", "example": "人混みの中で子供を見失ってしまった。", "meaning": "kehilangan jejak/arah", "relatedForms": [] },
+    { "word": "見舞う", "reading": "みまう", "example": "入院中の友人を見舞いに行った。", "meaning": "menjenguk", "relatedForms": [] },
+    { "word": "賑わう", "reading": "にぎわう", "example": "週末の商店街は買い物客で賑わっている。", "meaning": "ramai", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "議論の末、結論に＿＿。", "optionA": "至った", "optionAReading": "いたった", "optionB": "陥った", "optionBReading": "おちいった", "answer": "A" },
+      { "question": "会社は経営難に＿＿。", "optionA": "至った", "optionAReading": "いたった", "optionB": "陥った", "optionBReading": "おちいった", "answer": "B" },
+      { "question": "彼は話の途中で私を＿＿。", "optionA": "遮った", "optionAReading": "さえぎった", "optionB": "隔てた", "optionBReading": "へだてた", "answer": "A" },
+      { "question": "川が二つの町を＿＿いる。", "optionA": "遮って", "optionAReading": "さえぎって", "optionB": "隔てて", "optionBReading": "へだてて", "answer": "B" },
+      { "question": "昔の記憶が鮮明に＿＿。", "optionA": "蘇った", "optionAReading": "よみがえった", "optionB": "遡った", "optionBReading": "さかのぼった", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "いたる", "fixedKanji": "至", "blankPosition": "after", "choices": ["る", "う", "く", "む"], "answer": "る" },
+      { "reading": "よそおう", "fixedKanji": "装", "blankPosition": "after", "choices": ["う", "る", "く", "ぶ"], "answer": "う" },
+      { "reading": "うやまう", "fixedKanji": "敬", "blankPosition": "after", "choices": ["う", "る", "つ", "ぶ"], "answer": "う" },
+      { "reading": "にぎわう", "fixedKanji": "賑", "blankPosition": "after", "choices": ["う", "る", "む", "く"], "answer": "う" },
+      { "reading": "たずさわる", "fixedKanji": "携", "blankPosition": "after", "choices": ["わる", "える", "がる", "まる"], "answer": "わる" }
+    ]
+  }
+}

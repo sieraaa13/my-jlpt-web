@@ -1,0 +1,53 @@
+{
+  "week": 3,
+  "day": 5,
+  "title": "悩む・拒む",
+  "subtitle": "Kata kerja kun'yomi ② (berakhiran む・ぶ・つ)",
+  "entries": [
+    { "word": "悩む", "reading": "なやむ", "example": "彼は進路のことで悩んでいる。", "meaning": "resah, galau", "relatedForms": ["悩ましい"] },
+    { "word": "恨む", "reading": "うらむ", "example": "彼を恨むつもりはない。", "meaning": "membenci, dendam", "relatedForms": [] },
+    { "word": "拒む", "reading": "こばむ", "example": "彼は面会を拒んだ。", "meaning": "menolak", "relatedForms": [] },
+    { "word": "挑む", "reading": "いどむ", "example": "彼は世界記録に挑んだ。", "meaning": "menantang", "relatedForms": [] },
+    { "word": "望む", "reading": "のぞむ", "example": "彼女は平和な世界を望んでいる。", "meaning": "mengharapkan", "relatedForms": ["臨む"] },
+    { "word": "臨む", "reading": "のぞむ", "example": "彼は落ち着いて試験に臨んだ。", "meaning": "menghadapi (situasi penting)", "relatedForms": ["望む"] },
+    { "word": "阻む", "reading": "はばむ", "example": "悪天候が登山隊の前進を阻んだ。", "meaning": "menghalangi", "relatedForms": [] },
+    { "word": "絡む", "reading": "からむ", "example": "この事件には複雑な事情が絡んでいる。", "meaning": "terkait, terlilit", "relatedForms": [] },
+    { "word": "富む", "reading": "とむ", "example": "この地域は自然に富んでいる。", "meaning": "kaya akan", "relatedForms": [] },
+    { "word": "励む", "reading": "はげむ", "example": "彼は日々練習に励んでいる。", "meaning": "berusaha keras", "relatedForms": [] },
+    { "word": "沈む", "reading": "しずむ", "example": "太陽が水平線に沈んだ。", "meaning": "tenggelam", "relatedForms": [] },
+    { "word": "縮む", "reading": "ちぢむ", "example": "このセーターは洗濯で縮んでしまった。", "meaning": "menyusut", "relatedForms": [] },
+    { "word": "済む", "reading": "すむ", "example": "用事が済んだら連絡してください。", "meaning": "selesai", "relatedForms": ["澄む"] },
+    { "word": "澄む", "reading": "すむ", "example": "山の空気は澄んでいて気持ちがいい。", "meaning": "jernih", "relatedForms": ["済む"] },
+    { "word": "刻む", "reading": "きざむ", "example": "職人は木材に模様を刻んだ。", "meaning": "mengukir, mencincang", "relatedForms": [] },
+    { "word": "睨む", "reading": "にらむ", "example": "彼は不満そうに私を睨んだ。", "meaning": "melotot", "relatedForms": [] },
+    { "word": "摘む", "reading": "つむ", "example": "母と一緒に庭で花を摘んだ。", "meaning": "memetik", "relatedForms": [] },
+    { "word": "慎む", "reading": "つつしむ", "example": "彼は言動を慎むよう注意された。", "meaning": "berhati-hati, menahan diri", "relatedForms": [] },
+    { "word": "叫ぶ", "reading": "さけぶ", "example": "彼は助けを求めて叫んだ。", "meaning": "berteriak", "relatedForms": [] },
+    { "word": "尊ぶ", "reading": "とうとぶ", "example": "この会社は伝統を尊ぶ社風がある。", "meaning": "menghormati, menjunjung tinggi", "relatedForms": [] },
+    { "word": "忍ぶ", "reading": "しのぶ", "example": "彼は人目を忍んで会いに来た。", "meaning": "menyembunyikan diri, menahan diri", "relatedForms": ["偲ぶ"] },
+    { "word": "偲ぶ", "reading": "しのぶ", "example": "彼女は亡き祖母を偲んで涙を流した。", "meaning": "mengenang (dengan rindu)", "relatedForms": ["忍ぶ"] },
+    { "word": "及ぶ", "reading": "およぶ", "example": "被害は広範囲に及んだ。", "meaning": "mencapai, meluas", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "両国は友好関係を結んだ。", "meaning": "mengikat, menjalin (hubungan)", "relatedForms": [] },
+    { "word": "保つ", "reading": "たもつ", "example": "健康を保つために運動を続けている。", "meaning": "menjaga, mempertahankan", "relatedForms": [] },
+    { "word": "放つ", "reading": "はなつ", "example": "彼は矢を放った。", "meaning": "melepaskan", "relatedForms": [] },
+    { "word": "断つ", "reading": "たつ", "example": "彼は酒を断つと決意した。", "meaning": "memutuskan (hubungan/kebiasaan)", "relatedForms": ["経つ"] },
+    { "word": "経つ", "reading": "たつ", "example": "卒業してから10年が経った。", "meaning": "berlalu (waktu)", "relatedForms": ["断つ"] },
+    { "word": "討つ", "reading": "うつ", "example": "武士は敵を討つために出陣した。", "meaning": "menyerang, membunuh (musuh)", "relatedForms": ["打つ", "撃つ"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は落ち着いて試験に＿＿。", "optionA": "臨んだ", "optionAReading": "のぞんだ", "optionB": "望んだ", "optionBReading": "のぞんだ", "answer": "A" },
+      { "question": "彼女は平和な世界を＿＿いる。", "optionA": "臨んで", "optionAReading": "のぞんで", "optionB": "望んで", "optionBReading": "のぞんで", "answer": "B" },
+      { "question": "山の空気は＿＿いて気持ちがいい。", "optionA": "澄んで", "optionAReading": "すんで", "optionB": "済んで", "optionBReading": "すんで", "answer": "A" },
+      { "question": "用事が＿＿ら連絡してください。", "optionA": "澄んだ", "optionAReading": "すんだ", "optionB": "済んだ", "optionBReading": "すんだ", "answer": "B" },
+      { "question": "卒業してから10年が＿＿。", "optionA": "経った", "optionAReading": "たった", "optionB": "断った", "optionBReading": "たった", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "なやむ", "fixedKanji": "悩", "blankPosition": "after", "choices": ["む", "ぶ", "つ", "る"], "answer": "む" },
+      { "reading": "さけぶ", "fixedKanji": "叫", "blankPosition": "after", "choices": ["ぶ", "む", "つ", "る"], "answer": "ぶ" },
+      { "reading": "たもつ", "fixedKanji": "保", "blankPosition": "after", "choices": ["つ", "む", "ぶ", "る"], "answer": "つ" },
+      { "reading": "はばむ", "fixedKanji": "阻", "blankPosition": "after", "choices": ["む", "ぶ", "つ", "く"], "answer": "む" },
+      { "reading": "むすぶ", "fixedKanji": "結", "blankPosition": "after", "choices": ["ぶ", "む", "つ", "る"], "answer": "ぶ" }
+    ]
+  }
+}
