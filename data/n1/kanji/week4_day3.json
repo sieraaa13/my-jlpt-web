@@ -1,0 +1,57 @@
+{
+  "week": 4,
+  "day": 3,
+  "title": "浜辺・雨具・家主",
+  "subtitle": "Kun'yomi yang sulit",
+  "entries": [
+    { "word": "頭文字", "reading": "かしらもじ", "example": "彼は自分の頭文字を刺繍したハンカチを持っている。", "meaning": "inisial", "relatedForms": [] },
+    { "word": "浜辺", "reading": "はまべ", "example": "家族で浜辺を散歩した。", "meaning": "pantai, tepi laut", "relatedForms": ["雨具"] },
+    { "word": "雨具", "reading": "あまぐ", "example": "天気予報を見て雨具を準備した。", "meaning": "perlengkapan hujan", "relatedForms": ["浜辺"] },
+    { "word": "手際", "reading": "てぎわ", "example": "彼女は手際よく料理を仕上げた。", "meaning": "keterampilan, kecekatan", "relatedForms": [] },
+    { "word": "家主", "reading": "やぬし", "example": "家賃の相談のため家主に連絡した。", "meaning": "pemilik rumah, tuan tanah", "relatedForms": [] },
+    { "word": "城跡", "reading": "しろあと", "example": "この公園はかつての城跡に作られた。", "meaning": "reruntuhan kastil", "relatedForms": [] },
+    { "word": "問屋", "reading": "とんや", "example": "この店は野菜を問屋から直接仕入れている。", "meaning": "grosir, pedagang besar", "relatedForms": [] },
+    { "word": "小川", "reading": "おがわ", "example": "小川のせせらぎが心地よく聞こえる。", "meaning": "sungai kecil", "relatedForms": [] },
+    { "word": "小銭", "reading": "こぜに", "example": "自動販売機で使うために小銭を用意した。", "meaning": "uang receh", "relatedForms": [] },
+    { "word": "本音", "reading": "ほんね", "example": "彼はようやく本音を打ち明けてくれた。", "meaning": "niat/perasaan sebenarnya", "relatedForms": ["音色"] },
+    { "word": "音色", "reading": "ねいろ", "example": "このピアノは温かい音色が魅力だ。", "meaning": "warna suara, timbre", "relatedForms": ["本音"] },
+    { "word": "炎", "reading": "ほのお", "example": "ろうそくの炎が静かに揺れていた。", "meaning": "api, nyala", "relatedForms": [] },
+    { "word": "日付", "reading": "ひづけ", "example": "書類には日付を必ず記入してください。", "meaning": "tanggal", "relatedForms": [] },
+    { "word": "夜明け", "reading": "よあけ", "example": "登山隊は夜明けとともに出発した。", "meaning": "fajar", "relatedForms": [] },
+    { "word": "小包", "reading": "こづつみ", "example": "田舎の母から小包が届いた。", "meaning": "paket kecil", "relatedForms": [] },
+    { "word": "鳥居", "reading": "とりい", "example": "神社の鳥居をくぐって参拝した。", "meaning": "gerbang kuil Shinto", "relatedForms": [] },
+    { "word": "双子", "reading": "ふたご", "example": "彼女には双子の兄弟がいる。", "meaning": "anak kembar", "relatedForms": [] },
+    { "word": "兆し", "reading": "きざし", "example": "景気回復の兆しが見え始めた。", "meaning": "tanda-tanda, gejala", "relatedForms": [] },
+    { "word": "自ら", "reading": "みずから", "example": "社長自らが現場に足を運んだ。", "meaning": "diri sendiri, secara pribadi", "relatedForms": ["専ら"] },
+    { "word": "専ら", "reading": "もっぱら", "example": "最近は専ら在宅で仕事をしている。", "meaning": "sepenuhnya, khusus", "relatedForms": ["自ら"] },
+    { "word": "巧みな", "reading": "たくみな", "example": "彼は巧みな話術で聴衆を引き込んだ。", "meaning": "terampil, mahir", "relatedForms": [] },
+    { "word": "夜行", "reading": "やこう", "example": "夜行バスで実家に帰ることにした。", "meaning": "perjalanan malam", "relatedForms": ["格安"] },
+    { "word": "格安", "reading": "かくやす", "example": "このツアーは格安で人気がある。", "meaning": "sangat murah", "relatedForms": ["夜行"] },
+    { "word": "屋外", "reading": "おくがい", "example": "天気が良かったので屋外で食事をした。", "meaning": "luar ruangan", "relatedForms": ["屋内"] },
+    { "word": "屋内", "reading": "おくない", "example": "雨のため試合は屋内会場に変更された。", "meaning": "dalam ruangan", "relatedForms": ["屋外"] },
+    { "word": "野外", "reading": "やがい", "example": "週末は野外コンサートに出かけた。", "meaning": "alam terbuka", "relatedForms": [] },
+    { "word": "大木", "reading": "たいぼく", "example": "神社の境内には樹齢百年を超える大木がある。", "meaning": "pohon besar", "relatedForms": [] },
+    { "word": "正午", "reading": "しょうご", "example": "会議は正午に始まる予定だ。", "meaning": "tengah hari", "relatedForms": [] },
+    { "word": "生地", "reading": "きじ", "example": "このシャツは柔らかい生地でできている。", "meaning": "kain, bahan", "relatedForms": [] },
+    { "word": "湯気", "reading": "ゆげ", "example": "炊きたてのご飯から湯気が立ちのぼっていた。", "meaning": "uap panas", "relatedForms": [] },
+    { "word": "幾分", "reading": "いくぶん", "example": "今日は昨日より幾分涼しく感じる。", "meaning": "agak, sedikit", "relatedForms": [] },
+    { "word": "絵画", "reading": "かいが", "example": "美術館で有名な絵画を鑑賞した。", "meaning": "lukisan", "relatedForms": [] },
+    { "word": "喪中", "reading": "もちゅう", "example": "喪中のため年賀状は控えることにした。", "meaning": "masa berkabung", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女は＿＿よく料理を仕上げた。", "optionA": "手際", "optionAReading": "てぎわ", "optionB": "巧み", "optionBReading": "たくみ", "answer": "A" },
+      { "question": "彼は＿＿な話術で聴衆を引き込んだ。", "optionA": "手際な", "optionAReading": "てぎわな", "optionB": "巧みな", "optionBReading": "たくみな", "answer": "B" },
+      { "question": "天気が良かったので＿＿で食事をした。", "optionA": "屋外", "optionAReading": "おくがい", "optionB": "屋内", "optionBReading": "おくない", "answer": "A" },
+      { "question": "雨のため試合は＿＿会場に変更された。", "optionA": "屋外", "optionAReading": "おくがい", "optionB": "屋内", "optionBReading": "おくない", "answer": "B" },
+      { "question": "社長＿＿が現場に足を運んだ。", "optionA": "自ら", "optionAReading": "みずから", "optionB": "専ら", "optionBReading": "もっぱら", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "はまべ", "fixedKanji": "浜", "blankPosition": "after", "choices": ["辺", "岸", "浦", "里"], "answer": "辺" },
+      { "reading": "とんや", "fixedKanji": "問", "blankPosition": "after", "choices": ["屋", "店", "家", "商"], "answer": "屋" },
+      { "reading": "こづつみ", "fixedKanji": "小", "blankPosition": "after", "choices": ["包", "箱", "袋", "荷"], "answer": "包" },
+      { "reading": "とりい", "fixedKanji": "鳥", "blankPosition": "after", "choices": ["居", "巣", "類", "獣"], "answer": "居" },
+      { "reading": "しょうご", "fixedKanji": "正", "blankPosition": "after", "choices": ["午", "昼", "刻", "時"], "answer": "午" }
+    ]
+  }
+}

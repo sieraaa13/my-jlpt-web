@@ -1,0 +1,57 @@
+{
+  "week": 4,
+  "day": 4,
+  "title": "田舎・景色・迷子",
+  "subtitle": "Cara baca khusus",
+  "entries": [
+    { "word": "行方", "reading": "ゆくえ", "example": "事件の後、犯人の行方はわかっていない。", "meaning": "keberadaan, arah tujuan", "relatedForms": [] },
+    { "word": "田舎", "reading": "いなか", "example": "夏休みは田舎の祖父母の家で過ごした。", "meaning": "kampung, pedesaan", "relatedForms": [] },
+    { "word": "景色", "reading": "けしき", "example": "山頂から見える景色は息をのむほど美しかった。", "meaning": "pemandangan", "relatedForms": [] },
+    { "word": "差し支える", "reading": "さしつかえる", "example": "睡眠不足は翌日の仕事に差し支える。", "meaning": "mengganggu, menghalangi", "relatedForms": [] },
+    { "word": "微笑む", "reading": "ほほえむ", "example": "彼女は写真を見て静かに微笑んだ。", "meaning": "tersenyum", "relatedForms": ["笑顔"] },
+    { "word": "笑顔", "reading": "えがお", "example": "彼はいつも笑顔で人を迎える。", "meaning": "wajah tersenyum", "relatedForms": ["微笑む"] },
+    { "word": "白髪", "reading": "しらが", "example": "父の髪にも白髪が目立つようになった。", "meaning": "uban", "relatedForms": [] },
+    { "word": "風邪", "reading": "かぜ", "example": "風邪をひいて学校を休んだ。", "meaning": "masuk angin, flu", "relatedForms": [] },
+    { "word": "博士", "reading": "はかせ", "example": "彼は昆虫博士と呼ばれるほど詳しい。", "meaning": "doktor, ahli", "relatedForms": [] },
+    { "word": "迷子", "reading": "まいご", "example": "デパートで迷子になった子どもを保護した。", "meaning": "anak hilang", "relatedForms": [] },
+    { "word": "お巡りさん", "reading": "おまわりさん", "example": "道に迷ったのでお巡りさんに尋ねた。", "meaning": "polisi (sapaan)", "relatedForms": [] },
+    { "word": "玄人", "reading": "くろうと", "example": "彼の腕前は玄人はだしだ。", "meaning": "ahli, profesional", "relatedForms": ["素人"] },
+    { "word": "素人", "reading": "しろうと", "example": "素人でも扱いやすい機材が増えている。", "meaning": "amatir", "relatedForms": ["玄人"] },
+    { "word": "仲人", "reading": "なこうど", "example": "二人の結婚式では恩師が仲人を務めた。", "meaning": "mak comblang", "relatedForms": [] },
+    { "word": "小豆", "reading": "あずき", "example": "祖母は小豆を煮て餡を作った。", "meaning": "kacang merah", "relatedForms": [] },
+    { "word": "相撲", "reading": "すもう", "example": "祖父は毎年、大相撲をテレビで観戦している。", "meaning": "sumo", "relatedForms": [] },
+    { "word": "裸足", "reading": "はだし", "example": "子どもたちは裸足で砂浜を走り回った。", "meaning": "kaki telanjang", "relatedForms": [] },
+    { "word": "下駄", "reading": "げた", "example": "祭りには浴衣に下駄を合わせて出かけた。", "meaning": "sandal kayu", "relatedForms": ["浴衣"] },
+    { "word": "草履", "reading": "ぞうり", "example": "着物には草履がよく合う。", "meaning": "sandal jerami", "relatedForms": [] },
+    { "word": "足袋", "reading": "たび", "example": "着付けの前に足袋を履いておいた。", "meaning": "kaus kaki tradisional Jepang", "relatedForms": [] },
+    { "word": "浴衣", "reading": "ゆかた", "example": "夏祭りには浴衣を着ていく人が多い。", "meaning": "yukata", "relatedForms": ["下駄"] },
+    { "word": "木綿", "reading": "もめん", "example": "このシャツは肌触りのいい木綿でできている。", "meaning": "katun", "relatedForms": [] },
+    { "word": "硫黄", "reading": "いおう", "example": "この温泉は硫黄のにおいが強い。", "meaning": "belerang", "relatedForms": [] },
+    { "word": "梅雨", "reading": "つゆ", "example": "梅雨の時期は洗濯物が乾きにくい。", "meaning": "musim hujan", "relatedForms": [] },
+    { "word": "雪崩", "reading": "なだれ", "example": "大雪の後、山で雪崩が発生した。", "meaning": "longsor salju", "relatedForms": [] },
+    { "word": "吹雪", "reading": "ふぶき", "example": "吹雪のため電車が大幅に遅れた。", "meaning": "badai salju", "relatedForms": [] },
+    { "word": "日和", "reading": "ひより", "example": "今日は絶好の花見日和だ。", "meaning": "cuaca (baik untuk sesuatu)", "relatedForms": [] },
+    { "word": "名残", "reading": "なごり", "example": "別れを惜しむように、二人はしばらく名残を惜しんでいた。", "meaning": "jejak, kenangan perpisahan", "relatedForms": [] },
+    { "word": "最寄り", "reading": "もより", "example": "最寄りの駅から歩いて十分ほどかかる。", "meaning": "terdekat", "relatedForms": [] },
+    { "word": "為替", "reading": "かわせ", "example": "円安の影響で為替レートが大きく変動した。", "meaning": "transfer, kurs valuta asing", "relatedForms": [] },
+    { "word": "数珠", "reading": "じゅず", "example": "祖母は数珠を手に持って手を合わせた。", "meaning": "tasbih doa", "relatedForms": [] },
+    { "word": "砂利", "reading": "じゃり", "example": "駐車場には砂利が敷き詰められている。", "meaning": "kerikil", "relatedForms": [] },
+    { "word": "凸凹", "reading": "でこぼこ", "example": "山道は凸凹していて歩きにくかった。", "meaning": "tidak rata, bergelombang", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼はいつも＿＿で人を迎える。", "optionA": "笑顔", "optionAReading": "えがお", "optionB": "微笑み", "optionBReading": "ほほえみ", "answer": "A" },
+      { "question": "彼女は写真を見て静かに＿＿んだ。", "optionA": "笑顔になった", "optionAReading": "えがおになった", "optionB": "微笑", "optionBReading": "ほほえ", "answer": "B" },
+      { "question": "彼の腕前は＿＿はだしだ。", "optionA": "玄人", "optionAReading": "くろうと", "optionB": "素人", "optionBReading": "しろうと", "answer": "A" },
+      { "question": "＿＿でも扱いやすい機材が増えている。", "optionA": "玄人", "optionAReading": "くろうと", "optionB": "素人", "optionBReading": "しろうと", "answer": "B" },
+      { "question": "祭りには浴衣に＿＿を合わせて出かけた。", "optionA": "下駄", "optionAReading": "げた", "optionB": "草履", "optionBReading": "ぞうり", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "いなか", "fixedKanji": "田", "blankPosition": "after", "choices": ["舎", "園", "畑", "村"], "answer": "舎" },
+      { "reading": "けしき", "fixedKanji": "景", "blankPosition": "after", "choices": ["色", "観", "気", "勝"], "answer": "色" },
+      { "reading": "まいご", "fixedKanji": "迷", "blankPosition": "after", "choices": ["子", "路", "信", "惑"], "answer": "子" },
+      { "reading": "ゆかた", "fixedKanji": "浴", "blankPosition": "after", "choices": ["衣", "室", "場", "槽"], "answer": "衣" },
+      { "reading": "もより", "fixedKanji": "最", "blankPosition": "after", "choices": ["寄り", "近く", "先", "前"], "answer": "寄り" }
+    ]
+  }
+}
