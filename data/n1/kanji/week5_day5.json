@@ -1,0 +1,56 @@
+{
+  "week": 5,
+  "day": 5,
+  "title": "普通・不通",
+  "subtitle": "On'yomi ② (kata berbeda, cara baca sama)",
+  "entries": [
+    { "word": "非難", "reading": "ひなん", "example": "彼の発言は世間から強く非難された。", "meaning": "kecaman", "relatedForms": ["避難"] },
+    { "word": "避難", "reading": "ひなん", "example": "住民は指示に従って避難した。", "meaning": "evakuasi", "relatedForms": ["非難"] },
+    { "word": "普通", "reading": "ふつう", "example": "彼は普通の会社員として働いている。", "meaning": "biasa", "relatedForms": ["不通"] },
+    { "word": "不通", "reading": "ふつう", "example": "大雨のため一部の路線が不通になった。", "meaning": "terputus (jalur/komunikasi)", "relatedForms": ["普通"] },
+    { "word": "保険", "reading": "ほけん", "example": "万が一に備えて保険に加入した。", "meaning": "asuransi", "relatedForms": ["保健"] },
+    { "word": "保健", "reading": "ほけん", "example": "学校には保健室が設置されている。", "meaning": "kesehatan (fasilitas)", "relatedForms": ["保険"] },
+    { "word": "形成", "reading": "けいせい", "example": "幼少期の経験は人格形成に影響する。", "meaning": "pembentukan", "relatedForms": ["形勢"] },
+    { "word": "形勢", "reading": "けいせい", "example": "後半になって試合の形勢が逆転した。", "meaning": "situasi, keadaan (pertandingan)", "relatedForms": ["形成"] },
+    { "word": "衛生", "reading": "えいせい", "example": "食品を扱う店は衛生管理が欠かせない。", "meaning": "kebersihan, higienis", "relatedForms": ["衛星"] },
+    { "word": "衛星", "reading": "えいせい", "example": "気象衛星が台風の動きを観測している。", "meaning": "satelit", "relatedForms": ["衛生"] },
+    { "word": "支給", "reading": "しきゅう", "example": "会社から交通費が支給された。", "meaning": "pemberian (tunjangan)", "relatedForms": ["至急"] },
+    { "word": "至急", "reading": "しきゅう", "example": "この件については至急ご連絡ください。", "meaning": "segera, mendesak", "relatedForms": ["支給"] },
+    { "word": "企画", "reading": "きかく", "example": "新商品の企画を任された。", "meaning": "perencanaan (proyek)", "relatedForms": ["規格"] },
+    { "word": "規格", "reading": "きかく", "example": "この部品は国際規格に合わせて作られている。", "meaning": "standar", "relatedForms": ["企画"] },
+    { "word": "敬意", "reading": "けいい", "example": "彼は先生に敬意を払っている。", "meaning": "rasa hormat", "relatedForms": ["経緯"] },
+    { "word": "経緯", "reading": "けいい", "example": "事件に至った経緯を説明した。", "meaning": "kronologi, latar belakang", "relatedForms": ["敬意"] },
+    { "word": "公害", "reading": "こうがい", "example": "工場排水による公害が問題視されている。", "meaning": "polusi (industri)", "relatedForms": ["郊外"] },
+    { "word": "郊外", "reading": "こうがい", "example": "彼は郊外の静かな町に引っ越した。", "meaning": "pinggiran kota", "relatedForms": ["公害"] },
+    { "word": "指示", "reading": "しじ", "example": "上司の指示に従って作業を進めた。", "meaning": "instruksi", "relatedForms": ["支持"] },
+    { "word": "支持", "reading": "しじ", "example": "この政策は若者から高い支持を得ている。", "meaning": "dukungan", "relatedForms": ["指示"] },
+    { "word": "以前", "reading": "いぜん", "example": "以前住んでいた街を懐かしく思い出す。", "meaning": "dahulu, sebelumnya", "relatedForms": ["依然"] },
+    { "word": "依然", "reading": "いぜん", "example": "交通渋滞は依然として解消されていない。", "meaning": "tetap, masih (sama)", "relatedForms": ["以前"] },
+    { "word": "意義", "reading": "いぎ", "example": "この活動には社会的な意義がある。", "meaning": "makna, signifikansi", "relatedForms": ["異議", "異義"] },
+    { "word": "異議", "reading": "いぎ", "example": "判決に対して異議を申し立てた。", "meaning": "keberatan (hukum)", "relatedForms": ["意義", "異義"] },
+    { "word": "異義", "reading": "いぎ", "example": "この単語には同音異義語がいくつもある。", "meaning": "arti berbeda (homofon)", "relatedForms": ["意義", "異議"] },
+    { "word": "感覚", "reading": "かんかく", "example": "彼は色彩感覚に優れたデザイナーだ。", "meaning": "indra, perasaan (estetika)", "relatedForms": ["間隔"] },
+    { "word": "間隔", "reading": "かんかく", "example": "バスは10分間隔で運行している。", "meaning": "interval, jarak (waktu)", "relatedForms": ["感覚"] },
+    { "word": "操作", "reading": "そうさ", "example": "このアプリは操作が簡単だ。", "meaning": "pengoperasian", "relatedForms": ["捜査"] },
+    { "word": "捜査", "reading": "そうさ", "example": "警察は事件の捜査を進めている。", "meaning": "penyelidikan", "relatedForms": ["操作"] },
+    { "word": "公演", "reading": "こうえん", "example": "劇団は来月、東京で公演を行う。", "meaning": "pertunjukan", "relatedForms": ["講演", "後援"] },
+    { "word": "講演", "reading": "こうえん", "example": "教授に環境問題についての講演を依頼した。", "meaning": "ceramah", "relatedForms": ["公演", "後援"] },
+    { "word": "後援", "reading": "こうえん", "example": "このイベントは市の後援を受けている。", "meaning": "dukungan, sponsor", "relatedForms": ["公演", "講演"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "住民は指示に従って＿＿した。", "optionA": "避難", "optionAReading": "ひなん", "optionB": "非難", "optionBReading": "ひなん", "answer": "A" },
+      { "question": "彼の発言は世間から強く＿＿された。", "optionA": "避難", "optionAReading": "ひなん", "optionB": "非難", "optionBReading": "ひなん", "answer": "B" },
+      { "question": "大雨のため一部の路線が＿＿になった。", "optionA": "不通", "optionAReading": "ふつう", "optionB": "普通", "optionBReading": "ふつう", "answer": "A" },
+      { "question": "彼は＿＿の会社員として働いている。", "optionA": "不通", "optionAReading": "ふつう", "optionB": "普通", "optionBReading": "ふつう", "answer": "B" },
+      { "question": "判決に対して＿＿を申し立てた。", "optionA": "異議", "optionAReading": "いぎ", "optionB": "意義", "optionBReading": "いぎ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ひなんくんれん", "fixedKanji": "避難", "blankPosition": "after", "choices": ["訓練", "教育", "演習", "講習"], "answer": "訓練" },
+      { "reading": "けんこうほけん", "fixedKanji": "健康保", "blankPosition": "after", "choices": ["険", "健", "証", "障"], "answer": "険" },
+      { "reading": "じんこうえいせい", "fixedKanji": "人工衛", "blankPosition": "after", "choices": ["星", "生", "兵", "産"], "answer": "星" },
+      { "reading": "きんせんかんかく", "fixedKanji": "金銭感", "blankPosition": "after", "choices": ["覚", "格", "情", "性"], "answer": "覚" },
+      { "reading": "じけんのそうさ", "fixedKanji": "事件の捜", "blankPosition": "after", "choices": ["査", "索", "操", "探"], "answer": "査" }
+    ]
+  }
+}

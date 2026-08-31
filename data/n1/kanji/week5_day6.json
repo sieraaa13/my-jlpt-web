@@ -1,0 +1,55 @@
+{
+  "week": 5,
+  "day": 6,
+  "title": "注射・駐車",
+  "subtitle": "On'yomi ③ (kata berbeda, cara baca sama)",
+  "entries": [
+    { "word": "夫妻", "reading": "ふさい", "example": "田中夫妻はいつも仲がいい。", "meaning": "pasangan suami istri", "relatedForms": ["負債"] },
+    { "word": "負債", "reading": "ふさい", "example": "会社は多額の負債を抱えている。", "meaning": "utang, kewajiban", "relatedForms": ["夫妻"] },
+    { "word": "注射", "reading": "ちゅうしゃ", "example": "医師は患者の腕に注射をした。", "meaning": "suntikan", "relatedForms": ["駐車"] },
+    { "word": "駐車", "reading": "ちゅうしゃ", "example": "この道路は駐車禁止だ。", "meaning": "parkir", "relatedForms": ["注射"] },
+    { "word": "平行", "reading": "へいこう", "example": "二本の線路は平行に伸びている。", "meaning": "sejajar", "relatedForms": ["並行", "平衡", "閉口"] },
+    { "word": "並行", "reading": "へいこう", "example": "会社は二つのプロジェクトを並行して進めている。", "meaning": "paralel, bersamaan", "relatedForms": ["平行", "平衡", "閉口"] },
+    { "word": "平衡", "reading": "へいこう", "example": "彼はめまいで平衡感覚を失った。", "meaning": "keseimbangan", "relatedForms": ["平行", "並行", "閉口"] },
+    { "word": "閉口", "reading": "へいこう", "example": "彼のしつこい自慢話には閉口した。", "meaning": "kewalahan, tak berkutik", "relatedForms": ["平行", "並行", "平衡"] },
+    { "word": "街頭", "reading": "がいとう", "example": "候補者は街頭で演説を行った。", "meaning": "jalanan, di pinggir jalan", "relatedForms": ["該当"] },
+    { "word": "該当", "reading": "がいとう", "example": "今回の割引条件に該当する人はいなかった。", "meaning": "sesuai kriteria", "relatedForms": ["街頭"] },
+    { "word": "血管", "reading": "けっかん", "example": "激しい運動は血管に負担をかけることがある。", "meaning": "pembuluh darah", "relatedForms": ["欠陥"] },
+    { "word": "欠陥", "reading": "けっかん", "example": "この製品には欠陥が見つかり回収された。", "meaning": "cacat (produk)", "relatedForms": ["血管"] },
+    { "word": "汽車", "reading": "きしゃ", "example": "昔は汽車に乗って旅行するのが一般的だった。", "meaning": "kereta uap", "relatedForms": ["貴社", "記者"] },
+    { "word": "貴社", "reading": "きしゃ", "example": "貴社のますますのご発展をお祈り申し上げます。", "meaning": "perusahaan Anda (formal)", "relatedForms": ["汽車", "記者"] },
+    { "word": "記者", "reading": "きしゃ", "example": "記者は事件現場に急いで向かった。", "meaning": "wartawan", "relatedForms": ["汽車", "貴社"] },
+    { "word": "危険", "reading": "きけん", "example": "この作業は危険を伴う。", "meaning": "berbahaya", "relatedForms": ["棄権"] },
+    { "word": "棄権", "reading": "きけん", "example": "彼はけがのため試合を棄権した。", "meaning": "mengundurkan diri (dari kompetisi/voting)", "relatedForms": ["危険"] },
+    { "word": "化繊", "reading": "かせん", "example": "このシャツは化繊素材でできている。", "meaning": "serat sintetis", "relatedForms": ["河川", "下線"] },
+    { "word": "河川", "reading": "かせん", "example": "台風の影響で河川が増水した。", "meaning": "sungai", "relatedForms": ["化繊", "下線"] },
+    { "word": "下線", "reading": "かせん", "example": "重要な部分に下線を引いた。", "meaning": "garis bawah", "relatedForms": ["化繊", "河川"] },
+    { "word": "契機", "reading": "けいき", "example": "この事故を契機に安全対策が見直された。", "meaning": "pemicu, momentum", "relatedForms": ["景気", "計器", "刑期"] },
+    { "word": "景気", "reading": "けいき", "example": "景気がようやく回復し始めた。", "meaning": "kondisi ekonomi", "relatedForms": ["契機", "計器", "刑期"] },
+    { "word": "計器", "reading": "けいき", "example": "工場に新しい計器を導入した。", "meaning": "alat pengukur", "relatedForms": ["契機", "景気", "刑期"] },
+    { "word": "刑期", "reading": "けいき", "example": "彼は模範囚として刑期を終えた。", "meaning": "masa hukuman", "relatedForms": ["契機", "景気", "計器"] },
+    { "word": "抱負", "reading": "ほうふ", "example": "新入社員たちは今年の抱負を語った。", "meaning": "resolusi, harapan", "relatedForms": ["豊富"] },
+    { "word": "豊富", "reading": "ほうふ", "example": "この地域は自然資源が豊富だ。", "meaning": "berlimpah", "relatedForms": ["抱負"] },
+    { "word": "凶作", "reading": "きょうさく", "example": "冷夏の影響で今年は凶作となった。", "meaning": "gagal panen", "relatedForms": ["共作"] },
+    { "word": "共作", "reading": "きょうさく", "example": "この曲は二人の作曲家による共作だ。", "meaning": "karya bersama", "relatedForms": ["凶作"] },
+    { "word": "核心", "reading": "かくしん", "example": "議論はようやく核心に迫ってきた。", "meaning": "inti masalah", "relatedForms": ["確信", "革新"] },
+    { "word": "確信", "reading": "かくしん", "example": "彼は自分の判断が正しいと確信している。", "meaning": "keyakinan", "relatedForms": ["核心", "革新"] },
+    { "word": "革新", "reading": "かくしん", "example": "この会社は技術革新によって成長してきた。", "meaning": "inovasi", "relatedForms": ["核心", "確信"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "この道路は＿＿禁止だ。", "optionA": "駐車", "optionAReading": "ちゅうしゃ", "optionB": "注射", "optionBReading": "ちゅうしゃ", "answer": "A" },
+      { "question": "医師は患者の腕に＿＿をした。", "optionA": "駐車", "optionAReading": "ちゅうしゃ", "optionB": "注射", "optionBReading": "ちゅうしゃ", "answer": "B" },
+      { "question": "この製品には＿＿が見つかり回収された。", "optionA": "欠陥", "optionAReading": "けっかん", "optionB": "血管", "optionBReading": "けっかん", "answer": "A" },
+      { "question": "激しい運動は＿＿に負担をかけることがある。", "optionA": "欠陥", "optionAReading": "けっかん", "optionB": "血管", "optionBReading": "けっかん", "answer": "B" },
+      { "question": "彼はけがのため試合を＿＿した。", "optionA": "棄権", "optionAReading": "きけん", "optionB": "危険", "optionBReading": "きけん", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "へいこうかんかく", "fixedKanji": "平衡感", "blankPosition": "after", "choices": ["覚", "情", "性", "識"], "answer": "覚" },
+      { "reading": "がいとうえんぜつ", "fixedKanji": "街頭演", "blankPosition": "after", "choices": ["説", "劇", "技", "芸"], "answer": "説" },
+      { "reading": "けっかんちゅうしゃ", "fixedKanji": "血管注", "blankPosition": "after", "choices": ["射", "入", "目", "意"], "answer": "射" },
+      { "reading": "ぎじゅつかくしん", "fixedKanji": "技術革", "blankPosition": "after", "choices": ["新", "命", "変", "改"], "answer": "新" },
+      { "reading": "ほしゅせいとう", "fixedKanji": "保守政", "blankPosition": "after", "choices": ["党", "府", "策", "治"], "answer": "党" }
+    ]
+  }
+}

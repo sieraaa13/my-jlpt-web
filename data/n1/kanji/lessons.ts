@@ -30,6 +30,9 @@ import w5d1 from "./week5_day1.json";
 import w5d2 from "./week5_day2.json";
 import w5d3 from "./week5_day3.json";
 import w5d4 from "./week5_day4.json";
+import w5d5 from "./week5_day5.json";
+import w5d6 from "./week5_day6.json";
+import w5d7 from "./week5_day7.json";
 
 export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
@@ -138,6 +141,9 @@ export const kanjiTests: Record<string, Record<string, KanjiTestDay>> = {
   "4": {
     "7": w4d7 as KanjiTestDay,
   },
+  "5": {
+    "7": w5d7 as KanjiTestDay,
+  },
 };
 
 export const kunyomiLessons: Record<string, Record<string, KunyomiLessonDay>> = {
@@ -162,6 +168,8 @@ export const kunyomiLessons: Record<string, Record<string, KunyomiLessonDay>> = 
     "2": w5d2 as KunyomiLessonDay,
     "3": w5d3 as KunyomiLessonDay,
     "4": w5d4 as KunyomiLessonDay,
+    "5": w5d5 as KunyomiLessonDay,
+    "6": w5d6 as KunyomiLessonDay,
   },
 };
 
