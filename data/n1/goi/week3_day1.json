@@ -1,0 +1,45 @@
+{
+  "week": 3,
+  "day": 1,
+  "title": "こつこつ努力しよう",
+  "subtitle": "Kata tiruan bunyi/keadaan (giongo/gitaigo) dan derajat",
+  "entries": [
+    { "word": "こうこうと", "reading": "こうこうと", "example": "街灯が夜道をこうこうと照らしていた。", "meaning": "bersinar terang benderang", "relatedForms": [] },
+    { "word": "ごしごし", "reading": "ごしごし", "example": "母は鍋をごしごしとこすって洗った。", "meaning": "menggosok kuat-kuat", "relatedForms": [] },
+    { "word": "すらすら", "reading": "すらすら", "example": "彼は難問をすらすら解いた。", "meaning": "lancar, tanpa hambatan", "relatedForms": [] },
+    { "word": "ずるずる", "reading": "ずるずる", "example": "彼は重い荷物をずるずると引きずった。", "meaning": "menyeret dengan berat; berlarut-larut", "relatedForms": [] },
+    { "word": "ばらばら", "reading": "ばらばら", "example": "古い機械をばらばらに分解した。", "meaning": "berantakan, terpisah-pisah", "relatedForms": [] },
+    { "word": "じめじめ", "reading": "じめじめ", "example": "梅雨で部屋がじめじめしている。", "meaning": "lembap dan pengap", "relatedForms": [] },
+    { "word": "ざあざあ", "reading": "ざあざあ", "example": "朝から雨がざあざあ降っている。", "meaning": "hujan deras (bunyi)", "relatedForms": [] },
+    { "word": "がんがん", "reading": "がんがん", "example": "二日酔いで頭ががんがんする。", "meaning": "berdenyut keras (sakit kepala)", "relatedForms": [] },
+    { "word": "かんかん", "reading": "かんかん", "example": "父は嘘がばれてかんかんに怒っている。", "meaning": "sangat marah; terik menyengat", "relatedForms": [] },
+    { "word": "だらだら", "reading": "だらだら", "example": "彼はだらだらと仕事をしている。", "meaning": "lamban, malas-malasan; menetes terus", "relatedForms": [] },
+    { "word": "だぶだぶ", "reading": "だぶだぶ", "example": "彼はだぶだぶのズボンをはいている。", "meaning": "kedodoran (baju)", "relatedForms": [] },
+    { "word": "つやつや", "reading": "つやつや", "example": "彼女の髪はつやつやしている。", "meaning": "mengilap, berkilau", "relatedForms": [] },
+    { "word": "まちまち", "reading": "まちまち", "example": "人によって意見はまちまちだ。", "meaning": "beragam, bervariasi", "relatedForms": [] },
+    { "word": "丸々", "reading": "まるまる", "example": "その赤ちゃんは丸々と太っている。", "meaning": "gemuk bulat; sepenuhnya (waktu)", "relatedForms": [] },
+    { "word": "ひらひら", "reading": "ひらひら", "example": "蝶が花の周りをひらひら飛んでいる。", "meaning": "melayang-layang (kupu-kupu/kain tipis)", "relatedForms": [] },
+    { "word": "ぐちゃぐちゃ", "reading": "ぐちゃぐちゃ", "example": "かばんの中がぐちゃぐちゃになっている。", "meaning": "berantakan, kacau", "relatedForms": [] },
+    { "word": "むちゃくちゃ", "reading": "むちゃくちゃ", "example": "電車がむちゃくちゃ混んでいる。", "meaning": "luar biasa, sangat (informal); tidak masuk akal", "relatedForms": [] },
+    { "word": "さんざん", "reading": "さんざん", "example": "彼は約束を破ってさんざん注意された。", "meaning": "habis-habisan, parah", "relatedForms": [] },
+    { "word": "ほどほど", "reading": "ほどほど", "example": "お酒はほどほどに飲んでください。", "meaning": "secukupnya", "relatedForms": [] },
+    { "word": "そこそこ", "reading": "そこそこ", "example": "彼は試験でそこそこいい点を取った。", "meaning": "lumayan, cukup baik", "relatedForms": [] },
+    { "word": "甚だ", "reading": "はなはだ", "example": "彼の態度は甚だ迷惑である。", "meaning": "sangat (formal, biasanya konteks negatif)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "雨の日が続いて部屋が＿＿している。", "optionA": "ざあざあ", "optionAReading": "ざあざあ", "optionB": "じめじめ", "optionBReading": "じめじめ", "answer": "B" },
+      { "question": "犬がえさを前にして、＿＿よだれをたらしている。", "optionA": "ずるずる", "optionAReading": "ずるずる", "optionB": "だらだら", "optionBReading": "だらだら", "answer": "B" },
+      { "question": "運送料は業者によって＿＿です。", "optionA": "まちまち", "optionAReading": "まちまち", "optionB": "丸々", "optionBReading": "まるまる", "answer": "A" },
+      { "question": "野原をちょうちょが＿＿飛んでいる。", "optionA": "ぶかぶか", "optionAReading": "ぶかぶか", "optionB": "ひらひら", "optionBReading": "ひらひら", "answer": "B" },
+      { "question": "＿＿のジグソーパズルを組み合わせて完成させた。", "optionA": "ばらばら", "optionAReading": "ばらばら", "optionB": "だらだら", "optionBReading": "だらだら", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "がんがん", "fixedKanji": "頭が", "blankPosition": "after", "choices": ["がんがん", "かんかん", "ずるずる", "だらだら"], "answer": "がんがん" },
+      { "reading": "まるまる", "fixedKanji": "丸", "blankPosition": "after", "choices": ["々", "い", "める", "まる"], "answer": "々" },
+      { "reading": "さんざん", "fixedKanji": "散", "blankPosition": "after", "choices": ["々", "漫", "発", "在"], "answer": "々" },
+      { "reading": "むちゃくちゃ", "fixedKanji": "無", "blankPosition": "after", "choices": ["茶苦茶", "理難題", "茶", "秩序"], "answer": "茶苦茶" },
+      { "reading": "はなはだ", "fixedKanji": "甚", "blankPosition": "after", "choices": ["だ", "だしい", "大な", "重な"], "answer": "だ" }
+    ]
+  }
+}

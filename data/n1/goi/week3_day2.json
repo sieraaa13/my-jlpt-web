@@ -1,0 +1,49 @@
+{
+  "week": 3,
+  "day": 2,
+  "title": "着々と進めよう",
+  "subtitle": "Kata tiruan bunyi/keadaan dan kata keterangan waktu",
+  "entries": [
+    { "word": "ふらふら", "reading": "ふらふら", "example": "熱でふらふらする。", "meaning": "pusing, limbung", "relatedForms": [] },
+    { "word": "おどおど", "reading": "おどおど", "example": "彼は面接でおどおどしていた。", "meaning": "gugup, gemetar", "relatedForms": [] },
+    { "word": "くよくよ", "reading": "くよくよ", "example": "そんなにくよくよしないで。", "meaning": "murung, terus memikirkan", "relatedForms": [] },
+    { "word": "びんびん", "reading": "びんびん", "example": "祖父は年をとってもびんびんしている。", "meaning": "masih segar/kuat (usia lanjut)", "relatedForms": [] },
+    { "word": "ぺこぺこ", "reading": "ぺこぺこ", "example": "おなかがぺこぺこだ。", "meaning": "sangat lapar; membungkuk berulang kali", "relatedForms": [] },
+    { "word": "こつこつ", "reading": "こつこつ", "example": "彼はこつこつ貯金している。", "meaning": "sedikit demi sedikit, tekun", "relatedForms": [] },
+    { "word": "ゆうゆう", "reading": "ゆうゆう", "example": "待ち合わせにゆうゆう間に合った。", "meaning": "dengan santai, leluasa", "relatedForms": [] },
+    { "word": "はらはら", "reading": "はらはら", "example": "花びらがはらはらと散っている。", "meaning": "berguguran perlahan; was-was/deg-degan", "relatedForms": [] },
+    { "word": "むかむか", "reading": "むかむか", "example": "彼の態度にむかむかする。", "meaning": "mual; kesal, jengkel", "relatedForms": [] },
+    { "word": "いやいや", "reading": "いやいや", "example": "彼はいやいや仕事をしている。", "meaning": "dengan enggan/terpaksa", "relatedForms": [] },
+    { "word": "しぶしぶ", "reading": "しぶしぶ", "example": "彼はしぶしぶ承知した。", "meaning": "dengan enggan", "relatedForms": [] },
+    { "word": "つくづく", "reading": "つくづく", "example": "自分がつくづくいやになる。", "meaning": "benar-benar, sungguh-sungguh (merenung)", "relatedForms": [] },
+    { "word": "ぼつぼつ", "reading": "ぼつぼつ", "example": "さあ、ぼつぼつ出かけよう。", "meaning": "segera, mulai (perlahan)", "relatedForms": [] },
+    { "word": "ちょくちょく", "reading": "ちょくちょく", "example": "彼はちょくちょく遊びに来る。", "meaning": "sering (informal)", "relatedForms": [] },
+    { "word": "しばしば", "reading": "しばしば", "example": "地震がしばしば起こる。", "meaning": "sering kali", "relatedForms": [] },
+    { "word": "代わる代わる", "reading": "かわるがわる", "example": "代わる代わる意見を述べた。", "meaning": "bergiliran", "relatedForms": [] },
+    { "word": "ところどころ", "reading": "ところどころ", "example": "壁がところどころ汚れている。", "meaning": "di sana-sini", "relatedForms": [] },
+    { "word": "わざわざ", "reading": "わざわざ", "example": "わざわざお越しいただいて。", "meaning": "repot-repot (melakukan sesuatu)", "relatedForms": [] },
+    { "word": "くれぐれも", "reading": "くれぐれも", "example": "くれぐれもよろしくお伝えください。", "meaning": "dengan sangat (memohon)", "relatedForms": [] },
+    { "word": "方々", "reading": "ほうぼう", "example": "方々歩き回る。", "meaning": "ke berbagai tempat", "relatedForms": [] },
+    { "word": "種々", "reading": "しゅじゅ", "example": "サイズが種々ある。", "meaning": "bermacam-macam", "relatedForms": [] },
+    { "word": "着々", "reading": "ちゃくちゃく", "example": "着々と進んでいる。", "meaning": "berjalan lancar bertahap", "relatedForms": [] },
+    { "word": "長々", "reading": "ながなが", "example": "長々とおじゃましました。", "meaning": "lama sekali (bertamu)", "relatedForms": [] },
+    { "word": "転々", "reading": "てんてん", "example": "職場を転々とする。", "meaning": "berpindah-pindah", "relatedForms": [] },
+    { "word": "点々", "reading": "てんてん", "example": "床に血が点々とついている。", "meaning": "bertitik-titik, berserakan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は住居を＿＿とした。", "optionA": "種々", "optionAReading": "しゅじゅ", "optionB": "転々", "optionBReading": "てんてん", "answer": "B" },
+      { "question": "このラーメン屋には＿＿きます。", "optionA": "ぼつぼつ", "optionAReading": "ぼつぼつ", "optionB": "ちょくちょく", "optionBReading": "ちょくちょく", "answer": "B" },
+      { "question": "済んだことをいつまでも＿＿しても仕方がない。", "optionA": "くよくよ", "optionAReading": "くよくよ", "optionB": "ふらふら", "optionBReading": "ふらふら", "answer": "A" },
+      { "question": "話題のゲームソフトを買おうと思って＿＿探したが、どこも売り切れだった。", "optionA": "方々", "optionAReading": "ほうぼう", "optionB": "代わる代わる", "optionBReading": "かわるがわる", "answer": "A" },
+      { "question": "このレポートは＿＿字の間違いはあるが、いい内容だ。", "optionA": "ところどころ", "optionAReading": "ところどころ", "optionB": "点々", "optionBReading": "てんてん", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ちゃくちゃく", "fixedKanji": "着", "blankPosition": "after", "choices": ["々", "実", "手", "目"], "answer": "々" },
+      { "reading": "ながなが", "fixedKanji": "長", "blankPosition": "after", "choices": ["々", "居", "話", "期"], "answer": "々" },
+      { "reading": "てんてん", "fixedKanji": "点", "blankPosition": "after", "choices": ["々", "在", "検", "呼"], "answer": "々" },
+      { "reading": "しゅじゅ", "fixedKanji": "種", "blankPosition": "after", "choices": ["々", "類", "別", "目"], "answer": "々" },
+      { "reading": "ほうぼう", "fixedKanji": "方", "blankPosition": "after", "choices": ["々", "面", "角", "向"], "answer": "々" }
+    ]
+  }
+}
