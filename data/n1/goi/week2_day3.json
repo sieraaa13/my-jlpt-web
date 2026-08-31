@@ -1,0 +1,47 @@
+{
+  "week": 2,
+  "day": 3,
+  "title": "どんな様子？③",
+  "subtitle": "Kata kerja untuk keadaan dan perilaku (lanjutan)",
+  "entries": [
+    { "word": "こめる", "reading": "こめる", "example": "彼女は心をこめて手紙を書いた。", "meaning": "mencurahkan (perasaan)", "relatedForms": [] },
+    { "word": "染める", "reading": "そめる", "example": "彼女は髪を茶色に染めた。", "meaning": "mewarnai", "relatedForms": ["染まる"] },
+    { "word": "尽きる", "reading": "つきる", "example": "このままでは資源が尽きてしまう。", "meaning": "habis", "relatedForms": [] },
+    { "word": "偏る", "reading": "かたよる", "example": "彼の考えは偏っている。", "meaning": "bias, tidak seimbang", "relatedForms": [] },
+    { "word": "はまる", "reading": "はまる", "example": "彼は最近スマホゲームにはまっている。", "meaning": "kecanduan; juga pas masuk (lubang)", "relatedForms": [] },
+    { "word": "とどまる", "reading": "とどまる", "example": "彼は反対を押し切ってこの町にとどまることにした。", "meaning": "tetap tinggal", "relatedForms": [] },
+    { "word": "とどめる", "reading": "とどめる", "example": "会社は経費を最小限にとどめる方針だ。", "meaning": "membatasi, menahan (pada tingkat tertentu)", "relatedForms": [] },
+    { "word": "途切れる", "reading": "とぎれる", "example": "電波が悪くて会話が途切れてしまった。", "meaning": "terputus (sesaat)", "relatedForms": [] },
+    { "word": "途絶える", "reading": "とだえる", "example": "彼からの便りが途絶えて久しい。", "meaning": "terputus total (kontak)", "relatedForms": [] },
+    { "word": "よみがえる", "reading": "よみがえる", "example": "あの曲を聞くと学生時代の記憶がよみがえる。", "meaning": "teringat kembali; bangkit hidup kembali", "relatedForms": [] },
+    { "word": "ありふれる", "reading": "ありふれる", "example": "それはどこにでもあるありふれた話だ。", "meaning": "biasa, umum", "relatedForms": [] },
+    { "word": "廃れる", "reading": "すたれる", "example": "このデザインの流行はすっかり廃れてしまった。", "meaning": "ketinggalan zaman, memudar", "relatedForms": [] },
+    { "word": "かぶれる", "reading": "かぶれる", "example": "新しい化粧品で肌がかぶれてしまった。", "meaning": "iritasi (kulit); terpengaruh (tren)", "relatedForms": [] },
+    { "word": "化ける", "reading": "ばける", "example": "彼はハロウィーンで魔女に化けた。", "meaning": "menyamar, berubah wujud", "relatedForms": [] },
+    { "word": "ばれる", "reading": "ばれる", "example": "彼のうそがついにばれてしまった。", "meaning": "ketahuan", "relatedForms": [] },
+    { "word": "釣り合う", "reading": "つりあう", "example": "この夫婦は収入と支出が釣り合っている。", "meaning": "seimbang", "relatedForms": [] },
+    { "word": "絡む", "reading": "からむ", "example": "毛糸が絡んでほどけなくなった。", "meaning": "terlilit/kusut; dicari gara-gara", "relatedForms": [] },
+    { "word": "覆す", "reading": "くつがえす", "example": "この発見は従来の常識を覆した。", "meaning": "membalikkan (pengetahuan umum)", "relatedForms": [] },
+    { "word": "見なす", "reading": "みなす", "example": "無断欠席は失格と見なされる。", "meaning": "menganggap", "relatedForms": [] },
+    { "word": "もたらす", "reading": "もたらす", "example": "台風は各地に大きな被害をもたらした。", "meaning": "membawa (dampak/hasil)", "relatedForms": [] },
+    { "word": "しのぐ", "reading": "しのぐ", "example": "彼らは山の実を食べて飢えをしのいだ。", "meaning": "bertahan menghadapi (kesulitan)", "relatedForms": [] },
+    { "word": "継ぐ", "reading": "つぐ", "example": "彼は父の仕事を継ぐことになった。", "meaning": "mewarisi (usaha)", "relatedForms": [] },
+    { "word": "つつく", "reading": "つつく", "example": "彼は隣の人をひじでつついて合図した。", "meaning": "menyodok", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼の順位は周囲の予想を＿＿3位に終わった。", "optionA": "くつがえして", "optionAReading": "くつがえして", "optionB": "とだえて", "optionBReading": "とだえて", "answer": "A" },
+      { "question": "結婚式のスピーチで、型に＿＿あいさつが続いた。", "optionA": "そまった", "optionAReading": "そまった", "optionB": "はまった", "optionBReading": "はまった", "answer": "B" },
+      { "question": "左右のバランスが＿＿いるのなら、まっすぐに進むはずだ。", "optionA": "つりあって", "optionAReading": "つりあって", "optionB": "かたよって", "optionBReading": "かたよって", "answer": "A" },
+      { "question": "彼は山の草や木の実を食べて飢えを＿＿らしい。", "optionA": "つきた", "optionAReading": "つきた", "optionB": "しのいだ", "optionBReading": "しのいだ", "answer": "B" },
+      { "question": "浮気が妻に＿＿しまった。", "optionA": "ばれて", "optionAReading": "ばれて", "optionB": "ばけて", "optionBReading": "ばけて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "そめる", "fixedKanji": "髪を", "blankPosition": "after", "choices": ["染める", "はめる", "こめる", "つめる"], "answer": "染める" },
+      { "reading": "もたらす", "fixedKanji": "被害を", "blankPosition": "after", "choices": ["もたらす", "しのぐ", "つぐ", "つつく"], "answer": "もたらす" },
+      { "reading": "みなす", "fixedKanji": "不正だと", "blankPosition": "after", "choices": ["見なす", "見せる", "見積もる", "見合う"], "answer": "見なす" },
+      { "reading": "くつがえす", "fixedKanji": "常識を", "blankPosition": "after", "choices": ["覆す", "覆う", "覆る", "覆い"], "answer": "覆す" },
+      { "reading": "とだえる", "fixedKanji": "便りが", "blankPosition": "after", "choices": ["途絶える", "途切れる", "とどまる", "とどめる"], "answer": "途絶える" }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "week": 2,
+  "day": 4,
+  "title": "どんな様子？④",
+  "subtitle": "Kata sifat untuk keadaan dan penampilan",
+  "entries": [
+    { "word": "くすぐったい", "reading": "くすぐったい", "example": "足の裏がくすぐったい。", "meaning": "geli", "relatedForms": [] },
+    { "word": "渋い", "reading": "しぶい", "example": "このお茶は渋い。", "meaning": "sepat, kelat; juga elegan/serius (wajah)", "relatedForms": ["渋い色"] },
+    { "word": "華々しい", "reading": "はなばなしい", "example": "彼は華々しい人生を送った。", "meaning": "gemilang", "relatedForms": [] },
+    { "word": "みずみずしい", "reading": "みずみずしい", "example": "朝市ではみずみずしい野菜が並んでいた。", "meaning": "segar (sayur/buah)", "relatedForms": [] },
+    { "word": "寝苦しい", "reading": "ねぐるしい", "example": "熱帯夜が続き、寝苦しい夜が続いている。", "meaning": "sulit tidur (karena panas)", "relatedForms": [] },
+    { "word": "息苦しい", "reading": "いきぐるしい", "example": "彼は息苦しそうに咳き込んでいた。", "meaning": "sesak napas; mencekam (suasana)", "relatedForms": [] },
+    { "word": "暑苦しい", "reading": "あつくるしい", "example": "エアコンが壊れて暑苦しい部屋になった。", "meaning": "panas dan pengap", "relatedForms": [] },
+    { "word": "すばしっこい", "reading": "すばしっこい", "example": "あの犬はすばしっこくてなかなか捕まえられない。", "meaning": "lincah, gesit", "relatedForms": [] },
+    { "word": "素早い", "reading": "すばやい", "example": "彼は素早く質問に答えた。", "meaning": "cepat, sigap", "relatedForms": [] },
+    { "word": "速やかな", "reading": "すみやかな", "example": "緊急時は速やかに避難してください。", "meaning": "segera, cepat", "relatedForms": [] },
+    { "word": "健全な", "reading": "けんぜんな", "example": "健全な精神は健全な体に宿る。", "meaning": "sehat (jiwa/pikiran)", "relatedForms": [] },
+    { "word": "健やかな", "reading": "すこやかな", "example": "子どもたちは健やかに育っている。", "meaning": "tumbuh sehat", "relatedForms": [] },
+    { "word": "軽快な", "reading": "けいかいな", "example": "軽快な曲が店内に流れていた。", "meaning": "ringan dan ceria (musik)", "relatedForms": [] },
+    { "word": "好調な", "reading": "こうちょうな", "example": "新製品の売れ行きは好調だ。", "meaning": "berjalan lancar/baik", "relatedForms": [] },
+    { "word": "好評な", "reading": "こうひょうな", "example": "新メニューはお客様から好評だ。", "meaning": "disambut baik, populer", "relatedForms": [] },
+    { "word": "滑らかな", "reading": "なめらかな", "example": "このクリームは肌に滑らかな感触を与える。", "meaning": "halus, mulus", "relatedForms": [] },
+    { "word": "細やかな", "reading": "こまやかな", "example": "彼女はいつも細やかな心遣いを見せる。", "meaning": "penuh perhatian, teliti", "relatedForms": [] },
+    { "word": "鮮やかな", "reading": "あざやかな", "example": "空に鮮やかな虹がかかった。", "meaning": "cerah, mencolok (warna)", "relatedForms": [] },
+    { "word": "緩やかな", "reading": "ゆるやかな", "example": "川の流れが緩やかになってきた。", "meaning": "perlahan, landai", "relatedForms": [] },
+    { "word": "しなやかな", "reading": "しなやかな", "example": "バレエダンサーはしなやかな体を持っている。", "meaning": "lentur, gemulai", "relatedForms": [] },
+    { "word": "和やかな", "reading": "なごやかな", "example": "会議は和やかな雰囲気で進んだ。", "meaning": "harmonis, ramah", "relatedForms": [] },
+    { "word": "のどかな", "reading": "のどかな", "example": "田舎ののどかな風景に心が癒された。", "meaning": "tenang, damai (pemandangan)", "relatedForms": [] },
+    { "word": "シックな", "reading": "しっくな", "example": "彼女はシックな服装で現れた。", "meaning": "elegan, bergaya sederhana", "relatedForms": [] },
+    { "word": "きらびやかな", "reading": "きらびやかな", "example": "きらびやかな宮殿に圧倒された。", "meaning": "gemerlap, mewah", "relatedForms": [] },
+    { "word": "つぶらな", "reading": "つぶらな", "example": "その子犬はつぶらな瞳がかわいい。", "meaning": "bulat dan bening (mata)", "relatedForms": [] },
+    { "word": "緊急な", "reading": "きんきゅうな", "example": "緊急な用事ができて早退した。", "meaning": "darurat, mendesak", "relatedForms": [] },
+    { "word": "巧妙な", "reading": "こうみょうな", "example": "犯人は巧妙な手口で人をだました。", "meaning": "licik, cerdik", "relatedForms": [] },
+    { "word": "巧みな", "reading": "たくみな", "example": "彼は巧みな演技で観客を魅了した。", "meaning": "terampil, mahir", "relatedForms": [] },
+    { "word": "円満な", "reading": "えんまんな", "example": "彼らは円満な家庭を築いている。", "meaning": "harmonis, damai (keluarga)", "relatedForms": ["円満に解決する"] },
+    { "word": "透き通った", "reading": "すきとおった", "example": "湖の水は透き通っていた。", "meaning": "jernih, bening", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "あの役者は年を取ってからはとても落ち着いた＿＿演技をする。", "optionA": "華々しい", "optionAReading": "はなばなしい", "optionB": "渋い", "optionBReading": "しぶい", "answer": "B" },
+      { "question": "そのサッカー選手は＿＿技で、観客を魅了した。", "optionA": "巧みな", "optionAReading": "たくみな", "optionB": "つぶらな", "optionBReading": "つぶらな", "answer": "A" },
+      { "question": "スタートは＿＿だったのに、最後は力が尽きて最下位になった。", "optionA": "健全", "optionAReading": "けんぜん", "optionB": "好調", "optionBReading": "こうちょう", "answer": "B" },
+      { "question": "彼女はいつも＿＿なアクセサリーを身につけている。", "optionA": "きらびやかな", "optionAReading": "きらびやかな", "optionB": "しなやかな", "optionBReading": "しなやかな", "answer": "A" },
+      { "question": "お客様に＿＿なサービスを提供する。", "optionA": "細やかな", "optionAReading": "こまやかな", "optionB": "なめらかな", "optionBReading": "なめらかな", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "すこやかな", "fixedKanji": "健", "blankPosition": "after", "choices": ["やかな", "ぜんな", "ぜんの", "かいな"], "answer": "やかな" },
+      { "reading": "あざやかな", "fixedKanji": "鮮", "blankPosition": "after", "choices": ["やかな", "げんな", "れつな", "みょうな"], "answer": "やかな" },
+      { "reading": "すみやかな", "fixedKanji": "速", "blankPosition": "after", "choices": ["やかな", "いな", "さな", "びんな"], "answer": "やかな" },
+      { "reading": "えんまんな", "fixedKanji": "円", "blankPosition": "after", "choices": ["満な", "快な", "滑な", "和な"], "answer": "満な" },
+      { "reading": "すきとおった", "fixedKanji": "透き", "blankPosition": "after", "choices": ["通った", "明な", "き通る", "徹な"], "answer": "通った" }
+    ]
+  }
+}
