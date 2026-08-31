@@ -1,0 +1,58 @@
+{
+  "week": 8,
+  "day": 2,
+  "title": "似ている言葉②",
+  "subtitle": "Kosakata berawalan 一 (ichi-) dan 見 (mi-)",
+  "entries": [
+    { "word": "一同", "reading": "いちどう", "example": "出席者一同を代表してあいさつした。", "meaning": "semua yang hadir, hadirin sekalian", "relatedForms": [] },
+    { "word": "一面", "reading": "いちめん", "example": "これは物事の一面にすぎない。", "meaning": "satu sisi (dari suatu hal)", "relatedForms": [] },
+    { "word": "一面", "reading": "いちめん", "example": "空一面に星が広がっている。", "meaning": "seluruh (permukaan)", "relatedForms": [] },
+    { "word": "一連", "reading": "いちれん", "example": "警察は一連の事件を捜査している。", "meaning": "serangkaian (peristiwa)", "relatedForms": [] },
+    { "word": "一目", "reading": "いちもく", "example": "この結果は一目瞭然だ。", "meaning": "jelas sekali sepintas", "relatedForms": [] },
+    { "word": "一目", "reading": "いちもく", "example": "先生は彼の才能に一目置いている。", "meaning": "mengakui kemampuan (dengan segan)", "relatedForms": [] },
+    { "word": "一律に", "reading": "いちりつに", "example": "全社員に一律に1万円が支給された。", "meaning": "secara merata, rata", "relatedForms": [] },
+    { "word": "一様に", "reading": "いちように", "example": "参加者は一様に驚きの声をあげた。", "meaning": "serentak, seragam", "relatedForms": [] },
+    { "word": "一瞬", "reading": "いっしゅん", "example": "彼は一瞬、ためらった。", "meaning": "sesaat, sekejap", "relatedForms": [] },
+    { "word": "一帯", "reading": "いったい", "example": "警察は付近一帯を捜索した。", "meaning": "seluruh kawasan", "relatedForms": [] },
+    { "word": "一斉に", "reading": "いっせいに", "example": "生徒たちは一斉にスタートした。", "meaning": "serentak", "relatedForms": [] },
+    { "word": "一心に", "reading": "いっしんに", "example": "彼女は一心に祈った。", "meaning": "dengan sepenuh hati", "relatedForms": [] },
+    { "word": "一挙に", "reading": "いっきょに", "example": "長年の問題が一挙に解決した。", "meaning": "sekaligus, langsung tuntas", "relatedForms": [] },
+    { "word": "一見", "reading": "いっけん", "example": "一見、本物のように見えるが実は偽物だ。", "meaning": "sepintas lalu", "relatedForms": [] },
+    { "word": "一見の価値がある", "reading": "いっけんのかちがある", "example": "この景色は一見の価値がある。", "meaning": "layak dilihat", "relatedForms": [] },
+    { "word": "一新する", "reading": "いっしんする", "example": "彼は気分を一新するために旅行に出た。", "meaning": "menyegarkan kembali", "relatedForms": [] },
+    { "word": "一掃する", "reading": "いっそうする", "example": "政府は暴力を一掃しようとしている。", "meaning": "membersihkan tuntas", "relatedForms": [] },
+    { "word": "一変する", "reading": "いっぺんする", "example": "彼の態度は一変した。", "meaning": "berubah total", "relatedForms": [] },
+    { "word": "一息", "reading": "ひといき", "example": "みんなでちょっと一息入れよう。", "meaning": "istirahat sejenak", "relatedForms": [] },
+    { "word": "一息に", "reading": "ひといきに", "example": "彼は階段を一息に登った。", "meaning": "dalam satu tarikan napas, tanpa henti", "relatedForms": [] },
+    { "word": "一頃", "reading": "ひところ", "example": "これは一頃はやった歌だ。", "meaning": "dulu pernah populer (suatu masa)", "relatedForms": [] },
+    { "word": "一筋", "reading": "ひとすじ", "example": "田中さんは仕事一筋の人だ。", "meaning": "fokus total pada satu hal", "relatedForms": [] },
+    { "word": "一苦労", "reading": "ひとくろう", "example": "このレポートを仕上げるのは一苦労だった。", "meaning": "perjuangan tersendiri", "relatedForms": [] },
+    { "word": "一休みする", "reading": "ひとやすみする", "example": "この辺で一休みしよう。", "meaning": "istirahat sejenak", "relatedForms": [] },
+    { "word": "一眠りする", "reading": "ひとねむりする", "example": "一眠りしてから、また仕事をしよう。", "meaning": "tidur sebentar", "relatedForms": [] },
+    { "word": "見逃す", "reading": "みのがす", "example": "彼はまたとないチャンスを見逃した。", "meaning": "melewatkan (kesempatan)", "relatedForms": [] },
+    { "word": "見逃す", "reading": "みのがす", "example": "上司は彼のミスを見逃した。", "meaning": "membiarkan (kesalahan), tidak menegur", "relatedForms": [] },
+    { "word": "見落とす", "reading": "みおとす", "example": "彼は書類の間違いを見落とした。", "meaning": "terlewat melihat (tidak sengaja)", "relatedForms": [] },
+    { "word": "見失う", "reading": "みうしなう", "example": "人混みで彼は道を見失った。", "meaning": "kehilangan arah", "relatedForms": [] },
+    { "word": "見失う", "reading": "みうしなう", "example": "彼は目標を見失ってしまった。", "meaning": "kehilangan tujuan/motivasi", "relatedForms": [] },
+    { "word": "見積もる", "reading": "みつもる", "example": "業者は費用を見積もった。", "meaning": "memperkirakan (biaya)", "relatedForms": ["見積もり"] },
+    { "word": "見計らう", "reading": "みはからう", "example": "彼はラッシュが終わるころを見計らって出かけた。", "meaning": "memperkirakan waktu yang tepat", "relatedForms": [] },
+    { "word": "見違える", "reading": "みちがえる", "example": "父は見違えるほど元気になった。", "meaning": "berubah drastis (sampai sulit dikenali)", "relatedForms": [] },
+    { "word": "見晴らし", "reading": "みはらし", "example": "この部屋は見晴らしがいい。", "meaning": "pemandangan (luas)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "長年の問題が＿＿解決した。", "optionA": "一挙に", "optionAReading": "いっきょに", "optionB": "一斉に", "optionBReading": "いっせいに", "answer": "A" },
+      { "question": "彼はまたとないチャンスを＿＿。", "optionA": "見逃した", "optionAReading": "みのがした", "optionB": "見落とした", "optionBReading": "みおとした", "answer": "A" },
+      { "question": "人混みで彼は道を＿＿。", "optionA": "見失った", "optionAReading": "みうしなった", "optionB": "見積もった", "optionBReading": "みつもった", "answer": "A" },
+      { "question": "父は＿＿ほど元気になった。", "optionA": "見違える", "optionAReading": "みちがえる", "optionB": "見計らう", "optionBReading": "みはからう", "answer": "A" },
+      { "question": "全社員に＿＿1万円が支給された。", "optionA": "一律に", "optionAReading": "いちりつに", "optionB": "一様に", "optionBReading": "いちように", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "けいさつはふきんいったいをそうさくした", "fixedKanji": "警察は付近", "blankPosition": "after", "choices": ["一帯を捜索した", "一同を捜索した", "一面を捜索した", "一律を捜索した"], "answer": "一帯を捜索した" },
+      { "reading": "せいとたちはいっせいにすたーとした", "fixedKanji": "生徒たちは", "blankPosition": "after", "choices": ["一斉にスタートした", "一心にスタートした", "一挙にスタートした", "一様にスタートした"], "answer": "一斉にスタートした" },
+      { "reading": "ぎょうしゃはひようをみつもった", "fixedKanji": "業者は費用を", "blankPosition": "after", "choices": ["見積もった", "見計らった", "見違えた", "見失った"], "answer": "見積もった" },
+      { "reading": "かれはらっしゅがおわるころをみはからってでかけた", "fixedKanji": "彼はラッシュが終わるころを", "blankPosition": "after", "choices": ["見計らって出かけた", "見積もって出かけた", "見違えて出かけた", "見失って出かけた"], "answer": "見計らって出かけた" },
+      { "reading": "このへやはみはらしがいい", "fixedKanji": "この部屋は", "blankPosition": "after", "choices": ["見晴らしがいい", "見積もりがいい", "見落としがいい", "見違えがいい"], "answer": "見晴らしがいい" }
+    ]
+  }
+}

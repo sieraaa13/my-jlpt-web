@@ -1,0 +1,56 @@
+{
+  "week": 8,
+  "day": 1,
+  "title": "似ている言葉①",
+  "subtitle": "Kata-kata yang mirip dan sering tertukar (kelompok 1)",
+  "entries": [
+    { "word": "心がける", "reading": "こころがける", "example": "彼は安全運転を心がけている。", "meaning": "berusaha, mengutamakan (kebiasaan baik)", "relatedForms": ["心がけ"] },
+    { "word": "心得る", "reading": "こころえる", "example": "彼は自分の立場をよく心得ている。", "meaning": "memahami (posisi/situasi)", "relatedForms": [] },
+    { "word": "心得る", "reading": "こころえる", "example": "彼女は茶道の作法を心得ている。", "meaning": "menguasai (tata cara)", "relatedForms": ["心得"] },
+    { "word": "ゆがむ", "reading": "ゆがむ", "example": "彼のネクタイがゆがんでいる。", "meaning": "miring, bengkok", "relatedForms": [] },
+    { "word": "ゆがむ", "reading": "ゆがむ", "example": "彼は性格がゆがんでいる。", "meaning": "menyimpang, bengkok (kepribadian)", "relatedForms": [] },
+    { "word": "ねじれる", "reading": "ねじれる", "example": "電源コードがねじれている。", "meaning": "terpilin, kusut", "relatedForms": [] },
+    { "word": "こじれる", "reading": "こじれる", "example": "両社の交渉がこじれてしまった。", "meaning": "jadi rumit/berlarut-larut (negosiasi)", "relatedForms": [] },
+    { "word": "ほどける", "reading": "ほどける", "example": "リボンの結び目がほどけた。", "meaning": "terlepas (ikatan)", "relatedForms": [] },
+    { "word": "ほころびる", "reading": "ほころびる", "example": "スカートの裾がほころびている。", "meaning": "sobek sedikit (jahitan)", "relatedForms": [] },
+    { "word": "にじむ", "reading": "にじむ", "example": "雨でハガキの字がにじんでしまった。", "meaning": "luntur, kabur (tinta)", "relatedForms": [] },
+    { "word": "にじむ", "reading": "にじむ", "example": "彼女の目に涙がにじんだ。", "meaning": "berlinang (air mata)", "relatedForms": [] },
+    { "word": "しみる", "reading": "しみる", "example": "煙が目にしみる。", "meaning": "perih (mata terkena asap)", "relatedForms": [] },
+    { "word": "しみる", "reading": "しみる", "example": "汗でシャツが染みている。", "meaning": "merembes, meresap (keringat)", "relatedForms": [] },
+    { "word": "しなびる", "reading": "しなびる", "example": "冷蔵庫の野菜がしなびてしまった。", "meaning": "layu, mengering (sayuran)", "relatedForms": [] },
+    { "word": "かれる", "reading": "かれる", "example": "庭の木が枯れてしまった。", "meaning": "mati, layu (pohon)", "relatedForms": [] },
+    { "word": "かれる", "reading": "かれる", "example": "彼は叫びすぎて声がかれた。", "meaning": "serak (suara)", "relatedForms": [] },
+    { "word": "かれる", "reading": "かれる", "example": "日照りが続いて池がかれた。", "meaning": "kering (kolam)", "relatedForms": [] },
+    { "word": "じきに", "reading": "じきに", "example": "雨はじきにあがるでしょう。", "meaning": "sebentar lagi, segera", "relatedForms": [] },
+    { "word": "じかに", "reading": "じかに", "example": "彼は社長とじかに話した。", "meaning": "langsung (tanpa perantara)", "relatedForms": [] },
+    { "word": "何もかも", "reading": "なにもかも", "example": "彼は何もかもいやになった。", "meaning": "segalanya", "relatedForms": [] },
+    { "word": "何でもかんでも", "reading": "なんでもかんでも", "example": "うちの犬は何でもかんでもかじる。", "meaning": "apa saja (tanpa pilih-pilih)", "relatedForms": [] },
+    { "word": "何だかんだ", "reading": "なんだかんだ", "example": "何だかんだ言っても、彼は立派に仕事をこなした。", "meaning": "bagaimanapun, meski begini-begitu", "relatedForms": [] },
+    { "word": "いかに", "reading": "いかに", "example": "それをいかに実現するかが問題だ。", "meaning": "bagaimana caranya", "relatedForms": [] },
+    { "word": "いかに", "reading": "いかに", "example": "いかに急いでも間に合わないだろう。", "meaning": "sekeras apapun, betapapun", "relatedForms": [] },
+    { "word": "いかにも", "reading": "いかにも", "example": "それはいかにも残念だ。", "meaning": "sungguh, benar-benar", "relatedForms": [] },
+    { "word": "いかにも", "reading": "いかにも", "example": "彼はいかにも学者らしい話し方をする。", "meaning": "benar-benar terlihat seperti", "relatedForms": [] },
+    { "word": "ひび", "reading": "ひび", "example": "壁にひびが入っている。", "meaning": "retak", "relatedForms": [] },
+    { "word": "すき間", "reading": "すきま", "example": "机とタンスのすき間にほこりがたまっている。", "meaning": "celah, ruang sempit", "relatedForms": [] },
+    { "word": "粒", "reading": "つぶ", "example": "彼は一粒の米も残さず食べた。", "meaning": "butir (kecil)", "relatedForms": [] },
+    { "word": "滴", "reading": "しずく", "example": "窓に雨の滴がついている。", "meaning": "tetes (air)", "relatedForms": [] },
+    { "word": "あか", "reading": "あか", "example": "彼は爪のあかを取った。", "meaning": "kotoran (kuku)", "relatedForms": [] },
+    { "word": "あざ", "reading": "あざ", "example": "転んで足にあざができた。", "meaning": "memar", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "煙が目に＿＿。", "optionA": "しみる", "optionAReading": "しみる", "optionB": "にじむ", "optionBReading": "にじむ", "answer": "A" },
+      { "question": "彼は性格が＿＿いる。", "optionA": "ゆがんで", "optionAReading": "ゆがんで", "optionB": "ねじれて", "optionBReading": "ねじれて", "answer": "A" },
+      { "question": "雨は＿＿あがるでしょう。", "optionA": "じきに", "optionAReading": "じきに", "optionB": "じかに", "optionBReading": "じかに", "answer": "A" },
+      { "question": "彼は社長と＿＿話した。", "optionA": "じかに", "optionAReading": "じかに", "optionB": "じきに", "optionBReading": "じきに", "answer": "A" },
+      { "question": "うちの犬は＿＿かじる。", "optionA": "何でもかんでも", "optionAReading": "なんでもかんでも", "optionB": "何だかんだ", "optionBReading": "なんだかんだ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "かれはねくたいがゆがんでいる", "fixedKanji": "彼はネクタイが", "blankPosition": "after", "choices": ["ゆがんでいる", "ねじれている", "こじれている", "ほどけている"], "answer": "ゆがんでいる" },
+      { "reading": "あめではがきのじがにじんだ", "fixedKanji": "雨でハガキの字が", "blankPosition": "after", "choices": ["にじんだ", "しみた", "かれた", "しなびた"], "answer": "にじんだ" },
+      { "reading": "さけびすぎてこえがかれた", "fixedKanji": "叫びすぎて声が", "blankPosition": "after", "choices": ["かれた", "しなびた", "ほころびた", "こじれた"], "answer": "かれた" },
+      { "reading": "かべにひびがはいっている", "fixedKanji": "壁に", "blankPosition": "after", "choices": ["ひびが入っている", "すき間が入っている", "あかが入っている", "あざが入っている"], "answer": "ひびが入っている" },
+      { "reading": "ころんであしにあざができた", "fixedKanji": "転んで足に", "blankPosition": "after", "choices": ["あざができた", "あかができた", "ひびができた", "滴ができた"], "answer": "あざができた" }
+    ]
+  }
+}
