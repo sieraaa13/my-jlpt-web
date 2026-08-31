@@ -1,0 +1,53 @@
+{
+  "week": 8,
+  "day": 4,
+  "title": "体の部分を使った言葉②",
+  "subtitle": "Ungkapan idiom dengan bagian tubuh: 手・足・首・息・気",
+  "entries": [
+    { "word": "手を切る", "reading": "てをきる", "example": "彼は悪い仲間と手を切った。", "meaning": "memutus hubungan", "relatedForms": ["縁を切る"] },
+    { "word": "手が足りない", "reading": "てがたりない", "example": "手が足りないから、手伝ってくれ。", "meaning": "kekurangan tenaga/orang", "relatedForms": [] },
+    { "word": "手に余る", "reading": "てにあまる", "example": "これは私の手に余る仕事だ。", "meaning": "di luar kemampuan", "relatedForms": [] },
+    { "word": "手を打つ", "reading": "てをうつ", "example": "その問題に早く手を打つべきだ。", "meaning": "mengambil tindakan", "relatedForms": [] },
+    { "word": "手に負えない", "reading": "てにおえない", "example": "あの子は親の手に負えない。", "meaning": "tak terkendali", "relatedForms": [] },
+    { "word": "手を焼く", "reading": "てをやく", "example": "いたずらな生徒に手を焼いている。", "meaning": "kewalahan menghadapi", "relatedForms": [] },
+    { "word": "手を抜く", "reading": "てをぬく", "example": "仕事の手を抜くな。", "meaning": "bekerja asal-asalan, malas", "relatedForms": [] },
+    { "word": "手を尽くす", "reading": "てをつくす", "example": "問題解決のためにあらゆる手を尽くした。", "meaning": "berusaha dengan segala cara", "relatedForms": [] },
+    { "word": "手も足も出ない", "reading": "てもあしもでない", "example": "これは手も足も出ない問題だ。", "meaning": "benar-benar tak berdaya", "relatedForms": [] },
+    { "word": "足が出る", "reading": "あしがでる", "example": "経費がかかりすぎて足が出た。", "meaning": "melebihi anggaran", "relatedForms": [] },
+    { "word": "足が棒になる", "reading": "あしがぼうになる", "example": "一日中歩いて足が棒になった。", "meaning": "kaki pegal sekali", "relatedForms": [] },
+    { "word": "足を引っ張る", "reading": "あしをひっぱる", "example": "彼は同僚の足を引っ張った。", "meaning": "menghambat (orang lain)", "relatedForms": [] },
+    { "word": "足が早い", "reading": "あしがはやい", "example": "生ものは足が早い。", "meaning": "cepat basi", "relatedForms": [] },
+    { "word": "首を横に振る", "reading": "くびをよこにふる", "example": "彼は誘いに首を横に振った。", "meaning": "menolak (menggeleng)", "relatedForms": [] },
+    { "word": "首を長くして待つ", "reading": "くびをながくしてまつ", "example": "母は息子の帰国を首を長くして待っている。", "meaning": "menanti-nantikan", "relatedForms": [] },
+    { "word": "首をひねる", "reading": "くびをひねる", "example": "これは首をひねるような結果だ。", "meaning": "membingungkan", "relatedForms": [] },
+    { "word": "首を突っ込む", "reading": "くびをつっこむ", "example": "彼は厄介な問題に首を突っ込んだ。", "meaning": "ikut campur (masalah rumit)", "relatedForms": [] },
+    { "word": "首が回らない", "reading": "くびがまわらない", "example": "彼は借金で首が回らない。", "meaning": "terlilit utang", "relatedForms": [] },
+    { "word": "息が切れる", "reading": "いきがきれる", "example": "走って息が切れた。", "meaning": "terengah-engah", "relatedForms": [] },
+    { "word": "息が詰まる", "reading": "いきがつまる", "example": "満員電車で息が詰まりそうだ。", "meaning": "sesak napas", "relatedForms": [] },
+    { "word": "息が長い", "reading": "いきがながい", "example": "彼は息が長い役者だ。", "meaning": "berkarier panjang", "relatedForms": [] },
+    { "word": "息もつかずに", "reading": "いきもつかずに", "example": "彼は息もつかずにしゃべり続けた。", "meaning": "tanpa henti (bicara)", "relatedForms": [] },
+    { "word": "息を抜く暇もない", "reading": "いきをぬくひまもない", "example": "息を抜く暇もないくらい忙しい。", "meaning": "tak sempat istirahat sedikitpun", "relatedForms": [] },
+    { "word": "息をのむ", "reading": "いきをのむ", "example": "息をのむほど美しい景色だった。", "meaning": "terpana (napas tertahan)", "relatedForms": [] },
+    { "word": "気がある", "reading": "きがある", "example": "彼は田中さんに気があるらしい。", "meaning": "tertarik (pada seseorang)", "relatedForms": [] },
+    { "word": "気が向かない", "reading": "きがむかない", "example": "誘われたけど、気が向かない。", "meaning": "tidak berminat", "relatedForms": [] },
+    { "word": "気を配る", "reading": "きをくばる", "example": "彼は周囲に気を配る人だ。", "meaning": "memperhatikan sekitar", "relatedForms": ["気配り"] },
+    { "word": "気が利く", "reading": "きがきく", "example": "彼女は気が利く人だ。", "meaning": "peka, cekatan", "relatedForms": [] },
+    { "word": "気が散る", "reading": "きがちる", "example": "気が散って勉強が手につかない。", "meaning": "tidak bisa fokus", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "これは私の＿＿仕事だ。", "optionA": "手に余る", "optionAReading": "てにあまる", "optionB": "手を焼く", "optionBReading": "てをやく", "answer": "A" },
+      { "question": "経費がかかりすぎて＿＿。", "optionA": "足が出た", "optionAReading": "あしがでた", "optionB": "足が棒になった", "optionBReading": "あしがぼうになった", "answer": "A" },
+      { "question": "彼は誘いに＿＿。", "optionA": "首を横に振った", "optionAReading": "くびをよこにふった", "optionB": "首をひねった", "optionBReading": "くびをひねった", "answer": "A" },
+      { "question": "満員電車で＿＿そうだ。", "optionA": "息が詰まり", "optionAReading": "いきがつまり", "optionB": "息が切れ", "optionBReading": "いきがきれ", "answer": "A" },
+      { "question": "彼女は＿＿人だ。", "optionA": "気が利く", "optionAReading": "きがきく", "optionB": "気が向かない", "optionBReading": "きがむかない", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "いたずらなせいとにてをやく", "fixedKanji": "いたずらな生徒に", "blankPosition": "after", "choices": ["手を焼く", "手を抜く", "手を打つ", "手を切る"], "answer": "手を焼く" },
+      { "reading": "なまものはあしがはやい", "fixedKanji": "生ものは", "blankPosition": "after", "choices": ["足が早い", "足が出る", "足が棒になる", "足を引っ張る"], "answer": "足が早い" },
+      { "reading": "かれはしゃっきんでくびがまわらない", "fixedKanji": "彼は借金で", "blankPosition": "after", "choices": ["首が回らない", "首をひねる", "首を突っ込む", "首を長くする"], "answer": "首が回らない" },
+      { "reading": "そのけしきのうつくしさにおもわずいきをのんだ", "fixedKanji": "その景色の美しさに思わず", "blankPosition": "after", "choices": ["息をのんだ", "息が切れた", "息が詰まった", "息を抜いた"], "answer": "息をのんだ" },
+      { "reading": "かれはしゅういにきをくばるひとだ", "fixedKanji": "彼は周囲に", "blankPosition": "after", "choices": ["気を配る人だ", "気が向かない人だ", "気が散る人だ", "気がある人だ"], "answer": "気を配る人だ" }
+    ]
+  }
+}

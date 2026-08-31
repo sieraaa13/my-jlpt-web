@@ -1,0 +1,56 @@
+{
+  "week": 8,
+  "day": 3,
+  "title": "体の部分を使った言葉①",
+  "subtitle": "Ungkapan idiom dengan bagian tubuh: 顔・目・耳・鼻・口・頭",
+  "entries": [
+    { "word": "顔が売れる", "reading": "かおがうれる", "example": "彼はこの辺りでは顔が売れている。", "meaning": "terkenal, dikenal luas", "relatedForms": [] },
+    { "word": "顔が広い", "reading": "かおがひろい", "example": "彼はとても顔が広い。", "meaning": "kenal banyak orang", "relatedForms": [] },
+    { "word": "顔が利く", "reading": "かおがきく", "example": "私はその店に顔が利く。", "meaning": "punya pengaruh, dapat perlakuan khusus", "relatedForms": [] },
+    { "word": "合わせる顔がない", "reading": "あわせるかおがない", "example": "彼は約束を破って、親に合わせる顔がない。", "meaning": "malu untuk bertemu muka", "relatedForms": [] },
+    { "word": "顔を立てる", "reading": "かおをたてる", "example": "部下は上司の顔を立てるよう気をつけた。", "meaning": "menjaga martabat/muka (orang lain)", "relatedForms": ["顔が立つ"] },
+    { "word": "目が回る", "reading": "めがまわる", "example": "彼は目が回るような忙しさだった。", "meaning": "sangat sibuk", "relatedForms": [] },
+    { "word": "目に浮かぶ", "reading": "めにうかぶ", "example": "故郷の様子が目に浮かぶ。", "meaning": "terbayang jelas di mata", "relatedForms": [] },
+    { "word": "目を疑う", "reading": "めをうたがう", "example": "それは目を疑うような光景だった。", "meaning": "tidak percaya dengan yang dilihat", "relatedForms": [] },
+    { "word": "目を離す", "reading": "めをはなす", "example": "母親は子どもから目を離さなかった。", "meaning": "mengalihkan pandangan/pengawasan", "relatedForms": [] },
+    { "word": "目を丸くする", "reading": "めをまるくする", "example": "彼は突然のプレゼントに目を丸くした。", "meaning": "terkejut (mata membelalak)", "relatedForms": [] },
+    { "word": "目を引く", "reading": "めをひく", "example": "これは目を引くデザインだ。", "meaning": "menarik perhatian", "relatedForms": [] },
+    { "word": "目がさえる", "reading": "めがさえる", "example": "目がさえて眠れない夜だった。", "meaning": "mata tetap terjaga, tidak mengantuk", "relatedForms": [] },
+    { "word": "目が届く", "reading": "めがとどく", "example": "大事なものは目が届くところに置いたほうがいい。", "meaning": "terlihat jelas, terjangkau pandangan", "relatedForms": [] },
+    { "word": "長い目で見る", "reading": "ながいめでみる", "example": "子どもの将来は長い目で見るべきだ。", "meaning": "memandang jangka panjang", "relatedForms": [] },
+    { "word": "目が肥える", "reading": "めがこえる", "example": "彼は絵画に対して目が肥えている。", "meaning": "punya mata yang jeli (ahli menilai)", "relatedForms": [] },
+    { "word": "耳を澄ます", "reading": "みみをすます", "example": "彼は物音に耳を澄ました。", "meaning": "memasang telinga baik-baik", "relatedForms": [] },
+    { "word": "耳を傾ける", "reading": "みみをかたむける", "example": "彼は子どもの話に耳を傾けた。", "meaning": "mendengarkan dengan saksama", "relatedForms": [] },
+    { "word": "耳に障る", "reading": "みみにさわる", "example": "工事の音が耳に障る。", "meaning": "mengganggu telinga", "relatedForms": [] },
+    { "word": "耳をふさぐ", "reading": "みみをふさぐ", "example": "彼は親の小言に耳をふさいだ。", "meaning": "menutup telinga (tidak mau dengar)", "relatedForms": [] },
+    { "word": "耳を貸す", "reading": "みみをかす", "example": "彼は私の話に耳を貸してくれなかった。", "meaning": "mau mendengarkan", "relatedForms": [] },
+    { "word": "耳について離れない", "reading": "みみについてはなれない", "example": "CMの音楽が耳について離れない。", "meaning": "terngiang-ngiang di telinga", "relatedForms": [] },
+    { "word": "鼻にかける", "reading": "はなにかける", "example": "彼女は美人であることを鼻にかけている。", "meaning": "membanggakan diri, sombong", "relatedForms": [] },
+    { "word": "鼻が高い", "reading": "はながたかい", "example": "立派な息子を持って鼻が高い。", "meaning": "bangga", "relatedForms": [] },
+    { "word": "鼻につく", "reading": "はなにつく", "example": "彼女の態度は鼻につく。", "meaning": "menjengkelkan, mengganggu", "relatedForms": [] },
+    { "word": "口が重い", "reading": "くちがおもい", "example": "彼は口が重い。", "meaning": "pendiam, jarang bicara", "relatedForms": [] },
+    { "word": "口が滑る", "reading": "くちがすべる", "example": "つい口が滑ってしまった。", "meaning": "keceplosan bicara", "relatedForms": [] },
+    { "word": "口が肥える", "reading": "くちがこえる", "example": "彼は口が肥えている。", "meaning": "lidah/selera yang terlatih (kuliner)", "relatedForms": [] },
+    { "word": "口を挟む", "reading": "くちをはさむ", "example": "話に口を挟むな。", "meaning": "menyela pembicaraan", "relatedForms": [] },
+    { "word": "頭を冷やす", "reading": "あたまをひやす", "example": "頭を冷やしてから考えよう。", "meaning": "menenangkan diri (kepala dingin)", "relatedForms": [] },
+    { "word": "頭を抱える", "reading": "あたまをかかえる", "example": "これは頭を抱える問題だ。", "meaning": "pusing memikirkan (masalah)", "relatedForms": [] },
+    { "word": "頭が切れる", "reading": "あたまがきれる", "example": "彼は頭がよく切れる。", "meaning": "cerdas, tajam pikiran", "relatedForms": [] },
+    { "word": "頭が下がる", "reading": "あたまがさがる", "example": "彼の努力には頭が下がる。", "meaning": "kagum, menghormati (usaha seseorang)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は約束を破って、親に＿＿。", "optionA": "合わせる顔がない", "optionAReading": "あわせるかおがない", "optionB": "顔が広い", "optionBReading": "かおがひろい", "answer": "A" },
+      { "question": "工事の音が＿＿。", "optionA": "耳に障る", "optionAReading": "みみにさわる", "optionB": "耳をふさぐ", "optionBReading": "みみをふさぐ", "answer": "A" },
+      { "question": "彼女は美人であることを＿＿。", "optionA": "鼻にかけている", "optionAReading": "はなにかけている", "optionB": "鼻が高い", "optionBReading": "はながたかい", "answer": "A" },
+      { "question": "つい＿＿しまった。", "optionA": "口が滑って", "optionAReading": "くちがすべって", "optionB": "口が肥えて", "optionBReading": "くちがこえて", "answer": "A" },
+      { "question": "彼の努力には＿＿。", "optionA": "頭が下がる", "optionAReading": "あたまがさがる", "optionB": "頭が切れる", "optionBReading": "あたまがきれる", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "かれはこのあたりではかおがうれている", "fixedKanji": "彼はこの辺りでは", "blankPosition": "after", "choices": ["顔が売れている", "顔が利く", "顔が広い", "顔を立てる"], "answer": "顔が売れている" },
+      { "reading": "それはめをうたがうようなこうけいだ", "fixedKanji": "それは", "blankPosition": "after", "choices": ["目を疑うような光景だ", "目に浮かぶような光景だ", "目を丸くするような光景だ", "目が届くような光景だ"], "answer": "目を疑うような光景だ" },
+      { "reading": "かれはこどものはなしにみみをかたむけた", "fixedKanji": "彼は子どもの話に", "blankPosition": "after", "choices": ["耳を傾けた", "耳をふさいだ", "耳に障った", "耳を澄ました"], "answer": "耳を傾けた" },
+      { "reading": "これはあたまをかかえるもんだいだ", "fixedKanji": "これは", "blankPosition": "after", "choices": ["頭を抱える問題だ", "頭が下がる問題だ", "頭が切れる問題だ", "頭を冷やす問題だ"], "answer": "頭を抱える問題だ" },
+      { "reading": "はなしにくちをはさむな", "fixedKanji": "話に", "blankPosition": "after", "choices": ["口を挟むな", "口が重いな", "口が滑るな", "口が肥えるな"], "answer": "口を挟むな" }
+    ]
+  }
+}
