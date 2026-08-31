@@ -1,0 +1,56 @@
+{
+  "week": 6,
+  "day": 6,
+  "title": "単刀直入・一言一句",
+  "subtitle": "Yojijukugo (idiom empat kanji)",
+  "entries": [
+    { "word": "唯一無二", "reading": "ゆいいつむに", "example": "彼は私にとって唯一無二の親友だ。", "meaning": "satu-satunya, tiada duanya", "relatedForms": [] },
+    { "word": "単刀直入", "reading": "たんとうちょくにゅう", "example": "前置きは抜きにして、単刀直入に言います。", "meaning": "langsung ke pokok masalah", "relatedForms": ["一言一句"] },
+    { "word": "無色透明", "reading": "むしょくとうめい", "example": "この液体は無色透明で、水のように見える。", "meaning": "tak berwarna dan bening", "relatedForms": [] },
+    { "word": "一言一句", "reading": "いちごんいっく", "example": "彼は先生の説明を一言一句漏らさず書き写した。", "meaning": "setiap kata (tanpa terlewat)", "relatedForms": ["単刀直入"] },
+    { "word": "時期尚早", "reading": "じきしょうそう", "example": "この計画を実行するのはまだ時期尚早だ。", "meaning": "terlalu dini", "relatedForms": [] },
+    { "word": "和洋折衷", "reading": "わようせっちゅう", "example": "このホテルの部屋は和洋折衷のデザインになっている。", "meaning": "perpaduan gaya Jepang-Barat", "relatedForms": [] },
+    { "word": "被害妄想", "reading": "ひがいもうそう", "example": "彼には被害妄想の傾向がある。", "meaning": "paranoia", "relatedForms": [] },
+    { "word": "喜怒哀楽", "reading": "きどあいらく", "example": "彼女は喜怒哀楽がはっきりしている人だ。", "meaning": "berbagai emosi (senang-marah-sedih-gembira)", "relatedForms": [] },
+    { "word": "起承転結", "reading": "きしょうてんけつ", "example": "この作文は起承転結がはっきりしていて読みやすい。", "meaning": "struktur alur (pembuka-isi-balikan-penutup)", "relatedForms": [] },
+    { "word": "危機一髪", "reading": "ききいっぱつ", "example": "彼は危機一髪のところで難を逃れた。", "meaning": "nyaris celaka", "relatedForms": [] },
+    { "word": "創意工夫", "reading": "そういくふう", "example": "彼は限られた材料で創意工夫を凝らした。", "meaning": "kreativitas dan usaha", "relatedForms": ["試行錯誤"] },
+    { "word": "試行錯誤", "reading": "しこうさくご", "example": "彼は試行錯誤を繰り返しながら答えにたどり着いた。", "meaning": "coba-coba (trial and error)", "relatedForms": ["創意工夫"] },
+    { "word": "右往左往", "reading": "うおうさおう", "example": "突然の停電で社員たちは右往左往した。", "meaning": "kebingungan, panik tak tentu arah", "relatedForms": [] },
+    { "word": "単身赴任", "reading": "たんしんふにん", "example": "彼は家族を残して単身赴任することになった。", "meaning": "tugas kerja sendirian (jauh dari keluarga)", "relatedForms": [] },
+    { "word": "自信喪失", "reading": "じしんそうしつ", "example": "度重なる失敗で彼は自信喪失に陥った。", "meaning": "kehilangan kepercayaan diri", "relatedForms": ["自暴自棄"] },
+    { "word": "質実剛健", "reading": "しつじつごうけん", "example": "この学校の校風は質実剛健だ。", "meaning": "sederhana dan kokoh", "relatedForms": [] },
+    { "word": "亭主関白", "reading": "ていしゅかんぱく", "example": "彼の父は亭主関白なタイプだ。", "meaning": "suami yang dominan di rumah", "relatedForms": [] },
+    { "word": "油断大敵", "reading": "ゆだんたいてき", "example": "油断大敵というように、最後まで気を抜いてはいけない。", "meaning": "kelengahan adalah musuh besar", "relatedForms": [] },
+    { "word": "暗中模索", "reading": "あんちゅうもさく", "example": "新しい分野で、彼は暗中模索の状態が続いている。", "meaning": "meraba-raba dalam kegelapan (mencari cara)", "relatedForms": ["五里霧中"] },
+    { "word": "臨機応変", "reading": "りんきおうへん", "example": "彼は臨機応変に状況へ対応した。", "meaning": "menyesuaikan diri dengan situasi", "relatedForms": [] },
+    { "word": "悪戦苦闘", "reading": "あくせんくとう", "example": "チームは悪戦苦闘の末、なんとか勝利した。", "meaning": "berjuang keras (situasi sulit)", "relatedForms": [] },
+    { "word": "一喜一憂", "reading": "いっきいちゆう", "example": "結果に一喜一憂せず、次に備えることが大切だ。", "meaning": "naik-turun perasaan (tergantung hasil)", "relatedForms": [] },
+    { "word": "不法投棄", "reading": "ふほうとうき", "example": "山中でのゴミの不法投棄が問題になっている。", "meaning": "pembuangan sampah ilegal", "relatedForms": [] },
+    { "word": "自暴自棄", "reading": "じぼうじき", "example": "彼は失恋のショックで自暴自棄になった。", "meaning": "putus asa, nekat", "relatedForms": ["自信喪失"] },
+    { "word": "感慨無量", "reading": "かんがいむりょう", "example": "長年の努力が実り、彼は感慨無量だった。", "meaning": "terharu mendalam", "relatedForms": [] },
+    { "word": "情状酌量", "reading": "じょうじょうしゃくりょう", "example": "裁判官は被告の事情を考慮し、情状酌量を認めた。", "meaning": "pertimbangan meringankan (hukum)", "relatedForms": [] },
+    { "word": "支離滅裂", "reading": "しりめつれつ", "example": "彼の説明は支離滅裂で理解できなかった。", "meaning": "tidak koheren, kacau", "relatedForms": [] },
+    { "word": "美辞麗句", "reading": "びじれいく", "example": "彼は美辞麗句を並べるだけで中身がなかった。", "meaning": "kata-kata indah (tanpa substansi)", "relatedForms": [] },
+    { "word": "五里霧中", "reading": "ごりむちゅう", "example": "事件の手がかりがなく、捜査は五里霧中の状態だ。", "meaning": "tersesat, tidak tahu arah", "relatedForms": ["暗中模索"] },
+    { "word": "新陳代謝", "reading": "しんちんたいしゃ", "example": "運動は新陳代謝を高める効果がある。", "meaning": "metabolisme", "relatedForms": [] },
+    { "word": "一網打尽", "reading": "いちもうだじん", "example": "警察は詐欺グループを一網打尽にした。", "meaning": "menangkap sekaligus semua (kelompok)", "relatedForms": [] },
+    { "word": "冠婚葬祭", "reading": "かんこんそうさい", "example": "冠婚葬祭のマナーを学んでおいた方がいい。", "meaning": "upacara adat (kelahiran-pernikahan-pemakaman dst)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "前置きは抜きにして、＿＿に言います。", "optionA": "単刀直入", "optionAReading": "たんとうちょくにゅう", "optionB": "一言一句", "optionBReading": "いちごんいっく", "answer": "A" },
+      { "question": "彼は先生の説明を＿＿漏らさず書き写した。", "optionA": "単刀直入", "optionAReading": "たんとうちょくにゅう", "optionB": "一言一句", "optionBReading": "いちごんいっく", "answer": "B" },
+      { "question": "度重なる失敗で彼は＿＿に陥った。", "optionA": "自信喪失", "optionAReading": "じしんそうしつ", "optionB": "自暴自棄", "optionBReading": "じぼうじき", "answer": "A" },
+      { "question": "彼は失恋のショックで＿＿になった。", "optionA": "自信喪失", "optionAReading": "じしんそうしつ", "optionB": "自暴自棄", "optionBReading": "じぼうじき", "answer": "B" },
+      { "question": "事件の手がかりがなく、捜査は＿＿の状態だ。", "optionA": "五里霧中", "optionAReading": "ごりむちゅう", "optionB": "暗中模索", "optionBReading": "あんちゅうもさく", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ききいっぱつ", "fixedKanji": "危機一", "blankPosition": "after", "choices": ["髪", "発", "瞬", "刻"], "answer": "髪" },
+      { "reading": "しこうさくご", "fixedKanji": "試行", "blankPosition": "after", "choices": ["錯誤", "錯覚", "誤解", "反省"], "answer": "錯誤" },
+      { "reading": "りんきおうへん", "fixedKanji": "臨機", "blankPosition": "after", "choices": ["応変", "適応", "対応", "順応"], "answer": "応変" },
+      { "reading": "じょうじょうしゃくりょう", "fixedKanji": "情状", "blankPosition": "after", "choices": ["酌量", "考慮", "斟酌", "配慮"], "answer": "酌量" },
+      { "reading": "いちもうだじん", "fixedKanji": "一網", "blankPosition": "after", "choices": ["打尽", "一掃", "壊滅", "撲滅"], "answer": "打尽" }
+    ]
+  }
+}

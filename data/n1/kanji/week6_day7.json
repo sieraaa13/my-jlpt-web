@@ -1,0 +1,43 @@
+{
+  "week": 6,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 6 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "この庭園には静かな趣がある。", "target": "趣", "choices": ["かがやき", "おもむき", "ひらめき", "ひたむき"], "answer": "おもむき" },
+    { "sentence": "選手たちは技を磨いて大会に臨んだ。", "target": "技", "choices": ["わざ", "えだ", "ひざ", "うで"], "answer": "わざ" },
+    { "sentence": "手のひらの静脈で本人認証を行うシステムがある。", "target": "静脈", "choices": ["せいみゃく", "そうみゃく", "じょうみゃく", "ちょうみゃく"], "answer": "じょうみゃく" },
+    { "sentence": "彼は長年の志を果たして故郷に戻った。", "target": "志", "choices": ["こころみ", "こころがけ", "こころえ", "こころざし"], "answer": "こころざし" },
+    { "sentence": "あの上司の理不尽な態度は腹に据えかねる。", "target": "据え", "choices": ["こらえ", "すえ", "あつらえ", "かまえ"], "answer": "すえ" },
+    { "sentence": "彼は推薦入学で大学に入った。", "target": "推薦", "choices": ["ちゅうせん", "すいしょう", "ちゅうしょう", "すいせん"], "answer": "すいせん" },
+    { "sentence": "彼は炊事も洗濯も掃除も何でもできる。", "target": "炊事", "choices": ["すいじ", "けつじ", "いくじ", "かじ"], "answer": "すいじ" },
+    { "sentence": "扶養家族がいると所得税が控除される。", "target": "扶養", "choices": ["ほよう", "こよう", "ふよう", "かよう"], "answer": "ふよう" },
+    { "sentence": "私は大ざっぱだが、弟は几帳面だ。", "target": "几帳面", "choices": ["くちょうめん", "まじめ", "きちょうめん", "まめ"], "answer": "きちょうめん" },
+    { "sentence": "悠長にしている暇はない。迅速に対応するように。", "target": "迅速", "choices": ["じんそく", "しゅんそく", "さっそく", "びんそく"], "answer": "じんそく" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "不法とうきは罰せられます。", "reading": "とうき", "choices": ["陶器", "投棄", "登記", "冬季"], "answer": "投棄" },
+    { "sentence": "ごらく施設の充実を図る。", "reading": "ごらく", "choices": ["娯楽", "極楽", "快楽", "行楽"], "answer": "娯楽" },
+    { "sentence": "ふきつな予感が的中する。", "reading": "ふきつ", "choices": ["不況", "不幸", "不凶", "不吉"], "answer": "不吉" },
+    { "sentence": "よめと姑の関係はなかなか大変だ。", "reading": "よめ", "choices": ["婿", "娘", "嫁", "婚"], "answer": "嫁" },
+    { "sentence": "今朝は庭一面にしもが降りていた。", "reading": "しも", "choices": ["霧", "雷", "霜", "震"], "answer": "霜" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "子どもと一緒に観覧（　）に乗る。", "target": "観覧車", "choices": ["席", "車", "船", "馬"], "answer": "車" },
+    { "sentence": "回覧（　）を隣に回す。", "target": "回覧板", "choices": ["書", "帳", "板", "紙"], "answer": "板" },
+    { "sentence": "閲覧（　）で新聞や雑誌を読む。", "target": "閲覧室", "choices": ["室", "場", "階", "院"], "answer": "室" },
+    { "sentence": "展覧（　）に招待される。", "target": "展覧会", "choices": ["回", "界", "式", "会"], "answer": "会" },
+    { "sentence": "妥協（　）を検討する。", "target": "妥協案", "choices": ["安", "作", "案", "状"], "answer": "案" }
+  ],
+  "passageQuestion": {
+    "passage": "新しい店の地道な宣伝が[21]、経営がようやく[22]に乗り始めたときこそ[23]だ。すぐに規模拡大を狙って焦るのではなく、まずは今のサービスの質を[24]ことに[25]べきだろう。",
+    "wordBank": ["ゆだんたいてき", "きどう", "ごりむちゅう", "いじする", "まとをいて", "さいぜんをつくして", "こうをそうして"],
+    "blanks": [
+      { "number": 21, "answer": "こうをそうして", "answerKanji": "功を奏して" },
+      { "number": 22, "answer": "きどう", "answerKanji": "軌道" },
+      { "number": 23, "answer": "ゆだんたいてき", "answerKanji": "油断大敵" },
+      { "number": 24, "answer": "いじする", "answerKanji": "維持する" },
+      { "number": 25, "answer": "さいぜんをつくして", "answerKanji": "最善を尽くして" }
+    ]
+  }
+}
