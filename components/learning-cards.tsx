@@ -35,7 +35,7 @@ const learningPaths = [
     character: "Coach C",
     image: "/asset/n2.jpg",
     color: "from-indigo-500/20 to-blue-500/20",
-    href: "/jlpt/n2?type=exam"
+    href: "/n2"
   },
   {
     id: "n3",
