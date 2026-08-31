@@ -1,0 +1,54 @@
+{
+  "week": 7,
+  "day": 5,
+  "title": "1羽・1個・1軒",
+  "subtitle": "Josuushi (kata penggolong/penghitung)",
+  "entries": [
+    { "word": "通", "reading": "つう", "example": "市役所で証明書を1通発行してもらった。", "meaning": "penghitung untuk surat/dokumen", "relatedForms": [] },
+    { "word": "本", "reading": "ほん", "example": "今日は映画を2本続けて見た。", "meaning": "penghitung untuk benda panjang, tayangan, rute bus", "relatedForms": [] },
+    { "word": "部", "reading": "ぶ", "example": "会議のために資料を10部用意した。", "meaning": "penghitung untuk koran, set dokumen", "relatedForms": [] },
+    { "word": "着", "reading": "ちゃく", "example": "スーツを2着新調した。", "meaning": "penghitung untuk pakaian", "relatedForms": [] },
+    { "word": "足", "reading": "そく", "example": "新しい運動靴を1足買った。", "meaning": "penghitung untuk sepatu/kaus kaki (sepasang)", "relatedForms": [] },
+    { "word": "頭", "reading": "とう", "example": "動物園に新しく2頭のパンダが来た。", "meaning": "penghitung untuk hewan besar", "relatedForms": ["匹"] },
+    { "word": "台", "reading": "だい", "example": "家にはパソコンが3台ある。", "meaning": "penghitung untuk mesin/kendaraan", "relatedForms": [] },
+    { "word": "画", "reading": "かく", "example": "「川」という漢字の画数は3画だ。", "meaning": "penghitung untuk goresan kanji", "relatedForms": [] },
+    { "word": "羽", "reading": "わ", "example": "庭に鳥が3羽やってきた。", "meaning": "penghitung untuk burung/kelinci", "relatedForms": [] },
+    { "word": "個", "reading": "こ", "example": "レモンを1個とじゃがいもを3個買った。", "meaning": "penghitung untuk benda bulat kecil", "relatedForms": [] },
+    { "word": "軒", "reading": "けん", "example": "この通りには古い店が3軒並んでいる。", "meaning": "penghitung untuk rumah/toko", "relatedForms": [] },
+    { "word": "件", "reading": "けん", "example": "今月は交通事故が1件報告された。", "meaning": "penghitung untuk perkara/pesan", "relatedForms": [] },
+    { "word": "匹", "reading": "ひき", "example": "彼は犬を1匹と猫を2匹飼っている。", "meaning": "penghitung untuk hewan kecil", "relatedForms": ["頭"] },
+    { "word": "杯", "reading": "はい", "example": "彼はビールをグラスで3杯飲んだ。", "meaning": "penghitung untuk cairan dalam wadah", "relatedForms": [] },
+    { "word": "位", "reading": "い", "example": "彼女は大会で6位に入賞した。", "meaning": "penghitung untuk peringkat", "relatedForms": [] },
+    { "word": "巻", "reading": "かん", "example": "全10巻の漫画を7巻まで読んだ。", "meaning": "penghitung untuk jilid buku seri", "relatedForms": [] },
+    { "word": "階", "reading": "かい", "example": "3階建てのアパートの1階に住んでいる。", "meaning": "penghitung untuk lantai bangunan", "relatedForms": [] },
+    { "word": "枚", "reading": "まい", "example": "80円切手を10枚とはがきを2枚ください。", "meaning": "penghitung untuk benda tipis dan datar", "relatedForms": [] },
+    { "word": "冊", "reading": "さつ", "example": "試験のために問題集を5冊勉強した。", "meaning": "penghitung untuk buku/majalah", "relatedForms": [] },
+    { "word": "泊", "reading": "はく", "example": "2泊3日の旅行を計画している。", "meaning": "penghitung untuk jumlah malam menginap", "relatedForms": [] },
+    { "word": "畳", "reading": "じょう", "example": "この部屋は四畳半の広さだ。", "meaning": "penghitung untuk luas ruangan (tatami)", "relatedForms": [] },
+    { "word": "割", "reading": "わり", "example": "このセールでは全品4割引きになる。", "meaning": "penghitung untuk persepuluh/persen", "relatedForms": [] },
+    { "word": "斤", "reading": "きん", "example": "パン屋で食パンを1斤買った。", "meaning": "penghitung untuk roti tawar", "relatedForms": [] },
+    { "word": "隻", "reading": "せき", "example": "大型漁船が2隻出港した。", "meaning": "penghitung untuk kapal besar", "relatedForms": [] },
+    { "word": "脚", "reading": "きゃく", "example": "パイプ椅子を50脚並べた。", "meaning": "penghitung untuk meja/kursi berkaki", "relatedForms": [] },
+    { "word": "錠", "reading": "じょう", "example": "この薬は毎食後1回2錠飲んでください。", "meaning": "penghitung untuk pil obat", "relatedForms": [] },
+    { "word": "遍", "reading": "へん", "example": "彼は何遍も同じことを言う。", "meaning": "penghitung untuk jumlah tindakan (agak kuno)", "relatedForms": [] },
+    { "word": "箇", "reading": "か", "example": "提出書類に間違いが1箇所あった。", "meaning": "penghitung untuk tempat/bulan (箇所・箇月)", "relatedForms": [] },
+    { "word": "坪", "reading": "つぼ", "example": "この土地は約50坪の広さだ。", "meaning": "penghitung untuk luas tanah/bangunan", "relatedForms": [] },
+    { "word": "升", "reading": "しょう", "example": "お祝いに一升瓶の日本酒をもらった。", "meaning": "penghitung untuk beras/sake (sekitar 1.8L)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "レモンを1＿＿とじゃがいもを3＿＿買った。", "optionA": "個", "optionAReading": "こ", "optionB": "本", "optionBReading": "ほん", "answer": "A" },
+      { "question": "映画を2＿＿続けて見た。", "optionA": "個", "optionAReading": "こ", "optionB": "本", "optionBReading": "ほん", "answer": "B" },
+      { "question": "動物園に新しく2＿＿のパンダが来た。", "optionA": "頭", "optionAReading": "とう", "optionB": "匹", "optionBReading": "ひき", "answer": "A" },
+      { "question": "彼は犬を1＿＿と猫を2＿＿飼っている。", "optionA": "頭", "optionAReading": "とう", "optionB": "匹", "optionBReading": "ひき", "answer": "B" },
+      { "question": "パイプ椅子を50＿＿並べた。", "optionA": "脚", "optionAReading": "きゃく", "optionB": "台", "optionBReading": "だい", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "にわ", "fixedKanji": "2", "blankPosition": "after", "choices": ["羽", "個", "匹", "頭"], "answer": "羽" },
+      { "reading": "さんけん", "fixedKanji": "3", "blankPosition": "after", "choices": ["軒", "件", "個", "枚"], "answer": "軒" },
+      { "reading": "ごさつ", "fixedKanji": "5", "blankPosition": "after", "choices": ["冊", "巻", "枚", "通"], "answer": "冊" },
+      { "reading": "にはく", "fixedKanji": "2", "blankPosition": "after", "choices": ["泊", "階", "位", "坪"], "answer": "泊" },
+      { "reading": "よんわり", "fixedKanji": "4", "blankPosition": "after", "choices": ["割", "升", "斤", "錠"], "answer": "割" }
+    ]
+  }
+}

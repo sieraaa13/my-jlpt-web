@@ -1,0 +1,43 @@
+{
+  "week": 7,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 7 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "彼は毎年、初詣で家族の健康を祈願する。", "target": "祈願", "choices": ["きがん", "せつげん", "せつがん", "きげん"], "answer": "きがん" },
+    { "sentence": "彼はいつも後輩から慕われている。", "target": "慕われて", "choices": ["つたわれて", "したわれて", "まとわれて", "さそわれて"], "answer": "したわれて" },
+    { "sentence": "便宜上、担当者をAさんと呼ぶことにする。", "target": "便宜上", "choices": ["べんぎじょう", "べんりじょう", "びんぎじょう", "びんりじょう"], "answer": "べんぎじょう" },
+    { "sentence": "彼女は派遣社員として働いている。", "target": "派遣", "choices": ["はけん", "ほけん", "ひけん", "かけん"], "answer": "はけん" },
+    { "sentence": "遺族に哀悼の意を表した。", "target": "哀悼", "choices": ["あいたく", "すいとう", "あいとう", "すいたく"], "answer": "あいとう" },
+    { "sentence": "彼は地域のために奉仕活動を続けている。", "target": "奉仕", "choices": ["ほうじ", "ぼうし", "ほうし", "ぶじ"], "answer": "ほうし" },
+    { "sentence": "その商品は在庫がまだ十分にある。", "target": "在庫", "choices": ["さいこ", "ざいこ", "そうこ", "そんこ"], "answer": "ざいこ" },
+    { "sentence": "彼女はピアノの伴奏で歌を歌った。", "target": "伴奏", "choices": ["けんそう", "はんそう", "ぼうそう", "ばんそう"], "answer": "ばんそう" },
+    { "sentence": "家族は平穏無事な毎日を送っている。", "target": "平穏無事", "choices": ["へいいんぶじ", "へいおんぶじ", "へいぼんぶじ", "へいあんぶじ"], "answer": "へいおんぶじ" },
+    { "sentence": "あの日の記憶は今でも鮮明に残っている。", "target": "鮮明", "choices": ["せんめい", "ようめい", "しょうめい", "とうめい"], "answer": "せんめい" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "遺言状を書いておいた。", "reading": "ゆいごん", "choices": ["遺言", "由言", "結言", "依言"], "answer": "遺言" },
+    { "sentence": "さよなら満塁ホームランで勝った。", "reading": "まんるい", "choices": ["満累", "満塁", "満系", "満墨"], "answer": "満塁" },
+    { "sentence": "刃物の持ち込みは禁止されている。", "reading": "はもの", "choices": ["歯物", "刀物", "力物", "刃物"], "answer": "刃物" },
+    { "sentence": "お金とは一生縁がないだろうと言われた。", "reading": "えん", "choices": ["録", "緑", "縁", "禄"], "answer": "縁" },
+    { "sentence": "素朴な疑問をぶつけてみた。", "reading": "そぼく", "choices": ["素直", "素朴", "率直", "率朴"], "answer": "素朴" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "飛行機は（　）気流に巻き込まれた。", "target": "乱気流", "choices": ["乱", "重", "猛", "悪"], "answer": "乱" },
+    { "sentence": "エコーと呼ばれる（　）音波による検査を受けた。", "target": "超音波", "choices": ["低", "高", "超", "微"], "answer": "超" },
+    { "sentence": "真っ暗は嫌なので、（　）電球だけつけて寝る。", "target": "豆電球", "choices": ["仮", "正", "豆", "副"], "answer": "豆" },
+    { "sentence": "日本（　）公開の古い映画を見に行った。", "target": "初公開", "choices": ["初", "名", "急", "序"], "answer": "初" },
+    { "sentence": "（　）文化間コミュニケーションを学んだ。", "target": "異文化", "choices": ["俗", "異", "諸", "被"], "answer": "異" }
+  ],
+  "passageQuestion": {
+    "passage": "職業を表す漢字には、医[21]、歌[22]、小説[23]のようにいろいろな種類がある。時代とともに呼び方が変化した例もあり、かつて女性だけの仕事とされていた看護婦や保母という呼称は、男性も同じ仕事に就くようになったことをきっかけに、それぞれ看護[24]、保育[25]という呼び方に変わった。",
+    "wordBank": ["者", "家", "師", "手", "士"],
+    "blanks": [
+      { "number": 21, "answer": "者", "answerKanji": "医者（いしゃ）" },
+      { "number": 22, "answer": "手", "answerKanji": "歌手（かしゅ）" },
+      { "number": 23, "answer": "家", "answerKanji": "小説家（しょうせつか）" },
+      { "number": 24, "answer": "師", "answerKanji": "看護師（かんごし）" },
+      { "number": 25, "answer": "士", "answerKanji": "保育士（ほいくし）" }
+    ]
+  }
+}

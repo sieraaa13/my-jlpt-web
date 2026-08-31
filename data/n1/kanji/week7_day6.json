@@ -1,0 +1,57 @@
+{
+  "week": 7,
+  "day": 6,
+  "title": "再会する＝再び会う",
+  "subtitle": "On'yomi dan parafrase kun'yomi-nya",
+  "entries": [
+    { "word": "再会する", "reading": "さいかいする", "example": "彼らは10年ぶりに再会した。", "meaning": "bertemu kembali", "relatedForms": ["再び会う"] },
+    { "word": "全滅する", "reading": "ぜんめつする", "example": "害虫の大量発生で農作物が全滅した。", "meaning": "musnah total", "relatedForms": ["全て滅びる"] },
+    { "word": "粉砕する", "reading": "ふんさいする", "example": "機械は岩を粉砕することができる。", "meaning": "menghancurkan menjadi bubuk", "relatedForms": ["粉々に砕く"] },
+    { "word": "競争する", "reading": "きょうそうする", "example": "二つの会社は市場シェアを競争している。", "meaning": "bersaing", "relatedForms": ["競い争う"] },
+    { "word": "促進する", "reading": "そくしんする", "example": "この政策は地域の経済成長を促進する。", "meaning": "mendorong, mempercepat", "relatedForms": ["促して進める"] },
+    { "word": "勧誘する", "reading": "かんゆうする", "example": "彼はしつこく入会を勧誘してきた。", "meaning": "mengajak, merekrut", "relatedForms": ["勧めて誘う"] },
+    { "word": "養育する", "reading": "よういくする", "example": "彼女は一人で子どもを養育している。", "meaning": "membesarkan (anak)", "relatedForms": ["養って育てる"] },
+    { "word": "装飾する", "reading": "そうしょくする", "example": "店内はクリスマスの飾りで装飾されていた。", "meaning": "menghias", "relatedForms": ["装って飾る"] },
+    { "word": "尊敬する", "reading": "そんけいする", "example": "私は祖父を心から尊敬している。", "meaning": "menghormati", "relatedForms": ["尊んで敬う"] },
+    { "word": "募集する", "reading": "ぼしゅうする", "example": "会社は新入社員を募集している。", "meaning": "merekrut", "relatedForms": ["募って集める"] },
+    { "word": "巡回する", "reading": "じゅんかいする", "example": "警備員は敷地内を巡回している。", "meaning": "berpatroli", "relatedForms": ["巡って回る"] },
+    { "word": "崩壊する", "reading": "ほうかいする", "example": "地震で古い建物が崩壊した。", "meaning": "runtuh", "relatedForms": ["崩れて壊れる"] },
+    { "word": "荒廃する", "reading": "こうはいする", "example": "戦争で町は荒廃してしまった。", "meaning": "hancur terlantar", "relatedForms": ["荒れて廃れる"] },
+    { "word": "飼育する", "reading": "しいくする", "example": "動物園ではパンダを大切に飼育している。", "meaning": "memelihara (hewan)", "relatedForms": ["飼って育てる"] },
+    { "word": "黙認する", "reading": "もくにんする", "example": "上司はそのミスを黙認した。", "meaning": "membiarkan diam-diam", "relatedForms": ["黙って認める"] },
+    { "word": "漂流する", "reading": "ひょうりゅうする", "example": "船は嵐で漂流してしまった。", "meaning": "terapung-apung", "relatedForms": ["漂って流される"] },
+    { "word": "忍耐する", "reading": "にんたいする", "example": "目標達成には忍耐する力が必要だ。", "meaning": "bersabar, menahan diri", "relatedForms": ["耐え忍ぶ"] },
+    { "word": "負傷する", "reading": "ふしょうする", "example": "彼は事故で足を負傷した。", "meaning": "terluka", "relatedForms": ["傷を負う"] },
+    { "word": "保温する", "reading": "ほおんする", "example": "この水筒は飲み物を長時間保温できる。", "meaning": "menjaga tetap hangat", "relatedForms": ["温かさを保つ"] },
+    { "word": "開催する", "reading": "かいさいする", "example": "来月、市はイベントを開催する予定だ。", "meaning": "menyelenggarakan", "relatedForms": ["催しを開く"] },
+    { "word": "就職する", "reading": "しゅうしょくする", "example": "彼は大学卒業後、大手企業に就職した。", "meaning": "mendapat pekerjaan", "relatedForms": ["職に就く"] },
+    { "word": "潜水する", "reading": "せんすいする", "example": "彼は趣味で潜水することがある。", "meaning": "menyelam", "relatedForms": ["水に潜る"] },
+    { "word": "豊富な", "reading": "ほうふな", "example": "この地域は自然資源が豊富だ。", "meaning": "berlimpah", "relatedForms": ["豊かで富んだ"] },
+    { "word": "貧乏な", "reading": "びんぼうな", "example": "彼は貧乏だった学生時代を懐かしんでいる。", "meaning": "miskin", "relatedForms": ["貧しくて乏しい"] },
+    { "word": "詳細な", "reading": "しょうさいな", "example": "報告書には詳細なデータが記載されている。", "meaning": "rinci", "relatedForms": ["詳しくて細かい"] },
+    { "word": "悲惨な", "reading": "ひさんな", "example": "その戦場は悲惨な状況だった。", "meaning": "tragis, memilukan", "relatedForms": ["悲しくて惨めな"] },
+    { "word": "鮮明な", "reading": "せんめいな", "example": "新しいカメラは鮮明な写真が撮れる。", "meaning": "jelas, tajam (gambar)", "relatedForms": ["鮮やかで明らかな"] },
+    { "word": "透明な", "reading": "とうめいな", "example": "この容器は透明で中身がよく見える。", "meaning": "transparan", "relatedForms": ["明るくて透き通った"] },
+    { "word": "彫刻", "reading": "ちょうこく", "example": "美術館で古代の彫刻を見学した。", "meaning": "patung, ukiran", "relatedForms": ["彫り刻んだもの"] },
+    { "word": "悪癖", "reading": "あくへき", "example": "彼には爪を噛むという悪癖がある。", "meaning": "kebiasaan buruk", "relatedForms": ["悪い癖"] },
+    { "word": "隣人", "reading": "りんじん", "example": "隣人とはいつも挨拶を交わしている。", "meaning": "tetangga", "relatedForms": ["隣の人"] },
+    { "word": "免税品", "reading": "めんぜいひん", "example": "空港の免税品店でお土産を買った。", "meaning": "barang bebas pajak", "relatedForms": ["税金を免れる品"] },
+    { "word": "後継者", "reading": "こうけいしゃ", "example": "社長は会社の後継者を探している。", "meaning": "penerus", "relatedForms": ["後を継ぐ者"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼らは10年ぶりに＿＿した。", "optionA": "再会", "optionAReading": "さいかい", "optionB": "全滅", "optionBReading": "ぜんめつ", "answer": "A" },
+      { "question": "地震で古い建物が＿＿した。", "optionA": "崩壊", "optionAReading": "ほうかい", "optionB": "荒廃", "optionBReading": "こうはい", "answer": "A" },
+      { "question": "戦争で町は＿＿してしまった。", "optionA": "崩壊", "optionAReading": "ほうかい", "optionB": "荒廃", "optionBReading": "こうはい", "answer": "B" },
+      { "question": "彼は事故で足を＿＿した。", "optionA": "負傷", "optionAReading": "ふしょう", "optionB": "忍耐", "optionBReading": "にんたい", "answer": "A" },
+      { "question": "彼は大学卒業後、大手企業に＿＿した。", "optionA": "就職", "optionAReading": "しゅうしょく", "optionB": "開催", "optionBReading": "かいさい", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ぼしゅう", "fixedKanji": "募", "blankPosition": "after", "choices": ["集", "金", "款", "寄"], "answer": "集" },
+      { "reading": "じゅんかい", "fixedKanji": "巡", "blankPosition": "after", "choices": ["回", "遊", "航", "行"], "answer": "回" },
+      { "reading": "しいく", "fixedKanji": "飼", "blankPosition": "after", "choices": ["育", "養", "飯", "料"], "answer": "育" },
+      { "reading": "ほおん", "fixedKanji": "保", "blankPosition": "after", "choices": ["温", "存", "護", "持"], "answer": "温" },
+      { "reading": "せんすい", "fixedKanji": "潜", "blankPosition": "after", "choices": ["水", "海", "航", "泳"], "answer": "水" }
+    ]
+  }
+}
