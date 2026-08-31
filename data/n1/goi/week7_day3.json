@@ -1,0 +1,52 @@
+{
+  "week": 7,
+  "day": 3,
+  "title": "カタカナ③",
+  "subtitle": "Kosakata katakana buatan Jepang (wasei-eigo) dan bahasa gaul",
+  "entries": [
+    { "word": "オイルショック", "reading": "オイルショック", "example": "1970年代のオイルショックで物価が急上昇した。", "meaning": "krisis minyak", "relatedForms": [] },
+    { "word": "オーダーメイド", "reading": "オーダーメイド", "example": "彼はオーダーメイドのスーツを新調した。", "meaning": "dibuat khusus (custom)", "relatedForms": [] },
+    { "word": "グレードアップ", "reading": "グレードアップ", "example": "新しいモデルはグレードアップして発売された。", "meaning": "naik kelas/kualitas", "relatedForms": [] },
+    { "word": "ペアルック", "reading": "ペアルック", "example": "あの二人はペアルックでデートしている。", "meaning": "pakaian kembar (pasangan)", "relatedForms": [] },
+    { "word": "ベッドタウン", "reading": "ベッドタウン", "example": "この町は都心へ通勤する人のベッドタウンだ。", "meaning": "kota satelit (permukiman)", "relatedForms": [] },
+    { "word": "サラ金", "reading": "サラきん", "example": "彼はサラ金から借金をしてしまった。", "meaning": "rentenir, pinjaman tanpa jaminan", "relatedForms": [] },
+    { "word": "ユニットバス", "reading": "ユニットバス", "example": "このアパートはユニットバスの部屋が多い。", "meaning": "kamar mandi modular", "relatedForms": [] },
+    { "word": "ゴールデンタイム", "reading": "ゴールデンタイム", "example": "このドラマはゴールデンタイムに放送されている。", "meaning": "jam tayang utama (prime time)", "relatedForms": [] },
+    { "word": "バージョンアップ", "reading": "バージョンアップ", "example": "ソフトを最新版にバージョンアップした。", "meaning": "upgrade versi", "relatedForms": [] },
+    { "word": "ソーラーシステム", "reading": "ソーラーシステム", "example": "この家はソーラーシステムを導入している。", "meaning": "sistem tenaga surya", "relatedForms": [] },
+    { "word": "リップサービス", "reading": "リップサービス", "example": "彼のほめ言葉はただのリップサービスだ。", "meaning": "basa-basi (pujian tanpa niat)", "relatedForms": [] },
+    { "word": "アダルトサイト", "reading": "アダルトサイト", "example": "会社のパソコンでアダルトサイトを見るのは禁止だ。", "meaning": "situs dewasa", "relatedForms": [] },
+    { "word": "ワンパターン", "reading": "ワンパターン", "example": "彼の話はいつもワンパターンでつまらない。", "meaning": "monoton, itu-itu saja", "relatedForms": [] },
+    { "word": "フリーター", "reading": "フリーター", "example": "彼は大学を出てからフリーターをしている。", "meaning": "pekerja paruh waktu (tidak tetap)", "relatedForms": [] },
+    { "word": "Uターン", "reading": "ユーターン", "example": "道を間違えたので車をUターンさせた。", "meaning": "putar balik", "relatedForms": ["Uターン現象"] },
+    { "word": "Uターン現象", "reading": "ユーターンげんしょう", "example": "都会から地方へ戻るUターン現象が増えている。", "meaning": "fenomena kembali ke kampung halaman", "relatedForms": [] },
+    { "word": "プラスアルファ", "reading": "プラスアルファ", "example": "基本給にプラスアルファの手当がつく。", "meaning": "tambahan (nilai lebih)", "relatedForms": [] },
+    { "word": "ペーパードライバー", "reading": "ペーパードライバー", "example": "彼は免許を持っているだけのペーパードライバーだ。", "meaning": "punya SIM tapi tidak pernah menyetir", "relatedForms": [] },
+    { "word": "スリーサイズ", "reading": "スリーサイズ", "example": "そのモデルはスリーサイズを公開した。", "meaning": "tiga ukuran tubuh (bust-waist-hip)", "relatedForms": [] },
+    { "word": "サイドビジネス", "reading": "サイドビジネス", "example": "彼は本業のほかにサイドビジネスをしている。", "meaning": "usaha sampingan", "relatedForms": [] },
+    { "word": "プラス", "reading": "プラス", "example": "何事も物事をプラスに考えるようにしている。", "meaning": "berpikir positif", "relatedForms": ["マイナス"] },
+    { "word": "マイナス", "reading": "マイナス", "example": "今月は収支がマイナスになってしまった。", "meaning": "defisit, minus", "relatedForms": ["プラス"] },
+    { "word": "ゴールイン", "reading": "ゴールイン", "example": "あのカップルは来春ゴールインする予定だ。", "meaning": "menikah, mencapai garis akhir", "relatedForms": [] },
+    { "word": "満タン", "reading": "まんタン", "example": "出発前にガソリンを満タンにした。", "meaning": "penuh (tangki)", "relatedForms": [] },
+    { "word": "ダブる", "reading": "ダブる", "example": "彼は単位を落として1年ダブってしまった。", "meaning": "tinggal kelas, mengulang tahun", "relatedForms": [] },
+    { "word": "キレる", "reading": "キレる", "example": "彼は注意されて突然キレた。", "meaning": "meledak emosi tiba-tiba", "relatedForms": [] },
+    { "word": "サボる", "reading": "サボる", "example": "彼は理由もなく仕事をサボった。", "meaning": "bolos, malas-malasan", "relatedForms": [] },
+    { "word": "ヤバい", "reading": "ヤバい", "example": "これ以上時間に遅れるとヤバい。", "meaning": "gawat, runyam", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は注意されて突然＿＿怒り出した。", "optionA": "キレて", "optionAReading": "キレて", "optionB": "サボって", "optionBReading": "サボって", "answer": "A" },
+      { "question": "彼は単位を落として1年＿＿しまった。", "optionA": "ダブって", "optionAReading": "ダブって", "optionB": "バージョンアップして", "optionBReading": "バージョンアップして", "answer": "A" },
+      { "question": "彼のほめ言葉はただの＿＿だ。", "optionA": "リップサービス", "optionAReading": "リップサービス", "optionB": "プラスアルファ", "optionBReading": "プラスアルファ", "answer": "A" },
+      { "question": "彼は理由もなく仕事を＿＿。", "optionA": "サボった", "optionAReading": "サボった", "optionB": "キレた", "optionBReading": "キレた", "answer": "A" },
+      { "question": "あのカップルは来春＿＿予定だ。", "optionA": "ゴールインする", "optionAReading": "ゴールインする", "optionB": "Uターンする", "optionBReading": "ユーターンする", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "たんいをおとして1ねんダブる", "fixedKanji": "単位を落として1年", "blankPosition": "after", "choices": ["ダブる", "キレる", "サボる", "ヤバい"], "answer": "ダブる" },
+      { "reading": "しゅっぱつまえにガソリンをまんタンにした", "fixedKanji": "出発前にガソリンを", "blankPosition": "after", "choices": ["満タンにした", "プラスにした", "マイナスにした", "グレードアップした"], "answer": "満タンにした" },
+      { "reading": "かれはめんきょをもっているだけのペーパードライバーだ", "fixedKanji": "彼は免許を持っているだけの", "blankPosition": "after", "choices": ["ペーパードライバーだ", "フリーターだ", "ワンパターンだ", "ベッドタウンだ"], "answer": "ペーパードライバーだ" },
+      { "reading": "このまちはベッドタウンだ", "fixedKanji": "この町は", "blankPosition": "after", "choices": ["ベッドタウンだ", "サラ金だ", "ユニットバスだ", "ゴールデンタイムだ"], "answer": "ベッドタウンだ" },
+      { "reading": "かれのはなしはいつもワンパターンだ", "fixedKanji": "彼の話はいつも", "blankPosition": "after", "choices": ["ワンパターンだ", "プラスアルファだ", "リップサービスだ", "オーダーメイドだ"], "answer": "ワンパターンだ" }
+    ]
+  }
+}

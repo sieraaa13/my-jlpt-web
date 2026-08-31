@@ -1,0 +1,54 @@
+{
+  "week": 7,
+  "day": 4,
+  "title": "組み合わせの言葉①",
+  "subtitle": "Kata kerja gabungan (fukugoudoushi) - kelompok 1",
+  "entries": [
+    { "word": "受け継ぐ", "reading": "うけつぐ", "example": "彼は父の事業を受け継いだ。", "meaning": "mewarisi", "relatedForms": [] },
+    { "word": "受け入れる", "reading": "うけいれる", "example": "会社はその提案を受け入れた。", "meaning": "menerima (usul)", "relatedForms": ["受け入れ"] },
+    { "word": "受け止める", "reading": "うけとめる", "example": "彼はボールをしっかり受け止めた。", "meaning": "menangkap (bola)", "relatedForms": [] },
+    { "word": "受け止める", "reading": "うけとめる", "example": "彼女はその事実を冷静に受け止めた。", "meaning": "menerima (kenyataan)", "relatedForms": [] },
+    { "word": "取り締まる", "reading": "とりしまる", "example": "警察は違法駐車を取り締まっている。", "meaning": "menertibkan, mengawasi ketat", "relatedForms": ["取り締まり"] },
+    { "word": "取り次ぐ", "reading": "とりつぐ", "example": "受付は電話を担当者に取り次いだ。", "meaning": "menyambungkan (pesan/panggilan)", "relatedForms": ["取り次ぎ"] },
+    { "word": "取り戻す", "reading": "とりもどす", "example": "彼は盗まれた財布を取り戻した。", "meaning": "mendapatkan kembali", "relatedForms": [] },
+    { "word": "取り戻す", "reading": "とりもどす", "example": "遅れを取り戻すため、彼は急いで作業した。", "meaning": "mengejar ketertinggalan", "relatedForms": [] },
+    { "word": "取り囲む", "reading": "とりかこむ", "example": "記者たちが首相の周りを取り囲んだ。", "meaning": "mengelilingi", "relatedForms": ["取り巻く"] },
+    { "word": "取り調べる", "reading": "とりしらべる", "example": "警察は容疑者を取り調べた。", "meaning": "menginterogasi", "relatedForms": ["取り調べ"] },
+    { "word": "取り立てる", "reading": "とりたてる", "example": "業者は借金を厳しく取り立てた。", "meaning": "menagih (dengan keras)", "relatedForms": ["取り立て"] },
+    { "word": "取り混ぜる", "reading": "とりまぜる", "example": "大小さまざまな商品を取り混ぜて売っている。", "meaning": "mencampur (berbagai jenis)", "relatedForms": [] },
+    { "word": "取り寄せる", "reading": "とりよせる", "example": "珍しい食材を海外から取り寄せた。", "meaning": "memesan dari jauh", "relatedForms": ["取り寄せ"] },
+    { "word": "取り引きする", "reading": "とりひきする", "example": "彼はその会社と長年取り引きしている。", "meaning": "bertransaksi, berbisnis", "relatedForms": [] },
+    { "word": "引き起こす", "reading": "ひきおこす", "example": "彼の不注意が大きな事故を引き起こした。", "meaning": "menyebabkan, memicu", "relatedForms": [] },
+    { "word": "引き下げる", "reading": "ひきさげる", "example": "政府は税率を引き下げた。", "meaning": "menurunkan (tarif)", "relatedForms": ["引き上げる"] },
+    { "word": "引き立てる", "reading": "ひきたてる", "example": "彼はいつも後輩を引き立ててくれる。", "meaning": "mengangkat, mendukung (junior)", "relatedForms": [] },
+    { "word": "申し入れる", "reading": "もうしいれる", "example": "労働組合は待遇改善を申し入れた。", "meaning": "mengajukan (protes/permintaan)", "relatedForms": ["申し入れ"] },
+    { "word": "申し出る", "reading": "もうしでる", "example": "彼は率先して手伝いを申し出た。", "meaning": "menawarkan diri", "relatedForms": ["申し出"] },
+    { "word": "追い出す", "reading": "おいだす", "example": "彼は家賃を滞納してアパートを追い出された。", "meaning": "diusir", "relatedForms": [] },
+    { "word": "追い込む", "reading": "おいこむ", "example": "彼は相手を窮地に追い込んだ。", "meaning": "mendesak, memojokkan", "relatedForms": [] },
+    { "word": "立ち寄る", "reading": "たちよる", "example": "帰り道、友人の家に立ち寄った。", "meaning": "mampir", "relatedForms": [] },
+    { "word": "立ち去る", "reading": "たちさる", "example": "彼は何も言わずにその場を立ち去った。", "meaning": "pergi meninggalkan (tempat)", "relatedForms": [] },
+    { "word": "打ち明ける", "reading": "うちあける", "example": "彼女は親友に悩みを打ち明けた。", "meaning": "mengungkapkan (isi hati)", "relatedForms": [] },
+    { "word": "打ち切る", "reading": "うちきる", "example": "雑誌の販売はついに打ち切られた。", "meaning": "dihentikan", "relatedForms": ["打ち切り"] },
+    { "word": "打ち上げる", "reading": "うちあげる", "example": "新型ロケットが無事に打ち上げられた。", "meaning": "diluncurkan", "relatedForms": ["打ち上げ"] },
+    { "word": "割り当てる", "reading": "わりあてる", "example": "部長は各社員に仕事を割り当てた。", "meaning": "membagi tugas", "relatedForms": ["割り当て"] },
+    { "word": "割り込む", "reading": "わりこむ", "example": "一人の男性が列に割り込んできた。", "meaning": "menyerobot (antrean)", "relatedForms": ["割り込み"] },
+    { "word": "読み上げる", "reading": "よみあげる", "example": "司会者は結果を読み上げた。", "meaning": "membacakan (dengan lantang)", "relatedForms": [] },
+    { "word": "読み取る", "reading": "よみとる", "example": "彼女は著者の意図を正確に読み取った。", "meaning": "memahami (maksud tersembunyi)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は父の事業を＿＿。", "optionA": "受け継いだ", "optionAReading": "うけついだ", "optionB": "取り戻した", "optionBReading": "とりもどした", "answer": "A" },
+      { "question": "警察は容疑者を厳しく＿＿。", "optionA": "取り調べた", "optionAReading": "とりしらべた", "optionB": "取り立てた", "optionBReading": "とりたてた", "answer": "A" },
+      { "question": "彼はその場を何も言わずに＿＿。", "optionA": "立ち去った", "optionAReading": "たちさった", "optionB": "立ち寄った", "optionBReading": "たちよった", "answer": "A" },
+      { "question": "彼女は親友に悩みを＿＿。", "optionA": "打ち明けた", "optionAReading": "うちあけた", "optionB": "打ち切った", "optionBReading": "うちきった", "answer": "A" },
+      { "question": "一人の男性が列に＿＿きた。", "optionA": "割り込んで", "optionAReading": "わりこんで", "optionB": "割り当てて", "optionBReading": "わりあてて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ざいさんをうけつぐ", "fixedKanji": "財産を", "blankPosition": "after", "choices": ["受け継ぐ", "取り戻す", "引き立てる", "追い込む"], "answer": "受け継ぐ" },
+      { "reading": "ようぎしゃをとりしらべる", "fixedKanji": "容疑者を", "blankPosition": "after", "choices": ["取り調べる", "取り寄せる", "取り混ぜる", "取り次ぐ"], "answer": "取り調べる" },
+      { "reading": "ろけっとをうちあげる", "fixedKanji": "ロケットを", "blankPosition": "after", "choices": ["打ち上げる", "打ち切る", "打ち明ける", "割り当てる"], "answer": "打ち上げる" },
+      { "reading": "ゆうじんのいえにたちよる", "fixedKanji": "友人の家に", "blankPosition": "after", "choices": ["立ち寄る", "立ち去る", "追い出す", "追い込む"], "answer": "立ち寄る" },
+      { "reading": "ぜいきんをとりたてる", "fixedKanji": "税金を", "blankPosition": "after", "choices": ["取り立てる", "取り引きする", "取り混ぜる", "取り締まる"], "answer": "取り立てる" }
+    ]
+  }
+}
