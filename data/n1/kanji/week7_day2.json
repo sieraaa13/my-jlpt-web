@@ -1,0 +1,59 @@
+{
+  "week": 7,
+  "day": 2,
+  "title": "隠れる・穏やか",
+  "subtitle": "Kanji yang mirip bentuknya ②",
+  "entries": [
+    { "word": "迎える", "reading": "むかえる", "example": "空港で友人を迎えに行った。", "meaning": "menjemput, menyambut", "relatedForms": ["出迎え", "歓迎"] },
+    { "word": "抑える", "reading": "おさえる", "example": "彼は怒りを抑えて冷静に話した。", "meaning": "menahan", "relatedForms": ["抑制", "抑圧"] },
+    { "word": "仰ぐ", "reading": "あおぐ", "example": "彼は空を仰いで大きく息を吸った。", "meaning": "menengadah", "relatedForms": ["信仰"] },
+    { "word": "隠れる", "reading": "かくれる", "example": "子どもはベッドの下に隠れていた。", "meaning": "bersembunyi", "relatedForms": ["隠居", "目隠し"] },
+    { "word": "穏やかな", "reading": "おだやかな", "example": "今日は風もなく穏やかな天気だ。", "meaning": "tenang, damai", "relatedForms": ["平穏な", "穏健な"] },
+    { "word": "小型", "reading": "こがた", "example": "彼は小型のカメラを持ち歩いている。", "meaning": "berukuran kecil", "relatedForms": ["血液型", "典型的な"] },
+    { "word": "堅い", "reading": "かたい", "example": "この木材は非常に堅い。", "meaning": "keras, kokoh", "relatedForms": ["堅実な", "中堅"] },
+    { "word": "存じる", "reading": "ぞんじる", "example": "そのことは存じております。", "meaning": "mengetahui (keigo)", "relatedForms": ["共存", "依存"] },
+    { "word": "存在", "reading": "そんざい", "example": "彼はチームに欠かせない存在だ。", "meaning": "keberadaan", "relatedForms": ["在庫", "不在"] },
+    { "word": "感じる", "reading": "かんじる", "example": "彼女は不安を感じていた。", "meaning": "merasakan", "relatedForms": ["感心な", "感染"] },
+    { "word": "迷惑な", "reading": "めいわくな", "example": "夜遅くの電話は迷惑だ。", "meaning": "mengganggu", "relatedForms": ["惑星", "戸惑う"] },
+    { "word": "済む", "reading": "すむ", "example": "用事が済んだら連絡してください。", "meaning": "selesai", "relatedForms": ["経済", "返済"] },
+    { "word": "洗剤", "reading": "せんざい", "example": "この洗剤は油汚れによく効く。", "meaning": "deterjen", "relatedForms": ["薬剤", "錠剤"] },
+    { "word": "哀れ", "reading": "あわれ", "example": "その姿は哀れで見ていられなかった。", "meaning": "menyedihkan", "relatedForms": ["哀愁", "哀悼"] },
+    { "word": "衰える", "reading": "おとろえる", "example": "高齢になり体力が衰えてきた。", "meaning": "melemah", "relatedForms": ["衰弱する", "老衰"] },
+    { "word": "遺跡", "reading": "いせき", "example": "観光客は古代の遺跡を訪れた。", "meaning": "situs peninggalan", "relatedForms": ["遺族", "遺言"] },
+    { "word": "小遣い", "reading": "こづかい", "example": "子どもは毎月決まった小遣いをもらっている。", "meaning": "uang saku", "relatedForms": ["無駄遣い", "派遣"] },
+    { "word": "特徴", "reading": "とくちょう", "example": "この製品の特徴は軽さと丈夫さだ。", "meaning": "ciri khas", "relatedForms": ["象徴", "徴収"] },
+    { "word": "微笑", "reading": "びしょう", "example": "彼女は微笑を浮かべながら挨拶した。", "meaning": "senyuman", "relatedForms": ["微妙", "顕微鏡"] },
+    { "word": "侮辱", "reading": "ぶじょく", "example": "彼はその発言を侮辱と受け取った。", "meaning": "penghinaan", "relatedForms": ["侮る"] },
+    { "word": "悔しい", "reading": "くやしい", "example": "試合に負けて悔しい思いをした。", "meaning": "kecewa, menyesal", "relatedForms": ["悔やむ", "後悔"] },
+    { "word": "即座に", "reading": "そくざに", "example": "彼は質問に即座に答えた。", "meaning": "seketika", "relatedForms": ["即", "即席"] },
+    { "word": "既に", "reading": "すでに", "example": "会議は既に始まっている。", "meaning": "sudah", "relatedForms": ["既婚", "既製"] },
+    { "word": "殻", "reading": "から", "example": "ゆで卵の殻をむいた。", "meaning": "kulit, cangkang", "relatedForms": ["貝殻", "吸い殻"] },
+    { "word": "穀物", "reading": "こくもつ", "example": "この地域では様々な穀物が栽培されている。", "meaning": "biji-bijian", "relatedForms": ["殻"] },
+    { "word": "補充する", "reading": "ほじゅうする", "example": "在庫が少なくなったので商品を補充した。", "meaning": "mengisi ulang", "relatedForms": ["充電", "充満する"] },
+    { "word": "弁解", "reading": "べんかい", "example": "彼は遅刻の弁解をした。", "meaning": "alasan, pembelaan diri", "relatedForms": ["弁論大会", "勘弁する"] },
+    { "word": "料亭", "reading": "りょうてい", "example": "会食は老舗の料亭で行われた。", "meaning": "restoran Jepang tradisional", "relatedForms": ["亭主"] },
+    { "word": "享受する", "reading": "きょうじゅする", "example": "彼らは平和な生活を享受している。", "meaning": "menikmati (hak/manfaat)", "relatedForms": ["料亭"] },
+    { "word": "適宜", "reading": "てきぎ", "example": "資料の内容は適宜修正してください。", "meaning": "sesuai keperluan", "relatedForms": ["便宜上"] },
+    { "word": "宣伝", "reading": "せんでん", "example": "新商品をテレビで宣伝する。", "meaning": "promosi, iklan", "relatedForms": ["宣言", "宣誓"] },
+    { "word": "一塁", "reading": "いちるい", "example": "バッターは一塁に向かって走った。", "meaning": "base pertama (bisbol)", "relatedForms": ["満塁"] },
+    { "word": "累積", "reading": "るいせき", "example": "小さなミスの累積が大きな問題につながった。", "meaning": "akumulasi", "relatedForms": ["累計"] },
+    { "word": "奉仕", "reading": "ほうし", "example": "彼は地域のために奉仕活動を続けている。", "meaning": "pengabdian", "relatedForms": ["奉る"] },
+    { "word": "演奏", "reading": "えんそう", "example": "彼女はピアノの演奏で観客を魅了した。", "meaning": "pertunjukan musik", "relatedForms": ["伴奏", "奏でる"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は怒りを＿＿冷静に話した。", "optionA": "抑えて", "optionAReading": "おさえて", "optionB": "迎えて", "optionBReading": "むかえて", "answer": "A" },
+      { "question": "空港で友人を＿＿に行った。", "optionA": "抑え", "optionAReading": "おさえ", "optionB": "迎え", "optionBReading": "むかえ", "answer": "B" },
+      { "question": "彼女は不安を＿＿いた。", "optionA": "感じて", "optionAReading": "かんじて", "optionB": "存じて", "optionBReading": "ぞんじて", "answer": "A" },
+      { "question": "そのことは＿＿おります。", "optionA": "感じて", "optionAReading": "かんじて", "optionB": "存じて", "optionBReading": "ぞんじて", "answer": "B" },
+      { "question": "試合に負けて＿＿思いをした。", "optionA": "悔しい", "optionAReading": "くやしい", "optionB": "哀れ", "optionBReading": "あわれ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "かんげい", "fixedKanji": "歓", "blankPosition": "after", "choices": ["迎", "送", "喜", "楽"], "answer": "迎" },
+      { "reading": "よくせい", "fixedKanji": "抑", "blankPosition": "after", "choices": ["制", "圧", "止", "留"], "answer": "制" },
+      { "reading": "いんきょ", "fixedKanji": "隠", "blankPosition": "after", "choices": ["居", "遁", "退", "住"], "answer": "居" },
+      { "reading": "けんじつ", "fixedKanji": "堅", "blankPosition": "after", "choices": ["実", "固", "強", "牢"], "answer": "実" },
+      { "reading": "えんそう", "fixedKanji": "演", "blankPosition": "after", "choices": ["奏", "技", "劇", "芸"], "answer": "奏" }
+    ]
+  }
+}

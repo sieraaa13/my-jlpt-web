@@ -1,0 +1,61 @@
+{
+  "week": 7,
+  "day": 1,
+  "title": "困る・原因・囚人",
+  "subtitle": "Kanji yang mirip bentuknya ①",
+  "entries": [
+    { "word": "力", "reading": "ちから", "example": "彼は毎日筋トレをして力をつけている。", "meaning": "kekuatan", "relatedForms": ["学力", "力士"] },
+    { "word": "刀", "reading": "かたな", "example": "博物館には江戸時代の刀が展示されている。", "meaning": "pedang (Jepang)", "relatedForms": ["日本刀"] },
+    { "word": "刃", "reading": "は", "example": "包丁の刃が欠けてしまった。", "meaning": "mata pisau", "relatedForms": ["刃物"] },
+    { "word": "困る", "reading": "こまる", "example": "財布を忘れて困ってしまった。", "meaning": "kesulitan", "relatedForms": ["困惑する", "困難な"] },
+    { "word": "原因", "reading": "げんいん", "example": "事故の原因はまだ調査中だ。", "meaning": "penyebab", "relatedForms": ["要因", "因縁"] },
+    { "word": "囚人", "reading": "しゅうじん", "example": "その囚人は模範的な態度で刑期を終えた。", "meaning": "narapidana", "relatedForms": ["死刑囚"] },
+    { "word": "考える", "reading": "かんがえる", "example": "彼はその問題についてじっくり考えた。", "meaning": "berpikir", "relatedForms": ["選考", "思考"] },
+    { "word": "老人", "reading": "ろうじん", "example": "老人ホームでボランティア活動をした。", "meaning": "orang lanjut usia", "relatedForms": ["老いる", "老ける"] },
+    { "word": "親孝行", "reading": "おやこうこう", "example": "彼は親孝行な息子として知られている。", "meaning": "berbakti kepada orang tua", "relatedForms": ["親不孝"] },
+    { "word": "定期券", "reading": "ていきけん", "example": "通学のために定期券を購入した。", "meaning": "tiket berlangganan", "relatedForms": ["回数券", "旅券"] },
+    { "word": "巻く", "reading": "まく", "example": "寒いのでマフラーを首に巻いた。", "meaning": "melilitkan", "relatedForms": ["取り巻く"] },
+    { "word": "緑色", "reading": "みどりいろ", "example": "公園の木々が緑色に輝いている。", "meaning": "warna hijau", "relatedForms": ["新緑", "緑茶"] },
+    { "word": "記録", "reading": "きろく", "example": "彼は世界記録を更新した。", "meaning": "rekor", "relatedForms": ["登録", "録画"] },
+    { "word": "縁がある", "reading": "えんがある", "example": "この土地とは不思議な縁がある。", "meaning": "punya jodoh, keterkaitan", "relatedForms": ["額縁", "縁取り"] },
+    { "word": "委員", "reading": "いいん", "example": "彼女はクラスの委員に選ばれた。", "meaning": "anggota komite", "relatedForms": ["委託"] },
+    { "word": "季節", "reading": "きせつ", "example": "日本には四つの季節がある。", "meaning": "musim", "relatedForms": ["四季", "季刊"] },
+    { "word": "優秀な", "reading": "ゆうしゅうな", "example": "彼は優秀な成績で卒業した。", "meaning": "unggul, berprestasi", "relatedForms": ["秀才", "秀でる"] },
+    { "word": "住む", "reading": "すむ", "example": "彼は都会のマンションに住んでいる。", "meaning": "tinggal", "relatedForms": ["住まい", "衣食住"] },
+    { "word": "往復", "reading": "おうふく", "example": "東京から大阪まで往復のチケットを買った。", "meaning": "pulang-pergi", "relatedForms": ["往診"] },
+    { "word": "墓", "reading": "はか", "example": "毎年お盆になると祖父母の墓を訪れる。", "meaning": "makam", "relatedForms": ["墓参り", "墓地"] },
+    { "word": "お歳暮", "reading": "おせいぼ", "example": "会社の取引先にお歳暮を贈った。", "meaning": "hadiah akhir tahun", "relatedForms": ["夕暮れ", "暮らし"] },
+    { "word": "募金", "reading": "ぼきん", "example": "街頭で災害支援の募金活動が行われていた。", "meaning": "penggalangan dana", "relatedForms": ["募る", "応募"] },
+    { "word": "慕う", "reading": "したう", "example": "後輩たちは彼を先輩として慕っている。", "meaning": "mengagumi, menghormati", "relatedForms": ["募金"] },
+    { "word": "幕", "reading": "まく", "example": "舞台の幕が静かに上がった。", "meaning": "tirai panggung", "relatedForms": ["開幕", "字幕"] },
+    { "word": "卒業", "reading": "そつぎょう", "example": "彼は今年の春、大学を卒業した。", "meaning": "kelulusan", "relatedForms": ["新卒", "脳卒中"] },
+    { "word": "率いる", "reading": "ひきいる", "example": "監督はチームを優勝へと率いた。", "meaning": "memimpin", "relatedForms": ["能率", "率直な"] },
+    { "word": "引率する", "reading": "いんそつする", "example": "先生は生徒たちを引率して博物館へ行った。", "meaning": "memimpin (rombongan)", "relatedForms": ["率いる"] },
+    { "word": "氷", "reading": "こおり", "example": "池の水が凍って氷になっていた。", "meaning": "es", "relatedForms": ["氷山", "氷河"] },
+    { "word": "永い", "reading": "ながい", "example": "二人は永い付き合いを続けている。", "meaning": "lama (waktu)", "relatedForms": ["永遠", "永久"] },
+    { "word": "祈る", "reading": "いのる", "example": "彼女は試験の合格を神社で祈った。", "meaning": "berdoa", "relatedForms": ["祈り", "祈願"] },
+    { "word": "折る", "reading": "おる", "example": "子どもは紙を折って鶴を作った。", "meaning": "melipat", "relatedForms": ["折り紙", "屈折"] },
+    { "word": "技術", "reading": "ぎじゅつ", "example": "この会社は最新の技術を導入している。", "meaning": "teknologi, teknik", "relatedForms": ["技"] },
+    { "word": "枝", "reading": "えだ", "example": "庭の木の枝が折れてしまった。", "meaning": "ranting", "relatedForms": ["小枝"] },
+    { "word": "選択肢", "reading": "せんたくし", "example": "この試験には複数の選択肢がある。", "meaning": "pilihan jawaban", "relatedForms": ["枝"] },
+    { "word": "牧場", "reading": "ぼくじょう", "example": "家族で牧場に行って牛の乳搾りを体験した。", "meaning": "peternakan", "relatedForms": ["牧師"] },
+    { "word": "枚数", "reading": "まいすう", "example": "コピーする枚数を確認してください。", "meaning": "jumlah lembar", "relatedForms": [] },
+    { "word": "素朴な", "reading": "そぼくな", "example": "彼は素朴な性格で飾らない人だ。", "meaning": "sederhana, apa adanya", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "財布を忘れて＿＿しまった。", "optionA": "困って", "optionAReading": "こまって", "optionB": "祈って", "optionBReading": "いのって", "answer": "A" },
+      { "question": "子どもは紙を＿＿鶴を作った。", "optionA": "折って", "optionAReading": "おって", "optionB": "巻いて", "optionBReading": "まいて", "answer": "A" },
+      { "question": "寒いのでマフラーを首に＿＿。", "optionA": "折った", "optionAReading": "おった", "optionB": "巻いた", "optionBReading": "まいた", "answer": "B" },
+      { "question": "彼は＿＿な成績で卒業した。", "optionA": "優秀", "optionAReading": "ゆうしゅう", "optionB": "素朴", "optionBReading": "そぼく", "answer": "A" },
+      { "question": "後輩たちは彼を先輩として＿＿いる。", "optionA": "慕って", "optionAReading": "したって", "optionB": "率いて", "optionBReading": "ひきいて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "にほんとう", "fixedKanji": "日本", "blankPosition": "after", "choices": ["刀", "剣", "刃", "武"], "answer": "刀" },
+      { "reading": "こんなん", "fixedKanji": "困", "blankPosition": "after", "choices": ["難", "惑", "苦", "窮"], "answer": "難" },
+      { "reading": "ろうじん", "fixedKanji": "老", "blankPosition": "after", "choices": ["人", "年", "後", "若"], "answer": "人" },
+      { "reading": "とうろく", "fixedKanji": "登", "blankPosition": "after", "choices": ["録", "記", "載", "標"], "answer": "録" },
+      { "reading": "そつぎょう", "fixedKanji": "卒", "blankPosition": "after", "choices": ["業", "校", "園", "学"], "answer": "業" }
+    ]
+  }
+}
