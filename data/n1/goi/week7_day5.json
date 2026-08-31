@@ -1,0 +1,58 @@
+{
+  "week": 7,
+  "day": 5,
+  "title": "組み合わせの言葉②",
+  "subtitle": "Kata kerja gabungan (fukugoudoushi) - kelompok 2",
+  "entries": [
+    { "word": "取り込む", "reading": "とりこむ", "example": "雨が降る前に洗濯物を取り込んだ。", "meaning": "mengambil masuk (jemuran)", "relatedForms": [] },
+    { "word": "取り込む", "reading": "とりこむ", "example": "彼はパソコンに画像を取り込んだ。", "meaning": "mengimpor/memasukkan (data)", "relatedForms": [] },
+    { "word": "溶け込む", "reading": "とけこむ", "example": "彼は新しい職場にすぐ溶け込んだ。", "meaning": "berbaur, beradaptasi", "relatedForms": [] },
+    { "word": "組み込む", "reading": "くみこむ", "example": "この費用は予算に組み込まれている。", "meaning": "dimasukkan (ke dalam anggaran)", "relatedForms": [] },
+    { "word": "乗り込む", "reading": "のりこむ", "example": "乗客は次々に飛行機に乗り込んだ。", "meaning": "naik (kendaraan)", "relatedForms": [] },
+    { "word": "乗り込む", "reading": "のりこむ", "example": "兵士たちは敵地に乗り込んだ。", "meaning": "masuk (ke wilayah musuh)", "relatedForms": [] },
+    { "word": "踏み込む", "reading": "ふみこむ", "example": "彼はアクセルを強く踏み込んだ。", "meaning": "menginjak dalam-dalam", "relatedForms": [] },
+    { "word": "踏み込む", "reading": "ふみこむ", "example": "彼は他人の家庭事情に踏み込むべきではない。", "meaning": "mencampuri (urusan pribadi)", "relatedForms": [] },
+    { "word": "放り込む", "reading": "ほうりこむ", "example": "彼は新聞をポストに放り込んだ。", "meaning": "melempar masuk", "relatedForms": [] },
+    { "word": "放り込む", "reading": "ほうりこむ", "example": "犯人はついに刑務所に放り込まれた。", "meaning": "dijebloskan (penjara)", "relatedForms": [] },
+    { "word": "打ち込む", "reading": "うちこむ", "example": "彼はデータをパソコンに打ち込んだ。", "meaning": "memasukkan (data)", "relatedForms": [] },
+    { "word": "打ち込む", "reading": "うちこむ", "example": "彼は仕事に打ち込んでいる。", "meaning": "berkonsentrasi penuh (pada pekerjaan)", "relatedForms": [] },
+    { "word": "買い込む", "reading": "かいこむ", "example": "台風に備えて彼は缶詰を買い込んだ。", "meaning": "membeli stok (banyak)", "relatedForms": [] },
+    { "word": "引っ込む", "reading": "ひっこむ", "example": "彼は定年後、田舎に引っ込んだ。", "meaning": "mengasingkan diri, pindah (ke tempat sepi)", "relatedForms": [] },
+    { "word": "落ち込む", "reading": "おちこむ", "example": "最近、彼の成績がどんどん落ち込んでいる。", "meaning": "menurun (nilai/hasil)", "relatedForms": [] },
+    { "word": "落ち込む", "reading": "おちこむ", "example": "彼は試合に負けて落ち込んでいる。", "meaning": "merasa sedih, terpuruk", "relatedForms": [] },
+    { "word": "持ち込む", "reading": "もちこむ", "example": "ホテルに食べ物を持ち込むのは禁止だと言われた。", "meaning": "membawa masuk", "relatedForms": ["持ち込み"] },
+    { "word": "持ち込む", "reading": "もちこむ", "example": "彼は会社に苦情を持ち込んだ。", "meaning": "mengajukan (keluhan)", "relatedForms": [] },
+    { "word": "飲み込む", "reading": "のみこむ", "example": "彼は慌ててつばを飲み込んだ。", "meaning": "menelan", "relatedForms": [] },
+    { "word": "飲み込む", "reading": "のみこむ", "example": "彼はすぐに仕事のこつを飲み込んだ。", "meaning": "memahami dengan cepat (trik/cara)", "relatedForms": [] },
+    { "word": "抜け出す", "reading": "ぬけだす", "example": "彼はこっそり会社を抜け出した。", "meaning": "kabur, menyelinap keluar", "relatedForms": [] },
+    { "word": "投げ出す", "reading": "なげだす", "example": "彼は事故で車から投げ出された。", "meaning": "terlempar", "relatedForms": [] },
+    { "word": "放り出す", "reading": "ほうりだす", "example": "彼は仕事を中途で放り出した。", "meaning": "meninggalkan (di tengah jalan)", "relatedForms": [] },
+    { "word": "逃げ出す", "reading": "にげだす", "example": "犬は突然その場から逃げ出した。", "meaning": "lari kabur", "relatedForms": [] },
+    { "word": "突っ張る", "reading": "つっぱる", "example": "運動しすぎて筋肉が突っ張っている。", "meaning": "kaku, kram (otot)", "relatedForms": [] },
+    { "word": "出っ張る", "reading": "でっぱる", "example": "最近、彼はお腹が出っ張ってきた。", "meaning": "menonjol keluar (perut)", "relatedForms": [] },
+    { "word": "振り返る", "reading": "ふりかえる", "example": "名前を呼ばれて後ろを振り返った。", "meaning": "menoleh", "relatedForms": [] },
+    { "word": "振り返る", "reading": "ふりかえる", "example": "彼は少年時代を振り返った。", "meaning": "mengenang (masa lalu)", "relatedForms": [] },
+    { "word": "折り返す", "reading": "おりかえす", "example": "彼は袖を折り返して作業を始めた。", "meaning": "melipat (ke atas)", "relatedForms": [] },
+    { "word": "折り返す", "reading": "おりかえす", "example": "後ほど折り返しお電話いたします。", "meaning": "menelepon balik", "relatedForms": [] },
+    { "word": "かき回す", "reading": "かきまわす", "example": "砂糖を入れてコーヒーをかき回した。", "meaning": "mengaduk", "relatedForms": [] },
+    { "word": "かき回す", "reading": "かきまわす", "example": "彼のせいで会議がかき回された。", "meaning": "mengacaukan (situasi)", "relatedForms": [] },
+    { "word": "埋め立てる", "reading": "うめたてる", "example": "この地域は海を埋め立てて作られた。", "meaning": "direklamasi (dari laut)", "relatedForms": [] },
+    { "word": "かみ切る", "reading": "かみきる", "example": "この肉は固くてかみ切れない。", "meaning": "digigit putus", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は新しい職場にすぐ＿＿。", "optionA": "溶け込んだ", "optionAReading": "とけこんだ", "optionB": "落ち込んだ", "optionBReading": "おちこんだ", "answer": "A" },
+      { "question": "犯人はついに刑務所に＿＿。", "optionA": "放り込まれた", "optionAReading": "ほうりこまれた", "optionB": "引っ込んだ", "optionBReading": "ひっこんだ", "answer": "A" },
+      { "question": "彼はホテルに食べ物を＿＿のは禁止だと言われた。", "optionA": "持ち込む", "optionAReading": "もちこむ", "optionB": "打ち込む", "optionBReading": "うちこむ", "answer": "A" },
+      { "question": "台風に備えて彼は缶詰を＿＿。", "optionA": "買い込んだ", "optionAReading": "かいこんだ", "optionB": "抜け出した", "optionBReading": "ぬけだした", "answer": "A" },
+      { "question": "名前を呼ばれて後ろを＿＿。", "optionA": "振り返った", "optionAReading": "ふりかえった", "optionB": "折り返した", "optionBReading": "おりかえした", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "あめがふるまえにせんたくものをとりこんだ", "fixedKanji": "雨が降る前に洗濯物を", "blankPosition": "after", "choices": ["取り込んだ", "溶け込んだ", "組み込んだ", "打ち込んだ"], "answer": "取り込んだ" },
+      { "reading": "かれはあくせるをつよくふみこんだ", "fixedKanji": "彼はアクセルを強く", "blankPosition": "after", "choices": ["踏み込んだ", "放り込んだ", "乗り込んだ", "打ち込んだ"], "answer": "踏み込んだ" },
+      { "reading": "かれはすぐにしごとのこつをのみこんだ", "fixedKanji": "彼はすぐに仕事のこつを", "blankPosition": "after", "choices": ["飲み込んだ", "取り込んだ", "打ち込んだ", "組み込んだ"], "answer": "飲み込んだ" },
+      { "reading": "このにくはかたくてかみきれない", "fixedKanji": "この肉は固くて", "blankPosition": "after", "choices": ["かみ切れない", "突っ張らない", "出っ張らない", "埋め立てられない"], "answer": "かみ切れない" },
+      { "reading": "このあたりはうみをうめたててつくった", "fixedKanji": "このあたりは海を", "blankPosition": "after", "choices": ["埋め立てて作った", "かき回して作った", "折り返して作った", "振り返って作った"], "answer": "埋め立てて作った" }
+    ]
+  }
+}

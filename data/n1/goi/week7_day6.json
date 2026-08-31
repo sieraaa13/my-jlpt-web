@@ -1,0 +1,54 @@
+{
+  "week": 7,
+  "day": 6,
+  "title": "組み合わせの言葉③",
+  "subtitle": "Kata kerja gabungan (fukugoudoushi) - kelompok 3",
+  "entries": [
+    { "word": "差し出す", "reading": "さしだす", "example": "彼は面接官に履歴書を差し出した。", "meaning": "menyodorkan, menyerahkan", "relatedForms": ["差出人"] },
+    { "word": "差し引く", "reading": "さしひく", "example": "給料から税金を差し引く。", "meaning": "memotong (dari gaji)", "relatedForms": ["差し引き"] },
+    { "word": "差し支える", "reading": "さしつかえる", "example": "夜更かしは翌日の仕事に差し支える。", "meaning": "mengganggu, menghambat", "relatedForms": [] },
+    { "word": "寄りかかる", "reading": "よりかかる", "example": "彼は壁に寄りかかって休んでいた。", "meaning": "bersandar", "relatedForms": [] },
+    { "word": "寄り添う", "reading": "よりそう", "example": "二人は寄り添って座っていた。", "meaning": "duduk berdekatan, merapat", "relatedForms": [] },
+    { "word": "寄せ集める", "reading": "よせあつめる", "example": "彼はごみを一か所に寄せ集めた。", "meaning": "mengumpulkan (dari berbagai tempat)", "relatedForms": ["寄せ集め"] },
+    { "word": "押し切る", "reading": "おしきる", "example": "彼は周囲の反対を押し切って留学を決めた。", "meaning": "menerobos (penolakan), berkeras", "relatedForms": [] },
+    { "word": "押し込む", "reading": "おしこむ", "example": "駅員は乗客を電車に押し込んだ。", "meaning": "mendorong masuk", "relatedForms": [] },
+    { "word": "押し寄せる", "reading": "おしよせる", "example": "開店と同時に大勢の客が押し寄せた。", "meaning": "berbondong-bondong datang", "relatedForms": [] },
+    { "word": "成り立つ", "reading": "なりたつ", "example": "長い交渉の末、契約が成り立った。", "meaning": "terwujud, tercapai (kesepakatan)", "relatedForms": [] },
+    { "word": "成り立つ", "reading": "なりたつ", "example": "この商売は客が少なくて成り立たない。", "meaning": "tidak bisa berjalan/menguntungkan", "relatedForms": [] },
+    { "word": "成り立つ", "reading": "なりたつ", "example": "このグループは30人のメンバーから成り立っている。", "meaning": "terdiri dari", "relatedForms": [] },
+    { "word": "出直す", "reading": "でなおす", "example": "資料を忘れたので、明日また出直します。", "meaning": "datang lagi (di lain waktu)", "relatedForms": [] },
+    { "word": "出直す", "reading": "でなおす", "example": "彼は失敗を認め、一から出直すことにした。", "meaning": "memulai dari awal lagi", "relatedForms": ["出直し"] },
+    { "word": "使いこなす", "reading": "つかいこなす", "example": "彼は三か国語を使いこなす。", "meaning": "menguasai dengan lancar", "relatedForms": [] },
+    { "word": "たどり着く", "reading": "たどりつく", "example": "登山者たちはようやく頂上にたどり着いた。", "meaning": "berhasil mencapai (setelah perjuangan)", "relatedForms": [] },
+    { "word": "結び付く", "reading": "むすびつく", "example": "彼の努力はついに成功に結び付いた。", "meaning": "berujung pada, terkait dengan", "relatedForms": ["結び付ける"] },
+    { "word": "着飾る", "reading": "きかざる", "example": "彼女は着飾ってパーティーに出かけた。", "meaning": "berdandan mewah", "relatedForms": [] },
+    { "word": "乗っ取る", "reading": "のっとる", "example": "その会社は競合他社に乗っ取られた。", "meaning": "diambil alih", "relatedForms": ["乗っ取り"] },
+    { "word": "乗っ取る", "reading": "のっとる", "example": "犯人は飛行機を乗っ取った。", "meaning": "membajak", "relatedForms": [] },
+    { "word": "消し去る", "reading": "けしさる", "example": "彼はつらい過去を消し去りたいと思っている。", "meaning": "menghapus (kenangan)", "relatedForms": [] },
+    { "word": "言い張る", "reading": "いいはる", "example": "彼は何も知らないと言い張った。", "meaning": "bersikeras (mengatakan)", "relatedForms": [] },
+    { "word": "待ち望む", "reading": "まちのぞむ", "example": "家族は彼の帰国を待ち望んでいる。", "meaning": "menanti-nantikan", "relatedForms": [] },
+    { "word": "触れ合う", "reading": "ふれあう", "example": "イベントを通して人々の心が触れ合った。", "meaning": "saling bersentuhan (hati)", "relatedForms": ["触れ合い"] },
+    { "word": "切り替える", "reading": "きりかえる", "example": "彼は気持ちを切り替えて仕事に戻った。", "meaning": "mengalihkan (perasaan/mode)", "relatedForms": ["切り替え"] },
+    { "word": "やり遂げる", "reading": "やりとげる", "example": "彼はついに計画をやり遂げた。", "meaning": "menyelesaikan tuntas", "relatedForms": [] },
+    { "word": "備え付ける", "reading": "そなえつける", "example": "教室に新しいテレビが備え付けられた。", "meaning": "dipasang (fasilitas)", "relatedForms": ["備え付け"] },
+    { "word": "呼び止める", "reading": "よびとめる", "example": "彼は見知らぬ人に呼び止められた。", "meaning": "dipanggil berhenti", "relatedForms": [] },
+    { "word": "盛り上がる", "reading": "もりあがる", "example": "運動して腕の筋肉が盛り上がっている。", "meaning": "menonjol/membesar (otot)", "relatedForms": [] },
+    { "word": "盛り上がる", "reading": "もりあがる", "example": "宴会はとても盛り上がった。", "meaning": "meriah, seru", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は周囲の反対を＿＿留学を決めた。", "optionA": "押し切って", "optionAReading": "おしきって", "optionB": "押し寄せて", "optionBReading": "おしよせて", "answer": "A" },
+      { "question": "この商売は客が少なくて＿＿。", "optionA": "成り立たない", "optionAReading": "なりたたない", "optionB": "出直さない", "optionBReading": "でなおさない", "answer": "A" },
+      { "question": "彼は三か国語を＿＿。", "optionA": "使いこなす", "optionAReading": "つかいこなす", "optionB": "結び付ける", "optionBReading": "むすびつける", "answer": "A" },
+      { "question": "登山者たちはようやく頂上に＿＿。", "optionA": "たどり着いた", "optionAReading": "たどりついた", "optionB": "待ち望んだ", "optionBReading": "まちのぞんだ", "answer": "A" },
+      { "question": "彼は何も知らないと＿＿。", "optionA": "言い張った", "optionAReading": "いいはった", "optionB": "消し去った", "optionBReading": "けしさった", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "きゅうりょうからぜいきんをさしひく", "fixedKanji": "給料から税金を", "blankPosition": "after", "choices": ["差し引く", "差し出す", "差し支える", "寄せ集める"], "answer": "差し引く" },
+      { "reading": "かれはかべによりかかった", "fixedKanji": "彼は壁に", "blankPosition": "after", "choices": ["寄りかかった", "寄り添った", "押し寄せた", "押し込んだ"], "answer": "寄りかかった" },
+      { "reading": "そのかいしゃはきょうごうたしゃにのっとられた", "fixedKanji": "その会社は競合他社に", "blankPosition": "after", "choices": ["乗っ取られた", "結び付いた", "成り立った", "出直した"], "answer": "乗っ取られた" },
+      { "reading": "きょうしつにあたらしいテレビがそなえつけられた", "fixedKanji": "教室に新しいテレビが", "blankPosition": "after", "choices": ["備え付けられた", "呼び止められた", "切り替えられた", "触れ合った"], "answer": "備え付けられた" },
+      { "reading": "えんかいはとてももりあがった", "fixedKanji": "宴会はとても", "blankPosition": "after", "choices": ["盛り上がった", "出っ張った", "突っ張った", "やり遂げた"], "answer": "盛り上がった" }
+    ]
+  }
+}
