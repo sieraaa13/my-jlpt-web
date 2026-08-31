@@ -1,0 +1,56 @@
+{
+  "week": 5,
+  "day": 6,
+  "title": "最寄り・気配・手際",
+  "subtitle": "Kosakata dan ungkapan sehari-hari tingkat menengah",
+  "entries": [
+    { "word": "最寄り", "reading": "もより", "example": "最寄りの駅まで歩いて十分だ。", "meaning": "terdekat (lokasi)", "relatedForms": [] },
+    { "word": "誤り", "reading": "あやまり", "example": "レポートに誤りが多かった。", "meaning": "kesalahan", "relatedForms": ["誤った考え"] },
+    { "word": "過ち", "reading": "あやまち", "example": "彼は若いころの過ちを後悔している。", "meaning": "kesalahan (perbuatan)", "relatedForms": [] },
+    { "word": "値打ち", "reading": "ねうち", "example": "この骨董品には高い値打ちがある。", "meaning": "nilai, berharga", "relatedForms": [] },
+    { "word": "勝手な", "reading": "かってな", "example": "彼は勝手な行動ばかりする。", "meaning": "seenaknya, semaunya sendiri", "relatedForms": [] },
+    { "word": "初耳", "reading": "はつみみ", "example": "その話は初耳だ。", "meaning": "baru pertama kali dengar", "relatedForms": [] },
+    { "word": "人並み", "reading": "ひとなみ", "example": "彼は人並みの生活を望んでいるだけだ。", "meaning": "standar, rata-rata (kehidupan)", "relatedForms": [] },
+    { "word": "軒並み", "reading": "のきなみ", "example": "今年は野菜の値段が軒並み上がっている。", "meaning": "hampir semua, serempak", "relatedForms": ["古い軒並み"] },
+    { "word": "人任せ", "reading": "ひとまかせ", "example": "彼はいつも仕事を人任せにする。", "meaning": "menyerahkan pada orang lain", "relatedForms": [] },
+    { "word": "善し悪し", "reading": "よしあし", "example": "物事の善し悪しを判断する。", "meaning": "baik-buruk", "relatedForms": ["善悪"] },
+    { "word": "目の当たり", "reading": "まのあたり", "example": "事故の現場を目の当たりにした。", "meaning": "menyaksikan langsung", "relatedForms": [] },
+    { "word": "応急", "reading": "おうきゅう", "example": "けが人に応急の手当てをした。", "meaning": "darurat, sementara", "relatedForms": ["応急手当"] },
+    { "word": "気配", "reading": "けはい", "example": "部屋の外に人の気配がした。", "meaning": "firasat, tanda kehadiran", "relatedForms": [] },
+    { "word": "手際", "reading": "てぎわ", "example": "彼女は料理の手際がとてもいい。", "meaning": "keterampilan, kecekatan", "relatedForms": [] },
+    { "word": "知恵", "reading": "ちえ", "example": "みんなで知恵を出し合って解決した。", "meaning": "kebijaksanaan, akal", "relatedForms": [] },
+    { "word": "自我", "reading": "じが", "example": "思春期になると自我が強くなる。", "meaning": "ego, kesadaran diri", "relatedForms": [] },
+    { "word": "自己", "reading": "じこ", "example": "彼は自己中心的なところがある。", "meaning": "diri sendiri", "relatedForms": [] },
+    { "word": "作戦", "reading": "さくせん", "example": "チームは次の試合の作戦を練っている。", "meaning": "strategi", "relatedForms": [] },
+    { "word": "始末", "reading": "しまつ", "example": "彼はトラブルの始末に追われた。", "meaning": "penyelesaian (masalah)", "relatedForms": [] },
+    { "word": "決意", "reading": "けつい", "example": "彼は留学する決意を固めた。", "meaning": "tekad", "relatedForms": [] },
+    { "word": "意欲", "reading": "いよく", "example": "彼女は仕事に対する意欲にあふれている。", "meaning": "semangat, motivasi", "relatedForms": [] },
+    { "word": "片言", "reading": "かたこと", "example": "彼は片言の日本語で自己紹介した。", "meaning": "bahasa patah-patah", "relatedForms": [] },
+    { "word": "独自", "reading": "どくじ", "example": "彼は独自の視点で問題を分析した。", "meaning": "unik, tersendiri", "relatedForms": [] },
+    { "word": "個々", "reading": "ここ", "example": "個々の意見を尊重することが大切だ。", "meaning": "masing-masing individu", "relatedForms": [] },
+    { "word": "従来", "reading": "じゅうらい", "example": "従来のやり方では対応できない問題が増えた。", "meaning": "konvensional, sebagaimana biasanya", "relatedForms": ["従来通り"] },
+    { "word": "無茶な", "reading": "むちゃな", "example": "そんな無茶な計画には賛成できない。", "meaning": "tidak masuk akal, sembrono", "relatedForms": ["無茶をする"] },
+    { "word": "過密な", "reading": "かみつな", "example": "都市部は過密なスケジュールに追われがちだ。", "meaning": "terlalu padat", "relatedForms": [] },
+    { "word": "不可欠な", "reading": "ふかけつな", "example": "睡眠は健康に不可欠な要素だ。", "meaning": "tak tergantikan, esensial", "relatedForms": [] },
+    { "word": "画期的な", "reading": "かっきてきな", "example": "この技術は業界にとって画期的な発明だ。", "meaning": "revolusioner, epik", "relatedForms": [] },
+    { "word": "客観的な", "reading": "きゃっかんてきな", "example": "もっと客観的な視点で考えるべきだ。", "meaning": "objektif", "relatedForms": ["主観的な"] },
+    { "word": "自発的な", "reading": "じはつてきな", "example": "彼女は自発的にボランティアに参加した。", "meaning": "sukarela, atas inisiatif sendiri", "relatedForms": [] },
+    { "word": "強制的な", "reading": "きょうせいてきな", "example": "会社は社員に強制的に研修を受けさせた。", "meaning": "memaksa", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "レポートに＿＿が多くて書き直した。", "optionA": "誤り", "optionAReading": "あやまり", "optionB": "過ち", "optionBReading": "あやまち", "answer": "A" },
+      { "question": "彼はいつも仕事を＿＿にする。", "optionA": "人任せ", "optionAReading": "ひとまかせ", "optionB": "人並み", "optionBReading": "ひとなみ", "answer": "A" },
+      { "question": "部屋の外に人の＿＿がした。", "optionA": "気配", "optionAReading": "けはい", "optionB": "意欲", "optionBReading": "いよく", "answer": "A" },
+      { "question": "彼女は料理の＿＿がとてもいい。", "optionA": "手際", "optionAReading": "てぎわ", "optionB": "知恵", "optionBReading": "ちえ", "answer": "A" },
+      { "question": "もっと＿＿な視点で考えるべきだ。", "optionA": "客観的", "optionAReading": "きゃっかんてき", "optionB": "自発的", "optionBReading": "じはつてき", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "もより", "fixedKanji": "最", "blankPosition": "after", "choices": ["寄り", "初", "近", "寄せ"], "answer": "寄り" },
+      { "reading": "どくじ", "fixedKanji": "独", "blankPosition": "after", "choices": ["自", "占", "立", "特"], "answer": "自" },
+      { "reading": "じゅうらい", "fixedKanji": "従", "blankPosition": "after", "choices": ["来", "前", "然", "順"], "answer": "来" },
+      { "reading": "かみつ", "fixedKanji": "過", "blankPosition": "after", "choices": ["密", "剰", "多", "度"], "answer": "密" },
+      { "reading": "おうきゅう", "fixedKanji": "応", "blankPosition": "after", "choices": ["急", "答", "対", "接"], "answer": "急" }
+    ]
+  }
+}

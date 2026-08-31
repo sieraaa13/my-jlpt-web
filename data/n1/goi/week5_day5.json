@@ -1,0 +1,63 @@
+{
+  "week": 5,
+  "day": 5,
+  "title": "背く・経る・値する",
+  "subtitle": "Kata kerja (dōshi) kelompok I, II, dan III",
+  "entries": [
+    { "word": "築く", "reading": "きずく", "example": "彼はゼロから会社を築いた。", "meaning": "membangun (dari nol)", "relatedForms": [] },
+    { "word": "描く", "reading": "えがく", "example": "彼女は将来の夢を思い描いている。", "meaning": "membayangkan, menggambarkan", "relatedForms": [] },
+    { "word": "背く", "reading": "そむく", "example": "彼は上司の指示に背いてしまった。", "meaning": "melanggar, membangkang", "relatedForms": [] },
+    { "word": "相次ぐ", "reading": "あいつぐ", "example": "このところ事故が相次いでいる。", "meaning": "terjadi berturut-turut", "relatedForms": [] },
+    { "word": "試みる", "reading": "こころみる", "example": "新しい方法を試みることにした。", "meaning": "mencoba", "relatedForms": ["試み"] },
+    { "word": "省みる", "reading": "かえりみる", "example": "彼はこれまでの行動を省みた。", "meaning": "merefleksikan, introspeksi", "relatedForms": [] },
+    { "word": "帯びる", "reading": "おびる", "example": "彼の声はわずかに緊張を帯びていた。", "meaning": "membawa/mengandung (nuansa)", "relatedForms": [] },
+    { "word": "経る", "reading": "へる", "example": "卒業してから十年を経た。", "meaning": "berlalu (waktu), melalui", "relatedForms": [] },
+    { "word": "構える", "reading": "かまえる", "example": "彼は駅前に小さな店を構えている。", "meaning": "memiliki (usaha/tempat), bersiap", "relatedForms": [] },
+    { "word": "栄える", "reading": "さかえる", "example": "この町はかつて貿易で栄えた。", "meaning": "berkembang pesat, makmur", "relatedForms": [] },
+    { "word": "絶える", "reading": "たえる", "example": "二人の連絡はしばらく絶えている。", "meaning": "terputus", "relatedForms": ["途絶える"] },
+    { "word": "映える", "reading": "はえる", "example": "夕日に照らされて山が美しく映えている。", "meaning": "terlihat indah karena cahaya", "relatedForms": [] },
+    { "word": "整える", "reading": "ととのえる", "example": "出発前に身支度を整えた。", "meaning": "merapikan, mempersiapkan", "relatedForms": ["整う"] },
+    { "word": "授ける", "reading": "さずける", "example": "校長が卒業生に賞状を授けた。", "meaning": "menganugerahkan", "relatedForms": [] },
+    { "word": "傾ける", "reading": "かたむける", "example": "彼は友人の話に静かに耳を傾けた。", "meaning": "mencondongkan, mendengarkan sungguh-sungguh", "relatedForms": ["傾く"] },
+    { "word": "設ける", "reading": "もうける", "example": "会社は新しい相談窓口を設けた。", "meaning": "membuka, mendirikan (fasilitas)", "relatedForms": [] },
+    { "word": "手掛ける", "reading": "てがける", "example": "彼はこれまで多くのプロジェクトを手掛けてきた。", "meaning": "menangani langsung (proyek)", "relatedForms": [] },
+    { "word": "定める", "reading": "さだめる", "example": "会社は新しい規則を定めた。", "meaning": "menetapkan", "relatedForms": ["定まる"] },
+    { "word": "目覚める", "reading": "めざめる", "example": "物音で夜中に目覚めてしまった。", "meaning": "terbangun", "relatedForms": [] },
+    { "word": "暮れる", "reading": "くれる", "example": "冬は日が暮れるのが早い。", "meaning": "(hari) menjadi gelap", "relatedForms": [] },
+    { "word": "遅らせる", "reading": "おくらせる", "example": "悪天候のためフライトを遅らせることにした。", "meaning": "menunda", "relatedForms": [] },
+    { "word": "寝かせる", "reading": "ねかせる", "example": "母は赤ん坊を寝かせた。", "meaning": "menidurkan", "relatedForms": [] },
+    { "word": "震わせる", "reading": "ふるわせる", "example": "彼女は怒りで声を震わせた。", "meaning": "membuat bergetar", "relatedForms": [] },
+    { "word": "値する", "reading": "あたいする", "example": "この作品は賞賛に値する。", "meaning": "pantas/layak (mendapat)", "relatedForms": [] },
+    { "word": "害する", "reading": "がいする", "example": "過度な飲酒は健康を害する。", "meaning": "merugikan, merusak", "relatedForms": [] },
+    { "word": "称する", "reading": "しょうする", "example": "彼は専門家と称して意見を述べた。", "meaning": "mengaku sebagai", "relatedForms": [] },
+    { "word": "制する", "reading": "せいする", "example": "警備員が混乱する群衆を制した。", "meaning": "mengendalikan", "relatedForms": [] },
+    { "word": "脱する", "reading": "だっする", "example": "チームはようやく最下位を脱した。", "meaning": "keluar dari (kondisi buruk)", "relatedForms": [] },
+    { "word": "徹する", "reading": "てっする", "example": "彼は裏方に徹して選手を支えた。", "meaning": "berkonsentrasi penuh pada satu peran", "relatedForms": [] },
+    { "word": "面する", "reading": "めんする", "example": "このホテルは海に面している。", "meaning": "menghadap", "relatedForms": [] },
+    { "word": "要する", "reading": "ようする", "example": "この作業には多くの時間を要する。", "meaning": "memerlukan", "relatedForms": [] },
+    { "word": "案じる", "reading": "あんじる", "example": "母は遠くに住む息子の安否を案じている。", "meaning": "mengkhawatirkan", "relatedForms": [] },
+    { "word": "重んじる", "reading": "おもんじる", "example": "この会社は実力より経験を重んじる。", "meaning": "mementingkan", "relatedForms": [] },
+    { "word": "演じる", "reading": "えんじる", "example": "彼女はドラマで主役を演じた。", "meaning": "memerankan", "relatedForms": [] },
+    { "word": "興じる", "reading": "きょうじる", "example": "子どもたちはゲームに興じていた。", "meaning": "asyik menikmati", "relatedForms": [] },
+    { "word": "禁じる", "reading": "きんじる", "example": "この公園でのペットの散歩は禁じられている。", "meaning": "melarang", "relatedForms": [] },
+    { "word": "準じる", "reading": "じゅんじる", "example": "給料は経験年数に準じて決まる。", "meaning": "mengikuti (standar/ketentuan)", "relatedForms": [] },
+    { "word": "転じる", "reading": "てんじる", "example": "彼の態度は突然強気に転じた。", "meaning": "berubah menjadi", "relatedForms": [] },
+    { "word": "報じる", "reading": "ほうじる", "example": "テレビが事故のニュースを報じた。", "meaning": "memberitakan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は上司の指示に＿＿しまった。", "optionA": "背いて", "optionAReading": "そむいて", "optionB": "相次いで", "optionBReading": "あいついで", "answer": "A" },
+      { "question": "会社は新しい相談窓口を＿＿。", "optionA": "設けた", "optionAReading": "もうけた", "optionB": "授けた", "optionBReading": "さずけた", "answer": "A" },
+      { "question": "このホテルは海に＿＿。", "optionA": "面している", "optionAReading": "めんしている", "optionB": "徹している", "optionBReading": "てっしている", "answer": "A" },
+      { "question": "チームはようやく最下位を＿＿ことができた。", "optionA": "脱する", "optionAReading": "だっする", "optionB": "制する", "optionBReading": "せいする", "answer": "A" },
+      { "question": "給料は経験年数に＿＿決まる。", "optionA": "準じて", "optionAReading": "じゅんじて", "optionB": "転じて", "optionBReading": "てんじて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "みみをかたむける", "fixedKanji": "耳を", "blankPosition": "after", "choices": ["傾ける", "授ける", "設ける", "定める"], "answer": "傾ける" },
+      { "reading": "しょうじょうをさずける", "fixedKanji": "賞状を", "blankPosition": "after", "choices": ["授ける", "傾ける", "構える", "経る"], "answer": "授ける" },
+      { "reading": "きそくをさだめる", "fixedKanji": "規則を", "blankPosition": "after", "choices": ["定める", "省みる", "試みる", "帯びる"], "answer": "定める" },
+      { "reading": "あんぴをあんじる", "fixedKanji": "安否を", "blankPosition": "after", "choices": ["案じる", "報じる", "禁じる", "演じる"], "answer": "案じる" },
+      { "reading": "しゅやくをえんじる", "fixedKanji": "主役を", "blankPosition": "after", "choices": ["演じる", "興じる", "重んじる", "準じる"], "answer": "演じる" }
+    ]
+  }
+}
