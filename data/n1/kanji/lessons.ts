@@ -18,6 +18,7 @@ import w3d3 from "./week3_day3.json";
 import w3d4 from "./week3_day4.json";
 import w3d5 from "./week3_day5.json";
 import w3d6 from "./week3_day6.json";
+import w3d7 from "./week3_day7.json";
 
 export type KanjiComponent = { character: string; meaning: string };
 export type KanjiExample = { word: string; reading: string; meaning: string };
@@ -119,6 +120,9 @@ export const kanjiTests: Record<string, Record<string, KanjiTestDay>> = {
   },
   "2": {
     "7": w2d7 as KanjiTestDay,
+  },
+  "3": {
+    "7": w3d7 as KanjiTestDay,
   },
 };
 

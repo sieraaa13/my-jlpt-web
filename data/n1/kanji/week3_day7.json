@@ -1,0 +1,43 @@
+{
+  "week": 3,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 3 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "彼は面会を拒んだ。", "target": "拒んだ", "choices": ["こばんだ", "はばんだ", "いどんだ", "のぞんだ"], "answer": "こばんだ" },
+    { "sentence": "彼は自分の間違いを悟った。", "target": "悟った", "choices": ["さとった", "さえぎった", "ののしった", "よみがえった"], "answer": "さとった" },
+    { "sentence": "この習慣は江戸時代まで遡る。", "target": "遡る", "choices": ["さかのぼる", "いたる", "おちいる", "へだたる"], "answer": "さかのぼる" },
+    { "sentence": "彼は年長者を敬う気持ちを大切にしている。", "target": "敬う", "choices": ["うやまう", "ただよう", "よそおう", "あらそう"], "answer": "うやまう" },
+    { "sentence": "給料に見合う仕事量ではない。", "target": "見合う", "choices": ["みあう", "みうしなう", "みまう", "にぎわう"], "answer": "みあう" },
+    { "sentence": "彼は自分の仕事に誇りを持っている。", "target": "誇り", "choices": ["ほこり", "いかり", "あたり", "まわり"], "answer": "ほこり" },
+    { "sentence": "彼は不当な扱いに怒りをあらわにした。", "target": "怒り", "choices": ["いかり", "ほこり", "いきおい", "うるおい"], "answer": "いかり" },
+    { "sentence": "彼は事故に遭う危ういところだった。", "target": "危うい", "choices": ["あやうい", "あやぶむ", "あわただしい", "はなはだしい"], "answer": "あやうい" },
+    { "sentence": "彼は失敗を隠すために体裁を繕った。", "target": "繕った", "choices": ["つくろった", "つぐなった", "おぎなった", "まかなった"], "answer": "つくろった" },
+    { "sentence": "彼は日々練習に励んでいる。", "target": "励んで", "choices": ["はげんで", "のぞんで", "いどんで", "とんで"], "answer": "はげんで" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "彼は落ち着いて試験にのぞんだ。", "reading": "のぞんだ", "choices": ["臨んだ", "望んだ", "除んだ", "惜んだ"], "answer": "臨んだ" },
+    { "sentence": "山の空気はすんでいて気持ちがいい。", "reading": "すんで", "choices": ["澄んで", "済んで", "住んで", "純んで"], "answer": "澄んで" },
+    { "sentence": "彼女は亡き祖母をしのんで涙を流した。", "reading": "しのんで", "choices": ["偲んで", "忍んで", "慕んで", "恋んで"], "answer": "偲んで" },
+    { "sentence": "彼は酒をたつと決意した。", "reading": "たつ", "choices": ["断つ", "経つ", "立つ", "建つ"], "answer": "断つ" },
+    { "sentence": "会社は経営難におちいった。", "reading": "おちいった", "choices": ["陥った", "落ちいった", "堕ちいった", "墜ちいった"], "answer": "陥った" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "彼は世界記録に＿んだ。", "target": "挑んだ", "choices": ["挑", "悩", "拒", "望"], "answer": "挑" },
+    { "sentence": "太陽が水平線に＿んだ。", "target": "沈んだ", "choices": ["沈", "縮", "富", "絡"], "answer": "沈" },
+    { "sentence": "彼は矢を＿った。", "target": "放った", "choices": ["放", "保", "断", "討"], "answer": "放" },
+    { "sentence": "議論の末、結論に＿った。", "target": "至った", "choices": ["至", "陥", "悟", "遮"], "answer": "至" },
+    { "sentence": "彼は突然の質問に＿ってしまった。", "target": "惑って", "choices": ["惑", "漂", "装", "争"], "answer": "惑" }
+  ],
+  "passageQuestion": {
+    "passage": "彼はいつも自分の仕事に大きな[21]を持って取り組んでいる。休日には高台に登り、そこからの美しい[22]を楽しむのが好きだ。仕事にも人一倍の[23]で挑み、忙しい毎日の中でも心の[24]を忘れないよう心がけている。時には道を[25]に進んで、いつもと違う景色を探すこともある。",
+    "wordBank": ["ほこり", "ながめ", "いきおい", "うるおい", "ななめ", "さびしい", "あわただしい"],
+    "blanks": [
+      { "number": 21, "answer": "ほこり", "answerKanji": "誇り" },
+      { "number": 22, "answer": "ながめ", "answerKanji": "眺め" },
+      { "number": 23, "answer": "いきおい", "answerKanji": "勢い" },
+      { "number": 24, "answer": "うるおい", "answerKanji": "潤い" },
+      { "number": 25, "answer": "ななめ", "answerKanji": "斜め" }
+    ]
+  }
+}
