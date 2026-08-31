@@ -1,0 +1,46 @@
+{
+  "week": 8,
+  "day": 5,
+  "title": "よく使う表現①",
+  "subtitle": "Ungkapan sapaan, ungkapan umum, dan idiom perumpamaan",
+  "entries": [
+    { "word": "お手数をおかけしました", "reading": "おてすうをおかけしました", "example": "この度はお手数をおかけしました。", "meaning": "maaf sudah merepotkan", "relatedForms": [] },
+    { "word": "なにぶんよろしくお願いいたします", "reading": "なにぶんよろしくおねがいいたします", "example": "初めてのことですので、なにぶんよろしくお願いいたします。", "meaning": "mohon bantuannya", "relatedForms": [] },
+    { "word": "取り急ぎお礼まで", "reading": "とりいそぎおれいまで", "example": "本日はありがとうございました。取り急ぎお礼まで。", "meaning": "sekadar ucapan terima kasih segera (dalam surat)", "relatedForms": [] },
+    { "word": "夜分遅く、すみませんが", "reading": "やぶんおそく、すみませんが", "example": "夜分遅く、すみませんが、少しお話よろしいでしょうか。", "meaning": "maaf mengganggu larut malam", "relatedForms": [] },
+    { "word": "お騒がせして申し訳ありません", "reading": "おさわがせしてもうしわけありません", "example": "先ほどはお騒がせして申し訳ありません。", "meaning": "maaf telah membuat kegaduhan", "relatedForms": [] },
+    { "word": "悪しからず", "reading": "あしからず", "example": "定休日のため、本日は休業です。悪しからず。", "meaning": "mohon dimaklumi", "relatedForms": [] },
+    { "word": "差し支えなければ", "reading": "さしつかえなければ", "example": "差し支えなければ、お名前を教えてください。", "meaning": "jika tidak keberatan", "relatedForms": [] },
+    { "word": "いざというとき", "reading": "いざというとき", "example": "いざというときのために、非常食を備えておこう。", "meaning": "keadaan darurat/mendesak", "relatedForms": [] },
+    { "word": "いざ知らず", "reading": "いざしらず", "example": "若いころならいざ知らず、今そんな無茶をすると体を壊すよ。", "meaning": "terlepas dari hal itu, lain lagi ceritanya", "relatedForms": [] },
+    { "word": "きりがいい", "reading": "きりがいい", "example": "きりがいいところで休憩しましょう。", "meaning": "titik yang pas untuk berhenti", "relatedForms": [] },
+    { "word": "きりがない", "reading": "きりがない", "example": "欲を言えばきりがない。", "meaning": "tidak ada habisnya", "relatedForms": [] },
+    { "word": "ピンからキリまで", "reading": "ピンからキリまで", "example": "ワインと言ってもピンからキリまである。", "meaning": "dari yang terbaik sampai terburuk", "relatedForms": [] },
+    { "word": "一から十まで", "reading": "いちからじゅうまで", "example": "彼のことは一から十まで知っている。", "meaning": "tahu segalanya, dari A sampai Z", "relatedForms": [] },
+    { "word": "来る", "reading": "きたる", "example": "来る3月10日に卒業式が行われる。", "meaning": "yang akan datang (tanggal mendatang)", "relatedForms": [] },
+    { "word": "去る", "reading": "さる", "example": "去る3月10日に卒業式が行われた。", "meaning": "yang telah lalu (tanggal lampau)", "relatedForms": [] },
+    { "word": "胸をえぐられるよう", "reading": "むねをえぐられるよう", "example": "その話を聞いて、胸をえぐられるような思いをした。", "meaning": "merasa sangat terluka/hancur hati", "relatedForms": [] },
+    { "word": "口から先に生まれたよう", "reading": "くちからさきにうまれたよう", "example": "彼は口から先に生まれたような男だ。", "meaning": "sangat pandai bicara, banyak omong", "relatedForms": [] },
+    { "word": "雲をつかむよう", "reading": "くもをつかむよう", "example": "それは雲をつかむような話だ。", "meaning": "hal yang tidak realistis, mengambang", "relatedForms": [] },
+    { "word": "顔から火が出る", "reading": "かおからひがでる", "example": "人前で転んでしまい、顔から火が出るほど恥ずかしかった。", "meaning": "sangat malu (wajah memerah)", "relatedForms": [] },
+    { "word": "猫の手も借りたい", "reading": "ねこのてもかりたい", "example": "年末は猫の手も借りたいほど忙しい。", "meaning": "sangat sibuk (perlu bantuan siapapun)", "relatedForms": [] },
+    { "word": "耳にたこができる", "reading": "みみにたこができる", "example": "同じ話を何度も聞かされて、耳にたこができた。", "meaning": "sudah bosan mendengarnya berulang kali", "relatedForms": [] },
+    { "word": "のどから手が出る", "reading": "のどからてがでる", "example": "新型のスマホがのどから手が出るほどほしい。", "meaning": "sangat menginginkan sesuatu", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "祖父の自慢話は＿＿聞かされた。", "optionA": "耳にたこができるほど", "optionAReading": "みみにたこができるほど", "optionB": "顔から火が出るほど", "optionBReading": "かおからひがでるほど", "answer": "A" },
+      { "question": "＿＿お名前をお教えください。", "optionA": "差し支えなければ", "optionAReading": "さしつかえなければ", "optionB": "悪しからず", "optionBReading": "あしからず", "answer": "A" },
+      { "question": "＿＿10月10日に体育祭が行われます。", "optionA": "来る", "optionAReading": "きたる", "optionB": "去る", "optionBReading": "さる", "answer": "A" },
+      { "question": "欲を言えば＿＿がない。", "optionA": "きり", "optionAReading": "きり", "optionB": "たこ", "optionBReading": "たこ", "answer": "A" },
+      { "question": "＿＿申し訳ありません。", "optionA": "お騒がせして", "optionAReading": "おさわがせして", "optionB": "お手数して", "optionBReading": "おてすうして", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "いそがしくてねこのてもかりたいほどだ", "fixedKanji": "忙しくて", "blankPosition": "after", "choices": ["猫の手も借りたいほどだ", "雲をつかむようだ", "耳にたこができるほどだ", "口から先に生まれたようだ"], "answer": "猫の手も借りたいほどだ" },
+      { "reading": "おなじはなしをなんどもきかされてみみにたこができた", "fixedKanji": "同じ話を何度も聞かされて", "blankPosition": "after", "choices": ["耳にたこができた", "顔から火が出た", "雲をつかんだ", "のどから手が出た"], "answer": "耳にたこができた" },
+      { "reading": "ひとまえでころんでしまいかおからひがでるほどはずかしかった", "fixedKanji": "人前で転んでしまい", "blankPosition": "after", "choices": ["顔から火が出るほど恥ずかしかった", "耳にたこができるほど恥ずかしかった", "猫の手も借りたいほど恥ずかしかった", "のどから手が出るほど恥ずかしかった"], "answer": "顔から火が出るほど恥ずかしかった" },
+      { "reading": "しんがたのすまほがのどからてがでるほどほしい", "fixedKanji": "新型のスマホが", "blankPosition": "after", "choices": ["のどから手が出るほどほしい", "耳にたこができるほどほしい", "雲をつかむほどほしい", "口から先に生まれるほどほしい"], "answer": "のどから手が出るほどほしい" },
+      { "reading": "そのけいかくはくもをつかむようなはなしだ", "fixedKanji": "その計画は", "blankPosition": "after", "choices": ["雲をつかむような話だ", "耳にたこができるような話だ", "顔から火が出るような話だ", "猫の手も借りたいような話だ"], "answer": "雲をつかむような話だ" }
+    ]
+  }
+}
