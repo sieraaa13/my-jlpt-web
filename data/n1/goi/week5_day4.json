@@ -1,0 +1,54 @@
+{
+  "week": 5,
+  "day": 4,
+  "title": "試す・営む・損なう",
+  "subtitle": "Kata kerja (dōshi) kelompok I ragam す・る・む・う・つ",
+  "entries": [
+    { "word": "志す", "reading": "こころざす", "example": "医師になることを志して猛勉強した。", "meaning": "bercita-cita, bertekad menjadi", "relatedForms": [] },
+    { "word": "試す", "reading": "ためす", "example": "新しいレシピを試してみた。", "meaning": "mencoba", "relatedForms": [] },
+    { "word": "犯す", "reading": "おかす", "example": "彼は重大な過ちを犯してしまった。", "meaning": "melakukan (kesalahan/kejahatan)", "relatedForms": [] },
+    { "word": "乱す", "reading": "みだす", "example": "彼の一言が場の雰囲気を乱した。", "meaning": "mengacaukan", "relatedForms": ["乱れる"] },
+    { "word": "満たす", "reading": "みたす", "example": "空いたコップに水を満たした。", "meaning": "mengisi penuh", "relatedForms": [] },
+    { "word": "果たす", "reading": "はたす", "example": "彼はついに約束を果たした。", "meaning": "memenuhi, mewujudkan", "relatedForms": [] },
+    { "word": "抜かす", "reading": "ぬかす", "example": "急いでいたので一行抜かして読んでしまった。", "meaning": "melewatkan (baris/bagian)", "relatedForms": [] },
+    { "word": "負かす", "reading": "まかす", "example": "決勝で強豪チームを負かした。", "meaning": "mengalahkan", "relatedForms": [] },
+    { "word": "悩ます", "reading": "なやます", "example": "隣の工事の騒音が住民を悩ませている。", "meaning": "membuat pusing, mengganggu", "relatedForms": [] },
+    { "word": "慣らす", "reading": "ならす", "example": "新しい靴を少しずつ慣らしていく。", "meaning": "membiasakan", "relatedForms": [] },
+    { "word": "荒らす", "reading": "あらす", "example": "台風が畑をひどく荒らした。", "meaning": "merusak, mengacaukan", "relatedForms": [] },
+    { "word": "費やす", "reading": "ついやす", "example": "彼はこの研究に十年もの歳月を費やした。", "meaning": "menghabiskan (waktu/tenaga)", "relatedForms": [] },
+    { "word": "練る", "reading": "ねる", "example": "来月のイベントの計画を練っている。", "meaning": "menyusun matang-matang (rencana)", "relatedForms": [] },
+    { "word": "鈍る", "reading": "にぶる", "example": "しばらく運動していないので反応が鈍った。", "meaning": "menjadi tumpul/lambat", "relatedForms": [] },
+    { "word": "勝る", "reading": "まさる", "example": "この製品は他社のものより性能で勝る。", "meaning": "lebih unggul", "relatedForms": [] },
+    { "word": "操る", "reading": "あやつる", "example": "彼はドローンを自在に操る。", "meaning": "mengendalikan, mengoperasikan", "relatedForms": [] },
+    { "word": "群がる", "reading": "むらがる", "example": "蜂が花の周りに群がっている。", "meaning": "berkerumun", "relatedForms": [] },
+    { "word": "備わる", "reading": "そなわる", "example": "彼には生まれつきリーダーの資質が備わっている。", "meaning": "dimiliki secara alami (bakat/kualitas)", "relatedForms": [] },
+    { "word": "改まる", "reading": "あらたまる", "example": "来年から社内の規則が改まる予定だ。", "meaning": "diperbarui, berubah resmi", "relatedForms": [] },
+    { "word": "病む", "reading": "やむ", "example": "祖父は長年心臓を病んでいる。", "meaning": "menderita sakit", "relatedForms": ["気に病む"] },
+    { "word": "富む", "reading": "とむ", "example": "この地域は自然資源に富んでいる。", "meaning": "kaya akan", "relatedForms": [] },
+    { "word": "恵む", "reading": "めぐむ", "example": "通りすがりの人がホームレスに食べ物を恵んだ。", "meaning": "memberi (belas kasihan)", "relatedForms": ["恵み"] },
+    { "word": "営む", "reading": "いとなむ", "example": "祖父母は小さな旅館を営んでいる。", "meaning": "menjalankan (usaha/kehidupan)", "relatedForms": [] },
+    { "word": "危ぶむ", "reading": "あやぶむ", "example": "天候の悪化で開催が危ぶまれている。", "meaning": "dikhawatirkan (terancam gagal)", "relatedForms": [] },
+    { "word": "負う", "reading": "おう", "example": "彼はプロジェクト全体の責任を負っている。", "meaning": "menanggung (tanggung jawab)", "relatedForms": [] },
+    { "word": "沿う", "reading": "そう", "example": "この道は川に沿って続いている。", "meaning": "menyusuri, sejajar dengan", "relatedForms": [] },
+    { "word": "損なう", "reading": "そこなう", "example": "過度な残業は健康を損なう恐れがある。", "meaning": "merusak (kesehatan/hubungan)", "relatedForms": [] },
+    { "word": "似通う", "reading": "にかよう", "example": "双子は考え方まで似通っている。", "meaning": "mirip satu sama lain", "relatedForms": [] },
+    { "word": "恥じらう", "reading": "はじらう", "example": "彼女はほめられて恥じらうように下を向いた。", "meaning": "malu-malu", "relatedForms": [] },
+    { "word": "保つ", "reading": "たもつ", "example": "健康を保つために毎朝運動している。", "meaning": "menjaga, mempertahankan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "台風で作物がすっかり＿＿しまった。", "optionA": "荒らされて", "optionAReading": "あらされて", "optionB": "乱されて", "optionBReading": "みだされて", "answer": "A" },
+      { "question": "彼は与えられた責任を最後まで＿＿。", "optionA": "果たした", "optionAReading": "はたした", "optionB": "満たした", "optionBReading": "みたした", "answer": "A" },
+      { "question": "運動不足で体の反応が＿＿気がする。", "optionA": "鈍った", "optionAReading": "にぶった", "optionB": "勝った", "optionBReading": "まさった", "answer": "A" },
+      { "question": "この土地は天然資源に＿＿。", "optionA": "富んでいる", "optionAReading": "とんでいる", "optionB": "備わっている", "optionBReading": "そなわっている", "answer": "A" },
+      { "question": "健康を＿＿ほど働きすぎるのはよくない。", "optionA": "損なう", "optionAReading": "そこなう", "optionB": "負う", "optionBReading": "おう", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "つみをおかす", "fixedKanji": "罪を", "blankPosition": "after", "choices": ["犯す", "乱す", "抜かす", "負かす"], "answer": "犯す" },
+      { "reading": "きかいをあやつる", "fixedKanji": "機械を", "blankPosition": "after", "choices": ["操る", "備わる", "改まる", "勝る"], "answer": "操る" },
+      { "reading": "けんこうをそこなう", "fixedKanji": "健康を", "blankPosition": "after", "choices": ["損なう", "負う", "沿う", "保つ"], "answer": "損なう" },
+      { "reading": "てんねんしげんにとむ", "fixedKanji": "天然資源に", "blankPosition": "after", "choices": ["富む", "恵む", "営む", "病む"], "answer": "富む" },
+      { "reading": "やくそくをはたす", "fixedKanji": "約束を", "blankPosition": "after", "choices": ["果たす", "満たす", "試す", "慣らす"], "answer": "果たす" }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "week": 5,
+  "day": 3,
+  "title": "砂利・間柄・説得",
+  "subtitle": "Kosakata dengan kanji tingkat menengah (利・有・現・柄・訳・説・仕・差)",
+  "entries": [
+    { "word": "利子", "reading": "りし", "example": "定期預金には毎月利子がつく。", "meaning": "bunga (bank)", "relatedForms": ["利息"] },
+    { "word": "利息", "reading": "りそく", "example": "借金の利息が高くて困っている。", "meaning": "bunga (pinjaman)", "relatedForms": ["利子"] },
+    { "word": "利点", "reading": "りてん", "example": "このプランにはいくつか利点がある。", "meaning": "keunggulan, kelebihan", "relatedForms": [] },
+    { "word": "砂利", "reading": "じゃり", "example": "山道は砂利だらけで歩きにくい。", "meaning": "kerikil", "relatedForms": [] },
+    { "word": "左利き", "reading": "ひだりきき", "example": "弟は左利きなので箸の持ち方が独特だ。", "meaning": "kidal", "relatedForms": ["右利き"] },
+    { "word": "有望な", "reading": "ゆうぼうな", "example": "彼女はチームの中でも有望な選手だ。", "meaning": "menjanjikan, berprospek", "relatedForms": [] },
+    { "word": "有益な", "reading": "ゆうえきな", "example": "図書館で有益な情報をたくさん得た。", "meaning": "bermanfaat", "relatedForms": ["無益な"] },
+    { "word": "有力な", "reading": "ゆうりょくな", "example": "彼は次期社長の有力な候補だ。", "meaning": "berpengaruh, kuat", "relatedForms": [] },
+    { "word": "私有", "reading": "しゆう", "example": "この森は企業の私有地だ。", "meaning": "milik pribadi", "relatedForms": ["私有地"] },
+    { "word": "有する", "reading": "ゆうする", "example": "この会社は豊富な経験を有する社員が多い。", "meaning": "memiliki", "relatedForms": [] },
+    { "word": "現行", "reading": "げんこう", "example": "現行の制度にはまだ改善の余地がある。", "meaning": "yang berlaku sekarang", "relatedForms": [] },
+    { "word": "現場", "reading": "げんば", "example": "事故の現場に警察が駆けつけた。", "meaning": "lokasi kejadian", "relatedForms": [] },
+    { "word": "現地", "reading": "げんち", "example": "現地の人々に道を尋ねた。", "meaning": "lokasi setempat", "relatedForms": [] },
+    { "word": "出現する", "reading": "しゅつげんする", "example": "新しいウイルスが出現した。", "meaning": "muncul", "relatedForms": [] },
+    { "word": "再現する", "reading": "さいげんする", "example": "実験で当時の状況を再現した。", "meaning": "mereproduksi, menampilkan kembali", "relatedForms": [] },
+    { "word": "間柄", "reading": "あいだがら", "example": "二人は幼なじみという間柄だ。", "meaning": "hubungan (antar orang)", "relatedForms": [] },
+    { "word": "事柄", "reading": "ことがら", "example": "会議では重要な事柄が話し合われた。", "meaning": "hal, perkara", "relatedForms": [] },
+    { "word": "人柄", "reading": "ひとがら", "example": "彼の人柄のよさはだれもが知っている。", "meaning": "kepribadian", "relatedForms": [] },
+    { "word": "直訳する", "reading": "ちょくやくする", "example": "この表現を直訳すると不自然になる。", "meaning": "menerjemahkan secara harfiah", "relatedForms": [] },
+    { "word": "内訳", "reading": "うちわけ", "example": "見積書の内訳を確認した。", "meaning": "rincian", "relatedForms": [] },
+    { "word": "言い訳する", "reading": "いいわけする", "example": "彼は遅刻の言い訳ばかりしている。", "meaning": "membuat alasan/dalih", "relatedForms": [] },
+    { "word": "説得する", "reading": "せっとくする", "example": "何とか両親を説得して留学を許してもらった。", "meaning": "membujuk, meyakinkan", "relatedForms": [] },
+    { "word": "伝説", "reading": "でんせつ", "example": "この湖には伝説が残っている。", "meaning": "legenda", "relatedForms": [] },
+    { "word": "説く", "reading": "とく", "example": "先生は生徒に努力の大切さを説いた。", "meaning": "menjelaskan, menerangkan (nasihat)", "relatedForms": [] },
+    { "word": "仕上げる", "reading": "しあげる", "example": "徹夜でレポートを仕上げた。", "meaning": "menyelesaikan (pekerjaan)", "relatedForms": ["仕上げ"] },
+    { "word": "仕入れる", "reading": "しいれる", "example": "市場で新鮮な魚を仕入れる。", "meaning": "membeli persediaan/stok", "relatedForms": ["仕入れ"] },
+    { "word": "仕切る", "reading": "しきる", "example": "彼がイベントの進行を仕切っている。", "meaning": "mengatur, memimpin", "relatedForms": [] },
+    { "word": "仕組み", "reading": "しくみ", "example": "この機械の仕組みはとても複雑だ。", "meaning": "mekanisme, struktur", "relatedForms": [] },
+    { "word": "仕える", "reading": "つかえる", "example": "彼は長年王に仕えてきた。", "meaning": "mengabdi (kepada)", "relatedForms": [] },
+    { "word": "日差し", "reading": "ひざし", "example": "夏の日差しがとても強い。", "meaning": "sinar matahari", "relatedForms": [] },
+    { "word": "時差", "reading": "じさ", "example": "日本とアメリカには大きな時差がある。", "meaning": "perbedaan waktu", "relatedForms": ["時差ぼけ"] },
+    { "word": "点差", "reading": "てんさ", "example": "後半で点差がさらに開いた。", "meaning": "selisih skor", "relatedForms": [] },
+    { "word": "指差す", "reading": "ゆびさす", "example": "子どもが空を指差した。", "meaning": "menunjuk (dengan jari)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は自分の失敗について＿＿ばかりしている。", "optionA": "言い訳", "optionAReading": "いいわけ", "optionB": "内訳", "optionBReading": "うちわけ", "answer": "A" },
+      { "question": "二人は幼なじみという＿＿だ。", "optionA": "間柄", "optionAReading": "あいだがら", "optionB": "事柄", "optionBReading": "ことがら", "answer": "A" },
+      { "question": "彼は次期リーダーとして最も＿＿人材だ。", "optionA": "有望な", "optionAReading": "ゆうぼうな", "optionB": "有益な", "optionBReading": "ゆうえきな", "answer": "A" },
+      { "question": "彼がこのイベントの進行を＿＿。", "optionA": "仕切っている", "optionAReading": "しきっている", "optionB": "仕上げている", "optionBReading": "しあげている", "answer": "A" },
+      { "question": "実験で事故当時の状況を＿＿。", "optionA": "再現した", "optionAReading": "さいげんした", "optionB": "出現した", "optionBReading": "しゅつげんした", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "りてん", "fixedKanji": "利", "blankPosition": "after", "choices": ["点", "子", "息", "望"], "answer": "点" },
+      { "reading": "げんち", "fixedKanji": "現", "blankPosition": "after", "choices": ["地", "場", "行", "実"], "answer": "地" },
+      { "reading": "じさ", "fixedKanji": "時", "blankPosition": "after", "choices": ["差", "期", "間", "刻"], "answer": "差" },
+      { "reading": "さいげん", "fixedKanji": "再", "blankPosition": "after", "choices": ["現", "考", "建", "発"], "answer": "現" },
+      { "reading": "ゆうりょく", "fixedKanji": "有", "blankPosition": "after", "choices": ["力", "望", "益", "効"], "answer": "力" }
+    ]
+  }
+}
