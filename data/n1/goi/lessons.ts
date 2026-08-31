@@ -21,6 +21,8 @@ import w3d6 from "./week3_day6.json";
 import w3d7 from "./week3_day7.json";
 import w4d1 from "./week4_day1.json";
 import w4d2 from "./week4_day2.json";
+import w4d3 from "./week4_day3.json";
+import w4d4 from "./week4_day4.json";
 
 export type GoiEntry = {
   word: string;
@@ -105,6 +107,8 @@ export const goiLessons: Record<string, Record<string, GoiLessonDay>> = {
   "4": {
     "1": w4d1 as GoiLessonDay,
     "2": w4d2 as GoiLessonDay,
+    "3": w4d3 as GoiLessonDay,
+    "4": w4d4 as GoiLessonDay,
   },
 };
 

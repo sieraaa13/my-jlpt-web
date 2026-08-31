@@ -1,0 +1,54 @@
+{
+  "week": 4,
+  "day": 4,
+  "title": "意図・終日・小売り",
+  "subtitle": "Kosakata dengan kanji dasar (体・意・見・着・日・自・売・間)",
+  "entries": [
+    { "word": "物体", "reading": "ぶったい", "example": "湖でなぞの物体が目撃された。", "meaning": "benda, objek", "relatedForms": ["正体"] },
+    { "word": "立体な", "reading": "りったいな", "example": "彼は立体的な絵を描いた。", "meaning": "tiga dimensi", "relatedForms": [] },
+    { "word": "正体", "reading": "しょうたい", "example": "彼はついに正体を現した。", "meaning": "identitas asli", "relatedForms": [] },
+    { "word": "意向", "reading": "いこう", "example": "先方の意向を聞く。", "meaning": "maksud, kehendak", "relatedForms": [] },
+    { "word": "意思", "reading": "いし", "example": "彼は明確な意思表示をした。", "meaning": "kehendak, niat", "relatedForms": [] },
+    { "word": "意地", "reading": "いじ", "example": "彼は意地を張って謝らなかった。", "meaning": "keras kepala (harga diri)", "relatedForms": [] },
+    { "word": "意図する", "reading": "いとする", "example": "彼は早期解散を意図している。", "meaning": "berniat, bermaksud", "relatedForms": [] },
+    { "word": "見地", "reading": "けんち", "example": "医学的見地から反対する。", "meaning": "sudut pandang (keahlian)", "relatedForms": [] },
+    { "word": "会見する", "reading": "かいけんする", "example": "大統領は記者会見を開いた。", "meaning": "konferensi pers", "relatedForms": [] },
+    { "word": "見通し", "reading": "みとおし", "example": "この道路は見通しが悪い。", "meaning": "jarak pandang; prospek/perkiraan", "relatedForms": [] },
+    { "word": "見下す", "reading": "みくだす", "example": "彼は人を見下す態度をとる。", "meaning": "meremehkan, memandang rendah", "relatedForms": [] },
+    { "word": "見下ろす", "reading": "みおろす", "example": "ビルの屋上から街を見下ろした。", "meaning": "memandang dari atas", "relatedForms": [] },
+    { "word": "見合わせる", "reading": "みあわせる", "example": "大雪のため出発を見合わせた。", "meaning": "menunda; saling berpandangan", "relatedForms": [] },
+    { "word": "着手する", "reading": "ちゃくしゅする", "example": "会社は新しい事業に着手した。", "meaning": "memulai (proyek)", "relatedForms": [] },
+    { "word": "着色する", "reading": "ちゃくしょくする", "example": "このお菓子は着色料を使用している。", "meaning": "mewarnai (buatan)", "relatedForms": [] },
+    { "word": "着目する", "reading": "ちゃくもくする", "example": "先生は子どもの個性に着目した。", "meaning": "memperhatikan, fokus pada", "relatedForms": [] },
+    { "word": "着工する", "reading": "ちゃっこうする", "example": "新ビルは来月着工する。", "meaning": "mulai konstruksi", "relatedForms": [] },
+    { "word": "日夜", "reading": "にちや", "example": "彼は日夜、研究に励んでいる。", "meaning": "siang malam", "relatedForms": [] },
+    { "word": "日々", "reading": "ひび", "example": "日々の暮らしに困っている。", "meaning": "hari demi hari", "relatedForms": [] },
+    { "word": "日ごろ", "reading": "ひごろ", "example": "日ごろの行いが大切だ。", "meaning": "sehari-hari", "relatedForms": [] },
+    { "word": "終日", "reading": "しゅうじつ", "example": "終日パソコンに向かっている。", "meaning": "sepanjang hari", "relatedForms": [] },
+    { "word": "自立する", "reading": "じりつする", "example": "彼女は経済的に自立している。", "meaning": "mandiri", "relatedForms": [] },
+    { "word": "自主", "reading": "じしゅ", "example": "自主的にトレーニングする。", "meaning": "inisiatif sendiri", "relatedForms": [] },
+    { "word": "自首する", "reading": "じしゅする", "example": "犯人は警察に自首した。", "meaning": "menyerahkan diri", "relatedForms": [] },
+    { "word": "小売りする", "reading": "こうりする", "example": "これは小売りで5千円だ。", "meaning": "dijual eceran", "relatedForms": [] },
+    { "word": "前売りする", "reading": "まえうりする", "example": "映画の前売り券を買う。", "meaning": "dijual di muka (tiket)", "relatedForms": [] },
+    { "word": "売買する", "reading": "ばいばいする", "example": "彼は株を売買している。", "meaning": "jual-beli", "relatedForms": [] },
+    { "word": "合間", "reading": "あいま", "example": "仕事の合間に休憩をとる。", "meaning": "waktu senggang (di sela)", "relatedForms": [] },
+    { "word": "空間", "reading": "くうかん", "example": "狭い空間を有効に利用する。", "meaning": "ruang", "relatedForms": [] },
+    { "word": "民間", "reading": "みんかん", "example": "彼は民間企業で働いている。", "meaning": "swasta", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "嵐のため、電車のダイヤが＿＿乱れた。", "optionA": "日々", "optionAReading": "ひび", "optionB": "終日", "optionBReading": "しゅうじつ", "answer": "B" },
+      { "question": "これは、業者向けなので＿＿はしません。", "optionA": "前売り", "optionAReading": "まえうり", "optionB": "小売り", "optionBReading": "こうり", "answer": "B" },
+      { "question": "こうなったら＿＿でも完成させてみせよう。", "optionA": "意地", "optionAReading": "いじ", "optionB": "意思", "optionBReading": "いし", "answer": "A" },
+      { "question": "仕事の＿＿にお気に入りのコーヒーショップに立ち寄った。", "optionA": "空間", "optionAReading": "くうかん", "optionB": "合間", "optionBReading": "あいま", "answer": "B" },
+      { "question": "彼はいまだに親から＿＿できていない。", "optionA": "自主", "optionAReading": "じしゅ", "optionB": "自立", "optionBReading": "じりつ", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "ぶったい", "fixedKanji": "物", "blankPosition": "after", "choices": ["体", "質", "件", "象"], "answer": "体" },
+      { "reading": "いとする", "fixedKanji": "意", "blankPosition": "after", "choices": ["図する", "向", "思", "地"], "answer": "図する" },
+      { "reading": "ちゃくしゅする", "fixedKanji": "着", "blankPosition": "after", "choices": ["手する", "色する", "目する", "工する"], "answer": "手する" },
+      { "reading": "じしゅする", "fixedKanji": "自", "blankPosition": "after", "choices": ["首する", "立する", "主", "発する"], "answer": "首する" },
+      { "reading": "ばいばいする", "fixedKanji": "売", "blankPosition": "after", "choices": ["買する", "却する", "店する", "場する"], "answer": "買する" }
+    ]
+  }
+}

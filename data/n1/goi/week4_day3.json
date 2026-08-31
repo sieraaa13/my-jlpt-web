@@ -1,0 +1,51 @@
+{
+  "week": 4,
+  "day": 3,
+  "title": "目下・大家・万人",
+  "subtitle": "Kosakata dengan kanji dasar (目・明・家・人・進・先)",
+  "entries": [
+    { "word": "目方", "reading": "めかた", "example": "店員は肉の目方を量った。", "meaning": "berat, timbangan", "relatedForms": [] },
+    { "word": "目下", "reading": "もっか", "example": "目下、失業中である。", "meaning": "saat ini", "relatedForms": ["目下の人"] },
+    { "word": "切れ目", "reading": "きれめ", "example": "肉に切れ目を入れる。", "meaning": "sayatan, celah", "relatedForms": [] },
+    { "word": "目先", "reading": "めさき", "example": "彼は目先の利益を追っている。", "meaning": "keuntungan jangka pendek (di depan mata)", "relatedForms": [] },
+    { "word": "大目", "reading": "おおめ", "example": "今回だけは大目に見てください。", "meaning": "dimaafkan, dilonggarkan", "relatedForms": [] },
+    { "word": "明白な", "reading": "めいはくな", "example": "これは明白な証拠だ。", "meaning": "jelas, nyata", "relatedForms": [] },
+    { "word": "声明", "reading": "せいめい", "example": "政府は緊急声明を発表した。", "meaning": "pernyataan resmi", "relatedForms": [] },
+    { "word": "夜明け", "reading": "よあけ", "example": "彼は夜明けまで仕事をした。", "meaning": "fajar", "relatedForms": [] },
+    { "word": "文明", "reading": "ぶんめい", "example": "古代文明について学んだ。", "meaning": "peradaban", "relatedForms": [] },
+    { "word": "明かす", "reading": "あかす", "example": "彼はついに秘密を明かした。", "meaning": "mengungkapkan; begadang (一夜を明かす)", "relatedForms": [] },
+    { "word": "家計", "reading": "かけい", "example": "住宅ローンが家計を圧迫している。", "meaning": "keuangan rumah tangga", "relatedForms": [] },
+    { "word": "家業", "reading": "かぎょう", "example": "彼は家業を継ぐことにした。", "meaning": "usaha keluarga", "relatedForms": [] },
+    { "word": "家主", "reading": "やぬし", "example": "家主に家賃の相談をした。", "meaning": "pemilik rumah", "relatedForms": [] },
+    { "word": "家来", "reading": "けらい", "example": "王様には多くの家来がいた。", "meaning": "pengikut, bawahan", "relatedForms": [] },
+    { "word": "大家", "reading": "たいか", "example": "彼は絵画の大家として知られている。", "meaning": "maestro, ahli besar", "relatedForms": [] },
+    { "word": "社会人", "reading": "しゃかいじん", "example": "彼は来年から社会人になる。", "meaning": "anggota masyarakat pekerja", "relatedForms": [] },
+    { "word": "万人", "reading": "ばんにん", "example": "これは万人向けの製品だ。", "meaning": "semua orang", "relatedForms": [] },
+    { "word": "人目", "reading": "ひとめ", "example": "彼女の服装は人目につく。", "meaning": "perhatian orang", "relatedForms": [] },
+    { "word": "住人", "reading": "じゅうにん", "example": "このアパートの住人と挨拶を交わした。", "meaning": "penghuni", "relatedForms": [] },
+    { "word": "進行する", "reading": "しんこうする", "example": "調査が順調に進行している。", "meaning": "berjalan (proses)", "relatedForms": [] },
+    { "word": "進出する", "reading": "しんしゅつする", "example": "その会社は海外に進出する予定だ。", "meaning": "berekspansi", "relatedForms": [] },
+    { "word": "進度", "reading": "しんど", "example": "クラスによって学習の進度が違う。", "meaning": "kemajuan (pembelajaran)", "relatedForms": [] },
+    { "word": "行進する", "reading": "こうしんする", "example": "学生たちは大通りを行進した。", "meaning": "berbaris", "relatedForms": [] },
+    { "word": "先頭", "reading": "せんとう", "example": "彼は先頭に立ってチームを引っ張った。", "meaning": "garis depan", "relatedForms": [] },
+    { "word": "先行する", "reading": "せんこうする", "example": "彼の考えは時代に先行している。", "meaning": "lebih maju dari zamannya", "relatedForms": [] },
+    { "word": "先着", "reading": "せんちゃく", "example": "先着10名様限りの特典です。", "meaning": "tiba lebih dulu (urutan)", "relatedForms": [] },
+    { "word": "先方", "reading": "せんぽう", "example": "先方の意見を聞く。", "meaning": "pihak lawan/lain", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "日本では少子高齢化が＿＿している。", "optionA": "行進", "optionAReading": "こうしん", "optionB": "進行", "optionBReading": "しんこう", "answer": "B" },
+      { "question": "＿＿の共通の願いは、健康であることだ。", "optionA": "万人", "optionAReading": "ばんにん", "optionB": "社会人", "optionBReading": "しゃかいじん", "answer": "A" },
+      { "question": "政府が緊急＿＿を発表した。", "optionA": "進出", "optionAReading": "しんしゅつ", "optionB": "声明", "optionBReading": "せいめい", "answer": "B" },
+      { "question": "車の中だと＿＿を気にせず大声で歌を歌える。", "optionA": "人目", "optionAReading": "ひとめ", "optionB": "大目", "optionBReading": "おおめ", "answer": "A" },
+      { "question": "その件に関して＿＿検討しているところです。", "optionA": "目下", "optionAReading": "もっか", "optionB": "目先", "optionBReading": "めさき", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "もっか", "fixedKanji": "目", "blankPosition": "after", "choices": ["下", "方", "先", "大"], "answer": "下" },
+      { "reading": "せいめい", "fixedKanji": "声", "blankPosition": "after", "choices": ["明", "言", "告", "説"], "answer": "明" },
+      { "reading": "かぎょう", "fixedKanji": "家", "blankPosition": "after", "choices": ["業", "計", "主", "来"], "answer": "業" },
+      { "reading": "しんしゅつ", "fixedKanji": "進", "blankPosition": "after", "choices": ["出", "行", "度", "先"], "answer": "出" },
+      { "reading": "せんとう", "fixedKanji": "先", "blankPosition": "after", "choices": ["頭", "行", "着", "方"], "answer": "頭" }
+    ]
+  }
+}
