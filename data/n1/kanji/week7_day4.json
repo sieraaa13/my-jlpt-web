@@ -1,0 +1,55 @@
+{
+  "week": 7,
+  "day": 4,
+  "title": "選挙権・著作権",
+  "subtitle": "Kanji akhiran (sufiks) kosakata",
+  "entries": [
+    { "word": "銀行員", "reading": "ぎんこういん", "example": "彼は銀行員として10年間働いている。", "meaning": "pegawai bank (員 = orang yang bekerja/menjabat)", "relatedForms": ["作業員"] },
+    { "word": "会議室", "reading": "かいぎしつ", "example": "会議室で来週のプロジェクトについて話し合った。", "meaning": "ruang rapat (室 = ruangan untuk)", "relatedForms": ["休憩室"] },
+    { "word": "経済界", "reading": "けいざいかい", "example": "この政策は経済界から高く評価された。", "meaning": "dunia ekonomi (界 = dunia/kalangan)", "relatedForms": ["芸能界"] },
+    { "word": "製造業", "reading": "せいぞうぎょう", "example": "この地域は製造業が盛んだ。", "meaning": "industri manufaktur (業 = usaha/pekerjaan)", "relatedForms": ["運送業"] },
+    { "word": "理解力", "reading": "りかいりょく", "example": "彼は語学の理解力が非常に高い。", "meaning": "kemampuan memahami (力 = kemampuan)", "relatedForms": ["集中力"] },
+    { "word": "天然色", "reading": "てんねんしょく", "example": "この古い写真はまだ天然色を保っている。", "meaning": "warna alami (色 = warna)", "relatedForms": ["国際色"] },
+    { "word": "駐車場", "reading": "ちゅうしゃじょう", "example": "店の裏に駐車場がある。", "meaning": "tempat parkir (場 = tempat luas untuk)", "relatedForms": ["運動場"] },
+    { "word": "喫煙所", "reading": "きつえんじょ", "example": "空港には指定の喫煙所が設けられている。", "meaning": "area merokok (所 = tempat untuk)", "relatedForms": ["営業所"] },
+    { "word": "選挙権", "reading": "せんきょけん", "example": "18歳になると選挙権が与えられる。", "meaning": "hak pilih (権 = hak)", "relatedForms": ["著作権"] },
+    { "word": "洗濯機", "reading": "せんたくき", "example": "新しい洗濯機を購入した。", "meaning": "mesin cuci (機 = mesin)", "relatedForms": ["扇風機"] },
+    { "word": "掃除機", "reading": "そうじき", "example": "掃除機で部屋のほこりを吸い取った。", "meaning": "penyedot debu (機 = mesin)", "relatedForms": ["計算機"] },
+    { "word": "看護師", "reading": "かんごし", "example": "彼女は病院で看護師として働いている。", "meaning": "perawat (師 = pemegang keahlian/sertifikasi)", "relatedForms": ["薬剤師"] },
+    { "word": "補聴器", "reading": "ほちょうき", "example": "祖母は耳が遠いので補聴器が必要だ。", "meaning": "alat bantu dengar (器 = alat)", "relatedForms": ["聴診器"] },
+    { "word": "日本式", "reading": "にほんしき", "example": "このホテルの部屋は日本式の造りになっている。", "meaning": "gaya Jepang (式 = gaya)", "relatedForms": ["電動式"] },
+    { "word": "日本流", "reading": "にほんりゅう", "example": "彼は日本流のおもてなしを大切にしている。", "meaning": "cara khas Jepang (流 = cara/aliran)", "relatedForms": ["自己流"] },
+    { "word": "右側", "reading": "みぎがわ", "example": "車は道路の右側を走ることになっている国もある。", "meaning": "sisi kanan (側 = sisi)", "relatedForms": ["内側"] },
+    { "word": "疲労感", "reading": "ひろうかん", "example": "長時間の作業で強い疲労感を覚えた。", "meaning": "rasa lelah (感 = perasaan)", "relatedForms": ["充実感"] },
+    { "word": "達成感", "reading": "たっせいかん", "example": "目標を達成し、大きな達成感を味わった。", "meaning": "rasa pencapaian (感 = perasaan)", "relatedForms": ["危機感"] },
+    { "word": "植物園", "reading": "しょくぶつえん", "example": "週末は家族で植物園に出かけた。", "meaning": "kebun raya (園 = tempat berkumpulnya)", "relatedForms": ["動物園"] },
+    { "word": "市営住宅", "reading": "しえいじゅうたく", "example": "彼らは市営住宅に入居することになった。", "meaning": "perumahan yang dikelola kota (営 = dikelola oleh)", "relatedForms": ["都営地下鉄"] },
+    { "word": "地下街", "reading": "ちかがい", "example": "駅の地下街には多くの店が並んでいる。", "meaning": "mal bawah tanah (街 = kawasan kota)", "relatedForms": ["商店街"] },
+    { "word": "繁華街", "reading": "はんかがい", "example": "週末の繁華街はいつも人で賑わっている。", "meaning": "kawasan ramai, pusat kota (街 = kawasan kota)", "relatedForms": ["中華街"] },
+    { "word": "首都圏", "reading": "しゅとけん", "example": "首都圏では電車の遅延がよく発生する。", "meaning": "kawasan metropolitan (圏 = wilayah cakupan)", "relatedForms": ["大気圏"] },
+    { "word": "消化剤", "reading": "しょうかざい", "example": "食べ過ぎたので消化剤を飲んだ。", "meaning": "obat pencernaan (剤 = obat/zat)", "relatedForms": ["除草剤"] },
+    { "word": "接着剤", "reading": "せっちゃくざい", "example": "割れた皿を接着剤で修理した。", "meaning": "lem, perekat (剤 = obat/zat)", "relatedForms": ["精神安定剤"] },
+    { "word": "自閉症", "reading": "じへいしょう", "example": "彼は自閉症について研究している。", "meaning": "autisme (症 = kondisi penyakit)", "relatedForms": ["花粉症"] },
+    { "word": "後遺症", "reading": "こういしょう", "example": "事故の後遺症で今も体に痛みが残っている。", "meaning": "gejala sisa (症 = kondisi penyakit)", "relatedForms": ["不眠症"] },
+    { "word": "免許証", "reading": "めんきょしょう", "example": "運転する際は免許証を携帯する必要がある。", "meaning": "surat izin, SIM (証 = surat bukti)", "relatedForms": ["許可証"] },
+    { "word": "保育士", "reading": "ほいくし", "example": "彼女は保育士として保育園で働いている。", "meaning": "pengasuh anak profesional (士 = ahli profesi)", "relatedForms": ["運転士"] },
+    { "word": "介護士", "reading": "かいごし", "example": "介護士は高齢者の生活を支える大切な仕事だ。", "meaning": "perawat lansia (士 = ahli profesi)", "relatedForms": ["理学療法士"] },
+    { "word": "時間軸", "reading": "じかんじく", "example": "グラフの時間軸に沿ってデータを分析した。", "meaning": "sumbu waktu (軸 = sumbu/poros)", "relatedForms": ["縦軸"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "祖母は耳が遠いので＿＿が必要だ。", "optionA": "補聴器", "optionAReading": "ほちょうき", "optionB": "聴診器", "optionBReading": "ちょうしんき", "answer": "A" },
+      { "question": "医師は患者を＿＿で診察した。", "optionA": "補聴器", "optionAReading": "ほちょうき", "optionB": "聴診器", "optionBReading": "ちょうしんき", "answer": "B" },
+      { "question": "習ったことはないので、＿＿で花を生けます。", "optionA": "日本流", "optionAReading": "にほんりゅう", "optionB": "自己流", "optionBReading": "じこりゅう", "answer": "B" },
+      { "question": "このホテルの部屋は＿＿の造りになっている。", "optionA": "日本式", "optionAReading": "にほんしき", "optionB": "電動式", "optionBReading": "でんどうしき", "answer": "A" },
+      { "question": "土地の＿＿をめぐって争う。", "optionA": "所有権", "optionAReading": "しょゆうけん", "optionB": "著作権", "optionBReading": "ちょさくけん", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "せんきょけん", "fixedKanji": "選挙", "blankPosition": "after", "choices": ["権", "証", "士", "機"], "answer": "権" },
+      { "reading": "かんごし", "fixedKanji": "看護", "blankPosition": "after", "choices": ["師", "士", "員", "官"], "answer": "師" },
+      { "reading": "しょくぶつえん", "fixedKanji": "植物", "blankPosition": "after", "choices": ["園", "場", "所", "界"], "answer": "園" },
+      { "reading": "しゅとけん", "fixedKanji": "首都", "blankPosition": "after", "choices": ["圏", "街", "域", "区"], "answer": "圏" },
+      { "reading": "めんきょしょう", "fixedKanji": "免許", "blankPosition": "after", "choices": ["証", "状", "票", "券"], "answer": "証" }
+    ]
+  }
+}

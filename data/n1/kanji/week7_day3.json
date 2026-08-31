@@ -1,0 +1,56 @@
+{
+  "week": 7,
+  "day": 3,
+  "title": "再検査・再編成",
+  "subtitle": "Kanji awalan (prefiks) kosakata",
+  "entries": [
+    { "word": "名曲", "reading": "めいきょく", "example": "彼はこのホールで名曲を演奏した。", "meaning": "lagu/karya terkenal (名 = unggul, terkenal)", "relatedForms": ["名選手"] },
+    { "word": "高性能", "reading": "こうせいのう", "example": "この掃除機は高性能で人気がある。", "meaning": "berperforma tinggi (高 = tinggi)", "relatedForms": ["高学歴"] },
+    { "word": "低血圧", "reading": "ていけつあつ", "example": "彼女は低血圧でよく朝がつらいと言う。", "meaning": "tekanan darah rendah (低 = rendah)", "relatedForms": ["低気圧"] },
+    { "word": "重金属", "reading": "じゅうきんぞく", "example": "工場排水には重金属が含まれていることがある。", "meaning": "logam berat (重 = berat)", "relatedForms": ["重工業"] },
+    { "word": "軽自動車", "reading": "けいじどうしゃ", "example": "彼は通勤用に軽自動車を購入した。", "meaning": "mobil mini (軽 = ringan)", "relatedForms": ["軽工業"] },
+    { "word": "好青年", "reading": "こうせいねん", "example": "彼はいつも礼儀正しい好青年だ。", "meaning": "pemuda baik (好 = baik)", "relatedForms": ["好都合"] },
+    { "word": "悪循環", "reading": "あくじゅんかん", "example": "睡眠不足が悪循環を招いている。", "meaning": "lingkaran setan (悪 = buruk)", "relatedForms": ["悪役"] },
+    { "word": "急停車", "reading": "きゅうていしゃ", "example": "バスが急停車して乗客がよろめいた。", "meaning": "berhenti mendadak (急 = tiba-tiba)", "relatedForms": ["急発進"] },
+    { "word": "正反対", "reading": "せいはんたい", "example": "彼の意見は私と正反対だ。", "meaning": "kebalikan total (正 = tepat)", "relatedForms": ["正三角形"] },
+    { "word": "広範囲", "reading": "こうはんい", "example": "台風の影響は広範囲に及んだ。", "meaning": "area luas (広 = luas)", "relatedForms": [] },
+    { "word": "真犯人", "reading": "しんはんにん", "example": "警察はついに真犯人を逮捕した。", "meaning": "pelaku sebenarnya (真 = sebenarnya)", "relatedForms": [] },
+    { "word": "再検査", "reading": "さいけんさ", "example": "健康診断の結果、再検査を勧められた。", "meaning": "pemeriksaan ulang (再 = lagi)", "relatedForms": ["再編成"] },
+    { "word": "助監督", "reading": "じょかんとく", "example": "彼は有名な監督の助監督を務めている。", "meaning": "asisten sutradara (助 = membantu)", "relatedForms": ["助動詞"] },
+    { "word": "副作用", "reading": "ふくさよう", "example": "この薬には眠気という副作用がある。", "meaning": "efek samping (副 = kedua/sampingan)", "relatedForms": ["副都心"] },
+    { "word": "初耳", "reading": "はつみみ", "example": "それは初耳だ、詳しく教えてほしい。", "meaning": "baru pertama kali dengar (初 = pertama)", "relatedForms": ["初公開"] },
+    { "word": "諸問題", "reading": "しょもんだい", "example": "会議では社会の諸問題について議論された。", "meaning": "berbagai masalah (諸 = berbagai)", "relatedForms": ["諸事情"] },
+    { "word": "被害者", "reading": "ひがいしゃ", "example": "事故の被害者は病院に搬送された。", "meaning": "korban (被 = di-)", "relatedForms": ["被災者"] },
+    { "word": "異文化", "reading": "いぶんか", "example": "留学は異文化を理解するいい機会だ。", "meaning": "budaya berbeda (異 = berbeda)", "relatedForms": ["異次元"] },
+    { "word": "旧姓", "reading": "きゅうせい", "example": "彼女は結婚後も旧姓を使い続けている。", "meaning": "nama sebelum menikah (旧 = lama/sebelumnya)", "relatedForms": ["旧体制"] },
+    { "word": "誤字", "reading": "ごじ", "example": "提出前に誤字がないか確認した。", "meaning": "salah tulis huruf (誤 = keliru)", "relatedForms": ["誤作動"] },
+    { "word": "仮契約", "reading": "かりけいやく", "example": "正式契約の前に仮契約を結んだ。", "meaning": "kontrak sementara (仮 = sementara)", "relatedForms": ["仮免許"] },
+    { "word": "準会員", "reading": "じゅんかいいん", "example": "彼はまだ準会員としてクラブに所属している。", "meaning": "anggota semi/percobaan (準 = semi-)", "relatedForms": ["準決勝"] },
+    { "word": "乱気流", "reading": "らんきりゅう", "example": "飛行機は乱気流に巻き込まれて揺れた。", "meaning": "turbulensi (乱 = kacau)", "relatedForms": ["乱反射"] },
+    { "word": "棒読み", "reading": "ぼうよみ", "example": "新人アナウンサーが原稿を棒読みしている。", "meaning": "membaca datar tanpa emosi (棒 = seperti tongkat)", "relatedForms": ["棒立ち"] },
+    { "word": "超音波", "reading": "ちょうおんぱ", "example": "病院で超音波検査を受けた。", "meaning": "gelombang ultrasonik (超 = melampaui)", "relatedForms": ["超能力"] },
+    { "word": "亜熱帯", "reading": "あねったい", "example": "この地域は亜熱帯気候に属する。", "meaning": "subtropis (亜 = mendekati)", "relatedForms": ["亜寒帯"] },
+    { "word": "微調整", "reading": "びちょうせい", "example": "完成前に細部を微調整した。", "meaning": "penyesuaian kecil (微 = sangat kecil)", "relatedForms": ["微粒子"] },
+    { "word": "序章", "reading": "じょしょう", "example": "この小説の序章はとても引き込まれる。", "meaning": "bab pembuka (序 = awal)", "relatedForms": ["序曲"] },
+    { "word": "猛練習", "reading": "もうれんしゅう", "example": "選手たちは大会に向けて猛練習を続けた。", "meaning": "latihan keras (猛 = ganas/keras)", "relatedForms": ["猛特訓"] },
+    { "word": "俗語", "reading": "ぞくご", "example": "この本には若者の俗語がたくさん出てくる。", "meaning": "bahasa gaul (俗 = duniawi/umum)", "relatedForms": ["俗説"] },
+    { "word": "豆知識", "reading": "まめちしき", "example": "彼はちょっとした豆知識をたくさん知っている。", "meaning": "pengetahuan kecil, trivia (豆 = sekecil kacang)", "relatedForms": ["豆電球"] },
+    { "word": "偽札", "reading": "にせさつ", "example": "銀行員は偽札を見分ける訓練を受けている。", "meaning": "uang palsu (偽 = palsu)", "relatedForms": ["偽者"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "新人のアナウンサーが原稿を＿＿している。", "optionA": "棒読み", "optionAReading": "ぼうよみ", "optionB": "誤字", "optionBReading": "ごじ", "answer": "A" },
+      { "question": "ほぼ準備はできたので、あとは＿＿してください。", "optionA": "微調整", "optionAReading": "びちょうせい", "optionB": "豆知識", "optionBReading": "まめちしき", "answer": "A" },
+      { "question": "この薬はよく効くが＿＿がある。", "optionA": "副作用", "optionAReading": "ふくさよう", "optionB": "助動詞", "optionBReading": "じょどうし", "answer": "A" },
+      { "question": "彼にそんな特技があったなんて＿＿だ。", "optionA": "初耳", "optionAReading": "はつみみ", "optionB": "真犯人", "optionBReading": "しんはんにん", "answer": "A" },
+      { "question": "そうしていただけるなら、私にとっては＿＿だ。", "optionA": "好都合", "optionAReading": "こうつごう", "optionB": "高性能", "optionBReading": "こうせいのう", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "じょきょく", "fixedKanji": "序", "blankPosition": "after", "choices": ["曲", "章", "幕", "詩"], "answer": "曲" },
+      { "reading": "じゅんけっしょう", "fixedKanji": "準", "blankPosition": "after", "choices": ["決勝", "優勝", "予選", "決戦"], "answer": "決勝" },
+      { "reading": "けいじどうしゃ", "fixedKanji": "軽", "blankPosition": "after", "choices": ["自動車", "自転車", "飛行機", "列車"], "answer": "自動車" },
+      { "reading": "さいにゅうこく", "fixedKanji": "再", "blankPosition": "after", "choices": ["入国", "入学", "出国", "来日"], "answer": "入国" },
+      { "reading": "きゅうていしゃ", "fixedKanji": "急", "blankPosition": "after", "choices": ["停車", "発進", "上昇", "降下"], "answer": "停車" }
+    ]
+  }
+}
