@@ -2,6 +2,9 @@ import w1d1 from "./week1_day1.json";
 import w1d2 from "./week1_day2.json";
 import w1d3 from "./week1_day3.json";
 import w1d4 from "./week1_day4.json";
+import w1d5 from "./week1_day5.json";
+import w1d6 from "./week1_day6.json";
+import w1d7 from "./week1_day7.json";
 
 export type GoiEntry = {
   word: string;
@@ -42,21 +45,20 @@ export type GoiLessonDay = {
   exercises: GoiExercises;
 };
 
-export type ReadingQuestion = { sentence: string; target: string; choices: string[]; answer: string };
-export type WordWritingQuestion = { sentence: string; reading: string; choices: string[]; answer: string };
 export type FillBlankQuestion = { sentence: string; target: string; choices: string[]; answer: string };
-export type PassageBlank = { number: number; answer: string; answerKanji: string };
-export type PassageQuestion = { passage: string; wordBank: string[]; blanks: PassageBlank[] };
+export type DefinitionQuestion = { definition: string; choices: string[]; answer: string };
+export type SynonymQuestion = { sentence: string; target: string; choices: string[]; answer: string };
+export type UsageQuestion = { word: string; choices: string[]; answer: string };
 
 export type GoiTestDay = {
   week: number;
   day: number;
   title: string;
   subtitle: string;
-  readingQuestions: ReadingQuestion[];
-  wordChoiceQuestions: WordWritingQuestion[];
   fillBlankQuestions: FillBlankQuestion[];
-  passageQuestion: PassageQuestion;
+  definitionQuestions: DefinitionQuestion[];
+  synonymQuestions: SynonymQuestion[];
+  usageQuestions: UsageQuestion[];
 };
 
 export const goiLessons: Record<string, Record<string, GoiLessonDay>> = {
@@ -65,10 +67,16 @@ export const goiLessons: Record<string, Record<string, GoiLessonDay>> = {
     "2": w1d2 as GoiLessonDay,
     "3": w1d3 as GoiLessonDay,
     "4": w1d4 as GoiLessonDay,
+    "5": w1d5 as GoiLessonDay,
+    "6": w1d6 as GoiLessonDay,
   },
 };
 
-export const goiTests: Record<string, Record<string, GoiTestDay>> = {};
+export const goiTests: Record<string, Record<string, GoiTestDay>> = {
+  "1": {
+    "7": w1d7 as GoiTestDay,
+  },
+};
 
 export function getOrganizedGoiLessons() {
   const weeks: Array<{ week: string; days: Array<{ day: string; title: string; subtitle: string }> }> = [];

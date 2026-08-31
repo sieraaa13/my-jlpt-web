@@ -1,0 +1,55 @@
+{
+  "week": 1,
+  "day": 5,
+  "title": "どんな行動・態度？②",
+  "subtitle": "Kata kerja untuk perilaku dan sikap (lanjutan)",
+  "entries": [
+    { "word": "すすぐ", "reading": "すすぐ", "example": "使い終わった雑巾を水ですすいだ。", "meaning": "membilas", "relatedForms": ["ゆすぐ"] },
+    { "word": "ゆすぐ", "reading": "ゆすぐ", "example": "食事の後、口をゆすいだ。", "meaning": "membilas (mulut)", "relatedForms": ["すすぐ"] },
+    { "word": "こす", "reading": "こす", "example": "コーヒーをフィルターでこした。", "meaning": "menyaring", "relatedForms": [] },
+    { "word": "ばらまく", "reading": "ばらまく", "example": "農家は畑に豆をばらまいた。", "meaning": "menaburkan, menyebarkan", "relatedForms": [] },
+    { "word": "緩める", "reading": "ゆるめる", "example": "暑いのでベルトを緩めた。", "meaning": "mengendurkan", "relatedForms": ["緩む"] },
+    { "word": "揺する", "reading": "ゆする", "example": "強風が木を揺すった。", "meaning": "mengguncang", "relatedForms": [] },
+    { "word": "生やす", "reading": "はやす", "example": "祖父はひげを生やしている。", "meaning": "menumbuhkan", "relatedForms": ["生える"] },
+    { "word": "生ける", "reading": "いける", "example": "彼女は玄関に花を生けた。", "meaning": "merangkai bunga", "relatedForms": [] },
+    { "word": "よこす", "reading": "よこす", "example": "彼は久しぶりに手紙をよこした。", "meaning": "mengirimkan (kepada saya)", "relatedForms": [] },
+    { "word": "そらす", "reading": "そらす", "example": "彼は気まずくて目をそらした。", "meaning": "mengalihkan (pandangan/topik)", "relatedForms": [] },
+    { "word": "さらす", "reading": "さらす", "example": "この布は日光にさらすと色あせる。", "meaning": "memaparkan (ke sinar/air)", "relatedForms": [] },
+    { "word": "凝らす", "reading": "こらす", "example": "彼は発表のために工夫を凝らした。", "meaning": "mencurahkan (ide/usaha)", "relatedForms": [] },
+    { "word": "たどる", "reading": "たどる", "example": "彼は雪の上に残った足跡をたどった。", "meaning": "menelusuri", "relatedForms": [] },
+    { "word": "据える", "reading": "すえる", "example": "銀行は入り口に防犯カメラを据えた。", "meaning": "memasang dengan kokoh", "relatedForms": ["据え付ける"] },
+    { "word": "添える", "reading": "そえる", "example": "プレゼントに手紙を添えた。", "meaning": "menyertakan", "relatedForms": [] },
+    { "word": "控える", "reading": "ひかえる", "example": "彼は面接の前、隣室に控えていた。", "meaning": "menunggu (di ruang sebelah), menahan diri", "relatedForms": ["控え室"] },
+    { "word": "歩む", "reading": "あゆむ", "example": "彼は彼とは別の人生を歩むことを決めた。", "meaning": "menjalani (kehidupan)", "relatedForms": ["歩み"] },
+    { "word": "もくろむ", "reading": "もくろむ", "example": "その企業は世界進出をもくろんでいる。", "meaning": "merencanakan, berambisi", "relatedForms": [] },
+    { "word": "阻む", "reading": "はばむ", "example": "悪天候が彼らの侵入を阻んだ。", "meaning": "menghalangi", "relatedForms": [] },
+    { "word": "遮る", "reading": "さえぎる", "example": "彼は人の話を遮って自分の意見を述べた。", "meaning": "memotong (pembicaraan)", "relatedForms": [] },
+    { "word": "つづる", "reading": "つづる", "example": "彼は日記を英文でつづっている。", "meaning": "menulis, merangkai kata", "relatedForms": ["つづり"] },
+    { "word": "仕掛ける", "reading": "しかける", "example": "猟師は森にわなを仕掛けた。", "meaning": "memasang (jebakan)", "relatedForms": [] },
+    { "word": "手掛ける", "reading": "てがける", "example": "彼は新しい仕事を手掛けることになった。", "meaning": "mengerjakan, menangani", "relatedForms": [] },
+    { "word": "合わす", "reading": "あわす", "example": "みんなで声を合わして歌った。", "meaning": "menyelaraskan", "relatedForms": [] },
+    { "word": "与える", "reading": "あたえる", "example": "親は子どもに小遣いを与えている。", "meaning": "memberikan", "relatedForms": [] },
+    { "word": "交える", "reading": "まじえる", "example": "会議では先生を交えて話し合った。", "meaning": "menyertakan (dalam diskusi)", "relatedForms": ["交わる"] },
+    { "word": "交わす", "reading": "かわす", "example": "二人は久しぶりにあいさつを交わした。", "meaning": "bertukar (salam)", "relatedForms": [] },
+    { "word": "束ねる", "reading": "たばねる", "example": "彼女は髪を束ねて仕事に出かけた。", "meaning": "mengikat", "relatedForms": [] },
+    { "word": "背く", "reading": "そむく", "example": "彼は上司の命令に背いた。", "meaning": "melanggar, tidak taat", "relatedForms": [] },
+    { "word": "逃す", "reading": "のがす", "example": "彼は絶好のチャンスを逃した。", "meaning": "melewatkan (kesempatan)", "relatedForms": ["逃れる"] },
+    { "word": "促す", "reading": "うながす", "example": "この液体は植物の成長を促す。", "meaning": "mendorong, mempercepat", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "風呂場にかびが＿＿。", "optionA": "生けた", "optionAReading": "いけた", "optionB": "生えた", "optionBReading": "はえた", "answer": "B" },
+      { "question": "サルにえさを＿＿でください。", "optionA": "あたえないで", "optionAReading": "あたえないで", "optionB": "しかけないで", "optionBReading": "しかけないで", "answer": "A" },
+      { "question": "カーテンで光を＿＿。", "optionA": "こらした", "optionAReading": "こらした", "optionB": "さえぎった", "optionBReading": "さえぎった", "answer": "B" },
+      { "question": "切った玉ネギを水に＿＿ください。", "optionA": "さらして", "optionAReading": "さらして", "optionB": "与えて", "optionBReading": "あたえて", "answer": "A" },
+      { "question": "暑いので、つけていたネクタイを＿＿。", "optionA": "ゆるめた", "optionAReading": "ゆるめた", "optionB": "ひかえた", "optionBReading": "ひかえた", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "すすぐ", "fixedKanji": "雑巾を", "blankPosition": "after", "choices": ["すすぐ", "こす", "ばらまく", "たどる"], "answer": "すすぐ" },
+      { "reading": "はやす", "fixedKanji": "ひげを", "blankPosition": "after", "choices": ["生やす", "生ける", "添える", "束ねる"], "answer": "生やす" },
+      { "reading": "そむく", "fixedKanji": "命令に", "blankPosition": "after", "choices": ["背く", "従う", "逃す", "促す"], "answer": "背く" },
+      { "reading": "たばねる", "fixedKanji": "髪を", "blankPosition": "after", "choices": ["束ねる", "交える", "交わす", "合わす"], "answer": "束ねる" },
+      { "reading": "うながす", "fixedKanji": "成長を", "blankPosition": "after", "choices": ["促す", "阻む", "遮る", "凝らす"], "answer": "促す" }
+    ]
+  }
+}

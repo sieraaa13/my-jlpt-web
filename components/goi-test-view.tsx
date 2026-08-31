@@ -32,7 +32,7 @@ function MultipleChoiceItem({
               key={i}
               onClick={() => setSelected(c)}
               className={cn(
-                "px-4 py-2 rounded-xl border-2 text-sm font-medium transition-colors",
+                "px-4 py-2 rounded-xl border-2 text-sm font-medium text-left transition-colors",
                 isSelected && isCorrect && "bg-green-500/20 border-green-500 text-green-600",
                 isSelected && !isCorrect && "bg-red-500/20 border-red-500 text-red-600",
                 !isSelected && "border-border hover:border-primary/50"
@@ -52,65 +52,6 @@ function MultipleChoiceItem({
   );
 }
 
-function PassageSection({ test }: { test: GoiTestDay }) {
-  const [answers, setAnswers] = useState<Record<number, string>>({});
-  const { passage, wordBank, blanks } = test.passageQuestion;
-
-  const parts = passage.split(/(\[\d+\])/g);
-
-  return (
-    <Card className="p-6 bg-card">
-      <h3 className="text-lg font-bold mb-3">問題4 — Lengkapi bacaan dengan kata dari daftar</h3>
-      <p className="leading-relaxed mb-4">
-        {parts.map((part, i) => {
-          const match = part.match(/^\[(\d+)\]$/);
-          if (!match) return <span key={i}>{part}</span>;
-          const num = Number(match[1]);
-          const blank = blanks.find((b) => b.number === num);
-          const selected = answers[num];
-          const isCorrect = blank && selected === blank.answer;
-          return (
-            <span
-              key={i}
-              className={cn(
-                "inline-block min-w-[4rem] text-center border-b-2 mx-1 px-1 font-bold",
-                !selected && "border-border text-muted-foreground",
-                selected && isCorrect && "border-green-500 text-green-600",
-                selected && !isCorrect && "border-red-500 text-red-600"
-              )}
-            >
-              {selected ?? `(${num})`}
-            </span>
-          );
-        })}
-      </p>
-
-      <div className="flex flex-wrap gap-2 mb-4">
-        {wordBank.map((w) => (
-          <button
-            key={w}
-            onClick={() => {
-              const nextBlank = blanks.find((b) => !answers[b.number]);
-              if (nextBlank) setAnswers((prev) => ({ ...prev, [nextBlank.number]: w }));
-            }}
-            className="px-3 py-1.5 rounded-lg border-2 border-border text-sm font-medium hover:border-primary/50"
-          >
-            {w}
-          </button>
-        ))}
-      </div>
-
-      <div className="text-xs text-muted-foreground space-y-1">
-        {blanks.map((b) => (
-          <div key={b.number}>
-            ({b.number}) jawaban: <span className="font-bold text-foreground">{b.answer}（{b.answerKanji}）</span>
-          </div>
-        ))}
-      </div>
-    </Card>
-  );
-}
-
 export function GoiTestView({ test }: { test: GoiTestDay }) {
   return (
     <div className="space-y-8">
@@ -123,22 +64,31 @@ export function GoiTestView({ test }: { test: GoiTestDay }) {
       </div>
 
       <Card className="p-6 bg-card">
-        <h3 className="text-lg font-bold mb-4">問題1 — Pilih arti/cara baca yang tepat</h3>
+        <h3 className="text-lg font-bold mb-4">問題1 — Lengkapi kalimatnya dengan kata yang tepat</h3>
         <div className="space-y-5">
-          {test.readingQuestions.map((q, i) => (
+          {test.fillBlankQuestions.map((q, i) => (
             <MultipleChoiceItem key={i} index={i + 1} prompt={q.sentence} choices={q.choices} answer={q.answer} />
           ))}
         </div>
       </Card>
 
       <Card className="p-6 bg-card">
-        <h3 className="text-lg font-bold mb-4">問題2 — Pilih kata yang tepat</h3>
+        <h3 className="text-lg font-bold mb-4">問題2 — Pilih kata yang sesuai dengan penjelasan</h3>
         <div className="space-y-5">
-          {test.wordChoiceQuestions.map((q, i) => (
+          {test.definitionQuestions.map((q, i) => (
+            <MultipleChoiceItem key={i} index={i + 1} prompt={q.definition} choices={q.choices} answer={q.answer} />
+          ))}
+        </div>
+      </Card>
+
+      <Card className="p-6 bg-card">
+        <h3 className="text-lg font-bold mb-4">問題3 — Pilih kata yang artinya paling dekat</h3>
+        <div className="space-y-5">
+          {test.synonymQuestions.map((q, i) => (
             <MultipleChoiceItem
               key={i}
               index={i + 1}
-              prompt={`${q.sentence} （${q.reading}）`}
+              prompt={`${q.sentence} （${q.target}）`}
               choices={q.choices}
               answer={q.answer}
             />
@@ -147,15 +97,13 @@ export function GoiTestView({ test }: { test: GoiTestDay }) {
       </Card>
 
       <Card className="p-6 bg-card">
-        <h3 className="text-lg font-bold mb-4">問題3 — Lengkapi kalimatnya</h3>
+        <h3 className="text-lg font-bold mb-4">問題4 — Pilih penggunaan kata yang paling tepat</h3>
         <div className="space-y-5">
-          {test.fillBlankQuestions.map((q, i) => (
-            <MultipleChoiceItem key={i} index={i + 1} prompt={q.sentence} choices={q.choices} answer={q.answer} />
+          {test.usageQuestions.map((q, i) => (
+            <MultipleChoiceItem key={i} index={i + 1} prompt={q.word} choices={q.choices} answer={q.answer} />
           ))}
         </div>
       </Card>
-
-      <PassageSection test={test} />
     </div>
   );
 }
