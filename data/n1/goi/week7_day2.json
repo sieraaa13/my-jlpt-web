@@ -1,0 +1,54 @@
+{
+  "week": 7,
+  "day": 2,
+  "title": "カタカナ②",
+  "subtitle": "Kosakata serapan (katakana) yang perlu diperhatikan cara pemakaiannya",
+  "entries": [
+    { "word": "アットホーム", "reading": "アットホーム", "example": "あの店はアットホームな雰囲気で居心地がいい。", "meaning": "nyaman seperti di rumah sendiri", "relatedForms": [] },
+    { "word": "ラフ", "reading": "ラフ", "example": "彼は今日、ラフな服装で出かけた。", "meaning": "santai, kasual", "relatedForms": [] },
+    { "word": "ラフ", "reading": "ラフ", "example": "完成前のラフな図面を見せてもらった。", "meaning": "kasar, belum rapi (sketsa)", "relatedForms": [] },
+    { "word": "ソフト", "reading": "ソフト", "example": "彼はいつもソフトな話し方をする。", "meaning": "lembut", "relatedForms": [] },
+    { "word": "ソフト", "reading": "ソフト", "example": "新しいソフトをパソコンにインストールした。", "meaning": "perangkat lunak", "relatedForms": [] },
+    { "word": "タイト", "reading": "タイト", "example": "彼女はタイトなスカートをはいていた。", "meaning": "ketat (pakaian)", "relatedForms": [] },
+    { "word": "タイト", "reading": "タイト", "example": "今週はスケジュールがタイトで、休む暇がない。", "meaning": "padat (jadwal)", "relatedForms": [] },
+    { "word": "シャープ", "reading": "シャープ", "example": "このカメラはシャープな画像を撮ることができる。", "meaning": "jernih, tajam (gambar)", "relatedForms": [] },
+    { "word": "シャープ", "reading": "シャープ", "example": "彼はシャープな頭脳の持ち主だ。", "meaning": "tajam (pikiran)", "relatedForms": [] },
+    { "word": "デリケート", "reading": "デリケート", "example": "彼女はデリケートな神経の持ち主だ。", "meaning": "sensitif", "relatedForms": [] },
+    { "word": "デリケート", "reading": "デリケート", "example": "これはとてもデリケートな問題なので、慎重に話そう。", "meaning": "rumit, sensitif (isu)", "relatedForms": [] },
+    { "word": "セキュリティー", "reading": "セキュリティー", "example": "このビルはセキュリティーがしっかりしている。", "meaning": "keamanan", "relatedForms": [] },
+    { "word": "エスカレーター", "reading": "エスカレーター", "example": "彼の学校はエスカレーター式で大学まで進学できる。", "meaning": "otomatis naik jenjang (tanpa ujian)", "relatedForms": [] },
+    { "word": "ノルマ", "reading": "ノルマ", "example": "彼は毎月の営業ノルマをこなしている。", "meaning": "target, kuota kerja", "relatedForms": [] },
+    { "word": "ブレイク", "reading": "ブレイク", "example": "会議の途中でコーヒーブレイクを取った。", "meaning": "istirahat sejenak", "relatedForms": [] },
+    { "word": "ブレイク", "reading": "ブレイク", "example": "その曲は去年大ブレイクした。", "meaning": "meledak populer", "relatedForms": [] },
+    { "word": "トラウマ", "reading": "トラウマ", "example": "子どものころの経験が彼のトラウマになっている。", "meaning": "trauma", "relatedForms": [] },
+    { "word": "ゲット", "reading": "ゲット", "example": "このゲーム機、どこでゲットしたの？", "meaning": "mendapatkan", "relatedForms": [] },
+    { "word": "アルコール", "reading": "アルコール", "example": "彼はアルコールが全くだめだ。", "meaning": "alkohol", "relatedForms": [] },
+    { "word": "オファー", "reading": "オファー", "example": "大手企業からオファーが来た。", "meaning": "tawaran (pekerjaan)", "relatedForms": [] },
+    { "word": "ブランド", "reading": "ブランド", "example": "彼女はブランド品ばかり集めている。", "meaning": "merek (ternama)", "relatedForms": [] },
+    { "word": "オプション", "reading": "オプション", "example": "この旅行プランでは市内観光はオプションになっている。", "meaning": "pilihan tambahan", "relatedForms": [] },
+    { "word": "テンション", "reading": "テンション", "example": "好きな曲がかかって一気にテンションが上がった。", "meaning": "semangat, mood (naik)", "relatedForms": [] },
+    { "word": "プレッシャー", "reading": "プレッシャー", "example": "決勝戦を控えて、彼はかなりのプレッシャーを感じている。", "meaning": "tekanan", "relatedForms": [] },
+    { "word": "ギャップ", "reading": "ギャップ", "example": "彼女は見た目と性格にギャップがある。", "meaning": "kesenjangan, perbedaan", "relatedForms": [] },
+    { "word": "バブル", "reading": "バブル", "example": "バブル経済がはじけて、多くの会社が倒産した。", "meaning": "ekonomi gelembung", "relatedForms": [] },
+    { "word": "ストーカー", "reading": "ストーカー", "example": "彼女はストーカーに悩まされている。", "meaning": "penguntit", "relatedForms": [] },
+    { "word": "エリート", "reading": "エリート", "example": "彼はエリート社員として期待されている。", "meaning": "elit", "relatedForms": [] },
+    { "word": "バリアフリー", "reading": "バリアフリー", "example": "この建物はバリアフリー設計になっている。", "meaning": "ramah difabel (tanpa hambatan)", "relatedForms": [] },
+    { "word": "ニート", "reading": "ニート", "example": "彼は大学を出てからずっとニートのままだ。", "meaning": "tidak bekerja, sekolah, maupun mengikuti pelatihan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女は顔と声にずいぶん＿＿がある。", "optionA": "ギャップ", "optionAReading": "ギャップ", "optionB": "プレッシャー", "optionBReading": "プレッシャー", "answer": "A" },
+      { "question": "＿＿経済がはじけて、多くの会社が倒産した。", "optionA": "バブル", "optionAReading": "バブル", "optionB": "ノルマ", "optionBReading": "ノルマ", "answer": "A" },
+      { "question": "優勝のかかった試合で、かなりの＿＿を感じている。", "optionA": "プレッシャー", "optionAReading": "プレッシャー", "optionB": "トラウマ", "optionBReading": "トラウマ", "answer": "A" },
+      { "question": "このビルは＿＿がしっかりしている。", "optionA": "セキュリティー", "optionAReading": "セキュリティー", "optionB": "エスカレーター", "optionBReading": "エスカレーター", "answer": "A" },
+      { "question": "彼はスケジュールが＿＿で、休む暇がない。", "optionA": "タイトな", "optionAReading": "タイトな", "optionB": "ラフな", "optionBReading": "ラフな", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "せだいかんのギャップ", "fixedKanji": "世代間の", "blankPosition": "after", "choices": ["ギャップ", "バブル", "ノルマ", "プレッシャー"], "answer": "ギャップ" },
+      { "reading": "かいぎのとちゅうでコーヒーブレイクをとった", "fixedKanji": "会議の途中で", "blankPosition": "after", "choices": ["コーヒーブレイクを取った", "トラウマを取った", "オファーを取った", "オプションを取った"], "answer": "コーヒーブレイクを取った" },
+      { "reading": "かれはまいつきのノルマをこなしている", "fixedKanji": "彼は毎月の", "blankPosition": "after", "choices": ["ノルマをこなしている", "タイトをこなしている", "ギャップをこなしている", "バブルをこなしている"], "answer": "ノルマをこなしている" },
+      { "reading": "このたてものはバリアフリーせっけいになっている", "fixedKanji": "この建物は", "blankPosition": "after", "choices": ["バリアフリー設計になっている", "エスカレーター設計になっている", "セキュリティー設計になっている", "オプション設計になっている"], "answer": "バリアフリー設計になっている" },
+      { "reading": "かのじょはストーカーになやまされている", "fixedKanji": "彼女は", "blankPosition": "after", "choices": ["ストーカーに悩まされている", "ニートに悩まされている", "エリートに悩まされている", "ブランドに悩まされている"], "answer": "ストーカーに悩まされている" }
+    ]
+  }
+}

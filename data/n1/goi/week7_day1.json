@@ -1,0 +1,52 @@
+{
+  "week": 7,
+  "day": 1,
+  "title": "カタカナ①",
+  "subtitle": "Kosakata serapan (katakana) yang sering disingkat atau bermakna khusus",
+  "entries": [
+    { "word": "ハイテク", "reading": "ハイテク", "example": "わが国はハイテク産業に力を入れている。", "meaning": "teknologi tinggi", "relatedForms": [] },
+    { "word": "リストラ", "reading": "リストラ", "example": "不景気で多くの社員がリストラされた。", "meaning": "PHK, perampingan perusahaan", "relatedForms": [] },
+    { "word": "コネ", "reading": "コネ", "example": "彼は父のコネを使って就職した。", "meaning": "koneksi, kenalan orang dalam", "relatedForms": [] },
+    { "word": "セクハラ", "reading": "セクハラ", "example": "彼女は職場でセクハラを受けたと訴えた。", "meaning": "pelecehan seksual", "relatedForms": [] },
+    { "word": "マザコン", "reading": "マザコン", "example": "彼は何をするにも母親に相談するマザコンだ。", "meaning": "terlalu bergantung pada ibu", "relatedForms": ["ファザコン"] },
+    { "word": "ファザコン", "reading": "ファザコン", "example": "彼女は父親を溺愛するファザコン気味だ。", "meaning": "terlalu bergantung pada ayah", "relatedForms": ["マザコン"] },
+    { "word": "ゼネコン", "reading": "ゼネコン", "example": "彼は大手ゼネコンに就職した。", "meaning": "kontraktor konstruksi besar", "relatedForms": [] },
+    { "word": "プレゼン", "reading": "プレゼン", "example": "会議で新商品のプレゼンをした。", "meaning": "presentasi", "relatedForms": [] },
+    { "word": "バイオ", "reading": "バイオ", "example": "この大学はバイオ研究で有名だ。", "meaning": "bioteknologi", "relatedForms": [] },
+    { "word": "ハンデ", "reading": "ハンデ", "example": "彼は体のハンデを克服してマラソンを完走した。", "meaning": "kekurangan/kelemahan yang harus diatasi", "relatedForms": [] },
+    { "word": "マンネリ", "reading": "マンネリ", "example": "最近、この仕事はマンネリ化していると感じる。", "meaning": "rutinitas yang membosankan", "relatedForms": [] },
+    { "word": "エコ", "reading": "エコ", "example": "最近はエコな生活を心がけている。", "meaning": "ramah lingkungan", "relatedForms": [] },
+    { "word": "ギャラ", "reading": "ギャラ", "example": "新人歌手のギャラはまだ安い。", "meaning": "honorarium, bayaran (artis)", "relatedForms": [] },
+    { "word": "インテリ", "reading": "インテリ", "example": "彼はインテリらしい落ち着いた話し方をする。", "meaning": "kaum intelektual", "relatedForms": [] },
+    { "word": "セレブ", "reading": "セレブ", "example": "彼女はハリウッドのセレブと知り合いだ。", "meaning": "selebriti kalangan atas", "relatedForms": [] },
+    { "word": "鉄道マニア", "reading": "てつどうマニア", "example": "弟は大の鉄道マニアで、休日は駅めぐりをしている。", "meaning": "penggemar berat kereta api", "relatedForms": [] },
+    { "word": "学習ドリル", "reading": "がくしゅうドリル", "example": "子どもに毎日学習ドリルをやらせている。", "meaning": "buku latihan soal", "relatedForms": [] },
+    { "word": "資金カンパ", "reading": "しきんカンパ", "example": "被災地のために資金カンパを呼びかけた。", "meaning": "penggalangan dana", "relatedForms": [] },
+    { "word": "ネック", "reading": "ネック", "example": "この地域は交通の便の悪さがネックになっている。", "meaning": "kendala, hambatan", "relatedForms": [] },
+    { "word": "レントゲン", "reading": "レントゲン", "example": "病院でレントゲンを撮ってもらった。", "meaning": "foto rontgen", "relatedForms": [] },
+    { "word": "ピンセット", "reading": "ピンセット", "example": "医者はピンセットで小さな破片をつまんだ。", "meaning": "pinset", "relatedForms": [] },
+    { "word": "シック", "reading": "シック", "example": "彼女はシックなデザインの服を選んだ。", "meaning": "elegan, berkelas", "relatedForms": [] },
+    { "word": "ルーズ", "reading": "ルーズ", "example": "彼はとても時間にルーズだ。", "meaning": "tidak disiplin (waktu)", "relatedForms": [] },
+    { "word": "スムーズ", "reading": "スムーズ", "example": "話し合いは思ったよりスムーズに進んだ。", "meaning": "lancar", "relatedForms": [] },
+    { "word": "アフターサービス", "reading": "アフターサービス", "example": "あの店はアフターサービスがいいので安心だ。", "meaning": "layanan purna jual", "relatedForms": ["アフターケア"] },
+    { "word": "バトンタッチ", "reading": "バトンタッチ", "example": "彼は後継者に仕事をバトンタッチした。", "meaning": "menyerahkan tongkat estafet, mengalihkan tugas", "relatedForms": [] },
+    { "word": "カンニング", "reading": "カンニング", "example": "彼はテストでカンニングをして注意された。", "meaning": "menyontek", "relatedForms": [] },
+    { "word": "ホース", "reading": "ホース", "example": "彼はホースで庭に水をまいた。", "meaning": "selang air", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は父の＿＿を使って就職した。", "optionA": "コネ", "optionAReading": "コネ", "optionB": "ハンデ", "optionBReading": "ハンデ", "answer": "A" },
+      { "question": "不景気で多くの社員が＿＿された。", "optionA": "リストラ", "optionAReading": "リストラ", "optionB": "マンネリ", "optionBReading": "マンネリ", "answer": "A" },
+      { "question": "この地域は交通の便の悪さが＿＿になっている。", "optionA": "ネック", "optionAReading": "ネック", "optionB": "ハンデ", "optionBReading": "ハンデ", "answer": "A" },
+      { "question": "彼は後継者に仕事を＿＿した。", "optionA": "バトンタッチ", "optionAReading": "バトンタッチ", "optionB": "カンニング", "optionBReading": "カンニング", "answer": "A" },
+      { "question": "彼女は＿＿なデザインの服を選んだ。", "optionA": "シック", "optionAReading": "シック", "optionB": "ルーズ", "optionBReading": "ルーズ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "ちちのコネ", "fixedKanji": "父の", "blankPosition": "after", "choices": ["コネ", "ハンデ", "ネック", "マンネリ"], "answer": "コネ" },
+      { "reading": "しごとがマンネリかする", "fixedKanji": "仕事が", "blankPosition": "after", "choices": ["マンネリ化する", "リストラされる", "バトンタッチする", "カンニングする"], "answer": "マンネリ化する" },
+      { "reading": "てすとでカンニングする", "fixedKanji": "テストで", "blankPosition": "after", "choices": ["カンニングする", "プレゼンする", "ゲットする", "オファーする"], "answer": "カンニングする" },
+      { "reading": "にわにみずをまくどうぐはホース", "fixedKanji": "庭に水をまく道具は", "blankPosition": "after", "choices": ["ホース", "ピンセット", "ガーゼ", "レントゲン"], "answer": "ホース" },
+      { "reading": "びょういんでレントゲンをとった", "fixedKanji": "病院で", "blankPosition": "after", "choices": ["レントゲンを撮った", "ピンセットを撮った", "ガーゼを撮った", "ホースを撮った"], "answer": "レントゲンを撮った" }
+    ]
+  }
+}
