@@ -1,0 +1,50 @@
+{
+  "week": 6,
+  "day": 3,
+  "title": "はる・送る・飛ぶ",
+  "subtitle": "Kosakata dengan banyak makna (張る・送る・解ける・飛ぶ・結ぶ)",
+  "entries": [
+    { "word": "張る", "reading": "はる", "example": "テントのロープがピンと張っている。", "meaning": "menegang, kencang", "relatedForms": [] },
+    { "word": "張る", "reading": "はる", "example": "寒い朝は池に氷が張っていた。", "meaning": "terbentuk lapisan (es)", "relatedForms": [] },
+    { "word": "張る", "reading": "はる", "example": "食べすぎておなかが張っている。", "meaning": "kembung, mengencang", "relatedForms": [] },
+    { "word": "張る", "reading": "はる", "example": "彼女は見栄を張って高いバッグを買った。", "meaning": "gengsi, pamer", "relatedForms": [] },
+    { "word": "張る", "reading": "はる", "example": "みんなでキャンプ場にテントを張った。", "meaning": "mendirikan (tenda)", "relatedForms": [] },
+    { "word": "張る", "reading": "はる", "example": "彼は胸を張ってステージに立った。", "meaning": "membusungkan dada, percaya diri", "relatedForms": [] },
+    { "word": "送る", "reading": "おくる", "example": "暑い日は扇風機で風を送っている。", "meaning": "mengalirkan (angin)", "relatedForms": [] },
+    { "word": "送る", "reading": "おくる", "example": "彼は毎日忙しい日々を送っている。", "meaning": "menjalani (hari-hari)", "relatedForms": [] },
+    { "word": "送る", "reading": "おくる", "example": "彼女は目で合図を送ってきた。", "meaning": "memberi isyarat (mata)", "relatedForms": [] },
+    { "word": "送る", "reading": "おくる", "example": "父は毎朝、私を駅まで送ってくれる。", "meaning": "mengantar (ke suatu tempat)", "relatedForms": [] },
+    { "word": "送る", "reading": "おくる", "example": "観客は演奏が終わると大きな拍手を送った。", "meaning": "memberikan (tepuk tangan)", "relatedForms": [] },
+    { "word": "解ける", "reading": "とける", "example": "話し合いの末、二人の誤解がようやく解けた。", "meaning": "terpecahkan (kesalahpahaman)", "relatedForms": [] },
+    { "word": "溶ける", "reading": "とける", "example": "この洗剤は水にすぐ溶ける。", "meaning": "larut (dalam air)", "relatedForms": [] },
+    { "word": "解ける", "reading": "とける", "example": "この問題は難しくてなかなか解けない。", "meaning": "bisa dipecahkan (soal)", "relatedForms": [] },
+    { "word": "解ける", "reading": "とける", "example": "停学処分が解けて、彼はまた通学している。", "meaning": "dicabut (sanksi/larangan)", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "空港の上をヘリコプターが飛んでいる。", "meaning": "terbang", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "強風で屋根の看板が飛んでしまった。", "meaning": "terbawa (angin)", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "水たまりの泥が飛んでズボンが汚れた。", "meaning": "muncrat, terciprat", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "電気を使いすぎて家のヒューズが飛んだ。", "meaning": "putus, konslet", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "事件が起きると、記者たちは現場に飛んだ。", "meaning": "bergegas (ke suatu tempat)", "relatedForms": [] },
+    { "word": "飛ぶ", "reading": "とぶ", "example": "彼の話はいつもあちこちに飛ぶ。", "meaning": "melompat-lompat (topik pembicaraan)", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "子どもは自分で靴のひもを結べるようになった。", "meaning": "mengikat", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "その2社はついに合併の契約を結んだ。", "meaning": "mengikat (kontrak/perjanjian)", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "この路線は東京と大阪を結んでいる。", "meaning": "menghubungkan (dua tempat)", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "二人は固い信頼感で結ばれている。", "meaning": "terikat (oleh kepercayaan)", "relatedForms": [] },
+    { "word": "結ぶ", "reading": "むすぶ", "example": "長年の努力がようやく実を結んだ。", "meaning": "membuahkan hasil", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女は見栄を＿＿新しいバッグを買った。", "optionA": "張って", "optionAReading": "はって", "optionB": "送って", "optionBReading": "おくって", "answer": "A" },
+      { "question": "彼は毎日忙しい日々を＿＿いる。", "optionA": "送って", "optionAReading": "おくって", "optionB": "張って", "optionBReading": "はって", "answer": "A" },
+      { "question": "話し合いの末、二人の誤解がようやく＿＿。", "optionA": "解けた", "optionAReading": "とけた", "optionB": "結ばれた", "optionBReading": "むすばれた", "answer": "A" },
+      { "question": "強風で、屋根の看板が＿＿しまった。", "optionA": "飛んで", "optionAReading": "とんで", "optionB": "張って", "optionBReading": "はって", "answer": "A" },
+      { "question": "その2社はついに合併の契約を＿＿。", "optionA": "結んだ", "optionAReading": "むすんだ", "optionB": "送った", "optionBReading": "おくった", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "みえをはる", "fixedKanji": "見栄を", "blankPosition": "after", "choices": ["張る", "送る", "結ぶ", "飛ぶ"], "answer": "張る" },
+      { "reading": "あいずをおくる", "fixedKanji": "合図を", "blankPosition": "after", "choices": ["送る", "張る", "結ぶ", "解ける"], "answer": "送る" },
+      { "reading": "ごかいがとける", "fixedKanji": "誤解が", "blankPosition": "after", "choices": ["解ける", "飛ぶ", "張る", "結ぶ"], "answer": "解ける" },
+      { "reading": "かんばんがとぶ", "fixedKanji": "看板が", "blankPosition": "after", "choices": ["飛ぶ", "張る", "送る", "解ける"], "answer": "飛ぶ" },
+      { "reading": "けいやくをむすぶ", "fixedKanji": "契約を", "blankPosition": "after", "choices": ["結ぶ", "送る", "張る", "飛ぶ"], "answer": "結ぶ" }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "week": 6,
+  "day": 4,
+  "title": "甘い・かたい・重い",
+  "subtitle": "Kosakata dengan banyak makna (甘い・かたい・まずい・重い・明るい)",
+  "entries": [
+    { "word": "甘い", "reading": "あまい", "example": "このマンゴーは甘くてとてもおいしい。", "meaning": "manis", "relatedForms": [] },
+    { "word": "甘い", "reading": "あまい", "example": "今朝のスープはちょっと甘い、もう少し塩を足そう。", "meaning": "kurang asin, hambar", "relatedForms": [] },
+    { "word": "甘い", "reading": "あまい", "example": "彼は子どもたちに甘くて、あまり叱らない。", "meaning": "memanjakan, tidak tegas", "relatedForms": [] },
+    { "word": "甘い", "reading": "あまい", "example": "彼のビジネスに対する考えはまだ甘い。", "meaning": "naif, terlalu optimis", "relatedForms": [] },
+    { "word": "甘い", "reading": "あまい", "example": "この計画の見通しは甘いと言わざるを得ない。", "meaning": "perkiraan terlalu optimis", "relatedForms": [] },
+    { "word": "甘い", "reading": "あまい", "example": "このねじは甘いから、すぐに外れてしまう。", "meaning": "kendur, longgar", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "このかたい椅子には長く座っていられない。", "meaning": "keras, kaku", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "彼は口がかたいので、秘密を話しても安心だ。", "meaning": "bisa menyimpan rahasia", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "彼の決意はかたく、誰にも止められない。", "meaning": "teguh", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "面接では表情がかたくならないよう気をつけた。", "meaning": "kaku, tegang", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "この様子なら、彼女の合格はかたいだろう。", "meaning": "hampir dipastikan", "relatedForms": [] },
+    { "word": "かたい", "reading": "かたい", "example": "父は頭がかたく、意見をなかなか変えない。", "meaning": "keras kepala", "relatedForms": [] },
+    { "word": "まずい", "reading": "まずい", "example": "彼のクレームへの対応はまずかった。", "meaning": "buruk, tidak becus", "relatedForms": [] },
+    { "word": "まずい", "reading": "まずい", "example": "彼は性格はいいが、絵はまずい。", "meaning": "payah, kurang bagus (kemampuan)", "relatedForms": [] },
+    { "word": "まずい", "reading": "まずい", "example": "彼の運転はまずくて、乗るたびに怖い。", "meaning": "tidak jago, buruk (keterampilan)", "relatedForms": [] },
+    { "word": "まずい", "reading": "まずい", "example": "この話は人に聞かれるとまずい。", "meaning": "tidak menguntungkan, berbahaya (jika diketahui)", "relatedForms": [] },
+    { "word": "まずい", "reading": "まずい", "example": "書類を出し忘れてまずいことになった。", "meaning": "jadi runyam, jadi masalah", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "酸素は水素より重い。", "meaning": "berat (secara fisik)", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "この自転車のペダルは重くて漕ぎにくい。", "meaning": "berat, susah digerakkan", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "彼は会社で重い地位についている。", "meaning": "penting (jabatan)", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "寝不足で頭が重い。", "meaning": "terasa berat, pusing", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "このパソコンは古くて動きが重い。", "meaning": "lambat, lemot", "relatedForms": [] },
+    { "word": "重い", "reading": "おもい", "example": "その仕事を断るのは気が重い。", "meaning": "berat hati", "relatedForms": [] },
+    { "word": "明るい", "reading": "あかるい", "example": "彼女は明るいブルーのワンピースを着ていた。", "meaning": "cerah (warna)", "relatedForms": [] },
+    { "word": "明るい", "reading": "あかるい", "example": "彼はいつも明るい声であいさつする。", "meaning": "ceria (suara)", "relatedForms": [] },
+    { "word": "明るい", "reading": "あかるい", "example": "彼女は明るい性格でだれからも好かれる。", "meaning": "ceria (kepribadian)", "relatedForms": [] },
+    { "word": "明るい", "reading": "あかるい", "example": "彼は政治に明るく、詳しく説明してくれた。", "meaning": "paham, menguasai (bidang tertentu)", "relatedForms": [] },
+    { "word": "明るい", "reading": "あかるい", "example": "新製品のおかげで、今後の見通しが明るい。", "meaning": "cerah, menjanjikan (prospek)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "準備なしで試験を受けたのは＿＿。", "optionA": "甘かった", "optionAReading": "あまかった", "optionB": "重かった", "optionBReading": "おもかった", "answer": "A" },
+      { "question": "彼は口が＿＿から、秘密を話しても安心だ。", "optionA": "かたい", "optionAReading": "かたい", "optionB": "まずい", "optionBReading": "まずい", "answer": "A" },
+      { "question": "対応が＿＿と、後でクレームになる。", "optionA": "まずい", "optionAReading": "まずい", "optionB": "かたい", "optionBReading": "かたい", "answer": "A" },
+      { "question": "その仕事を断るのは気が＿＿。", "optionA": "重い", "optionAReading": "おもい", "optionB": "甘い", "optionBReading": "あまい", "answer": "A" },
+      { "question": "彼は政治に＿＿詳しく説明してくれた。", "optionA": "明るく", "optionAReading": "あかるく", "optionB": "重く", "optionBReading": "おもく", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "かんがえがあまい", "fixedKanji": "考えが", "blankPosition": "after", "choices": ["甘い", "かたい", "まずい", "重い"], "answer": "甘い" },
+      { "reading": "くちがかたい", "fixedKanji": "口が", "blankPosition": "after", "choices": ["かたい", "甘い", "重い", "明るい"], "answer": "かたい" },
+      { "reading": "たいおうがまずい", "fixedKanji": "対応が", "blankPosition": "after", "choices": ["まずい", "かたい", "甘い", "明るい"], "answer": "まずい" },
+      { "reading": "きがおもい", "fixedKanji": "気が", "blankPosition": "after", "choices": ["重い", "甘い", "かたい", "まずい"], "answer": "重い" },
+      { "reading": "せいじにあかるい", "fixedKanji": "政治に", "blankPosition": "after", "choices": ["明るい", "重い", "かたい", "甘い"], "answer": "明るい" }
+    ]
+  }
+}
