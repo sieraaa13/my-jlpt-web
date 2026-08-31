@@ -1,0 +1,43 @@
+{
+  "week": 4,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 4 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "応募資格に学歴の有無は関係ない。", "target": "有無", "choices": ["ゆうぶ", "うぶ", "ゆうむ", "うむ"], "answer": "うむ" },
+    { "sentence": "山は吹雪のせいで視界が悪かった。", "target": "吹雪", "choices": ["すゆき", "ふゆき", "すぶき", "ふぶき"], "answer": "ふぶき" },
+    { "sentence": "差し支えなければ、連絡先を教えてください。", "target": "差し支え", "choices": ["さしつかえ", "さしささえ", "さしひかえ", "さしかかえ"], "answer": "さしつかえ" },
+    { "sentence": "この街には昔ながらの情緒が漂っている。", "target": "情緒", "choices": ["ぜいしょ", "せいちょ", "じょうちょ", "ふぜい"], "answer": "じょうちょ" },
+    { "sentence": "彼女は世間体を気にせず自分らしく生きている。", "target": "世間体", "choices": ["せけんてい", "せげんてい", "せけんたい", "せまんたい"], "answer": "せけんてい" },
+    { "sentence": "息子は最近、宇宙に興味を持ち始めた。", "target": "興味", "choices": ["こうみ", "きゅうみ", "しゅみ", "きょうみ"], "answer": "きょうみ" },
+    { "sentence": "新しい手順で作業の効率が上がった。", "target": "効率", "choices": ["こりつ", "こうりつ", "きょうりつ", "こうそつ"], "answer": "こうりつ" },
+    { "sentence": "彼はその発言について後で謝罪した。", "target": "発言", "choices": ["はつげん", "ほつげん", "はつごん", "ほつごん"], "answer": "はつげん" },
+    { "sentence": "この研究所は先端技術の開発で知られている。", "target": "先端", "choices": ["せんだん", "せんたん", "さきばた", "さきはし"], "answer": "せんたん" },
+    { "sentence": "古い家の天井には梁がむき出しになっていた。", "target": "天井", "choices": ["あまい", "てんせい", "てんい", "てんじょう"], "answer": "てんじょう" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "名前のかしらもじを書く。", "reading": "かしらもじ", "choices": ["首文字", "顔文字", "絵文字", "頭文字"], "answer": "頭文字" },
+    { "sentence": "郊外のいっこだてに引っ越した。", "reading": "いっこだて", "choices": ["一戸建て", "一個建て", "一戸立て", "一個立て"], "answer": "一戸建て" },
+    { "sentence": "週末は美術館にかいがを見に行った。", "reading": "かいが", "choices": ["階下", "海外", "絵画", "開花"], "answer": "絵画" },
+    { "sentence": "開店前から店の前に長いぎょうれつができていた。", "reading": "ぎょうれつ", "choices": ["系列", "業列", "形列", "行列"], "answer": "行列" },
+    { "sentence": "傘のえに名前を書いておいた。", "reading": "え", "choices": ["枝", "柄", "得", "江"], "answer": "柄" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "家族連れが海（　）で楽しそうに遊んでいる。", "target": "海辺", "choices": ["周", "端", "辺", "近"], "answer": "辺" },
+    { "sentence": "この薬草には（　）毒作用があるとされる。", "target": "解毒", "choices": ["下", "解", "省", "上"], "answer": "解" },
+    { "sentence": "不調が続いていた投手は好投し、（　）名を返上した。", "target": "汚名", "choices": ["悪", "汚", "醜", "卑"], "answer": "汚" },
+    { "sentence": "面接のスーツの色は紺やグレー、黒などが（　）難だろう。", "target": "無難", "choices": ["非", "不", "否", "無"], "answer": "無" },
+    { "sentence": "「芝生に入るな」という立て（　）が見えませんか。", "target": "立て札", "choices": ["札", "冊", "礼", "柄"], "answer": "札" }
+  ],
+  "passageQuestion": {
+    "passage": "この病院の[21]診療を行う[22]では、[23]の患者に多い突然の[24]にも対応できる体制を整えている。また、喘息予防の体操や野外活動なども[25]している。",
+    "wordBank": ["やかん", "しょうにか", "がいらい", "ほっさ", "じっし", "ほっき", "やこう"],
+    "blanks": [
+      { "number": 21, "answer": "やかん", "answerKanji": "夜間" },
+      { "number": 22, "answer": "しょうにか", "answerKanji": "小児科" },
+      { "number": 23, "answer": "がいらい", "answerKanji": "外来" },
+      { "number": 24, "answer": "ほっさ", "answerKanji": "発作" },
+      { "number": 25, "answer": "じっし", "answerKanji": "実施" }
+    ]
+  }
+}

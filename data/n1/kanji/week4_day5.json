@@ -1,0 +1,56 @@
+{
+  "week": 4,
+  "day": 5,
+  "title": "興味・興奮",
+  "subtitle": "Kanji dengan banyak cara baca ②",
+  "entries": [
+    { "word": "興味", "reading": "きょうみ", "example": "彼は歴史に強い興味を持っている。", "meaning": "ketertarikan, minat", "relatedForms": ["興奮"] },
+    { "word": "興奮", "reading": "こうふん", "example": "観客は逆転劇に興奮して声を上げた。", "meaning": "kegembiraan, kegairahan", "relatedForms": ["興味"] },
+    { "word": "一律", "reading": "いちりつ", "example": "社員には一律で同じ手当が支給される。", "meaning": "seragam, rata", "relatedForms": ["同一"] },
+    { "word": "同一", "reading": "どういつ", "example": "この二つの商品は同一のメーカーが作っている。", "meaning": "identik, sama", "relatedForms": ["一律"] },
+    { "word": "岩石", "reading": "がんせき", "example": "この山は硬い岩石でできている。", "meaning": "batuan", "relatedForms": ["磁石"] },
+    { "word": "磁石", "reading": "じしゃく", "example": "冷蔵庫に磁石でメモを貼り付けた。", "meaning": "magnet", "relatedForms": ["岩石"] },
+    { "word": "実施", "reading": "じっし", "example": "このアンケートは来月実施される予定だ。", "meaning": "pelaksanaan", "relatedForms": ["施工"] },
+    { "word": "施工", "reading": "せこう", "example": "新しいビルの施工が始まった。", "meaning": "konstruksi, pengerjaan", "relatedForms": ["実施"] },
+    { "word": "酸素", "reading": "さんそ", "example": "高山では酸素が薄くなる。", "meaning": "oksigen", "relatedForms": ["素直"] },
+    { "word": "素直", "reading": "すなお", "example": "彼は素直に自分の非を認めた。", "meaning": "jujur, patuh", "relatedForms": ["酸素"] },
+    { "word": "無視", "reading": "むし", "example": "彼は忠告を無視して計画を進めた。", "meaning": "mengabaikan", "relatedForms": ["無事"] },
+    { "word": "無事", "reading": "ぶじ", "example": "全員が無事に目的地に到着した。", "meaning": "selamat, tanpa masalah", "relatedForms": ["無視"] },
+    { "word": "効率", "reading": "こうりつ", "example": "新しいシステムで作業の効率が上がった。", "meaning": "efisiensi", "relatedForms": ["統率"] },
+    { "word": "統率", "reading": "とうそつ", "example": "彼はチームを見事に統率している。", "meaning": "memimpin, mengomandoi", "relatedForms": ["効率"] },
+    { "word": "平均", "reading": "へいきん", "example": "このクラスの平均点は思ったより高かった。", "meaning": "rata-rata", "relatedForms": ["平等"] },
+    { "word": "平等", "reading": "びょうどう", "example": "すべての社員は平等に扱われるべきだ。", "meaning": "kesetaraan", "relatedForms": ["平均"] },
+    { "word": "貿易", "reading": "ぼうえき", "example": "この会社は海外との貿易で成長してきた。", "meaning": "perdagangan", "relatedForms": ["簡易"] },
+    { "word": "簡易", "reading": "かんい", "example": "災害時のために簡易トイレを用意している。", "meaning": "sederhana, praktis", "relatedForms": ["貿易"] },
+    { "word": "児童", "reading": "じどう", "example": "この公園は児童向けの遊具が充実している。", "meaning": "anak-anak", "relatedForms": ["小児科"] },
+    { "word": "小児科", "reading": "しょうにか", "example": "子どもが熱を出したので小児科を受診した。", "meaning": "klinik anak", "relatedForms": ["児童"] },
+    { "word": "装置", "reading": "そうち", "example": "この工場には最新の安全装置が導入されている。", "meaning": "alat, perangkat", "relatedForms": ["衣装"] },
+    { "word": "衣装", "reading": "いしょう", "example": "舞台衣装は色鮮やかに仕上げられていた。", "meaning": "kostum", "relatedForms": ["装置"] },
+    { "word": "省略", "reading": "しょうりゃく", "example": "時間の都合上、後半の説明は省略します。", "meaning": "penyingkatan, dihilangkan", "relatedForms": ["反省"] },
+    { "word": "反省", "reading": "はんせい", "example": "彼は今回の失敗を深く反省している。", "meaning": "introspeksi", "relatedForms": ["省略"] },
+    { "word": "重要", "reading": "じゅうよう", "example": "この契約書は重要な書類なので大切に保管してください。", "meaning": "penting", "relatedForms": ["尊重"] },
+    { "word": "尊重", "reading": "そんちょう", "example": "お互いの意見を尊重することが大切だ。", "meaning": "menghormati", "relatedForms": ["重要"] },
+    { "word": "競合", "reading": "きょうごう", "example": "同じ市場で複数の企業が競合している。", "meaning": "persaingan", "relatedForms": ["競馬"] },
+    { "word": "競馬", "reading": "けいば", "example": "祖父は週末になると競馬を楽しんでいる。", "meaning": "pacuan kuda", "relatedForms": ["競合"] },
+    { "word": "険悪", "reading": "けんあく", "example": "会議の空気は次第に険悪になっていった。", "meaning": "tegang, bermusuhan", "relatedForms": ["憎悪"] },
+    { "word": "憎悪", "reading": "ぞうお", "example": "彼の言葉には強い憎悪が込められていた。", "meaning": "kebencian", "relatedForms": ["険悪"] },
+    { "word": "外来", "reading": "がいらい", "example": "この単語は外国から入った外来語だ。", "meaning": "asing, rawat jalan", "relatedForms": ["外科"] },
+    { "word": "外科", "reading": "げか", "example": "彼は事故でけがをして外科を受診した。", "meaning": "bedah", "relatedForms": ["外来"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は歴史に強い＿＿を持っている。", "optionA": "興味", "optionAReading": "きょうみ", "optionB": "興奮", "optionBReading": "こうふん", "answer": "A" },
+      { "question": "観客は逆転劇に＿＿して声を上げた。", "optionA": "興味", "optionAReading": "きょうみ", "optionB": "興奮", "optionBReading": "こうふん", "answer": "B" },
+      { "question": "彼は忠告を＿＿して計画を進めた。", "optionA": "無視", "optionAReading": "むし", "optionB": "無事", "optionBReading": "ぶじ", "answer": "A" },
+      { "question": "全員が＿＿に目的地に到着した。", "optionA": "無視", "optionAReading": "むし", "optionB": "無事", "optionBReading": "ぶじ", "answer": "B" },
+      { "question": "お互いの意見を＿＿することが大切だ。", "optionA": "尊重", "optionAReading": "そんちょう", "optionB": "重要", "optionBReading": "じゅうよう", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "きょうみ", "fixedKanji": "興", "blankPosition": "after", "choices": ["味", "奮", "趣", "心"], "answer": "味" },
+      { "reading": "じっし", "fixedKanji": "実", "blankPosition": "after", "choices": ["施", "行", "現", "践"], "answer": "施" },
+      { "reading": "むし", "fixedKanji": "無", "blankPosition": "after", "choices": ["視", "事", "効", "難"], "answer": "視" },
+      { "reading": "へいきん", "fixedKanji": "平", "blankPosition": "after", "choices": ["均", "等", "和", "凡"], "answer": "均" },
+      { "reading": "そんちょう", "fixedKanji": "尊", "blankPosition": "after", "choices": ["重", "敬", "厳", "大"], "answer": "重" }
+    ]
+  }
+}

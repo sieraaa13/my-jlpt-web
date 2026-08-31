@@ -1,0 +1,55 @@
+{
+  "week": 4,
+  "day": 6,
+  "title": "大家・大家",
+  "subtitle": "Kata yang artinya berubah menurut cara baca",
+  "entries": [
+    { "word": "大家", "reading": "おおや", "example": "下宿先の大家さんはとても親切だ。", "meaning": "pemilik rumah/kos", "relatedForms": [] },
+    { "word": "大家", "reading": "たいか", "example": "彼は書道の大家として知られている。", "meaning": "maestro, pakar besar", "relatedForms": [] },
+    { "word": "上手", "reading": "じょうず", "example": "彼女は料理が上手だ。", "meaning": "pandai, mahir", "relatedForms": [] },
+    { "word": "上手", "reading": "かみて", "example": "舞台の上手から役者が登場した。", "meaning": "sisi kiri panggung (dari penonton)", "relatedForms": [] },
+    { "word": "上手", "reading": "うわて", "example": "彼も強いが、もっと上手がいる。", "meaning": "yang lebih unggul", "relatedForms": [] },
+    { "word": "下手", "reading": "へた", "example": "彼は絵を描くのが下手だ。", "meaning": "tidak mahir", "relatedForms": [] },
+    { "word": "下手", "reading": "しもて", "example": "舞台の下手に小道具が置かれていた。", "meaning": "sisi kanan panggung (dari penonton)", "relatedForms": [] },
+    { "word": "下手", "reading": "したで", "example": "彼は下手に出て丁寧にお願いした。", "meaning": "bersikap merendah", "relatedForms": [] },
+    { "word": "目下", "reading": "めした", "example": "彼は目下の者にも丁寧に接する。", "meaning": "bawahan", "relatedForms": [] },
+    { "word": "目下", "reading": "もっか", "example": "その件は目下調査中だ。", "meaning": "saat ini, sedang", "relatedForms": [] },
+    { "word": "品", "reading": "しな", "example": "これはなかなかいい品だ。", "meaning": "barang", "relatedForms": [] },
+    { "word": "品", "reading": "ひん", "example": "あの人は言葉遣いに品がある。", "meaning": "keanggunan, martabat", "relatedForms": [] },
+    { "word": "角", "reading": "かく", "example": "この紙は角に切って使う。", "meaning": "persegi, sudut siku", "relatedForms": [] },
+    { "word": "角", "reading": "かど", "example": "次の角を右に曲がってください。", "meaning": "sudut, tikungan", "relatedForms": [] },
+    { "word": "角", "reading": "つの", "example": "牛の角は意外と鋭い。", "meaning": "tanduk", "relatedForms": [] },
+    { "word": "分別", "reading": "ふんべつ", "example": "彼はもう分別のある年齢だ。", "meaning": "kebijaksanaan, pertimbangan", "relatedForms": [] },
+    { "word": "分別", "reading": "ぶんべつ", "example": "このゴミは種類ごとに分別してください。", "meaning": "pemilahan, sortir", "relatedForms": [] },
+    { "word": "札", "reading": "さつ", "example": "財布には千円札しか入っていなかった。", "meaning": "uang kertas", "relatedForms": [] },
+    { "word": "札", "reading": "ふだ", "example": "入口に案内の札を立てておいた。", "meaning": "papan/pelat nama", "relatedForms": [] },
+    { "word": "生物", "reading": "せいぶつ", "example": "大学では生物学を専攻している。", "meaning": "makhluk hidup", "relatedForms": [] },
+    { "word": "生物", "reading": "なまもの", "example": "この生物は要冷蔵と書かれている。", "meaning": "makanan mentah (mudah rusak)", "relatedForms": [] },
+    { "word": "色紙", "reading": "しきし", "example": "卒業式で色紙にメッセージを書いてもらった。", "meaning": "kertas kaligrafi untuk tanda tangan", "relatedForms": [] },
+    { "word": "色紙", "reading": "いろがみ", "example": "子どもたちは色紙で折り紙を作った。", "meaning": "kertas warna-warni", "relatedForms": [] },
+    { "word": "今日", "reading": "きょう", "example": "今日の予定はまだ決まっていない。", "meaning": "hari ini", "relatedForms": [] },
+    { "word": "今日", "reading": "こんにち", "example": "今日の日本は多くの課題を抱えている。", "meaning": "zaman sekarang", "relatedForms": [] },
+    { "word": "紅葉", "reading": "もみじ", "example": "庭の紅葉が美しく色づいている。", "meaning": "daun momiji", "relatedForms": [] },
+    { "word": "紅葉", "reading": "こうよう", "example": "秋になると山が紅葉する。", "meaning": "dedaunan musim gugur (berubah warna)", "relatedForms": [] },
+    { "word": "大勢", "reading": "おおぜい", "example": "会場には大勢の見物人が集まった。", "meaning": "kerumunan orang banyak", "relatedForms": [] },
+    { "word": "大勢", "reading": "たいせい", "example": "彼は結局、大勢に従うことにした。", "meaning": "arus/kecenderungan mayoritas", "relatedForms": [] },
+    { "word": "風車", "reading": "ふうしゃ", "example": "オランダの風景といえば風車小屋だ。", "meaning": "kincir angin (besar)", "relatedForms": [] },
+    { "word": "風車", "reading": "かざぐるま", "example": "子どもは風車で遊ぶのが好きだ。", "meaning": "kincir angin mainan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女は料理が＿＿だ。", "optionA": "上手", "optionAReading": "じょうず", "optionB": "下手", "optionBReading": "へた", "answer": "A" },
+      { "question": "彼は絵を描くのが＿＿だ。", "optionA": "上手", "optionAReading": "じょうず", "optionB": "下手", "optionBReading": "へた", "answer": "B" },
+      { "question": "次の＿＿を右に曲がってください。", "optionA": "角", "optionAReading": "かど", "optionB": "角", "optionBReading": "つの", "answer": "A" },
+      { "question": "牛の＿＿は意外と鋭い。", "optionA": "角", "optionAReading": "かど", "optionB": "角", "optionBReading": "つの", "answer": "B" },
+      { "question": "このゴミは種類ごとに＿＿してください。", "optionA": "分別", "optionAReading": "ぶんべつ", "optionB": "分別", "optionBReading": "ふんべつ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "せいぶつ", "fixedKanji": "生", "blankPosition": "after", "choices": ["物", "命", "活", "存"], "answer": "物" },
+      { "reading": "しきし", "fixedKanji": "色", "blankPosition": "after", "choices": ["紙", "紺", "彩", "調"], "answer": "紙" },
+      { "reading": "ふうしゃ", "fixedKanji": "風", "blankPosition": "after", "choices": ["車", "力", "速", "船"], "answer": "車" },
+      { "reading": "たいか", "fixedKanji": "大", "blankPosition": "after", "choices": ["家", "物", "師", "人"], "answer": "家" },
+      { "reading": "おおぜい", "fixedKanji": "大", "blankPosition": "after", "choices": ["勢", "人", "群", "衆"], "answer": "勢" }
+    ]
+  }
+}
