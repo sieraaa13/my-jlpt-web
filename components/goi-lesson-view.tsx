@@ -23,12 +23,6 @@ export function GoiLessonView({ lesson }: { lesson: GoiLessonDay }) {
               </div>
               <p className="text-sm font-medium">{entry.meaning}</p>
               <p className="text-sm text-muted-foreground">{entry.example}</p>
-              {entry.relatedForms.length > 0 && (
-                <div className="mt-auto pt-3 border-t border-border text-xs">
-                  <span className="text-muted-foreground block mb-1">Bentuk terkait:</span>
-                  <span className="font-medium">{entry.relatedForms.join("、")}</span>
-                </div>
-              )}
             </div>
           ))}
         </div>
