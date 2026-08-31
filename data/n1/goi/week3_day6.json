@@ -1,0 +1,48 @@
+{
+  "week": 3,
+  "day": 6,
+  "title": "どうにか最後までやろう",
+  "subtitle": "Kata keterangan pengandaian dan usaha",
+  "entries": [
+    { "word": "あいにく", "reading": "あいにく", "example": "あいにく留守にしています。", "meaning": "sayangnya, kebetulan tidak (waktu yang tepat)", "relatedForms": [] },
+    { "word": "案の定", "reading": "あんのじょう", "example": "ダメだと思っていたら、案の定不合格だった。", "meaning": "seperti yang diduga", "relatedForms": [] },
+    { "word": "敢えて", "reading": "あえて", "example": "負けるとわかっているが、敢えて挑戦した。", "meaning": "dengan sengaja (meski tahu risikonya)", "relatedForms": [] },
+    { "word": "強いて", "reading": "しいて", "example": "強いてそれを変更しろとは言わない。", "meaning": "secara paksa; kalau harus (memilih)", "relatedForms": [] },
+    { "word": "自ずから", "reading": "おのずから", "example": "努力すれば自ずから道は開ける。", "meaning": "dengan sendirinya", "relatedForms": ["自ずと"] },
+    { "word": "自ら", "reading": "みずから", "example": "自ら進んで勉強する。", "meaning": "dengan inisiatif sendiri", "relatedForms": [] },
+    { "word": "とかく", "reading": "とかく", "example": "寒くなると、とかく遅刻者が多くなる。", "meaning": "cenderung, sering kali", "relatedForms": [] },
+    { "word": "なるたけ", "reading": "なるたけ", "example": "なるたけ早く来てください。", "meaning": "sebisa mungkin", "relatedForms": [] },
+    { "word": "努めて", "reading": "つとめて", "example": "努めて冷静にする。", "meaning": "berusaha (untuk tetap)", "relatedForms": [] },
+    { "word": "ひいては", "reading": "ひいては", "example": "自分のため、ひいては家族全体のために頑張ろう。", "meaning": "dan pada akhirnya, lebih jauh lagi", "relatedForms": [] },
+    { "word": "もはや～ない", "reading": "もはや～ない", "example": "もはや彼の回復は望めない。", "meaning": "sudah tidak lagi (bisa diharapkan)", "relatedForms": [] },
+    { "word": "かえって", "reading": "かえって", "example": "近道したら、かえって時間がかかった。", "meaning": "malah, justru sebaliknya", "relatedForms": [] },
+    { "word": "取りあえず", "reading": "とりあえず", "example": "取りあえず何か食べよう。", "meaning": "untuk sementara, dulu", "relatedForms": [] },
+    { "word": "かろうじて", "reading": "かろうじて", "example": "かろうじて最終電車に間に合った。", "meaning": "nyaris, dengan susah payah", "relatedForms": [] },
+    { "word": "ことごとく", "reading": "ことごとく", "example": "私の案はことごとく却下された。", "meaning": "seluruhnya, semuanya (ditolak)", "relatedForms": [] },
+    { "word": "ふんだんに", "reading": "ふんだんに", "example": "イチゴをふんだんに使ったケーキ。", "meaning": "dengan berlimpah", "relatedForms": [] },
+    { "word": "幸いに", "reading": "さいわいに", "example": "事故にあったが、幸いけがはなかった。", "meaning": "untungnya", "relatedForms": [] },
+    { "word": "現に", "reading": "げんに", "example": "現に、私はそれを見た。", "meaning": "secara nyata, memang (buktinya)", "relatedForms": [] },
+    { "word": "いずれにしても", "reading": "いずれにしても", "example": "いずれにしても、高くて買えない。", "meaning": "bagaimanapun juga", "relatedForms": ["いずれにせよ"] },
+    { "word": "仮に", "reading": "かりに", "example": "仮に試験に落ちたら、どうしますか。", "meaning": "misalkan, seandainya", "relatedForms": [] },
+    { "word": "ひょっとすると", "reading": "ひょっとすると", "example": "ひょっとすると彼の話はうそかもしれない。", "meaning": "mungkin saja, jangan-jangan", "relatedForms": ["ひょっとして"] },
+    { "word": "もしかして", "reading": "もしかして", "example": "もしかして、あなたは田中さん？", "meaning": "jangan-jangan, mungkinkah", "relatedForms": ["もしかすると"] },
+    { "word": "どうにか", "reading": "どうにか", "example": "どうにか大学は卒業した。", "meaning": "dengan cara apapun, entah bagaimana", "relatedForms": [] },
+    { "word": "どうやら", "reading": "どうやら", "example": "どうやら彼が優勝しそうだ。", "meaning": "sepertinya, kelihatannya", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "夫婦円満だと思っていたのに、＿＿彼らは離婚したらしい。", "optionA": "どうにか", "optionAReading": "どうにか", "optionB": "どうやら", "optionBReading": "どうやら", "answer": "B" },
+      { "question": "＿＿手術したとしても、彼は助からなかっただろう。", "optionA": "仮に", "optionAReading": "かりに", "optionB": "現に", "optionBReading": "げんに", "answer": "A" },
+      { "question": "あれ、おかしい。＿＿道を間違えたかもしれない。", "optionA": "ひょっとすると", "optionAReading": "ひょっとすると", "optionB": "敢えて", "optionBReading": "あえて", "answer": "A" },
+      { "question": "チームは＿＿予選を勝ち抜いた。", "optionA": "なるたけ", "optionAReading": "なるたけ", "optionB": "かろうじて", "optionBReading": "かろうじて", "answer": "B" },
+      { "question": "お客様には＿＿笑顔で接してください。", "optionA": "努めて", "optionAReading": "つとめて", "optionB": "強いて", "optionBReading": "しいて", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "あんのじょう", "fixedKanji": "案の", "blankPosition": "after", "choices": ["定", "通り", "如く", "様"], "answer": "定" },
+      { "reading": "さいわいに", "fixedKanji": "幸", "blankPosition": "after", "choices": ["いに", "福に", "運に", "先に"], "answer": "いに" },
+      { "reading": "とりあえず", "fixedKanji": "取り", "blankPosition": "after", "choices": ["あえず", "かかり", "つけ", "いれ"], "answer": "あえず" },
+      { "reading": "げんに", "fixedKanji": "現", "blankPosition": "after", "choices": ["に", "実に", "在に", "今に"], "answer": "に" },
+      { "reading": "みずから", "fixedKanji": "自", "blankPosition": "after", "choices": ["ら", "ずから", "主に", "発に"], "answer": "ら" }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "week": 3,
+  "day": 5,
+  "title": "ひたすら覚えよう",
+  "subtitle": "Kata keterangan penegasan/penekanan",
+  "entries": [
+    { "word": "至って", "reading": "いたって", "example": "母は、至って元気です。", "meaning": "sangat, benar-benar", "relatedForms": [] },
+    { "word": "いかにも", "reading": "いかにも", "example": "社長の考えはいかにも日本的だ。", "meaning": "sangat khas, benar-benar (terlihat)", "relatedForms": ["いかに"] },
+    { "word": "いかに", "reading": "いかに", "example": "いかに努力してもできないだろう。", "meaning": "betapapun, sekeras apapun", "relatedForms": ["いかにも"] },
+    { "word": "いやに", "reading": "いやに", "example": "今日はいやに暑い。", "meaning": "anehnya, herannya (sangat)", "relatedForms": [] },
+    { "word": "さも", "reading": "さも", "example": "彼はさもうれしそうに笑った。", "meaning": "dengan sangat (tampak)", "relatedForms": [] },
+    { "word": "何より", "reading": "なにより", "example": "合格して何よりうれしい。", "meaning": "lebih dari segalanya", "relatedForms": [] },
+    { "word": "とりわけ", "reading": "とりわけ", "example": "とりわけビールが好きだ。", "meaning": "terutama, khususnya", "relatedForms": [] },
+    { "word": "ことに", "reading": "ことに", "example": "この小説はことに面白い。", "meaning": "terutama, khususnya", "relatedForms": [] },
+    { "word": "さぞ", "reading": "さぞ", "example": "ご両親はさぞお喜びでしょう。", "meaning": "pasti (membayangkan)", "relatedForms": ["さぞかし"] },
+    { "word": "よほど", "reading": "よほど", "example": "あの荷物はよほど重いようだ。", "meaning": "sangat, benar-benar", "relatedForms": ["よっぽど"] },
+    { "word": "なおさら", "reading": "なおさら", "example": "だめだと言われると、なおさらやりたくなる。", "meaning": "semakin, lebih-lebih", "relatedForms": [] },
+    { "word": "まさしく", "reading": "まさしく", "example": "これはまさしく本物のダイヤです。", "meaning": "benar-benar, sungguh", "relatedForms": [] },
+    { "word": "まして", "reading": "まして", "example": "大人でもできないのだから、まして子どもには無理だ。", "meaning": "apalagi, terlebih lagi", "relatedForms": [] },
+    { "word": "やけに", "reading": "やけに", "example": "やけにのどが渇くなあ。", "meaning": "herannya sangat (tanpa sebab jelas)", "relatedForms": ["やたらに", "やたらと"] },
+    { "word": "誠に", "reading": "まことに", "example": "誠に申し訳ありません。", "meaning": "sungguh, benar-benar (formal)", "relatedForms": [] },
+    { "word": "もっぱら", "reading": "もっぱら", "example": "休日はもっぱらゴルフをしている。", "meaning": "hanya, semata-mata", "relatedForms": [] },
+    { "word": "ひたすら", "reading": "ひたすら", "example": "ひたすら走り続ける。", "meaning": "terus-menerus tanpa henti (fokus satu hal)", "relatedForms": [] },
+    { "word": "もろに", "reading": "もろに", "example": "もろに地震の被害を受けた。", "meaning": "secara langsung (terkena penuh)", "relatedForms": [] },
+    { "word": "たかが", "reading": "たかが", "example": "たかが一度の失敗で、あきらめるな。", "meaning": "hanya sekadar (meremehkan)", "relatedForms": [] },
+    { "word": "てんで", "reading": "てんで", "example": "その話はてんで面白くない。", "meaning": "sama sekali tidak", "relatedForms": [] },
+    { "word": "むろん", "reading": "むろん", "example": "むろん賛成だ。", "meaning": "tentu saja", "relatedForms": [] },
+    { "word": "なんと", "reading": "なんと", "example": "なんときれいな人だろう。", "meaning": "betapa (kagum)", "relatedForms": [] },
+    { "word": "残らず", "reading": "のこらず", "example": "知っていることを残らず話す。", "meaning": "tanpa sisa, semuanya", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "このカップ麺はあそこのラーメン屋より＿＿おいしい。", "optionA": "よっぽど", "optionAReading": "よっぽど", "optionB": "まして", "optionBReading": "まして", "answer": "A" },
+      { "question": "彼は何も言わないが、＿＿いやそうな顔をしている。", "optionA": "さも", "optionAReading": "さも", "optionB": "いたって", "optionBReading": "いたって", "answer": "A" },
+      { "question": "虫に刺されたところをかいたら、＿＿かゆくなった。", "optionA": "なおさら", "optionAReading": "なおさら", "optionB": "まさしく", "optionBReading": "まさしく", "answer": "A" },
+      { "question": "あのおばあさんは、昔は＿＿美人だったことでしょう。", "optionA": "さぞかし", "optionAReading": "さぞかし", "optionB": "なんと", "optionBReading": "なんと", "answer": "A" },
+      { "question": "今日、外は＿＿寒いです。", "optionA": "まして", "optionAReading": "まして", "optionB": "やけに", "optionBReading": "やけに", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "いたって", "fixedKanji": "至", "blankPosition": "after", "choices": ["って", "極", "当", "誠"], "answer": "って" },
+      { "reading": "まことに", "fixedKanji": "誠", "blankPosition": "after", "choices": ["に", "実に", "直に", "心に"], "answer": "に" },
+      { "reading": "のこらず", "fixedKanji": "残", "blankPosition": "after", "choices": ["らず", "りなく", "余なく", "遺なく"], "answer": "らず" },
+      { "reading": "さぞかし", "fixedKanji": "さぞ", "blankPosition": "after", "choices": ["かし", "ろ", "なり", "また"], "answer": "かし" },
+      { "reading": "むろん", "fixedKanji": "無", "blankPosition": "after", "choices": ["論", "理", "茶", "効"], "answer": "論" }
+    ]
+  }
+}
