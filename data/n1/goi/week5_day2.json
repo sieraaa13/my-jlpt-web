@@ -1,0 +1,55 @@
+{
+  "week": 5,
+  "day": 2,
+  "title": "和む・指図・公",
+  "subtitle": "Kosakata dengan kanji tingkat menengah (和・図・実・公・連・告・記)",
+  "entries": [
+    { "word": "和風", "reading": "わふう", "example": "この旅館は和風建築でできている。", "meaning": "gaya Jepang", "relatedForms": ["洋風"] },
+    { "word": "和式", "reading": "わしき", "example": "和式トイレはあまり見かけなくなった。", "meaning": "model Jepang", "relatedForms": ["洋式"] },
+    { "word": "温和な", "reading": "おんわな", "example": "この地域は温和な気候だ。", "meaning": "sejuk (iklim); ramah (orang)", "relatedForms": [] },
+    { "word": "調和する", "reading": "ちょうわする", "example": "この色はよく調和する。", "meaning": "selaras", "relatedForms": [] },
+    { "word": "和む", "reading": "なごむ", "example": "猫を見ると心が和む。", "meaning": "menjadi tenang", "relatedForms": [] },
+    { "word": "図案", "reading": "ずあん", "example": "デザイナーは図案を描いた。", "meaning": "desain, motif", "relatedForms": [] },
+    { "word": "指図する", "reading": "さしずする", "example": "彼はあれこれ指図する。", "meaning": "memberi perintah/arahan", "relatedForms": [] },
+    { "word": "実態", "reading": "じったい", "example": "実態を調査する。", "meaning": "kondisi nyata", "relatedForms": [] },
+    { "word": "実業", "reading": "じつぎょう", "example": "彼は実業家として成功した。", "meaning": "dunia usaha/bisnis", "relatedForms": [] },
+    { "word": "誠実な", "reading": "せいじつな", "example": "彼は誠実な人だ。", "meaning": "jujur, tulus", "relatedForms": [] },
+    { "word": "真実", "reading": "しんじつ", "example": "彼はついに真実を語った。", "meaning": "kebenaran", "relatedForms": [] },
+    { "word": "口実", "reading": "こうじつ", "example": "彼は下手な口実を並べた。", "meaning": "alasan (dalih)", "relatedForms": [] },
+    { "word": "実入り", "reading": "みいり", "example": "これは実入りのいい商売だ。", "meaning": "menguntungkan", "relatedForms": [] },
+    { "word": "公正な", "reading": "こうせいな", "example": "これは公正な取り引きだ。", "meaning": "adil", "relatedForms": [] },
+    { "word": "公平な", "reading": "こうへいな", "example": "利益を公平に分けた。", "meaning": "merata, adil", "relatedForms": [] },
+    { "word": "公立", "reading": "こうりつ", "example": "彼は公立の学校に通っている。", "meaning": "negeri (sekolah)", "relatedForms": ["私立"] },
+    { "word": "公用", "reading": "こうよう", "example": "英語はこの国の公用語だ。", "meaning": "resmi (bahasa/keperluan)", "relatedForms": [] },
+    { "word": "公私", "reading": "こうし", "example": "彼は公私混同することがある。", "meaning": "urusan publik-pribadi", "relatedForms": [] },
+    { "word": "主人公", "reading": "しゅじんこう", "example": "彼はこの物語の主人公だ。", "meaning": "tokoh utama", "relatedForms": [] },
+    { "word": "公", "reading": "おおやけ", "example": "事件が公になった。", "meaning": "terbuka untuk umum", "relatedForms": [] },
+    { "word": "連休", "reading": "れんきゅう", "example": "今年は3日間の連休がある。", "meaning": "libur panjang berturutan", "relatedForms": [] },
+    { "word": "連帯", "reading": "れんたい", "example": "これは連帯責任だ。", "meaning": "tanggung jawab bersama", "relatedForms": [] },
+    { "word": "連なる", "reading": "つらなる", "example": "渋滞で車が連なっている。", "meaning": "berbaris (kendaraan)", "relatedForms": [] },
+    { "word": "連ねる", "reading": "つらねる", "example": "リストに名前を連ねる。", "meaning": "mencantumkan (dalam daftar)", "relatedForms": [] },
+    { "word": "告知する", "reading": "こくちする", "example": "医者はガンの告知をした。", "meaning": "memberitahukan (diagnosis)", "relatedForms": [] },
+    { "word": "告白する", "reading": "こくはくする", "example": "彼は罪を告白した。", "meaning": "mengaku (dosa/perasaan)", "relatedForms": [] },
+    { "word": "予告する", "reading": "よこくする", "example": "映画の予告を見た。", "meaning": "trailer, pemberitahuan sebelumnya", "relatedForms": [] },
+    { "word": "告げる", "reading": "つげる", "example": "彼は自分の名前を告げた。", "meaning": "memberitahukan", "relatedForms": [] },
+    { "word": "手記", "reading": "しゅき", "example": "彼は体験を手記にまとめた。", "meaning": "catatan pengalaman pribadi", "relatedForms": [] },
+    { "word": "伝記", "reading": "でんき", "example": "偉人の伝記を読んだ。", "meaning": "biografi", "relatedForms": [] },
+    { "word": "記す", "reading": "しるす", "example": "名前を記す。", "meaning": "mencatat, menuliskan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "小さい輪がいくつも＿＿ネックレス。", "optionA": "連ねた", "optionAReading": "つらねた", "optionB": "連なった", "optionBReading": "つらなった", "answer": "B" },
+      { "question": "犯人の＿＿どおり、犯行が行われてしまった。", "optionA": "予告", "optionAReading": "よこく", "optionB": "口実", "optionBReading": "こうじつ", "answer": "A" },
+      { "question": "もらった報酬を全員で＿＿分けた。", "optionA": "公平に", "optionAReading": "こうへいに", "optionB": "連帯で", "optionBReading": "れんたいで", "answer": "A" },
+      { "question": "その店員は＿＿対応をしてくれた。", "optionA": "誠実に", "optionAReading": "せいじつに", "optionB": "真実に", "optionBReading": "しんじつに", "answer": "A" },
+      { "question": "彼は母親に万引きをしてしまったことを＿＿した。", "optionA": "告白", "optionAReading": "こくはく", "optionB": "告知", "optionBReading": "こくち", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "わふう", "fixedKanji": "和", "blankPosition": "after", "choices": ["風", "式", "む", "合"], "answer": "風" },
+      { "reading": "さしず", "fixedKanji": "指", "blankPosition": "after", "choices": ["図", "示", "令", "揮"], "answer": "図" },
+      { "reading": "じつぎょう", "fixedKanji": "実", "blankPosition": "after", "choices": ["業", "態", "入り", "直"], "answer": "業" },
+      { "reading": "こうりつ", "fixedKanji": "公", "blankPosition": "after", "choices": ["立", "平", "正", "用"], "answer": "立" },
+      { "reading": "こくはく", "fixedKanji": "告", "blankPosition": "after", "choices": ["白", "知", "示", "発"], "answer": "白" }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "week": 5,
+  "day": 1,
+  "title": "身近・日取り・前置き",
+  "subtitle": "Kosakata dengan kanji tingkat menengah (当・身・取・根・向・前)",
+  "entries": [
+    { "word": "当日", "reading": "とうじつ", "example": "試験の当日は緊張した。", "meaning": "hari-H", "relatedForms": [] },
+    { "word": "当番", "reading": "とうばん", "example": "今日は掃除当番だ。", "meaning": "giliran tugas", "relatedForms": [] },
+    { "word": "当人", "reading": "とうにん", "example": "詳しいことは当人に確認してください。", "meaning": "orang yang bersangkutan", "relatedForms": [] },
+    { "word": "当選する", "reading": "とうせんする", "example": "彼は選挙で当選した。", "meaning": "terpilih", "relatedForms": ["落選する"] },
+    { "word": "見当", "reading": "けんとう", "example": "費用の見当をつけた。", "meaning": "perkiraan", "relatedForms": [] },
+    { "word": "正当な", "reading": "せいとうな", "example": "これは正当な理由だ。", "meaning": "sah, wajar", "relatedForms": [] },
+    { "word": "身の上", "reading": "みのうえ", "example": "彼女の身の上相談に乗った。", "meaning": "kondisi pribadi (nasib)", "relatedForms": [] },
+    { "word": "身の回り", "reading": "みのまわり", "example": "身の回りのものを整理した。", "meaning": "barang-barang pribadi sehari-hari", "relatedForms": [] },
+    { "word": "身軽な", "reading": "みがるな", "example": "彼は身軽な格好で出かけた。", "meaning": "berpakaian ringkas", "relatedForms": [] },
+    { "word": "身動き", "reading": "みうごき", "example": "満員電車で身動きが取れない。", "meaning": "bergerak (leluasa)", "relatedForms": [] },
+    { "word": "身内", "reading": "みうち", "example": "身内だけで祝った。", "meaning": "keluarga dekat", "relatedForms": [] },
+    { "word": "身近な", "reading": "みぢかな", "example": "これは身近な出来事だ。", "meaning": "dekat dengan kehidupan sehari-hari", "relatedForms": [] },
+    { "word": "身元", "reading": "みもと", "example": "彼は身元保証人が必要だった。", "meaning": "identitas diri", "relatedForms": [] },
+    { "word": "身分", "reading": "みぶん", "example": "彼は身分が高い人だ。", "meaning": "status sosial", "relatedForms": [] },
+    { "word": "生身", "reading": "なまみ", "example": "生身の体は疲れるものだ。", "meaning": "tubuh hidup (manusia biasa)", "relatedForms": [] },
+    { "word": "単身", "reading": "たんしん", "example": "彼は単身赴任している。", "meaning": "sendirian (tanpa keluarga)", "relatedForms": [] },
+    { "word": "取り分", "reading": "とりぶん", "example": "彼は自分の取り分を主張した。", "meaning": "bagian (jatah)", "relatedForms": [] },
+    { "word": "下取りする", "reading": "したどりする", "example": "車を下取りしてもらった。", "meaning": "tukar tambah", "relatedForms": [] },
+    { "word": "手取り", "reading": "てどり", "example": "給料の手取り額を確認した。", "meaning": "gaji bersih", "relatedForms": [] },
+    { "word": "日取り", "reading": "ひどり", "example": "結婚式の日取りを決めた。", "meaning": "tanggal yang ditentukan", "relatedForms": [] },
+    { "word": "取材する", "reading": "しゅざいする", "example": "記者は事件を取材した。", "meaning": "meliput (berita)", "relatedForms": [] },
+    { "word": "根気", "reading": "こんき", "example": "これは根気がいる仕事だ。", "meaning": "ketekunan", "relatedForms": [] },
+    { "word": "根本的な", "reading": "こんぽんてきな", "example": "これは根本的な誤りだ。", "meaning": "mendasar", "relatedForms": [] },
+    { "word": "根回しする", "reading": "ねまわしする", "example": "彼は関係者に根回しした。", "meaning": "lobi diam-diam", "relatedForms": [] },
+    { "word": "出向く", "reading": "でむく", "example": "現場に出向いて確認した。", "meaning": "pergi langsung (ke tempat)", "relatedForms": [] },
+    { "word": "前向きな", "reading": "まえむきな", "example": "彼は前向きに考えている。", "meaning": "berpikir positif", "relatedForms": [] },
+    { "word": "表向き", "reading": "おもてむき", "example": "これは表向きの理由だ。", "meaning": "alasan resmi (di permukaan)", "relatedForms": [] },
+    { "word": "向上する", "reading": "こうじょうする", "example": "学力が向上した。", "meaning": "meningkat", "relatedForms": ["低下する"] },
+    { "word": "前置きする", "reading": "まえおきする", "example": "前置きが長い。", "meaning": "kata pengantar", "relatedForms": [] },
+    { "word": "前借りする", "reading": "まえがりする", "example": "給料を前借りした。", "meaning": "meminjam dimuka (gaji)", "relatedForms": ["前貸しする"] },
+    { "word": "前払いする", "reading": "まえばらいする", "example": "料金を前払いした。", "meaning": "membayar di muka", "relatedForms": ["後払いする"] },
+    { "word": "前科", "reading": "ぜんか", "example": "彼には前科がある。", "meaning": "catatan kriminal", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は＿＿があるので、就職は難しいだろう。", "optionA": "前借り", "optionAReading": "まえがり", "optionB": "前科", "optionBReading": "ぜんか", "answer": "B" },
+      { "question": "＿＿な理由がなく、刃物を持ち歩くことは禁止されている。", "optionA": "正当", "optionAReading": "せいとう", "optionB": "根本的", "optionBReading": "こんぽんてき", "answer": "A" },
+      { "question": "公園で＿＿のわからない遺体が見つかった。", "optionA": "身元", "optionAReading": "みもと", "optionB": "生身", "optionBReading": "なまみ", "answer": "A" },
+      { "question": "大地震が来るというので、とりあえず＿＿のものだけを持って避難所に行った。", "optionA": "身の回り", "optionAReading": "みのまわり", "optionB": "身の上", "optionBReading": "みのうえ", "answer": "A" },
+      { "question": "彼は＿＿は普通のサラリーマンだが、実は刑事です。", "optionA": "表向き", "optionAReading": "おもてむき", "optionB": "前向き", "optionBReading": "まえむき", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "とうせん", "fixedKanji": "当", "blankPosition": "after", "choices": ["選", "番", "人", "日"], "answer": "選" },
+      { "reading": "みぢか", "fixedKanji": "身", "blankPosition": "after", "choices": ["近", "元", "分", "内"], "answer": "近" },
+      { "reading": "ひどり", "fixedKanji": "日", "blankPosition": "after", "choices": ["取り", "当たり", "程", "時"], "answer": "取り" },
+      { "reading": "ねまわし", "fixedKanji": "根", "blankPosition": "after", "choices": ["回し", "気", "本", "底"], "answer": "回し" },
+      { "reading": "こうじょう", "fixedKanji": "向", "blankPosition": "after", "choices": ["上", "き", "こう", "かう"], "answer": "上" }
+    ]
+  }
+}
