@@ -1,0 +1,57 @@
+{
+  "week": 1,
+  "day": 2,
+  "title": "どんな気持ち？",
+  "subtitle": "Kata untuk mengungkapkan perasaan",
+  "entries": [
+    { "word": "情けない", "reading": "なさけない", "example": "また同じミスをしてしまって情けない。", "meaning": "menyedihkan (diri sendiri), memalukan", "relatedForms": [] },
+    { "word": "望ましい", "reading": "のぞましい", "example": "運動は毎日続けることが望ましい。", "meaning": "diinginkan, sebaiknya", "relatedForms": [] },
+    { "word": "好ましい", "reading": "このましい", "example": "面接では好ましい服装を心がけるべきだ。", "meaning": "disukai, pantas", "relatedForms": [] },
+    { "word": "申し分がない", "reading": "もうしぶんがない", "example": "彼の作品は申し分がない出来栄えだ。", "meaning": "sempurna, tak ada cela", "relatedForms": [] },
+    { "word": "快い", "reading": "こころよい", "example": "彼は快く申し出を承諾してくれた。", "meaning": "dengan senang hati", "relatedForms": [] },
+    { "word": "すがすがしい", "reading": "すがすがしい", "example": "山の朝はすがすがしい空気に満ちている。", "meaning": "segar (perasaan/udara)", "relatedForms": [] },
+    { "word": "爽快な", "reading": "そうかいな", "example": "運動の後は気分爽快だ。", "meaning": "segar bugar", "relatedForms": [] },
+    { "word": "待ち遠しい", "reading": "まちどおしい", "example": "春の訪れが待ち遠しい。", "meaning": "tidak sabar menunggu", "relatedForms": [] },
+    { "word": "心強い", "reading": "こころづよい", "example": "あなたと一緒だと心強い。", "meaning": "merasa kuat, terdukung", "relatedForms": ["心細い"] },
+    { "word": "心細い", "reading": "こころぼそい", "example": "一人では心細い。", "meaning": "merasa tidak aman, sendirian", "relatedForms": ["心強い"] },
+    { "word": "空しい", "reading": "むなしい", "example": "喜びが何もない空しい生活を送っている。", "meaning": "hampa", "relatedForms": [] },
+    { "word": "切ない", "reading": "せつない", "example": "彼と離れるのはとても切ない。", "meaning": "menyesakkan hati, pedih", "relatedForms": [] },
+    { "word": "物足りない", "reading": "ものたりない", "example": "この食事の量は物足りない。", "meaning": "kurang memuaskan", "relatedForms": [] },
+    { "word": "わずらわしい", "reading": "わずらわしい", "example": "隣人との付き合いがわずらわしい。", "meaning": "merepotkan", "relatedForms": [] },
+    { "word": "うっとうしい", "reading": "うっとうしい", "example": "梅雨時のうっとうしい天気が続いている。", "meaning": "suram, menjengkelkan", "relatedForms": [] },
+    { "word": "うざい", "reading": "うざい", "example": "あの人のしつこさがうざい。", "meaning": "menjengkelkan (bahasa gaul)", "relatedForms": [] },
+    { "word": "ばかばかしい", "reading": "ばかばかしい", "example": "それはばかばかしい話だと思った。", "meaning": "konyol, tidak masuk akal", "relatedForms": [] },
+    { "word": "痛ましい", "reading": "いたましい", "example": "痛ましい事故現場を目にした。", "meaning": "menyedihkan, mengenaskan", "relatedForms": [] },
+    { "word": "きまりが悪い", "reading": "きまりがわるい", "example": "会議に遅れてきまりが悪かった。", "meaning": "malu, canggung", "relatedForms": [] },
+    { "word": "あさましい", "reading": "あさましい", "example": "彼は根性があさましい。", "meaning": "hina, rendah (sifat)", "relatedForms": [] },
+    { "word": "おっかない", "reading": "おっかない", "example": "この辺りは夜になるとおっかない。", "meaning": "menakutkan", "relatedForms": [] },
+    { "word": "ふさわしい", "reading": "ふさわしい", "example": "彼はリーダーとしてふさわしい。", "meaning": "pantas, cocok", "relatedForms": [] },
+    { "word": "見苦しい", "reading": "みぐるしい", "example": "彼の見苦しい態度にあきれた。", "meaning": "tidak pantas dilihat, memalukan", "relatedForms": [] },
+    { "word": "心苦しい", "reading": "こころぐるしい", "example": "こんなことを頼むのは心苦しい。", "meaning": "merasa tidak enak hati", "relatedForms": [] },
+    { "word": "焦る", "reading": "あせる", "example": "試験で時間がなくて焦った。", "meaning": "panik, tergesa-gesa", "relatedForms": [] },
+    { "word": "あきれる", "reading": "あきれる", "example": "あまりに高い値段にあきれた。", "meaning": "terkejut/heran (negatif)", "relatedForms": [] },
+    { "word": "気に障る", "reading": "きにさわる", "example": "人の気に障るようなことを言ってはいけない。", "meaning": "menyinggung perasaan", "relatedForms": ["しゃくに障る", "かんに障る"] },
+    { "word": "しゃくに障る", "reading": "しゃくにさわる", "example": "彼の態度がしゃくに障った。", "meaning": "membuat kesal", "relatedForms": ["かんに障る"] },
+    { "word": "かんに障る", "reading": "かんにさわる", "example": "彼の言い方がかんに障った。", "meaning": "membuat kesal", "relatedForms": ["しゃくに障る"] },
+    { "word": "気兼ねする", "reading": "きがねする", "example": "ホームステイの家族に気兼ねする。", "meaning": "sungkan, merasa tidak enak", "relatedForms": [] },
+    { "word": "すねる", "reading": "すねる", "example": "子どもがすねている。", "meaning": "merajuk", "relatedForms": [] },
+    { "word": "むかつく", "reading": "むかつく", "example": "彼の顔を見るだけでむかつく。", "meaning": "kesal, jengkel", "relatedForms": [] },
+    { "word": "恥をかく", "reading": "はじをかく", "example": "みんなの前で恥をかいた。", "meaning": "dipermalukan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "電車に乗り遅れそうになり＿＿。", "optionA": "焦った", "optionAReading": "あせった", "optionB": "あきれた", "optionBReading": "あきれた", "answer": "A" },
+      { "question": "山田先生は、怒るととても＿＿。", "optionA": "しゃくに障る", "optionAReading": "しゃくにさわる", "optionB": "おっかない", "optionBReading": "おっかない", "answer": "B" },
+      { "question": "旅行に行く日がとても＿＿。", "optionA": "快い", "optionAReading": "こころよい", "optionB": "待ち遠しい", "optionBReading": "まちどおしい", "answer": "B" },
+      { "question": "近所に迷惑をかけないよう楽器の練習を＿＿している。", "optionA": "むかついて", "optionAReading": "むかついて", "optionB": "気兼ねして", "optionBReading": "きがねして", "answer": "B" },
+      { "question": "こんな簡単な問題を間違えてしまい、とても＿＿。", "optionA": "情けない", "optionAReading": "なさけない", "optionB": "心細い", "optionBReading": "こころぼそい", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "こころづよい", "fixedKanji": "心", "blankPosition": "after", "choices": ["強い", "細い", "苦しい", "深い"], "answer": "強い" },
+      { "reading": "こころぼそい", "fixedKanji": "心", "blankPosition": "after", "choices": ["細い", "強い", "苦しい", "深い"], "answer": "細い" },
+      { "reading": "ものたりない", "fixedKanji": "物", "blankPosition": "after", "choices": ["足りない", "余る", "惜しい", "乏しい"], "answer": "足りない" },
+      { "reading": "みぐるしい", "fixedKanji": "見", "blankPosition": "after", "choices": ["苦しい", "難い", "苦い", "悪い"], "answer": "苦しい" },
+      { "reading": "はじをかく", "fixedKanji": "恥を", "blankPosition": "after", "choices": ["かく", "する", "見る", "取る"], "answer": "かく" }
+    ]
+  }
+}

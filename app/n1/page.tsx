@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExamSelector } from "@/components/exam-selector";
 import { KanjiTab } from "@/components/kanji-tab";
+import { GoiTab } from "@/components/goi-tab";
 
 export default function N1Page() {
   return (
@@ -17,6 +18,7 @@ export default function N1Page() {
           <TabsList className="mb-8">
             <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
             <TabsTrigger value="kanji">Kanji</TabsTrigger>
+            <TabsTrigger value="goi">Goi</TabsTrigger>
             <TabsTrigger value="soal">Soal</TabsTrigger>
           </TabsList>
 
@@ -28,6 +30,10 @@ export default function N1Page() {
 
           <TabsContent value="kanji">
             <KanjiTab />
+          </TabsContent>
+
+          <TabsContent value="goi">
+            <GoiTab />
           </TabsContent>
 
           <TabsContent value="soal">
