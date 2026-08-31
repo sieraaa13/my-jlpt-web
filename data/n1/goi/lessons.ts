@@ -1,5 +1,7 @@
 import w1d1 from "./week1_day1.json";
 import w1d2 from "./week1_day2.json";
+import w1d3 from "./week1_day3.json";
+import w1d4 from "./week1_day4.json";
 
 export type GoiEntry = {
   word: string;
@@ -61,6 +63,8 @@ export const goiLessons: Record<string, Record<string, GoiLessonDay>> = {
   "1": {
     "1": w1d1 as GoiLessonDay,
     "2": w1d2 as GoiLessonDay,
+    "3": w1d3 as GoiLessonDay,
+    "4": w1d4 as GoiLessonDay,
   },
 };
 

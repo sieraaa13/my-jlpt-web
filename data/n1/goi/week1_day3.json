@@ -1,0 +1,58 @@
+{
+  "week": 1,
+  "day": 3,
+  "title": "どんな動作？",
+  "subtitle": "Kata kerja untuk gerakan tubuh",
+  "entries": [
+    { "word": "うつむく", "reading": "うつむく", "example": "彼は叱られてうつむいたまま何も言わなかった。", "meaning": "menundukkan kepala (sedih/malu)", "relatedForms": ["うなずく"] },
+    { "word": "まばたきをする", "reading": "まばたきをする", "example": "彼女は驚いて何度もまばたきをした。", "meaning": "berkedip", "relatedForms": [] },
+    { "word": "目をつぶる", "reading": "めをつぶる", "example": "彼は痛みをこらえて目をつぶった。", "meaning": "memejamkan mata", "relatedForms": [] },
+    { "word": "一言つぶやく", "reading": "ひとことつぶやく", "example": "彼は不満そうに一言つぶやいた。", "meaning": "bergumam sepatah kata", "relatedForms": ["ささやく"] },
+    { "word": "歌を口ずさむ", "reading": "うたをくちずさむ", "example": "彼女は鼻歌のように歌を口ずさんでいた。", "meaning": "menyenandungkan lagu", "relatedForms": [] },
+    { "word": "煙にむせる", "reading": "けむりにむせる", "example": "たき火の煙にむせてしまった。", "meaning": "tersedak asap", "relatedForms": [] },
+    { "word": "ほっぺたをつねる", "reading": "ほっぺたをつねる", "example": "信じられなくて思わず自分のほっぺたをつねった。", "meaning": "mencubit pipi", "relatedForms": [] },
+    { "word": "草をむしる", "reading": "くさをむしる", "example": "祖母は庭で草をむしっている。", "meaning": "mencabut rumput", "relatedForms": [] },
+    { "word": "カレンダーをめくる", "reading": "かれんだーをめくる", "example": "彼は新しい月になるとカレンダーをめくる。", "meaning": "membalik halaman kalender", "relatedForms": [] },
+    { "word": "塩をつまむ", "reading": "しおをつまむ", "example": "料理人は指先で塩をつまんで味を調えた。", "meaning": "mengambil sejumput garam", "relatedForms": ["鼻をつまむ"] },
+    { "word": "鼻をつまむ", "reading": "はなをつまむ", "example": "彼はにおいがひどくて鼻をつまんだ。", "meaning": "menutup hidung", "relatedForms": ["塩をつまむ"] },
+    { "word": "花を摘む", "reading": "はなをつむ", "example": "子どもたちは野原で花を摘んで遊んだ。", "meaning": "memetik bunga", "relatedForms": ["才能の芽を摘む"] },
+    { "word": "才能の芽を摘む", "reading": "さいのうのめをつむ", "example": "過度な干渉は子どもの才能の芽を摘むことになりかねない。", "meaning": "mematikan potensi/bakat sejak dini", "relatedForms": ["花を摘む"] },
+    { "word": "足をさする", "reading": "あしをさする", "example": "長時間歩いて疲れた足をさすった。", "meaning": "memijat, mengusap kaki", "relatedForms": [] },
+    { "word": "髪の毛をいじる", "reading": "かみのけをいじる", "example": "彼女は緊張すると髪の毛をいじる癖がある。", "meaning": "memainkan rambut", "relatedForms": ["庭をいじる"] },
+    { "word": "庭をいじる", "reading": "にわをいじる", "example": "週末は庭をいじって過ごすのが趣味だ。", "meaning": "berkebun, mengurus taman", "relatedForms": ["髪の毛をいじる"] },
+    { "word": "家具のほこりをはたく", "reading": "かぐのほこりをはたく", "example": "掃除の日は家具のほこりをはたくことから始める。", "meaning": "mengibaskan debu perabotan", "relatedForms": [] },
+    { "word": "水をすくう", "reading": "みずをすくう", "example": "彼は両手で川の水をすくって飲んだ。", "meaning": "mencedok air", "relatedForms": [] },
+    { "word": "杖を突く", "reading": "つえをつく", "example": "祖父は杖を突いてゆっくり歩いている。", "meaning": "berjalan dengan tongkat", "relatedForms": [] },
+    { "word": "赤ちゃんをバスタオルでくるむ", "reading": "あかちゃんをばすたおるでくるむ", "example": "お風呂上がりに赤ちゃんをバスタオルでくるんだ。", "meaning": "membungkus bayi dengan handuk", "relatedForms": [] },
+    { "word": "紙を丸める", "reading": "かみをまるめる", "example": "彼は失敗した書類を丸めてゴミ箱に捨てた。", "meaning": "meremas kertas", "relatedForms": ["体を丸める"] },
+    { "word": "体を丸める", "reading": "からだをまるめる", "example": "猫は寒さで体を丸めて眠っていた。", "meaning": "meringkuk (badan)", "relatedForms": ["紙を丸める"] },
+    { "word": "マッチを擦る", "reading": "まっちをする", "example": "彼はマッチを擦ってろうそくに火をつけた。", "meaning": "menggesek korek api", "relatedForms": [] },
+    { "word": "指をさす", "reading": "ゆびをさす", "example": "彼は地図の目的地を指でさした。", "meaning": "menunjuk dengan jari", "relatedForms": [] },
+    { "word": "横になる", "reading": "よこになる", "example": "疲れたので少し横になった。", "meaning": "berbaring", "relatedForms": ["うつ伏せになる", "仰向けになる"] },
+    { "word": "うつ伏せになる", "reading": "うつぶせになる", "example": "マッサージのためにうつ伏せになった。", "meaning": "tengkurap", "relatedForms": ["横になる", "仰向けになる"] },
+    { "word": "仰向けになる", "reading": "あおむけになる", "example": "彼はベッドで仰向けになって天井を見つめた。", "meaning": "telentang", "relatedForms": ["横になる", "うつ伏せになる"] },
+    { "word": "体を反らす", "reading": "からだをそらす", "example": "ストレッチで体を大きく反らした。", "meaning": "membungkukkan badan ke belakang", "relatedForms": ["体を曲げる"] },
+    { "word": "馬にまたがる", "reading": "うまにまたがる", "example": "彼は馬にまたがり草原を駆け抜けた。", "meaning": "menunggangi kuda (mengangkangi)", "relatedForms": [] },
+    { "word": "湯につかる", "reading": "ゆにつかる", "example": "疲れた体をゆっくり湯につけた。", "meaning": "berendam air panas", "relatedForms": [] },
+    { "word": "門をくぐる", "reading": "もんをくぐる", "example": "参拝客は神社の門をくぐって境内に入った。", "meaning": "melewati gerbang", "relatedForms": [] },
+    { "word": "水たまりをよける", "reading": "みずたまりをよける", "example": "彼は水たまりをよけながら歩いた。", "meaning": "menghindari genangan air", "relatedForms": [] },
+    { "word": "水中でもがく", "reading": "すいちゅうでもがく", "example": "溺れかけた子どもが水中でもがいていた。", "meaning": "meronta-ronta di dalam air", "relatedForms": [] },
+    { "word": "山中をさまよう", "reading": "さんちゅうをさまよう", "example": "遭難者は数日間、山中をさまよっていた。", "meaning": "tersesat berkeliaran di gunung", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "肩までお湯によく＿＿。", "optionA": "つかりましょう", "optionAReading": "つかりましょう", "optionB": "すくいましょう", "optionBReading": "すくいましょう", "answer": "A" },
+      { "question": "車の前に飛び出してきた猫を＿＿電柱にぶつかってしまった。", "optionA": "よけたら", "optionAReading": "よけたら", "optionB": "そらしたら", "optionBReading": "そらしたら", "answer": "A" },
+      { "question": "踏切の遮断機を＿＿はいけません。", "optionA": "さまよっては", "optionAReading": "さまよっては", "optionB": "くぐっては", "optionBReading": "くぐっては", "answer": "B" },
+      { "question": "それは、私が子どものころよく＿＿歌です。", "optionA": "つぶやいた", "optionAReading": "つぶやいた", "optionB": "口ずさんだ", "optionBReading": "くちずさんだ", "answer": "B" },
+      { "question": "ごはんをのりで＿＿食べます。", "optionA": "くるんで", "optionAReading": "くるんで", "optionB": "めくって", "optionBReading": "めくって", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "むしる", "fixedKanji": "草を", "blankPosition": "after", "choices": ["むしる", "つまむ", "つねる", "さする"], "answer": "むしる" },
+      { "reading": "さする", "fixedKanji": "足を", "blankPosition": "after", "choices": ["さする", "つねる", "むしる", "はたく"], "answer": "さする" },
+      { "reading": "もがく", "fixedKanji": "水中で", "blankPosition": "after", "choices": ["もがく", "さまよう", "よける", "くぐる"], "answer": "もがく" },
+      { "reading": "なる", "fixedKanji": "横に", "blankPosition": "after", "choices": ["なる", "する", "いる", "寝る"], "answer": "なる" },
+      { "reading": "つく", "fixedKanji": "杖を", "blankPosition": "after", "choices": ["突く", "持つ", "握る", "支える"], "answer": "突く" }
+    ]
+  }
+}
