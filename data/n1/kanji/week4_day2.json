@@ -1,0 +1,58 @@
+{
+  "week": 4,
+  "day": 2,
+  "title": "情緒・仮病・天然",
+  "subtitle": "On'yomi yang sulit",
+  "entries": [
+    { "word": "弟子", "reading": "でし", "example": "彼は有名な陶芸家の弟子として修業している。", "meaning": "murid", "relatedForms": [] },
+    { "word": "情緒", "reading": "じょうちょ", "example": "この町は昔ながらの情緒が残っている。", "meaning": "suasana, nuansa emosional", "relatedForms": [] },
+    { "word": "仮病", "reading": "けびょう", "example": "彼は面倒な会議を休むため仮病を使った。", "meaning": "pura-pura sakit", "relatedForms": ["発作"] },
+    { "word": "天然", "reading": "てんねん", "example": "この温泉は天然の湧き水を利用している。", "meaning": "alami", "relatedForms": [] },
+    { "word": "封建", "reading": "ほうけん", "example": "封建的な考え方は今の時代には合わない。", "meaning": "feodal", "relatedForms": [] },
+    { "word": "支度", "reading": "したく", "example": "母は毎朝早くから朝食の支度をしている。", "meaning": "persiapan", "relatedForms": ["留守"] },
+    { "word": "留守", "reading": "るす", "example": "電話をかけたが、あいにく留守だった。", "meaning": "tidak ada di rumah", "relatedForms": ["支度"] },
+    { "word": "天井", "reading": "てんじょう", "example": "この部屋は天井が高くて開放的だ。", "meaning": "langit-langit", "relatedForms": [] },
+    { "word": "面目", "reading": "めんぼく", "example": "彼はミスを重ね、すっかり面目を失った。", "meaning": "kehormatan, muka", "relatedForms": ["本名"] },
+    { "word": "河川", "reading": "かせん", "example": "大雨で近くの河川が増水した。", "meaning": "sungai", "relatedForms": [] },
+    { "word": "布団", "reading": "ふとん", "example": "客のために新しい布団を用意した。", "meaning": "futon, kasur", "relatedForms": [] },
+    { "word": "文句", "reading": "もんく", "example": "彼はいつも仕事に文句ばかり言っている。", "meaning": "keluhan", "relatedForms": [] },
+    { "word": "都合", "reading": "つごう", "example": "明日の都合を教えていただけますか。", "meaning": "keadaan, kenyamanan waktu", "relatedForms": [] },
+    { "word": "行事", "reading": "ぎょうじ", "example": "この学校には毎年恒例の行事がある。", "meaning": "acara, upacara rutin", "relatedForms": [] },
+    { "word": "世間体", "reading": "せけんてい", "example": "彼は世間体を気にして本音を言わない。", "meaning": "pandangan orang lain, reputasi", "relatedForms": [] },
+    { "word": "発作", "reading": "ほっさ", "example": "彼は突然の発作で病院に運ばれた。", "meaning": "serangan (penyakit)", "relatedForms": ["仮病"] },
+    { "word": "元祖", "reading": "がんそ", "example": "この店はラーメンの元祖として知られている。", "meaning": "pencetus, pelopor", "relatedForms": [] },
+    { "word": "生じる", "reading": "しょうじる", "example": "契約内容に誤解が生じることのないよう注意した。", "meaning": "timbul, terjadi", "relatedForms": [] },
+    { "word": "本名", "reading": "ほんみょう", "example": "彼の本名を知る人は少ない。", "meaning": "nama asli", "relatedForms": ["面目"] },
+    { "word": "黄金", "reading": "おうごん", "example": "秋には田んぼが黄金色に輝く。", "meaning": "emas", "relatedForms": [] },
+    { "word": "後半", "reading": "こうはん", "example": "試合の後半で逆転した。", "meaning": "paruh kedua, babak akhir", "relatedForms": [] },
+    { "word": "雨天", "reading": "うてん", "example": "雨天のため、イベントは中止になった。", "meaning": "hari hujan", "relatedForms": [] },
+    { "word": "有無", "reading": "うむ", "example": "参加者は経験の有無を問わない。", "meaning": "ada tidaknya", "relatedForms": [] },
+    { "word": "解毒", "reading": "げどく", "example": "この薬草には解毒の効果があるとされる。", "meaning": "detoksifikasi", "relatedForms": [] },
+    { "word": "工夫", "reading": "くふう", "example": "彼は限られた予算の中で工夫を凝らした。", "meaning": "akal, cara kreatif", "relatedForms": [] },
+    { "word": "定規", "reading": "じょうぎ", "example": "直線を引くために定規を使った。", "meaning": "penggaris", "relatedForms": [] },
+    { "word": "人質", "reading": "ひとじち", "example": "犯人は従業員を人質に取って立てこもった。", "meaning": "sandera", "relatedForms": [] },
+    { "word": "様子", "reading": "ようす", "example": "彼女は落ち着かない様子で周りを見回していた。", "meaning": "keadaan, kondisi", "relatedForms": [] },
+    { "word": "右折", "reading": "うせつ", "example": "次の信号を右折してください。", "meaning": "belok kanan", "relatedForms": [] },
+    { "word": "上下", "reading": "じょうげ", "example": "エレベーターが上下に動く音が聞こえた。", "meaning": "atas-bawah", "relatedForms": [] },
+    { "word": "一対", "reading": "いっつい", "example": "この壺は一対で販売されている。", "meaning": "sepasang", "relatedForms": [] },
+    { "word": "類似", "reading": "るいじ", "example": "二つの製品には類似点が多い。", "meaning": "kemiripan", "relatedForms": [] },
+    { "word": "汚染", "reading": "おせん", "example": "工場排水による河川の汚染が問題になっている。", "meaning": "polusi", "relatedForms": [] },
+    { "word": "戸籍", "reading": "こせき", "example": "結婚すると戸籍の届け出が必要になる。", "meaning": "registrasi keluarga (KK)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼はミスを重ね、すっかり＿＿を失った。", "optionA": "面目", "optionAReading": "めんぼく", "optionB": "本名", "optionBReading": "ほんみょう", "answer": "A" },
+      { "question": "彼の＿＿を知る人は少ない。", "optionA": "面目", "optionAReading": "めんぼく", "optionB": "本名", "optionBReading": "ほんみょう", "answer": "B" },
+      { "question": "電話をかけたが、あいにく＿＿だった。", "optionA": "留守", "optionAReading": "るす", "optionB": "支度", "optionBReading": "したく", "answer": "A" },
+      { "question": "母は毎朝早くから朝食の＿＿をしている。", "optionA": "留守", "optionAReading": "るす", "optionB": "支度", "optionBReading": "したく", "answer": "B" },
+      { "question": "彼は面倒な会議を休むため＿＿を使った。", "optionA": "仮病", "optionAReading": "けびょう", "optionB": "発作", "optionBReading": "ほっさ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "でし", "fixedKanji": "弟", "blankPosition": "after", "choices": ["子", "人", "士", "徒"], "answer": "子" },
+      { "reading": "じょうちょ", "fixedKanji": "情", "blankPosition": "after", "choices": ["緒", "調", "熱", "勢"], "answer": "緒" },
+      { "reading": "けびょう", "fixedKanji": "仮", "blankPosition": "after", "choices": ["病", "装", "面", "眠"], "answer": "病" },
+      { "reading": "てんねん", "fixedKanji": "天", "blankPosition": "after", "choices": ["然", "井", "才", "候"], "answer": "然" },
+      { "reading": "ふとん", "fixedKanji": "布", "blankPosition": "after", "choices": ["団", "地", "巾", "製"], "answer": "団" }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "week": 4,
+  "day": 1,
+  "title": "相互・首相・相性",
+  "subtitle": "Kanji dengan banyak cara baca ①",
+  "entries": [
+    { "word": "夜間", "reading": "やかん", "example": "夜間は工事の音に配慮する必要がある。", "meaning": "malam hari", "relatedForms": ["瞬間"] },
+    { "word": "瞬間", "reading": "しゅんかん", "example": "シャッターを切った瞬間、彼は笑っていた。", "meaning": "momen, sesaat", "relatedForms": ["夜間"] },
+    { "word": "世間", "reading": "せけん", "example": "世間の目を気にしすぎる必要はない。", "meaning": "masyarakat, dunia sosial", "relatedForms": ["人間"] },
+    { "word": "人間", "reading": "にんげん", "example": "人間は誰でも失敗することがある。", "meaning": "manusia", "relatedForms": ["世間"] },
+    { "word": "この間", "reading": "このあいだ", "example": "この間貸した本、まだ読んでいますか。", "meaning": "beberapa waktu lalu", "relatedForms": ["居間"] },
+    { "word": "居間", "reading": "いま", "example": "家族は毎晩居間でテレビを見る。", "meaning": "ruang keluarga", "relatedForms": ["この間"] },
+    { "word": "利口", "reading": "りこう", "example": "あの犬はとても利口で芸を覚えるのが早い。", "meaning": "pintar, cerdik", "relatedForms": ["口調"] },
+    { "word": "口調", "reading": "くちょう", "example": "彼は怒ったような口調で話し始めた。", "meaning": "nada bicara", "relatedForms": ["利口"] },
+    { "word": "無口", "reading": "むくち", "example": "彼は無口だが、いざという時は頼りになる。", "meaning": "pendiam", "relatedForms": [] },
+    { "word": "発言", "reading": "はつげん", "example": "会議で自由に発言してください。", "meaning": "pernyataan, ucapan", "relatedForms": ["伝言"] },
+    { "word": "伝言", "reading": "でんごん", "example": "外出中に伝言を預かっておいた。", "meaning": "pesan (titipan)", "relatedForms": ["発言"] },
+    { "word": "言い訳", "reading": "いいわけ", "example": "彼はいつも遅刻の言い訳ばかりしている。", "meaning": "alasan, dalih", "relatedForms": ["独り言"] },
+    { "word": "独り言", "reading": "ひとりごと", "example": "彼は考え事をするとき独り言を言う癖がある。", "meaning": "bicara sendiri", "relatedForms": ["言い訳"] },
+    { "word": "相互", "reading": "そうご", "example": "両国は相互理解を深める努力を続けている。", "meaning": "saling, timbal balik", "relatedForms": ["首相"] },
+    { "word": "首相", "reading": "しゅしょう", "example": "首相は記者会見で新政策を発表した。", "meaning": "perdana menteri", "relatedForms": ["相性"] },
+    { "word": "相性", "reading": "あいしょう", "example": "二人は相性がいいのか、いつも息が合っている。", "meaning": "kecocokan", "relatedForms": ["首相"] },
+    { "word": "省略", "reading": "しょうりゃく", "example": "時間がないので詳しい説明は省略します。", "meaning": "dipersingkat, dihilangkan", "relatedForms": ["反省"] },
+    { "word": "反省", "reading": "はんせい", "example": "彼は自分の言動を反省している。", "meaning": "introspeksi", "relatedForms": ["省略"] },
+    { "word": "省く", "reading": "はぶく", "example": "無駄な手続きを省くことで作業が早くなった。", "meaning": "menghilangkan (yang tak perlu)", "relatedForms": ["省みる"] },
+    { "word": "省みる", "reading": "かえりみる", "example": "彼はこれまでの人生を静かに省みた。", "meaning": "merenungkan (diri sendiri)", "relatedForms": ["省く"] },
+    { "word": "極端", "reading": "きょくたん", "example": "彼の意見はいつも極端すぎる。", "meaning": "ekstrem", "relatedForms": ["端"] },
+    { "word": "端", "reading": "はし", "example": "彼女は道の端を静かに歩いていた。", "meaning": "tepi, ujung", "relatedForms": ["極端"] },
+    { "word": "道端", "reading": "みちばた", "example": "道端に小さな花が咲いていた。", "meaning": "pinggir jalan", "relatedForms": ["半端"] },
+    { "word": "半端", "reading": "はんぱ", "example": "中途半端な仕事はしたくない。", "meaning": "setengah-setengah", "relatedForms": ["道端"] },
+    { "word": "滞納", "reading": "たいのう", "example": "家賃を滞納すると信用に関わる。", "meaning": "menunggak (pembayaran)", "relatedForms": ["納得"] },
+    { "word": "納得", "reading": "なっとく", "example": "彼の説明を聞いても納得できなかった。", "meaning": "memahami, menerima (penjelasan)", "relatedForms": ["滞納"] },
+    { "word": "納める", "reading": "おさめる", "example": "期限内に税金を納めるよう通知が来た。", "meaning": "membayar, menyerahkan", "relatedForms": [] },
+    { "word": "横柄", "reading": "おうへい", "example": "彼の横柄な態度に周りは困っていた。", "meaning": "arogan", "relatedForms": ["間柄"] },
+    { "word": "間柄", "reading": "あいだがら", "example": "二人は幼なじみという間柄だ。", "meaning": "hubungan (antar orang)", "relatedForms": ["横柄"] },
+    { "word": "柄", "reading": "え", "example": "このほうきの柄は木製だ。", "meaning": "gagang, pegangan", "relatedForms": [] },
+    { "word": "宮殿", "reading": "きゅうでん", "example": "観光客は宮殿の内部を見学した。", "meaning": "istana", "relatedForms": ["神宮"] },
+    { "word": "神宮", "reading": "じんぐう", "example": "正月には多くの人が神宮に初詣に訪れる。", "meaning": "kuil besar Shinto", "relatedForms": ["宮殿"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "＿＿の目を気にしすぎる必要はない。", "optionA": "世間", "optionAReading": "せけん", "optionB": "人間", "optionBReading": "にんげん", "answer": "A" },
+      { "question": "＿＿は誰でも失敗することがある。", "optionA": "世間", "optionAReading": "せけん", "optionB": "人間", "optionBReading": "にんげん", "answer": "B" },
+      { "question": "彼は自分の言動を＿＿している。", "optionA": "反省", "optionAReading": "はんせい", "optionB": "省略", "optionBReading": "しょうりゃく", "answer": "A" },
+      { "question": "時間がないので詳しい説明は＿＿します。", "optionA": "反省", "optionAReading": "はんせい", "optionB": "省略", "optionBReading": "しょうりゃく", "answer": "B" },
+      { "question": "彼はいつも遅刻の＿＿ばかりしている。", "optionA": "言い訳", "optionAReading": "いいわけ", "optionB": "独り言", "optionBReading": "ひとりごと", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "やかん", "fixedKanji": "夜", "blankPosition": "after", "choices": ["間", "明", "中", "半"], "answer": "間" },
+      { "reading": "しゅしょう", "fixedKanji": "首", "blankPosition": "after", "choices": ["相", "長", "都", "座"], "answer": "相" },
+      { "reading": "きょくたん", "fixedKanji": "極", "blankPosition": "after", "choices": ["端", "度", "限", "重"], "answer": "端" },
+      { "reading": "なっとく", "fixedKanji": "納", "blankPosition": "after", "choices": ["得", "入", "税", "金"], "answer": "得" },
+      { "reading": "じんぐう", "fixedKanji": "神", "blankPosition": "after", "choices": ["宮", "社", "殿", "様"], "answer": "宮" }
+    ]
+  }
+}
