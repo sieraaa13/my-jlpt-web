@@ -1,0 +1,56 @@
+{
+  "week": 4,
+  "day": 1,
+  "title": "手分け・同い年・心地",
+  "subtitle": "Kosakata dengan kanji dasar (手・分・同・心)",
+  "entries": [
+    { "word": "手口", "reading": "てぐち", "example": "警察は犯行の手口を分析した。", "meaning": "modus kejahatan", "relatedForms": ["手はず", "手がかり"] },
+    { "word": "手本", "reading": "てほん", "example": "先生は習字の手本を見せてくれた。", "meaning": "contoh, teladan", "relatedForms": [] },
+    { "word": "手軽な", "reading": "てがるな", "example": "これは手軽に作れる料理だ。", "meaning": "praktis, mudah", "relatedForms": [] },
+    { "word": "手近な", "reading": "てぢかな", "example": "手近な材料で作る。", "meaning": "bahan yang mudah didapat", "relatedForms": [] },
+    { "word": "手ごろな", "reading": "てごろな", "example": "このバッグは手ごろな値段で買える。", "meaning": "terjangkau (harga)", "relatedForms": [] },
+    { "word": "手引き", "reading": "てびき", "example": "彼は海外旅行の手引きを書いた。", "meaning": "panduan", "relatedForms": [] },
+    { "word": "手元", "reading": "てもと", "example": "それは今、手元にない。", "meaning": "di tangan/dekat sekarang", "relatedForms": [] },
+    { "word": "手分けする", "reading": "てわけする", "example": "みんなで手分けして探した。", "meaning": "membagi tugas", "relatedForms": [] },
+    { "word": "お手上げ", "reading": "おてあげ", "example": "こんなに景気が悪いとお手上げだ。", "meaning": "menyerah, tak berdaya", "relatedForms": [] },
+    { "word": "手中", "reading": "しゅちゅう", "example": "彼は勝利を手中にした。", "meaning": "dalam genggaman", "relatedForms": [] },
+    { "word": "先手", "reading": "せんて", "example": "彼は先手を打って交渉を有利に進めた。", "meaning": "langkah awal (mendahului)", "relatedForms": [] },
+    { "word": "右手", "reading": "みぎて", "example": "右手の建物をご覧ください。", "meaning": "sisi kanan", "relatedForms": [] },
+    { "word": "入手", "reading": "にゅうしゅ", "example": "彼は貴重な情報を入手した。", "meaning": "memperoleh", "relatedForms": [] },
+    { "word": "手はず", "reading": "てはず", "example": "出発の手はずを整えた。", "meaning": "persiapan (rencana)", "relatedForms": [] },
+    { "word": "手がかり", "reading": "てがかり", "example": "警察は事件の手がかりをつかんだ。", "meaning": "petunjuk", "relatedForms": [] },
+    { "word": "塩分", "reading": "えんぶん", "example": "医師に塩分を控えるよう言われた。", "meaning": "kadar garam", "relatedForms": ["水分"] },
+    { "word": "分別する", "reading": "ふんべつする", "example": "ゴミを種類ごとに分別する。", "meaning": "memilah", "relatedForms": [] },
+    { "word": "分別", "reading": "ふんべつ", "example": "彼はもう分別のある年齢だ。", "meaning": "kebijaksanaan", "relatedForms": [] },
+    { "word": "分野", "reading": "ぶんや", "example": "これは彼の専門分野だ。", "meaning": "bidang keahlian", "relatedForms": [] },
+    { "word": "同上", "reading": "どうじょう", "example": "同上の理由により、この案は却下された。", "meaning": "sama seperti di atas", "relatedForms": [] },
+    { "word": "同一", "reading": "どういつ", "example": "この二つを同一にみることはできない。", "meaning": "identik, dianggap sama", "relatedForms": [] },
+    { "word": "同意", "reading": "どうい", "example": "彼は計画に同意を求めた。", "meaning": "persetujuan", "relatedForms": [] },
+    { "word": "同い年", "reading": "おないどし", "example": "彼と私は同い年だ。", "meaning": "seumuran", "relatedForms": [] },
+    { "word": "同一人物", "reading": "どういつじんぶつ", "example": "二つの事件の犯人は同一人物とみられている。", "meaning": "orang yang sama", "relatedForms": [] },
+    { "word": "心当たり", "reading": "こころあたり", "example": "その件については、心当たりがない。", "meaning": "petunjuk/dugaan (dalam ingatan)", "relatedForms": [] },
+    { "word": "下心", "reading": "したごころ", "example": "彼の親切には下心がある。", "meaning": "niat tersembunyi", "relatedForms": [] },
+    { "word": "野心", "reading": "やしん", "example": "彼は政治家としての野心を抱いている。", "meaning": "ambisi", "relatedForms": [] },
+    { "word": "心地", "reading": "ここち", "example": "このホテルは住み心地がいい。", "meaning": "rasa (nyaman/tidak)", "relatedForms": [] },
+    { "word": "内心", "reading": "ないしん", "example": "彼は内心、穏やかではない。", "meaning": "dalam hati", "relatedForms": [] },
+    { "word": "心中", "reading": "しんちゅう", "example": "彼の心中を察する。", "meaning": "isi hati, perasaan mendalam", "relatedForms": [] },
+    { "word": "心中する", "reading": "しんじゅうする", "example": "二人は心中を図った。", "meaning": "bunuh diri bersama (kekasih)", "relatedForms": [] },
+    { "word": "心遣い", "reading": "こころづかい", "example": "彼女の親切な心遣いに感謝している。", "meaning": "perhatian, kepedulian", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "だんだん年をとって、物事の良し悪しの＿＿がつくようになった。", "optionA": "分別", "optionAReading": "ふんべつ", "optionB": "分野", "optionBReading": "ぶんや", "answer": "A" },
+      { "question": "田中さんの意見に全員が＿＿した。", "optionA": "同上", "optionAReading": "どうじょう", "optionB": "同意", "optionBReading": "どうい", "answer": "B" },
+      { "question": "彼は平気な顔をしているが、＿＿は穏やかではない。", "optionA": "内心", "optionAReading": "ないしん", "optionB": "心地", "optionBReading": "ここち", "answer": "A" },
+      { "question": "これはオークションで＿＿した中古の冷蔵庫です。", "optionA": "手中", "optionAReading": "しゅちゅう", "optionB": "入手", "optionBReading": "にゅうしゅ", "answer": "B" },
+      { "question": "このパソコンは小さくて軽いので、＿＿に持ち運べる。", "optionA": "手ごろ", "optionAReading": "てごろ", "optionB": "手軽", "optionBReading": "てがる", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "てがかり", "fixedKanji": "手", "blankPosition": "after", "choices": ["がかり", "はず", "もと", "ぢか"], "answer": "がかり" },
+      { "reading": "にゅうしゅ", "fixedKanji": "入", "blankPosition": "after", "choices": ["手", "力", "金", "場"], "answer": "手" },
+      { "reading": "ふんべつ", "fixedKanji": "分", "blankPosition": "after", "choices": ["別", "野", "担", "配"], "answer": "別" },
+      { "reading": "どういつ", "fixedKanji": "同", "blankPosition": "after", "choices": ["一", "上", "意", "年"], "answer": "一" },
+      { "reading": "こころづかい", "fixedKanji": "心", "blankPosition": "after", "choices": ["遣い", "当たり", "地", "中"], "answer": "遣い" }
+    ]
+  }
+}

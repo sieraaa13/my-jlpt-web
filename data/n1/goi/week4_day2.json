@@ -1,0 +1,51 @@
+{
+  "week": 4,
+  "day": 2,
+  "title": "気長・下火・上の空",
+  "subtitle": "Kosakata dengan kanji dasar (気・出・下・上・回)",
+  "entries": [
+    { "word": "水気", "reading": "みずけ", "example": "洗った野菜の水気を切った。", "meaning": "kadar air", "relatedForms": [] },
+    { "word": "人気", "reading": "ひとけ", "example": "人気のない通りを一人で歩いた。", "meaning": "tanda kehadiran orang (sepi)", "relatedForms": [] },
+    { "word": "寒気", "reading": "さむけ", "example": "熱が出る前に寒気がした。", "meaning": "rasa menggigil", "relatedForms": [] },
+    { "word": "気心", "reading": "きごころ", "example": "彼らは気心が知れた仲だ。", "meaning": "saling memahami watak", "relatedForms": [] },
+    { "word": "正気", "reading": "しょうき", "example": "彼はようやく正気になった。", "meaning": "sadar (waras)", "relatedForms": [] },
+    { "word": "気合", "reading": "きあい", "example": "試合前に気合を入れた。", "meaning": "semangat, tekad", "relatedForms": [] },
+    { "word": "気長", "reading": "きなが", "example": "結果が出るまで気長に待つ。", "meaning": "sabar menunggu", "relatedForms": [] },
+    { "word": "出品する", "reading": "しゅっぴんする", "example": "彼は展覧会に作品を出品した。", "meaning": "memajang karya (pameran)", "relatedForms": [] },
+    { "word": "家出する", "reading": "いえでする", "example": "彼は10代の頃、家出したことがある。", "meaning": "kabur dari rumah", "relatedForms": [] },
+    { "word": "出産する", "reading": "しゅっさんする", "example": "彼女は来月出産する予定だ。", "meaning": "melahirkan", "relatedForms": [] },
+    { "word": "出生", "reading": "しゅっせい", "example": "彼の出生地は青森だ。", "meaning": "tempat lahir", "relatedForms": [] },
+    { "word": "出題する", "reading": "しゅつだいする", "example": "先生は難しい問題を出題した。", "meaning": "membuat soal", "relatedForms": [] },
+    { "word": "出動する", "reading": "しゅつどうする", "example": "火事が発生し、消防車が出動した。", "meaning": "dikerahkan (petugas)", "relatedForms": [] },
+    { "word": "出社する", "reading": "しゅっしゃする", "example": "彼は毎朝8時に出社する。", "meaning": "berangkat kerja (masuk kantor)", "relatedForms": ["退社する"] },
+    { "word": "出世する", "reading": "しゅっせする", "example": "彼は順調に出世した。", "meaning": "naik pangkat, sukses karier", "relatedForms": [] },
+    { "word": "下味", "reading": "したあじ", "example": "塩こしょうで下味をつける。", "meaning": "bumbu dasar", "relatedForms": [] },
+    { "word": "下地", "reading": "したじ", "example": "彼は語学の下地がある。", "meaning": "dasar, fondasi (kemampuan)", "relatedForms": [] },
+    { "word": "下火", "reading": "したび", "example": "インフルエンザの流行が下火になってきた。", "meaning": "mereda (wabah/tren)", "relatedForms": [] },
+    { "word": "上向く", "reading": "うわむく", "example": "景気が上向いてきた。", "meaning": "membaik (tren)", "relatedForms": [] },
+    { "word": "上回る", "reading": "うわまわる", "example": "出生率が予想を上回った。", "meaning": "melebihi (perkiraan)", "relatedForms": ["下回る"] },
+    { "word": "上の空", "reading": "うわのそら", "example": "彼は上の空で、話を聞いていなかった。", "meaning": "tidak fokus, melamun", "relatedForms": [] },
+    { "word": "上書きする", "reading": "うわがきする", "example": "データを上書きして保存する。", "meaning": "menimpa (data)", "relatedForms": [] },
+    { "word": "回送する", "reading": "かいそうする", "example": "バスが車庫に回送される。", "meaning": "dikirim kembali (kosong)", "relatedForms": [] },
+    { "word": "回答する", "reading": "かいとうする", "example": "アンケートに回答する。", "meaning": "menjawab (survei)", "relatedForms": [] },
+    { "word": "回り道する", "reading": "まわりみちする", "example": "景色を楽しむために回り道をした。", "meaning": "memutar jalan", "relatedForms": [] },
+    { "word": "遠回りする", "reading": "とおまわりする", "example": "工事のせいで、遠回りした。", "meaning": "memutar jauh", "relatedForms": [] },
+    { "word": "後回し", "reading": "あとまわし", "example": "食事は後回しにしよう。", "meaning": "ditunda, diprioritaskan belakangan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は面倒なことはいつも＿＿にする。", "optionA": "回り道", "optionAReading": "まわりみち", "optionB": "後回し", "optionBReading": "あとまわし", "answer": "B" },
+      { "question": "彼の＿＿地は、青森です。", "optionA": "出生", "optionAReading": "しゅっせい", "optionB": "出産", "optionBReading": "しゅっさん", "answer": "A" },
+      { "question": "ゲームに熱中していて、話しかけても＿＿だ。", "optionA": "上の空", "optionAReading": "うわのそら", "optionB": "遠回り", "optionBReading": "とおまわり", "answer": "A" },
+      { "question": "火事が発生して、消防車が＿＿した。", "optionA": "出動", "optionAReading": "しゅつどう", "optionB": "出勤", "optionBReading": "しゅっきん", "answer": "A" },
+      { "question": "しょうゆで＿＿をつけておいたので、焼くだけですぐ食べられます。", "optionA": "下地", "optionAReading": "したじ", "optionB": "下味", "optionBReading": "したあじ", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "きなが", "fixedKanji": "気", "blankPosition": "after", "choices": ["長", "合", "心", "気"], "answer": "長" },
+      { "reading": "しゅっせ", "fixedKanji": "出", "blankPosition": "after", "choices": ["世", "動", "社", "産"], "answer": "世" },
+      { "reading": "したび", "fixedKanji": "下", "blankPosition": "after", "choices": ["火", "味", "地", "回"], "answer": "火" },
+      { "reading": "うわまわる", "fixedKanji": "上", "blankPosition": "after", "choices": ["回る", "向く", "書く", "の空"], "answer": "回る" },
+      { "reading": "かいとう", "fixedKanji": "回", "blankPosition": "after", "choices": ["答", "送", "り道", "遠"], "answer": "答" }
+    ]
+  }
+}
