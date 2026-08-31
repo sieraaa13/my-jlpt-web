@@ -1,0 +1,57 @@
+{
+  "week": 6,
+  "day": 4,
+  "title": "融通が利く・便宜を図る",
+  "subtitle": "Ungkapan tetap (idiom kanji)",
+  "entries": [
+    { "word": "的を射る", "reading": "まとをいる", "example": "彼の指摘はまさに的を射ていた。", "meaning": "tepat sasaran (kritik/pertanyaan)", "relatedForms": [] },
+    { "word": "融通が利く", "reading": "ゆうづうがきく", "example": "この店は支払い方法について融通が利く。", "meaning": "fleksibel", "relatedForms": [] },
+    { "word": "便宜を図る", "reading": "べんぎをはかる", "example": "上司は新入社員のために便宜を図ってくれた。", "meaning": "memberi kemudahan", "relatedForms": [] },
+    { "word": "異を唱える", "reading": "いをとなえる", "example": "彼はその決定に異を唱えた。", "meaning": "menyatakan keberatan", "relatedForms": ["誤解を招く"] },
+    { "word": "誤解を招く", "reading": "ごかいをまねく", "example": "あいまいな表現は誤解を招くことがある。", "meaning": "menimbulkan kesalahpahaman", "relatedForms": ["異を唱える"] },
+    { "word": "最善を尽くす", "reading": "さいぜんをつくす", "example": "彼は最後まで最善を尽くした。", "meaning": "berusaha semaksimal mungkin", "relatedForms": [] },
+    { "word": "屈辱を味わう", "reading": "くつじょくをあじわう", "example": "チームは決勝で大敗し、屈辱を味わった。", "meaning": "merasakan kehinaan", "relatedForms": [] },
+    { "word": "愚痴をこぼす", "reading": "ぐちをこぼす", "example": "彼は仕事の愚痴をこぼしてばかりいる。", "meaning": "mengeluh", "relatedForms": [] },
+    { "word": "添付書類", "reading": "てんぷしょるい", "example": "メールに添付書類を付け忘れた。", "meaning": "dokumen lampiran", "relatedForms": [] },
+    { "word": "功を奏す", "reading": "こうをそうす", "example": "日々の努力が功を奏し、試験に合格した。", "meaning": "membuahkan hasil", "relatedForms": ["策を練る"] },
+    { "word": "策を練る", "reading": "さくをねる", "example": "チームは勝つための策を練った。", "meaning": "menyusun strategi", "relatedForms": ["功を奏す"] },
+    { "word": "現状を維持する", "reading": "げんじょうをいじする", "example": "会社はしばらく現状を維持する方針だ。", "meaning": "mempertahankan kondisi saat ini", "relatedForms": [] },
+    { "word": "締め切りが迫る", "reading": "しめきりがせまる", "example": "レポートの締め切りが迫っている。", "meaning": "tenggat waktu mendekat", "relatedForms": [] },
+    { "word": "目の錯覚", "reading": "めのさっかく", "example": "それは目の錯覚で、実際には何もなかった。", "meaning": "ilusi optik", "relatedForms": ["時代錯誤"] },
+    { "word": "時代錯誤", "reading": "じだいさくご", "example": "大臣は時代錯誤な発言をして批判された。", "meaning": "anakronisme, ketinggalan zaman", "relatedForms": ["目の錯覚"] },
+    { "word": "耳を疑う", "reading": "みみをうたがう", "example": "そのニュースを聞いて耳を疑った。", "meaning": "tidak percaya (apa yang didengar)", "relatedForms": [] },
+    { "word": "腹に据えかねる", "reading": "はらにすえかねる", "example": "彼の失礼な態度は腹に据えかねた。", "meaning": "tidak bisa menahan amarah", "relatedForms": [] },
+    { "word": "感情の起伏が激しい", "reading": "かんじょうのきふくがはげしい", "example": "妹は感情の起伏が激しい。", "meaning": "naik-turun emosi drastis", "relatedForms": ["怒りを露わにする"] },
+    { "word": "怒りを露わにする", "reading": "いかりをあらわにする", "example": "彼は珍しく怒りを露わにした。", "meaning": "menampakkan kemarahan terang-terangan", "relatedForms": ["感情の起伏が激しい"] },
+    { "word": "軌道に乗る", "reading": "きどうにのる", "example": "新しい事業がようやく軌道に乗ってきた。", "meaning": "berjalan lancar (usaha)", "relatedForms": [] },
+    { "word": "陣中見舞い", "reading": "じんちゅうみまい", "example": "論文を書き続けている先輩に陣中見舞いに行った。", "meaning": "kunjungan dukungan (ke tempat kerja sibuk)", "relatedForms": [] },
+    { "word": "謹賀新年", "reading": "きんがしんねん", "example": "年賀状に「謹賀新年」と書いた。", "meaning": "Selamat Tahun Baru (formal tertulis)", "relatedForms": [] },
+    { "word": "娯楽番組", "reading": "ごらくばんぐみ", "example": "週末は娯楽番組を見てのんびり過ごす。", "meaning": "acara hiburan", "relatedForms": ["娯楽施設"] },
+    { "word": "娯楽施設", "reading": "ごらくしせつ", "example": "この町には娯楽施設が少ない。", "meaning": "fasilitas hiburan", "relatedForms": ["娯楽番組"] },
+    { "word": "妥協案", "reading": "だきょうあん", "example": "両者は話し合いの末、妥協案に合意した。", "meaning": "usulan kompromi", "relatedForms": ["妥協策"] },
+    { "word": "妥協策", "reading": "だきょうさく", "example": "交渉は妥協策を探る方向で進んだ。", "meaning": "strategi kompromi", "relatedForms": ["妥協案"] },
+    { "word": "扶養家族", "reading": "ふようかぞく", "example": "彼には扶養家族が3人いる。", "meaning": "tanggungan keluarga", "relatedForms": [] },
+    { "word": "不吉な予感", "reading": "ふきつなよかん", "example": "出発前から不吉な予感がしていた。", "meaning": "firasat buruk", "relatedForms": [] },
+    { "word": "拝啓…敬具", "reading": "はいけい…けいぐ", "example": "ビジネスレターは「拝啓」で始まり「敬具」で結ぶ。", "meaning": "salam pembuka-penutup surat resmi", "relatedForms": [] },
+    { "word": "炊事・洗濯", "reading": "すいじ・せんたく", "example": "一人暮らしを始めてから炊事と洗濯が日課になった。", "meaning": "memasak dan mencuci", "relatedForms": [] },
+    { "word": "案の定", "reading": "あんのじょう", "example": "案の定、彼は約束の時間に遅れてきた。", "meaning": "seperti yang diduga", "relatedForms": [] },
+    { "word": "分け隔てなく", "reading": "わけへだてなく", "example": "あの先生は生徒を分け隔てなく指導する。", "meaning": "tanpa membeda-bedakan", "relatedForms": [] },
+    { "word": "懲りない", "reading": "こりない", "example": "彼は何度失敗しても懲りない性格だ。", "meaning": "tidak kapok", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼はその決定に＿＿。", "optionA": "異を唱えた", "optionAReading": "いをとなえた", "optionB": "誤解を招いた", "optionBReading": "ごかいをまねいた", "answer": "A" },
+      { "question": "あいまいな表現は＿＿ことがある。", "optionA": "異を唱える", "optionAReading": "いをとなえる", "optionB": "誤解を招く", "optionBReading": "ごかいをまねく", "answer": "B" },
+      { "question": "日々の努力が＿＿試験に合格した。", "optionA": "功を奏し", "optionAReading": "こうをそうし", "optionB": "策を練り", "optionBReading": "さくをねり", "answer": "A" },
+      { "question": "チームは勝つための＿＿。", "optionA": "功を奏した", "optionAReading": "こうをそうした", "optionB": "策を練った", "optionBReading": "さくをねった", "answer": "B" },
+      { "question": "彼は何度失敗しても＿＿性格だ。", "optionA": "懲りない", "optionAReading": "こりない", "optionB": "案の定", "optionBReading": "あんのじょう", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "てんぷしょるい", "fixedKanji": "添付書", "blankPosition": "after", "choices": ["類", "状", "面", "証"], "answer": "類" },
+      { "reading": "ごらくしせつ", "fixedKanji": "娯楽", "blankPosition": "after", "choices": ["施設", "設備", "機関", "場所"], "answer": "施設" },
+      { "reading": "ふようかぞく", "fixedKanji": "扶養", "blankPosition": "after", "choices": ["家族", "親族", "世帯", "一家"], "answer": "家族" },
+      { "reading": "じだいさくご", "fixedKanji": "時代", "blankPosition": "after", "choices": ["錯誤", "錯覚", "誤解", "遅延"], "answer": "錯誤" },
+      { "reading": "きんがしんねん", "fixedKanji": "謹賀", "blankPosition": "after", "choices": ["新年", "正月", "新春", "元旦"], "answer": "新年" }
+    ]
+  }
+}

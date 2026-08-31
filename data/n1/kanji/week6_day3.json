@@ -1,0 +1,60 @@
+{
+  "week": 6,
+  "day": 3,
+  "title": "分解・分析・分類・分配",
+  "subtitle": "Kata bersinonim, dibedakan menurut penggunaan ②",
+  "entries": [
+    { "word": "了解", "reading": "りょうかい", "example": "「了解しました」と彼は短く返事をした。", "meaning": "paham, mengerti (informal)", "relatedForms": ["承諾", "了承", "認証"] },
+    { "word": "承諾", "reading": "しょうだく", "example": "会社は取引先の要求を承諾した。", "meaning": "persetujuan (formal, terhadap permintaan)", "relatedForms": ["了解", "了承", "認証"] },
+    { "word": "了承", "reading": "りょうしょう", "example": "予めご了承ください。", "meaning": "pemakluman, persetujuan (formal)", "relatedForms": ["了解", "承諾", "認証"] },
+    { "word": "認証", "reading": "にんしょう", "example": "このアプリは指紋で本人であることを認証する。", "meaning": "autentikasi", "relatedForms": ["了解", "承諾", "了承"] },
+    { "word": "分解", "reading": "ぶんかい", "example": "彼は壊れた時計を分解して修理した。", "meaning": "membongkar (mesin)", "relatedForms": ["分析", "分類", "分配"] },
+    { "word": "分析", "reading": "ぶんせき", "example": "研究者は実験結果を分析した。", "meaning": "analisis", "relatedForms": ["分解", "分類", "分配"] },
+    { "word": "分類", "reading": "ぶんるい", "example": "図書館の本はジャンルごとに分類されている。", "meaning": "klasifikasi", "relatedForms": ["分解", "分析", "分配"] },
+    { "word": "分配", "reading": "ぶんぱい", "example": "会社は利益を社員に分配した。", "meaning": "pembagian (hasil)", "relatedForms": ["分解", "分析", "分類"] },
+    { "word": "観覧", "reading": "かんらん", "example": "遊園地の観覧車から街並みを眺めた。", "meaning": "menonton (dari tempat khusus)", "relatedForms": ["回覧", "閲覧", "展覧"] },
+    { "word": "回覧", "reading": "かいらん", "example": "自治会の回覧板が各家庭を回っている。", "meaning": "edaran (dokumen berputar)", "relatedForms": ["観覧", "閲覧", "展覧"] },
+    { "word": "閲覧", "reading": "えつらん", "example": "図書館の閲覧室で資料を調べた。", "meaning": "membaca, meninjau (dokumen)", "relatedForms": ["観覧", "回覧", "展覧"] },
+    { "word": "展覧", "reading": "てんらん", "example": "来月、彼の絵画の展覧会が開かれる。", "meaning": "pameran", "relatedForms": ["観覧", "回覧", "閲覧"] },
+    { "word": "沈没", "reading": "ちんぼつ", "example": "台風で漁船が沈没した。", "meaning": "tenggelam (kapal)", "relatedForms": ["没落", "没収", "埋没"] },
+    { "word": "没落", "reading": "ぼつらく", "example": "かつて栄えた名家が没落した。", "meaning": "keruntuhan (keluarga/status)", "relatedForms": ["沈没", "没収", "埋没"] },
+    { "word": "没収", "reading": "ぼっしゅう", "example": "警察は犯人の資産を没収した。", "meaning": "penyitaan", "relatedForms": ["沈没", "没落", "埋没"] },
+    { "word": "埋没", "reading": "まいぼつ", "example": "土砂崩れで家が埋没してしまった。", "meaning": "terkubur", "relatedForms": ["沈没", "没落", "没収"] },
+    { "word": "交渉", "reading": "こうしょう", "example": "二社は価格の交渉を続けている。", "meaning": "negosiasi", "relatedForms": ["干渉", "交際", "交流"] },
+    { "word": "干渉", "reading": "かんしょう", "example": "親は子どもの進路に干渉しすぎない方がいい。", "meaning": "campur tangan", "relatedForms": ["交渉", "交際", "交流"] },
+    { "word": "交際", "reading": "こうさい", "example": "二人は3年間交際している。", "meaning": "berpacaran, bergaul", "relatedForms": ["交渉", "干渉", "交流"] },
+    { "word": "交流", "reading": "こうりゅう", "example": "学生たちは異文化との交流を楽しんだ。", "meaning": "pertukaran (budaya)", "relatedForms": ["交渉", "干渉", "交際"] },
+    { "word": "墜落", "reading": "ついらく", "example": "小型飛行機が山中に墜落した。", "meaning": "jatuh (pesawat)", "relatedForms": ["堕落", "転落", "暴落"] },
+    { "word": "堕落", "reading": "だらく", "example": "彼はギャンブルにのめり込み、堕落した生活を送っている。", "meaning": "kemerosotan moral", "relatedForms": ["墜落", "転落", "暴落"] },
+    { "word": "転落", "reading": "てんらく", "example": "彼は崖から転落して大けがをした。", "meaning": "jatuh (dari ketinggian)", "relatedForms": ["墜落", "堕落", "暴落"] },
+    { "word": "暴落", "reading": "ぼうらく", "example": "世界的な不況で株価が暴落した。", "meaning": "jatuh drastis (harga saham)", "relatedForms": ["墜落", "堕落", "転落"] },
+    { "word": "緊急", "reading": "きんきゅう", "example": "緊急の場合はこの番号に連絡してください。", "meaning": "darurat", "relatedForms": ["至急", "応急", "早急"] },
+    { "word": "至急", "reading": "しきゅう", "example": "この書類を至急届けてください。", "meaning": "segera", "relatedForms": ["緊急", "応急", "早急"] },
+    { "word": "応急", "reading": "おうきゅう", "example": "けが人に応急処置を施した。", "meaning": "pertolongan pertama", "relatedForms": ["緊急", "至急", "早急"] },
+    { "word": "早急", "reading": "そうきゅう", "example": "この問題には早急な対処が必要だ。", "meaning": "secepatnya", "relatedForms": ["緊急", "至急", "応急"] },
+    { "word": "原点", "reading": "げんてん", "example": "迷ったときは物事の原点に戻って考えるべきだ。", "meaning": "titik awal", "relatedForms": ["焦点", "視点", "盲点"] },
+    { "word": "焦点", "reading": "しょうてん", "example": "カメラの焦点をうまく合わせた。", "meaning": "fokus", "relatedForms": ["原点", "視点", "盲点"] },
+    { "word": "視点", "reading": "してん", "example": "相手の視点に立って考えることが大切だ。", "meaning": "sudut pandang", "relatedForms": ["原点", "焦点", "盲点"] },
+    { "word": "盲点", "reading": "もうてん", "example": "その計画には思わぬ盲点があった。", "meaning": "titik buta, celah", "relatedForms": ["原点", "焦点", "視点"] },
+    { "word": "静脈", "reading": "じょうみゃく", "example": "採血のため静脈に針を刺した。", "meaning": "vena, pembuluh balik", "relatedForms": ["文脈", "人脈", "山脈"] },
+    { "word": "文脈", "reading": "ぶんみゃく", "example": "この単語の意味は文脈によって変わる。", "meaning": "konteks (kalimat)", "relatedForms": ["静脈", "人脈", "山脈"] },
+    { "word": "人脈", "reading": "じんみゃく", "example": "彼は政界に広い人脈を持っている。", "meaning": "jaringan relasi", "relatedForms": ["静脈", "文脈", "山脈"] },
+    { "word": "山脈", "reading": "さんみゃく", "example": "飛行機の窓から美しい山脈が見えた。", "meaning": "pegunungan", "relatedForms": ["静脈", "文脈", "人脈"] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼は壊れた時計を＿＿して修理した。", "optionA": "分解", "optionAReading": "ぶんかい", "optionB": "分析", "optionBReading": "ぶんせき", "answer": "A" },
+      { "question": "研究者は実験結果を＿＿した。", "optionA": "分解", "optionAReading": "ぶんかい", "optionB": "分析", "optionBReading": "ぶんせき", "answer": "B" },
+      { "question": "台風で漁船が＿＿した。", "optionA": "沈没", "optionAReading": "ちんぼつ", "optionB": "埋没", "optionBReading": "まいぼつ", "answer": "A" },
+      { "question": "土砂崩れで家が＿＿してしまった。", "optionA": "沈没", "optionAReading": "ちんぼつ", "optionB": "埋没", "optionBReading": "まいぼつ", "answer": "B" },
+      { "question": "彼は政界に広い＿＿を持っている。", "optionA": "人脈", "optionAReading": "じんみゃく", "optionB": "文脈", "optionBReading": "ぶんみゃく", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "りょうかい", "fixedKanji": "了", "blankPosition": "after", "choices": ["解", "承", "認", "許"], "answer": "解" },
+      { "reading": "ぶんるい", "fixedKanji": "分", "blankPosition": "after", "choices": ["類", "解", "析", "配"], "answer": "類" },
+      { "reading": "かんらん", "fixedKanji": "観", "blankPosition": "after", "choices": ["覧", "察", "測", "光"], "answer": "覧" },
+      { "reading": "こうりゅう", "fixedKanji": "交", "blankPosition": "after", "choices": ["流", "渉", "際", "換"], "answer": "流" },
+      { "reading": "さんみゃく", "fixedKanji": "山", "blankPosition": "after", "choices": ["脈", "岳", "峰", "系"], "answer": "脈" }
+    ]
+  }
+}
