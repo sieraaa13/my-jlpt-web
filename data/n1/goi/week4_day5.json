@@ -1,0 +1,57 @@
+{
+  "week": 4,
+  "day": 5,
+  "title": "世代・本場・作用",
+  "subtitle": "Kosakata dengan kanji dasar (産・不・特・代・場・事・主・生・用・所)",
+  "entries": [
+    { "word": "産地", "reading": "さんち", "example": "ここはリンゴの産地として有名だ。", "meaning": "daerah penghasil", "relatedForms": [] },
+    { "word": "産出する", "reading": "さんしゅつする", "example": "その国は石油を産出している。", "meaning": "menghasilkan (sumber daya)", "relatedForms": [] },
+    { "word": "国産", "reading": "こくさん", "example": "彼は国産車を購入した。", "meaning": "buatan dalam negeri", "relatedForms": [] },
+    { "word": "生産する", "reading": "せいさんする", "example": "この工場は大量に生産する。", "meaning": "memproduksi", "relatedForms": [] },
+    { "word": "名産", "reading": "めいさん", "example": "これはこの地方の名産品だ。", "meaning": "produk terkenal (daerah)", "relatedForms": [] },
+    { "word": "不正な", "reading": "ふせいな", "example": "彼は不正な取り引きに関与していた。", "meaning": "tidak sah, curang", "relatedForms": [] },
+    { "word": "不通", "reading": "ふつう", "example": "卒業以来、彼とは音信不通だ。", "meaning": "terputus (komunikasi)", "relatedForms": [] },
+    { "word": "不明", "reading": "ふめい", "example": "事故後、彼の行方は不明のままだ。", "meaning": "tidak diketahui", "relatedForms": [] },
+    { "word": "不良", "reading": "ふりょう", "example": "彼は不良少年として知られていた。", "meaning": "nakal, cacat (品質)", "relatedForms": [] },
+    { "word": "特色", "reading": "とくしょく", "example": "この製品は特色を出すため工夫されている。", "meaning": "ciri khas", "relatedForms": [] },
+    { "word": "特産", "reading": "とくさん", "example": "これはこの地方の特産物だ。", "meaning": "produk khas daerah", "relatedForms": [] },
+    { "word": "特集", "reading": "とくしゅう", "example": "雑誌は環境問題の特集を組んだ。", "meaning": "liputan khusus", "relatedForms": [] },
+    { "word": "特有", "reading": "とくゆう", "example": "これはこの地方特有の習慣だ。", "meaning": "khas, unik (daerah)", "relatedForms": [] },
+    { "word": "世代", "reading": "せだい", "example": "会社では世代交代が進んでいる。", "meaning": "generasi", "relatedForms": [] },
+    { "word": "代理", "reading": "だいり", "example": "彼は社長の代理を務めた。", "meaning": "perwakilan", "relatedForms": [] },
+    { "word": "代用する", "reading": "だいようする", "example": "クッションを枕に代用する。", "meaning": "menggunakan sebagai pengganti", "relatedForms": [] },
+    { "word": "本場", "reading": "ほんば", "example": "イタリア料理を本場で学ぶ。", "meaning": "tempat asal (kuliner/budaya)", "relatedForms": [] },
+    { "word": "市場", "reading": "しじょう", "example": "彼は金融市場に詳しい。", "meaning": "pasar (ekonomi)", "relatedForms": [] },
+    { "word": "立場", "reading": "たちば", "example": "彼は苦しい立場に置かれている。", "meaning": "posisi, situasi", "relatedForms": [] },
+    { "word": "行事", "reading": "ぎょうじ", "example": "学校行事に参加する。", "meaning": "acara (rutin)", "relatedForms": [] },
+    { "word": "人事", "reading": "じんじ", "example": "彼は人事課で働いている。", "meaning": "personalia", "relatedForms": [] },
+    { "word": "事前", "reading": "じぜん", "example": "事前に調べておく。", "meaning": "sebelumnya (persiapan)", "relatedForms": [] },
+    { "word": "主食", "reading": "しゅしょく", "example": "米はこの国の主食だ。", "meaning": "makanan pokok", "relatedForms": [] },
+    { "word": "主体", "reading": "しゅたい", "example": "この職場は女性が主体だ。", "meaning": "mayoritas, inti", "relatedForms": [] },
+    { "word": "主題", "reading": "しゅだい", "example": "この映画の主題歌が好きだ。", "meaning": "tema", "relatedForms": [] },
+    { "word": "野生", "reading": "やせい", "example": "野生動物を保護する活動をしている。", "meaning": "liar", "relatedForms": [] },
+    { "word": "生理", "reading": "せいり", "example": "これは自然な生理現象だ。", "meaning": "fisiologis", "relatedForms": [] },
+    { "word": "生計", "reading": "せいけい", "example": "彼は農業で生計を立てている。", "meaning": "mata pencaharian", "relatedForms": [] },
+    { "word": "生かす", "reading": "いかす", "example": "彼はこれまでの経験を生かしている。", "meaning": "memanfaatkan", "relatedForms": [] },
+    { "word": "作用する", "reading": "さようする", "example": "この薬は速やかに作用する。", "meaning": "bereaksi, berefek", "relatedForms": ["副作用"] },
+    { "word": "用品", "reading": "ようひん", "example": "スポーツ用品を買いに行った。", "meaning": "perlengkapan", "relatedForms": [] },
+    { "word": "所有する", "reading": "しょゆうする", "example": "この土地は私が所有している。", "meaning": "memiliki", "relatedForms": [] },
+    { "word": "長所", "reading": "ちょうしょ", "example": "彼の長所と短所を挙げる。", "meaning": "kelebihan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "本日の講演の＿＿はエコロジーです。", "optionA": "主体", "optionAReading": "しゅたい", "optionB": "主題", "optionBReading": "しゅだい", "answer": "B" },
+      { "question": "その国は世界有数の石油＿＿国である。", "optionA": "所有", "optionAReading": "しょゆう", "optionB": "産出", "optionBReading": "さんしゅつ", "answer": "B" },
+      { "question": "父の＿＿で市役所に介護保険の申請に行った。", "optionA": "代用", "optionAReading": "だいよう", "optionB": "代理", "optionBReading": "だいり", "answer": "B" },
+      { "question": "京都には伝統的な年中＿＿が多くあります。", "optionA": "行事", "optionAReading": "ぎょうじ", "optionB": "人事", "optionBReading": "じんじ", "answer": "A" },
+      { "question": "彼とは大学を卒業して以来、音信＿＿です。", "optionA": "不通", "optionAReading": "ふつう", "optionB": "不明", "optionBReading": "ふめい", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "さんしゅつ", "fixedKanji": "産", "blankPosition": "after", "choices": ["出", "地", "品", "業"], "answer": "出" },
+      { "reading": "とくさん", "fixedKanji": "特", "blankPosition": "after", "choices": ["産", "色", "集", "有"], "answer": "産" },
+      { "reading": "だいよう", "fixedKanji": "代", "blankPosition": "after", "choices": ["用", "理", "金", "行"], "answer": "用" },
+      { "reading": "せいけい", "fixedKanji": "生", "blankPosition": "after", "choices": ["計", "理", "産", "鮮"], "answer": "計" },
+      { "reading": "しょゆう", "fixedKanji": "所", "blankPosition": "after", "choices": ["有", "持", "得", "在"], "answer": "有" }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "week": 4,
+  "day": 6,
+  "title": "新入り・本音・発足",
+  "subtitle": "Kosakata dengan kanji dasar (国・新・土・業・音・発・風・春・台)",
+  "entries": [
+    { "word": "国民", "reading": "こくみん", "example": "これは国民の義務だ。", "meaning": "warga negara", "relatedForms": [] },
+    { "word": "国家", "reading": "こっか", "example": "彼は国家試験に合格した。", "meaning": "negara", "relatedForms": [] },
+    { "word": "国会", "reading": "こっかい", "example": "首相は国会を解散した。", "meaning": "parlemen", "relatedForms": [] },
+    { "word": "国有", "reading": "こくゆう", "example": "これは国有財産だ。", "meaning": "milik negara", "relatedForms": [] },
+    { "word": "母国", "reading": "ぼこく", "example": "彼はついに母国に帰った。", "meaning": "negara asal", "relatedForms": [] },
+    { "word": "帰国", "reading": "きこく", "example": "彼は帰国子女として育った。", "meaning": "kembali ke negara asal", "relatedForms": [] },
+    { "word": "国土", "reading": "こくど", "example": "政府は国土計画を進めている。", "meaning": "wilayah negara", "relatedForms": [] },
+    { "word": "新入り", "reading": "しんいり", "example": "彼は新入りの会員だ。", "meaning": "anggota baru", "relatedForms": [] },
+    { "word": "新入", "reading": "しんにゅう", "example": "新入生が入学した。", "meaning": "orang baru masuk (siswa/pegawai)", "relatedForms": [] },
+    { "word": "新人", "reading": "しんじん", "example": "彼女は新人歌手として注目されている。", "meaning": "orang baru (debut)", "relatedForms": [] },
+    { "word": "土台", "reading": "どだい", "example": "これは家の土台だ。", "meaning": "fondasi", "relatedForms": [] },
+    { "word": "土手", "reading": "どて", "example": "川の土手を歩いた。", "meaning": "tanggul sungai", "relatedForms": [] },
+    { "word": "土砂", "reading": "どしゃ", "example": "大雨で土砂崩れが起きた。", "meaning": "tanah dan pasir (longsor)", "relatedForms": [] },
+    { "word": "業者", "reading": "ぎょうしゃ", "example": "彼は旅行業者として働いている。", "meaning": "pengusaha, penyedia jasa", "relatedForms": [] },
+    { "word": "事業", "reading": "じぎょう", "example": "彼は新しい事業を始めた。", "meaning": "usaha, bisnis", "relatedForms": [] },
+    { "word": "分業する", "reading": "ぶんぎょうする", "example": "チームは分業で仕事をしている。", "meaning": "pembagian kerja", "relatedForms": [] },
+    { "word": "音色", "reading": "ねいろ", "example": "このピアノは澄んだ音色を持っている。", "meaning": "warna suara", "relatedForms": [] },
+    { "word": "本音", "reading": "ほんね", "example": "彼はようやく本音を打ち明けた。", "meaning": "niat sebenarnya", "relatedForms": [] },
+    { "word": "発足する", "reading": "ほっそくする", "example": "新しい組織が発足した。", "meaning": "didirikan, mulai beroperasi", "relatedForms": [] },
+    { "word": "自発", "reading": "じはつ", "example": "彼は自発的に勉強している。", "meaning": "inisiatif sendiri", "relatedForms": [] },
+    { "word": "風習", "reading": "ふうしゅう", "example": "この地域は昔の風習を守っている。", "meaning": "adat istiadat", "relatedForms": [] },
+    { "word": "風土", "reading": "ふうど", "example": "これは日本の風土に合った建築だ。", "meaning": "iklim dan budaya lokal", "relatedForms": [] },
+    { "word": "青春", "reading": "せいしゅん", "example": "彼は青春時代をこの町で過ごした。", "meaning": "masa muda", "relatedForms": [] },
+    { "word": "思春期", "reading": "ししゅんき", "example": "思春期の少年少女は感情が不安定になりやすい。", "meaning": "masa remaja", "relatedForms": [] },
+    { "word": "台無し", "reading": "だいなし", "example": "雨で桜が台無しになった。", "meaning": "rusak, sia-sia", "relatedForms": [] },
+    { "word": "台本", "reading": "だいほん", "example": "俳優は台本を読み込んだ。", "meaning": "naskah", "relatedForms": [] },
+    { "word": "強行する", "reading": "きょうこうする", "example": "政府は増税を強行した。", "meaning": "memaksakan (kebijakan)", "relatedForms": [] },
+    { "word": "正味", "reading": "しょうみ", "example": "正味8時間働く。", "meaning": "bersih, murni (waktu/berat)", "relatedForms": [] },
+    { "word": "有力な", "reading": "ゆうりょくな", "example": "これは有力な政党だ。", "meaning": "berpengaruh", "relatedForms": [] },
+    { "word": "早急", "reading": "そうきゅう", "example": "早急に解決する必要がある。", "meaning": "segera, mendesak", "relatedForms": [] },
+    { "word": "思考", "reading": "しこう", "example": "疲れて思考力が低下した。", "meaning": "pemikiran", "relatedForms": [] },
+    { "word": "口頭", "reading": "こうとう", "example": "口頭で報告する。", "meaning": "lisan", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "次期社長は田中専務だろうという意見が＿＿だ。", "optionA": "正味", "optionAReading": "しょうみ", "optionB": "有力", "optionBReading": "ゆうりょく", "answer": "B" },
+      { "question": "川の＿＿に沿って道路がある。", "optionA": "土手", "optionAReading": "どて", "optionB": "土台", "optionBReading": "どだい", "answer": "A" },
+      { "question": "酒の席でつい＿＿を打ち明けてしまった。", "optionA": "本音", "optionAReading": "ほんね", "optionB": "音色", "optionBReading": "ねいろ", "answer": "A" },
+      { "question": "今年度の＿＿予算は前年を上回った。", "optionA": "国有", "optionAReading": "こくゆう", "optionB": "国家", "optionBReading": "こっか", "answer": "B" },
+      { "question": "新しいプロジェクトを＿＿させた。", "optionA": "発足", "optionAReading": "ほっそく", "optionB": "自発", "optionBReading": "じはつ", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "こくゆう", "fixedKanji": "国", "blankPosition": "after", "choices": ["有", "民", "会", "土"], "answer": "有" },
+      { "reading": "しんにゅう", "fixedKanji": "新", "blankPosition": "after", "choices": ["入", "入り", "人", "規"], "answer": "入" },
+      { "reading": "どしゃ", "fixedKanji": "土", "blankPosition": "after", "choices": ["砂", "台", "手", "地"], "answer": "砂" },
+      { "reading": "ぶんぎょう", "fixedKanji": "分", "blankPosition": "after", "choices": ["業", "担", "配", "割"], "answer": "業" },
+      { "reading": "ふうしゅう", "fixedKanji": "風", "blankPosition": "after", "choices": ["習", "土", "俗", "潮"], "answer": "習" }
+    ]
+  }
+}
