@@ -1,0 +1,51 @@
+{
+  "week": 2,
+  "day": 6,
+  "title": "どんな様子？⑥",
+  "subtitle": "Kata untuk menyatakan tingkat/derajat",
+  "entries": [
+    { "word": "ものすごい", "reading": "ものすごい", "example": "外はものすごい風だ。", "meaning": "luar biasa (kuat/hebat)", "relatedForms": [] },
+    { "word": "おびただしい", "reading": "おびただしい", "example": "おびただしい数の虫が発生した。", "meaning": "sangat banyak", "relatedForms": [] },
+    { "word": "甚だしい", "reading": "はなはだしい", "example": "彼は非常識も甚だしい。", "meaning": "sangat, keterlaluan", "relatedForms": [] },
+    { "word": "目覚ましい", "reading": "めざましい", "example": "この会社は目覚ましい成長を遂げた。", "meaning": "mencolok, luar biasa (kemajuan)", "relatedForms": [] },
+    { "word": "限りなく", "reading": "かぎりなく", "example": "限りなく広がる大草原を眺めた。", "meaning": "tanpa batas", "relatedForms": ["無限に"] },
+    { "word": "果てしない", "reading": "はてしない", "example": "果てしない大地が広がっていた。", "meaning": "tak berujung", "relatedForms": [] },
+    { "word": "極めて", "reading": "きわめて", "example": "これは極めて重要な問題だ。", "meaning": "sangat, amat", "relatedForms": [] },
+    { "word": "断然", "reading": "だんぜん", "example": "その店の客は若い人が断然多い。", "meaning": "jauh lebih, mutlak", "relatedForms": [] },
+    { "word": "めちゃくちゃな", "reading": "めちゃくちゃな", "example": "事故で車がめちゃくちゃに壊れた。", "meaning": "hancur berantakan", "relatedForms": [] },
+    { "word": "完ぺきな", "reading": "かんぺきな", "example": "彼女は完ぺきな演技を見せた。", "meaning": "sempurna", "relatedForms": [] },
+    { "word": "強烈な", "reading": "きょうれつな", "example": "その映画は強烈な印象を残した。", "meaning": "kuat, tajam (kesan)", "relatedForms": [] },
+    { "word": "猛烈な", "reading": "もうれつな", "example": "彼は猛烈に働いている。", "meaning": "keras, sangat gencar", "relatedForms": [] },
+    { "word": "圧倒的な", "reading": "あっとうてきな", "example": "反対意見が圧倒的に多い。", "meaning": "dominan, mayoritas mutlak", "relatedForms": [] },
+    { "word": "極端な", "reading": "きょくたんな", "example": "それは極端な意見だと思う。", "meaning": "ekstrem", "relatedForms": [] },
+    { "word": "大幅な", "reading": "おおはばな", "example": "売上が大幅に増加した。", "meaning": "besar-besaran (peningkatan)", "relatedForms": [] },
+    { "word": "半端な", "reading": "はんぱな", "example": "半端な布が余ってしまった。", "meaning": "tanggung, tidak pas ukuran", "relatedForms": [] },
+    { "word": "中途半端な", "reading": "ちゅうとはんぱな", "example": "工事が中途半端に終わってしまった。", "meaning": "setengah-setengah, tidak tuntas", "relatedForms": [] },
+    { "word": "かすかな", "reading": "かすかな", "example": "遠くから物音がかすかに聞こえる。", "meaning": "samar-samar", "relatedForms": [] },
+    { "word": "若干", "reading": "じゃっかん", "example": "若干名の新入社員を募集している。", "meaning": "beberapa, sedikit", "relatedForms": [] },
+    { "word": "いかなる", "reading": "いかなる", "example": "いかなるときも全力を尽くそう。", "meaning": "apa pun (jenisnya)", "relatedForms": [] },
+    { "word": "あらゆる", "reading": "あらゆる", "example": "彼はあらゆる機会を利用している。", "meaning": "segala, semua", "relatedForms": [] },
+    { "word": "いたるところ", "reading": "いたるところ", "example": "彼はいたるところで歓迎された。", "meaning": "di mana-mana", "relatedForms": [] },
+    { "word": "大げさな", "reading": "おおげさな", "example": "彼の話は大げさだ。", "meaning": "berlebihan", "relatedForms": [] },
+    { "word": "大まかな", "reading": "おおまかな", "example": "要点を大まかに話した。", "meaning": "garis besar, kasar", "relatedForms": [] },
+    { "word": "おおかた", "reading": "おおかた", "example": "講義のおおかたは理解できる。", "meaning": "sebagian besar", "relatedForms": ["だいたい"] },
+    { "word": "おおよそ", "reading": "おおよそ", "example": "費用のおおよその見当をつけた。", "meaning": "kira-kira", "relatedForms": [] },
+    { "word": "おおむね", "reading": "おおむね", "example": "会議ではおおむね賛成の意見が多かった。", "meaning": "pada umumnya, secara garis besar", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "＿＿の人が、彼の意見に賛成した。", "optionA": "おおかた", "optionAReading": "おおかた", "optionB": "おおまか", "optionBReading": "おおまか", "answer": "A" },
+      { "question": "今回、価格を＿＿値下げしました。", "optionA": "大幅に", "optionAReading": "おおはばに", "optionB": "極めて", "optionBReading": "きわめて", "answer": "A" },
+      { "question": "消費税の値上げには＿＿反対します。", "optionA": "断然", "optionAReading": "だんぜん", "optionB": "極端", "optionBReading": "きょくたん", "answer": "A" },
+      { "question": "コンピューターはここ10年で＿＿進歩を遂げた。", "optionA": "おおげさな", "optionAReading": "おおげさな", "optionB": "目覚ましい", "optionBReading": "めざましい", "answer": "B" },
+      { "question": "このあたりは＿＿ところにコンビニがあります。", "optionA": "いたる", "optionAReading": "いたる", "optionB": "限りない", "optionBReading": "かぎりない", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "めざましい", "fixedKanji": "目", "blankPosition": "after", "choices": ["覚ましい", "立たしい", "新しい", "覚める"], "answer": "覚ましい" },
+      { "reading": "きょうれつな", "fixedKanji": "強", "blankPosition": "after", "choices": ["烈な", "力な", "固な", "大な"], "answer": "烈な" },
+      { "reading": "あっとうてきな", "fixedKanji": "圧", "blankPosition": "after", "choices": ["倒的な", "勝的な", "力的な", "迫的な"], "answer": "倒的な" },
+      { "reading": "じゃっかん", "fixedKanji": "若", "blankPosition": "after", "choices": ["干", "少", "分", "若"], "answer": "干" },
+      { "reading": "はてしない", "fixedKanji": "果て", "blankPosition": "after", "choices": ["しない", "はない", "もない", "がない"], "answer": "しない" }
+    ]
+  }
+}

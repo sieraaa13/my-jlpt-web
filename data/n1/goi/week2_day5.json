@@ -1,0 +1,55 @@
+{
+  "week": 2,
+  "day": 5,
+  "title": "どんな様子？⑤",
+  "subtitle": "Kata sifat untuk keadaan dan penampilan (lanjutan)",
+  "entries": [
+    { "word": "何気ない", "reading": "なにげない", "example": "彼は何気ない言葉に傷ついた。", "meaning": "tanpa maksud tertentu, sepintas", "relatedForms": [] },
+    { "word": "あっけない", "reading": "あっけない", "example": "試合はあっけない結末を迎えた。", "meaning": "berakhir cepat/mendadak", "relatedForms": [] },
+    { "word": "みすぼらしい", "reading": "みすぼらしい", "example": "彼はみすぼらしい身なりをしていた。", "meaning": "kumal, lusuh", "relatedForms": [] },
+    { "word": "みっともない", "reading": "みっともない", "example": "そんなみっともない態度はやめなさい。", "meaning": "memalukan", "relatedForms": [] },
+    { "word": "汚らわしい", "reading": "けがらわしい", "example": "彼の汚らわしい行為に嫌気がさした。", "meaning": "menjijikkan, hina", "relatedForms": [] },
+    { "word": "乏しい", "reading": "とぼしい", "example": "わが国は資源に乏しい。", "meaning": "kekurangan, minim", "relatedForms": [] },
+    { "word": "あくどい", "reading": "あくどい", "example": "あの業者はあくどい商売をしている。", "meaning": "licik, curang", "relatedForms": [] },
+    { "word": "危うい", "reading": "あやうい", "example": "このままでは合格が危うい。", "meaning": "genting, terancam", "relatedForms": [] },
+    { "word": "ややこしい", "reading": "ややこしい", "example": "この件はややこしい事情が絡んでいる。", "meaning": "rumit, ribet", "relatedForms": [] },
+    { "word": "素っ気ない", "reading": "そっけない", "example": "彼は素っ気ない返事をした。", "meaning": "dingin, tidak ramah", "relatedForms": [] },
+    { "word": "もろい", "reading": "もろい", "example": "このワイングラスはもろく壊れやすい。", "meaning": "rapuh", "relatedForms": [] },
+    { "word": "紛らわしい", "reading": "まぎらわしい", "example": "この二つの単語は紛らわしい。", "meaning": "membingungkan (mirip)", "relatedForms": [] },
+    { "word": "久しい", "reading": "ひさしい", "example": "彼に久しく会っていない。", "meaning": "sudah lama", "relatedForms": [] },
+    { "word": "たやすい", "reading": "たやすい", "example": "それをたやすく引き受けるわけにはいかない。", "meaning": "mudah, gampang", "relatedForms": [] },
+    { "word": "平たい", "reading": "ひらたい", "example": "川底には平たい石がたくさんあった。", "meaning": "datar, pipih", "relatedForms": [] },
+    { "word": "はかない", "reading": "はかない", "example": "彼ははかない命を惜しんだ。", "meaning": "fana, singkat (hidup)", "relatedForms": [] },
+    { "word": "あやふやな", "reading": "あやふやな", "example": "彼はあやふやな態度をとった。", "meaning": "tidak jelas, samar-samar", "relatedForms": [] },
+    { "word": "うつろな", "reading": "うつろな", "example": "彼はショックでうつろな瞳をしていた。", "meaning": "kosong, hampa (tatapan)", "relatedForms": [] },
+    { "word": "こっけいな", "reading": "こっけいな", "example": "彼のこっけいな姿にみんなが笑った。", "meaning": "lucu, konyol", "relatedForms": [] },
+    { "word": "ちっぽけな", "reading": "ちっぽけな", "example": "それはちっぽけな夢かもしれないが、大切にしたい。", "meaning": "sangat kecil, remeh", "relatedForms": [] },
+    { "word": "ぞんざいな", "reading": "ぞんざいな", "example": "彼はぞんざいな言葉遣いで話す。", "meaning": "kasar, sembarangan", "relatedForms": [] },
+    { "word": "不気味な", "reading": "ぶきみな", "example": "森の奥から不気味な物音がした。", "meaning": "menyeramkan, aneh", "relatedForms": [] },
+    { "word": "不細工な", "reading": "ぶさいくな", "example": "不細工な形の野菜でも味は変わらない。", "meaning": "jelek bentuknya", "relatedForms": [] },
+    { "word": "無茶な", "reading": "むちゃな", "example": "そんな無茶なことを言わないでください。", "meaning": "tidak masuk akal, sembrono", "relatedForms": [] },
+    { "word": "雑な", "reading": "ざつな", "example": "彼の仕事は雑だ。", "meaning": "ceroboh, asal-asalan", "relatedForms": [] },
+    { "word": "露骨な", "reading": "ろこつな", "example": "彼は露骨に嫌がる態度を見せた。", "meaning": "terang-terangan, blak-blakan", "relatedForms": [] },
+    { "word": "念入りな", "reading": "ねんいりな", "example": "彼は念入りな計画を立てた。", "meaning": "dipersiapkan matang-matang", "relatedForms": [] },
+    { "word": "密かな", "reading": "ひそかな", "example": "それは彼の密かな楽しみだった。", "meaning": "diam-diam, rahasia", "relatedForms": [] },
+    { "word": "おろそかな", "reading": "おろそかな", "example": "忙しさのあまり勉強がおろそかになる。", "meaning": "terabaikan", "relatedForms": [] },
+    { "word": "まともな", "reading": "まともな", "example": "彼はやっとまともな仕事に就いた。", "meaning": "layak, benar", "relatedForms": [] },
+    { "word": "ろくな～ない", "reading": "ろくな～ない", "example": "今日は朝からろくに食べていない。", "meaning": "tidak cukup/tidak layak (dengan negasi)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "ドライブの前に＿＿車の点検をした。", "optionA": "まともに", "optionAReading": "まともに", "optionB": "念入りに", "optionBReading": "ねんいりに", "answer": "B" },
+      { "question": "一軒家といっても、二部屋だけの＿＿家です。", "optionA": "ちっぽけな", "optionAReading": "ちっぽけな", "optionB": "とぼしい", "optionBReading": "とぼしい", "answer": "A" },
+      { "question": "子育ては決して＿＿ことではない。", "optionA": "おろそかな", "optionAReading": "おろそかな", "optionB": "たやすい", "optionBReading": "たやすい", "answer": "B" },
+      { "question": "電話から＿＿声が聞こえてきた。", "optionA": "ぶきみな", "optionAReading": "ぶきみな", "optionB": "ぶさいくな", "optionBReading": "ぶさいくな", "answer": "A" },
+      { "question": "生まれて1週間で死ぬという＿＿命の虫。", "optionA": "はかない", "optionAReading": "はかない", "optionB": "あやうい", "optionBReading": "あやうい", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "とぼしい", "fixedKanji": "乏", "blankPosition": "after", "choices": ["しい", "い", "らしい", "やか"], "answer": "しい" },
+      { "reading": "あやうい", "fixedKanji": "危", "blankPosition": "after", "choices": ["うい", "ぶむ", "ない", "のうい"], "answer": "うい" },
+      { "reading": "ひさしい", "fixedKanji": "久", "blankPosition": "after", "choices": ["しい", "しぶり", "遠い", "方"], "answer": "しい" },
+      { "reading": "ろこつな", "fixedKanji": "露", "blankPosition": "after", "choices": ["骨な", "骨に", "出な", "見な"], "answer": "骨な" },
+      { "reading": "ぶきみな", "fixedKanji": "不", "blankPosition": "after", "choices": ["気味な", "細工な", "気嫌な", "格好な"], "answer": "気味な" }
+    ]
+  }
+}
