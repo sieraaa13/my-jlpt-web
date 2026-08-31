@@ -1,0 +1,48 @@
+{
+  "week": 3,
+  "day": 3,
+  "title": "じっくり考えよう",
+  "subtitle": "Kata tiruan keadaan berpola っ...り dan っと",
+  "entries": [
+    { "word": "じっくり", "reading": "じっくり", "example": "彼はじっくり考えてから返事をした。", "meaning": "dengan hati-hati, matang-matang", "relatedForms": [] },
+    { "word": "じっとり", "reading": "じっとり", "example": "緊張でじっとりと汗ばんだ。", "meaning": "berkeringat lembap", "relatedForms": [] },
+    { "word": "しっとり", "reading": "しっとり", "example": "雨上がりの庭がしっとりとぬれている。", "meaning": "lembap, basah halus; tenang (kepribadian)", "relatedForms": [] },
+    { "word": "あっさり", "reading": "あっさり", "example": "このスープはあっさりした味だ。", "meaning": "ringan (rasa); dengan mudah (kalah)", "relatedForms": [] },
+    { "word": "さっぱり", "reading": "さっぱり", "example": "お風呂に入ってさっぱりした。", "meaning": "segar (setelah mandi); sama sekali tidak", "relatedForms": [] },
+    { "word": "がっしり", "reading": "がっしり", "example": "彼はがっしりした体つきをしている。", "meaning": "kekar, kokoh (tubuh)", "relatedForms": [] },
+    { "word": "がっちり", "reading": "がっちり", "example": "この建物はがっちりした造りだ。", "meaning": "kokoh (bangunan); cermat (menabung)", "relatedForms": [] },
+    { "word": "がっくり", "reading": "がっくり", "example": "試験に落ちてがっくりした。", "meaning": "kecewa berat, lemas", "relatedForms": [] },
+    { "word": "きっかり", "reading": "きっかり", "example": "きっかり10時に開店する。", "meaning": "tepat (waktu)", "relatedForms": [] },
+    { "word": "きっぱり", "reading": "きっぱり", "example": "彼はきっぱりと断った。", "meaning": "dengan tegas", "relatedForms": [] },
+    { "word": "ぐったり", "reading": "ぐったり", "example": "疲れてぐったりする。", "meaning": "lunglai, lemas total", "relatedForms": [] },
+    { "word": "くっきり", "reading": "くっきり", "example": "晴れて富士山がくっきり見える。", "meaning": "jelas, tegas terlihat", "relatedForms": [] },
+    { "word": "ぐっしょり", "reading": "ぐっしょり", "example": "汗でぐっしょりぬれる。", "meaning": "basah kuyup", "relatedForms": ["びっしょり"] },
+    { "word": "げっそり", "reading": "げっそり", "example": "病気でげっそりやせる。", "meaning": "kurus drastis", "relatedForms": [] },
+    { "word": "てっきり", "reading": "てっきり", "example": "てっきりみんな知っていると思っていた。", "meaning": "mengira pasti (ternyata salah)", "relatedForms": [] },
+    { "word": "まるっきり", "reading": "まるっきり", "example": "昔とまるっきり違っている。", "meaning": "sama sekali (berbeda)", "relatedForms": [] },
+    { "word": "うんざり", "reading": "うんざり", "example": "その話はもううんざりだ。", "meaning": "bosan, muak", "relatedForms": [] },
+    { "word": "すんなり", "reading": "すんなり", "example": "問題はすんなり解決した。", "meaning": "dengan mudah, lancar", "relatedForms": [] },
+    { "word": "さっと", "reading": "さっと", "example": "テーブルをさっとふく。", "meaning": "dengan cepat sekilas", "relatedForms": [] },
+    { "word": "はっと", "reading": "はっと", "example": "物音にはっとする。", "meaning": "terkejut; tiba-tiba sadar", "relatedForms": [] },
+    { "word": "きちっと", "reading": "きちっと", "example": "引き出しにきちっとしまう。", "meaning": "rapi, teratur", "relatedForms": [] },
+    { "word": "ぎゅっと", "reading": "ぎゅっと", "example": "手をぎゅっと握る。", "meaning": "erat-erat (menggenggam)", "relatedForms": [] },
+    { "word": "ぴたりと", "reading": "ぴたりと", "example": "ぴたりと言い当てる。", "meaning": "tepat sekali (menebak)", "relatedForms": [] },
+    { "word": "ずばり", "reading": "ずばり", "example": "ずばり一言で言ってください。", "meaning": "langsung, tepat sasaran (berkata)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "「たばこ」という言葉は＿＿日本語だと思っていたけど、違うんだね。", "optionA": "きっぱり", "optionAReading": "きっぱり", "optionB": "てっきり", "optionBReading": "てっきり", "answer": "B" },
+      { "question": "彼はそれが自分の犯行であることを＿＿認めた。", "optionA": "あっさり", "optionAReading": "あっさり", "optionB": "がっくり", "optionBReading": "がっくり", "answer": "A" },
+      { "question": "ライトアップで東京タワーが夜空に＿＿浮かび上がった。", "optionA": "くっきり", "optionAReading": "くっきり", "optionB": "きちっと", "optionBReading": "きちっと", "answer": "A" },
+      { "question": "彼女は＿＿立ち上がって、座席を老人に譲った。", "optionA": "さっと", "optionAReading": "さっと", "optionB": "はっと", "optionBReading": "はっと", "answer": "A" },
+      { "question": "新しい携帯電話の使い方が＿＿わからない。", "optionA": "うんざり", "optionAReading": "うんざり", "optionB": "さっぱり", "optionBReading": "さっぱり", "answer": "B" }
+    ],
+    "dragQuestions": [
+      { "reading": "ぐったり", "fixedKanji": "疲れて", "blankPosition": "after", "choices": ["ぐったり", "がっくり", "げっそり", "うんざり"], "answer": "ぐったり" },
+      { "reading": "きっぱり", "fixedKanji": "誘いを", "blankPosition": "after", "choices": ["きっぱり", "きっかり", "ぴたりと", "ずばり"], "answer": "きっぱり" },
+      { "reading": "ぎゅっと", "fixedKanji": "手を", "blankPosition": "after", "choices": ["ぎゅっと", "さっと", "はっと", "きちっと"], "answer": "ぎゅっと" },
+      { "reading": "くっきり", "fixedKanji": "富士山が", "blankPosition": "after", "choices": ["くっきり", "ぐったり", "げっそり", "がっしり"], "answer": "くっきり" },
+      { "reading": "すんなり", "fixedKanji": "問題が", "blankPosition": "after", "choices": ["すんなり", "がっくり", "うんざり", "てっきり"], "answer": "すんなり" }
+    ]
+  }
+}

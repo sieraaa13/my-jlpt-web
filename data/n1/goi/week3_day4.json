@@ -1,0 +1,48 @@
+{
+  "week": 3,
+  "day": 4,
+  "title": "あらかじめ準備しておこう",
+  "subtitle": "Kata keterangan waktu, frekuensi, dan penegasan negatif",
+  "entries": [
+    { "word": "先に", "reading": "さきに", "example": "先に述べたように、状況は変わりつつある。", "meaning": "seperti disebutkan sebelumnya", "relatedForms": [] },
+    { "word": "じきに", "reading": "じきに", "example": "にわか雨だからじきにやむよ。", "meaning": "segera, sebentar lagi", "relatedForms": [] },
+    { "word": "さなか", "reading": "さなか", "example": "暑いさなかに外出するのは避けたい。", "meaning": "di tengah-tengah (kondisi)", "relatedForms": [] },
+    { "word": "とっさに", "reading": "とっさに", "example": "とっさにブレーキを踏んだ。", "meaning": "secara refleks/spontan", "relatedForms": [] },
+    { "word": "不意に", "reading": "ふいに", "example": "不意に訪問されて驚いた。", "meaning": "tiba-tiba, tak terduga", "relatedForms": [] },
+    { "word": "今さら", "reading": "いまさら", "example": "今さらできないと言われても困る。", "meaning": "sekarang ini (sudah terlambat)", "relatedForms": [] },
+    { "word": "今に", "reading": "いまに", "example": "そんなことをしていると、今に後悔しますよ。", "meaning": "suatu saat nanti", "relatedForms": [] },
+    { "word": "今にも", "reading": "いまにも", "example": "今にも雨が降りそうだ。", "meaning": "hampir/sebentar lagi (akan terjadi)", "relatedForms": [] },
+    { "word": "未だに", "reading": "いまだに", "example": "未だにその事件は解決していない。", "meaning": "sampai sekarang masih (belum)", "relatedForms": [] },
+    { "word": "いざ", "reading": "いざ", "example": "いざとなれば、私も働きます。", "meaning": "kalau saatnya tiba", "relatedForms": ["いざという時に"] },
+    { "word": "あらかじめ", "reading": "あらかじめ", "example": "欠席の場合は、あらかじめご連絡ください。", "meaning": "sebelumnya, terlebih dahulu", "relatedForms": [] },
+    { "word": "かねて", "reading": "かねて", "example": "かねて計画していた旅行をする。", "meaning": "sejak lama (direncanakan)", "relatedForms": [] },
+    { "word": "かつて", "reading": "かつて", "example": "かつて住んでいた場所を訪れた。", "meaning": "dahulu, pernah", "relatedForms": [] },
+    { "word": "しょっちゅう", "reading": "しょっちゅう", "example": "しょっちゅう酒を飲む。", "meaning": "sering sekali", "relatedForms": [] },
+    { "word": "絶えず", "reading": "たえず", "example": "絶えず水が流れている。", "meaning": "terus-menerus tanpa henti", "relatedForms": [] },
+    { "word": "再三", "reading": "さいさん", "example": "再三、注意する。", "meaning": "berulang kali", "relatedForms": [] },
+    { "word": "片時も", "reading": "かたときも", "example": "子どもから片時も目が離せない。", "meaning": "sekejap pun (tidak)", "relatedForms": [] },
+    { "word": "四六時中", "reading": "しろくじちゅう", "example": "彼は四六時中、食べている。", "meaning": "sepanjang waktu", "relatedForms": [] },
+    { "word": "時折", "reading": "ときおり", "example": "時折、鳥の鳴き声がする。", "meaning": "sesekali", "relatedForms": [] },
+    { "word": "到底～ない", "reading": "とうてい～ない", "example": "到底間に合わない。", "meaning": "sama sekali tidak (mungkin)", "relatedForms": [] },
+    { "word": "一向に～ない", "reading": "いっこうに～ない", "example": "話が一向に進まない。", "meaning": "sama sekali tidak (maju)", "relatedForms": [] },
+    { "word": "一切～ない", "reading": "いっさい～ない", "example": "私はその事件とは一切関係ない。", "meaning": "sama sekali tidak (terkait)", "relatedForms": [] },
+    { "word": "さっぱり～ない", "reading": "さっぱり～ない", "example": "講義がさっぱりわからない。", "meaning": "sama sekali tidak (paham)", "relatedForms": [] },
+    { "word": "さほど～ない", "reading": "さほど～ない", "example": "今日はさほど寒くない。", "meaning": "tidak terlalu (dingin)", "relatedForms": [] }
+  ],
+  "exercises": {
+    "choiceQuestions": [
+      { "question": "彼女はぐっすり寝ていて、＿＿目を覚ます気配がない。", "optionA": "いっこうに", "optionAReading": "いっこうに", "optionB": "とうてい", "optionBReading": "とうてい", "answer": "A" },
+      { "question": "私は＿＿カセットテープレコーダーを使っている。", "optionA": "いまに", "optionAReading": "いまに", "optionB": "いまだに", "optionBReading": "いまだに", "answer": "B" },
+      { "question": "新タイプの機種ですが、値段は＿＿高くないですよ。", "optionA": "さっぱり", "optionAReading": "さっぱり", "optionB": "さほど", "optionBReading": "さほど", "answer": "B" },
+      { "question": "最初は違和感があるけど、＿＿慣れるよ。", "optionA": "先に", "optionAReading": "さきに", "optionB": "じきに", "optionBReading": "じきに", "answer": "B" },
+      { "question": "妻は＿＿文句を言っている。", "optionA": "四六時中", "optionAReading": "しろくじちゅう", "optionB": "片時も", "optionBReading": "かたときも", "answer": "A" }
+    ],
+    "dragQuestions": [
+      { "reading": "さいさん", "fixedKanji": "再", "blankPosition": "after", "choices": ["三", "四", "度", "再"], "answer": "三" },
+      { "reading": "しろくじちゅう", "fixedKanji": "四六時", "blankPosition": "after", "choices": ["中", "間", "内", "頃"], "answer": "中" },
+      { "reading": "とうてい", "fixedKanji": "到", "blankPosition": "after", "choices": ["底", "達", "来", "着"], "answer": "底" },
+      { "reading": "いっこうに", "fixedKanji": "一", "blankPosition": "after", "choices": ["向に", "切に", "概に", "層に"], "answer": "向に" },
+      { "reading": "いっさい", "fixedKanji": "一", "blankPosition": "after", "choices": ["切", "向", "概", "層"], "answer": "切" }
+    ]
+  }
+}
