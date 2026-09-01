@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 7,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 3 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "3週目の文法、覚えられたかな？",
+        "friend2": "実戦問題で確認してみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "彼女とデートしたのは一度（　　）で、それ以来会っていない。",
+              "options": [
+                { "id": 1, "text": "どころ" },
+                { "id": 2, "text": "きり" },
+                { "id": 3, "text": "だらけ" },
+                { "id": 4, "text": "とおり" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたきり (5日目).",
+              "answer": 2
+            },
+            {
+              "number": 2,
+              "question": "（　　）のあまり、思わず涙がこぼれた。",
+              "options": [
+                { "id": 1, "text": "うれし" },
+                { "id": 2, "text": "うれしい" },
+                { "id": 3, "text": "うれしくて" },
+                { "id": 4, "text": "うれしさ" }
+              ],
+              "hint": "📝 Petunjuk materi: Naな/Vる+あまり (1日目).",
+              "answer": 4
+            },
+            {
+              "number": 3,
+              "question": "（　　）ことに、大切にしていた植物が枯れてしまった。",
+              "options": [
+                { "id": 1, "text": "悲しみ" },
+                { "id": 2, "text": "かわいそう" },
+                { "id": 3, "text": "残念な" },
+                { "id": 4, "text": "さびしさ" }
+              ],
+              "hint": "📝 Petunjuk materi: Naな+ことに (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 4,
+              "question": "長年使っているかばんは、もう傷（　　）だ。",
+              "options": [
+                { "id": 1, "text": "きり" },
+                { "id": 2, "text": "どころ" },
+                { "id": 3, "text": "あまり" },
+                { "id": 4, "text": "だらけ" }
+              ],
+              "hint": "📝 Petunjuk materi: Nだらけ (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 5,
+              "question": "コーチに（　　）とおりに練習しているのに、なかなか上達しない。",
+              "options": [
+                { "id": 1, "text": "言う" },
+                { "id": 2, "text": "指示した" },
+                { "id": 3, "text": "言われた" },
+                { "id": 4, "text": "指示" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたとおりに (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "彼は何度も予定を変更した（　　）、結局会議自体をキャンセルすると言い出した。",
+              "options": [
+                { "id": 1, "text": "きり" },
+                { "id": 2, "text": "一方で" },
+                { "id": 3, "text": "反面" },
+                { "id": 4, "text": "あげく" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたあげく (3日目).",
+              "answer": 4
+            },
+            {
+              "number": 7,
+              "question": "退職は長く悩んだ（　　）決断です。",
+              "options": [
+                { "id": 1, "text": "どおりの" },
+                { "id": 2, "text": "末の" },
+                { "id": 3, "text": "反し" },
+                { "id": 4, "text": "あまりの" }
+              ],
+              "hint": "📝 Petunjuk materi: Vた末の (3日目).",
+              "answer": 2
+            },
+            {
+              "number": 8,
+              "question": "緊張（　　）、彼は言葉が出てこなかった。",
+              "options": [
+                { "id": 1, "text": "なことに" },
+                { "id": 2, "text": "に反して" },
+                { "id": 3, "text": "のあまり" },
+                { "id": 4, "text": "の末" }
+              ],
+              "hint": "📝 Petunjuk materi: Nのあまり (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "情けない（　　）、大事な約束をすっかり忘れてしまった。",
+              "options": [
+                { "id": 1, "text": "ことに" },
+                { "id": 2, "text": "ところ" },
+                { "id": 3, "text": "どころか" },
+                { "id": 4, "text": "末に" }
+              ],
+              "hint": "📝 Petunjuk materi: Aい+ことに (1日目).",
+              "answer": 1
+            },
+            {
+              "number": 10,
+              "question": "頭が痛かったので病院で検査してもらった（　　）、風邪だとわかった。",
+              "options": [
+                { "id": 1, "text": "ところ" },
+                { "id": 2, "text": "とたん" },
+                { "id": 3, "text": "あげく" },
+                { "id": 4, "text": "どころ" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたところ (4日目).",
+              "answer": 1
+            },
+            {
+              "number": 11,
+              "question": "傘を人に貸した（　　）、まだ戻ってきていない。",
+              "options": [
+                { "id": 1, "text": "きり" },
+                { "id": 2, "text": "とたん" },
+                { "id": 3, "text": "ことに" },
+                { "id": 4, "text": "一方" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたきり (5日目).",
+              "answer": 1
+            },
+            {
+              "number": 12,
+              "question": "反対の声（　　）、その道路工事は予定どおり進められた。",
+              "options": [
+                { "id": 1, "text": "に反して" },
+                { "id": 2, "text": "反面" },
+                { "id": 3, "text": "の一方" },
+                { "id": 4, "text": "どころか" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに反して (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 13,
+              "question": "近年の宅地開発で、周辺の田んぼは減る（　　）。",
+              "options": [
+                { "id": 1, "text": "わけがない" },
+                { "id": 2, "text": "わけにはいかない" },
+                { "id": 3, "text": "あげくだ" },
+                { "id": 4, "text": "一方だ" }
+              ],
+              "hint": "📝 Petunjuk materi: Vる一方だ (6日目).",
+              "answer": 4
+            },
+            {
+              "number": 14,
+              "question": "こんな貴重な贈り物を受け取るわけには（　　）。",
+              "options": [
+                { "id": 1, "text": "いけません" },
+                { "id": 2, "text": "いきません" },
+                { "id": 3, "text": "ありません" },
+                { "id": 4, "text": "できません" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるわけにはいかない (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 15,
+              "question": "事情があって少し距離を置いていますが、彼女と別れる（　　）。",
+              "options": [
+                { "id": 1, "text": "一方です" },
+                { "id": 2, "text": "わけです" },
+                { "id": 3, "text": "どころではありません" },
+                { "id": 4, "text": "わけではありません" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるわけではない (2日目).",
+              "answer": 4
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "妹は部屋に＿＿ ＿＿ ★ ＿＿ もう友達と出かけてしまった。",
+              "words": [
+                { "id": 1, "word": "と" },
+                { "id": 2, "word": "戻って" },
+                { "id": 3, "word": "思ったら" },
+                { "id": 4, "word": "来たか" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 17,
+              "question": "こちらは午後3時で、そちらは午前8時ですから、＿＿ ＿＿ ★ ＿＿ ですね。",
+              "words": [
+                { "id": 1, "word": "7時間" },
+                { "id": 2, "word": "時差は" },
+                { "id": 3, "word": "わけ" },
+                { "id": 4, "word": "になる" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 18,
+              "question": "6月なのに暖かい＿＿ ＿＿ ★ ＿＿ います。",
+              "words": [
+                { "id": 1, "word": "着て" },
+                { "id": 2, "word": "寒くて" },
+                { "id": 3, "word": "コートを" },
+                { "id": 4, "word": "どころか" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 19,
+              "question": "夜中に地震で＿＿ ＿＿ ★ ＿＿ ではなかった。",
+              "words": [
+                { "id": 1, "word": "棚のものが落ちたり" },
+                { "id": 2, "word": "睡眠" },
+                { "id": 3, "word": "どころ" },
+                { "id": 4, "word": "して" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 20,
+              "question": "友達に＿＿ ＿＿ ★ ＿＿ のに、待ち合わせ場所が見つからなかった。",
+              "words": [
+                { "id": 1, "word": "とおりに" },
+                { "id": 2, "word": "もらった" },
+                { "id": 3, "word": "教えて" },
+                { "id": 4, "word": "行った" }
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "最近、パソコンの調子がおかしい。使っているとすぐに熱くなるので、少し調べてみることにした。パソコン専門店で検査してもらった [21] 、内部にほこりがたまっているとのことだった。掃除してもらった [22] 、ファンの音が急に静かになった。長年掃除していなかったのだから、ほこりがたまる [23] 。それにしても、こんなに簡単なことに気づかなかったなんて情けない。悩んだ [24] 、思い切って専門店に相談してよかったと思う。放っておいたら、状況はますます悪い方向へ向かう [25] だっただろう。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Belakangan ini, laptopku terasa aneh. Karena cepat panas begitu dipakai, aku memutuskan untuk memeriksanya sedikit. Setelah [21] di toko komputer khusus, ternyata di bagian dalamnya banyak debu menumpuk. [22] dibersihkan, suara kipasnya langsung menjadi tenang. Karena sudah bertahun-tahun tidak dibersihkan, wajar saja debunya menumpuk [23]. Meski begitu, aku merasa payah karena tidak menyadari hal sesederhana itu. Setelah [24] bingung cukup lama, aku merasa lega sudah memberanikan diri berkonsultasi ke toko itu. Kalau dibiarkan saja, keadaannya pasti akan [25] terus memburuk ke arah yang lebih parah."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "検査する一方で" },
+                { "id": 2, "text": "検査したところ" },
+                { "id": 3, "text": "検査したあげく" },
+                { "id": 4, "text": "検査どころか" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "とたん" },
+                { "id": 2, "text": "きり" },
+                { "id": 3, "text": "あげく" },
+                { "id": 4, "text": "反面" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "わけではない" },
+                { "id": 2, "text": "わけがない" },
+                { "id": 3, "text": "わけにはいかない" },
+                { "id": 4, "text": "わけだ" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "あまり" },
+                { "id": 2, "text": "わけで" },
+                { "id": 3, "text": "末" },
+                { "id": 4, "text": "とおり" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "向かうどころではない" },
+                { "id": 2, "text": "向かう一方" },
+                { "id": 3, "text": "向かうわけではない" },
+                { "id": 4, "text": "向かいっぱなし" }
+              ],
+              "answer": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
