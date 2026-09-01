@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 6,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "使用にあたって",
+        "translation": "Sebelum digunakan/pada saat digunakan"
+      },
+      "illustration_text": {
+        "friend1": "長年にわたって、この商品の研究を続けてきました。",
+        "friend2": "ご使用にあたっては、説明書をよくお読みください。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "利用にあたり",
+          "pattern_meaning": "にあたり／にあたって = pada saat/menjelang... (momen penting)",
+          "description_box": {
+            "formula": "Nする + にあたり／にあたって(は) ／ Vるに + あたり／あたって(は) ／ あたってのN",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi pada saat momen penting atau khusus, sering digunakan dalam situasi formal.",
+            "explanation_en": "Shows that something happens at an important or special moment, often used in formal situations."
+          },
+          "examples": [
+            {
+              "jp": "新しい仕事を始めるにあたり、目標を立てた。",
+              "en": "Pada saat memulai pekerjaan baru, aku menetapkan target.",
+              "explanation": "",
+              "highlight": "にあたり"
+            },
+            {
+              "jp": "契約するにあたっては、内容をよく確認してください。",
+              "en": "Pada saat membuat kontrak, mohon periksa isinya dengan baik.",
+              "explanation": "",
+              "highlight": "にあたっては"
+            }
+          ]
+        },
+        {
+          "pattern_title": "資料に沿って",
+          "pattern_meaning": "に沿って = sesuai dengan/mengikuti arah/pedoman...",
+          "description_box": {
+            "formula": "Nに + 沿って／沿い／沿ったN",
+            "explanation": "Menunjukkan bahwa sesuatu dilakukan sesuai dengan pedoman, rencana, harapan, atau arah tertentu.",
+            "explanation_en": "Shows that something is done in accordance with a guideline, plan, wish, or direction."
+          },
+          "examples": [
+            {
+              "jp": "マニュアルに沿って作業を進めてください。",
+              "en": "Silakan lanjutkan pekerjaan sesuai dengan buku panduan.",
+              "explanation": "",
+              "highlight": "に沿って"
+            },
+            {
+              "jp": "お客様のご要望に沿ったプランをご提案します。",
+              "en": "Kami akan mengusulkan rencana yang sesuai dengan permintaan pelanggan.",
+              "explanation": "",
+              "highlight": "に沿った"
+            }
+          ]
+        },
+        {
+          "pattern_title": "開店に先立ち",
+          "pattern_meaning": "に先立ち／に先立って = sebelum.../mendahului...",
+          "description_box": {
+            "formula": "Nする + に先立ち／に先立って ／ Vるに + 先立ち／先立って／先立つN",
+            "explanation": "Menunjukkan bahwa suatu tindakan dilakukan sebelum tindakan lain yang lebih penting atau lebih besar, sering digunakan dalam konteks formal.",
+            "explanation_en": "Shows that an action is done before another more important or larger action, often used in formal contexts."
+          },
+          "examples": [
+            {
+              "jp": "旅行に先立ち、必要な持ち物を確認した。",
+              "en": "Sebelum bepergian, aku memeriksa barang-barang yang diperlukan.",
+              "explanation": "",
+              "highlight": "に先立ち"
+            },
+            {
+              "jp": "式典に先立って、代表者があいさつを述べた。",
+              "en": "Sebelum acara resmi dimulai, perwakilan menyampaikan sambutan.",
+              "explanation": "",
+              "highlight": "に先立って"
+            }
+          ]
+        },
+        {
+          "pattern_title": "広い範囲にわたって",
+          "pattern_meaning": "にわたって／にわたり = meliputi/mencakup seluruh...(rentang waktu atau area)",
+          "description_box": {
+            "formula": "Nに + わたって／わたり／わたるN",
+            "explanation": "Menunjukkan bahwa suatu hal berlangsung atau mencakup seluruh rentang waktu, wilayah, atau jumlah tertentu.",
+            "explanation_en": "Shows that something continues or covers an entire span of time, area, or number."
+          },
+          "examples": [
+            {
+              "jp": "3日間にわたって、国際会議が開かれた。",
+              "en": "Selama 3 hari berturut-turut, konferensi internasional itu diadakan.",
+              "explanation": "",
+              "highlight": "にわたって"
+            },
+            {
+              "jp": "この祭りは50年にわたる歴史を持つ。",
+              "en": "Festival ini memiliki sejarah yang mencakup 50 tahun.",
+              "explanation": "",
+              "highlight": "にわたる"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

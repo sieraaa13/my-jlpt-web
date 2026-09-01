@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 5,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "せざるをえない",
+        "translation": "Terpaksa harus melakukan..."
+      },
+      "illustration_text": {
+        "friend1": "国家試験に合格しなければ資格がもらえないことになっているんだよね。",
+        "friend2": "だから、毎日勉強せざるをえないんだ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "すべきではない",
+          "pattern_meaning": "べきだ/べきではない = seharusnya.../seharusnya tidak... (kewajiban moral)",
+          "description_box": {
+            "formula": "Vる（するべき/すべき）+ べきだ／ではない／だった",
+            "explanation": "Menunjukkan bahwa berdasarkan norma atau penilaian umum, suatu hal seharusnya (atau seharusnya tidak) dilakukan.",
+            "explanation_en": "Shows that based on a norm or general judgment, something should (or should not) be done."
+          },
+          "examples": [
+            {
+              "jp": "約束は必ず守るべきだ。",
+              "en": "Janji itu seharusnya selalu ditepati.",
+              "explanation": "",
+              "highlight": "べきだ"
+            },
+            {
+              "jp": "あんなひどいことを言うべきではなかった。",
+              "en": "Seharusnya aku tidak mengatakan hal seburuk itu.",
+              "explanation": "",
+              "highlight": "べきではなかった"
+            }
+          ]
+        },
+        {
+          "pattern_title": "続けざるをえない",
+          "pattern_meaning": "ざるをえない = terpaksa harus.../tidak ada pilihan selain...",
+          "description_box": {
+            "formula": "Vない形（する→せざるをえない） + ざるをえない",
+            "explanation": "Menunjukkan bahwa meskipun sebenarnya tidak ingin, seseorang terpaksa melakukan sesuatu karena keadaan tidak memungkinkan pilihan lain.",
+            "explanation_en": "Shows that even though one doesn't really want to, they are forced to do something because circumstances leave no other choice."
+          },
+          "examples": [
+            {
+              "jp": "上司の命令だから、従わざるをえない。",
+              "en": "Karena itu perintah atasan, aku terpaksa harus menurutinya.",
+              "explanation": "",
+              "highlight": "ざるをえない"
+            },
+            {
+              "jp": "台風が近づいているので、旅行を中止せざるをえない。",
+              "en": "Karena topan sedang mendekat, terpaksa harus membatalkan perjalanan.",
+              "explanation": "",
+              "highlight": "せざるをえない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行われることになっている",
+          "pattern_meaning": "ことになっている = sudah ditetapkan/sudah menjadi aturan bahwa...",
+          "description_box": {
+            "formula": "Vる／Vない／Nという + ことになっている",
+            "explanation": "Menunjukkan bahwa suatu hal sudah ditentukan atau menjadi aturan/kebiasaan tetap, bukan keputusan pribadi.",
+            "explanation_en": "Shows that something has already been decided or established as a fixed rule or custom, not a personal decision."
+          },
+          "examples": [
+            {
+              "jp": "このビルでは、夜10時以降は入館できないことになっている。",
+              "en": "Di gedung ini sudah ditetapkan bahwa tidak boleh masuk setelah pukul 10 malam.",
+              "explanation": "",
+              "highlight": "ことになっている"
+            },
+            {
+              "jp": "会議は毎週月曜日に行われることになっている。",
+              "en": "Sudah ditetapkan bahwa rapat diadakan setiap hari Senin.",
+              "explanation": "",
+              "highlight": "ことになっている"
+            }
+          ]
+        },
+        {
+          "pattern_title": "言い間違いにすぎない",
+          "pattern_meaning": "にすぎない = hanya sekadar.../tidak lebih dari...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形に + すぎない",
+            "explanation": "Menunjukkan bahwa suatu hal hanya sebatas atau sekadar itu saja, tidak lebih dari yang disebutkan, sering untuk merendahkan atau meminimalkan sesuatu.",
+            "explanation_en": "Shows that something is merely or only to that extent, nothing more, often used to downplay or minimize something."
+          },
+          "examples": [
+            {
+              "jp": "私はただ規則に従っているにすぎない。",
+              "en": "Aku hanya sekadar mengikuti aturan saja.",
+              "explanation": "",
+              "highlight": "にすぎない"
+            },
+            {
+              "jp": "彼の成功はほんの運にすぎないと言う人もいる。",
+              "en": "Ada juga orang yang bilang bahwa keberhasilannya itu hanya sekadar keberuntungan saja.",
+              "explanation": "",
+              "highlight": "にすぎない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
