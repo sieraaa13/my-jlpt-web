@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 7,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 6 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "6週目の文法、やるからにはおぼえたよね？",
+        "friend2": "実戦問題で確認してみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "せっかく企画する（　　）思い出に残るイベントにするつもりです。",
+              "options": [
+                { "id": 1, "text": "以来" },
+                { "id": 2, "text": "からして" },
+                { "id": 3, "text": "だとか" },
+                { "id": 4, "text": "からには" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるからには (1日目).",
+              "answer": 4
+            },
+            {
+              "number": 2,
+              "question": "あんな無責任な業者には、二度と頼む（　　）。",
+              "options": [
+                { "id": 1, "text": "もん" },
+                { "id": 2, "text": "まい" },
+                { "id": 3, "text": "こそ" },
+                { "id": 4, "text": "ことか" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるまい (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 3,
+              "question": "会社側（　　）、社員一人一人の家庭の事情まではなかなか把握できない。",
+              "options": [
+                { "id": 1, "text": "からいえば" },
+                { "id": 2, "text": "からして" },
+                { "id": 3, "text": "からといって" },
+                { "id": 4, "text": "からには" }
+              ],
+              "hint": "📝 Petunjuk materi: Nから言えば (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 4,
+              "question": "明日3時より、市民会館（　　）候補者の討論会があります。",
+              "options": [
+                { "id": 1, "text": "にあたって" },
+                { "id": 2, "text": "に先立ち" },
+                { "id": 3, "text": "において" },
+                { "id": 4, "text": "にかけて" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにおいて (6日目).",
+              "answer": 3
+            },
+            {
+              "number": 5,
+              "question": "初夏から真夏（　　）、この地域は湿気が多くて過ごしにくい。",
+              "options": [
+                { "id": 1, "text": "以来" },
+                { "id": 2, "text": "をはじめに" },
+                { "id": 3, "text": "にかけて" },
+                { "id": 4, "text": "をめぐって" }
+              ],
+              "hint": "📝 Petunjuk materi: N1からN2にかけて (3日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "ストレッチを（　　）、運動を始めてはいけません。",
+              "options": [
+                { "id": 1, "text": "したからには" },
+                { "id": 2, "text": "してからでないと" },
+                { "id": 3, "text": "した以上" },
+                { "id": 4, "text": "しないからといって" }
+              ],
+              "hint": "📝 Petunjuk materi: Vてからでないと (3日目).",
+              "answer": 2
+            },
+            {
+              "number": 7,
+              "question": "弟は要領が悪いが、粘り強さ（　　）だれにも負けない。",
+              "options": [
+                { "id": 1, "text": "からには" },
+                { "id": 2, "text": "にしては" },
+                { "id": 3, "text": "からといって" },
+                { "id": 4, "text": "にかけては" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにかけては (3日目).",
+              "answer": 4
+            },
+            {
+              "number": 8,
+              "question": "団体旅行に参加する（　　）、集合時間だけは守らなければならない。",
+              "options": [
+                { "id": 1, "text": "以上" },
+                { "id": 2, "text": "からといって" },
+                { "id": 3, "text": "にわたり" },
+                { "id": 4, "text": "からみると" }
+              ],
+              "hint": "📝 Petunjuk materi: Vる以上 (1日目).",
+              "answer": 1
+            },
+            {
+              "number": 9,
+              "question": "このカレーは香り（　　）辛そうだ。",
+              "options": [
+                { "id": 1, "text": "からして" },
+                { "id": 2, "text": "をはじめとして" },
+                { "id": 3, "text": "からには" },
+                { "id": 4, "text": "にかわって" }
+              ],
+              "hint": "📝 Petunjuk materi: Nからして (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 10,
+              "question": "都会から来た人（　　）、この田舎の暮らし方は不便に感じるものなのかもしれない。",
+              "options": [
+                { "id": 1, "text": "からには" },
+                { "id": 2, "text": "からして" },
+                { "id": 3, "text": "からみると" },
+                { "id": 4, "text": "からでないと" }
+              ],
+              "hint": "📝 Petunjuk materi: Nから見ると (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 11,
+              "question": "この映画の主人公のモデルは、あの俳優（　　）。",
+              "options": [
+                { "id": 1, "text": "っぽい" },
+                { "id": 2, "text": "にすぎない" },
+                { "id": 3, "text": "かのようだ" },
+                { "id": 4, "text": "に相違ない" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに相違ない (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 12,
+              "question": "国際社会（　　）日本の立場を考えなければならない。",
+              "options": [
+                { "id": 1, "text": "をめぐる" },
+                { "id": 2, "text": "にかけて" },
+                { "id": 3, "text": "における" },
+                { "id": 4, "text": "に対する" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにおける (6日目).",
+              "answer": 3
+            },
+            {
+              "number": 13,
+              "question": "本校ではフランス語（　　）とする5ヵ国語が学べます。",
+              "options": [
+                { "id": 1, "text": "からして" },
+                { "id": 2, "text": "をめぐり" },
+                { "id": 3, "text": "をはじめ" },
+                { "id": 4, "text": "において" }
+              ],
+              "hint": "📝 Petunjuk materi: Nをはじめとする (6日目).",
+              "answer": 3
+            },
+            {
+              "number": 14,
+              "question": "今朝の地震は震度2だった（　　）。",
+              "options": [
+                { "id": 1, "text": "こと" },
+                { "id": 2, "text": "とか" },
+                { "id": 3, "text": "ことか" },
+                { "id": 4, "text": "ものだ" }
+              ],
+              "hint": "📝 Petunjuk materi: とか (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 15,
+              "question": "支えるということは、支えられるということ（　　）。",
+              "options": [
+                { "id": 1, "text": "にほかならない" },
+                { "id": 2, "text": "よりほかない" },
+                { "id": 3, "text": "になっている" },
+                { "id": 4, "text": "だけのことはある" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにほかならない (5日目).",
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "彼が正しいのは事実だから、＿＿ ＿＿ ★ ＿＿ 。",
+              "words": [
+                { "id": 1, "word": "ほか" },
+                { "id": 2, "word": "より" },
+                { "id": 3, "word": "従う" },
+                { "id": 4, "word": "ない" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 17,
+              "question": "彼女は聞く練習もせずに、ただ単語をぼんやり眺めているだけだ。＿＿ ＿＿ ★ ＿＿ きまっている。",
+              "words": [
+                { "id": 1, "word": "に" },
+                { "id": 2, "word": "覚えられ" },
+                { "id": 3, "word": "ない" },
+                { "id": 4, "word": "そんなんじゃ" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 18,
+              "question": "早起きするのはよいことだ。しかし、＿＿ ＿＿ ★ ＿＿ 体を壊してしまう。",
+              "words": [
+                { "id": 1, "word": "からといって" },
+                { "id": 2, "word": "もったいない" },
+                { "id": 3, "word": "寝るのが" },
+                { "id": 4, "word": "睡眠時間を削って" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 19,
+              "question": "回答は任意です。回答＿＿ ＿＿ ★ ＿＿ ありません。",
+              "words": [
+                { "id": 1, "word": "すまいか" },
+                { "id": 2, "word": "悩むことは" },
+                { "id": 3, "word": "などと" },
+                { "id": 4, "word": "しようか" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 20,
+              "question": "友人が陰で自分を悪く言っているのを＿＿ ＿＿ ★ ＿＿ 学校に来なくなった。",
+              "words": [
+                { "id": 1, "word": "以来" },
+                { "id": 2, "word": "彼女は" },
+                { "id": 3, "word": "聞いて" },
+                { "id": 4, "word": "しまって" }
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "この村では10月の中旬から下旬 [21] 、収穫祭が開かれます。けれども、祭りがある [22] 、農業をしている人が多いわけではありません。野菜をどこかから仕入れて [23] 祭りはできないのですが、最近はこの祭りが話題になって、全国有数の生産量を誇る隣町 [24] 、周辺の農村地帯から野菜が集まるようになったそうです。今では、50種類1万個とその量の多さにかけては、県内1、2位を争うほどです。そういえば、野菜の直売で有名な海外の町と姉妹関係に [25] 。この祭りにかける村の意気込みはますます強くなっていきそうです。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Di desa ini, mulai [21] pertengahan hingga akhir bulan Oktober, festival panen diadakan. Namun, bukan berarti [22] karena ada festival, banyak warga yang bertani. Kalau sayurannya tidak [23] didatangkan dulu dari suatu tempat, festivalnya tidak bisa diselenggarakan, tapi belakangan ini festival ini menjadi bahan pembicaraan, sehingga sayuran mulai berdatangan dari desa-desa pertanian sekitar, dimulai [24] dari kota tetangga yang terkenal dengan hasil panennya nomor satu di negeri ini. Sekarang, dengan 50 jenis dan 10 ribu buah sayuran, dalam hal banyaknya saja festival ini bisa bersaing di posisi 1 atau 2 se-provinsi. Ngomong-ngomong, katanya [25] desa ini juga menjalin hubungan kota kembar dengan sebuah kota di luar negeri yang terkenal dengan penjualan langsung sayurannya. Semangat desa ini terhadap festival sepertinya akan semakin kuat ke depannya."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "にわたって" },
+                { "id": 2, "text": "にかけて" },
+                { "id": 3, "text": "にあたって" },
+                { "id": 4, "text": "につれて" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "からすると" },
+                { "id": 2, "text": "からには" },
+                { "id": 3, "text": "からして" },
+                { "id": 4, "text": "からといって" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "仕入れた折には" },
+                { "id": 2, "text": "仕入れ以来" },
+                { "id": 3, "text": "仕入れてからでないと" },
+                { "id": 4, "text": "仕入れる以上" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "にて" },
+                { "id": 2, "text": "をめぐって" },
+                { "id": 3, "text": "において" },
+                { "id": 4, "text": "をはじめ" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "あるのだとか" },
+                { "id": 2, "text": "あるまい" },
+                { "id": 3, "text": "あるものだ" },
+                { "id": 4, "text": "あってこそ" }
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
