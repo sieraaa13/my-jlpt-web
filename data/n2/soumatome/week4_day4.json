@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 4,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "知りつつ",
+        "translation": "Meski tahu, tetap saja..."
+      },
+      "illustration_text": {
+        "friend1": "自然が失われつつあることを知りながら、開発を進めるんだね。",
+        "friend2": "知らないくせして口を出す人よりはましだと思うよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "知りながら",
+          "pattern_meaning": "ながら(も) = meskipun.../walaupun sudah tahu..., tetap saja...",
+          "description_box": {
+            "formula": "N／Naな／Aい／Vます形 + ながら(も)",
+            "explanation": "Menunjukkan pertentangan, yaitu meskipun suatu keadaan atau fakta diketahui atau berlaku, hal yang berlawanan tetap terjadi.",
+            "explanation_en": "Shows a contrast, meaning even though a certain state or fact is known or true, the opposite still happens."
+          },
+          "examples": [
+            {
+              "jp": "危険だと知りながら、その道を通った。",
+              "en": "Meski tahu itu berbahaya, aku tetap melewati jalan itu.",
+              "explanation": "",
+              "highlight": "知りながら"
+            },
+            {
+              "jp": "狭いながらも居心地のいい部屋だ。",
+              "en": "Meski sempit, ini kamar yang nyaman untuk ditinggali.",
+              "explanation": "",
+              "highlight": "ながらも"
+            }
+          ]
+        },
+        {
+          "pattern_title": "忙しいと言いつつ",
+          "pattern_meaning": "つつ(も) = walaupun.../sambil... (ungkapan formal dari ながら)",
+          "description_box": {
+            "formula": "Vます形 + つつ(も) + V",
+            "explanation": "Ungkapan formal yang setara dengan ながら(も), menunjukkan pertentangan antara dua hal.",
+            "explanation_en": "A formal expression equivalent to ながら(も), showing a contrast between two things."
+          },
+          "examples": [
+            {
+              "jp": "健康に悪いと知りつつ、たばこをやめられない。",
+              "en": "Walaupun tahu itu buruk bagi kesehatan, aku tetap tidak bisa berhenti merokok.",
+              "explanation": "",
+              "highlight": "知りつつ"
+            },
+            {
+              "jp": "申し訳ないと思いつつ、断ることにした。",
+              "en": "Walaupun merasa tidak enak, aku tetap memutuskan untuk menolak.",
+              "explanation": "",
+              "highlight": "思いつつ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "進歩しつつある",
+          "pattern_meaning": "つつある = sedang berlangsung/sedang dalam proses... (ungkapan formal dari ている)",
+          "description_box": {
+            "formula": "Vます形 + つつある",
+            "explanation": "Ungkapan formal yang setara dengan ている, menunjukkan bahwa suatu perubahan sedang berlangsung secara bertahap.",
+            "explanation_en": "A formal expression equivalent to ている, showing that a change is gradually taking place."
+          },
+          "examples": [
+            {
+              "jp": "地球の気温は年々上昇しつつある。",
+              "en": "Suhu bumi terus meningkat dari tahun ke tahun.",
+              "explanation": "",
+              "highlight": "しつつある"
+            },
+            {
+              "jp": "被災地の復興は着実に進みつつある。",
+              "en": "Pemulihan daerah bencana terus berjalan dengan mantap.",
+              "explanation": "",
+              "highlight": "つつある"
+            }
+          ]
+        },
+        {
+          "pattern_title": "知らないくせして",
+          "pattern_meaning": "くせして = padahal.../walaupun begitu... (nada mencela, versi percakapan dari くせに)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + くせして",
+            "explanation": "Menunjukkan rasa mencela atau tidak setuju karena suatu perilaku tidak sesuai dengan keadaan sebenarnya. Merupakan ungkapan percakapan dari くせに.",
+            "explanation_en": "Shows a feeling of blame or disapproval because a behavior doesn't match the actual situation. A conversational version of くせに."
+          },
+          "examples": [
+            {
+              "jp": "自分だってできないくせして、人にえらそうに言うな。",
+              "en": "Padahal dirimu sendiri juga tidak bisa, jangan sok menggurui orang lain.",
+              "explanation": "",
+              "highlight": "くせして"
+            },
+            {
+              "jp": "子どものくせして、生意気な口をきくな。",
+              "en": "Padahal masih anak-anak, jangan bicara sok tahu begitu.",
+              "explanation": "",
+              "highlight": "くせして"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

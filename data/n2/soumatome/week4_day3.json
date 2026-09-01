@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 3,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "期待にこたえて",
+        "translation": "Menjawab harapan"
+      },
+      "illustration_text": {
+        "friend1": "みんなの期待にこたえて、彼女は優勝したね。",
+        "friend2": "目上の人に対しても、いつも礼儀正しいしね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "客の意見にこたえて",
+          "pattern_meaning": "にこたえて = untuk memenuhi/menjawab...",
+          "description_box": {
+            "formula": "Nに + こたえて／こたえ／こたえるN",
+            "explanation": "Menunjukkan bahwa suatu tindakan dilakukan untuk memenuhi harapan, permintaan, atau keinginan pihak lain.",
+            "explanation_en": "Shows that an action is taken to fulfill someone else's expectation, request, or wish."
+          },
+          "examples": [
+            {
+              "jp": "住民の要望にこたえて、公園を新しく整備した。",
+              "en": "Untuk memenuhi permintaan warga, taman itu ditata ulang menjadi baru.",
+              "explanation": "",
+              "highlight": "にこたえて"
+            },
+            {
+              "jp": "ファンの声援にこたえる演奏を届けたい。",
+              "en": "Aku ingin menyuguhkan penampilan musik yang menjawab dukungan para penggemar.",
+              "explanation": "",
+              "highlight": "にこたえる"
+            }
+          ]
+        },
+        {
+          "pattern_title": "目上の人に対して",
+          "pattern_meaning": "に対して = terhadap.../berlawanan dengan... (menunjukkan objek atau kontras)",
+          "description_box": {
+            "formula": "Nに + 対して／対し／対しては／対しても／対するN",
+            "explanation": "Menunjukkan objek dari suatu sikap atau tindakan, atau menunjukkan kontras antara dua hal yang berlawanan.",
+            "explanation_en": "Shows the target of an attitude or action, or shows a contrast between two opposing things."
+          },
+          "examples": [
+            {
+              "jp": "初対面の人に対して、失礼な態度をとってはいけない。",
+              "en": "Kita tidak boleh bersikap tidak sopan terhadap orang yang baru pertama kali ditemui.",
+              "explanation": "",
+              "highlight": "に対して"
+            },
+            {
+              "jp": "兄が活発なのに対し、弟はおとなしい性格だ。",
+              "en": "Berlawanan dengan kakaknya yang aktif, adiknya bersifat pendiam.",
+              "explanation": "",
+              "highlight": "のに対し"
+            }
+          ]
+        },
+        {
+          "pattern_title": "法律により",
+          "pattern_meaning": "により／による = melalui/karena/berdasarkan... (ungkapan formal dari によって)",
+          "description_box": {
+            "formula": "Nに + より／よるN",
+            "explanation": "Ungkapan formal untuk menyatakan sarana, dasar, sebab, atau kondisi tertentu, sama dengan によって.",
+            "explanation_en": "A formal expression for a means, basis, cause, or condition, equivalent to によって."
+          },
+          "examples": [
+            {
+              "jp": "新しい規則により、営業時間が変更されました。",
+              "en": "Berdasarkan aturan baru, jam operasional telah diubah.",
+              "explanation": "",
+              "highlight": "により"
+            },
+            {
+              "jp": "台風による停電が各地で発生している。",
+              "en": "Pemadaman listrik akibat topan terjadi di berbagai daerah.",
+              "explanation": "",
+              "highlight": "による"
+            }
+          ]
+        },
+        {
+          "pattern_title": "事件にかかわって",
+          "pattern_meaning": "にかかわって = terlibat dengan/berkaitan dengan... (biasanya hal penting)",
+          "description_box": {
+            "formula": "Nに + かかわって／かかわり／かかわる。／かかわるN",
+            "explanation": "Menunjukkan bahwa sesuatu terlibat atau berkaitan erat dengan hal lain, sering digunakan untuk hal yang penting seperti nyawa atau kehormatan.",
+            "explanation_en": "Shows that something is closely involved or connected with something else, often used for important matters like life or honor."
+          },
+          "examples": [
+            {
+              "jp": "彼は環境問題にかかわる仕事をしている。",
+              "en": "Dia bekerja di bidang yang berkaitan dengan masalah lingkungan.",
+              "explanation": "",
+              "highlight": "にかかわる"
+            },
+            {
+              "jp": "命にかかわる事故だったが、幸い無事だった。",
+              "en": "Itu kecelakaan yang menyangkut nyawa, tapi untungnya selamat.",
+              "explanation": "",
+              "highlight": "にかかわる"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
