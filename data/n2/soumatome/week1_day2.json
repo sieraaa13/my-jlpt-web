@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 2,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "空を飛びたいんだもの",
+        "translation": "Abisnya, aku ingin terbang di langit"
+      },
+      "illustration_text": {
+        "friend1": "生まれ変われるものなら、鳥になりたい。",
+        "friend2": "だって、空を飛びたいんだもん。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "帰れるものなら",
+          "pattern_meaning": "ものなら／もんなら = seandainya bisa... (padahal sebenarnya sulit/tidak mungkin)",
+          "description_box": {
+            "formula": "V(可能形)+ものなら／もんなら",
+            "explanation": "Mengandaikan sesuatu yang sebenarnya sulit atau tidak mungkin dilakukan, diucapkan dengan nada berandai-andai.",
+            "explanation_en": "Expresses a hypothetical wish for something that is actually difficult or impossible."
+          },
+          "examples": [
+            {
+              "jp": "戻れるものなら、あの日に戻りたい。",
+              "en": "Kalau saja bisa, aku ingin kembali ke hari itu.",
+              "explanation": "",
+              "highlight": "戻れるものなら"
+            },
+            {
+              "jp": "できるもんなら、今すぐ会社を辞めたい。",
+              "en": "Kalau memang bisa, aku ingin langsung berhenti kerja sekarang.",
+              "explanation": "",
+              "highlight": "できるもんなら"
+            }
+          ]
+        },
+        {
+          "pattern_title": "暑いものだから",
+          "pattern_meaning": "ものだから／もんだから = karena... (alasan, agak defensif)",
+          "description_box": {
+            "formula": "V/A普通形+ものだから／もんだから ／ Naな+ものだから ／ Nな+ものだから",
+            "explanation": "Menjelaskan alasan atau sebab dengan nada agak membela diri, sering dipakai untuk meminta maaf.",
+            "explanation_en": "Explains a reason in a somewhat defensive tone, often used when apologizing."
+          },
+          "examples": [
+            {
+              "jp": "急いでいたものだから、あいさつもせずに帰ってしまった。",
+              "en": "Karena sedang buru-buru, aku pulang tanpa sempat pamit.",
+              "explanation": "",
+              "highlight": "ものだから"
+            },
+            {
+              "jp": "初めての場所だったもんだから、道に迷ってしまった。",
+              "en": "Karena itu tempat yang baru pertama kali kudatangi, aku jadi tersesat.",
+              "explanation": "",
+              "highlight": "もんだから"
+            }
+          ]
+        },
+        {
+          "pattern_title": "知らなかったんだもの",
+          "pattern_meaning": "（ん）だもの／（なん）だもん = karena... (nada manja/membela diri, dipakai wanita/anak)",
+          "description_box": {
+            "formula": "普通形+（ん）だもの／（なん）だもん",
+            "explanation": "Alasan yang diungkapkan dengan nada manja atau membela diri, biasa dipakai oleh wanita atau anak-anak.",
+            "explanation_en": "A reason expressed in a childish or self-defensive tone, often used by women or children."
+          },
+          "examples": [
+            {
+              "jp": "だって、まだ準備ができていないんだもの。",
+              "en": "Abisnya, aku belum selesai bersiap-siap.",
+              "explanation": "",
+              "highlight": "だもの"
+            },
+            {
+              "jp": "食べたくないよ。おなかがいっぱいなんだもん。",
+              "en": "Aku nggak mau makan. Abisnya perutku udah kenyang.",
+              "explanation": "",
+              "highlight": "なんだもん"
+            }
+          ]
+        },
+        {
+          "pattern_title": "持っているものの",
+          "pattern_meaning": "ものの = walaupun.../meskipun... (hasilnya tidak sesuai harapan)",
+          "description_box": {
+            "formula": "普通形+ものの ／ Naな+ものの ／ Nである+ものの",
+            "explanation": "Menunjukkan bahwa meskipun kondisi pertama terpenuhi, kenyataannya tidak sesuai harapan atau tidak berjalan mulus.",
+            "explanation_en": "Shows that although the first condition is met, the actual result doesn't match expectations."
+          },
+          "examples": [
+            {
+              "jp": "資格は取ったものの、まだ実務経験がない。",
+              "en": "Meskipun sudah dapat sertifikatnya, aku belum punya pengalaman kerja nyata.",
+              "explanation": "",
+              "highlight": "ものの"
+            },
+            {
+              "jp": "説明は聞いたものの、よく理解できなかった。",
+              "en": "Meskipun sudah mendengar penjelasannya, aku masih belum begitu paham.",
+              "explanation": "",
+              "highlight": "ものの"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

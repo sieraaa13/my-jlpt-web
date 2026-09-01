@@ -1,0 +1,136 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 1,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "熱っぽい",
+        "translation": "Aku merasa agak demam"
+      },
+      "illustration_text": {
+        "friend1": "なんか熱っぽくて、体がだるいんだ。",
+        "friend2": "この時期は風邪を引きがちだから、無理しないでね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "さびしげ",
+          "pattern_meaning": "さびしげ = tampak kesepian | Aい／Naげ／Vた形+げ = kesan dari luar",
+          "description_box": {
+            "formula": "Aい→Aげ ／ Naげ ／ Vた形+げ",
+            "explanation": "Menunjukkan kesan bahwa seseorang atau sesuatu tampak seperti itu dari luar (raut wajah, sikap, suasana), berdasarkan pengamatan pembicara.",
+            "explanation_en": "Shows the impression that someone/something looks a certain way from the outside."
+          },
+          "examples": [
+            {
+              "jp": "彼女は自信ありげな顔で発表を始めた。",
+              "en": "Dia mulai presentasi dengan wajah yang tampak percaya diri.",
+              "explanation": "",
+              "highlight": "自信ありげ"
+            },
+            {
+              "jp": "その犬は寂しげに玄関の前で座っていた。",
+              "en": "Anjing itu duduk di depan pintu dengan tampak kesepian.",
+              "explanation": "",
+              "highlight": "寂しげに"
+            },
+            {
+              "jp": "彼は何か言いたげな表情をしていた。",
+              "en": "Dia menunjukkan ekspresi seperti ingin mengatakan sesuatu.",
+              "explanation": "",
+              "highlight": "言いたげな"
+            }
+          ]
+        },
+        {
+          "pattern_title": "病気がち",
+          "pattern_meaning": "がち = cenderung/sering terjadi (biasanya bernuansa negatif)",
+          "description_box": {
+            "formula": "N+がち ／ Vます形+がち",
+            "explanation": "Menunjukkan kecenderungan suatu hal terjadi berulang kali, biasanya dengan nuansa negatif atau kurang diinginkan.",
+            "explanation_en": "Indicates a tendency for something to happen repeatedly, usually with a negative nuance."
+          },
+          "examples": [
+            {
+              "jp": "この時期は曇りがちな天気が続く。",
+              "en": "Pada musim ini cuaca cenderung mendung terus-menerus.",
+              "explanation": "",
+              "highlight": "曇りがち"
+            },
+            {
+              "jp": "彼は最近、会議を欠席がちだ。",
+              "en": "Akhir-akhir ini dia sering absen dari rapat.",
+              "explanation": "",
+              "highlight": "欠席がちだ"
+            },
+            {
+              "jp": "一人暮らしを始めてから、食事が偏りがちになった。",
+              "en": "Sejak mulai tinggal sendiri, pola makanku jadi cenderung tidak seimbang.",
+              "explanation": "",
+              "highlight": "偏りがち"
+            }
+          ]
+        },
+        {
+          "pattern_title": "忘れっぽい",
+          "pattern_meaning": "っぽい = ke-...-an, cenderung/kesan tertentu (sering bernuansa negatif)",
+          "description_box": {
+            "formula": "N+っぽい ／ Vます形+っぽい ／ A語幹+っぽい",
+            "explanation": "Menunjukkan kesan atau kecenderungan suatu sifat/keadaan, sering dipakai untuk hal yang agak negatif atau kesan visual.",
+            "explanation_en": "Shows an impression or tendency of a certain quality, often used negatively or visually."
+          },
+          "examples": [
+            {
+              "jp": "彼は最近、怒りっぽくなった。",
+              "en": "Akhir-akhir ini dia jadi mudah marah.",
+              "explanation": "",
+              "highlight": "怒りっぽく"
+            },
+            {
+              "jp": "このシャツ、生地が安っぽく見えるね。",
+              "en": "Bahan kemeja ini kelihatan murahan, ya.",
+              "explanation": "",
+              "highlight": "安っぽく"
+            },
+            {
+              "jp": "祖父は年を取って、忘れっぽくなった。",
+              "en": "Kakek jadi pelupa seiring bertambahnya usia.",
+              "explanation": "",
+              "highlight": "忘れっぽく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "疲れ気味",
+          "pattern_meaning": "気味 = agak/sedikit mengarah ke suatu keadaan",
+          "description_box": {
+            "formula": "Vます形+気味 ／ N+気味",
+            "explanation": "Menunjukkan kondisi yang sedikit mengarah ke suatu keadaan, biasanya keadaan yang kurang menyenangkan.",
+            "explanation_en": "Indicates a condition slightly leaning toward a certain (usually unpleasant) state."
+          },
+          "examples": [
+            {
+              "jp": "最近、寝不足気味で集中できない。",
+              "en": "Akhir-akhir ini agak kurang tidur, jadi susah konsentrasi.",
+              "explanation": "",
+              "highlight": "寝不足気味"
+            },
+            {
+              "jp": "彼は試験前で緊張気味だった。",
+              "en": "Dia tampak sedikit gugup menjelang ujian.",
+              "explanation": "",
+              "highlight": "緊張気味"
+            },
+            {
+              "jp": "最近、残業続きで疲れ気味だ。",
+              "en": "Akhir-akhir ini agak lelah karena terus-menerus lembur.",
+              "explanation": "",
+              "highlight": "疲れ気味"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
