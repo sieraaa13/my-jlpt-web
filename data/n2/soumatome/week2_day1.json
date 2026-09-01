@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 1,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "がんばったかいがあって",
+        "translation": "Usahaku membuahkan hasil"
+      },
+      "illustration_text": {
+        "friend1": "がんばったかいがあって、試験に合格したよ。",
+        "friend2": "手術してまでやせたいとは思わないな。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "努力のかいがあって",
+          "pattern_meaning": "かいがある = ada hasil/balasan dari usaha yang dilakukan",
+          "description_box": {
+            "formula": "Vる／Vた／Nの + かいがある ／ かい(が)あって",
+            "explanation": "Menunjukkan bahwa usaha atau tindakan yang dilakukan membuahkan hasil yang sepadan.",
+            "explanation_en": "Shows that an effort or action paid off with a fitting result."
+          },
+          "examples": [
+            {
+              "jp": "毎日練習したかいがあって、大会で優勝できた。",
+              "en": "Berkat latihan setiap hari, akhirnya bisa juara di kompetisi.",
+              "explanation": "",
+              "highlight": "かいがあって"
+            },
+            {
+              "jp": "長年の努力のかいがあって、ついに独立して店を持てた。",
+              "en": "Berkat usaha bertahun-tahun, akhirnya bisa mandiri dan punya toko sendiri.",
+              "explanation": "",
+              "highlight": "かいがあって"
+            }
+          ]
+        },
+        {
+          "pattern_title": "手術のかいもなく",
+          "pattern_meaning": "かいがない = sia-sia, tak ada hasil dari usaha yang dilakukan",
+          "description_box": {
+            "formula": "Vた／Nの + かいがない ／ かい(も)なく〜",
+            "explanation": "Menunjukkan bahwa usaha yang dilakukan sia-sia, tidak membuahkan hasil yang diharapkan.",
+            "explanation_en": "Shows that the effort made was in vain, without the hoped-for result."
+          },
+          "examples": [
+            {
+              "jp": "手術のかいもなく、患者は亡くなってしまった。",
+              "en": "Meski sudah dioperasi, pasiennya tetap meninggal.",
+              "explanation": "",
+              "highlight": "かいもなく"
+            },
+            {
+              "jp": "必死に呼びかけたかいもなく、彼は戻ってこなかった。",
+              "en": "Meski sudah memanggil mati-matian, dia tetap tidak kembali.",
+              "explanation": "",
+              "highlight": "かいもなく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "やりがい",
+          "pattern_meaning": "がい = worth doing, layak dilakukan",
+          "description_box": {
+            "formula": "Vます形 + がい",
+            "explanation": "Menunjukkan bahwa suatu tindakan terasa berharga atau layak untuk dilakukan.",
+            "explanation_en": "Shows that an action feels worthwhile or worth doing."
+          },
+          "examples": [
+            {
+              "jp": "この仕事はやりがいを感じる。",
+              "en": "Aku merasa pekerjaan ini layak diperjuangkan.",
+              "explanation": "",
+              "highlight": "やりがい"
+            },
+            {
+              "jp": "彼女は教えがいのある生徒だ。",
+              "en": "Dia murid yang menyenangkan untuk diajar.",
+              "explanation": "",
+              "highlight": "教えがい"
+            }
+          ]
+        },
+        {
+          "pattern_title": "借金してまで/借金までして",
+          "pattern_meaning": "てまで(も) = sampai-sampai melakukan..., menunjukkan keterkejutan",
+          "description_box": {
+            "formula": "Vてまで(も) ／ Nまで Vて",
+            "explanation": "Menunjukkan keterkejutan atau keheranan pembicara karena seseorang melakukan sesuatu yang ekstrem demi suatu hal.",
+            "explanation_en": "Shows the speaker's surprise that someone goes to such extremes for something."
+          },
+          "examples": [
+            {
+              "jp": "健康を害してまで働く必要はない。",
+              "en": "Tidak perlu sampai merusak kesehatan demi bekerja.",
+              "explanation": "",
+              "highlight": "してまで"
+            },
+            {
+              "jp": "友達にうそをついてまで得をしたくない。",
+              "en": "Aku tidak mau untung sampai harus berbohong pada teman.",
+              "explanation": "",
+              "highlight": "ついてまで"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

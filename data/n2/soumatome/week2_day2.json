@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 2,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "ありえない",
+        "translation": "Tidak mungkin terjadi"
+      },
+      "illustration_text": {
+        "friend1": "数え切れないほどの借金がある夢を見たんだ。",
+        "friend2": "……それはありえないよ！"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "読みかける",
+          "pattern_meaning": "かける = mulai melakukan tapi belum selesai (setengah jalan)",
+          "description_box": {
+            "formula": "Vます形 + かける ／ かけの N ／ かけだ",
+            "explanation": "Menunjukkan bahwa suatu tindakan sudah dimulai tetapi belum selesai sepenuhnya.",
+            "explanation_en": "Shows that an action has started but is not yet finished."
+          },
+          "examples": [
+            {
+              "jp": "机の上に読みかけの雑誌が置いてある。",
+              "en": "Di atas meja ada majalah yang baru dibaca setengah.",
+              "explanation": "",
+              "highlight": "読みかけ"
+            },
+            {
+              "jp": "彼女は何か言いかけてやめた。",
+              "en": "Dia mulai mengatakan sesuatu lalu berhenti.",
+              "explanation": "",
+              "highlight": "言いかけて"
+            }
+          ]
+        },
+        {
+          "pattern_title": "読み切る",
+          "pattern_meaning": "切る／切れる = selesai total/habis tanpa sisa (切れない = tidak bisa habis/selesai)",
+          "description_box": {
+            "formula": "Vます形 + 切る／切れる （Vます形+切れない = tidak selesai）",
+            "explanation": "Menunjukkan bahwa suatu tindakan diselesaikan sepenuhnya, habis tanpa sisa.",
+            "explanation_en": "Shows that an action is completed entirely, with nothing left."
+          },
+          "examples": [
+            {
+              "jp": "彼は疲れ切った様子で帰ってきた。",
+              "en": "Dia pulang dengan tampak sangat kelelahan.",
+              "explanation": "",
+              "highlight": "疲れ切った"
+            },
+            {
+              "jp": "量が多すぎて、一人では食べ切れない。",
+              "en": "Porsinya terlalu banyak, tidak bisa dihabiskan sendirian.",
+              "explanation": "",
+              "highlight": "食べ切れない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "ありえる/ありうる",
+          "pattern_meaning": "える／うる = mungkin terjadi (えない = tidak mungkin terjadi)",
+          "description_box": {
+            "formula": "Vます形 + える／うる （Vます形+えない = tidak mungkin）",
+            "explanation": "Menunjukkan kemungkinan terjadinya sesuatu (える／うる), atau sebaliknya ketidakmungkinan (えない).",
+            "explanation_en": "Shows possibility of something happening (える／うる), or impossibility (えない)."
+          },
+          "examples": [
+            {
+              "jp": "誰にでも間違いはありうる。",
+              "en": "Siapa pun bisa saja melakukan kesalahan.",
+              "explanation": "",
+              "highlight": "ありうる"
+            },
+            {
+              "jp": "そんなことは彼にはありえない。",
+              "en": "Hal seperti itu tidak mungkin terjadi pada dirinya.",
+              "explanation": "",
+              "highlight": "ありえない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "やり抜く",
+          "pattern_meaning": "抜く = melakukan sampai tuntas dengan gigih, bertahan sampai akhir",
+          "description_box": {
+            "formula": "Vます形 + 抜く",
+            "explanation": "Menunjukkan bahwa suatu keadaan atau tindakan sulit dijalani sampai akhir dengan penuh ketahanan.",
+            "explanation_en": "Shows enduring a difficult action or state all the way to the end."
+          },
+          "examples": [
+            {
+              "jp": "彼はどんなに苦しくても最後までやり抜く人だ。",
+              "en": "Dia adalah orang yang akan bertahan sampai akhir sesulit apapun.",
+              "explanation": "",
+              "highlight": "やり抜く"
+            },
+            {
+              "jp": "厳しい練習に耐え抜いて、選手に選ばれた。",
+              "en": "Setelah bertahan menghadapi latihan yang keras, dia terpilih jadi pemain.",
+              "explanation": "",
+              "highlight": "耐え抜いて"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
