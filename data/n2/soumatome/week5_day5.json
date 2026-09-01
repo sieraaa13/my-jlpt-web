@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 5,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "片づけようがない",
+        "translation": "Tidak ada cara untuk membereskannya"
+      },
+      "illustration_text": {
+        "friend1": "まるで泥棒が入ったかのようだ。",
+        "friend2": "本当に、片づけようがないね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "飲もうではないか",
+          "pattern_meaning": "ようではないか = ayo.../mari kita... (ajakan tegas, ungkapan formal maskulin)",
+          "description_box": {
+            "formula": "Vよう + ではないか／じゃないか",
+            "explanation": "Menunjukkan ajakan kuat atau tekad, sering digunakan dalam pidato atau situasi formal, memberi kesan tegas dan maskulin.",
+            "explanation_en": "Shows a strong invitation or determination, often used in speeches or formal settings, with a firm and masculine nuance."
+          },
+          "examples": [
+            {
+              "jp": "困難な時こそ、力を合わせようではないか。",
+              "en": "Justru di saat sulit inilah, mari kita satukan kekuatan bersama.",
+              "explanation": "",
+              "highlight": "ようではないか"
+            },
+            {
+              "jp": "みんなで力を出し合って、この課題を乗り越えようじゃないか。",
+              "en": "Ayo kita kerahkan kekuatan bersama-sama untuk melewati masalah ini.",
+              "explanation": "",
+              "highlight": "ようじゃないか"
+            }
+          ]
+        },
+        {
+          "pattern_title": "言いようがない",
+          "pattern_meaning": "ようがない/ようもない = tidak ada cara untuk.../tidak mungkin bisa...",
+          "description_box": {
+            "formula": "Vます形 + ようがない／ようもない",
+            "explanation": "Menunjukkan bahwa tidak ada cara atau metode sama sekali untuk melakukan suatu tindakan.",
+            "explanation_en": "Shows that there is absolutely no way or method to do a certain action."
+          },
+          "examples": [
+            {
+              "jp": "電話番号がわからないので、連絡しようがない。",
+              "en": "Karena tidak tahu nomor teleponnya, tidak ada cara untuk menghubunginya.",
+              "explanation": "",
+              "highlight": "しようがない"
+            },
+            {
+              "jp": "壊れ方がひどすぎて、直しようもない。",
+              "en": "Kerusakannya terlalu parah, tidak ada cara untuk memperbaikinya.",
+              "explanation": "",
+              "highlight": "直しようもない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "泣いているかのようだ",
+          "pattern_meaning": "かのようだ = seolah-olah.../seperti...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + かのようだ／かのように〜",
+            "explanation": "Menunjukkan perumpamaan, membandingkan suatu keadaan dengan hal lain seolah-olah keadaan itu benar terjadi.",
+            "explanation_en": "Shows a metaphor, comparing a situation to something else as if it were actually happening."
+          },
+          "examples": [
+            {
+              "jp": "彼はまるで何も知らないかのように振る舞った。",
+              "en": "Dia bersikap seolah-olah tidak tahu apa-apa.",
+              "explanation": "",
+              "highlight": "かのように"
+            },
+            {
+              "jp": "花びらが舞う様子は、まるで雪が降っているかのようだ。",
+              "en": "Kelopak bunga yang berterbangan itu seperti salju yang sedang turun.",
+              "explanation": "",
+              "highlight": "かのようだ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行けそうにない",
+          "pattern_meaning": "そうにない/そうもない = sepertinya tidak mungkin... (kemungkinan rendah)",
+          "description_box": {
+            "formula": "Vます形 + そうにない／そうもない ／ Vれる + そうにない",
+            "explanation": "Menunjukkan perkiraan bahwa kemungkinan suatu hal terjadi sangat rendah, berdasarkan situasi saat ini.",
+            "explanation_en": "Shows an estimate that the likelihood of something happening is very low, based on the current situation."
+          },
+          "examples": [
+            {
+              "jp": "この量の仕事は、今日中には終わりそうにない。",
+              "en": "Pekerjaan sebanyak ini sepertinya tidak akan selesai hari ini.",
+              "explanation": "",
+              "highlight": "そうにない"
+            },
+            {
+              "jp": "雨がやみそうもないので、傘を持って出かけた。",
+              "en": "Karena sepertinya hujan tidak akan reda, aku membawa payung saat keluar.",
+              "explanation": "",
+              "highlight": "そうもない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

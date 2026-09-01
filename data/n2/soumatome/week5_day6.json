@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 6,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "事実に基づいて",
+        "translation": "Berdasarkan fakta"
+      },
+      "illustration_text": {
+        "friend1": "このドラマは、事実に基づいて制作されました。",
+        "friend2": "本当にあったことなんだ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "申し込みに際して",
+          "pattern_meaning": "に際して = pada saat/menjelang... (momen penting, mirip にあたって)",
+          "description_box": {
+            "formula": "Nする + に際して(は) ／ Vるに + 際して(は)／際してのN",
+            "explanation": "Menunjukkan bahwa suatu hal dilakukan pada saat momen khusus atau penting, ungkapan formal yang mirip dengan にあたって.",
+            "explanation_en": "Shows that something is done at a special or important moment, a formal expression similar to にあたって."
+          },
+          "examples": [
+            {
+              "jp": "帰国に際して、お世話になった方々にあいさつをした。",
+              "en": "Pada saat akan pulang ke negara asal, aku mengucapkan terima kasih kepada orang-orang yang telah membantu.",
+              "explanation": "",
+              "highlight": "に際して"
+            },
+            {
+              "jp": "入会に際し、必要な書類をご提出ください。",
+              "en": "Pada saat mendaftar keanggotaan, mohon serahkan dokumen yang diperlukan.",
+              "explanation": "",
+              "highlight": "に際し"
+            }
+          ]
+        },
+        {
+          "pattern_title": "計画に基づいて",
+          "pattern_meaning": "に基づいて = berdasarkan.../berlandaskan...",
+          "description_box": {
+            "formula": "Nに + 基づいて／基づき／基づくN／基づいたN",
+            "explanation": "Menunjukkan bahwa suatu tindakan atau hal dilakukan dengan dasar atau landasan tertentu.",
+            "explanation_en": "Shows that an action or thing is done based on or grounded in something specific."
+          },
+          "examples": [
+            {
+              "jp": "この小説は実際の事件に基づいて書かれた。",
+              "en": "Novel ini ditulis berdasarkan kejadian nyata.",
+              "explanation": "",
+              "highlight": "に基づいて"
+            },
+            {
+              "jp": "アンケート結果に基づき、新商品を開発した。",
+              "en": "Berdasarkan hasil survei, kami mengembangkan produk baru.",
+              "explanation": "",
+              "highlight": "に基づき"
+            }
+          ]
+        },
+        {
+          "pattern_title": "必要に応じて",
+          "pattern_meaning": "に応じて = sesuai dengan/menyesuaikan dengan...",
+          "description_box": {
+            "formula": "Nに + 応じて／応じ／応じたN",
+            "explanation": "Menunjukkan bahwa suatu hal disesuaikan atau berubah mengikuti kondisi atau keadaan yang disebutkan.",
+            "explanation_en": "Shows that something is adjusted or changes according to the mentioned condition or situation."
+          },
+          "examples": [
+            {
+              "jp": "料金はご利用時間に応じて決まります。",
+              "en": "Biaya ditentukan sesuai dengan lama waktu pemakaian.",
+              "explanation": "",
+              "highlight": "に応じて"
+            },
+            {
+              "jp": "収入に応じた税金を納める。",
+              "en": "Membayar pajak sesuai dengan penghasilan.",
+              "explanation": "",
+              "highlight": "に応じた"
+            }
+          ]
+        },
+        {
+          "pattern_title": "青空の下で",
+          "pattern_meaning": "の下で = di bawah.../di bawah naungan... (kondisi atau pengaruh tertentu)",
+          "description_box": {
+            "formula": "Nの + 下で／下／下に",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi di bawah kondisi, pengaruh, atau bimbingan tertentu.",
+            "explanation_en": "Shows that something happens under a certain condition, influence, or guidance."
+          },
+          "examples": [
+            {
+              "jp": "厳しい規則の下で、選手たちは練習を続けている。",
+              "en": "Di bawah aturan yang ketat, para atlet terus berlatih.",
+              "explanation": "",
+              "highlight": "の下で"
+            },
+            {
+              "jp": "師匠の指導の下、若い職人が腕を磨いている。",
+              "en": "Di bawah bimbingan sang guru, pengrajin muda itu mengasah keterampilannya.",
+              "explanation": "",
+              "highlight": "の下"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
