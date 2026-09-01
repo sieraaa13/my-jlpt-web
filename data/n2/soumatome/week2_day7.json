@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 7,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 2 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "2週目の文法、ちゃんと身についたかな？",
+        "friend2": "実戦問題で確認してみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "手紙を書き（　　）、途中で友達が来たのでやめてしまった。",
+              "options": [
+                { "id": 1, "text": "えて" },
+                { "id": 2, "text": "かけて" },
+                { "id": 3, "text": "きって" },
+                { "id": 4, "text": "ぬいて" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+かける = mulai tapi belum selesai (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 2,
+              "question": "この会は、留学生の交流を目的（　　）開かれた。",
+              "options": [
+                { "id": 1, "text": "とともに" },
+                { "id": 2, "text": "につれて" },
+                { "id": 3, "text": "にとって" },
+                { "id": 4, "text": "として" }
+              ],
+              "hint": "📝 Petunjuk materi: Nを目的として (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 3,
+              "question": "コーヒー、（　　）うちに飲んでください。",
+              "options": [
+                { "id": 1, "text": "冷め" },
+                { "id": 2, "text": "冷める" },
+                { "id": 3, "text": "冷めて" },
+                { "id": 4, "text": "冷めない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vないうちに (3日目).",
+              "answer": 4
+            },
+            {
+              "number": 4,
+              "question": "彼は一週間考え（　　）、その決断を下した。",
+              "options": [
+                { "id": 1, "text": "かけて" },
+                { "id": 2, "text": "ぬいて" },
+                { "id": 3, "text": "えて" },
+                { "id": 4, "text": "かぎって" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+抜く (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 5,
+              "question": "本人が謝らない（　　）、この問題は解決しないだろう。",
+              "options": [
+                { "id": 1, "text": "かぎり" },
+                { "id": 2, "text": "ほど" },
+                { "id": 3, "text": "くらい" },
+                { "id": 4, "text": "とともに" }
+              ],
+              "hint": "📝 Petunjuk materi: Vない+限り (3日目).",
+              "answer": 1
+            },
+            {
+              "number": 6,
+              "question": "急いでいる時（　　）、バスがなかなか来ない。",
+              "options": [
+                { "id": 1, "text": "にとって" },
+                { "id": 2, "text": "にしたら" },
+                { "id": 3, "text": "にかぎって" },
+                { "id": 4, "text": "にともなって" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに限って (3日目).",
+              "answer": 3
+            },
+            {
+              "number": 7,
+              "question": "在庫がまだ残っているので、古い商品を使い（　　）から、新しいものを並べよう。",
+              "options": [
+                { "id": 1, "text": "かけて" },
+                { "id": 2, "text": "えて" },
+                { "id": 3, "text": "きって" },
+                { "id": 4, "text": "ぬいて" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+切る (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 8,
+              "question": "電車のドアが閉まるか閉まらないか（　　）、彼は飛び乗った。",
+              "options": [
+                { "id": 1, "text": "のかぎり" },
+                { "id": 2, "text": "とともに" },
+                { "id": 3, "text": "につれて" },
+                { "id": 4, "text": "のうちに" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるか Vないかのうちに (3日目).",
+              "answer": 4
+            },
+            {
+              "number": 9,
+              "question": "先着100名様（　　）、記念品を差し上げます。",
+              "options": [
+                { "id": 1, "text": "かぎり" },
+                { "id": 2, "text": "にかぎり" },
+                { "id": 3, "text": "として" },
+                { "id": 4, "text": "にとって" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに限り (3日目).",
+              "answer": 2
+            },
+            {
+              "number": 10,
+              "question": "本気で心配している（　　）、厳しいことを言うんです。",
+              "options": [
+                { "id": 1, "text": "ほど" },
+                { "id": 2, "text": "くらい" },
+                { "id": 3, "text": "からこそ" },
+                { "id": 4, "text": "にかぎって" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたからこそ (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 11,
+              "question": "時間（　　）あれば、もっと丁寧に仕上げられたのに。",
+              "options": [
+                { "id": 1, "text": "ほど" },
+                { "id": 2, "text": "かぎり" },
+                { "id": 3, "text": "さえ" },
+                { "id": 4, "text": "として" }
+              ],
+              "hint": "📝 Petunjuk materi: Nさえ〜ば (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 12,
+              "question": "この特典は初回のご注文（　　）とさせていただきます。",
+              "options": [
+                { "id": 1, "text": "かぎり" },
+                { "id": 2, "text": "くらい" },
+                { "id": 3, "text": "さえ" },
+                { "id": 4, "text": "として" }
+              ],
+              "hint": "📝 Petunjuk materi: N限り (3日目).",
+              "answer": 1
+            },
+            {
+              "number": 13,
+              "question": "真面目な彼が遅刻するなんて、あり（　　）。",
+              "options": [
+                { "id": 1, "text": "える" },
+                { "id": 2, "text": "うる" },
+                { "id": 3, "text": "えない" },
+                { "id": 4, "text": "うない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+えない (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 14,
+              "question": "このレシピ（　　）、順番に材料を加えてください。",
+              "options": [
+                { "id": 1, "text": "につれて" },
+                { "id": 2, "text": "にしたがって" },
+                { "id": 3, "text": "にともなって" },
+                { "id": 4, "text": "とともに" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにしたがって (6日目).",
+              "answer": 2
+            },
+            {
+              "number": 15,
+              "question": "台風の接近（　　）、この地域は強い風が予想されます。",
+              "options": [
+                { "id": 1, "text": "にともなって" },
+                { "id": 2, "text": "につれて" },
+                { "id": 3, "text": "にしたがって" },
+                { "id": 4, "text": "とともに" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにともなって (6日目).",
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "この仕事は、＿＿ ＿＿ ★ ＿＿ でしょう。",
+              "words": [
+                { "id": 1, "word": "やる気" },
+                { "id": 2, "word": "あれば" },
+                { "id": 3, "word": "さえ" },
+                { "id": 4, "word": "なんとかなる" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 17,
+              "question": "新人の＿＿ ＿＿ ★ ＿＿ に違いない。",
+              "words": [
+                { "id": 1, "word": "山田さん" },
+                { "id": 2, "word": "にしたら" },
+                { "id": 3, "word": "不安" },
+                { "id": 4, "word": "この仕事は" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 18,
+              "question": "引っ越しの荷造りは終わったので、＿＿ ＿＿ ★ ＿＿ だ。",
+              "words": [
+                { "id": 1, "word": "あとは" },
+                { "id": 2, "word": "新居に" },
+                { "id": 3, "word": "運ぶ" },
+                { "id": 4, "word": "ばかり" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 19,
+              "question": "＿＿ ＿＿ ★ ＿＿ 交通量が急激に増えた。",
+              "words": [
+                { "id": 1, "word": "開通" },
+                { "id": 2, "word": "新しい道路の" },
+                { "id": 3, "word": "にともない" },
+                { "id": 4, "word": "この一年で" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 20,
+              "question": "工場が＿＿ ＿＿ ★ ＿＿ なくなった。",
+              "words": [
+                { "id": 1, "word": "につれて" },
+                { "id": 2, "word": "周辺の緑が" },
+                { "id": 3, "word": "増える" },
+                { "id": 4, "word": "少なく" }
+              ],
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "この10年、若者の都市部への流出にともない、商店街を訪れる人が減ってきている。店主たちの努力の [21] 、来客数は年々減少 [22] 。このままでは、いくつかの店が閉店してしまうことも [23] という。そうなると商店街全体の活気が失われ、地域の魅力も薄れてしまう。そこで、空き店舗を [24] 、それを新しい飲食店やイベントスペースに変えようとしている人たちもいるらしい。地域に住んでいる [25] 、この町の未来を考え続けなければならない。まだ間に合ううちに、みんなで知恵を出し合うことが、商店街の将来を左右するのではないだろうか。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Dalam 10 tahun terakhir, seiring dengan mengalirnya anak muda ke wilayah perkotaan, jumlah orang yang mengunjungi jalan pertokoan semakin berkurang. [21] usaha keras para pemilik toko, jumlah pengunjung tetap [22] menurun dari tahun ke tahun. Kalau dibiarkan seperti ini, dikatakan bahwa beberapa toko [23] sampai tutup. Kalau itu terjadi, semangat seluruh jalan pertokoan akan hilang, dan daya tarik daerah itu pun akan memudar. Karena itu, ada juga orang-orang yang [24] toko-toko kosong, mencoba mengubahnya menjadi restoran baru atau ruang acara. Selama kita masih [25] tinggal di daerah ini, kita harus terus memikirkan masa depan kota ini. Selagi masih sempat, saling bertukar ide bersama mungkin akan menentukan masa depan jalan pertokoan ini."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "さえあれば" },
+                { "id": 2, "text": "かいがあって" },
+                { "id": 3, "text": "限り" },
+                { "id": 4, "text": "かいもなく" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "するばかりだ" },
+                { "id": 2, "text": "しないことはない" },
+                { "id": 3, "text": "してはならない" },
+                { "id": 4, "text": "してはいられない" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "あるかいもない" },
+                { "id": 2, "text": "ありえない" },
+                { "id": 3, "text": "ある限りだ" },
+                { "id": 4, "text": "ありうる" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "改装さえすれば" },
+                { "id": 2, "text": "改装してまで" },
+                { "id": 3, "text": "改装したからこそ" },
+                { "id": 4, "text": "改装したかいがあって" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "限り" },
+                { "id": 2, "text": "ばかり" },
+                { "id": 3, "text": "としても" },
+                { "id": 4, "text": "うちに" }
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
