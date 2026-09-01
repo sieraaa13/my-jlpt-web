@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 7,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 4 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "4週目の文法、身についたかな？",
+        "friend2": "実戦問題で確認してみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "面接に（　　）、次の点に注意してください。",
+              "options": [
+                { "id": 1, "text": "次第で" },
+                { "id": 2, "text": "そって" },
+                { "id": 3, "text": "わたり" },
+                { "id": 4, "text": "あたり" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにあたり (6日目).",
+              "answer": 4
+            },
+            {
+              "number": 2,
+              "question": "A国からC国（　　）に輸出される工業製品の70%が自動車部品である。",
+              "options": [
+                { "id": 1, "text": "向き" },
+                { "id": 2, "text": "向け" },
+                { "id": 3, "text": "向かい" },
+                { "id": 4, "text": "向こう" }
+              ],
+              "hint": "📝 Petunjuk materi: N向け (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 3,
+              "question": "最新のデータが（　　）次第、ご報告します。",
+              "options": [
+                { "id": 1, "text": "入り" },
+                { "id": 2, "text": "入る" },
+                { "id": 3, "text": "入って" },
+                { "id": 4, "text": "入った" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+次第 (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 4,
+              "question": "このアプリは、操作が簡単な（　　）動作も軽い。",
+              "options": [
+                { "id": 1, "text": "上に" },
+                { "id": 2, "text": "上で" },
+                { "id": 3, "text": "上は" },
+                { "id": 4, "text": "上では" }
+              ],
+              "hint": "📝 Petunjuk materi: Naな上に (1日目).",
+              "answer": 1
+            },
+            {
+              "number": 5,
+              "question": "彼は突然の異動命令に驚き（　　）、前向きに受け止めていた。",
+              "options": [
+                { "id": 1, "text": "ものの" },
+                { "id": 2, "text": "べきも" },
+                { "id": 3, "text": "ながらも" },
+                { "id": 4, "text": "にわたり" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+ながらも (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "研修（　　）、参加者への事前アンケートが実施された。",
+              "options": [
+                { "id": 1, "text": "に先立ち" },
+                { "id": 2, "text": "にわたり" },
+                { "id": 3, "text": "に沿い" },
+                { "id": 4, "text": "に反し" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに先立ち (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 7,
+              "question": "資料（　　）では業績は改善しているのだが、現場ではその実感がない。",
+              "options": [
+                { "id": 1, "text": "ぬき" },
+                { "id": 2, "text": "の上" },
+                { "id": 3, "text": "のわり" },
+                { "id": 4, "text": "向け" }
+              ],
+              "hint": "📝 Petunjuk materi: Nの上では (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 8,
+              "question": "同じ出来事でも、受け止め方（　　）気持ちは大きく変わる。",
+              "options": [
+                { "id": 1, "text": "向きで" },
+                { "id": 2, "text": "にそって" },
+                { "id": 3, "text": "次第で" },
+                { "id": 4, "text": "にあたり" }
+              ],
+              "hint": "📝 Petunjuk materi: N次第で (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "この教材は、公式のガイドライン（　　）作られている。",
+              "options": [
+                { "id": 1, "text": "にあたって" },
+                { "id": 2, "text": "にそって" },
+                { "id": 3, "text": "にわたって" },
+                { "id": 4, "text": "に先立って" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに沿って (6日目).",
+              "answer": 2
+            },
+            {
+              "number": 10,
+              "question": "これは10年間（　　）調査結果をまとめたものです。",
+              "options": [
+                { "id": 1, "text": "に先立つ" },
+                { "id": 2, "text": "に関する" },
+                { "id": 3, "text": "にそう" },
+                { "id": 4, "text": "にわたる" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにわたる (6日目).",
+              "answer": 4
+            },
+            {
+              "number": 11,
+              "question": "サンプルを（　　）上で、契約するかどうか決めます。",
+              "options": [
+                { "id": 1, "text": "見る" },
+                { "id": 2, "text": "見て" },
+                { "id": 3, "text": "見た" },
+                { "id": 4, "text": "見ない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vた上で (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 12,
+              "question": "部下には早く帰れと（　　）つつ、自分が残業しているのは矛盾している。",
+              "options": [
+                { "id": 1, "text": "言う" },
+                { "id": 2, "text": "言い" },
+                { "id": 3, "text": "言って" },
+                { "id": 4, "text": "言った" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+つつ (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 13,
+              "question": "昔からの決まりで、新入生はこの部屋を使ってはいけない（　　）。",
+              "options": [
+                { "id": 1, "text": "つつある" },
+                { "id": 2, "text": "べきである" },
+                { "id": 3, "text": "ことになっている" },
+                { "id": 4, "text": "わけにはいかない" }
+              ],
+              "hint": "📝 Petunjuk materi: ことになっている (5日目).",
+              "answer": 3
+            },
+            {
+              "number": 14,
+              "question": "地域の伝統的な祭りは、若者に（　　）。",
+              "options": [
+                { "id": 1, "text": "忘れざるをえない" },
+                { "id": 2, "text": "忘れられつつある" },
+                { "id": 3, "text": "忘れることになっている" },
+                { "id": 4, "text": "忘れるにすぎない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+つつある (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 15,
+              "question": "確かに、今このアプリは話題になっているが、一時的なブーム（　　）。",
+              "options": [
+                { "id": 1, "text": "次第だ" },
+                { "id": 2, "text": "にすぎない" },
+                { "id": 3, "text": "せざるをえない" },
+                { "id": 4, "text": "であるわけではない" }
+              ],
+              "hint": "📝 Petunjuk materi: Nにすぎない (5日目).",
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "隠し事はしたくないから、＿＿ ＿＿ ★ ＿＿ えない。",
+              "words": [
+                { "id": 1, "word": "たら" },
+                { "id": 2, "word": "ざるを" },
+                { "id": 3, "word": "事実を伝え" },
+                { "id": 4, "word": "尋ねられ" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 17,
+              "question": "事故のせいで、大好きなサッカーがもうできなくなってしまった。残念だが＿＿ ＿＿ ★ ＿＿ 楽しみを見つけよう。",
+              "words": [
+                { "id": 1, "word": "何か" },
+                { "id": 2, "word": "ほかの" },
+                { "id": 3, "word": "上は" },
+                { "id": 4, "word": "こうなった" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 18,
+              "question": "いつもぎりぎりにならないと動き出せない。今回ももっと＿＿ ＿＿ ★ ＿＿ だった。",
+              "words": [
+                { "id": 1, "word": "準備して" },
+                { "id": 2, "word": "早くから" },
+                { "id": 3, "word": "べき" },
+                { "id": 4, "word": "おく" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 19,
+              "question": "個人の努力にも限界がありますが、みんなで力を合わせれば大きな成果につながります。そこで、皆さんに＿＿ ＿＿ ★ ＿＿ です。",
+              "words": [
+                { "id": 1, "word": "次第" },
+                { "id": 2, "word": "する" },
+                { "id": 3, "word": "お願い" },
+                { "id": 4, "word": "ご協力を" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 20,
+              "question": "この店の商品は10代、20代の若者に人気がある。＿＿ ＿＿ ★ ＿＿ 人気がない。",
+              "words": [
+                { "id": 1, "word": "それに" },
+                { "id": 2, "word": "高齢者には" },
+                { "id": 3, "word": "60代、70代の" },
+                { "id": 4, "word": "対し" }
+              ],
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "梅雨も明け、夏らしい陽気となりましたが、先生にはお元気でお過ごしのことと存じます。入社 [21] 、いろいろとご指導いただき、心より感謝しております。おかげさまで、現在は営業の仕事にかかわっておりますが、成績 [22] 希望していた海外部門へ異動することも可能だということで、今は先輩のやり方を [23] 、少しずつ仕事に慣れているところです。会社の取引先は世界各国にわたっており、来月にはベトナムにも支店を出すことになっております。それに先立ち、準備のために私も出張することが多く、不慣れな英語も [24] 状況ですが、日々やりがいを感じております。お世話になった先生のご期待に [25] ことができるよう、これからもがんばります。それでは、季節の変わり目ですので、どうぞご自愛くださいませ。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Musim hujan sudah berakhir dan cuaca terasa seperti musim panas, semoga Bapak/Ibu Guru selalu sehat. [21] masuk kerja, saya sangat berterima kasih atas semua bimbingan yang telah diberikan. Berkat itu, saat ini saya terlibat dalam pekerjaan bagian penjualan, tetapi tergantung [22] hasil kinerja, saya juga berkesempatan untuk pindah ke divisi luar negeri yang saya inginkan, jadi sekarang saya sedang [23] belajar dari cara kerja senior sambil sedikit demi sedikit terbiasa dengan pekerjaan. Mitra bisnis perusahaan tersebar di seluruh dunia, dan bulan depan kami juga akan membuka cabang di Vietnam. Menjelang itu, saya sering ditugaskan ke luar kota untuk persiapan, dan dalam situasi yang membuat saya [24] terpaksa harus menggunakan bahasa Inggris yang belum lancar, tapi setiap hari saya merasakan hal itu bermakna. Saya akan terus berusaha agar bisa [25] menjawab harapan Bapak/Ibu Guru yang telah banyak membantu saya. Karena musim sedang berganti, mohon selalu menjaga kesehatan."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "にあたっては" },
+                { "id": 2, "text": "にそっては" },
+                { "id": 3, "text": "にわたっては" },
+                { "id": 4, "text": "にこたえては" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "向けでは" },
+                { "id": 2, "text": "に先立ち" },
+                { "id": 3, "text": "次第では" },
+                { "id": 4, "text": "に対しては" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "見習い次第" },
+                { "id": 2, "text": "見習うくせに" },
+                { "id": 3, "text": "見習う上で" },
+                { "id": 4, "text": "見習いつつ" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "使うにすぎない" },
+                { "id": 2, "text": "使わざるをえない" },
+                { "id": 3, "text": "使うべきではない" },
+                { "id": 4, "text": "使われつつある" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "にあたる" },
+                { "id": 2, "text": "にかかわる" },
+                { "id": 3, "text": "に対する" },
+                { "id": 4, "text": "にこたえる" }
+              ],
+              "answer": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
