@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 4,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "行こうか行くまいか",
+        "translation": "Pergi atau tidak pergi"
+      },
+      "illustration_text": {
+        "friend1": "台風が来るとか。",
+        "friend2": "それで、遊びに行こうか行くまいか迷っている。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "中止だとか",
+          "pattern_meaning": "とか = katanya.../konon... (menyampaikan informasi yang tidak pasti)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + とか",
+            "explanation": "Menunjukkan bahwa pembicara menyampaikan sesuatu yang didengar dari orang lain, dengan kesan tidak sepenuhnya yakin akan kebenarannya, mirip dengan そうだ tapi lebih santai.",
+            "explanation_en": "Shows that the speaker is relaying something heard from someone else, with a nuance of uncertainty, similar to そうだ but more casual."
+          },
+          "examples": [
+            {
+              "jp": "隣の家族は来月引っ越すとか。",
+              "en": "Katanya keluarga tetangga akan pindah bulan depan.",
+              "explanation": "",
+              "highlight": "とか"
+            },
+            {
+              "jp": "あの店は来年閉店するとか聞いた。",
+              "en": "Aku dengar katanya toko itu akan tutup tahun depan.",
+              "explanation": "",
+              "highlight": "とか"
+            }
+          ]
+        },
+        {
+          "pattern_title": "二度と行くまい",
+          "pattern_meaning": "まい = tidak akan.../berniat untuk tidak... (ungkapan formal negatif dari意志形)",
+          "description_box": {
+            "formula": "Vる（u-動詞） + まい ／ Vます形（る-動詞・不規則） + まい",
+            "explanation": "Menunjukkan tekad kuat untuk tidak melakukan sesuatu, ungkapan formal yang setara dengan ないつもりだ.",
+            "explanation_en": "Shows a strong determination not to do something, a formal expression equivalent to ないつもりだ."
+          },
+          "examples": [
+            {
+              "jp": "こんな辛い思いは、二度とするまいと心に決めた。",
+              "en": "Aku bertekad dalam hati untuk tidak pernah lagi mengalami perasaan sesakit ini.",
+              "explanation": "",
+              "highlight": "するまい"
+            },
+            {
+              "jp": "彼のような失敗は繰り返すまいと誓った。",
+              "en": "Aku bersumpah untuk tidak mengulangi kesalahan seperti dirinya.",
+              "explanation": "",
+              "highlight": "繰り返すまい"
+            }
+          ]
+        },
+        {
+          "pattern_title": "わかるまい",
+          "pattern_meaning": "まい = mungkin tidak.../rasanya tidak akan... (dugaan negatif kuat)",
+          "description_box": {
+            "formula": "Vる（u-動詞） + まい ／ Vます形（る-動詞・不規則） + まい",
+            "explanation": "Selain menunjukkan tekad, まい juga bisa menunjukkan dugaan kuat bahwa sesuatu tidak akan terjadi, setara dengる ないだろう.",
+            "explanation_en": "Besides showing determination, まい can also show a strong guess that something will not happen, equivalent to ないだろう."
+          },
+          "examples": [
+            {
+              "jp": "この暗号は、専門家でなければ解読できまい。",
+              "en": "Kode ini rasanya tidak bisa dipecahkan kalau bukan oleh ahlinya.",
+              "explanation": "",
+              "highlight": "できまい"
+            },
+            {
+              "jp": "彼は忙しいから、今日のパーティーには来まい。",
+              "en": "Karena dia sibuk, rasanya dia tidak akan datang ke pesta hari ini.",
+              "explanation": "",
+              "highlight": "来まい"
+            }
+          ]
+        },
+        {
+          "pattern_title": "話そうか話すまいか",
+          "pattern_meaning": "ようかVるまいか = akan.../atau tidak akan... (kebimbangan antara melakukan atau tidak)",
+          "description_box": {
+            "formula": "Vようか + Vるまいか",
+            "explanation": "Menunjukkan keraguan atau kebimbangan pembicara antara melakukan suatu tindakan atau tidak melakukannya sama sekali.",
+            "explanation_en": "Shows the speaker's hesitation or indecision between doing an action or not doing it at all."
+          },
+          "examples": [
+            {
+              "jp": "彼に本当のことを伝えようか伝えまいか、まだ決めかねている。",
+              "en": "Aku masih belum bisa memutuskan apakah akan menyampaikan kenyataan itu padanya atau tidak.",
+              "explanation": "",
+              "highlight": "伝えようか伝えまいか"
+            },
+            {
+              "jp": "会社を辞めようか辞めまいか、ずっと悩んでいる。",
+              "en": "Aku terus bimbang antara berhenti kerja atau tidak.",
+              "explanation": "",
+              "highlight": "辞めようか辞めまいか"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

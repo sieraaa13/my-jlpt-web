@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 3,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "声の大きさにかけては",
+        "translation": "Dalam hal kerasnya suara"
+      },
+      "illustration_text": {
+        "friend1": "声の大きさにかけては、ぼくが一番だ！",
+        "friend2": "いくら大きな声が出せるからって、ここで叫ばなくてもいいのに。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "好きだからといって",
+          "pattern_meaning": "からといって = meskipun.../hanya karena..., bukan berarti...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + からといって／からって",
+            "explanation": "Menunjukkan bahwa suatu alasan tidak selalu menjadi dasar yang cukup untuk suatu kesimpulan, sering diikuti dengan penyangkalan.",
+            "explanation_en": "Shows that a reason is not necessarily sufficient grounds for a conclusion, often followed by a denial."
+          },
+          "examples": [
+            {
+              "jp": "頭がいいからといって、仕事ができるとは限らない。",
+              "en": "Meskipun pintar, bukan berarti pasti bisa bekerja dengan baik.",
+              "explanation": "",
+              "highlight": "からといって"
+            },
+            {
+              "jp": "安いからって、質が悪いわけではない。",
+              "en": "Hanya karena murah, bukan berarti kualitasnya buruk.",
+              "explanation": "",
+              "highlight": "からって"
+            }
+          ]
+        },
+        {
+          "pattern_title": "手続きしてからでないと",
+          "pattern_meaning": "てからでないと/てからでなければ = kalau tidak melakukan... dulu, maka tidak bisa...",
+          "description_box": {
+            "formula": "Vてからでないと／てからでなければ + できない",
+            "explanation": "Menunjukkan bahwa suatu tindakan harus dilakukan lebih dulu sebagai syarat mutlak sebelum tindakan lain bisa dilakukan.",
+            "explanation_en": "Shows that an action must be completed first as an absolute requirement before another action can be done."
+          },
+          "examples": [
+            {
+              "jp": "予約をしてからでないと、この施設は利用できない。",
+              "en": "Kalau tidak melakukan reservasi dulu, fasilitas ini tidak bisa digunakan.",
+              "explanation": "",
+              "highlight": "てからでないと"
+            },
+            {
+              "jp": "本人が来てからでなければ、書類は受け取れません。",
+              "en": "Kalau bukan orangnya sendiri yang datang dulu, dokumennya tidak bisa diterima.",
+              "explanation": "",
+              "highlight": "てからでなければ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "2007年から2009年にかけて",
+          "pattern_meaning": "N1からN2にかけて = mulai dari... sampai sekitar... (rentang waktu/tempat yang tidak pasti)",
+          "description_box": {
+            "formula": "N1（時／場所）から + N2（時／場所）にかけて",
+            "explanation": "Menunjukkan rentang waktu atau tempat secara umum, dari satu titik sampai titik lainnya, tanpa batas yang terlalu pasti.",
+            "explanation_en": "Shows a general range of time or place, from one point to another, without a strictly fixed boundary."
+          },
+          "examples": [
+            {
+              "jp": "今夜から明日の朝にかけて、大雨が降るでしょう。",
+              "en": "Mulai malam ini sampai besok pagi, kemungkinan akan turun hujan lebat.",
+              "explanation": "",
+              "highlight": "にかけて"
+            },
+            {
+              "jp": "この地域は、9月から10月にかけて紅葉が美しい。",
+              "en": "Daerah ini indah dengan dedaunan musim gugur mulai bulan September sampai Oktober.",
+              "explanation": "",
+              "highlight": "にかけて"
+            }
+          ]
+        },
+        {
+          "pattern_title": "足の速さにかけては",
+          "pattern_meaning": "にかけては/にかけても = dalam hal.../soal... (menunjukkan keahlian tertentu)",
+          "description_box": {
+            "formula": "Nに ／ NのAさに ／ NのNaさに + かけては／かけても",
+            "explanation": "Menunjukkan bidang tertentu di mana seseorang atau sesuatu unggul dibanding yang lain.",
+            "explanation_en": "Shows a specific field in which someone or something excels compared to others."
+          },
+          "examples": [
+            {
+              "jp": "料理の腕にかけては、彼女に敵う人はいない。",
+              "en": "Dalam hal kemampuan memasak, tidak ada yang bisa menandinginya.",
+              "explanation": "",
+              "highlight": "にかけては"
+            },
+            {
+              "jp": "計算の速さにかけては、クラスで一番だ。",
+              "en": "Dalam hal kecepatan berhitung, dia yang paling unggul di kelas.",
+              "explanation": "",
+              "highlight": "にかけては"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
