@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 1,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "決めた以上",
+        "translation": "Karena sudah memutuskan"
+      },
+      "illustration_text": {
+        "friend1": "あれ以来、吸ってないの？",
+        "friend2": "やめると決めた以上、絶対吸わない！"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "日本に来て以来",
+          "pattern_meaning": "以来 = sejak.../semenjak... (dan berlanjut sampai sekarang)",
+          "description_box": {
+            "formula": "N／Vて／それ／あれ + 以来",
+            "explanation": "Menunjukkan bahwa suatu keadaan terus berlanjut tanpa berubah sejak suatu titik waktu di masa lalu hingga sekarang.",
+            "explanation_en": "Shows that a state has continued unchanged from a point in the past until now."
+          },
+          "examples": [
+            {
+              "jp": "引っ越して以来、一度も故郷に帰っていない。",
+              "en": "Sejak pindah rumah, aku belum pernah sekali pun pulang kampung.",
+              "explanation": "",
+              "highlight": "以来"
+            },
+            {
+              "jp": "卒業以来、彼女とは連絡を取っていない。",
+              "en": "Sejak lulus, aku belum pernah berhubungan lagi dengannya.",
+              "explanation": "",
+              "highlight": "以来"
+            }
+          ]
+        },
+        {
+          "pattern_title": "試験を受ける以上",
+          "pattern_meaning": "以上(は) = karena sudah begini..., maka sudah semestinya... (tekad/kewajiban)",
+          "description_box": {
+            "formula": "V普通形／Nである + 以上(は)",
+            "explanation": "Menunjukkan bahwa karena suatu keadaan sudah terjadi atau ditetapkan, maka wajar jika muncul tekad atau kewajiban tertentu sebagai konsekuensinya.",
+            "explanation_en": "Shows that because a certain situation has already happened or been decided, a resulting determination or obligation naturally follows."
+          },
+          "examples": [
+            {
+              "jp": "プロの選手である以上、結果を出さなければならない。",
+              "en": "Karena sudah menjadi atlet profesional, harus menunjukkan hasil.",
+              "explanation": "",
+              "highlight": "以上"
+            },
+            {
+              "jp": "留学する以上は、その国の文化も理解したい。",
+              "en": "Karena sudah memutuskan untuk kuliah di luar negeri, aku ingin memahami budaya negara itu juga.",
+              "explanation": "",
+              "highlight": "以上は"
+            }
+          ]
+        },
+        {
+          "pattern_title": "約束したからには",
+          "pattern_meaning": "からには = karena sudah terlanjur.../mengingat sudah... (setara dengan 以上)",
+          "description_box": {
+            "formula": "V普通形 + からには",
+            "explanation": "Menunjukkan makna yang setara dengan 以上, yaitu karena suatu hal sudah terjadi, maka sebagai konsekuensinya harus melakukan sesuatu.",
+            "explanation_en": "Shows a meaning equivalent to 以上, meaning that because something has already happened, an action must follow as a consequence."
+          },
+          "examples": [
+            {
+              "jp": "引き受けたからには、最後まで責任を持ってやる。",
+              "en": "Karena sudah menerima tugas ini, aku akan mengerjakannya sampai akhir dengan penuh tanggung jawab.",
+              "explanation": "",
+              "highlight": "からには"
+            },
+            {
+              "jp": "自分で選んだ道であるからには、後悔したくない。",
+              "en": "Karena ini jalan yang kupilih sendiri, aku tidak ingin menyesalinya.",
+              "explanation": "",
+              "highlight": "からには"
+            }
+          ]
+        },
+        {
+          "pattern_title": "来日の折には",
+          "pattern_meaning": "折(に) = pada saat/kesempatan... (ungkapan formal dari とき)",
+          "description_box": {
+            "formula": "Vる／Vた／Nの + 折(に)／折(に)は",
+            "explanation": "Ungkapan formal yang setara dengan とき, menunjukkan suatu kesempatan atau saat tertentu.",
+            "explanation_en": "A formal expression equivalent to とき, showing a particular occasion or moment."
+          },
+          "examples": [
+            {
+              "jp": "またこちらにお越しの折には、ぜひご連絡ください。",
+              "en": "Kalau ke sini lagi, mohon jangan sungkan untuk menghubungi kami.",
+              "explanation": "",
+              "highlight": "折には"
+            },
+            {
+              "jp": "先日お会いした折に、貴重なお話を伺いました。",
+              "en": "Pada kesempatan bertemu beberapa waktu lalu, saya mendengar cerita yang berharga.",
+              "explanation": "",
+              "highlight": "折に"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

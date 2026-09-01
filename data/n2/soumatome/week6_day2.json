@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 2,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "ぼくから見ると",
+        "translation": "Kalau dilihat dari sudut pandangku"
+      },
+      "illustration_text": {
+        "friend1": "ぼくから見ると、君のそのメガネからしてかっこう悪い。",
+        "friend2": "服装からして、そんなにおかしいかな。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "客の立場から言うと",
+          "pattern_meaning": "から言うと/から言えば = kalau dilihat dari sudut pandang...",
+          "description_box": {
+            "formula": "Nから + 言うと／言えば",
+            "explanation": "Menunjukkan sudut pandang atau dasar penilaian tertentu yang digunakan untuk menyampaikan pendapat. Biasanya tidak digunakan langsung dengan kata yang menunjukkan orang.",
+            "explanation_en": "Shows a particular viewpoint or basis of judgment used to state an opinion. Usually not used directly with a word referring to a person."
+          },
+          "examples": [
+            {
+              "jp": "専門家の意見から言うと、この計画にはリスクが多い。",
+              "en": "Kalau dilihat dari pendapat ahli, rencana ini memiliki banyak risiko.",
+              "explanation": "",
+              "highlight": "から言うと"
+            },
+            {
+              "jp": "コストの点から言えば、この案が一番現実的だ。",
+              "en": "Kalau dilihat dari segi biaya, usulan ini yang paling realistis.",
+              "explanation": "",
+              "highlight": "から言えば"
+            }
+          ]
+        },
+        {
+          "pattern_title": "症状からすると",
+          "pattern_meaning": "からすると/からすれば/からいって = kalau dipertimbangkan dari.../dilihat dari...",
+          "description_box": {
+            "formula": "Nから + すると／すれば／いって",
+            "explanation": "Menunjukkan dasar pertimbangan untuk menarik suatu kesimpulan atau dugaan.",
+            "explanation_en": "Shows the basis of consideration used to draw a conclusion or guess."
+          },
+          "examples": [
+            {
+              "jp": "この空模様からすると、午後は雨になりそうだ。",
+              "en": "Kalau dilihat dari keadaan langit ini, sepertinya sore nanti akan hujan.",
+              "explanation": "",
+              "highlight": "からすると"
+            },
+            {
+              "jp": "彼の慌てた様子からいって、何かトラブルがあったに違いない。",
+              "en": "Kalau dilihat dari sikapnya yang panik, pasti ada masalah yang terjadi.",
+              "explanation": "",
+              "highlight": "からいって"
+            }
+          ]
+        },
+        {
+          "pattern_title": "服装からして",
+          "pattern_meaning": "からして = kalau dilihat dari (contoh yang mewakili) saja sudah...",
+          "description_box": {
+            "formula": "N + からして",
+            "explanation": "Menunjukkan satu contoh yang mewakili untuk menggambarkan keseluruhan, biasanya digunakan untuk memperkuat penilaian.",
+            "explanation_en": "Shows one representative example to describe the whole, often used to strengthen a judgment."
+          },
+          "examples": [
+            {
+              "jp": "この店は、看板からして古めかしい感じがする。",
+              "en": "Toko ini, dari papan namanya saja sudah terasa kuno.",
+              "explanation": "",
+              "highlight": "からして"
+            },
+            {
+              "jp": "あいさつの仕方からして、彼はとても礼儀正しい人だ。",
+              "en": "Dari cara menyapanya saja, terlihat dia orang yang sangat sopan.",
+              "explanation": "",
+              "highlight": "からして"
+            }
+          ]
+        },
+        {
+          "pattern_title": "外国人から見ると",
+          "pattern_meaning": "から見ると = kalau dilihat dari sudut pandang (orang tertentu)...",
+          "description_box": {
+            "formula": "Nから + 見ると／見れば／見て／見ても",
+            "explanation": "Menunjukkan sudut pandang tertentu, biasanya bisa digunakan dengan kata yang menunjukkan orang, berbeda dengan から言うと.",
+            "explanation_en": "Shows a particular viewpoint, and unlike から言うと, can be used directly with a word referring to a person."
+          },
+          "examples": [
+            {
+              "jp": "子どもから見ると、大人の世界は難しそうに見えるらしい。",
+              "en": "Kalau dilihat dari sudut pandang anak-anak, dunia orang dewasa terlihat rumit.",
+              "explanation": "",
+              "highlight": "から見ると"
+            },
+            {
+              "jp": "初心者から見れば、この説明は少し難しいかもしれない。",
+              "en": "Kalau dilihat dari sudut pandang pemula, penjelasan ini mungkin agak sulit.",
+              "explanation": "",
+              "highlight": "から見れば"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
