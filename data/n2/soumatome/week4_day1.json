@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 1,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "地図の上では",
+        "translation": "Kalau dilihat di peta"
+      },
+      "illustration_text": {
+        "friend1": "地図の上では近いのに、行ってみると遠かったね。",
+        "friend2": "よく調べた上で行けばよかったよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "できる上に",
+          "pattern_meaning": "上に = tidak hanya..., tapi juga... (menambahkan hal lain)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + 上(に)",
+            "explanation": "Menunjukkan bahwa selain hal yang sudah disebutkan, ada tambahan hal lain yang searah (baik keduanya positif atau keduanya negatif).",
+            "explanation_en": "Shows that in addition to what was already mentioned, there is another matching point (both positive or both negative)."
+          },
+          "examples": [
+            {
+              "jp": "このアパートは駅から近い上に、家賃も安い。",
+              "en": "Apartemen ini dekat dari stasiun, dan sewanya juga murah.",
+              "explanation": "",
+              "highlight": "上に"
+            },
+            {
+              "jp": "道に迷った上に、雨まで降ってきた。",
+              "en": "Aku tersesat di jalan, ditambah lagi hujan pun turun.",
+              "explanation": "",
+              "highlight": "上に"
+            }
+          ]
+        },
+        {
+          "pattern_title": "考えた上で",
+          "pattern_meaning": "上で = setelah melakukan..., baru...",
+          "description_box": {
+            "formula": "Vた／Nの + 上で／上の／上での",
+            "explanation": "Menunjukkan bahwa suatu tindakan dilakukan setelah tindakan lain diselesaikan terlebih dahulu.",
+            "explanation_en": "Shows that an action is taken only after another action has been completed first."
+          },
+          "examples": [
+            {
+              "jp": "資料を確認した上で、返事をします。",
+              "en": "Aku akan memberi jawaban setelah memeriksa dokumennya terlebih dahulu.",
+              "explanation": "",
+              "highlight": "上で"
+            },
+            {
+              "jp": "家族との話し合いの上、引っ越しを決めた。",
+              "en": "Setelah berdiskusi dengan keluarga, aku memutuskan untuk pindah rumah.",
+              "explanation": "",
+              "highlight": "上"
+            }
+          ]
+        },
+        {
+          "pattern_title": "選ばれた上は",
+          "pattern_meaning": "上は = karena sudah terlanjur... (maka harus...)",
+          "description_box": {
+            "formula": "V普通形 + 上は",
+            "explanation": "Menunjukkan bahwa karena suatu keadaan sudah terjadi atau ditetapkan, maka sebagai konsekuensinya harus melakukan sesuatu. Biasanya diikuti dengan tekad atau saran.",
+            "explanation_en": "Shows that because a certain situation has already been decided, one must act accordingly as a consequence, usually followed by determination or advice."
+          },
+          "examples": [
+            {
+              "jp": "リーダーを任された上は、責任を持ってやり遂げたい。",
+              "en": "Karena sudah dipercaya menjadi pemimpin, aku ingin menjalankannya dengan penuh tanggung jawab.",
+              "explanation": "",
+              "highlight": "上は"
+            },
+            {
+              "jp": "始めた上は、最後まで続けるつもりだ。",
+              "en": "Karena sudah memulainya, aku berniat melanjutkannya sampai akhir.",
+              "explanation": "",
+              "highlight": "上は"
+            }
+          ]
+        },
+        {
+          "pattern_title": "天気図の上では",
+          "pattern_meaning": "N(の)上では = kalau dilihat dari sudut pandang... (secara teori/data)",
+          "description_box": {
+            "formula": "Nの + 上では／上でも ／ N + 上(じょう)は／上(じょう)も",
+            "explanation": "Menunjukkan sudut pandang atau bidang tertentu yang menjadi acuan, sering digunakan untuk membandingkan dengan kenyataan yang berbeda.",
+            "explanation_en": "Shows a particular perspective or field used as a reference, often to contrast with a different reality."
+          },
+          "examples": [
+            {
+              "jp": "契約上では問題ないが、実際にはトラブルが多い。",
+              "en": "Secara kontrak tidak ada masalah, tapi kenyataannya banyak masalah.",
+              "explanation": "",
+              "highlight": "上では"
+            },
+            {
+              "jp": "統計の上では景気は回復しているらしい。",
+              "en": "Kalau dilihat dari data statistik, sepertinya perekonomian sedang membaik.",
+              "explanation": "",
+              "highlight": "上では"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 4,
+      "day": 2,
+      "header": {
+        "main_title": "おぼえざるをえない",
+        "sub_title": "子ども向け",
+        "translation": "Diperuntukkan untuk anak-anak"
+      },
+      "illustration_text": {
+        "friend1": "これは初心者向けの教科書だよ。",
+        "friend2": "じゃあ、決まり次第、私にも教えてね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "初心者向け",
+          "pattern_meaning": "N向け = diperuntukkan untuk N / N向き = cocok untuk N",
+          "description_box": {
+            "formula": "N向け(だ/に/の) ／ N向き(だ/に/の)",
+            "explanation": "N向け menunjukkan bahwa sesuatu ditargetkan atau dibuat khusus untuk kelompok tertentu, sedangkan N向き menunjukkan bahwa sesuatu cocok atau sesuai untuk kelompok tertentu.",
+            "explanation_en": "N向け shows that something is targeted or made specifically for a certain group, while N向き shows that something is suitable or fitting for a certain group."
+          },
+          "examples": [
+            {
+              "jp": "これは上級者向けの問題集だ。",
+              "en": "Ini adalah kumpulan soal yang diperuntukkan untuk level mahir.",
+              "explanation": "",
+              "highlight": "向け"
+            },
+            {
+              "jp": "この部屋は明るくて、仕事向きだ。",
+              "en": "Ruangan ini terang, cocok untuk bekerja.",
+              "explanation": "",
+              "highlight": "向き"
+            }
+          ]
+        },
+        {
+          "pattern_title": "天気次第で",
+          "pattern_meaning": "N次第で = tergantung pada N",
+          "description_box": {
+            "formula": "N次第だ／で／では",
+            "explanation": "Menunjukkan bahwa suatu hasil atau keputusan sepenuhnya bergantung pada hal yang disebutkan.",
+            "explanation_en": "Shows that a result or decision fully depends on the thing mentioned."
+          },
+          "examples": [
+            {
+              "jp": "旅行に行けるかどうかは、予算次第だ。",
+              "en": "Bisa tidaknya pergi liburan tergantung pada anggarannya.",
+              "explanation": "",
+              "highlight": "次第だ"
+            },
+            {
+              "jp": "この計画がうまくいくかは、みんなの協力次第で決まる。",
+              "en": "Berhasil tidaknya rencana ini ditentukan oleh kerja sama semua orang.",
+              "explanation": "",
+              "highlight": "次第で"
+            }
+          ]
+        },
+        {
+          "pattern_title": "戻り次第",
+          "pattern_meaning": "Vます形+次第 = begitu selesai/segera setelah...",
+          "description_box": {
+            "formula": "Vます形 + 次第",
+            "explanation": "Menunjukkan bahwa suatu tindakan akan dilakukan segera setelah tindakan lain selesai. Tidak bisa digunakan untuk hal yang sudah lampau.",
+            "explanation_en": "Shows that an action will be taken as soon as another action is finished. Cannot be used for past events."
+          },
+          "examples": [
+            {
+              "jp": "空港に着き次第、連絡します。",
+              "en": "Aku akan menghubungimu begitu sampai di bandara.",
+              "explanation": "",
+              "highlight": "次第"
+            },
+            {
+              "jp": "詳細がわかり次第、みなさんにお知らせします。",
+              "en": "Begitu detailnya diketahui, akan segera saya beritahukan kepada semuanya.",
+              "explanation": "",
+              "highlight": "次第"
+            }
+          ]
+        },
+        {
+          "pattern_title": "伺った次第です",
+          "pattern_meaning": "Vた次第です = itulah alasan/latar belakang mengapa... (ungkapan formal)",
+          "description_box": {
+            "formula": "Vる／Vた／Vている + 次第です",
+            "explanation": "Menunjukkan penjelasan formal mengenai alasan atau latar belakang suatu tindakan, sering digunakan dalam situasi bisnis atau resmi.",
+            "explanation_en": "Shows a formal explanation of the reason or background of an action, often used in business or formal settings."
+          },
+          "examples": [
+            {
+              "jp": "資料に不備がございましたので、改めてお送りする次第です。",
+              "en": "Karena ada kekurangan pada dokumennya, itulah sebabnya saya mengirimkannya kembali.",
+              "explanation": "",
+              "highlight": "次第です"
+            },
+            {
+              "jp": "皆様のご協力に感謝申し上げる次第です。",
+              "en": "Dengan ini saya menyampaikan rasa terima kasih atas kerja sama semua pihak.",
+              "explanation": "",
+              "highlight": "次第です"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
