@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 5,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "負けるに決まっている",
+        "translation": "Pasti akan kalah"
+      },
+      "illustration_text": {
+        "friend1": "負けるに決まっている。",
+        "friend2": "あきらめるよりほかない。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "勝つに決まっている",
+          "pattern_meaning": "に決まっている/に違いない/に相違ない = pasti.../tidak diragukan lagi bahwa...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形に + 決まっている／違いない／相違ない",
+            "explanation": "Menunjukkan keyakinan yang sangat kuat dari pembicara bahwa sesuatu pasti benar, 相違ない adalah ungkapan paling formal di antara ketiganya.",
+            "explanation_en": "Shows the speaker's very strong conviction that something is certainly true; 相違ない is the most formal of the three expressions."
+          },
+          "examples": [
+            {
+              "jp": "こんなに練習したのだから、上手になっているに決まっている。",
+              "en": "Karena sudah berlatih sebanyak ini, pasti sudah jadi lebih mahir.",
+              "explanation": "",
+              "highlight": "に決まっている"
+            },
+            {
+              "jp": "この筆跡は彼のものに相違ない。",
+              "en": "Tulisan tangan ini pasti miliknya, tidak diragukan lagi.",
+              "explanation": "",
+              "highlight": "に相違ない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "勝つとは限らない",
+          "pattern_meaning": "とは限らない = belum tentu.../tidak selalu...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + とは限らない",
+            "explanation": "Menunjukkan bahwa suatu hal tidak selalu benar atau pasti terjadi, ada kemungkinan pengecualian.",
+            "explanation_en": "Shows that something is not always true or certain, allowing for possible exceptions."
+          },
+          "examples": [
+            {
+              "jp": "値段が高いからといって、質がいいとは限らない。",
+              "en": "Meskipun harganya mahal, belum tentu kualitasnya bagus.",
+              "explanation": "",
+              "highlight": "とは限らない"
+            },
+            {
+              "jp": "経験が長いからといって、必ずしも上手だとは限らない。",
+              "en": "Meskipun pengalamannya sudah lama, belum tentu selalu mahir.",
+              "explanation": "",
+              "highlight": "とは限らない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "祈るよりほかない",
+          "pattern_meaning": "よりほかない/よりほかはない = tidak ada cara lain selain... (setara dengる しかない)",
+          "description_box": {
+            "formula": "Vる + よりほかない／よりほかはない",
+            "explanation": "Menunjukkan bahwa tidak ada pilihan lain selain melakukan tindakan yang disebutkan, setara dengan しかない.",
+            "explanation_en": "Shows that there is no other choice but to do the mentioned action, equivalent to しかない."
+          },
+          "examples": [
+            {
+              "jp": "電車がないので、歩いて帰るよりほかない。",
+              "en": "Karena tidak ada kereta, tidak ada cara lain selain berjalan kaki pulang.",
+              "explanation": "",
+              "highlight": "よりほかない"
+            },
+            {
+              "jp": "もう時間がないから、今のまま提出するよりほかはない。",
+              "en": "Karena sudah tidak ada waktu lagi, tidak ada cara lain selain menyerahkannya apa adanya.",
+              "explanation": "",
+              "highlight": "よりほかはない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "努力の結果にほかならない",
+          "pattern_meaning": "にほかならない = tidak lain adalah.../justru merupakan...",
+          "description_box": {
+            "formula": "N + にほかならない",
+            "explanation": "Menunjukkan penekanan kuat bahwa suatu hal tidak lain adalah hal yang disebutkan, tidak ada penjelasan lain yang lebih tepat.",
+            "explanation_en": "Shows a strong emphasis that something is nothing other than what is stated, with no other more fitting explanation."
+          },
+          "examples": [
+            {
+              "jp": "彼が成功したのは、地道な努力にほかならない。",
+              "en": "Keberhasilannya itu tidak lain adalah hasil dari usaha yang tekun.",
+              "explanation": "",
+              "highlight": "にほかならない"
+            },
+            {
+              "jp": "この事故は、確認不足にほかならない。",
+              "en": "Kecelakaan ini tidak lain disebabkan oleh kurangnya pemeriksaan.",
+              "explanation": "",
+              "highlight": "にほかならない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

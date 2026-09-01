@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 6,
+      "day": 6,
+      "header": {
+        "main_title": "やるからにはおぼえよう",
+        "sub_title": "金メダルをめぐって",
+        "translation": "Berebut medali emas"
+      },
+      "illustration_text": {
+        "friend1": "ロンドンにおいて、水泳の世界選手権が行われ、ヨーロッパ各国をはじめとする世界中の選手が金メダルをめぐって争った。",
+        "friend2": "現地にて解散となります。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "中国をはじめアジアの国々が",
+          "pattern_meaning": "をはじめ(として)/をはじめとするN = terutama.../dimulai dari... (memberi contoh yang mewakili)",
+          "description_box": {
+            "formula": "Nを + はじめ／はじめとして／はじめとするN",
+            "explanation": "Menunjukkan satu contoh yang paling mewakili dari suatu kelompok, diikuti dengan hal-hal lain yang serupa.",
+            "explanation_en": "Shows one most representative example from a group, followed by other similar things."
+          },
+          "examples": [
+            {
+              "jp": "この学校は日本人をはじめ、様々な国籍の学生が学んでいる。",
+              "en": "Di sekolah ini, selain orang Jepang, ada juga mahasiswa dari berbagai kewarganegaraan lain yang belajar.",
+              "explanation": "",
+              "highlight": "をはじめ"
+            },
+            {
+              "jp": "市長をはじめとする関係者が式典に出席した。",
+              "en": "Para pejabat terkait, dimulai dari wali kota, hadir dalam upacara tersebut.",
+              "explanation": "",
+              "highlight": "をはじめとする"
+            }
+          ]
+        },
+        {
+          "pattern_title": "憲法改正をめぐって",
+          "pattern_meaning": "をめぐって/をめぐるN = seputar.../mengenai... (perdebatan atau isu tertentu)",
+          "description_box": {
+            "formula": "Nを + めぐって／めぐるN",
+            "explanation": "Menunjukkan bahwa suatu perdebatan, diskusi, atau permasalahan berpusat pada topik yang disebutkan.",
+            "explanation_en": "Shows that a debate, discussion, or issue centers around the mentioned topic."
+          },
+          "examples": [
+            {
+              "jp": "新しい税制をめぐって、国会で激しい議論が続いている。",
+              "en": "Seputar sistem pajak baru, perdebatan sengit terus berlangsung di parlemen.",
+              "explanation": "",
+              "highlight": "をめぐって"
+            },
+            {
+              "jp": "遺産をめぐる争いが家族の間で起きた。",
+              "en": "Pertikaian seputar warisan terjadi di antara keluarga itu.",
+              "explanation": "",
+              "highlight": "をめぐる"
+            }
+          ]
+        },
+        {
+          "pattern_title": "京都において",
+          "pattern_meaning": "において/におけるN = di.../dalam... (ungkapan formal dari で)",
+          "description_box": {
+            "formula": "Nに + おいて／おいては／おいても／おけるN",
+            "explanation": "Ungkapan formal yang setara dengan で, menunjukkan tempat, situasi, atau bidang tertentu.",
+            "explanation_en": "A formal expression equivalent to で, showing a particular place, situation, or field."
+          },
+          "examples": [
+            {
+              "jp": "現代社会において、情報の正しさを見極めることは重要だ。",
+              "en": "Dalam masyarakat modern, penting untuk bisa menilai kebenaran suatu informasi.",
+              "explanation": "",
+              "highlight": "において"
+            },
+            {
+              "jp": "この分野における研究は、まだ十分に進んでいない。",
+              "en": "Penelitian dalam bidang ini masih belum berkembang secara memadai.",
+              "explanation": "",
+              "highlight": "における"
+            }
+          ]
+        },
+        {
+          "pattern_title": "現地にて",
+          "pattern_meaning": "にて = di.../dengan... (ungkapan formal dari で, sering dipakai dalam pengumuman/surat)",
+          "description_box": {
+            "formula": "N + にて",
+            "explanation": "Ungkapan formal yang setara dengan で, sering digunakan dalam pengumuman resmi atau surat-menyurat.",
+            "explanation_en": "A formal expression equivalent to で, often used in official announcements or correspondence."
+          },
+          "examples": [
+            {
+              "jp": "本日のセミナーは3階会議室にて開催いたします。",
+              "en": "Seminar hari ini akan diadakan di ruang rapat lantai 3.",
+              "explanation": "",
+              "highlight": "にて"
+            },
+            {
+              "jp": "詳細は電話にてお問い合わせください。",
+              "en": "Untuk detail lebih lanjut, silakan menghubungi kami melalui telepon.",
+              "explanation": "",
+              "highlight": "にて"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
