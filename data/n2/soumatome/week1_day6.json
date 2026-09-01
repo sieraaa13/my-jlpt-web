@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 6,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "見ていられない",
+        "translation": "Tidak tahan melihatnya"
+      },
+      "illustration_text": {
+        "friend1": "危なくて見ていられないよ。",
+        "friend2": "もう黙ってはいられない。注意しよう。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "帰らねばならない",
+          "pattern_meaning": "ねばならない／ならぬ = harus... (bentuk formal/tertulis)",
+          "description_box": {
+            "formula": "Vない形（する→せねば）+ ならない／ならぬ",
+            "explanation": "Bentuk formal/tertulis dari 〜なければならない, menyatakan kewajiban yang harus dilakukan.",
+            "explanation_en": "A formal/written form of なければならない, expressing an obligation."
+          },
+          "examples": [
+            {
+              "jp": "規則は守らねばならない。",
+              "en": "Peraturan harus dipatuhi.",
+              "explanation": "",
+              "highlight": "ねばならない"
+            },
+            {
+              "jp": "この事実は多くの人に知らせねばならぬ。",
+              "en": "Fakta ini harus disampaikan kepada banyak orang.",
+              "explanation": "",
+              "highlight": "ねばならぬ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "忘れてはならない",
+          "pattern_meaning": "てはならない = tidak boleh... (larangan)",
+          "description_box": {
+            "formula": "Vてはならない",
+            "explanation": "Menyatakan larangan keras terhadap suatu tindakan.",
+            "explanation_en": "Expresses a strong prohibition against an action."
+          },
+          "examples": [
+            {
+              "jp": "この秘密は誰にも漏らしてはならない。",
+              "en": "Rahasia ini tidak boleh diberitahukan kepada siapa pun.",
+              "explanation": "",
+              "highlight": "てはならない"
+            },
+            {
+              "jp": "子どもを一人にしてはなりません。",
+              "en": "Anak tidak boleh ditinggal sendirian.",
+              "explanation": "",
+              "highlight": "てはなりません"
+            }
+          ]
+        },
+        {
+          "pattern_title": "待っていられない",
+          "pattern_meaning": "て(は)いられない = tidak bisa terus-menerus... (karena keadaan mendesak)",
+          "description_box": {
+            "formula": "Vて(は)いられない ／ Vてられない ／ Vてらんない（会話）",
+            "explanation": "Menunjukkan bahwa pembicara tidak bisa terus melakukan sesuatu karena ada keadaan yang mendesak.",
+            "explanation_en": "Shows that the speaker cannot keep doing something due to a pressing situation."
+          },
+          "examples": [
+            {
+              "jp": "急用ができたので、のんびりしていられない。",
+              "en": "Karena ada urusan mendadak, aku tidak bisa santai-santai lagi.",
+              "explanation": "",
+              "highlight": "していられない"
+            },
+            {
+              "jp": "こんなに忙しくちゃ、寝てらんないよ。",
+              "en": "Sesibuk ini, aku nggak sempat tidur.",
+              "explanation": "",
+              "highlight": "寝てらんない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "遊んでばかりはいられない",
+          "pattern_meaning": "てばかりは／もいられない = tidak bisa terus-menerus hanya... (ada hal lain yang harus dilakukan)",
+          "description_box": {
+            "formula": "Vてばかりは／も + いられない",
+            "explanation": "Menunjukkan bahwa pembicara tidak bisa terus-menerus melakukan hanya satu hal itu saja, karena ada hal lain yang harus dilakukan.",
+            "explanation_en": "Shows that the speaker cannot keep doing only one thing, because other things need attention too."
+          },
+          "examples": [
+            {
+              "jp": "赤ちゃんが生まれたから、いつまでも独身気分でいてばかりはいられない。",
+              "en": "Karena bayi sudah lahir, aku tidak bisa terus-menerus merasa seperti masih lajang.",
+              "explanation": "",
+              "highlight": "てばかりはいられない"
+            },
+            {
+              "jp": "受験生だから、遊んでばかりもいられない。",
+              "en": "Karena aku murid yang akan ujian masuk, aku tidak bisa terus-menerus hanya bermain.",
+              "explanation": "",
+              "highlight": "てばかりもいられない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

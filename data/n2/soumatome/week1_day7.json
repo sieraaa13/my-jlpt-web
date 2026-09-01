@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 7,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 1 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "1週間の文法、覚えてるかな？",
+        "friend2": "問題を解いてみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "外食が続くと、栄養が偏り（　　）だ。",
+              "options": [
+                { "id": 1, "text": "げ" },
+                { "id": 2, "text": "がち" },
+                { "id": 3, "text": "もの" },
+                { "id": 4, "text": "っぽい" }
+              ],
+              "hint": "📝 Petunjuk materi: がち = cenderung terjadi (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 2,
+              "question": "説明は聞いている（　　）、内容がよく理解できない。",
+              "options": [
+                { "id": 1, "text": "ものの" },
+                { "id": 2, "text": "ものなら" },
+                { "id": 3, "text": "ものだから" },
+                { "id": 4, "text": "んだもの" }
+              ],
+              "hint": "📝 Petunjuk materi: ものの = walaupun... (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 3,
+              "question": "最近、残業続きで疲れ（　　）だ。",
+              "options": [
+                { "id": 1, "text": "げ" },
+                { "id": 2, "text": "気味" },
+                { "id": 3, "text": "っぽい" },
+                { "id": 4, "text": "がち" }
+              ],
+              "hint": "📝 Petunjuk materi: 気味 = agak/sedikit mengarah ke suatu keadaan (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 4,
+              "question": "彼はきょうは自信（　　）げな顔をしている。",
+              "options": [
+                { "id": 1, "text": "ない" },
+                { "id": 2, "text": "なさ" },
+                { "id": 3, "text": "なし" },
+                { "id": 4, "text": "な" }
+              ],
+              "hint": "📝 Petunjuk materi: naい→なさげ (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 5,
+              "question": "戻れる（　　）、あの日に戻ってやり直したい。",
+              "options": [
+                { "id": 1, "text": "ものか" },
+                { "id": 2, "text": "ものの" },
+                { "id": 3, "text": "ものなら" },
+                { "id": 4, "text": "ものだから" }
+              ],
+              "hint": "📝 Petunjuk materi: V(可能形)+ものなら (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "彼は最近、（　　）っぽくなったような気がする。",
+              "options": [
+                { "id": 1, "text": "怒る" },
+                { "id": 2, "text": "怒って" },
+                { "id": 3, "text": "怒り" },
+                { "id": 4, "text": "怒った" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+っぽい (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 7,
+              "question": "あんまり（　　）もんだから、だれもいないのかと思った。",
+              "options": [
+                { "id": 1, "text": "静か" },
+                { "id": 2, "text": "静かな" },
+                { "id": 3, "text": "静かだ" },
+                { "id": 4, "text": "静かの" }
+              ],
+              "hint": "📝 Petunjuk materi: naな+ものだから／もんだから (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 8,
+              "question": "傘ぐらいなら（　　）、大事な財布を置いてくるなんて。",
+              "options": [
+                { "id": 1, "text": "抜きにして" },
+                { "id": 2, "text": "もとより" },
+                { "id": 3, "text": "まだしも" },
+                { "id": 4, "text": "ものなら" }
+              ],
+              "hint": "📝 Petunjuk materi: Nならまだしも (3日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "その選手の名前は、国内は（　　）、海外でも知られている。",
+              "options": [
+                { "id": 1, "text": "ともかく" },
+                { "id": 2, "text": "ものの" },
+                { "id": 3, "text": "もとより" },
+                { "id": 4, "text": "抜きで" }
+              ],
+              "hint": "📝 Petunjuk materi: Nはもとより～も (3日目).",
+              "answer": 3
+            },
+            {
+              "number": 10,
+              "question": "修理すれば（　　）けれど、古いから捨てよう。",
+              "options": [
+                { "id": 1, "text": "使えないものだ" },
+                { "id": 2, "text": "使ってはならない" },
+                { "id": 3, "text": "使わねばならない" },
+                { "id": 4, "text": "使えないこともない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vないこともない (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 11,
+              "question": "最近体の調子が悪いが、仕事を（　　）。",
+              "options": [
+                { "id": 1, "text": "休んでばかりもいられない" },
+                { "id": 2, "text": "休んでかなわない" },
+                { "id": 3, "text": "休まないこともない" },
+                { "id": 4, "text": "休まないではいられない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vてばかりもいられない (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 12,
+              "question": "A「どうしてスマホを持たないの。」\nB「（　　）。」",
+              "options": [
+                { "id": 1, "text": "いるんだもの" },
+                { "id": 2, "text": "いらないんだもの" },
+                { "id": 3, "text": "いらないこともないんだ" },
+                { "id": 4, "text": "もたずにいられないんだ" }
+              ],
+              "hint": "📝 Petunjuk materi: 普通形+（ん）だもの (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 13,
+              "question": "図書館には10年以上行っていない。（　　）こともないが、家で読むほうが楽だ。",
+              "options": [
+                { "id": 1, "text": "行く" },
+                { "id": 2, "text": "行きたい" },
+                { "id": 3, "text": "行きたくない" },
+                { "id": 4, "text": "行った" }
+              ],
+              "hint": "📝 Petunjuk materi: Vたこともない (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 14,
+              "question": "今夜は寝ないで作業をしないといけない。それなのに、濃いコーヒーを飲んでも（　　）。",
+              "options": [
+                { "id": 1, "text": "眠れない" },
+                { "id": 2, "text": "眠くてたまらない" },
+                { "id": 3, "text": "眠らないことはない" },
+                { "id": 4, "text": "眠くなくてしょうがない" }
+              ],
+              "hint": "📝 Petunjuk materi: konteks logis kalimat (4日目).",
+              "answer": 1
+            },
+            {
+              "number": 15,
+              "question": "細かいルールはいろいろあるが、今日は初めてだから、話は抜きにして、とにかく（　　）。",
+              "options": [
+                { "id": 1, "text": "やってみましょう" },
+                { "id": 2, "text": "やることはできません" },
+                { "id": 3, "text": "やらずにはいられません" },
+                { "id": 4, "text": "やらないこともありません" }
+              ],
+              "hint": "📝 Petunjuk materi: konteks logis kalimat (3日目).",
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "戻れる ＿＿ ＿＿ ★ ＿＿ 会いたい。",
+              "words": [
+                { "id": 1, "word": "もう一度" },
+                { "id": 2, "word": "ものなら" },
+                { "id": 3, "word": "家族に" },
+                { "id": 4, "word": "あの日に" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 17,
+              "question": "彼女は ＿＿ ＿＿ ★ ＿＿ 好かれている。",
+              "words": [
+                { "id": 1, "word": "として" },
+                { "id": 2, "word": "性格" },
+                { "id": 3, "word": "ともかく" },
+                { "id": 4, "word": "見た目は" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 18,
+              "question": "今日は ＿＿ ＿＿ ★ ＿＿ 楽しみましょう。",
+              "words": [
+                { "id": 1, "word": "にして" },
+                { "id": 2, "word": "仕事の話" },
+                { "id": 3, "word": "は" },
+                { "id": 4, "word": "抜き" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 19,
+              "question": "毎日少しずつ ＿＿ ＿＿ ★ ＿＿ ない。",
+              "words": [
+                { "id": 1, "word": "こと" },
+                { "id": 2, "word": "できない" },
+                { "id": 3, "word": "練習すれば" },
+                { "id": 4, "word": "も" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 20,
+              "question": "その知らせを ＿＿ ＿＿ ★ ＿＿ いられない。",
+              "words": [
+                { "id": 1, "word": "では" },
+                { "id": 2, "word": "聞いて" },
+                { "id": 3, "word": "泣かないで" },
+                { "id": 4, "word": "驚きのあまり" }
+              ],
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "最近、私は仕事が忙しくて、休日も家でゆっくりしていられないことが多い。 [21] 、たまには何もかも忘れて、のんびり過ごしたいと思うことがある。特に、平日は残業 [22] で、帰宅時間もどんどん遅くなっている。長年一緒に働いていた同僚が退職してしまったのが [23] 。一日ぐらいの残業なら [24] 、毎日残業が続くのはつらい。私も、いつまでも今の会社にいるべきかどうか、考え [25] 。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Akhir-akhir ini, aku sibuk bekerja, dan seringkali tidak bisa bersantai di rumah bahkan di hari libur. [21] , kadang aku ingin melupakan segalanya dan menghabiskan waktu dengan santai. Terutama, pada hari kerja aku [22] lembur, dan jam pulang kerjaku semakin larut. Rekan kerja yang sudah lama bekerja bersamaku mengundurkan diri, dan itu [23] . Kalau lemburnya cuma sehari sih [24] , tapi lembur setiap hari itu berat. Aku sendiri jadi tidak bisa menahan diri untuk tidak [25] apakah aku harus terus berada di perusahaan ini."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "それで" },
+                { "id": 2, "text": "そこで" },
+                { "id": 3, "text": "それに" },
+                { "id": 4, "text": "しかし" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "げ" },
+                { "id": 2, "text": "がち" },
+                { "id": 3, "text": "っぽい" },
+                { "id": 4, "text": "気味" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "残念でならない" },
+                { "id": 2, "text": "残念げ" },
+                { "id": 3, "text": "残念がち" },
+                { "id": 4, "text": "残念っぽい" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "まだしも" },
+                { "id": 2, "text": "もとより" },
+                { "id": 3, "text": "ともかく" },
+                { "id": 4, "text": "抜きにして" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "ずにはいられない" },
+                { "id": 2, "text": "てはならない" },
+                { "id": 3, "text": "ばかりはいられない" },
+                { "id": 4, "text": "ねばならない" }
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

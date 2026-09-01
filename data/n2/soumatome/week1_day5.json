@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 5,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "やめられないことはない",
+        "translation": "Bukan berarti tidak bisa berhenti"
+      },
+      "illustration_text": {
+        "friend1": "お酒を飲まずにはいられないんだ。",
+        "friend2": "やめられないことはないよ、少しずつ減らしてみよう。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "食べないことはない",
+          "pattern_meaning": "ないことはない = bukan berarti tidak..., masih mungkin/bisa (dengan syarat tertentu)",
+          "description_box": {
+            "formula": "Aくない／naじゃない／Vない／Vられない + ことはない",
+            "explanation": "Menyatakan bahwa sesuatu bukan tidak mungkin/bukan sama sekali tidak, walau dengan syarat tertentu.",
+            "explanation_en": "States that something is not impossible, though with certain conditions."
+          },
+          "examples": [
+            {
+              "jp": "辛い料理が食べられないことはないが、あまり好きではない。",
+              "en": "Bukannya tidak bisa makan makanan pedas, tapi aku kurang suka.",
+              "explanation": "",
+              "highlight": "ないことはない"
+            },
+            {
+              "jp": "忙しいが、手伝えないことはない。",
+              "en": "Aku memang sibuk, tapi bukan berarti tidak bisa membantu.",
+              "explanation": "",
+              "highlight": "ないことはない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "覚えられないこともない",
+          "pattern_meaning": "こともない = bukan tidak mungkin juga... (lebih ragu-ragu daripada ことはない)",
+          "description_box": {
+            "formula": "Aくない／naじゃない／Vない／Vられない + こともない",
+            "explanation": "Mirip dengan 〜ないことはない, tetapi dengan nuansa yang sedikit lebih ragu-ragu atau tidak pasti.",
+            "explanation_en": "Similar to ないことはない, but with a slightly more hesitant nuance."
+          },
+          "examples": [
+            {
+              "jp": "毎日少しずつ練習すれば、上達できないこともない。",
+              "en": "Kalau berlatih sedikit-sedikit tiap hari, bukan tidak mungkin bisa membaik juga.",
+              "explanation": "",
+              "highlight": "できないこともない"
+            },
+            {
+              "jp": "彼の言い分もわからないこともない。",
+              "en": "Alasannya juga bukan tidak bisa dipahami.",
+              "explanation": "",
+              "highlight": "わからないこともない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "言わないではいられない",
+          "pattern_meaning": "ないではいられない = tidak bisa menahan diri untuk tidak... (dorongan kuat)",
+          "description_box": {
+            "formula": "Vないでは + いられない",
+            "explanation": "Menunjukkan bahwa pembicara tidak bisa menahan diri untuk melakukan sesuatu karena dorongan yang kuat.",
+            "explanation_en": "Shows that the speaker cannot help doing something due to a strong urge."
+          },
+          "examples": [
+            {
+              "jp": "あまりにひどい対応に、抗議しないではいられなかった。",
+              "en": "Karena perlakuannya sangat buruk, aku tidak bisa menahan diri untuk tidak protes.",
+              "explanation": "",
+              "highlight": "しないではいられなかった"
+            },
+            {
+              "jp": "そのニュースを聞いて、涙を流さないではいられなかった。",
+              "en": "Mendengar berita itu, aku tidak bisa menahan air mata.",
+              "explanation": "",
+              "highlight": "ないではいられなかった"
+            }
+          ]
+        },
+        {
+          "pattern_title": "飲まずにはいられない",
+          "pattern_meaning": "ずにはいられない = versi formal dari 〜ないではいられない",
+          "description_box": {
+            "formula": "V(ない形→ず)+にはいられない",
+            "explanation": "Bentuk formal/tulisan dari 〜ないではいられない, menyatakan dorongan yang tak tertahankan untuk melakukan sesuatu.",
+            "explanation_en": "A formal/written form of ないではいられない, expressing an irresistible urge."
+          },
+          "examples": [
+            {
+              "jp": "彼の演技を見て、感動せずにはいられなかった。",
+              "en": "Melihat aktingnya, aku tidak bisa menahan diri untuk tidak terharu.",
+              "explanation": "",
+              "highlight": "せずにはいられなかった"
+            },
+            {
+              "jp": "この本を読んだら、誰でも考えさせられずにはいられないだろう。",
+              "en": "Kalau membaca buku ini, siapa pun pasti akan terdorong untuk merenung.",
+              "explanation": "",
+              "highlight": "ずにはいられない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
