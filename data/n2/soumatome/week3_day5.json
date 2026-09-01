@@ -1,0 +1,89 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 5,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "ほこりだらけ",
+        "translation": "Penuh debu"
+      },
+      "illustration_text": {
+        "friend1": "この楽器、ほこりだらけだね。",
+        "friend2": "学生のとき使ったきりだからね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "間違いだらけ",
+          "pattern_meaning": "だらけ = penuh dengan... (kesan negatif)",
+          "description_box": {
+            "formula": "N + だらけ",
+            "explanation": "Menunjukkan bahwa suatu tempat atau benda dipenuhi oleh sesuatu yang tidak diinginkan, memberi kesan negatif.",
+            "explanation_en": "Shows that a place or object is covered with something undesirable, giving a negative impression."
+          },
+          "examples": [
+            {
+              "jp": "子どもは公園で転んで、泥だらけになって帰ってきた。",
+              "en": "Anaknya jatuh di taman dan pulang dengan badan penuh lumpur.",
+              "explanation": "",
+              "highlight": "だらけ"
+            },
+            {
+              "jp": "久しぶりに開けた本棚は、ほこりだらけだった。",
+              "en": "Rak buku yang dibuka setelah lama tidak disentuh itu penuh debu.",
+              "explanation": "",
+              "highlight": "だらけ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行ったきり",
+          "pattern_meaning": "きり／っきり = sejak itu terus... (tak berubah) / terus-menerus melakukan satu hal saja",
+          "description_box": {
+            "formula": "Vた + きり／っきり(Vない) ／ Vます形 + きり／っきり",
+            "explanation": "Menunjukkan bahwa setelah suatu tindakan dilakukan, keadaan itu terus berlanjut tanpa perubahan (きりVない), atau bahwa seseorang terus-menerus melakukan satu hal saja tanpa jeda (つきっきり).",
+            "explanation_en": "Shows that after an action, the state continues unchanged (きりVない), or that someone keeps doing just one thing without a break (つきっきり)."
+          },
+          "examples": [
+            {
+              "jp": "弟は自分の部屋に入ったきり、夕食にも出てこなかった。",
+              "en": "Adikku masuk ke kamarnya dan sejak itu tidak keluar lagi, bahkan untuk makan malam.",
+              "explanation": "",
+              "highlight": "入ったきり"
+            },
+            {
+              "jp": "看護師が患者につきっきりで対応している。",
+              "en": "Perawat itu menangani pasiennya tanpa jeda sedikit pun.",
+              "explanation": "",
+              "highlight": "つきっきり"
+            }
+          ]
+        },
+        {
+          "pattern_title": "立ちっぱなし",
+          "pattern_meaning": "っぱなし = keadaan yang dibiarkan terus berlangsung tanpa diubah (kesan negatif)",
+          "description_box": {
+            "formula": "Vます形 + っぱなし",
+            "explanation": "Menunjukkan bahwa suatu keadaan dibiarkan terus berlangsung tanpa dihentikan atau diubah, biasanya memberi kesan kurang baik.",
+            "explanation_en": "Shows that a state is left to continue without being stopped or changed, usually with a negative nuance."
+          },
+          "examples": [
+            {
+              "jp": "会議が長引いて、3時間も座りっぱなしだった。",
+              "en": "Rapatnya molor, aku duduk terus selama 3 jam tanpa berdiri.",
+              "explanation": "",
+              "highlight": "っぱなし"
+            },
+            {
+              "jp": "水を出しっぱなしにしないでください。",
+              "en": "Tolong jangan membiarkan air terus mengalir begitu saja.",
+              "explanation": "",
+              "highlight": "っぱなし"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

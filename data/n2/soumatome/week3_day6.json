@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 6,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "上がる一方だ",
+        "translation": "Terus naik saja"
+      },
+      "illustration_text": {
+        "friend1": "物価は上がる一方だね。",
+        "friend2": "便利な反面、生活は大変になっているよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "予想に反して",
+          "pattern_meaning": "に反して = berlawanan dengan...",
+          "description_box": {
+            "formula": "Nに + 反して／反し／反するN",
+            "explanation": "Menunjukkan bahwa suatu hasil bertentangan atau berlawanan dengan apa yang diharapkan, diperkirakan, atau diinginkan sebelumnya.",
+            "explanation_en": "Shows that a result goes against or contradicts what was expected, predicted, or hoped for."
+          },
+          "examples": [
+            {
+              "jp": "みんなの心配に反して、手術は無事に成功した。",
+              "en": "Berlawanan dengan kekhawatiran semua orang, operasinya berhasil dengan selamat.",
+              "explanation": "",
+              "highlight": "に反して"
+            },
+            {
+              "jp": "規則に反する行動は禁止されている。",
+              "en": "Tindakan yang melanggar aturan itu dilarang.",
+              "explanation": "",
+              "highlight": "に反する"
+            }
+          ]
+        },
+        {
+          "pattern_title": "便利な反面",
+          "pattern_meaning": "反面／半面 = di sisi lain/di sisi yang berlawanan",
+          "description_box": {
+            "formula": "Nである／Naな・Naである／Aい／Vる + 反面／半面",
+            "explanation": "Menunjukkan dua sisi yang berbeda atau berlawanan dari satu hal atau keadaan yang sama.",
+            "explanation_en": "Shows two different or contrasting sides of the same thing or situation."
+          },
+          "examples": [
+            {
+              "jp": "在宅勤務は自由な反面、生活と仕事の区別がつきにくい。",
+              "en": "Kerja dari rumah itu bebas di satu sisi, tapi di sisi lain sulit membedakan antara kehidupan dan pekerjaan.",
+              "explanation": "",
+              "highlight": "反面"
+            },
+            {
+              "jp": "彼は優しい半面、決断力に欠けるところがある。",
+              "en": "Dia baik hati di satu sisi, tapi di sisi lain kurang tegas dalam mengambil keputusan.",
+              "explanation": "",
+              "highlight": "半面"
+            }
+          ]
+        },
+        {
+          "pattern_title": "水に強い一方",
+          "pattern_meaning": "一方(で) = di satu sisi..., (di sisi lain...)",
+          "description_box": {
+            "formula": "Nである／Naな・Naである／Aい／Vる + 一方(で)",
+            "explanation": "Menunjukkan dua sisi berbeda dari satu hal, mirip dengan 反面, namun 一方 juga bisa digunakan untuk menyatakan dua kejadian yang berjalan bersamaan.",
+            "explanation_en": "Shows two different sides of one thing, similar to 反面, but 一方 can also express two things happening in parallel."
+          },
+          "examples": [
+            {
+              "jp": "この地域は交通が便利な一方、家賃が高い。",
+              "en": "Daerah ini transportasinya praktis di satu sisi, tapi sewa rumahnya mahal.",
+              "explanation": "",
+              "highlight": "一方"
+            },
+            {
+              "jp": "輸出が増える一方で、輸入は減っている。",
+              "en": "Di satu sisi ekspor meningkat, sementara impor justru menurun.",
+              "explanation": "",
+              "highlight": "一方で"
+            }
+          ]
+        },
+        {
+          "pattern_title": "進む一方だ",
+          "pattern_meaning": "一方だ = terus-menerus ke satu arah tertentu (perubahan bertahap)",
+          "description_box": {
+            "formula": "Vる（変化を表す動詞） + 一方だ",
+            "explanation": "Menunjukkan bahwa suatu keadaan terus berubah ke satu arah tanpa henti, mirip dengan ばかりだ, tetapi khusus digunakan dengan kata kerja yang menyatakan perubahan.",
+            "explanation_en": "Shows that a state keeps changing in one direction continuously, similar to ばかりだ, but specifically used with verbs expressing change."
+          },
+          "examples": [
+            {
+              "jp": "少子化の影響で、この村の人口は減る一方だ。",
+              "en": "Karena pengaruh menurunnya angka kelahiran, penduduk desa ini terus berkurang saja.",
+              "explanation": "",
+              "highlight": "一方だ"
+            },
+            {
+              "jp": "都市部の物価は上がる一方だ。",
+              "en": "Harga barang di wilayah perkotaan terus naik saja.",
+              "explanation": "",
+              "highlight": "一方だ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
