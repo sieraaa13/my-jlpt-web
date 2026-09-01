@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 6,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "高くなるにしたがって",
+        "translation": "Seiring semakin tinggi"
+      },
+      "illustration_text": {
+        "friend1": "山を登るにしたがって、空気が冷たくなるね。",
+        "friend2": "そうだね。標高が上がるにつれて、景色もどんどん変わっていく。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "家族とともに",
+          "pattern_meaning": "とともに = bersama-sama dengan...",
+          "description_box": {
+            "formula": "N + とともに ／ Vる + とともに",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi bersamaan atau bersama-sama dengan hal lain.",
+            "explanation_en": "Shows that something happens together or simultaneously with something else."
+          },
+          "examples": [
+            {
+              "jp": "卒業とともに、この町を離れることになった。",
+              "en": "Bersamaan dengan kelulusan, aku akhirnya harus meninggalkan kota ini.",
+              "explanation": "",
+              "highlight": "とともに"
+            },
+            {
+              "jp": "技術の発展とともに、生活は便利になった。",
+              "en": "Seiring dengan perkembangan teknologi, kehidupan menjadi lebih praktis.",
+              "explanation": "",
+              "highlight": "とともに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "増加にともなって",
+          "pattern_meaning": "にともなって = seiring dengan/sebagai akibat dari...",
+          "description_box": {
+            "formula": "Nする + にともない／にともなって ／ Vるの／Vたの + にともなうN",
+            "explanation": "Menunjukkan bahwa suatu perubahan terjadi seiring dengan perubahan lain, sebagai akibat dari perubahan tersebut.",
+            "explanation_en": "Shows that a change occurs alongside another change, as a result of it."
+          },
+          "examples": [
+            {
+              "jp": "円安にともなって、輸入品の値段が上がった。",
+              "en": "Seiring dengan melemahnya nilai yen, harga barang impor naik.",
+              "explanation": "",
+              "highlight": "にともなって"
+            },
+            {
+              "jp": "工事にともなう騒音について、近所からの苦情があった。",
+              "en": "Ada keluhan dari tetangga terkait kebisingan yang menyertai pekerjaan konstruksi.",
+              "explanation": "",
+              "highlight": "にともなう"
+            }
+          ]
+        },
+        {
+          "pattern_title": "年を取るにつれて",
+          "pattern_meaning": "につれて = seiring bertambahnya/berjalannya...",
+          "description_box": {
+            "formula": "Nする + につれ ／ Vる + につれ(て)",
+            "explanation": "Menunjukkan bahwa suatu keadaan berubah secara bertahap seiring dengan perubahan hal lain.",
+            "explanation_en": "Shows that a state gradually changes as another thing changes."
+          },
+          "examples": [
+            {
+              "jp": "都会に近づくにつれて、建物が高くなっていく。",
+              "en": "Semakin mendekati kota, gedung-gedungnya semakin tinggi.",
+              "explanation": "",
+              "highlight": "につれて"
+            },
+            {
+              "jp": "経験を積むにつれて、仕事に自信が持てるようになった。",
+              "en": "Seiring bertambahnya pengalaman, aku menjadi semakin percaya diri dalam pekerjaan.",
+              "explanation": "",
+              "highlight": "につれて"
+            }
+          ]
+        },
+        {
+          "pattern_title": "北へ行くにしたがって",
+          "pattern_meaning": "にしたがって = seiring dengan.../sesuai dengan... (mengikuti aturan/perubahan)",
+          "description_box": {
+            "formula": "Nに + したがって ／ Vるに + したがい",
+            "explanation": "Menunjukkan bahwa suatu hal berubah secara bertahap seiring dengan hal lain, atau bahwa suatu tindakan dilakukan sesuai dengan aturan/petunjuk tertentu.",
+            "explanation_en": "Shows that something gradually changes along with something else, or that an action follows a certain rule or instruction."
+          },
+          "examples": [
+            {
+              "jp": "標高が上がるにしたがって、気温が下がっていく。",
+              "en": "Seiring bertambahnya ketinggian, suhu udara semakin turun.",
+              "explanation": "",
+              "highlight": "にしたがって"
+            },
+            {
+              "jp": "係員の指示にしたがって、避難してください。",
+              "en": "Silakan mengungsi sesuai dengan petunjuk petugas.",
+              "explanation": "",
+              "highlight": "にしたがって"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

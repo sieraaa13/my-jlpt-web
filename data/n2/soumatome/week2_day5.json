@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 5,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "外国へ行くとしたら",
+        "translation": "Seandainya pergi ke luar negeri"
+      },
+      "illustration_text": {
+        "friend1": "外国へ行くとしたら、どこがいい？",
+        "friend2": "私だったら、勉強を目的として留学したいな。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "子どもにしたら",
+          "pattern_meaning": "にしたら／にすれば = kalau dari sudut pandang...",
+          "description_box": {
+            "formula": "N + にしたら／にすれば／にしてみたら／にしてみれば",
+            "explanation": "Menunjukkan sudut pandang atau perasaan seseorang terhadap suatu hal, seolah membayangkan diri berada di posisi orang tersebut.",
+            "explanation_en": "Shows a person's viewpoint or feeling about something, as if imagining oneself in their position."
+          },
+          "examples": [
+            {
+              "jp": "先生にしたら、簡単な質問でも、初心者には難しく感じられる。",
+              "en": "Meski bagi guru itu pertanyaan yang mudah, bagi pemula bisa terasa sulit.",
+              "explanation": "",
+              "highlight": "にしたら"
+            },
+            {
+              "jp": "親にすれば、子どもはいくつになっても心配な存在だ。",
+              "en": "Bagi orang tua, anak tetap menjadi sosok yang dikhawatirkan berapa pun usianya.",
+              "explanation": "",
+              "highlight": "にすれば"
+            }
+          ]
+        },
+        {
+          "pattern_title": "本当だとしたら",
+          "pattern_meaning": "としたら／とすれば = kalau seandainya... (mengandaikan)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + としたら／とすれば",
+            "explanation": "Menunjukkan pengandaian terhadap suatu hal, membayangkan apa yang akan terjadi jika hal itu benar.",
+            "explanation_en": "Shows a hypothesis about something, imagining what would happen if it were true."
+          },
+          "examples": [
+            {
+              "jp": "もし宝くじが当たるとしたら、何に使いますか。",
+              "en": "Kalau seandainya menang undian, kamu akan pakai uangnya untuk apa?",
+              "explanation": "",
+              "highlight": "としたら"
+            },
+            {
+              "jp": "彼の話が事実だとすれば、大変なことになる。",
+              "en": "Kalau ceritanya itu benar, akan jadi masalah besar.",
+              "explanation": "",
+              "highlight": "だとすれば"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行くとしても",
+          "pattern_meaning": "としても = seandainya pun/meski begitu",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + としても ／ Naだ／Nだ + としても",
+            "explanation": "Menunjukkan bahwa meskipun suatu pengandaian itu benar terjadi, hasilnya tetap tidak akan banyak berubah.",
+            "explanation_en": "Shows that even if a certain hypothesis were true, the result would still not change much."
+          },
+          "examples": [
+            {
+              "jp": "今から急ぐとしても、始発の電車には間に合わない。",
+              "en": "Seandainya sekarang buru-buru pun, tetap tidak akan sempat naik kereta pertama.",
+              "explanation": "",
+              "highlight": "としても"
+            },
+            {
+              "jp": "たとえ冗談だとしても、そんなことを言うべきではない。",
+              "en": "Sekalipun itu cuma bercanda, kamu tidak seharusnya mengatakan hal seperti itu.",
+              "explanation": "",
+              "highlight": "だとしても"
+            }
+          ]
+        },
+        {
+          "pattern_title": "社会参加を目的として",
+          "pattern_meaning": "を〜として = menjadikan...sebagai... (tujuan/peran/tema)",
+          "description_box": {
+            "formula": "N1をN2 + として ／ とするN ／ としたN",
+            "explanation": "Menunjukkan bahwa suatu hal dijadikan sebagai tujuan, peran, atau tema tertentu.",
+            "explanation_en": "Shows that something is set as a purpose, role, or theme."
+          },
+          "examples": [
+            {
+              "jp": "この講座は初心者を対象としている。",
+              "en": "Kursus ini ditujukan untuk pemula.",
+              "explanation": "",
+              "highlight": "を対象としている"
+            },
+            {
+              "jp": "地域の伝統をテーマとした展示会が開かれた。",
+              "en": "Pameran yang mengangkat tradisi daerah sebagai tema telah diselenggarakan.",
+              "explanation": "",
+              "highlight": "をテーマとした"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
