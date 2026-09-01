@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 7,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 5 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "5週目の文法、覚えられそう？",
+        "friend2": "実戦問題で確認してみようではないか！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "この神社は、桜の名所として有名な（　　）、桜神社と呼ばれています。",
+              "options": [
+                { "id": 1, "text": "ことには" },
+                { "id": 2, "text": "ことから" },
+                { "id": 3, "text": "ことだから" },
+                { "id": 4, "text": "ものなら" }
+              ],
+              "hint": "📝 Petunjuk materi: Vることから (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 2,
+              "question": "私は声が大きい（　　）、どこにいても気づかれてしまう。",
+              "options": [
+                { "id": 1, "text": "わりに" },
+                { "id": 2, "text": "かわりに" },
+                { "id": 3, "text": "ばかりに" },
+                { "id": 4, "text": "どころか" }
+              ],
+              "hint": "📝 Petunjuk materi: Vいばかりに (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 3,
+              "question": "ご希望（　　）コースをお選びいただけます。",
+              "options": [
+                { "id": 1, "text": "に対して" },
+                { "id": 2, "text": "に際して" },
+                { "id": 3, "text": "に比べて" },
+                { "id": 4, "text": "に応じて" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに応じて (6日目).",
+              "answer": 4
+            },
+            {
+              "number": 4,
+              "question": "なぜ突然会社を辞めたのか、本人に確認してみない（　　）本当の理由はわからない。",
+              "options": [
+                { "id": 1, "text": "ことには" },
+                { "id": 2, "text": "ことから" },
+                { "id": 3, "text": "ことだから" },
+                { "id": 4, "text": "ものなら" }
+              ],
+              "hint": "📝 Petunjuk materi: Vないことには (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 5,
+              "question": "この施設を利用する（　　）、以下の注意事項をよく読んでおいてください。",
+              "options": [
+                { "id": 1, "text": "に基づいて" },
+                { "id": 2, "text": "に応じて" },
+                { "id": 3, "text": "に際して" },
+                { "id": 4, "text": "に反して" }
+              ],
+              "hint": "📝 Petunjuk materi: Vるに際して (6日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "彼女は自分でも言っている（　　）、確かに忘れっぽい。",
+              "options": [
+                { "id": 1, "text": "だけあって" },
+                { "id": 2, "text": "ばかりか" },
+                { "id": 3, "text": "ことから" },
+                { "id": 4, "text": "というより" }
+              ],
+              "hint": "📝 Petunjuk materi: だけあって (4日目).",
+              "answer": 1
+            },
+            {
+              "number": 7,
+              "question": "保険料はこの基準（　　）計算されています。",
+              "options": [
+                { "id": 1, "text": "につれて" },
+                { "id": 2, "text": "に応じて" },
+                { "id": 3, "text": "に比べて" },
+                { "id": 4, "text": "に基づいて" }
+              ],
+              "hint": "📝 Petunjuk materi: Nに基づいて (6日目).",
+              "answer": 4
+            },
+            {
+              "number": 8,
+              "question": "スマホを見ながらの運転は、運転者（　　）歩行者をも危険にさらす。",
+              "options": [
+                { "id": 1, "text": "だけに" },
+                { "id": 2, "text": "わりに" },
+                { "id": 3, "text": "ばかりか" },
+                { "id": 4, "text": "というと" }
+              ],
+              "hint": "📝 Petunjuk materi: ばかりか (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "経験豊富な指導者（　　）子どもを鍛えたい。",
+              "options": [
+                { "id": 1, "text": "の下で" },
+                { "id": 2, "text": "に応じて" },
+                { "id": 3, "text": "に際して" },
+                { "id": 4, "text": "に基づいて" }
+              ],
+              "hint": "📝 Petunjuk materi: Nの下で (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 10,
+              "question": "あの選手の判断や動きは、素人からは真似（　　）。",
+              "options": [
+                { "id": 1, "text": "しうる" },
+                { "id": 2, "text": "しがたい" },
+                { "id": 3, "text": "しかねない" },
+                { "id": 4, "text": "しかない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+がたい (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 11,
+              "question": "白い花が庭一面に咲いて、まるで雪が積もった（　　）。",
+              "options": [
+                { "id": 1, "text": "ことか" },
+                { "id": 2, "text": "せいだ" },
+                { "id": 3, "text": "だけある" },
+                { "id": 4, "text": "かのようだ" }
+              ],
+              "hint": "📝 Petunjuk materi: かのようだ (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 12,
+              "question": "今度こそ、みんなでわが校野球部の応援に（　　）。",
+              "options": [
+                { "id": 1, "text": "行くものか" },
+                { "id": 2, "text": "行こうではないか" },
+                { "id": 3, "text": "行くこそ" },
+                { "id": 4, "text": "行くんだっけ" }
+              ],
+              "hint": "📝 Petunjuk materi: ようではないか (5日目).",
+              "answer": 2
+            },
+            {
+              "number": 13,
+              "question": "無理な約束を重ねても、（　　）。",
+              "options": [
+                { "id": 1, "text": "守れがたい" },
+                { "id": 2, "text": "守れっこない" },
+                { "id": 3, "text": "守るわけだ" },
+                { "id": 4, "text": "守りかねない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+っこない (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 14,
+              "question": "お客様のご住所はお伝え（　　）。",
+              "options": [
+                { "id": 1, "text": "するわけです" },
+                { "id": 2, "text": "してなりません" },
+                { "id": 3, "text": "しかねます" },
+                { "id": 4, "text": "しかねません" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+かねます (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 15,
+              "question": "弟は毎日徹夜でゲームをしている。あれでは体を（　　）。",
+              "options": [
+                { "id": 1, "text": "こわしようがない" },
+                { "id": 2, "text": "こわしっこない" },
+                { "id": 3, "text": "こわしかねる" },
+                { "id": 4, "text": "こわしかねない" }
+              ],
+              "hint": "📝 Petunjuk materi: Vます形+かねない (1日目).",
+              "answer": 4
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "あの選手は＿＿ ＿＿ ★ ＿＿ 。",
+              "words": [
+                { "id": 1, "word": "優れている" },
+                { "id": 2, "word": "技術も" },
+                { "id": 3, "word": "体力" },
+                { "id": 4, "word": "のみか" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 17,
+              "question": "彼女はフランス料理にくわしい。＿＿ ＿＿ ★ ＿＿ ある。",
+              "words": [
+                { "id": 1, "word": "ことは" },
+                { "id": 2, "word": "ずっと" },
+                { "id": 3, "word": "いるだけの" },
+                { "id": 4, "word": "習いたがって" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 18,
+              "question": "集合時間に遅れそうだ。＿＿ ＿＿ ★ ＿＿ きっと怒るだろう。",
+              "words": [
+                { "id": 1, "word": "厳しい" },
+                { "id": 2, "word": "ことだから" },
+                { "id": 3, "word": "先生の" },
+                { "id": 4, "word": "時間に" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 19,
+              "question": "どんなに失敗しても、成果は出なかった。しかし、彼は＿＿ ＿＿ ★ ＿＿ を続けた。",
+              "words": [
+                { "id": 1, "word": "あきらめる" },
+                { "id": 2, "word": "挑戦" },
+                { "id": 3, "word": "なく" },
+                { "id": 4, "word": "こと" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 20,
+              "question": "たとえ口には出していないとしても、その＿＿ ＿＿ ★ ＿＿ 私は思います。",
+              "words": [
+                { "id": 1, "word": "態度は" },
+                { "id": 2, "word": "同然だと" },
+                { "id": 3, "word": "不満だと" },
+                { "id": 4, "word": "言っているのも" }
+              ],
+              "answer": 4
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "日本語の発音に自信がない [21] 、日本に来てからお店で注文をするときに、うまく通じなくて困った、という経験はありませんか。そうなると生活の楽しみも半減 [22] 。やっぱり日本語がもっと話せるようになりたい。そんな方におすすめなのが「話せる日本語コース」です。たったの一ヵ月で自然な日本語が話せるようになる、といきなり言われてもすぐには [23] でしょう。そう思われるのももっともですが、ご安心ください。当社の「話せる日本語コース」は国内 [24] 海外でも高い評価を得て、その効果はすでに広く知られております。ご受講になられた方からも、「まるで日本人と直接話しているかのように発音が身についていく」という声が届いております。お支払い [25] は、分割払いも承りますので、お気軽にどうぞ。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Bagi kamu yang tidak percaya diri dengan pelafalan bahasa Jepang [21], pernahkah kamu mengalami kesulitan karena tidak bisa dipahami saat memesan di toko setelah datang ke Jepang? Kalau begitu, kesenangan hidup di sana pun bisa [22] berkurang separuhnya. Kamu pasti ingin bisa berbicara bahasa Jepang lebih lancar lagi, bukan? Untuk itulah kami merekomendasikan 'Kursus Bahasa Jepang Lancar Bicara'. Kalau tiba-tiba dikatakan bahwa dalam waktu hanya satu bulan kamu bisa berbicara bahasa Jepang secara alami, tentu [23] sulit dipercaya begitu saja. Wajar saja kalau kamu berpikir begitu, tapi tenang saja. 'Kursus Bahasa Jepang Lancar Bicara' dari perusahaan kami mendapat penilaian tinggi bukan hanya di dalam negeri [24], tetapi juga di luar negeri, dan efektivitasnya sudah dikenal luas. Dari para peserta kursus pun, ada banyak testimoni seperti 'pelafalan saya jadi terbentuk seolah-olah sedang berbicara langsung dengan orang Jepang asli'. Untuk pembayaran [25], kami juga menerima cicilan, jadi jangan ragu untuk mencoba."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "ことだから" },
+                { "id": 2, "text": "ばかりに" },
+                { "id": 3, "text": "ことなく" },
+                { "id": 4, "text": "ことには" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "しがたい" },
+                { "id": 2, "text": "しかねます" },
+                { "id": 3, "text": "しかねません" },
+                { "id": 4, "text": "しそうにない" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "信じて当然" },
+                { "id": 2, "text": "信じかねない" },
+                { "id": 3, "text": "信じがたい" },
+                { "id": 4, "text": "信じるだけある" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "かのように" },
+                { "id": 2, "text": "だけあって" },
+                { "id": 3, "text": "のみならず" },
+                { "id": 4, "text": "ばかりに" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "の下で" },
+                { "id": 2, "text": "に応じて" },
+                { "id": 3, "text": "に基づいて" },
+                { "id": 4, "text": "に際して" }
+              ],
+              "answer": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
