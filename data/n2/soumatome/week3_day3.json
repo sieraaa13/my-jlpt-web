@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 3,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "かじったとたん",
+        "translation": "Begitu digigit, seketika itu juga"
+      },
+      "illustration_text": {
+        "friend1": "ケーキを一口食べたとたん、笑顔になったね。",
+        "friend2": "考えた末に選んだ店だから、おいしくて当然だよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "開けたとたん",
+          "pattern_meaning": "とたん(に) = tepat pada saat itu juga/seketika setelah...",
+          "description_box": {
+            "formula": "Vた + とたん(に)",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi tepat pada saat setelah tindakan lain dilakukan, biasanya hal kedua terjadi secara tiba-tiba dan di luar dugaan.",
+            "explanation_en": "Shows that something happens right at the moment another action finishes, usually the second event is sudden and unexpected."
+          },
+          "examples": [
+            {
+              "jp": "冷蔵庫を開けたとたん、いい匂いがしてきた。",
+              "en": "Begitu membuka kulkas, seketika tercium aroma yang enak.",
+              "explanation": "",
+              "highlight": "とたん"
+            },
+            {
+              "jp": "電話に出たとたん、相手が泣き出した。",
+              "en": "Begitu aku mengangkat telepon, orang di seberang langsung menangis.",
+              "explanation": "",
+              "highlight": "とたん"
+            }
+          ]
+        },
+        {
+          "pattern_title": "騒いだあげく",
+          "pattern_meaning": "あげく(に) = pada akhirnya (setelah proses panjang, biasanya berujung buruk)",
+          "description_box": {
+            "formula": "Vた／Nする+の + あげく(に) ／ あげくのN",
+            "explanation": "Menunjukkan hasil akhir dari suatu proses yang panjang atau melelahkan, biasanya hasil akhirnya kurang baik atau tidak diinginkan.",
+            "explanation_en": "Shows the final result of a long or exhausting process, usually an unfavorable or undesired outcome."
+          },
+          "examples": [
+            {
+              "jp": "何時間も迷ったあげく、結局何も買わずに店を出た。",
+              "en": "Setelah berjam-jam bimbang, akhirnya aku keluar toko tanpa membeli apa-apa.",
+              "explanation": "",
+              "highlight": "あげく"
+            },
+            {
+              "jp": "長い議論のあげく、計画は白紙に戻った。",
+              "en": "Setelah perdebatan panjang, rencananya akhirnya dibatalkan sepenuhnya.",
+              "explanation": "",
+              "highlight": "あげく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "悩んだ末",
+          "pattern_meaning": "末(に) = setelah melalui... pada akhirnya (hasil dari proses panjang, netral)",
+          "description_box": {
+            "formula": "Vた／Nする+の + 末(に) ／ 末のN",
+            "explanation": "Menunjukkan hasil akhir setelah melalui proses yang panjang, tanpa kesan negatif tertentu seperti pada あげく.",
+            "explanation_en": "Shows the final result after a long process, without the negative nuance that あげく often carries."
+          },
+          "examples": [
+            {
+              "jp": "何度も話し合った末、二人は結婚することを決めた。",
+              "en": "Setelah berdiskusi berkali-kali, akhirnya mereka berdua memutuskan untuk menikah.",
+              "explanation": "",
+              "highlight": "末"
+            },
+            {
+              "jp": "長い研究の末に、新しい薬が開発された。",
+              "en": "Setelah penelitian panjang, obat baru pun berhasil dikembangkan.",
+              "explanation": "",
+              "highlight": "末に"
+            }
+          ]
+        },
+        {
+          "pattern_title": "来たかと思ったら",
+          "pattern_meaning": "たかと思ったら／たと思うと = baru saja..., eh langsung/tahu-tahu...",
+          "description_box": {
+            "formula": "Vたかと + 思ったら／思うと",
+            "explanation": "Menunjukkan bahwa begitu suatu hal baru saja terjadi, langsung disusul dengan hal lain yang mengejutkan atau tak terduga.",
+            "explanation_en": "Shows that just as one thing happened, it was immediately followed by another surprising or unexpected event."
+          },
+          "examples": [
+            {
+              "jp": "空が晴れたかと思ったら、また雨が降り出した。",
+              "en": "Baru saja langit cerah, eh hujan turun lagi.",
+              "explanation": "",
+              "highlight": "たかと思ったら"
+            },
+            {
+              "jp": "赤ちゃんが泣きやんだと思うと、すぐにまた泣き出した。",
+              "en": "Baru saja bayinya berhenti menangis, langsung menangis lagi.",
+              "explanation": "",
+              "highlight": "たと思うと"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

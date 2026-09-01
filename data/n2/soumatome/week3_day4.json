@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 4,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "お急ぎのところ",
+        "translation": "Meski sedang terburu-buru"
+      },
+      "illustration_text": {
+        "friend1": "お忙しいところすみません、少しよろしいですか。",
+        "friend2": "今はそれどころじゃないんです、後にしてもらえますか。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "お忙しいところ",
+          "pattern_meaning": "ところ(を) = di tengah keadaan/situasi tertentu (basa-basi sopan)",
+          "description_box": {
+            "formula": "Aい／Nの／Vた／Vている／Vていた + ところ(を/に/へ/だ)",
+            "explanation": "Menunjukkan suatu keadaan atau situasi tertentu yang sedang berlangsung, sering digunakan untuk basa-basi sopan sebelum meminta sesuatu.",
+            "explanation_en": "Shows a particular ongoing state or situation, often used as a polite preface before making a request."
+          },
+          "examples": [
+            {
+              "jp": "お休みのところ、電話してしまってすみません。",
+              "en": "Maaf sudah menelepon di saat kamu sedang libur.",
+              "explanation": "",
+              "highlight": "ところ"
+            },
+            {
+              "jp": "ちょうど出かけようと思っていたところです。",
+              "en": "Aku baru saja mau berangkat.",
+              "explanation": "",
+              "highlight": "ところです"
+            }
+          ]
+        },
+        {
+          "pattern_title": "検査したところ",
+          "pattern_meaning": "Vたところ = ketika/setelah mencoba melakukan... (ternyata)",
+          "description_box": {
+            "formula": "Vた + ところ",
+            "explanation": "Menunjukkan bahwa setelah melakukan suatu tindakan, ditemukan suatu hasil atau fakta baru.",
+            "explanation_en": "Shows that after doing something, a new result or fact was discovered."
+          },
+          "examples": [
+            {
+              "jp": "先生に相談したところ、いいアドバイスをもらえた。",
+              "en": "Setelah aku berkonsultasi dengan guru, aku mendapat saran yang bagus.",
+              "explanation": "",
+              "highlight": "ところ"
+            },
+            {
+              "jp": "商品を確認したところ、傷が見つかった。",
+              "en": "Setelah memeriksa barangnya, ditemukan ada cacat.",
+              "explanation": "",
+              "highlight": "ところ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "仕事どころではない",
+          "pattern_meaning": "どころではない／じゃない = bukan saatnya/tidak dalam keadaan untuk...",
+          "description_box": {
+            "formula": "N／Vる／Vている + どころではない／どころじゃない",
+            "explanation": "Menunjukkan bahwa keadaan sekarang sama sekali tidak memungkinkan untuk melakukan suatu hal, karena ada hal lain yang jauh lebih mendesak.",
+            "explanation_en": "Shows that the current situation makes it completely impossible to do something, because something far more urgent is happening."
+          },
+          "examples": [
+            {
+              "jp": "締め切りが近くて、旅行の計画どころではない。",
+              "en": "Deadline sudah dekat, jadi bukan saatnya memikirkan rencana liburan.",
+              "explanation": "",
+              "highlight": "どころではない"
+            },
+            {
+              "jp": "赤ちゃんが夜泣きばかりで、寝るどころじゃない。",
+              "en": "Bayinya terus menangis di malam hari, jadi tidak sempat tidur sama sekali.",
+              "explanation": "",
+              "highlight": "どころじゃない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "夏休みどころか",
+          "pattern_meaning": "どころか = jangankan... bahkan...",
+          "description_box": {
+            "formula": "N／Aい／Naな／Vる + どころか",
+            "explanation": "Menunjukkan bahwa bukan hanya hal yang disebutkan tidak tercapai, tetapi bahkan hal yang lebih ringan pun juga tidak tercapai (atau sebaliknya, jauh melebihi).",
+            "explanation_en": "Shows that not only is the stated thing not achieved, but even something less demanding also isn't (or, conversely, it's far exceeded)."
+          },
+          "examples": [
+            {
+              "jp": "貯金どころか、毎月の生活費もぎりぎりだ。",
+              "en": "Jangankan menabung, biaya hidup bulanan saja sudah pas-pasan.",
+              "explanation": "",
+              "highlight": "どころか"
+            },
+            {
+              "jp": "彼は忙しいどころか、暇を持て余しているようだ。",
+              "en": "Dia bukannya sibuk, malah kelihatan kebanyakan waktu luang.",
+              "explanation": "",
+              "highlight": "どころか"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
