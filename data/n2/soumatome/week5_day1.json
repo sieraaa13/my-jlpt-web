@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 1,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "信じがたい",
+        "translation": "Sulit dipercaya"
+      },
+      "illustration_text": {
+        "friend1": "そんなひどいこと、できっこないよ。",
+        "friend2": "いや、彼ならやりかねないよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "覚えられっこない",
+          "pattern_meaning": "っこない = tidak mungkin sama sekali... (ungkapan percakapan)",
+          "description_box": {
+            "formula": "Vます形 + っこない",
+            "explanation": "Menunjukkan keyakinan kuat bahwa sesuatu benar-benar mustahil terjadi. Merupakan ungkapan percakapan santai.",
+            "explanation_en": "Shows a strong conviction that something is completely impossible. A casual conversational expression."
+          },
+          "examples": [
+            {
+              "jp": "こんなに難しい問題、私に解けっこない。",
+              "en": "Soal sesulit ini, tidak mungkin aku bisa memecahkannya.",
+              "explanation": "",
+              "highlight": "っこない"
+            },
+            {
+              "jp": "今から走っても、始発電車に間に合いっこない。",
+              "en": "Meski berlari sekarang pun, tidak mungkin sempat naik kereta pertama.",
+              "explanation": "",
+              "highlight": "っこない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "言いかねない",
+          "pattern_meaning": "かねない = ada kemungkinan (melakukan hal buruk)/bisa saja terjadi",
+          "description_box": {
+            "formula": "Vます形 + かねない",
+            "explanation": "Menunjukkan bahwa ada kemungkinan seseorang melakukan atau suatu hal terjadi, biasanya untuk hasil yang tidak diinginkan atau negatif.",
+            "explanation_en": "Shows that there is a possibility of someone doing or something happening, usually for an undesired or negative result."
+          },
+          "examples": [
+            {
+              "jp": "彼は感情的になると、ひどいことを言いかねない。",
+              "en": "Kalau dia jadi emosional, dia bisa saja mengatakan hal-hal yang kasar.",
+              "explanation": "",
+              "highlight": "かねない"
+            },
+            {
+              "jp": "無理な運転を続ければ、事故を起こしかねない。",
+              "en": "Kalau terus mengemudi secara sembrono, bisa saja menyebabkan kecelakaan.",
+              "explanation": "",
+              "highlight": "かねない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "わかりかねる",
+          "pattern_meaning": "かねる = sulit untuk.../tidak bisa... (ungkapan formal)",
+          "description_box": {
+            "formula": "Vます形 + かねる",
+            "explanation": "Ungkapan formal untuk menyatakan bahwa sesuatu sulit atau tidak bisa dilakukan, sering digunakan dalam situasi bisnis untuk menolak dengan sopan.",
+            "explanation_en": "A formal expression to say that something is difficult or impossible to do, often used in business settings to politely decline."
+          },
+          "examples": [
+            {
+              "jp": "その件については、私からはお答えしかねます。",
+              "en": "Mengenai hal itu, saya tidak bisa menjawabnya.",
+              "explanation": "",
+              "highlight": "しかねます"
+            },
+            {
+              "jp": "現時点では、まだ判断しかねる状況です。",
+              "en": "Pada saat ini, masih sulit untuk mengambil keputusan.",
+              "explanation": "",
+              "highlight": "しかねる"
+            }
+          ]
+        },
+        {
+          "pattern_title": "信じがたい",
+          "pattern_meaning": "がたい = sulit untuk.../hampir tidak mungkin... (ungkapan formal, lebih kuat dari にくい)",
+          "description_box": {
+            "formula": "Vます形 + がたい",
+            "explanation": "Menunjukkan bahwa suatu hal sangat sulit atau hampir mustahil untuk dilakukan, biasanya karena alasan emosional atau moral, bukan alasan teknis.",
+            "explanation_en": "Shows that something is very difficult or nearly impossible to do, usually due to emotional or moral reasons, not technical ones."
+          },
+          "examples": [
+            {
+              "jp": "彼が犯人だとは、今でも信じがたい。",
+              "en": "Bahwa dialah pelakunya, sampai sekarang pun masih sulit dipercaya.",
+              "explanation": "",
+              "highlight": "がたい"
+            },
+            {
+              "jp": "長年の思い出は捨てがたいものだ。",
+              "en": "Kenangan bertahun-tahun itu adalah sesuatu yang sulit dibuang.",
+              "explanation": "",
+              "highlight": "がたい"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

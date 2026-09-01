@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 2,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "あの人のことだから",
+        "translation": "Karena orangnya seperti itu"
+      },
+      "illustration_text": {
+        "friend1": "田中さんが来ないことには始められないね。",
+        "friend2": "あの人のことだから、時間ぴったりには来ないよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "富士山が見えることから",
+          "pattern_meaning": "ことから = karena.../berdasarkan alasan bahwa...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + ことから",
+            "explanation": "Menunjukkan alasan atau asal-usul suatu hal, sering digunakan untuk menjelaskan bagaimana sesuatu mendapatkan nama atau sifatnya.",
+            "explanation_en": "Shows the reason or origin of something, often used to explain how something got its name or characteristic."
+          },
+          "examples": [
+            {
+              "jp": "この地域は温泉が多いことから、観光地として有名になった。",
+              "en": "Karena banyak terdapat pemandian air panas, daerah ini menjadi terkenal sebagai tempat wisata.",
+              "explanation": "",
+              "highlight": "ことから"
+            },
+            {
+              "jp": "彼はいつも冷静であることから、リーダーに選ばれた。",
+              "en": "Karena selalu tenang, dia dipilih menjadi pemimpin.",
+              "explanation": "",
+              "highlight": "ことから"
+            }
+          ]
+        },
+        {
+          "pattern_title": "彼のことだから",
+          "pattern_meaning": "Nのことだから = karena orangnya (yang sudah dikenal) seperti itu...",
+          "description_box": {
+            "formula": "Nの + ことだから",
+            "explanation": "Menunjukkan dugaan yang didasarkan pada sifat atau kebiasaan seseorang yang sudah diketahui pembicara.",
+            "explanation_en": "Shows a guess based on a person's known character or habits."
+          },
+          "examples": [
+            {
+              "jp": "まじめな山田さんのことだから、締め切りには絶対遅れないだろう。",
+              "en": "Karena Yamada orangnya rajin, pasti tidak akan terlambat dari deadline.",
+              "explanation": "",
+              "highlight": "のことだから"
+            },
+            {
+              "jp": "おしゃべりな彼女のことだから、もう秘密を話してしまったに違いない。",
+              "en": "Karena dia orangnya cerewet, pasti sudah membocorkan rahasia itu.",
+              "explanation": "",
+              "highlight": "のことだから"
+            }
+          ]
+        },
+        {
+          "pattern_title": "休むことなく",
+          "pattern_meaning": "ことなく = tanpa.../tidak melakukan...",
+          "description_box": {
+            "formula": "Vる + ことなく",
+            "explanation": "Menunjukkan bahwa suatu tindakan atau keadaan berlangsung terus-menerus tanpa terputus oleh hal yang disebutkan.",
+            "explanation_en": "Shows that an action or state continues without being interrupted by the mentioned thing."
+          },
+          "examples": [
+            {
+              "jp": "彼女は諦めることなく、最後まで挑戦し続けた。",
+              "en": "Dia terus berjuang sampai akhir tanpa pernah menyerah.",
+              "explanation": "",
+              "highlight": "ことなく"
+            },
+            {
+              "jp": "工場の機械は休むことなく動き続けている。",
+              "en": "Mesin pabrik itu terus bergerak tanpa henti.",
+              "explanation": "",
+              "highlight": "ことなく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "やってみないことにはわからない",
+          "pattern_meaning": "V1ないことにはV2ない = kalau tidak melakukan V1, maka tidak akan V2 (syarat mutlak)",
+          "description_box": {
+            "formula": "Vないことには + Vない",
+            "explanation": "Menunjukkan bahwa tanpa melakukan tindakan pertama, hal kedua sama sekali tidak akan tercapai atau diketahui.",
+            "explanation_en": "Shows that without doing the first action, the second thing simply cannot be achieved or known."
+          },
+          "examples": [
+            {
+              "jp": "自分の目で確かめないことには、信じられない。",
+              "en": "Kalau tidak memastikan dengan mata sendiri, aku tidak bisa percaya.",
+              "explanation": "",
+              "highlight": "ないことには"
+            },
+            {
+              "jp": "予算が決まらないことには、計画を進められない。",
+              "en": "Kalau anggarannya belum ditentukan, rencananya tidak bisa dilanjutkan.",
+              "explanation": "",
+              "highlight": "ないことには"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
