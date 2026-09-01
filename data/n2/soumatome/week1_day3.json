@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 3,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "見た目はともかく",
+        "translation": "Terlepas dari penampilannya"
+      },
+      "illustration_text": {
+        "friend1": "見た目はともかく、味が一番大事だよ。",
+        "friend2": "見た目はもとより、味も抜群らしいよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "車はもとより自転車も",
+          "pattern_meaning": "はもとより～も = jangankan..., bahkan... juga (bentuk formal dari はもちろん)",
+          "description_box": {
+            "formula": "Nは もとより ～も",
+            "explanation": "Ungkapan formal dari 'Nはもちろん～も', menekankan bahwa selain hal yang disebut pertama, hal berikutnya juga berlaku/termasuk.",
+            "explanation_en": "A formal way of saying 'N is of course... and ~ too', emphasizing that both apply."
+          },
+          "examples": [
+            {
+              "jp": "この店には和食はもとより、洋食もそろっている。",
+              "en": "Di restoran ini bukan hanya masakan Jepang, masakan Barat juga tersedia lengkap.",
+              "explanation": "",
+              "highlight": "はもとより"
+            },
+            {
+              "jp": "彼は英語はもとよりフランス語も話せる。",
+              "en": "Dia bisa berbahasa Inggris, bahkan bahasa Prancis juga.",
+              "explanation": "",
+              "highlight": "はもとより"
+            }
+          ]
+        },
+        {
+          "pattern_title": "見た目はともかく味は",
+          "pattern_meaning": "N1はともかく（として） = terlepas dari N1, ... (fokus beralih ke N2)",
+          "description_box": {
+            "formula": "N1は ともかく（として）　N2は／N2が",
+            "explanation": "Menyampaikan bahwa hal N1 dikesampingkan dulu (tidak dibahas), dan pembicara berfokus pada hal N2.",
+            "explanation_en": "Expresses setting N1 aside for now and focusing on N2 instead."
+          },
+          "examples": [
+            {
+              "jp": "値段はともかく、性能はとてもいい。",
+              "en": "Terlepas dari harganya, performanya sangat bagus.",
+              "explanation": "",
+              "highlight": "はともかく"
+            },
+            {
+              "jp": "結果はともかくとして、最後まで頑張ったことが大事だ。",
+              "en": "Terlepas dari hasilnya, yang penting adalah sudah berusaha sampai akhir.",
+              "explanation": "",
+              "highlight": "はともかくとして"
+            }
+          ]
+        },
+        {
+          "pattern_title": "旅行はまだしも",
+          "pattern_meaning": "Nは／Nならまだしも = kalau N sih masih mendingan, tapi... (kenyataannya lebih parah)",
+          "description_box": {
+            "formula": "Nは／Nなら まだしも",
+            "explanation": "Menunjukkan bahwa jika kondisinya N, masih bisa diterima/dimaklumi, tetapi kenyataannya lebih parah dari itu.",
+            "explanation_en": "Shows that condition N would be tolerable, but the actual situation is worse."
+          },
+          "examples": [
+            {
+              "jp": "一日ならまだしも、一週間も休むのは無理だ。",
+              "en": "Kalau satu hari sih masih mendingan, tapi libur sampai satu minggu itu tidak mungkin.",
+              "explanation": "",
+              "highlight": "ならまだしも"
+            },
+            {
+              "jp": "遅刻ならまだしも、無断欠席は許されない。",
+              "en": "Kalau terlambat sih masih mendingan, tapi bolos tanpa izin tidak bisa dimaafkan.",
+              "explanation": "",
+              "highlight": "ならまだしも"
+            }
+          ]
+        },
+        {
+          "pattern_title": "仕事の話は抜きにして",
+          "pattern_meaning": "Nは抜きにして／抜きで／抜きに／抜きのN = tanpa/kecuali N",
+          "description_box": {
+            "formula": "Nは 抜きにして／抜きで／抜きに ／ 抜きのN",
+            "explanation": "Menunjukkan bahwa sesuatu dilakukan tanpa menyertakan hal N, atau mengecualikan N dari suatu pembahasan/kegiatan.",
+            "explanation_en": "Shows that something is done without including N, or excluding N from consideration."
+          },
+          "examples": [
+            {
+              "jp": "今日は仕事の話は抜きにして楽しみましょう。",
+              "en": "Hari ini mari kita bersenang-senang tanpa membahas soal pekerjaan.",
+              "explanation": "",
+              "highlight": "は抜きにして"
+            },
+            {
+              "jp": "彼女抜きでは、この計画は成功しなかっただろう。",
+              "en": "Tanpa dia, rencana ini mungkin tidak akan berhasil.",
+              "explanation": "",
+              "highlight": "抜きでは"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 1,
+      "day": 4,
+      "header": {
+        "main_title": "おぼえずにはいられない",
+        "sub_title": "かゆくてたまらない",
+        "translation": "Rasanya sangat gatal, tak tertahankan"
+      },
+      "illustration_text": {
+        "friend1": "早く休みたくてたまらない。",
+        "friend2": "そんなに疲れてしょうがないなら、少し休んだら？"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "心配でたまらない",
+          "pattern_meaning": "たまらない = sangat..., tak tertahankan",
+          "description_box": {
+            "formula": "Aくて／naで／Vたくて + たまらない",
+            "explanation": "Menunjukkan perasaan atau keadaan yang sangat kuat, sampai tidak tertahankan lagi.",
+            "explanation_en": "Expresses a feeling or state so intense that it can hardly be endured."
+          },
+          "examples": [
+            {
+              "jp": "初めての海外旅行が楽しみでたまらない。",
+              "en": "Aku sangat menantikan perjalanan luar negeri pertamaku, tak sabar rasanya.",
+              "explanation": "",
+              "highlight": "でたまらない"
+            },
+            {
+              "jp": "彼女に会いたくてたまらない。",
+              "en": "Aku sangat rindu ingin bertemu dengannya.",
+              "explanation": "",
+              "highlight": "たくてたまらない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "ひまでしょうがない",
+          "pattern_meaning": "しょうがない／仕方がない = sangat...",
+          "description_box": {
+            "formula": "Aくて／naで + 仕方がない・しょうがない ／ Vて + しょうがない",
+            "explanation": "Menunjukkan perasaan, sensasi, atau keadaan sulit yang dirasakan sangat kuat oleh pembicara.",
+            "explanation_en": "Expresses a strongly felt emotion, sensation, or difficult state."
+          },
+          "examples": [
+            {
+              "jp": "今日は蒸し暑くて仕方がない。",
+              "en": "Hari ini panas dan lembap sekali, tak tertahankan.",
+              "explanation": "",
+              "highlight": "仕方がない"
+            },
+            {
+              "jp": "彼の言葉が気になってしょうがない。",
+              "en": "Perkataannya sangat mengganggu pikiranku.",
+              "explanation": "",
+              "highlight": "てしょうがない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "うるさくてかなわない",
+          "pattern_meaning": "かなわない = sangat..., tak tahan (nada agak formal/tertulis)",
+          "description_box": {
+            "formula": "Aくて／naで + かなわない",
+            "explanation": "Berarti 'sangat merepotkan/mengganggu karena~'; tidak dipakai untuk mengungkapkan perasaan emosi pribadi.",
+            "explanation_en": "Means 'it's unbearably troublesome because ~'; not used for personal emotions."
+          },
+          "examples": [
+            {
+              "jp": "夏の満員電車は暑くてかなわない。",
+              "en": "Kereta yang penuh sesak di musim panas, panasnya luar biasa, tidak tertahankan.",
+              "explanation": "",
+              "highlight": "てかなわない"
+            },
+            {
+              "jp": "隣の犬の鳴き声がうるさくてかなわない。",
+              "en": "Suara gonggongan anjing tetangga berisik sekali, tidak tahan.",
+              "explanation": "",
+              "highlight": "てかなわない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "残念でならない",
+          "pattern_meaning": "ならない = sangat... (perasaan yang muncul secara alami, tak terkendali)",
+          "description_box": {
+            "formula": "Aくて／naで／Vて + ならない",
+            "explanation": "Dipakai untuk perasaan yang muncul secara alami dan tidak bisa dikendalikan oleh pembicara.",
+            "explanation_en": "Used for a feeling that arises naturally and cannot be controlled."
+          },
+          "examples": [
+            {
+              "jp": "彼が引っ越してしまうのが寂しくてならない。",
+              "en": "Aku sangat sedih karena dia akan pindah.",
+              "explanation": "",
+              "highlight": "てならない"
+            },
+            {
+              "jp": "この計画がうまくいくような気がしてならない。",
+              "en": "Entah kenapa aku merasa yakin rencana ini akan berhasil.",
+              "explanation": "",
+              "highlight": "気がしてならない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
