@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 4,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "選手だっただけに",
+        "translation": "Karena memang dulunya seorang atlet"
+      },
+      "illustration_text": {
+        "friend1": "若いとき水泳の選手だっただけに、泳ぎがうまいばかりでなくスピードもある。",
+        "friend2": "日本のみならず外国でも活躍しているらしいよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "一流ホテルだけあって",
+          "pattern_meaning": "だけあって = pantas saja karena... (hasil sesuai dengan sebab, kesan positif)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + だけあって／だけに／だけのことはある",
+            "explanation": "Menunjukkan bahwa suatu hasil positif sesuai dan pantas dengan sebab atau latar belakang yang disebutkan.",
+            "explanation_en": "Shows that a positive result matches and is fitting given the mentioned cause or background."
+          },
+          "examples": [
+            {
+              "jp": "彼は10年も日本に住んでいるだけあって、日本語が上手だ。",
+              "en": "Pantas saja bahasa Jepangnya lancar, dia sudah tinggal di Jepang selama 10 tahun.",
+              "explanation": "",
+              "highlight": "だけあって"
+            },
+            {
+              "jp": "このレストランは有名なだけのことはあり、味も雰囲気も最高だ。",
+              "en": "Restoran ini memang pantas terkenal, rasa maupun suasananya luar biasa.",
+              "explanation": "",
+              "highlight": "だけのことはあり"
+            }
+          ]
+        },
+        {
+          "pattern_title": "成績がいいばかりかスポーツも",
+          "pattern_meaning": "ばかりか/ばかりでなく〜も = bukan hanya..., tetapi juga...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + ばかりか／ばかりでなく ＋ (N)も",
+            "explanation": "Menunjukkan bahwa selain hal pertama, ada hal tambahan lain yang juga berlaku, memberi penekanan lebih kuat dari 上に.",
+            "explanation_en": "Shows that besides the first thing, an additional matching thing also applies, with stronger emphasis than 上に."
+          },
+          "examples": [
+            {
+              "jp": "この店はデザインがいいばかりか、値段も手ごろだ。",
+              "en": "Toko ini bukan hanya desainnya bagus, harganya pun terjangkau.",
+              "explanation": "",
+              "highlight": "ばかりか"
+            },
+            {
+              "jp": "彼女は英語ばかりでなく、フランス語も話せる。",
+              "en": "Dia bukan hanya bisa bahasa Inggris, bahasa Prancis pun bisa.",
+              "explanation": "",
+              "highlight": "ばかりでなく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "あの飛行機に乗ったばかりに",
+          "pattern_meaning": "ばかりに = hanya gara-gara.../justru karena... (penyebab hasil buruk)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + ばかりに",
+            "explanation": "Menunjukkan penekanan bahwa suatu hal buruk terjadi hanya gara-gara sebab yang disebutkan, menekankan penyesalan.",
+            "explanation_en": "Emphasizes that a bad result happened just because of the mentioned cause, expressing regret."
+          },
+          "examples": [
+            {
+              "jp": "近道をしたばかりに、道に迷ってしまった。",
+              "en": "Hanya gara-gara mengambil jalan pintas, aku malah tersesat.",
+              "explanation": "",
+              "highlight": "ばかりに"
+            },
+            {
+              "jp": "一言余計なことを言ったばかりに、友達を怒らせてしまった。",
+              "en": "Hanya gara-gara satu kata yang tidak perlu, aku membuat temanku marah.",
+              "explanation": "",
+              "highlight": "ばかりに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "日本のみならず外国でも",
+          "pattern_meaning": "のみならず = bukan hanya..., bahkan juga... (ungkapan formal dari だけでなく)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + のみならず ／ のみか",
+            "explanation": "Ungkapan formal yang setara dengan だけでなく／ばかりでなく, menunjukkan bahwa selain hal pertama, hal lain juga berlaku.",
+            "explanation_en": "A formal expression equivalent to だけでなく／ばかりでなく, showing that besides the first thing, another also applies."
+          },
+          "examples": [
+            {
+              "jp": "この技術は国内のみならず、海外からも注目されている。",
+              "en": "Teknologi ini mendapat perhatian bukan hanya dari dalam negeri, tapi juga dari luar negeri.",
+              "explanation": "",
+              "highlight": "のみならず"
+            },
+            {
+              "jp": "彼の作品は美しいのみならず、深い意味も込められている。",
+              "en": "Karyanya bukan hanya indah, tetapi juga mengandung makna yang dalam.",
+              "explanation": "",
+              "highlight": "のみならず"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

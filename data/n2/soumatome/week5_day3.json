@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 5,
+      "day": 3,
+      "header": {
+        "main_title": "おぼえてみようではないか",
+        "sub_title": "あるだけましだ",
+        "translation": "Setidaknya masih lebih baik ada..."
+      },
+      "illustration_text": {
+        "friend1": "こんな家はないも同然だ。",
+        "friend2": "こんな家でも、あるだけましだよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "嫌われて当然だ",
+          "pattern_meaning": "当然だ/当たり前だ = wajar saja/sudah semestinya begitu",
+          "description_box": {
+            "formula": "Vて／Aくて／Naで + 当然だ／当然のN／当たり前だ／当たり前のN",
+            "explanation": "Menunjukkan bahwa suatu hasil adalah hal yang wajar dan bisa diduga sebelumnya berdasarkan sebab yang ada.",
+            "explanation_en": "Shows that a result is natural and expected based on the given cause."
+          },
+          "examples": [
+            {
+              "jp": "毎日練習を怠ったのだから、負けて当然だ。",
+              "en": "Karena setiap hari malas berlatih, wajar saja kalau kalah.",
+              "explanation": "",
+              "highlight": "当然だ"
+            },
+            {
+              "jp": "彼はいつも努力家だから、成功して当たり前だ。",
+              "en": "Karena dia selalu pekerja keras, wajar saja kalau berhasil.",
+              "explanation": "",
+              "highlight": "当たり前だ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "怒るのももっともだ",
+          "pattern_meaning": "のももっともだ = wajar saja jika... (dapat dimengerti/masuk akal)",
+          "description_box": {
+            "formula": "Vるの／Aいの／Naなの + も + もっともだ／もっともなN",
+            "explanation": "Menunjukkan bahwa suatu sikap atau reaksi seseorang dapat dimengerti dan masuk akal berdasarkan situasinya.",
+            "explanation_en": "Shows that a person's attitude or reaction is understandable and reasonable given the situation."
+          },
+          "examples": [
+            {
+              "jp": "何度も約束を破られたのだから、彼女があきれるのももっともだ。",
+              "en": "Karena janjinya sudah berkali-kali dilanggar, wajar saja kalau dia jadi kesal.",
+              "explanation": "",
+              "highlight": "もっともだ"
+            },
+            {
+              "jp": "初めての挑戦なのだから、緊張するのももっともなことだ。",
+              "en": "Karena ini tantangan pertama, wajar saja kalau merasa gugup.",
+              "explanation": "",
+              "highlight": "もっともな"
+            }
+          ]
+        },
+        {
+          "pattern_title": "新品も同然だ",
+          "pattern_meaning": "も同然だ = sama saja seperti.../hampir sama dengan...",
+          "description_box": {
+            "formula": "V普通形も／N(も)／ないも + 同然だ／同然のN",
+            "explanation": "Menunjukkan bahwa suatu keadaan hampir sama atau setara dengan keadaan lain yang disebutkan.",
+            "explanation_en": "Shows that a state is almost the same as or equivalent to another mentioned state."
+          },
+          "examples": [
+            {
+              "jp": "彼とは幼なじみで、家族も同然の関係だ。",
+              "en": "Aku sudah kenal dia sejak kecil, hubungan kami hampir seperti keluarga sendiri.",
+              "explanation": "",
+              "highlight": "も同然の"
+            },
+            {
+              "jp": "このパソコンは古いが、まだ新品も同然に動く。",
+              "en": "Komputer ini memang sudah lama, tapi masih berfungsi seperti baru.",
+              "explanation": "",
+              "highlight": "も同然に"
+            }
+          ]
+        },
+        {
+          "pattern_title": "あるだけましだ",
+          "pattern_meaning": "だけましだ = setidaknya masih lebih baik karena masih ada...",
+          "description_box": {
+            "formula": "V/A/Na普通形 + だけましだ",
+            "explanation": "Menunjukkan bahwa meskipun keadaannya tidak ideal, itu masih lebih baik dibandingkan kemungkinan yang lebih buruk.",
+            "explanation_en": "Shows that even though a situation is not ideal, it is still better compared to a worse possibility."
+          },
+          "examples": [
+            {
+              "jp": "この給料は少ないが、仕事があるだけましだ。",
+              "en": "Gaji ini memang sedikit, tapi setidaknya masih lebih baik karena masih punya pekerjaan.",
+              "explanation": "",
+              "highlight": "だけましだ"
+            },
+            {
+              "jp": "雨は降っているが、風がないだけましだ。",
+              "en": "Memang sedang hujan, tapi setidaknya masih lebih baik karena tidak berangin.",
+              "explanation": "",
+              "highlight": "だけましだ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
