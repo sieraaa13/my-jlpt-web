@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 2,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "太るわけだ",
+        "translation": "Pantas saja jadi gemuk"
+      },
+      "illustration_text": {
+        "friend1": "毎日甘いものを食べているんだから、太るわけだ。",
+        "friend2": "でも、食べたくないわけではないんだよね…。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "寒いわけだ",
+          "pattern_meaning": "わけだ = pantas saja/tidak heran jika... (kesimpulan logis)",
+          "description_box": {
+            "formula": "A/Na/V普通形 + わけだ",
+            "explanation": "Menunjukkan kesimpulan logis yang wajar berdasarkan suatu alasan atau fakta yang sudah diketahui, sering diterjemahkan sebagai 'pantas saja'.",
+            "explanation_en": "Shows a natural logical conclusion based on a known reason or fact, often translated as 'no wonder'."
+          },
+          "examples": [
+            {
+              "jp": "彼は10年もこの街に住んでいる。道に詳しいわけだ。",
+              "en": "Dia sudah tinggal di kota ini selama 10 tahun. Pantas saja dia hafal jalan-jalannya.",
+              "explanation": "",
+              "highlight": "わけだ"
+            },
+            {
+              "jp": "今日は祝日だ。道が空いているわけだ。",
+              "en": "Hari ini hari libur. Pantas saja jalanan sepi.",
+              "explanation": "",
+              "highlight": "わけだ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "ほしくないわけではない",
+          "pattern_meaning": "わけではない／わけでもない = bukan berarti.../tidak sepenuhnya...",
+          "description_box": {
+            "formula": "A/Na/V普通形 + わけではない／わけでもない",
+            "explanation": "Menunjukkan penyangkalan sebagian, bukan penyangkalan total terhadap suatu hal.",
+            "explanation_en": "Shows a partial denial, not a total denial of something."
+          },
+          "examples": [
+            {
+              "jp": "運動が嫌いなわけではないが、忙しくてなかなかできない。",
+              "en": "Bukan berarti aku benci olahraga, tapi karena sibuk jadi sulit melakukannya.",
+              "explanation": "",
+              "highlight": "わけではない"
+            },
+            {
+              "jp": "彼のことを疑っているわけでもないが、少し心配だ。",
+              "en": "Bukan berarti aku mencurigainya, tapi aku sedikit khawatir.",
+              "explanation": "",
+              "highlight": "わけでもない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "するわけがない",
+          "pattern_meaning": "わけがない／わけはない = tidak mungkin.../mustahil...",
+          "description_box": {
+            "formula": "A/Na/V普通形 + わけがない／わけはない",
+            "explanation": "Menunjukkan keyakinan kuat pembicara bahwa sesuatu tidak mungkin terjadi, berdasarkan alasan logis.",
+            "explanation_en": "Shows the speaker's strong conviction that something is impossible, based on logical reasoning."
+          },
+          "examples": [
+            {
+              "jp": "あの厳しい先生が、宿題を忘れて許すわけがない。",
+              "en": "Guru yang tegas itu tidak mungkin memaafkan kalau lupa mengerjakan PR.",
+              "explanation": "",
+              "highlight": "わけがない"
+            },
+            {
+              "jp": "一日でこんなに難しい試験に合格できるわけはない。",
+              "en": "Mustahil bisa lulus ujian sesulit ini hanya dalam sehari.",
+              "explanation": "",
+              "highlight": "わけはない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "休むわけにはいかない",
+          "pattern_meaning": "わけにはいかない／わけにもいかない = tidak bisa begitu saja... (karena norma sosial/moral/situasi)",
+          "description_box": {
+            "formula": "Vる／Vない／Vている + わけにはいかない／わけにもいかない",
+            "explanation": "Menunjukkan bahwa berdasarkan norma sosial, moral, atau situasi tertentu, seseorang tidak bisa melakukan (atau tidak melakukan) suatu hal begitu saja, meskipun secara pribadi ingin.",
+            "explanation_en": "Shows that due to social norms, morals, or circumstances, one cannot simply do (or not do) something, even if personally inclined to."
+          },
+          "examples": [
+            {
+              "jp": "友達との約束だから、今さらキャンセルするわけにはいかない。",
+              "en": "Karena sudah janji dengan teman, tidak bisa begitu saja membatalkannya sekarang.",
+              "explanation": "",
+              "highlight": "わけにはいかない"
+            },
+            {
+              "jp": "みんなが頑張っているのに、私だけ手を抜くわけにもいかない。",
+              "en": "Karena semua orang sedang berusaha keras, aku juga tidak bisa asal-asalan sendirian.",
+              "explanation": "",
+              "highlight": "わけにもいかない"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

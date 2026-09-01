@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 3,
+      "day": 1,
+      "header": {
+        "main_title": "おぼえないわけにはいかない",
+        "sub_title": "予報どおり",
+        "translation": "Sesuai perkiraan/ramalan"
+      },
+      "illustration_text": {
+        "friend1": "天気予報どおり、今日は雨だね。",
+        "friend2": "驚いたことに、傘を忘れちゃった。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "言ったとおり",
+          "pattern_meaning": "とおり／どおり = sesuai dengan/seperti yang...",
+          "description_box": {
+            "formula": "Vる／Vた／Nの + とおり(に) ／ N + どおり(に)",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi persis sama seperti yang dikatakan, dipikirkan, atau diperkirakan sebelumnya.",
+            "explanation_en": "Shows that something happens exactly as said, thought, or predicted beforehand."
+          },
+          "examples": [
+            {
+              "jp": "先生に教わったとおりに練習したら、うまくできた。",
+              "en": "Setelah berlatih persis seperti yang diajarkan guru, aku berhasil melakukannya dengan baik.",
+              "explanation": "",
+              "highlight": "とおりに"
+            },
+            {
+              "jp": "計画どおりに進めば、来月には完成する。",
+              "en": "Kalau berjalan sesuai rencana, bulan depan akan selesai.",
+              "explanation": "",
+              "highlight": "どおりに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "言われるままに",
+          "pattern_meaning": "まま(に) = mengikuti begitu saja tanpa berpikir/berinisiatif sendiri",
+          "description_box": {
+            "formula": "Vる／Vられる + まま(に)",
+            "explanation": "Menunjukkan bahwa seseorang melakukan sesuatu persis seperti yang diperintahkan atau diarahkan orang lain, tanpa kehendak sendiri.",
+            "explanation_en": "Shows that someone does something exactly as told or led by someone else, without their own will."
+          },
+          "examples": [
+            {
+              "jp": "上司に言われるままに、資料を作り直した。",
+              "en": "Aku membuat ulang dokumen itu persis seperti yang diperintahkan atasan, tanpa berpikir panjang.",
+              "explanation": "",
+              "highlight": "言われるままに"
+            },
+            {
+              "jp": "流れに身を任せ、足の向くまま歩いた。",
+              "en": "Aku membiarkan diriku mengikuti arus, berjalan ke mana pun kakiku membawa.",
+              "explanation": "",
+              "highlight": "向くまま"
+            }
+          ]
+        },
+        {
+          "pattern_title": "驚いたことに",
+          "pattern_meaning": "ことに = yang mengejutkan/menariknya... (diletakkan di awal kalimat)",
+          "description_box": {
+            "formula": "Aい／Naな／Vた + ことに",
+            "explanation": "Menunjukkan reaksi emosional pembicara terhadap suatu hal, diletakkan di awal kalimat untuk menekankan perasaan tersebut sebelum menjelaskan faktanya.",
+            "explanation_en": "Shows the speaker's emotional reaction to something, placed at the start of the sentence to emphasize that feeling before stating the fact."
+          },
+          "examples": [
+            {
+              "jp": "うれしいことに、探していた本がすぐに見つかった。",
+              "en": "Yang menyenangkan, buku yang kucari langsung ketemu.",
+              "explanation": "",
+              "highlight": "ことに"
+            },
+            {
+              "jp": "残念なことに、当日は大雨で試合が中止になった。",
+              "en": "Sayangnya, pada hari itu hujan deras dan pertandingannya dibatalkan.",
+              "explanation": "",
+              "highlight": "ことに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "緊張のあまり",
+          "pattern_meaning": "あまり = karena terlalu.../akibat berlebihan...",
+          "description_box": {
+            "formula": "Nの／Naな + あまり ／ Vる + あまり",
+            "explanation": "Menunjukkan bahwa akibat suatu perasaan atau tindakan yang berlebihan, muncul suatu hasil yang tidak diinginkan atau di luar kebiasaan.",
+            "explanation_en": "Shows that because a feeling or action was excessive, it led to an undesired or unusual result."
+          },
+          "examples": [
+            {
+              "jp": "うれしさのあまり、涙が出てきた。",
+              "en": "Karena saking senangnya, air mataku keluar.",
+              "explanation": "",
+              "highlight": "あまり"
+            },
+            {
+              "jp": "考えすぎるあまり、夜も眠れなくなった。",
+              "en": "Karena terlalu banyak berpikir, aku sampai tidak bisa tidur di malam hari.",
+              "explanation": "",
+              "highlight": "あまり"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

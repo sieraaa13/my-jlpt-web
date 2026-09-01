@@ -20,6 +20,10 @@ import w2d5 from "./week2_day5.json";
 import w2d6 from "./week2_day6.json";
 import w2d7 from "./week2_day7.json";
 
+// Week 3
+import w3d1 from "./week3_day1.json";
+import w3d2 from "./week3_day2.json";
+
 export type GrammarSection = {
   pattern_title: string;
   pattern_meaning?: string;
@@ -42,6 +46,7 @@ export type LessonFile = { levels: LessonLevel[]; };
 export const lessons: Record<string, Record<string, LessonFile>> = {
   "1": { "1": w1d1 as LessonFile, "2": w1d2 as LessonFile, "3": w1d3 as LessonFile, "4": w1d4 as LessonFile, "5": w1d5 as LessonFile, "6": w1d6 as LessonFile, "7": w1d7 as LessonFile },
   "2": { "1": w2d1 as LessonFile, "2": w2d2 as LessonFile, "3": w2d3 as LessonFile, "4": w2d4 as LessonFile, "5": w2d5 as LessonFile, "6": w2d6 as LessonFile, "7": w2d7 as LessonFile },
+  "3": { "1": w3d1 as LessonFile, "2": w3d2 as LessonFile },
 };
 
 export function getOrganizedLessons() {
