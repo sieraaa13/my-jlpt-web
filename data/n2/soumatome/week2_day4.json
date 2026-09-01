@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 4,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "君さえいれば",
+        "translation": "Asalkan ada kamu"
+      },
+      "illustration_text": {
+        "friend1": "君さえそばにいてくれれば、それでいいんだ。",
+        "friend2": "怒ってばかりに見えるかもしれないけど、信じてるからこそだよ。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "これさえあれば",
+          "pattern_meaning": "さえ〜ば = asalkan/hanya dengan itu saja sudah cukup",
+          "description_box": {
+            "formula": "Nさえ Vば／Aければ／Naなら／Nなら ／ Vます形さえすれば",
+            "explanation": "Menunjukkan bahwa satu syarat saja sudah cukup untuk membuat sesuatu terjadi atau tercapai.",
+            "explanation_en": "Shows that just one condition alone is enough for something to happen or be achieved."
+          },
+          "examples": [
+            {
+              "jp": "パスポートさえあれば、どこへでも行ける。",
+              "en": "Asalkan ada paspor, aku bisa pergi ke mana saja.",
+              "explanation": "",
+              "highlight": "さえあれば"
+            },
+            {
+              "jp": "この機械は、ボタンを押しさえすれば動く。",
+              "en": "Mesin ini akan bergerak asalkan kamu menekan tombolnya saja.",
+              "explanation": "",
+              "highlight": "押しさえすれば"
+            }
+          ]
+        },
+        {
+          "pattern_title": "かわいいからこそ",
+          "pattern_meaning": "からこそ = justru karena itu (menekankan alasan)",
+          "description_box": {
+            "formula": "V/A/Na/N普通形 + からこそ ／ Vば／Aければ／Naであれば／Nであれば + こそ",
+            "explanation": "Menunjukkan penekanan kuat pada alasan sesuatu terjadi, menegaskan bahwa alasan itulah yang sebenarnya paling tepat.",
+            "explanation_en": "Emphasizes the reason for something, stressing that this is precisely the true reason."
+          },
+          "examples": [
+            {
+              "jp": "家族だからこそ、遠慮なく意見を言い合える。",
+              "en": "Justru karena keluarga, kami bisa saling menyampaikan pendapat tanpa sungkan.",
+              "explanation": "",
+              "highlight": "からこそ"
+            },
+            {
+              "jp": "失敗を経験したからこそ、今の成功がある。",
+              "en": "Justru karena pernah mengalami kegagalan, keberhasilan sekarang ini bisa tercapai.",
+              "explanation": "",
+              "highlight": "からこそ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "信頼してこそ",
+          "pattern_meaning": "てこそ = baru bisa/baru terwujud setelah melakukan...",
+          "description_box": {
+            "formula": "Vてこそ",
+            "explanation": "Menunjukkan bahwa suatu hal baru menjadi mungkin atau bermakna setelah melakukan tindakan tersebut. Maknanya sama dengan 'Vて、はじめて'.",
+            "explanation_en": "Shows that something only becomes possible or meaningful after doing that action. Equivalent to 'Vて、はじめて'."
+          },
+          "examples": [
+            {
+              "jp": "困難を乗り越えてこそ、本当の強さが身につく。",
+              "en": "Baru setelah melewati kesulitan, kekuatan sejati benar-benar terbentuk.",
+              "explanation": "",
+              "highlight": "てこそ"
+            },
+            {
+              "jp": "自分で経験してこそ、その大変さがわかる。",
+              "en": "Baru setelah mengalaminya sendiri, aku benar-benar paham betapa beratnya itu.",
+              "explanation": "",
+              "highlight": "経験してこそ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "上がるばかりだ",
+          "pattern_meaning": "ばかりだ = terus-menerus ke satu arah (biasanya negatif) / （ただ）〜のみだ = hanya tinggal...",
+          "description_box": {
+            "formula": "Vる + ばかりだ ／ （ただ）Vる + のみだ",
+            "explanation": "Menunjukkan bahwa suatu keadaan terus berubah ke satu arah tanpa henti (ばかりだ), atau bahwa yang tersisa hanyalah melakukan satu hal itu saja (のみだ).",
+            "explanation_en": "Shows that a state keeps changing in one direction without stopping (ばかりだ), or that all that's left is to do just that one thing (のみだ)."
+          },
+          "examples": [
+            {
+              "jp": "この町の人口は減るばかりだ。",
+              "en": "Populasi kota ini terus menurun saja.",
+              "explanation": "",
+              "highlight": "ばかりだ"
+            },
+            {
+              "jp": "準備は整った。あとは本番を待つのみだ。",
+              "en": "Persiapan sudah selesai. Tinggal menunggu hari-H saja.",
+              "explanation": "",
+              "highlight": "のみだ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

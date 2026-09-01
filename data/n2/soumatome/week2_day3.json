@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 2,
+      "day": 3,
+      "header": {
+        "main_title": "やればやるほどおぼえられる",
+        "sub_title": "本日限り",
+        "translation": "Terbatas hari ini saja"
+      },
+      "illustration_text": {
+        "friend1": "本日限りの特売ですよ！安いうちに買わないと！",
+        "friend2": "そんなに急がなくても…でも、売り切れないうちに見てみようかな。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "忘れないうちに",
+          "pattern_meaning": "うちに = selagi/selama masih dalam kondisi tertentu, sebelum berubah",
+          "description_box": {
+            "formula": "Vない／Vている／Aい／Naな／Nの + うちに",
+            "explanation": "Menunjukkan bahwa suatu tindakan dilakukan selama suatu keadaan masih berlangsung, sebelum keadaan itu berubah.",
+            "explanation_en": "Shows that an action is done while a certain condition still holds, before it changes."
+          },
+          "examples": [
+            {
+              "jp": "お湯が熱いうちに、お茶を入れましょう。",
+              "en": "Selagi airnya masih panas, mari kita seduh tehnya.",
+              "explanation": "",
+              "highlight": "うちに"
+            },
+            {
+              "jp": "子どもが寝ているうちに、家事を済ませておきたい。",
+              "en": "Selagi anak masih tidur, aku ingin menyelesaikan pekerjaan rumah.",
+              "explanation": "",
+              "highlight": "うちに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "終わるか終わらないかのうちに",
+          "pattern_meaning": "Vるか Vないかのうちに = tepat pada saat sesuatu terjadi, hampir bersamaan",
+          "description_box": {
+            "formula": "Vるか Vないかのうちに",
+            "explanation": "Menunjukkan bahwa suatu tindakan terjadi hampir bersamaan dengan tindakan lain, tepat saat itu terjadi atau bahkan sebelum sepenuhnya selesai.",
+            "explanation_en": "Shows that an action happens almost simultaneously with another, right as it occurs or even before it is fully finished."
+          },
+          "examples": [
+            {
+              "jp": "ベルが鳴るか鳴らないかのうちに、生徒たちは教室を飛び出した。",
+              "en": "Begitu bel berbunyi (bahkan belum selesai berbunyi), murid-murid langsung berlari keluar kelas.",
+              "explanation": "",
+              "highlight": "鳴るか鳴らないかのうちに"
+            },
+            {
+              "jp": "映画が始まるか始まらないかのうちに、彼は眠ってしまった。",
+              "en": "Filmnya baru saja mulai (belum genap dimulai), dia sudah tertidur.",
+              "explanation": "",
+              "highlight": "始まるか始まらないかのうちに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "日本にいる限り",
+          "pattern_meaning": "限り = selama batas/kondisi itu berlaku",
+          "description_box": {
+            "formula": "Vる／Vない／Aい／Aくない／Naな・Naである／Nである + 限り(は)",
+            "explanation": "Menunjukkan bahwa selama suatu kondisi atau batasan itu berlaku, hal tersebut akan terus terjadi atau berlaku.",
+            "explanation_en": "Shows that as long as a certain condition or limit holds, something continues to be the case."
+          },
+          "examples": [
+            {
+              "jp": "この会社にいる限り、自由な時間はなさそうだ。",
+              "en": "Selama masih di perusahaan ini, sepertinya tidak akan ada waktu bebas.",
+              "explanation": "",
+              "highlight": "限り"
+            },
+            {
+              "jp": "私が知る限りでは、彼は一度も遅刻したことがない。",
+              "en": "Sepengetahuanku, dia belum pernah terlambat sekali pun.",
+              "explanation": "",
+              "highlight": "知る限りでは"
+            }
+          ]
+        },
+        {
+          "pattern_title": "70歳以上の方に限り",
+          "pattern_meaning": "Nに限り／に限って／に限らず〜も = khusus terbatas pada..., justru pada saat itu..., tidak terbatas pada... saja",
+          "description_box": {
+            "formula": "N + に限り／に限って／に限らず〜も",
+            "explanation": "Menunjukkan batasan khusus pada sesuatu (に限り), penekanan bahwa justru pada saat/hal itu terjadi sesuatu yang tidak biasa (に限って), atau menunjukkan bahwa cakupannya tidak terbatas hanya pada satu hal saja (に限らず).",
+            "explanation_en": "Shows a special limitation to something (に限り), emphasis that something unusual happens exactly at that time (に限って), or that the scope is not limited to just one thing (に限らず)."
+          },
+          "examples": [
+            {
+              "jp": "本日、来店のお客様に限り、10パーセント割引いたします。",
+              "en": "Khusus hari ini, pelanggan yang datang ke toko akan mendapat diskon 10 persen.",
+              "explanation": "",
+              "highlight": "に限り"
+            },
+            {
+              "jp": "急いでいる日に限って、電車が遅れる。",
+              "en": "Justru di hari aku sedang buru-buru, keretanya malah terlambat.",
+              "explanation": "",
+              "highlight": "に限って"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
