@@ -1,0 +1,245 @@
+{
+  "week": 1,
+  "day": 1,
+  "title": "立て札・注意書き",
+  "subtitle": "Notices and Warnings",
+  "translation": "Papan Peringatan dan Tulisan Perhatian",
+  "sceneDescription": "Ruang tunggu dengan papan larangan merokok dan sofa, serta area tangga dengan tanda bahaya dan larangan masuk selain petugas.",
+  "signs": [
+    { "text": "禁煙", "meaning": "Dilarang merokok" },
+    { "text": "お静かに！", "meaning": "Harap tenang!" },
+    { "text": "危険！", "meaning": "Bahaya!" },
+    { "text": "危ない！", "meaning": "Awas!" },
+    { "text": "関係者以外立ち入り禁止", "meaning": "Dilarang masuk selain petugas" }
+  ],
+  "kanjiList": [
+    {
+      "id": 1,
+      "character": "禁",
+      "strokes": 13,
+      "onyomi": ["キン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "禁止", "reading": "きんし", "meaning": "larangan, pelarangan" }
+      ]
+    },
+    {
+      "id": 2,
+      "character": "煙",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": ["けむり"],
+      "words": [
+        { "word": "禁煙", "reading": "きんえん", "meaning": "dilarang merokok" },
+        { "word": "煙", "reading": "けむり", "meaning": "asap" }
+      ]
+    },
+    {
+      "id": 3,
+      "character": "静",
+      "strokes": 14,
+      "onyomi": ["セイ"],
+      "kunyomi": ["しずか", "しずまる"],
+      "words": [
+        { "word": "安静（な）", "reading": "あんせい", "meaning": "istirahat total, tenang (kondisi medis)" },
+        { "word": "静か（な）", "reading": "しずか", "meaning": "sunyi, tenang" }
+      ],
+      "extraWords": [
+        { "word": "静まる", "reading": "しずまる", "meaning": "menjadi tenang, mereda" }
+      ]
+    },
+    {
+      "id": 4,
+      "character": "危",
+      "strokes": 6,
+      "onyomi": ["キ"],
+      "kunyomi": ["あぶない", "あやうい"],
+      "words": [
+        { "word": "危機", "reading": "きき", "meaning": "krisis", "note": "→ lihat kanji #90 (機)" },
+        { "word": "危ない", "reading": "あぶない", "meaning": "berbahaya" }
+      ],
+      "extraWords": [
+        { "word": "危うい", "reading": "あやうい", "meaning": "berbahaya, nyaris celaka", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 5,
+      "character": "険",
+      "strokes": 11,
+      "onyomi": ["ケン"],
+      "kunyomi": ["けわしい"],
+      "words": [
+        { "word": "危険（な）", "reading": "きけん", "meaning": "bahaya" },
+        { "word": "険しい", "reading": "けわしい", "meaning": "curam, terjal", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 6,
+      "character": "関",
+      "strokes": 14,
+      "onyomi": ["カン"],
+      "kunyomi": ["かかわる"],
+      "words": [
+        { "word": "関心", "reading": "かんしん", "meaning": "minat, perhatian" },
+        { "word": "関わる", "reading": "かかわる", "meaning": "berkaitan dengan, terlibat" }
+      ],
+      "extraWords": [
+        { "word": "（〜に）関する", "reading": "かんする", "meaning": "berkaitan dengan ..." }
+      ]
+    },
+    {
+      "id": 7,
+      "character": "係",
+      "strokes": 9,
+      "onyomi": ["ケイ"],
+      "kunyomi": ["かかり"],
+      "words": [
+        { "word": "関係", "reading": "かんけい", "meaning": "hubungan, relasi" },
+        { "word": "係", "reading": "かかり", "meaning": "petugas, penanggung jawab" }
+      ],
+      "extraWords": [
+        { "word": "係員", "reading": "かかりいん", "meaning": "petugas" }
+      ]
+    },
+    {
+      "id": 8,
+      "character": "落",
+      "strokes": 12,
+      "onyomi": ["ラク"],
+      "kunyomi": ["おちる", "おとす"],
+      "words": [
+        { "word": "転落", "reading": "てんらく", "meaning": "jatuh, terguling" },
+        { "word": "落ちる", "reading": "おちる", "meaning": "jatuh" }
+      ],
+      "extraWords": [
+        { "word": "落第", "reading": "らくだい", "meaning": "tidak lulus, tinggal kelas", "note": "→ lihat kanji #85 (第)" },
+        { "word": "落とす", "reading": "おとす", "meaning": "menjatuhkan" }
+      ]
+    },
+    {
+      "id": 9,
+      "character": "石",
+      "strokes": 5,
+      "onyomi": ["セキ", "シャク"],
+      "kunyomi": ["いし"],
+      "words": [
+        { "word": "落石", "reading": "らくせき", "meaning": "batu longsor" },
+        { "word": "石", "reading": "いし", "meaning": "batu" }
+      ],
+      "extraWords": [
+        { "word": "磁石", "reading": "じしゃく", "meaning": "magnet, kompas" }
+      ]
+    },
+    {
+      "id": 10,
+      "character": "飛",
+      "strokes": 9,
+      "onyomi": ["ヒ"],
+      "kunyomi": ["とぶ", "とばす"],
+      "words": [
+        { "word": "飛行場", "reading": "ひこうじょう", "meaning": "lapangan terbang" },
+        { "word": "飛ぶ", "reading": "とぶ", "meaning": "terbang" }
+      ],
+      "extraWords": [
+        { "word": "飛び出す", "reading": "とびだす", "meaning": "melompat keluar, muncul tiba-tiba" }
+      ]
+    },
+    {
+      "id": 11,
+      "character": "駐",
+      "strokes": 15,
+      "onyomi": ["チュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "駐車場", "reading": "ちゅうしゃじょう", "meaning": "tempat parkir" }
+      ],
+      "extraWords": [
+        { "word": "駐車", "reading": "ちゅうしゃ", "meaning": "parkir" }
+      ]
+    },
+    {
+      "id": 12,
+      "character": "捨",
+      "strokes": 11,
+      "onyomi": ["シャ"],
+      "kunyomi": ["すてる"],
+      "words": [
+        { "word": "四捨五入", "reading": "ししゃごにゅう", "meaning": "pembulatan angka" },
+        { "word": "捨てる", "reading": "すてる", "meaning": "membuang" }
+      ]
+    },
+    {
+      "id": 13,
+      "character": "遊",
+      "strokes": 12,
+      "onyomi": ["ユウ"],
+      "kunyomi": ["あそぶ"],
+      "words": [
+        { "word": "遊泳", "reading": "ゆうえい", "meaning": "berenang (rekreasi)" },
+        { "word": "遊ぶ", "reading": "あそぶ", "meaning": "bermain" }
+      ]
+    },
+    {
+      "id": 14,
+      "character": "泳",
+      "strokes": 8,
+      "onyomi": ["エイ"],
+      "kunyomi": ["およぐ"],
+      "words": [
+        { "word": "水泳", "reading": "すいえい", "meaning": "berenang (olahraga)" },
+        { "word": "泳ぐ", "reading": "およぐ", "meaning": "berenang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「関係者以外立ち入り禁止」＝ 関係者でない人は",
+      "optionA": "入らなければならない",
+      "optionB": "入ってはいけない",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "「お静かに」＝",
+      "optionA": "静かにしてください",
+      "optionB": "静かにしてはいけません",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "「（　）ですから、下がってください。」",
+      "optionA": "危うい",
+      "optionB": "危ない",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "「スピード落とせ」＝ スピードを",
+      "optionA": "上げろ",
+      "optionB": "おそくしろ",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "「遊泳禁止」＝",
+      "optionA": "ここで遊ぶべきだ",
+      "optionB": "ここで泳いではいけない",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "「落石注意」＝",
+      "optionA": "石が落ちてくるかもしれない",
+      "optionB": "石を落としてはいけない",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "「駐車禁止」＝",
+      "optionA": "駐車場がない",
+      "optionB": "車を止めてはいけない",
+      "answer": "B"
+    }
+  ]
+}

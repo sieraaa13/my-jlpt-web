@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { lessons } from "@/data/n2/soumatome/lessons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { N2KanjiTab } from "@/components/n2-kanji-tab";
 
 const weekLabels: Record<string, string> = {
   "1": "第一週",
@@ -71,9 +72,7 @@ export default function N2Page() {
           </TabsContent>
 
           <TabsContent value="kanji">
-            <div className="p-6 rounded-3xl border border-dashed border-border bg-card/50 text-center text-muted-foreground">
-              Materi Kanji (漢字) segera hadir.
-            </div>
+            <N2KanjiTab />
           </TabsContent>
 
           <TabsContent value="soal">

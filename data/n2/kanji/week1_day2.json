@@ -1,0 +1,242 @@
+{
+  "week": 1,
+  "day": 2,
+  "title": "建物の中でよく見る表示",
+  "subtitle": "Signs Often Seen Inside Buildings",
+  "translation": "Tanda-tanda yang Sering Terlihat di Dalam Gedung",
+  "sceneDescription": "Lorong gedung dengan area merokok, pintu darurat, toilet, kedai kopi, dan meja resepsionis; juga denah lantai dengan ruang rapat, ruang rias, dan tangga.",
+  "signs": [
+    { "text": "喫煙所", "meaning": "Area merokok" },
+    { "text": "非常口", "meaning": "Pintu darurat" },
+    { "text": "御手洗い", "meaning": "Toilet" },
+    { "text": "受付", "meaning": "Resepsionis" },
+    { "text": "案内所", "meaning": "Pusat informasi" },
+    { "text": "化粧室", "meaning": "Ruang rias / toilet" }
+  ],
+  "kanjiList": [
+    {
+      "id": 15,
+      "character": "喫",
+      "strokes": 12,
+      "onyomi": ["キツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "喫茶店", "reading": "きっさてん", "meaning": "kedai kopi, kafe" },
+        { "word": "喫煙所", "reading": "きつえんじょ", "meaning": "area merokok" }
+      ]
+    },
+    {
+      "id": 16,
+      "character": "非",
+      "strokes": 8,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "非〜", "reading": "ひ", "meaning": "non-, tidak, anti-" },
+        { "word": "非常に", "reading": "ひじょうに", "meaning": "sangat, luar biasa" }
+      ],
+      "extraWords": [
+        { "word": "非常口", "reading": "ひじょうぐち", "meaning": "pintu darurat" }
+      ]
+    },
+    {
+      "id": 17,
+      "character": "御",
+      "strokes": 12,
+      "onyomi": ["ゴ"],
+      "kunyomi": ["おん", "お"],
+      "words": [
+        { "word": "御〜／御〜", "reading": "ご／おん", "meaning": "awalan kesopanan/hormat" },
+        { "word": "御中", "reading": "おんちゅう", "meaning": "(ditulis pada surat, ditujukan kepada organisasi bukan perorangan)" }
+      ],
+      "extraWords": [
+        { "word": "御手洗い", "reading": "おてあらい", "meaning": "toilet" }
+      ]
+    },
+    {
+      "id": 18,
+      "character": "常",
+      "strokes": 11,
+      "onyomi": ["ジョウ"],
+      "kunyomi": ["つね"],
+      "words": [
+        { "word": "日常", "reading": "にちじょう", "meaning": "sehari-hari" },
+        { "word": "常に", "reading": "つねに", "meaning": "selalu" }
+      ],
+      "extraWords": [
+        { "word": "常識", "reading": "じょうしき", "meaning": "akal sehat, pengetahuan umum", "note": "→ lihat kanji #558 (識)" }
+      ]
+    },
+    {
+      "id": 19,
+      "character": "受",
+      "strokes": 8,
+      "onyomi": ["ジュ"],
+      "kunyomi": ["うける"],
+      "words": [
+        { "word": "受験", "reading": "じゅけん", "meaning": "mengikuti ujian" },
+        { "word": "受ける", "reading": "うける", "meaning": "menerima" }
+      ]
+    },
+    {
+      "id": 20,
+      "character": "付",
+      "strokes": 5,
+      "onyomi": ["フ"],
+      "kunyomi": ["つける", "つく"],
+      "words": [
+        { "word": "付近", "reading": "ふきん", "meaning": "sekitar, vicinity" },
+        { "word": "受付", "reading": "うけつけ", "meaning": "resepsionis" }
+      ],
+      "extraWords": [
+        { "word": "〜付き", "reading": "つき", "meaning": "dilengkapi dengan, termasuk" },
+        { "word": "日付", "reading": "ひづけ", "meaning": "tanggal", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 21,
+      "character": "案",
+      "strokes": 10,
+      "onyomi": ["アン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "案内", "reading": "あんない", "meaning": "informasi, panduan" }
+      ],
+      "extraWords": [
+        { "word": "案", "reading": "あん", "meaning": "usulan, rancangan, gagasan" }
+      ]
+    },
+    {
+      "id": 22,
+      "character": "内",
+      "strokes": 4,
+      "onyomi": ["ナイ"],
+      "kunyomi": ["うち"],
+      "words": [
+        { "word": "以内", "reading": "いない", "meaning": "dalam batas, di dalam" },
+        { "word": "〜内", "reading": "ない", "meaning": "di dalam ..." }
+      ],
+      "extraWords": [
+        { "word": "社内", "reading": "しゃない", "meaning": "di dalam perusahaan" },
+        { "word": "内", "reading": "うち", "meaning": "bagian dalam" }
+      ]
+    },
+    {
+      "id": 23,
+      "character": "議",
+      "strokes": 20,
+      "onyomi": ["ギ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "会議室", "reading": "かいぎしつ", "meaning": "ruang rapat" },
+        { "word": "議論", "reading": "ぎろん", "meaning": "perdebatan, diskusi", "note": "→ lihat kanji #610 (論)" }
+      ],
+      "extraWords": [
+        { "word": "不思議（な）", "reading": "ふしぎ", "meaning": "ajaib, aneh" },
+        { "word": "議員", "reading": "ぎいん", "meaning": "anggota dewan" }
+      ]
+    },
+    {
+      "id": 24,
+      "character": "化",
+      "strokes": 4,
+      "onyomi": ["カ"],
+      "kunyomi": ["け"],
+      "words": [
+        { "word": "文化", "reading": "ぶんか", "meaning": "budaya" },
+        { "word": "〜化", "reading": "か", "meaning": "perubahan menjadi ... (akhiran -isasi)" }
+      ],
+      "extraWords": [
+        { "word": "化学", "reading": "かがく", "meaning": "ilmu kimia" },
+        { "word": "化粧室", "reading": "けしょうしつ", "meaning": "ruang rias, toilet" }
+      ]
+    },
+    {
+      "id": 25,
+      "character": "階",
+      "strokes": 12,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "階段", "reading": "かいだん", "meaning": "tangga" },
+        { "word": "段階", "reading": "だんかい", "meaning": "tahap, level" }
+      ],
+      "extraWords": [
+        { "word": "〜階", "reading": "かい", "meaning": "lantai ke-..." }
+      ]
+    },
+    {
+      "id": 26,
+      "character": "段",
+      "strokes": 9,
+      "onyomi": ["ダン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "段", "reading": "だん", "meaning": "anak tangga, paragraf" },
+        { "word": "一段と", "reading": "いちだんと", "meaning": "semakin, lebih lagi" }
+      ],
+      "extraWords": [
+        { "word": "手段", "reading": "しゅだん", "meaning": "cara, sarana" },
+        { "word": "石段", "reading": "いしだん", "meaning": "anak tangga batu" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「タバコを吸う所」＝",
+      "optionA": "禁煙席",
+      "optionB": "喫煙所",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "「この（　）に喫茶店はありませんか。」",
+      "optionA": "付近",
+      "optionB": "日付",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "「日本語は（　）会話ならできます。」",
+      "optionA": "日常",
+      "optionB": "非常",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "あの人は（　）がない。",
+      "optionA": "常識",
+      "optionB": "御中",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "A「すみません、化粧室はどこですか。」B「はい、（　）は、あちらでございます。」",
+      "optionA": "お手洗い",
+      "optionB": "案内所",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "A「会議室はどこですか。」B「（　）を上って、すぐ右です。」",
+      "optionA": "段階",
+      "optionB": "階段",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "「このごろ（　）寒くなってきましたね。」",
+      "optionA": "一段と",
+      "optionB": "石段と",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "ベストセラーになった小説が映画（　）された。",
+      "optionA": "化",
+      "optionB": "案",
+      "answer": "A"
+    }
+  ]
+}
