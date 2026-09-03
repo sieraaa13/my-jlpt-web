@@ -6,6 +6,11 @@ import type { KanjiTestDay } from "@/data/n1/kanji/lessons";
 // Week 1
 import w1d1 from "./week1_day1.json";
 import w1d2 from "./week1_day2.json";
+import w1d3 from "./week1_day3.json";
+import w1d4 from "./week1_day4.json";
+import w1d5 from "./week1_day5.json";
+import w1d6 from "./week1_day6.json";
+import w1d7 from "./week1_day7.json";
 
 export type KanjiWordFlag = "attention" | "special";
 export type KanjiWord = {
@@ -56,10 +61,18 @@ export const n2KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> 
   "1": {
     "1": w1d1 as KanjiSignLessonDay,
     "2": w1d2 as KanjiSignLessonDay,
+    "3": w1d3 as KanjiSignLessonDay,
+    "4": w1d4 as KanjiSignLessonDay,
+    "5": w1d5 as KanjiSignLessonDay,
+    "6": w1d6 as KanjiSignLessonDay,
   },
 };
 
-export const n2KanjiTests: Record<string, Record<string, N2KanjiTestDay>> = {};
+export const n2KanjiTests: Record<string, Record<string, N2KanjiTestDay>> = {
+  "1": {
+    "7": w1d7 as unknown as N2KanjiTestDay,
+  },
+};
 
 export function getOrganizedN2KanjiLessons() {
   const weeks: Array<{ week: string; days: Array<{ day: string; title: string; subtitle: string }> }> = [];

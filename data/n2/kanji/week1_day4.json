@@ -1,0 +1,247 @@
+{
+  "week": 1,
+  "day": 4,
+  "title": "駅でよく見る表示",
+  "subtitle": "Signs Often Seen at the Station",
+  "translation": "Tanda-tanda yang Sering Terlihat di Stasiun",
+  "sceneDescription": "Area loket dan pintu tiket stasiun kereta bawah tanah, serta peron dengan papan waktu keberangkatan, nomor jalur, nomor gerbong, dan tanda dilarang masuk ke area rel.",
+  "signs": [
+    { "text": "地下鉄", "meaning": "Kereta bawah tanah" },
+    { "text": "窓口", "meaning": "Loket layanan" },
+    { "text": "切符売り場", "meaning": "Loket tiket" },
+    { "text": "精算所", "meaning": "Tempat penyesuaian ongkos" },
+    { "text": "改札口", "meaning": "Gerbang tiket" },
+    { "text": "線路内立ち入り禁止", "meaning": "Dilarang masuk ke area rel" }
+  ],
+  "kanjiList": [
+    {
+      "id": 39,
+      "character": "鉄",
+      "strokes": 13,
+      "onyomi": ["テツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "地下鉄", "reading": "ちかてつ", "meaning": "kereta bawah tanah" }
+      ],
+      "extraWords": [
+        { "word": "私鉄", "reading": "してつ", "meaning": "kereta swasta" }
+      ]
+    },
+    {
+      "id": 40,
+      "character": "窓",
+      "strokes": 11,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["まど"],
+      "words": [
+        { "word": "同窓会", "reading": "どうそうかい", "meaning": "reuni sekolah" },
+        { "word": "窓", "reading": "まど", "meaning": "jendela" }
+      ],
+      "extraWords": [
+        { "word": "窓口", "reading": "まどぐち", "meaning": "loket layanan" }
+      ]
+    },
+    {
+      "id": 41,
+      "character": "符",
+      "strokes": 11,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "切符", "reading": "きっぷ", "meaning": "tiket" }
+      ]
+    },
+    {
+      "id": 42,
+      "character": "精",
+      "strokes": 14,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "精算", "reading": "せいさん", "meaning": "penyesuaian ongkos/pembayaran kurang" }
+      ],
+      "extraWords": [
+        { "word": "精神", "reading": "せいしん", "meaning": "jiwa, semangat", "note": "→ lihat kanji #418 (神)" }
+      ]
+    },
+    {
+      "id": 43,
+      "character": "算",
+      "strokes": 14,
+      "onyomi": ["サン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "計算", "reading": "けいさん", "meaning": "perhitungan" },
+        { "word": "足し算", "reading": "たしざん", "meaning": "penjumlahan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "引き算", "reading": "ひきざん", "meaning": "pengurangan" }
+      ]
+    },
+    {
+      "id": 44,
+      "character": "改",
+      "strokes": 7,
+      "onyomi": ["カイ"],
+      "kunyomi": ["あらためる", "あらたまる"],
+      "words": [
+        { "word": "改正", "reading": "かいせい", "meaning": "amandemen, revisi" },
+        { "word": "改める", "reading": "あらためる", "meaning": "① mengubah, memperbaiki ② memeriksa", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 45,
+      "character": "札",
+      "strokes": 5,
+      "onyomi": ["サツ"],
+      "kunyomi": ["ふだ"],
+      "words": [
+        { "word": "改札口", "reading": "かいさつぐち", "meaning": "gerbang tiket" }
+      ],
+      "extraWords": [
+        { "word": "1万円札", "reading": "いちまんえんさつ", "meaning": "uang kertas 10.000 yen" }
+      ]
+    },
+    {
+      "id": 46,
+      "character": "線",
+      "strokes": 15,
+      "onyomi": ["セン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "下線", "reading": "かせん", "meaning": "garis bawah" },
+        { "word": "新幹線", "reading": "しんかんせん", "meaning": "kereta peluru (shinkansen)" }
+      ],
+      "extraWords": [
+        { "word": "線路", "reading": "せんろ", "meaning": "rel kereta" }
+      ]
+    },
+    {
+      "id": 47,
+      "character": "刻",
+      "strokes": 8,
+      "onyomi": ["コク"],
+      "kunyomi": ["きざむ"],
+      "words": [
+        { "word": "時刻", "reading": "じこく", "meaning": "waktu" },
+        { "word": "刻む", "reading": "きざむ", "meaning": "mengukir", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 48,
+      "character": "番",
+      "strokes": 12,
+      "onyomi": ["バン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "番号", "reading": "ばんごう", "meaning": "nomor" }
+      ],
+      "extraWords": [
+        { "word": "〜番線", "reading": "ばんせん", "meaning": "jalur/peron nomor ..." }
+      ]
+    },
+    {
+      "id": 49,
+      "character": "号",
+      "strokes": 5,
+      "onyomi": ["ゴウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "符号", "reading": "ふごう", "meaning": "simbol, tanda" },
+        { "word": "信号", "reading": "しんごう", "meaning": "sinyal, lampu lalu lintas", "note": "→ lihat kanji #150 (信)" }
+      ],
+      "extraWords": [
+        { "word": "〜号車", "reading": "ごうしゃ", "meaning": "gerbong nomor ..." }
+      ]
+    },
+    {
+      "id": 50,
+      "character": "快",
+      "strokes": 7,
+      "onyomi": ["カイ"],
+      "kunyomi": ["こころよい"],
+      "words": [
+        { "word": "快速", "reading": "かいそく", "meaning": "cepat (kereta cepat)" },
+        { "word": "快い", "reading": "こころよい", "meaning": "menyenangkan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 51,
+      "character": "速",
+      "strokes": 10,
+      "onyomi": ["ソク"],
+      "kunyomi": ["はやい"],
+      "words": [
+        { "word": "時速", "reading": "じそく", "meaning": "kecepatan per jam" },
+        { "word": "速い", "reading": "はやい", "meaning": "cepat" }
+      ],
+      "extraWords": [
+        { "word": "早速", "reading": "さっそく", "meaning": "segera" }
+      ]
+    },
+    {
+      "id": 52,
+      "character": "路",
+      "strokes": 13,
+      "onyomi": ["ロ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "道路", "reading": "どうろ", "meaning": "jalan raya" }
+      ],
+      "extraWords": [
+        { "word": "通路", "reading": "つうろ", "meaning": "lorong, gang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "足りない料金を払うところ＝",
+      "optionA": "精算所",
+      "optionB": "清算所",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「その切符では（　）は通れませんから、駅員のいるほうを通ってください。」",
+      "optionA": "改札口",
+      "optionB": "自動改札",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「わからないことは駅の（　）で聞いてください。」",
+      "optionA": "窓口",
+      "optionB": "受付",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "「今度の快速は（　）から発車します。」",
+      "optionA": "3番線",
+      "optionB": "3号車",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「4月から電車の時刻が（　）されます。」",
+      "optionA": "改正",
+      "optionB": "改刻",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「（　）に物を落としたときは、駅係員にお知らせください。」",
+      "optionA": "線路内",
+      "optionB": "道路内",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "○○君は足が",
+      "optionA": "快い",
+      "optionB": "速い",
+      "answer": "B"
+    }
+  ]
+}

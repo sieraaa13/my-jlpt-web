@@ -1,0 +1,243 @@
+{
+  "week": 1,
+  "day": 3,
+  "title": "建物の内外でよく見る表示",
+  "subtitle": "Signs Often Seen Inside and Outside Buildings",
+  "translation": "Tanda-tanda yang Sering Terlihat di Dalam dan Luar Gedung",
+  "sceneDescription": "Pintu toko dengan tanda buka/tutup dan larangan membuka pintu, tombol tarik/dorong, tanda sedang persiapan dan hari libur tetap; juga toilet dan lift dengan tanda sedang dibersihkan/diperiksa.",
+  "signs": [
+    { "text": "営業中", "meaning": "Sedang buka" },
+    { "text": "開放厳禁", "meaning": "Dilarang keras dibiarkan terbuka" },
+    { "text": "引", "meaning": "Tarik" },
+    { "text": "押", "meaning": "Dorong" },
+    { "text": "準備中", "meaning": "Sedang persiapan" },
+    { "text": "定休日", "meaning": "Hari libur tetap" },
+    { "text": "清掃中", "meaning": "Sedang dibersihkan" },
+    { "text": "点検中", "meaning": "Sedang diperiksa" }
+  ],
+  "kanjiList": [
+    {
+      "id": 27,
+      "character": "営",
+      "strokes": 12,
+      "onyomi": ["エイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "営業", "reading": "えいぎょう", "meaning": "usaha, operasional (buka bisnis)" }
+      ]
+    },
+    {
+      "id": 28,
+      "character": "放",
+      "strokes": 8,
+      "onyomi": ["ホウ"],
+      "kunyomi": ["はなす", "はなれる"],
+      "words": [
+        { "word": "放送", "reading": "ほうそう", "meaning": "siaran" },
+        { "word": "開放厳禁", "reading": "かいほうげんきん", "meaning": "dilarang keras dibiarkan terbuka" }
+      ],
+      "extraWords": [
+        { "word": "開放", "reading": "かいほう", "meaning": "membuka, pembukaan" },
+        { "word": "放す", "reading": "はなす", "meaning": "melepaskan" }
+      ]
+    },
+    {
+      "id": 29,
+      "character": "押",
+      "strokes": 8,
+      "onyomi": ["オウ"],
+      "kunyomi": ["おす", "おさえる"],
+      "words": [
+        { "word": "押す", "reading": "おす", "meaning": "mendorong" },
+        { "word": "押さえる", "reading": "おさえる", "meaning": "menahan, menekan" }
+      ],
+      "extraWords": [
+        { "word": "押し入れ", "reading": "おしいれ", "meaning": "lemari dinding gaya Jepang" }
+      ]
+    },
+    {
+      "id": 30,
+      "character": "準",
+      "strokes": 13,
+      "onyomi": ["ジュン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "準備", "reading": "じゅんび", "meaning": "persiapan" },
+        { "word": "準急", "reading": "じゅんきゅう", "meaning": "kereta semi-ekspres" }
+      ],
+      "extraWords": [
+        { "word": "水準", "reading": "すいじゅん", "meaning": "standar, taraf" },
+        { "word": "準決勝", "reading": "じゅんけっしょう", "meaning": "semifinal", "note": "→ lihat kanji #156 (決), #685 (勝)" }
+      ]
+    },
+    {
+      "id": 31,
+      "character": "備",
+      "strokes": 12,
+      "onyomi": ["ビ"],
+      "kunyomi": ["そなえる"],
+      "words": [
+        { "word": "備品", "reading": "びひん", "meaning": "perlengkapan" },
+        { "word": "備える", "reading": "そなえる", "meaning": "mempersiapkan, melengkapi" }
+      ],
+      "extraWords": [
+        { "word": "備え付け（の）", "reading": "そなつけ", "meaning": "dilengkapi/terpasang tetap" }
+      ]
+    },
+    {
+      "id": 32,
+      "character": "定",
+      "strokes": 8,
+      "onyomi": ["テイ", "ジョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "定員", "reading": "ていいん", "meaning": "kapasitas, jumlah maksimum orang" },
+        { "word": "定食", "reading": "ていしょく", "meaning": "set makanan" }
+      ],
+      "extraWords": [
+        { "word": "定休日", "reading": "ていきゅうび", "meaning": "hari libur tetap" },
+        { "word": "定規", "reading": "じょうぎ", "meaning": "penggaris", "note": "→ lihat kanji #153 (規)" }
+      ]
+    },
+    {
+      "id": 33,
+      "character": "流",
+      "strokes": 10,
+      "onyomi": ["リュウ"],
+      "kunyomi": ["ながれる", "ながす"],
+      "words": [
+        { "word": "流行", "reading": "りゅうこう", "meaning": "tren, mode" },
+        { "word": "流れる", "reading": "ながれる", "meaning": "mengalir" }
+      ],
+      "extraWords": [
+        { "word": "流す", "reading": "ながす", "meaning": "mengalirkan" }
+      ]
+    },
+    {
+      "id": 34,
+      "character": "清",
+      "strokes": 11,
+      "onyomi": ["セイ"],
+      "kunyomi": ["きよい"],
+      "words": [
+        { "word": "清書", "reading": "せいしょ", "meaning": "salinan bersih" },
+        { "word": "清い", "reading": "きよい", "meaning": "bersih, murni" }
+      ],
+      "extraWords": [
+        { "word": "清流", "reading": "せいりゅう", "meaning": "aliran jernih (= 清い流れ)" }
+      ]
+    },
+    {
+      "id": 35,
+      "character": "掃",
+      "strokes": 11,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["はく"],
+      "words": [
+        { "word": "清掃", "reading": "せいそう", "meaning": "pembersihan" },
+        { "word": "掃く", "reading": "はく", "meaning": "menyapu" }
+      ]
+    },
+    {
+      "id": 36,
+      "character": "閉",
+      "strokes": 11,
+      "onyomi": ["ヘイ"],
+      "kunyomi": ["とじる", "しめる", "しまる"],
+      "words": [
+        { "word": "閉会", "reading": "へいかい", "meaning": "penutupan rapat" },
+        { "word": "閉まる", "reading": "しまる", "meaning": "tertutup" },
+        { "word": "閉める", "reading": "しめる", "meaning": "menutup" }
+      ],
+      "extraWords": [
+        { "word": "閉店", "reading": "へいてん", "meaning": "tutup toko" },
+        { "word": "（口・目・本を）閉じる", "reading": "とじる", "meaning": "menutup (mulut/mata/buku)" }
+      ]
+    },
+    {
+      "id": 37,
+      "character": "点",
+      "strokes": 9,
+      "onyomi": ["テン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "点", "reading": "てん", "meaning": "titik, poin" },
+        { "word": "欠点", "reading": "けってん", "meaning": "kekurangan", "note": "→ lihat kanji #287 (欠)" }
+      ],
+      "extraWords": [
+        { "word": "〜点", "reading": "てん", "meaning": "...poin" }
+      ]
+    },
+    {
+      "id": 38,
+      "character": "検",
+      "strokes": 12,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "点検", "reading": "てんけん", "meaning": "pemeriksaan, inspeksi" }
+      ],
+      "extraWords": [
+        { "word": "検問", "reading": "けんもん", "meaning": "pemeriksaan (di jalan)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「あ、（　）だ、まだ早いんだね。また後で来よう。」",
+      "optionA": "準備中",
+      "optionB": "定休日",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「開放厳禁」＝",
+      "optionA": "開けてはいけない",
+      "optionB": "開けておいてはいけない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "A「何にする？」B「安くて早いから（　）がいいよ。」",
+      "optionA": "定食",
+      "optionB": "洋食",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "うちのチームは（　）まで勝ち進んだ。",
+      "optionA": "準急",
+      "optionB": "準決勝",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "「備え付けの紙以外、流さないでください。」＝トイレットペーパー（　）使えない。",
+      "optionA": "しか",
+      "optionB": "だけ",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「テストをしますから、本を（　）ください。」",
+      "optionA": "閉めて",
+      "optionB": "閉じて",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "「エレベーターは（　）ですから、階段を使ってください。」",
+      "optionA": "点検中",
+      "optionB": "検問中",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）セールを行う。",
+      "optionA": "閉店",
+      "optionB": "閉会",
+      "answer": "A"
+    }
+  ]
+}

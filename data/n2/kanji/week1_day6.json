@@ -1,0 +1,259 @@
+{
+  "week": 1,
+  "day": 6,
+  "title": "郵便局・病院で見る表示",
+  "subtitle": "Signs Seen at the Post Office or Hospital",
+  "translation": "Tanda-tanda yang Terlihat di Kantor Pos dan Rumah Sakit",
+  "sceneDescription": "Loket kantor pos dengan tabungan pos dan pengiriman paket/kilat/internasional; juga meja resepsionis rumah sakit dengan jam praktik, hari libur, departemen medis, dan pintu masuk gawat darurat malam hari.",
+  "signs": [
+    { "text": "郵便貯金", "meaning": "Tabungan pos" },
+    { "text": "速達", "meaning": "Pos kilat" },
+    { "text": "国際郵便", "meaning": "Pos internasional" },
+    { "text": "初診受付", "meaning": "Pendaftaran pasien baru" },
+    { "text": "再診受付", "meaning": "Pendaftaran pasien lanjutan" },
+    { "text": "夜間救急入口", "meaning": "Pintu masuk gawat darurat malam hari" }
+  ],
+  "kanjiList": [
+    {
+      "id": 67,
+      "character": "郵",
+      "strokes": 11,
+      "onyomi": ["ユウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "郵便", "reading": "ゆうびん", "meaning": "pos, layanan pos" }
+      ],
+      "extraWords": [
+        { "word": "郵送", "reading": "ゆうそう", "meaning": "dikirim lewat pos" }
+      ]
+    },
+    {
+      "id": 68,
+      "character": "局",
+      "strokes": 7,
+      "onyomi": ["キョク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "郵便局", "reading": "ゆうびんきょく", "meaning": "kantor pos" },
+        { "word": "放送局", "reading": "ほうそうきょく", "meaning": "stasiun penyiaran" }
+      ],
+      "extraWords": [
+        { "word": "薬局", "reading": "やっきょく", "meaning": "apotek" }
+      ]
+    },
+    {
+      "id": 69,
+      "character": "貯",
+      "strokes": 12,
+      "onyomi": ["チョ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "貯金", "reading": "ちょきん", "meaning": "tabungan" }
+      ]
+    },
+    {
+      "id": 70,
+      "character": "包",
+      "strokes": 5,
+      "onyomi": ["ホウ"],
+      "kunyomi": ["つつむ"],
+      "words": [
+        { "word": "包帯", "reading": "ほうたい", "meaning": "perban", "note": "→ lihat kanji #143 (帯)" },
+        { "word": "包む", "reading": "つつむ", "meaning": "membungkus" }
+      ],
+      "extraWords": [
+        { "word": "小包", "reading": "こづつみ", "meaning": "paket pos" }
+      ]
+    },
+    {
+      "id": 71,
+      "character": "達",
+      "strokes": 12,
+      "onyomi": ["タツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "発達", "reading": "はったつ", "meaning": "perkembangan" },
+        { "word": "友達", "reading": "ともだち", "meaning": "teman", "flag": "special" }
+      ],
+      "extraWords": [
+        { "word": "速達", "reading": "そくたつ", "meaning": "kilat khusus (pos kilat)" }
+      ]
+    },
+    {
+      "id": 72,
+      "character": "際",
+      "strokes": 14,
+      "onyomi": ["サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "国際", "reading": "こくさい", "meaning": "internasional" },
+        { "word": "実際に", "reading": "じっさいに", "meaning": "sebenarnya, secara nyata", "note": "→ lihat kanji #451 (実)" }
+      ],
+      "extraWords": [
+        { "word": "〜の際", "reading": "さい", "meaning": "pada saat ..." }
+      ]
+    },
+    {
+      "id": 73,
+      "character": "初",
+      "strokes": 7,
+      "onyomi": ["ショ"],
+      "kunyomi": ["はじめ", "はじめて", "はつ"],
+      "words": [
+        { "word": "初診", "reading": "しょしん", "meaning": "konsultasi medis pertama kali" },
+        { "word": "初恋", "reading": "はつこい", "meaning": "cinta pertama", "note": "→ lihat kanji #308 (恋)" }
+      ],
+      "extraWords": [
+        { "word": "初めて", "reading": "はじめて", "meaning": "untuk pertama kalinya" },
+        { "word": "初雪", "reading": "はつゆき", "meaning": "salju pertama", "note": "→ lihat kanji #638 (雪)" }
+      ]
+    },
+    {
+      "id": 74,
+      "character": "再",
+      "strokes": 6,
+      "onyomi": ["サイ", "サ"],
+      "kunyomi": ["ふたたび"],
+      "words": [
+        { "word": "再診", "reading": "さいしん", "meaning": "konsultasi medis lanjutan" },
+        { "word": "再来年", "reading": "さらいねん", "meaning": "dua tahun lagi", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "再生", "reading": "さいせい", "meaning": "regenerasi, daur ulang" },
+        { "word": "再び", "reading": "ふたたび", "meaning": "sekali lagi" }
+      ]
+    },
+    {
+      "id": 75,
+      "character": "療",
+      "strokes": 17,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "診療", "reading": "しんりょう", "meaning": "pemeriksaan dan perawatan medis" },
+        { "word": "医療", "reading": "いりょう", "meaning": "pelayanan medis" }
+      ],
+      "extraWords": [
+        { "word": "治療", "reading": "ちりょう", "meaning": "pengobatan", "note": "→ lihat kanji #289 (治)" }
+      ]
+    },
+    {
+      "id": 76,
+      "character": "科",
+      "strokes": 9,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "科学", "reading": "かがく", "meaning": "ilmu pengetahuan" },
+        { "word": "内科", "reading": "ないか", "meaning": "departemen penyakit dalam" }
+      ],
+      "extraWords": [
+        { "word": "外科", "reading": "げか", "meaning": "bedah" }
+      ]
+    },
+    {
+      "id": 77,
+      "character": "婦",
+      "strokes": 11,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "産婦人科", "reading": "さんふじんか", "meaning": "departemen kandungan dan kebidanan" },
+        { "word": "婦人", "reading": "ふじん", "meaning": "wanita" }
+      ],
+      "extraWords": [
+        { "word": "主婦", "reading": "しゅふ", "meaning": "ibu rumah tangga" }
+      ]
+    },
+    {
+      "id": 78,
+      "character": "皮",
+      "strokes": 5,
+      "onyomi": ["ヒ"],
+      "kunyomi": ["かわ"],
+      "words": [
+        { "word": "皮肉（な）", "reading": "ひにく", "meaning": "ironi, sindiran", "flag": "attention" },
+        { "word": "皮", "reading": "かわ", "meaning": "kulit" }
+      ]
+    },
+    {
+      "id": 79,
+      "character": "膚",
+      "strokes": 15,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "皮膚", "reading": "ひふ", "meaning": "kulit" }
+      ]
+    },
+    {
+      "id": 80,
+      "character": "救",
+      "strokes": 11,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["すくう"],
+      "words": [
+        { "word": "救急", "reading": "きゅうきゅう", "meaning": "pertolongan darurat" },
+        { "word": "救う", "reading": "すくう", "meaning": "menyelamatkan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "急ぎの手紙を（　）で送る。",
+      "optionA": "小包",
+      "optionB": "速達",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "国際郵便＝（　）へ送る郵便",
+      "optionA": "海外",
+      "optionB": "国内",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "郵便貯金＝郵便局（　）",
+      "optionA": "からお金を送る",
+      "optionB": "にお金を預ける",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "この紙を（　）に持って行って、薬をもらってください。",
+      "optionA": "薬局",
+      "optionB": "包帯",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "急病人のために、夜でも開いている入口＝",
+      "optionA": "夜間救急入口",
+      "optionB": "非常口",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "初めて診察を受けに来た人は（　）受付へ行く。",
+      "optionA": "初診",
+      "optionB": "再診",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）の一つです。",
+      "optionA": "科学は化学",
+      "optionB": "化学は科学",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "手術は（　）で行います。",
+      "optionA": "内科",
+      "optionB": "外科",
+      "answer": "B"
+    }
+  ]
+}

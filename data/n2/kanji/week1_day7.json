@@ -1,0 +1,126 @@
+{
+  "week": 1,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 1 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "ここは駐車禁止です。", "target": "駐車", "choices": ["じゅうしゃ", "ちょうしゃ", "ちゅうしゃ", "じょうしゃ"], "answer": "ちゅうしゃ" },
+    { "sentence": "チューインガムは紙に包んで捨てましょう。", "target": "包んで", "choices": ["はさんで", "つつんで", "たたんで", "すすんで"], "answer": "つつんで" },
+    { "sentence": "外国為替の窓口は2階です。", "target": "為替", "choices": ["きがえ", "ためせ", "かわせ", "りょうがえ"], "answer": "かわせ" },
+    { "sentence": "喫煙席はあちらです。", "target": "喫煙席", "choices": ["きんねんせ", "きんえんせき", "きっえんせき", "きつえんせき"], "answer": "きつえんせき" },
+    { "sentence": "食堂はまだ準備中です。", "target": "準備", "choices": ["せいび", "えいぎょう", "きゅうぎょう", "じゅんび"], "answer": "じゅんび" },
+    { "sentence": "デパートの閉店セールに行く。", "target": "閉店", "choices": ["へいてん", "かいてん", "さいてん", "せいてん"], "answer": "へいてん" },
+    { "sentence": "医療関係の仕事をする。", "target": "医療", "choices": ["ちりょう", "いりょう", "ひりょう", "しんりょう"], "answer": "いりょう" },
+    { "sentence": "救急車をよぶときは119に電話します。", "target": "救急", "choices": ["きゅうきゅう", "きょうきゅう", "きゅうきょう", "きょうきょう"], "answer": "きゅうきゅう" },
+    { "sentence": "富士山に初雪が降りました。", "target": "初雪", "choices": ["はじゆき", "はつゆき", "しょゆき", "しょせつ"], "answer": "はつゆき" },
+    { "sentence": "機械でも精算できます。", "target": "精算", "choices": ["しょうさん", "かいさん", "せいさん", "けいさん"], "answer": "せいさん" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "このエレベーターはていいん9名です。", "reading": "ていいん", "choices": ["係員", "乗員", "店員", "定員"], "answer": "定員" },
+    { "sentence": "御手洗いはせいそう中です。", "reading": "せいそう", "choices": ["清帰", "清掃", "精掃", "精帰"], "answer": "清掃" },
+    { "sentence": "地デジほうそうというのは何ですか。", "reading": "ほうそう", "choices": ["郵送", "包送", "放送", "発送"], "answer": "放送" },
+    { "sentence": "この手紙はそくたつでおねがいします。", "reading": "そくたつ", "choices": ["速達", "配達", "発達", "友達"], "answer": "速達" },
+    { "sentence": "くうこうまでリムジンバスで行きました。", "reading": "くうこう", "choices": ["空港", "航空", "港口", "高校"], "answer": "空港" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "一万円（　）を両替してくれませんか。", "target": "1万円札", "choices": ["符", "札", "付", "段"], "answer": "札" },
+    { "sentence": "日本からの海外旅行は1964年に自由（　）されました。", "target": "自由化", "choices": ["科", "化", "案", "席"], "answer": "化" },
+    { "sentence": "（　）入国手続きをする。", "target": "際入国手続きをする", "choices": ["改", "際", "御", "再"], "answer": "際" },
+    { "sentence": "このバスは運（　）を先にはらいます。", "target": "運賃", "choices": ["代", "料", "賃", "貸"], "answer": "賃" },
+    { "sentence": "1（　）車は禁煙車です。", "target": "1号車", "choices": ["号", "両", "番", "階"], "answer": "号" }
+  ],
+  "passageQuestion": {
+    "passage": "読み終えた新聞などは、デパートの[21]紙やトイレットペーパーなどに[22]されます。ゴミとして[23]で、リサイクルするように[24]気をつけているという人が[25]います。",
+    "wordBank": ["ふえて", "さいせい", "つつみ", "すてない", "りゅうこうして", "つねに", "とじない"],
+    "blanks": [
+      { "number": 21, "answer": "つつみ", "answerKanji": "包み" },
+      { "number": 22, "answer": "さいせい", "answerKanji": "再生" },
+      { "number": 23, "answer": "すてない", "answerKanji": "捨てない" },
+      { "number": 24, "answer": "つねに", "answerKanji": "常に" },
+      { "number": 25, "answer": "ふえて", "answerKanji": "増えて" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "看板・立て札・表示",
+    "translation": "Signboards, Notice Boards",
+    "description": "Di Minggu 1「みる①」kita sudah belajar kanji untuk papan, tulisan, dan tanda peringatan. Ternyata masih ada lagi: bandara Narita dan Haneda punya Terminal 1 dan Terminal 2 (成田空港 第1ターミナル／第2ターミナル), stasiun gedung 1 dan 2 di Bandara Haneda (羽田空港第1ビル駅／第2ビル駅), dan pusat informasi umum (総合案内所). Kanji 総 punya arti 'mengumpulkan banyak hal', dipakai misalnya pada 総合病院 (rumah sakit umum) dan 総計 (jumlah total). Di sekitar kita ada begitu banyak kanji, mari belajar dengan senang!",
+    "kanjiList": [
+      {
+        "id": 81,
+        "character": "看",
+        "strokes": 9,
+        "onyomi": ["カン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "看板", "reading": "かんばん", "meaning": "papan tanda, plang" },
+          { "word": "看護師", "reading": "かんごし", "meaning": "perawat", "note": "→ lihat kanji #423 (師)" }
+        ],
+        "extraWords": [
+          { "word": "看病", "reading": "かんびょう", "meaning": "merawat orang sakit" }
+        ]
+      },
+      {
+        "id": 82,
+        "character": "板",
+        "strokes": 8,
+        "onyomi": ["バン"],
+        "kunyomi": ["いた"],
+        "words": [
+          { "word": "黒板", "reading": "こくばん", "meaning": "papan tulis" },
+          { "word": "板", "reading": "いた", "meaning": "papan kayu" }
+        ],
+        "extraWords": [
+          { "word": "案内板", "reading": "あんないばん", "meaning": "papan informasi" }
+        ]
+      },
+      {
+        "id": 83,
+        "character": "羽",
+        "strokes": 6,
+        "onyomi": ["ウ"],
+        "kunyomi": ["はね", "は"],
+        "words": [
+          { "word": "羽毛", "reading": "うもう", "meaning": "bulu halus", "note": "→ lihat kanji #387 (毛)" },
+          { "word": "羽", "reading": "はね", "meaning": "bulu, sayap" }
+        ],
+        "extraWords": [
+          { "word": "羽根", "reading": "はね", "meaning": "kok bulu tangkis", "note": "→ lihat kanji #599 (根)" }
+        ]
+      },
+      {
+        "id": 84,
+        "character": "成",
+        "strokes": 6,
+        "onyomi": ["セイ"],
+        "kunyomi": ["なる"],
+        "words": [
+          { "word": "成分", "reading": "せいぶん", "meaning": "komponen, kandungan" },
+          { "word": "成人式", "reading": "せいじんしき", "meaning": "upacara kedewasaan", "note": "→ lihat kanji #165 (式)" }
+        ]
+      },
+      {
+        "id": 85,
+        "character": "第",
+        "strokes": 11,
+        "onyomi": ["ダイ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "第〜", "reading": "だい", "meaning": "urutan ke-... (angka)" }
+        ]
+      },
+      {
+        "id": 86,
+        "character": "総",
+        "strokes": 14,
+        "onyomi": ["ソウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "総合病院", "reading": "そうごうびょういん", "meaning": "rumah sakit umum" }
+        ],
+        "extraWords": [
+          { "word": "総計", "reading": "そうけい", "meaning": "jumlah total" }
+        ]
+      }
+    ]
+  }
+}

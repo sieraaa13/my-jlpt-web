@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { N2KanjiLessonView } from "@/components/n2-kanji-lesson-view";
+import { N2KanjiBonusColumn } from "@/components/n2-kanji-bonus-column";
 import { KanjiTestView } from "@/components/kanji-test-view";
 import { getOrganizedN2KanjiLessons, n2KanjiLessons, n2KanjiTests } from "@/data/n2/kanji/lessons";
 
@@ -67,7 +68,10 @@ export function N2KanjiTab() {
       {lesson ? (
         <N2KanjiLessonView lesson={lesson} />
       ) : test ? (
-        <KanjiTestView test={test} />
+        <div className="space-y-8">
+          <KanjiTestView test={test} />
+          {test.bonusColumn && <N2KanjiBonusColumn bonus={test.bonusColumn} />}
+        </div>
       ) : (
         <div className="p-6 rounded-3xl border border-dashed border-border bg-card/50 text-center text-muted-foreground">
           Materi belum tersedia.
