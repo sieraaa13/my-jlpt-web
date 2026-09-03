@@ -56,6 +56,24 @@ import w6d5 from "./week6_day5.json";
 import w6d6 from "./week6_day6.json";
 import w6d7 from "./week6_day7.json";
 
+// Week 7
+import w7d1 from "./week7_day1.json";
+import w7d2 from "./week7_day2.json";
+import w7d3 from "./week7_day3.json";
+import w7d4 from "./week7_day4.json";
+import w7d5 from "./week7_day5.json";
+import w7d6 from "./week7_day6.json";
+import w7d7 from "./week7_day7.json";
+
+// Week 8
+import w8d1 from "./week8_day1.json";
+import w8d2 from "./week8_day2.json";
+import w8d3 from "./week8_day3.json";
+import w8d4 from "./week8_day4.json";
+import w8d5 from "./week8_day5.json";
+import w8d6 from "./week8_day6.json";
+import w8d7 from "./week8_day7.json";
+
 export type GrammarSection = {
   pattern_title: string;
   pattern_meaning?: string;
@@ -82,6 +100,8 @@ export const lessons: Record<string, Record<string, LessonFile>> = {
   "4": { "1": w4d1 as LessonFile, "2": w4d2 as LessonFile, "3": w4d3 as LessonFile, "4": w4d4 as LessonFile, "5": w4d5 as LessonFile, "6": w4d6 as LessonFile, "7": w4d7 as LessonFile },
   "5": { "1": w5d1 as LessonFile, "2": w5d2 as LessonFile, "3": w5d3 as LessonFile, "4": w5d4 as LessonFile, "5": w5d5 as LessonFile, "6": w5d6 as LessonFile, "7": w5d7 as LessonFile },
   "6": { "1": w6d1 as LessonFile, "2": w6d2 as LessonFile, "3": w6d3 as LessonFile, "4": w6d4 as LessonFile, "5": w6d5 as LessonFile, "6": w6d6 as LessonFile, "7": w6d7 as LessonFile },
+  "7": { "1": w7d1 as LessonFile, "2": w7d2 as LessonFile, "3": w7d3 as LessonFile, "4": w7d4 as LessonFile, "5": w7d5 as LessonFile, "6": w7d6 as LessonFile, "7": w7d7 as LessonFile },
+  "8": { "1": w8d1 as LessonFile, "2": w8d2 as LessonFile, "3": w8d3 as LessonFile, "4": w8d4 as LessonFile, "5": w8d5 as LessonFile, "6": w8d6 as LessonFile, "7": w8d7 as LessonFile },
 };
 
 export function getOrganizedLessons() {

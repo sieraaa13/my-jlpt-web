@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 3,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "勉強するものだ",
+        "translation": "Seharusnya belajar"
+      },
+      "illustration_text": {
+        "friend1": "学生は勉強するものだ。",
+        "friend2": "アルバイトばかりするものではない。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "薬は苦いものだ",
+          "pattern_meaning": "ものだ/もんだ = memang begitu.../wajarnya begitu... (kecenderungan umum), atau alangkah baiknya.../ingin sekali... (harapan)",
+          "description_box": {
+            "formula": "① Vる/Vない・Aい/Aくない・naな/naじゃない＋ものだ／もんだ（kecenderungan umum）\n② Vたい/Vたくない・Vてほしい/ほしくない＋ものだ／もんだ（harapan）",
+            "explanation": "Menunjukkan kecenderungan umum yang dianggap wajar terjadi menurut pandangan umum, atau digunakan untuk mengungkapkan harapan maupun keinginan yang kuat dari pembicara.",
+            "explanation_en": "Shows a general tendency considered natural from a common viewpoint, or is used to express the speaker's strong wish or hope."
+          },
+          "examples": [
+            {
+              "jp": "子どもは外で元気に遊ぶものだ。",
+              "en": "Anak-anak memang wajarnya bermain dengan riang di luar rumah.",
+              "explanation": "",
+              "highlight": "ものだ"
+            },
+            {
+              "jp": "一度でいいから、自分の店を持ってみたいものだ。",
+              "en": "Sekali saja tak apa, aku ingin sekali memiliki toko sendiri.",
+              "explanation": "",
+              "highlight": "ものだ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "するものではない",
+          "pattern_meaning": "ものではない = tidak seharusnya.../bukan hal yang pantas dilakukan... (nasihat atau larangan umum)",
+          "description_box": {
+            "formula": "Vる ＋ ものではない／もんじゃない",
+            "explanation": "Menunjukkan nasihat bahwa suatu perbuatan, menurut pandangan umum, tidak pantas atau tidak sepatutnya dilakukan.",
+            "explanation_en": "Shows advice that, from a common viewpoint, an action is not appropriate or should not be done."
+          },
+          "examples": [
+            {
+              "jp": "他人の秘密を勝手に話すものではない。",
+              "en": "Rahasia orang lain itu tidak seharusnya diceritakan sembarangan.",
+              "explanation": "",
+              "highlight": "ものではない"
+            },
+            {
+              "jp": "食べ物を粗末にするものではない。",
+              "en": "Makanan itu tidak sepatutnya disia-siakan.",
+              "explanation": "",
+              "highlight": "ものではない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "無理というものだ",
+          "pattern_meaning": "というものだ = itu memang.../boleh dikatakan begitulah... (penilaian umum pembicara terhadap suatu hal)",
+          "description_box": {
+            "formula": "Vる／na／N ＋ というものだ／というもんだ",
+            "explanation": "Menunjukkan penilaian atau kesimpulan umum pembicara terhadap suatu keadaan, seolah menyatakan bahwa kalau dipikir secara wajar, memang begitulah keadaannya.",
+            "explanation_en": "Shows the speaker's general judgment or conclusion about a situation, as if saying that, thought about reasonably, that is simply how it is."
+          },
+          "examples": [
+            {
+              "jp": "一人で3日でこの仕事を終わらせるのは無理というものだ。",
+              "en": "Menyelesaikan pekerjaan ini sendirian dalam 3 hari, itu memang mustahil.",
+              "explanation": "",
+              "highlight": "というものだ"
+            },
+            {
+              "jp": "遅刻して謝らないのは失礼というものだ。",
+              "en": "Terlambat tanpa minta maaf, itu memang tidak sopan namanya.",
+              "explanation": "",
+              "highlight": "というものだ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行くものか",
+          "pattern_meaning": "ものか/もんか = mana mungkin.../tidak akan pernah... (penyangkalan kuat)",
+          "description_box": {
+            "formula": "Vる／Aい／naな／Nな ＋ ものか／もんか（percakapan santai, banyak dipakai pria）\nnaな／Nな ＋ ものですか／もんですか（lebih sopan, banyak dipakai wanita）",
+            "explanation": "Menunjukkan penyangkalan yang kuat terhadap suatu hal, sering disertai perasaan kesal, kecewa, atau tidak terima.",
+            "explanation_en": "Shows a strong denial of something, often accompanied by a feeling of frustration, disappointment, or refusal to accept."
+          },
+          "examples": [
+            {
+              "jp": "あんな失礼な態度の店に、二度と行くものか。",
+              "en": "Ke toko dengan sikap tidak sopan seperti itu, mana mungkin aku datang lagi.",
+              "explanation": "",
+              "highlight": "ものか"
+            },
+            {
+              "jp": "こんな結果で満足なもんか。",
+              "en": "Puas dengan hasil seperti ini? Mana mungkin bisa.",
+              "explanation": "",
+              "highlight": "なもんか"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

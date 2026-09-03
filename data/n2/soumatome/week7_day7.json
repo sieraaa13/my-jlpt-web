@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 7,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 7 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "7週目の文法、がんばっておぼえたよね？",
+        "friend2": "実戦問題で確認してみよう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "買う（　　）借りる（　　）、テキストを必ず持参すること。",
+              "options": [
+                { "id": 1, "text": "にしろ／にしろ" },
+                { "id": 2, "text": "やら／やら" },
+                { "id": 3, "text": "も／も" },
+                { "id": 4, "text": "し／し" }
+              ],
+              "hint": "📝 Petunjuk materi: 行くにしろ行かないにしろ (2日目).",
+              "answer": 1
+            },
+            {
+              "number": 2,
+              "question": "入院（　　）、保険に入った。",
+              "options": [
+                { "id": 1, "text": "を契機として" },
+                { "id": 2, "text": "をもとにして" },
+                { "id": 3, "text": "もかまわず" },
+                { "id": 4, "text": "にもかかわらず" }
+              ],
+              "hint": "📝 Petunjuk materi: 入学をきっかけに (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 3,
+              "question": "心の（　　）贈り物をもらうとうれしいものだ。",
+              "options": [
+                { "id": 1, "text": "めぐった" },
+                { "id": 2, "text": "こもった" },
+                { "id": 3, "text": "通じた" },
+                { "id": 4, "text": "通した" }
+              ],
+              "hint": "📝 Petunjuk materi: 感謝の気持ちをこめて (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 4,
+              "question": "彼女は耳も（　　）目も見えなかった。",
+              "options": [
+                { "id": 1, "text": "聞こえないと" },
+                { "id": 2, "text": "聞こえなくて" },
+                { "id": 3, "text": "聞こえなければ" },
+                { "id": 4, "text": "聞こえても" }
+              ],
+              "hint": "📝 Petunjuk materi: 勉強もできればスポーツもできる (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 5,
+              "question": "服が汚れるの（　　）、彼はけがをした人を抱きかかえた。",
+              "options": [
+                { "id": 1, "text": "を問わず" },
+                { "id": 2, "text": "につけ" },
+                { "id": 3, "text": "もかまわず" },
+                { "id": 4, "text": "にしろ" }
+              ],
+              "hint": "📝 Petunjuk materi: 人目もかまわず (1日目).",
+              "answer": 3
+            },
+            {
+              "number": 6,
+              "question": "そのピアニストは、国の内外を（　　）活躍している。",
+              "options": [
+                { "id": 1, "text": "問わず" },
+                { "id": 2, "text": "中心に" },
+                { "id": 3, "text": "通して" },
+                { "id": 4, "text": "契機に" }
+              ],
+              "hint": "📝 Petunjuk materi: 年齢を問わず (1日目).",
+              "answer": 1
+            },
+            {
+              "number": 7,
+              "question": "ボランティア活動（　　）社会に貢献する。",
+              "options": [
+                { "id": 1, "text": "に関して" },
+                { "id": 2, "text": "を通じて" },
+                { "id": 3, "text": "に応じて" },
+                { "id": 4, "text": "に先立って" }
+              ],
+              "hint": "📝 Petunjuk materi: 友人を通じて (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 8,
+              "question": "きょうは雷が鳴る（　　）地震が起きる（　　）、なんだか普通じゃない。",
+              "options": [
+                { "id": 1, "text": "にしろ／にしろ" },
+                { "id": 2, "text": "につけ／につけ" },
+                { "id": 3, "text": "やら／やら" },
+                { "id": 4, "text": "も／も" }
+              ],
+              "hint": "📝 Petunjuk materi: 本やらノートやら (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "人は無いものを欲しがる（　　）。",
+              "options": [
+                { "id": 1, "text": "ことか" },
+                { "id": 2, "text": "ものだ" },
+                { "id": 3, "text": "ことはない" },
+                { "id": 4, "text": "ものがある" }
+              ],
+              "hint": "📝 Petunjuk materi: 薬は苦いものだ (3日目).",
+              "answer": 2
+            },
+            {
+              "number": 10,
+              "question": "この服を着る（　　）、母を思い出す。",
+              "options": [
+                { "id": 1, "text": "やら" },
+                { "id": 2, "text": "につき" },
+                { "id": 3, "text": "につけ" },
+                { "id": 4, "text": "にそって" }
+              ],
+              "hint": "📝 Petunjuk materi: 見るにつけ聞くにつけ (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 11,
+              "question": "その病気は動物から人間にうつる（　　）がある。",
+              "options": [
+                { "id": 1, "text": "契機" },
+                { "id": 2, "text": "恐れ" },
+                { "id": 3, "text": "気味" },
+                { "id": 4, "text": "向き" }
+              ],
+              "hint": "📝 Petunjuk materi: 倒れたりする恐れがある (5日目).",
+              "answer": 2
+            },
+            {
+              "number": 12,
+              "question": "体にいいからといって、たくさん食べればいい（　　）。",
+              "options": [
+                { "id": 1, "text": "わけがある" },
+                { "id": 2, "text": "わけだ" },
+                { "id": 3, "text": "次第だ" },
+                { "id": 4, "text": "というものでもない" }
+              ],
+              "hint": "📝 Petunjuk materi: 多ければいいというものでもない (5日目).",
+              "answer": 4
+            },
+            {
+              "number": 13,
+              "question": "この町には心をなごませる（　　）。",
+              "options": [
+                { "id": 1, "text": "ものだ" },
+                { "id": 2, "text": "ものか" },
+                { "id": 3, "text": "ものがある" },
+                { "id": 4, "text": "ものではない" }
+              ],
+              "hint": "📝 Petunjuk materi: つらいものがある (5日目).",
+              "answer": 3
+            },
+            {
+              "number": 14,
+              "question": "この問題集は、実際の授業で使った教材を（　　）作られている。",
+              "options": [
+                { "id": 1, "text": "もとにして" },
+                { "id": 2, "text": "問わず" },
+                { "id": 3, "text": "こめて" },
+                { "id": 4, "text": "きっかけにして" }
+              ],
+              "hint": "📝 Petunjuk materi: 事実をもとに (6日目).",
+              "answer": 1
+            },
+            {
+              "number": 15,
+              "question": "インターネットでご予約の（　　）には、パスワードが必要となります。",
+              "options": [
+                { "id": 1, "text": "最中" },
+                { "id": 2, "text": "際" },
+                { "id": 3, "text": "たび" },
+                { "id": 4, "text": "かわり" }
+              ],
+              "hint": "📝 Petunjuk materi: 受験の際に (6日目).",
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "彼らが理解できるわけがない。＿＿ ＿＿ ★ ＿＿ だ。",
+              "words": [
+                { "id": 1, "word": "無駄" },
+                { "id": 2, "word": "もの" },
+                { "id": 3, "word": "時間の" },
+                { "id": 4, "word": "という" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 17,
+              "question": "人の ＿＿ ＿＿ ★ ＿＿ ではない。",
+              "words": [
+                { "id": 1, "word": "嫌がる" },
+                { "id": 2, "word": "する" },
+                { "id": 3, "word": "ことを" },
+                { "id": 4, "word": "もの" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 18,
+              "question": "通信販売のカタログなどがよく届く。＿＿ ＿＿ ★ ＿＿ のだ。",
+              "words": [
+                { "id": 1, "word": "にかかわらず" },
+                { "id": 2, "word": "しない" },
+                { "id": 3, "word": "希望する" },
+                { "id": 4, "word": "送られてくる" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 19,
+              "question": "彼に本を貸したら ＿＿ ＿＿ ★ ＿＿ 。",
+              "words": [
+                { "id": 1, "word": "貸すものか" },
+                { "id": 2, "word": "返ってきた" },
+                { "id": 3, "word": "もう絶対に" },
+                { "id": 4, "word": "汚くなって" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 20,
+              "question": "たばこが ＿＿ ＿＿ ★ ＿＿ したが、失敗した。",
+              "words": [
+                { "id": 1, "word": "きっかけに" },
+                { "id": 2, "word": "値上がりした" },
+                { "id": 3, "word": "やめようと" },
+                { "id": 4, "word": "のを" }
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "重い心臓病で、このままでは長く生きられないと診断されたAちゃん（生後8ヵ月）を救うための募金活動が、両親の友人 [21] 始まった。海外では [22] 手術が受けられる国もあるが、現在の日本では受けられない事情がある。しかし、海外で手術を受けるためには多額の費用がかかる。両親は「普通のサラリーマン家庭では、とても支払える金額ではありません。国はこの現状をどうにかできない [23] 。」と涙ながらに訴えた。その様子を見た人々からテレビやインターネット [24] 、募金や心 [25] 応援の言葉が集まっているのである。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Gerakan penggalangan dana untuk menyelamatkan bayi A (usia 8 bulan) yang didiagnosis mengidap penyakit jantung berat dan diperkirakan tidak akan bertahan lama jika dibiarkan, dimulai [21] seorang teman kedua orang tuanya. Di luar negeri ada negara yang bisa memberikan operasi [22], tetapi di Jepang saat ini ada kendala sehingga operasi itu tidak bisa dilakukan. Namun, untuk menjalani operasi di luar negeri dibutuhkan biaya yang sangat besar. Sambil menangis, kedua orang tuanya mengungkapkan, \"Bagi keluarga karyawan biasa, jumlah itu sama sekali tidak terjangkau. Apakah negara tidak [23] mengatasi keadaan ini?\" Melihat kondisi tersebut, melalui [24] televisi dan internet, sumbangan dan kata-kata dukungan yang [25] pun terus berdatangan dari masyarakat."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "をきっかけに" },
+                { "id": 2, "text": "をもとに" },
+                { "id": 3, "text": "を中心に" },
+                { "id": 4, "text": "をめぐって" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "年齢を問わず" },
+                { "id": 2, "text": "年齢にもかかわらず" },
+                { "id": 3, "text": "年齢を頼りに" },
+                { "id": 4, "text": "年齢をこめて" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "というものでしょう" },
+                { "id": 2, "text": "ものがあります" },
+                { "id": 3, "text": "というものでもありません" },
+                { "id": 4, "text": "ものでしょうか" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "につき" },
+                { "id": 2, "text": "を問わず" },
+                { "id": 3, "text": "を通じて" },
+                { "id": 4, "text": "の際に" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "のこもった" },
+                { "id": 2, "text": "もかまわず" },
+                { "id": 3, "text": "やら" },
+                { "id": 4, "text": "にしろ" }
+              ],
+              "answer": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

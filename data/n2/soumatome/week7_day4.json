@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 4,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "心をこめて",
+        "translation": "Dengan sepenuh hati"
+      },
+      "illustration_text": {
+        "friend1": "心をこめて作りました。",
+        "friend2": "野菜を中心とした食生活をしましょう！"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "東京を中心に",
+          "pattern_meaning": "を中心に = berpusat pada.../dengan...sebagai pusat",
+          "description_box": {
+            "formula": "Nを ＋ 中心に／中心にして／中心にしたN／中心として／中心としたN",
+            "explanation": "Menunjukkan bahwa sesuatu dijadikan pusat atau fokus utama dari suatu kegiatan atau keadaan.",
+            "explanation_en": "Shows that something is made the center or main focus of an activity or situation."
+          },
+          "examples": [
+            {
+              "jp": "この雑誌は若者を中心に人気がある。",
+              "en": "Majalah ini populer, terutama di kalangan anak muda.",
+              "explanation": "",
+              "highlight": "を中心に"
+            },
+            {
+              "jp": "彼は野菜を中心とした料理を作っている。",
+              "en": "Dia membuat masakan yang berpusat pada sayuran.",
+              "explanation": "",
+              "highlight": "を中心とした"
+            }
+          ]
+        },
+        {
+          "pattern_title": "感謝の気持ちをこめて",
+          "pattern_meaning": "をこめて = dengan menyertakan.../sambil mencurahkan (perasaan)...",
+          "description_box": {
+            "formula": "Nを ＋ こめて",
+            "explanation": "Menunjukkan bahwa suatu tindakan dilakukan dengan menyertakan perasaan atau harapan tertentu di dalamnya.",
+            "explanation_en": "Shows that an action is done while putting a certain feeling or hope into it."
+          },
+          "examples": [
+            {
+              "jp": "祈りをこめて千羽鶴を折った。",
+              "en": "Aku melipat seribu bangau kertas sambil mencurahkan doa.",
+              "explanation": "",
+              "highlight": "をこめて"
+            },
+            {
+              "jp": "愛情をこめて弁当を作った。",
+              "en": "Aku membuat bekal dengan penuh kasih sayang.",
+              "explanation": "",
+              "highlight": "をこめて"
+            }
+          ]
+        },
+        {
+          "pattern_title": "友人を通じて",
+          "pattern_meaning": "を通じて/を通して = melalui.../lewat perantaraan... (juga bisa berarti sepanjang...)",
+          "description_box": {
+            "formula": "Nを ＋ 通じて／通して",
+            "explanation": "Menunjukkan perantara terjadinya suatu hal, atau menunjukkan bahwa suatu keadaan berlangsung sepanjang periode yang disebutkan.",
+            "explanation_en": "Shows the medium through which something happens, or shows that a situation continues throughout the mentioned period."
+          },
+          "examples": [
+            {
+              "jp": "共通の趣味を通じて彼女と親しくなった。",
+              "en": "Aku menjadi akrab dengannya lewat hobi yang sama.",
+              "explanation": "",
+              "highlight": "を通じて"
+            },
+            {
+              "jp": "この地域は一年を通して雨が多い。",
+              "en": "Daerah ini sepanjang tahun sering diguyur hujan.",
+              "explanation": "",
+              "highlight": "を通して"
+            }
+          ]
+        },
+        {
+          "pattern_title": "地図を頼りに",
+          "pattern_meaning": "を頼りに = dengan mengandalkan.../berbekal...",
+          "description_box": {
+            "formula": "Nを ＋ 頼りに／頼りとして／頼りにして",
+            "explanation": "Menunjukkan bahwa seseorang melakukan sesuatu dengan mengandalkan atau bergantung pada hal yang disebutkan sebagai bantuan.",
+            "explanation_en": "Shows that someone does something relying on or depending on the mentioned thing for help."
+          },
+          "examples": [
+            {
+              "jp": "彼女は片言の英語を頼りに旅を続けた。",
+              "en": "Dia melanjutkan perjalanannya dengan mengandalkan bahasa Inggris yang terbata-bata.",
+              "explanation": "",
+              "highlight": "を頼りに"
+            },
+            {
+              "jp": "古い写真を頼りにして、昔の街並みを調べた。",
+              "en": "Dengan mengandalkan foto lama, aku menyelidiki suasana kota tempo dulu.",
+              "explanation": "",
+              "highlight": "を頼りにして"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

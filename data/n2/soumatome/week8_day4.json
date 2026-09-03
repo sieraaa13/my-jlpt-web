@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 4,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "ということは…",
+        "translation": "Berarti.../Itu artinya..."
+      },
+      "illustration_text": {
+        "friend1": "4月から東京で生活します。",
+        "friend2": "……ということは、大学に合格したのね。おめでとう！"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "まだ来ない。ということは欠席だ。",
+          "pattern_meaning": "ということは = berarti.../itu artinya...",
+          "description_box": {
+            "formula": "a。ということはb〈kesimpulan yang diambil dari a〉。(=つまり)",
+            "explanation": "Digunakan untuk menyampaikan kesimpulan yang diambil pembicara berdasarkan informasi yang baru saja didengar.",
+            "explanation_en": "Used to state a conclusion the speaker draws based on information just heard."
+          },
+          "examples": [
+            {
+              "jp": "彼女は結婚指輪をしている。ということは、もう結婚しているんだね。",
+              "en": "Dia memakai cincin kawin. Berarti, dia sudah menikah ya.",
+              "explanation": "",
+              "highlight": "ということは"
+            },
+            {
+              "jp": "電気がついていない。ということは、まだ帰っていないのかな。",
+              "en": "Lampunya tidak menyala. Itu artinya, mungkin dia belum pulang.",
+              "explanation": "",
+              "highlight": "ということは"
+            }
+          ]
+        },
+        {
+          "pattern_title": "外出できない。というのは父の具合が悪いんです。",
+          "pattern_meaning": "というのは = alasannya adalah.../soalnya...",
+          "description_box": {
+            "formula": "a。というのはb〈alasan dari a〉。(=なぜかというと/どうしてかというと)",
+            "explanation": "Digunakan untuk menjelaskan alasan dari pernyataan yang baru saja disampaikan.",
+            "explanation_en": "Used to explain the reason for a statement just made."
+          },
+          "examples": [
+            {
+              "jp": "今日は早退します。というのは、子どもが熱を出したんです。",
+              "en": "Hari ini aku pulang lebih awal. Alasannya, anakku sedang demam.",
+              "explanation": "",
+              "highlight": "というのは"
+            },
+            {
+              "jp": "彼とは話したくない。というのは、前に嘘をつかれたからだ。",
+              "en": "Aku tidak mau bicara dengannya. Soalnya, dulu aku pernah dibohongi.",
+              "explanation": "",
+              "highlight": "というのは"
+            }
+          ]
+        },
+        {
+          "pattern_title": "彼はまじめだ。したがって信頼されている。",
+          "pattern_meaning": "したがって = oleh karena itu.../maka...",
+          "description_box": {
+            "formula": "a〈alasan〉。したがってb〈hasil〉。(=だから/その結果)",
+            "explanation": "Menunjukkan hubungan sebab-akibat secara formal, biasanya digunakan dalam tulisan resmi.",
+            "explanation_en": "Shows a formal cause-and-result relationship, usually used in official writing."
+          },
+          "examples": [
+            {
+              "jp": "台風が接近している。したがって、本日の試合は中止とする。",
+              "en": "Topan sedang mendekat. Oleh karena itu, pertandingan hari ini dibatalkan.",
+              "explanation": "",
+              "highlight": "したがって"
+            },
+            {
+              "jp": "彼女は経験が豊富だ。したがって、この仕事に適任だ。",
+              "en": "Dia berpengalaman luas. Maka, dia cocok untuk pekerjaan ini.",
+              "explanation": "",
+              "highlight": "したがって"
+            }
+          ]
+        },
+        {
+          "pattern_title": "3割引。ただしこの棚の商品を除く。",
+          "pattern_meaning": "ただし = tetapi.../namun perlu diketahui... (menambahkan syarat atau pengecualian)",
+          "description_box": {
+            "formula": "a。ただしb〈syarat/pengecualian terhadap a〉。",
+            "explanation": "Digunakan untuk menambahkan syarat, pengecualian, atau catatan terhadap kalimat sebelumnya.",
+            "explanation_en": "Used to add a condition, exception, or note to the previous sentence."
+          },
+          "examples": [
+            {
+              "jp": "全席自由席です。ただし、当日券は数に限りがあります。",
+              "en": "Semua kursi bebas duduk. Namun, tiket hari-H jumlahnya terbatas.",
+              "explanation": "",
+              "highlight": "ただし"
+            },
+            {
+              "jp": "参加は無料です。ただし、事前の申し込みが必要です。",
+              "en": "Partisipasi gratis. Tetapi, perlu pendaftaran terlebih dahulu.",
+              "explanation": "",
+              "highlight": "ただし"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

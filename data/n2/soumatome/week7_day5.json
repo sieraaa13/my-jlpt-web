@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 5,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "すばらしいものがある",
+        "translation": "Ada hal yang luar biasa"
+      },
+      "illustration_text": {
+        "friend1": "この作品にはすばらしいものがある。",
+        "friend2": "理解されない恐れがある。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "倒れたりする恐れがある",
+          "pattern_meaning": "恐れがある = ada kekhawatiran.../berisiko... (ungkapan formal)",
+          "description_box": {
+            "formula": "Vる／Nの ＋ 恐れがある",
+            "explanation": "Menunjukkan bahwa ada kemungkinan atau kekhawatiran akan terjadinya suatu hal yang tidak diinginkan, biasanya digunakan dalam situasi resmi seperti berita atau pengumuman.",
+            "explanation_en": "Shows that there is a possibility or concern that something undesirable might happen, often used in formal contexts such as news or announcements."
+          },
+          "examples": [
+            {
+              "jp": "大雨で川の水位が上がり、氾濫する恐れがある。",
+              "en": "Karena hujan deras, permukaan air sungai naik dan berisiko meluap.",
+              "explanation": "",
+              "highlight": "恐れがある"
+            },
+            {
+              "jp": "この薬は、まれに副作用が出る恐れがあります。",
+              "en": "Obat ini, meski jarang, berisiko menimbulkan efek samping.",
+              "explanation": "",
+              "highlight": "恐れがあります"
+            }
+          ]
+        },
+        {
+          "pattern_title": "つらいものがある",
+          "pattern_meaning": "ものがある = ada sisi.../terasa... (penilaian pembicara, ungkapan agak formal)",
+          "description_box": {
+            "formula": "Vる／Aい／na ＋ ものがある",
+            "explanation": "Menunjukkan penilaian pembicara bahwa suatu hal memiliki sisi atau kesan tertentu yang cukup terasa, ungkapan yang agak formal.",
+            "explanation_en": "Shows the speaker's judgment that something has a certain noticeable quality or impression, a somewhat formal expression."
+          },
+          "examples": [
+            {
+              "jp": "彼の演技には見る人を引き込むものがある。",
+              "en": "Akting dia memiliki daya tarik yang membuat penonton terhanyut.",
+              "explanation": "",
+              "highlight": "ものがある"
+            },
+            {
+              "jp": "一人で子育てをするのは大変なものがある。",
+              "en": "Membesarkan anak sendirian itu memang terasa berat.",
+              "explanation": "",
+              "highlight": "ものがある"
+            }
+          ]
+        },
+        {
+          "pattern_title": "多ければいいというものでもない",
+          "pattern_meaning": "というものでもない = bukan berarti begitu.../belum tentu begitu... (menyangkal anggapan umum)",
+          "description_box": {
+            "formula": "Vば／Aければ／naなら／Nなら ＋ Aいという／na(だ)という／N(だ)という ＋ ものでもない／ものではない",
+            "explanation": "Menunjukkan bahwa anggapan atau syarat yang disebutkan sebelumnya tidak selalu benar atau tidak bisa dikatakan mutlak.",
+            "explanation_en": "Shows that the assumption or condition mentioned before is not always true or cannot be said to be absolute."
+          },
+          "examples": [
+            {
+              "jp": "値段が高ければおいしいというものでもない。",
+              "en": "Belum tentu yang harganya mahal itu enak.",
+              "explanation": "",
+              "highlight": "というものでもない"
+            },
+            {
+              "jp": "早ければいいというものではない。丁寧さも大事だ。",
+              "en": "Bukan berarti cepat itu selalu baik. Ketelitian juga penting.",
+              "explanation": "",
+              "highlight": "というものではない"
+            }
+          ]
+        },
+        {
+          "pattern_title": "どうにかならないものか",
+          "pattern_meaning": "ないものか/ないものだろうか = tidak bisakah.../andai saja bisa... (harapan agar keadaan berubah)",
+          "description_box": {
+            "formula": "（どうにか／なんとか／もう少し） ＋ Vないもの（だろう）か／Vれないもの（だろう）か",
+            "explanation": "Menunjukkan harapan kuat pembicara agar suatu keadaan yang tidak diinginkan bisa berubah menjadi lebih baik.",
+            "explanation_en": "Shows the speaker's strong hope that an undesirable situation could somehow change for the better."
+          },
+          "examples": [
+            {
+              "jp": "この渋滞、どうにかならないものか。",
+              "en": "Kemacetan ini, tidak bisakah diatasi ya.",
+              "explanation": "",
+              "highlight": "どうにかならないものか"
+            },
+            {
+              "jp": "もう少し値段を安くできないものだろうか。",
+              "en": "Andai saja harganya bisa sedikit lebih murah.",
+              "explanation": "",
+              "highlight": "できないものだろうか"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

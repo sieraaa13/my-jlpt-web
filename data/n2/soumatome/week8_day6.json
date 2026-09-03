@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 6,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "おまけに…",
+        "translation": "Ditambah lagi.../Belum lagi..."
+      },
+      "illustration_text": {
+        "friend1": "今のアパートは気に入っている。新しくて広い。",
+        "friend2": "しかも駅から近い。おまけに家賃も安い。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "大敗した。要するに力の差があった。",
+          "pattern_meaning": "要するに = singkatnya.../pada intinya...",
+          "description_box": {
+            "formula": "a。要するにa'。(=つまり)",
+            "explanation": "Digunakan untuk menyimpulkan atau menjelaskan secara singkat isi kalimat sebelumnya.",
+            "explanation_en": "Used to summarize or briefly explain the content of the previous sentence."
+          },
+          "examples": [
+            {
+              "jp": "彼はいつも遅刻し、連絡もしない。要するに、無責任なのだ。",
+              "en": "Dia selalu terlambat dan tidak pernah memberi kabar. Singkatnya, dia tidak bertanggung jawab.",
+              "explanation": "",
+              "highlight": "要するに"
+            },
+            {
+              "jp": "予算も時間も足りない。要するに、この計画は無理だということだ。",
+              "en": "Anggaran dan waktu tidak cukup. Pada intinya, rencana ini memang tidak mungkin dilaksanakan.",
+              "explanation": "",
+              "highlight": "要するに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "美人だ。しかも性格もいい。",
+          "pattern_meaning": "しかも = lagi pula.../ditambah lagi...",
+          "description_box": {
+            "formula": "(Nは) a。しかもb。(=その上/さらに)",
+            "explanation": "Digunakan untuk menambahkan informasi yang memperkuat atau menambah kualitas dari kalimat sebelumnya.",
+            "explanation_en": "Used to add information that reinforces or adds to the quality mentioned in the previous sentence."
+          },
+          "examples": [
+            {
+              "jp": "このレストランは安い。しかも味もいい。",
+              "en": "Restoran ini murah. Lagi pula rasanya juga enak.",
+              "explanation": "",
+              "highlight": "しかも"
+            },
+            {
+              "jp": "彼女は頭がいい。しかも努力家だ。",
+              "en": "Dia pintar. Ditambah lagi, dia pekerja keras.",
+              "explanation": "",
+              "highlight": "しかも"
+            }
+          ]
+        },
+        {
+          "pattern_title": "高いし、まずい。おまけにサービスも…。",
+          "pattern_meaning": "おまけに = ditambah lagi.../belum lagi... (bahasa percakapan)",
+          "description_box": {
+            "formula": "(Nは) a。おまけにb。(=その上/しかも、lebih terasa seperti bahasa percakapan dibanding しかも)",
+            "explanation": "Digunakan untuk menambahkan hal lain yang memperburuk atau memperkuat kalimat sebelumnya, lebih bersifat bahasa percakapan dibandingkan しかも.",
+            "explanation_en": "Used to add another thing that worsens or reinforces the previous sentence; more conversational in tone than しかも."
+          },
+          "examples": [
+            {
+              "jp": "今日は財布を忘れた。おまけに雨にも降られた。",
+              "en": "Hari ini aku lupa dompet. Belum lagi kehujanan pula.",
+              "explanation": "",
+              "highlight": "おまけに"
+            },
+            {
+              "jp": "道に迷った。おまけにスマホの充電も切れてしまった。",
+              "en": "Aku tersesat. Ditambah lagi baterai ponselku habis.",
+              "explanation": "",
+              "highlight": "おまけに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "一般に…。ちなみにうちにも…。",
+          "pattern_meaning": "ちなみに = ngomong-ngomong.../sebagai info tambahan...",
+          "description_box": {
+            "formula": "a。ちなみにb〈informasi tambahan yang ringan terkait a〉。",
+            "explanation": "Digunakan untuk menambahkan sedikit informasi tambahan yang berkaitan dengan kalimat sebelumnya.",
+            "explanation_en": "Used to add a small piece of additional information related to the previous sentence."
+          },
+          "examples": [
+            {
+              "jp": "来月、大阪へ引っ越します。ちなみに、新しい家は駅前です。",
+              "en": "Bulan depan aku pindah ke Osaka. Sebagai info tambahan, rumah barunya dekat stasiun.",
+              "explanation": "",
+              "highlight": "ちなみに"
+            },
+            {
+              "jp": "この店は魚料理が人気です。ちなみに、私のおすすめは刺身定食です。",
+              "en": "Restoran ini terkenal dengan masakan ikannya. Ngomong-ngomong, rekomendasiku adalah set sashimi.",
+              "explanation": "",
+              "highlight": "ちなみに"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

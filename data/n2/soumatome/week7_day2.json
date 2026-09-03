@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 2,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "クッキーもあればケーキもある",
+        "translation": "Ada kukis, ada juga kue"
+      },
+      "illustration_text": {
+        "friend1": "チョコレートやらキャンディーやらお菓子がいっぱい！",
+        "friend2": "クッキーもあればケーキもあるぞ！"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "本やらノートやら",
+          "pattern_meaning": "やら〜やら = seperti.../macam-macam...(menyebutkan beberapa contoh secara acak)",
+          "description_box": {
+            "formula": "Nやら ／ V/A/Na普通形やら + N(2)やら／V/A/Na普通形(2)やら",
+            "explanation": "Menunjukkan beberapa contoh yang disebutkan secara acak untuk menggambarkan keadaan yang ramai atau bercampur aduk.",
+            "explanation_en": "Shows several examples mentioned randomly to describe a busy or mixed-up state."
+          },
+          "examples": [
+            {
+              "jp": "引き出しの中は、書類やら文房具やらでごちゃごちゃだ。",
+              "en": "Dalam laci itu berantakan dengan dokumen, alat tulis, dan macam-macam lainnya.",
+              "explanation": "",
+              "highlight": "やら"
+            },
+            {
+              "jp": "うれしいやら恥ずかしいやら、複雑な気持ちだった。",
+              "en": "Perasaanku campur aduk antara senang dan malu.",
+              "explanation": "",
+              "highlight": "やら"
+            }
+          ]
+        },
+        {
+          "pattern_title": "見るにつけ聞くにつけ",
+          "pattern_meaning": "につけ = setiap kali.../baik...maupun... (dua hal berlawanan yang mengarah ke hasil sama)",
+          "description_box": {
+            "formula": "Vるにつけ ／ Aいにつけ ／ aにつけ(b)につけ",
+            "explanation": "Menunjukkan bahwa suatu perasaan atau keadaan muncul setiap kali suatu hal terjadi, atau berlaku dalam dua kondisi yang berlawanan.",
+            "explanation_en": "Shows that a feeling or state arises every time something happens, or applies under two contrasting conditions."
+          },
+          "examples": [
+            {
+              "jp": "このドラマを見るにつけ、昔の友人を思い出す。",
+              "en": "Setiap kali menonton drama ini, aku teringat teman lama.",
+              "explanation": "",
+              "highlight": "につけ"
+            },
+            {
+              "jp": "何かにつけ、彼女は私を助けてくれる。",
+              "en": "Setiap ada apa-apa, dia selalu membantuku.",
+              "explanation": "",
+              "highlight": "につけ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "行くにしろ行かないにしろ",
+          "pattern_meaning": "にしろ〜にしろ/にせよ〜にせよ = baik.../maupun..., dalam kedua kasus itu tetap...",
+          "description_box": {
+            "formula": "V/A/Na/N普通形に + しろ／せよ",
+            "explanation": "Menunjukkan bahwa apapun pilihan atau keadaannya di antara dua hal yang disebutkan, hasil atau sikapnya tetap sama.",
+            "explanation_en": "Shows that regardless of which of the two mentioned options or conditions applies, the result or attitude remains the same."
+          },
+          "examples": [
+            {
+              "jp": "賛成するにしろ反対するにしろ、理由を明確にすべきだ。",
+              "en": "Baik setuju maupun tidak setuju, alasannya harus dijelaskan dengan jelas.",
+              "explanation": "",
+              "highlight": "にしろ"
+            },
+            {
+              "jp": "冗談にせよ本気にせよ、そんな言い方はよくない。",
+              "en": "Baik itu bercanda maupun serius, cara bicara seperti itu tidak baik.",
+              "explanation": "",
+              "highlight": "にせよ"
+            }
+          ]
+        },
+        {
+          "pattern_title": "勉強もできればスポーツもできる",
+          "pattern_meaning": "N1もV(条件形)N2も = baik N1 maupun N2, sama-sama...",
+          "description_box": {
+            "formula": "N1もVば N2もV ／ N1もAければ N2もA ／ N1もnaならN2もna",
+            "explanation": "Menunjukkan bahwa dua hal yang disebutkan sama-sama berlaku atau sama-sama terjadi.",
+            "explanation_en": "Shows that both mentioned things equally apply or equally happen."
+          },
+          "examples": [
+            {
+              "jp": "このレストランは値段も手ごろなら、味もいい。",
+              "en": "Restoran ini harganya terjangkau, rasanya pun enak.",
+              "explanation": "",
+              "highlight": "も〜なら〜も"
+            },
+            {
+              "jp": "彼は英語も話せれば、フランス語も話せる。",
+              "en": "Dia bisa berbicara bahasa Inggris, bahasa Prancis pun bisa.",
+              "explanation": "",
+              "highlight": "も〜ば〜も"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

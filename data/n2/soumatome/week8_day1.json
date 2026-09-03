@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 1,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "それなのに…",
+        "translation": "Padahal begitu.../Namun begitu..."
+      },
+      "illustration_text": {
+        "friend1": "歌のレッスンも受けているし、毎日練習している。",
+        "friend2": "それなのに、全然うまくならない……"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "高かった。それなのにすぐ壊れた。",
+          "pattern_meaning": "それなのに = padahal begitu.../meski demikian... (hasil bertentangan dengan yang diharapkan)",
+          "description_box": {
+            "formula": "a〈kenyataan〉。それなのにb〈hasil di luar dugaan〉。(=ところが)",
+            "explanation": "Digunakan untuk menyambung dua kalimat, menunjukkan bahwa hasil pada kalimat kedua bertentangan dengan yang seharusnya diharapkan berdasarkan kalimat pertama.",
+            "explanation_en": "Used to connect two sentences, showing that the result in the second sentence contradicts what would be expected based on the first sentence."
+          },
+          "examples": [
+            {
+              "jp": "彼は毎日運動している。それなのに、全然体重が減らない。",
+              "en": "Dia berolahraga setiap hari. Padahal begitu, berat badannya sama sekali tidak turun.",
+              "explanation": "",
+              "highlight": "それなのに"
+            },
+            {
+              "jp": "約束の時間はとっくに過ぎた。それなのに、彼はまだ来ない。",
+              "en": "Waktu janjian sudah lama lewat. Meski demikian, dia belum juga datang.",
+              "explanation": "",
+              "highlight": "それなのに"
+            }
+          ]
+        },
+        {
+          "pattern_title": "大雨だ。それでも出かける。",
+          "pattern_meaning": "それでも = meskipun begitu.../walau demikian...",
+          "description_box": {
+            "formula": "a〈keadaan〉。それでもb〈sikap/hasil yang berlawanan dengan a〉。(=だけど/けれども/しかし)",
+            "explanation": "Menunjukkan bahwa meskipun keadaan pada kalimat pertama kurang mendukung, pembicara tetap bersikap atau bertindak seperti pada kalimat kedua.",
+            "explanation_en": "Shows that even though the situation in the first sentence is unfavorable, the speaker still acts or feels as stated in the second sentence."
+          },
+          "examples": [
+            {
+              "jp": "熱がある。それでも学校に行くつもりだ。",
+              "en": "Aku sedang demam. Walau demikian, aku tetap berniat pergi ke sekolah.",
+              "explanation": "",
+              "highlight": "それでも"
+            },
+            {
+              "jp": "誰にも応援されなかった。それでも彼女は最後まで走り続けた。",
+              "en": "Tidak ada yang mendukungnya. Meskipun begitu, dia terus berlari sampai garis akhir.",
+              "explanation": "",
+              "highlight": "それでも"
+            }
+          ]
+        },
+        {
+          "pattern_title": "渋滞だとか。それなら電車で行こう。",
+          "pattern_meaning": "それなら = kalau begitu.../kalau memang demikian...",
+          "description_box": {
+            "formula": "「a。」「それなら（ば）b〈saran/pendapat berdasarkan a〉。」(=じゃ（あ）/それじゃ（あ）)",
+            "explanation": "Digunakan untuk menyatakan pendapat atau saran berdasarkan hal yang baru saja disampaikan oleh lawan bicara.",
+            "explanation_en": "Used to state an opinion or suggestion based on what the other person has just said."
+          },
+          "examples": [
+            {
+              "jp": "「明日は雨らしいよ。」「それなら、傘を持って行こう。」",
+              "en": "\"Katanya besok hujan.\" \"Kalau begitu, bawa payung saja.\"",
+              "explanation": "",
+              "highlight": "それなら"
+            },
+            {
+              "jp": "「もう疲れて動けない。」「それなら、少し休んだら？」",
+              "en": "\"Aku sudah lelah, tidak bisa bergerak lagi.\" \"Kalau begitu, istirahat sebentar bagaimana?\"",
+              "explanation": "",
+              "highlight": "それなら"
+            }
+          ]
+        },
+        {
+          "pattern_title": "働きすぎた。それで病気になった。",
+          "pattern_meaning": "それで/で = karena itu.../lalu bagaimana...? (menyatakan sebab-akibat, atau menanyakan kelanjutan cerita)",
+          "description_box": {
+            "formula": "① 「a〈alasan〉。」それでb〈hasil〉。(=だから/そのために)\n② 「a。」「それで／で〈menanyakan kelanjutan cerita a〉」",
+            "explanation": "Menunjukkan hubungan sebab-akibat antara dua kalimat, atau digunakan untuk menanyakan kelanjutan cerita yang disampaikan lawan bicara.",
+            "explanation_en": "Shows a cause-and-result relationship between two sentences, or is used to ask about the continuation of the other person's story."
+          },
+          "examples": [
+            {
+              "jp": "電車が遅れた。それで、会議に間に合わなかった。",
+              "en": "Keretanya terlambat. Karena itu, aku tidak sempat datang tepat waktu ke rapat.",
+              "explanation": "",
+              "highlight": "それで"
+            },
+            {
+              "jp": "「彼女に告白したんだ。」「え、で、どうだった？」",
+              "en": "\"Aku sudah menyatakan perasaan padanya.\" \"Eh, terus, bagaimana hasilnya?\"",
+              "explanation": "",
+              "highlight": "で"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

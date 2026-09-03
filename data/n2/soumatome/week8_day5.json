@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 5,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "もっとも…",
+        "translation": "Meski begitu.../Hanya saja..."
+      },
+      "illustration_text": {
+        "friend1": "春休みに海外旅行に連れていってあげるよ。",
+        "friend2": "もっとも合格したらの話だけどね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "飲食禁止。もっとも水はかまいません。",
+          "pattern_meaning": "もっとも = hanya saja.../meski begitu... (menambahkan syarat pada kalimat sebelumnya)",
+          "description_box": {
+            "formula": "a。もっともb〈syarat/pengecualian terhadap a〉。(=ただし)",
+            "explanation": "Digunakan untuk menambahkan pengecualian atau syarat guna memperbaiki pernyataan sebelumnya.",
+            "explanation_en": "Used to add an exception or condition to qualify the previous statement."
+          },
+          "examples": [
+            {
+              "jp": "全員合格した。もっとも、追試を受けた人もいるが。",
+              "en": "Semuanya lulus. Hanya saja, ada juga yang mengikuti ujian susulan.",
+              "explanation": "",
+              "highlight": "もっとも"
+            },
+            {
+              "jp": "毎日ジョギングしている。もっとも、雨の日は休むけれど。",
+              "en": "Aku jogging setiap hari. Meski begitu, kalau hujan aku libur.",
+              "explanation": "",
+              "highlight": "もっとも"
+            }
+          ]
+        },
+        {
+          "pattern_title": "以上です。なお詳細は…",
+          "pattern_meaning": "なお = selain itu.../sebagai tambahan...",
+          "description_box": {
+            "formula": "a。なおb〈informasi tambahan, tidak harus berhubungan dengan a〉。",
+            "explanation": "Digunakan untuk menambahkan informasi pada kalimat sebelumnya; informasi tambahan tersebut tidak harus berhubungan langsung.",
+            "explanation_en": "Used to add information to the previous sentence; the added information does not necessarily have to be directly related."
+          },
+          "examples": [
+            {
+              "jp": "説明会は3時に始まります。なお、駐車場はございません。",
+              "en": "Sesi penjelasan dimulai pukul 3. Sebagai tambahan, tidak tersedia tempat parkir.",
+              "explanation": "",
+              "highlight": "なお"
+            },
+            {
+              "jp": "以上でご案内は終わりです。なお、ご質問は受付までどうぞ。",
+              "en": "Sekian penjelasannya. Selain itu, untuk pertanyaan silakan datang ke resepsionis.",
+              "explanation": "",
+              "highlight": "なお"
+            }
+          ]
+        },
+        {
+          "pattern_title": "終わります。さて来週は…",
+          "pattern_meaning": "さて = nah.../baiklah, sekarang... (mengganti ke topik baru)",
+          "description_box": {
+            "formula": "a。さてb〈topik baru〉。",
+            "explanation": "Digunakan untuk berpindah ke topik baru dalam suatu pembicaraan atau tulisan.",
+            "explanation_en": "Used to move on to a new topic in a conversation or piece of writing."
+          },
+          "examples": [
+            {
+              "jp": "自己紹介は以上です。さて、本題に入りましょう。",
+              "en": "Sekian perkenalan diri saya. Nah, mari kita masuk ke topik utama.",
+              "explanation": "",
+              "highlight": "さて"
+            },
+            {
+              "jp": "掃除が終わった。さて、次は何をしようか。",
+              "en": "Bersih-bersih sudah selesai. Baiklah, sekarang mau ngapain lagi ya.",
+              "explanation": "",
+              "highlight": "さて"
+            }
+          ]
+        },
+        {
+          "pattern_title": "薬を塗った。すると痛みが治まった。",
+          "pattern_meaning": "すると = lalu.../begitu...maka... (hal yang langsung terjadi setelahnya, atau kesimpulan)",
+          "description_box": {
+            "formula": "① a〈pemicu〉。するとb〈hal yang langsung terjadi setelahnya〉。\n② a。するとb〈kesimpulan berdasarkan a〉。",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi tepat setelah hal sebelumnya, atau digunakan untuk menyampaikan kesimpulan berdasarkan informasi yang baru didengar.",
+            "explanation_en": "Shows that something happens right after the preceding event, or is used to state a conclusion based on information just heard."
+          },
+          "examples": [
+            {
+              "jp": "ボタンを押した。すると、扉が開いた。",
+              "en": "Aku menekan tombol. Lalu, pintunya terbuka.",
+              "explanation": "",
+              "highlight": "すると"
+            },
+            {
+              "jp": "「昨日は誰もいなかったよ。」「すると、鍵をかけたのは誰なんだろう。」",
+              "en": "\"Kemarin tidak ada siapa-siapa lho.\" \"Kalau begitu, siapa yang mengunci pintunya ya.\"",
+              "explanation": "",
+              "highlight": "すると"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 3,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "だって…",
+        "translation": "Habisnya.../Soalnya..."
+      },
+      "illustration_text": {
+        "friend1": "どうしてそんなに買ったの。必要ないでしょう？",
+        "friend2": "だって安かったんだもん。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "母の兄、すなわちおじさん",
+          "pattern_meaning": "すなわち = yaitu.../dengan kata lain...",
+          "description_box": {
+            "formula": "a すなわち a'。",
+            "explanation": "Digunakan untuk mengulang kembali hal yang sama dengan kata lain yang lebih jelas, mirip dengan つまり namun tidak dipakai untuk menyampaikan kesimpulan.",
+            "explanation_en": "Used to restate the same thing with a clearer expression, similar to つまり but not used to state a conclusion."
+          },
+          "examples": [
+            {
+              "jp": "この会社の創業者、すなわち現社長の祖父にあたる人物です。",
+              "en": "Pendiri perusahaan ini, dengan kata lain adalah sosok kakek dari direktur utama sekarang.",
+              "explanation": "",
+              "highlight": "すなわち"
+            },
+            {
+              "jp": "1キロメートル、すなわち1000メートルの距離を歩いた。",
+              "en": "Aku berjalan sejauh 1 kilometer, yaitu 1000 meter.",
+              "explanation": "",
+              "highlight": "すなわち"
+            }
+          ]
+        },
+        {
+          "pattern_title": "ファックスあるいはメールで",
+          "pattern_meaning": "あるいは = atau.../ataupun... (ungkapan formal dari または)",
+          "description_box": {
+            "formula": "a あるいは b",
+            "explanation": "Digunakan untuk memilih salah satu di antara dua hal, ungkapan formal dari または.",
+            "explanation_en": "Used to choose one of two things, a formal expression of または (or)."
+          },
+          "examples": [
+            {
+              "jp": "参加費は現金、あるいは銀行振込でお支払いください。",
+              "en": "Mohon bayar biaya partisipasi dengan uang tunai, atau lewat transfer bank.",
+              "explanation": "",
+              "highlight": "あるいは"
+            },
+            {
+              "jp": "土曜日、あるいは日曜日のどちらか都合のいい日をお選びください。",
+              "en": "Silakan pilih hari Sabtu atau Minggu, mana yang sesuai dengan waktumu.",
+              "explanation": "",
+              "highlight": "あるいは"
+            }
+          ]
+        },
+        {
+          "pattern_title": "貧しい。だが幸せだ。",
+          "pattern_meaning": "だが = tetapi.../namun... (ungkapan formal dari しかし/けれども)",
+          "description_box": {
+            "formula": "a。だが b。",
+            "explanation": "Digunakan untuk menyambung dua kalimat yang isinya bertentangan, ungkapan formal dari しかし atau けれども.",
+            "explanation_en": "Used to connect two sentences with contrasting content, a formal expression of しかし or けれども (but)."
+          },
+          "examples": [
+            {
+              "jp": "資金は十分にある。だが、人材が足りない。",
+              "en": "Dananya sudah cukup. Namun, sumber daya manusianya kurang.",
+              "explanation": "",
+              "highlight": "だが"
+            },
+            {
+              "jp": "彼は謝った。だが、彼女はまだ怒っていた。",
+              "en": "Dia sudah minta maaf. Tetapi, dia masih marah.",
+              "explanation": "",
+              "highlight": "だが"
+            }
+          ]
+        },
+        {
+          "pattern_title": "怒ってる。だって約束を破ったから。",
+          "pattern_meaning": "だって = habisnya.../soalnya... (memberi alasan, bahasa percakapan)",
+          "description_box": {
+            "formula": "a。だって b〈alasan/sebab〉。",
+            "explanation": "Digunakan dalam percakapan untuk memberikan alasan atas suatu hal, biasanya dengan nada membela diri.",
+            "explanation_en": "Used in conversation to give a reason for something, usually with a somewhat defensive tone."
+          },
+          "examples": [
+            {
+              "jp": "「なんで返事しなかったの？」「だって、スマホの電源が切れてたんだもん。」",
+              "en": "\"Kenapa tidak membalas?\" \"Habisnya, baterai ponselku mati.\"",
+              "explanation": "",
+              "highlight": "だって"
+            },
+            {
+              "jp": "「野菜、残しちゃだめだよ。」「だって、苦いんだもん。」",
+              "en": "\"Sayurnya jangan disisakan lho.\" \"Soalnya, pahit.\"",
+              "explanation": "",
+              "highlight": "だって"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

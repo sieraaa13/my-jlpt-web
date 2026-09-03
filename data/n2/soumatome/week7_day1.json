@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 1,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "国籍を問わず",
+        "translation": "Tanpa memandang kewarganegaraan"
+      },
+      "illustration_text": {
+        "friend1": "本日はあいにくの天気にもかかわらず、国籍を問わずたくさんの方にお集まりいただき、ありがとうございます。",
+        "friend2": "年齢を問わず、みなさん元気ですね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "人目もかまわず",
+          "pattern_meaning": "もかまわず = tanpa peduli.../tidak mempedulikan...",
+          "description_box": {
+            "formula": "N＋も ／ Vるの＋も + かまわず",
+            "explanation": "Menunjukkan bahwa seseorang melakukan sesuatu tanpa memedulikan hal yang biasanya dianggap penting, seperti pandangan orang lain.",
+            "explanation_en": "Shows that someone does something without caring about a matter that would normally be considered important, such as others' opinions."
+          },
+          "examples": [
+            {
+              "jp": "彼は服が汚れるのもかまわず、子どもを助けに水の中へ入った。",
+              "en": "Dia masuk ke dalam air untuk menolong anak itu tanpa peduli pakaiannya jadi kotor.",
+              "explanation": "",
+              "highlight": "もかまわず"
+            },
+            {
+              "jp": "彼女は周りの目もかまわず、大声で笑った。",
+              "en": "Dia tertawa keras tanpa peduli pandangan orang di sekitarnya.",
+              "explanation": "",
+              "highlight": "もかまわず"
+            }
+          ]
+        },
+        {
+          "pattern_title": "雨にもかかわらず",
+          "pattern_meaning": "にもかかわらず = meskipun.../walaupun begitu... (menunjukkan hal yang bertentangan dengan dugaan)",
+          "description_box": {
+            "formula": "V/A普通形にも ／ na/N普通形にも ／ naだにも ／ Nだにも + かかわらず",
+            "explanation": "Menunjukkan bahwa suatu hal terjadi bertentangan dengan yang seharusnya diduga berdasarkan keadaan sebelumnya.",
+            "explanation_en": "Shows that something happens contrary to what would normally be expected given the prior circumstances."
+          },
+          "examples": [
+            {
+              "jp": "何度も注意されたにもかかわらず、彼はまた同じ間違いをした。",
+              "en": "Meskipun sudah berkali-kali diperingatkan, dia tetap melakukan kesalahan yang sama lagi.",
+              "explanation": "",
+              "highlight": "にもかかわらず"
+            },
+            {
+              "jp": "経験が浅いにもかかわらず、彼女は見事にその仕事をやり遂げた。",
+              "en": "Meskipun pengalamannya masih sedikit, dia berhasil menyelesaikan pekerjaan itu dengan sangat baik.",
+              "explanation": "",
+              "highlight": "にもかかわらず"
+            }
+          ]
+        },
+        {
+          "pattern_title": "来る来ないにかかわらず",
+          "pattern_meaning": "にかかわらず = tanpa memandang.../terlepas dari... (mencakup semua kemungkinan)",
+          "description_box": {
+            "formula": "Vる-Vない／Aい-Aくない + に ／ N + に + かかわらず／かかわりなく",
+            "explanation": "Menunjukkan bahwa suatu hal berlaku sama tanpa terpengaruh oleh perbedaan atau kondisi yang disebutkan.",
+            "explanation_en": "Shows that something applies equally regardless of the mentioned difference or condition."
+          },
+          "examples": [
+            {
+              "jp": "天候にかかわらず、イベントは予定どおり行われます。",
+              "en": "Terlepas dari cuaca, acara akan tetap dilaksanakan sesuai jadwal.",
+              "explanation": "",
+              "highlight": "にかかわらず"
+            },
+            {
+              "jp": "経験の有無にかかわりなく、誰でも応募できます。",
+              "en": "Siapa pun bisa mendaftar, terlepas dari ada tidaknya pengalaman.",
+              "explanation": "",
+              "highlight": "にかかわりなく"
+            }
+          ]
+        },
+        {
+          "pattern_title": "年齢を問わず",
+          "pattern_meaning": "を問わず = tidak memandang.../tanpa membedakan...",
+          "description_box": {
+            "formula": "N + を問わず",
+            "explanation": "Menunjukkan bahwa suatu hal tidak dipengaruhi atau tidak membedakan berdasarkan kategori yang disebutkan.",
+            "explanation_en": "Shows that something is not influenced by or does not distinguish based on the mentioned category."
+          },
+          "examples": [
+            {
+              "jp": "この公園は季節を問わず、多くの人でにぎわう。",
+              "en": "Taman ini selalu ramai dikunjungi banyak orang tanpa memandang musim.",
+              "explanation": "",
+              "highlight": "を問わず"
+            },
+            {
+              "jp": "昼夜を問わず、工事の音が聞こえる。",
+              "en": "Suara pembangunan terdengar tanpa memandang siang atau malam.",
+              "explanation": "",
+              "highlight": "を問わず"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 2,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "そういえば…",
+        "translation": "Ngomong-ngomong.../Jadi teringat..."
+      },
+      "illustration_text": {
+        "friend1": "ジョンさんの書いた作文、よくできていますね。",
+        "friend2": "……そういえば、ジョンさん、今週ずっと来ていませんね。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "それがまだなんです。",
+          "pattern_meaning": "それが = itu... (menyampaikan kenyataan yang di luar dugaan lawan bicara)",
+          "description_box": {
+            "formula": "「a。」「それがb〈kenyataan yang bertentangan dengan dugaan a〉」",
+            "explanation": "Digunakan untuk menjawab pertanyaan atau tanggapan lawan bicara dengan kenyataan yang ternyata berbeda dari yang diduga.",
+            "explanation_en": "Used to respond to the other person's question or comment with a fact that turns out to differ from their expectation."
+          },
+          "examples": [
+            {
+              "jp": "「試験、受かったでしょう？」「それが、まだ結果が出ていないんです。」",
+              "en": "\"Kamu pasti lulus ujian, kan?\" \"Itu... hasilnya belum keluar.\"",
+              "explanation": "",
+              "highlight": "それが"
+            },
+            {
+              "jp": "「もう論文、終わったよね？」「それが、なかなか進まなくて。」",
+              "en": "\"Skripsimu sudah selesai, kan?\" \"Itu... belum juga maju.\"",
+              "explanation": "",
+              "highlight": "それが"
+            }
+          ]
+        },
+        {
+          "pattern_title": "渋滞するらしい。そこで早く出発したい。",
+          "pattern_meaning": "そこで = karena itu.../maka dari itu... (mengembangkan pembicaraan)",
+          "description_box": {
+            "formula": "a〈penjelasan situasi〉。そこでb〈cara penyelesaian/usulan/permintaan berdasarkan a〉。(=そういうわけで)",
+            "explanation": "Menunjukkan bahwa tindakan atau usulan pada kalimat kedua diambil berdasarkan situasi yang dijelaskan pada kalimat pertama.",
+            "explanation_en": "Shows that the action or suggestion in the second sentence is taken based on the situation explained in the first sentence."
+          },
+          "examples": [
+            {
+              "jp": "駅から会場まで遠い。そこで、送迎バスを用意した。",
+              "en": "Dari stasiun ke tempat acara jauh. Maka dari itu, kami menyiapkan bus jemputan.",
+              "explanation": "",
+              "highlight": "そこで"
+            },
+            {
+              "jp": "資料が足りない。そこで、追加の調査を行うことにした。",
+              "en": "Datanya kurang. Karena itu, kami memutuskan untuk melakukan survei tambahan.",
+              "explanation": "",
+              "highlight": "そこで"
+            }
+          ]
+        },
+        {
+          "pattern_title": "そういえば田中君、元気？",
+          "pattern_meaning": "そういえば = ngomong-ngomong.../jadi teringat...",
+          "description_box": {
+            "formula": "a。そういえばb〈topik terkait yang teringat〉。",
+            "explanation": "Digunakan ketika pembicara tiba-tiba teringat suatu hal yang berhubungan dengan topik yang sedang dibicarakan.",
+            "explanation_en": "Used when the speaker suddenly remembers something related to the topic currently being discussed."
+          },
+          "examples": [
+            {
+              "jp": "このケーキ、おいしいね。そういえば、来週あなたの誕生日だったね。",
+              "en": "Kue ini enak ya. Ngomong-ngomong, minggu depan ulang tahunmu kan.",
+              "explanation": "",
+              "highlight": "そういえば"
+            },
+            {
+              "jp": "最近寒くなったね。そういえば、もう冬支度した？",
+              "en": "Akhir-akhir ini jadi dingin ya. Ngomong-ngomong, kamu sudah siap-siap musim dingin belum?",
+              "explanation": "",
+              "highlight": "そういえば"
+            }
+          ]
+        },
+        {
+          "pattern_title": "それはそうと試験はいつだっけ？",
+          "pattern_meaning": "それはそうと = ngomong-ngomong.../ganti topik ya... (mengganti topik pembicaraan)",
+          "description_box": {
+            "formula": "a。それはそうとb〈topik yang tidak berhubungan dengan a〉。(=ところで)",
+            "explanation": "Digunakan untuk mengganti topik pembicaraan ke hal lain yang tidak berhubungan dengan pembicaraan sebelumnya.",
+            "explanation_en": "Used to change the topic of conversation to something unrelated to the previous discussion."
+          },
+          "examples": [
+            {
+              "jp": "今日の会議、長かったね。それはそうと、お昼はもう食べた？",
+              "en": "Rapat hari ini lama ya. Ngomong-ngomong, kamu sudah makan siang belum?",
+              "explanation": "",
+              "highlight": "それはそうと"
+            },
+            {
+              "jp": "この本、面白いよ。それはそうと、明日の天気知ってる？",
+              "en": "Buku ini menarik lho. Ganti topik ya, kamu tahu cuaca besok bagaimana?",
+              "explanation": "",
+              "highlight": "それはそうと"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

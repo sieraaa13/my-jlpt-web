@@ -1,0 +1,337 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 8,
+      "day": 7,
+      "header": {
+        "main_title": "むずかしい。それでもおぼえよう。",
+        "sub_title": "問題1・問題2・問題3",
+        "translation": "Latihan Rangkuman Minggu 8 — Pilihan Ganda, Menyusun Kalimat, dan Mengisi Bacaan"
+      },
+      "illustration_text": {
+        "friend1": "8週目、むずかしかったけどがんばったね。",
+        "friend2": "最後の実戦問題で締めくくろう！"
+      },
+      "exercise_groups": [
+        {
+          "title": "問題1 (Mondai 1) - Pilihan Ganda",
+          "instruction": "Petunjuk: Pilihlah jawaban yang paling tepat (1, 2, 3, atau 4) untuk mengisi bagian (　　) pada kalimat berikut.",
+          "type": "multiple_choice",
+          "questions": [
+            {
+              "number": 1,
+              "question": "未成年でも入会できます。（　　）保護者の許可が必要です。",
+              "options": [
+                { "id": 1, "text": "すると" },
+                { "id": 2, "text": "要するに" },
+                { "id": 3, "text": "ただし" },
+                { "id": 4, "text": "したがって" }
+              ],
+              "hint": "📝 Petunjuk materi: 3割引。ただしこの棚の商品を除く。 (4日目).",
+              "answer": 3
+            },
+            {
+              "number": 2,
+              "question": "A「初めて歌舞伎を見たよ。」\nB「（　　）どうだった？」",
+              "options": [
+                { "id": 1, "text": "なお" },
+                { "id": 2, "text": "そこで" },
+                { "id": 3, "text": "さて" },
+                { "id": 4, "text": "それで" }
+              ],
+              "hint": "📝 Petunjuk materi: 働きすぎた。それで病気になった。 (1日目).",
+              "answer": 4
+            },
+            {
+              "number": 3,
+              "question": "運転免許証（　　）健康保険証など、身分を証明するものをご持参ください。",
+              "options": [
+                { "id": 1, "text": "あるいは" },
+                { "id": 2, "text": "すなわち" },
+                { "id": 3, "text": "ただし" },
+                { "id": 4, "text": "もっとも" }
+              ],
+              "hint": "📝 Petunjuk materi: ファックスあるいはメールで (3日目).",
+              "answer": 1
+            },
+            {
+              "number": 4,
+              "question": "びんのふたを開けるのにいつも苦労していた。（　　）この商品を開発したわけです。",
+              "options": [
+                { "id": 1, "text": "すると" },
+                { "id": 2, "text": "さて" },
+                { "id": 3, "text": "そこで" },
+                { "id": 4, "text": "なお" }
+              ],
+              "hint": "📝 Petunjuk materi: 渋滞するらしい。そこで早く出発したい。 (2日目).",
+              "answer": 3
+            },
+            {
+              "number": 5,
+              "question": "A「この子猫の写真、かわいいね。」\nB「ほんと。あれ、（　　）最近お隣の猫、見かけないね。」",
+              "options": [
+                { "id": 1, "text": "というのは" },
+                { "id": 2, "text": "ということは" },
+                { "id": 3, "text": "もっとも" },
+                { "id": 4, "text": "そういえば" }
+              ],
+              "hint": "📝 Petunjuk materi: そういえば田中君、元気？ (2日目).",
+              "answer": 4
+            },
+            {
+              "number": 6,
+              "question": "人気者のプロゴルファーにはギャラリー（　　）観客がぞろぞろついて回っている。",
+              "options": [
+                { "id": 1, "text": "すなわち" },
+                { "id": 2, "text": "あるいは" },
+                { "id": 3, "text": "おまけに" },
+                { "id": 4, "text": "ちなみに" }
+              ],
+              "hint": "📝 Petunjuk materi: 母の兄、すなわちおじさん (3日目).",
+              "answer": 1
+            },
+            {
+              "number": 7,
+              "question": "A「手紙、出してくれた？」\nB「（　　）、忘れてしまって、まだ鞄の中に持ってるの。」",
+              "options": [
+                { "id": 1, "text": "そういえば" },
+                { "id": 2, "text": "それが" },
+                { "id": 3, "text": "それはそうと" },
+                { "id": 4, "text": "そこで" }
+              ],
+              "hint": "📝 Petunjuk materi: それがまだなんです。 (2日目).",
+              "answer": 2
+            },
+            {
+              "number": 8,
+              "question": "A「どうしてレシートをもらわないの。」\nB「（　　）いらないんだもの。」",
+              "options": [
+                { "id": 1, "text": "さて" },
+                { "id": 2, "text": "だが" },
+                { "id": 3, "text": "だって" },
+                { "id": 4, "text": "なお" }
+              ],
+              "hint": "📝 Petunjuk materi: 怒ってる。だって約束を破ったから。 (3日目).",
+              "answer": 3
+            },
+            {
+              "number": 9,
+              "question": "あ、左手の薬指に指輪が…。（　　）結婚しているのかな。",
+              "options": [
+                { "id": 1, "text": "ということは" },
+                { "id": 2, "text": "というのは" },
+                { "id": 3, "text": "したがって" },
+                { "id": 4, "text": "それはそうと" }
+              ],
+              "hint": "📝 Petunjuk materi: まだ来ない。ということは欠席だ。 (4日目).",
+              "answer": 1
+            },
+            {
+              "number": 10,
+              "question": "私、ここに来られるのは今日が最後なんです。（　　）転職するんです。",
+              "options": [
+                { "id": 1, "text": "もっとも" },
+                { "id": 2, "text": "というのは" },
+                { "id": 3, "text": "そこで" },
+                { "id": 4, "text": "それでも" }
+              ],
+              "hint": "📝 Petunjuk materi: 外出できない。というのは父の具合が悪いんです。 (4日目).",
+              "answer": 2
+            },
+            {
+              "number": 11,
+              "question": "A「日本の伝統文化について知りたいんだけど。」\nB「（　　）このコースを受けるといいよ。」",
+              "options": [
+                { "id": 1, "text": "それで" },
+                { "id": 2, "text": "それなら" },
+                { "id": 3, "text": "それでも" },
+                { "id": 4, "text": "それなのに" }
+              ],
+              "hint": "📝 Petunjuk materi: 渋滞だとか。それなら電車で行こう。 (1日目).",
+              "answer": 2
+            },
+            {
+              "number": 12,
+              "question": "A「昨日は大変でしたね。」\nB「ええ、ほんとうに疲れました。（　　）、高橋選手、メダルとりましたね！」",
+              "options": [
+                { "id": 1, "text": "要するに" },
+                { "id": 2, "text": "ということは" },
+                { "id": 3, "text": "それなのに" },
+                { "id": 4, "text": "それはそうと" }
+              ],
+              "hint": "📝 Petunjuk materi: それはそうと試験はいつだっけ？ (2日目).",
+              "answer": 4
+            },
+            {
+              "number": 13,
+              "question": "ご注文ありがとうございました。（　　）このメールは機械処理により自動で返信しております。",
+              "options": [
+                { "id": 1, "text": "さて" },
+                { "id": 2, "text": "なお" },
+                { "id": 3, "text": "だが" },
+                { "id": 4, "text": "ただ" }
+              ],
+              "hint": "📝 Petunjuk materi: 以上です。なお詳細は… (5日目).",
+              "answer": 2
+            },
+            {
+              "number": 14,
+              "question": "本棚にあった1冊の本を手にとって開いた。（　　）中に古い写真がはさんであった。",
+              "options": [
+                { "id": 1, "text": "すると" },
+                { "id": 2, "text": "すなわち" },
+                { "id": 3, "text": "そこで" },
+                { "id": 4, "text": "それなら" }
+              ],
+              "hint": "📝 Petunjuk materi: 薬を塗った。すると痛みが治まった。 (5日目).",
+              "answer": 1
+            },
+            {
+              "number": 15,
+              "question": "単位が足りません。（　　）君は卒業できないということになります。",
+              "options": [
+                { "id": 1, "text": "もっとも" },
+                { "id": 2, "text": "すると" },
+                { "id": 3, "text": "したがって" },
+                { "id": 4, "text": "それが" }
+              ],
+              "hint": "📝 Petunjuk materi: 彼はまじめだ。したがって信頼されている。 (4日目).",
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "title": "📝 問題2 (Mondai 2) - Menyusun Kalimat",
+          "instruction": "Petunjuk: Pilihlah kata yang tepat untuk mengisi bagian ★ pada kalimat berikut.",
+          "type": "sentence_arrangement",
+          "questions": [
+            {
+              "number": 16,
+              "question": "地球温暖化が大きく騒がれている。＿＿ ＿＿ ★ ＿＿ 言われている。",
+              "words": [
+                { "id": 1, "word": "だが" },
+                { "id": 2, "word": "そんなことはないとも" },
+                { "id": 3, "word": "ある知識人に" },
+                { "id": 4, "word": "よれば" }
+              ],
+              "answer": 4
+            },
+            {
+              "number": 17,
+              "question": "自治会の清掃を行いますので、ご参加ください。＿＿ ＿＿ ★ ＿＿ 意志によるものとします。",
+              "words": [
+                { "id": 1, "word": "義務ではなく" },
+                { "id": 2, "word": "これは" },
+                { "id": 3, "word": "もっとも" },
+                { "id": 4, "word": "自主的な" }
+              ],
+              "answer": 3
+            },
+            {
+              "number": 18,
+              "question": "何度もこれは試験によく出るから間違えないようにと注意した。＿＿ ＿＿ ★ ＿＿ 残念だった。",
+              "words": [
+                { "id": 1, "word": "学生が" },
+                { "id": 2, "word": "それなのに" },
+                { "id": 3, "word": "間違えた" },
+                { "id": 4, "word": "たくさんいたのは" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 19,
+              "question": "クレジットカード＿＿ ＿＿ ★ ＿＿ 。",
+              "words": [
+                { "id": 1, "word": "あるいは" },
+                { "id": 2, "word": "コンビニでの" },
+                { "id": 3, "word": "後払いも可能です" },
+                { "id": 4, "word": "がご利用になれます" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 20,
+              "question": "このプロジェクトの＿＿ ＿＿ ★ ＿＿ ということです。",
+              "words": [
+                { "id": 1, "word": "すなわちエコロジー、" },
+                { "id": 2, "word": "テーマは「エコ」、" },
+                { "id": 3, "word": "つまり" },
+                { "id": 4, "word": "環境を考える" }
+              ],
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "title": "📝 問題3 (Mondai 3) - Mengisi Bacaan",
+          "instruction": "Petunjuk: Bacalah teks berikut, lalu pilihlah jawaban yang paling tepat untuk mengisi nomor 21–25.",
+          "type": "reading_cloze",
+          "passage": {
+            "title": "📖 Bacaan",
+            "jp_text": "市民パソコン教室のお知らせ\n\n日ごろは市の活動にご理解・ご協力いただきましてありがとうございます。 [21] 、緑山市では、まだパソコンを使ったことのない人を対象にパソコン教室を開きます。ちなみに、昨年参加された方々からは「大変実用的でためになった」「わかりやすく、しかも [22] 」といったお言葉をいただいています。「 [23] 、まだパソコンって使ったことがなかったな」「難しそうだが、少しはできるようになりたい」と思っている方、ぜひ、この機会にパソコンに触れてみませんか。\n\n日時：9月10日（日）午前10時～12時\n場所：緑山市民会館会議室A\n参加費：無料\n対象年齢：小学生以上（ただし小学生以下の児童は、18歳以上の方と一緒に参加してください。）\n募集人員：30名（先着順とさせていただきます）\n申し込み方法：郵便 [24] ファックスにて、緑山市役所 市民生活課（担当：田中）まで\n\n[25] 、詳細につきましては、緑山市報8月号をご覧ください。",
+            "translation_title": "📌 Terjemahan Bacaan",
+            "translation": "Pemberitahuan Kelas Komputer untuk Warga\n\nTerima kasih atas pengertian dan kerja sama Anda selama ini terhadap kegiatan kota. [21], Kota Midoriyama akan membuka kelas komputer yang ditujukan bagi warga yang belum pernah menggunakan komputer sama sekali. Sebagai info tambahan, para peserta tahun lalu memberikan komentar seperti \"sangat praktis dan bermanfaat\" dan \"mudah dipahami, lagi pula [22]\". Bagi yang berpikir, \"[23], aku memang belum pernah pakai komputer\" atau \"kelihatannya sulit, tapi aku ingin sedikit bisa\", silakan manfaatkan kesempatan ini untuk mencoba komputer.\n\nWaktu: 10 September (Minggu) pukul 10.00–12.00\nTempat: Ruang Rapat A, Balai Warga Kota Midoriyama\nBiaya partisipasi: Gratis\nUsia peserta: Anak sekolah dasar ke atas (namun anak di bawah usia sekolah dasar harus didampingi orang berusia 18 tahun ke atas)\nKuota: 30 orang (berdasarkan urutan pendaftaran)\nCara mendaftar: Melalui pos [24] faks, ke Bagian Kehidupan Warga Balai Kota Midoriyama (penanggung jawab: Tanaka)\n\n[25], untuk rincian lebih lanjut silakan lihat Buletin Kota Midoriyama edisi Agustus."
+          },
+          "questions": [
+            {
+              "number": 21,
+              "blank": "[21]",
+              "options": [
+                { "id": 1, "text": "だが" },
+                { "id": 2, "text": "なお" },
+                { "id": 3, "text": "さて" },
+                { "id": 4, "text": "すると" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 22,
+              "blank": "[22]",
+              "options": [
+                { "id": 1, "text": "無料で助かった" },
+                { "id": 2, "text": "つまらなかった" },
+                { "id": 3, "text": "料金が高かった" },
+                { "id": 4, "text": "来年も参加したい" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 23,
+              "blank": "[23]",
+              "options": [
+                { "id": 1, "text": "というのは" },
+                { "id": 2, "text": "そういえば" },
+                { "id": 3, "text": "ということは" },
+                { "id": 4, "text": "それなのに" }
+              ],
+              "answer": 2
+            },
+            {
+              "number": 24,
+              "blank": "[24]",
+              "options": [
+                { "id": 1, "text": "あるいは" },
+                { "id": 2, "text": "すなわち" },
+                { "id": 3, "text": "おまけに" },
+                { "id": 4, "text": "それで" }
+              ],
+              "answer": 1
+            },
+            {
+              "number": 25,
+              "blank": "[25]",
+              "options": [
+                { "id": 1, "text": "それでも" },
+                { "id": 2, "text": "したがって" },
+                { "id": 3, "text": "なお" },
+                { "id": 4, "text": "それが" }
+              ],
+              "answer": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

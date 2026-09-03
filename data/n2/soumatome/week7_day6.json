@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "name": "Soumatome N2 Grammar",
+      "week": 7,
+      "day": 6,
+      "header": {
+        "main_title": "がんばればおぼえられるというものだ",
+        "sub_title": "失敗をもとに",
+        "translation": "Berlandaskan kegagalan"
+      },
+      "illustration_text": {
+        "friend1": "失敗をもとに人は成長し、",
+        "friend2": "失敗をきっかけに新しい発見や発明が生まれる。"
+      },
+      "grammar_sections": [
+        {
+          "pattern_title": "事実をもとに",
+          "pattern_meaning": "をもとに = berdasarkan.../dengan berlandaskan...",
+          "description_box": {
+            "formula": "Nを ＋ もとに／もとにして",
+            "explanation": "Menunjukkan bahwa suatu hal dibuat atau dilakukan dengan menjadikan hal yang disebutkan sebagai dasar atau bahan.",
+            "explanation_en": "Shows that something is made or done using the mentioned thing as its basis or material."
+          },
+          "examples": [
+            {
+              "jp": "アンケート結果をもとに新しいメニューを考えた。",
+              "en": "Aku memikirkan menu baru berdasarkan hasil survei.",
+              "explanation": "",
+              "highlight": "をもとに"
+            },
+            {
+              "jp": "この映画は実話をもとにして作られた。",
+              "en": "Film ini dibuat dengan berlandaskan kisah nyata.",
+              "explanation": "",
+              "highlight": "をもとにして"
+            }
+          ]
+        },
+        {
+          "pattern_title": "調整中につき",
+          "pattern_meaning": "につき = karena.../dikarenakan... (alasan, ungkapan formal/tertulis)",
+          "description_box": {
+            "formula": "Nに ＋ つき",
+            "explanation": "Menunjukkan alasan dengan gaya bahasa formal, sering digunakan dalam tulisan resmi atau pengumuman.",
+            "explanation_en": "Shows a reason in a formal style, often used in official writing or announcements."
+          },
+          "examples": [
+            {
+              "jp": "本日は臨時休業につき、ご了承ください。",
+              "en": "Hari ini tutup sementara karena ada keperluan mendadak, mohon dimaklumi.",
+              "explanation": "",
+              "highlight": "につき"
+            },
+            {
+              "jp": "定員に達したにつき、募集を締め切ります。",
+              "en": "Karena kuota sudah terpenuhi, pendaftaran ditutup.",
+              "explanation": "",
+              "highlight": "につき"
+            }
+          ]
+        },
+        {
+          "pattern_title": "入学をきっかけに",
+          "pattern_meaning": "をきっかけに = berawal dari.../dengan...sebagai titik awal...",
+          "description_box": {
+            "formula": "Nを／Vるのを／Vたのを ＋ きっかけに／きっかけとして／きっかけにして／契機に／契機として／契機にして",
+            "explanation": "Menunjukkan bahwa suatu hal menjadi awal mula atau pemicu terjadinya suatu perubahan.",
+            "explanation_en": "Shows that something becomes the starting point or trigger for a change."
+          },
+          "examples": [
+            {
+              "jp": "友人に誘われたのをきっかけに、テニスを始めた。",
+              "en": "Berawal dari diajak teman, aku mulai bermain tenis.",
+              "explanation": "",
+              "highlight": "をきっかけに"
+            },
+            {
+              "jp": "留学を契機として、彼の考え方が大きく変わった。",
+              "en": "Berawal dari studi ke luar negeri, cara berpikirnya berubah drastis.",
+              "explanation": "",
+              "highlight": "を契機として"
+            }
+          ]
+        },
+        {
+          "pattern_title": "受験の際に",
+          "pattern_meaning": "際に = pada saat.../ketika... (ungkapan formal, mirip とき)",
+          "description_box": {
+            "formula": "Nの／Vる ＋ 際に／際",
+            "explanation": "Menunjukkan waktu terjadinya suatu hal, ungkapan formal yang mirip dengan とき.",
+            "explanation_en": "Shows the time something happens, a formal expression similar to とき (when)."
+          },
+          "examples": [
+            {
+              "jp": "空港をご利用の際は、早めにお越しください。",
+              "en": "Saat menggunakan bandara, mohon datang lebih awal.",
+              "explanation": "",
+              "highlight": "際は"
+            },
+            {
+              "jp": "契約の際に、必ず内容をご確認ください。",
+              "en": "Pada saat melakukan kontrak, pastikan untuk memeriksa isinya.",
+              "explanation": "",
+              "highlight": "際に"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
