@@ -1,0 +1,188 @@
+{
+  "week": 7,
+  "day": 6,
+  "title": "気象情報",
+  "subtitle": "Weather Information",
+  "translation": "Informasi Cuaca",
+  "sceneDescription": "Tabel prakiraan cuaca 7 kota（Yamagata, Sendai, Fukushima, Niigata, Utsunomiya, Maebashi, Mito）untuk jam 6, 9, 12, 15, 18, 21, dan 24, lengkap dengan probabilitas hujan (%). Di bawahnya ada peta cuaca dengan tanda tekanan rendah（低990）dan tekanan tinggi（高1022）, serta legenda simbol cuaca: cerah total, cerah, mendung, hujan, salju, kabut, dan arah/kekuatan angin.\n\n Ringkasan prakiraan: \"Dari Okinawa hingga Tohoku bagian selatan akan cerah. Jepang bagian barat akan terasa hangat seperti musim semi. Di Tohoku bagian utara dan Hokkaido pagi harinya akan berawan dan ada yang hujan, tapi cuaca akan berangsur membaik.\"",
+  "signs": [
+    { "text": "天気図：低990／高1022", "meaning": "Peta cuaca: tekanan rendah 990 / tekanan tinggi 1022" },
+    { "text": "天気記号：快晴・晴・曇・雨・雪・霧・風向風力", "meaning": "Simbol cuaca: cerah total, cerah, mendung, hujan, salju, kabut, arah & kekuatan angin" },
+    { "text": "沖縄から東北南部にかけて晴天に恵まれます。", "meaning": "Dari Okinawa hingga Tohoku selatan akan cerah." },
+    { "text": "降水確率(%)", "meaning": "Probabilitas hujan (%)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 633,
+      "character": "率",
+      "strokes": 11,
+      "onyomi": ["リツ", "ソツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "率", "reading": "りつ", "meaning": "rasio, tingkat" },
+        { "word": "確率", "reading": "かくりつ", "meaning": "probabilitas" },
+        { "word": "率直（な）", "reading": "そっちょく", "meaning": "terus terang, blak-blakan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "利率", "reading": "りりつ", "meaning": "suku bunga" },
+        { "word": "能率", "reading": "のうりつ", "meaning": "efisiensi" }
+      ]
+    },
+    {
+      "id": 634,
+      "character": "宇",
+      "strokes": 6,
+      "onyomi": ["ウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "宇宙", "reading": "うちゅう", "meaning": "alam semesta, luar angkasa", "note": "→ lihat kanji #727 (宙)" }
+      ],
+      "extraWords": [
+        { "word": "宇都宮", "reading": "うつのみや", "meaning": "Utsunomiya (nama tempat)" }
+      ]
+    },
+    {
+      "id": 635,
+      "character": "戸",
+      "strokes": 4,
+      "onyomi": ["コ"],
+      "kunyomi": ["と"],
+      "words": [
+        { "word": "〜戸", "reading": "こ", "meaning": "penghitung rumah" },
+        { "word": "戸", "reading": "と", "meaning": "pintu" }
+      ],
+      "extraWords": [
+        { "word": "水戸", "reading": "みと", "meaning": "Mito (nama tempat)" },
+        { "word": "一戸建て", "reading": "いっこだて", "meaning": "rumah tunggal (bukan apartemen)" },
+        { "word": "雨戸", "reading": "あまど", "meaning": "penutup jendela dari hujan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 636,
+      "character": "晴",
+      "strokes": 12,
+      "onyomi": ["セイ"],
+      "kunyomi": ["はれる"],
+      "words": [
+        { "word": "晴天", "reading": "せいてん", "meaning": "cuaca cerah" },
+        { "word": "晴れる", "reading": "はれる", "meaning": "cerah" }
+      ],
+      "extraWords": [
+        { "word": "快晴", "reading": "かいせい", "meaning": "cuaca sangat cerah" },
+        { "word": "素晴らしい", "reading": "すばらしい", "meaning": "luar biasa, mengagumkan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 637,
+      "character": "曇",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["くもる"],
+      "words": [
+        { "word": "曇り", "reading": "くもり", "meaning": "cuaca mendung" }
+      ],
+      "extraWords": [
+        { "word": "曇る", "reading": "くもる", "meaning": "menjadi mendung" }
+      ]
+    },
+    {
+      "id": 638,
+      "character": "雪",
+      "strokes": 11,
+      "onyomi": ["セツ"],
+      "kunyomi": ["ゆき"],
+      "words": [
+        { "word": "積雪", "reading": "せきせつ", "meaning": "timbunan salju" },
+        { "word": "雪", "reading": "ゆき", "meaning": "salju" }
+      ],
+      "extraWords": [
+        { "word": "吹雪", "reading": "ふぶき", "meaning": "badai salju", "flag": "special" },
+        { "word": "大雪", "reading": "おおゆき", "meaning": "salju lebat" }
+      ]
+    },
+    {
+      "id": 639,
+      "character": "恵",
+      "strokes": 10,
+      "onyomi": ["エイ", "ケイ"],
+      "kunyomi": ["めぐむ"],
+      "words": [
+        { "word": "知恵", "reading": "ちえ", "meaning": "kebijaksanaan" },
+        { "word": "恵まれる", "reading": "めぐまれる", "meaning": "diberkati, beruntung" }
+      ],
+      "extraWords": [
+        { "word": "恩恵", "reading": "おんけい", "meaning": "manfaat, berkah" }
+      ]
+    },
+    {
+      "id": 640,
+      "character": "陽",
+      "strokes": 12,
+      "onyomi": ["ヨウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "太陽", "reading": "たいよう", "meaning": "matahari" }
+      ],
+      "extraWords": [
+        { "word": "陽気", "reading": "ようき", "meaning": "cuaca / ceria" }
+      ]
+    },
+    {
+      "id": 641,
+      "character": "雲",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["くも"],
+      "words": [
+        { "word": "雲", "reading": "くも", "meaning": "awan" }
+      ],
+      "extraWords": [
+        { "word": "雨雲", "reading": "あまぐも", "meaning": "awan hujan", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "（　）記念に校庭に木を植える。",
+      "optionA": "率業",
+      "optionB": "卒業",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "今日は良いお天気に（　）春のような陽気でした。",
+      "optionA": "恵まれて",
+      "optionB": "晴れて",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "疲れたときはちょっと休んだほうが（　）が上がる。",
+      "optionA": "利率",
+      "optionB": "能率",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "メガネが湯気で（　）何も見えない。",
+      "optionA": "曇って",
+      "optionB": "雲って",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "昔の人は、便利な機械がない代わりに（　）を使って生活した。",
+      "optionA": "知恵",
+      "optionB": "予想",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "都心のマンションから郊外の（　）に引っ越した。",
+      "optionA": "一戸建て",
+      "optionB": "家庭",
+      "answer": "A"
+    }
+  ]
+}
