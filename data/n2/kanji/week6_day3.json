@@ -1,0 +1,271 @@
+{
+  "week": 6,
+  "day": 3,
+  "title": "広告",
+  "subtitle": "Advertisements",
+  "translation": "Iklan",
+  "sceneDescription": "Iklan penginapan air panas「くりこま温泉　花の宿むらやま」: bangga dengan bunga-bunga musiman yang indah dan cita rasa khas musim yang melimpah. Ada bus jemputan dari stasiun Kurikoma. Menginap 1 malam dengan 2 kali makan mulai 7.800 yen per orang.\n\n Iklan sewa apartemen: mencari penyewa! Dibangun 16 tahun lalu, kamar sudut, 5 menit jalan kaki dari stasiun, sewa 59.000 yen, biaya pengelolaan 4.000 yen, uang kunci 1 bulan, deposit 2 bulan, tipe satu ruangan 15 tatami/35 meter persegi, tanpa uang jaminan atau biaya pembatalan.",
+  "signs": [
+    { "text": "くりこま温泉　花の宿むらやま", "meaning": "Onsen Kurikoma, Penginapan Hana no Yado Murayama" },
+    { "text": "くりこま駅より送迎バス有り", "meaning": "Ada bus jemputan dari stasiun Kurikoma" },
+    { "text": "1泊2食付　お一人様7,800円〜", "meaning": "Menginap 1 malam + 2 kali makan, mulai 7.800 yen per orang" },
+    { "text": "入居者募集！", "meaning": "Mencari penyewa!" },
+    { "text": "保証金・解約金なし", "meaning": "Tanpa uang jaminan & biaya pembatalan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 499,
+      "character": "泉",
+      "strokes": 9,
+      "onyomi": ["セン"],
+      "kunyomi": ["いずみ"],
+      "words": [
+        { "word": "温泉", "reading": "おんせん", "meaning": "pemandian air panas" },
+        { "word": "泉", "reading": "いずみ", "meaning": "mata air" }
+      ]
+    },
+    {
+      "id": 500,
+      "character": "宿",
+      "strokes": 11,
+      "onyomi": ["シュク"],
+      "kunyomi": ["やど"],
+      "words": [
+        { "word": "宿題", "reading": "しゅくだい", "meaning": "pekerjaan rumah" },
+        { "word": "宿", "reading": "やど", "meaning": "penginapan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "下宿", "reading": "げしゅく", "meaning": "kos, kamar sewa" }
+      ]
+    },
+    {
+      "id": 501,
+      "character": "季",
+      "strokes": 8,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "季節", "reading": "きせつ", "meaning": "musim" },
+        { "word": "冬季", "reading": "とうき", "meaning": "musim dingin" }
+      ],
+      "extraWords": [
+        { "word": "四季", "reading": "しき", "meaning": "empat musim" }
+      ]
+    },
+    {
+      "id": 502,
+      "character": "豊",
+      "strokes": 13,
+      "onyomi": ["ホウ"],
+      "kunyomi": ["ゆたか"],
+      "words": [
+        { "word": "豊作", "reading": "ほうさく", "meaning": "panen berlimpah" },
+        { "word": "豊か（な）", "reading": "ゆたか", "meaning": "berlimpah, kaya", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 503,
+      "character": "富",
+      "strokes": 12,
+      "onyomi": ["フ"],
+      "kunyomi": ["とむ", "とみ"],
+      "words": [
+        { "word": "豊富（な）", "reading": "ほうふ", "meaning": "melimpah" },
+        { "word": "富む", "reading": "とむ", "meaning": "kaya, berlimpah" }
+      ],
+      "extraWords": [
+        { "word": "富士山", "reading": "ふじさん", "meaning": "Gunung Fuji" },
+        { "word": "富", "reading": "とみ", "meaning": "kekayaan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 504,
+      "character": "迎",
+      "strokes": 7,
+      "onyomi": ["ゲイ"],
+      "kunyomi": ["むかえる"],
+      "words": [
+        { "word": "送迎", "reading": "そうげい", "meaning": "layanan antar-jemput" },
+        { "word": "迎える", "reading": "むかえる", "meaning": "menyambut, menjemput" }
+      ],
+      "extraWords": [
+        { "word": "歓迎", "reading": "かんげい", "meaning": "penyambutan" },
+        { "word": "出迎え", "reading": "でむかえ", "meaning": "penjemputan (di stasiun dsb)" }
+      ]
+    },
+    {
+      "id": 505,
+      "character": "泊",
+      "strokes": 8,
+      "onyomi": ["ハク"],
+      "kunyomi": ["とまる", "とめる"],
+      "words": [
+        { "word": "〜泊", "reading": "はく", "meaning": "... malam menginap" },
+        { "word": "泊まる", "reading": "とまる", "meaning": "menginap" }
+      ],
+      "extraWords": [
+        { "word": "宿泊", "reading": "しゅくはく", "meaning": "penginapan" }
+      ]
+    },
+    {
+      "id": 506,
+      "character": "居",
+      "strokes": 8,
+      "onyomi": ["キョ"],
+      "kunyomi": ["いる"],
+      "words": [
+        { "word": "入居", "reading": "にゅうきょ", "meaning": "pindah masuk (apartemen dsb)" },
+        { "word": "居眠り", "reading": "いねむり", "meaning": "tertidur sambil duduk" }
+      ],
+      "extraWords": [
+        { "word": "居間", "reading": "いま", "meaning": "ruang keluarga" },
+        { "word": "居る", "reading": "いる", "meaning": "ada, berada" }
+      ]
+    },
+    {
+      "id": 507,
+      "character": "築",
+      "strokes": 16,
+      "onyomi": ["チク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "築〜年", "reading": "ちくねん", "meaning": "dibangun ... tahun lalu" }
+      ],
+      "extraWords": [
+        { "word": "建築", "reading": "けんちく", "meaning": "arsitektur, konstruksi" }
+      ]
+    },
+    {
+      "id": 508,
+      "character": "角",
+      "strokes": 7,
+      "onyomi": ["カク"],
+      "kunyomi": ["かど"],
+      "words": [
+        { "word": "三角", "reading": "さんかく", "meaning": "segitiga" },
+        { "word": "方角", "reading": "ほうがく", "meaning": "arah mata angin" }
+      ],
+      "extraWords": [
+        { "word": "角度", "reading": "かくど", "meaning": "sudut" },
+        { "word": "角", "reading": "かど", "meaning": "sudut, pojok", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 509,
+      "character": "徒",
+      "strokes": 10,
+      "onyomi": ["ト"],
+      "kunyomi": [],
+      "words": [
+        { "word": "生徒", "reading": "せいと", "meaning": "siswa" }
+      ],
+      "extraWords": [
+        { "word": "徒歩", "reading": "とほ", "meaning": "berjalan kaki" }
+      ]
+    },
+    {
+      "id": 510,
+      "character": "畳",
+      "strokes": 12,
+      "onyomi": ["ジョウ"],
+      "kunyomi": ["たたむ", "たたみ"],
+      "words": [
+        { "word": "畳", "reading": "たたみ", "meaning": "tikar tatami" },
+        { "word": "〜畳", "reading": "じょう", "meaning": "... tatami (satuan luas)" }
+      ],
+      "extraWords": [
+        { "word": "畳む", "reading": "たたむ", "meaning": "melipat" }
+      ]
+    },
+    {
+      "id": 511,
+      "character": "米",
+      "strokes": 6,
+      "onyomi": ["ベイ", "マイ"],
+      "kunyomi": ["こめ"],
+      "words": [
+        { "word": "欧米", "reading": "おうべい", "meaning": "Eropa dan Amerika", "note": "→ lihat kanji #667 (欧)" },
+        { "word": "新米", "reading": "しんまい", "meaning": "beras baru / pemula", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "平米", "reading": "へいべい", "meaning": "meter persegi" },
+        { "word": "米", "reading": "こめ", "meaning": "beras" }
+      ]
+    },
+    {
+      "id": 512,
+      "character": "解",
+      "strokes": 13,
+      "onyomi": ["カイ"],
+      "kunyomi": ["とく"],
+      "words": [
+        { "word": "解説", "reading": "かいせつ", "meaning": "penjelasan" },
+        { "word": "解放", "reading": "かいほう", "meaning": "pembebasan" },
+        { "word": "解約", "reading": "かいやく", "meaning": "pembatalan kontrak" }
+      ],
+      "extraWords": [
+        { "word": "解決", "reading": "かいけつ", "meaning": "penyelesaian" },
+        { "word": "解散", "reading": "かいさん", "meaning": "pembubaran" },
+        { "word": "解く", "reading": "とく", "meaning": "memecahkan, melepaskan", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "週末は富士山の近くの温泉（　）に泊まる予定です。",
+      "optionA": "家",
+      "optionB": "宿",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "冬季オリンピック選手の帰国を空港で（　）。",
+      "optionA": "出迎える",
+      "optionB": "迎えに行く",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この町は自然に囲まれた緑（　）ところです。",
+      "optionA": "豊かな",
+      "optionB": "富む",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "明日から（　）2日の旅行に行きます。",
+      "optionA": "1泊",
+      "optionB": "1晩",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "様々な（　）からアプローチして問題を解決する。",
+      "optionA": "方角",
+      "optionB": "角度",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "居間と食堂を合わせて12（　）です。",
+      "optionA": "畳",
+      "optionB": "置",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "私は大学で（　）の勉強をしています。",
+      "optionA": "新築",
+      "optionB": "建築",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "お金が必要になったので、定期預金を（　）する。",
+      "optionA": "解約",
+      "optionB": "解決",
+      "answer": "A"
+    }
+  ]
+}
