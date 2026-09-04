@@ -1,0 +1,276 @@
+{
+  "week": 6,
+  "day": 2,
+  "title": "折り込み広告",
+  "subtitle": "Advertising Inserts",
+  "translation": "Selebaran Iklan Sisipan",
+  "sceneDescription": "Selebaran supermarket「マルヨシ」: batas pembelian 1 item per orang untuk kaleng ○○ (100 yen), tepung terigu (100 yen), cuka beras murni 500ml (298 yen), bayam (98 yen), salmon asin (88 yen), sup padat (120 yen), serta demo penjualan tuna mulai pukul 15:00.\n\n Selebaran department store「西急デパート」: festival kue Jepang dan Barat di lantai basement, cocok untuk hadiah atau oleh-oleh pulang kampung dengan layanan kirim ke seluruh Jepang; serta obral besar-besaran furnitur di lantai 7 karena renovasi, barang pajangan dan stok dijual dengan harga banting.",
+  "signs": [
+    { "text": "お一人様1点限り", "meaning": "Terbatas 1 per orang" },
+    { "text": "15:00〜マグロ実演販売", "meaning": "Demo penjualan tuna mulai pukul 15:00" },
+    { "text": "和菓子・洋菓子祭り！", "meaning": "Festival kue Jepang & Barat!" },
+    { "text": "贈り物・帰省土産に最適！全国発送承ります！", "meaning": "Cocok untuk hadiah/oleh-oleh pulang kampung! Terima pengiriman ke seluruh Jepang!" },
+    { "text": "改装のため売りつくし　各種家具を破格値で！", "meaning": "Obral karena renovasi, berbagai furnitur harga banting!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 485,
+      "character": "詰",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["つめる", "つまる"],
+      "words": [
+        { "word": "詰める", "reading": "つめる", "meaning": "mengisi penuh, memadatkan" },
+        { "word": "箱詰め", "reading": "はこづめ", "meaning": "dikemas dalam kotak" }
+      ],
+      "extraWords": [
+        { "word": "缶詰", "reading": "かんづめ", "meaning": "makanan kaleng" }
+      ]
+    },
+    {
+      "id": 486,
+      "character": "麦",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["むぎ"],
+      "words": [
+        { "word": "小麦粉", "reading": "こむぎこ", "meaning": "tepung terigu" }
+      ],
+      "extraWords": [
+        { "word": "麦畑", "reading": "むぎばたけ", "meaning": "ladang gandum" }
+      ]
+    },
+    {
+      "id": 487,
+      "character": "純",
+      "strokes": 10,
+      "onyomi": ["ジュン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "純粋（な）", "reading": "じゅんすい", "meaning": "murni" },
+        { "word": "単純（な）", "reading": "たんじゅん", "meaning": "sederhana", "note": "→ lihat kanji #567 (単)" }
+      ],
+      "extraWords": [
+        { "word": "純情（な）", "reading": "じゅんじょう", "meaning": "berhati polos" },
+        { "word": "純米酢", "reading": "じゅんまいず", "meaning": "cuka beras murni" }
+      ]
+    },
+    {
+      "id": 488,
+      "character": "草",
+      "strokes": 9,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["くさ"],
+      "words": [
+        { "word": "雑草", "reading": "ざっそう", "meaning": "gulma" },
+        { "word": "草", "reading": "くさ", "meaning": "rumput" }
+      ],
+      "extraWords": [
+        { "word": "除草", "reading": "じょそう", "meaning": "penyiangan" },
+        { "word": "草花", "reading": "くさばな", "meaning": "tanaman berbunga" }
+      ]
+    },
+    {
+      "id": 489,
+      "character": "塩",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": ["しお"],
+      "words": [
+        { "word": "食塩", "reading": "しょくえん", "meaning": "garam dapur" },
+        { "word": "塩", "reading": "しお", "meaning": "garam" }
+      ]
+    },
+    {
+      "id": 490,
+      "character": "固",
+      "strokes": 8,
+      "onyomi": ["コ"],
+      "kunyomi": ["かたい", "かたまる"],
+      "words": [
+        { "word": "固定", "reading": "こてい", "meaning": "pemasangan tetap, fiksasi" },
+        { "word": "固形", "reading": "こけい", "meaning": "bentuk padat" },
+        { "word": "固い", "reading": "かたい", "meaning": "keras" }
+      ],
+      "extraWords": [
+        { "word": "固体", "reading": "こたい", "meaning": "benda padat" },
+        { "word": "固まる", "reading": "かたまる", "meaning": "mengeras, membeku" }
+      ]
+    },
+    {
+      "id": 491,
+      "character": "演",
+      "strokes": 14,
+      "onyomi": ["エン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "実演", "reading": "じつえん", "meaning": "demonstrasi langsung" },
+        { "word": "演習", "reading": "えんしゅう", "meaning": "latihan, simulasi" }
+      ],
+      "extraWords": [
+        { "word": "演技", "reading": "えんぎ", "meaning": "akting, permainan peran", "note": "→ lihat kanji #729 (技)" },
+        { "word": "演説", "reading": "えんぜつ", "meaning": "pidato" }
+      ]
+    },
+    {
+      "id": 492,
+      "character": "菓",
+      "strokes": 11,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "菓子", "reading": "かし", "meaning": "kue, camilan manis" },
+        { "word": "和菓子", "reading": "わがし", "meaning": "kue tradisional Jepang" }
+      ],
+      "extraWords": [
+        { "word": "洋菓子", "reading": "ようがし", "meaning": "kue ala Barat" }
+      ]
+    },
+    {
+      "id": 493,
+      "character": "贈",
+      "strokes": 18,
+      "onyomi": [],
+      "kunyomi": ["おくる"],
+      "words": [
+        { "word": "贈り物", "reading": "おくりもの", "meaning": "hadiah" },
+        { "word": "贈る", "reading": "おくる", "meaning": "memberi hadiah" }
+      ]
+    },
+    {
+      "id": 494,
+      "character": "省",
+      "strokes": 9,
+      "onyomi": ["セイ", "ショウ"],
+      "kunyomi": ["はぶく"],
+      "words": [
+        { "word": "帰省", "reading": "きせい", "meaning": "pulang kampung" },
+        { "word": "〜省", "reading": "しょう", "meaning": "kementerian ..." },
+        { "word": "省く", "reading": "はぶく", "meaning": "menghilangkan, meniadakan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "反省", "reading": "はんせい", "meaning": "introspeksi diri" },
+        { "word": "省エネ", "reading": "しょうエネ", "meaning": "hemat energi" },
+        { "word": "省略", "reading": "しょうりゃく", "meaning": "pemendekan, penyingkatan", "note": "→ lihat kanji #535 (略)" }
+      ]
+    },
+    {
+      "id": 495,
+      "character": "承",
+      "strokes": 8,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["うけたまわる"],
+      "words": [
+        { "word": "了承", "reading": "りょうしょう", "meaning": "persetujuan, pengertian" },
+        { "word": "承知", "reading": "しょうち", "meaning": "mengetahui, menyetujui" }
+      ],
+      "extraWords": [
+        { "word": "承認", "reading": "しょうにん", "meaning": "pengesahan, persetujuan" },
+        { "word": "承る", "reading": "うけたまわる", "meaning": "menerima (bentuk merendah)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 496,
+      "character": "展",
+      "strokes": 10,
+      "onyomi": ["テン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "展覧会", "reading": "てんらんかい", "meaning": "pameran" },
+        { "word": "〜展", "reading": "てん", "meaning": "pameran ..." }
+      ],
+      "extraWords": [
+        { "word": "展示", "reading": "てんじ", "meaning": "pemajangan, display" },
+        { "word": "発展", "reading": "はってん", "meaning": "perkembangan" }
+      ]
+    },
+    {
+      "id": 497,
+      "character": "破",
+      "strokes": 10,
+      "onyomi": ["ハ"],
+      "kunyomi": ["やぶれる", "やぶる"],
+      "words": [
+        { "word": "破格", "reading": "はかく", "meaning": "harga luar biasa murah" },
+        { "word": "破片", "reading": "はへん", "meaning": "pecahan" },
+        { "word": "破れる", "reading": "やぶれる", "meaning": "robek, sobek" }
+      ],
+      "extraWords": [
+        { "word": "破産", "reading": "はさん", "meaning": "kebangkrutan" },
+        { "word": "破る", "reading": "やぶる", "meaning": "merobek, melanggar" }
+      ]
+    },
+    {
+      "id": 498,
+      "character": "処",
+      "strokes": 5,
+      "onyomi": ["ショ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "処理", "reading": "しょり", "meaning": "pemrosesan" },
+        { "word": "処分", "reading": "しょぶん", "meaning": "pembuangan/penanganan" }
+      ],
+      "extraWords": [
+        { "word": "処置", "reading": "しょち", "meaning": "tindakan, penanganan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "草花や野菜、果物などを箱に（　）出荷する。",
+      "optionA": "詰めて",
+      "optionB": "固めて",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "その作業は（　）だが、ミスをすると危険だ。",
+      "optionA": "純粋",
+      "optionB": "単純",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "商品を使ったり作ったりして見せて売ることを（　）販売という。",
+      "optionA": "実演",
+      "optionB": "演習",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "年に2回、住民による地域の（　）作業が行われる。",
+      "optionA": "雑草",
+      "optionB": "除草",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "事故（　）中の道路に、まだ車の破片が散らばっている。",
+      "optionA": "処置",
+      "optionB": "処理",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "贈り物の包装はサービスカウンターで（　）。",
+      "optionA": "承ります",
+      "optionB": "預ります",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "省エネというのはエネルギーを（　）することです。",
+      "optionA": "省略",
+      "optionB": "節約",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "全国の珍しいお菓子を集めた（　）会が開かれた。",
+      "optionA": "展示",
+      "optionB": "発展",
+      "answer": "A"
+    }
+  ]
+}
