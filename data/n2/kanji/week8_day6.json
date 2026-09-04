@@ -1,0 +1,237 @@
+{
+  "week": 8,
+  "day": 6,
+  "title": "記事③",
+  "subtitle": "Articles ③",
+  "translation": "Artikel Berita ③",
+  "sceneDescription": "Contoh artikel: \"Nakata diangkat jadi Menteri Lingkungan. Nakata Ichiro dari partai OO resmi menjabat sebagai Menteri Lingkungan. Menanggapi pertanyaan wartawan tentang pencegahan pemanasan global, ia berkata: 'Ini masalah yang harus ditangani seluruh dunia, dan negara kita juga harus berupaya mengurangi emisi gas rumah kaca.' ...Harapan besar untuk kepala badan dari kalangan swasta. Satomura dari sektor swasta diangkat menjadi kepala Badan Asuransi Sosial. Satomura menyatakan: 'Saya akan melanjutkan reformasi agar kepercayaan publik dapat pulih.'\"\n\n \"Robot dan aktivitas luar angkasa: Badan Antariksa umumkan visi jangka panjang khas Jepang. JAXA (Badan Riset dan Pengembangan Kedirgantaraan) mengumumkan target mewujudkan peluncuran roket berawak dalam 10 tahun, dan pengembangan pesawat luar angkasa yang bisa dipakai ulang dalam 20 tahun. Banyak tantangan baik dari segi teknis maupun keuangan untuk mewujudkannya, dan mereka meminta pengertian serta kerja sama dari berbagai pihak. Sementara itu, Institut XX mengumumkan hasil eksperimen teknologi AI (kecerdasan buatan) yang bisa berpikir sendiri dan menggerakkan lengan/kaki dalam situasi yang belum pernah dialami, membawa robot humanoid selangkah lebih dekat.\"",
+  "signs": [
+    { "text": "環境大臣に中田氏", "meaning": "Nakata diangkat jadi Menteri Lingkungan" },
+    { "text": "民間出身の長官に期待", "meaning": "Harapan besar untuk kepala badan dari kalangan swasta" },
+    { "text": "ロボットと宇宙活動", "meaning": "Aktivitas robot dan luar angkasa" },
+    { "text": "宇宙機構が日本独自の長期ビジョン", "meaning": "Badan Antariksa umumkan visi jangka panjang khas Jepang" }
+  ],
+  "kanjiList": [
+    {
+      "id": 721,
+      "character": "環",
+      "strokes": 17,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "環境", "reading": "かんきょう", "meaning": "lingkungan" },
+        { "word": "環状線", "reading": "かんじょうせん", "meaning": "jalur lingkar (kereta/jalan)" }
+      ]
+    },
+    {
+      "id": 722,
+      "character": "境",
+      "strokes": 14,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["さかい"],
+      "words": [
+        { "word": "境界", "reading": "きょうかい", "meaning": "batas, perbatasan" },
+        { "word": "境", "reading": "さかい", "meaning": "batas", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "国境", "reading": "こっきょう", "meaning": "perbatasan negara" },
+        { "word": "県境", "reading": "けんざかい", "meaning": "perbatasan prefektur", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 723,
+      "character": "減",
+      "strokes": 12,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["へる", "へらす"],
+      "words": [
+        { "word": "削減", "reading": "さくげん", "meaning": "pengurangan, pemotongan" },
+        { "word": "加減", "reading": "かげん", "meaning": "penyesuaian, kondisi" },
+        { "word": "減る", "reading": "へる", "meaning": "berkurang" }
+      ],
+      "extraWords": [
+        { "word": "増減", "reading": "ぞうげん", "meaning": "naik turun, fluktuasi" },
+        { "word": "減らす", "reading": "へらす", "meaning": "mengurangi" }
+      ]
+    },
+    {
+      "id": 724,
+      "character": "努",
+      "strokes": 7,
+      "onyomi": ["ド"],
+      "kunyomi": ["つとめる"],
+      "words": [
+        { "word": "努力", "reading": "どりょく", "meaning": "usaha, upaya" },
+        { "word": "努める", "reading": "つとめる", "meaning": "berusaha keras", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 725,
+      "character": "庁",
+      "strokes": 5,
+      "onyomi": ["チョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜庁", "reading": "ちょう", "meaning": "badan/kantor pemerintah ..." },
+        { "word": "社会保険庁", "reading": "しゃかいほけんちょう", "meaning": "Badan Asuransi Sosial" }
+      ],
+      "extraWords": [
+        { "word": "県庁", "reading": "けんちょう", "meaning": "kantor prefektur" }
+      ]
+    },
+    {
+      "id": 726,
+      "character": "官",
+      "strokes": 8,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "長官", "reading": "ちょうかん", "meaning": "kepala badan, direktur" }
+      ],
+      "extraWords": [
+        { "word": "警官", "reading": "けいかん", "meaning": "polisi" }
+      ]
+    },
+    {
+      "id": 727,
+      "character": "宙",
+      "strokes": 8,
+      "onyomi": ["チュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "宇宙", "reading": "うちゅう", "meaning": "alam semesta, luar angkasa" }
+      ]
+    },
+    {
+      "id": 728,
+      "character": "独",
+      "strokes": 9,
+      "onyomi": ["ドク"],
+      "kunyomi": ["ひとり"],
+      "words": [
+        { "word": "独自", "reading": "どくじ", "meaning": "khas, unik" },
+        { "word": "日独", "reading": "にちどく", "meaning": "Jepang dan Jerman" },
+        { "word": "独身", "reading": "どくしん", "meaning": "lajang, belum menikah" }
+      ],
+      "extraWords": [
+        { "word": "独り言", "reading": "ひとりごと", "meaning": "bicara sendiri, monolog", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 729,
+      "character": "技",
+      "strokes": 7,
+      "onyomi": ["ギ"],
+      "kunyomi": ["わざ"],
+      "words": [
+        { "word": "技術", "reading": "ぎじゅつ", "meaning": "teknik, teknologi" },
+        { "word": "競技", "reading": "きょうぎ", "meaning": "pertandingan olahraga" },
+        { "word": "技", "reading": "わざ", "meaning": "teknik, keahlian", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "技師", "reading": "ぎし", "meaning": "insinyur, teknisi" },
+        { "word": "演技", "reading": "えんぎ", "meaning": "akting, penampilan" }
+      ]
+    },
+    {
+      "id": 730,
+      "character": "政",
+      "strokes": 9,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "財政", "reading": "ざいせい", "meaning": "keuangan negara/fiskal" },
+        { "word": "政党", "reading": "せいとう", "meaning": "partai politik" }
+      ],
+      "extraWords": [
+        { "word": "政治", "reading": "せいじ", "meaning": "politik" },
+        { "word": "政府", "reading": "せいふ", "meaning": "pemerintah" }
+      ]
+    },
+    {
+      "id": 731,
+      "character": "況",
+      "strokes": 8,
+      "onyomi": ["キョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "状況", "reading": "じょうきょう", "meaning": "keadaan, situasi" }
+      ],
+      "extraWords": [
+        { "word": "不況", "reading": "ふきょう", "meaning": "resesi ekonomi" }
+      ]
+    },
+    {
+      "id": 732,
+      "character": "腕",
+      "strokes": 12,
+      "onyomi": ["ワン"],
+      "kunyomi": ["うで"],
+      "words": [
+        { "word": "腕力", "reading": "わんりょく", "meaning": "kekuatan lengan/fisik" },
+        { "word": "腕", "reading": "うで", "meaning": "lengan" }
+      ],
+      "extraWords": [
+        { "word": "腕前", "reading": "うでまえ", "meaning": "kemampuan, keterampilan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この電車は（　）なので乗り越してもまた戻ってきます。",
+      "optionA": "境界線",
+      "optionB": "環状線",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "ボランティア活動に（　）はない。",
+      "optionA": "国境",
+      "optionB": "環境",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "これはこの町の人口の（　）を表したグラフです。",
+      "optionA": "削減",
+      "optionB": "増減",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "あの方は気象庁（　）です。",
+      "optionA": "警官",
+      "optionB": "長官",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "柔道の色々な（　）を習う。",
+      "optionA": "技",
+      "optionB": "枝",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）に負けずに景気回復に努めよう！",
+      "optionA": "不況",
+      "optionB": "財政",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "相撲は相撲でも指や（　）でする相撲もあります。",
+      "optionA": "腕",
+      "optionB": "碗",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "それは日本（　）の考え方だと思う。",
+      "optionA": "独身",
+      "optionB": "独自",
+      "answer": "B"
+    }
+  ]
+}
