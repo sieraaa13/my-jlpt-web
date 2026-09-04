@@ -1,0 +1,269 @@
+{
+  "week": 5,
+  "day": 3,
+  "title": "家庭用品　洗剤②",
+  "subtitle": "Household Goods (Cleansers) ②",
+  "translation": "Peralatan Rumah Tangga (Pembersih) ②",
+  "sceneDescription": "Ilustrasi pertama menunjukkan semprotan pembersih rumah「住まいの洗剤　キープ」dengan petunjuk: semprotkan ke furnitur, lantai, dinding, pintu, lalu lap dengan kain kering. Tidak bisa dipakai untuk furnitur atau tiang kayu yang mudah menyerap air.\n\n Ilustrasi kedua menunjukkan pasta gigi obat「クリピカ」untuk mencegah gigi berlubang dan penyakit gusi, serta sampo「ケピタ」dengan ekstrak alami untuk yang khawatir rambut rontok — cara pakai: bilas rambut dan kulit kepala dengan air hangat sebelum digunakan.",
+  "signs": [
+    { "text": "用途および使用方法", "meaning": "Kegunaan dan cara pemakaian" },
+    { "text": "虫歯・歯周病を予防する薬用歯磨き", "meaning": "Pasta gigi obat pencegah gigi berlubang & penyakit gusi" },
+    { "text": "抜け毛にお悩みの方に！天然△△配合", "meaning": "Untuk yang khawatir rambut rontok! Mengandung ekstrak alami" },
+    { "text": "お湯で髪と頭皮をよくすすいでからお使いください", "meaning": "Bilas rambut & kulit kepala dengan air hangat sebelum digunakan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 400,
+      "character": "途",
+      "strokes": 10,
+      "onyomi": ["ト"],
+      "kunyomi": [],
+      "words": [
+        { "word": "用途", "reading": "ようと", "meaning": "kegunaan, keperluan" },
+        { "word": "中途", "reading": "ちゅうと", "meaning": "tengah jalan, belum selesai" }
+      ],
+      "extraWords": [
+        { "word": "途中", "reading": "とちゅう", "meaning": "di tengah perjalanan" },
+        { "word": "途端", "reading": "とたん", "meaning": "tepat pada saat ..." }
+      ]
+    },
+    {
+      "id": 401,
+      "character": "具",
+      "strokes": 8,
+      "onyomi": ["グ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "道具", "reading": "どうぐ", "meaning": "peralatan, perkakas" },
+        { "word": "家具", "reading": "かぐ", "meaning": "perabot rumah" }
+      ],
+      "extraWords": [
+        { "word": "具合", "reading": "ぐあい", "meaning": "kondisi, keadaan" },
+        { "word": "雨具", "reading": "あまぐ", "meaning": "perlengkapan hujan" }
+      ]
+    },
+    {
+      "id": 402,
+      "character": "床",
+      "strokes": 7,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["ゆか", "とこ"],
+      "words": [
+        { "word": "起床", "reading": "きしょう", "meaning": "bangun tidur" },
+        { "word": "床屋", "reading": "とこや", "meaning": "tukang cukur/pangkas rambut" },
+        { "word": "床の間", "reading": "とこのま", "meaning": "ceruk hias tradisional Jepang" }
+      ],
+      "extraWords": [
+        { "word": "床", "reading": "ゆか", "meaning": "lantai", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 403,
+      "character": "壁",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["かべ"],
+      "words": [
+        { "word": "壁", "reading": "かべ", "meaning": "dinding, tembok" }
+      ]
+    },
+    {
+      "id": 404,
+      "character": "乾",
+      "strokes": 11,
+      "onyomi": ["カン"],
+      "kunyomi": ["かわく", "かわかす"],
+      "words": [
+        { "word": "乾電池", "reading": "かんでんち", "meaning": "baterai kering" },
+        { "word": "乾く", "reading": "かわく", "meaning": "kering" }
+      ],
+      "extraWords": [
+        { "word": "乾かす", "reading": "かわかす", "meaning": "mengeringkan" }
+      ]
+    },
+    {
+      "id": 405,
+      "character": "布",
+      "strokes": 5,
+      "onyomi": ["フ"],
+      "kunyomi": ["ぬの"],
+      "words": [
+        { "word": "毛布", "reading": "もうふ", "meaning": "selimut" },
+        { "word": "座布団", "reading": "ざぶとん", "meaning": "bantal duduk (zabuton)", "flag": "attention" },
+        { "word": "布", "reading": "ぬの", "meaning": "kain" }
+      ],
+      "extraWords": [
+        { "word": "分布", "reading": "ぶんぷ", "meaning": "distribusi, penyebaran" }
+      ]
+    },
+    {
+      "id": 406,
+      "character": "柱",
+      "strokes": 9,
+      "onyomi": ["チュウ"],
+      "kunyomi": ["はしら"],
+      "words": [
+        { "word": "電柱", "reading": "でんちゅう", "meaning": "tiang listrik" },
+        { "word": "柱", "reading": "はしら", "meaning": "tiang, pilar" }
+      ]
+    },
+    {
+      "id": 407,
+      "character": "虫",
+      "strokes": 6,
+      "onyomi": ["チュウ"],
+      "kunyomi": ["むし"],
+      "words": [
+        { "word": "防虫剤", "reading": "ぼうちゅうざい", "meaning": "kamper/anti serangga" },
+        { "word": "虫", "reading": "むし", "meaning": "serangga" }
+      ],
+      "extraWords": [
+        { "word": "殺虫剤", "reading": "さっちゅうざい", "meaning": "insektisida" },
+        { "word": "虫歯", "reading": "むしば", "meaning": "gigi berlubang" }
+      ]
+    },
+    {
+      "id": 408,
+      "character": "歯",
+      "strokes": 12,
+      "onyomi": ["シ"],
+      "kunyomi": ["は"],
+      "words": [
+        { "word": "歯科", "reading": "しか", "meaning": "kedokteran gigi" },
+        { "word": "歯医者", "reading": "はいしゃ", "meaning": "dokter gigi" }
+      ],
+      "extraWords": [
+        { "word": "歯周病", "reading": "ししゅうびょう", "meaning": "penyakit gusi" },
+        { "word": "歯車", "reading": "はぐるま", "meaning": "roda gigi" }
+      ]
+    },
+    {
+      "id": 409,
+      "character": "防",
+      "strokes": 7,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["ふせぐ"],
+      "words": [
+        { "word": "予防", "reading": "よぼう", "meaning": "pencegahan" },
+        { "word": "防止", "reading": "ぼうし", "meaning": "pencegahan" }
+      ],
+      "extraWords": [
+        { "word": "消防", "reading": "しょうぼう", "meaning": "pemadam kebakaran" },
+        { "word": "防ぐ", "reading": "ふせぐ", "meaning": "mencegah", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 410,
+      "character": "磨",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["みがく"],
+      "words": [
+        { "word": "磨く", "reading": "みがく", "meaning": "menyikat, memoles" }
+      ],
+      "extraWords": [
+        { "word": "歯磨き", "reading": "はみがき", "meaning": "menyikat gigi, pasta gigi" }
+      ]
+    },
+    {
+      "id": 411,
+      "character": "抜",
+      "strokes": 7,
+      "onyomi": ["バツ"],
+      "kunyomi": ["ぬく", "ぬける"],
+      "words": [
+        { "word": "抜群", "reading": "ばつぐん", "meaning": "luar biasa, unggul", "note": "→ lihat kanji #561 (群)" },
+        { "word": "抜く", "reading": "ぬく", "meaning": "mencabut, mengeluarkan" }
+      ],
+      "extraWords": [
+        { "word": "抜ける", "reading": "ぬける", "meaning": "lepas, rontok" },
+        { "word": "追い抜く", "reading": "おいぬく", "meaning": "menyalip, meninggalkan" }
+      ]
+    },
+    {
+      "id": 412,
+      "character": "悩",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["なやむ"],
+      "words": [
+        { "word": "悩む", "reading": "なやむ", "meaning": "khawatir, gelisah" }
+      ],
+      "extraWords": [
+        { "word": "悩み", "reading": "なやみ", "meaning": "kekhawatiran, masalah" }
+      ]
+    },
+    {
+      "id": 413,
+      "character": "髪",
+      "strokes": 14,
+      "onyomi": [],
+      "kunyomi": ["かみ"],
+      "words": [
+        { "word": "髪", "reading": "かみ", "meaning": "rambut" },
+        { "word": "白髪", "reading": "しらが", "meaning": "rambut putih/uban", "flag": "special" }
+      ],
+      "extraWords": [
+        { "word": "髪の毛", "reading": "かみのけ", "meaning": "helai rambut" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "いい天気なので（　）を洗った。よく乾いた。",
+      "optionA": "毛布",
+      "optionB": "分布",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この花入れは柱にかけたり、（　）に置いたりしてください。",
+      "optionA": "床屋",
+      "optionB": "床の間",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "家に帰る（　）、コンビニに寄って、乾電池を買った。",
+      "optionA": "中途",
+      "optionB": "途中",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "（　）にカーペットをしく。",
+      "optionA": "床",
+      "optionB": "壁",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "歯医者で歯を（　）ばかりなので具合が悪い。",
+      "optionA": "抜いた",
+      "optionB": "抜けた",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "髪がぬれたままだと風邪を引くから（　）ほうがいいですよ。",
+      "optionA": "磨いた",
+      "optionB": "乾かした",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "毛糸のセーターを引き出しやタンスにしまう際には、（　）を一緒に入れます。",
+      "optionA": "防虫剤",
+      "optionB": "殺虫剤",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "歯周病（　）によく効く歯磨きを買う。",
+      "optionA": "予防",
+      "optionB": "防止",
+      "answer": "A"
+    }
+  ]
+}
