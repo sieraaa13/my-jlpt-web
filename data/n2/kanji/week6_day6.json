@@ -1,0 +1,264 @@
+{
+  "week": 6,
+  "day": 6,
+  "title": "どっち？",
+  "subtitle": "Which One?",
+  "translation": "Yang Mana?",
+  "sceneDescription": "Ilustrasi membandingkan dua pilihan sejenis di toko: lift untuk lantai rendah vs lantai tinggi; bunga per ikat 500 yen vs per tangkai 500 yen; kari rasa manis vs rasa pedas; sepiring seharga 300 yen vs sebutir seharga 300 yen; baju berbahan katun 100% vs wol 100%; serta gedung baru vs gedung lama.\n\n Ilustrasi kedua membandingkan: daging iris tebal vs iris tipis; pena ukuran ekstra tipis, tipis, tebal, dan ekstra tebal; skala tingkat keasaman dan kepahitan kopi (lemah ke kuat); natto berbutir besar vs berbutir kecil; tas berbahan vinil vs berbahan kulit.",
+  "signs": [
+    { "text": "低層階用エレベーター／高層階用エレベーター", "meaning": "Lift lantai rendah / lantai tinggi" },
+    { "text": "カレー甘口／カレー辛口", "meaning": "Kari rasa manis / kari rasa pedas" },
+    { "text": "綿100%／毛100%", "meaning": "Katun 100% / Wol 100%" },
+    { "text": "厚切り肉／薄切り肉", "meaning": "Daging iris tebal / Daging iris tipis" },
+    { "text": "大粒納豆／小粒納豆", "meaning": "Natto butiran besar / Natto butiran kecil" },
+    { "text": "ビニール製バッグ／革製バッグ", "meaning": "Tas berbahan vinil / Tas berbahan kulit" },
+    { "text": "酸味・苦味　弱・・・強", "meaning": "Skala rasa asam/pahit: lemah...kuat" }
+  ],
+  "kanjiList": [
+    {
+      "id": 541,
+      "character": "層",
+      "strokes": 14,
+      "onyomi": ["ソウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "高層", "reading": "こうそう", "meaning": "lantai tinggi/gedung tinggi" },
+        { "word": "一層", "reading": "いっそう", "meaning": "semakin, lebih lagi" }
+      ],
+      "extraWords": [
+        { "word": "低層", "reading": "ていそう", "meaning": "lantai rendah/gedung rendah" }
+      ]
+    },
+    {
+      "id": 542,
+      "character": "束",
+      "strokes": 7,
+      "onyomi": ["ソク"],
+      "kunyomi": ["たば"],
+      "words": [
+        { "word": "約束", "reading": "やくそく", "meaning": "janji" },
+        { "word": "花束", "reading": "はなたば", "meaning": "buket bunga" }
+      ],
+      "extraWords": [
+        { "word": "束", "reading": "たば", "meaning": "ikatan, bundel" },
+        { "word": "束ねる", "reading": "たばねる", "meaning": "mengikat menjadi satu" }
+      ]
+    },
+    {
+      "id": 543,
+      "character": "甘",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["あまい", "あまやかす"],
+      "words": [
+        { "word": "甘い", "reading": "あまい", "meaning": "manis" },
+        { "word": "甘やかす", "reading": "あまやかす", "meaning": "memanjakan (anak)" }
+      ],
+      "extraWords": [
+        { "word": "甘口", "reading": "あまくち", "meaning": "rasa manis/ringan" }
+      ]
+    },
+    {
+      "id": 544,
+      "character": "辛",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["からい"],
+      "words": [
+        { "word": "辛い", "reading": "からい", "meaning": "pedas" }
+      ],
+      "extraWords": [
+        { "word": "辛口", "reading": "からくち", "meaning": "rasa pedas/tajam" }
+      ]
+    },
+    {
+      "id": 545,
+      "character": "皿",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["さら"],
+      "words": [
+        { "word": "皿", "reading": "さら", "meaning": "piring" },
+        { "word": "大皿", "reading": "おおざら", "meaning": "piring besar" }
+      ],
+      "extraWords": [
+        { "word": "〜皿", "reading": "さら", "meaning": "... piring" },
+        { "word": "小皿", "reading": "こざら", "meaning": "piring kecil" }
+      ]
+    },
+    {
+      "id": 546,
+      "character": "綿",
+      "strokes": 14,
+      "onyomi": ["メン"],
+      "kunyomi": ["わた"],
+      "words": [
+        { "word": "綿", "reading": "めん", "meaning": "katun" },
+        { "word": "綿", "reading": "わた", "meaning": "kapas" }
+      ],
+      "extraWords": [
+        { "word": "木綿", "reading": "もめん", "meaning": "kain katun", "flag": "special" }
+      ]
+    },
+    {
+      "id": 547,
+      "character": "旧",
+      "strokes": 5,
+      "onyomi": ["キュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "旧館", "reading": "きゅうかん", "meaning": "gedung lama" },
+        { "word": "復旧", "reading": "ふっきゅう", "meaning": "pemulihan" }
+      ],
+      "extraWords": [
+        { "word": "旧姓", "reading": "きゅうせい", "meaning": "nama keluarga sebelum menikah" }
+      ]
+    },
+    {
+      "id": 548,
+      "character": "厚",
+      "strokes": 9,
+      "onyomi": ["コウ"],
+      "kunyomi": ["あつい", "あつかましい"],
+      "words": [
+        { "word": "厚生労働省", "reading": "こうせいろうどうしょう", "meaning": "Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan", "note": "→ lihat kanji #668 (労)" },
+        { "word": "厚い", "reading": "あつい", "meaning": "tebal" },
+        { "word": "厚かましい", "reading": "あつかましい", "meaning": "tidak tahu malu, lancang" }
+      ],
+      "extraWords": [
+        { "word": "厚切り", "reading": "あつぎり", "meaning": "iris tebal" },
+        { "word": "厚手", "reading": "あつで", "meaning": "bahan/barang tebal" }
+      ]
+    },
+    {
+      "id": 549,
+      "character": "薄",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["うすい", "うすめる"],
+      "words": [
+        { "word": "薄い", "reading": "うすい", "meaning": "tipis, encer" },
+        { "word": "薄手", "reading": "うすで", "meaning": "bahan/barang tipis" }
+      ],
+      "extraWords": [
+        { "word": "薄切り", "reading": "うすぎり", "meaning": "iris tipis" },
+        { "word": "薄める", "reading": "うすめる", "meaning": "mengencerkan" }
+      ]
+    },
+    {
+      "id": 550,
+      "character": "粒",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["つぶ"],
+      "words": [
+        { "word": "粒", "reading": "つぶ", "meaning": "butiran" },
+        { "word": "〜粒", "reading": "つぶ", "meaning": "... butir" }
+      ]
+    },
+    {
+      "id": 551,
+      "character": "極",
+      "strokes": 12,
+      "onyomi": ["キョク", "ゴク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "北極", "reading": "ほっきょく", "meaning": "Kutub Utara" },
+        { "word": "積極的", "reading": "せっきょくてき", "meaning": "proaktif, positif" },
+        { "word": "極", "reading": "ごく", "meaning": "sangat, amat", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "南極", "reading": "なんきょく", "meaning": "Kutub Selatan" },
+        { "word": "消極的", "reading": "しょうきょくてき", "meaning": "pasif, negatif" }
+      ]
+    },
+    {
+      "id": 552,
+      "character": "革",
+      "strokes": 9,
+      "onyomi": ["カク"],
+      "kunyomi": ["かわ"],
+      "words": [
+        { "word": "改革", "reading": "かいかく", "meaning": "reformasi" },
+        { "word": "革", "reading": "かわ", "meaning": "kulit (bahan)" }
+      ],
+      "extraWords": [
+        { "word": "革命", "reading": "かくめい", "meaning": "revolusi", "note": "→ lihat kanji #673 (命)" },
+        { "word": "革製", "reading": "かわせい", "meaning": "berbahan kulit" }
+      ]
+    },
+    {
+      "id": 553,
+      "character": "苦",
+      "strokes": 8,
+      "onyomi": ["ク"],
+      "kunyomi": ["くるしい", "くるしむ", "にがい"],
+      "words": [
+        { "word": "苦痛", "reading": "くつう", "meaning": "penderitaan, rasa sakit" },
+        { "word": "苦しい", "reading": "くるしい", "meaning": "menyakitkan, susah" }
+      ],
+      "extraWords": [
+        { "word": "苦い", "reading": "にがい", "meaning": "pahit" },
+        { "word": "苦しむ", "reading": "くるしむ", "meaning": "menderita" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "バラを花束にすると一層（　）香りがする。",
+      "optionA": "甘い",
+      "optionB": "辛い",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "肌が弱い人は、（　）のシャツを着るとよいでしょう。",
+      "optionA": "綿",
+      "optionB": "毛",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "当店のスパゲティは（　）が2人前の量です。",
+      "optionA": "一皿",
+      "optionB": "一山",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "今は田中ですが、（　）は林です。",
+      "optionA": "前名",
+      "optionB": "旧姓",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "「みそ汁、味が（　）から、今度からもう少し濃くして。」",
+      "optionA": "薄い",
+      "optionB": "厚い",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「（　）でお口の中がスッキリ、さわやか！○○キャンディー」",
+      "optionA": "一層",
+      "optionB": "一粒",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "「教育制度の改革に（　）に取り組もう！」",
+      "optionA": "消極的",
+      "optionB": "積極的",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "フランス（　）は1978年に起きた。",
+      "optionA": "革命",
+      "optionB": "改革",
+      "answer": "A"
+    }
+  ]
+}
