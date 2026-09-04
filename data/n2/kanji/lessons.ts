@@ -33,6 +33,7 @@ import w3d7 from "./week3_day7.json";
 // Week 4
 import w4d1 from "./week4_day1.json";
 import w4d2 from "./week4_day2.json";
+import w4d3 from "./week4_day3.json";
 
 export type KanjiWordFlag = "attention" | "special";
 export type KanjiWord = {
@@ -112,6 +113,7 @@ export const n2KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> 
   "4": {
     "1": w4d1 as KanjiSignLessonDay,
     "2": w4d2 as KanjiSignLessonDay,
+    "3": w4d3 as KanjiSignLessonDay,
   },
 };
 

@@ -1,0 +1,260 @@
+{
+  "week": 4,
+  "day": 3,
+  "title": "メール・はがき",
+  "subtitle": "E-mail, Postcard",
+  "translation": "Email dan Kartu Pos",
+  "sceneDescription": "Contoh email santai kepada teman: \"Sudah lama tidak bertemu, apa kabar? Aku baik-baik saja meski masih sibuk seperti biasa! Ayo kita sama-sama semangat! Sampai jumpa! -Dan. P.S. Salam untuk semuanya juga.\"\n\n Contoh surat formal kepada guru: \"Apa kabar, Sensei? Saya sangat berterima kasih atas bimbingan di kelas bahasa Jepang. Saya menjalani hari-hari yang sibuk. Sudah terbiasa dengan pekerjaan, tapi merindukan kehidupan sebagai mahasiswa. Saya mendoakan kesehatan Sensei. -Daniel Reed\"",
+  "signs": [
+    { "text": "友人へ", "meaning": "Untuk teman (gaya santai)" },
+    { "text": "先生へ", "meaning": "Untuk guru (gaya formal)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 298,
+      "character": "浅",
+      "strokes": 9,
+      "onyomi": [],
+      "kunyomi": ["あさい", "あさましい"],
+      "words": [
+        { "word": "浅い", "reading": "あさい", "meaning": "dangkal" },
+        { "word": "浅ましい", "reading": "あさましい", "meaning": "memalukan, hina" }
+      ],
+      "extraWords": [
+        { "word": "浅草", "reading": "あさくさ", "meaning": "Asakusa (nama tempat)", "note": "→ lihat kanji #488 (草)" }
+      ]
+    },
+    {
+      "id": 299,
+      "character": "君",
+      "strokes": 7,
+      "onyomi": ["クン"],
+      "kunyomi": ["きみ"],
+      "words": [
+        { "word": "〜君", "reading": "くん", "meaning": "sebutan untuk laki-laki yang lebih muda/sebaya" },
+        { "word": "君", "reading": "きみ", "meaning": "kamu (informal)" }
+      ]
+    },
+    {
+      "id": 300,
+      "character": "久",
+      "strokes": 3,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["ひさしい"],
+      "words": [
+        { "word": "永久", "reading": "えいきゅう", "meaning": "abadi, selamanya", "note": "→ lihat kanji #556 (永)" },
+        { "word": "久しぶり", "reading": "ひさしぶり", "meaning": "sudah lama tidak bertemu" }
+      ]
+    },
+    {
+      "id": 301,
+      "character": "互",
+      "strokes": 4,
+      "onyomi": ["ゴ"],
+      "kunyomi": ["たがい"],
+      "words": [
+        { "word": "相互", "reading": "そうご", "meaning": "timbal balik, saling" },
+        { "word": "お互いに", "reading": "おたがいに", "meaning": "saling, satu sama lain" }
+      ],
+      "extraWords": [
+        { "word": "交互", "reading": "こうご", "meaning": "bergantian" }
+      ]
+    },
+    {
+      "id": 302,
+      "character": "追",
+      "strokes": 9,
+      "onyomi": ["ツイ"],
+      "kunyomi": ["おう"],
+      "words": [
+        { "word": "追加", "reading": "ついか", "meaning": "tambahan" },
+        { "word": "追い越す", "reading": "おいこす", "meaning": "menyalip" }
+      ],
+      "extraWords": [
+        { "word": "追う", "reading": "おう", "meaning": "mengejar" },
+        { "word": "追い付く", "reading": "おいつく", "meaning": "menyusul, mengejar hingga sejajar" }
+      ]
+    },
+    {
+      "id": 303,
+      "character": "伸",
+      "strokes": 7,
+      "onyomi": ["シン"],
+      "kunyomi": ["のびる", "のばす"],
+      "words": [
+        { "word": "追伸", "reading": "ついしん", "meaning": "catatan tambahan (P.S.)" },
+        { "word": "伸ばす", "reading": "のばす", "meaning": "memanjangkan" }
+      ],
+      "extraWords": [
+        { "word": "伸びる", "reading": "のびる", "meaning": "tumbuh, memanjang" },
+        { "word": "伸びをする", "reading": "のびをする", "meaning": "meregangkan badan" }
+      ]
+    },
+    {
+      "id": 304,
+      "character": "皆",
+      "strokes": 9,
+      "onyomi": [],
+      "kunyomi": ["みな"],
+      "words": [
+        { "word": "皆", "reading": "みな", "meaning": "semua" }
+      ],
+      "extraWords": [
+        { "word": "皆さん", "reading": "みなさん", "meaning": "semuanya (sapaan hormat)" }
+      ]
+    },
+    {
+      "id": 305,
+      "character": "暮",
+      "strokes": 14,
+      "onyomi": ["ボ"],
+      "kunyomi": ["くれる", "くらす"],
+      "words": [
+        { "word": "お歳暮", "reading": "おせいぼ", "meaning": "hadiah akhir tahun" },
+        { "word": "暮れ", "reading": "くれ", "meaning": "akhir tahun / senja" }
+      ],
+      "extraWords": [
+        { "word": "暮らす", "reading": "くらす", "meaning": "menjalani hidup, tinggal" },
+        { "word": "夕暮れ", "reading": "ゆうぐれ", "meaning": "senja" }
+      ]
+    },
+    {
+      "id": 306,
+      "character": "慣",
+      "strokes": 14,
+      "onyomi": ["カン"],
+      "kunyomi": ["なれる", "ならす"],
+      "words": [
+        { "word": "習慣", "reading": "しゅうかん", "meaning": "kebiasaan" },
+        { "word": "慣れる", "reading": "なれる", "meaning": "terbiasa" }
+      ]
+    },
+    {
+      "id": 307,
+      "character": "活",
+      "strokes": 9,
+      "onyomi": ["カツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "生活", "reading": "せいかつ", "meaning": "kehidupan" },
+        { "word": "活字", "reading": "かつじ", "meaning": "huruf cetak" }
+      ],
+      "extraWords": [
+        { "word": "活用", "reading": "かつよう", "meaning": "pemanfaatan, konjugasi" },
+        { "word": "活発（な）", "reading": "かっぱつ", "meaning": "aktif, bersemangat" }
+      ]
+    },
+    {
+      "id": 308,
+      "character": "恋",
+      "strokes": 10,
+      "onyomi": ["レン"],
+      "kunyomi": ["こい", "こいしい"],
+      "words": [
+        { "word": "恋愛", "reading": "れんあい", "meaning": "percintaan", "note": "→ lihat kanji #356 (愛)" },
+        { "word": "恋人", "reading": "こいびと", "meaning": "pacar" }
+      ],
+      "extraWords": [
+        { "word": "恋", "reading": "こい", "meaning": "cinta" },
+        { "word": "恋しい", "reading": "こいしい", "meaning": "rindu" }
+      ]
+    },
+    {
+      "id": 309,
+      "character": "健",
+      "strokes": 11,
+      "onyomi": ["ケン"],
+      "kunyomi": ["すこやか"],
+      "words": [
+        { "word": "健在", "reading": "けんざい", "meaning": "masih sehat/hidup" },
+        { "word": "健やか（な）", "reading": "すこやか", "meaning": "sehat, bugar", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "健全（な）", "reading": "けんぜん", "meaning": "sehat dan wajar" }
+      ]
+    },
+    {
+      "id": 310,
+      "character": "康",
+      "strokes": 11,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "健康", "reading": "けんこう", "meaning": "kesehatan" },
+        { "word": "健康保険証", "reading": "けんこうほけんしょう", "meaning": "kartu asuransi kesehatan" }
+      ]
+    },
+    {
+      "id": 311,
+      "character": "祈",
+      "strokes": 8,
+      "onyomi": ["キ"],
+      "kunyomi": ["いのる"],
+      "words": [
+        { "word": "祈願", "reading": "きがん", "meaning": "doa permohonan" },
+        { "word": "祈る", "reading": "いのる", "meaning": "berdoa" }
+      ],
+      "extraWords": [
+        { "word": "祈り", "reading": "いのり", "meaning": "doa" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "久しぶりに会った友達はひげを（　）いた。",
+      "optionA": "伸びて",
+      "optionB": "伸ばして",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "この道路は（　）禁止です。",
+      "optionA": "追い越し",
+      "optionB": "引っ越し",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この川は（　）ので、子どもたちが遊ぶのにちょうどいい。",
+      "optionA": "浅い",
+      "optionB": "細い",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "P.S.というのは（　）のことです。",
+      "optionA": "追伸",
+      "optionB": "返信",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "年の（　）にお世話になった人にお礼をする習慣がある。",
+      "optionA": "慣れ",
+      "optionB": "暮れ",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）保険証を持ってきてください。",
+      "optionA": "健康",
+      "optionB": "生活",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "私はいつも食事の前に（　）をします。",
+      "optionA": "お祈り",
+      "optionB": "お祝い",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）議論をする。",
+      "optionA": "活発な",
+      "optionB": "健在な",
+      "answer": "A"
+    }
+  ]
+}
