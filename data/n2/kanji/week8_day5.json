@@ -1,0 +1,241 @@
+{
+  "week": 8,
+  "day": 5,
+  "title": "記事②",
+  "subtitle": "Articles ②",
+  "translation": "Artikel Berita ②",
+  "sceneDescription": "Contoh artikel: \"Langkah pertama menuju perbaikan hubungan Jepang-A: PM Morishita akan kunjungi A bulan depan. Untuk memperbaiki hubungan dengan Negara A, PM Morishita memutuskan mengadakan pembicaraan langsung dengan PM Negara A bulan depan. ...Menteri Luar Negeri Muraki, yang sebelumnya bersikap kritis terhadap kebijakan PM terhadap A, memuji: 'Saya ingin menyampaikan rasa hormat atas keputusan yang bijaksana dan berani ini.'\"\n\n \"Pelaku jambret tertangkap lewat sketsa wajah: Pada pagi tanggal 10, Nakamura Shino (70) dijambret di jalan dekat Stasiun Yamakawa, namun cucunya Sayaka-chan (5) yang bersamanya mengingat dengan baik wajah pelaku, mengatakan 'dia memakai topi rajut dan mirip dengan XX yang muncul di TV.' Kantor polisi Yamakawa membuat sketsa wajah berdasarkan cerita Sayaka-chan, yang mengarah pada penangkapan pelaku. Dalam pemeriksaan, tersangka Yamamoto Isamu (21) mengaku melakukannya karena ingin uang untuk bersenang-senang.\"",
+  "signs": [
+    { "text": "日Ａ関係改善へ第一歩", "meaning": "Langkah pertama menuju perbaikan hubungan Jepang-A" },
+    { "text": "森下首相　来月訪A", "meaning": "PM Morishita akan kunjungi A bulan depan" },
+    { "text": "似顔絵でひったくり犯人捕まる", "meaning": "Pelaku jambret tertangkap lewat sketsa wajah" }
+  ],
+  "kanjiList": [
+    {
+      "id": 708,
+      "character": "批",
+      "strokes": 7,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "批判", "reading": "ひはん", "meaning": "kritik" }
+      ],
+      "extraWords": [
+        { "word": "批評", "reading": "ひひょう", "meaning": "ulasan, kritik" }
+      ]
+    },
+    {
+      "id": 709,
+      "character": "判",
+      "strokes": 7,
+      "onyomi": ["ハン", "バン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "判断", "reading": "はんだん", "meaning": "keputusan, penilaian" },
+        { "word": "裁判", "reading": "さいばん", "meaning": "persidangan" }
+      ],
+      "extraWords": [
+        { "word": "評判", "reading": "ひょうばん", "meaning": "reputasi, ketenaran" }
+      ]
+    },
+    {
+      "id": 710,
+      "character": "臣",
+      "strokes": 7,
+      "onyomi": ["ジン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "大臣", "reading": "だいじん", "meaning": "menteri" },
+        { "word": "外務大臣", "reading": "がいむだいじん", "meaning": "menteri luar negeri" }
+      ],
+      "extraWords": [
+        { "word": "総理大臣", "reading": "そうりだいじん", "meaning": "perdana menteri" }
+      ]
+    },
+    {
+      "id": 711,
+      "character": "賢",
+      "strokes": 16,
+      "onyomi": ["ケン"],
+      "kunyomi": ["かしこい"],
+      "words": [
+        { "word": "賢明（な）", "reading": "けんめい", "meaning": "bijaksana, cerdik" },
+        { "word": "賢い", "reading": "かしこい", "meaning": "pandai, cerdas", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 712,
+      "character": "勇",
+      "strokes": 9,
+      "onyomi": ["ユウ"],
+      "kunyomi": ["いさましい"],
+      "words": [
+        { "word": "勇気", "reading": "ゆうき", "meaning": "keberanian" },
+        { "word": "勇ましい", "reading": "いさましい", "meaning": "gagah berani", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 713,
+      "character": "敬",
+      "strokes": 12,
+      "onyomi": ["ケイ"],
+      "kunyomi": ["うやまう"],
+      "words": [
+        { "word": "敬意", "reading": "けいい", "meaning": "rasa hormat" },
+        { "word": "敬う", "reading": "うやまう", "meaning": "menghormati", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "敬語", "reading": "けいご", "meaning": "bahasa hormat" }
+      ]
+    },
+    {
+      "id": 714,
+      "character": "評",
+      "strokes": 12,
+      "onyomi": ["ヒョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "評価", "reading": "ひょうか", "meaning": "penilaian, apresiasi" }
+      ],
+      "extraWords": [
+        { "word": "評論", "reading": "ひょうろん", "meaning": "kritik/ulasan" }
+      ]
+    },
+    {
+      "id": 715,
+      "character": "似",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["にる"],
+      "words": [
+        { "word": "似る", "reading": "にる", "meaning": "mirip" },
+        { "word": "似顔絵", "reading": "にがおえ", "meaning": "sketsa wajah" }
+      ],
+      "extraWords": [
+        { "word": "似合う", "reading": "にあう", "meaning": "cocok, serasi" }
+      ]
+    },
+    {
+      "id": 716,
+      "character": "犯",
+      "strokes": 5,
+      "onyomi": ["ハン"],
+      "kunyomi": ["おかす"],
+      "words": [
+        { "word": "犯人", "reading": "はんにん", "meaning": "pelaku kejahatan" },
+        { "word": "犯す", "reading": "おかす", "meaning": "melakukan (kejahatan)", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "犯罪", "reading": "はんざい", "meaning": "kejahatan" }
+      ]
+    },
+    {
+      "id": 717,
+      "character": "孫",
+      "strokes": 10,
+      "onyomi": ["ソン"],
+      "kunyomi": ["まご"],
+      "words": [
+        { "word": "子孫", "reading": "しそん", "meaning": "keturunan" },
+        { "word": "孫", "reading": "まご", "meaning": "cucu" }
+      ]
+    },
+    {
+      "id": 718,
+      "character": "娘",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["むすめ"],
+      "words": [
+        { "word": "娘", "reading": "むすめ", "meaning": "anak perempuan" }
+      ],
+      "extraWords": [
+        { "word": "孫娘", "reading": "まごむすめ", "meaning": "cucu perempuan" }
+      ]
+    },
+    {
+      "id": 719,
+      "character": "覚",
+      "strokes": 12,
+      "onyomi": ["カク"],
+      "kunyomi": ["おぼえる", "さます", "さめる"],
+      "words": [
+        { "word": "感覚", "reading": "かんかく", "meaning": "indra, sensasi" },
+        { "word": "覚ます", "reading": "さます", "meaning": "membangunkan", "flag": "attention" },
+        { "word": "覚める", "reading": "さめる", "meaning": "terbangun", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "覚える", "reading": "おぼえる", "meaning": "mengingat, mempelajari" },
+        { "word": "目覚まし時計", "reading": "めざましどけい", "meaning": "jam alarm" }
+      ]
+    },
+    {
+      "id": 720,
+      "character": "帽",
+      "strokes": 12,
+      "onyomi": ["ボウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "帽子", "reading": "ぼうし", "meaning": "topi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "あの店は安くておいしいと（　）だ。",
+      "optionA": "評価",
+      "optionB": "評判",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "人間だから、（　）人でも判断を誤ることがある。",
+      "optionA": "賢い",
+      "optionB": "勇ましい",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "（　）を正しく使うのはなかなか難しい。",
+      "optionA": "敬語",
+      "optionB": "敬意",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "大臣の発言を国民は（　）的に受けとめた。",
+      "optionA": "批評",
+      "optionB": "批判",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "その帽子、あなたによく（　）いますよ。",
+      "optionA": "似て",
+      "optionB": "似合って",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "朝早く目が（　）のに、起きられなかった。",
+      "optionA": "覚めた",
+      "optionB": "覚ました",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "あの娘さんは有名な武士の（　）だそうです。",
+      "optionA": "祖先",
+      "optionB": "子孫",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）の顔や服装を覚えていますか。",
+      "optionA": "犯人",
+      "optionB": "判人",
+      "answer": "A"
+    }
+  ]
+}
