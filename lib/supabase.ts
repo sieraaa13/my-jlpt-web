@@ -15,6 +15,9 @@ export interface User {
   name: string;
   created_at: string;
   last_login: string;
+  line_user_id?: string | null;
+  line_linked_at?: string | null;
+  line_consent?: boolean;
 }
 
 export interface ExamHistory {

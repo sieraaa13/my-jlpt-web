@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { buildMemoryContext, saveChatTurn } from "@/lib/siera-memory";
+import { saveChatTurn } from "@/lib/siera-memory";
+import { buildBaseSystemPrompt } from "@/lib/siera-prompt";
 
 export const runtime = "nodejs";
 
@@ -13,33 +14,8 @@ export async function POST(req: NextRequest) {
 
     const { messages, examContext, level, isExamFinished, userId, userName } = await req.json();
 
-    // ====== SISTEM PROMPT DASAR — KARAKTER SIERA ======
-    let systemPrompt = `Kamu adalah SIERA, tutor JLPT yang ramah, sabar, dan ahli bahasa Jepang.
-Karaktermu: hangat, suportif, suka memberi semangat, kadang menyelipkan kata Jepang ringan.
-Panggil dirimu "Siera" (jangan "AI" atau "asisten").
-
-ATURAN UMUM:
-1. Selalu jawab dalam Bahasa Indonesia (kecuali user minta lain).
-2. Singkat, jelas, mudah dipahami.
-3. Saat menyebut kata Jepang, sertakan: tulisan Jepang + romaji + arti.
-   Contoh: 学校 (gakkou) artinya "sekolah".
-4. Jangan terlalu panjang.`;
-
-    if (level && level !== "General") {
-      systemPrompt += `\n\nUser sedang belajar level JLPT ${level}.`;
-    }
-
-    if (userName) {
-      systemPrompt += `\n\nNama user yang sedang chat sekarang: ${userName}. Panggil dengan nama ini sesekali secara natural, jangan berlebihan.`;
-    }
-
-    // ====== MEMORI JANGKA PANJANG (kalau user login) ======
-    if (userId) {
-      const memoryBlock = await buildMemoryContext(userId);
-      if (memoryBlock) {
-        systemPrompt += memoryBlock;
-      }
-    }
+    // ====== SISTEM PROMPT DASAR — KARAKTER SIERA + MEMORI ======
+    let systemPrompt = await buildBaseSystemPrompt({ level, userName, userId });
 
     // ====== MODE 1: UJIAN BERLANGSUNG ======
     if (examContext && examContext.trim().length > 0 && !isExamFinished) {

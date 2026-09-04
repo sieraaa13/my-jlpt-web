@@ -163,11 +163,16 @@ export async function buildMemoryContext(userId: string): Promise<string> {
  * Dipanggil setelah balasan berhasil dibuat. Gagal-diam (tidak melempar
  * error) supaya kegagalan simpan histori tidak menggagalkan respon chat.
  */
-export async function saveChatTurn(userId: string, userContent: string, assistantContent: string) {
+export async function saveChatTurn(
+  userId: string,
+  userContent: string,
+  assistantContent: string,
+  channel: "web" | "line" = "web"
+) {
   try {
     await supabase.from("chat_messages").insert([
-      { user_id: userId, role: "user", content: userContent },
-      { user_id: userId, role: "assistant", content: assistantContent },
+      { user_id: userId, role: "user", content: userContent, channel },
+      { user_id: userId, role: "assistant", content: assistantContent, channel },
     ]);
   } catch (err) {
     console.error("Gagal menyimpan chat_messages:", err);

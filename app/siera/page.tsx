@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Send, Loader2, MessageCircleHeart } from "lucide-react";
+import { Send, Loader2, MessageCircleHeart, MessageCircle } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Card } from "@/components/ui/card";
@@ -13,6 +13,130 @@ import { useAuth } from "@/components/auth-context";
 interface Message {
   role: "user" | "assistant";
   content: string;
+}
+
+function LineLinkCard({ userId, initiallyLinked }: { userId: string; initiallyLinked: boolean }) {
+  const [linked, setLinked] = useState(initiallyLinked);
+  const [consent, setConsent] = useState(false);
+  const [code, setCode] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<{ type: "error" | "success"; text: string } | null>(null);
+
+  const addFriendUrl = process.env.NEXT_PUBLIC_LINE_ADD_FRIEND_URL;
+
+  const handleLink = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!consent || !code.trim() || busy) return;
+    setBusy(true);
+    setMessage(null);
+
+    try {
+      const res = await fetch("/api/line/link", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, code: code.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Gagal menghubungkan LINE");
+
+      setLinked(true);
+      setMessage({ type: "success", text: "LINE berhasil terhubung! Siera akan menyapa 2x seminggu (Rabu & Minggu)." });
+    } catch (err: any) {
+      setMessage({ type: "error", text: err.message });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleUnlink = async () => {
+    if (busy) return;
+    setBusy(true);
+    setMessage(null);
+
+    try {
+      const res = await fetch("/api/line/unlink", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Gagal memutuskan koneksi LINE");
+
+      setLinked(false);
+      setConsent(false);
+      setCode("");
+      setMessage(null);
+    } catch (err: any) {
+      setMessage({ type: "error", text: err.message });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <Card className="p-5 mb-4">
+      <div className="flex items-center gap-2 mb-3">
+        <MessageCircle className="w-5 h-5 text-primary" />
+        <h2 className="font-semibold">Siera di LINE</h2>
+      </div>
+
+      {linked ? (
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-sm text-muted-foreground">
+            ✅ Terhubung. Siera akan menyapamu lewat LINE tiap Rabu & Minggu, dan kamu bisa chat balik kapan saja.
+          </p>
+          <Button variant="ghost" size="sm" onClick={handleUnlink} disabled={busy} className="shrink-0 text-red-500 hover:text-red-600">
+            Putuskan
+          </Button>
+        </div>
+      ) : (
+        <div className="space-y-3 text-sm">
+          <p className="text-muted-foreground">
+            Hubungkan LINE supaya Siera bisa menyapamu langsung berdasarkan progres belajarmu — bukan cuma di web.
+          </p>
+          <ol className="list-decimal list-inside text-muted-foreground space-y-1">
+            <li>
+              {addFriendUrl ? (
+                <a href={addFriendUrl} target="_blank" rel="noopener noreferrer" className="text-primary underline">
+                  Tambahkan Siera sebagai teman di LINE
+                </a>
+              ) : (
+                "Tambahkan Siera sebagai teman di LINE"
+              )}
+            </li>
+            <li>Kirim pesan apa saja ke Siera di LINE — dia akan membalas dengan kode 6 karakter.</li>
+            <li>Masukkan kode itu di bawah ini.</li>
+          </ol>
+
+          <form onSubmit={handleLink} className="space-y-2 pt-1">
+            <input
+              value={code}
+              onChange={(e) => setCode(e.target.value.toUpperCase())}
+              placeholder="Kode dari LINE (mis. AB2CDE)"
+              maxLength={6}
+              className="w-full bg-muted rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary tracking-widest uppercase"
+            />
+            <label className="flex items-start gap-2 text-xs text-muted-foreground">
+              <input
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="mt-0.5"
+              />
+              Saya setuju Siera mengirim pesan personal ke LINE saya berdasarkan data belajar saya (bisa diputuskan kapan saja).
+            </label>
+            <Button type="submit" size="sm" disabled={!consent || !code.trim() || busy} className="rounded-lg">
+              {busy ? <Loader2 className="w-4 h-4 animate-spin" /> : "Hubungkan"}
+            </Button>
+          </form>
+        </div>
+      )}
+
+      {message && (
+        <p className={`text-xs mt-2 ${message.type === "error" ? "text-red-500" : "text-green-600"}`}>{message.text}</p>
+      )}
+    </Card>
+  );
 }
 
 export default function SieraPage() {
@@ -105,6 +229,8 @@ export default function SieraPage() {
             </Link>
           </Card>
         ) : (
+          <>
+          <LineLinkCard userId={user.id} initiallyLinked={!!user.line_consent && !!user.line_user_id} />
           <Card className="flex-1 flex flex-col overflow-hidden p-0 min-h-[60vh]">
             <div className="flex-1 overflow-y-auto p-4 space-y-3 text-sm">
               {messages.length === 0 && (
@@ -162,6 +288,7 @@ export default function SieraPage() {
               </Button>
             </form>
           </Card>
+          </>
         )}
       </div>
 
