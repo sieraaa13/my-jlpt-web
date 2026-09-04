@@ -1,0 +1,240 @@
+{
+  "week": 5,
+  "day": 2,
+  "title": "家庭用品　洗剤①",
+  "subtitle": "Household Goods (Detergents) ①",
+  "translation": "Peralatan Rumah Tangga (Deterjen) ①",
+  "sceneDescription": "Ilustrasi pertama menunjukkan deterjen netral「フワール」untuk mencuci benang wol dan pakaian halus, serta pelembut kain「ソフリン」beraroma bunga yang membuat pakaian dalam dan handuk jadi lembut.\n\n Ilustrasi kedua menunjukkan deterjen bubuk「スマッシュ」dengan instruksi agar dilarutkan dulu dalam air sebelum dipakai, serta versi cairnya untuk noda lumpur membandel — dioleskan langsung ke bagian kerah/lengan yang kotor sebelum dicuci bersama pakaian lain di mesin cuci, ampuh menghilangkan noda lumpur maupun bercak kuning.",
+  "signs": [
+    { "text": "毛糸・おしゃれ着洗いの中性洗剤", "meaning": "Deterjen netral untuk benang wol/pakaian halus" },
+    { "text": "柔軟剤（肌着やタオルを柔らかく仕上げます）", "meaning": "Pelembut kain (melembutkan pakaian dalam & handuk)" },
+    { "text": "洗剤は水によく溶かしてからご使用ください", "meaning": "Larutkan deterjen dalam air sebelum digunakan" },
+    { "text": "しつこい泥汚れに！", "meaning": "Untuk noda lumpur membandel!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 387,
+      "character": "毛",
+      "strokes": 4,
+      "onyomi": ["モウ"],
+      "kunyomi": ["け"],
+      "words": [
+        { "word": "羊毛", "reading": "ようもう", "meaning": "wol/bulu domba" },
+        { "word": "毛", "reading": "け", "meaning": "bulu, rambut" }
+      ],
+      "extraWords": [
+        { "word": "毛皮", "reading": "けがわ", "meaning": "bulu binatang (fur)" }
+      ]
+    },
+    {
+      "id": 388,
+      "character": "糸",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["いと"],
+      "words": [
+        { "word": "糸", "reading": "いと", "meaning": "benang" }
+      ],
+      "extraWords": [
+        { "word": "毛糸", "reading": "けいと", "meaning": "benang wol" }
+      ]
+    },
+    {
+      "id": 389,
+      "character": "肌",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["はだ"],
+      "words": [
+        { "word": "肌", "reading": "はだ", "meaning": "kulit" }
+      ],
+      "extraWords": [
+        { "word": "肌着", "reading": "はだぎ", "meaning": "pakaian dalam" }
+      ]
+    },
+    {
+      "id": 390,
+      "character": "柔",
+      "strokes": 9,
+      "onyomi": ["ジュウ"],
+      "kunyomi": ["やわらかい"],
+      "words": [
+        { "word": "柔軟（な）", "reading": "じゅうなん", "meaning": "lentur, fleksibel" },
+        { "word": "柔道", "reading": "じゅうどう", "meaning": "judo" },
+        { "word": "柔らかい", "reading": "やわらかい", "meaning": "lembut, empuk" }
+      ]
+    },
+    {
+      "id": 391,
+      "character": "香",
+      "strokes": 9,
+      "onyomi": ["コウ"],
+      "kunyomi": ["かおり", "かおる"],
+      "words": [
+        { "word": "香水", "reading": "こうすい", "meaning": "parfum" },
+        { "word": "無香料", "reading": "むこうりょう", "meaning": "tanpa pewangi", "note": "→ lihat kanji #484 (無)" },
+        { "word": "香辛料", "reading": "こうしんりょう", "meaning": "rempah-rempah", "note": "→ lihat kanji #544 (辛)" },
+        { "word": "香り", "reading": "かおり", "meaning": "aroma, wangi" }
+      ]
+    },
+    {
+      "id": 392,
+      "character": "軟",
+      "strokes": 11,
+      "onyomi": ["ナン"],
+      "kunyomi": ["やわらかい"],
+      "words": [
+        { "word": "軟弱（な）", "reading": "なんじゃく", "meaning": "lemah" },
+        { "word": "柔軟体操", "reading": "じゅうなんたいそう", "meaning": "senam peregangan", "note": "→ lihat kanji #450 (操)" },
+        { "word": "軟らかい", "reading": "やわらかい", "meaning": "lembut", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 393,
+      "character": "溶",
+      "strokes": 13,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["とける", "とかす"],
+      "words": [
+        { "word": "溶岩", "reading": "ようがん", "meaning": "lava", "note": "→ lihat kanji #458 (岩)" },
+        { "word": "溶ける", "reading": "とける", "meaning": "larut, meleleh" }
+      ],
+      "extraWords": [
+        { "word": "溶かす", "reading": "とかす", "meaning": "melarutkan, melelehkan" }
+      ]
+    },
+    {
+      "id": 394,
+      "character": "濯",
+      "strokes": 17,
+      "onyomi": ["タク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "洗濯", "reading": "せんたく", "meaning": "mencuci pakaian" }
+      ],
+      "extraWords": [
+        { "word": "洗濯機", "reading": "せんたくき", "meaning": "mesin cuci" }
+      ]
+    },
+    {
+      "id": 395,
+      "character": "接",
+      "strokes": 11,
+      "onyomi": ["セツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "直接", "reading": "ちょくせつ", "meaning": "langsung" },
+        { "word": "面接", "reading": "めんせつ", "meaning": "wawancara", "note": "→ lihat kanji #449 (面)" }
+      ],
+      "extraWords": [
+        { "word": "間接", "reading": "かんせつ", "meaning": "tidak langsung" },
+        { "word": "接近", "reading": "せっきん", "meaning": "mendekat" }
+      ]
+    },
+    {
+      "id": 396,
+      "character": "塗",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["ぬる"],
+      "words": [
+        { "word": "塗る", "reading": "ぬる", "meaning": "mengoleskan, mengecat" }
+      ]
+    },
+    {
+      "id": 397,
+      "character": "緒",
+      "strokes": 14,
+      "onyomi": ["ショ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "一緒", "reading": "いっしょ", "meaning": "bersama" }
+      ]
+    },
+    {
+      "id": 398,
+      "character": "泥",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["どろ"],
+      "words": [
+        { "word": "泥", "reading": "どろ", "meaning": "lumpur" }
+      ],
+      "extraWords": [
+        { "word": "泥棒", "reading": "どろぼう", "meaning": "pencuri", "note": "→ lihat kanji #453 (棒)" }
+      ]
+    },
+    {
+      "id": 399,
+      "character": "黄",
+      "strokes": 11,
+      "onyomi": ["オウ"],
+      "kunyomi": ["き"],
+      "words": [
+        { "word": "卵黄", "reading": "らんおう", "meaning": "kuning telur", "note": "→ lihat kanji #598 (卵), #433 (身)" },
+        { "word": "（卵の）黄身", "reading": "きみ", "meaning": "kuning telur" }
+      ],
+      "extraWords": [
+        { "word": "黄色", "reading": "きいろ", "meaning": "warna kuning" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "スポーツには（　）体操は欠かせない。",
+      "optionA": "軟弱",
+      "optionB": "柔軟",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "猫を抱いたら、服に猫の（　）がたくさんついてしまった。",
+      "optionA": "毛",
+      "optionB": "糸",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この化粧品は肌の弱い方用で、（　）は使用しておりません。",
+      "optionA": "香料",
+      "optionB": "香辛料",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "妹は（　）の選手です。",
+      "optionA": "茶道",
+      "optionB": "柔道",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "その看板は黄色いペンキで（　）あってよく目立つ。",
+      "optionA": "写して",
+      "optionB": "塗って",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "この風邪薬はお湯に（　）お飲みください。",
+      "optionA": "溶かして",
+      "optionB": "溶けて",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "子供たちは（　）だらけになって遊ぶので、洗濯が大変だ。",
+      "optionA": "泥",
+      "optionB": "肌",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）に映画に行きませんか。",
+      "optionA": "一諸",
+      "optionB": "一緒",
+      "answer": "B"
+    }
+  ]
+}
