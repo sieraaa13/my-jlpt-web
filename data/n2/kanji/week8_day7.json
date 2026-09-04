@@ -1,0 +1,141 @@
+{
+  "week": 8,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 8 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "コンサート会場は大勢のファンで超満員になった。", "target": "大勢", "choices": ["だいせい", "おおせい", "たいせい", "おおぜい"], "answer": "おおぜい" },
+    { "sentence": "母は典型的な古い日本の女性です。", "target": "典型的", "choices": ["もはんてき", "りそうてき", "でんとうてき", "てんけいてき"], "answer": "てんけいてき" },
+    { "sentence": "子供の意志も尊重すべきです。", "target": "尊重", "choices": ["けいじゅう", "そんじゅう", "けいちょう", "そんちょう"], "answer": "そんちょう" },
+    { "sentence": "現代人は他人を敬う気持ちに欠けているのではないだろうか。", "target": "敬う", "choices": ["さからう", "うやまう", "あしらう", "したがう"], "answer": "うやまう" },
+    { "sentence": "補足説明をさせて頂きます。", "target": "補足", "choices": ["ふそく", "ほそく", "ふぞく", "ほぞく"], "answer": "ほそく" },
+    { "sentence": "兄は県庁で職員として働いています。", "target": "県庁", "choices": ["けんちょう", "けんてい", "けんしょう", "けんしょ"], "answer": "けんちょう" },
+    { "sentence": "被告は無罪を主張している。", "target": "被告", "choices": ["はこく", "ひこく", "ふこく", "へこく"], "answer": "ひこく" },
+    { "sentence": "犯した罪をつぐなってほしい。", "target": "犯した", "choices": ["ほんした", "おこした", "はんした", "おかした"], "answer": "おかした" },
+    { "sentence": "環境問題について考える。", "target": "環境", "choices": ["けんきょう", "かんきょう", "かんきゅう", "けんきゅう"], "answer": "かんきょう" },
+    { "sentence": "各国の選手たちは技を競い合った。", "target": "競い", "choices": ["きそい", "あらそい", "うばい", "うやまい"], "answer": "きそい" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "会社の信頼を回復するようつとめる。", "reading": "つとめる", "choices": ["務める", "勤める", "努める", "勉める"], "answer": "努める" },
+    { "sentence": "日本チームは決勝でやぶれた。", "reading": "やぶれた", "choices": ["敗れた", "破れた", "折れた", "倒れた"], "answer": "敗れた" },
+    { "sentence": "湯かげんはいかがですか。", "reading": "かげん", "choices": ["増減", "加減", "削減", "過減"], "answer": "加減" },
+    { "sentence": "不況のため社員の半数がかいこされた。", "reading": "かいこ", "choices": ["解子", "解放", "解雇", "解戸"], "answer": "解雇" },
+    { "sentence": "奥さんの料理のうでまえはすごいですね。", "reading": "うでまえ", "choices": ["腕毎", "腕力", "腕米", "腕前"], "answer": "腕前" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "新（　）インフルエンザが流行している。", "target": "新型", "choices": ["米", "型", "兵", "星"], "answer": "型" },
+    { "sentence": "外国人には選挙（　）がありますか。", "target": "選挙権", "choices": ["件", "令", "条", "権"], "answer": "権" },
+    { "sentence": "大雨のため、各地で水（　）が起きている。", "target": "水害", "choices": ["害", "絶", "爆", "暴"], "answer": "害" },
+    { "sentence": "米国のカリフォルニア（　）から来ました。", "target": "カリフォルニア州", "choices": ["週", "集", "州", "宗"], "answer": "州" },
+    { "sentence": "野（　）から首相の発言に対して批判の声が上がった。", "target": "野党", "choices": ["党", "軍", "童", "覚"], "answer": "党" },
+    { "sentence": "国は（　）額の借金があります。", "target": "巨額", "choices": ["亡", "総", "巨", "満"], "answer": "巨" }
+  ],
+  "passageQuestion": {
+    "passage": "会社の長は社長、学校の長は校長、大学の長は学長で、[22]（　）の長は総理[23]（　）です。厚生労働省、文部科学省、環境省など各省の長も[24]（　）ですが、気象庁、警察庁など庁の場合は[25]（　）と呼ばれます。",
+    "wordBank": ["しゅしょう", "ちょうかん", "だいじん", "せいふ"],
+    "blanks": [
+      { "number": 22, "answer": "せいふ", "answerKanji": "政府" },
+      { "number": 23, "answer": "だいじん", "answerKanji": "大臣" },
+      { "number": 24, "answer": "だいじん", "answerKanji": "大臣" },
+      { "number": 25, "answer": "ちょうかん", "answerKanji": "長官" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "上回る・下回る",
+    "translation": "Exceed / Fall Below",
+    "description": "Halaman ini mengajarkan kosakata untuk membaca grafik dan tabel statistik.\nI. Grafik: ①増加する／上昇する（meningkat/naik）②横ばい／一定（stabil/tetap）③大幅に上昇する（naik drastis）④減少する／下降する（menurun/turun）⑤著しく減少する／下降する（turun tajam）⑥AはBを上回る（A melebihi B）, BはAを下回る（B di bawah A）, Aが1位を占める（A menduduki peringkat 1）.\nII. Tabel: menunjukkan perbandingan jumlah hari dibanding tahun lalu dan tahun rata-rata, serta perbandingan panjang dan jumlah untuk tiga wilayah A, B, dan C.",
+    "kanjiList": [
+      {
+        "id": 733,
+        "character": "昇",
+        "strokes": 8,
+        "onyomi": ["ショウ"],
+        "kunyomi": ["のぼる"],
+        "words": [
+          { "word": "上昇", "reading": "じょうしょう", "meaning": "kenaikan" }
+        ],
+        "extraWords": [
+          { "word": "昇る", "reading": "のぼる", "meaning": "naik" }
+        ]
+      },
+      {
+        "id": 734,
+        "character": "幅",
+        "strokes": 12,
+        "onyomi": [],
+        "kunyomi": ["はば"],
+        "words": [
+          { "word": "幅", "reading": "はば", "meaning": "lebar" }
+        ],
+        "extraWords": [
+          { "word": "大幅（な）", "reading": "おおはば", "meaning": "berskala besar" }
+        ]
+      },
+      {
+        "id": 735,
+        "character": "著",
+        "strokes": 11,
+        "onyomi": ["チョ"],
+        "kunyomi": ["あらわす", "いちじるしい"],
+        "words": [
+          { "word": "著者", "reading": "ちょしゃ", "meaning": "penulis" },
+          { "word": "著す", "reading": "あらわす", "meaning": "menulis, mengarang", "flag": "attention" }
+        ],
+        "extraWords": [
+          { "word": "著しい", "reading": "いちじるしい", "meaning": "signifikan, mencolok", "flag": "attention" }
+        ]
+      },
+      {
+        "id": 736,
+        "character": "占",
+        "strokes": 5,
+        "onyomi": [],
+        "kunyomi": ["しめる", "うらなう"],
+        "words": [
+          { "word": "占める", "reading": "しめる", "meaning": "menduduki, menempati" }
+        ],
+        "extraWords": [
+          { "word": "占う", "reading": "うらなう", "meaning": "meramal", "flag": "attention" }
+        ]
+      },
+      {
+        "id": 737,
+        "character": "比",
+        "strokes": 4,
+        "onyomi": ["ヒ"],
+        "kunyomi": ["くらべる"],
+        "words": [
+          { "word": "比較", "reading": "ひかく", "meaning": "perbandingan" }
+        ],
+        "extraWords": [
+          { "word": "比べる", "reading": "くらべる", "meaning": "membandingkan" }
+        ]
+      },
+      {
+        "id": 738,
+        "character": "較",
+        "strokes": 13,
+        "onyomi": ["カク"],
+        "kunyomi": [],
+        "words": [
+          { "word": "比較的", "reading": "ひかくてき", "meaning": "relatif, secara perbandingan" }
+        ]
+      },
+      {
+        "id": 739,
+        "character": "並",
+        "strokes": 8,
+        "onyomi": [],
+        "kunyomi": ["なみ", "ならべる", "ならぶ"],
+        "words": [
+          { "word": "平年並み", "reading": "へいねんなみ", "meaning": "sama seperti tahun biasa" },
+          { "word": "並ぶ", "reading": "ならぶ", "meaning": "berbaris, berjajar" }
+        ],
+        "extraWords": [
+          { "word": "並木", "reading": "なみき", "meaning": "deretan pohon" },
+          { "word": "並べる", "reading": "ならべる", "meaning": "menjajarkan, menata" }
+        ]
+      }
+    ]
+  }
+}
