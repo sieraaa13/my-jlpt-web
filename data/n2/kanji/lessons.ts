@@ -64,6 +64,7 @@ import w7d3 from "./week7_day3.json";
 import w7d4 from "./week7_day4.json";
 import w7d5 from "./week7_day5.json";
 import w7d6 from "./week7_day6.json";
+import w7d7 from "./week7_day7.json";
 
 export type KanjiWordFlag = "attention" | "special";
 export type KanjiWord = {
@@ -192,6 +193,9 @@ export const n2KanjiTests: Record<string, Record<string, N2KanjiTestDay>> = {
   },
   "6": {
     "7": w6d7 as unknown as N2KanjiTestDay,
+  },
+  "7": {
+    "7": w7d7 as unknown as N2KanjiTestDay,
   },
 };
 

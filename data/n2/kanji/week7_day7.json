@@ -1,0 +1,163 @@
+{
+  "week": 7,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 7 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "相手に考える時間を与える。", "target": "与える", "choices": ["きたえる", "こたえる", "あたえる", "つたえる"], "answer": "あたえる" },
+    { "sentence": "濃い目のコーヒーが好きだ。", "target": "濃い目", "choices": ["ぬいめ", "のいめ", "こいめ", "すいめ"], "answer": "こいめ" },
+    { "sentence": "人々を幸せな未来へと導く。", "target": "導く", "choices": ["たなびく", "みちびく", "ながびく", "ささやく"], "answer": "みちびく" },
+    { "sentence": "自らの主張を明確に述べる。", "target": "述べる", "choices": ["のべる", "すべる", "なべる", "くべる"], "answer": "のべる" },
+    { "sentence": "乱筆乱文お許しください。", "target": "お許し", "choices": ["おゆるし", "おためし", "おすごし", "おさっし"], "answer": "おゆるし" },
+    { "sentence": "宇宙旅行が夢ではなくなった。", "target": "宇宙", "choices": ["ゆちょう", "うちょう", "ふちゅう", "うちゅう"], "answer": "うちゅう" },
+    { "sentence": "率直な意見を聞かせてほしい。", "target": "率直", "choices": ["すなお", "じっちょく", "りっちょく", "そっちょく"], "answer": "そっちょく" },
+    { "sentence": "材料をよく混ぜます。", "target": "混ぜます", "choices": ["まぜます", "もぜます", "みぜます", "めぜます"], "answer": "まぜます" },
+    { "sentence": "受験の許可が出た。", "target": "許可", "choices": ["けっか", "きょか", "ごうか", "しちょか"], "answer": "きょか" },
+    { "sentence": "今夜は吹雪になりそうです。", "target": "吹雪", "choices": ["ふぶき", "しぶき", "はつゆき", "なだれ"], "answer": "ふぶき" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "手術でゆけつが必要となる場合があります。", "reading": "ゆけつ", "choices": ["輸血", "輸皿", "輪血", "輪皿"], "answer": "輸血" },
+    { "sentence": "結果よりもかていのほうが大切だということもある。", "reading": "かてい", "choices": ["仮定", "家庭", "課程", "過程"], "answer": "過程" },
+    { "sentence": "第一しぼうの大学に合格してうれしい。", "reading": "しぼう", "choices": ["脂肪", "志望", "死亡", "予防"], "answer": "志望" },
+    { "sentence": "花のたねをまく。", "reading": "たね", "choices": ["竹", "根", "灰", "種"], "answer": "種" },
+    { "sentence": "かもめ丸は悪天候のためけっこうとなりました。", "reading": "けっこう", "choices": ["決行", "結構", "欠航", "血行"], "answer": "欠航" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "雑誌を1（　）買ってきてくれませんか。", "target": "1冊", "choices": ["刊", "冊", "杯", "枚"], "answer": "冊" },
+    { "sentence": "今から、口（　）試験があります。", "target": "口述試験", "choices": ["面", "筆", "記", "述"], "answer": "述" },
+    { "sentence": "ここにずっと住むわけではなく、（　）の住まいです。", "target": "仮の住まい", "choices": ["仮", "公", "単", "応"], "answer": "仮" },
+    { "sentence": "仕事で業（　）を上げれば給料も上がるだろう。", "target": "業績", "choices": ["責", "積", "績", "漬"], "answer": "績" },
+    { "sentence": "水（　）にお茶を入れて持参する。", "target": "水筒", "choices": ["竹", "筒", "封", "包"], "answer": "筒" }
+  ],
+  "passageQuestion": {
+    "passage": "犬や[21]（　）のように小さい動物は「〜[22]（　）」と数えるが、牛や[23]（　）のように大型のものは「〜頭」と数える。家や店は「〜[24]（　）」と数えるが、家は「〜[25]（　）」とも数える。",
+    "wordBank": ["うま", "けん", "ひき", "さつ", "こ", "ねこ"],
+    "blanks": [
+      { "number": 21, "answer": "ねこ", "answerKanji": "猫" },
+      { "number": 22, "answer": "ひき", "answerKanji": "匹" },
+      { "number": 23, "answer": "うま", "answerKanji": "馬" },
+      { "number": 24, "answer": "こ", "answerKanji": "戸" },
+      { "number": 25, "answer": "けん", "answerKanji": "軒" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "読みを推測する",
+    "translation": "Guessing the Reading",
+    "description": "Kadang-kadang, kalau ada kanji yang berbagi komponen fonetik yang sama, cara bacanya (khususnya on'yomi) juga sering sama. Berikut beberapa contoh pasangan kanji dengan bacaan yang mirip:\n① 金魚（きんぎょ, ikan mas） → 漁船（ぎょせん, kapal nelayan）\n② 低下（ていか, penurunan） → 海底（かいてい, dasar laut）\n③ 広告（こうこく, iklan） → 鉱山（こうざん, tambang）\n④ 皮膚（ひふ, kulit） → （お）彼岸（ひがん, pekan ekuinoks）\n⑤ 適当（てきとう, sembarangan/pas） → 水滴（すいてき, tetesan air）\n⑥ 違反（いはん, pelanggaran） → 偉大（いだい, agung/hebat）\n⑦ 側面（そくめん, sisi samping） → 測定（そくてい, pengukuran） → 規則（きそく, peraturan）\n⑧ 受験（じゅけん, ikut ujian） → 授業（じゅぎょう, pelajaran）\n⑨ 冷凍（れいとう, pembekuan） → 零下（れいか, di bawah nol） → 命令（めいれい, perintah）",
+    "kanjiList": [
+      {
+        "id": 642,
+        "character": "漁",
+        "strokes": 14,
+        "onyomi": ["ギョ", "リョウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "漁船", "reading": "ぎょせん", "meaning": "kapal nelayan" }
+        ],
+        "extraWords": [
+          { "word": "漁師", "reading": "りょうし", "meaning": "nelayan" }
+        ]
+      },
+      {
+        "id": 643,
+        "character": "底",
+        "strokes": 8,
+        "onyomi": ["テイ"],
+        "kunyomi": ["そこ"],
+        "words": [
+          { "word": "海底（＝海の底）", "reading": "かいてい", "meaning": "dasar laut" }
+        ]
+      },
+      {
+        "id": 644,
+        "character": "鉱",
+        "strokes": 13,
+        "onyomi": ["コウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "鉱山", "reading": "こうざん", "meaning": "tambang" }
+        ],
+        "extraWords": [
+          { "word": "炭鉱", "reading": "たんこう", "meaning": "tambang batu bara" }
+        ]
+      },
+      {
+        "id": 645,
+        "character": "彼",
+        "strokes": 8,
+        "onyomi": ["ヒ"],
+        "kunyomi": ["かれ", "かの"],
+        "words": [
+          { "word": "彼岸", "reading": "ひがん", "meaning": "pekan ekuinoks (tradisi Buddha)" },
+          { "word": "彼", "reading": "かれ", "meaning": "dia (laki-laki)/pacar" }
+        ],
+        "extraWords": [
+          { "word": "彼女", "reading": "かのじょ", "meaning": "dia (perempuan)/pacar" }
+        ]
+      },
+      {
+        "id": 646,
+        "character": "滴",
+        "strokes": 14,
+        "onyomi": ["テキ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "水滴", "reading": "すいてき", "meaning": "tetesan air" }
+        ]
+      },
+      {
+        "id": 647,
+        "character": "偉",
+        "strokes": 12,
+        "onyomi": ["イ"],
+        "kunyomi": ["えらい"],
+        "words": [
+          { "word": "偉大（な）（＝偉い）", "reading": "いだい", "meaning": "hebat, agung" }
+        ]
+      },
+      {
+        "id": 648,
+        "character": "則",
+        "strokes": 9,
+        "onyomi": ["ソク"],
+        "kunyomi": [],
+        "words": [
+          { "word": "規則", "reading": "きそく", "meaning": "peraturan" }
+        ]
+      },
+      {
+        "id": 649,
+        "character": "測",
+        "strokes": 12,
+        "onyomi": ["ソク"],
+        "kunyomi": ["はかる"],
+        "words": [
+          { "word": "測定", "reading": "そくてい", "meaning": "pengukuran" }
+        ],
+        "extraWords": [
+          { "word": "測る", "reading": "はかる", "meaning": "mengukur" }
+        ]
+      },
+      {
+        "id": 650,
+        "character": "授",
+        "strokes": 11,
+        "onyomi": ["ジュ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "授業", "reading": "じゅぎょう", "meaning": "pelajaran, kelas" }
+        ]
+      },
+      {
+        "id": 651,
+        "character": "零",
+        "strokes": 13,
+        "onyomi": ["レイ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "零下", "reading": "れいか", "meaning": "di bawah nol (suhu)" }
+        ]
+      }
+    ]
+  }
+}
