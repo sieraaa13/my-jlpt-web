@@ -1,0 +1,267 @@
+{
+  "week": 6,
+  "day": 4,
+  "title": "地図",
+  "subtitle": "Maps",
+  "translation": "Peta",
+  "sceneDescription": "Peta sekitar stasiun menunjukkan lokasi sekolah dasar, jembatan, sungai, kantor polisi, kuil, museum seni, stasiun, pemadam kebakaran, dan balai kota, lengkap dengan tanjakan menuju kuil di sisi kiri.\n\n Peta wisata Semenanjung Boso（房総半島）menunjukkan jalur wisata dengan nomor jalan, taman, kastil, Teluk Tokyo, pantai, danau, dan lembah/ngarai yang bisa dikunjungi.",
+  "signs": [
+    { "text": "警察署", "meaning": "Kantor polisi" },
+    { "text": "美術館", "meaning": "Museum seni" },
+    { "text": "市役所", "meaning": "Balai kota" },
+    { "text": "消防署", "meaning": "Pemadam kebakaran" },
+    { "text": "房総半島", "meaning": "Semenanjung Boso" },
+    { "text": "○○海岸", "meaning": "Pantai ..." },
+    { "text": "○○渓谷", "meaning": "Lembah/ngarai ..." }
+  ],
+  "kanjiList": [
+    {
+      "id": 513,
+      "character": "辺",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["あたり", "べ"],
+      "words": [
+        { "word": "この辺", "reading": "このへん", "meaning": "sekitar sini" },
+        { "word": "辺り", "reading": "あたり", "meaning": "sekitar", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "周辺", "reading": "しゅうへん", "meaning": "sekeliling, kawasan sekitar" },
+        { "word": "海辺", "reading": "うみべ", "meaning": "tepi pantai" }
+      ]
+    },
+    {
+      "id": 514,
+      "character": "察",
+      "strokes": 14,
+      "onyomi": ["サツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "警察", "reading": "けいさつ", "meaning": "kepolisian" }
+      ],
+      "extraWords": [
+        { "word": "診察", "reading": "しんさつ", "meaning": "pemeriksaan medis" }
+      ]
+    },
+    {
+      "id": 515,
+      "character": "役",
+      "strokes": 7,
+      "onyomi": ["ヤク", "エキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "役所", "reading": "やくしょ", "meaning": "kantor pemerintahan" },
+        { "word": "役者", "reading": "やくしゃ", "meaning": "aktor" }
+      ],
+      "extraWords": [
+        { "word": "役目", "reading": "やくめ", "meaning": "tugas, peran" },
+        { "word": "現役", "reading": "げんえき", "meaning": "aktif bertugas" }
+      ]
+    },
+    {
+      "id": 516,
+      "character": "美",
+      "strokes": 9,
+      "onyomi": ["ビ"],
+      "kunyomi": ["うつくしい"],
+      "words": [
+        { "word": "美人", "reading": "びじん", "meaning": "wanita cantik" },
+        { "word": "美しい", "reading": "うつくしい", "meaning": "indah" }
+      ],
+      "extraWords": [
+        { "word": "美容", "reading": "びよう", "meaning": "perawatan kecantikan" }
+      ]
+    },
+    {
+      "id": 517,
+      "character": "術",
+      "strokes": 11,
+      "onyomi": ["ジュツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "美術", "reading": "びじゅつ", "meaning": "seni rupa" },
+        { "word": "手術", "reading": "しゅじゅつ", "meaning": "operasi bedah" }
+      ],
+      "extraWords": [
+        { "word": "技術", "reading": "ぎじゅつ", "meaning": "teknik, teknologi", "note": "→ lihat kanji #729 (技)" },
+        { "word": "芸術", "reading": "げいじゅつ", "meaning": "seni", "note": "→ lihat kanji #538 (芸)" }
+      ]
+    },
+    {
+      "id": 518,
+      "character": "坂",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["さか"],
+      "words": [
+        { "word": "坂", "reading": "さか", "meaning": "tanjakan, lereng" },
+        { "word": "〜坂", "reading": "ざか", "meaning": "lereng ..." }
+      ]
+    },
+    {
+      "id": 519,
+      "character": "寺",
+      "strokes": 6,
+      "onyomi": ["ジ"],
+      "kunyomi": ["てら"],
+      "words": [
+        { "word": "〜寺", "reading": "じ", "meaning": "kuil ..." },
+        { "word": "寺", "reading": "てら", "meaning": "kuil Buddha" }
+      ],
+      "extraWords": [
+        { "word": "寺院", "reading": "じいん", "meaning": "kuil, biara" }
+      ]
+    },
+    {
+      "id": 520,
+      "character": "湾",
+      "strokes": 12,
+      "onyomi": ["ワン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "湾", "reading": "わん", "meaning": "teluk" },
+        { "word": "〜湾", "reading": "わん", "meaning": "teluk ..." }
+      ]
+    },
+    {
+      "id": 521,
+      "character": "島",
+      "strokes": 10,
+      "onyomi": ["トウ"],
+      "kunyomi": ["しま"],
+      "words": [
+        { "word": "〜島", "reading": "とう", "meaning": "pulau ..." },
+        { "word": "列島", "reading": "れっとう", "meaning": "kepulauan" }
+      ],
+      "extraWords": [
+        { "word": "半島", "reading": "はんとう", "meaning": "semenanjung" },
+        { "word": "島", "reading": "しま", "meaning": "pulau" }
+      ]
+    },
+    {
+      "id": 522,
+      "character": "岸",
+      "strokes": 8,
+      "onyomi": ["ガン"],
+      "kunyomi": ["きし"],
+      "words": [
+        { "word": "海岸", "reading": "かいがん", "meaning": "pantai" },
+        { "word": "岸", "reading": "きし", "meaning": "tepi (pantai/sungai)" }
+      ],
+      "extraWords": [
+        { "word": "湾岸", "reading": "わんがん", "meaning": "tepi teluk" },
+        { "word": "川岸", "reading": "かわぎし", "meaning": "tepi sungai" }
+      ]
+    },
+    {
+      "id": 523,
+      "character": "園",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "公園", "reading": "こうえん", "meaning": "taman", "note": "→ lihat kanji #587 (公)" },
+        { "word": "遊園地", "reading": "ゆうえんち", "meaning": "taman hiburan" }
+      ],
+      "extraWords": [
+        { "word": "動物園", "reading": "どうぶつえん", "meaning": "kebun binatang" },
+        { "word": "〜園", "reading": "えん", "meaning": "taman ..." }
+      ]
+    },
+    {
+      "id": 524,
+      "character": "湖",
+      "strokes": 12,
+      "onyomi": ["コ"],
+      "kunyomi": ["みずうみ"],
+      "words": [
+        { "word": "〜湖", "reading": "こ", "meaning": "danau ..." },
+        { "word": "湖", "reading": "みずうみ", "meaning": "danau" }
+      ]
+    },
+    {
+      "id": 525,
+      "character": "城",
+      "strokes": 9,
+      "onyomi": ["ジョウ"],
+      "kunyomi": ["しろ"],
+      "words": [
+        { "word": "〜城", "reading": "じょう", "meaning": "kastil ..." },
+        { "word": "城", "reading": "しろ", "meaning": "kastil, benteng" }
+      ]
+    },
+    {
+      "id": 526,
+      "character": "谷",
+      "strokes": 7,
+      "onyomi": ["コク"],
+      "kunyomi": ["たに"],
+      "words": [
+        { "word": "渓谷", "reading": "けいこく", "meaning": "ngarai, lembah sempit" },
+        { "word": "谷", "reading": "たに", "meaning": "lembah" }
+      ],
+      "extraWords": [
+        { "word": "谷間", "reading": "たにま", "meaning": "celah lembah" },
+        { "word": "谷川", "reading": "たにがわ", "meaning": "sungai pegunungan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この（　）を上ると美しいお寺がありますよ。",
+      "optionA": "坂",
+      "optionB": "役",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "市役所は（　）署の向かいにあります。",
+      "optionA": "警察",
+      "optionB": "診察",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "日本の科学（　）を学ぶために来ました。",
+      "optionA": "技術",
+      "optionB": "手術",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "あのお相撲さんは（　）を引退して解説者になるそうだ。",
+      "optionA": "現役",
+      "optionB": "役目",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "湖の（　）に白鳥がたくさんいるのが見える。",
+      "optionA": "岸",
+      "optionB": "谷",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "日本（　）を北から南まで旅行してみたい。",
+      "optionA": "半島",
+      "optionB": "列島",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "この公園の中に、お（　）や植物園があります。",
+      "optionA": "城",
+      "optionB": "湾",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）には波で打ち寄せられたごみが落ちていた。",
+      "optionA": "渓谷",
+      "optionB": "海岸",
+      "answer": "B"
+    }
+  ]
+}
