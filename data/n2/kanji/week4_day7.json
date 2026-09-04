@@ -1,0 +1,217 @@
+{
+  "week": 4,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 4 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "自分は間違っていない、と彼は主張した。", "target": "主張", "choices": ["ちゅしょう", "しゅっちょう", "じゅちょう", "しゅちょう"], "answer": "しゅちょう" },
+    { "sentence": "デパートはお歳暮の買い物をする人たちで込んでいた。", "target": "お歳暮", "choices": ["おさいぼ", "おせいぼ", "おとしくれ", "おとしだま"], "answer": "おせいぼ" },
+    { "sentence": "本日はお招き頂きまして、ありがとうございます。", "target": "お招き", "choices": ["おなねき", "おまねき", "おなめき", "おまめき"], "answer": "おまねき" },
+    { "sentence": "信用を失ってはビジネスはできない。", "target": "失って", "choices": ["うしなって", "やしなって", "あしらって", "おぎなって"], "answer": "うしなって" },
+    { "sentence": "花と緑に囲まれた家に住みたい。", "target": "囲まれた", "choices": ["めぐまれた", "つつまれた", "かこまれた", "いとなまれた"], "answer": "かこまれた" },
+    { "sentence": "お互いに体に気をつけて頑張りましょう。", "target": "お互い", "choices": ["おかだい", "おたがい", "おとがい", "おだかい"], "answer": "おたがい" },
+    { "sentence": "子供らしく素直に育ってほしい。", "target": "素直", "choices": ["そじき", "そなお", "そっちょく", "すなお"], "answer": "すなお" },
+    { "sentence": "この歌には争いをやめようというメッセージが込められている。", "target": "争い", "choices": ["たたかい", "きそい", "あらそい", "いさかい"], "answer": "あらそい" },
+    { "sentence": "結婚して以来、私はすっかり妻に頼っている。", "target": "頼って", "choices": ["はまって", "たもって", "ひたって", "たよって"], "answer": "たよって" },
+    { "sentence": "スピーチで漢字を読み間違えて恥をかいた。", "target": "恥", "choices": ["あせ", "いびき", "はじ", "あぐら"], "answer": "はじ" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "国によって文化やしゅうかんは異なる。", "reading": "しゅうかん", "choices": ["週間", "習慣", "主観", "週刊"], "answer": "習慣" },
+    { "sentence": "うちあわせは2時からです。", "reading": "うちあわせ", "choices": ["打ち合わせ", "待ち合わせ", "持ち合わせ", "落ち合わせ"], "answer": "打ち合わせ" },
+    { "sentence": "明日はさいじつでお休みだ。", "reading": "さいじつ", "choices": ["祝日", "察日", "際日", "祭日"], "answer": "祭日" },
+    { "sentence": "こちらに勤務先とぶしょ名をお書きください。", "reading": "ぶしょ", "choices": ["部暑", "部所", "部署", "部諸"], "answer": "部署" },
+    { "sentence": "幼い子にきちんとあいさつをされてかんしんした。", "reading": "かんしん", "choices": ["喜心", "関心", "寒心", "感心"], "answer": "感心" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "この試験に受かった人は二（　）試験が受けられる。", "target": "二次試験", "choices": ["期", "次", "部", "助"], "answer": "次" },
+    { "sentence": "家の事情で（　）学することにしました。", "target": "退学", "choices": ["無", "退", "誤", "中"], "answer": "退" },
+    { "sentence": "兄は消防（　）に勤めています。", "target": "消防署", "choices": ["著", "所", "暑", "署"], "answer": "署" },
+    { "sentence": "友達の石田（　）が遊びに来た。", "target": "石田君", "choices": ["殿", "様", "君", "奥"], "answer": "君" },
+    { "sentence": "年賀（　）を印刷する。", "target": "年賀状", "choices": ["状", "札", "礼", "紙"], "answer": "状" },
+    { "sentence": "おかげさまで両親は（　）在です。", "target": "健在", "choices": ["存", "健", "現", "保"], "answer": "健" },
+    { "sentence": "現代社会の（　）問題についての講演を聞く。", "target": "諸問題", "choices": ["諸", "第", "総", "要"], "answer": "諸" }
+  ],
+  "passageQuestion": {
+    "passage": "兄はいつも私をからかうので[23]（　）と思うこともある。でも、困ったとき、いつも助けてくれる[24]（　）人だ。もう半年も会っていないので、兄が[25]（　）。",
+    "wordBank": ["なさけない", "にくらしい", "たのもしい", "こいしい", "あさましい"],
+    "blanks": [
+      { "number": 23, "answer": "にくらしい", "answerKanji": "憎らしい" },
+      { "number": 24, "answer": "たのもしい", "answerKanji": "頼もしい" },
+      { "number": 25, "answer": "こいしい", "answerKanji": "恋しい" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "問診票",
+    "translation": "Medical Examination Sheet",
+    "description": "Formulir riwayat kesehatan yang biasa diisi sebelum periksa ke dokter. Pasien ditanya keluhan dan sejak kapan, apakah ada bagian yang sakit (perut/punggung/dll), serta riwayat penyakit seperti asma, tekanan darah tinggi, penyakit jantung, penyakit darah, gangguan saraf, atau rinitis alergi.\n\n Ada juga pertanyaan tentang kebiasaan minum alkohol (jenis dan jumlah per hari), merokok (jumlah per hari), dan kualitas tidur (nyenyak/biasa/tidak bisa tidur). Bagian terakhir menanyakan reaksi terhadap obat atau suntikan, nafsu makan, kondisi lambung-usus, mudah lelah atau tidak, dan apakah pernah merasa sesak di dada.",
+    "kanjiList": [
+      {
+        "id": 359,
+        "character": "腹",
+        "strokes": 13,
+        "onyomi": ["フク"],
+        "kunyomi": ["はら"],
+        "words": [
+          { "word": "腹痛", "reading": "ふくつう", "meaning": "sakit perut" }
+        ],
+        "extraWords": [
+          { "word": "腹", "reading": "はら", "meaning": "perut" }
+        ]
+      },
+      {
+        "id": 360,
+        "character": "背",
+        "strokes": 9,
+        "onyomi": ["セ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "背中", "reading": "せなか", "meaning": "punggung" }
+        ]
+      },
+      {
+        "id": 361,
+        "character": "息",
+        "strokes": 10,
+        "onyomi": ["ソク"],
+        "kunyomi": ["いき"],
+        "words": [
+          { "word": "休息", "reading": "きゅうそく", "meaning": "istirahat" },
+          { "word": "息", "reading": "いき", "meaning": "napas" }
+        ],
+        "extraWords": [
+          { "word": "息子", "reading": "むすこ", "meaning": "anak laki-laki", "flag": "special" }
+        ]
+      },
+      {
+        "id": 362,
+        "character": "血",
+        "strokes": 6,
+        "onyomi": ["ケツ"],
+        "kunyomi": ["ち"],
+        "words": [
+          { "word": "高血圧", "reading": "こうけつあつ", "meaning": "tekanan darah tinggi" },
+          { "word": "血", "reading": "ち", "meaning": "darah" }
+        ]
+      },
+      {
+        "id": 363,
+        "character": "圧",
+        "strokes": 5,
+        "onyomi": ["アツ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "圧力", "reading": "あつりょく", "meaning": "tekanan" }
+        ]
+      },
+      {
+        "id": 364,
+        "character": "臓",
+        "strokes": 19,
+        "onyomi": ["ゾウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "心臓", "reading": "しんぞう", "meaning": "jantung" },
+          { "word": "内臓", "reading": "ないぞう", "meaning": "organ dalam" }
+        ]
+      },
+      {
+        "id": 365,
+        "character": "液",
+        "strokes": 11,
+        "onyomi": ["エキ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "血液", "reading": "けつえき", "meaning": "darah" }
+        ]
+      },
+      {
+        "id": 366,
+        "character": "鼻",
+        "strokes": 14,
+        "onyomi": ["ビ"],
+        "kunyomi": ["はな"],
+        "words": [
+          { "word": "耳鼻科", "reading": "じびか", "meaning": "THT (telinga hidung tenggorokan)" },
+          { "word": "鼻", "reading": "はな", "meaning": "hidung" }
+        ],
+        "extraWords": [
+          { "word": "鼻水", "reading": "はなみず", "meaning": "ingus" }
+        ]
+      },
+      {
+        "id": 367,
+        "character": "吸",
+        "strokes": 6,
+        "onyomi": ["キュウ"],
+        "kunyomi": ["すう"],
+        "words": [
+          { "word": "呼吸", "reading": "こきゅう", "meaning": "pernapasan", "note": "→ lihat kanji #442 (呼)" },
+          { "word": "吸う", "reading": "すう", "meaning": "menghirup, mengisap" }
+        ],
+        "extraWords": [
+          { "word": "吸収", "reading": "きゅうしゅう", "meaning": "penyerapan" }
+        ]
+      },
+      {
+        "id": 368,
+        "character": "眠",
+        "strokes": 10,
+        "onyomi": ["ミン"],
+        "kunyomi": ["ねむい", "ねむる"],
+        "words": [
+          { "word": "睡眠", "reading": "すいみん", "meaning": "tidur" },
+          { "word": "眠い", "reading": "ねむい", "meaning": "mengantuk" },
+          { "word": "眠る", "reading": "ねむる", "meaning": "tidur" }
+        ],
+        "extraWords": [
+          { "word": "居眠り", "reading": "いねむり", "meaning": "tertidur sambil duduk", "note": "→ lihat kanji #506 (居)" }
+        ]
+      },
+      {
+        "id": 369,
+        "character": "欲",
+        "strokes": 11,
+        "onyomi": ["ヨク"],
+        "kunyomi": ["ほしい"],
+        "words": [
+          { "word": "食欲", "reading": "しょくよく", "meaning": "nafsu makan" },
+          { "word": "欲しい", "reading": "ほしい", "meaning": "ingin" }
+        ],
+        "extraWords": [
+          { "word": "欲張り", "reading": "よくばり", "meaning": "tamak, rakus" }
+        ]
+      },
+      {
+        "id": 370,
+        "character": "疲",
+        "strokes": 10,
+        "onyomi": [],
+        "kunyomi": ["つかれる"],
+        "words": [
+          { "word": "疲れる", "reading": "つかれる", "meaning": "lelah" }
+        ]
+      },
+      {
+        "id": 371,
+        "character": "胃",
+        "strokes": 9,
+        "onyomi": ["イ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "胃", "reading": "い", "meaning": "lambung" },
+          { "word": "胃腸", "reading": "いちょう", "meaning": "lambung dan usus" }
+        ]
+      },
+      {
+        "id": 372,
+        "character": "胸",
+        "strokes": 10,
+        "onyomi": [],
+        "kunyomi": ["むね"],
+        "words": [
+          { "word": "胸", "reading": "むね", "meaning": "dada" }
+        ]
+      }
+    ]
+  }
+}
