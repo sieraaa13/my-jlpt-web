@@ -1,0 +1,321 @@
+{
+  "week": 4,
+  "day": 6,
+  "title": "作文",
+  "subtitle": "Composition",
+  "translation": "Karangan/Esai",
+  "sceneDescription": "Contoh karangan berjudul「私の夢」(Mimpiku) oleh Lin Yu: \"Bidang yang saya tekuni adalah sejarah, khususnya sejarah budaya. Saya sedang meneliti festival-festival daerah di Jepang. Saya ingin suatu saat nanti bekerja sebagai jembatan penghubung dunia agar peperangan hilang. Saya merasa sedih dan memalukan ketika manusia saling membenci dan saling membunuh. Bumi hanya satu. Harapan saya juga hanya satu, yaitu perdamaian. Impian saya adalah agar orang-orang di seluruh dunia saling menyayangi seperti keluarga dan hidup rukun.\"",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 339,
+      "character": "夢",
+      "strokes": 13,
+      "onyomi": ["ム"],
+      "kunyomi": ["ゆめ"],
+      "words": [
+        { "word": "夢中", "reading": "むちゅう", "meaning": "sangat tergila-gila, larut" },
+        { "word": "夢", "reading": "ゆめ", "meaning": "mimpi, impian" }
+      ]
+    },
+    {
+      "id": 340,
+      "character": "専",
+      "strokes": 9,
+      "onyomi": ["セン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "専門", "reading": "せんもん", "meaning": "bidang keahlian" },
+        { "word": "専攻", "reading": "せんこう", "meaning": "jurusan, spesialisasi" }
+      ],
+      "extraWords": [
+        { "word": "専用", "reading": "せんよう", "meaning": "khusus untuk ... (pemakaian eksklusif)" }
+      ]
+    },
+    {
+      "id": 341,
+      "character": "史",
+      "strokes": 5,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "歴史", "reading": "れきし", "meaning": "sejarah" }
+      ],
+      "extraWords": [
+        { "word": "〜史", "reading": "し", "meaning": "sejarah ..." }
+      ]
+    },
+    {
+      "id": 342,
+      "character": "域",
+      "strokes": 11,
+      "onyomi": ["イキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "区域", "reading": "くいき", "meaning": "kawasan, zona" }
+      ],
+      "extraWords": [
+        { "word": "地域", "reading": "ちいき", "meaning": "wilayah, daerah" }
+      ]
+    },
+    {
+      "id": 343,
+      "character": "祭",
+      "strokes": 11,
+      "onyomi": ["サイ"],
+      "kunyomi": ["まつり"],
+      "words": [
+        { "word": "祭日", "reading": "さいじつ", "meaning": "hari libur/festival" },
+        { "word": "（お）祭り", "reading": "おまつり", "meaning": "festival, perayaan" }
+      ],
+      "extraWords": [
+        { "word": "〜祭", "reading": "さい", "meaning": "festival ..." }
+      ]
+    },
+    {
+      "id": 344,
+      "character": "査",
+      "strokes": 9,
+      "onyomi": ["サ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "検査", "reading": "けんさ", "meaning": "pemeriksaan, inspeksi" },
+        { "word": "審査", "reading": "しんさ", "meaning": "penilaian, seleksi" }
+      ],
+      "extraWords": [
+        { "word": "調査", "reading": "ちょうさ", "meaning": "penyelidikan, survei" }
+      ]
+    },
+    {
+      "id": 345,
+      "character": "戦",
+      "strokes": 13,
+      "onyomi": ["セン"],
+      "kunyomi": ["たたかう"],
+      "words": [
+        { "word": "〜戦", "reading": "せん", "meaning": "pertandingan/perang ..." },
+        { "word": "戦争", "reading": "せんそう", "meaning": "perang" }
+      ],
+      "extraWords": [
+        { "word": "大戦", "reading": "たいせん", "meaning": "perang besar (Perang Dunia dsb)" },
+        { "word": "戦う", "reading": "たたかう", "meaning": "bertarung, berperang" }
+      ]
+    },
+    {
+      "id": 346,
+      "character": "争",
+      "strokes": 6,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["あらそう"],
+      "words": [
+        { "word": "競争", "reading": "きょうそう", "meaning": "kompetisi, persaingan", "note": "→ lihat kanji #682 (競)" },
+        { "word": "争う", "reading": "あらそう", "meaning": "bersaing, bertengkar", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 347,
+      "character": "将",
+      "strokes": 10,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "将来", "reading": "しょうらい", "meaning": "masa depan" }
+      ],
+      "extraWords": [
+        { "word": "将棋", "reading": "しょうぎ", "meaning": "shogi (catur Jepang)" }
+      ]
+    },
+    {
+      "id": 348,
+      "character": "橋",
+      "strokes": 16,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["はし"],
+      "words": [
+        { "word": "歩道橋", "reading": "ほどうきょう", "meaning": "jembatan penyeberangan" },
+        { "word": "橋", "reading": "はし", "meaning": "jembatan" }
+      ],
+      "extraWords": [
+        { "word": "鉄橋", "reading": "てっきょう", "meaning": "jembatan kereta api" },
+        { "word": "架け橋", "reading": "かけはし", "meaning": "jembatan penghubung (kiasan)" }
+      ]
+    },
+    {
+      "id": 349,
+      "character": "憎",
+      "strokes": 14,
+      "onyomi": [],
+      "kunyomi": ["にくい", "にくむ", "にくしみ", "にくらしい"],
+      "words": [
+        { "word": "憎い", "reading": "にくい", "meaning": "membenci, menyebalkan" },
+        { "word": "憎しみ", "reading": "にくしみ", "meaning": "kebencian" }
+      ],
+      "extraWords": [
+        { "word": "憎む", "reading": "にくむ", "meaning": "membenci" },
+        { "word": "憎らしい", "reading": "にくらしい", "meaning": "menjengkelkan, menyebalkan" }
+      ]
+    },
+    {
+      "id": 350,
+      "character": "殺",
+      "strokes": 10,
+      "onyomi": ["サツ"],
+      "kunyomi": ["ころす"],
+      "words": [
+        { "word": "自殺", "reading": "じさつ", "meaning": "bunuh diri" },
+        { "word": "殺す", "reading": "ころす", "meaning": "membunuh" }
+      ]
+    },
+    {
+      "id": 351,
+      "character": "悲",
+      "strokes": 12,
+      "onyomi": ["ヒ"],
+      "kunyomi": ["かなしい", "かなしむ"],
+      "words": [
+        { "word": "悲観", "reading": "ひかん", "meaning": "pesimisme", "note": "→ lihat kanji #528 (観)" },
+        { "word": "悲しい", "reading": "かなしい", "meaning": "sedih" }
+      ],
+      "extraWords": [
+        { "word": "悲しむ", "reading": "かなしむ", "meaning": "berduka, bersedih" }
+      ]
+    },
+    {
+      "id": 352,
+      "character": "恥",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["はじ", "はずかしい"],
+      "words": [
+        { "word": "恥", "reading": "はじ", "meaning": "rasa malu, aib" },
+        { "word": "恥ずかしい", "reading": "はずかしい", "meaning": "malu" }
+      ]
+    },
+    {
+      "id": 353,
+      "character": "感",
+      "strokes": 13,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "感じる", "reading": "かんじる", "meaning": "merasakan" },
+        { "word": "感心（な）", "reading": "かんしん", "meaning": "mengagumkan" }
+      ],
+      "extraWords": [
+        { "word": "感情", "reading": "かんじょう", "meaning": "emosi, perasaan" },
+        { "word": "感動", "reading": "かんどう", "meaning": "terharu, tersentuh" }
+      ]
+    },
+    {
+      "id": 354,
+      "character": "球",
+      "strokes": 11,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["たま"],
+      "words": [
+        { "word": "地球", "reading": "ちきゅう", "meaning": "bumi" },
+        { "word": "野球", "reading": "やきゅう", "meaning": "baseball" }
+      ],
+      "extraWords": [
+        { "word": "電球", "reading": "でんきゅう", "meaning": "bohlam lampu" },
+        { "word": "球", "reading": "たま", "meaning": "bola" }
+      ]
+    },
+    {
+      "id": 355,
+      "character": "和",
+      "strokes": 8,
+      "onyomi": ["ワ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "平和", "reading": "へいわ", "meaning": "perdamaian" }
+      ],
+      "extraWords": [
+        { "word": "和式", "reading": "わしき", "meaning": "gaya Jepang" }
+      ]
+    },
+    {
+      "id": 356,
+      "character": "愛",
+      "strokes": 13,
+      "onyomi": ["アイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "愛", "reading": "あい", "meaning": "cinta" },
+        { "word": "愛情", "reading": "あいじょう", "meaning": "kasih sayang" }
+      ],
+      "extraWords": [
+        { "word": "愛する", "reading": "あいする", "meaning": "mencintai" },
+        { "word": "恋愛", "reading": "れんあい", "meaning": "percintaan" }
+      ]
+    },
+    {
+      "id": 357,
+      "character": "仲",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["なか"],
+      "words": [
+        { "word": "仲", "reading": "なか", "meaning": "hubungan, relasi" }
+      ],
+      "extraWords": [
+        { "word": "仲間", "reading": "なかま", "meaning": "teman, rekan sekelompok" }
+      ]
+    },
+    {
+      "id": 358,
+      "character": "良",
+      "strokes": 7,
+      "onyomi": ["リョウ"],
+      "kunyomi": ["よい"],
+      "words": [
+        { "word": "改良", "reading": "かいりょう", "meaning": "perbaikan, penyempurnaan" },
+        { "word": "良い", "reading": "よい", "meaning": "baik" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "弟は野球に（　）で、将来はプロの選手になりたいと言っている。",
+      "optionA": "夢中",
+      "optionB": "感動",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "大学では数学を（　）した。",
+      "optionA": "専攻",
+      "optionB": "専門",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この建物のトイレは洋式と（　）のほかに車いす用のもある。",
+      "optionA": "和式",
+      "optionB": "正式",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "この製品は（　）を重ね、良い味になった。",
+      "optionA": "良好",
+      "optionB": "改良",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "あの人と私はオリンピックで金メダルを（　）仲だ。",
+      "optionA": "戦った",
+      "optionB": "争った",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "姉から（　）のこもった手紙をもらった。",
+      "optionA": "愛情",
+      "optionB": "恋愛",
+      "answer": "A"
+    }
+  ]
+}
