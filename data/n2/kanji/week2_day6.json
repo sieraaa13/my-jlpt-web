@@ -1,0 +1,258 @@
+{
+  "week": 2,
+  "day": 6,
+  "title": "携帯電話・パソコン",
+  "subtitle": "Cell Phones, Personal Computers",
+  "translation": "Ponsel dan Komputer",
+  "sceneDescription": "A: \"Bagaimana cara mendaftarkan alamat, ya?\" B: \"Kalau membuat baru, tekan「新規」. Kalau mau mengedit, tekan「機能」lalu「修正」, dan setelah selesai tekan「完了」.\" A: \"Oke, mengerti. Terus, bagaimana cara mengirim gambar?\"\n\n Saat membuat dokumen di software pengolah kata, atur font dan ukuran lewat「書式」. Teks bisa diratakan ke tengah, kanan, atau kiri. Setelah selesai dibuat, simpan dengan「名前を付けて保存」(simpan dengan nama baru), lalu berikutnya bisa langsung「上書き保存」(timpa simpanan). Untuk mencetak, atur dulu「用紙設定」lalu cek lewat「印刷プレビュー」. Kalau huruf terlalu kecil dan susah dibaca, tampilkan dengan「拡大」(perbesar).",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 157,
+      "character": "登",
+      "strokes": 12,
+      "onyomi": ["トウ", "ト"],
+      "kunyomi": ["のぼる"],
+      "words": [
+        { "word": "登録", "reading": "とうろく", "meaning": "registrasi, pendaftaran" },
+        { "word": "登場", "reading": "とうじょう", "meaning": "kemunculan, tampil" }
+      ],
+      "extraWords": [
+        { "word": "登山（＝山登り）", "reading": "とざん", "meaning": "mendaki gunung", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 158,
+      "character": "編",
+      "strokes": 15,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["あむ"],
+      "words": [
+        { "word": "編集", "reading": "へんしゅう", "meaning": "penyuntingan, editing" },
+        { "word": "短編", "reading": "たんぺん", "meaning": "karya pendek (cerpen dsb)" }
+      ],
+      "extraWords": [
+        { "word": "長編", "reading": "ちょうへん", "meaning": "karya panjang" },
+        { "word": "編み物", "reading": "あみもの", "meaning": "rajutan" }
+      ]
+    },
+    {
+      "id": 159,
+      "character": "能",
+      "strokes": 10,
+      "onyomi": ["ノウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "機能", "reading": "きのう", "meaning": "fungsi" },
+        { "word": "能力", "reading": "のうりょく", "meaning": "kemampuan" }
+      ],
+      "extraWords": [
+        { "word": "可能（な）", "reading": "かのう", "meaning": "mungkin, memungkinkan", "note": "→ lihat kanji #431 (可)" }
+      ]
+    },
+    {
+      "id": 160,
+      "character": "修",
+      "strokes": 10,
+      "onyomi": ["シュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "修正", "reading": "しゅうせい", "meaning": "koreksi, perbaikan" },
+        { "word": "修士", "reading": "しゅうし", "meaning": "gelar magister" }
+      ],
+      "extraWords": [
+        { "word": "修理", "reading": "しゅうり", "meaning": "perbaikan, reparasi" }
+      ]
+    },
+    {
+      "id": 161,
+      "character": "完",
+      "strokes": 7,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "完了", "reading": "かんりょう", "meaning": "selesai" },
+        { "word": "完備", "reading": "かんび", "meaning": "lengkap fasilitasnya" }
+      ],
+      "extraWords": [
+        { "word": "完成", "reading": "かんせい", "meaning": "penyelesaian, rampung" }
+      ]
+    },
+    {
+      "id": 162,
+      "character": "了",
+      "strokes": 2,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "終了", "reading": "しゅうりょう", "meaning": "berakhir, tamat" }
+      ],
+      "extraWords": [
+        { "word": "修了", "reading": "しゅうりょう", "meaning": "menyelesaikan (kursus/pendidikan)" }
+      ]
+    },
+    {
+      "id": 163,
+      "character": "像",
+      "strokes": 14,
+      "onyomi": ["ゾウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "画像", "reading": "がぞう", "meaning": "gambar, citra" },
+        { "word": "現像", "reading": "げんぞう", "meaning": "mencuci film foto" }
+      ],
+      "extraWords": [
+        { "word": "映像", "reading": "えいぞう", "meaning": "tayangan, video" }
+      ]
+    },
+    {
+      "id": 164,
+      "character": "類",
+      "strokes": 18,
+      "onyomi": ["ルイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "書類", "reading": "しょるい", "meaning": "dokumen, berkas" },
+        { "word": "人類", "reading": "じんるい", "meaning": "umat manusia" }
+      ],
+      "extraWords": [
+        { "word": "分類", "reading": "ぶんるい", "meaning": "klasifikasi" }
+      ]
+    },
+    {
+      "id": 165,
+      "character": "式",
+      "strokes": 6,
+      "onyomi": ["シキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "書式", "reading": "しょしき", "meaning": "format baku (dokumen)" },
+        { "word": "日本式", "reading": "にほんしき", "meaning": "gaya Jepang" }
+      ],
+      "extraWords": [
+        { "word": "入学式", "reading": "にゅうがくしき", "meaning": "upacara penerimaan siswa baru" },
+        { "word": "正式（な）", "reading": "せいしき", "meaning": "resmi, formal" }
+      ]
+    },
+    {
+      "id": 166,
+      "character": "央",
+      "strokes": 5,
+      "onyomi": ["オウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "中央", "reading": "ちゅうおう", "meaning": "pusat, tengah" }
+      ]
+    },
+    {
+      "id": 167,
+      "character": "存",
+      "strokes": 6,
+      "onyomi": ["ゾン", "ソン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "保存", "reading": "ほぞん", "meaning": "penyimpanan" },
+        { "word": "ご存知", "reading": "ごぞんじ", "meaning": "mengetahui (bentuk hormat)" }
+      ],
+      "extraWords": [
+        { "word": "生存", "reading": "せいぞん", "meaning": "bertahan hidup" },
+        { "word": "存在", "reading": "そんざい", "meaning": "keberadaan, eksistensi", "note": "→ lihat kanji #185 (在)" }
+      ]
+    },
+    {
+      "id": 168,
+      "character": "印",
+      "strokes": 6,
+      "onyomi": ["イン"],
+      "kunyomi": ["しるし"],
+      "words": [
+        { "word": "認め印", "reading": "みとめいん", "meaning": "stempel pribadi" },
+        { "word": "印", "reading": "しるし", "meaning": "tanda, simbol" }
+      ],
+      "extraWords": [
+        { "word": "目印", "reading": "めじるし", "meaning": "penanda, ciri khas" }
+      ]
+    },
+    {
+      "id": 169,
+      "character": "刷",
+      "strokes": 8,
+      "onyomi": ["サツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "印刷", "reading": "いんさつ", "meaning": "percetakan" }
+      ]
+    },
+    {
+      "id": 170,
+      "character": "拡",
+      "strokes": 8,
+      "onyomi": ["カク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "拡大", "reading": "かくだい", "meaning": "pembesaran, perluasan" }
+      ],
+      "extraWords": [
+        { "word": "縮小", "reading": "しゅくしょう", "meaning": "pengecilan, penyusutan (lawan kata dari 拡大)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "このフィルムを（　）してください。",
+      "optionA": "現像",
+      "optionB": "映像",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "コピー機の調子が悪いので（　）に来てください。",
+      "optionA": "修理",
+      "optionB": "編集",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この部屋はエアコン（　）です。",
+      "optionA": "機能",
+      "optionB": "完備",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "アドレスを（　）する。",
+      "optionA": "登録",
+      "optionB": "登場",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "ここに受け取りの（　）をお願いします。",
+      "optionA": "認め印",
+      "optionB": "目印",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "タイトルは（　）に、日付と名前は右に書きます。",
+      "optionA": "中央",
+      "optionB": "拡大",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "ここにある書類を（　）してファイルしてください。",
+      "optionA": "書式",
+      "optionB": "分類",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "作成したファイルを（　）する。",
+      "optionA": "保存",
+      "optionB": "生存",
+      "answer": "A"
+    }
+  ]
+}

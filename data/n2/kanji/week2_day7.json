@@ -1,0 +1,172 @@
+{
+  "week": 2,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 2 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "この天気で登山は可能でしょうか。", "target": "可能", "choices": ["かの", "くのん", "きのう", "かのう"], "answer": "かのう" },
+    { "sentence": "切符の払い戻しをする。", "target": "払い戻し", "choices": ["はらいもどし", "はらいがえし", "はらいおろし", "はらいのこし"], "answer": "はらいもどし" },
+    { "sentence": "この印は取り消しを表しています。", "target": "印", "choices": ["はんこ", "しるし", "おもて", "いんさつ"], "answer": "しるし" },
+    { "sentence": "部屋の中央にテーブルがあります。", "target": "中央", "choices": ["ちゅうおう", "ちゅうしん", "ちゅうえい", "まんなか"], "answer": "ちゅうおう" },
+    { "sentence": "このごろ、幼い子どもの事故が増えている。", "target": "幼い", "choices": ["せつない", "なおさい", "おさない", "ようさい"], "answer": "おさない" },
+    { "sentence": "印刷して拡大コピーしてください。", "target": "拡大", "choices": ["かくだい", "こうだい", "とくだい", "そうだい"], "answer": "かくだい" },
+    { "sentence": "文字を選択して変換する。", "target": "変換", "choices": ["へんしゅう", "へんこう", "へんさい", "へんかん"], "answer": "へんかん" },
+    { "sentence": "この時期は湿度が高い。", "target": "湿度", "choices": ["ちつど", "しつど", "ひつど", "いつど"], "answer": "しつど" },
+    { "sentence": "団地のベランダに布団がほしてある。", "target": "布団", "choices": ["もうふ", "じゅうたん", "ふとん", "まくら"], "answer": "ふとん" },
+    { "sentence": "コピー用紙の枚数を数える。", "target": "数える", "choices": ["そろえる", "かずえる", "そらえる", "かぞえる"], "answer": "かぞえる" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "本日の営業はしゅうりょうしました。", "reading": "しゅうりょう", "choices": ["終了", "修了", "完了", "未了"], "answer": "終了" },
+    { "sentence": "その件はまだ話し合いが済んでいないのでほりゅうです。", "reading": "ほりゅう", "choices": ["保留", "保存", "保湿", "保温"], "answer": "保留" },
+    { "sentence": "日本では年末に大そうじをします。", "reading": "そうじ", "choices": ["清掃", "除湿", "掃除", "洗濯"], "answer": "掃除" },
+    { "sentence": "このへんもずいぶん道路がせいびされてきました。", "reading": "せいび", "choices": ["常備", "設備", "準備", "整備"], "answer": "整備" },
+    { "sentence": "今年のもくひょうをたてる。", "reading": "もくひょう", "choices": ["目標", "目表", "木標", "木表"], "answer": "目標" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "この本は上中下の3（　）から成っている。", "target": "3巻", "choices": ["券", "巻", "件", "枚"], "answer": "巻" },
+    { "sentence": "カップで米の分（　）を量る。", "target": "分量", "choices": ["能", "計", "類", "量"], "answer": "量" },
+    { "sentence": "日本（　）のあいさつやマナーを覚える。", "target": "日本式", "choices": ["修", "帯", "玉", "式"], "answer": "式" },
+    { "sentence": "メールといっしょに画（　）を送信する。", "target": "画像", "choices": ["歴", "機", "像", "表"], "answer": "像" },
+    { "sentence": "短（　）小説を読む。", "target": "短編", "choices": ["編", "片", "期", "数"], "answer": "編" },
+    { "sentence": "今朝、地震で（　）電になりました。", "target": "停電", "choices": ["止", "停", "不", "満"], "answer": "停" }
+  ],
+  "passageQuestion": {
+    "passage": "日本ではどこにでも自動[22]（　）機がある。20歳[23]（　）の人に禁止されているものも[24]（　）に買えるのが[25]（　）だと外国人はよく言う。",
+    "wordBank": ["とうろく", "みまん", "ふしぎ", "はんばい", "じゆう", "おさない"],
+    "blanks": [
+      { "number": 22, "answer": "はんばい", "answerKanji": "販売" },
+      { "number": 23, "answer": "みまん", "answerKanji": "未満" },
+      { "number": 24, "answer": "じゆう", "answerKanji": "自由" },
+      { "number": 25, "answer": "ふしぎ", "answerKanji": "不思議" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "小人⇔大人",
+    "translation": "Children vs Adults",
+    "description": "Di Minggu 2 Hari ke-3, kita sudah belajar kanji yang sering muncul di mesin tiket otomatis dan sejenisnya. Nah, bagaimana cara membaca「小人」? Kalau「大人」dibaca「おとな」(dewasa), maka「小人」adalah tanda yang berarti 'anak-anak', biasa muncul di tabel tarif. Tapi kalau dalam judul cerita seperti『白雪姫と七人の小人』(Putri Salju dan Tujuh Kurcaci), 「小人」dibaca「こびと」(kurcaci). Kali ini, mari belajar kata-kata yang berlawanan makna (反対語)!",
+    "antonymPairs": [
+      { "left": { "word": "片道", "reading": "かたみち", "meaning": "sekali jalan" }, "right": { "word": "往復", "reading": "おうふく", "meaning": "pergi-pulang" } },
+      { "left": { "word": "暖房", "reading": "だんぼう", "meaning": "pemanas ruangan" }, "right": { "word": "冷房", "reading": "れいぼう", "meaning": "pendingin ruangan" } },
+      { "left": { "word": "温水", "reading": "おんすい", "meaning": "air hangat" }, "right": { "word": "冷水", "reading": "れいすい", "meaning": "air dingin" } },
+      { "left": { "word": "老人", "reading": "ろうじん", "meaning": "orang lanjut usia" }, "right": { "word": "若者", "reading": "わかもの", "meaning": "anak muda" } },
+      { "left": { "word": "年老いた", "reading": "としおいた", "meaning": "berusia lanjut" }, "right": { "word": "若い", "reading": "わかい", "meaning": "muda" } },
+      { "left": { "word": "反対", "reading": "はんたい", "meaning": "menentang, oposisi", "note": "→ lihat kanji #328 (対)" }, "right": { "word": "賛成", "reading": "さんせい", "meaning": "menyetujui, persetujuan" } },
+      { "left": { "word": "捨てる", "reading": "すてる", "meaning": "membuang" }, "right": { "word": "拾う", "reading": "ひろう", "meaning": "memungut" } },
+      { "left": { "word": "鋭い", "reading": "するどい", "meaning": "tajam" }, "right": { "word": "鈍い", "reading": "にぶい", "meaning": "tumpul" } },
+      { "left": { "word": "肯定", "reading": "こうてい", "meaning": "afirmasi, pembenaran" }, "right": { "word": "否定", "reading": "ひてい", "meaning": "penyangkalan, negasi" } },
+      { "left": { "word": "浮く", "reading": "うく", "meaning": "mengapung" }, "right": { "word": "沈む", "reading": "しずむ", "meaning": "tenggelam" } },
+      { "left": { "word": "浮かれている", "reading": "うかれている", "meaning": "sedang senang, gembira" }, "right": { "word": "沈んでいる", "reading": "しずんでいる", "meaning": "sedang murung, sedih", "note": "→ lihat kanji #351 (悲)" } }
+    ],
+    "kanjiList": [
+      {
+        "id": 171,
+        "character": "若",
+        "strokes": 8,
+        "onyomi": [],
+        "kunyomi": ["わかい"],
+        "words": [
+          { "word": "若者", "reading": "わかもの", "meaning": "anak muda" }
+        ],
+        "extraWords": [
+          { "word": "若い", "reading": "わかい", "meaning": "muda" }
+        ]
+      },
+      {
+        "id": 172,
+        "character": "反",
+        "strokes": 4,
+        "onyomi": ["ハン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "反対", "reading": "はんたい", "meaning": "menentang, oposisi" }
+        ]
+      },
+      {
+        "id": 173,
+        "character": "賛",
+        "strokes": 15,
+        "onyomi": ["サン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "賛成", "reading": "さんせい", "meaning": "menyetujui, persetujuan" }
+        ]
+      },
+      {
+        "id": 174,
+        "character": "拾",
+        "strokes": 9,
+        "onyomi": [],
+        "kunyomi": ["ひろう"],
+        "words": [
+          { "word": "拾う", "reading": "ひろう", "meaning": "memungut" }
+        ]
+      },
+      {
+        "id": 175,
+        "character": "鋭",
+        "strokes": 15,
+        "onyomi": [],
+        "kunyomi": ["するどい"],
+        "words": [
+          { "word": "鋭い", "reading": "するどい", "meaning": "tajam" }
+        ]
+      },
+      {
+        "id": 176,
+        "character": "鈍",
+        "strokes": 12,
+        "onyomi": [],
+        "kunyomi": ["にぶい"],
+        "words": [
+          { "word": "鈍い", "reading": "にぶい", "meaning": "tumpul" }
+        ]
+      },
+      {
+        "id": 177,
+        "character": "肯",
+        "strokes": 8,
+        "onyomi": ["コウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "肯定", "reading": "こうてい", "meaning": "afirmasi, pembenaran" }
+        ]
+      },
+      {
+        "id": 178,
+        "character": "否",
+        "strokes": 7,
+        "onyomi": ["ヒ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "否定", "reading": "ひてい", "meaning": "penyangkalan, negasi" }
+        ]
+      },
+      {
+        "id": 179,
+        "character": "浮",
+        "strokes": 10,
+        "onyomi": [],
+        "kunyomi": ["うく", "うかぶ", "うかべる"],
+        "words": [
+          { "word": "浮く", "reading": "うく", "meaning": "mengapung" }
+        ],
+        "extraWords": [
+          { "word": "浮かれている", "reading": "うかれている", "meaning": "sedang senang, gembira" }
+        ]
+      },
+      {
+        "id": 180,
+        "character": "沈",
+        "strokes": 7,
+        "onyomi": [],
+        "kunyomi": ["しずむ"],
+        "words": [
+          { "word": "沈む", "reading": "しずむ", "meaning": "tenggelam" }
+        ],
+        "extraWords": [
+          { "word": "沈んでいる", "reading": "しずんでいる", "meaning": "sedang murung, sedih" }
+        ]
+      }
+    ]
+  }
+}

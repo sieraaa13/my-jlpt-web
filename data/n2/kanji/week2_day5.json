@@ -1,0 +1,274 @@
+{
+  "week": 2,
+  "day": 5,
+  "title": "電話・携帯電話",
+  "subtitle": "Telephones, Cell Phones",
+  "translation": "Telepon dan Ponsel",
+  "sceneDescription": "Begitu pulang ke rumah, saya langsung mendengarkan pesan di mesin penjawab telepon (留守番電話) lalu menghapus pesan yang sudah diputar (再生済み). Ponsel biasanya diset ke mode senyap (マナーモード) saat di kereta atau sedang bekerja.\n\n Mengecek「着信履歴」(riwayat panggilan masuk) atau「受信箱」(kotak masuk) email, lalu membalas kalau ada keperluan. Kalau membuat alamat baru, diketik lewat「新規」. Huruf bisa dikonversi sendiri atau dipilih「選択」dari daftar kata yang tersedia, lalu ditekan「決定」atau「確定」untuk mengonfirmasi.",
+  "signs": [
+    { "text": "保留", "meaning": "Tahan panggilan (hold)" },
+    { "text": "留守", "meaning": "Mesin penjawab / tidak ada di rumah" },
+    { "text": "再ダイヤル", "meaning": "Panggil ulang (redial)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 143,
+      "character": "帯",
+      "strokes": 10,
+      "onyomi": ["タイ"],
+      "kunyomi": ["おび"],
+      "words": [
+        { "word": "地帯", "reading": "ちたい", "meaning": "kawasan, wilayah" },
+        { "word": "温帯", "reading": "おんたい", "meaning": "zona beriklim sedang" }
+      ],
+      "extraWords": [
+        { "word": "携帯電話", "reading": "けいたいでんわ", "meaning": "telepon genggam" },
+        { "word": "帯", "reading": "おび", "meaning": "obi, ikat pinggang kimono", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 144,
+      "character": "保",
+      "strokes": 9,
+      "onyomi": ["ホ"],
+      "kunyomi": ["たもつ"],
+      "words": [
+        { "word": "保温", "reading": "ほおん", "meaning": "menjaga kehangatan" },
+        { "word": "保険", "reading": "ほけん", "meaning": "asuransi" }
+      ],
+      "extraWords": [
+        { "word": "保湿", "reading": "ほしつ", "meaning": "menjaga kelembapan kulit" },
+        { "word": "保つ", "reading": "たもつ", "meaning": "menjaga, mempertahankan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 145,
+      "character": "留",
+      "strokes": 10,
+      "onyomi": ["リュウ", "ル"],
+      "kunyomi": ["とめる"],
+      "words": [
+        { "word": "保留", "reading": "ほりゅう", "meaning": "penundaan, ditahan sementara" },
+        { "word": "停留所", "reading": "ていりゅうじょ", "meaning": "halte bus" }
+      ],
+      "extraWords": [
+        { "word": "留学", "reading": "りゅうがく", "meaning": "belajar di luar negeri" },
+        { "word": "書留", "reading": "かきとめ", "meaning": "pos tercatat", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 146,
+      "character": "守",
+      "strokes": 6,
+      "onyomi": ["シュ", "ス"],
+      "kunyomi": ["まもる"],
+      "words": [
+        { "word": "保守的（な）", "reading": "ほしゅてき", "meaning": "konservatif", "note": "→ lihat kanji #421 (的)" },
+        { "word": "守る", "reading": "まもる", "meaning": "melindungi" }
+      ],
+      "extraWords": [
+        { "word": "留守", "reading": "るす", "meaning": "tidak ada di rumah", "flag": "attention" },
+        { "word": "お守り", "reading": "おまもり", "meaning": "jimat keberuntungan" }
+      ]
+    },
+    {
+      "id": 147,
+      "character": "伝",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["つたわる", "つたえる"],
+      "words": [
+        { "word": "伝言", "reading": "でんごん", "meaning": "pesan (titipan)" },
+        { "word": "手伝う", "reading": "てつだう", "meaning": "membantu", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "伝える", "reading": "つたえる", "meaning": "menyampaikan" }
+      ]
+    },
+    {
+      "id": 148,
+      "character": "済",
+      "strokes": 11,
+      "onyomi": ["サイ"],
+      "kunyomi": ["すむ", "ます"],
+      "words": [
+        { "word": "返済", "reading": "へんさい", "meaning": "pelunasan, pembayaran kembali" },
+        { "word": "済む", "reading": "すむ", "meaning": "selesai" }
+      ],
+      "extraWords": [
+        { "word": "〜済み", "reading": "ずみ", "meaning": "sudah selesai ..." }
+      ]
+    },
+    {
+      "id": 149,
+      "character": "件",
+      "strokes": 6,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "用件", "reading": "ようけん", "meaning": "keperluan, urusan" },
+        { "word": "事件", "reading": "じけん", "meaning": "insiden, kasus" }
+      ],
+      "extraWords": [
+        { "word": "件名", "reading": "けんめい", "meaning": "subjek (email)" }
+      ]
+    },
+    {
+      "id": 150,
+      "character": "信",
+      "strokes": 9,
+      "onyomi": ["シン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "通信", "reading": "つうしん", "meaning": "komunikasi" },
+        { "word": "自信", "reading": "じしん", "meaning": "kepercayaan diri" }
+      ],
+      "extraWords": [
+        { "word": "信じる", "reading": "しんじる", "meaning": "percaya" }
+      ]
+    },
+    {
+      "id": 151,
+      "character": "歴",
+      "strokes": 14,
+      "onyomi": ["レキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "着信履歴", "reading": "ちゃくしんりれき", "meaning": "riwayat panggilan masuk" },
+        { "word": "歴史", "reading": "れきし", "meaning": "sejarah", "note": "→ lihat kanji #341 (史)" }
+      ],
+      "extraWords": [
+        { "word": "履歴書", "reading": "りれきしょ", "meaning": "riwayat hidup, CV" }
+      ]
+    },
+    {
+      "id": 152,
+      "character": "箱",
+      "strokes": 15,
+      "onyomi": [],
+      "kunyomi": ["はこ"],
+      "words": [
+        { "word": "受信箱", "reading": "じゅしんばこ", "meaning": "kotak masuk (inbox)" },
+        { "word": "ごみ箱", "reading": "ごみばこ", "meaning": "tempat sampah" }
+      ],
+      "extraWords": [
+        { "word": "送信箱", "reading": "そうしんばこ", "meaning": "kotak keluar (outbox)" }
+      ]
+    },
+    {
+      "id": 153,
+      "character": "規",
+      "strokes": 11,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "新規", "reading": "しんき", "meaning": "baru" }
+      ],
+      "extraWords": [
+        { "word": "規定", "reading": "きてい", "meaning": "peraturan, ketentuan" }
+      ]
+    },
+    {
+      "id": 154,
+      "character": "変",
+      "strokes": 9,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["かわる", "かえる"],
+      "words": [
+        { "word": "変換", "reading": "へんかん", "meaning": "konversi" },
+        { "word": "変わる", "reading": "かわる", "meaning": "berubah" }
+      ],
+      "extraWords": [
+        { "word": "大変（な）", "reading": "たいへん", "meaning": "berat, serius" },
+        { "word": "変える", "reading": "かえる", "meaning": "mengubah" }
+      ]
+    },
+    {
+      "id": 155,
+      "character": "選",
+      "strokes": 15,
+      "onyomi": ["セン"],
+      "kunyomi": ["えらぶ"],
+      "words": [
+        { "word": "選択", "reading": "せんたく", "meaning": "pilihan" },
+        { "word": "選考", "reading": "せんこう", "meaning": "seleksi" }
+      ],
+      "extraWords": [
+        { "word": "選手", "reading": "せんしゅ", "meaning": "atlet" },
+        { "word": "選ぶ", "reading": "えらぶ", "meaning": "memilih" }
+      ]
+    },
+    {
+      "id": 156,
+      "character": "決",
+      "strokes": 7,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["きめる", "きまる"],
+      "words": [
+        { "word": "決定", "reading": "けってい", "meaning": "keputusan" },
+        { "word": "決める", "reading": "きめる", "meaning": "memutuskan" }
+      ],
+      "extraWords": [
+        { "word": "決まる", "reading": "きまる", "meaning": "menjadi ditentukan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この件は（　）にしておいて、また後で考えます。",
+      "optionA": "保留",
+      "optionB": "停留",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "大事な手紙やお金を郵便（　）で送る。",
+      "optionA": "書留",
+      "optionB": "貯金",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "家を買ったので毎月のローンの（　）がたいへんだ。",
+      "optionA": "温帯",
+      "optionB": "返済",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "もうすぐ受験なので、神社で（　）を買った。",
+      "optionA": "お守り",
+      "optionB": "お伝え",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "車も人も、信号を（　）ましょう。",
+      "optionA": "保ち",
+      "optionB": "守り",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "携帯電話の電話番号が（　）ましたのでお知らせします。",
+      "optionA": "変え",
+      "optionB": "変わり",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "選考の結果、オリンピックに出場する選手が（　）。",
+      "optionA": "選んだ",
+      "optionB": "決まった",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "メールを（　）作成する。",
+      "optionA": "規定",
+      "optionB": "新規",
+      "answer": "B"
+    }
+  ]
+}
