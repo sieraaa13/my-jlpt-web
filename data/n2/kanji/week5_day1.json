@@ -1,0 +1,279 @@
+{
+  "week": 5,
+  "day": 1,
+  "title": "家庭用品（ポット・ヒーター）",
+  "subtitle": "Household Goods (thermos flask, heater)",
+  "translation": "Peralatan Rumah Tangga (Termos, Pemanas)",
+  "sceneDescription": "Ilustrasi pertama menunjukkan ポット (termos air panas listrik) dengan peringatan: kalau dimiringkan atau terguling, air panas bisa tumpah dan berisiko membuat luka bakar atau mengotori barang lain, jadi harus diletakkan jauh dari jangkauan anak kecil.\n\n Ilustrasi kedua menunjukkan 石油ヒーター (pemanas ruangan berbahan bakar minyak tanah) dengan peringatan: matikan sebelum tidur, perlu ventilasi 1-2 kali per jam, jangan menyentuh saat menyala karena panas, dan jangan memakai minyak tanah lama. Ada juga percakapan anak dan ayah: \"Minyak tanah yang tersisa bisa dipakai tahun depan, kan?\" \"Tidak, harus dihabiskan. Lihat, sudah tertulis begitu.\"",
+  "signs": [
+    { "text": "傾けたり横転させると、お湯がもれます", "meaning": "Kalau dimiringkan atau terguling, air panas bisa tumpah" },
+    { "text": "幼児の手の届かないところに置いてください", "meaning": "Simpan di tempat yang tidak terjangkau anak kecil" },
+    { "text": "寝るとき消火", "meaning": "Matikan sebelum tidur" },
+    { "text": "換気必要（1時間に1〜2回）", "meaning": "Perlu ventilasi (1-2 kali per jam)" },
+    { "text": "古い灯油は使用しないでください", "meaning": "Jangan gunakan minyak tanah lama" }
+  ],
+  "kanjiList": [
+    {
+      "id": 373,
+      "character": "傾",
+      "strokes": 13,
+      "onyomi": ["ケイ"],
+      "kunyomi": ["かたむく", "かたむける"],
+      "words": [
+        { "word": "傾向", "reading": "けいこう", "meaning": "kecenderungan, tren" },
+        { "word": "傾く", "reading": "かたむく", "meaning": "miring, condong" }
+      ],
+      "extraWords": [
+        { "word": "傾ける", "reading": "かたむける", "meaning": "memiringkan (sesuatu)" }
+      ]
+    },
+    {
+      "id": 374,
+      "character": "横",
+      "strokes": 15,
+      "onyomi": ["オウ"],
+      "kunyomi": ["よこ"],
+      "words": [
+        { "word": "横転", "reading": "おうてん", "meaning": "terbalik, terguling" },
+        { "word": "横", "reading": "よこ", "meaning": "samping" }
+      ],
+      "extraWords": [
+        { "word": "横断歩道", "reading": "おうだんほどう", "meaning": "zebra cross, penyeberangan pejalan kaki" }
+      ]
+    },
+    {
+      "id": 375,
+      "character": "湯",
+      "strokes": 12,
+      "onyomi": ["トウ"],
+      "kunyomi": ["ゆ"],
+      "words": [
+        { "word": "熱湯", "reading": "ねっとう", "meaning": "air mendidih", "note": "→ lihat kanji #381 (熱)" },
+        { "word": "湯飲み", "reading": "ゆのみ", "meaning": "cangkir teh" }
+      ],
+      "extraWords": [
+        { "word": "湯", "reading": "ゆ", "meaning": "air panas" },
+        { "word": "湯気", "reading": "ゆげ", "meaning": "uap air" }
+      ]
+    },
+    {
+      "id": 376,
+      "character": "恐",
+      "strokes": 10,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["おそれる", "おそろしい"],
+      "words": [
+        { "word": "恐怖", "reading": "きょうふ", "meaning": "ketakutan", "note": "→ lihat kanji #703 (怖)" },
+        { "word": "恐れ", "reading": "おそれ", "meaning": "kekhawatiran, risiko" }
+      ],
+      "extraWords": [
+        { "word": "恐ろしい", "reading": "おそろしい", "meaning": "menakutkan" },
+        { "word": "恐れ入ります", "reading": "おそれいります", "meaning": "mohon maaf/permisi (ungkapan sopan)" }
+      ]
+    },
+    {
+      "id": 377,
+      "character": "原",
+      "strokes": 10,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["はら"],
+      "words": [
+        { "word": "原料", "reading": "げんりょう", "meaning": "bahan baku" },
+        { "word": "野原", "reading": "のはら", "meaning": "padang rumput" }
+      ],
+      "extraWords": [
+        { "word": "原産", "reading": "げんさん", "meaning": "asal produksi" }
+      ]
+    },
+    {
+      "id": 378,
+      "character": "因",
+      "strokes": 6,
+      "onyomi": ["イン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "原因", "reading": "げんいん", "meaning": "penyebab" }
+      ],
+      "extraWords": [
+        { "word": "要因", "reading": "よういん", "meaning": "faktor penyebab" }
+      ]
+    },
+    {
+      "id": 379,
+      "character": "置",
+      "strokes": 13,
+      "onyomi": ["チ"],
+      "kunyomi": ["おく"],
+      "words": [
+        { "word": "位置", "reading": "いち", "meaning": "posisi, lokasi" },
+        { "word": "置く", "reading": "おく", "meaning": "meletakkan" }
+      ],
+      "extraWords": [
+        { "word": "装置", "reading": "そうち", "meaning": "perangkat, alat" },
+        { "word": "物置", "reading": "ものおき", "meaning": "gudang kecil" }
+      ]
+    },
+    {
+      "id": 380,
+      "character": "寝",
+      "strokes": 13,
+      "onyomi": ["シン"],
+      "kunyomi": ["ねる"],
+      "words": [
+        { "word": "寝室", "reading": "しんしつ", "meaning": "kamar tidur" },
+        { "word": "寝る", "reading": "ねる", "meaning": "tidur" }
+      ],
+      "extraWords": [
+        { "word": "寝坊", "reading": "ねぼう", "meaning": "bangun kesiangan", "note": "→ lihat kanji #466 (坊)" },
+        { "word": "昼寝", "reading": "ひるね", "meaning": "tidur siang" }
+      ]
+    },
+    {
+      "id": 381,
+      "character": "熱",
+      "strokes": 15,
+      "onyomi": ["ネツ"],
+      "kunyomi": ["あつい"],
+      "words": [
+        { "word": "熱", "reading": "ねつ", "meaning": "panas, demam" },
+        { "word": "熱中", "reading": "ねっちゅう", "meaning": "antusias, tergila-gila" }
+      ],
+      "extraWords": [
+        { "word": "熱心（な）", "reading": "ねっしん", "meaning": "tekun, bersemangat" },
+        { "word": "熱い", "reading": "あつい", "meaning": "panas" }
+      ]
+    },
+    {
+      "id": 382,
+      "character": "焼",
+      "strokes": 12,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["やく", "やける"],
+      "words": [
+        { "word": "燃焼", "reading": "ねんしょう", "meaning": "pembakaran" },
+        { "word": "焼く", "reading": "やく", "meaning": "membakar, memanggang" }
+      ],
+      "extraWords": [
+        { "word": "焼ける", "reading": "やける", "meaning": "terbakar, matang" }
+      ]
+    },
+    {
+      "id": 383,
+      "character": "触",
+      "strokes": 13,
+      "onyomi": ["ショク"],
+      "kunyomi": ["ふれる", "さわる"],
+      "words": [
+        { "word": "接触", "reading": "せっしょく", "meaning": "kontak, sentuhan", "note": "→ lihat kanji #395 (接)" },
+        { "word": "触れる", "reading": "ふれる", "meaning": "menyentuh, menyinggung", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "感触", "reading": "かんしょく", "meaning": "sensasi sentuhan" },
+        { "word": "触る", "reading": "さわる", "meaning": "menyentuh", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 384,
+      "character": "灯",
+      "strokes": 6,
+      "onyomi": ["トウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "灯油", "reading": "とうゆ", "meaning": "minyak tanah" },
+        { "word": "蛍光灯", "reading": "けいこうとう", "meaning": "lampu neon" }
+      ],
+      "extraWords": [
+        { "word": "灯台", "reading": "とうだい", "meaning": "mercusuar" },
+        { "word": "電灯", "reading": "でんとう", "meaning": "lampu listrik" }
+      ]
+    },
+    {
+      "id": 385,
+      "character": "油",
+      "strokes": 8,
+      "onyomi": ["ユ"],
+      "kunyomi": ["あぶら"],
+      "words": [
+        { "word": "石油", "reading": "せきゆ", "meaning": "minyak bumi" },
+        { "word": "油断", "reading": "ゆだん", "meaning": "lengah" }
+      ],
+      "extraWords": [
+        { "word": "原油", "reading": "げんゆ", "meaning": "minyak mentah" },
+        { "word": "油", "reading": "あぶら", "meaning": "minyak" }
+      ]
+    },
+    {
+      "id": 386,
+      "character": "余",
+      "strokes": 7,
+      "onyomi": ["ヨ"],
+      "kunyomi": ["あまる"],
+      "words": [
+        { "word": "余分（な）", "reading": "よぶん", "meaning": "berlebih" },
+        { "word": "余裕", "reading": "よゆう", "meaning": "kelonggaran, keleluasaan" }
+      ],
+      "extraWords": [
+        { "word": "余計（な）", "reading": "よけい", "meaning": "berlebihan, tidak perlu" },
+        { "word": "余る", "reading": "あまる", "meaning": "tersisa" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "試験に出される問題の（　）を調べて受験勉強をする。",
+      "optionA": "傾向",
+      "optionB": "原因",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「（　）が、荷物はそちらに置いてください。」",
+      "optionA": "恐れ入ります",
+      "optionB": "恐ろしいです",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "アフリカ（　）のお茶を飲む。",
+      "optionA": "原料",
+      "optionB": "原産",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "この車にはABSという安全（　）がついています。",
+      "optionA": "装置",
+      "optionB": "位置",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「作品には手を（　）ください。」",
+      "optionA": "触れないで",
+      "optionB": "届けないで",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "今朝は寝坊をして朝食をとる（　）がなかった。",
+      "optionA": "余分",
+      "optionB": "余裕",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "電灯をつけるのを忘れるぐらいゲームに（　）した。",
+      "optionA": "熱心",
+      "optionB": "熱中",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）は船に位置を教えます。",
+      "optionA": "灯台",
+      "optionB": "灯油",
+      "answer": "A"
+    }
+  ]
+}
