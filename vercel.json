@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/extract-memories",
+      "schedule": "0 18 * * *"
+    }
+  ]
+}

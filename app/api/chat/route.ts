@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { buildMemoryContext, saveChatTurn } from "@/lib/siera-memory";
 
 export const runtime = "nodejs";
 
@@ -10,7 +11,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "API Key missing" }, { status: 500 });
     }
 
-    const { messages, examContext, level, isExamFinished } = await req.json();
+    const { messages, examContext, level, isExamFinished, userId, userName } = await req.json();
 
     // ====== SISTEM PROMPT DASAR — KARAKTER SIERA ======
     let systemPrompt = `Kamu adalah SIERA, tutor JLPT yang ramah, sabar, dan ahli bahasa Jepang.
@@ -26,6 +27,18 @@ ATURAN UMUM:
 
     if (level && level !== "General") {
       systemPrompt += `\n\nUser sedang belajar level JLPT ${level}.`;
+    }
+
+    if (userName) {
+      systemPrompt += `\n\nNama user yang sedang chat sekarang: ${userName}. Panggil dengan nama ini sesekali secara natural, jangan berlebihan.`;
+    }
+
+    // ====== MEMORI JANGKA PANJANG (kalau user login) ======
+    if (userId) {
+      const memoryBlock = await buildMemoryContext(userId);
+      if (memoryBlock) {
+        systemPrompt += memoryBlock;
+      }
     }
 
     // ====== MODE 1: UJIAN BERLANGSUNG ======
@@ -257,9 +270,19 @@ Ingat aja, "shuto" mirip kata "shoot" — pusat tembakan = pusat negara!"`;
       );
     }
 
+    const replyContent = data.choices[0].message.content;
+
+    if (userId) {
+      const lastUserMsg = [...messages].reverse().find((m: any) => m.role === "user");
+      if (lastUserMsg?.content) {
+        // Tidak di-await supaya tidak menahan respon ke user; simpan gagal-diam.
+        saveChatTurn(userId, lastUserMsg.content, replyContent);
+      }
+    }
+
     return NextResponse.json({
       role: "assistant",
-      content: data.choices[0].message.content,
+      content: replyContent,
     });
   } catch (error: any) {
     console.error("Error:", error);

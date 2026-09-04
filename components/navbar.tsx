@@ -66,6 +66,9 @@ export function Navbar() {
               <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
                 Beranda
               </a>
+              <a href="/siera" className="text-muted-foreground hover:text-foreground transition-colors">
+                Siera
+              </a>
               <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors">
                 Ujian JLPT
               </a>
@@ -158,6 +161,7 @@ export function Navbar() {
                 </div>
 
                 <a href="/" className="text-muted-foreground hover:text-foreground transition-colors py-2">Beranda</a>
+                <a href="/siera" className="text-muted-foreground hover:text-foreground transition-colors py-2">Siera</a>
                 <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors py-2">Ujian JLPT</a>
                 {/* ↓↓↓ QUIZ HARIAN DI MOBILE MENU ↓↓↓ */}
                 <a href="/quiz" className="text-muted-foreground hover:text-foreground transition-colors py-2">Quiz Harian 🎌</a>

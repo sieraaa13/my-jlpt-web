@@ -5,6 +5,7 @@ import Image from "next/image";
 import { X, ChevronDown, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useExamContext } from "@/components/exam-context";
+import { useAuth } from "@/components/auth-context";
 
 interface Message {
   role: "user" | "assistant";
@@ -13,6 +14,7 @@ interface Message {
 
 export default function FloatingAIChat() {
   const { examData } = useExamContext();
+  const { user } = useAuth();
   const level = examData?.level || "General";
 
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -129,6 +131,8 @@ export default function FloatingAIChat() {
           examContext,
           level,
           isExamFinished: examData?.isExamFinished || false,
+          userId: user?.id ?? null,
+          userName: user?.name ?? null,
         }),
       });
 
