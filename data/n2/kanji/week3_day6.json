@@ -1,0 +1,273 @@
+{
+  "week": 3,
+  "day": 6,
+  "title": "いろいろな通知②",
+  "subtitle": "Various Notices ②",
+  "translation": "Berbagai Pemberitahuan ②",
+  "sceneDescription": "「検診結果」: Amplop hasil pemeriksaan kesehatan yang harus dibuka dengan cara tertentu（開封方法）. Isinya menyatakan hasil pemeriksaan normal（異常ありませんでした）dan mengingatkan untuk periksa lagi tahun depan.\n\n「移転のお知らせ」: Kantor telah pindah ke alamat baru tanpa perubahan nomor telepon. Ada juga kartu pos ucapan pindah rumah（引っ越しました！）yang menyebutkan lingkungan baru di pinggiran kota dengan udara bersih, mengundang untuk mampir.",
+  "signs": [
+    { "text": "検診結果", "meaning": "Hasil pemeriksaan kesehatan" },
+    { "text": "開封方法", "meaning": "Cara membuka (amplop)" },
+    { "text": "受診者各位", "meaning": "Kepada semua peserta pemeriksaan" },
+    { "text": "異常ありませんでした", "meaning": "Hasil normal, tidak ada kelainan" },
+    { "text": "移転のお知らせ", "meaning": "Pemberitahuan pindah kantor" },
+    { "text": "引っ越しました！", "meaning": "Sudah pindah rumah!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 250,
+      "character": "結",
+      "strokes": 12,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["むすぶ"],
+      "words": [
+        { "word": "結果", "reading": "けっか", "meaning": "hasil" },
+        { "word": "結ぶ", "reading": "むすぶ", "meaning": "mengikat, menyimpulkan" }
+      ],
+      "extraWords": [
+        { "word": "結局", "reading": "けっきょく", "meaning": "pada akhirnya" }
+      ]
+    },
+    {
+      "id": 251,
+      "character": "果",
+      "strokes": 8,
+      "onyomi": ["カ"],
+      "kunyomi": ["はたす"],
+      "words": [
+        { "word": "効果", "reading": "こうか", "meaning": "efek, hasil" },
+        { "word": "果物", "reading": "くだもの", "meaning": "buah-buahan", "flag": "special" }
+      ],
+      "extraWords": [
+        { "word": "果実", "reading": "かじつ", "meaning": "buah (hasil pohon)", "note": "→ lihat kanji #451 (実)" },
+        { "word": "果たす", "reading": "はたす", "meaning": "menjalankan, memenuhi (tugas)" }
+      ]
+    },
+    {
+      "id": 252,
+      "character": "封",
+      "strokes": 9,
+      "onyomi": ["フウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "開封", "reading": "かいふう", "meaning": "membuka segel/amplop" },
+        { "word": "同封", "reading": "どうふう", "meaning": "dilampirkan bersama surat" }
+      ],
+      "extraWords": [
+        { "word": "封書", "reading": "ふうしょ", "meaning": "surat tersegel" }
+      ]
+    },
+    {
+      "id": 253,
+      "character": "法",
+      "strokes": 8,
+      "onyomi": ["ホウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "方法", "reading": "ほうほう", "meaning": "metode, cara" },
+        { "word": "作法", "reading": "さほう", "meaning": "tata krama, etiket", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "文法", "reading": "ぶんぽう", "meaning": "tata bahasa" },
+        { "word": "法人", "reading": "ほうじん", "meaning": "badan hukum" }
+      ]
+    },
+    {
+      "id": 254,
+      "character": "各",
+      "strokes": 6,
+      "onyomi": ["カク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "各〜", "reading": "かく", "meaning": "setiap ..." },
+        { "word": "各地", "reading": "かくち", "meaning": "berbagai daerah" }
+      ],
+      "extraWords": [
+        { "word": "各自", "reading": "かくじ", "meaning": "masing-masing orang" }
+      ]
+    },
+    {
+      "id": 255,
+      "character": "位",
+      "strokes": 7,
+      "onyomi": ["イ"],
+      "kunyomi": ["くらい"],
+      "words": [
+        { "word": "〜各位", "reading": "かくい", "meaning": "kepada semua ... (sapaan formal)" },
+        { "word": "〜位", "reading": "くらい", "meaning": "peringkat ke-... (penghitung)" }
+      ],
+      "extraWords": [
+        { "word": "地位", "reading": "ちい", "meaning": "status, kedudukan" },
+        { "word": "位", "reading": "くらい", "meaning": "kedudukan, pangkat" }
+      ]
+    },
+    {
+      "id": 256,
+      "character": "異",
+      "strokes": 11,
+      "onyomi": ["イ"],
+      "kunyomi": ["こと"],
+      "words": [
+        { "word": "異常（な）", "reading": "いじょう", "meaning": "tidak normal" },
+        { "word": "異変", "reading": "いへん", "meaning": "kejadian aneh/tidak biasa" }
+      ],
+      "extraWords": [
+        { "word": "同音異義語", "reading": "どうおんいぎご", "meaning": "kata homofon (bunyi sama arti beda)" },
+        { "word": "異なる", "reading": "ことなる", "meaning": "berbeda", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 257,
+      "character": "移",
+      "strokes": 11,
+      "onyomi": ["イ"],
+      "kunyomi": ["うつる", "うつす"],
+      "words": [
+        { "word": "移転", "reading": "いてん", "meaning": "pindah (kantor/lokasi)" },
+        { "word": "移る", "reading": "うつる", "meaning": "berpindah" }
+      ],
+      "extraWords": [
+        { "word": "移動", "reading": "いどう", "meaning": "perpindahan" },
+        { "word": "移す", "reading": "うつす", "meaning": "memindahkan" }
+      ]
+    },
+    {
+      "id": 258,
+      "character": "務",
+      "strokes": 11,
+      "onyomi": ["ム"],
+      "kunyomi": ["つとめる"],
+      "words": [
+        { "word": "事務", "reading": "じむ", "meaning": "pekerjaan kantor, administrasi" },
+        { "word": "任務", "reading": "にんむ", "meaning": "tugas, misi" }
+      ],
+      "extraWords": [
+        { "word": "事務所", "reading": "じむしょ", "meaning": "kantor" },
+        { "word": "務める", "reading": "つとめる", "meaning": "menjabat, bertugas sebagai", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 259,
+      "character": "更",
+      "strokes": 7,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "変更", "reading": "へんこう", "meaning": "perubahan" },
+        { "word": "更衣室", "reading": "こういしつ", "meaning": "ruang ganti" }
+      ],
+      "extraWords": [
+        { "word": "更新", "reading": "こうしん", "meaning": "pembaruan" }
+      ]
+    },
+    {
+      "id": 260,
+      "character": "越",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["こす", "こえる"],
+      "words": [
+        { "word": "引っ越す", "reading": "ひっこす", "meaning": "pindah rumah" },
+        { "word": "お越しの際", "reading": "おこしのさい", "meaning": "pada saat Anda datang (bentuk hormat)" }
+      ],
+      "extraWords": [
+        { "word": "乗り越す", "reading": "のりこす", "meaning": "kelewat turun (dari stasiun tujuan)" }
+      ]
+    },
+    {
+      "id": 261,
+      "character": "郊",
+      "strokes": 9,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "郊外", "reading": "こうがい", "meaning": "daerah pinggiran kota" }
+      ],
+      "extraWords": [
+        { "word": "近郊", "reading": "きんこう", "meaning": "pinggiran kota terdekat" }
+      ]
+    },
+    {
+      "id": 262,
+      "character": "周",
+      "strokes": 8,
+      "onyomi": ["シュウ"],
+      "kunyomi": ["まわり"],
+      "words": [
+        { "word": "円周", "reading": "えんしゅう", "meaning": "keliling lingkaran" },
+        { "word": "周り", "reading": "まわり", "meaning": "sekeliling, sekitar" }
+      ]
+    },
+    {
+      "id": 263,
+      "character": "畑",
+      "strokes": 9,
+      "onyomi": [],
+      "kunyomi": ["はたけ"],
+      "words": [
+        { "word": "畑", "reading": "はたけ", "meaning": "ladang, kebun" }
+      ],
+      "extraWords": [
+        { "word": "花畑", "reading": "はなばたけ", "meaning": "ladang bunga" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "手紙に写真を（　）する。",
+      "optionA": "開封",
+      "optionB": "同封",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "最近、全国（　）で異常な事件が起こっている。",
+      "optionA": "各位",
+      "optionB": "各地",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "朝、（　）を食べると体にいいそうだ。",
+      "optionA": "果物",
+      "optionB": "貨物",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "運動靴のひもがほどけそうですよ。しっかり（　）。",
+      "optionA": "結んで",
+      "optionB": "積んで",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "会社の経理（　）を担当しています。",
+      "optionA": "事務",
+      "optionB": "任務",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "旅券事務所でパスポートの（　）をする。",
+      "optionA": "延期",
+      "optionB": "更新",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "女子更衣室は2階に（　）ました。",
+      "optionA": "移り",
+      "optionB": "写り",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "引っ越した家の（　）は緑が多い。",
+      "optionA": "周り",
+      "optionB": "配り",
+      "answer": "A"
+    }
+  ]
+}
