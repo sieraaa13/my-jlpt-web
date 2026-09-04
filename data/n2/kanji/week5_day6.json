@@ -1,0 +1,267 @@
+{
+  "week": 5,
+  "day": 6,
+  "title": "インターホン・パソコン",
+  "subtitle": "Intercom, Personal Computers",
+  "translation": "Interkom dan Komputer",
+  "sceneDescription": "Ilustrasi pertama menjelaskan cara pakai interkom: kalau bel berbunyi, angkat gagang dan bicara — wajah tamu juga bisa terlihat. Untuk memanggil kamar lain, tekan tombol panggil. Untuk memberi tahu keadaan darurat, tekan kuat tombol alarm darurat. Untuk menghentikan bunyi alarm, dorong kembali penutup dari belakang dan atur ke posisi semula.\n\n Ilustrasi kedua menunjukkan tampilan email masuk di komputer dan progres \"sedang menyambungkan\", petunjuk cara memakai software kamus bahasa Jepang (klik ikon di desktop, ikuti instruksi layar, atau jalankan lewat menu file bila tidak berjalan otomatis), serta contoh operasi menyisipkan baris/kolom lewat menu Edit-Tampilan-Sisipkan.",
+  "signs": [
+    { "text": "チャイムが鳴ったら受話器を取って話します", "meaning": "Kalau bel berbunyi, angkat gagang dan bicara" },
+    { "text": "非常警報ボタンを強く押します", "meaning": "Tekan kuat tombol alarm darurat" },
+    { "text": "受信メール", "meaning": "Email masuk" },
+    { "text": "接続中……", "meaning": "Sedang menyambungkan..." },
+    { "text": "日本語辞書ソフト「○○」の使い方", "meaning": "Cara pakai software kamus bahasa Jepang" }
+  ],
+  "kanjiList": [
+    {
+      "id": 440,
+      "character": "鳴",
+      "strokes": 14,
+      "onyomi": [],
+      "kunyomi": ["なる", "ならす", "なく"],
+      "words": [
+        { "word": "鳴る", "reading": "なる", "meaning": "berbunyi, berdering" },
+        { "word": "怒鳴る", "reading": "どなる", "meaning": "membentak, berteriak marah", "note": "→ lihat kanji #467 (怒)" }
+      ],
+      "extraWords": [
+        { "word": "鳴らす", "reading": "ならす", "meaning": "membunyikan" },
+        { "word": "鳴く", "reading": "なく", "meaning": "berkicau/bersuara (hewan)" }
+      ]
+    },
+    {
+      "id": 441,
+      "character": "訪",
+      "strokes": 11,
+      "onyomi": ["ホウ"],
+      "kunyomi": ["おとずれる", "たずねる"],
+      "words": [
+        { "word": "訪問", "reading": "ほうもん", "meaning": "kunjungan" },
+        { "word": "訪れる", "reading": "おとずれる", "meaning": "mengunjungi, datang", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "訪ねる", "reading": "たずねる", "meaning": "mengunjungi", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 442,
+      "character": "呼",
+      "strokes": 8,
+      "onyomi": ["コ"],
+      "kunyomi": ["よぶ"],
+      "words": [
+        { "word": "呼吸", "reading": "こきゅう", "meaning": "pernapasan" },
+        { "word": "呼ぶ", "reading": "よぶ", "meaning": "memanggil" }
+      ],
+      "extraWords": [
+        { "word": "呼び出す", "reading": "よびだす", "meaning": "memanggil keluar" }
+      ]
+    },
+    {
+      "id": 443,
+      "character": "警",
+      "strokes": 19,
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "警官", "reading": "けいかん", "meaning": "polisi", "note": "→ lihat kanji #726 (官)" },
+        { "word": "警察", "reading": "けいさつ", "meaning": "kepolisian", "note": "→ lihat kanji #514 (察)" }
+      ],
+      "extraWords": [
+        { "word": "警備", "reading": "けいび", "meaning": "keamanan, penjagaan" }
+      ]
+    },
+    {
+      "id": 444,
+      "character": "報",
+      "strokes": 12,
+      "onyomi": ["ホウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "警報", "reading": "けいほう", "meaning": "peringatan, alarm" },
+        { "word": "情報", "reading": "じょうほう", "meaning": "informasi" }
+      ],
+      "extraWords": [
+        { "word": "予報", "reading": "よほう", "meaning": "prakiraan" },
+        { "word": "電報", "reading": "でんぽう", "meaning": "telegram" }
+      ]
+    },
+    {
+      "id": 445,
+      "character": "裏",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["うら"],
+      "words": [
+        { "word": "裏", "reading": "うら", "meaning": "balik, belakang" },
+        { "word": "裏切る", "reading": "うらぎる", "meaning": "mengkhianati" }
+      ],
+      "extraWords": [
+        { "word": "裏口", "reading": "うらぐち", "meaning": "pintu belakang" },
+        { "word": "裏表", "reading": "うらおもて", "meaning": "dua sisi (depan-belakang), munafik" }
+      ]
+    },
+    {
+      "id": 446,
+      "character": "差",
+      "strokes": 10,
+      "onyomi": ["サ"],
+      "kunyomi": ["さす"],
+      "words": [
+        { "word": "交差点", "reading": "こうさてん", "meaning": "persimpangan" },
+        { "word": "差", "reading": "さ", "meaning": "selisih, perbedaan" },
+        { "word": "差別", "reading": "さべつ", "meaning": "diskriminasi" }
+      ],
+      "extraWords": [
+        { "word": "差出人", "reading": "さしだしにん", "meaning": "pengirim" },
+        { "word": "人差し指", "reading": "ひとさしゆび", "meaning": "jari telunjuk" }
+      ]
+    },
+    {
+      "id": 447,
+      "character": "続",
+      "strokes": 13,
+      "onyomi": ["ゾク"],
+      "kunyomi": ["つづく", "つづける"],
+      "words": [
+        { "word": "接続", "reading": "せつぞく", "meaning": "koneksi" },
+        { "word": "続く", "reading": "つづく", "meaning": "berlanjut" }
+      ],
+      "extraWords": [
+        { "word": "継続", "reading": "けいぞく", "meaning": "kelanjutan" },
+        { "word": "手続き", "reading": "てつづき", "meaning": "prosedur" }
+      ]
+    },
+    {
+      "id": 448,
+      "character": "辞",
+      "strokes": 13,
+      "onyomi": ["ジ"],
+      "kunyomi": ["やめる"],
+      "words": [
+        { "word": "辞書", "reading": "じしょ", "meaning": "kamus" },
+        { "word": "辞表", "reading": "じひょう", "meaning": "surat pengunduran diri" }
+      ],
+      "extraWords": [
+        { "word": "辞典", "reading": "じてん", "meaning": "kamus" },
+        { "word": "辞める", "reading": "やめる", "meaning": "berhenti (dari pekerjaan)" }
+      ]
+    },
+    {
+      "id": 449,
+      "character": "面",
+      "strokes": 9,
+      "onyomi": ["メン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "画面", "reading": "がめん", "meaning": "layar" },
+        { "word": "正面", "reading": "しょうめん", "meaning": "bagian depan" }
+      ],
+      "extraWords": [
+        { "word": "方面", "reading": "ほうめん", "meaning": "arah, bidang" },
+        { "word": "面積", "reading": "めんせき", "meaning": "luas area" }
+      ]
+    },
+    {
+      "id": 450,
+      "character": "操",
+      "strokes": 16,
+      "onyomi": ["ソウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "操作", "reading": "そうさ", "meaning": "pengoperasian" }
+      ],
+      "extraWords": [
+        { "word": "体操", "reading": "たいそう", "meaning": "senam" }
+      ]
+    },
+    {
+      "id": 451,
+      "character": "実",
+      "strokes": 8,
+      "onyomi": ["ジツ"],
+      "kunyomi": ["み", "みのる"],
+      "words": [
+        { "word": "実行", "reading": "じっこう", "meaning": "pelaksanaan" },
+        { "word": "事実", "reading": "じじつ", "meaning": "fakta" },
+        { "word": "実", "reading": "み", "meaning": "buah, biji", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "実験", "reading": "じっけん", "meaning": "eksperimen" },
+        { "word": "実る", "reading": "みのる", "meaning": "berbuah" }
+      ]
+    },
+    {
+      "id": 452,
+      "character": "列",
+      "strokes": 6,
+      "onyomi": ["レツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "列", "reading": "れつ", "meaning": "antrean, baris" },
+        { "word": "列車", "reading": "れっしゃ", "meaning": "kereta api" }
+      ],
+      "extraWords": [
+        { "word": "行列", "reading": "ぎょうれつ", "meaning": "antrean, prosesi" },
+        { "word": "列島", "reading": "れっとう", "meaning": "kepulauan", "note": "→ lihat kanji #521 (島)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "訪問販売の人が何度も（　）きてチャイムを鳴らす。",
+      "optionA": "訪ねて",
+      "optionB": "栄えて",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "台風が近づいて雨や風が強くなり、注意報が（　）に変わった。",
+      "optionA": "警報",
+      "optionB": "電報",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "あの人の言動には（　）があって、信用できない。",
+      "optionA": "内外",
+      "optionB": "裏表",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "お客様に（　）を申し上げます。",
+      "optionA": "お呼び出し",
+      "optionB": "お呼び込み",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "（　）玄関は閉まっていますから、裏口から入ってください。",
+      "optionA": "正面",
+      "optionB": "前面",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "合格した人は入学（　）をしてください。",
+      "optionA": "手続き",
+      "optionB": "操作",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "新製品を買いたい人の（　）が店の前から交差点まで続いている。",
+      "optionA": "行",
+      "optionB": "列",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "私は課長に（　）を出した。",
+      "optionA": "辞表",
+      "optionB": "裏表",
+      "answer": "A"
+    }
+  ]
+}
