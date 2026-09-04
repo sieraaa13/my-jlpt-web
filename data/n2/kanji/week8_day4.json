@@ -1,0 +1,258 @@
+{
+  "week": 8,
+  "day": 4,
+  "title": "記事①",
+  "subtitle": "Articles ①",
+  "translation": "Artikel Berita ①",
+  "sceneDescription": "Contoh artikel berita 1: \"Pertemuan puncak Jepang-A... Kedua pemimpin negara yang menghadapi berbagai masalah sepakat untuk saling menghormati pendapat dan bekerja sama.\" \"Perusahaan B mogok kerja... Pada tanggal tertentu, 50 karyawan Perusahaan B melakukan mogok kerja menuntut perbaikan kondisi kerja, dan masih berlangsung hingga sekarang.\"\n\n Contoh artikel berita 2: \"Pemecatan tidak adil... A menggugat Perusahaan B... Karyawan A dari Perusahaan B dipecat setelah kembali masuk kerja usai cuti sakit 3 minggu. Ia mengklaim ini termasuk pemecatan tidak adil yang dilarang hukum...\" \"Situasi ○○... Prajurit menceritakan pengalaman menakutkan di medan perang.\" \"Lahan bera yang terbengkalai berubah jadi pemandangan indah... Untuk memperbaiki lanskap yang rusak, relawan warga menggali dan mengolah lahan bera itu, yang kini berubah menjadi ladang bunga rapa yang indah.\"",
+  "signs": [
+    { "text": "日Ａ首脳会談", "meaning": "Pertemuan puncak pemimpin Jepang-A" },
+    { "text": "Ｂ社スト決行", "meaning": "Perusahaan B lakukan mogok kerja" },
+    { "text": "解雇は不当", "meaning": "Pemecatan tidak adil" },
+    { "text": "○○情勢", "meaning": "Situasi ○○" },
+    { "text": "荒れた休耕地が美しい風景に変身", "meaning": "Lahan bera yang terbengkalai berubah jadi pemandangan indah" }
+  ],
+  "kanjiList": [
+    {
+      "id": 694,
+      "character": "脳",
+      "strokes": 11,
+      "onyomi": ["ノウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "頭脳", "reading": "ずのう", "meaning": "otak, kecerdasan" },
+        { "word": "首脳", "reading": "しゅのう", "meaning": "pemimpin (negara/kelompok)" }
+      ]
+    },
+    {
+      "id": 695,
+      "character": "抱",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["だく", "いだく", "かかえる"],
+      "words": [
+        { "word": "抱く", "reading": "だく", "meaning": "memeluk" },
+        { "word": "抱える", "reading": "かかえる", "meaning": "memikul, menanggung (masalah)" }
+      ],
+      "extraWords": [
+        { "word": "抱く", "reading": "いだく", "meaning": "memeluk / memendam (harapan/keraguan)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 696,
+      "character": "双",
+      "strokes": 4,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["ふた"],
+      "words": [
+        { "word": "双方", "reading": "そうほう", "meaning": "kedua belah pihak" },
+        { "word": "双子", "reading": "ふたご", "meaning": "anak kembar" }
+      ]
+    },
+    {
+      "id": 697,
+      "character": "尊",
+      "strokes": 12,
+      "onyomi": ["ソン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "尊重", "reading": "そんちょう", "meaning": "penghormatan, penghargaan" }
+      ],
+      "extraWords": [
+        { "word": "尊敬", "reading": "そんけい", "meaning": "rasa hormat", "note": "→ lihat kanji #713 (敬)" }
+      ]
+    },
+    {
+      "id": 698,
+      "character": "雇",
+      "strokes": 12,
+      "onyomi": ["コ"],
+      "kunyomi": ["やとう"],
+      "words": [
+        { "word": "雇用", "reading": "こよう", "meaning": "ketenagakerjaan, perekrutan" },
+        { "word": "雇う", "reading": "やとう", "meaning": "mempekerjakan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "解雇", "reading": "かいこ", "meaning": "pemecatan" }
+      ]
+    },
+    {
+      "id": 699,
+      "character": "条",
+      "strokes": 7,
+      "onyomi": ["ジョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "条件", "reading": "じょうけん", "meaning": "syarat, kondisi" }
+      ],
+      "extraWords": [
+        { "word": "条約", "reading": "じょうやく", "meaning": "perjanjian, traktat" }
+      ]
+    },
+    {
+      "id": 700,
+      "character": "善",
+      "strokes": 12,
+      "onyomi": ["ゼン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "改善", "reading": "かいぜん", "meaning": "perbaikan" },
+        { "word": "親善", "reading": "しんぜん", "meaning": "persahabatan" }
+      ],
+      "extraWords": [
+        { "word": "善悪", "reading": "ぜんあく", "meaning": "baik-buruk" }
+      ]
+    },
+    {
+      "id": 701,
+      "character": "律",
+      "strokes": 9,
+      "onyomi": ["リツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "法律", "reading": "ほうりつ", "meaning": "undang-undang" },
+        { "word": "規律", "reading": "きりつ", "meaning": "disiplin, tata tertib" }
+      ]
+    },
+    {
+      "id": 702,
+      "character": "勢",
+      "strokes": 13,
+      "onyomi": ["セイ"],
+      "kunyomi": ["いきおい"],
+      "words": [
+        { "word": "情勢", "reading": "じょうせい", "meaning": "keadaan, situasi" },
+        { "word": "姿勢", "reading": "しせい", "meaning": "sikap, postur" }
+      ],
+      "extraWords": [
+        { "word": "大勢", "reading": "おおぜい", "meaning": "banyak orang" },
+        { "word": "勢い", "reading": "いきおい", "meaning": "momentum, semangat", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 703,
+      "character": "怖",
+      "strokes": 8,
+      "onyomi": ["フ"],
+      "kunyomi": ["こわい"],
+      "words": [
+        { "word": "恐怖", "reading": "きょうふ", "meaning": "ketakutan" },
+        { "word": "怖い", "reading": "こわい", "meaning": "menakutkan" }
+      ]
+    },
+    {
+      "id": 704,
+      "character": "荒",
+      "strokes": 9,
+      "onyomi": [],
+      "kunyomi": ["あらい", "あれる", "あらす"],
+      "words": [
+        { "word": "荒い", "reading": "あらい", "meaning": "kasar, ganas" },
+        { "word": "荒らす", "reading": "あらす", "meaning": "merusak, mengacaukan" }
+      ],
+      "extraWords": [
+        { "word": "荒れる", "reading": "あれる", "meaning": "menjadi liar/rusak/kacau" }
+      ]
+    },
+    {
+      "id": 705,
+      "character": "耕",
+      "strokes": 10,
+      "onyomi": ["コウ"],
+      "kunyomi": ["たがやす"],
+      "words": [
+        { "word": "耕地", "reading": "こうち", "meaning": "lahan pertanian" },
+        { "word": "耕す", "reading": "たがやす", "meaning": "membajak, mengolah tanah", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "休耕地", "reading": "きゅうこうち", "meaning": "lahan bera (tidak digarap)" }
+      ]
+    },
+    {
+      "id": 706,
+      "character": "景",
+      "strokes": 12,
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "風景", "reading": "ふうけい", "meaning": "pemandangan" },
+        { "word": "景気", "reading": "けいき", "meaning": "kondisi ekonomi" }
+      ],
+      "extraWords": [
+        { "word": "光景", "reading": "こうけい", "meaning": "pemandangan, skenario" },
+        { "word": "景色", "reading": "けしき", "meaning": "pemandangan, lanskap", "flag": "special" }
+      ]
+    },
+    {
+      "id": 707,
+      "character": "掘",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["ほる"],
+      "words": [
+        { "word": "掘る", "reading": "ほる", "meaning": "menggali" }
+      ],
+      "extraWords": [
+        { "word": "掘り返す", "reading": "ほりかえす", "meaning": "menggali kembali" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "国際（　）を目的とした試合が行われる。",
+      "optionA": "親善",
+      "optionB": "改善",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "多少（　）が悪くても、雇ってほしいと思っている。",
+      "optionA": "条件",
+      "optionB": "尊重",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "あの双子は兄弟そろって素晴らしい（　）を持っている。",
+      "optionA": "頭脳",
+      "optionB": "首脳",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "両国はさまざまな問題を（　）いる。",
+      "optionA": "抱いて",
+      "optionB": "抱えて",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "犬が庭の土を（　）何かを隠した。",
+      "optionA": "埋めて",
+      "optionB": "掘って",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "この馬は気が（　）。",
+      "optionA": "怖い",
+      "optionB": "荒い",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "優勝したチームは今回とても（　）があった。",
+      "optionA": "勢い",
+      "optionB": "景気",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "寮では（　）正しい生活をしている。",
+      "optionA": "規律",
+      "optionB": "法律",
+      "answer": "A"
+    }
+  ]
+}
