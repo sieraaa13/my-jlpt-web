@@ -1,0 +1,276 @@
+{
+  "week": 7,
+  "day": 1,
+  "title": "求人・募集",
+  "subtitle": "'Help Wanted', Recruitment",
+  "translation": "Lowongan Kerja dan Pendaftaran",
+  "sceneDescription": "Iklan lowongan kerja: \"Dicari staf mendesak! Pekerjaan mudah. Syarat: usia dan pengalaman tidak masalah, punya SIM mobil biasa jadi nilai tambah. Gaji: mulai 800 yen/jam. Kerja: yang bisa masuk Sabtu-Minggu-hari libur diutamakan, hari dan jam kerja bisa dirundingkan. Lamaran: hubungi lewat telepon, bawa CV. Tanggal wawancara akan dihubungi kemudian.\"\n\n Iklan pendaftaran siswa: \"Sekolah Bahasa Jepang Aoyama, sedang membuka pendaftaran program siang hari. Ada sistem beasiswa. Kelas intensif jangka pendek sedang dibuka. Tersedia kelas pemula, menengah, dan mahir. Kami membimbing dengan teliti mulai dari dasar.\"",
+  "signs": [
+    { "text": "スタッフ急募！簡単な仕事です。", "meaning": "Dicari staf mendesak! Pekerjaan mudah." },
+    { "text": "資格：年齢・経験不問。", "meaning": "Syarat: usia/pengalaman tidak dipermasalahkan." },
+    { "text": "給与：時給800円〜", "meaning": "Gaji: mulai 800 yen/jam" },
+    { "text": "青山日本語学校", "meaning": "Sekolah Bahasa Jepang Aoyama" },
+    { "text": "奨学金制度有り", "meaning": "Ada sistem beasiswa" },
+    { "text": "初級コース　中級コース　上級コース", "meaning": "Kelas pemula, menengah, mahir" }
+  ],
+  "kanjiList": [
+    {
+      "id": 565,
+      "character": "求",
+      "strokes": 7,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["もとめる"],
+      "words": [
+        { "word": "求人", "reading": "きゅうじん", "meaning": "lowongan kerja" },
+        { "word": "請求書", "reading": "せいきゅうしょ", "meaning": "tagihan, invoice" }
+      ],
+      "extraWords": [
+        { "word": "要求", "reading": "ようきゅう", "meaning": "permintaan, tuntutan" },
+        { "word": "求める", "reading": "もとめる", "meaning": "meminta, mencari" }
+      ]
+    },
+    {
+      "id": 566,
+      "character": "簡",
+      "strokes": 18,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "簡単（な）", "reading": "かんたん", "meaning": "mudah, sederhana" }
+      ]
+    },
+    {
+      "id": 567,
+      "character": "単",
+      "strokes": 9,
+      "onyomi": ["タン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "単語", "reading": "たんご", "meaning": "kosakata" },
+        { "word": "単に", "reading": "たんに", "meaning": "hanya, sekadar" }
+      ],
+      "extraWords": [
+        { "word": "単位", "reading": "たんい", "meaning": "satuan, sks" },
+        { "word": "単なる", "reading": "たんなる", "meaning": "sekadar, hanya" }
+      ]
+    },
+    {
+      "id": 568,
+      "character": "許",
+      "strokes": 11,
+      "onyomi": ["キョ"],
+      "kunyomi": ["ゆるす"],
+      "words": [
+        { "word": "許可", "reading": "きょか", "meaning": "izin" },
+        { "word": "許す", "reading": "ゆるす", "meaning": "mengizinkan, memaafkan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "免許", "reading": "めんきょ", "meaning": "lisensi, SIM" }
+      ]
+    },
+    {
+      "id": 569,
+      "character": "給",
+      "strokes": 12,
+      "onyomi": ["キュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "給料", "reading": "きゅうりょう", "meaning": "gaji" },
+        { "word": "供給", "reading": "きょうきゅう", "meaning": "pasokan" },
+        { "word": "週給", "reading": "しゅうきゅう", "meaning": "gaji mingguan" }
+      ],
+      "extraWords": [
+        { "word": "支給", "reading": "しきゅう", "meaning": "pembayaran, tunjangan" },
+        { "word": "月給", "reading": "げっきゅう", "meaning": "gaji bulanan" },
+        { "word": "日給", "reading": "にっきゅう", "meaning": "gaji harian" }
+      ]
+    },
+    {
+      "id": 570,
+      "character": "与",
+      "strokes": 3,
+      "onyomi": ["ヨ"],
+      "kunyomi": ["あたえる"],
+      "words": [
+        { "word": "給与", "reading": "きゅうよ", "meaning": "gaji, tunjangan" },
+        { "word": "与える", "reading": "あたえる", "meaning": "memberikan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 571,
+      "character": "応",
+      "strokes": 7,
+      "onyomi": ["オウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "応募", "reading": "おうぼ", "meaning": "pendaftaran, aplikasi" },
+        { "word": "一応", "reading": "いちおう", "meaning": "untuk sementara, garis besar" }
+      ],
+      "extraWords": [
+        { "word": "応じる", "reading": "おうじる", "meaning": "menanggapi, sesuai dengan" },
+        { "word": "応用", "reading": "おうよう", "meaning": "penerapan, aplikasi" }
+      ]
+    },
+    {
+      "id": 572,
+      "character": "課",
+      "strokes": 15,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "課", "reading": "か", "meaning": "bagian, seksi" },
+        { "word": "日課", "reading": "にっか", "meaning": "rutinitas harian" }
+      ],
+      "extraWords": [
+        { "word": "課長", "reading": "かちょう", "meaning": "kepala seksi" }
+      ]
+    },
+    {
+      "id": 573,
+      "character": "程",
+      "strokes": 12,
+      "onyomi": ["テイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "課程", "reading": "かてい", "meaning": "kurikulum, program" },
+        { "word": "程度", "reading": "ていど", "meaning": "tingkat, derajat" }
+      ],
+      "extraWords": [
+        { "word": "過程", "reading": "かてい", "meaning": "proses" },
+        { "word": "日程", "reading": "にってい", "meaning": "jadwal harian" }
+      ]
+    },
+    {
+      "id": 574,
+      "character": "制",
+      "strokes": 8,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "制度", "reading": "せいど", "meaning": "sistem" },
+        { "word": "制作", "reading": "せいさく", "meaning": "produksi, pembuatan" }
+      ],
+      "extraWords": [
+        { "word": "制限", "reading": "せいげん", "meaning": "batasan" },
+        { "word": "体制", "reading": "たいせい", "meaning": "struktur, sistem" }
+      ]
+    },
+    {
+      "id": 575,
+      "character": "講",
+      "strokes": 17,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "講座", "reading": "こうざ", "meaning": "kelas, kursus" },
+        { "word": "講演", "reading": "こうえん", "meaning": "ceramah" }
+      ],
+      "extraWords": [
+        { "word": "講義", "reading": "こうぎ", "meaning": "kuliah" },
+        { "word": "講師", "reading": "こうし", "meaning": "dosen, instruktur" }
+      ]
+    },
+    {
+      "id": 576,
+      "character": "級",
+      "strokes": 9,
+      "onyomi": ["キュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "初級", "reading": "しょきゅう", "meaning": "tingkat dasar" },
+        { "word": "上級", "reading": "じょうきゅう", "meaning": "tingkat lanjut" }
+      ],
+      "extraWords": [
+        { "word": "中級", "reading": "ちゅうきゅう", "meaning": "tingkat menengah" },
+        { "word": "高級", "reading": "こうきゅう", "meaning": "kelas atas, mewah" }
+      ]
+    },
+    {
+      "id": 577,
+      "character": "基",
+      "strokes": 11,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "基本", "reading": "きほん", "meaning": "dasar" },
+        { "word": "基準", "reading": "きじゅん", "meaning": "standar, kriteria" }
+      ],
+      "extraWords": [
+        { "word": "基礎", "reading": "きそ", "meaning": "fondasi, dasar" },
+        { "word": "基地", "reading": "きち", "meaning": "pangkalan" }
+      ]
+    },
+    {
+      "id": 578,
+      "character": "導",
+      "strokes": 15,
+      "onyomi": ["ドウ"],
+      "kunyomi": ["みちびく"],
+      "words": [
+        { "word": "指導", "reading": "しどう", "meaning": "bimbingan" },
+        { "word": "導く", "reading": "みちびく", "meaning": "membimbing", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "導入", "reading": "どうにゅう", "meaning": "pengenalan, pemasukan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "店のドアに「アルバイト求む」と、（　）の張り紙がしてある。",
+      "optionA": "求人",
+      "optionB": "応募",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "（　）800円です。",
+      "optionA": "支給",
+      "optionB": "時給",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "ここに駐車するには会社の（　）が必要です。",
+      "optionA": "免許",
+      "optionB": "許可",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "勤務時間は相談に（　）。",
+      "optionA": "応じます",
+      "optionB": "与えます",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "機械を（　）して作業のスピードを上げる。",
+      "optionA": "指導",
+      "optionB": "導入",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "毎朝のランニングをするのが、私の（　）です。",
+      "optionA": "日課",
+      "optionB": "日程",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）時間内に問題を解く練習をする。",
+      "optionA": "制限",
+      "optionB": "過程",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "ラジオ（　）で日本語を勉強する。",
+      "optionA": "講演",
+      "optionB": "講座",
+      "answer": "B"
+    }
+  ]
+}
