@@ -1,0 +1,278 @@
+{
+  "week": 3,
+  "day": 4,
+  "title": "ゴミの分別",
+  "subtitle": "Rubbish Classification and Separation",
+  "translation": "Pemilahan Sampah",
+  "sceneDescription": "Papan pengumuman jadwal pembuangan sampah di kota. Sampah yang bisa dibakar（紙くず、生ゴミ、daun dan ranting）dibuang tiap Senin, Rabu, Jumat, sedangkan sampah timbun（mangkuk, piring, cangkang kerang）dibuang tiap Kamis. Kaleng dibuang minggu ke-1/3/5 hari Selasa, botol kaca minggu ke-2/4 hari Selasa, wadah kertas lain tiap Selasa, dan wadah plastik lain tiap Kamis. Sampah daur ulang seperti majalah, koran bekas, dan kardus diserahkan ke kelompok daur ulang setempat, sedangkan sampah besar（粗大ゴミ）dikumpulkan terpisah dengan biaya tambahan.",
+  "signs": [
+    { "text": "燃やせるゴミ", "meaning": "Sampah yang bisa dibakar" },
+    { "text": "埋め立てゴミ", "meaning": "Sampah timbun (landfill)" },
+    { "text": "カン類", "meaning": "Jenis kaleng" },
+    { "text": "ビン類", "meaning": "Jenis botol kaca" },
+    { "text": "その他紙製容器・包装", "meaning": "Wadah/kemasan kertas lainnya" },
+    { "text": "その他プラスチック製容器・包装", "meaning": "Wadah/kemasan plastik lainnya" },
+    { "text": "粗大ゴミ", "meaning": "Sampah besar (dipungut biaya khusus)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 223,
+      "character": "必",
+      "strokes": 5,
+      "onyomi": ["ヒツ"],
+      "kunyomi": ["かならず"],
+      "words": [
+        { "word": "必要（な）", "reading": "ひつよう", "meaning": "perlu, dibutuhkan" },
+        { "word": "必ず", "reading": "かならず", "meaning": "pasti, selalu" }
+      ],
+      "extraWords": [
+        { "word": "必死", "reading": "ひっし", "meaning": "mati-matian, sekuat tenaga" }
+      ]
+    },
+    {
+      "id": 224,
+      "character": "袋",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["ふくろ"],
+      "words": [
+        { "word": "袋", "reading": "ふくろ", "meaning": "kantong, tas" },
+        { "word": "レジ袋", "reading": "レジぶくろ", "meaning": "kantong plastik belanja" }
+      ],
+      "extraWords": [
+        { "word": "手袋", "reading": "てぶくろ", "meaning": "sarung tangan" },
+        { "word": "足袋", "reading": "たび", "meaning": "tabi, kaus kaki tradisional Jepang", "flag": "special" }
+      ]
+    },
+    {
+      "id": 225,
+      "character": "積",
+      "strokes": 16,
+      "onyomi": ["セキ"],
+      "kunyomi": ["つもる", "つむ"],
+      "words": [
+        { "word": "ゴミ集積所", "reading": "ゴミしゅうせきじょ", "meaning": "tempat pengumpulan sampah" },
+        { "word": "積もる", "reading": "つもる", "meaning": "menumpuk (salju dsb)" }
+      ],
+      "extraWords": [
+        { "word": "面積", "reading": "めんせき", "meaning": "luas area", "note": "→ lihat kanji #449 (面)" },
+        { "word": "積む", "reading": "つむ", "meaning": "menumpuk, memuat" }
+      ]
+    },
+    {
+      "id": 226,
+      "character": "燃",
+      "strokes": 16,
+      "onyomi": ["ネン"],
+      "kunyomi": ["もえる", "もやす"],
+      "words": [
+        { "word": "燃料", "reading": "ねんりょう", "meaning": "bahan bakar" },
+        { "word": "不燃", "reading": "ふねん", "meaning": "tidak mudah terbakar" }
+      ],
+      "extraWords": [
+        { "word": "可燃", "reading": "かねん", "meaning": "mudah terbakar", "note": "→ lihat kanji #431 (可)" },
+        { "word": "燃やせる", "reading": "もやせる", "meaning": "bisa dibakar" }
+      ]
+    },
+    {
+      "id": 227,
+      "character": "枝",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["えだ"],
+      "words": [
+        { "word": "枝", "reading": "えだ", "meaning": "ranting, dahan" }
+      ],
+      "extraWords": [
+        { "word": "小枝", "reading": "こえだ", "meaning": "ranting kecil" }
+      ]
+    },
+    {
+      "id": 228,
+      "character": "葉",
+      "strokes": 12,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["は"],
+      "words": [
+        { "word": "紅葉", "reading": "こうよう", "meaning": "daun musim gugur" },
+        { "word": "葉", "reading": "は", "meaning": "daun" },
+        { "word": "言葉", "reading": "ことば", "meaning": "kata, bahasa" }
+      ],
+      "extraWords": [
+        { "word": "紅葉", "reading": "もみじ", "meaning": "pohon momiji / daun momiji", "flag": "special" },
+        { "word": "落ち葉", "reading": "おちば", "meaning": "daun gugur" }
+      ]
+    },
+    {
+      "id": 229,
+      "character": "埋",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["うめる", "うまる"],
+      "words": [
+        { "word": "埋める", "reading": "うめる", "meaning": "mengubur, menimbun" },
+        { "word": "埋まる", "reading": "うまる", "meaning": "terkubur, tertimbun" }
+      ],
+      "extraWords": [
+        { "word": "埋め立てる", "reading": "うめたてる", "meaning": "mereklamasi (tanah)" }
+      ]
+    },
+    {
+      "id": 230,
+      "character": "製",
+      "strokes": 14,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "製品", "reading": "せいひん", "meaning": "produk" }
+      ],
+      "extraWords": [
+        { "word": "〜製", "reading": "せい", "meaning": "buatan/produksi ..." }
+      ]
+    },
+    {
+      "id": 231,
+      "character": "容",
+      "strokes": 10,
+      "onyomi": ["ヨウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "内容", "reading": "ないよう", "meaning": "isi, konten" },
+        { "word": "美容", "reading": "びよう", "meaning": "kecantikan", "note": "→ lihat kanji #516 (美)" }
+      ],
+      "extraWords": [
+        { "word": "容器", "reading": "ようき", "meaning": "wadah" }
+      ]
+    },
+    {
+      "id": 232,
+      "character": "器",
+      "strokes": 15,
+      "onyomi": ["キ"],
+      "kunyomi": ["うつわ"],
+      "words": [
+        { "word": "食器", "reading": "しょっき", "meaning": "peralatan makan" },
+        { "word": "受話器", "reading": "じゅわき", "meaning": "gagang telepon" }
+      ],
+      "extraWords": [
+        { "word": "楽器", "reading": "がっき", "meaning": "alat musik" },
+        { "word": "器", "reading": "うつわ", "meaning": "wadah, bejana", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 233,
+      "character": "装",
+      "strokes": 12,
+      "onyomi": ["ソウ", "ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "包装", "reading": "ほうそう", "meaning": "pembungkusan" },
+        { "word": "服装", "reading": "ふくそう", "meaning": "gaya berpakaian" }
+      ],
+      "extraWords": [
+        { "word": "新装開店", "reading": "しんそうかいてん", "meaning": "buka kembali dengan tampilan baru" },
+        { "word": "衣装", "reading": "いしょう", "meaning": "kostum, busana", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 234,
+      "character": "雑",
+      "strokes": 14,
+      "onyomi": ["ザツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "雑音", "reading": "ざつおん", "meaning": "suara bising" },
+        { "word": "雑（な）", "reading": "ざつ", "meaning": "asal-asalan, sembarangan" }
+      ],
+      "extraWords": [
+        { "word": "雑用", "reading": "ざつよう", "meaning": "pekerjaan sepele" },
+        { "word": "雑貨", "reading": "ざっか", "meaning": "barang keperluan sehari-hari" }
+      ]
+    },
+    {
+      "id": 235,
+      "character": "誌",
+      "strokes": 14,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "雑誌", "reading": "ざっし", "meaning": "majalah" }
+      ],
+      "extraWords": [
+        { "word": "日誌", "reading": "にっし", "meaning": "catatan harian, jurnal" }
+      ]
+    },
+    {
+      "id": 236,
+      "character": "資",
+      "strokes": 13,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "資源", "reading": "しげん", "meaning": "sumber daya" },
+        { "word": "資金", "reading": "しきん", "meaning": "dana, modal" }
+      ],
+      "extraWords": [
+        { "word": "資料", "reading": "しりょう", "meaning": "bahan referensi, data" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "雪が（　）花だんが埋まってしまった。",
+      "optionA": "保って",
+      "optionB": "積もって",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "落ち葉や木の枝は（　）ゴミになります。",
+      "optionA": "燃やせる",
+      "optionB": "埋め立て",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この洗剤を使うときは必ずゴム（　）をしてください。",
+      "optionA": "手袋",
+      "optionB": "足袋",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "植物から自動車の（　）を作る。",
+      "optionA": "原料",
+      "optionB": "燃料",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "（　）がきれいだと、料理もおいしく見える。",
+      "optionA": "衣",
+      "optionB": "器",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "この時計はスイス（　）です。",
+      "optionA": "製",
+      "optionB": "作",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）がひどくて電話がよく聞こえません。",
+      "optionA": "雑用",
+      "optionB": "雑音",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "この町ではリサイクルのため、第2土曜日に古新聞・古雑誌などを（　）します。",
+      "optionA": "回収",
+      "optionB": "包装",
+      "answer": "A"
+    }
+  ]
+}
