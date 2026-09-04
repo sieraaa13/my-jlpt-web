@@ -1,0 +1,256 @@
+{
+  "week": 3,
+  "day": 5,
+  "title": "いろいろな通知①",
+  "subtitle": "Various Notices ①",
+  "translation": "Berbagai Pemberitahuan ①",
+  "sceneDescription": "「避難訓練のお知らせ」: Latihan evakuasi akan dilaksanakan sebagai persiapan menghadapi gempa bumi. Warga diharapkan berpartisipasi sebisa mungkin. Kalau hujan, latihan akan ditunda.\n\n「断水のお知らせ」: Karena ada perbaikan pipa air, akan terjadi pemadaman aliran air pada waktu yang tercantum. Mohon pengertian dan kerja samanya. Waktu: 20 November pukul 23.00 sampai 21 November pukul 05.00.",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 237,
+      "character": "難",
+      "strokes": 18,
+      "onyomi": ["ナン"],
+      "kunyomi": ["かたい", "むずかしい"],
+      "words": [
+        { "word": "避難", "reading": "ひなん", "meaning": "evakuasi" },
+        { "word": "難しい", "reading": "むずかしい", "meaning": "sulit, susah" }
+      ],
+      "extraWords": [
+        { "word": "困難（な）", "reading": "こんなん", "meaning": "kesulitan, sukar", "note": "→ lihat kanji #554 (困)" },
+        { "word": "〜し難い", "reading": "がたい", "meaning": "sulit untuk ...", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 238,
+      "character": "訓",
+      "strokes": 10,
+      "onyomi": ["クン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "教訓", "reading": "きょうくん", "meaning": "pelajaran hidup, hikmah" }
+      ],
+      "extraWords": [
+        { "word": "訓読み", "reading": "くんよみ", "meaning": "cara baca kun pada kanji" }
+      ]
+    },
+    {
+      "id": 239,
+      "character": "練",
+      "strokes": 14,
+      "onyomi": ["レン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "訓練", "reading": "くんれん", "meaning": "pelatihan" }
+      ],
+      "extraWords": [
+        { "word": "練習", "reading": "れんしゅう", "meaning": "latihan" }
+      ]
+    },
+    {
+      "id": 240,
+      "character": "震",
+      "strokes": 15,
+      "onyomi": ["シン"],
+      "kunyomi": ["ふるえる"],
+      "words": [
+        { "word": "地震", "reading": "じしん", "meaning": "gempa bumi" },
+        { "word": "震える", "reading": "ふるえる", "meaning": "gemetar, bergetar" }
+      ]
+    },
+    {
+      "id": 241,
+      "character": "加",
+      "strokes": 5,
+      "onyomi": ["カ"],
+      "kunyomi": ["くわえる", "くわわる"],
+      "words": [
+        { "word": "参加", "reading": "さんか", "meaning": "partisipasi" },
+        { "word": "加える", "reading": "くわえる", "meaning": "menambahkan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "加速", "reading": "かそく", "meaning": "akselerasi, percepatan" },
+        { "word": "加わる", "reading": "くわわる", "meaning": "turut serta, bertambah", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 242,
+      "character": "延",
+      "strokes": 8,
+      "onyomi": ["エン"],
+      "kunyomi": ["のびる", "のばす"],
+      "words": [
+        { "word": "延期", "reading": "えんき", "meaning": "penundaan" },
+        { "word": "延びる", "reading": "のびる", "meaning": "tertunda, memanjang", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "延長", "reading": "えんちょう", "meaning": "perpanjangan" },
+        { "word": "延ばす", "reading": "のばす", "meaning": "memperpanjang, menunda", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 243,
+      "character": "断",
+      "strokes": 11,
+      "onyomi": ["ダン"],
+      "kunyomi": ["ことわる"],
+      "words": [
+        { "word": "断水", "reading": "だんすい", "meaning": "pemadaman air" },
+        { "word": "横断", "reading": "おうだん", "meaning": "menyeberang", "note": "→ lihat kanji #374 (横)" }
+      ],
+      "extraWords": [
+        { "word": "断定", "reading": "だんてい", "meaning": "kesimpulan, penegasan" },
+        { "word": "断る", "reading": "ことわる", "meaning": "menolak", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 244,
+      "character": "管",
+      "strokes": 14,
+      "onyomi": ["カン"],
+      "kunyomi": ["くだ"],
+      "words": [
+        { "word": "水道管", "reading": "すいどうかん", "meaning": "pipa air ledeng" },
+        { "word": "保管", "reading": "ほかん", "meaning": "penyimpanan, penitipan" }
+      ],
+      "extraWords": [
+        { "word": "管理", "reading": "かんり", "meaning": "pengelolaan, manajemen" },
+        { "word": "管", "reading": "くだ", "meaning": "pipa, selang", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 245,
+      "character": "記",
+      "strokes": 10,
+      "onyomi": ["キ"],
+      "kunyomi": ["しるす"],
+      "words": [
+        { "word": "日記", "reading": "にっき", "meaning": "buku harian" },
+        { "word": "記号", "reading": "きごう", "meaning": "simbol, tanda" },
+        { "word": "記者", "reading": "きしゃ", "meaning": "wartawan" },
+        { "word": "記す", "reading": "しるす", "meaning": "mencatat, menuliskan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "記入", "reading": "きにゅう", "meaning": "pengisian (formulir)" },
+        { "word": "下記", "reading": "かき", "meaning": "tersebut di bawah ini" },
+        { "word": "記事", "reading": "きじ", "meaning": "artikel berita" }
+      ]
+    },
+    {
+      "id": 246,
+      "character": "迷",
+      "strokes": 9,
+      "onyomi": ["メイ"],
+      "kunyomi": ["まよう"],
+      "words": [
+        { "word": "迷惑", "reading": "めいわく", "meaning": "gangguan, merepotkan" },
+        { "word": "迷う", "reading": "まよう", "meaning": "bingung, tersesat" }
+      ],
+      "extraWords": [
+        { "word": "迷信", "reading": "めいしん", "meaning": "takhayul" },
+        { "word": "迷子", "reading": "まいご", "meaning": "anak hilang", "flag": "special" }
+      ]
+    },
+    {
+      "id": 247,
+      "character": "協",
+      "strokes": 8,
+      "onyomi": ["キョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "協力", "reading": "きょうりょく", "meaning": "kerja sama" },
+        { "word": "協会", "reading": "きょうかい", "meaning": "asosiasi, perhimpunan" }
+      ],
+      "extraWords": [
+        { "word": "協定", "reading": "きょうてい", "meaning": "perjanjian, kesepakatan" }
+      ]
+    },
+    {
+      "id": 248,
+      "character": "願",
+      "strokes": 19,
+      "onyomi": ["ガン"],
+      "kunyomi": ["ねがう"],
+      "words": [
+        { "word": "願書", "reading": "がんしょ", "meaning": "formulir pendaftaran" },
+        { "word": "願う", "reading": "ねがう", "meaning": "berharap, memohon" }
+      ]
+    },
+    {
+      "id": 249,
+      "character": "平",
+      "strokes": 5,
+      "onyomi": ["ヘイ", "ビョウ"],
+      "kunyomi": ["たいら", "ひら"],
+      "words": [
+        { "word": "平成", "reading": "へいせい", "meaning": "zaman Heisei (nama era)" },
+        { "word": "平気（な）", "reading": "へいき", "meaning": "tenang saja, tidak masalah" },
+        { "word": "平ら（な）", "reading": "たいら", "meaning": "rata, datar", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "平日", "reading": "へいじつ", "meaning": "hari kerja/biasa" },
+        { "word": "平等", "reading": "びょうどう", "meaning": "kesetaraan", "flag": "attention" },
+        { "word": "平仮名", "reading": "ひらがな", "meaning": "hiragana", "note": "→ lihat kanji #615 (仮)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この（　）問題はあまり難しくない。",
+      "optionA": "練習",
+      "optionB": "訓練",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「届かないので（　）コードを持ってきてください。」",
+      "optionA": "延期",
+      "optionB": "延長",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「あ！（　）だ！揺れてる！」",
+      "optionA": "火事",
+      "optionB": "地震",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "材料がやわらかくなったら、さとうを（　）。",
+      "optionA": "加えます",
+      "optionB": "凍えます",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "（　）メールが何通も届いて困っている。",
+      "optionA": "迷信",
+      "optionB": "迷惑",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）のこの時間は道路が込んでいる。",
+      "optionA": "平日",
+      "optionB": "平成",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "「（　）お断り」",
+      "optionA": "駐車",
+      "optionB": "禁煙",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "大学に入学（　）を郵送する。",
+      "optionA": "願書",
+      "optionB": "明細",
+      "answer": "A"
+    }
+  ]
+}
