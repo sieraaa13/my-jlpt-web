@@ -1,0 +1,249 @@
+{
+  "week": 8,
+  "day": 2,
+  "title": "見出し①",
+  "subtitle": "Headlines ①",
+  "translation": "Judul Berita ①",
+  "sceneDescription": "Contoh judul berita besar: \"Hepatitis B, tipe Eropa-Amerika meningkat pesat — Survei Kementerian Kesehatan\"; \"Rekor tertinggi, omzet penjualan 4 triliun yen\"; \"Perjanjian Perdagangan Bebas Jepang-Thailand, sepakat di sektor pertanian.\"\n\n \"Penipuan transfer bank: bank diperintahkan mengembalikan dana ke korban, korban punya hak menuntut.\" \"Undian Euro senilai 8,9 miliar yen: warga Swiss cetak rekor hadiah baru, dengan memilih lima nomor dan satu tanda bintang.\"",
+  "signs": [
+    { "text": "B型肝炎　欧米型急増", "meaning": "Hepatitis B, tipe Eropa-Amerika meningkat pesat" },
+    { "text": "過去最高　売上高4兆円", "meaning": "Rekor tertinggi, omzet penjualan 4 triliun yen" },
+    { "text": "自由貿易協定　日タイFTA　農業分野で合意", "meaning": "Perjanjian perdagangan bebas Jepang-Thailand, sepakat di sektor pertanian" },
+    { "text": "振り込め詐欺　銀行に払い戻し命令", "meaning": "Penipuan transfer bank, bank diperintahkan mengembalikan dana" },
+    { "text": "ユーロ宝くじ89億円　スイス人が賞金新記録", "meaning": "Undian Euro senilai 8,9 miliar yen, warga Swiss cetak rekor hadiah baru" }
+  ],
+  "kanjiList": [
+    {
+      "id": 666,
+      "character": "型",
+      "strokes": 9,
+      "onyomi": ["ケイ"],
+      "kunyomi": ["かた"],
+      "words": [
+        { "word": "典型的（な）", "reading": "てんけいてき", "meaning": "tipikal, ideal" },
+        { "word": "大型", "reading": "おおがた", "meaning": "ukuran besar" }
+      ],
+      "extraWords": [
+        { "word": "〜型", "reading": "がた", "meaning": "tipe/model ..." }
+      ]
+    },
+    {
+      "id": 667,
+      "character": "欧",
+      "strokes": 8,
+      "onyomi": ["オウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "欧米", "reading": "おうべい", "meaning": "Eropa dan Amerika, Barat" }
+      ],
+      "extraWords": [
+        { "word": "欧州", "reading": "おうしゅう", "meaning": "Eropa" }
+      ]
+    },
+    {
+      "id": 668,
+      "character": "労",
+      "strokes": 7,
+      "onyomi": ["ロウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "苦労", "reading": "くろう", "meaning": "kesulitan, jerih payah" },
+        { "word": "ご苦労様", "reading": "ごくろうさま", "meaning": "terima kasih atas kerja kerasnya" }
+      ],
+      "extraWords": [
+        { "word": "厚生労働省", "reading": "こうせいろうどうしょう", "meaning": "Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan" }
+      ]
+    },
+    {
+      "id": 669,
+      "character": "兆",
+      "strokes": 6,
+      "onyomi": ["チョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "兆", "reading": "ちょう", "meaning": "triliun / tanda, pertanda" }
+      ]
+    },
+    {
+      "id": 670,
+      "character": "貿",
+      "strokes": 12,
+      "onyomi": ["ボウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "貿易", "reading": "ぼうえき", "meaning": "perdagangan (luar negeri)" }
+      ]
+    },
+    {
+      "id": 671,
+      "character": "易",
+      "strokes": 8,
+      "onyomi": ["イ", "エキ"],
+      "kunyomi": ["やさしい"],
+      "words": [
+        { "word": "容易（な）", "reading": "ようい", "meaning": "mudah, sederhana" },
+        { "word": "貿易", "reading": "ぼうえき", "meaning": "perdagangan" }
+      ],
+      "extraWords": [
+        { "word": "安易（な）", "reading": "あんい", "meaning": "gampangan, sembarangan" },
+        { "word": "易しい", "reading": "やさしい", "meaning": "mudah" }
+      ]
+    },
+    {
+      "id": 672,
+      "character": "農",
+      "strokes": 13,
+      "onyomi": ["ノウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "農業", "reading": "のうぎょう", "meaning": "pertanian" },
+        { "word": "農産物", "reading": "のうさんぶつ", "meaning": "hasil pertanian" }
+      ],
+      "extraWords": [
+        { "word": "農家", "reading": "のうか", "meaning": "petani, keluarga tani" }
+      ]
+    },
+    {
+      "id": 673,
+      "character": "命",
+      "strokes": 8,
+      "onyomi": ["メイ"],
+      "kunyomi": ["いのち"],
+      "words": [
+        { "word": "命じる", "reading": "めいじる", "meaning": "memerintahkan" },
+        { "word": "生命", "reading": "せいめい", "meaning": "kehidupan, nyawa" },
+        { "word": "一生懸命", "reading": "いっしょうけんめい", "meaning": "dengan sekuat tenaga" },
+        { "word": "命", "reading": "いのち", "meaning": "nyawa", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 674,
+      "character": "令",
+      "strokes": 5,
+      "onyomi": ["レイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "命令", "reading": "めいれい", "meaning": "perintah" }
+      ]
+    },
+    {
+      "id": 675,
+      "character": "被",
+      "strokes": 10,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "被害", "reading": "ひがい", "meaning": "kerugian, kerusakan" },
+        { "word": "被害者", "reading": "ひがいしゃ", "meaning": "korban" },
+        { "word": "被告", "reading": "ひこく", "meaning": "terdakwa" }
+      ]
+    },
+    {
+      "id": 676,
+      "character": "害",
+      "strokes": 10,
+      "onyomi": ["ガイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "害", "reading": "がい", "meaning": "bahaya, kerugian" },
+        { "word": "公害", "reading": "こうがい", "meaning": "pencemaran lingkungan" },
+        { "word": "水害", "reading": "すいがい", "meaning": "bencana banjir" },
+        { "word": "殺害", "reading": "さつがい", "meaning": "pembunuhan" }
+      ]
+    },
+    {
+      "id": 677,
+      "character": "権",
+      "strokes": 15,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "権利", "reading": "けんり", "meaning": "hak" },
+        { "word": "人権", "reading": "じんけん", "meaning": "hak asasi manusia" }
+      ],
+      "extraWords": [
+        { "word": "〜権", "reading": "けん", "meaning": "hak/kewenangan ..." }
+      ]
+    },
+    {
+      "id": 678,
+      "character": "億",
+      "strokes": 15,
+      "onyomi": ["オク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "億", "reading": "おく", "meaning": "seratus juta" }
+      ]
+    },
+    {
+      "id": 679,
+      "character": "星",
+      "strokes": 9,
+      "onyomi": ["セイ"],
+      "kunyomi": ["ほし"],
+      "words": [
+        { "word": "星座", "reading": "せいざ", "meaning": "rasi bintang" },
+        { "word": "星", "reading": "ほし", "meaning": "bintang" },
+        { "word": "星印", "reading": "ほしじるし", "meaning": "tanda bintang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "文部科学省の前年度予算は6（　）円を超えている。",
+      "optionA": "兆",
+      "optionB": "逃",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "あなたの国と日本は昔から（　）をしています。",
+      "optionA": "貿易",
+      "optionB": "容易",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "まず、（　）問題から解いてみましょう。",
+      "optionA": "安い",
+      "optionB": "易しい",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "私のふるさとは（　）がさかんです。",
+      "optionA": "農業",
+      "optionB": "農家",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "大型台風により、各地で（　）などの被害が出ています。",
+      "optionA": "水害",
+      "optionB": "公害",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "被害者の（　）を守ろう。",
+      "optionA": "人権",
+      "optionB": "苦労",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "一度しかない人生、（　）は大切にしましょう。",
+      "optionA": "命",
+      "optionB": "令",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "日本の人口は約1（　）3千万人です。",
+      "optionA": "奥",
+      "optionB": "億",
+      "answer": "B"
+    }
+  ]
+}
