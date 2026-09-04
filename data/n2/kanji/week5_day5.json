@@ -1,0 +1,256 @@
+{
+  "week": 5,
+  "day": 5,
+  "title": "食品",
+  "subtitle": "Food",
+  "translation": "Bahan Makanan",
+  "sceneDescription": "Ilustrasi pertama menunjukkan label makanan: botol saus dengan tanggal kedaluwarsa terbaik dan instruksi simpan di kulkas setelah dibuka; kemasan tahu dengan tanggal produksi dan batas waktu konsumsi; serta nampan hamburger beku khusus microwave dengan peringatan tidak boleh dipanaskan bersama kantong luar, waktu memasak (1 buah ±30 detik, 2 buah ±40 detik), dan peringatan nampan serta isinya akan panas setelah dipanaskan.\n\n Ilustrasi kedua menunjukkan cara menyajikan mi instan: didihkan air 2,5 cangkir, masukkan mi sambil diurai perlahan, masak 3 menit; matikan api lalu tambahkan bumbu bubuk hingga jadi; bisa ditambah sayur atau daging sesuai selera agar gizinya lebih seimbang.",
+  "signs": [
+    { "text": "賞味期限", "meaning": "Tanggal kedaluwarsa terbaik" },
+    { "text": "開封後は冷蔵庫に保管してください", "meaning": "Simpan di kulkas setelah dibuka" },
+    { "text": "消費期限", "meaning": "Batas waktu konsumsi" },
+    { "text": "外袋ごとレンジ不可", "meaning": "Tidak boleh dimasukkan microwave beserta kantong luar" },
+    { "text": "加熱後はトレーや中身が熱くなっています", "meaning": "Nampan dan isinya panas setelah dipanaskan" },
+    { "text": "おいしい召し上がり方", "meaning": "Cara menikmati yang enak (petunjuk penyajian)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 427,
+      "character": "賞",
+      "strokes": 15,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "賞", "reading": "しょう", "meaning": "penghargaan, hadiah" },
+        { "word": "賞品", "reading": "しょうひん", "meaning": "hadiah barang" }
+      ],
+      "extraWords": [
+        { "word": "賞金", "reading": "しょうきん", "meaning": "hadiah uang" },
+        { "word": "賞味期限", "reading": "しょうみきげん", "meaning": "tanggal kedaluwarsa terbaik" }
+      ]
+    },
+    {
+      "id": 428,
+      "character": "庫",
+      "strokes": 10,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "金庫", "reading": "きんこ", "meaning": "brankas" },
+        { "word": "冷蔵庫", "reading": "れいぞうこ", "meaning": "kulkas" }
+      ],
+      "extraWords": [
+        { "word": "車庫", "reading": "しゃこ", "meaning": "garasi" }
+      ]
+    },
+    {
+      "id": 429,
+      "character": "造",
+      "strokes": 10,
+      "onyomi": ["ゾウ"],
+      "kunyomi": ["つくる"],
+      "words": [
+        { "word": "製造", "reading": "せいぞう", "meaning": "produksi, pembuatan" },
+        { "word": "造る", "reading": "つくる", "meaning": "membuat" }
+      ],
+      "extraWords": [
+        { "word": "改造", "reading": "かいぞう", "meaning": "modifikasi, renovasi" }
+      ]
+    },
+    {
+      "id": 430,
+      "character": "費",
+      "strokes": 12,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "費用", "reading": "ひよう", "meaning": "biaya" },
+        { "word": "消費", "reading": "しょうひ", "meaning": "konsumsi" }
+      ],
+      "extraWords": [
+        { "word": "〜費", "reading": "ひ", "meaning": "biaya ..." }
+      ]
+    },
+    {
+      "id": 431,
+      "character": "可",
+      "strokes": 5,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "可", "reading": "か", "meaning": "boleh, dapat diterima" },
+        { "word": "可能（な）", "reading": "かのう", "meaning": "memungkinkan" }
+      ],
+      "extraWords": [
+        { "word": "不可", "reading": "ふか", "meaning": "tidak boleh, tidak dapat diterima" },
+        { "word": "可決", "reading": "かけつ", "meaning": "persetujuan (dalam rapat)" }
+      ]
+    },
+    {
+      "id": 432,
+      "character": "秒",
+      "strokes": 9,
+      "onyomi": ["ビョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "秒", "reading": "びょう", "meaning": "detik" }
+      ]
+    },
+    {
+      "id": 433,
+      "character": "身",
+      "strokes": 7,
+      "onyomi": ["シン"],
+      "kunyomi": ["み"],
+      "words": [
+        { "word": "自身", "reading": "じしん", "meaning": "diri sendiri" },
+        { "word": "身体", "reading": "しんたい", "meaning": "tubuh" },
+        { "word": "中身", "reading": "なかみ", "meaning": "isi", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "出身", "reading": "しゅっしん", "meaning": "asal (daerah/almamater)" },
+        { "word": "身長", "reading": "しんちょう", "meaning": "tinggi badan" },
+        { "word": "刺身", "reading": "さしみ", "meaning": "sashimi (irisan ikan mentah)" }
+      ]
+    },
+    {
+      "id": 434,
+      "character": "召",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["めす"],
+      "words": [
+        { "word": "召し上がる", "reading": "めしあがる", "meaning": "makan/minum (bentuk hormat)" }
+      ]
+    },
+    {
+      "id": 435,
+      "character": "杯",
+      "strokes": 8,
+      "onyomi": ["ハイ"],
+      "kunyomi": ["さかずき"],
+      "words": [
+        { "word": "〜杯", "reading": "はい", "meaning": "penghitung gelas/cangkir" },
+        { "word": "杯", "reading": "さかずき", "meaning": "cawan sake", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "乾杯", "reading": "かんぱい", "meaning": "bersulang" }
+      ]
+    },
+    {
+      "id": 436,
+      "character": "沸",
+      "strokes": 8,
+      "onyomi": ["フツ"],
+      "kunyomi": ["わく", "わかす"],
+      "words": [
+        { "word": "沸騰", "reading": "ふっとう", "meaning": "mendidih" },
+        { "word": "沸く", "reading": "わく", "meaning": "mendidih" }
+      ],
+      "extraWords": [
+        { "word": "沸かす", "reading": "わかす", "meaning": "merebus, mendidihkan" }
+      ]
+    },
+    {
+      "id": 437,
+      "character": "粉",
+      "strokes": 10,
+      "onyomi": ["フン"],
+      "kunyomi": ["こな"],
+      "words": [
+        { "word": "粉末", "reading": "ふんまつ", "meaning": "bubuk" },
+        { "word": "小麦粉", "reading": "こむぎこ", "meaning": "tepung terigu", "note": "→ lihat kanji #486 (麦)" }
+      ],
+      "extraWords": [
+        { "word": "花粉", "reading": "かふん", "meaning": "serbuk sari" },
+        { "word": "粉", "reading": "こな", "meaning": "bubuk, tepung" }
+      ]
+    },
+    {
+      "id": 438,
+      "character": "末",
+      "strokes": 5,
+      "onyomi": ["マツ"],
+      "kunyomi": ["すえ"],
+      "words": [
+        { "word": "月末", "reading": "げつまつ", "meaning": "akhir bulan" },
+        { "word": "末", "reading": "すえ", "meaning": "akhir, ujung" }
+      ],
+      "extraWords": [
+        { "word": "末っ子", "reading": "すえっこ", "meaning": "anak bungsu" }
+      ]
+    },
+    {
+      "id": 439,
+      "character": "栄",
+      "strokes": 9,
+      "onyomi": ["エイ"],
+      "kunyomi": ["さかえる"],
+      "words": [
+        { "word": "栄養", "reading": "えいよう", "meaning": "nutrisi, gizi" },
+        { "word": "栄える", "reading": "さかえる", "meaning": "berjaya, makmur" }
+      ],
+      "extraWords": [
+        { "word": "繁栄", "reading": "はんえい", "meaning": "kemakmuran" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "〜酒造というのは酒を（　）している会社です。",
+      "optionA": "製造",
+      "optionB": "改造",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この試合の（　）の額は1位と2位とでは全然違う。",
+      "optionA": "費用",
+      "optionB": "賞金",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「（　）と体重をここに記入してください。」",
+      "optionA": "身長",
+      "optionB": "身体",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "この電車は（　）に入りますので、ご乗車になれません。",
+      "optionA": "車庫",
+      "optionB": "金庫",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「開封後はなるべく早く（　）ください。」",
+      "optionA": "お召し上がり",
+      "optionB": "お召しになって",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「この町の発展と繁栄を願って、（　）！」",
+      "optionA": "一杯",
+      "optionB": "乾杯",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "「（　）年始は休業とさせていただきます。」",
+      "optionA": "年末",
+      "optionB": "年未",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "明日は（　）が多くなりそうです。ご注意ください。",
+      "optionA": "粉末",
+      "optionB": "花粉",
+      "answer": "B"
+    }
+  ]
+}
