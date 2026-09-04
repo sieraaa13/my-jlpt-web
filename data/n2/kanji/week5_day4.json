@@ -1,0 +1,257 @@
+{
+  "week": 5,
+  "day": 4,
+  "title": "家庭用品（薬）",
+  "subtitle": "Household Goods (Medicine)",
+  "translation": "Peralatan Rumah Tangga (Obat)",
+  "sceneDescription": "Ilustrasi menunjukkan tiga produk obat rumah tangga: salep「カユノン」untuk gigitan serangga; koyo「エルタックV」yang ampuh untuk gejala flu seperti bersin, ingus, batuk, sakit tenggorokan, dan demam; serta koyo「コリトルー55」untuk pegal bahu, sakit pinggang, nyeri sendi, dan saraf.\n\n Petunjuk pemakaian koyo ini: lebih efektif digunakan setelah mandi (keringat dan kelembapan diseka dulu sebelum ditempel), hentikan pemakaian dan konsultasi dokter bila terasa iritasi atau kelainan, dan simpan dengan melipat sesuai garis putus-putus setelah dibuka agar obat tidak mengering.",
+  "signs": [
+    { "text": "虫刺されに！", "meaning": "Untuk gigitan serangga!" },
+    { "text": "くしゃみ・鼻水・せき・のどの痛み・発熱など風邪の諸症状に効く！", "meaning": "Ampuh untuk gejala flu: bersin, ingus, batuk, sakit tenggorokan, demam!" },
+    { "text": "肩こり・腰痛・関節・神経痛に", "meaning": "Untuk pegal bahu, sakit pinggang, nyeri sendi & saraf" },
+    { "text": "入浴後のご使用が効果的です", "meaning": "Penggunaan setelah mandi lebih efektif" },
+    { "text": "刺激や異常を感じた時は使用を中止し、医師に相談してください", "meaning": "Hentikan pemakaian dan konsultasi dokter jika terasa iritasi/kelainan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 414,
+      "character": "刺",
+      "strokes": 8,
+      "onyomi": ["シ"],
+      "kunyomi": ["さす", "ささる"],
+      "words": [
+        { "word": "名刺", "reading": "めいし", "meaning": "kartu nama" },
+        { "word": "刺す", "reading": "さす", "meaning": "menusuk, menyengat" }
+      ],
+      "extraWords": [
+        { "word": "刺激", "reading": "しげき", "meaning": "stimulus, rangsangan" },
+        { "word": "刺さる", "reading": "ささる", "meaning": "tertusuk" }
+      ]
+    },
+    {
+      "id": 415,
+      "character": "肩",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["かた"],
+      "words": [
+        { "word": "肩", "reading": "かた", "meaning": "bahu" }
+      ],
+      "extraWords": [
+        { "word": "肩書き", "reading": "かたがき", "meaning": "gelar/jabatan (tertulis)" }
+      ]
+    },
+    {
+      "id": 416,
+      "character": "腰",
+      "strokes": 13,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["こし"],
+      "words": [
+        { "word": "腰痛", "reading": "ようつう", "meaning": "sakit pinggang" },
+        { "word": "腰掛ける", "reading": "こしかける", "meaning": "duduk" }
+      ],
+      "extraWords": [
+        { "word": "腰", "reading": "こし", "meaning": "pinggang" },
+        { "word": "腰掛け", "reading": "こしかけ", "meaning": "kursi, bangku" }
+      ]
+    },
+    {
+      "id": 417,
+      "character": "節",
+      "strokes": 13,
+      "onyomi": ["セツ"],
+      "kunyomi": ["ふし"],
+      "words": [
+        { "word": "関節", "reading": "かんせつ", "meaning": "sendi" },
+        { "word": "節約", "reading": "せつやく", "meaning": "penghematan" }
+      ],
+      "extraWords": [
+        { "word": "調節", "reading": "ちょうせつ", "meaning": "penyesuaian, pengaturan" },
+        { "word": "節", "reading": "ふし", "meaning": "buku/ruas (kayu, bambu)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 418,
+      "character": "神",
+      "strokes": 9,
+      "onyomi": ["シン", "ジン"],
+      "kunyomi": ["かみ"],
+      "words": [
+        { "word": "神話", "reading": "しんわ", "meaning": "mitologi" },
+        { "word": "神経", "reading": "しんけい", "meaning": "saraf" },
+        { "word": "神様", "reading": "かみさま", "meaning": "dewa, tuhan" }
+      ],
+      "extraWords": [
+        { "word": "神道", "reading": "しんとう", "meaning": "Shinto" },
+        { "word": "神社", "reading": "じんじゃ", "meaning": "kuil Shinto" }
+      ]
+    },
+    {
+      "id": 419,
+      "character": "痛",
+      "strokes": 12,
+      "onyomi": ["ツウ"],
+      "kunyomi": ["いたい", "いたむ"],
+      "words": [
+        { "word": "頭痛", "reading": "ずつう", "meaning": "sakit kepala" },
+        { "word": "痛い", "reading": "いたい", "meaning": "sakit, nyeri" }
+      ],
+      "extraWords": [
+        { "word": "苦痛", "reading": "くつう", "meaning": "penderitaan, rasa sakit", "note": "→ lihat kanji #553 (苦)" },
+        { "word": "痛む", "reading": "いたむ", "meaning": "terasa sakit" }
+      ]
+    },
+    {
+      "id": 420,
+      "character": "浴",
+      "strokes": 10,
+      "onyomi": ["ヨク"],
+      "kunyomi": ["あびる"],
+      "words": [
+        { "word": "入浴", "reading": "にゅうよく", "meaning": "mandi berendam" },
+        { "word": "海水浴", "reading": "かいすいよく", "meaning": "berenang di laut" },
+        { "word": "浴衣", "reading": "ゆかた", "meaning": "yukata", "flag": "special" }
+      ],
+      "extraWords": [
+        { "word": "浴室", "reading": "よくしつ", "meaning": "kamar mandi" },
+        { "word": "浴びる", "reading": "あびる", "meaning": "mandi, menyiram diri", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 421,
+      "character": "的",
+      "strokes": 8,
+      "onyomi": ["テキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "目的", "reading": "もくてき", "meaning": "tujuan" },
+        { "word": "〜的", "reading": "てき", "meaning": "bersifat ... (akhiran kata sifat)" }
+      ],
+      "extraWords": [
+        { "word": "具体的（な）", "reading": "ぐたいてき", "meaning": "konkret, nyata" },
+        { "word": "的確（な）", "reading": "てきかく", "meaning": "tepat, akurat" }
+      ]
+    },
+    {
+      "id": 422,
+      "character": "汗",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["あせ"],
+      "words": [
+        { "word": "汗", "reading": "あせ", "meaning": "keringat" }
+      ]
+    },
+    {
+      "id": 423,
+      "character": "師",
+      "strokes": 10,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "医師", "reading": "いし", "meaning": "dokter" },
+        { "word": "技師", "reading": "ぎし", "meaning": "insinyur, teknisi", "note": "→ lihat kanji #729 (技)" }
+      ],
+      "extraWords": [
+        { "word": "教師", "reading": "きょうし", "meaning": "guru" }
+      ]
+    },
+    {
+      "id": 424,
+      "character": "談",
+      "strokes": 15,
+      "onyomi": ["ダン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "相談", "reading": "そうだん", "meaning": "konsultasi" },
+        { "word": "冗談", "reading": "じょうだん", "meaning": "lelucon" }
+      ],
+      "extraWords": [
+        { "word": "会談", "reading": "かいだん", "meaning": "perundingan, pembicaraan" }
+      ]
+    },
+    {
+      "id": 425,
+      "character": "燥",
+      "strokes": 17,
+      "onyomi": ["ソウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "乾燥", "reading": "かんそう", "meaning": "kekeringan" }
+      ]
+    },
+    {
+      "id": 426,
+      "character": "折",
+      "strokes": 7,
+      "onyomi": ["セツ"],
+      "kunyomi": ["おれる", "おる"],
+      "words": [
+        { "word": "骨折", "reading": "こっせつ", "meaning": "patah tulang", "note": "→ lihat kanji #691 (骨)" },
+        { "word": "折れる", "reading": "おれる", "meaning": "patah" }
+      ],
+      "extraWords": [
+        { "word": "折る", "reading": "おる", "meaning": "melipat, mematahkan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "名刺の（　）によれば、あの人は偉い人のようだ。",
+      "optionA": "品書き",
+      "optionB": "肩書き",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "神社には（　）が、寺には仏様がいらっしゃいます。",
+      "optionA": "上様",
+      "optionB": "神様",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "この腰掛けは高さが（　）できます。",
+      "optionA": "調節",
+      "optionB": "調子",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "虫に（　）かゆい。",
+      "optionA": "抜かれて",
+      "optionB": "刺されて",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "（　）をかいたのでシャワーを浴びたい。",
+      "optionA": "汁",
+      "optionB": "汗",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "医師に相談したら（　）助言をしてくれた。",
+      "optionA": "的確な",
+      "optionB": "快適な",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "指を（　）数を数える。",
+      "optionA": "折って",
+      "optionB": "祈って",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "この洗濯機には（　）機能も付いています。",
+      "optionA": "乾電",
+      "optionB": "乾燥",
+      "answer": "B"
+    }
+  ]
+}
