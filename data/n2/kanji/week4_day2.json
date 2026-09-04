@@ -1,0 +1,263 @@
+{
+  "week": 4,
+  "day": 2,
+  "title": "返事を書く",
+  "subtitle": "Writing Replies",
+  "translation": "Menulis Balasan (Surat)",
+  "sceneDescription": "Saat menulis balasan pada kartu undangan seperti pesta pernikahan, coret「ご」atau「御」pada「ご出席」atau「御欠席」dengan garis ganda, lalu lingkari salah satu pilihan yang sesuai. Nama penerima yang tertulis dengan akhiran「行」juga dicoret dan diganti「様」. Tambahkan pesan seperti「ご結婚おめでとうございます」atau「喜んで出席させていただきます」. Untuk absen dari rapat organisasi warga atau perkumpulan, lingkari「欠席」dan tulis nama sendiri di kolom「委任状」(surat kuasa).\n\n Kalau menerima ucapan selamat atau kunjungan sakit, tulis surat balasan terima kasih（礼状）, misalnya mengucapkan terima kasih sudah hadir di pesta pernikahan dan menitip salam untuk pasangan.",
+  "signs": [
+    { "text": "ご出席／ご欠席", "meaning": "Hadir / Tidak hadir (konfirmasi kehadiran)" },
+    { "text": "委任状", "meaning": "Surat kuasa" },
+    { "text": "礼状", "meaning": "Surat ucapan terima kasih" }
+  ],
+  "kanjiList": [
+    {
+      "id": 284,
+      "character": "婚",
+      "strokes": 11,
+      "onyomi": ["コン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "結婚", "reading": "けっこん", "meaning": "pernikahan" },
+        { "word": "未婚", "reading": "みこん", "meaning": "belum menikah" }
+      ],
+      "extraWords": [
+        { "word": "婚約", "reading": "こんやく", "meaning": "pertunangan" },
+        { "word": "新婚", "reading": "しんこん", "meaning": "pengantin baru" }
+      ]
+    },
+    {
+      "id": 285,
+      "character": "招",
+      "strokes": 8,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["まねく"],
+      "words": [
+        { "word": "招待", "reading": "しょうたい", "meaning": "undangan" },
+        { "word": "招く", "reading": "まねく", "meaning": "mengundang", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 286,
+      "character": "状",
+      "strokes": 7,
+      "onyomi": ["ジョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜状", "reading": "じょう", "meaning": "surat ... (undangan dsb)" },
+        { "word": "状態", "reading": "じょうたい", "meaning": "kondisi, keadaan" }
+      ],
+      "extraWords": [
+        { "word": "現状", "reading": "げんじょう", "meaning": "kondisi saat ini" },
+        { "word": "年賀状", "reading": "ねんがじょう", "meaning": "kartu ucapan tahun baru" }
+      ]
+    },
+    {
+      "id": 287,
+      "character": "欠",
+      "strokes": 4,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["かける"],
+      "words": [
+        { "word": "欠席", "reading": "けっせき", "meaning": "tidak hadir" },
+        { "word": "欠点", "reading": "けってん", "meaning": "kekurangan, kelemahan" }
+      ],
+      "extraWords": [
+        { "word": "出欠", "reading": "しゅっけつ", "meaning": "kehadiran atau ketidakhadiran" }
+      ]
+    },
+    {
+      "id": 288,
+      "character": "喜",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["よろこぶ"],
+      "words": [
+        { "word": "喜ぶ", "reading": "よろこぶ", "meaning": "bergembira, senang" }
+      ],
+      "extraWords": [
+        { "word": "喜んで", "reading": "よろこんで", "meaning": "dengan senang hati" }
+      ]
+    },
+    {
+      "id": 289,
+      "character": "治",
+      "strokes": 8,
+      "onyomi": ["ジ"],
+      "kunyomi": ["なおる", "なおす"],
+      "words": [
+        { "word": "政治", "reading": "せいじ", "meaning": "politik", "note": "→ lihat kanji #730 (政)" },
+        { "word": "自治体", "reading": "じちたい", "meaning": "badan pemerintahan daerah" }
+      ],
+      "extraWords": [
+        { "word": "自治会", "reading": "じちかい", "meaning": "perkumpulan warga (RT/RW)" },
+        { "word": "治す", "reading": "なおす", "meaning": "menyembuhkan" }
+      ]
+    },
+    {
+      "id": 290,
+      "character": "委",
+      "strokes": 8,
+      "onyomi": ["イ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "委員", "reading": "いいん", "meaning": "anggota komite" },
+        { "word": "委任状", "reading": "いにんじょう", "meaning": "surat kuasa" }
+      ],
+      "extraWords": [
+        { "word": "委員会", "reading": "いいんかい", "meaning": "komite, panitia" }
+      ]
+    },
+    {
+      "id": 291,
+      "character": "祝",
+      "strokes": 9,
+      "onyomi": ["シュク"],
+      "kunyomi": ["いわう"],
+      "words": [
+        { "word": "祝日", "reading": "しゅくじつ", "meaning": "hari libur nasional" },
+        { "word": "祝う", "reading": "いわう", "meaning": "merayakan" }
+      ],
+      "extraWords": [
+        { "word": "お祝い", "reading": "おいわい", "meaning": "ucapan selamat, perayaan" }
+      ]
+    },
+    {
+      "id": 292,
+      "character": "舞",
+      "strokes": 15,
+      "onyomi": ["ブ"],
+      "kunyomi": ["まう", "まい"],
+      "words": [
+        { "word": "舞台", "reading": "ぶたい", "meaning": "panggung" },
+        { "word": "舞う", "reading": "まう", "meaning": "menari, melayang" }
+      ],
+      "extraWords": [
+        { "word": "お見舞い", "reading": "おみまい", "meaning": "kunjungan menjenguk orang sakit" }
+      ]
+    },
+    {
+      "id": 293,
+      "character": "礼",
+      "strokes": 5,
+      "onyomi": ["レイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "お礼", "reading": "おれい", "meaning": "ucapan terima kasih" },
+        { "word": "礼儀", "reading": "れいぎ", "meaning": "tata krama, sopan santun" }
+      ],
+      "extraWords": [
+        { "word": "失礼（な）", "reading": "しつれい", "meaning": "tidak sopan", "note": "→ lihat kanji #317 (失)" }
+      ]
+    },
+    {
+      "id": 294,
+      "character": "忙",
+      "strokes": 6,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["いそがしい"],
+      "words": [
+        { "word": "多忙（な）", "reading": "たぼう", "meaning": "sangat sibuk" },
+        { "word": "忙しい", "reading": "いそがしい", "meaning": "sibuk" }
+      ]
+    },
+    {
+      "id": 295,
+      "character": "妻",
+      "strokes": 8,
+      "onyomi": ["サイ"],
+      "kunyomi": ["つま"],
+      "words": [
+        { "word": "夫妻", "reading": "ふさい", "meaning": "suami istri", "note": "→ lihat kanji #557 (夫)" },
+        { "word": "妻", "reading": "つま", "meaning": "istri" }
+      ]
+    },
+    {
+      "id": 296,
+      "character": "張",
+      "strokes": 11,
+      "onyomi": ["チョウ"],
+      "kunyomi": ["はる"],
+      "words": [
+        { "word": "主張", "reading": "しゅちょう", "meaning": "pendapat, klaim" },
+        { "word": "頑張る", "reading": "がんばる", "meaning": "berusaha keras" },
+        { "word": "張る", "reading": "はる", "meaning": "membentangkan, mengencangkan" }
+      ],
+      "extraWords": [
+        { "word": "出張", "reading": "しゅっちょう", "meaning": "perjalanan dinas" },
+        { "word": "引っ張る", "reading": "ひっぱる", "meaning": "menarik" }
+      ]
+    },
+    {
+      "id": 297,
+      "character": "奥",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["おく"],
+      "words": [
+        { "word": "奥様", "reading": "おくさま", "meaning": "istri Anda (bentuk hormat)" }
+      ],
+      "extraWords": [
+        { "word": "奥", "reading": "おく", "meaning": "bagian dalam, pedalaman" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "ゴミの出し方は地方（　）によって違う。",
+      "optionA": "自治体",
+      "optionB": "自治会",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "短所、つまり（　）はだれにでもあるだろう。",
+      "optionA": "利点",
+      "optionB": "欠点",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "（　）というのはもう一度結婚することです。",
+      "optionA": "未婚",
+      "optionB": "再婚",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "結婚式の（　）に返事を書く。",
+      "optionA": "委任状",
+      "optionB": "招待状",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "梅雨明けの暑い時に、日本では（　）を出す。",
+      "optionA": "暑中見舞い",
+      "optionB": "年賀状",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "5月5日は「こどもの日」、（　）です。",
+      "optionA": "祝日",
+      "optionB": "平日",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "明日は北海道へ（　）だ。",
+      "optionA": "出張",
+      "optionB": "主張",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "りんごを送ってもらったので（　）の手紙を出す。",
+      "optionA": "お祝い",
+      "optionB": "お礼",
+      "answer": "B"
+    }
+  ]
+}
