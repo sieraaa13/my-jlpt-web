@@ -22,6 +22,24 @@ export function N2KanjiBonusColumn({ bonus }: { bonus: KanjiBonusColumn }) {
       <p className="text-sm text-muted-foreground mb-4">{bonus.translation}</p>
       <p className="text-sm mb-6 leading-relaxed">{bonus.description}</p>
 
+      {bonus.antonymPairs && bonus.antonymPairs.length > 0 && (
+        <div className="mb-6 rounded-2xl border border-border p-4 grid gap-2 sm:grid-cols-2">
+          {bonus.antonymPairs.map((p, i) => (
+            <div key={i} className="flex items-center justify-between gap-2 text-sm border-b border-border/60 pb-2 last:border-b-0">
+              <span>
+                <span className="font-bold">{p.left.word}</span>{" "}
+                <span className="text-muted-foreground">（{p.left.reading}）</span>
+              </span>
+              <span className="text-primary font-black">↔</span>
+              <span>
+                <span className="font-bold">{p.right.word}</span>{" "}
+                <span className="text-muted-foreground">（{p.right.reading}）</span>
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {bonus.kanjiList.map((entry) => (
           <div key={entry.id} className="rounded-2xl border border-border p-4 flex flex-col gap-3">

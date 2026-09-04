@@ -12,6 +12,12 @@ import w1d5 from "./week1_day5.json";
 import w1d6 from "./week1_day6.json";
 import w1d7 from "./week1_day7.json";
 
+// Week 2
+import w2d1 from "./week2_day1.json";
+import w2d2 from "./week2_day2.json";
+import w2d3 from "./week2_day3.json";
+import w2d4 from "./week2_day4.json";
+
 export type KanjiWordFlag = "attention" | "special";
 export type KanjiWord = {
   word: string;
@@ -49,11 +55,16 @@ export type KanjiSignLessonDay = {
   practiceQuestions: PracticeQuestion[];
 };
 
+export type AntonymPair = {
+  left: KanjiWord;
+  right: KanjiWord;
+};
 export type KanjiBonusColumn = {
   title: string;
   translation: string;
   description: string;
   kanjiList: KanjiCharEntry[];
+  antonymPairs?: AntonymPair[];
 };
 export type N2KanjiTestDay = KanjiTestDay & { bonusColumn?: KanjiBonusColumn };
 
@@ -65,6 +76,12 @@ export const n2KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> 
     "4": w1d4 as KanjiSignLessonDay,
     "5": w1d5 as KanjiSignLessonDay,
     "6": w1d6 as KanjiSignLessonDay,
+  },
+  "2": {
+    "1": w2d1 as KanjiSignLessonDay,
+    "2": w2d2 as KanjiSignLessonDay,
+    "3": w2d3 as KanjiSignLessonDay,
+    "4": w2d4 as KanjiSignLessonDay,
   },
 };
 

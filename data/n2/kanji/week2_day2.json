@@ -1,0 +1,266 @@
+{
+  "week": 2,
+  "day": 2,
+  "title": "現金自動支払機",
+  "subtitle": "ATM",
+  "translation": "Mesin ATM (Penarikan Tunai Otomatis)",
+  "sceneDescription": "Di bank atau kantor pos, kita bisa menarik atau menyetor uang lewat mesin ATM tanpa perlu ke loket. 「引き出し」dan「預け入れ」juga disebut「払い戻し」dan「預金」. Dengan「残高照会」kita bisa memeriksa berapa sisa saldo yang masih ada.\n\n Mengikuti instruksi seperti「硬貨はこちらにお入れください」atau「よろしければ確認ボタンを押してください」, kita menyetor atau menarik uang. Tapi kalau salah tekan, tombol「取り消し」ditekan.",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 101,
+      "character": "現",
+      "strokes": 11,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["あらわれる", "あらわす"],
+      "words": [
+        { "word": "現金", "reading": "げんきん", "meaning": "uang tunai" },
+        { "word": "現れる", "reading": "あらわれる", "meaning": "muncul" }
+      ],
+      "extraWords": [
+        { "word": "表現", "reading": "ひょうげん", "meaning": "ekspresi" }
+      ]
+    },
+    {
+      "id": 102,
+      "character": "支",
+      "strokes": 4,
+      "onyomi": ["シ"],
+      "kunyomi": ["ささえる"],
+      "words": [
+        { "word": "支店", "reading": "してん", "meaning": "cabang toko/kantor" },
+        { "word": "支える", "reading": "ささえる", "meaning": "menopang, mendukung", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "支持", "reading": "しじ", "meaning": "dukungan" }
+      ]
+    },
+    {
+      "id": 103,
+      "character": "払",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["はらう"],
+      "words": [
+        { "word": "払う", "reading": "はらう", "meaning": "membayar" },
+        { "word": "支払機", "reading": "しはらいき", "meaning": "mesin pembayaran" }
+      ],
+      "extraWords": [
+        { "word": "支払う", "reading": "しはらう", "meaning": "membayar" }
+      ]
+    },
+    {
+      "id": 104,
+      "character": "預",
+      "strokes": 13,
+      "onyomi": ["ヨ"],
+      "kunyomi": ["あずける", "あずかる"],
+      "words": [
+        { "word": "預金", "reading": "よきん", "meaning": "simpanan, tabungan" },
+        { "word": "預ける", "reading": "あずける", "meaning": "menitipkan" }
+      ],
+      "extraWords": [
+        { "word": "預かる", "reading": "あずかる", "meaning": "menerima titipan, menjaga" }
+      ]
+    },
+    {
+      "id": 105,
+      "character": "戻",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["もどす", "もどる"],
+      "words": [
+        { "word": "払い戻し", "reading": "はらいもどし", "meaning": "pengembalian uang, refund" }
+      ],
+      "extraWords": [
+        { "word": "戻る", "reading": "もどる", "meaning": "kembali" }
+      ]
+    },
+    {
+      "id": 106,
+      "character": "残",
+      "strokes": 10,
+      "onyomi": ["ザン"],
+      "kunyomi": ["のこる", "のこす"],
+      "words": [
+        { "word": "残高照会", "reading": "ざんだかしょうかい", "meaning": "pemeriksaan saldo" },
+        { "word": "残る", "reading": "のこる", "meaning": "tersisa" }
+      ],
+      "extraWords": [
+        { "word": "残す", "reading": "のこす", "meaning": "menyisakan, meninggalkan" }
+      ]
+    },
+    {
+      "id": 107,
+      "character": "照",
+      "strokes": 13,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["てる", "てらす"],
+      "words": [
+        { "word": "照明", "reading": "しょうめい", "meaning": "pencahayaan" },
+        { "word": "照らす", "reading": "てらす", "meaning": "menyinari" }
+      ],
+      "extraWords": [
+        { "word": "対照的", "reading": "たいしょうてき", "meaning": "kontras", "note": "→ lihat kanji #328 (対)" }
+      ]
+    },
+    {
+      "id": 108,
+      "character": "硬",
+      "strokes": 12,
+      "onyomi": ["コウ"],
+      "kunyomi": ["かたい"],
+      "words": [
+        { "word": "硬貨", "reading": "こうか", "meaning": "koin, uang logam" }
+      ],
+      "extraWords": [
+        { "word": "硬い", "reading": "かたい", "meaning": "keras" }
+      ]
+    },
+    {
+      "id": 109,
+      "character": "貨",
+      "strokes": 11,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "貨物", "reading": "かもつ", "meaning": "barang kargo" }
+      ],
+      "extraWords": [
+        { "word": "通貨", "reading": "つうか", "meaning": "mata uang" }
+      ]
+    },
+    {
+      "id": 110,
+      "character": "確",
+      "strokes": 15,
+      "onyomi": ["カク"],
+      "kunyomi": ["たしか", "たしかめる"],
+      "words": [
+        { "word": "確定", "reading": "かくてい", "meaning": "kepastian, penetapan" },
+        { "word": "確か（な）", "reading": "たしか", "meaning": "pasti, yakin" }
+      ],
+      "extraWords": [
+        { "word": "明確（な）", "reading": "めいかく", "meaning": "jelas, tegas" },
+        { "word": "確かめる", "reading": "たしかめる", "meaning": "memastikan, mengecek" }
+      ]
+    },
+    {
+      "id": 111,
+      "character": "認",
+      "strokes": 14,
+      "onyomi": ["ニン"],
+      "kunyomi": ["みとめる"],
+      "words": [
+        { "word": "確認", "reading": "かくにん", "meaning": "konfirmasi, pemeriksaan" }
+      ],
+      "extraWords": [
+        { "word": "認める", "reading": "みとめる", "meaning": "mengakui, menyetujui" }
+      ]
+    },
+    {
+      "id": 112,
+      "character": "違",
+      "strokes": 13,
+      "onyomi": ["イ"],
+      "kunyomi": ["ちがう", "ちがえる"],
+      "words": [
+        { "word": "違法", "reading": "いほう", "meaning": "ilegal", "note": "→ lihat kanji #253 (法)" },
+        { "word": "間違える", "reading": "まちがえる", "meaning": "melakukan kesalahan" }
+      ],
+      "extraWords": [
+        { "word": "違い", "reading": "ちがい", "meaning": "perbedaan" },
+        { "word": "間違い", "reading": "まちがい", "meaning": "kesalahan" }
+      ]
+    },
+    {
+      "id": 113,
+      "character": "取",
+      "strokes": 8,
+      "onyomi": ["シュ"],
+      "kunyomi": ["とる"],
+      "words": [
+        { "word": "取材", "reading": "しゅざい", "meaning": "liputan, pengumpulan berita", "note": "→ lihat kanji #600 (材)" },
+        { "word": "取る", "reading": "とる", "meaning": "mengambil" },
+        { "word": "書き取り", "reading": "かきとり", "meaning": "dikte tulisan" }
+      ],
+      "extraWords": [
+        { "word": "取り消し", "reading": "とりけし", "meaning": "pembatalan" },
+        { "word": "聞き取り", "reading": "ききとり", "meaning": "kemampuan menyimak" }
+      ]
+    },
+    {
+      "id": 114,
+      "character": "消",
+      "strokes": 10,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["きえる", "けす"],
+      "words": [
+        { "word": "消去", "reading": "しょうきょ", "meaning": "penghapusan" },
+        { "word": "消す", "reading": "けす", "meaning": "mematikan, menghapus" }
+      ],
+      "extraWords": [
+        { "word": "消える", "reading": "きえる", "meaning": "padam, menghilang" },
+        { "word": "消しゴム", "reading": "けしゴム", "meaning": "penghapus" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この店は（　）が明るくて気持ちがいい。",
+      "optionA": "照明",
+      "optionB": "調整",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "私は家族や友人に（　）られて生きています。",
+      "optionA": "数え",
+      "optionB": "支え",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "この日本語の（　）は英語で何と言いますか。",
+      "optionA": "言語",
+      "optionB": "表現",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "銀行にお金を（　）。",
+      "optionA": "預ける",
+      "optionB": "預かる",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "漢字の（　）のテストで100点を取った。",
+      "optionA": "聞き取り",
+      "optionB": "書き取り",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "「五百円（　）はお使いになれません。」",
+      "optionA": "通貨",
+      "optionB": "硬貨",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）を消しゴムで消して書き直す。",
+      "optionA": "違い",
+      "optionB": "間違い",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "電話番号を（　）ください。",
+      "optionA": "お確かめ",
+      "optionB": "お認め",
+      "answer": "A"
+    }
+  ]
+}

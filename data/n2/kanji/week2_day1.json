@@ -1,0 +1,269 @@
+{
+  "week": 2,
+  "day": 1,
+  "title": "自動券売機",
+  "subtitle": "Automatic Ticket Machine",
+  "translation": "Mesin Tiket Otomatis",
+  "sceneDescription": "Tidak hanya tiket biasa dan tiket buku (回数券), tiket kursi bebas shinkansen pun bisa dibeli lewat mesin tiket otomatis. Cukup masukkan uang, lalu tekan tombol tujuan, pergi-pulang atau sekali jalan, dan jumlah lembar tiket.\n\n Tiket berlangganan (定期券) juga dijual lewat mesin tiket otomatis, tapi tiket kursi khusus (指定席券) harus dibeli di loket. Kalau tiket buku atau tiket berlangganan butuh waktu untuk diterbitkan, muncul tanda「発券中」. Kalau muncul tanda「調整中」, berarti mesin sedang tidak bisa dipakai sementara.",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 87,
+      "character": "普",
+      "strokes": 12,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "普通", "reading": "ふつう", "meaning": "biasa, umum" }
+      ],
+      "extraWords": [
+        { "word": "普段（の）", "reading": "ふだん", "meaning": "biasanya, sehari-hari" }
+      ]
+    },
+    {
+      "id": 88,
+      "character": "券",
+      "strokes": 8,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "回数券", "reading": "かいすうけん", "meaning": "buku tiket/kupon perjalanan" },
+        { "word": "旅券", "reading": "りょけん", "meaning": "paspor" }
+      ],
+      "extraWords": [
+        { "word": "乗車券", "reading": "じょうしゃけん", "meaning": "tiket naik kendaraan" },
+        { "word": "発券", "reading": "はっけん", "meaning": "penerbitan tiket" }
+      ]
+    },
+    {
+      "id": 89,
+      "character": "数",
+      "strokes": 13,
+      "onyomi": ["スウ"],
+      "kunyomi": ["かず", "かぞえる"],
+      "words": [
+        { "word": "数字", "reading": "すうじ", "meaning": "angka" },
+        { "word": "点数", "reading": "てんすう", "meaning": "skor, poin" }
+      ],
+      "extraWords": [
+        { "word": "数学", "reading": "すうがく", "meaning": "matematika" },
+        { "word": "数を数える", "reading": "かずをかぞえる", "meaning": "menghitung angka" }
+      ]
+    },
+    {
+      "id": 90,
+      "character": "機",
+      "strokes": 16,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "飛行機", "reading": "ひこうき", "meaning": "pesawat terbang" },
+        { "word": "自動券売機", "reading": "じどうけんばいき", "meaning": "mesin tiket otomatis" }
+      ],
+      "extraWords": [
+        { "word": "交通機関", "reading": "こうつうきかん", "meaning": "alat transportasi", "note": "→ lihat kanji #212 (交)" },
+        { "word": "危機", "reading": "きき", "meaning": "krisis" }
+      ]
+    },
+    {
+      "id": 91,
+      "character": "復",
+      "strokes": 12,
+      "onyomi": ["フク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "復習", "reading": "ふくしゅう", "meaning": "pengulangan pelajaran" },
+        { "word": "回復", "reading": "かいふく", "meaning": "pemulihan" }
+      ],
+      "extraWords": [
+        { "word": "往復", "reading": "おうふく", "meaning": "pergi-pulang" }
+      ]
+    },
+    {
+      "id": 92,
+      "character": "片",
+      "strokes": 4,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["かた"],
+      "words": [
+        { "word": "破片", "reading": "はへん", "meaning": "pecahan", "note": "→ lihat kanji #497 (破)" },
+        { "word": "片付ける", "reading": "かたづける", "meaning": "merapikan" }
+      ],
+      "extraWords": [
+        { "word": "片道切符", "reading": "かたみちきっぷ", "meaning": "tiket sekali jalan" },
+        { "word": "片〜", "reading": "かた", "meaning": "satu sisi, se- ..." }
+      ]
+    },
+    {
+      "id": 93,
+      "character": "枚",
+      "strokes": 8,
+      "onyomi": ["マイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜枚", "reading": "まい", "meaning": "penghitung benda tipis/lembar" }
+      ],
+      "extraWords": [
+        { "word": "枚数", "reading": "まいすう", "meaning": "jumlah lembar" }
+      ]
+    },
+    {
+      "id": 94,
+      "character": "期",
+      "strokes": 12,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "期間", "reading": "きかん", "meaning": "jangka waktu, periode" },
+        { "word": "定期券", "reading": "ていきけん", "meaning": "tiket berlangganan" }
+      ],
+      "extraWords": [
+        { "word": "定期", "reading": "ていき", "meaning": "berkala, jangka waktu tetap" }
+      ]
+    },
+    {
+      "id": 95,
+      "character": "販",
+      "strokes": 11,
+      "onyomi": ["ハン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "販売", "reading": "はんばい", "meaning": "penjualan" }
+      ],
+      "extraWords": [
+        { "word": "自動販売機", "reading": "じどうはんばいき", "meaning": "mesin penjual otomatis" }
+      ]
+    },
+    {
+      "id": 96,
+      "character": "指",
+      "strokes": 9,
+      "onyomi": ["シ"],
+      "kunyomi": ["ゆび", "さす"],
+      "words": [
+        { "word": "指定席", "reading": "していせき", "meaning": "kursi reservasi/khusus" },
+        { "word": "指", "reading": "ゆび", "meaning": "jari" }
+      ],
+      "extraWords": [
+        { "word": "指す", "reading": "さす", "meaning": "menunjuk", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 97,
+      "character": "調",
+      "strokes": 15,
+      "onyomi": ["チョウ"],
+      "kunyomi": ["しらべる"],
+      "words": [
+        { "word": "調整", "reading": "ちょうせい", "meaning": "penyesuaian, pengaturan" },
+        { "word": "調べる", "reading": "しらべる", "meaning": "memeriksa, menyelidiki" }
+      ],
+      "extraWords": [
+        { "word": "調子", "reading": "ちょうし", "meaning": "kondisi, keadaan" }
+      ]
+    },
+    {
+      "id": 98,
+      "character": "整",
+      "strokes": 16,
+      "onyomi": ["セイ"],
+      "kunyomi": ["ととのう"],
+      "words": [
+        { "word": "整理券", "reading": "せいりけん", "meaning": "tiket nomor antrean" },
+        { "word": "整備", "reading": "せいび", "meaning": "perawatan, perlengkapan" }
+      ],
+      "extraWords": [
+        { "word": "整う", "reading": "ととのう", "meaning": "menjadi rapi, teratur" }
+      ]
+    },
+    {
+      "id": 99,
+      "character": "表",
+      "strokes": 8,
+      "onyomi": ["ヒョウ"],
+      "kunyomi": ["おもて", "あらわす", "あらわれる"],
+      "words": [
+        { "word": "表", "reading": "ひょう", "meaning": "tabel, daftar" },
+        { "word": "発表", "reading": "はっぴょう", "meaning": "pengumuman, presentasi" },
+        { "word": "表", "reading": "おもて", "meaning": "permukaan, sisi depan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "時刻表", "reading": "じこくひょう", "meaning": "tabel jadwal waktu" },
+        { "word": "表す", "reading": "あらわす", "meaning": "menyatakan, mengekspresikan" }
+      ]
+    },
+    {
+      "id": 100,
+      "character": "示",
+      "strokes": 5,
+      "onyomi": ["ジ"],
+      "kunyomi": ["しめす"],
+      "words": [
+        { "word": "表示", "reading": "ひょうじ", "meaning": "tampilan, indikasi" },
+        { "word": "掲示", "reading": "けいじ", "meaning": "pengumuman tertulis, papan pengumuman" }
+      ],
+      "extraWords": [
+        { "word": "指示", "reading": "しじ", "meaning": "instruksi, petunjuk" },
+        { "word": "示す", "reading": "しめす", "meaning": "menunjukkan", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "勉強したところを、もう一度（　）しましょう。",
+      "optionA": "準備",
+      "optionB": "復習",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "手袋が（　）しかない。どこで落としたのだろう。",
+      "optionA": "片方",
+      "optionB": "両方",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "飛行機や電車などを交通（　）という。",
+      "optionA": "機関",
+      "optionB": "関係",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "私は通学に（　）3時間かかります。",
+      "optionA": "回復",
+      "optionB": "往復",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "ここでは係員の（　）通りに駐車してください。",
+      "optionA": "指示",
+      "optionB": "指定",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "この時刻（　）に電車の発車時刻が書いてあります。",
+      "optionA": "表",
+      "optionB": "図",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "銀行員「（　）をお取りになってお待ちください。」",
+      "optionA": "回数券",
+      "optionB": "整理券",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "朝からおなかの（　）がよくない。",
+      "optionA": "整備",
+      "optionB": "調子",
+      "answer": "B"
+    }
+  ]
+}

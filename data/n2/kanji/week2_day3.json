@@ -1,0 +1,262 @@
+{
+  "week": 2,
+  "day": 3,
+  "title": "自動販売機・自動券売機",
+  "subtitle": "Vending Machines, Ticket Machines",
+  "translation": "Mesin Penjual Otomatis dan Mesin Tiket Otomatis",
+  "sceneDescription": "A: \"Mau apa? Teh hangat?\" B: \"Aku mau yang dingin. Ehm, teh hijau, teh hitam... teh oolong saja deh.\" A: \"Ah, katanya uang koin 500 yen tidak bisa dipakai... kalau uang kertas 1000 yen bisa. Lho? Kembaliannya mana?\" B: \"Tarik saja tuas pengembalian itu, nanti keluar.\"\n\n Di mesin tiket masuk atau tiket gedung, ada tombol seperti「団体」「一般」「学生」「小中学生」「幼児（〜歳以上〜歳未満）」dengan tarif yang berbeda-beda. Ada juga tempat yang memberi diskon untuk lansia (老人割引).",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 115,
+      "character": "温",
+      "strokes": 12,
+      "onyomi": ["オン"],
+      "kunyomi": ["あたたかい", "あたたまる", "あたためる"],
+      "words": [
+        { "word": "温度", "reading": "おんど", "meaning": "suhu" },
+        { "word": "温室", "reading": "おんしつ", "meaning": "rumah kaca" }
+      ],
+      "extraWords": [
+        { "word": "体温計", "reading": "たいおんけい", "meaning": "termometer badan" },
+        { "word": "温かい", "reading": "あたたかい", "meaning": "hangat" }
+      ]
+    },
+    {
+      "id": 116,
+      "character": "冷",
+      "strokes": 7,
+      "onyomi": ["レイ"],
+      "kunyomi": ["つめたい", "ひえる", "ひやす", "さめる", "さます"],
+      "words": [
+        { "word": "冷静（な）", "reading": "れいせい", "meaning": "tenang, dingin (sikap)" },
+        { "word": "冷える", "reading": "ひえる", "meaning": "menjadi dingin" },
+        { "word": "冷める", "reading": "さめる", "meaning": "menjadi dingin (makanan/perasaan)", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "冷たい", "reading": "つめたい", "meaning": "dingin (sentuhan)" },
+        { "word": "冷やす", "reading": "ひやす", "meaning": "mendinginkan" },
+        { "word": "冷ます", "reading": "さます", "meaning": "mendinginkan (sesuatu)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 117,
+      "character": "緑",
+      "strokes": 14,
+      "onyomi": ["リョク"],
+      "kunyomi": ["みどり"],
+      "words": [
+        { "word": "緑茶", "reading": "りょくちゃ", "meaning": "teh hijau" },
+        { "word": "緑（色）", "reading": "みどりいろ", "meaning": "warna hijau" }
+      ],
+      "extraWords": [
+        { "word": "新緑", "reading": "しんりょく", "meaning": "hijau dedaunan segar (musim semi)" }
+      ]
+    },
+    {
+      "id": 118,
+      "character": "紅",
+      "strokes": 9,
+      "onyomi": ["コウ"],
+      "kunyomi": ["べに"],
+      "words": [
+        { "word": "紅茶", "reading": "こうちゃ", "meaning": "teh hitam" }
+      ],
+      "extraWords": [
+        { "word": "口紅", "reading": "くちべに", "meaning": "lipstik" }
+      ]
+    },
+    {
+      "id": 119,
+      "character": "玉",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["たま"],
+      "words": [
+        { "word": "水玉", "reading": "みずたま", "meaning": "tetesan air" },
+        { "word": "十円玉", "reading": "じゅうえんだま", "meaning": "koin 10 yen" }
+      ],
+      "extraWords": [
+        { "word": "玉", "reading": "たま", "meaning": "bola, benda bulat" }
+      ]
+    },
+    {
+      "id": 120,
+      "character": "返",
+      "strokes": 7,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["かえす", "かえる"],
+      "words": [
+        { "word": "返事", "reading": "へんじ", "meaning": "balasan, jawaban" },
+        { "word": "返金", "reading": "へんきん", "meaning": "pengembalian uang" }
+      ],
+      "extraWords": [
+        { "word": "返却", "reading": "へんきゃく", "meaning": "pengembalian (barang)" },
+        { "word": "返す", "reading": "かえす", "meaning": "mengembalikan" }
+      ]
+    },
+    {
+      "id": 121,
+      "character": "団",
+      "strokes": 6,
+      "onyomi": ["ダン", "トン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "団体", "reading": "だんたい", "meaning": "kelompok, organisasi" },
+        { "word": "団地", "reading": "だんち", "meaning": "kompleks perumahan" }
+      ],
+      "extraWords": [
+        { "word": "集団", "reading": "しゅうだん", "meaning": "kelompok, kerumunan" },
+        { "word": "布団", "reading": "ふとん", "meaning": "futon (kasur lipat Jepang)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 122,
+      "character": "般",
+      "strokes": 10,
+      "onyomi": ["ハン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "一般", "reading": "いっぱん", "meaning": "umum" }
+      ],
+      "extraWords": [
+        { "word": "全般", "reading": "ぜんぱん", "meaning": "keseluruhan", "note": "→ lihat kanji #215 (全)" }
+      ]
+    },
+    {
+      "id": 123,
+      "character": "幼",
+      "strokes": 5,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["おさない"],
+      "words": [
+        { "word": "幼児", "reading": "ようじ", "meaning": "balita" },
+        { "word": "幼い", "reading": "おさない", "meaning": "masih kecil, kanak-kanak", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 124,
+      "character": "児",
+      "strokes": 7,
+      "onyomi": ["ニ", "ジ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "小児科", "reading": "しょうにか", "meaning": "departemen anak (pediatri)" },
+        { "word": "児童", "reading": "じどう", "meaning": "anak-anak", "note": "→ lihat kanji #661 (童)" }
+      ]
+    },
+    {
+      "id": 125,
+      "character": "歳",
+      "strokes": 13,
+      "onyomi": ["サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜歳", "reading": "さい", "meaning": "... tahun (usia)" }
+      ],
+      "extraWords": [
+        { "word": "二十歳", "reading": "にじゅっさい", "meaning": "20 tahun" },
+        { "word": "二十歳", "reading": "はたち", "meaning": "20 tahun", "flag": "special" }
+      ]
+    },
+    {
+      "id": 126,
+      "character": "未",
+      "strokes": 5,
+      "onyomi": ["ミ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "未定", "reading": "みてい", "meaning": "belum ditentukan" },
+        { "word": "未知", "reading": "みち", "meaning": "tidak diketahui" }
+      ],
+      "extraWords": [
+        { "word": "未来", "reading": "みらい", "meaning": "masa depan" },
+        { "word": "未〜", "reading": "み", "meaning": "belum ..." }
+      ]
+    },
+    {
+      "id": 127,
+      "character": "満",
+      "strokes": 12,
+      "onyomi": ["マン"],
+      "kunyomi": ["みちる", "みたす"],
+      "words": [
+        { "word": "未満", "reading": "みまん", "meaning": "kurang dari" },
+        { "word": "満足", "reading": "まんぞく", "meaning": "kepuasan" }
+      ],
+      "extraWords": [
+        { "word": "満員", "reading": "まんいん", "meaning": "penuh (orang)" },
+        { "word": "満ちる", "reading": "みちる", "meaning": "menjadi penuh" }
+      ]
+    },
+    {
+      "id": 128,
+      "character": "老",
+      "strokes": 6,
+      "onyomi": ["ロウ"],
+      "kunyomi": ["おいる"],
+      "words": [
+        { "word": "老人", "reading": "ろうじん", "meaning": "orang lanjut usia" },
+        { "word": "年老いた", "reading": "としおいた", "meaning": "berusia lanjut" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "このデザートは（　）食べるとおいしい。",
+      "optionA": "冷やして",
+      "optionB": "冷えて",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この辺は（　）が多くて静かできれいですね。",
+      "optionA": "緑",
+      "optionB": "紅",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "キャッシュバックというのは（　）のことです。",
+      "optionA": "返事",
+      "optionB": "返金",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "この自動販売機は硬貨だけでなく千円（　）も使える。",
+      "optionA": "玉",
+      "optionB": "札",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "「18歳（　）」には18歳は入りません。",
+      "optionA": "以下",
+      "optionB": "未満",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）科の医者の数が足りないそうです。",
+      "optionA": "小児",
+      "optionB": "幼児",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）旅行は安いが、自由に行動できない。",
+      "optionA": "集団",
+      "optionB": "団体",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "冬の登山は危険に（　）。",
+      "optionA": "老いている",
+      "optionB": "満ちている",
+      "answer": "B"
+    }
+  ]
+}

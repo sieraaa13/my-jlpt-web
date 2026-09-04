@@ -1,0 +1,271 @@
+{
+  "week": 2,
+  "day": 4,
+  "title": "家電のリモコン",
+  "subtitle": "Remote Control Devices",
+  "translation": "Remote Kontrol Alat Elektronik",
+  "sceneDescription": "Bagian pertama menunjukkan remote AC dengan tombol pengatur suhu, mode operasi, arah dan kekuatan angin, serta mode pemanas/penghangat udara/pendingin. Bagian kedua menunjukkan remote video dengan tombol saluran, keluarkan kaset, mode standar/3x kecepatan, putar, putar mundur/maju cepat, berhenti, jeda, ganti suara, rekam, dan atur jadwal rekam.",
+  "signs": [
+    { "text": "設定温度", "meaning": "Suhu yang diatur" },
+    { "text": "運転切換", "meaning": "Ganti mode operasi" },
+    { "text": "風向", "meaning": "Arah angin" },
+    { "text": "風量", "meaning": "Kekuatan angin" },
+    { "text": "暖房／除湿／冷房", "meaning": "Penghangat / Dehumidifier / Pendingin" },
+    { "text": "標準／3倍", "meaning": "Standar / 3x kecepatan" },
+    { "text": "取り消し", "meaning": "Batalkan" },
+    { "text": "巻き戻し／早送り", "meaning": "Putar mundur / Maju cepat" },
+    { "text": "一時停止", "meaning": "Jeda" },
+    { "text": "音声切替", "meaning": "Ganti suara" }
+  ],
+  "kanjiList": [
+    {
+      "id": 129,
+      "character": "設",
+      "strokes": 11,
+      "onyomi": ["セツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "設定", "reading": "せってい", "meaning": "pengaturan" },
+        { "word": "設計", "reading": "せっけい", "meaning": "desain, rancangan" }
+      ],
+      "extraWords": [
+        { "word": "設備", "reading": "せつび", "meaning": "fasilitas, perlengkapan" }
+      ]
+    },
+    {
+      "id": 130,
+      "character": "換",
+      "strokes": 12,
+      "onyomi": ["カン"],
+      "kunyomi": ["かえる", "かわる"],
+      "words": [
+        { "word": "換気", "reading": "かんき", "meaning": "ventilasi" },
+        { "word": "運転切換", "reading": "うんてんきりかえ", "meaning": "pengalihan mode operasi" }
+      ],
+      "extraWords": [
+        { "word": "乗り換え", "reading": "のりかえ", "meaning": "pindah kendaraan (transit)" }
+      ]
+    },
+    {
+      "id": 131,
+      "character": "向",
+      "strokes": 6,
+      "onyomi": ["コウ"],
+      "kunyomi": ["むく", "むける", "むかう", "むこう"],
+      "words": [
+        { "word": "風向（＝風の向き）", "reading": "ふうこう", "meaning": "arah angin" },
+        { "word": "向かい", "reading": "むかい", "meaning": "sisi seberang" }
+      ],
+      "extraWords": [
+        { "word": "向こう", "reading": "むこう", "meaning": "di seberang sana, di sana" }
+      ]
+    },
+    {
+      "id": 132,
+      "character": "停",
+      "strokes": 11,
+      "onyomi": ["テイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "停止", "reading": "ていし", "meaning": "pemberhentian" },
+        { "word": "停電", "reading": "ていでん", "meaning": "pemadaman listrik" }
+      ],
+      "extraWords": [
+        { "word": "停車", "reading": "ていしゃ", "meaning": "berhenti (kendaraan)" }
+      ]
+    },
+    {
+      "id": 133,
+      "character": "暖",
+      "strokes": 13,
+      "onyomi": ["ダン"],
+      "kunyomi": ["あたたかい", "あたたまる", "あたためる"],
+      "words": [
+        { "word": "暖房", "reading": "だんぼう", "meaning": "pemanas ruangan" },
+        { "word": "温暖（な）", "reading": "おんだん", "meaning": "hangat (iklim)" }
+      ],
+      "extraWords": [
+        { "word": "暖かい", "reading": "あたたかい", "meaning": "hangat" }
+      ]
+    },
+    {
+      "id": 134,
+      "character": "除",
+      "strokes": 10,
+      "onyomi": ["ジョ", "ジ"],
+      "kunyomi": ["のぞく"],
+      "words": [
+        { "word": "除湿", "reading": "じょしつ", "meaning": "dehumidifikasi (pengurang kelembapan)" },
+        { "word": "掃除", "reading": "そうじ", "meaning": "pembersihan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "除く", "reading": "のぞく", "meaning": "menghilangkan, mengecualikan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 135,
+      "character": "湿",
+      "strokes": 12,
+      "onyomi": ["シツ"],
+      "kunyomi": ["しめる"],
+      "words": [
+        { "word": "湿度", "reading": "しつど", "meaning": "kelembapan" },
+        { "word": "湿気", "reading": "しっけ", "meaning": "kelembapan udara" }
+      ],
+      "extraWords": [
+        { "word": "湿る", "reading": "しめる", "meaning": "menjadi lembap" }
+      ]
+    },
+    {
+      "id": 136,
+      "character": "標",
+      "strokes": 15,
+      "onyomi": ["ヒョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "標準", "reading": "ひょうじゅん", "meaning": "standar" },
+        { "word": "目標", "reading": "もくひょう", "meaning": "tujuan, target" }
+      ],
+      "extraWords": [
+        { "word": "標本", "reading": "ひょうほん", "meaning": "spesimen, sampel" }
+      ]
+    },
+    {
+      "id": 137,
+      "character": "倍",
+      "strokes": 10,
+      "onyomi": ["バイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "倍", "reading": "ばい", "meaning": "dua kali lipat" },
+        { "word": "〜倍", "reading": "ばい", "meaning": "... kali (kelipatan)" }
+      ]
+    },
+    {
+      "id": 138,
+      "character": "巻",
+      "strokes": 9,
+      "onyomi": ["カン"],
+      "kunyomi": ["まく"],
+      "words": [
+        { "word": "〜巻", "reading": "かん", "meaning": "jilid ke-... (buku bersambung)" },
+        { "word": "巻く", "reading": "まく", "meaning": "menggulung" }
+      ],
+      "extraWords": [
+        { "word": "巻き戻し", "reading": "まきもどし", "meaning": "putar ulang mundur (rewind)" }
+      ]
+    },
+    {
+      "id": 139,
+      "character": "録",
+      "strokes": 16,
+      "onyomi": ["ロク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "録画", "reading": "ろくが", "meaning": "rekaman video" },
+        { "word": "録音", "reading": "ろくおん", "meaning": "rekaman suara" }
+      ]
+    },
+    {
+      "id": 140,
+      "character": "量",
+      "strokes": 12,
+      "onyomi": ["リョウ"],
+      "kunyomi": ["はかる"],
+      "words": [
+        { "word": "音量", "reading": "おんりょう", "meaning": "volume suara" },
+        { "word": "風量", "reading": "ふうりょう", "meaning": "kekuatan angin" },
+        { "word": "分量", "reading": "ぶんりょう", "meaning": "takaran, jumlah" },
+        { "word": "数量", "reading": "すうりょう", "meaning": "kuantitas" }
+      ],
+      "extraWords": [
+        { "word": "量る", "reading": "はかる", "meaning": "mengukur (berat/takaran)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 141,
+      "character": "予",
+      "strokes": 4,
+      "onyomi": ["ヨ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予定", "reading": "よてい", "meaning": "rencana, jadwal" },
+        { "word": "予習", "reading": "よしゅう", "meaning": "persiapan pelajaran" },
+        { "word": "予備", "reading": "よび", "meaning": "cadangan" },
+        { "word": "予算", "reading": "よさん", "meaning": "anggaran" }
+      ]
+    },
+    {
+      "id": 142,
+      "character": "約",
+      "strokes": 9,
+      "onyomi": ["ヤク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予約", "reading": "よやく", "meaning": "reservasi, janji" }
+      ],
+      "extraWords": [
+        { "word": "約〜", "reading": "やく", "meaning": "kira-kira ..." },
+        { "word": "約束", "reading": "やくそく", "meaning": "janji", "note": "→ lihat kanji #542 (束)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "梅雨の時期はエアコンを（　）にすると快適だ。",
+      "optionA": "除湿",
+      "optionB": "停電",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "次の駅で地下鉄に（　）ましょう。",
+      "optionA": "乗り換え",
+      "optionB": "切り換え",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "室内の温度が高くなりすぎたら、（　）温度を下げましょう。",
+      "optionA": "設定",
+      "optionB": "指定",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "年中無休。ただし、年末年始を（　）。",
+      "optionA": "包む",
+      "optionB": "除く",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "テレビの音声（　）をして英語で聞く。",
+      "optionA": "切換",
+      "optionB": "換気",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）モードでビデオを予約録画する。",
+      "optionA": "標準",
+      "optionB": "水準",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "見終わったビデオは（　）してお返しください。",
+      "optionA": "早送り",
+      "optionB": "巻き戻し",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "中国の人口は日本の約10（　）です。",
+      "optionA": "倍",
+      "optionB": "量",
+      "answer": "A"
+    }
+  ]
+}
