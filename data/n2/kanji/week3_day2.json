@@ -1,0 +1,275 @@
+{
+  "week": 3,
+  "day": 2,
+  "title": "不在通知",
+  "subtitle": "Notices of Absence",
+  "translation": "Pemberitahuan Ketidakhadiran (Kurir)",
+  "sceneDescription": "Bagian pertama menunjukkan slip「ご不在連絡票」yang ditinggalkan kurir saat rumah kosong, berisi info pengirim, waktu kedatangan, dan jenis barang（生もの／食品／衣類／書類／その他）. Bagian kedua menunjukkan info tambahan: jenis penyimpanan barang（冷蔵／冷凍）, cara pembayaran（着払い／代金引換／クレジットカード等）, serta nomor pusat penerimaan pengiriman ulang otomatis dan kontak kurir yang bertanggung jawab.",
+  "signs": [
+    { "text": "ご不在連絡票", "meaning": "Slip pemberitahuan tidak ada di rumah" },
+    { "text": "衣類", "meaning": "Pakaian" },
+    { "text": "その他", "meaning": "Lainnya" },
+    { "text": "冷蔵", "meaning": "Pendingin (chiller)" },
+    { "text": "冷凍", "meaning": "Beku (freezer)" },
+    { "text": "着払い", "meaning": "Bayar ongkir saat terima" },
+    { "text": "代金引換", "meaning": "Bayar di tempat (COD)" },
+    { "text": "再配達自動受付センター", "meaning": "Pusat penerimaan otomatis pengiriman ulang" }
+  ],
+  "kanjiList": [
+    {
+      "id": 195,
+      "character": "連",
+      "strokes": 10,
+      "onyomi": ["レン"],
+      "kunyomi": ["つれる"],
+      "words": [
+        { "word": "関連", "reading": "かんれん", "meaning": "keterkaitan, hubungan" },
+        { "word": "連休", "reading": "れんきゅう", "meaning": "libur berturut-turut" }
+      ],
+      "extraWords": [
+        { "word": "連続", "reading": "れんぞく", "meaning": "beruntun, berturut-turut", "note": "→ lihat kanji #447 (続)" },
+        { "word": "連れる", "reading": "つれる", "meaning": "membawa/mengajak (orang)" }
+      ]
+    },
+    {
+      "id": 196,
+      "character": "絡",
+      "strokes": 12,
+      "onyomi": ["ラク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "連絡", "reading": "れんらく", "meaning": "kontak, komunikasi" }
+      ]
+    },
+    {
+      "id": 197,
+      "character": "荷",
+      "strokes": 10,
+      "onyomi": ["カ"],
+      "kunyomi": ["に"],
+      "words": [
+        { "word": "入荷", "reading": "にゅうか", "meaning": "barang masuk (stok)" },
+        { "word": "荷物", "reading": "にもつ", "meaning": "barang bawaan, paket" }
+      ],
+      "extraWords": [
+        { "word": "出荷", "reading": "しゅっか", "meaning": "pengiriman barang keluar" }
+      ]
+    },
+    {
+      "id": 198,
+      "character": "届",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["とどける", "とどく"],
+      "words": [
+        { "word": "届ける", "reading": "とどける", "meaning": "mengantarkan" },
+        { "word": "届く", "reading": "とどく", "meaning": "sampai, tiba" }
+      ],
+      "extraWords": [
+        { "word": "届け出", "reading": "とどけで", "meaning": "laporan, pendaftaran resmi" }
+      ]
+    },
+    {
+      "id": 199,
+      "character": "参",
+      "strokes": 8,
+      "onyomi": ["サン"],
+      "kunyomi": ["まいる"],
+      "words": [
+        { "word": "参考書", "reading": "さんこうしょ", "meaning": "buku referensi" },
+        { "word": "参る", "reading": "まいる", "meaning": "datang/pergi (bentuk merendah)" }
+      ],
+      "extraWords": [
+        { "word": "持参", "reading": "じさん", "meaning": "membawa serta" },
+        { "word": "お参り", "reading": "おまいり", "meaning": "berziarah ke kuil" }
+      ]
+    },
+    {
+      "id": 200,
+      "character": "衣",
+      "strokes": 6,
+      "onyomi": ["イ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "衣類", "reading": "いるい", "meaning": "pakaian" },
+        { "word": "衣服", "reading": "いふく", "meaning": "pakaian, busana" }
+      ],
+      "extraWords": [
+        { "word": "衣料品", "reading": "いりょうひん", "meaning": "barang pakaian" },
+        { "word": "衣食住", "reading": "いしょくじゅう", "meaning": "sandang, pangan, papan" }
+      ]
+    },
+    {
+      "id": 201,
+      "character": "他",
+      "strokes": 5,
+      "onyomi": ["タ"],
+      "kunyomi": ["ほか"],
+      "words": [
+        { "word": "その他", "reading": "そのた", "meaning": "selain itu, lainnya" },
+        { "word": "他方", "reading": "たほう", "meaning": "di sisi lain" }
+      ],
+      "extraWords": [
+        { "word": "他人", "reading": "たにん", "meaning": "orang lain" }
+      ]
+    },
+    {
+      "id": 202,
+      "character": "蔵",
+      "strokes": 15,
+      "onyomi": ["ゾウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "冷蔵", "reading": "れいぞう", "meaning": "pendinginan" },
+        { "word": "内蔵", "reading": "ないぞう", "meaning": "terpasang di dalam (built-in)" }
+      ],
+      "extraWords": [
+        { "word": "貯蔵", "reading": "ちょぞう", "meaning": "penyimpanan" }
+      ]
+    },
+    {
+      "id": 203,
+      "character": "凍",
+      "strokes": 10,
+      "onyomi": ["トウ"],
+      "kunyomi": ["こおる", "こごえる"],
+      "words": [
+        { "word": "冷凍", "reading": "れいとう", "meaning": "pembekuan" },
+        { "word": "凍る", "reading": "こおる", "meaning": "membeku" }
+      ],
+      "extraWords": [
+        { "word": "凍える", "reading": "こごえる", "meaning": "kedinginan hingga mati rasa" }
+      ]
+    },
+    {
+      "id": 204,
+      "character": "等",
+      "strokes": 12,
+      "onyomi": ["トウ"],
+      "kunyomi": ["ひとしい", "など"],
+      "words": [
+        { "word": "〜等", "reading": "とう", "meaning": "dan lain-lain, dsb" },
+        { "word": "上等", "reading": "じょうとう", "meaning": "kualitas tinggi, unggul" }
+      ],
+      "extraWords": [
+        { "word": "高等学校", "reading": "こうとうがっこう", "meaning": "sekolah menengah atas" },
+        { "word": "等しい", "reading": "ひとしい", "meaning": "setara, sama", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 205,
+      "character": "配",
+      "strokes": 10,
+      "onyomi": ["ハイ"],
+      "kunyomi": ["くばる"],
+      "words": [
+        { "word": "配達", "reading": "はいたつ", "meaning": "pengantaran" },
+        { "word": "心配（な）", "reading": "しんぱい", "meaning": "khawatir" }
+      ],
+      "extraWords": [
+        { "word": "気配", "reading": "けはい", "meaning": "tanda-tanda, firasat", "flag": "attention" },
+        { "word": "配る", "reading": "くばる", "meaning": "membagikan" }
+      ]
+    },
+    {
+      "id": 206,
+      "character": "担",
+      "strokes": 8,
+      "onyomi": ["タン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "担当", "reading": "たんとう", "meaning": "penanggung jawab, bertugas" }
+      ],
+      "extraWords": [
+        { "word": "分担", "reading": "ぶんたん", "meaning": "pembagian tugas" }
+      ]
+    },
+    {
+      "id": 207,
+      "character": "当",
+      "strokes": 6,
+      "onyomi": ["トウ"],
+      "kunyomi": ["あたる", "あてる"],
+      "words": [
+        { "word": "当日", "reading": "とうじつ", "meaning": "hari-H, hari itu juga" },
+        { "word": "当〜", "reading": "とう", "meaning": "... ini (yang dimaksud)" }
+      ],
+      "extraWords": [
+        { "word": "弁当", "reading": "べんとう", "meaning": "bekal makan siang" },
+        { "word": "当たる", "reading": "あたる", "meaning": "kena, tepat mengenai" }
+      ]
+    },
+    {
+      "id": 208,
+      "character": "頂",
+      "strokes": 11,
+      "onyomi": ["チョウ"],
+      "kunyomi": ["いただく"],
+      "words": [
+        { "word": "頂点", "reading": "ちょうてん", "meaning": "puncak, titik tertinggi" },
+        { "word": "頂く", "reading": "いただく", "meaning": "menerima (bentuk merendah)" }
+      ],
+      "extraWords": [
+        { "word": "頂上", "reading": "ちょうじょう", "meaning": "puncak gunung" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "５月の（　）に両親を旅行に連れていく。",
+      "optionA": "週休",
+      "optionB": "連休",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "「会議に使いますから、この（　）をコピーしてください。」",
+      "optionA": "衣類",
+      "optionB": "書類",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "教科書や参考書、（　）必要な本を買う。",
+      "optionA": "その他",
+      "optionB": "他方",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "品物が入荷しましたら、電話で（　）します。",
+      "optionA": "ご連絡",
+      "optionB": "お届け",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「山の（　）でお弁当にしましょう。」",
+      "optionA": "頂上",
+      "optionB": "頂点",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「今お配りしたプリントに作業の（　）が書いてあります。」",
+      "optionA": "分担",
+      "optionB": "復習",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "アイスクリームは冷蔵庫の（　）に入れます。",
+      "optionA": "冷蔵室",
+      "optionB": "冷凍室",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "Ａ＝Ｂとは、ＡはＢと（　）という意味です。",
+      "optionA": "等しい",
+      "optionB": "当たる",
+      "answer": "A"
+    }
+  ]
+}
