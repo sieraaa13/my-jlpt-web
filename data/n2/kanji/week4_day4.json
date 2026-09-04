@@ -1,0 +1,267 @@
+{
+  "week": 4,
+  "day": 4,
+  "title": "ビジネスメール",
+  "subtitle": "Business E-Mail",
+  "translation": "Email Bisnis",
+  "sceneDescription": "Contoh email bisnis mengatur jadwal pertemuan: \"Yth. Fukuyama-sama, terima kasih atas kerja samanya selama ini. Saya sudah membaca emailnya. Mengenai rencana pertemuan, sayangnya waktu yang Anda inginkan sudah ada janji lain. Kalau tanggal di bawah ini, saya bisa berkunjung — bagaimana menurut Anda? Akan senang sekali jika mendapat balasan. Mohon maaf, saya akhiri di sini karena hanya menyampaikan keperluan. -Daniel Reed\"\n\n Contoh email bisnis pengumuman pengunduran diri: \"Yth. Okumura-sama, terima kasih atas kerja samanya selama ini. Mendadak sekali, tapi karena berbagai alasan pribadi, saya memutuskan untuk mengundurkan diri. Sehubungan dengan itu, saya ingin memperkenalkan penerus saya dan berkunjung untuk berpamitan.\"",
+  "signs": [
+    { "text": "打ち合わせ", "meaning": "Pertemuan, rapat koordinasi" },
+    { "text": "退職のご挨拶", "meaning": "Salam pengunduran diri" }
+  ],
+  "kanjiList": [
+    {
+      "id": 312,
+      "character": "福",
+      "strokes": 13,
+      "onyomi": ["フク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "幸福", "reading": "こうふく", "meaning": "kebahagiaan" }
+      ],
+      "extraWords": [
+        { "word": "福祉", "reading": "ふくし", "meaning": "kesejahteraan sosial" }
+      ]
+    },
+    {
+      "id": 313,
+      "character": "拝",
+      "strokes": 8,
+      "onyomi": ["ハイ"],
+      "kunyomi": ["おがむ"],
+      "words": [
+        { "word": "拝見", "reading": "はいけん", "meaning": "melihat (bentuk merendah)" },
+        { "word": "参拝者", "reading": "さんぱいしゃ", "meaning": "peziarah/pengunjung kuil" }
+      ],
+      "extraWords": [
+        { "word": "拝借", "reading": "はいしゃく", "meaning": "meminjam (bentuk merendah)" },
+        { "word": "拝む", "reading": "おがむ", "meaning": "menyembah, berdoa", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 314,
+      "character": "打",
+      "strokes": 5,
+      "onyomi": ["ダ"],
+      "kunyomi": ["うつ"],
+      "words": [
+        { "word": "打者", "reading": "だしゃ", "meaning": "pemukul (baseball)" },
+        { "word": "打つ", "reading": "うつ", "meaning": "memukul" }
+      ],
+      "extraWords": [
+        { "word": "打ち合わせ", "reading": "うちあわせ", "meaning": "rapat persiapan, koordinasi" }
+      ]
+    },
+    {
+      "id": 315,
+      "character": "伺",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["うかがう"],
+      "words": [
+        { "word": "伺う", "reading": "うかがう", "meaning": "berkunjung/bertanya (bentuk merendah)" }
+      ]
+    },
+    {
+      "id": 316,
+      "character": "幸",
+      "strokes": 8,
+      "onyomi": ["コウ"],
+      "kunyomi": ["さいわい", "しあわせ"],
+      "words": [
+        { "word": "幸運（な）", "reading": "こううん", "meaning": "beruntung" },
+        { "word": "幸せ（な）", "reading": "しあわせ", "meaning": "bahagia" }
+      ],
+      "extraWords": [
+        { "word": "不幸（な）", "reading": "ふこう", "meaning": "malang, tidak bahagia" },
+        { "word": "幸い", "reading": "さいわい", "meaning": "untung, kebetulan baik" }
+      ]
+    },
+    {
+      "id": 317,
+      "character": "失",
+      "strokes": 5,
+      "onyomi": ["シツ"],
+      "kunyomi": ["うしなう"],
+      "words": [
+        { "word": "失礼（な）", "reading": "しつれい", "meaning": "tidak sopan" },
+        { "word": "失望", "reading": "しつぼう", "meaning": "kekecewaan" }
+      ],
+      "extraWords": [
+        { "word": "失業", "reading": "しつぎょう", "meaning": "pengangguran" },
+        { "word": "失う", "reading": "うしなう", "meaning": "kehilangan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 318,
+      "character": "突",
+      "strokes": 8,
+      "onyomi": ["トツ"],
+      "kunyomi": ["つく"],
+      "words": [
+        { "word": "突然", "reading": "とつぜん", "meaning": "tiba-tiba" },
+        { "word": "突き当たり", "reading": "つきあたり", "meaning": "ujung jalan (buntu)" }
+      ],
+      "extraWords": [
+        { "word": "煙突", "reading": "えんとつ", "meaning": "cerobong asap" },
+        { "word": "突っ込む", "reading": "つっこむ", "meaning": "menabrak masuk, menerobos" }
+      ]
+    },
+    {
+      "id": 319,
+      "character": "然",
+      "strokes": 12,
+      "onyomi": ["ゼン", "ネン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "全然", "reading": "ぜんぜん", "meaning": "sama sekali (tidak)" },
+        { "word": "当然", "reading": "とうぜん", "meaning": "wajar, sudah pasti" }
+      ],
+      "extraWords": [
+        { "word": "自然", "reading": "しぜん", "meaning": "alam" },
+        { "word": "天然", "reading": "てんねん", "meaning": "alami", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 320,
+      "character": "諸",
+      "strokes": 15,
+      "onyomi": ["ショ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "諸〜", "reading": "しょ", "meaning": "berbagai ..." },
+        { "word": "諸般", "reading": "しょはん", "meaning": "berbagai macam" }
+      ],
+      "extraWords": [
+        { "word": "諸問題", "reading": "しょもんだい", "meaning": "berbagai masalah" }
+      ]
+    },
+    {
+      "id": 321,
+      "character": "情",
+      "strokes": 11,
+      "onyomi": ["ジョウ"],
+      "kunyomi": ["なさけ"],
+      "words": [
+        { "word": "事情", "reading": "じじょう", "meaning": "keadaan, alasan" },
+        { "word": "表情", "reading": "ひょうじょう", "meaning": "ekspresi wajah" },
+        { "word": "情け", "reading": "なさけ", "meaning": "belas kasihan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "友情", "reading": "ゆうじょう", "meaning": "persahabatan" },
+        { "word": "情けない", "reading": "なさけない", "meaning": "menyedihkan, memalukan" }
+      ]
+    },
+    {
+      "id": 322,
+      "character": "退",
+      "strokes": 9,
+      "onyomi": ["タイ"],
+      "kunyomi": ["しりぞく"],
+      "words": [
+        { "word": "引退", "reading": "いんたい", "meaning": "pensiun, mengundurkan diri" },
+        { "word": "退学", "reading": "たいがく", "meaning": "putus/keluar sekolah" }
+      ],
+      "extraWords": [
+        { "word": "退院", "reading": "たいいん", "meaning": "keluar dari rumah sakit" },
+        { "word": "退く", "reading": "しりぞく", "meaning": "mundur", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 323,
+      "character": "職",
+      "strokes": 18,
+      "onyomi": ["ショク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "職業", "reading": "しょくぎょう", "meaning": "profesi, pekerjaan" },
+        { "word": "退職", "reading": "たいしょく", "meaning": "pengunduran diri dari pekerjaan" }
+      ],
+      "extraWords": [
+        { "word": "職場", "reading": "しょくば", "meaning": "tempat kerja" },
+        { "word": "職人", "reading": "しょくにん", "meaning": "pengrajin, tukang" }
+      ]
+    },
+    {
+      "id": 324,
+      "character": "紹",
+      "strokes": 11,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "紹介", "reading": "しょうかい", "meaning": "perkenalan" }
+      ]
+    },
+    {
+      "id": 325,
+      "character": "介",
+      "strokes": 4,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "介入", "reading": "かいにゅう", "meaning": "intervensi, campur tangan" }
+      ],
+      "extraWords": [
+        { "word": "介護", "reading": "かいご", "meaning": "perawatan lansia/orang sakit" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「ちょっと（　）しますが、郵便局はどちらでしょうか。」",
+      "optionA": "拝見",
+      "optionB": "お伺い",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "「君には（　）したよ」と部長に言われてしまった。",
+      "optionA": "失業",
+      "optionB": "失望",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「ご結婚おめでとう！お（　）に！」",
+      "optionA": "幸い",
+      "optionB": "幸せ",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "雪のため、元日の（　）はやや少なかった。",
+      "optionA": "参拝者",
+      "optionB": "打者",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "この辺りも開発が進み、（　）が失われつつある。",
+      "optionA": "自然",
+      "optionB": "天然",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "今の職場は友人に（　）してもらった。",
+      "optionA": "招待",
+      "optionB": "紹介",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "「まっすぐ行って、（　）を右に曲がってください。」",
+      "optionA": "突っ込み",
+      "optionB": "突き当たり",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）訓練を受けて仕事を見つける。",
+      "optionA": "失業",
+      "optionB": "職業",
+      "answer": "A"
+    }
+  ]
+}
