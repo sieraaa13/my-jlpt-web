@@ -1,0 +1,270 @@
+{
+  "week": 8,
+  "day": 1,
+  "title": "速報",
+  "subtitle": "News Flash",
+  "translation": "Berita Cepat",
+  "sceneDescription": "Contoh berita cepat (breaking news) di TV/radio: \"Telah terjadi gempa cukup kuat di Kitakyushu pukul ○:○. Berikut intensitas gempa di berbagai daerah... Tidak ada risiko tsunami dari gempa ini.\" \"Tersangka ○○ yang buron dalam kasus perampokan-pembunuhan ×× telah ditangkap.\" \"Kapal nelayan yang kehilangan kontak sejak tanggal ○ ditemukan di ×× sekitar pukul ○:○.\"\n\n \"Pemilihan ○○, calon ×× dari partai ○○ dipastikan menang.\" \"3 anak yang hilang berhasil ditemukan selamat.\" \"Terjadi kebakaran akibat ledakan gas di ○ sekitar pukul ○:○, saat ini masih terbakar.\" \"Truk mengamuk di depan Stasiun ○○, 3 orang tewas.\" \"Wali kota ○○ ditangkap atas tuduhan ××.\"",
+  "signs": [
+    { "text": "○時○分北九州でやや強い地震がありました。", "meaning": "Terjadi gempa cukup kuat di Kitakyushu pukul ○:○." },
+    { "text": "××強盗殺人事件で逃走中の○○容疑者が逮捕されました。", "meaning": "Tersangka kasus perampokan-pembunuhan yang buron telah ditangkap." },
+    { "text": "〜選挙、○○党××候補当選確実。", "meaning": "Pemilu ○○, calon dari partai ○○ dipastikan menang." },
+    { "text": "行方不明の児童3名、無事保護。", "meaning": "3 anak yang hilang berhasil ditemukan selamat." },
+    { "text": "○○駅前でトラックが暴走。3人が死亡。", "meaning": "Truk mengamuk di depan Stasiun ○○, 3 orang tewas." },
+    { "text": "○○市長が××罪で逮捕されました。", "meaning": "Wali kota ○○ ditangkap atas tuduhan ○○." }
+  ],
+  "kanjiList": [
+    {
+      "id": 652,
+      "character": "州",
+      "strokes": 6,
+      "onyomi": ["シュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "本州", "reading": "ほんしゅう", "meaning": "Honshu (pulau utama Jepang)" },
+        { "word": "〜州", "reading": "しゅう", "meaning": "negara bagian ..." }
+      ]
+    },
+    {
+      "id": 653,
+      "character": "波",
+      "strokes": 8,
+      "onyomi": ["ハ"],
+      "kunyomi": ["なみ"],
+      "words": [
+        { "word": "電波", "reading": "でんぱ", "meaning": "gelombang radio" },
+        { "word": "波", "reading": "なみ", "meaning": "ombak" }
+      ],
+      "extraWords": [
+        { "word": "津波", "reading": "つなみ", "meaning": "tsunami" }
+      ]
+    },
+    {
+      "id": 654,
+      "character": "盗",
+      "strokes": 11,
+      "onyomi": ["トウ"],
+      "kunyomi": ["ぬすむ"],
+      "words": [
+        { "word": "強盗", "reading": "ごうとう", "meaning": "perampokan" },
+        { "word": "盗む", "reading": "ぬすむ", "meaning": "mencuri" }
+      ],
+      "extraWords": [
+        { "word": "盗難", "reading": "とうなん", "meaning": "pencurian" }
+      ]
+    },
+    {
+      "id": 655,
+      "character": "逃",
+      "strokes": 9,
+      "onyomi": ["トウ"],
+      "kunyomi": ["にげる", "にがす", "のがす"],
+      "words": [
+        { "word": "逃走", "reading": "とうそう", "meaning": "pelarian" },
+        { "word": "逃がす", "reading": "にがす", "meaning": "melepaskan, membiarkan lolos" }
+      ],
+      "extraWords": [
+        { "word": "逃げる", "reading": "にげる", "meaning": "melarikan diri" },
+        { "word": "逃す", "reading": "のがす", "meaning": "kehilangan kesempatan, membiarkan lolos" }
+      ]
+    },
+    {
+      "id": 656,
+      "character": "疑",
+      "strokes": 14,
+      "onyomi": ["ギ"],
+      "kunyomi": ["うたがう"],
+      "words": [
+        { "word": "疑問", "reading": "ぎもん", "meaning": "keraguan, pertanyaan" },
+        { "word": "疑う", "reading": "うたがう", "meaning": "mencurigai", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "容疑", "reading": "ようぎ", "meaning": "kecurigaan/dugaan (kejahatan)" }
+      ]
+    },
+    {
+      "id": 657,
+      "character": "捕",
+      "strokes": 10,
+      "onyomi": ["ホ"],
+      "kunyomi": ["つかまる", "つかまえる", "とる", "とらえる"],
+      "words": [
+        { "word": "逮捕", "reading": "たいほ", "meaning": "penangkapan" },
+        { "word": "捕まる", "reading": "つかまる", "meaning": "tertangkap" },
+        { "word": "捕る", "reading": "とる", "meaning": "menangkap (ikan dsb)" }
+      ],
+      "extraWords": [
+        { "word": "捕まえる", "reading": "つかまえる", "meaning": "menangkap" },
+        { "word": "捕らえる", "reading": "とらえる", "meaning": "menangkap, menahan" }
+      ]
+    },
+    {
+      "id": 658,
+      "character": "絶",
+      "strokes": 12,
+      "onyomi": ["ゼツ"],
+      "kunyomi": ["たえる", "たつ"],
+      "words": [
+        { "word": "絶対（に）", "reading": "ぜったい", "meaning": "pasti, mutlak" },
+        { "word": "絶つ", "reading": "たつ", "meaning": "memutuskan, menghentikan", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "絶えず", "reading": "たえず", "meaning": "terus-menerus" }
+      ]
+    },
+    {
+      "id": 659,
+      "character": "党",
+      "strokes": 10,
+      "onyomi": ["トウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "政党", "reading": "せいとう", "meaning": "partai politik", "note": "→ lihat kanji #730 (政)" },
+        { "word": "与党", "reading": "よとう", "meaning": "partai berkuasa" }
+      ],
+      "extraWords": [
+        { "word": "〜党", "reading": "とう", "meaning": "partai ..." },
+        { "word": "野党", "reading": "やとう", "meaning": "partai oposisi" }
+      ]
+    },
+    {
+      "id": 660,
+      "character": "補",
+      "strokes": 12,
+      "onyomi": ["ホ"],
+      "kunyomi": ["おぎなう"],
+      "words": [
+        { "word": "候補（者）", "reading": "こうほ", "meaning": "kandidat" },
+        { "word": "補助", "reading": "ほじょ", "meaning": "bantuan, subsidi" }
+      ],
+      "extraWords": [
+        { "word": "補足", "reading": "ほそく", "meaning": "tambahan, pelengkap" },
+        { "word": "補う", "reading": "おぎなう", "meaning": "melengkapi, mengganti kekurangan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 661,
+      "character": "童",
+      "strokes": 12,
+      "onyomi": ["ドウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "児童", "reading": "じどう", "meaning": "anak-anak" }
+      ],
+      "extraWords": [
+        { "word": "童話", "reading": "どうわ", "meaning": "cerita anak, dongeng" }
+      ]
+    },
+    {
+      "id": 662,
+      "character": "爆",
+      "strokes": 19,
+      "onyomi": ["バク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "爆発", "reading": "ばくはつ", "meaning": "ledakan" }
+      ]
+    },
+    {
+      "id": 663,
+      "character": "暴",
+      "strokes": 15,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["あばれる"],
+      "words": [
+        { "word": "暴走", "reading": "ぼうそう", "meaning": "berjalan liar/tak terkendali" },
+        { "word": "暴れる", "reading": "あばれる", "meaning": "mengamuk", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "乱暴（な）", "reading": "らんぼう", "meaning": "kasar, brutal" }
+      ]
+    },
+    {
+      "id": 664,
+      "character": "亡",
+      "strokes": 3,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["ない"],
+      "words": [
+        { "word": "死亡", "reading": "しぼう", "meaning": "kematian" },
+        { "word": "亡くなる", "reading": "なくなる", "meaning": "meninggal dunia" }
+      ],
+      "extraWords": [
+        { "word": "亡くす", "reading": "なくす", "meaning": "kehilangan (orang)" }
+      ]
+    },
+    {
+      "id": 665,
+      "character": "罪",
+      "strokes": 13,
+      "onyomi": ["ザイ"],
+      "kunyomi": ["つみ"],
+      "words": [
+        { "word": "〜罪", "reading": "ざい", "meaning": "tuduhan ... (kejahatan)" },
+        { "word": "有罪", "reading": "ゆうざい", "meaning": "bersalah" }
+      ],
+      "extraWords": [
+        { "word": "無罪", "reading": "むざい", "meaning": "tidak bersalah" },
+        { "word": "罪", "reading": "つみ", "meaning": "dosa, kejahatan", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "猫がネズミを（　）。",
+      "optionA": "捕る",
+      "optionB": "捕まる",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "相手は（　）の届かない所にいるか、電源を切っている。",
+      "optionA": "電話",
+      "optionB": "電波",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "盗みの（　）をかけられる。",
+      "optionA": "疑い",
+      "optionB": "疑問",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "店長は（　）客や店員に気を配らねばならない。",
+      "optionA": "絶えず",
+      "optionB": "絶えて",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "この健康補助食品はカルシウムを（　）のに最適です。",
+      "optionA": "絶つ",
+      "optionB": "補う",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "男が酒を飲んで居酒屋で（　）います。",
+      "optionA": "逃げて",
+      "optionB": "暴れて",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "私には支持（　）はないが、支持する候補者はいる。",
+      "optionA": "政党",
+      "optionB": "政府",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "昨夜、都心でガス（　）がありました。",
+      "optionA": "爆発",
+      "optionB": "暴走",
+      "answer": "A"
+    }
+  ]
+}
