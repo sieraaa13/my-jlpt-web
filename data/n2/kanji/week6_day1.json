@@ -1,0 +1,276 @@
+{
+  "week": 6,
+  "day": 1,
+  "title": "広告・チラシ",
+  "subtitle": "Advertisements, Leaflets",
+  "translation": "Iklan dan Selebaran",
+  "sceneDescription": "Berbagai iklan diskon toko: deterjen pakaian「フワール」diskon 5% dari harga di label, produk beraroma bunga dengan tanda「本日限り」(hanya hari ini), dan sampo「ケピタ」dengan harga super murah 100 yen rata untuk semua jenis.\n\n Iklan toko sepatu「ヤマイチ」: beli 2 pasang sepatu pria/wanita sekaligus, pasang kedua diskon setengah harga (sepatu anak tidak termasuk). Ada diskon tambahan lagi, dan sedang membuka pendaftaran anggota kartu baru dengan bebas biaya tahunan.",
+  "signs": [
+    { "text": "広告の品　衣料品洗剤　全品5%OFF", "meaning": "Barang diskon: deterjen pakaian, semua item diskon 5%" },
+    { "text": "本日限り", "meaning": "Hanya hari ini" },
+    { "text": "超特価！！シャンプー各種100円均一セール", "meaning": "Harga super murah!! Semua jenis sampo diskon flat 100 yen" },
+    { "text": "2足まとめて買えば2足目は半額！", "meaning": "Beli 2 pasang sekaligus, pasang ke-2 diskon setengah harga!" },
+    { "text": "新規カード会員募集中！年会費無料！", "meaning": "Sedang membuka pendaftaran anggota kartu baru! Bebas biaya tahunan!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 471,
+      "character": "得",
+      "strokes": 11,
+      "onyomi": ["トク"],
+      "kunyomi": ["える", "うる"],
+      "words": [
+        { "word": "得", "reading": "とく", "meaning": "untung, menguntungkan" },
+        { "word": "得る", "reading": "える", "meaning": "memperoleh" }
+      ],
+      "extraWords": [
+        { "word": "納得", "reading": "なっとく", "meaning": "pemahaman, persetujuan" },
+        { "word": "心得る", "reading": "こころえる", "meaning": "memahami, menguasai" }
+      ]
+    },
+    {
+      "id": 472,
+      "character": "告",
+      "strokes": 7,
+      "onyomi": ["コク"],
+      "kunyomi": ["つげる"],
+      "words": [
+        { "word": "広告", "reading": "こうこく", "meaning": "iklan" },
+        { "word": "警告", "reading": "けいこく", "meaning": "peringatan" }
+      ],
+      "extraWords": [
+        { "word": "報告", "reading": "ほうこく", "meaning": "laporan" },
+        { "word": "告げる", "reading": "つげる", "meaning": "memberitahu", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 473,
+      "character": "税",
+      "strokes": 12,
+      "onyomi": ["ゼイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "税金", "reading": "ぜいきん", "meaning": "pajak" },
+        { "word": "税関", "reading": "ぜいかん", "meaning": "bea cukai" }
+      ],
+      "extraWords": [
+        { "word": "消費税", "reading": "しょうひぜい", "meaning": "pajak konsumsi/PPN" },
+        { "word": "課税", "reading": "かぜい", "meaning": "pengenaan pajak", "note": "→ lihat kanji #572 (課)" }
+      ]
+    },
+    {
+      "id": 474,
+      "character": "価",
+      "strokes": 8,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "定価", "reading": "ていか", "meaning": "harga tetap" }
+      ],
+      "extraWords": [
+        { "word": "物価", "reading": "ぶっか", "meaning": "harga barang" }
+      ]
+    },
+    {
+      "id": 475,
+      "character": "格",
+      "strokes": 10,
+      "onyomi": ["カク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "価格", "reading": "かかく", "meaning": "harga" }
+      ],
+      "extraWords": [
+        { "word": "性格", "reading": "せいかく", "meaning": "kepribadian" }
+      ]
+    },
+    {
+      "id": 476,
+      "character": "超",
+      "strokes": 12,
+      "onyomi": ["チョウ"],
+      "kunyomi": ["こえる", "こす"],
+      "words": [
+        { "word": "超〜", "reading": "ちょう", "meaning": "ultra-, super-" },
+        { "word": "超える", "reading": "こえる", "meaning": "melebihi, melampaui" }
+      ],
+      "extraWords": [
+        { "word": "超過", "reading": "ちょうか", "meaning": "kelebihan, surplus" },
+        { "word": "超す", "reading": "こす", "meaning": "melewati, melampaui" }
+      ]
+    },
+    {
+      "id": 477,
+      "character": "均",
+      "strokes": 7,
+      "onyomi": ["キン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "平均", "reading": "へいきん", "meaning": "rata-rata" },
+        { "word": "均一", "reading": "きんいつ", "meaning": "seragam, sama rata", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "均等", "reading": "きんとう", "meaning": "kesetaraan, kesamarataan" }
+      ]
+    },
+    {
+      "id": 478,
+      "character": "靴",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["くつ"],
+      "words": [
+        { "word": "靴", "reading": "くつ", "meaning": "sepatu" },
+        { "word": "長靴", "reading": "ながぐつ", "meaning": "sepatu boot" }
+      ],
+      "extraWords": [
+        { "word": "靴下", "reading": "くつした", "meaning": "kaus kaki" },
+        { "word": "雨靴", "reading": "あまぐつ", "meaning": "sepatu hujan" }
+      ]
+    },
+    {
+      "id": 479,
+      "character": "供",
+      "strokes": 8,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["とも"],
+      "words": [
+        { "word": "提供", "reading": "ていきょう", "meaning": "penyediaan, sponsor" },
+        { "word": "子供", "reading": "こども", "meaning": "anak" }
+      ]
+    },
+    {
+      "id": 480,
+      "character": "象",
+      "strokes": 12,
+      "onyomi": ["ショウ", "ゾウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "印象", "reading": "いんしょう", "meaning": "kesan" },
+        { "word": "対象", "reading": "たいしょう", "meaning": "objek, sasaran" }
+      ],
+      "extraWords": [
+        { "word": "現象", "reading": "げんしょう", "meaning": "fenomena" },
+        { "word": "象", "reading": "ぞう", "meaning": "gajah" }
+      ]
+    },
+    {
+      "id": 481,
+      "character": "組",
+      "strokes": 11,
+      "onyomi": ["ソ"],
+      "kunyomi": ["くむ", "くみ"],
+      "words": [
+        { "word": "組織", "reading": "そしき", "meaning": "organisasi" },
+        { "word": "組み合わせ", "reading": "くみあわせ", "meaning": "kombinasi" }
+      ],
+      "extraWords": [
+        { "word": "番組", "reading": "ばんぐみ", "meaning": "acara televisi" },
+        { "word": "組合", "reading": "くみあい", "meaning": "asosiasi, serikat" }
+      ]
+    },
+    {
+      "id": 482,
+      "character": "値",
+      "strokes": 10,
+      "onyomi": ["チ"],
+      "kunyomi": ["あたい"],
+      "words": [
+        { "word": "価値", "reading": "かち", "meaning": "nilai" },
+        { "word": "値段", "reading": "ねだん", "meaning": "harga" }
+      ],
+      "extraWords": [
+        { "word": "数値", "reading": "すうち", "meaning": "nilai numerik" },
+        { "word": "値", "reading": "あたい", "meaning": "nilai, harga", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 483,
+      "character": "募",
+      "strokes": 12,
+      "onyomi": ["ボ"],
+      "kunyomi": ["つのる"],
+      "words": [
+        { "word": "募集", "reading": "ぼしゅう", "meaning": "perekrutan" },
+        { "word": "募金", "reading": "ぼきん", "meaning": "penggalangan dana" }
+      ],
+      "extraWords": [
+        { "word": "応募", "reading": "おうぼ", "meaning": "pendaftaran, aplikasi", "note": "→ lihat kanji #571 (応)" },
+        { "word": "募る", "reading": "つのる", "meaning": "mengumpulkan, merekrut", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 484,
+      "character": "無",
+      "strokes": 12,
+      "onyomi": ["ム", "ブ"],
+      "kunyomi": ["ない"],
+      "words": [
+        { "word": "無料", "reading": "むりょう", "meaning": "gratis" },
+        { "word": "無事", "reading": "ぶじ", "meaning": "selamat, tanpa insiden", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "有無", "reading": "うむ", "meaning": "ada atau tidak", "flag": "attention" },
+        { "word": "〜無し", "reading": "なし", "meaning": "tanpa ..." }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "消費税は商品に（　）に課税される。",
+      "optionA": "均等",
+      "optionB": "平均",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「広告が事実と異なり、（　）がいかない場合はこちらにご連絡を。」",
+      "optionA": "心得",
+      "optionB": "納得",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「○○ランドの入場者数がすでに百万人を（　）ました。」",
+      "optionA": "超え",
+      "optionB": "告げ",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "世界で最も（　）の高い都市はどこでしょう。",
+      "optionA": "定価",
+      "optionB": "物価",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "子供を（　）としたテレビ番組を制作する。",
+      "optionA": "対象",
+      "optionB": "対照",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "コレステロールの（　）が上がっているので注意してください。",
+      "optionA": "数値",
+      "optionB": "価値",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）は無いが、ぬれてもいい靴ならある。",
+      "optionA": "靴下",
+      "optionB": "雨靴",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "この番組は○○食品の（　）でお送りしました。",
+      "optionA": "提供",
+      "optionB": "現象",
+      "answer": "A"
+    }
+  ]
+}
