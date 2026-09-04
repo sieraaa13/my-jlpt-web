@@ -1,0 +1,160 @@
+{
+  "week": 6,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 6 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "経験の有無は問いません。", "target": "有無", "choices": ["あむ", "ゆうむ", "うむ", "ゆうぶ"], "answer": "うむ" },
+    { "sentence": "料理の手間を省くために電子レンジを活用する。", "target": "省く", "choices": ["のぞく", "はぶく", "いだく", "ほどく"], "answer": "はぶく" },
+    { "sentence": "入居者を募集しています。", "target": "入居者", "choices": ["いりおしゃ", "にゅうこしゃ", "いりいしゃ", "にゅうきょしゃ"], "answer": "にゅうきょしゃ" },
+    { "sentence": "駅から徒歩3分のところに住んでいます。", "target": "徒歩", "choices": ["とぼ", "そぼ", "とほ", "そほ"], "answer": "とほ" },
+    { "sentence": "富を得ることが幸せとは限らない。", "target": "得る", "choices": ["ある", "いる", "える", "おる"], "answer": "える" },
+    { "sentence": "この辺りに財布が落ちていませんでしたか。", "target": "辺り", "choices": ["とおり", "へんり", "まわり", "あたり"], "answer": "あたり" },
+    { "sentence": "木綿のシャツを着る。", "target": "木綿", "choices": ["こめん", "きわた", "もめん", "こわた"], "answer": "もめん" },
+    { "sentence": "長い髪はゴムで束ねてください。", "target": "束ねて", "choices": ["たばねて", "たまねて", "そこねて", "そくねて"], "answer": "たばねて" },
+    { "sentence": "放置自転車は市が処分します。", "target": "処分", "choices": ["こぶん", "しょぶん", "きょぶん", "ちょぶん"], "answer": "しょぶん" },
+    { "sentence": "燃えている家の中にいた子供は無事助け出された。", "target": "無事", "choices": ["むごと", "むじ", "みごと", "ぶじ"], "answer": "ぶじ" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "私のふるさとは自然がゆたかです。", "reading": "ゆたか", "choices": ["富か", "豊か", "財か", "泉か"], "answer": "豊か" },
+    { "sentence": "手がすべって、おさらを割ってしまった。", "reading": "おさら", "choices": ["器", "皿", "甘", "宝"], "answer": "皿" },
+    { "sentence": "今日は牛肉がお買いどくです。", "reading": "どく", "choices": ["説", "特", "得", "読"], "answer": "得" },
+    { "sentence": "日本でいちばん大きいみずうみはどこにありますか。", "reading": "みずうみ", "choices": ["湖", "谷", "湾", "岸"], "answer": "湖" },
+    { "sentence": "1位の選手には賞金がおくられます。", "reading": "おくられ", "choices": ["募られ", "遅られ", "層られ", "贈られ"], "answer": "贈られ" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "乾電池のプラスとマイナスの（　）をつなぐと電気が流れます。", "target": "極", "choices": ["角", "局", "曲", "極"], "answer": "極" },
+    { "sentence": "6（　）一間にバストイレ付きの部屋をさがしています。", "target": "6畳一間", "choices": ["粒", "畳", "部", "屋"], "answer": "畳" },
+    { "sentence": "24色の絵の（　）を買った。", "target": "絵の具", "choices": ["具", "材", "筆", "画"], "answer": "具" },
+    { "sentence": "美術館に国宝（　）を見に行ってきました。すばらしかったです。", "target": "国宝展", "choices": ["園", "展", "芸", "財"], "answer": "展" },
+    { "sentence": "新聞の朝（　）を読む。", "target": "朝刊", "choices": ["版", "刊", "組", "編"], "answer": "刊" },
+    { "sentence": "この図書は（　）館にあります。", "target": "旧館", "choices": ["次", "古", "支", "旧"], "answer": "旧" },
+    { "sentence": "（　）エネのため、使わない電気のコンセントは抜いてあります。", "target": "省エネ", "choices": ["節", "略", "省", "消"], "answer": "省" }
+  ],
+  "passageQuestion": {
+    "passage": "「超おいしい」とか「超きれい」という言い方がありますが、これは俗語です。新幹線のことを超[23]（　）と言ったり、とても安いものを超[24]（　）、とても込んでいることを超[25]（　）と言うのは正しい使い方です。",
+    "wordBank": ["やすい", "とっきゅう", "まんいん", "とっか", "はやい", "いっぱい"],
+    "blanks": [
+      { "number": 23, "answer": "とっきゅう", "answerKanji": "特急" },
+      { "number": 24, "answer": "やすい", "answerKanji": "安い" },
+      { "number": 25, "answer": "まんいん", "answerKanji": "満員" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "見た目が似ている漢字",
+    "translation": "Kanjis That Look the Same at First Glance",
+    "description": "Halaman berisi kuis mencari kanji yang tepat untuk kata yang dibacakan, dari beberapa pilihan kanji yang bentuknya mirip:\n① こまる ＝ 困（bukan 因 atau 囚）— pohon yang ingin tumbuh besar tapi terkurung dan tidak bisa, jadi kesusahan.\n② こおり ＝ 氷（bukan 水 atau 永）— kata「冷たい」dan「凍る」juga punya titik「・」di sisi kiri; 永 dibaca sama dengan「泳」pada「水泳」dan berarti waktu yang panjang.\n③ おっと ＝ 夫（bukan 天, 未, atau 末）.\n④ 知しき ＝ 識（bukan 職 atau 織）— 知識 dipelajari lewat memahami arti kata（言）; pekerjaan（職）dipelajari lewat melihat dengan mata dan mendengar dengan telinga（耳）.\n⑤ はさむ ＝ 挟（bukan 狭 atau 峡）— gerakan 'menjepit' dilakukan dengan tangan（手）; 狭い berlawanan dengan 広い.\n⑥ むれ ＝ 群（bukan 郡）— domba（羊）membentuk kawanan.\n⑦ そ先 ＝ 祖（bukan 組 atau 粗）— leluhur yang jauh di atas orang tua dari orang tua ibarat dewa, dan huruf yang punya bagian「ネ」(dari「神」) adalah 祖.\n⑧ ぐう然 ＝ 偶（bukan 隅 atau 遇）— ingat ぐう然 sebagai 'bertemu orang（人）secara tidak sengaja'; 配偶者 berarti pasangan (suami/istri), juga memakai bagian「人」.",
+    "kanjiList": [
+      {
+        "id": 554,
+        "character": "困",
+        "strokes": 7,
+        "onyomi": ["コン"],
+        "kunyomi": ["こまる"],
+        "words": [
+          { "word": "困る", "reading": "こまる", "meaning": "kesulitan, kebingungan" }
+        ]
+      },
+      {
+        "id": 555,
+        "character": "氷",
+        "strokes": 5,
+        "onyomi": [],
+        "kunyomi": ["こおり"],
+        "words": [
+          { "word": "氷", "reading": "こおり", "meaning": "es" }
+        ]
+      },
+      {
+        "id": 556,
+        "character": "永",
+        "strokes": 5,
+        "onyomi": ["エイ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "永久", "reading": "えいきゅう", "meaning": "keabadian, selamanya" }
+        ]
+      },
+      {
+        "id": 557,
+        "character": "夫",
+        "strokes": 4,
+        "onyomi": ["フ", "フウ"],
+        "kunyomi": ["おっと"],
+        "words": [
+          { "word": "夫", "reading": "おっと", "meaning": "suami" }
+        ]
+      },
+      {
+        "id": 558,
+        "character": "識",
+        "strokes": 19,
+        "onyomi": ["シキ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "知識", "reading": "ちしき", "meaning": "pengetahuan" }
+        ]
+      },
+      {
+        "id": 559,
+        "character": "挟",
+        "strokes": 9,
+        "onyomi": [],
+        "kunyomi": ["はさむ", "はさまる"],
+        "words": [
+          { "word": "挟む", "reading": "はさむ", "meaning": "menjepit, mengapit" }
+        ]
+      },
+      {
+        "id": 560,
+        "character": "狭",
+        "strokes": 9,
+        "onyomi": [],
+        "kunyomi": ["せまい"],
+        "words": [
+          { "word": "狭い", "reading": "せまい", "meaning": "sempit" }
+        ]
+      },
+      {
+        "id": 561,
+        "character": "群",
+        "strokes": 13,
+        "onyomi": ["グン"],
+        "kunyomi": ["むれ"],
+        "words": [
+          { "word": "群れ", "reading": "むれ", "meaning": "kawanan, kelompok" }
+        ]
+      },
+      {
+        "id": 562,
+        "character": "祖",
+        "strokes": 9,
+        "onyomi": ["ソ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "祖先", "reading": "そせん", "meaning": "leluhur, nenek moyang" }
+        ]
+      },
+      {
+        "id": 563,
+        "character": "隅",
+        "strokes": 12,
+        "onyomi": [],
+        "kunyomi": ["すみ"],
+        "words": [
+          { "word": "隅", "reading": "すみ", "meaning": "sudut (dalam ruangan)", "flag": "attention" }
+        ]
+      },
+      {
+        "id": 564,
+        "character": "偶",
+        "strokes": 11,
+        "onyomi": ["グウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "偶数", "reading": "ぐうすう", "meaning": "bilangan genap" }
+        ]
+      }
+    ]
+  }
+}
