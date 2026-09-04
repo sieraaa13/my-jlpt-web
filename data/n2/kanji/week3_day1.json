@@ -1,0 +1,278 @@
+{
+  "week": 3,
+  "day": 1,
+  "title": "料金通知・払込用紙",
+  "subtitle": "Notices and Forms for Payment of Fees",
+  "translation": "Pemberitahuan dan Formulir Pembayaran Tagihan",
+  "sceneDescription": "Bagian pertama menunjukkan amplop tagihan（ご利用明細書在中）dan rincian tagihan（ご利用代金明細書）yang mencantumkan nomor pelanggan, batas waktu pembayaran, dan total jumlah yang harus dibayar. Bagian kedua menunjukkan bukti pembayaran（払込受領証）yang harus dijaga agar tidak terlipat atau kotor karena akan dibaca oleh mesin.",
+  "signs": [
+    { "text": "ご利用明細書在中", "meaning": "Berisi rincian tagihan" },
+    { "text": "ご利用代金明細書", "meaning": "Rincian biaya penggunaan" },
+    { "text": "お支払い期限", "meaning": "Batas waktu pembayaran" },
+    { "text": "お支払い合計金額", "meaning": "Total jumlah pembayaran" },
+    { "text": "払込受領証", "meaning": "Bukti/tanda terima pembayaran" },
+    { "text": "領収金額", "meaning": "Jumlah yang diterima (dibayarkan)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 181,
+      "character": "様",
+      "strokes": 14,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["さま"],
+      "words": [
+        { "word": "様子", "reading": "ようす", "meaning": "keadaan, penampilan", "flag": "attention" },
+        { "word": "〜様", "reading": "さま", "meaning": "sebutan hormat pada nama orang, terutama dalam surat" }
+      ],
+      "extraWords": [
+        { "word": "同様", "reading": "どうよう", "meaning": "sama, serupa" },
+        { "word": "様々（な）", "reading": "さまざま", "meaning": "bermacam-macam" }
+      ]
+    },
+    {
+      "id": 182,
+      "character": "要",
+      "strokes": 9,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["いる"],
+      "words": [
+        { "word": "重要（な）", "reading": "じゅうよう", "meaning": "penting" },
+        { "word": "要約", "reading": "ようやく", "meaning": "ringkasan" }
+      ],
+      "extraWords": [
+        { "word": "要点", "reading": "ようてん", "meaning": "poin penting" },
+        { "word": "要る", "reading": "いる", "meaning": "perlu, butuh" }
+      ]
+    },
+    {
+      "id": 183,
+      "character": "利",
+      "strokes": 7,
+      "onyomi": ["リ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "利用", "reading": "りよう", "meaning": "pemanfaatan, penggunaan" },
+        { "word": "金利", "reading": "きんり", "meaning": "suku bunga" }
+      ],
+      "extraWords": [
+        { "word": "便利（な）", "reading": "べんり", "meaning": "praktis, nyaman" },
+        { "word": "有利（な）", "reading": "ゆうり", "meaning": "menguntungkan" }
+      ]
+    },
+    {
+      "id": 184,
+      "character": "細",
+      "strokes": 11,
+      "onyomi": ["サイ"],
+      "kunyomi": ["ほそい", "こまかい"],
+      "words": [
+        { "word": "明細", "reading": "めいさい", "meaning": "rincian" },
+        { "word": "細い", "reading": "ほそい", "meaning": "kurus, tipis" }
+      ],
+      "extraWords": [
+        { "word": "細かい", "reading": "こまかい", "meaning": "kecil, detail, rinci" },
+        { "word": "心細い", "reading": "こころぼそい", "meaning": "merasa was-was, tidak tenang" }
+      ]
+    },
+    {
+      "id": 185,
+      "character": "在",
+      "strokes": 6,
+      "onyomi": ["ザイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "在中", "reading": "ざいちゅう", "meaning": "berisi (di dalam amplop dsb)" },
+        { "word": "現在", "reading": "げんざい", "meaning": "saat ini" }
+      ],
+      "extraWords": [
+        { "word": "在学", "reading": "ざいがく", "meaning": "sedang bersekolah/kuliah" },
+        { "word": "不在", "reading": "ふざい", "meaning": "tidak ada di tempat" }
+      ]
+    },
+    {
+      "id": 186,
+      "character": "客",
+      "strokes": 9,
+      "onyomi": ["キャク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "客席", "reading": "きゃくせき", "meaning": "kursi penonton/tamu" },
+        { "word": "お客様", "reading": "おきゃくさま", "meaning": "pelanggan (bentuk hormat)" }
+      ],
+      "extraWords": [
+        { "word": "乗客", "reading": "じょうきゃく", "meaning": "penumpang" }
+      ]
+    },
+    {
+      "id": 187,
+      "character": "額",
+      "strokes": 18,
+      "onyomi": ["ガク"],
+      "kunyomi": ["ひたい"],
+      "words": [
+        { "word": "額", "reading": "がく", "meaning": "bingkai, jumlah (nominal)" },
+        { "word": "額", "reading": "ひたい", "meaning": "dahi" }
+      ],
+      "extraWords": [
+        { "word": "金額", "reading": "きんがく", "meaning": "jumlah uang, nominal" }
+      ]
+    },
+    {
+      "id": 188,
+      "character": "込",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["こむ", "こめる"],
+      "words": [
+        { "word": "込む", "reading": "こむ", "meaning": "penuh sesak, ramai" },
+        { "word": "払い込む", "reading": "はらいこむ", "meaning": "membayar (setor)" },
+        { "word": "飛び込む", "reading": "とびこむ", "meaning": "melompat masuk" }
+      ],
+      "extraWords": [
+        { "word": "申し込む", "reading": "もうしこむ", "meaning": "mendaftar, mengajukan", "note": "→ lihat kanji #277 (申)" },
+        { "word": "思い込む", "reading": "おもいこむ", "meaning": "yakin sepenuhnya, berasumsi" }
+      ]
+    },
+    {
+      "id": 189,
+      "character": "領",
+      "strokes": 14,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "領収書", "reading": "りょうしゅうしょ", "meaning": "kuitansi, tanda terima" },
+        { "word": "領事館", "reading": "りょうじかん", "meaning": "kantor konsulat" }
+      ],
+      "extraWords": [
+        { "word": "〜領", "reading": "りょう", "meaning": "wilayah, teritori" },
+        { "word": "大統領", "reading": "だいとうりょう", "meaning": "presiden" }
+      ]
+    },
+    {
+      "id": 190,
+      "character": "収",
+      "strokes": 4,
+      "onyomi": ["シュウ"],
+      "kunyomi": ["おさめる", "おさまる"],
+      "words": [
+        { "word": "収入", "reading": "しゅうにゅう", "meaning": "pendapatan" },
+        { "word": "回収", "reading": "かいしゅう", "meaning": "pengumpulan kembali" },
+        { "word": "収める", "reading": "おさめる", "meaning": "membayar, menyerahkan" }
+      ],
+      "extraWords": [
+        { "word": "収集", "reading": "しゅうしゅう", "meaning": "pengumpulan" },
+        { "word": "吸収", "reading": "きゅうしゅう", "meaning": "penyerapan", "note": "→ lihat kanji #367 (吸)" }
+      ]
+    },
+    {
+      "id": 191,
+      "character": "械",
+      "strokes": 11,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "機械", "reading": "きかい", "meaning": "mesin" },
+        { "word": "器械体操", "reading": "きかいたいそう", "meaning": "senam alat", "note": "→ lihat kanji #232 (器), #450 (操)" }
+      ]
+    },
+    {
+      "id": 192,
+      "character": "曲",
+      "strokes": 6,
+      "onyomi": ["キョク"],
+      "kunyomi": ["まがる", "まげる"],
+      "words": [
+        { "word": "曲", "reading": "きょく", "meaning": "lagu, komposisi musik" },
+        { "word": "折り曲げる", "reading": "おりまげる", "meaning": "melipat, membengkokkan", "note": "→ lihat kanji #426 (折)" }
+      ],
+      "extraWords": [
+        { "word": "曲線", "reading": "きょくせん", "meaning": "garis lengkung" },
+        { "word": "曲がる", "reading": "まがる", "meaning": "berbelok, melengkung" }
+      ]
+    },
+    {
+      "id": 193,
+      "character": "汚",
+      "strokes": 6,
+      "onyomi": ["オ"],
+      "kunyomi": ["きたない", "よごす", "よごれる"],
+      "words": [
+        { "word": "汚染", "reading": "おせん", "meaning": "pencemaran" },
+        { "word": "汚す", "reading": "よごす", "meaning": "mengotori" }
+      ],
+      "extraWords": [
+        { "word": "汚い", "reading": "きたない", "meaning": "kotor" },
+        { "word": "汚れる", "reading": "よごれる", "meaning": "menjadi kotor" }
+      ]
+    },
+    {
+      "id": 194,
+      "character": "殿",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["との", "どの"],
+      "words": [
+        { "word": "殿様", "reading": "とのさま", "meaning": "tuan feodal, bangsawan" },
+        { "word": "〜殿", "reading": "どの", "meaning": "sebutan formal (Tuan/Nyonya), biasa dipakai dalam surat resmi instansi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「お客様のおかけになった番号は（　）使われておりません。」",
+      "optionA": "現在",
+      "optionB": "現代",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「（　）お金が要るんですが、両替してくれませんか。」",
+      "optionA": "細かい",
+      "optionB": "細い",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "「（　）が低いときに、お金を借りたほうがいいですね。」",
+      "optionA": "金額",
+      "optionB": "金利",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "読んだ本の内容を（　）する。",
+      "optionA": "要約",
+      "optionB": "要点",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "手紙のあて名にはふつう「（　）」を使います。",
+      "optionA": "様",
+      "optionB": "殿",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「その信号を右に（　）ください。」",
+      "optionA": "曲げて",
+      "optionB": "曲がって",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "コンビニでも（　）ができるので便利だ。",
+      "optionA": "払い込み",
+      "optionB": "飛び込み",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "ごみの（　）は月・水・金です。",
+      "optionA": "収集",
+      "optionB": "吸収",
+      "answer": "A"
+    }
+  ]
+}
