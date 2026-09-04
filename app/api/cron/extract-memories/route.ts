@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { getActiveMemories } from "@/lib/siera-memory";
 import { MEMORY_EXTRACTOR_SYSTEM_PROMPT, ExtractedMemoryAction } from "@/lib/memory-extractor-prompt";
+import { archiveStaleMemories, computeAndSaveMonthlySummaries, isFirstOfMonthWib } from "@/lib/siera-monthly-summary";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -194,5 +195,18 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  return NextResponse.json(summary);
+  // Arsipkan memori inactive yang sudah 6+ bulan tidak diperbarui (statistik
+  // murni, tanpa LLM). Dijalankan tiap kali cron ini jalan, bukan hanya sekali
+  // sebulan, supaya arsip tetap ter-update tanpa perlu cron terpisah.
+  const archiveResult = await archiveStaleMemories();
+
+  // Rangkuman belajar bulanan (statistik, bukan LLM) dihitung tanggal 1 tiap
+  // bulan untuk bulan yang baru selesai. Idempotent lewat unique constraint
+  // di tabel monthly_summaries.
+  let monthlySummary: Awaited<ReturnType<typeof computeAndSaveMonthlySummaries>> | null = null;
+  if (isFirstOfMonthWib()) {
+    monthlySummary = await computeAndSaveMonthlySummaries();
+  }
+
+  return NextResponse.json({ ...summary, archivedMemories: archiveResult.archived, monthlySummary });
 }

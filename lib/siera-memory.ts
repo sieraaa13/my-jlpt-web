@@ -103,18 +103,46 @@ async function getProgressSummary(userId: string): Promise<string> {
  * Bangun blok teks memori + progress untuk disisipkan ke system prompt Siera.
  * Mengembalikan string kosong kalau user belum punya data sama sekali.
  */
+async function getLatestMonthlySummaryLine(userId: string): Promise<string> {
+  const { data } = await supabase
+    .from("monthly_summaries")
+    .select("year_month, exams_taken, avg_score, quiz_days_active, quiz_max_streak")
+    .eq("user_id", userId)
+    .order("year_month", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (!data) return "";
+
+  const parts: string[] = [`Rangkuman bulan ${data.year_month}:`];
+  if (data.exams_taken > 0) {
+    parts.push(`${data.exams_taken} ujian dikerjakan (rata-rata ${Number(data.avg_score).toFixed(0)}%)`);
+  }
+  if (data.quiz_days_active > 0) {
+    parts.push(`aktif quiz harian ${data.quiz_days_active} hari (streak tertinggi ${data.quiz_max_streak})`);
+  }
+  if (parts.length === 1) return "";
+
+  return parts.join(" ");
+}
+
 export async function buildMemoryContext(userId: string): Promise<string> {
-  const [memories, progressSummary] = await Promise.all([
+  const [memories, progressSummary, monthlySummaryLine] = await Promise.all([
     getActiveMemories(userId),
     getProgressSummary(userId),
+    getLatestMonthlySummaryLine(userId),
   ]);
 
-  if (memories.length === 0 && !progressSummary) return "";
+  if (memories.length === 0 && !progressSummary && !monthlySummaryLine) return "";
 
   let block = "\n\n===== YANG SIERA INGAT TENTANG USER INI =====\n";
 
   if (progressSummary) {
     block += `\n[Progress Belajar]\n${progressSummary}\n`;
+  }
+
+  if (monthlySummaryLine) {
+    block += `\n[Tren Bulanan]\n${monthlySummaryLine}\n`;
   }
 
   if (memories.length > 0) {
