@@ -1,0 +1,268 @@
+{
+  "week": 4,
+  "day": 1,
+  "title": "伝票・申込書",
+  "subtitle": "Checks, Slips, Application Forms",
+  "translation": "Slip dan Formulir Pendaftaran",
+  "sceneDescription": "Bagian pertama menunjukkan slip penggunaan kartu kredit（クレジットカードご利用伝票）dengan jumlah tagihan dan jumlah cicilan, serta slip pengiriman（配送伝票）berisi alamat tujuan, pengirim, dan waktu kedatangan yang diinginkan. Petugas toko meminta tanda tangan pelanggan dan data pengiriman.\n\n Bagian kedua menunjukkan formulir pendaftaran keanggotaan（入会申込書）yang berisi nama, tanggal lahir, jenis kelamin, alamat rumah, serta tempat dan bagian kerja.",
+  "signs": [
+    { "text": "クレジットカードご利用伝票", "meaning": "Slip penggunaan kartu kredit" },
+    { "text": "配送伝票", "meaning": "Slip pengiriman" },
+    { "text": "到着希望時間", "meaning": "Waktu kedatangan yang diinginkan" },
+    { "text": "入会申込書", "meaning": "Formulir pendaftaran keanggotaan" },
+    { "text": "生年月日", "meaning": "Tanggal lahir" },
+    { "text": "部署名", "meaning": "Nama departemen" }
+  ],
+  "kanjiList": [
+    {
+      "id": 270,
+      "character": "署",
+      "strokes": 13,
+      "onyomi": ["ショ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "署名", "reading": "しょめい", "meaning": "tanda tangan" },
+        { "word": "消防署", "reading": "しょうぼうしょ", "meaning": "kantor pemadam kebakaran", "note": "→ lihat kanji #409 (防)" }
+      ],
+      "extraWords": [
+        { "word": "部署", "reading": "ぶしょ", "meaning": "bagian/divisi kerja" },
+        { "word": "税務署", "reading": "ぜいむしょ", "meaning": "kantor pajak", "note": "→ lihat kanji #473 (税)" }
+      ]
+    },
+    {
+      "id": 271,
+      "character": "依",
+      "strokes": 8,
+      "onyomi": ["イ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "依頼", "reading": "いらい", "meaning": "permintaan, permohonan" }
+      ]
+    },
+    {
+      "id": 272,
+      "character": "頼",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["たのむ", "たのもしい", "たよる"],
+      "words": [
+        { "word": "信頼", "reading": "しんらい", "meaning": "kepercayaan" },
+        { "word": "頼む", "reading": "たのむ", "meaning": "meminta tolong" },
+        { "word": "頼る", "reading": "たよる", "meaning": "bergantung pada", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "頼もしい", "reading": "たのもしい", "meaning": "dapat diandalkan", "flag": "attention" },
+        { "word": "頼りない", "reading": "たよりない", "meaning": "tidak bisa diandalkan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 273,
+      "character": "府",
+      "strokes": 8,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "都道府県", "reading": "とどうふけん", "meaning": "provinsi/prefektur (istilah umum di Jepang)" }
+      ],
+      "extraWords": [
+        { "word": "京都府", "reading": "きょうとふ", "meaning": "Prefektur Kyoto" }
+      ]
+    },
+    {
+      "id": 274,
+      "character": "到",
+      "strokes": 8,
+      "onyomi": ["トウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "到着", "reading": "とうちゃく", "meaning": "kedatangan" }
+      ]
+    },
+    {
+      "id": 275,
+      "character": "希",
+      "strokes": 7,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "希望", "reading": "きぼう", "meaning": "harapan" }
+      ]
+    },
+    {
+      "id": 276,
+      "character": "望",
+      "strokes": 11,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["のぞむ"],
+      "words": [
+        { "word": "失望", "reading": "しつぼう", "meaning": "kekecewaan", "note": "→ lihat kanji #317 (失)" },
+        { "word": "望む", "reading": "のぞむ", "meaning": "mengharapkan" }
+      ],
+      "extraWords": [
+        { "word": "望遠鏡", "reading": "ぼうえんきょう", "meaning": "teropong" }
+      ]
+    },
+    {
+      "id": 277,
+      "character": "申",
+      "strokes": 5,
+      "onyomi": ["シン"],
+      "kunyomi": ["もうす"],
+      "words": [
+        { "word": "申請", "reading": "しんせい", "meaning": "permohonan resmi" },
+        { "word": "申し込み", "reading": "もうしこみ", "meaning": "pendaftaran, aplikasi" }
+      ],
+      "extraWords": [
+        { "word": "申す", "reading": "もうす", "meaning": "berkata (bentuk merendah)" },
+        { "word": "申し上げる", "reading": "もうしあげる", "meaning": "berkata (bentuk sangat merendah)" }
+      ]
+    },
+    {
+      "id": 278,
+      "character": "姓",
+      "strokes": 8,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "姓", "reading": "せい", "meaning": "nama keluarga, marga" }
+      ],
+      "extraWords": [
+        { "word": "姓名", "reading": "せいめい", "meaning": "nama lengkap" }
+      ]
+    },
+    {
+      "id": 279,
+      "character": "齢",
+      "strokes": 17,
+      "onyomi": ["レイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "年齢", "reading": "ねんれい", "meaning": "usia" }
+      ],
+      "extraWords": [
+        { "word": "高齢", "reading": "こうれい", "meaning": "usia lanjut" }
+      ]
+    },
+    {
+      "id": 280,
+      "character": "性",
+      "strokes": 8,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "男性", "reading": "だんせい", "meaning": "pria" },
+        { "word": "性別", "reading": "せいべつ", "meaning": "jenis kelamin" },
+        { "word": "安全性", "reading": "あんぜんせい", "meaning": "tingkat keamanan" }
+      ],
+      "extraWords": [
+        { "word": "女性", "reading": "じょせい", "meaning": "wanita" },
+        { "word": "性質", "reading": "せいしつ", "meaning": "sifat, karakter" },
+        { "word": "可能性", "reading": "かのうせい", "meaning": "kemungkinan", "note": "→ lihat kanji #431 (可)" }
+      ]
+    },
+    {
+      "id": 281,
+      "character": "宅",
+      "strokes": 6,
+      "onyomi": ["タク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "お宅", "reading": "おたく", "meaning": "rumah Anda (bentuk hormat)" },
+        { "word": "住宅", "reading": "じゅうたく", "meaning": "perumahan" }
+      ],
+      "extraWords": [
+        { "word": "自宅", "reading": "じたく", "meaning": "rumah sendiri" },
+        { "word": "帰宅", "reading": "きたく", "meaning": "pulang ke rumah" }
+      ]
+    },
+    {
+      "id": 282,
+      "character": "勤",
+      "strokes": 12,
+      "onyomi": ["キン"],
+      "kunyomi": ["つとめる"],
+      "words": [
+        { "word": "勤務", "reading": "きんむ", "meaning": "tugas kerja, dinas" },
+        { "word": "通勤", "reading": "つうきん", "meaning": "perjalanan pulang-pergi kerja" }
+      ],
+      "extraWords": [
+        { "word": "出勤", "reading": "しゅっきん", "meaning": "masuk kerja" },
+        { "word": "勤める", "reading": "つとめる", "meaning": "bekerja di, menjabat" }
+      ]
+    },
+    {
+      "id": 283,
+      "character": "部",
+      "strokes": 11,
+      "onyomi": ["ブ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "全部", "reading": "ぜんぶ", "meaning": "semuanya" },
+        { "word": "部長", "reading": "ぶちょう", "meaning": "kepala bagian, manajer" },
+        { "word": "部屋", "reading": "へや", "meaning": "kamar, ruangan", "flag": "special" }
+      ],
+      "extraWords": [
+        { "word": "部分", "reading": "ぶぶん", "meaning": "bagian" },
+        { "word": "学部", "reading": "がくぶ", "meaning": "fakultas" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "自分の（　）通りの大学に入学できた。",
+      "optionA": "望み",
+      "optionB": "頼み",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "来日する友人を空港の（　）ロビーで待つ。",
+      "optionA": "出発",
+      "optionB": "到着",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "商品の配送を（　）する。",
+      "optionA": "依頼",
+      "optionB": "願い",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "市民が駅前に立ち（　）を集める活動を始めた。",
+      "optionA": "署名",
+      "optionB": "照明",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "日本では結婚すると夫の（　）になる女の人が多い。",
+      "optionA": "性",
+      "optionB": "姓",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "朝夕の（　）ラッシュ時は電車が満員になる。",
+      "optionA": "通勤",
+      "optionB": "出勤",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "お客様に迷子のお知らせを（　）。",
+      "optionA": "申します",
+      "optionB": "申し上げます",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "パスポートの（　）をする。",
+      "optionA": "申請",
+      "optionB": "再生",
+      "answer": "A"
+    }
+  ]
+}
