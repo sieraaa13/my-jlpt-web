@@ -1,0 +1,267 @@
+{
+  "week": 7,
+  "day": 3,
+  "title": "メニュー・成分表示",
+  "subtitle": "Menus, Ingredient Labels",
+  "translation": "Menu dan Label Komposisi",
+  "sceneDescription": "Menu restoran menampilkan: kerang asari kukus sake, ikan makarel kering semalam, nasi rebung, telur onsen, dan lobak parut. Ada dialog: A: \"Mmm~ enak! Ini apa ya? Umm... asari gai no sake...\" B: \"Itu 'sakamushi' (kerang kukus sake), lho.\"\n\n Label komposisi makanan sosis ikan: \"Nama: Sosis Ikan. Bahan baku: daging ikan, minyak nabati, garam, gula. (Sebagian bahan mengandung gandum, telur, produk susu, kedelai.) Per 100g (1 batang): Energi 153kcal, Natrium 568mg, Karbohidrat 11.2g, Lemak 5.7g, Protein 12.4g.\"",
+  "signs": [
+    { "text": "あさり貝の酒蒸し", "meaning": "Kerang asari kukus sake" },
+    { "text": "さばの一夜干し", "meaning": "Ikan makarel kering semalam" },
+    { "text": "名称：魚肉ソーセージ", "meaning": "Nama: sosis ikan" },
+    { "text": "原材料名：魚肉、植物性油脂、食塩、砂糖", "meaning": "Bahan baku: daging ikan, minyak nabati, garam, gula" },
+    { "text": "（原材料の一部に小麦、卵、乳成分、大豆を含む）", "meaning": "(Sebagian bahan mengandung gandum, telur, produk susu, kedelai)" },
+    { "text": "エネルギー153kcal　ナトリウム568mg", "meaning": "Energi 153kcal, Natrium 568mg" }
+  ],
+  "kanjiList": [
+    {
+      "id": 593,
+      "character": "貝",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["かい"],
+      "words": [
+        { "word": "貝", "reading": "かい", "meaning": "kerang" },
+        { "word": "貝がら", "reading": "かいがら", "meaning": "cangkang kerang" }
+      ]
+    },
+    {
+      "id": 594,
+      "character": "酒",
+      "strokes": 10,
+      "onyomi": ["シュ"],
+      "kunyomi": ["さけ", "さか"],
+      "words": [
+        { "word": "〜酒", "reading": "しゅ", "meaning": "minuman keras ..." },
+        { "word": "酒屋", "reading": "さかや", "meaning": "toko minuman keras", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "酒", "reading": "さけ", "meaning": "sake, minuman keras" },
+        { "word": "居酒屋", "reading": "いざかや", "meaning": "kedai minum Jepang" }
+      ]
+    },
+    {
+      "id": 595,
+      "character": "蒸",
+      "strokes": 13,
+      "onyomi": ["ジョウ"],
+      "kunyomi": ["むす"],
+      "words": [
+        { "word": "蒸発", "reading": "じょうはつ", "meaning": "penguapan" },
+        { "word": "蒸す", "reading": "むす", "meaning": "mengukus", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "水蒸気", "reading": "すいじょうき", "meaning": "uap air" },
+        { "word": "蒸し暑い", "reading": "むしあつい", "meaning": "panas lembap" }
+      ]
+    },
+    {
+      "id": 596,
+      "character": "干",
+      "strokes": 3,
+      "onyomi": [],
+      "kunyomi": ["ほす", "ひる"],
+      "words": [
+        { "word": "干す", "reading": "ほす", "meaning": "menjemur" },
+        { "word": "干物", "reading": "ひもの", "meaning": "makanan kering (ikan asin dsb)", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 597,
+      "character": "竹",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["たけ"],
+      "words": [
+        { "word": "竹", "reading": "たけ", "meaning": "bambu" }
+      ],
+      "extraWords": [
+        { "word": "竹の子", "reading": "たけのこ", "meaning": "rebung" }
+      ]
+    },
+    {
+      "id": 598,
+      "character": "卵",
+      "strokes": 7,
+      "onyomi": ["ラン"],
+      "kunyomi": ["たまご"],
+      "words": [
+        { "word": "卵黄", "reading": "らんおう", "meaning": "kuning telur" },
+        { "word": "卵", "reading": "たまご", "meaning": "telur" }
+      ]
+    },
+    {
+      "id": 599,
+      "character": "根",
+      "strokes": 10,
+      "onyomi": ["コン"],
+      "kunyomi": ["ね"],
+      "words": [
+        { "word": "大根", "reading": "だいこん", "meaning": "lobak putih" },
+        { "word": "根", "reading": "ね", "meaning": "akar" }
+      ],
+      "extraWords": [
+        { "word": "屋根", "reading": "やね", "meaning": "atap" }
+      ]
+    },
+    {
+      "id": 600,
+      "character": "材",
+      "strokes": 7,
+      "onyomi": ["ザイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "材料", "reading": "ざいりょう", "meaning": "bahan" },
+        { "word": "材質", "reading": "ざいしつ", "meaning": "kualitas bahan" }
+      ],
+      "extraWords": [
+        { "word": "原材料", "reading": "げんざいりょう", "meaning": "bahan baku" },
+        { "word": "教材", "reading": "きょうざい", "meaning": "materi pengajaran" }
+      ]
+    },
+    {
+      "id": 601,
+      "character": "植",
+      "strokes": 12,
+      "onyomi": ["ショク"],
+      "kunyomi": ["うえる"],
+      "words": [
+        { "word": "植物", "reading": "しょくぶつ", "meaning": "tumbuhan" },
+        { "word": "植木", "reading": "うえき", "meaning": "tanaman pot/hias" }
+      ],
+      "extraWords": [
+        { "word": "植える", "reading": "うえる", "meaning": "menanam" },
+        { "word": "田植え", "reading": "たうえ", "meaning": "menanam padi" }
+      ]
+    },
+    {
+      "id": 602,
+      "character": "砂",
+      "strokes": 9,
+      "onyomi": ["サ"],
+      "kunyomi": ["すな"],
+      "words": [
+        { "word": "砂糖", "reading": "さとう", "meaning": "gula" },
+        { "word": "砂", "reading": "すな", "meaning": "pasir", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "砂漠", "reading": "さばく", "meaning": "gurun" }
+      ]
+    },
+    {
+      "id": 603,
+      "character": "乳",
+      "strokes": 8,
+      "onyomi": ["ニュウ"],
+      "kunyomi": ["ちち"],
+      "words": [
+        { "word": "牛乳", "reading": "ぎゅうにゅう", "meaning": "susu sapi" },
+        { "word": "乳児", "reading": "にゅうじ", "meaning": "bayi (di bawah 1 tahun)" }
+      ],
+      "extraWords": [
+        { "word": "乳製品", "reading": "にゅうせいひん", "meaning": "produk susu" },
+        { "word": "乳", "reading": "ちち", "meaning": "air susu/payudara", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 604,
+      "character": "含",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["ふくむ", "ふくめる"],
+      "words": [
+        { "word": "含む", "reading": "ふくむ", "meaning": "mengandung" }
+      ],
+      "extraWords": [
+        { "word": "含める", "reading": "ふくめる", "meaning": "memasukkan, menyertakan" }
+      ]
+    },
+    {
+      "id": 605,
+      "character": "炭",
+      "strokes": 9,
+      "onyomi": ["タン"],
+      "kunyomi": ["すみ"],
+      "words": [
+        { "word": "炭水化物", "reading": "たんすいかぶつ", "meaning": "karbohidrat" },
+        { "word": "炭", "reading": "すみ", "meaning": "arang", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "石炭", "reading": "せきたん", "meaning": "batu bara" }
+      ]
+    },
+    {
+      "id": 606,
+      "character": "脂",
+      "strokes": 10,
+      "onyomi": ["シ"],
+      "kunyomi": ["あぶら"],
+      "words": [
+        { "word": "脂肪", "reading": "しぼう", "meaning": "lemak" },
+        { "word": "油脂", "reading": "ゆし", "meaning": "minyak dan lemak" }
+      ],
+      "extraWords": [
+        { "word": "脂質", "reading": "ししつ", "meaning": "kandungan lemak" },
+        { "word": "脂", "reading": "あぶら", "meaning": "lemak, gajih", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "梅雨の時期は（　）暑い。",
+      "optionA": "蒸し",
+      "optionB": "干し",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "猫が家の（　）の上を歩いている。",
+      "optionA": "屋根",
+      "optionB": "羽根",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "（　）で新入社員の歓迎会をする。",
+      "optionA": "酒屋",
+      "optionB": "居酒屋",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "海辺で拾った（　）でアクセサリーを作る。",
+      "optionA": "貝",
+      "optionB": "具",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "この価格に消費税は（　）おりません。",
+      "optionA": "込まれて",
+      "optionB": "含まれて",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "ガスより（　）で焼いたほうが、肉も魚もおいしい。",
+      "optionA": "炭",
+      "optionB": "材",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "貝を濃い塩水にしばらくつけておいて（　）を抜く。",
+      "optionA": "砂",
+      "optionB": "脂",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　）を育てる。",
+      "optionA": "干物",
+      "optionB": "植物",
+      "answer": "B"
+    }
+  ]
+}
