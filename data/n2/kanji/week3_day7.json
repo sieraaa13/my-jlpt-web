@@ -1,0 +1,115 @@
+{
+  "week": 3,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 3 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "病院で「領収書」を受け取った。", "target": "領収", "choices": ["りょしゅ", "りょしゅう", "りょうしゅ", "りょうしゅう"], "answer": "りょうしゅう" },
+    { "sentence": "患者氏名には「内田清殿」と書いてある。", "target": "殿", "choices": ["さま", "どの", "くん", "でん"], "answer": "どの" },
+    { "sentence": "処方せん引換券番号を確認する。", "target": "番号", "choices": ["ばんご", "ばごう", "ぽんご", "ばんごう"], "answer": "ばんごう" },
+    { "sentence": "合計金額は4,200円だった。", "target": "金額", "choices": ["ねだん", "きんがく", "かかく", "りょうきん"], "answer": "きんがく" },
+    { "sentence": "千葉からお越しの田畑様、お連れ様がお待ちです。", "target": "お越し", "choices": ["おたし", "おかし", "おとし", "おこし"], "answer": "おこし" },
+    { "sentence": "海を埋め立てて空港を建てる。", "target": "埋め立てて", "choices": ["おめたてて", "ゆめたてて", "うめたてて", "ぬめたてて"], "answer": "うめたてて" },
+    { "sentence": "この資料は必ずご持参ください。", "target": "必ず", "choices": ["かねらず", "かならず", "からなず", "かれなず"], "answer": "かならず" },
+    { "sentence": "写真は実物とは少し異なります。", "target": "異なります", "choices": ["かさなります", "ともなります", "ことなります", "いなります"], "answer": "ことなります" },
+    { "sentence": "男女平等に仕事の機会があたえられる。", "target": "平等", "choices": ["びょうどう", "へいとう", "ひょうとう", "べいどう"], "answer": "びょうどう" },
+    { "sentence": "迷子のお知らせをいたします。", "target": "迷子", "choices": ["めいし", "めいご", "まいご", "まいこ"], "answer": "まいご" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "関係者かくい　サーバー停止のお知らせです。", "reading": "かくい", "choices": ["客位", "各位", "名位", "角位"], "answer": "各位" },
+    { "sentence": "アンケートにごきょうりょくお願いします。", "reading": "きょうりょく", "choices": ["共力", "強力", "協力", "助力"], "answer": "協力" },
+    { "sentence": "正月は多くの人々がお寺や神社におまいりする。", "reading": "おまいり", "choices": ["お参り", "お迷り", "お断り", "お周り"], "answer": "お参り" },
+    { "sentence": "このカードのゆうこう期限は1年です。", "reading": "ゆうこう", "choices": ["発行", "流行", "用効", "有効"], "answer": "有効" },
+    { "sentence": "訓練は雨で来週にのびた。", "reading": "のびた", "choices": ["延びた", "震びた", "平びた", "結びた"], "answer": "延びた" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "手紙を開（　）する。", "target": "開封", "choices": ["記", "頂", "封", "葉"], "answer": "封" },
+    { "sentence": "試験（　）日は駅が込むので、帰りの切符も買っておいたほうがいい。", "target": "試験当日", "choices": ["当", "平", "本", "現"], "answer": "当" },
+    { "sentence": "今朝は寒さで水道（　）が凍っている。", "target": "水道管", "choices": ["断", "枝", "管", "蔵"], "answer": "管" },
+    { "sentence": "これはスイス（　）の時計です。", "target": "スイス製", "choices": ["個", "作", "整", "製"], "answer": "製" },
+    { "sentence": "コンビニで「（　）にお入れしますか。」と聞かれたので、「いえ、いいです。」と答えた。", "target": "袋", "choices": ["容", "袋", "装", "衣"], "answer": "袋" },
+    { "sentence": "電話の受話（　）を取る。", "target": "受話器", "choices": ["機", "器", "記", "気"], "answer": "器" },
+    { "sentence": "お客様のクレジットのご利用限度（　）は80万円です。", "target": "限度額", "choices": ["額", "料", "代", "金"], "answer": "額" }
+  ],
+  "passageQuestion": {
+    "passage": "これはさくらスーパーの[23]（　）です。全国の店で[24]（　）できて、500円までの買い物ができます。おつりも出ます。ただし、現金に[25]（　）はできません。",
+    "wordBank": ["こうかん", "しょうひん", "りよう", "しょうひんけん", "ゆうこう"],
+    "blanks": [
+      { "number": 23, "answer": "しょうひんけん", "answerKanji": "商品券" },
+      { "number": 24, "answer": "りよう", "answerKanji": "利用" },
+      { "number": 25, "answer": "こうかん", "answerKanji": "交換" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "記号的な漢字　未⇔済",
+    "translation": "Symbolic Kanji",
+    "description": "「未」sering dipakai dalam kata seperti「未読」(belum dibaca), dan「済」dalam「送信済み」(sudah terkirim). Tapi keduanya juga sering ditulis sendiri sebagai simbol「未」atau「済」untuk menandai status 'belum' atau 'sudah'. Ada juga kanji yang berfungsi seperti awalan waktu, misalnya「昨日／昨年／昨夜」(kemarin/tahun lalu/tadi malam) berlawanan dengan「明日／来年／明晩」(besok/tahun depan/besok malam), dan「翌日／翌年／翌朝」(hari/tahun/pagi berikutnya) berlawanan dengan「前日／前年／前夜」(hari/tahun/malam sebelumnya).\n\n Beberapa kanji juga dipakai sebagai kata bantu bilangan (penghitung), misalnya buku dihitung〜冊, pena〜本, apel〜個, kartu〜枚, setelan jas〜着, TV〜台, dan rumah/toko〜軒. Ada juga kanji satu huruf yang maknanya sangat jelas, misalnya label「毒」(racun) yang menandakan bahaya kalau ditempel pada suatu benda.\n\n Sekarang, emotikon（顔文字）sering dipakai di pesan, misalnya「テストだめだったよ〜(T_T) でも、またガンバル！(^_^)」. Tapi tanpa emotikon pun, perasaan bisa diungkapkan dengan kanji, misalnya「テストだめだったよ〜（涙）でも、またガンバル！（笑）」.",
+    "kanjiList": [
+      {
+        "id": 264,
+        "character": "昨",
+        "strokes": 9,
+        "onyomi": ["サク"],
+        "kunyomi": [],
+        "words": [
+          { "word": "昨〜", "reading": "さく", "meaning": "... yang lalu (awalan waktu lampau)" }
+        ]
+      },
+      {
+        "id": 265,
+        "character": "翌",
+        "strokes": 11,
+        "onyomi": ["ヨク"],
+        "kunyomi": [],
+        "words": [
+          { "word": "翌〜", "reading": "よく", "meaning": "... berikutnya (awalan waktu mendatang)" }
+        ]
+      },
+      {
+        "id": 266,
+        "character": "軒",
+        "strokes": 10,
+        "onyomi": ["ケン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "〜軒", "reading": "けん", "meaning": "penghitung rumah/toko/bangunan" }
+        ]
+      },
+      {
+        "id": 267,
+        "character": "毒",
+        "strokes": 8,
+        "onyomi": ["ドク"],
+        "kunyomi": [],
+        "words": [
+          { "word": "中毒", "reading": "ちゅうどく", "meaning": "keracunan, kecanduan" },
+          { "word": "気の毒（な）", "reading": "きのどく", "meaning": "kasihan, menyedihkan" }
+        ],
+        "extraWords": [
+          { "word": "消毒", "reading": "しょうどく", "meaning": "disinfeksi, sterilisasi" }
+        ]
+      },
+      {
+        "id": 268,
+        "character": "涙",
+        "strokes": 10,
+        "onyomi": [],
+        "kunyomi": ["なみだ"],
+        "words": [
+          { "word": "涙", "reading": "なみだ", "meaning": "air mata" }
+        ]
+      },
+      {
+        "id": 269,
+        "character": "笑",
+        "strokes": 10,
+        "onyomi": [],
+        "kunyomi": ["わらう", "えむ"],
+        "words": [
+          { "word": "笑う", "reading": "わらう", "meaning": "tertawa" },
+          { "word": "笑顔", "reading": "えがお", "meaning": "wajah tersenyum" }
+        ]
+      }
+    ]
+  }
+}
