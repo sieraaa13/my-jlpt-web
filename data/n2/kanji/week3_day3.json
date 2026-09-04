@@ -1,0 +1,275 @@
+{
+  "week": 3,
+  "day": 3,
+  "title": "ポイントカード・商品券・クリーニング預かり票",
+  "subtitle": "Point Cards, Gift certificates, Cleaning Dockets",
+  "translation": "Kartu Poin, Voucher Belanja, Slip Penitipan Cucian",
+  "sceneDescription": "Bagian pertama menunjukkan kartu poin toko（ポイントカード）beserta aturan penukaran stempel, masa berlaku, dan cara penggunaannya. Bagian kedua menunjukkan voucher belanja nasional（全国共通○○券）senilai ¥500 dan slip penitipan cucian（クリーニング預かり票）yang mencantumkan tanggal selesai, status pembayaran, serta peringatan tanggung jawab toko.",
+  "signs": [
+    { "text": "ポイントカード", "meaning": "Kartu poin" },
+    { "text": "有効期限", "meaning": "Masa berlaku" },
+    { "text": "全国共通○○券", "meaning": "Voucher berlaku se-Jepang" },
+    { "text": "クリーニング預かり票", "meaning": "Slip penitipan cucian (laundry)" },
+    { "text": "仕上がり日", "meaning": "Tanggal selesai" },
+    { "text": "責任を負いかねます", "meaning": "Tidak bertanggung jawab (atas kehilangan/kerusakan)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 209,
+      "character": "商",
+      "strokes": 11,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "商品", "reading": "しょうひん", "meaning": "barang dagangan" },
+        { "word": "商業", "reading": "しょうぎょう", "meaning": "perdagangan, niaga" }
+      ],
+      "extraWords": [
+        { "word": "商店", "reading": "しょうてん", "meaning": "toko" },
+        { "word": "商売", "reading": "しょうばい", "meaning": "bisnis, usaha dagang" }
+      ]
+    },
+    {
+      "id": 210,
+      "character": "個",
+      "strokes": 10,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜個", "reading": "こ", "meaning": "penghitung benda umum" },
+        { "word": "個々", "reading": "ここ", "meaning": "masing-masing, individual" }
+      ],
+      "extraWords": [
+        { "word": "個人", "reading": "こじん", "meaning": "individu, pribadi" },
+        { "word": "個別", "reading": "こべつ", "meaning": "terpisah, individual" }
+      ]
+    },
+    {
+      "id": 211,
+      "character": "相",
+      "strokes": 9,
+      "onyomi": ["ソウ", "ショウ"],
+      "kunyomi": ["あい"],
+      "words": [
+        { "word": "〜相当", "reading": "そうとう", "meaning": "setara dengan ..." },
+        { "word": "外相", "reading": "がいしょう", "meaning": "menteri luar negeri" },
+        { "word": "相手", "reading": "あいて", "meaning": "lawan, mitra bicara", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "首相", "reading": "しゅしょう", "meaning": "perdana menteri" },
+        { "word": "相変わらず", "reading": "あいかわらず", "meaning": "seperti biasa, tetap sama" },
+        { "word": "相撲", "reading": "すもう", "meaning": "sumo", "flag": "special" }
+      ]
+    },
+    {
+      "id": 212,
+      "character": "交",
+      "strokes": 6,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "交換", "reading": "こうかん", "meaning": "pertukaran" },
+        { "word": "交際", "reading": "こうさい", "meaning": "pergaulan, hubungan" }
+      ],
+      "extraWords": [
+        { "word": "交通機関", "reading": "こうつうきかん", "meaning": "alat transportasi" },
+        { "word": "交流", "reading": "こうりゅう", "meaning": "pertukaran, interaksi" }
+      ]
+    },
+    {
+      "id": 213,
+      "character": "効",
+      "strokes": 8,
+      "onyomi": ["コウ"],
+      "kunyomi": ["きく"],
+      "words": [
+        { "word": "有効（な）", "reading": "ゆうこう", "meaning": "berlaku, valid" },
+        { "word": "効く", "reading": "きく", "meaning": "manjur, berkhasiat", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "効果", "reading": "こうか", "meaning": "efek, hasil", "note": "→ lihat kanji #251 (果)" },
+        { "word": "効き目", "reading": "ききめ", "meaning": "khasiat, efek" }
+      ]
+    },
+    {
+      "id": 214,
+      "character": "限",
+      "strokes": 9,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["かぎる"],
+      "words": [
+        { "word": "期限", "reading": "きげん", "meaning": "batas waktu" },
+        { "word": "限界", "reading": "げんかい", "meaning": "batas, limit" }
+      ],
+      "extraWords": [
+        { "word": "限度額", "reading": "げんどがく", "meaning": "batas jumlah maksimal" },
+        { "word": "〜限り", "reading": "かぎり", "meaning": "selama ..., sebatas ...", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 215,
+      "character": "全",
+      "strokes": 6,
+      "onyomi": ["ゼン"],
+      "kunyomi": ["まったく", "すべて"],
+      "words": [
+        { "word": "全国", "reading": "ぜんこく", "meaning": "seluruh negeri" },
+        { "word": "完全（な）", "reading": "かんぜん", "meaning": "sempurna, lengkap" },
+        { "word": "全く", "reading": "まったく", "meaning": "benar-benar, sama sekali", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "全〜", "reading": "ぜん", "meaning": "seluruh ..." },
+        { "word": "全て", "reading": "すべて", "meaning": "semua" }
+      ]
+    },
+    {
+      "id": 216,
+      "character": "共",
+      "strokes": 6,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["とも"],
+      "words": [
+        { "word": "共通", "reading": "きょうつう", "meaning": "kesamaan, umum" },
+        { "word": "〜と共に", "reading": "とともに", "meaning": "bersama dengan ..." }
+      ]
+    },
+    {
+      "id": 217,
+      "character": "忘",
+      "strokes": 7,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["わすれる"],
+      "words": [
+        { "word": "忘年会", "reading": "ぼうねんかい", "meaning": "pesta akhir tahun" },
+        { "word": "忘れる", "reading": "わすれる", "meaning": "lupa" }
+      ],
+      "extraWords": [
+        { "word": "忘れ物", "reading": "わすれもの", "meaning": "barang tertinggal" }
+      ]
+    },
+    {
+      "id": 218,
+      "character": "経",
+      "strokes": 11,
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "経過", "reading": "けいか", "meaning": "perjalanan waktu, proses" },
+        { "word": "経済", "reading": "けいざい", "meaning": "ekonomi" }
+      ],
+      "extraWords": [
+        { "word": "経験", "reading": "けいけん", "meaning": "pengalaman" },
+        { "word": "経理", "reading": "けいり", "meaning": "akuntansi" }
+      ]
+    },
+    {
+      "id": 219,
+      "character": "過",
+      "strokes": 12,
+      "onyomi": ["カ"],
+      "kunyomi": ["すぎる", "すごす"],
+      "words": [
+        { "word": "過去", "reading": "かこ", "meaning": "masa lalu" },
+        { "word": "過ぎる", "reading": "すぎる", "meaning": "melewati, lewat" }
+      ],
+      "extraWords": [
+        { "word": "通過", "reading": "つうか", "meaning": "melintas, lolos" },
+        { "word": "過ごす", "reading": "すごす", "meaning": "menghabiskan waktu" }
+      ]
+    },
+    {
+      "id": 220,
+      "character": "責",
+      "strokes": 11,
+      "onyomi": ["セキ"],
+      "kunyomi": ["せめる"],
+      "words": [
+        { "word": "責任", "reading": "せきにん", "meaning": "tanggung jawab" },
+        { "word": "責める", "reading": "せめる", "meaning": "menyalahkan, menuduh", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 221,
+      "character": "任",
+      "strokes": 6,
+      "onyomi": ["ニン"],
+      "kunyomi": ["まかせる", "まかす"],
+      "words": [
+        { "word": "担任", "reading": "たんにん", "meaning": "wali kelas" },
+        { "word": "任せる", "reading": "まかせる", "meaning": "mempercayakan, menyerahkan" }
+      ]
+    },
+    {
+      "id": 222,
+      "character": "負",
+      "strokes": 9,
+      "onyomi": ["フ"],
+      "kunyomi": ["まける", "おう"],
+      "words": [
+        { "word": "負担", "reading": "ふたん", "meaning": "beban" },
+        { "word": "負ける", "reading": "まける", "meaning": "kalah" }
+      ],
+      "extraWords": [
+        { "word": "負う", "reading": "おう", "meaning": "memikul, menanggung", "flag": "attention" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "この薬は風邪によく（　）。",
+      "optionA": "効く",
+      "optionB": "聞く",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "外国の人たちと（　）するのは楽しいです。",
+      "optionA": "交流",
+      "optionB": "交換",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "今までに一度も負けたことのない（　）に負けてしまった。",
+      "optionA": "相手",
+      "optionB": "相当",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "卵10個入りパック百円！お一人様1パック（　）！",
+      "optionA": "参り",
+      "optionB": "限り",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "子どもの勉強のことは（　）の先生にお任せしています。",
+      "optionA": "担任",
+      "optionB": "責任",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "この薬を飲んでください。1週間（　）をみましょう。",
+      "optionA": "経験",
+      "optionB": "経過",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "仕事の量が多過ぎる。社員の（　）を軽くしなければならない。",
+      "optionA": "負担",
+      "optionB": "担当",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "このカードは全店（　）でお使いになれます。",
+      "optionA": "共通",
+      "optionB": "通過",
+      "answer": "A"
+    }
+  ]
+}
