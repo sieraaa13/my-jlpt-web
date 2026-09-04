@@ -1,0 +1,265 @@
+{
+  "week": 7,
+  "day": 4,
+  "title": "受験案内",
+  "subtitle": "Entrance Examination Information",
+  "translation": "Panduan Ujian Masuk",
+  "sceneDescription": "Papan pengumuman dokumen yang diperlukan untuk ujian masuk: formulir pendaftaran, amplop balasan berperangko, ijazah kelulusan, transkrip nilai, skripsi (atau makalah pengganti jika tidak tersedia), proposal penelitian, dan pernyataan motivasi dengan batas jumlah karakter tertentu.\n\n Peringatan saat ujian: keterlambatan lebih dari 30 menit tidak diperbolehkan; yang lupa membawa kartu ujian harus meminta penerbitan kartu ujian sementara. Peraturan di ruang ujian: letakkan kartu ujian di atas meja; buku soal tidak boleh dibawa pulang; semua jawaban ditulis di lembar jawaban komputer, tanda yang keluar garis atau terlalu tipis tidak akan dinilai — gunakan pensil pekat HB atau B dan tandai dengan benar sesuai contoh.",
+  "signs": [
+    { "text": "受験に必要な書類", "meaning": "Dokumen yang diperlukan untuk ujian" },
+    { "text": "30分以上の遅刻は認めません。", "meaning": "Keterlambatan lebih dari 30 menit tidak diperbolehkan." },
+    { "text": "受験票を忘れた人は「仮受験票」の発行を申し出てください。", "meaning": "Yang lupa membawa kartu ujian, harap minta penerbitan \"kartu ujian sementara\"." },
+    { "text": "この冊子は持ち帰ってはいけません。", "meaning": "Buku soal ini tidak boleh dibawa pulang." },
+    { "text": "HBやB等の濃い鉛筆で例のように正しくマークします。", "meaning": "Gunakan pensil pekat HB atau B, tandai dengan benar sesuai contoh." }
+  ],
+  "kanjiList": [
+    {
+      "id": 607,
+      "character": "筒",
+      "strokes": 12,
+      "onyomi": ["トウ"],
+      "kunyomi": ["つつ"],
+      "words": [
+        { "word": "封筒", "reading": "ふうとう", "meaning": "amplop" },
+        { "word": "筒", "reading": "つつ", "meaning": "tabung, pipa", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "水筒", "reading": "すいとう", "meaning": "botol minum" }
+      ]
+    },
+    {
+      "id": 608,
+      "character": "卒",
+      "strokes": 8,
+      "onyomi": ["ソツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "卒業", "reading": "そつぎょう", "meaning": "kelulusan" }
+      ],
+      "extraWords": [
+        { "word": "卒業証明書", "reading": "そつぎょうしょうめいしょ", "meaning": "ijazah/surat keterangan lulus" }
+      ]
+    },
+    {
+      "id": 609,
+      "character": "績",
+      "strokes": 17,
+      "onyomi": ["セキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "成績", "reading": "せいせき", "meaning": "nilai, prestasi" },
+        { "word": "実績", "reading": "じっせき", "meaning": "prestasi nyata" }
+      ],
+      "extraWords": [
+        { "word": "業績", "reading": "ぎょうせき", "meaning": "kinerja, capaian usaha" }
+      ]
+    },
+    {
+      "id": 610,
+      "character": "論",
+      "strokes": 15,
+      "onyomi": ["ロン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "論文", "reading": "ろんぶん", "meaning": "skripsi, makalah" },
+        { "word": "結論", "reading": "けつろん", "meaning": "kesimpulan" }
+      ],
+      "extraWords": [
+        { "word": "議論", "reading": "ぎろん", "meaning": "perdebatan, diskusi" },
+        { "word": "論じる", "reading": "ろんじる", "meaning": "membahas, mendiskusikan" }
+      ]
+    },
+    {
+      "id": 611,
+      "character": "志",
+      "strokes": 7,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "志望", "reading": "しぼう", "meaning": "keinginan, cita-cita" }
+      ],
+      "extraWords": [
+        { "word": "意志", "reading": "いし", "meaning": "kemauan, tekad" }
+      ]
+    },
+    {
+      "id": 612,
+      "character": "述",
+      "strokes": 8,
+      "onyomi": ["ジュツ"],
+      "kunyomi": ["のべる"],
+      "words": [
+        { "word": "記述", "reading": "きじゅつ", "meaning": "deskripsi tertulis" },
+        { "word": "前述", "reading": "ぜんじゅつ", "meaning": "disebutkan sebelumnya" }
+      ],
+      "extraWords": [
+        { "word": "口述", "reading": "こうじゅつ", "meaning": "pernyataan lisan" },
+        { "word": "述べる", "reading": "のべる", "meaning": "menyatakan, menyebutkan" }
+      ]
+    },
+    {
+      "id": 613,
+      "character": "構",
+      "strokes": 14,
+      "onyomi": ["コウ"],
+      "kunyomi": ["かまう"],
+      "words": [
+        { "word": "結構（な）", "reading": "けっこう", "meaning": "lumayan, bagus" },
+        { "word": "構内", "reading": "こうない", "meaning": "area kampus/lingkungan" }
+      ],
+      "extraWords": [
+        { "word": "構成", "reading": "こうせい", "meaning": "komposisi, susunan" },
+        { "word": "構う", "reading": "かまう", "meaning": "peduli, mempermasalahkan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 614,
+      "character": "遅",
+      "strokes": 12,
+      "onyomi": ["チ"],
+      "kunyomi": ["おそい", "おくれる"],
+      "words": [
+        { "word": "遅刻", "reading": "ちこく", "meaning": "keterlambatan" },
+        { "word": "遅い", "reading": "おそい", "meaning": "lambat, telat" }
+      ],
+      "extraWords": [
+        { "word": "遅れる", "reading": "おくれる", "meaning": "terlambat" }
+      ]
+    },
+    {
+      "id": 615,
+      "character": "仮",
+      "strokes": 6,
+      "onyomi": ["カ"],
+      "kunyomi": ["かり"],
+      "words": [
+        { "word": "仮名", "reading": "かな", "meaning": "kana (huruf Jepang)" },
+        { "word": "仮定", "reading": "かてい", "meaning": "asumsi, andaian" }
+      ],
+      "extraWords": [
+        { "word": "振り仮名", "reading": "ふりがな", "meaning": "furigana" },
+        { "word": "仮", "reading": "かり", "meaning": "sementara, provisional", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 616,
+      "character": "机",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["つくえ"],
+      "words": [
+        { "word": "机", "reading": "つくえ", "meaning": "meja" }
+      ]
+    },
+    {
+      "id": 617,
+      "character": "冊",
+      "strokes": 5,
+      "onyomi": ["サツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜冊", "reading": "さつ", "meaning": "penghitung buku" },
+        { "word": "冊子", "reading": "さっし", "meaning": "buku kecil, pamflet" }
+      ]
+    },
+    {
+      "id": 618,
+      "character": "採",
+      "strokes": 11,
+      "onyomi": ["サイ"],
+      "kunyomi": ["とる"],
+      "words": [
+        { "word": "採点", "reading": "さいてん", "meaning": "penilaian" },
+        { "word": "採集", "reading": "さいしゅう", "meaning": "pengumpulan (koleksi)" }
+      ],
+      "extraWords": [
+        { "word": "採用", "reading": "さいよう", "meaning": "penerimaan, perekrutan" },
+        { "word": "採る", "reading": "とる", "meaning": "mengambil, memungut" }
+      ]
+    },
+    {
+      "id": 619,
+      "character": "濃",
+      "strokes": 16,
+      "onyomi": ["ノウ"],
+      "kunyomi": ["こい"],
+      "words": [
+        { "word": "濃度", "reading": "のうど", "meaning": "konsentrasi, kepekatan" },
+        { "word": "濃い", "reading": "こい", "meaning": "pekat, kental" }
+      ]
+    },
+    {
+      "id": 620,
+      "character": "筆",
+      "strokes": 12,
+      "onyomi": ["ヒツ"],
+      "kunyomi": ["ふで"],
+      "words": [
+        { "word": "鉛筆", "reading": "えんぴつ", "meaning": "pensil" },
+        { "word": "筆記", "reading": "ひっき", "meaning": "tulisan, mencatat" }
+      ],
+      "extraWords": [
+        { "word": "筆者", "reading": "ひっしゃ", "meaning": "penulis" },
+        { "word": "筆", "reading": "ふで", "meaning": "kuas tulis" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "明日のハイキングには必ず（　）とお弁当を持参すること。",
+      "optionA": "水筒",
+      "optionB": "筒",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この試験はマークシートではなく、（　）式です。",
+      "optionA": "前述",
+      "optionB": "記述",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "この論文は（　）が非常に良い。",
+      "optionA": "構内",
+      "optionB": "構成",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "彼は（　）が弱くて、お酒がやめられない。",
+      "optionA": "志望",
+      "optionB": "意志",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "夏休みの自由研究で植物（　）をした。",
+      "optionA": "採集",
+      "optionB": "採点",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "前を走っている車には（　）練習中と書いてある。",
+      "optionA": "仮免許",
+      "optionB": "仮採用",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "兄は新聞（　）です。",
+      "optionA": "筆者",
+      "optionB": "記者",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "ノートは（　）の引き出しに入っています。",
+      "optionA": "机",
+      "optionB": "筆",
+      "answer": "A"
+    }
+  ]
+}
