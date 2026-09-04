@@ -1,0 +1,280 @@
+{
+  "week": 6,
+  "day": 5,
+  "title": "文化財・展示",
+  "subtitle": "Cultural Property",
+  "translation": "Warisan Budaya dan Pameran",
+  "sceneDescription": "Pameran benda budaya di kuil menunjukkan patung Kannon（観音像）, patung Buddha kuil ○○ yang berstatus harta nasional（国宝）, patung perunggu raja ○○（銅像）, papan tanda menuju pagoda lima tingkat yang berstatus warisan budaya penting, serta petunjuk arah ke museum harta karun.\n\n Ruang pamer museum seni menunjukkan area pameran tetap（常設展）, petunjuk rute kunjungan（順路）, pameran khusus（特別展）, toko suvenir yang menjual replika, lukisan beserta riwayat singkat senimannya, seni cetak（版画）, patung dan kerajinan（彫刻・工芸品）, serta rak berisi terbitan museum.",
+  "signs": [
+    { "text": "重要文化財　五重の塔", "meaning": "Warisan budaya penting: Pagoda Lima Tingkat" },
+    { "text": "宝物館→", "meaning": "Museum harta karun →" },
+    { "text": "常設展", "meaning": "Pameran tetap" },
+    { "text": "順路→", "meaning": "Rute kunjungan →" },
+    { "text": "特別展", "meaning": "Pameran khusus" },
+    { "text": "複製あります", "meaning": "Tersedia replika (di toko suvenir)" },
+    { "text": "作者略歴", "meaning": "Riwayat singkat pembuat karya" }
+  ],
+  "kanjiList": [
+    {
+      "id": 527,
+      "character": "財",
+      "strokes": 10,
+      "onyomi": ["ザイ", "サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "財産", "reading": "ざいさん", "meaning": "harta, kekayaan" },
+        { "word": "財布", "reading": "さいふ", "meaning": "dompet", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "文化財", "reading": "ぶんかざい", "meaning": "warisan budaya" }
+      ]
+    },
+    {
+      "id": 528,
+      "character": "観",
+      "strokes": 18,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "観光", "reading": "かんこう", "meaning": "pariwisata" },
+        { "word": "観察", "reading": "かんさつ", "meaning": "pengamatan" }
+      ],
+      "extraWords": [
+        { "word": "観客", "reading": "かんきゃく", "meaning": "penonton" },
+        { "word": "観音", "reading": "かんのん", "meaning": "Dewi Kannon", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 529,
+      "character": "宝",
+      "strokes": 8,
+      "onyomi": ["ホウ"],
+      "kunyomi": ["たから"],
+      "words": [
+        { "word": "宝石", "reading": "ほうせき", "meaning": "permata" },
+        { "word": "国宝", "reading": "こくほう", "meaning": "harta nasional" }
+      ],
+      "extraWords": [
+        { "word": "宝物館", "reading": "ほうもつかん", "meaning": "museum harta karun" },
+        { "word": "宝物", "reading": "たからもの", "meaning": "harta" }
+      ]
+    },
+    {
+      "id": 530,
+      "character": "仏",
+      "strokes": 4,
+      "onyomi": ["ブツ"],
+      "kunyomi": ["ほとけ"],
+      "words": [
+        { "word": "仏教", "reading": "ぶっきょう", "meaning": "agama Buddha" },
+        { "word": "仏", "reading": "ほとけ", "meaning": "Buddha/mendiang" }
+      ],
+      "extraWords": [
+        { "word": "仏像", "reading": "ぶつぞう", "meaning": "patung Buddha" },
+        { "word": "日仏", "reading": "にちふつ", "meaning": "Jepang dan Prancis", "flag": "special" }
+      ]
+    },
+    {
+      "id": 531,
+      "character": "王",
+      "strokes": 4,
+      "onyomi": ["オウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "国王", "reading": "こくおう", "meaning": "raja" },
+        { "word": "王女", "reading": "おうじょ", "meaning": "putri raja" }
+      ],
+      "extraWords": [
+        { "word": "王子", "reading": "おうじ", "meaning": "pangeran" },
+        { "word": "女王", "reading": "じょおう", "meaning": "ratu" }
+      ]
+    },
+    {
+      "id": 532,
+      "character": "銅",
+      "strokes": 14,
+      "onyomi": ["ドウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "銅", "reading": "どう", "meaning": "tembaga/perunggu" }
+      ],
+      "extraWords": [
+        { "word": "銅像", "reading": "どうぞう", "meaning": "patung perunggu" }
+      ]
+    },
+    {
+      "id": 533,
+      "character": "塔",
+      "strokes": 12,
+      "onyomi": ["トウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "塔", "reading": "とう", "meaning": "menara, pagoda" },
+        { "word": "〜塔", "reading": "とう", "meaning": "pagoda/menara ..." }
+      ],
+      "extraWords": [
+        { "word": "五重の塔", "reading": "ごじゅうのとう", "meaning": "pagoda lima tingkat" }
+      ]
+    },
+    {
+      "id": 534,
+      "character": "絵",
+      "strokes": 12,
+      "onyomi": ["エ", "カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "絵", "reading": "え", "meaning": "gambar, lukisan" },
+        { "word": "絵画", "reading": "かいが", "meaning": "lukisan" }
+      ],
+      "extraWords": [
+        { "word": "絵の具", "reading": "えのぐ", "meaning": "cat lukis" }
+      ]
+    },
+    {
+      "id": 535,
+      "character": "略",
+      "strokes": 11,
+      "onyomi": ["リャク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "略す", "reading": "りゃくす", "meaning": "menyingkat" },
+        { "word": "省略", "reading": "しょうりゃく", "meaning": "penyingkatan" }
+      ],
+      "extraWords": [
+        { "word": "略歴", "reading": "りゃくれき", "meaning": "riwayat singkat" }
+      ]
+    },
+    {
+      "id": 536,
+      "character": "順",
+      "strokes": 12,
+      "onyomi": ["ジュン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "順", "reading": "じゅん", "meaning": "urutan" },
+        { "word": "順番", "reading": "じゅんばん", "meaning": "giliran, urutan" }
+      ],
+      "extraWords": [
+        { "word": "順路", "reading": "じゅんろ", "meaning": "rute kunjungan" },
+        { "word": "順調", "reading": "じゅんちょう", "meaning": "lancar, sesuai rencana" }
+      ]
+    },
+    {
+      "id": 537,
+      "character": "版",
+      "strokes": 8,
+      "onyomi": ["ハン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "出版", "reading": "しゅっぱん", "meaning": "penerbitan" },
+        { "word": "版画", "reading": "はんが", "meaning": "seni cetak, ukiran cetak" }
+      ],
+      "extraWords": [
+        { "word": "出版社", "reading": "しゅっぱんしゃ", "meaning": "penerbit" }
+      ]
+    },
+    {
+      "id": 538,
+      "character": "芸",
+      "strokes": 7,
+      "onyomi": ["ゲイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "芸術", "reading": "げいじゅつ", "meaning": "seni" },
+        { "word": "芸能", "reading": "げいのう", "meaning": "seni pertunjukan" }
+      ],
+      "extraWords": [
+        { "word": "工芸", "reading": "こうげい", "meaning": "kerajinan tangan" },
+        { "word": "園芸", "reading": "えんげい", "meaning": "berkebun" }
+      ]
+    },
+    {
+      "id": 539,
+      "character": "複",
+      "strokes": 14,
+      "onyomi": ["フク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "複製", "reading": "ふくせい", "meaning": "replika, duplikat" },
+        { "word": "複写", "reading": "ふくしゃ", "meaning": "fotokopi, salinan" }
+      ],
+      "extraWords": [
+        { "word": "複雑（な）", "reading": "ふくざつ", "meaning": "rumit, kompleks" },
+        { "word": "複数", "reading": "ふくすう", "meaning": "jamak, lebih dari satu" }
+      ]
+    },
+    {
+      "id": 540,
+      "character": "刊",
+      "strokes": 5,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "刊行物", "reading": "かんこうぶつ", "meaning": "terbitan, publikasi" },
+        { "word": "週刊", "reading": "しゅうかん", "meaning": "mingguan" }
+      ],
+      "extraWords": [
+        { "word": "朝刊", "reading": "ちょうかん", "meaning": "koran pagi" },
+        { "word": "月刊", "reading": "げっかん", "meaning": "bulanan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "このツアーの（　）コースにパリのエッフェル塔も入っています。",
+      "optionA": "観光",
+      "optionB": "観察",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この建物は（　）に指定されています。",
+      "optionA": "財産",
+      "optionB": "国宝",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "渋谷駅の犬の（　）の前で待ち合わせしましょう。",
+      "optionA": "銅像",
+      "optionB": "仏像",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "あの国には3人の（　）がいます。",
+      "optionA": "王子",
+      "optionB": "玉子",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "有名な絵画の（　）を部屋にかざる。",
+      "optionA": "複写",
+      "optionB": "複製",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "これに関する説明は複雑なため、ここでは（　）します。",
+      "optionA": "省略",
+      "optionB": "節約",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "出版社の（　）の案内を見て、注文する。",
+      "optionA": "順番",
+      "optionB": "刊行物",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "昨日、デパートでテレビによく出ている（　）人を見かけた。",
+      "optionA": "芸能",
+      "optionB": "役者",
+      "answer": "A"
+    }
+  ]
+}
