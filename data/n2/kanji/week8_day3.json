@@ -1,0 +1,267 @@
+{
+  "week": 8,
+  "day": 3,
+  "title": "見出し②",
+  "subtitle": "Headlines ②",
+  "translation": "Judul Berita ②",
+  "sceneDescription": "Rubrik topik berita ringkas: \"Masalah pencabutan larangan ekspor senjata ××\", \"Presdir SEC mengelola dana dalam jumlah besar\", \"Siapa pemenang persaingan penjualan bir?\", \"Timnas sepak bola Jepang kalah 4 kali beruntun\", \"Baseball SMA, ○× menang comeback!\", \"Pitcher Yamakawa raih kemenangan ke-2 musim ini\".\n\n Judul berita besar lainnya: \"Penyelidikan atas kematian prajurit tentara ○\", \"Kecelakaan terjatuh akibat angin kencang, 1 orang patah tulang\", PM: \"Tidak akan mengubah kebijakan dasar\", dan \"Kebakaran beruntun di Maruyoshi, toko yang luas dipenuhi jerit dan teriakan\".",
+  "signs": [
+    { "text": "トピックス", "meaning": "Topik (rubrik berita ringkas)" },
+    { "text": "サッカー日本代表4連敗", "meaning": "Timnas sepak bola Jepang kalah 4 kali beruntun" },
+    { "text": "高校野球　○×逆転優勝！", "meaning": "Baseball SMA, ○× menang comeback!" },
+    { "text": "○軍の兵士死亡で捜査", "meaning": "Penyelidikan atas kematian prajurit tentara ○" },
+    { "text": "首相「基本方針変えない」", "meaning": "PM: \"Tidak akan mengubah kebijakan dasar\"" },
+    { "text": "マルヨシ連続火災　広い店内、悲鳴と叫び声", "meaning": "Kebakaran beruntun di Maruyoshi, toko luas, jerit dan teriakan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 680,
+      "character": "武",
+      "strokes": 8,
+      "onyomi": ["ブ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "武器", "reading": "ぶき", "meaning": "senjata" },
+        { "word": "武士", "reading": "ぶし", "meaning": "samurai, ksatria" }
+      ],
+      "extraWords": [
+        { "word": "武力", "reading": "ぶりょく", "meaning": "kekuatan militer" }
+      ]
+    },
+    {
+      "id": 681,
+      "character": "巨",
+      "strokes": 5,
+      "onyomi": ["キョ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "巨大（な）", "reading": "きょだい", "meaning": "raksasa, sangat besar" }
+      ],
+      "extraWords": [
+        { "word": "巨額", "reading": "きょがく", "meaning": "jumlah sangat besar" }
+      ]
+    },
+    {
+      "id": 682,
+      "character": "競",
+      "strokes": 20,
+      "onyomi": ["キョウ", "ケイ"],
+      "kunyomi": ["きそう"],
+      "words": [
+        { "word": "競争", "reading": "きょうそう", "meaning": "kompetisi, persaingan" },
+        { "word": "競う", "reading": "きそう", "meaning": "bersaing", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "競馬", "reading": "けいば", "meaning": "pacuan kuda", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 683,
+      "character": "敗",
+      "strokes": 11,
+      "onyomi": ["ハイ"],
+      "kunyomi": ["やぶれる"],
+      "words": [
+        { "word": "失敗", "reading": "しっぱい", "meaning": "kegagalan" },
+        { "word": "敗れる", "reading": "やぶれる", "meaning": "kalah", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "連敗", "reading": "れんぱい", "meaning": "kalah beruntun" }
+      ]
+    },
+    {
+      "id": 684,
+      "character": "逆",
+      "strokes": 9,
+      "onyomi": ["ギャク"],
+      "kunyomi": ["さからう"],
+      "words": [
+        { "word": "逆", "reading": "ぎゃく", "meaning": "kebalikan" },
+        { "word": "逆さ", "reading": "さかさ", "meaning": "terbalik", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "逆転", "reading": "ぎゃくてん", "meaning": "pembalikan (keadaan)" },
+        { "word": "逆らう", "reading": "さからう", "meaning": "melawan, menentang", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 685,
+      "character": "勝",
+      "strokes": 12,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["かつ"],
+      "words": [
+        { "word": "優勝", "reading": "ゆうしょう", "meaning": "juara" },
+        { "word": "勝敗", "reading": "しょうはい", "meaning": "menang-kalah" }
+      ],
+      "extraWords": [
+        { "word": "勝負", "reading": "しょうぶ", "meaning": "pertandingan, adu" },
+        { "word": "勝つ", "reading": "かつ", "meaning": "menang" }
+      ]
+    },
+    {
+      "id": 686,
+      "character": "投",
+      "strokes": 7,
+      "onyomi": ["トウ"],
+      "kunyomi": ["なげる"],
+      "words": [
+        { "word": "投手", "reading": "とうしゅ", "meaning": "pelempar (baseball)" },
+        { "word": "投資", "reading": "とうし", "meaning": "investasi" }
+      ],
+      "extraWords": [
+        { "word": "投書", "reading": "とうしょ", "meaning": "surat pembaca" },
+        { "word": "投げる", "reading": "なげる", "meaning": "melempar" }
+      ]
+    },
+    {
+      "id": 687,
+      "character": "軍",
+      "strokes": 9,
+      "onyomi": ["グン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "軍", "reading": "ぐん", "meaning": "militer, angkatan bersenjata" },
+        { "word": "軍隊", "reading": "ぐんたい", "meaning": "pasukan militer" }
+      ],
+      "extraWords": [
+        { "word": "〜軍", "reading": "ぐん", "meaning": "pasukan/tentara ..." }
+      ]
+    },
+    {
+      "id": 688,
+      "character": "兵",
+      "strokes": 7,
+      "onyomi": ["ヘイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "兵士", "reading": "へいし", "meaning": "prajurit" },
+        { "word": "兵隊", "reading": "へいたい", "meaning": "prajurit, tentara" }
+      ],
+      "extraWords": [
+        { "word": "〜兵", "reading": "へい", "meaning": "prajurit ..." }
+      ]
+    },
+    {
+      "id": 689,
+      "character": "捜",
+      "strokes": 10,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["さがす"],
+      "words": [
+        { "word": "捜査", "reading": "そうさ", "meaning": "penyelidikan" },
+        { "word": "捜す", "reading": "さがす", "meaning": "mencari" }
+      ]
+    },
+    {
+      "id": 690,
+      "character": "倒",
+      "strokes": 10,
+      "onyomi": ["トウ"],
+      "kunyomi": ["たおれる", "たおす"],
+      "words": [
+        { "word": "転倒", "reading": "てんとう", "meaning": "terjatuh, terbalik" },
+        { "word": "倒れる", "reading": "たおれる", "meaning": "roboh, tumbang" }
+      ],
+      "extraWords": [
+        { "word": "面倒", "reading": "めんどう", "meaning": "merepotkan / perhatian, perawatan" },
+        { "word": "倒す", "reading": "たおす", "meaning": "merobohkan, mengalahkan" }
+      ]
+    },
+    {
+      "id": 691,
+      "character": "骨",
+      "strokes": 10,
+      "onyomi": ["コツ"],
+      "kunyomi": ["ほね"],
+      "words": [
+        { "word": "骨折", "reading": "こっせつ", "meaning": "patah tulang" },
+        { "word": "骨", "reading": "ほね", "meaning": "tulang" }
+      ]
+    },
+    {
+      "id": 692,
+      "character": "針",
+      "strokes": 10,
+      "onyomi": ["シン"],
+      "kunyomi": ["はり"],
+      "words": [
+        { "word": "方針", "reading": "ほうしん", "meaning": "kebijakan, arah tindakan" },
+        { "word": "針", "reading": "はり", "meaning": "jarum", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "針路", "reading": "しんろ", "meaning": "arah/haluan" },
+        { "word": "針金", "reading": "はりがね", "meaning": "kawat" }
+      ]
+    },
+    {
+      "id": 693,
+      "character": "叫",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["さけぶ"],
+      "words": [
+        { "word": "叫び", "reading": "さけび", "meaning": "teriakan" },
+        { "word": "叫ぶ", "reading": "さけぶ", "meaning": "berteriak" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "（　）魚がどこかの海岸で捕れたそうだ。",
+      "optionA": "巨額",
+      "optionB": "巨大",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "（　）がつかず、試合を延長する。",
+      "optionA": "勝負",
+      "optionB": "競争",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "新聞に意見を（　）する。",
+      "optionA": "投書",
+      "optionB": "投資",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "（　）ではなく、話し合いで解決したい。",
+      "optionA": "武士",
+      "optionB": "武力",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "警察は事件の（　）を進めている。",
+      "optionA": "捜査",
+      "optionB": "針路",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "強風で傘の骨が（　）。",
+      "optionA": "折れた",
+      "optionB": "倒れた",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "救急車を（　）ください。",
+      "optionA": "叫んで",
+      "optionB": "呼んで",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "この魚は頭も（　）も全部食べられます。",
+      "optionA": "針",
+      "optionB": "骨",
+      "answer": "B"
+    }
+  ]
+}
