@@ -1,0 +1,248 @@
+{
+  "week": 7,
+  "day": 5,
+  "title": "交通情報",
+  "subtitle": "Traffic Information",
+  "translation": "Informasi Lalu Lintas",
+  "sceneDescription": "Papan informasi pesawat: \"Penerbangan PAS407 dibatalkan karena masalah mesin.\" \"PNS105 dibatalkan karena kerusakan pintu.\" \"PAS410 mengubah tujuan pendaratan karena angin kencang dan angin silang, mendarat di Bandara Takamatsu.\" Papan informasi kapal: \"Kapal cepat Kamome Maru dibatalkan karena cuaca buruk.\"\n\n Papan informasi kereta: \"Jadwal kereta terganggu karena kecelakaan orang tertabrak. Mohon dimaklumi.\" \"Diperkirakan akan ramai, jadi silakan beli tiket pulang lebih dulu.\" \"Karena kenaikan air sungai akibat hujan lebat, jalur kereta antara Stasiun Kawanaka dan Mizumori dihentikan sepanjang hari. Ada transportasi pengganti bus, silakan digunakan.\"",
+  "signs": [
+    { "text": "エンジントラブルのためPAS407便欠航", "meaning": "Penerbangan PAS407 dibatalkan karena masalah mesin" },
+    { "text": "強風・横風のため到着地を変更、高松空港に着陸", "meaning": "Tujuan diubah karena angin kencang, mendarat di Bandara Takamatsu" },
+    { "text": "悪天候のため高速船かもめ丸欠航", "meaning": "Kapal cepat Kamome Maru dibatalkan karena cuaca buruk" },
+    { "text": "人身事故のためダイヤが乱れています。", "meaning": "Jadwal kereta terganggu karena kecelakaan orang tertabrak." },
+    { "text": "大雨による河川の増水のため運転を見合わせております。バスによる代行輸送を行っております。", "meaning": "Perjalanan dihentikan karena kenaikan air sungai akibat hujan lebat, ada transportasi pengganti bus." }
+  ],
+  "kanjiList": [
+    {
+      "id": 621,
+      "character": "航",
+      "strokes": 10,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "航空", "reading": "こうくう", "meaning": "penerbangan" },
+        { "word": "欠航", "reading": "けっこう", "meaning": "pembatalan penerbangan/pelayaran" }
+      ],
+      "extraWords": [
+        { "word": "運航", "reading": "うんこう", "meaning": "operasi (kapal/pesawat)" }
+      ]
+    },
+    {
+      "id": 622,
+      "character": "陸",
+      "strokes": 11,
+      "onyomi": ["リク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "陸", "reading": "りく", "meaning": "daratan" },
+        { "word": "大陸", "reading": "たいりく", "meaning": "benua" }
+      ],
+      "extraWords": [
+        { "word": "着陸", "reading": "ちゃくりく", "meaning": "pendaratan" },
+        { "word": "陸上", "reading": "りくじょう", "meaning": "di darat" }
+      ]
+    },
+    {
+      "id": 623,
+      "character": "損",
+      "strokes": 13,
+      "onyomi": ["ソン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "損", "reading": "そん", "meaning": "kerugian" },
+        { "word": "損害", "reading": "そんがい", "meaning": "kerusakan, kerugian", "note": "→ lihat kanji #676 (害)" }
+      ],
+      "extraWords": [
+        { "word": "損傷", "reading": "そんしょう", "meaning": "kerusakan" },
+        { "word": "損得", "reading": "そんとく", "meaning": "untung rugi" }
+      ]
+    },
+    {
+      "id": 624,
+      "character": "候",
+      "strokes": 10,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "気候", "reading": "きこう", "meaning": "iklim" }
+      ],
+      "extraWords": [
+        { "word": "天候", "reading": "てんこう", "meaning": "cuaca" }
+      ]
+    },
+    {
+      "id": 625,
+      "character": "船",
+      "strokes": 11,
+      "onyomi": ["セン"],
+      "kunyomi": ["ふね"],
+      "words": [
+        { "word": "風船", "reading": "ふうせん", "meaning": "balon" },
+        { "word": "船", "reading": "ふね", "meaning": "kapal, perahu" }
+      ],
+      "extraWords": [
+        { "word": "造船", "reading": "ぞうせん", "meaning": "pembuatan kapal" },
+        { "word": "船便", "reading": "ふなびん", "meaning": "pengiriman via kapal laut", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 626,
+      "character": "丸",
+      "strokes": 3,
+      "onyomi": [],
+      "kunyomi": ["まる", "まるい"],
+      "words": [
+        { "word": "丸", "reading": "まる", "meaning": "lingkaran" },
+        { "word": "丸い", "reading": "まるい", "meaning": "bulat" }
+      ],
+      "extraWords": [
+        { "word": "〜丸", "reading": "まる", "meaning": "(nama kapal)" }
+      ]
+    },
+    {
+      "id": 627,
+      "character": "混",
+      "strokes": 11,
+      "onyomi": ["コン"],
+      "kunyomi": ["まじる", "まざる", "まぜる"],
+      "words": [
+        { "word": "混雑", "reading": "こんざつ", "meaning": "kepadatan, kemacetan" },
+        { "word": "かき混ぜる", "reading": "かきまぜる", "meaning": "mengaduk" }
+      ],
+      "extraWords": [
+        { "word": "混じる", "reading": "まじる", "meaning": "tercampur" },
+        { "word": "混ざる", "reading": "まざる", "meaning": "bercampur" }
+      ]
+    },
+    {
+      "id": 628,
+      "character": "想",
+      "strokes": 13,
+      "onyomi": ["ソウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予想", "reading": "よそう", "meaning": "prediksi" },
+        { "word": "想像", "reading": "そうぞう", "meaning": "imajinasi, bayangan" }
+      ],
+      "extraWords": [
+        { "word": "感想", "reading": "かんそう", "meaning": "kesan, pendapat" },
+        { "word": "理想", "reading": "りそう", "meaning": "ideal, cita-cita" }
+      ]
+    },
+    {
+      "id": 629,
+      "character": "故",
+      "strokes": 9,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "事故", "reading": "じこ", "meaning": "kecelakaan" },
+        { "word": "故郷", "reading": "こきょう", "meaning": "kampung halaman" }
+      ],
+      "extraWords": [
+        { "word": "故障", "reading": "こしょう", "meaning": "kerusakan (mesin)" }
+      ]
+    },
+    {
+      "id": 630,
+      "character": "乱",
+      "strokes": 7,
+      "onyomi": ["ラン"],
+      "kunyomi": ["みだれる"],
+      "words": [
+        { "word": "混乱", "reading": "こんらん", "meaning": "kekacauan" },
+        { "word": "乱れる", "reading": "みだれる", "meaning": "kacau, tidak teratur", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "乱暴（な）", "reading": "らんぼう", "meaning": "kasar, brutal", "note": "→ lihat kanji #663 (暴)" }
+      ]
+    },
+    {
+      "id": 631,
+      "character": "河",
+      "strokes": 8,
+      "onyomi": ["カ"],
+      "kunyomi": ["かわ"],
+      "words": [
+        { "word": "運河", "reading": "うんが", "meaning": "kanal" },
+        { "word": "河", "reading": "かわ", "meaning": "sungai" }
+      ],
+      "extraWords": [
+        { "word": "河川", "reading": "かせん", "meaning": "sungai", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 632,
+      "character": "輸",
+      "strokes": 16,
+      "onyomi": ["ユ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "輸出", "reading": "ゆしゅつ", "meaning": "ekspor" },
+        { "word": "輸血", "reading": "ゆけつ", "meaning": "transfusi darah" }
+      ],
+      "extraWords": [
+        { "word": "輸入", "reading": "ゆにゅう", "meaning": "impor" },
+        { "word": "輸送", "reading": "ゆそう", "meaning": "pengangkutan, transportasi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "たくさんの（　）が空高く舞い上がる。",
+      "optionA": "風船",
+      "optionB": "造船",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "船便は遅いから（　）便でお願いします。",
+      "optionA": "航空",
+      "optionB": "空港",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "（　）の気候は降水量が少ない。",
+      "optionA": "陸上",
+      "optionB": "大陸",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "火事や事故などに備えて（　）保険に入る。",
+      "optionA": "損害",
+      "optionB": "公害",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "現金（　）車が事故を起こした。",
+      "optionA": "郵送",
+      "optionB": "輸送",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "昼休みで飲食店はどこも（　）している。",
+      "optionA": "混雑",
+      "optionB": "混乱",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　）と現実にはギャップがある。",
+      "optionA": "理想",
+      "optionB": "感想",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "人身事故でダイヤが（　）います。",
+      "optionA": "乱れて",
+      "optionB": "混じって",
+      "answer": "A"
+    }
+  ]
+}
