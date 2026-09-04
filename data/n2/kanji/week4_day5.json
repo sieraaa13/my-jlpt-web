@@ -1,0 +1,256 @@
+{
+  "week": 4,
+  "day": 5,
+  "title": "答案用紙",
+  "subtitle": "Answer Sheets",
+  "translation": "Lembar Jawaban",
+  "sceneDescription": "Kumpulan kalimat instruksi yang biasa muncul di lembar jawaban ujian（答案用紙）, misalnya: \"Bacalah kalimat berikut, lalu pilih jawaban paling tepat dari pilihan 1-4\", \"Perbaiki kesalahan pada bagian yang digarisbawahi\", \"Ubah masing-masing kata kerja berikut menjadi bentuk yang sesuai, sesuai contoh\", \"Tulis partikel yang paling tepat di dalam kurung\", \"Pilih kata keterangan yang paling sesuai dari 1-4, lalu lingkari hurufnya\", dan \"Tulis lawan kata dari masing-masing kata berikut.\"",
+  "signs": [],
+  "kanjiList": [
+    {
+      "id": 326,
+      "character": "次",
+      "strokes": 6,
+      "onyomi": ["ジ", "シ"],
+      "kunyomi": ["つぎ"],
+      "words": [
+        { "word": "一次試験", "reading": "いちじしけん", "meaning": "ujian tahap pertama" },
+        { "word": "次第", "reading": "しだい", "meaning": "begitu ... / tergantung pada ...", "flag": "attention" }
+      ],
+      "extraWords": [
+        { "word": "次", "reading": "つぎ", "meaning": "berikutnya" }
+      ]
+    },
+    {
+      "id": 327,
+      "character": "章",
+      "strokes": 11,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "文章", "reading": "ぶんしょう", "meaning": "kalimat, karangan" }
+      ],
+      "extraWords": [
+        { "word": "章", "reading": "しょう", "meaning": "bab" }
+      ]
+    },
+    {
+      "id": 328,
+      "character": "対",
+      "strokes": 7,
+      "onyomi": ["タイ", "ツイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "対する", "reading": "たいする", "meaning": "terhadap" },
+        { "word": "〜対〜", "reading": "たい", "meaning": "... versus ..." },
+        { "word": "対", "reading": "つい", "meaning": "pasangan, sepasang" }
+      ],
+      "extraWords": [
+        { "word": "反対", "reading": "はんたい", "meaning": "lawan, oposisi" },
+        { "word": "対照的（な）", "reading": "たいしょうてき", "meaning": "kontras", "note": "→ lihat kanji #421 (的)" }
+      ]
+    },
+    {
+      "id": 329,
+      "character": "最",
+      "strokes": 12,
+      "onyomi": ["サイ"],
+      "kunyomi": ["もっとも"],
+      "words": [
+        { "word": "最初", "reading": "さいしょ", "meaning": "awal, pertama" },
+        { "word": "最近", "reading": "さいきん", "meaning": "baru-baru ini" }
+      ],
+      "extraWords": [
+        { "word": "最後", "reading": "さいご", "meaning": "akhir, terakhir" },
+        { "word": "最も", "reading": "もっとも", "meaning": "paling", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 330,
+      "character": "適",
+      "strokes": 14,
+      "onyomi": ["テキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "適当（な）", "reading": "てきとう", "meaning": "pantas, sesuai" },
+        { "word": "適する", "reading": "てきする", "meaning": "cocok, sesuai untuk" }
+      ],
+      "extraWords": [
+        { "word": "適切（な）", "reading": "てきせつ", "meaning": "tepat, sesuai" },
+        { "word": "適度（な）", "reading": "てきど", "meaning": "moderat, secukupnya" }
+      ]
+    },
+    {
+      "id": 331,
+      "character": "誤",
+      "strokes": 14,
+      "onyomi": ["ゴ"],
+      "kunyomi": ["あやまる"],
+      "words": [
+        { "word": "誤解", "reading": "ごかい", "meaning": "kesalahpahaman", "note": "→ lihat kanji #512 (解)" },
+        { "word": "誤り", "reading": "あやまり", "meaning": "kesalahan", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 332,
+      "character": "直",
+      "strokes": 8,
+      "onyomi": ["チョク", "ジキ"],
+      "kunyomi": ["なおす", "なおる", "ただちに"],
+      "words": [
+        { "word": "直線", "reading": "ちょくせん", "meaning": "garis lurus" },
+        { "word": "直す", "reading": "なおす", "meaning": "memperbaiki" },
+        { "word": "直ちに", "reading": "ただちに", "meaning": "segera" }
+      ],
+      "extraWords": [
+        { "word": "正直（な）", "reading": "しょうじき", "meaning": "jujur" },
+        { "word": "素直（な）", "reading": "すなお", "meaning": "penurut, apa adanya", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 333,
+      "character": "例",
+      "strokes": 8,
+      "onyomi": ["レイ"],
+      "kunyomi": ["たとえる"],
+      "words": [
+        { "word": "例", "reading": "れい", "meaning": "contoh" },
+        { "word": "実例", "reading": "じつれい", "meaning": "contoh nyata", "note": "→ lihat kanji #451 (実)" },
+        { "word": "例えば", "reading": "たとえば", "meaning": "misalnya" }
+      ],
+      "extraWords": [
+        { "word": "例外", "reading": "れいがい", "meaning": "pengecualian" },
+        { "word": "例える", "reading": "たとえる", "meaning": "mengibaratkan" }
+      ]
+    },
+    {
+      "id": 334,
+      "character": "詞",
+      "strokes": 12,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "名詞", "reading": "めいし", "meaning": "kata benda" },
+        { "word": "自動詞", "reading": "じどうし", "meaning": "kata kerja intransitif" }
+      ],
+      "extraWords": [
+        { "word": "動詞", "reading": "どうし", "meaning": "kata kerja" },
+        { "word": "他動詞", "reading": "たどうし", "meaning": "kata kerja transitif" }
+      ]
+    },
+    {
+      "id": 335,
+      "character": "形",
+      "strokes": 7,
+      "onyomi": ["ケイ", "ギョウ"],
+      "kunyomi": ["かたち"],
+      "words": [
+        { "word": "形式", "reading": "けいしき", "meaning": "format, formalitas" },
+        { "word": "図形", "reading": "ずけい", "meaning": "diagram, bangun (geometri)" },
+        { "word": "形", "reading": "かたち", "meaning": "bentuk, wujud" }
+      ],
+      "extraWords": [
+        { "word": "形容詞", "reading": "けいようし", "meaning": "kata sifat" },
+        { "word": "人形", "reading": "にんぎょう", "meaning": "boneka", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 336,
+      "character": "助",
+      "strokes": 7,
+      "onyomi": ["ジョ"],
+      "kunyomi": ["たすかる", "たすける"],
+      "words": [
+        { "word": "救助", "reading": "きゅうじょ", "meaning": "pertolongan, penyelamatan" },
+        { "word": "助手", "reading": "じょしゅ", "meaning": "asisten" },
+        { "word": "助かる", "reading": "たすかる", "meaning": "tertolong, terbantu" }
+      ],
+      "extraWords": [
+        { "word": "助詞", "reading": "じょし", "meaning": "partikel tata bahasa" },
+        { "word": "助ける", "reading": "たすける", "meaning": "menolong" }
+      ]
+    },
+    {
+      "id": 337,
+      "character": "副",
+      "strokes": 11,
+      "onyomi": ["フク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "副詞", "reading": "ふくし", "meaning": "kata keterangan" }
+      ],
+      "extraWords": [
+        { "word": "副〜", "reading": "ふく", "meaning": "wakil ..." }
+      ]
+    },
+    {
+      "id": 338,
+      "character": "囲",
+      "strokes": 7,
+      "onyomi": ["イ"],
+      "kunyomi": ["かこむ"],
+      "words": [
+        { "word": "周囲", "reading": "しゅうい", "meaning": "sekeliling, lingkungan" },
+        { "word": "囲む", "reading": "かこむ", "meaning": "mengelilingi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "その小説の最初の（　）を読み終えたところです。",
+      "optionA": "章",
+      "optionB": "部",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "健康のために（　）な運動をするようにしています。",
+      "optionA": "準備",
+      "optionB": "適度",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "明日行くかどうかは天気（　）です。",
+      "optionA": "次第",
+      "optionB": "次第に",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "（　）安全な場所に移動してください。",
+      "optionA": "正直に",
+      "optionB": "直ちに",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "周囲の住民はマンションの建設に（　）している。",
+      "optionA": "違反",
+      "optionB": "反対",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　）も重要だが、内容はもっと重要だ。",
+      "optionA": "形式",
+      "optionB": "図形",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "副社長がよく働いてくれるので、社長は（　）いる。",
+      "optionA": "助けて",
+      "optionB": "助かって",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "彼女は花に（　）白いユリです。",
+      "optionA": "例えば",
+      "optionB": "例えると",
+      "answer": "B"
+    }
+  ]
+}
