@@ -1,0 +1,268 @@
+{
+  "week": 7,
+  "day": 2,
+  "title": "掲示板・地域新聞",
+  "subtitle": "Notice Boards, Local Newspapers",
+  "translation": "Papan Pengumuman dan Koran Daerah",
+  "sceneDescription": "Papan pengumuman warga: \"Menawarkan jasa les privat. Telp... Mahasiswa Universitas Pendidikan Tsukuba, Honda.\" dan \"Sedang mencari kucing hilang. Warna abu-abu, berkalung merah. Hilang sejak malam tanggal 3. Yang melihat harap hubungi telp... Toyokawa.\"\n\n Koran daerah bagian komunitas: info acara pertunjukan ke-10 kelompok teater Sakura \"Ayo Menari!\" di balai musik kota; anak anjing gratis untuk diberikan; klub berkuda mencari anggota baru (pemula diterima); dan komunitas pengasuhan anak mengajak para ibu baru untuk berkumpul.",
+  "signs": [
+    { "text": "家庭教師します", "meaning": "Menawarkan jasa les privat" },
+    { "text": "猫を探しています。灰色。赤い首輪。", "meaning": "Mencari kucing hilang. Warna abu-abu. Kalung merah." },
+    { "text": "イベント情報：劇団さくら　第10回公演「踊ろう！」", "meaning": "Info acara: Kelompok teater Sakura, pertunjukan ke-10 \"Ayo Menari!\"" },
+    { "text": "差し上げます：子犬。", "meaning": "Diberikan gratis: anak anjing." },
+    { "text": "メンバー募集：乗馬クラブ　馬の好きな方！初心者歓迎！", "meaning": "Cari anggota: Klub berkuda, untuk pecinta kuda! Pemula diterima!" },
+    { "text": "育児サークル　新米ママたち集まれ！", "meaning": "Komunitas parenting, ajak para ibu baru berkumpul!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 579,
+      "character": "庭",
+      "strokes": 10,
+      "onyomi": ["テイ"],
+      "kunyomi": ["にわ"],
+      "words": [
+        { "word": "校庭", "reading": "こうてい", "meaning": "lapangan sekolah" },
+        { "word": "庭", "reading": "にわ", "meaning": "halaman, taman" }
+      ],
+      "extraWords": [
+        { "word": "家庭", "reading": "かてい", "meaning": "rumah tangga, keluarga" }
+      ]
+    },
+    {
+      "id": 580,
+      "character": "育",
+      "strokes": 8,
+      "onyomi": ["イク"],
+      "kunyomi": ["そだつ", "そだてる"],
+      "words": [
+        { "word": "教育", "reading": "きょういく", "meaning": "pendidikan" },
+        { "word": "育児", "reading": "いくじ", "meaning": "pengasuhan anak" },
+        { "word": "育つ", "reading": "そだつ", "meaning": "tumbuh besar" }
+      ],
+      "extraWords": [
+        { "word": "体育", "reading": "たいいく", "meaning": "pendidikan jasmani" },
+        { "word": "育てる", "reading": "そだてる", "meaning": "membesarkan, mengasuh" }
+      ]
+    },
+    {
+      "id": 581,
+      "character": "猫",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["ねこ"],
+      "words": [
+        { "word": "猫", "reading": "ねこ", "meaning": "kucing" }
+      ]
+    },
+    {
+      "id": 582,
+      "character": "探",
+      "strokes": 11,
+      "onyomi": ["タン"],
+      "kunyomi": ["さがす", "さぐる"],
+      "words": [
+        { "word": "探検", "reading": "たんけん", "meaning": "eksplorasi, ekspedisi" },
+        { "word": "探す", "reading": "さがす", "meaning": "mencari" }
+      ],
+      "extraWords": [
+        { "word": "探る", "reading": "さぐる", "meaning": "menyelidiki, meraba", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 583,
+      "character": "灰",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["はい"],
+      "words": [
+        { "word": "灰", "reading": "はい", "meaning": "abu" },
+        { "word": "灰皿", "reading": "はいざら", "meaning": "asbak" }
+      ],
+      "extraWords": [
+        { "word": "灰色", "reading": "はいいろ", "meaning": "warna abu-abu" }
+      ]
+    },
+    {
+      "id": 584,
+      "character": "輪",
+      "strokes": 15,
+      "onyomi": ["リン"],
+      "kunyomi": ["わ"],
+      "words": [
+        { "word": "車輪", "reading": "しゃりん", "meaning": "roda kendaraan" },
+        { "word": "指輪", "reading": "ゆびわ", "meaning": "cincin" }
+      ],
+      "extraWords": [
+        { "word": "首輪", "reading": "くびわ", "meaning": "kalung leher (hewan)" }
+      ]
+    },
+    {
+      "id": 585,
+      "character": "晩",
+      "strokes": 12,
+      "onyomi": ["バン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "今晩", "reading": "こんばん", "meaning": "malam ini" },
+        { "word": "毎晩", "reading": "まいばん", "meaning": "setiap malam" }
+      ],
+      "extraWords": [
+        { "word": "晩御飯", "reading": "ばんごはん", "meaning": "makan malam" }
+      ]
+    },
+    {
+      "id": 586,
+      "character": "劇",
+      "strokes": 15,
+      "onyomi": ["ゲキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "劇", "reading": "げき", "meaning": "drama, pertunjukan" },
+        { "word": "劇場", "reading": "げきじょう", "meaning": "gedung teater" }
+      ],
+      "extraWords": [
+        { "word": "劇団", "reading": "げきだん", "meaning": "kelompok teater" },
+        { "word": "演劇", "reading": "えんげき", "meaning": "seni drama" }
+      ]
+    },
+    {
+      "id": 587,
+      "character": "公",
+      "strokes": 4,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "公園", "reading": "こうえん", "meaning": "taman" },
+        { "word": "公共", "reading": "こうきょう", "meaning": "umum, publik" }
+      ],
+      "extraWords": [
+        { "word": "公演", "reading": "こうえん", "meaning": "pertunjukan publik" },
+        { "word": "公務員", "reading": "こうむいん", "meaning": "pegawai negeri" }
+      ]
+    },
+    {
+      "id": 588,
+      "character": "踊",
+      "strokes": 14,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["おどる", "おどり"],
+      "words": [
+        { "word": "日本舞踊", "reading": "にほんぶよう", "meaning": "tari tradisional Jepang" },
+        { "word": "踊る", "reading": "おどる", "meaning": "menari" }
+      ],
+      "extraWords": [
+        { "word": "踊り", "reading": "おどり", "meaning": "tarian" }
+      ]
+    },
+    {
+      "id": 589,
+      "character": "種",
+      "strokes": 14,
+      "onyomi": ["シュ"],
+      "kunyomi": ["たね"],
+      "words": [
+        { "word": "種類", "reading": "しゅるい", "meaning": "jenis, macam" },
+        { "word": "雑種", "reading": "ざっしゅ", "meaning": "campuran, ras campuran" }
+      ],
+      "extraWords": [
+        { "word": "人種", "reading": "じんしゅ", "meaning": "ras manusia" },
+        { "word": "種", "reading": "たね", "meaning": "biji, benih", "flag": "attention" }
+      ]
+    },
+    {
+      "id": 590,
+      "character": "匹",
+      "strokes": 4,
+      "onyomi": ["ヒツ"],
+      "kunyomi": ["ひき"],
+      "words": [
+        { "word": "匹敵する", "reading": "ひってきする", "meaning": "setara, sebanding" },
+        { "word": "〜匹", "reading": "ひき", "meaning": "penghitung hewan kecil" }
+      ]
+    },
+    {
+      "id": 591,
+      "character": "渡",
+      "strokes": 12,
+      "onyomi": ["ト"],
+      "kunyomi": ["わたる", "わたす"],
+      "words": [
+        { "word": "渡米", "reading": "とべい", "meaning": "pergi ke Amerika" },
+        { "word": "渡す", "reading": "わたす", "meaning": "menyerahkan" }
+      ],
+      "extraWords": [
+        { "word": "渡る", "reading": "わたる", "meaning": "menyeberang" },
+        { "word": "渡辺", "reading": "わたなべ", "meaning": "Watanabe (nama orang)" }
+      ]
+    },
+    {
+      "id": 592,
+      "character": "馬",
+      "strokes": 10,
+      "onyomi": ["バ"],
+      "kunyomi": ["うま"],
+      "words": [
+        { "word": "乗馬", "reading": "じょうば", "meaning": "menunggang kuda" },
+        { "word": "馬", "reading": "うま", "meaning": "kuda" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "デパートで気に入った指輪を（　）。",
+      "optionA": "探す",
+      "optionB": "探る",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "地域全体で子供たちを（　）ましょう。",
+      "optionA": "育ち",
+      "optionB": "育て",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "多くの駅では、禁煙になって（　）がなくなった。",
+      "optionA": "灰",
+      "optionB": "灰皿",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "朝早くから（　）を走っているのは運動部の生徒です。",
+      "optionA": "校庭",
+      "optionB": "家庭",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "（　）の場では互いにルールを守ろう。",
+      "optionA": "公共",
+      "optionB": "公園",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "歩行者は横断歩道を（　）ましょう。",
+      "optionA": "渡し",
+      "optionB": "渡り",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "この店ではたくさんの（　）の花の種を売っている。",
+      "optionA": "種類",
+      "optionB": "書類",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "人気のある劇団の（　）を見に行く。",
+      "optionA": "講演",
+      "optionB": "公演",
+      "answer": "B"
+    }
+  ]
+}
