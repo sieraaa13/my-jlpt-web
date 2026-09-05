@@ -11,6 +11,7 @@ import w1d3 from "./week1_day3.json";
 import w1d4 from "./week1_day4.json";
 import w1d5 from "./week1_day5.json";
 import w1d6 from "./week1_day6.json";
+import w1d7 from "./week1_day7.json";
 
 export type { KanjiSignLessonDay, N3KanjiTestDay };
 
@@ -25,7 +26,11 @@ export const n3KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> 
   },
 };
 
-export const n3KanjiTests: Record<string, Record<string, N3KanjiTestDay>> = {};
+export const n3KanjiTests: Record<string, Record<string, N3KanjiTestDay>> = {
+  "1": {
+    "7": w1d7 as unknown as N3KanjiTestDay,
+  },
+};
 
 export function getOrganizedN3KanjiLessons() {
   const weeks: Array<{ week: string; days: Array<{ day: string; title: string; subtitle: string }> }> = [];

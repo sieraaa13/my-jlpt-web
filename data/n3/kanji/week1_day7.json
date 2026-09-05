@@ -1,0 +1,149 @@
+{
+  "week": 1,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 1 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "「飛び出し注意」と書いてあります。", "target": "飛び出し", "choices": ["よびだしちゅうい", "とびだしちゅうい", "とびだしじゅうい", "よびだしじゅうい"], "answer": "とびだしちゅうい" },
+    { "sentence": "この時計は正確です。", "target": "正確", "choices": ["せいかく", "せっかく", "しょうかく", "しょうがく"], "answer": "せいかく" },
+    { "sentence": "横断歩道をわたりましょう。", "target": "横断", "choices": ["こうだん", "おうだん", "きんだん", "そうだん"], "answer": "おうだん" },
+    { "sentence": "このなべは鉄で作られています。", "target": "鉄", "choices": ["しつ", "ねつ", "れつ", "てつ"], "answer": "てつ" },
+    { "sentence": "優先席ではけいたい電話を使わないでください。", "target": "優先", "choices": ["うせん", "にゅうせん", "ゆうせん", "よやく"], "answer": "ゆうせん" },
+    { "sentence": "料金は降りるときにはらってください。", "target": "降りる", "choices": ["のりる", "ふりる", "こりる", "おりる"], "answer": "おりる" },
+    { "sentence": "関係者以外入らないでください。", "target": "関係者", "choices": ["かんけいしゃ", "かんれんしゃ", "けいけんしゃ", "かんきょうしゃ"], "answer": "かんけいしゃ" },
+    { "sentence": "確認ボタンを押します。", "target": "確認", "choices": ["せきにん", "かくにん", "しょうにん", "こうにん"], "answer": "かくにん" },
+    { "sentence": "ドアの横にスイッチがあります。", "target": "横", "choices": ["そば", "よこ", "たて", "となり"], "answer": "よこ" },
+    { "sentence": "高速道路から飛行場が見えます。", "target": "飛行場", "choices": ["こうくう", "ひこうば", "くうこう", "ひこうじょう"], "answer": "ひこうじょう" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "席はなんばんですか。", "reading": "なんばん", "choices": ["何号", "向番", "何番", "向号"], "answer": "何番" },
+    { "sentence": "黄色いせんまで下がってお待ちください。", "reading": "せん", "choices": ["線", "信", "段", "側"], "answer": "線" },
+    { "sentence": "あの女優はひょうげん力がある。", "reading": "ひょうげん", "choices": ["表信", "表見", "表言", "表現"], "answer": "表現" },
+    { "sentence": "社長はまちがいをみとめた。", "reading": "みとめた", "choices": ["定めた", "認めた", "窓めた", "面めた"], "answer": "認めた" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "この電車は（　）駅に止まります。", "target": "各駅", "choices": ["毎", "次", "各", "両"], "answer": "各" },
+    { "sentence": "あの信号は押しボタン（　）です。", "target": "押しボタン式", "choices": ["箱", "席", "向", "式"], "answer": "式" },
+    { "sentence": "駐車場はただいま（　）車です。", "target": "満車", "choices": ["両", "満", "禁", "非"], "answer": "満" },
+    { "sentence": "1万円以上は、送料（　）料です。", "target": "無料", "choices": ["非", "不", "無", "禁"], "answer": "無" },
+    { "sentence": "整理（　）を取ってお待ちください。", "target": "整理券", "choices": ["停", "箱", "路", "券"], "answer": "券" },
+    { "sentence": "お金は料金（　）に入れてください。", "target": "料金箱", "choices": ["箱", "式", "側", "券"], "answer": "箱" }
+  ],
+  "passageQuestion": {
+    "passage": "今日は雨が降っていたので、道路の水たまりに気をつけながら、横断歩道を[21]。駅に着くと、特急電車がホームに入ってきたので、急いで[22]。座席に座ってしばらくすると、窓の外の景色がどんどん[23]いった。次の駅では、たくさんの人が電車を[24]。バスに乗り換えるとき、財布に小銭がなかったので、両替機でお金を[25]。",
+    "wordBank": ["わたった", "のった", "すぎて", "おりた", "りょうがえした", "とまった", "かえた"],
+    "blanks": [
+      { "number": 21, "answer": "わたった", "answerKanji": "渡った" },
+      { "number": 22, "answer": "のった", "answerKanji": "乗った" },
+      { "number": 23, "answer": "すぎて", "answerKanji": "過ぎて" },
+      { "number": 24, "answer": "おりた", "answerKanji": "降りた" },
+      { "number": 25, "answer": "りょうがえした", "answerKanji": "両替した" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "どちらの字？",
+    "translation": "Which Character?",
+    "description": "Banyak kanji terlihat mirip sekilas tapi sebenarnya beda — misalnya 未 (belum) dan 末 (akhir) cuma beda posisi satu garis pendek, atau 苦 (pahit/susah) dan 若 (muda) yang bentuknya mirip di bagian atas. Begitu juga 晩 (malam) dengan 勉 (rajin belajar), atau 鳥 (burung) dengan 島 (pulau) yang cuma beda satu coretan di bawah. Yuk kenalan dengan beberapa kanji 'kembar' ini supaya tidak salah baca lagi.",
+    "kanjiList": [
+      {
+        "id": 51,
+        "character": "未",
+        "strokes": 5,
+        "onyomi": ["ミ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "未定", "reading": "みてい", "meaning": "belum diputuskan" }
+        ],
+        "extraWords": [
+          { "word": "〜未満", "reading": "みまん", "meaning": "kurang dari ..." },
+          { "word": "未来", "reading": "みらい", "meaning": "masa depan" }
+        ]
+      },
+      {
+        "id": 52,
+        "character": "末",
+        "strokes": 5,
+        "onyomi": ["マツ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "週末", "reading": "しゅうまつ", "meaning": "akhir pekan" },
+          { "word": "年末", "reading": "ねんまつ", "meaning": "akhir tahun" }
+        ],
+        "extraWords": [
+          { "word": "月末", "reading": "げつまつ", "meaning": "akhir bulan" }
+        ]
+      },
+      {
+        "id": 53,
+        "character": "若",
+        "strokes": 8,
+        "onyomi": [],
+        "kunyomi": ["わかい"],
+        "words": [
+          { "word": "若い", "reading": "わかい", "meaning": "muda" }
+        ]
+      },
+      {
+        "id": 54,
+        "character": "晩",
+        "strokes": 12,
+        "onyomi": ["バン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "晩", "reading": "ばん", "meaning": "malam" },
+          { "word": "晩ご飯", "reading": "ばんごはん", "meaning": "makan malam" }
+        ],
+        "extraWords": [
+          { "word": "今晩", "reading": "こんばん", "meaning": "malam ini" },
+          { "word": "毎晩", "reading": "まいばん", "meaning": "setiap malam" }
+        ]
+      },
+      {
+        "id": 55,
+        "character": "島",
+        "strokes": 10,
+        "onyomi": ["トウ"],
+        "kunyomi": ["しま"],
+        "words": [
+          { "word": "〇〇島", "reading": "とう", "meaning": "pulau ..." },
+          { "word": "島", "reading": "しま", "meaning": "pulau" }
+        ]
+      },
+      {
+        "id": 56,
+        "character": "皿",
+        "strokes": 5,
+        "onyomi": [],
+        "kunyomi": ["さら"],
+        "words": [
+          { "word": "皿", "reading": "さら", "meaning": "piring" }
+        ],
+        "extraWords": [
+          { "word": "灰皿", "reading": "はいざら", "meaning": "asbak" }
+        ]
+      },
+      {
+        "id": 57,
+        "character": "血",
+        "strokes": 6,
+        "onyomi": ["ケツ"],
+        "kunyomi": ["ち"],
+        "words": [
+          { "word": "出血", "reading": "しゅっけつ", "meaning": "pendarahan" },
+          { "word": "血", "reading": "ち", "meaning": "darah" }
+        ]
+      },
+      {
+        "id": 58,
+        "character": "助",
+        "strokes": 7,
+        "onyomi": ["ジョ"],
+        "kunyomi": ["たすける"],
+        "words": [
+          { "word": "救助", "reading": "きゅうじょ", "meaning": "penyelamatan, pertolongan" },
+          { "word": "助ける", "reading": "たすける", "meaning": "menolong" }
+        ]
+      }
+    ]
+  }
+}
