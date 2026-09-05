@@ -6,12 +6,14 @@ import type { KanjiSignLessonDay, N2KanjiTestDay as N3KanjiTestDay } from "@/dat
 
 // Week 1
 import w1d1 from "./week1_day1.json";
+import w1d2 from "./week1_day2.json";
 
 export type { KanjiSignLessonDay, N3KanjiTestDay };
 
 export const n3KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> = {
   "1": {
     "1": w1d1 as KanjiSignLessonDay,
+    "2": w1d2 as KanjiSignLessonDay,
   },
 };
 

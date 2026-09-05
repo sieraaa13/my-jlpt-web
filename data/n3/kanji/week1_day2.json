@@ -1,0 +1,182 @@
+{
+  "week": 1,
+  "day": 2,
+  "title": "横断歩道",
+  "subtitle": "Pedestrian Crossing",
+  "translation": "Zebra Cross / Penyeberangan Pejalan Kaki",
+  "sceneDescription": "Seorang anak menekan tombol lampu lalu lintas penyeberangan, dengan papan peringatan untuk memeriksa kiri-kanan sebelum menyeberang dan larangan tiba-tiba berlari ke jalan.",
+  "signs": [
+    { "text": "押しボタン式信号", "meaning": "Lampu lalu lintas dengan tombol tekan" },
+    { "text": "ボタンを押してお待ちください", "meaning": "Tekan tombol dan mohon tunggu" },
+    { "text": "左右を確認して横断歩道をわたりましょう", "meaning": "Periksa kiri-kanan sebelum menyeberang di zebra cross" },
+    { "text": "飛び出すな！", "meaning": "Jangan tiba-tiba berlari ke jalan!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 9,
+      "character": "横",
+      "strokes": 15,
+      "onyomi": ["オウ"],
+      "kunyomi": ["よこ"],
+      "words": [
+        { "word": "横断", "reading": "おうだん", "meaning": "menyeberang, melintang" },
+        { "word": "横", "reading": "よこ", "meaning": "samping" }
+      ],
+      "extraWords": [
+        { "word": "横断歩道", "reading": "おうだんほどう", "meaning": "zebra cross, penyeberangan pejalan kaki" }
+      ]
+    },
+    {
+      "id": 10,
+      "character": "押",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["おす", "おさえる"],
+      "words": [
+        { "word": "押す", "reading": "おす", "meaning": "menekan, mendorong" },
+        { "word": "押し入れ", "reading": "おしいれ", "meaning": "lemari terbuat dari dinding ala Jepang" }
+      ],
+      "extraWords": [
+        { "word": "押さえる", "reading": "おさえる", "meaning": "menahan, menekan ke bawah" }
+      ]
+    },
+    {
+      "id": 11,
+      "character": "式",
+      "strokes": 6,
+      "onyomi": ["シキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "押しボタン式", "reading": "おしボタンしき", "meaning": "tipe tombol tekan" },
+        { "word": "数式", "reading": "すうしき", "meaning": "rumus angka" }
+      ],
+      "extraWords": [
+        { "word": "入学式", "reading": "にゅうがくしき", "meaning": "upacara penerimaan masuk sekolah" }
+      ]
+    },
+    {
+      "id": 12,
+      "character": "信",
+      "strokes": 9,
+      "onyomi": ["シン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "送信", "reading": "そうしん", "meaning": "mengirim (sinyal/pesan)" },
+        { "word": "自信", "reading": "じしん", "meaning": "percaya diri" }
+      ],
+      "extraWords": [
+        { "word": "信じる", "reading": "しんじる", "meaning": "percaya" },
+        { "word": "信用", "reading": "しんよう", "meaning": "kepercayaan" }
+      ]
+    },
+    {
+      "id": 13,
+      "character": "号",
+      "strokes": 5,
+      "onyomi": ["ゴウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "信号", "reading": "しんごう", "meaning": "lampu lalu lintas, sinyal" }
+      ],
+      "extraWords": [
+        { "word": "〜号車", "reading": "ごうしゃ", "meaning": "gerbong nomor ..." }
+      ]
+    },
+    {
+      "id": 14,
+      "character": "確",
+      "strokes": 15,
+      "onyomi": ["カク"],
+      "kunyomi": ["たしか", "たしかめる"],
+      "words": [
+        { "word": "正確（な）", "reading": "せいかく", "meaning": "tepat, akurat" },
+        { "word": "確かめる", "reading": "たしかめる", "meaning": "memastikan, memeriksa" }
+      ],
+      "extraWords": [
+        { "word": "確か（な）", "reading": "たしか", "meaning": "pasti, yakin" }
+      ]
+    },
+    {
+      "id": 15,
+      "character": "認",
+      "strokes": 14,
+      "onyomi": ["ニン"],
+      "kunyomi": ["みとめる"],
+      "words": [
+        { "word": "確認", "reading": "かくにん", "meaning": "konfirmasi" }
+      ],
+      "extraWords": [
+        { "word": "認める", "reading": "みとめる", "meaning": "mengakui, menyetujui" }
+      ]
+    },
+    {
+      "id": 16,
+      "character": "飛",
+      "strokes": 9,
+      "onyomi": ["ヒ"],
+      "kunyomi": ["とぶ"],
+      "words": [
+        { "word": "飛行場", "reading": "ひこうじょう", "meaning": "bandara" },
+        { "word": "飛ぶ", "reading": "とぶ", "meaning": "terbang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「送信」＝",
+      "optionA": "送る",
+      "optionB": "信じる",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「横断」＝",
+      "optionA": "わたる",
+      "optionB": "ことわる",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "「飛行」＝",
+      "optionA": "とぶ",
+      "optionB": "いく",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "つぎの（　　）を右にまがる。",
+      "optionA": "信号",
+      "optionB": "号車",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "（　　）に物をしまう。",
+      "optionA": "飛び出し",
+      "optionB": "押し入れ",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　　）を持ってスピーチをする。",
+      "optionA": "自信",
+      "optionB": "信用",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）を向く。",
+      "optionA": "横",
+      "optionB": "式",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "安全を（　　）する。",
+      "optionA": "正確",
+      "optionB": "確認",
+      "answer": "B"
+    }
+  ]
+}
