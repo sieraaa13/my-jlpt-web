@@ -1,0 +1,173 @@
+{
+  "week": 2,
+  "day": 2,
+  "title": "禁煙",
+  "subtitle": "No Smoking",
+  "translation": "Dilarang Merokok",
+  "sceneDescription": "Seorang tamu makan di restoran dengan papan pemberitahuan bahwa seluruh kursi bebas asap rokok, meminta pengertian dan kerja sama para tamu.",
+  "signs": [
+    { "text": "当店は全席禁煙となっております", "meaning": "Restoran ini bebas asap rokok di semua kursi" },
+    { "text": "お客様のご理解・ご協力をお願いいたします", "meaning": "Mohon pengertian dan kerja sama para tamu" }
+  ],
+  "kanjiList": [
+    {
+      "id": 67,
+      "character": "煙",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": ["けむり"],
+      "words": [
+        { "word": "禁煙", "reading": "きんえん", "meaning": "dilarang merokok" },
+        { "word": "煙", "reading": "けむり", "meaning": "asap" }
+      ]
+    },
+    {
+      "id": 68,
+      "character": "当",
+      "strokes": 6,
+      "onyomi": ["トウ"],
+      "kunyomi": ["あたる"],
+      "words": [
+        { "word": "本当", "reading": "ほんとう", "meaning": "sungguh, benar" },
+        { "word": "当たる", "reading": "あたる", "meaning": "kena, menang (undian)" }
+      ],
+      "extraWords": [
+        { "word": "当〇〇", "reading": "とう", "meaning": "... ini (formal)" },
+        { "word": "当たり前", "reading": "あたりまえ", "meaning": "wajar, sudah semestinya" }
+      ]
+    },
+    {
+      "id": 69,
+      "character": "全",
+      "strokes": 6,
+      "onyomi": ["ゼン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "全部", "reading": "ぜんぶ", "meaning": "semua" }
+      ],
+      "extraWords": [
+        { "word": "全席", "reading": "ぜんせき", "meaning": "semua kursi" },
+        { "word": "安全（な）", "reading": "あんぜん", "meaning": "aman" }
+      ]
+    },
+    {
+      "id": 70,
+      "character": "客",
+      "strokes": 9,
+      "onyomi": ["キャク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "客", "reading": "きゃく", "meaning": "tamu, pelanggan" }
+      ],
+      "extraWords": [
+        { "word": "お客様", "reading": "きゃくさま", "meaning": "tamu/pelanggan (sopan)" }
+      ]
+    },
+    {
+      "id": 71,
+      "character": "様",
+      "strokes": 14,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["さま"],
+      "words": [
+        { "word": "様子", "reading": "ようす", "meaning": "keadaan, situasi" }
+      ],
+      "extraWords": [
+        { "word": "〇〇様", "reading": "さま", "meaning": "sapaan hormat untuk nama orang" }
+      ]
+    },
+    {
+      "id": 72,
+      "character": "解",
+      "strokes": 13,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "理解", "reading": "りかい", "meaning": "memahami" },
+        { "word": "解説", "reading": "かいせつ", "meaning": "penjelasan" }
+      ],
+      "extraWords": [
+        { "word": "解答", "reading": "かいとう", "meaning": "jawaban" },
+        { "word": "分解", "reading": "ぶんかい", "meaning": "membongkar, mengurai" }
+      ]
+    },
+    {
+      "id": 73,
+      "character": "協",
+      "strokes": 8,
+      "onyomi": ["キョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "協力", "reading": "きょうりょく", "meaning": "kerja sama" }
+      ]
+    },
+    {
+      "id": 74,
+      "character": "願",
+      "strokes": 19,
+      "onyomi": [],
+      "kunyomi": ["ねがう"],
+      "words": [
+        { "word": "願う", "reading": "ねがう", "meaning": "berharap, memohon" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "当店：",
+      "optionA": "この店",
+      "optionB": "その店",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "全席禁煙：全部の席でたばこが",
+      "optionA": "吸える",
+      "optionB": "吸えない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "安全：",
+      "optionA": "危ない",
+      "optionB": "危なくない",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "解答：",
+      "optionA": "もんだい",
+      "optionB": "こたえ",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "買い物をして代金をはらうのは（　　）。",
+      "optionA": "当たり前だ",
+      "optionB": "無料だ",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "時計を（　　）また組み立てる。",
+      "optionA": "分解して",
+      "optionB": "停車して",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "本の（　　）を読む。",
+      "optionA": "理由",
+      "optionB": "解説",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "たからくじが（　　）。",
+      "optionA": "当たる",
+      "optionB": "認める",
+      "answer": "A"
+    }
+  ]
+}
