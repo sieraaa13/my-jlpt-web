@@ -1,0 +1,177 @@
+{
+  "week": 1,
+  "day": 1,
+  "title": "駐車場",
+  "subtitle": "Parking Lot",
+  "translation": "Tempat Parkir",
+  "sceneDescription": "Area parkir dengan papan bertuliskan gratis/berbayar, status penuh atau kosong, larangan parkir bagi yang tidak berkepentingan, dan arahan cara parkir.",
+  "signs": [
+    { "text": "無料駐車場", "meaning": "Tempat parkir gratis" },
+    { "text": "満車", "meaning": "Penuh (tidak ada tempat parkir)" },
+    { "text": "有料駐車場", "meaning": "Tempat parkir berbayar" },
+    { "text": "空車", "meaning": "Kosong, tersedia" },
+    { "text": "駐車禁止", "meaning": "Dilarang parkir" },
+    { "text": "関係者以外の駐車をお断りします", "meaning": "Parkir dilarang selain untuk yang berkepentingan" },
+    { "text": "前向き駐車でおねがいします", "meaning": "Mohon parkir menghadap ke depan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 1,
+      "character": "駐",
+      "strokes": 15,
+      "onyomi": ["チュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "駐車", "reading": "ちゅうしゃ", "meaning": "parkir" },
+        { "word": "駐車場", "reading": "ちゅうしゃじょう", "meaning": "tempat parkir" }
+      ]
+    },
+    {
+      "id": 2,
+      "character": "無",
+      "strokes": 12,
+      "onyomi": ["ム"],
+      "kunyomi": ["ない"],
+      "words": [
+        { "word": "無休", "reading": "むきゅう", "meaning": "buka setiap hari, tanpa libur" },
+        { "word": "無理（な）", "reading": "むり", "meaning": "memaksakan diri, tidak masuk akal" }
+      ],
+      "extraWords": [
+        { "word": "無料", "reading": "むりょう", "meaning": "gratis, cuma-cuma" },
+        { "word": "無い", "reading": "ない", "meaning": "tidak ada" }
+      ]
+    },
+    {
+      "id": 3,
+      "character": "満",
+      "strokes": 12,
+      "onyomi": ["マン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "満車", "reading": "まんしゃ", "meaning": "penuh (tempat parkir)" },
+        { "word": "不満（な）", "reading": "ふまん", "meaning": "tidak puas" }
+      ],
+      "extraWords": [
+        { "word": "満員", "reading": "まんいん", "meaning": "penuh (orang), penuh sesak" }
+      ]
+    },
+    {
+      "id": 4,
+      "character": "向",
+      "strokes": 6,
+      "onyomi": ["コウ"],
+      "kunyomi": ["むこう", "むかう", "むき"],
+      "words": [
+        { "word": "方向", "reading": "ほうこう", "meaning": "arah" },
+        { "word": "向かう", "reading": "むかう", "meaning": "menuju, menghadap" }
+      ],
+      "extraWords": [
+        { "word": "向こう", "reading": "むこう", "meaning": "seberang, sebelah sana" },
+        { "word": "〇〇向き", "reading": "むき", "meaning": "cocok/sesuai untuk 〇〇" }
+      ]
+    },
+    {
+      "id": 5,
+      "character": "禁",
+      "strokes": 13,
+      "onyomi": ["キン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "禁止", "reading": "きんし", "meaning": "larangan, dilarang" }
+      ]
+    },
+    {
+      "id": 6,
+      "character": "関",
+      "strokes": 14,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "関心", "reading": "かんしん", "meaning": "minat, perhatian" }
+      ],
+      "extraWords": [
+        { "word": "関する", "reading": "かんする", "meaning": "berkaitan dengan" }
+      ]
+    },
+    {
+      "id": 7,
+      "character": "係",
+      "strokes": 9,
+      "onyomi": ["ケイ"],
+      "kunyomi": ["かかり"],
+      "words": [
+        { "word": "関係", "reading": "かんけい", "meaning": "hubungan, relasi" },
+        { "word": "係", "reading": "かかり", "meaning": "petugas, penanggung jawab" }
+      ]
+    },
+    {
+      "id": 8,
+      "character": "断",
+      "strokes": 11,
+      "onyomi": ["ダン"],
+      "kunyomi": ["ことわる"],
+      "words": [
+        { "word": "無断", "reading": "むだん", "meaning": "tanpa izin" },
+        { "word": "断る", "reading": "ことわる", "meaning": "menolak" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "「満車」＝ 車を止める所が",
+      "optionA": "いっぱいだ",
+      "optionB": "あいている",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "「禁止」＝ 何かを",
+      "optionA": "してもいい",
+      "optionB": "してはいけない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "「無料」＝ 代金が",
+      "optionA": "いる",
+      "optionB": "いらない",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "「断水」＝",
+      "optionA": "水道が使えなくなる",
+      "optionB": "水を飲んではいけない",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「無断」＝",
+      "optionA": "許可がいらない",
+      "optionB": "許可をもらわない",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "「不満」＝",
+      "optionA": "満足していない",
+      "optionB": "いっぱいではない",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "日本文化に（　　）。",
+      "optionA": "関心がある",
+      "optionB": "方向がある",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "あまり（　　）をしないでください。",
+      "optionA": "不理",
+      "optionB": "無理",
+      "answer": "B"
+    }
+  ]
+}
