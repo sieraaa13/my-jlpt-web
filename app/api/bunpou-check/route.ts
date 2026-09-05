@@ -15,11 +15,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Kalimat contoh tidak boleh kosong" }, { status: 400 });
     }
 
-    const systemPrompt = `Kamu adalah penilai grammar (bunpou) JLPT N3 yang teliti dan suportif.
-
-Tugasmu: nilai apakah kalimat contoh yang ditulis SISWA menggunakan pola grammar
-di bawah ini dengan BENAR — baik dari sisi bentuk (konjugasi/partikel sesuai
-rumus) maupun apakah kalimatnya masuk akal secara makna/konteks.
+    const systemPrompt = `Kamu adalah penilai grammar (bunpou) JLPT N3 yang SANGAT teliti,
+bukan penilai yang asal setuju. Banyak siswa menulis kalimat yang KELIHATAN
+mirip pola tapi sebenarnya salah bentuk/konjugasi atau bahkan tidak memakai
+pola sama sekali — tugasmu menangkap itu, jangan meloloskan begitu saja.
 
 ===== POLA GRAMMAR YANG DIPELAJARI =====
 Pola: ${patternTitle}
@@ -28,35 +27,45 @@ Rumus: ${formula}
 Penjelasan: ${explanation}
 ===== AKHIR POLA =====
 
-ATURAN PENILAIAN:
-1. correct = true HANYA kalau kalimat siswa benar-benar memakai pola di atas
-   dengan bentuk yang tepat DAN maknanya masuk akal secara natural.
-2. Kalau siswa memakai pola grammar lain (bukan yang di atas) atau tidak
-   memakai pola sama sekali, correct = false.
-3. Kalau salah, jelaskan di "feedback" SPESIFIK bagian mana yang salah dan
-   KENAPA (misal: bentuk kata kerjanya salah konjugasi, partikel salah,
-   pola tidak dipakai, makna janggal, dll) — jangan generic.
-4. Isi "correction" dengan SATU contoh kalimat perbaikan yang benar
-   memakai pola ini (boleh dekat dengan kalimat siswa, tidak harus sama
-   persis). Kalau kalimat siswa sudah benar, isi "correction" dengan null.
-5. Semua teks feedback/correction dalam Bahasa Indonesia, nada suportif
-   dan tidak menggurui, seperti guru yang membantu bukan menghakimi.
+LANGKAH PENILAIAN (WAJIB dikerjakan berurutan, isikan hasilnya ke field JSON):
+1. "verb_found": cari kata kerja/bagian kalimat siswa yang seharusnya memakai
+   pola di atas, lalu sebutkan bentuk ASLINYA persis apa adanya (contoh:
+   "書いています (bentuk te-iru dari 書く, AKTIF)" bukan "sudah sesuai pola").
+   Kalau siswa tidak menulis bagian yang relevan sama sekali, tulis
+   "tidak ditemukan bentuk yang sesuai pola".
+2. Bandingkan bentuk di "verb_found" itu APAKAH SECARA HURUF/KONJUGASI persis
+   cocok dengan rumus pola (${formula}). Jangan anggap benar hanya karena
+   kata dasarnya sama atau kalimatnya "kedengaran wajar" — cek bentuknya
+   huruf per huruf.
+3. "correct" = true HANYA kalau langkah 2 cocok persis DAN makna kalimatnya
+   masuk akal. Kalau ragu sedikit saja soal bentuknya, jatuhkan ke false.
+4. "feedback" WAJIB selalu diisi (jangan pernah kosong), walau correct=true —
+   kalau benar, jelaskan singkat kenapa bentuknya sudah pas. Kalau salah,
+   sebutkan SPESIFIK bagian mana yang salah dan kenapa (beda dari "verb_found"
+   di atas, tulis dengan bahasa yang mudah dipahami siswa).
+5. "correction": kalau correct=false DAN kalimat siswa punya cukup konteks
+   untuk diperbaiki (bukan sekadar teks acak/tidak nyambung), isi dengan SATU
+   kalimat perbaikan yang memakai pola ini dengan benar, sedekat mungkin
+   dengan maksud kalimat siswa. Kalau correct=true, atau kalimat siswa
+   benar-benar tidak nyambung/acak sehingga tidak bisa diperbaiki, isi null.
+6. Semua teks dalam Bahasa Indonesia, nada suportif seperti guru yang
+   membantu, bukan menghakimi.
 
 Balas HANYA dalam format JSON persis seperti ini, tanpa teks lain:
-{"correct": boolean, "feedback": "string", "correction": "string atau null"}`;
+{"verb_found": "string", "correct": boolean, "feedback": "string", "correction": "string atau null"}`;
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4o-mini",
         response_format: { type: "json_object" },
         messages: [
           { role: "system", content: systemPrompt },
           { role: "user", content: `Kalimat contoh siswa: ${userSentence}` },
         ],
-        temperature: 0.3,
-        max_tokens: 400,
+        temperature: 0.2,
+        max_tokens: 600,
       }),
     });
 
@@ -66,11 +75,19 @@ Balas HANYA dalam format JSON persis seperti ini, tanpa teks lain:
       return NextResponse.json({ error: data.error?.message || "OpenAI Error" }, { status: response.status });
     }
 
-    const parsed = JSON.parse(data.choices[0].message.content);
+    let parsed: { correct?: boolean; feedback?: string; correction?: string | null };
+    try {
+      parsed = JSON.parse(data.choices[0].message.content);
+    } catch {
+      return NextResponse.json(
+        { error: "Gagal memproses hasil penilaian, coba kirim jawabanmu lagi ya." },
+        { status: 502 }
+      );
+    }
 
     return NextResponse.json({
       correct: !!parsed.correct,
-      feedback: parsed.feedback || "",
+      feedback: parsed.feedback || "Siera belum bisa kasih penjelasan detail untuk ini, coba kirim ulang ya.",
       correction: parsed.correction || null,
     });
   } catch (error: any) {
