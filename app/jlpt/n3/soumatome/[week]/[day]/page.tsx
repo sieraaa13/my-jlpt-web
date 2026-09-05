@@ -9,6 +9,7 @@ import {
 import { ExerciseSection } from "@/components/exercise-section";
 import { WeekChecklist } from "@/components/week-checklist";
 import { PracticeQuiz } from "@/components/practice-quiz";
+import { BunpouPractice } from "@/components/bunpou-practice";
 
 // Pre-render semua lesson saat build
 export function generateStaticParams() {
@@ -83,6 +84,9 @@ export default async function Page({
 
   const data = lessonFile.levels[0];
   const { prev, next, current, total } = getAdjacentLessons(week, day);
+  // Sample fitur latihan mengetik contoh kalimat — sengaja dibatasi ke
+  // Week 1 Hari 1 dulu untuk dicoba sebelum di-roll out ke semua materi.
+  const showBunpouPractice = week === "1" && day === "1";
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -184,6 +188,15 @@ export default async function Page({
                     )}
                   </div>
                 </div>
+
+                {showBunpouPractice && (
+                  <BunpouPractice
+                    patternTitle={section.pattern_title}
+                    patternMeaning={section.pattern_meaning}
+                    formula={section.description_box.formula}
+                    explanation={section.description_box.explanation}
+                  />
+                )}
               </div>
             ))}
           </div>
