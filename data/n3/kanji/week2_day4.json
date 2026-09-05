@@ -1,0 +1,175 @@
+{
+  "week": 2,
+  "day": 4,
+  "title": "街の地図",
+  "subtitle": "A Map of the City",
+  "translation": "Peta Kota",
+  "sceneDescription": "Peta kota menandai stasiun, balai kota, pos polisi, perempatan besar di depan stasiun, jembatan, kantor pos, dan taman.",
+  "signs": [
+    { "text": "市役所", "meaning": "Kantor balai kota" },
+    { "text": "交番", "meaning": "Pos polisi" },
+    { "text": "駅前交差点", "meaning": "Perempatan depan stasiun" },
+    { "text": "橋", "meaning": "Jembatan" },
+    { "text": "郵便局", "meaning": "Kantor pos" },
+    { "text": "公園", "meaning": "Taman" }
+  ],
+  "kanjiList": [
+    {
+      "id": 83,
+      "character": "役",
+      "strokes": 7,
+      "onyomi": ["ヤク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "市役所", "reading": "しやくしょ", "meaning": "kantor balai kota" },
+        { "word": "役員", "reading": "やくいん", "meaning": "pengurus, anggota organisasi" }
+      ],
+      "extraWords": [
+        { "word": "役に立つ", "reading": "やくにたつ", "meaning": "berguna" }
+      ]
+    },
+    {
+      "id": 84,
+      "character": "郵",
+      "strokes": 11,
+      "onyomi": ["ユウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "郵便", "reading": "ゆうびん", "meaning": "pos, surat" }
+      ]
+    },
+    {
+      "id": 85,
+      "character": "局",
+      "strokes": 7,
+      "onyomi": ["キョク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "郵便局", "reading": "ゆうびんきょく", "meaning": "kantor pos" }
+      ],
+      "extraWords": [
+        { "word": "薬局", "reading": "やっきょく", "meaning": "apotek" }
+      ]
+    },
+    {
+      "id": 86,
+      "character": "交",
+      "strokes": 6,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "交番", "reading": "こうばん", "meaning": "pos polisi" },
+        { "word": "交換", "reading": "こうかん", "meaning": "pertukaran" }
+      ],
+      "extraWords": [
+        { "word": "交通", "reading": "こうつう", "meaning": "transportasi, lalu lintas" }
+      ]
+    },
+    {
+      "id": 87,
+      "character": "差",
+      "strokes": 10,
+      "onyomi": ["サ"],
+      "kunyomi": ["さす"],
+      "words": [
+        { "word": "差", "reading": "さ", "meaning": "perbedaan, selisih" },
+        { "word": "差し出す", "reading": "さしだす", "meaning": "menyerahkan, mengirim" }
+      ],
+      "extraWords": [
+        { "word": "差出人", "reading": "さしだしにん", "meaning": "pengirim" }
+      ]
+    },
+    {
+      "id": 88,
+      "character": "点",
+      "strokes": 9,
+      "onyomi": ["テン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "交差点", "reading": "こうさてん", "meaning": "perempatan" }
+      ],
+      "extraWords": [
+        { "word": "〜点", "reading": "てん", "meaning": "... poin" }
+      ]
+    },
+    {
+      "id": 89,
+      "character": "橋",
+      "strokes": 16,
+      "onyomi": ["キョウ"],
+      "kunyomi": ["はし"],
+      "words": [
+        { "word": "歩道橋", "reading": "ほどうきょう", "meaning": "jembatan penyeberangan" },
+        { "word": "橋", "reading": "はし", "meaning": "jembatan" }
+      ]
+    },
+    {
+      "id": 90,
+      "character": "公",
+      "strokes": 4,
+      "onyomi": ["コウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "公園", "reading": "こうえん", "meaning": "taman" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "差出人：手紙や荷物を",
+      "optionA": "送る人",
+      "optionB": "受け取る人",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "歩道橋：車は（　　）橋",
+      "optionA": "わたれる",
+      "optionB": "わたれない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "3と5の（　　）は2です。",
+      "optionA": "次",
+      "optionB": "差",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "（　　）で道を聞く。",
+      "optionA": "交番",
+      "optionB": "番号",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "この本は勉強の（　　）立つ。",
+      "optionA": "約に",
+      "optionB": "役に",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "50円の（　　）切手を買いました。",
+      "optionA": "郵便",
+      "optionB": "整理",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "クラスの（　　）をえらびます。",
+      "optionA": "店員",
+      "optionB": "役員",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "（　　）を右にまがってください。",
+      "optionA": "交差点",
+      "optionB": "横断歩道",
+      "answer": "A"
+    }
+  ]
+}
