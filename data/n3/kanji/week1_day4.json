@@ -1,0 +1,191 @@
+{
+  "week": 1,
+  "day": 4,
+  "title": "駅のホーム",
+  "subtitle": "A Platform",
+  "translation": "Peron Stasiun",
+  "sceneDescription": "Papan informasi di peron menampilkan jadwal kereta lokal yang berhenti di setiap stasiun dan kereta cepat yang melewati stasiun ini, serta penunjuk arah jalur kereta bawah tanah.",
+  "signs": [
+    { "text": "○○線 上り方面", "meaning": "Jalur ○○, arah menuju kota" },
+    { "text": "各駅に止まります", "meaning": "Berhenti di setiap stasiun (kereta lokal)" },
+    { "text": "この駅を通過します", "meaning": "Melewati stasiun ini tanpa berhenti (kereta cepat)" },
+    { "text": "地下鉄○○線", "meaning": "Jalur kereta bawah tanah ○○" }
+  ],
+  "kanjiList": [
+    {
+      "id": 25,
+      "character": "線",
+      "strokes": 15,
+      "onyomi": ["セン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "線", "reading": "せん", "meaning": "garis, jalur" }
+      ],
+      "extraWords": [
+        { "word": "〜番線", "reading": "ばんせん", "meaning": "jalur/peron nomor ..." }
+      ]
+    },
+    {
+      "id": 26,
+      "character": "面",
+      "strokes": 9,
+      "onyomi": ["メン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "全面", "reading": "ぜんめん", "meaning": "seluruh permukaan" },
+        { "word": "〇〇方面", "reading": "ほうめん", "meaning": "arah/wilayah ..." }
+      ],
+      "extraWords": [
+        { "word": "画面", "reading": "がめん", "meaning": "layar" }
+      ]
+    },
+    {
+      "id": 27,
+      "character": "普",
+      "strokes": 12,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "普通（の）", "reading": "ふつう", "meaning": "biasa, umum" }
+      ]
+    },
+    {
+      "id": 28,
+      "character": "各",
+      "strokes": 6,
+      "onyomi": ["カク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "各駅", "reading": "かくえき", "meaning": "setiap stasiun" },
+        { "word": "各自", "reading": "かくじ", "meaning": "masing-masing (orang)" }
+      ],
+      "extraWords": [
+        { "word": "各国", "reading": "かっこく", "meaning": "setiap negara" }
+      ]
+    },
+    {
+      "id": 29,
+      "character": "次",
+      "strokes": 6,
+      "onyomi": ["ジ"],
+      "kunyomi": ["つぎ"],
+      "words": [
+        { "word": "目次", "reading": "もくじ", "meaning": "daftar isi" },
+        { "word": "次", "reading": "つぎ", "meaning": "berikutnya" }
+      ],
+      "extraWords": [
+        { "word": "次回", "reading": "じかい", "meaning": "kesempatan berikutnya" }
+      ]
+    },
+    {
+      "id": 30,
+      "character": "快",
+      "strokes": 7,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "快速", "reading": "かいそく", "meaning": "kereta cepat/ekspres" }
+      ]
+    },
+    {
+      "id": 31,
+      "character": "速",
+      "strokes": 10,
+      "onyomi": ["ソク"],
+      "kunyomi": ["はやい"],
+      "words": [
+        { "word": "高速道路", "reading": "こうそくどうろ", "meaning": "jalan tol" },
+        { "word": "速い", "reading": "はやい", "meaning": "cepat" }
+      ],
+      "extraWords": [
+        { "word": "速度", "reading": "そくど", "meaning": "kecepatan" }
+      ]
+    },
+    {
+      "id": 32,
+      "character": "過",
+      "strokes": 12,
+      "onyomi": ["カ"],
+      "kunyomi": ["すぎる"],
+      "words": [
+        { "word": "通過", "reading": "つうか", "meaning": "melintas, transit" },
+        { "word": "過ぎる", "reading": "すぎる", "meaning": "melewati, berlalu" }
+      ],
+      "extraWords": [
+        { "word": "過去", "reading": "かこ", "meaning": "masa lalu" }
+      ]
+    },
+    {
+      "id": 33,
+      "character": "鉄",
+      "strokes": 13,
+      "onyomi": ["テツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "地下鉄", "reading": "ちかてつ", "meaning": "kereta bawah tanah" },
+        { "word": "鉄", "reading": "てつ", "meaning": "besi" }
+      ],
+      "extraWords": [
+        { "word": "鉄道", "reading": "てつどう", "meaning": "rel kereta api" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "普通電車：（　　）電車",
+      "optionA": "各駅に止まる",
+      "optionB": "平日に運転する",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "電車が通過する：その駅に",
+      "optionA": "止まらない",
+      "optionB": "止まる",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "先発：先に",
+      "optionA": "出る",
+      "optionB": "着く",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "本の（　　）を見る。",
+      "optionA": "次回",
+      "optionB": "目次",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "ノートパソコンの（　　）は大きくない。",
+      "optionA": "全面",
+      "optionB": "画面",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "世界（　　）から人が集まる。",
+      "optionA": "各国",
+      "optionB": "各自",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）道路の料金をはらう。",
+      "optionA": "快速",
+      "optionB": "高速",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "彼は足が（　　）。",
+      "optionA": "早い",
+      "optionB": "速い",
+      "answer": "B"
+    }
+  ]
+}
