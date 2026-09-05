@@ -4,6 +4,7 @@ import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons"; 
 import { WeekChecklist } from "@/components/week-checklist";
 import { PracticeQuiz } from "@/components/practice-quiz";
+import { BunpouPractice } from "@/components/bunpou-practice";
 
 export function generateStaticParams() {
   const params: { id: string }[] = [];
@@ -74,6 +75,9 @@ export default async function LessonDetailPage({ params }: { params: Promise<{ i
   }
 
   const data = lessonFile.levels[0];
+  // Sample fitur latihan mengetik contoh kalimat — sengaja dibatasi ke
+  // Week 1 Hari 1 dulu untuk dicoba sebelum di-roll out ke semua materi.
+  const showBunpouPractice = week === "1" && day === "1";
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -152,6 +156,15 @@ export default async function LessonDetailPage({ params }: { params: Promise<{ i
                   )}
                 </div>
               </div>
+
+              {showBunpouPractice && (
+                <BunpouPractice
+                  patternTitle={section.pattern_title}
+                  patternMeaning={section.pattern_meaning}
+                  formula={section.description_box.formula}
+                  explanation={section.description_box.explanation}
+                />
+              )}
             </div>
           ))}
         </div>
