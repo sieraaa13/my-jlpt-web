@@ -1,0 +1,175 @@
+{
+  "week": 2,
+  "day": 1,
+  "title": "レストラン",
+  "subtitle": "Restaurant",
+  "translation": "Restoran",
+  "sceneDescription": "Deretan toko dengan papan tanda sedang bersiap-siap atau sedang buka, pintu dorong dan tarik, papan pengumuman toko tutup hari ini beserta jam operasional dan hari libur, serta ajakan untuk melakukan reservasi.",
+  "signs": [
+    { "text": "準備中", "meaning": "Sedang bersiap-siap (belum buka)" },
+    { "text": "営業中", "meaning": "Sedang buka" },
+    { "text": "押／引", "meaning": "Dorong / Tarik" },
+    { "text": "本日は閉店いたしました", "meaning": "Hari ini sudah tutup" },
+    { "text": "営業案内（開店・閉店・定休日）", "meaning": "Info jam operasional dan hari libur" },
+    { "text": "ご予約うけたまわります", "meaning": "Menerima reservasi" }
+  ],
+  "kanjiList": [
+    {
+      "id": 59,
+      "character": "準",
+      "strokes": 13,
+      "onyomi": ["ジュン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "準備", "reading": "じゅんび", "meaning": "persiapan" }
+      ]
+    },
+    {
+      "id": 60,
+      "character": "備",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["そなえる"],
+      "words": [
+        { "word": "準備", "reading": "じゅんび", "meaning": "persiapan" },
+        { "word": "備える", "reading": "そなえる", "meaning": "mempersiapkan, melengkapi" }
+      ]
+    },
+    {
+      "id": 61,
+      "character": "営",
+      "strokes": 12,
+      "onyomi": ["エイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "営業", "reading": "えいぎょう", "meaning": "usaha, operasional (bisnis)" }
+      ]
+    },
+    {
+      "id": 62,
+      "character": "閉",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["しまる", "しめる"],
+      "words": [
+        { "word": "開閉", "reading": "かいへい", "meaning": "buka-tutup" },
+        { "word": "閉まる", "reading": "しまる", "meaning": "tertutup" }
+      ],
+      "extraWords": [
+        { "word": "閉める", "reading": "しめる", "meaning": "menutup" }
+      ]
+    },
+    {
+      "id": 63,
+      "character": "案",
+      "strokes": 10,
+      "onyomi": ["アン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "案内", "reading": "あんない", "meaning": "informasi, panduan" }
+      ],
+      "extraWords": [
+        { "word": "案", "reading": "あん", "meaning": "usulan, rencana" }
+      ]
+    },
+    {
+      "id": 64,
+      "character": "内",
+      "strokes": 4,
+      "onyomi": ["ナイ"],
+      "kunyomi": ["うち"],
+      "words": [
+        { "word": "家内", "reading": "かない", "meaning": "istri" },
+        { "word": "内側", "reading": "うちがわ", "meaning": "bagian dalam" }
+      ],
+      "extraWords": [
+        { "word": "以内", "reading": "いない", "meaning": "dalam batas ..." },
+        { "word": "国内", "reading": "こくない", "meaning": "domestik, dalam negeri" }
+      ]
+    },
+    {
+      "id": 65,
+      "character": "予",
+      "strokes": 4,
+      "onyomi": ["ヨ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予定", "reading": "よてい", "meaning": "rencana, jadwal" }
+      ],
+      "extraWords": [
+        { "word": "予習", "reading": "よしゅう", "meaning": "belajar sebelum kelas dimulai" }
+      ]
+    },
+    {
+      "id": 66,
+      "character": "約",
+      "strokes": 9,
+      "onyomi": ["ヤク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予約", "reading": "よやく", "meaning": "reservasi, janji temu" }
+      ],
+      "extraWords": [
+        { "word": "約〜", "reading": "やく", "meaning": "kira-kira ..." }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "営業中：店は",
+      "optionA": "あいている",
+      "optionB": "しまっている",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "準備中：店に",
+      "optionA": "入れる",
+      "optionB": "入れない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "定休日：店には決まった休みの日が",
+      "optionA": "ある",
+      "optionB": "ない",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "営業案内：店についての",
+      "optionA": "コンセプト",
+      "optionB": "インフォメーション",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "予約うけたまわります：予約",
+      "optionA": "できる",
+      "optionB": "できない",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "ご予約確認メールを3日（　　）にお送りします。",
+      "optionA": "以外",
+      "optionB": "以内",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "屋上駐車場は夜9時に（　　）ので、ご注意ください。",
+      "optionA": "備えます",
+      "optionB": "閉まります",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "あの店は（　　）50種類のワインを備えている。",
+      "optionA": "約",
+      "optionB": "各",
+      "answer": "A"
+    }
+  ]
+}
