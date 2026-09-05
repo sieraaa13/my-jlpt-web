@@ -1,0 +1,182 @@
+{
+  "week": 1,
+  "day": 5,
+  "title": "特急電車",
+  "subtitle": "Express Train",
+  "translation": "Kereta Ekspres",
+  "sceneDescription": "Gerbong kereta dengan papan kursi reservasi dan kursi bebas, nomor peron, serta denah kursi yang menunjukkan sisi jendela dan sisi lorong.",
+  "signs": [
+    { "text": "指定席", "meaning": "Kursi reservasi (dipesan)" },
+    { "text": "自由席", "meaning": "Kursi bebas (tanpa reservasi)" },
+    { "text": "21番線", "meaning": "Peron nomor 21" },
+    { "text": "窓側／通路側", "meaning": "Sisi jendela / sisi lorong" }
+  ],
+  "kanjiList": [
+    {
+      "id": 34,
+      "character": "指",
+      "strokes": 9,
+      "onyomi": ["シ"],
+      "kunyomi": ["ゆび"],
+      "words": [
+        { "word": "指定", "reading": "してい", "meaning": "menentukan, menetapkan" },
+        { "word": "指", "reading": "ゆび", "meaning": "jari" }
+      ],
+      "extraWords": [
+        { "word": "指定席", "reading": "していせき", "meaning": "kursi reservasi" },
+        { "word": "指輪", "reading": "ゆびわ", "meaning": "cincin" }
+      ]
+    },
+    {
+      "id": 35,
+      "character": "定",
+      "strokes": 8,
+      "onyomi": ["テイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "定休日", "reading": "ていきゅうび", "meaning": "hari libur tetap/rutin" }
+      ],
+      "extraWords": [
+        { "word": "安定", "reading": "あんてい", "meaning": "stabil" }
+      ]
+    },
+    {
+      "id": 36,
+      "character": "席",
+      "strokes": 10,
+      "onyomi": ["セキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "席", "reading": "せき", "meaning": "kursi, tempat duduk" },
+        { "word": "出席", "reading": "しゅっせき", "meaning": "hadir" }
+      ],
+      "extraWords": [
+        { "word": "自由席", "reading": "じゆうせき", "meaning": "kursi non-reservasi" }
+      ]
+    },
+    {
+      "id": 37,
+      "character": "由",
+      "strokes": 5,
+      "onyomi": ["ユウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "自由（な）", "reading": "じゆう", "meaning": "bebas" },
+        { "word": "理由", "reading": "りゆう", "meaning": "alasan" }
+      ]
+    },
+    {
+      "id": 38,
+      "character": "番",
+      "strokes": 12,
+      "onyomi": ["バン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "番号", "reading": "ばんごう", "meaning": "nomor" },
+        { "word": "〜番線", "reading": "ばんせん", "meaning": "jalur/peron nomor ..." }
+      ],
+      "extraWords": [
+        { "word": "〜番", "reading": "ばん", "meaning": "nomor ..." }
+      ]
+    },
+    {
+      "id": 39,
+      "character": "窓",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["まど"],
+      "words": [
+        { "word": "窓", "reading": "まど", "meaning": "jendela" }
+      ],
+      "extraWords": [
+        { "word": "窓口", "reading": "まどぐち", "meaning": "loket" }
+      ]
+    },
+    {
+      "id": 40,
+      "character": "側",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["がわ"],
+      "words": [
+        { "word": "両側", "reading": "りょうがわ", "meaning": "kedua sisi" },
+        { "word": "窓側", "reading": "まどがわ", "meaning": "sisi jendela" }
+      ],
+      "extraWords": [
+        { "word": "右側", "reading": "みぎがわ", "meaning": "sisi kanan" }
+      ]
+    },
+    {
+      "id": 41,
+      "character": "路",
+      "strokes": 13,
+      "onyomi": ["ロ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "通路", "reading": "つうろ", "meaning": "lorong, gang" },
+        { "word": "線路", "reading": "せんろ", "meaning": "rel kereta" }
+      ],
+      "extraWords": [
+        { "word": "道路", "reading": "どうろ", "meaning": "jalan raya" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "外が見えるように（　　）に座る。",
+      "optionA": "窓側",
+      "optionB": "通路側",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "この電車は全席（　　）です。",
+      "optionA": "安定",
+      "optionB": "指定",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "下り電車は（　　）です。",
+      "optionA": "2番線",
+      "optionB": "2号車",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "この店は年中（　　）です。",
+      "optionA": "無休",
+      "optionB": "定休",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "欠席の（　　）を書く。",
+      "optionA": "自由",
+      "optionB": "理由",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　　）を開ける。",
+      "optionA": "席",
+      "optionB": "窓",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "電話（　　）を教える。",
+      "optionA": "番号",
+      "optionB": "信号",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "高速（　　）を車で走る。",
+      "optionA": "道路",
+      "optionB": "通路",
+      "answer": "A"
+    }
+  ]
+}
