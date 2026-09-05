@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { ModeToggle } from "./mode-toggle";
 import { useAuth, getRemainingTimeMs } from "@/components/auth-context";
 import LoginModal from "@/components/login-modal";
-import { User, LogOut, ChevronDown, History } from "lucide-react";
+import { User, LogOut, ChevronDown, History, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export function Navbar() {
@@ -126,6 +126,14 @@ export function Navbar() {
                         Quiz Harian
                       </Link>
 
+                      {user.is_master && (
+                        <Link href="/master" onClick={() => setIsUserMenuOpen(false)}
+                          className="w-full flex items-center gap-2 px-4 py-3 text-sm hover:bg-muted/50 transition-colors">
+                          <ShieldCheck size={14} className="text-primary" />
+                          Data User (Master)
+                        </Link>
+                      )}
+
                       <button onClick={handleLogout}
                         className="w-full flex items-center gap-2 px-4 py-3 text-sm text-red-500 hover:bg-red-500/10 transition-colors border-t border-border">
                         <LogOut size={14} />
@@ -194,6 +202,14 @@ export function Navbar() {
                         <span>🎌</span>
                         Quiz Harian
                       </Link>
+
+                      {user.is_master && (
+                        <Link href="/master" onClick={() => setIsMenuOpen(false)}
+                          className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium hover:bg-muted/50 transition-colors">
+                          <ShieldCheck size={16} className="text-primary" />
+                          Data User (Master)
+                        </Link>
+                      )}
 
                       <Button onClick={handleLogout} variant="ghost"
                         className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-500/10">

@@ -18,6 +18,7 @@ export interface User {
   line_user_id?: string | null;
   line_linked_at?: string | null;
   line_consent?: boolean;
+  is_master?: boolean;
 }
 
 export interface ExamHistory {
