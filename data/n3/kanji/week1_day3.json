@@ -1,0 +1,169 @@
+{
+  "week": 1,
+  "day": 3,
+  "title": "サイン",
+  "subtitle": "Signs",
+  "translation": "Papan Tanda",
+  "sceneDescription": "Pintu dan tangga darurat, tempat sampah dengan papan pemisah jenisnya, peringatan hati-hati di atas kepala dan bawah kaki, serta truk tangki berbahaya di jalan pegunungan dengan larangan membuang sampah sembarangan.",
+  "signs": [
+    { "text": "非常口", "meaning": "Pintu darurat" },
+    { "text": "非常階段", "meaning": "Tangga darurat" },
+    { "text": "ゴミはゴミ箱に", "meaning": "Buang sampah pada tempatnya" },
+    { "text": "頭上注意！", "meaning": "Awas kepala!" },
+    { "text": "足元注意！", "meaning": "Awas langkah kaki!" },
+    { "text": "危ない！", "meaning": "Awas, berbahaya!" },
+    { "text": "危険！", "meaning": "Bahaya!" },
+    { "text": "ゴミを捨てるな！", "meaning": "Jangan buang sampah sembarangan!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 17,
+      "character": "非",
+      "strokes": 8,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "非常（の）", "reading": "ひじょう", "meaning": "darurat" },
+        { "word": "非常口", "reading": "ひじょうぐち", "meaning": "pintu darurat" }
+      ],
+      "extraWords": [
+        { "word": "非常に", "reading": "ひじょうに", "meaning": "sangat, luar biasa" }
+      ]
+    },
+    {
+      "id": 18,
+      "character": "常",
+      "strokes": 11,
+      "onyomi": ["ジョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "日常（の）", "reading": "にちじょう", "meaning": "sehari-hari, biasa" }
+      ],
+      "extraWords": [
+        { "word": "正常（な）", "reading": "せいじょう", "meaning": "normal" }
+      ]
+    },
+    {
+      "id": 19,
+      "character": "階",
+      "strokes": 12,
+      "onyomi": ["カイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜階", "reading": "かい", "meaning": "lantai ke-..." }
+      ]
+    },
+    {
+      "id": 20,
+      "character": "段",
+      "strokes": 9,
+      "onyomi": ["ダン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "階段", "reading": "かいだん", "meaning": "tangga" }
+      ]
+    },
+    {
+      "id": 21,
+      "character": "箱",
+      "strokes": 15,
+      "onyomi": [],
+      "kunyomi": ["はこ"],
+      "words": [
+        { "word": "箱", "reading": "はこ", "meaning": "kotak" }
+      ],
+      "extraWords": [
+        { "word": "ごみ箱", "reading": "ごみばこ", "meaning": "tempat sampah" }
+      ]
+    },
+    {
+      "id": 22,
+      "character": "危",
+      "strokes": 6,
+      "onyomi": ["キ"],
+      "kunyomi": ["あぶない"],
+      "words": [
+        { "word": "危険（な）", "reading": "きけん", "meaning": "bahaya" },
+        { "word": "危ない", "reading": "あぶない", "meaning": "berbahaya" }
+      ]
+    },
+    {
+      "id": 23,
+      "character": "険",
+      "strokes": 11,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "危険（な）", "reading": "きけん", "meaning": "bahaya" }
+      ]
+    },
+    {
+      "id": 24,
+      "character": "捨",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["すてる"],
+      "words": [
+        { "word": "捨てる", "reading": "すてる", "meaning": "membuang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "午後は（　　）に風が強くなるでしょう。",
+      "optionA": "非常",
+      "optionB": "無理",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "日本語の（　　）会話を習っています。",
+      "optionA": "日常",
+      "optionB": "正常",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "（　　）ですから、押さないでください。",
+      "optionA": "危険",
+      "optionB": "満車",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "「非常口」の読み方はどっち？",
+      "optionA": "ひじょうぐち",
+      "optionB": "ふじょうぐち",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "「階段」の読み方はどっち？",
+      "optionA": "かいだん",
+      "optionB": "けいだん",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "「箱」の読み方はどっち？",
+      "optionA": "はこ",
+      "optionB": "ばこ",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "「あぶない」の正しい漢字はどっち？",
+      "optionA": "危ない",
+      "optionB": "険ない",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "「すてないでください」の正しい漢字はどっち？",
+      "optionA": "捨てないで",
+      "optionB": "押てないで",
+      "answer": "A"
+    }
+  ]
+}
