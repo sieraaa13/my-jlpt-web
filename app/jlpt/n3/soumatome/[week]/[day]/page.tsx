@@ -84,9 +84,9 @@ export default async function Page({
 
   const data = lessonFile.levels[0];
   const { prev, next, current, total } = getAdjacentLessons(week, day);
-  // Latihan mengetik contoh kalimat — sudah divalidasi di Week 1 Hari 1,
-  // sekarang diaktifkan untuk semua hari di Week 1 sebelum ke minggu lain.
-  const showBunpouPractice = week === "1";
+  // Latihan mengetik contoh kalimat — sudah divalidasi di Week 1,
+  // sekarang diperluas ke Week 2 sebelum ke minggu-minggu lainnya.
+  const showBunpouPractice = week === "1" || week === "2";
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -269,7 +269,7 @@ export default async function Page({
                                 </div>
                               </div>
 
-                              {week === "1" && (
+                              {(week === "1" || week === "2") && (
                                 <BunpouPractice
                                   patternTitle={section.pattern_title}
                                   patternMeaning={section.pattern_meaning}
