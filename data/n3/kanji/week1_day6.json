@@ -1,0 +1,199 @@
+{
+  "week": 1,
+  "day": 6,
+  "title": "バス",
+  "subtitle": "Bus",
+  "translation": "Bus",
+  "sceneDescription": "Halte bus dengan mesin tiket, kotak pembayaran ongkos, tempat penukaran uang, kursi prioritas untuk lansia, dan tombol pemberitahuan untuk turun di halte berikutnya.",
+  "signs": [
+    { "text": "バス停", "meaning": "Halte bus" },
+    { "text": "優先座席", "meaning": "Kursi prioritas" },
+    { "text": "次とまります", "meaning": "Berhenti berikutnya" },
+    { "text": "お降りの方はこのボタンを押してください", "meaning": "Yang ingin turun, mohon tekan tombol ini" },
+    { "text": "整理券", "meaning": "Tiket nomor urut" },
+    { "text": "料金箱", "meaning": "Kotak pembayaran ongkos" },
+    { "text": "現金／両替", "meaning": "Uang tunai / penukaran uang" }
+  ],
+  "kanjiList": [
+    {
+      "id": 42,
+      "character": "停",
+      "strokes": 11,
+      "onyomi": ["テイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "停車", "reading": "ていしゃ", "meaning": "berhenti (kendaraan)" }
+      ],
+      "extraWords": [
+        { "word": "バス停", "reading": "ばすてい", "meaning": "halte bus" }
+      ]
+    },
+    {
+      "id": 43,
+      "character": "整",
+      "strokes": 16,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "整理", "reading": "せいり", "meaning": "merapikan, mengatur" },
+        { "word": "整理券", "reading": "せいりけん", "meaning": "tiket nomor urut" }
+      ]
+    },
+    {
+      "id": 44,
+      "character": "券",
+      "strokes": 8,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "駐車券", "reading": "ちゅうしゃけん", "meaning": "tiket parkir" },
+        { "word": "回数券", "reading": "かいすうけん", "meaning": "tiket berlangganan (buku tiket)" }
+      ],
+      "extraWords": [
+        { "word": "乗車券", "reading": "じょうしゃけん", "meaning": "tiket naik kendaraan" }
+      ]
+    },
+    {
+      "id": 45,
+      "character": "現",
+      "strokes": 11,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["あらわれる"],
+      "words": [
+        { "word": "現金", "reading": "げんきん", "meaning": "uang tunai" },
+        { "word": "現れる", "reading": "あらわれる", "meaning": "muncul" }
+      ],
+      "extraWords": [
+        { "word": "表現", "reading": "ひょうげん", "meaning": "ekspresi" }
+      ]
+    },
+    {
+      "id": 46,
+      "character": "両",
+      "strokes": 6,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "両親", "reading": "りょうしん", "meaning": "orang tua (ayah dan ibu)" }
+      ],
+      "extraWords": [
+        { "word": "〜両", "reading": "りょう", "meaning": "... gerbong kereta" }
+      ]
+    },
+    {
+      "id": 47,
+      "character": "替",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["かえる"],
+      "words": [
+        { "word": "取り替える", "reading": "とりかえる", "meaning": "mengganti, menukar" },
+        { "word": "着替える", "reading": "きがえる", "meaning": "berganti pakaian" }
+      ],
+      "extraWords": [
+        { "word": "両替", "reading": "りょうがえ", "meaning": "penukaran uang" }
+      ]
+    },
+    {
+      "id": 48,
+      "character": "優",
+      "strokes": 17,
+      "onyomi": ["ユウ"],
+      "kunyomi": ["やさしい"],
+      "words": [
+        { "word": "優先席", "reading": "ゆうせんせき", "meaning": "kursi prioritas" },
+        { "word": "優しい", "reading": "やさしい", "meaning": "baik hati, lembut" }
+      ],
+      "extraWords": [
+        { "word": "女優", "reading": "じょゆう", "meaning": "aktris" }
+      ]
+    },
+    {
+      "id": 49,
+      "character": "座",
+      "strokes": 10,
+      "onyomi": ["ザ"],
+      "kunyomi": ["すわる"],
+      "words": [
+        { "word": "座席", "reading": "ざせき", "meaning": "kursi, tempat duduk" },
+        { "word": "座る", "reading": "すわる", "meaning": "duduk" }
+      ],
+      "extraWords": [
+        { "word": "正座", "reading": "せいざ", "meaning": "duduk bersimpuh ala Jepang" }
+      ]
+    },
+    {
+      "id": 50,
+      "character": "降",
+      "strokes": 10,
+      "onyomi": ["コウ"],
+      "kunyomi": ["おりる", "ふる"],
+      "words": [
+        { "word": "降車口", "reading": "こうしゃぐち", "meaning": "pintu turun (kendaraan)" },
+        { "word": "降りる", "reading": "おりる", "meaning": "turun (dari kendaraan)" }
+      ],
+      "extraWords": [
+        { "word": "以降", "reading": "いこう", "meaning": "sesudah ..." },
+        { "word": "降る", "reading": "ふる", "meaning": "turun (hujan/salju)" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "お年寄りや体の不自由な人のための席：",
+      "optionA": "優先席",
+      "optionB": "指定席",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "バスが止まるところ：",
+      "optionA": "降車口",
+      "optionB": "バス停",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "円をドルに（　　）する。",
+      "optionA": "両側",
+      "optionB": "両替",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "たたみの部屋で（　　）する。",
+      "optionA": "正座",
+      "optionB": "座席",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "カードでも（　　）でもいいです。",
+      "optionA": "現金",
+      "optionB": "料金",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "パジャマに（　　）寝る。",
+      "optionA": "着替えて",
+      "optionB": "取り替えて",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）をもらって順番を待つ。",
+      "optionA": "回数券",
+      "optionB": "整理券",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "バスを（　　）。",
+      "optionA": "降りる",
+      "optionB": "降る",
+      "answer": "A"
+    }
+  ]
+}
