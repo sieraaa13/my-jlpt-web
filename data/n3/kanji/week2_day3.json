@@ -1,0 +1,176 @@
+{
+  "week": 2,
+  "day": 3,
+  "title": "観光地図",
+  "subtitle": "Sightseeing Map",
+  "translation": "Peta Wisata",
+  "sceneDescription": "Peta wisata yang menandai lokasi kebun binatang, taman hiburan, kuil Shinto, bandara, pelabuhan, museum seni, dan kuil Buddha.",
+  "signs": [
+    { "text": "動物園", "meaning": "Kebun binatang" },
+    { "text": "遊園地", "meaning": "Taman hiburan" },
+    { "text": "神社", "meaning": "Kuil Shinto" },
+    { "text": "○○空港", "meaning": "Bandara ○○" },
+    { "text": "○○港", "meaning": "Pelabuhan ○○" },
+    { "text": "美術館", "meaning": "Museum seni" },
+    { "text": "お寺", "meaning": "Kuil Buddha" }
+  ],
+  "kanjiList": [
+    {
+      "id": 75,
+      "character": "観",
+      "strokes": 18,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "観光", "reading": "かんこう", "meaning": "wisata, pariwisata" },
+        { "word": "観客", "reading": "かんきゃく", "meaning": "penonton, audiens" }
+      ]
+    },
+    {
+      "id": 76,
+      "character": "園",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "動物園", "reading": "どうぶつえん", "meaning": "kebun binatang" }
+      ]
+    },
+    {
+      "id": 77,
+      "character": "港",
+      "strokes": 12,
+      "onyomi": ["コウ"],
+      "kunyomi": ["みなと"],
+      "words": [
+        { "word": "空港", "reading": "くうこう", "meaning": "bandara" },
+        { "word": "港", "reading": "みなと", "meaning": "pelabuhan" }
+      ],
+      "extraWords": [
+        { "word": "〇〇港", "reading": "こう", "meaning": "pelabuhan ..." }
+      ]
+    },
+    {
+      "id": 78,
+      "character": "遊",
+      "strokes": 12,
+      "onyomi": ["ユウ"],
+      "kunyomi": ["あそぶ"],
+      "words": [
+        { "word": "遊園地", "reading": "ゆうえんち", "meaning": "taman hiburan" },
+        { "word": "遊ぶ", "reading": "あそぶ", "meaning": "bermain" }
+      ]
+    },
+    {
+      "id": 79,
+      "character": "美",
+      "strokes": 9,
+      "onyomi": ["ビ"],
+      "kunyomi": ["うつくしい"],
+      "words": [
+        { "word": "美術館", "reading": "びじゅつかん", "meaning": "museum seni" },
+        { "word": "美しい", "reading": "うつくしい", "meaning": "indah" }
+      ],
+      "extraWords": [
+        { "word": "美人", "reading": "びじん", "meaning": "wanita cantik" }
+      ]
+    },
+    {
+      "id": 80,
+      "character": "術",
+      "strokes": 11,
+      "onyomi": ["ジュツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "美術", "reading": "びじゅつ", "meaning": "seni rupa" },
+        { "word": "手術", "reading": "しゅじゅつ", "meaning": "operasi (bedah)" }
+      ],
+      "extraWords": [
+        { "word": "技術", "reading": "ぎじゅつ", "meaning": "teknik, teknologi" }
+      ]
+    },
+    {
+      "id": 81,
+      "character": "神",
+      "strokes": 9,
+      "onyomi": ["シン", "ジン"],
+      "kunyomi": ["かみ"],
+      "words": [
+        { "word": "神社", "reading": "じんじゃ", "meaning": "kuil Shinto" },
+        { "word": "神様", "reading": "かみさま", "meaning": "dewa, tuhan" }
+      ],
+      "extraWords": [
+        { "word": "神経質（な）", "reading": "しんけいしつ", "meaning": "gugup, gampang cemas" }
+      ]
+    },
+    {
+      "id": 82,
+      "character": "寺",
+      "strokes": 6,
+      "onyomi": ["ジ"],
+      "kunyomi": ["てら"],
+      "words": [
+        { "word": "〇〇寺", "reading": "じ", "meaning": "kuil ..." },
+        { "word": "お寺", "reading": "てら", "meaning": "kuil Buddha" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "遊園地：",
+      "optionA": "およぐごろ",
+      "optionB": "あそぶところ",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "動物園：動物を",
+      "optionA": "買うところ",
+      "optionB": "見るところ",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "港：",
+      "optionA": "船が着くところ",
+      "optionB": "飛行機が着くところ",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "美術：",
+      "optionA": "テクニック",
+      "optionB": "アート",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "神経質：小さいことを",
+      "optionA": "気にする",
+      "optionB": "気にしない",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "美術館：",
+      "optionA": "本を借りるところ",
+      "optionB": "作品を見るところ",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "日本へは（　　）来ました。",
+      "optionA": "観光で",
+      "optionB": "空港で",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　　）は立って手をたたいた。",
+      "optionA": "観客",
+      "optionB": "全席",
+      "answer": "A"
+    }
+  ]
+}
