@@ -267,6 +267,15 @@ export default async function Page({
                                   )}
                                 </div>
                               </div>
+
+                              {week === "1" && d === "1" && (
+                                <BunpouPractice
+                                  patternTitle={section.pattern_title}
+                                  patternMeaning={section.pattern_meaning}
+                                  formula={section.description_box.formula}
+                                  explanation={section.description_box.explanation}
+                                />
+                              )}
                             </div>
                           ))}
                         </div>
