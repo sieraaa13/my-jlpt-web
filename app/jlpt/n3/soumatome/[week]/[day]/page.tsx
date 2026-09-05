@@ -195,6 +195,7 @@ export default async function Page({
                     patternMeaning={section.pattern_meaning}
                     formula={section.description_box.formula}
                     explanation={section.description_box.explanation}
+                    examples={section.examples}
                   />
                 )}
               </div>
@@ -274,6 +275,7 @@ export default async function Page({
                                   patternMeaning={section.pattern_meaning}
                                   formula={section.description_box.formula}
                                   explanation={section.description_box.explanation}
+                                  examples={section.examples}
                                 />
                               )}
                             </div>

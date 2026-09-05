@@ -10,6 +10,7 @@ interface BunpouPracticeProps {
   patternMeaning?: string;
   formula: string;
   explanation: string;
+  examples?: { jp: string; highlight?: string }[];
 }
 
 interface CheckResult {
@@ -18,7 +19,7 @@ interface CheckResult {
   correction: string | null;
 }
 
-export function BunpouPractice({ patternTitle, patternMeaning, formula, explanation }: BunpouPracticeProps) {
+export function BunpouPractice({ patternTitle, patternMeaning, formula, explanation, examples }: BunpouPracticeProps) {
   const [sentence, setSentence] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<CheckResult | null>(null);
@@ -39,6 +40,7 @@ export function BunpouPractice({ patternTitle, patternMeaning, formula, explanat
           patternMeaning,
           formula,
           explanation,
+          examples,
           userSentence: sentence,
         }),
       });
