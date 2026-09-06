@@ -1,0 +1,192 @@
+{
+  "week": 3,
+  "day": 4,
+  "title": "レシピ",
+  "subtitle": "Recipes",
+  "translation": "Resep Masakan",
+  "sceneDescription": "Resep hotcake yang menunjukkan daftar bahan (telur, susu, tepung hotcake) beserta langkah-langkah: mencampur telur dan susu lalu tepung, memanaskan wajan, dan membalik adonan saat permukaannya berlubang kecil.",
+  "signs": [
+    { "text": "材料（4枚分）", "meaning": "Bahan (untuk 4 lembar)" },
+    { "text": "卵と牛乳を混ぜてから、粉を混ぜます", "meaning": "Campur telur dan susu dulu, lalu campur tepungnya" },
+    { "text": "弱火で焼きます", "meaning": "Panggang dengan api kecil" },
+    { "text": "表面に小さいあなが空いたら裏返します", "meaning": "Balikkan saat permukaannya berlubang kecil" }
+  ],
+  "kanjiList": [
+    {
+      "id": 139,
+      "character": "材",
+      "strokes": 7,
+      "onyomi": ["ザイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "材料", "reading": "ざいりょう", "meaning": "bahan, material" }
+      ],
+      "extraWords": [
+        { "word": "教材", "reading": "きょうざい", "meaning": "materi pengajaran" }
+      ]
+    },
+    {
+      "id": 140,
+      "character": "卵",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["たまご"],
+      "words": [
+        { "word": "卵", "reading": "たまご", "meaning": "telur" }
+      ],
+      "extraWords": [
+        { "word": "卵焼き", "reading": "たまごやき", "meaning": "telur dadar gulung ala Jepang" }
+      ]
+    },
+    {
+      "id": 141,
+      "character": "乳",
+      "strokes": 8,
+      "onyomi": ["ニュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "牛乳", "reading": "ぎゅうにゅう", "meaning": "susu sapi" }
+      ]
+    },
+    {
+      "id": 142,
+      "character": "粉",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["こな", "こ"],
+      "words": [
+        { "word": "粉", "reading": "こな", "meaning": "bubuk, tepung" }
+      ],
+      "extraWords": [
+        { "word": "小麦粉", "reading": "こむぎこ", "meaning": "tepung terigu" }
+      ]
+    },
+    {
+      "id": 143,
+      "character": "袋",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["ふくろ"],
+      "words": [
+        { "word": "袋", "reading": "ふくろ", "meaning": "kantong, tas" },
+        { "word": "ごみ袋", "reading": "ごみぶくろ", "meaning": "kantong sampah" }
+      ],
+      "extraWords": [
+        { "word": "紙袋", "reading": "かみぶくろ", "meaning": "kantong kertas" },
+        { "word": "手袋", "reading": "てぶくろ", "meaning": "sarung tangan" },
+        { "word": "足袋", "reading": "たび", "meaning": "kaus kaki tradisional Jepang (tabi)" }
+      ]
+    },
+    {
+      "id": 144,
+      "character": "混",
+      "strokes": 11,
+      "onyomi": ["コン"],
+      "kunyomi": ["まぜる"],
+      "words": [
+        { "word": "混雑", "reading": "こんざつ", "meaning": "keramaian, kepadatan" },
+        { "word": "混ぜる", "reading": "まぜる", "meaning": "mencampur" }
+      ]
+    },
+    {
+      "id": 145,
+      "character": "焼",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["やく", "やける"],
+      "words": [
+        { "word": "焼く", "reading": "やく", "meaning": "memanggang, membakar" }
+      ],
+      "extraWords": [
+        { "word": "焼ける", "reading": "やける", "meaning": "terpanggang, terbakar" }
+      ]
+    },
+    {
+      "id": 146,
+      "character": "表",
+      "strokes": 8,
+      "onyomi": ["ヒョウ"],
+      "kunyomi": ["おもて", "あらわす"],
+      "words": [
+        { "word": "表", "reading": "ひょう", "meaning": "tabel" },
+        { "word": "発表", "reading": "はっぴょう", "meaning": "pengumuman, presentasi" }
+      ],
+      "extraWords": [
+        { "word": "表面", "reading": "ひょうめん", "meaning": "permukaan" },
+        { "word": "代表", "reading": "だいひょう", "meaning": "perwakilan" },
+        { "word": "表す", "reading": "あらわす", "meaning": "menunjukkan, mengekspresikan" }
+      ]
+    },
+    {
+      "id": 147,
+      "character": "裏",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["うら"],
+      "words": [
+        { "word": "裏", "reading": "うら", "meaning": "bagian belakang, sisi sebaliknya" }
+      ],
+      "extraWords": [
+        { "word": "裏返す", "reading": "うらがえす", "meaning": "membalikkan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "混雑：",
+      "optionA": "わけがわからないようす",
+      "optionB": "人などでいっぱいのようす",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "発表：",
+      "optionA": "みんなに知らせること",
+      "optionB": "出発の時刻を書いたもの",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "田中君の席は私の（　　）です。",
+      "optionA": "後ろ",
+      "optionB": "裏",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "データをグラフに（　　）。",
+      "optionA": "現す",
+      "optionB": "表す",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "カンガルーのおなかには（　　）がある。",
+      "optionA": "箱",
+      "optionB": "袋",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "オリンピックの（　　）にえらばれる。",
+      "optionA": "代表",
+      "optionB": "表面",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "パンを（　　）。",
+      "optionA": "焼く",
+      "optionB": "焼ける",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "足袋を（　　）。",
+      "optionA": "かぶる",
+      "optionB": "はく",
+      "answer": "B"
+    }
+  ]
+}
