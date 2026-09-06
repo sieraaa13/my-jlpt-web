@@ -1,0 +1,167 @@
+{
+  "week": 6,
+  "day": 1,
+  "title": "天気予報",
+  "subtitle": "The Weather Forecast",
+  "translation": "Ramalan Cuaca",
+  "sceneDescription": "Ramalan cuaca menyebut sebagian besar wilayah cerah, bagian utara berawan dengan kemungkinan hujan, angin kencang tapi suhu hangat, disertai simbol cuaca (cerah, berawan, hujan, salju) dan pengumuman gempa bumi tanpa risiko tsunami.",
+  "signs": [
+    { "text": "明日、県内はたいていのところで晴れますが、北部では雲が広がり、雨が降るところもあるでしょう。", "meaning": "Besok, sebagian besar wilayah akan cerah, tapi di bagian utara akan berawan dan ada kemungkinan hujan." },
+    { "text": "晴れ／くもり／雨／雪", "meaning": "Cerah / Berawan / Hujan / Salju" },
+    { "text": "9時5分ごろ、東北地方で強い地震がありました。津波の心配はありません。", "meaning": "Sekitar jam 9:05, terjadi gempa kuat di wilayah Tohoku. Tidak ada risiko tsunami." }
+  ],
+  "kanjiList": [
+    {
+      "id": 281,
+      "character": "報",
+      "strokes": 12,
+      "onyomi": ["ホウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "予報", "reading": "よほう", "meaning": "ramalan, prakiraan" }
+      ],
+      "extraWords": [
+        { "word": "報告", "reading": "ほうこく", "meaning": "laporan" }
+      ]
+    },
+    {
+      "id": 282,
+      "character": "晴",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["はれる"],
+      "words": [
+        { "word": "晴れる", "reading": "はれる", "meaning": "cerah (cuaca)" }
+      ],
+      "extraWords": [
+        { "word": "晴れ", "reading": "はれ", "meaning": "cuaca cerah" }
+      ]
+    },
+    {
+      "id": 283,
+      "character": "雲",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["くも"],
+      "words": [
+        { "word": "雲", "reading": "くも", "meaning": "awan" }
+      ]
+    },
+    {
+      "id": 284,
+      "character": "吹",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["ふく"],
+      "words": [
+        { "word": "吹く", "reading": "ふく", "meaning": "berhembus" }
+      ]
+    },
+    {
+      "id": 285,
+      "character": "暖",
+      "strokes": 13,
+      "onyomi": ["ダン"],
+      "kunyomi": ["あたたかい"],
+      "words": [
+        { "word": "暖房", "reading": "だんぼう", "meaning": "pemanas ruangan" },
+        { "word": "暖かい", "reading": "あたたかい", "meaning": "hangat" }
+      ]
+    },
+    {
+      "id": 286,
+      "character": "雪",
+      "strokes": 11,
+      "onyomi": [],
+      "kunyomi": ["ゆき"],
+      "words": [
+        { "word": "雪", "reading": "ゆき", "meaning": "salju" }
+      ]
+    },
+    {
+      "id": 287,
+      "character": "震",
+      "strokes": 15,
+      "onyomi": ["シン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "地震", "reading": "じしん", "meaning": "gempa bumi" }
+      ],
+      "extraWords": [
+        { "word": "震度", "reading": "しんど", "meaning": "skala intensitas gempa" }
+      ]
+    },
+    {
+      "id": 288,
+      "character": "波",
+      "strokes": 8,
+      "onyomi": ["ハ"],
+      "kunyomi": ["なみ"],
+      "words": [
+        { "word": "電波", "reading": "でんぱ", "meaning": "gelombang elektromagnetik" },
+        { "word": "波", "reading": "なみ", "meaning": "ombak, gelombang" }
+      ],
+      "extraWords": [
+        { "word": "津波", "reading": "つなみ", "meaning": "tsunami" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "暖房：",
+      "optionA": "ヒーター",
+      "optionB": "クーラー",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "震度：地震の",
+      "optionA": "深さ",
+      "optionB": "強さ",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "報告：",
+      "optionA": "レポート",
+      "optionB": "ポスター",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "どちらが勝つか（　　）する。",
+      "optionA": "予報",
+      "optionB": "予想",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "風が（　　）。",
+      "optionA": "付く",
+      "optionB": "吹く",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "地震による（　　）の心配はありません。",
+      "optionA": "津波",
+      "optionB": "電波",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "天気（　　）",
+      "optionA": "予報",
+      "optionB": "予定",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　　）が降る。",
+      "optionA": "雲",
+      "optionB": "雪",
+      "answer": "B"
+    }
+  ]
+}
