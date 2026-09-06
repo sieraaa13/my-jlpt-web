@@ -3,7 +3,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 
-const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json"];
+const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json", "tema5.json"];
 
 function getBaseUrl(): string {
   return process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
           const themeList = parsed.themes.map((t: any) => ({
             id: t.id,
             name: t.name,
-            template: `/asset/photobooth/${t.template}`,
+            template: t.template ? `/asset/photobooth/${t.template}` : "",
             maxPhotos: t.maxPhotos,
           }));
           allThemes.push(...themeList);

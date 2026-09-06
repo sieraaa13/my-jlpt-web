@@ -7,7 +7,7 @@ const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
 const MODEL_IMAGE = "gemini-3-pro-image-preview";
 
 // File pembagi tema
-const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json"];
+const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json", "tema5.json"];
 
 type Theme = {
   id: string;
@@ -78,13 +78,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tema tidak ditemukan" }, { status: 404 });
     }
 
-    const template = await fetchTemplateBase64(theme.template);
+    // Tema tanpa template (mis. transformasi gaya foto tunggal) tidak perlu
+    // gambar canvas dasar — cukup prompt + foto user.
+    const template = theme.template ? await fetchTemplateBase64(theme.template) : null;
 
-    // Gabung: prompt custom + template + foto user
-    const parts: any[] = [
-      { text: theme.prompt },
-      { inlineData: { mimeType: template.mime, data: template.data } },
-    ];
+    // Gabung: prompt custom + (template kalau ada) + foto user
+    const parts: any[] = [{ text: theme.prompt }];
+    if (template) {
+      parts.push({ inlineData: { mimeType: template.mime, data: template.data } });
+    }
 
     for (const img of images) {
       const base64Data = img.replace(/^data:image\/\w+;base64,/, "");

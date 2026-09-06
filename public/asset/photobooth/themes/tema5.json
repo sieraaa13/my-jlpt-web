@@ -1,0 +1,18 @@
+{
+  "themes": [
+    {
+      "id": "anime_same_pose",
+      "name": "Gaya Anime (Pose Asli)",
+      "template": "",
+      "maxPhotos": 1,
+      "prompt": "You are converting a real photograph into a hand-drawn anime/manga illustration. Image 1 is the user's real photo. CRITICAL RULE: Keep the EXACT same pose, camera angle, framing, facial expression, clothing, and identity as in Image 1 — do NOT change what the person is doing, wearing, or how they are posed, and do NOT change the background composition. The ONLY thing that changes is the rendering style: redraw the entire image as a modern anime/manga-style illustration with clean expressive linework, a mix of rough sketch-style outlines and soft cel-shaded flat coloring, and slightly stylized facial features (larger expressive eyes, simplified nose and mouth) while still clearly resembling the same person. Do not add new objects, text, watermarks, or change the composition. Do not make the person noticeably younger or older, or change their body proportions. The result should look like the same exact photo, simply redrawn by an anime illustrator."
+    },
+    {
+      "id": "anime_new_look",
+      "name": "Gaya Anime (Transformasi Penuh)",
+      "template": "",
+      "maxPhotos": 1,
+      "prompt": "You are creating an original full-body anime/manga character illustration inspired by the person in Image 1 (the user's real photo). Use Image 1 ONLY as a reference for the person's facial likeness (face shape, hair color, skin tone) so the character is recognizable as them — but reimagine everything else as a brand-new character illustration following this exact style and pose:\n\nART STYLE: A modern digital sketch-style anime illustration with loose, expressive, slightly messy black linework mixed with clean cel-shaded flat colors. Soft warm skin tones with light blush on the cheeks. Plain white background, no scenery, no text.\n\nPOSE: Standing in a relaxed three-quarter pose, one hand raised near the head with fingers loosely forming a playful gesture near the hairline, faint confident smile, looking slightly toward the viewer.\n\nHAIR: Dark short-to-medium bob haircut with side-swept bangs and a couple of loose strands falling near the face, one small dangling earring visible.\n\nOUTFIT: An oversized light-blue pinstriped button-up shirt worn loose and untucked with sleeves slightly rolled, layered so a small sliver of midriff shows, with a dark necktie worn loosely knotted and hanging long. High-waisted, very baggy beige cargo-style trousers cinched with a black grommet belt that has a small hanging tag charm and a thin chain detail near one pocket. Simple black flat shoes. A small black crossbody bag hanging at the hip.\n\nCRITICAL: The final character's face must still be clearly recognizable as inspired by the person in Image 1 (similar face shape, skin tone, hair color) — but the pose, outfit, and body position must follow this description exactly, NOT the original photo's pose or clothing. Do not include any text, watermark, or logo in the output."
+    }
+  ]
+}
