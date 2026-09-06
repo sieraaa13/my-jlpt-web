@@ -12,6 +12,7 @@ import { exam201607 } from "../data/exams/2016/07";
 import { exam201612 } from "../data/exams/2016/12";
 import { exam201707 } from "../data/exams/2017/07";
 import { exam201712 } from "../data/exams/2017/12";
+import { exam201807 } from "../data/exams/2018/07";
 import { exam201812 } from "../data/exams/2018/12";
 import { exam201907 } from "../data/exams/2019/07";
 import { exam202212 } from "../data/exams/2022/12";
@@ -150,6 +151,7 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
     "2016-12": exam201612,
     "2017-07": exam201707,
     "2017-12": exam201712,
+    "2018-07": exam201807,
     "2018-12": exam201812,
     "2019-07": exam201907,
     "2022-12": exam202212,
