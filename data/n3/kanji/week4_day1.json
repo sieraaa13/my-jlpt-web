@@ -1,0 +1,174 @@
+{
+  "week": 4,
+  "day": 1,
+  "title": "日用品",
+  "subtitle": "Daily Necessities",
+  "translation": "Barang Sehari-hari",
+  "sceneDescription": "Rak toko dengan gula, garam, minyak goreng, minyak salad, bunga per tangkai/kantong, apel per buah, teh hijau dan teh hitam per kotak, serta buku bekas obral seharga 100 yen per buah.",
+  "signs": [
+    { "text": "砂糖 1袋128円", "meaning": "Gula 1 kantong 128 yen" },
+    { "text": "天ぷら油・サラダ油 1本198円", "meaning": "Minyak tempura & minyak salad 1 botol 198 yen" },
+    { "text": "1個180円", "meaning": "1 buah 180 yen" },
+    { "text": "紅茶・緑茶 各1箱200円", "meaning": "Teh hitam & teh hijau masing-masing 1 kotak 200 yen" },
+    { "text": "古本文庫本 どれでも1冊100円", "meaning": "Buku bekas, semua 1 buku 100 yen" }
+  ],
+  "kanjiList": [
+    {
+      "id": 171,
+      "character": "砂",
+      "strokes": 9,
+      "onyomi": ["サ"],
+      "kunyomi": ["すな"],
+      "words": [
+        { "word": "砂糖", "reading": "さとう", "meaning": "gula" },
+        { "word": "砂", "reading": "すな", "meaning": "pasir" }
+      ]
+    },
+    {
+      "id": 172,
+      "character": "塩",
+      "strokes": 13,
+      "onyomi": ["エン"],
+      "kunyomi": ["しお"],
+      "words": [
+        { "word": "食塩", "reading": "しょくえん", "meaning": "garam meja" },
+        { "word": "塩", "reading": "しお", "meaning": "garam" }
+      ]
+    },
+    {
+      "id": 173,
+      "character": "油",
+      "strokes": 8,
+      "onyomi": ["ユ"],
+      "kunyomi": ["あぶら"],
+      "words": [
+        { "word": "しょう油", "reading": "しょうゆ", "meaning": "kecap asin" },
+        { "word": "灯油", "reading": "とうゆ", "meaning": "minyak tanah" }
+      ],
+      "extraWords": [
+        { "word": "石油", "reading": "せきゆ", "meaning": "minyak bumi" },
+        { "word": "油", "reading": "あぶら", "meaning": "minyak" }
+      ]
+    },
+    {
+      "id": 174,
+      "character": "緑",
+      "strokes": 14,
+      "onyomi": ["リョク"],
+      "kunyomi": ["みどり"],
+      "words": [
+        { "word": "緑茶", "reading": "りょくちゃ", "meaning": "teh hijau" },
+        { "word": "緑（色）", "reading": "みどり（いろ）", "meaning": "warna hijau" }
+      ]
+    },
+    {
+      "id": 175,
+      "character": "紅",
+      "strokes": 9,
+      "onyomi": ["コウ"],
+      "kunyomi": ["べに"],
+      "words": [
+        { "word": "紅茶", "reading": "こうちゃ", "meaning": "teh hitam" },
+        { "word": "口紅", "reading": "くちべに", "meaning": "lipstik" }
+      ]
+    },
+    {
+      "id": 176,
+      "character": "冊",
+      "strokes": 5,
+      "onyomi": ["サツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜冊", "reading": "〜さつ", "meaning": "penghitung buku" }
+      ],
+      "extraWords": [
+        { "word": "冊数", "reading": "さっすう", "meaning": "jumlah buku" }
+      ]
+    },
+    {
+      "id": 177,
+      "character": "個",
+      "strokes": 10,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜個", "reading": "〜こ", "meaning": "penghitung benda bulat/umum" },
+        { "word": "個人", "reading": "こじん", "meaning": "individu, perorangan" }
+      ],
+      "extraWords": [
+        { "word": "個数", "reading": "こすう", "meaning": "jumlah barang" }
+      ]
+    },
+    {
+      "id": 178,
+      "character": "枚",
+      "strokes": 8,
+      "onyomi": ["マイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜枚", "reading": "〜まい", "meaning": "penghitung benda pipih" }
+      ],
+      "extraWords": [
+        { "word": "枚数", "reading": "まいすう", "meaning": "jumlah lembar" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "灯油：",
+      "optionA": "料理に使う油",
+      "optionB": "ヒーターなどに使う油",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "個人：",
+      "optionA": "ひとりひとりの人",
+      "optionB": "なくなった人",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "口紅：",
+      "optionA": "食品の一つ",
+      "optionB": "化粧品の一つ",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "食塩：料理",
+      "optionA": "を入れるもの",
+      "optionB": "に味をつけるもの",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "海岸で（　　）遊びをする。",
+      "optionA": "砂",
+      "optionB": "粉",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "80円の切手を10（　　）ください。",
+      "optionA": "枚",
+      "optionB": "部",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "1（　　）200円のりんご",
+      "optionA": "個",
+      "optionB": "固",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "図書館で本を2（　　）借りました。",
+      "optionA": "本",
+      "optionB": "冊",
+      "answer": "B"
+    }
+  ]
+}
