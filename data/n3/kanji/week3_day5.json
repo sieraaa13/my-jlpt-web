@@ -1,0 +1,182 @@
+{
+  "week": 3,
+  "day": 5,
+  "title": "コピー機・留守番電話",
+  "subtitle": "A Copy Machine, An Answering Machine",
+  "translation": "Mesin Fotokopi & Telepon Penjawab",
+  "sceneDescription": "Panel mesin fotokopi dengan pengaturan kepekatan (濃い/薄い) dan jumlah salinan, di sebelahnya telepon penjawab otomatis menampilkan 3 pesan masuk dengan tombol 留守 (mode tak di rumah) dan 再生 (putar ulang).",
+  "signs": [
+    { "text": "濃い ←→ 薄い", "meaning": "Pekat ←→ Tipis" },
+    { "text": "部数", "meaning": "Jumlah salinan" },
+    { "text": "留守／再生", "meaning": "Mode tak di rumah / Putar ulang" },
+    { "text": "用件が3件あります", "meaning": "Ada 3 pesan masuk" }
+  ],
+  "kanjiList": [
+    {
+      "id": 148,
+      "character": "留",
+      "strokes": 10,
+      "onyomi": ["リュウ"],
+      "kunyomi": ["とめる"],
+      "words": [
+        { "word": "留学", "reading": "りゅうがく", "meaning": "belajar di luar negeri" },
+        { "word": "保留", "reading": "ほりゅう", "meaning": "ditunda, ditahan" }
+      ],
+      "extraWords": [
+        { "word": "留守番", "reading": "るすばん", "meaning": "menjaga rumah, mesin penjawab" },
+        { "word": "書留", "reading": "かきとめ", "meaning": "surat tercatat (pos)" }
+      ]
+    },
+    {
+      "id": 149,
+      "character": "守",
+      "strokes": 6,
+      "onyomi": ["シュ"],
+      "kunyomi": ["まもる"],
+      "words": [
+        { "word": "守備", "reading": "しゅび", "meaning": "pertahanan" },
+        { "word": "守る", "reading": "まもる", "meaning": "melindungi, menjaga (janji)" }
+      ],
+      "extraWords": [
+        { "word": "留守", "reading": "るす", "meaning": "tidak ada di rumah" }
+      ]
+    },
+    {
+      "id": 150,
+      "character": "濃",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["こい"],
+      "words": [
+        { "word": "濃い", "reading": "こい", "meaning": "pekat, kental" }
+      ]
+    },
+    {
+      "id": 151,
+      "character": "薄",
+      "strokes": 16,
+      "onyomi": [],
+      "kunyomi": ["うすい"],
+      "words": [
+        { "word": "薄い", "reading": "うすい", "meaning": "tipis, encer" }
+      ]
+    },
+    {
+      "id": 152,
+      "character": "部",
+      "strokes": 11,
+      "onyomi": ["ブ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "部分", "reading": "ぶぶん", "meaning": "bagian" },
+        { "word": "部長", "reading": "ぶちょう", "meaning": "kepala bagian" }
+      ],
+      "extraWords": [
+        { "word": "学部", "reading": "がくぶ", "meaning": "fakultas" },
+        { "word": "部屋", "reading": "へや", "meaning": "kamar" }
+      ]
+    },
+    {
+      "id": 153,
+      "character": "数",
+      "strokes": 13,
+      "onyomi": ["スウ"],
+      "kunyomi": ["かず", "かぞえる"],
+      "words": [
+        { "word": "数字", "reading": "すうじ", "meaning": "angka" },
+        { "word": "数", "reading": "かず", "meaning": "jumlah" }
+      ],
+      "extraWords": [
+        { "word": "数学", "reading": "すうがく", "meaning": "matematika" },
+        { "word": "数える", "reading": "かぞえる", "meaning": "menghitung" }
+      ]
+    },
+    {
+      "id": 154,
+      "character": "件",
+      "strokes": 6,
+      "onyomi": ["ケン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "件名", "reading": "けんめい", "meaning": "subjek (email)" },
+        { "word": "用件", "reading": "ようけん", "meaning": "keperluan, urusan" }
+      ],
+      "extraWords": [
+        { "word": "事件", "reading": "じけん", "meaning": "insiden, kasus" }
+      ]
+    },
+    {
+      "id": 155,
+      "character": "再",
+      "strokes": 6,
+      "onyomi": ["サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "再入国", "reading": "さいにゅうこく", "meaning": "masuk kembali ke suatu negara" },
+        { "word": "再生", "reading": "さいせい", "meaning": "memutar ulang, daur ulang" }
+      ],
+      "extraWords": [
+        { "word": "再ダイヤル", "reading": "さいダイヤル", "meaning": "panggil ulang (redial)" },
+        { "word": "再来週", "reading": "さらいしゅう", "meaning": "dua minggu lagi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "留学：",
+      "optionA": "卒業できないこと",
+      "optionB": "外国へ勉強に行くこと",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "用件：",
+      "optionA": "伝えたいこと",
+      "optionB": "起こったこと",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "件名：電子メールなどの",
+      "optionA": "アドレス",
+      "optionB": "タイトル",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "保留：しばらく",
+      "optionA": "外国に住むこと",
+      "optionB": "そのままにすること",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "あの選手は（　　）がうまい。",
+      "optionA": "予防",
+      "optionB": "守備",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "重要な書類を（　　）で送る。",
+      "optionA": "書留",
+      "optionB": "快速",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "両親が出かけて、私は（　　）をした。",
+      "optionA": "留守",
+      "optionB": "留守番",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "約束や時間を（　　）。",
+      "optionA": "限る",
+      "optionB": "守る",
+      "answer": "B"
+    }
+  ]
+}
