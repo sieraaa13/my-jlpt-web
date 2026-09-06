@@ -1,0 +1,124 @@
+{
+  "week": 5,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 5 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "楽しみにしていた旅行が中止になって残念だ。", "target": "残念", "choices": ["だんねん", "きねん", "ざんねん", "むねん"], "answer": "ざんねん" },
+    { "sentence": "赤ちゃんがにっこり笑った。", "target": "笑った", "choices": ["あらった", "いわった", "はらった", "わらった"], "answer": "わらった" },
+    { "sentence": "会議室から別の部屋へ移動する。", "target": "移動", "choices": ["じどう", "ほどう", "いどう", "たどう"], "answer": "いどう" },
+    { "sentence": "台風で電車が遅れている。", "target": "遅れて", "choices": ["おくれて", "おそれて", "あきれて", "つかれて"], "answer": "おくれて" },
+    { "sentence": "彼は来月で会社を辞めるそうだ。", "target": "辞める", "choices": ["なめる", "とめる", "ほめる", "やめる"], "answer": "やめる" },
+    { "sentence": "リボンをきれいに結ぶ。", "target": "結ぶ", "choices": ["むすぶ", "もすぶ", "みすぶ", "ゆすぶ"], "answer": "むすぶ" },
+    { "sentence": "大事なものは奥にしまっておく。", "target": "奥", "choices": ["そく", "ろく", "おく", "まく"], "answer": "おく" },
+    { "sentence": "大学で政治を勉強している。", "target": "政治", "choices": ["せいじ", "せいち", "しょうち", "しょうじ"], "answer": "せいじ" },
+    { "sentence": "隣の家の息子はもう大学生だ。", "target": "息子", "choices": ["むつこ", "もすこ", "むすこ", "もつこ"], "answer": "むすこ" },
+    { "sentence": "祖父は毎晩日本酒を飲む。", "target": "日本酒", "choices": ["にほんちょ", "にほんちゅ", "にほんじゅ", "にほんしゅ"], "answer": "にほんしゅ" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "先生におれいの手紙を書いた。", "reading": "おれい", "choices": ["お礼", "お札", "お机", "お杯"], "answer": "お礼" },
+    { "sentence": "何時にうかがえばよろしいでしょうか。", "reading": "うかがえば", "choices": ["司えば", "伺えば", "何えば", "向えば"], "answer": "伺えば" },
+    { "sentence": "辞書でことばの意味をしらべる。", "reading": "しらべる", "choices": ["呼べる", "並べる", "選べる", "調べる"], "answer": "調べる" },
+    { "sentence": "タオルであせをふく。", "reading": "あせ", "choices": ["息", "汗", "涙", "汁"], "answer": "汗" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "まず（　　）初に材料を細かく切ります。", "target": "最初", "choices": ["再", "先", "際", "最"], "answer": "最" },
+    { "sentence": "天気は回（　　）に向かっています。", "target": "回復", "choices": ["服", "復", "福", "腹"], "answer": "復" },
+    { "sentence": "（　　）年はたいへんお世話になりました。", "target": "昨年", "choices": ["次", "毎", "各", "昨"], "answer": "昨" },
+    { "sentence": "会社へ戻らずに（　　）接、帰宅します。", "target": "直接", "choices": ["直", "間", "真", "正"], "answer": "直" },
+    { "sentence": "頭（　　）薬を買う。", "target": "頭痛", "choices": ["通", "痛", "病", "療"], "answer": "痛" },
+    { "sentence": "食（　　）がない。", "target": "食欲", "choices": ["色", "浴", "気", "欲"], "answer": "欲" }
+  ],
+  "passageQuestion": {
+    "passage": "友達に久しぶりにメールを送った。返事がなかなか来なかったので、少し[21]と思っていたら、3日後にやっと返事が[22]。「返事が[23]、ごめんね。最近仕事が忙しくて、毎日[24]んだ」と書いてあった。それを読んで、私は思わず[25]。",
+    "wordBank": ["しんぱいした", "とどいた", "おそくなって", "ねむい", "わらってしまった", "おこった", "なみだがでた"],
+    "blanks": [
+      { "number": 21, "answer": "しんぱいした", "answerKanji": "心配した" },
+      { "number": 22, "answer": "とどいた", "answerKanji": "届いた" },
+      { "number": 23, "answer": "おそくなって", "answerKanji": "遅くなって" },
+      { "number": 24, "answer": "ねむい", "answerKanji": "眠い" },
+      { "number": 25, "answer": "わらってしまった", "answerKanji": "笑ってしまった" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "どっちを使う？",
+    "translation": "Pakai yang Mana?",
+    "description": "Beberapa kata terdengar sama tapi kanjinya beda tergantung konteksnya — seperti 泊まる (menginap) vs 止まる (berhenti), atau 治す (menyembuhkan) vs 直す (memperbaiki). Yuk kenalan dengan kanji tambahan berikut ini.",
+    "kanjiList": [
+      {
+        "id": 275,
+        "character": "厚",
+        "strokes": 9,
+        "onyomi": [],
+        "kunyomi": ["あつい"],
+        "words": [
+          { "word": "厚い", "reading": "あつい", "meaning": "tebal" }
+        ]
+      },
+      {
+        "id": 276,
+        "character": "泣",
+        "strokes": 8,
+        "onyomi": [],
+        "kunyomi": ["なく"],
+        "words": [
+          { "word": "泣く", "reading": "なく", "meaning": "menangis" }
+        ]
+      },
+      {
+        "id": 277,
+        "character": "鳴",
+        "strokes": 14,
+        "onyomi": [],
+        "kunyomi": ["なく", "なる"],
+        "words": [
+          { "word": "鳴く", "reading": "なく", "meaning": "berkicau/bersuara (hewan)" },
+          { "word": "鳴る", "reading": "なる", "meaning": "berbunyi, berdering" }
+        ]
+      },
+      {
+        "id": 278,
+        "character": "初",
+        "strokes": 7,
+        "onyomi": ["ショ"],
+        "kunyomi": ["はじめ", "はじめて"],
+        "words": [
+          { "word": "最初", "reading": "さいしょ", "meaning": "pertama, awal" },
+          { "word": "初め", "reading": "はじめ", "meaning": "permulaan" }
+        ],
+        "extraWords": [
+          { "word": "初級", "reading": "しょきゅう", "meaning": "tingkat pemula" },
+          { "word": "初めて", "reading": "はじめて", "meaning": "untuk pertama kali" }
+        ]
+      },
+      {
+        "id": 279,
+        "character": "泊",
+        "strokes": 8,
+        "onyomi": ["ハク"],
+        "kunyomi": ["とまる", "とめる"],
+        "words": [
+          { "word": "宿泊", "reading": "しゅくはく", "meaning": "menginap" },
+          { "word": "泊まる", "reading": "とまる", "meaning": "bermalam, menginap" }
+        ],
+        "extraWords": [
+          { "word": "泊める", "reading": "とめる", "meaning": "menampung menginap" }
+        ]
+      },
+      {
+        "id": 280,
+        "character": "葉",
+        "strokes": 12,
+        "onyomi": ["ヨウ"],
+        "kunyomi": ["は"],
+        "words": [
+          { "word": "紅葉", "reading": "こうよう", "meaning": "daun yang berubah warna di musim gugur" },
+          { "word": "葉", "reading": "は", "meaning": "daun" }
+        ],
+        "extraWords": [
+          { "word": "言葉", "reading": "ことば", "meaning": "kata, bahasa" }
+        ]
+      }
+    ]
+  }
+}
