@@ -1,0 +1,189 @@
+{
+  "week": 2,
+  "day": 5,
+  "title": "病院",
+  "subtitle": "Hospital",
+  "translation": "Rumah Sakit",
+  "sceneDescription": "Ruang tunggu rumah sakit dengan meja pendaftaran serta petunjuk arah ke berbagai poli seperti penyakit dalam, bedah, ortopedi, THT, dan kebidanan, salah satu pasien terlihat kakinya digips karena patah tulang.",
+  "signs": [
+    { "text": "受付", "meaning": "Meja pendaftaran" },
+    { "text": "内科", "meaning": "Poli penyakit dalam" },
+    { "text": "外科", "meaning": "Poli bedah" },
+    { "text": "整形外科", "meaning": "Poli ortopedi" },
+    { "text": "耳鼻科・産婦人科", "meaning": "Poli THT dan kebidanan" }
+  ],
+  "kanjiList": [
+    {
+      "id": 91,
+      "character": "受",
+      "strokes": 8,
+      "onyomi": ["ジュ"],
+      "kunyomi": ["うける"],
+      "words": [
+        { "word": "受信", "reading": "じゅしん", "meaning": "menerima (sinyal/pesan)" },
+        { "word": "受ける", "reading": "うける", "meaning": "menerima" }
+      ],
+      "extraWords": [
+        { "word": "受験", "reading": "じゅけん", "meaning": "ujian masuk" }
+      ]
+    },
+    {
+      "id": 92,
+      "character": "付",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["つける", "つく"],
+      "words": [
+        { "word": "付ける", "reading": "つける", "meaning": "memasang, menempelkan" },
+        { "word": "受付", "reading": "うけつけ", "meaning": "resepsionis, pendaftaran" }
+      ],
+      "extraWords": [
+        { "word": "片付ける", "reading": "かたづける", "meaning": "membereskan, merapikan" },
+        { "word": "付く", "reading": "つく", "meaning": "menempel" }
+      ]
+    },
+    {
+      "id": 93,
+      "character": "科",
+      "strokes": 9,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "科学", "reading": "かがく", "meaning": "ilmu pengetahuan" },
+        { "word": "内科", "reading": "ないか", "meaning": "poli penyakit dalam" }
+      ],
+      "extraWords": [
+        { "word": "外科", "reading": "げか", "meaning": "poli bedah" },
+        { "word": "教科書", "reading": "きょうかしょ", "meaning": "buku pelajaran" }
+      ]
+    },
+    {
+      "id": 94,
+      "character": "鼻",
+      "strokes": 14,
+      "onyomi": ["ビ"],
+      "kunyomi": ["はな"],
+      "words": [
+        { "word": "耳鼻科", "reading": "じびか", "meaning": "poli THT" }
+      ],
+      "extraWords": [
+        { "word": "鼻", "reading": "はな", "meaning": "hidung" }
+      ]
+    },
+    {
+      "id": 95,
+      "character": "婦",
+      "strokes": 11,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "婦人", "reading": "ふじん", "meaning": "wanita (dewasa)" },
+        { "word": "主婦", "reading": "しゅふ", "meaning": "ibu rumah tangga" }
+      ],
+      "extraWords": [
+        { "word": "産婦人科", "reading": "さんふじんか", "meaning": "poli kebidanan dan kandungan" }
+      ]
+    },
+    {
+      "id": 96,
+      "character": "形",
+      "strokes": 7,
+      "onyomi": ["ケイ", "ギョウ"],
+      "kunyomi": ["かたち"],
+      "words": [
+        { "word": "形式", "reading": "けいしき", "meaning": "bentuk, format" },
+        { "word": "整形外科", "reading": "せいけいげか", "meaning": "poli ortopedi" },
+        { "word": "人形", "reading": "にんぎょう", "meaning": "boneka" }
+      ],
+      "extraWords": [
+        { "word": "図形", "reading": "ずけい", "meaning": "diagram, bentuk geometris" },
+        { "word": "形", "reading": "かたち", "meaning": "bentuk, wujud" }
+      ]
+    },
+    {
+      "id": 97,
+      "character": "骨",
+      "strokes": 10,
+      "onyomi": ["コツ"],
+      "kunyomi": ["ほね"],
+      "words": [
+        { "word": "骨折", "reading": "こっせつ", "meaning": "patah tulang" },
+        { "word": "骨", "reading": "ほね", "meaning": "tulang" }
+      ]
+    },
+    {
+      "id": 98,
+      "character": "折",
+      "strokes": 7,
+      "onyomi": ["セツ"],
+      "kunyomi": ["おる", "おれる"],
+      "words": [
+        { "word": "右折", "reading": "うせつ", "meaning": "belok kanan" },
+        { "word": "折る", "reading": "おる", "meaning": "melipat, mematahkan" },
+        { "word": "折れる", "reading": "おれる", "meaning": "patah" }
+      ],
+      "extraWords": [
+        { "word": "左折", "reading": "させつ", "meaning": "belok kiri" },
+        { "word": "折り紙", "reading": "おりがみ", "meaning": "origami" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "受験：試験",
+      "optionA": "に受かること",
+      "optionB": "を受けること",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "骨折：骨が",
+      "optionA": "まがること",
+      "optionB": "おれること",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "婦人：",
+      "optionA": "女の人",
+      "optionB": "おくさん",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "教科書：",
+      "optionA": "字を調べる本",
+      "optionB": "授業で使う本",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "受信：メールなどを",
+      "optionA": "おくること",
+      "optionB": "もらうこと",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "何か顔に（　　）よ。",
+      "optionA": "付いています",
+      "optionB": "向いています",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "定規やコンパスで（　　）をかく。",
+      "optionA": "図形",
+      "optionB": "形式",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "ちらかった部屋を（　　）。",
+      "optionA": "受付ける",
+      "optionB": "片付ける",
+      "answer": "B"
+    }
+  ]
+}
