@@ -1,0 +1,174 @@
+{
+  "week": 4,
+  "day": 6,
+  "title": "不在通知",
+  "subtitle": "Missed-Delivery Notice",
+  "translation": "Pemberitahuan Tidak Ada di Rumah",
+  "sceneDescription": "Kartu pemberitahuan kurir yang tidak berhasil mengantar paket karena penerima sedang tidak di rumah, berisi jenis barang yang dibawa kembali dan formulir untuk memilih tanggal serta waktu pengiriman ulang.",
+  "signs": [
+    { "text": "不在通知", "meaning": "Pemberitahuan tidak ada di rumah" },
+    { "text": "お荷物をお届けに参りましたが、お留守でしたので持ち帰りました", "meaning": "Kami datang mengantar paket, tapi karena Anda tidak di rumah, kami membawanya kembali" },
+    { "text": "再配達をご希望の方はご希望の日と時間をご記入ください", "meaning": "Yang ingin pengiriman ulang, silakan isi tanggal dan waktu yang diinginkan" },
+    { "text": "受取人様の電話番号", "meaning": "Nomor telepon penerima" }
+  ],
+  "kanjiList": [
+    {
+      "id": 211,
+      "character": "在",
+      "strokes": 6,
+      "onyomi": ["ザイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "不在", "reading": "ふざい", "meaning": "tidak ada di tempat" },
+        { "word": "現在", "reading": "げんざい", "meaning": "saat ini" }
+      ]
+    },
+    {
+      "id": 212,
+      "character": "取",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["とる"],
+      "words": [
+        { "word": "取る", "reading": "とる", "meaning": "mengambil" },
+        { "word": "受け取る", "reading": "うけとる", "meaning": "menerima" }
+      ],
+      "extraWords": [
+        { "word": "受取人", "reading": "うけとりにん", "meaning": "penerima" }
+      ]
+    },
+    {
+      "id": 213,
+      "character": "預",
+      "strokes": 13,
+      "onyomi": ["ヨ"],
+      "kunyomi": ["あずける"],
+      "words": [
+        { "word": "預金", "reading": "よきん", "meaning": "simpanan bank" },
+        { "word": "預ける", "reading": "あずける", "meaning": "menitipkan" }
+      ]
+    },
+    {
+      "id": 214,
+      "character": "衣",
+      "strokes": 6,
+      "onyomi": ["イ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "衣類", "reading": "いるい", "meaning": "pakaian" },
+        { "word": "衣服", "reading": "いふく", "meaning": "busana" }
+      ]
+    },
+    {
+      "id": 215,
+      "character": "参",
+      "strokes": 8,
+      "onyomi": ["サン"],
+      "kunyomi": ["まいる"],
+      "words": [
+        { "word": "参加", "reading": "さんか", "meaning": "partisipasi" },
+        { "word": "参る", "reading": "まいる", "meaning": "pergi/datang (bentuk merendah)" }
+      ],
+      "extraWords": [
+        { "word": "参考書", "reading": "さんこうしょ", "meaning": "buku referensi" }
+      ]
+    },
+    {
+      "id": 216,
+      "character": "達",
+      "strokes": 12,
+      "onyomi": ["タツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "上達", "reading": "じょうたつ", "meaning": "kemajuan, peningkatan kemampuan" }
+      ],
+      "extraWords": [
+        { "word": "友達", "reading": "ともだち", "meaning": "teman" },
+        { "word": "速達", "reading": "そくたつ", "meaning": "kilat khusus (pos)" }
+      ]
+    },
+    {
+      "id": 217,
+      "character": "勤",
+      "strokes": 12,
+      "onyomi": ["キン"],
+      "kunyomi": ["つとめる"],
+      "words": [
+        { "word": "通勤", "reading": "つうきん", "meaning": "berangkat kerja (commuting)" },
+        { "word": "勤める", "reading": "つとめる", "meaning": "bekerja, dipekerjakan" }
+      ]
+    },
+    {
+      "id": 218,
+      "character": "帯",
+      "strokes": 10,
+      "onyomi": ["タイ"],
+      "kunyomi": ["おび"],
+      "words": [
+        { "word": "携帯（電話）", "reading": "けいたい（でんわ）", "meaning": "telepon genggam" },
+        { "word": "帯", "reading": "おび", "meaning": "sabuk/obi" }
+      ],
+      "extraWords": [
+        { "word": "時間帯", "reading": "じかんたい", "meaning": "rentang waktu" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "不在：",
+      "optionA": "ない",
+      "optionB": "いない",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "通勤：仕事をする場所",
+      "optionA": "に通うこと",
+      "optionB": "を通ること",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "携帯電話：",
+      "optionA": "持ち運びできる電話",
+      "optionB": "折りたたみできる電話",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "衣類：",
+      "optionA": "着るもの",
+      "optionB": "書いたもの",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "この時間（　　）の電車は込みます。",
+      "optionA": "期",
+      "optionB": "帯",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "会社に（　　）。",
+      "optionA": "働く",
+      "optionB": "勤める",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "日本語が（　　）した。",
+      "optionA": "上手",
+      "optionB": "上達",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "電車が（　　）。",
+      "optionA": "参ります",
+      "optionB": "届きます",
+      "answer": "A"
+    }
+  ]
+}
