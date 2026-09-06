@@ -1,0 +1,139 @@
+{
+  "week": 3,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 3 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "肉は冷蔵で保存してください。", "target": "冷蔵", "choices": ["れいぞう", "れいそう", "れいぞ", "れいさい"], "answer": "れいぞう" },
+    { "sentence": "この牛乳の消費期限を確認する。", "target": "消費期限", "choices": ["しょうひきげん", "しょうひきかん", "しょひきげん", "しょうふきげん"], "answer": "しょうひきげん" },
+    { "sentence": "新商品を来月から販売する。", "target": "販売", "choices": ["はんばい", "へんばい", "はんまい", "へんまい"], "answer": "はんばい" },
+    { "sentence": "ケーキの材料を買いに行く。", "target": "材料", "choices": ["ざいりょう", "さいりょう", "ざいろう", "さいろう"], "answer": "ざいりょう" },
+    { "sentence": "母が出かけたので留守番をした。", "target": "留守番", "choices": ["るすばん", "りゅうすばん", "るしゅばん", "りゅしゅばん"], "answer": "るすばん" },
+    { "sentence": "スマホをWi-Fiに接続する。", "target": "接続", "choices": ["せつぞく", "せっそく", "せいぞく", "せつぞぐ"], "answer": "せつぞく" },
+    { "sentence": "新しいアプリに登録する。", "target": "登録", "choices": ["とうろく", "とろく", "とうろぐ", "どうろく"], "answer": "とうろく" },
+    { "sentence": "冷凍庫でアイスを凍らせる。", "target": "冷凍庫", "choices": ["れいとうこ", "れいどうこ", "れいとうご", "れとうこ"], "answer": "れいとうこ" },
+    { "sentence": "レジでお金を数える。", "target": "数える", "choices": ["かぞえる", "かずえる", "かじょえる", "かじゅえる"], "answer": "かぞえる" },
+    { "sentence": "パンを焼くにおいがする。", "target": "焼く", "choices": ["やく", "しょうく", "せく", "たく"], "answer": "やく" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "試合前にげんりょうするボクサーもいる。", "reading": "げんりょう", "choices": ["減量", "消量", "増量", "限量"], "answer": "減量" },
+    { "sentence": "使い終わったらもとの場所にもどしてください。", "reading": "もどして", "choices": ["直して", "返して", "存して", "戻して"], "answer": "戻して" },
+    { "sentence": "図書館に本をかえす。", "reading": "かえす", "choices": ["辺す", "帰す", "替す", "返す"], "answer": "返す" },
+    { "sentence": "今日はここまで。つづきはまた来週。", "reading": "つづき", "choices": ["付き", "続き", "向き", "次き"], "answer": "続き" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "毎月の交通（　　）はどのくらいですか。", "target": "交通費", "choices": ["金", "代", "料", "費"], "answer": "費" },
+    { "sentence": "この書類を20（　　）印刷してください。", "target": "20部", "choices": ["束", "部", "組", "点"], "answer": "部" },
+    { "sentence": "プレゼントを紙（　　）に入れる。", "target": "紙袋", "choices": ["袋", "庫", "材", "製"], "answer": "袋" },
+    { "sentence": "パッケージに（　　）冷凍と書いてある。", "target": "要冷凍", "choices": ["必", "限", "要", "保"], "answer": "要" },
+    { "sentence": "（　　）ダイヤルで前の相手にかけ直す。", "target": "再ダイヤル", "choices": ["濃", "再", "薄", "伝"], "answer": "再" },
+    { "sentence": "会社の命令で短（　　）留学することになった。", "target": "短期", "choices": ["機", "気", "期", "式"], "answer": "期" }
+  ],
+  "passageQuestion": {
+    "passage": "友達の誕生日にホットケーキを焼こうと思って、近くの店で材料を[21]。卵と牛乳をボウルでよく混ぜてから、粉を混ぜて生地を[22]。フライパンを温めてから、弱火でゆっくり[23]。焼いている間に電話が鳴ったが、手が離せなかったので[24]。あとで再生ボタンを押すと、友達からのお祝いのメッセージが[25]。",
+    "wordBank": ["かった", "つくった", "やいた", "でなかった", "ながれた", "とどいた", "きこえた"],
+    "blanks": [
+      { "number": 21, "answer": "かった", "answerKanji": "買った" },
+      { "number": 22, "answer": "つくった", "answerKanji": "作った" },
+      { "number": 23, "answer": "やいた", "answerKanji": "焼いた" },
+      { "number": 24, "answer": "でなかった", "answerKanji": "出なかった" },
+      { "number": 25, "answer": "ながれた", "answerKanji": "流れた" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "どちらの言葉？",
+    "translation": "Kata yang Mana?",
+    "description": "Beberapa kanji tambahan yang sering dipakai untuk menyebut profesi, keluarga, hewan, dan benda sehari-hari — seperti guru, istri, kuda, dan batu. Yuk tambah kosakatamu dengan kanji-kanji berikut ini.",
+    "kanjiList": [
+      {
+        "id": 164,
+        "character": "育",
+        "strokes": 8,
+        "onyomi": ["イク"],
+        "kunyomi": ["そだつ", "そだてる"],
+        "words": [
+          { "word": "教育", "reading": "きょういく", "meaning": "pendidikan" },
+          { "word": "育てる", "reading": "そだてる", "meaning": "membesarkan, mengasuh" }
+        ],
+        "extraWords": [
+          { "word": "育つ", "reading": "そだつ", "meaning": "tumbuh besar" }
+        ]
+      },
+      {
+        "id": 165,
+        "character": "種",
+        "strokes": 14,
+        "onyomi": ["シュ"],
+        "kunyomi": ["たね"],
+        "words": [
+          { "word": "種類", "reading": "しゅるい", "meaning": "jenis, macam" },
+          { "word": "種", "reading": "たね", "meaning": "biji, benih" }
+        ]
+      },
+      {
+        "id": 166,
+        "character": "類",
+        "strokes": 18,
+        "onyomi": ["ルイ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "書類", "reading": "しょるい", "meaning": "dokumen" },
+          { "word": "分類", "reading": "ぶんるい", "meaning": "klasifikasi" }
+        ],
+        "extraWords": [
+          { "word": "人類", "reading": "じんるい", "meaning": "umat manusia" }
+        ]
+      },
+      {
+        "id": 167,
+        "character": "師",
+        "strokes": 10,
+        "onyomi": ["シ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "教師", "reading": "きょうし", "meaning": "guru" },
+          { "word": "看護師", "reading": "かんごし", "meaning": "perawat" }
+        ],
+        "extraWords": [
+          { "word": "医師", "reading": "いし", "meaning": "dokter" }
+        ]
+      },
+      {
+        "id": 168,
+        "character": "妻",
+        "strokes": 8,
+        "onyomi": ["サイ"],
+        "kunyomi": ["つま"],
+        "words": [
+          { "word": "夫妻", "reading": "ふさい", "meaning": "suami istri" },
+          { "word": "妻", "reading": "つま", "meaning": "istri" }
+        ]
+      },
+      {
+        "id": 169,
+        "character": "馬",
+        "strokes": 10,
+        "onyomi": ["バ"],
+        "kunyomi": ["うま"],
+        "words": [
+          { "word": "馬", "reading": "うま", "meaning": "kuda" },
+          { "word": "乗馬", "reading": "じょうば", "meaning": "menunggang kuda" }
+        ]
+      },
+      {
+        "id": 170,
+        "character": "石",
+        "strokes": 5,
+        "onyomi": ["セキ"],
+        "kunyomi": ["いし"],
+        "words": [
+          { "word": "石けん", "reading": "せっけん", "meaning": "sabun" },
+          { "word": "石", "reading": "いし", "meaning": "batu" }
+        ],
+        "extraWords": [
+          { "word": "石油", "reading": "せきゆ", "meaning": "minyak bumi" }
+        ]
+      }
+    ]
+  }
+}
