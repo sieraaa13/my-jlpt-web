@@ -1,0 +1,181 @@
+{
+  "week": 5,
+  "day": 5,
+  "title": "問診票ー歯科で",
+  "subtitle": "Dental Patient Registration Sheet",
+  "translation": "Formulir Riwayat Kesehatan di Dokter Gigi",
+  "sceneDescription": "Formulir pendaftaran pasien di klinik gigi menanyakan keluhan: gigi sakit, ngilu saat makan/minum panas atau dingin, ingin menambal gigi berlubang, pembersihan karang gigi, pemutihan gigi, merapikan susunan gigi, atau keluhan lain.",
+  "signs": [
+    { "text": "どうしましたか？", "meaning": "Ada keluhan apa?" },
+    { "text": "痛い", "meaning": "Sakit" },
+    { "text": "熱いものや冷たいものがしみる", "meaning": "Ngilu saat kena yang panas/dingin" },
+    { "text": "虫歯を治したい", "meaning": "Ingin mengobati gigi berlubang" },
+    { "text": "歯並びをよくしたい", "meaning": "Ingin merapikan susunan gigi" }
+  ],
+  "kanjiList": [
+    {
+      "id": 259,
+      "character": "痛",
+      "strokes": 12,
+      "onyomi": ["ツウ"],
+      "kunyomi": ["いたい"],
+      "words": [
+        { "word": "頭痛", "reading": "ずつう", "meaning": "sakit kepala" },
+        { "word": "痛い", "reading": "いたい", "meaning": "sakit, nyeri" }
+      ],
+      "extraWords": [
+        { "word": "腹痛", "reading": "ふくつう", "meaning": "sakit perut" }
+      ]
+    },
+    {
+      "id": 260,
+      "character": "熱",
+      "strokes": 15,
+      "onyomi": ["ネツ"],
+      "kunyomi": ["あつい"],
+      "words": [
+        { "word": "熱", "reading": "ねつ", "meaning": "demam, panas" },
+        { "word": "熱い", "reading": "あつい", "meaning": "panas" }
+      ],
+      "extraWords": [
+        { "word": "熱心（な）", "reading": "ねっしん（な）", "meaning": "antusias, giat" }
+      ]
+    },
+    {
+      "id": 261,
+      "character": "虫",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["むし"],
+      "words": [
+        { "word": "虫", "reading": "むし", "meaning": "serangga" }
+      ]
+    },
+    {
+      "id": 262,
+      "character": "歯",
+      "strokes": 12,
+      "onyomi": ["シ"],
+      "kunyomi": ["は"],
+      "words": [
+        { "word": "歯科", "reading": "しか", "meaning": "kedokteran gigi" },
+        { "word": "歯医者", "reading": "はいしゃ", "meaning": "dokter gigi" }
+      ],
+      "extraWords": [
+        { "word": "歯", "reading": "は", "meaning": "gigi" },
+        { "word": "虫歯", "reading": "むしば", "meaning": "gigi berlubang" }
+      ]
+    },
+    {
+      "id": 263,
+      "character": "治",
+      "strokes": 8,
+      "onyomi": ["ジ"],
+      "kunyomi": ["なおる", "なおす"],
+      "words": [
+        { "word": "政治", "reading": "せいじ", "meaning": "politik" },
+        { "word": "治る", "reading": "なおる", "meaning": "sembuh" }
+      ],
+      "extraWords": [
+        { "word": "治療", "reading": "ちりょう", "meaning": "pengobatan" },
+        { "word": "治す", "reading": "なおす", "meaning": "menyembuhkan" }
+      ]
+    },
+    {
+      "id": 264,
+      "character": "汚",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["きたない", "よごれる"],
+      "words": [
+        { "word": "汚い", "reading": "きたない", "meaning": "kotor" },
+        { "word": "汚れる", "reading": "よごれる", "meaning": "menjadi kotor" }
+      ]
+    },
+    {
+      "id": 265,
+      "character": "並",
+      "strokes": 8,
+      "onyomi": [],
+      "kunyomi": ["ならぶ", "ならべる"],
+      "words": [
+        { "word": "並ぶ", "reading": "ならぶ", "meaning": "berbaris, mengantre" },
+        { "word": "歯並び", "reading": "はならび", "meaning": "susunan gigi" }
+      ],
+      "extraWords": [
+        { "word": "並べる", "reading": "ならべる", "meaning": "menata, menjajarkan" }
+      ]
+    },
+    {
+      "id": 266,
+      "character": "他",
+      "strokes": 5,
+      "onyomi": ["タ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "他の", "reading": "たの", "meaning": "lainnya" }
+      ],
+      "extraWords": [
+        { "word": "その他", "reading": "そのた", "meaning": "dan lain-lain" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "腹痛：",
+      "optionA": "あたまが痛いこと",
+      "optionB": "おなかが痛いこと",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "治療：病気やけがを",
+      "optionA": "たすけること",
+      "optionB": "なおすこと",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "将来は（　　）になりたい。",
+      "optionA": "歯科",
+      "optionB": "歯医者",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "（　　）をとる。",
+      "optionA": "汚れ",
+      "optionB": "汚い",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "店の前に品物を（　　）。",
+      "optionA": "並ぶ",
+      "optionB": "並べる",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "（　　）に勉強する。",
+      "optionA": "熱心",
+      "optionB": "関心",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "間違えた字を（　　）。",
+      "optionA": "直す",
+      "optionB": "治す",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "（　　）お茶。",
+      "optionA": "暑い",
+      "optionB": "熱い",
+      "answer": "B"
+    }
+  ]
+}
