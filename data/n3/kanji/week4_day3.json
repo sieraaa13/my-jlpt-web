@@ -1,0 +1,180 @@
+{
+  "week": 4,
+  "day": 3,
+  "title": "通信販売",
+  "subtitle": "Mail-Order Sales",
+  "translation": "Belanja Lewat Katalog/Online",
+  "sceneDescription": "Katalog belanja menampilkan sepatu sneaker mewah buatan perusahaan Amerika dengan label \"sisa sedikit\" dan pemutar MP3 model baru buatan Jepang dengan label \"harga murah\", masing-masing dengan harga sudah termasuk pajak.",
+  "signs": [
+    { "text": "米国○○社製 高級スニーカー", "meaning": "Sneaker mewah buatan perusahaan Amerika" },
+    { "text": "日本製 新型MP3プレーヤー", "meaning": "Pemutar MP3 model baru buatan Jepang" },
+    { "text": "残りわずか！", "meaning": "Sisa sedikit lagi!" },
+    { "text": "格安！！", "meaning": "Harga murah!!" },
+    { "text": "税込価格：5,250円（消費税：250円）", "meaning": "Harga termasuk pajak: 5.250 yen (pajak: 250 yen)" }
+  ],
+  "kanjiList": [
+    {
+      "id": 187,
+      "character": "米",
+      "strokes": 6,
+      "onyomi": ["ベイ"],
+      "kunyomi": ["こめ"],
+      "words": [
+        { "word": "米国", "reading": "べいこく", "meaning": "Amerika Serikat" },
+        { "word": "米", "reading": "こめ", "meaning": "beras" }
+      ]
+    },
+    {
+      "id": 188,
+      "character": "級",
+      "strokes": 9,
+      "onyomi": ["キュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "高級", "reading": "こうきゅう", "meaning": "kelas atas, mewah" },
+        { "word": "上級", "reading": "じょうきゅう", "meaning": "tingkat mahir" }
+      ],
+      "extraWords": [
+        { "word": "中級", "reading": "ちゅうきゅう", "meaning": "tingkat menengah" }
+      ]
+    },
+    {
+      "id": 189,
+      "character": "残",
+      "strokes": 10,
+      "onyomi": ["ザン"],
+      "kunyomi": ["のこる", "のこす"],
+      "words": [
+        { "word": "残業", "reading": "ざんぎょう", "meaning": "kerja lembur" },
+        { "word": "残る", "reading": "のこる", "meaning": "tersisa" }
+      ],
+      "extraWords": [
+        { "word": "残り", "reading": "のこり", "meaning": "sisa" },
+        { "word": "残す", "reading": "のこす", "meaning": "menyisakan" }
+      ]
+    },
+    {
+      "id": 190,
+      "character": "型",
+      "strokes": 9,
+      "onyomi": [],
+      "kunyomi": ["かた"],
+      "words": [
+        { "word": "大型", "reading": "おおがた", "meaning": "ukuran besar" },
+        { "word": "新型", "reading": "しんがた", "meaning": "model baru" }
+      ],
+      "extraWords": [
+        { "word": "小型", "reading": "こがた", "meaning": "ukuran kecil" }
+      ]
+    },
+    {
+      "id": 191,
+      "character": "税",
+      "strokes": 12,
+      "onyomi": ["ゼイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "消費税", "reading": "しょうひぜい", "meaning": "pajak konsumsi" },
+        { "word": "税金", "reading": "ぜいきん", "meaning": "pajak" }
+      ]
+    },
+    {
+      "id": 192,
+      "character": "込",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["こむ"],
+      "words": [
+        { "word": "込む", "reading": "こむ", "meaning": "padat, ramai" },
+        { "word": "振り込む", "reading": "ふりこむ", "meaning": "mentransfer uang" }
+      ],
+      "extraWords": [
+        { "word": "税込", "reading": "ぜいこみ", "meaning": "sudah termasuk pajak" }
+      ]
+    },
+    {
+      "id": 193,
+      "character": "価",
+      "strokes": 8,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "価格", "reading": "かかく", "meaning": "harga" }
+      ],
+      "extraWords": [
+        { "word": "定価", "reading": "ていか", "meaning": "harga pas/tetap" }
+      ]
+    },
+    {
+      "id": 194,
+      "character": "格",
+      "strokes": 10,
+      "onyomi": ["カク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "合格", "reading": "ごうかく", "meaning": "lulus ujian" }
+      ],
+      "extraWords": [
+        { "word": "格安", "reading": "かくやす", "meaning": "sangat murah" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "米国：",
+      "optionA": "イギリス",
+      "optionB": "アメリカ",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "税込：税金が",
+      "optionA": "ふくまれている",
+      "optionB": "ふくまれていない",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "合格：試験に",
+      "optionA": "受かる",
+      "optionB": "受ける",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "残業：終わりの時間が過ぎても",
+      "optionA": "授業をすること",
+      "optionB": "仕事をすること",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "道が（　　）。",
+      "optionA": "組んでいる",
+      "optionB": "込んでいる",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "定価（　　）の商品が5千円でお求めになれます。",
+      "optionA": "現金",
+      "optionB": "1万円",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "銀行からお金を（　　）。",
+      "optionA": "飛び出す",
+      "optionB": "振り込む",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "日本語のクラスは初級、中級、（　　）に分かれています。",
+      "optionA": "上級",
+      "optionB": "高級",
+      "answer": "A"
+    }
+  ]
+}
