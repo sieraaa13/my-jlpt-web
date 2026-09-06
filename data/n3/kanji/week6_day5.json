@@ -1,0 +1,169 @@
+{
+  "week": 6,
+  "day": 5,
+  "title": "地球温暖化",
+  "subtitle": "Global Warming",
+  "translation": "Pemanasan Global",
+  "sceneDescription": "Artikel yang menjelaskan naiknya suhu bumi dibanding dulu (pemanasan global) akibat CO2, disertai poster \"Stop pemanasan global\" dan tips yang bisa dilakukan: menaikkan suhu AC 1 derajat, menurunkan suhu pemanas 1 derajat, dan mempersingkat waktu mandi shower 1 menit.",
+  "signs": [
+    { "text": "ストップ！地球温暖化", "meaning": "Stop! Pemanasan global" },
+    { "text": "わたしたちにできること", "meaning": "Yang bisa kita lakukan" },
+    { "text": "冷房の温度を1℃高くする。暖房の温度を1℃低くする。", "meaning": "Naikkan suhu AC 1°C. Turunkan suhu pemanas 1°C." },
+    { "text": "シャワーの時間を1分短くする", "meaning": "Persingkat waktu shower 1 menit" }
+  ],
+  "kanjiList": [
+    {
+      "id": 313,
+      "character": "化",
+      "strokes": 4,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "文化", "reading": "ぶんか", "meaning": "budaya" },
+        { "word": "化学", "reading": "かがく", "meaning": "ilmu kimia" }
+      ],
+      "extraWords": [
+        { "word": "〇〇化", "reading": "〇〇か", "meaning": "menjadi/mengubah menjadi ..." },
+        { "word": "化粧", "reading": "けしょう", "meaning": "rias wajah" }
+      ]
+    },
+    {
+      "id": 314,
+      "character": "比",
+      "strokes": 4,
+      "onyomi": [],
+      "kunyomi": ["くらべる"],
+      "words": [
+        { "word": "比べる", "reading": "くらべる", "meaning": "membandingkan" }
+      ]
+    },
+    {
+      "id": 315,
+      "character": "原",
+      "strokes": 10,
+      "onyomi": ["ゲン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "原料", "reading": "げんりょう", "meaning": "bahan baku" }
+      ]
+    },
+    {
+      "id": 316,
+      "character": "因",
+      "strokes": 6,
+      "onyomi": ["イン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "原因", "reading": "げんいん", "meaning": "penyebab" }
+      ]
+    },
+    {
+      "id": 317,
+      "character": "際",
+      "strokes": 14,
+      "onyomi": ["サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "国際（の）", "reading": "こくさい（の）", "meaning": "internasional" },
+        { "word": "交際", "reading": "こうさい", "meaning": "pergaulan, hubungan" }
+      ]
+    },
+    {
+      "id": 318,
+      "character": "議",
+      "strokes": 20,
+      "onyomi": ["ギ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "会議", "reading": "かいぎ", "meaning": "rapat" }
+      ],
+      "extraWords": [
+        { "word": "議員", "reading": "ぎいん", "meaning": "anggota dewan" }
+      ]
+    },
+    {
+      "id": 319,
+      "character": "活",
+      "strokes": 9,
+      "onyomi": ["カツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "生活", "reading": "せいかつ", "meaning": "kehidupan" },
+        { "word": "活動", "reading": "かつどう", "meaning": "aktivitas" }
+      ]
+    },
+    {
+      "id": 320,
+      "character": "変",
+      "strokes": 9,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["かわる", "かえる"],
+      "words": [
+        { "word": "大変（な）", "reading": "たいへん（な）", "meaning": "sangat, berat/serius" },
+        { "word": "変わる", "reading": "かわる", "meaning": "berubah" }
+      ],
+      "extraWords": [
+        { "word": "変化", "reading": "へんか", "meaning": "perubahan" },
+        { "word": "変える", "reading": "かえる", "meaning": "mengubah" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "自然現象を研究すること：",
+      "optionA": "科学",
+      "optionB": "化学",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "地球の温度は昔と（　　）上がっている。",
+      "optionA": "過ぎて",
+      "optionB": "比べて",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "お酒の（　　）は米です。",
+      "optionA": "材料",
+      "optionB": "原料",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "ボランティア（　　）をする。",
+      "optionA": "行動",
+      "optionB": "活動",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "口紅は（　　）です。",
+      "optionA": "化粧品",
+      "optionB": "化粧室",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "気温の（　　）",
+      "optionA": "変化",
+      "optionB": "文化",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "住所が（　　）。",
+      "optionA": "変える",
+      "optionB": "変わる",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "貿易の自由（　　）",
+      "optionA": "課",
+      "optionB": "化",
+      "answer": "B"
+    }
+  ]
+}
