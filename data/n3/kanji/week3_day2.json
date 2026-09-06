@@ -1,0 +1,186 @@
+{
+  "week": 3,
+  "day": 2,
+  "title": "消費期限",
+  "subtitle": "Expiration Date",
+  "translation": "Tanggal Kedaluwarsa",
+  "sceneDescription": "Kemasan roti dengan label tanggal produksi dan tanggal kedaluwarsa, cangkir bubur instan dengan petunjuk cara penyimpanan pada suhu ruang, serta label tanggal batas rasa terbaik (賞味期限).",
+  "signs": [
+    { "text": "製造年月日", "meaning": "Tanggal produksi" },
+    { "text": "消費期限", "meaning": "Tanggal kedaluwarsa (batas aman konsumsi)" },
+    { "text": "保存方法：常温で保存", "meaning": "Cara penyimpanan: simpan pada suhu ruang" },
+    { "text": "賞味期限", "meaning": "Tanggal batas rasa terbaik" }
+  ],
+  "kanjiList": [
+    {
+      "id": 123,
+      "character": "費",
+      "strokes": 12,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "費用", "reading": "ひよう", "meaning": "biaya, pengeluaran" },
+        { "word": "旅費", "reading": "りょひ", "meaning": "biaya perjalanan" }
+      ],
+      "extraWords": [
+        { "word": "消費者", "reading": "しょうひしゃ", "meaning": "konsumen" },
+        { "word": "会費", "reading": "かいひ", "meaning": "biaya keanggotaan" }
+      ]
+    },
+    {
+      "id": 124,
+      "character": "期",
+      "strokes": 12,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "期間", "reading": "きかん", "meaning": "jangka waktu" },
+        { "word": "長期", "reading": "ちょうき", "meaning": "jangka panjang" }
+      ],
+      "extraWords": [
+        { "word": "定期券", "reading": "ていきけん", "meaning": "tiket langganan" },
+        { "word": "短期", "reading": "たんき", "meaning": "jangka pendek" }
+      ]
+    },
+    {
+      "id": 125,
+      "character": "限",
+      "strokes": 19,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["かぎる"],
+      "words": [
+        { "word": "期限", "reading": "きげん", "meaning": "batas waktu" },
+        { "word": "限る", "reading": "かぎる", "meaning": "membatasi" }
+      ],
+      "extraWords": [
+        { "word": "限度", "reading": "げんど", "meaning": "batas" },
+        { "word": "限定", "reading": "げんてい", "meaning": "terbatas" }
+      ]
+    },
+    {
+      "id": 126,
+      "character": "製",
+      "strokes": 14,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〇〇製", "reading": "〇〇せい", "meaning": "buatan/produksi ..." }
+      ],
+      "extraWords": [
+        { "word": "製品", "reading": "せいひん", "meaning": "produk" }
+      ]
+    },
+    {
+      "id": 127,
+      "character": "造",
+      "strokes": 10,
+      "onyomi": ["ゾウ"],
+      "kunyomi": ["つくる"],
+      "words": [
+        { "word": "製造", "reading": "せいぞう", "meaning": "produksi, pembuatan" },
+        { "word": "造る", "reading": "つくる", "meaning": "membuat" }
+      ]
+    },
+    {
+      "id": 128,
+      "character": "賞",
+      "strokes": 15,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "賞", "reading": "しょう", "meaning": "hadiah, penghargaan" },
+        { "word": "賞金", "reading": "しょうきん", "meaning": "uang hadiah" }
+      ],
+      "extraWords": [
+        { "word": "賞味期限", "reading": "しょうみきげん", "meaning": "tanggal batas rasa terbaik" },
+        { "word": "賞品", "reading": "しょうひん", "meaning": "hadiah (barang)" }
+      ]
+    },
+    {
+      "id": 129,
+      "character": "法",
+      "strokes": 8,
+      "onyomi": ["ホウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "方法", "reading": "ほうほう", "meaning": "cara, metode" }
+      ],
+      "extraWords": [
+        { "word": "文法", "reading": "ぶんぽう", "meaning": "tata bahasa" }
+      ]
+    },
+    {
+      "id": 130,
+      "character": "温",
+      "strokes": 12,
+      "onyomi": ["オン"],
+      "kunyomi": ["あたたかい"],
+      "words": [
+        { "word": "温度", "reading": "おんど", "meaning": "suhu" },
+        { "word": "温かい", "reading": "あたたかい", "meaning": "hangat" }
+      ],
+      "extraWords": [
+        { "word": "気温", "reading": "きおん", "meaning": "suhu udara" },
+        { "word": "常温", "reading": "じょうおん", "meaning": "suhu ruang" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "製造年月日：この日に",
+      "optionA": "つくられた",
+      "optionB": "うられた",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "消費期限：この日まで",
+      "optionA": "保存してもいい",
+      "optionB": "保存してはいけない",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "賞味期限：この日まで",
+      "optionA": "食べてはいけない",
+      "optionB": "おいしく食べられる",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "常温で保存：冷蔵庫に",
+      "optionA": "入れなくていい",
+      "optionB": "入れなければいけない",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "期間限定：その期間",
+      "optionA": "以外",
+      "optionB": "だけ",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "同窓会の（　　）を集める。",
+      "optionA": "会費",
+      "optionB": "食費",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "優勝の（　　）は10万円の旅行券です。",
+      "optionA": "賞品",
+      "optionB": "商品",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "毎日会社へ通う人は（　　）が便利で得です。",
+      "optionA": "定期券",
+      "optionB": "乗車券",
+      "answer": "A"
+    }
+  ]
+}
