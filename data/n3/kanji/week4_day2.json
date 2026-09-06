@@ -1,0 +1,175 @@
+{
+  "week": 4,
+  "day": 2,
+  "title": "広告メール",
+  "subtitle": "Advertisement Email",
+  "translation": "Email Iklan",
+  "sceneDescription": "Email iklan berisi ucapan terima kasih kepada pelanggan, pemberitahuan diskon 5%, poin 5x lipat, dan produk yang diturunkan harganya, dengan petunjuk metode pembayaran di bagian bawah.",
+  "signs": [
+    { "text": "◆広告◆", "meaning": "Iklan" },
+    { "text": "5%割引のお知らせ", "meaning": "Pemberitahuan diskon 5%" },
+    { "text": "ポイント5倍", "meaning": "Poin 5x lipat" },
+    { "text": "値下げ商品", "meaning": "Produk turun harga" },
+    { "text": "お支払い方法は下記をご覧ください", "meaning": "Lihat metode pembayaran di bawah" }
+  ],
+  "kanjiList": [
+    {
+      "id": 179,
+      "character": "告",
+      "strokes": 7,
+      "onyomi": ["コク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "広告", "reading": "こうこく", "meaning": "iklan" }
+      ]
+    },
+    {
+      "id": 180,
+      "character": "利",
+      "strokes": 7,
+      "onyomi": ["リ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "便利", "reading": "べんり", "meaning": "praktis, nyaman" },
+        { "word": "利用", "reading": "りよう", "meaning": "pemakaian, penggunaan" }
+      ]
+    },
+    {
+      "id": 181,
+      "character": "割",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["わる", "われる"],
+      "words": [
+        { "word": "割る", "reading": "わる", "meaning": "memecahkan" },
+        { "word": "割れる", "reading": "われる", "meaning": "pecah, retak" }
+      ],
+      "extraWords": [
+        { "word": "割合", "reading": "わりあい", "meaning": "rasio, perbandingan" },
+        { "word": "割引", "reading": "わりびき", "meaning": "diskon" }
+      ]
+    },
+    {
+      "id": 182,
+      "character": "倍",
+      "strokes": 10,
+      "onyomi": ["バイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜倍", "reading": "〜ばい", "meaning": "... kali lipat" },
+        { "word": "倍", "reading": "ばい", "meaning": "2 kali lipat" }
+      ]
+    },
+    {
+      "id": 183,
+      "character": "値",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["ね"],
+      "words": [
+        { "word": "値段", "reading": "ねだん", "meaning": "harga" },
+        { "word": "値上げ", "reading": "ねあげ", "meaning": "kenaikan harga" }
+      ],
+      "extraWords": [
+        { "word": "値下げ", "reading": "ねさげ", "meaning": "penurunan harga" }
+      ]
+    },
+    {
+      "id": 184,
+      "character": "商",
+      "strokes": 11,
+      "onyomi": ["ショウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "商品", "reading": "しょうひん", "meaning": "barang, produk" },
+        { "word": "商店", "reading": "しょうてん", "meaning": "toko" }
+      ]
+    },
+    {
+      "id": 185,
+      "character": "支",
+      "strokes": 4,
+      "onyomi": ["シ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "支店", "reading": "してん", "meaning": "cabang toko" },
+        { "word": "支社", "reading": "ししゃ", "meaning": "kantor cabang" }
+      ],
+      "extraWords": [
+        { "word": "本店", "reading": "ほんてん", "meaning": "toko pusat" },
+        { "word": "本社", "reading": "ほんしゃ", "meaning": "kantor pusat" }
+      ]
+    },
+    {
+      "id": 186,
+      "character": "払",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["はらう"],
+      "words": [
+        { "word": "払う", "reading": "はらう", "meaning": "membayar" }
+      ],
+      "extraWords": [
+        { "word": "支払い", "reading": "しはらい", "meaning": "pembayaran" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "広告：商品などについての",
+      "optionA": "お知らせ",
+      "optionB": "お断り",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "1割引：10%",
+      "optionA": "高くなること",
+      "optionB": "安くなること",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "窓ガラスが（　　）。",
+      "optionA": "割る",
+      "optionB": "割れる",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "この店の（　　）は東京にある。",
+      "optionA": "本店",
+      "optionB": "当店",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "卵とスープは1：3の（　　）にします。",
+      "optionA": "割合",
+      "optionB": "材料",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "毎度（　　）ありがとうございます。",
+      "optionA": "ご利用",
+      "optionB": "ご使用",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）方法をおえらびください。",
+      "optionA": "お払い",
+      "optionB": "お支払い",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "その町の観光客は前の年の（　　）に増加した。",
+      "optionA": "3割",
+      "optionB": "3倍",
+      "answer": "B"
+    }
+  ]
+}
