@@ -1,0 +1,172 @@
+{
+  "week": 5,
+  "day": 1,
+  "title": "メールを送る",
+  "subtitle": "Sending E-mail (texting)",
+  "translation": "Mengirim Pesan",
+  "sceneDescription": "Kumpulan pesan singkat: ucapan terima kasih atas balasan, permintaan izin untuk berkunjung jam 3, permintaan maaf karena kereta terlambat, pesan salah kirim sebelum selesai ditulis, dan ungkapan kecewa tidak bisa datang ke acara makan-makan.",
+  "signs": [
+    { "text": "お返事ありがとうございました。取り急ぎ、お礼まで。", "meaning": "Terima kasih atas balasannya. Sekilas ucapan terima kasih dulu." },
+    { "text": "3時にお伺いしますので、よろしくお願いいたします。", "meaning": "Saya akan berkunjung jam 3, mohon bantuannya." },
+    { "text": "電車が遅れて10分くらい遅くなります。", "meaning": "Kereta terlambat, saya akan datang sekitar 10 menit lebih lambat." },
+    { "text": "行けなくて残念！", "meaning": "Sayang sekali tidak bisa datang!" }
+  ],
+  "kanjiList": [
+    {
+      "id": 226,
+      "character": "礼",
+      "strokes": 5,
+      "onyomi": ["レイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "お礼", "reading": "おれい", "meaning": "ucapan terima kasih" }
+      ]
+    },
+    {
+      "id": 227,
+      "character": "伺",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["うかがう"],
+      "words": [
+        { "word": "伺う", "reading": "うかがう", "meaning": "berkunjung/bertanya (bentuk merendah)" }
+      ]
+    },
+    {
+      "id": 228,
+      "character": "遅",
+      "strokes": 12,
+      "onyomi": ["チ"],
+      "kunyomi": ["おそい", "おくれる"],
+      "words": [
+        { "word": "遅刻", "reading": "ちこく", "meaning": "keterlambatan" },
+        { "word": "遅い", "reading": "おそい", "meaning": "lambat" }
+      ],
+      "extraWords": [
+        { "word": "遅れる", "reading": "おくれる", "meaning": "terlambat" }
+      ]
+    },
+    {
+      "id": 229,
+      "character": "失",
+      "strokes": 5,
+      "onyomi": ["シツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "失礼（な）", "reading": "しつれい（な）", "meaning": "tidak sopan" },
+        { "word": "失敗", "reading": "しっぱい", "meaning": "kegagalan, kesalahan" }
+      ],
+      "extraWords": [
+        { "word": "失礼する", "reading": "しつれいする", "meaning": "permisi (undur diri)" }
+      ]
+    },
+    {
+      "id": 230,
+      "character": "汗",
+      "strokes": 6,
+      "onyomi": [],
+      "kunyomi": ["あせ"],
+      "words": [
+        { "word": "汗", "reading": "あせ", "meaning": "keringat" }
+      ],
+      "extraWords": [
+        { "word": "汗をかく", "reading": "あせをかく", "meaning": "berkeringat" }
+      ]
+    },
+    {
+      "id": 231,
+      "character": "念",
+      "strokes": 8,
+      "onyomi": ["ネン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "残念（な）", "reading": "ざんねん（な）", "meaning": "sayang sekali, kecewa" }
+      ],
+      "extraWords": [
+        { "word": "記念", "reading": "きねん", "meaning": "kenang-kenangan, peringatan" }
+      ]
+    },
+    {
+      "id": 232,
+      "character": "涙",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["なみだ"],
+      "words": [
+        { "word": "涙", "reading": "なみだ", "meaning": "air mata" }
+      ],
+      "extraWords": [
+        { "word": "涙を流す", "reading": "なみだをながす", "meaning": "menangis, meneteskan air mata" }
+      ]
+    },
+    {
+      "id": 233,
+      "character": "笑",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["わらう", "えむ"],
+      "words": [
+        { "word": "笑う", "reading": "わらう", "meaning": "tertawa/tersenyum" },
+        { "word": "笑顔", "reading": "えがお", "meaning": "wajah tersenyum" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "遅刻：",
+      "optionA": "間に合う",
+      "optionB": "間に合わない",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "お礼：",
+      "optionA": "ありがとうという気持ち",
+      "optionB": "ごめんなさいという気持ち",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "失敗：",
+      "optionA": "うまくいくこと",
+      "optionB": "うまくいかないこと",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "「ちょっと、お伺いしますが、駅はどちらでしょう」：",
+      "optionA": "聞きたい",
+      "optionB": "会いたい",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "（　　）をかく。",
+      "optionA": "涙",
+      "optionB": "汗",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "卒業式で（　　）写真をとる。",
+      "optionA": "記念",
+      "optionB": "記号",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "お先に（　　）。",
+      "optionA": "失礼です",
+      "optionB": "失礼します",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "出席できなくて（　　）です。",
+      "optionA": "失望",
+      "optionB": "残念",
+      "answer": "B"
+    }
+  ]
+}
