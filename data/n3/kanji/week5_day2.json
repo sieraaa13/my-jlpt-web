@@ -1,0 +1,174 @@
+{
+  "week": 5,
+  "day": 2,
+  "title": "アンケート",
+  "subtitle": "A Questionnaire",
+  "translation": "Kuesioner",
+  "sceneDescription": "Formulir survei tentang sebuah buku soal: pertanyaan tempat mengetahui buku itu, tingkat kesulitannya, dan kolom kesan bebas dari pembaca yang menyebut ukurannya praktis dibawa-bawa.",
+  "signs": [
+    { "text": "アンケート調査", "meaning": "Survei kuesioner" },
+    { "text": "合っていると思うものに、○をつけてください", "meaning": "Lingkari yang menurut Anda benar" },
+    { "text": "この問題集に関する感想を自由に書いてください", "meaning": "Tulis bebas kesan Anda tentang buku soal ini" }
+  ],
+  "kanjiList": [
+    {
+      "id": 234,
+      "character": "調",
+      "strokes": 15,
+      "onyomi": ["チョウ"],
+      "kunyomi": ["しらべる"],
+      "words": [
+        { "word": "調子", "reading": "ちょうし", "meaning": "kondisi, keadaan" },
+        { "word": "調べる", "reading": "しらべる", "meaning": "memeriksa, menyelidiki" }
+      ],
+      "extraWords": [
+        { "word": "強調", "reading": "きょうちょう", "meaning": "penekanan" }
+      ]
+    },
+    {
+      "id": 235,
+      "character": "査",
+      "strokes": 9,
+      "onyomi": ["サ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "調査", "reading": "ちょうさ", "meaning": "penyelidikan, survei" }
+      ]
+    },
+    {
+      "id": 236,
+      "character": "移",
+      "strokes": 11,
+      "onyomi": ["イ"],
+      "kunyomi": ["うつる", "うつす"],
+      "words": [
+        { "word": "移動", "reading": "いどう", "meaning": "perpindahan" },
+        { "word": "移る", "reading": "うつる", "meaning": "berpindah" }
+      ],
+      "extraWords": [
+        { "word": "移す", "reading": "うつす", "meaning": "memindahkan" }
+      ]
+    },
+    {
+      "id": 237,
+      "character": "難",
+      "strokes": 18,
+      "onyomi": ["ナン"],
+      "kunyomi": ["むずかしい"],
+      "words": [
+        { "word": "困難（な）", "reading": "こんなん（な）", "meaning": "kesulitan" },
+        { "word": "難しい", "reading": "むずかしい", "meaning": "sulit" }
+      ],
+      "extraWords": [
+        { "word": "難問", "reading": "なんもん", "meaning": "soal sulit" }
+      ]
+    },
+    {
+      "id": 238,
+      "character": "簡",
+      "strokes": 18,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "簡単（な）", "reading": "かんたん（な）", "meaning": "mudah, sederhana" }
+      ]
+    },
+    {
+      "id": 239,
+      "character": "単",
+      "strokes": 9,
+      "onyomi": ["タン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "単語", "reading": "たんご", "meaning": "kosakata" }
+      ],
+      "extraWords": [
+        { "word": "単位", "reading": "たんい", "meaning": "satuan, SKS" }
+      ]
+    },
+    {
+      "id": 240,
+      "character": "感",
+      "strokes": 13,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "感じる", "reading": "かんじる", "meaning": "merasakan" }
+      ],
+      "extraWords": [
+        { "word": "感動", "reading": "かんどう", "meaning": "terharu, terinspirasi" }
+      ]
+    },
+    {
+      "id": 241,
+      "character": "想",
+      "strokes": 13,
+      "onyomi": ["ソウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "感想", "reading": "かんそう", "meaning": "kesan, pendapat" }
+      ],
+      "extraWords": [
+        { "word": "予想", "reading": "よそう", "meaning": "perkiraan, prediksi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "調子：",
+      "optionA": "ようす",
+      "optionB": "ぐあい",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "移動：",
+      "optionA": "よく動くこと",
+      "optionB": "位置をかえること",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "感動：",
+      "optionA": "心が動くこと",
+      "optionB": "体を動かすこと",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "予想が（　　）だ。",
+      "optionA": "困難",
+      "optionB": "残念",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "読んだ本の（　　）文を書く。",
+      "optionA": "感想",
+      "optionB": "予想",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "（　　）にチャレンジする。",
+      "optionA": "難問",
+      "optionB": "正門",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "重要なところを（　　）する。",
+      "optionA": "強調",
+      "optionB": "強力",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "卒業に必要な（　　）を取る。",
+      "optionA": "単語",
+      "optionB": "単位",
+      "answer": "B"
+    }
+  ]
+}
