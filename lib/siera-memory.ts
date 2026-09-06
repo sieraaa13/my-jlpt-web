@@ -68,6 +68,78 @@ function selectRelevantMemories(memories: Memory[], currentMessage?: string | nu
   return [...always, ...relevant];
 }
 
+// Kata kunci yang menandakan user secara eksplisit menanyakan sesuatu dari
+// masa lalu (Level 3: deep history). Di luar kasus ini, riwayat lama TIDAK
+// dicari sama sekali supaya tidak menambah query/biaya di chat biasa.
+const LOOKBACK_KEYWORDS = [
+  "dulu",
+  "waktu itu",
+  "bulan lalu",
+  "minggu lalu",
+  "tahun lalu",
+  "inget gak",
+  "ingat gak",
+  "inget ga",
+  "masih inget",
+  "pernah bahas",
+  "pernah cerita",
+  "pernah bilang",
+  "yang lalu",
+];
+
+function detectLookbackIntent(message?: string | null): boolean {
+  if (!message) return false;
+  const lower = message.toLowerCase();
+  return LOOKBACK_KEYWORDS.some((kw) => lower.includes(kw));
+}
+
+const ARCHIVE_SEARCH_LIMIT = 5;
+const OLD_MESSAGE_SEARCH_LIMIT = 5;
+
+/** Cari memory lama (inactive/archived) yang relevan — hanya dipanggil saat lookback intent terdeteksi. */
+async function searchArchivedMemories(userId: string, topics: string[]): Promise<Memory[]> {
+  let query = supabase
+    .from("memories")
+    .select("id, type, topic, subject, description, importance, confidence")
+    .eq("user_id", userId)
+    .in("status", ["inactive", "archived"])
+    .order("updated_at", { ascending: false })
+    .limit(ARCHIVE_SEARCH_LIMIT);
+
+  if (topics.length > 0) {
+    query = query.in("topic", topics);
+  }
+
+  const { data, error } = await query;
+  if (error || !data) return [];
+  return data as Memory[];
+}
+
+interface OldMessage {
+  role: string;
+  content: string;
+  created_at: string;
+}
+
+/** Cari cuplikan chat lama yang menyebut topik terkait — hanya saat lookback intent + topik terdeteksi. */
+async function searchOldChatMessages(userId: string, topics: string[]): Promise<OldMessage[]> {
+  if (topics.length === 0) return [];
+
+  const keywords = Array.from(new Set(topics.flatMap((t) => TOPIC_KEYWORDS[t] ?? [t])));
+  const orFilter = keywords.map((kw) => `content.ilike.%${kw}%`).join(",");
+
+  const { data, error } = await supabase
+    .from("chat_messages")
+    .select("role, content, created_at")
+    .eq("user_id", userId)
+    .or(orFilter)
+    .order("created_at", { ascending: false })
+    .limit(OLD_MESSAGE_SEARCH_LIMIT);
+
+  if (error || !data) return [];
+  return data as OldMessage[];
+}
+
 export async function getActiveMemories(userId: string, limit = 20): Promise<Memory[]> {
   const { data, error } = await supabase
     .from("memories")
@@ -185,7 +257,27 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
 
   const relevantMemories = selectRelevantMemories(memories, currentMessage);
 
-  if (relevantMemories.length === 0 && !progressSummary && !monthlySummaryLine) return "";
+  // Level 3 — deep history: cuma dicari kalau user eksplisit menyinggung
+  // masa lalu (mis. "dulu kita pernah bahas ini kan?"), bukan tiap chat.
+  let archivedMemories: Memory[] = [];
+  let oldMessages: OldMessage[] = [];
+  if (detectLookbackIntent(currentMessage)) {
+    const topics = detectTopics(currentMessage);
+    [archivedMemories, oldMessages] = await Promise.all([
+      searchArchivedMemories(userId, topics),
+      searchOldChatMessages(userId, topics),
+    ]);
+  }
+
+  if (
+    relevantMemories.length === 0 &&
+    !progressSummary &&
+    !monthlySummaryLine &&
+    archivedMemories.length === 0 &&
+    oldMessages.length === 0
+  ) {
+    return "";
+  }
 
   let block = "\n\n===== YANG SIERA INGAT TENTANG USER INI =====\n";
 
@@ -202,6 +294,24 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
     relevantMemories.forEach((m) => {
       const topicTag = m.topic ? ` (${m.topic}${m.subject ? `: ${m.subject}` : ""})` : "";
       block += `- ${TYPE_LABEL[m.type]}${topicTag}: ${m.description}\n`;
+    });
+  }
+
+  if (archivedMemories.length > 0) {
+    block += `\n[Riwayat Lama yang Sudah Tidak Aktif, tapi User Sedang Menanyakannya]\n`;
+    archivedMemories.forEach((m) => {
+      const topicTag = m.topic ? ` (${m.topic}${m.subject ? `: ${m.subject}` : ""})` : "";
+      block += `- ${TYPE_LABEL[m.type]}${topicTag}: ${m.description}\n`;
+    });
+  }
+
+  if (oldMessages.length > 0) {
+    block += `\n[Cuplikan Percakapan Lama yang Relevan]\n`;
+    [...oldMessages].reverse().forEach((msg) => {
+      const dateStr = new Date(msg.created_at).toLocaleDateString("id-ID");
+      const speaker = msg.role === "user" ? "User" : "Siera";
+      const snippet = msg.content.length > 200 ? `${msg.content.slice(0, 200)}...` : msg.content;
+      block += `- (${dateStr}) ${speaker}: ${snippet}\n`;
     });
   }
 
