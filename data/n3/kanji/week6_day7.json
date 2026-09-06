@@ -1,0 +1,149 @@
+{
+  "week": 6,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 6 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "明日は久しぶりに晴れるらしい。", "target": "晴れる", "choices": ["ばれる", "てれる", "はれる", "なれる"], "answer": "はれる" },
+    { "sentence": "この薬は一般に売られている。", "target": "一般", "choices": ["いっせん", "いっそう", "いっせい", "いっぱん"], "answer": "いっぱん" },
+    { "sentence": "冷蔵庫に果物がたくさんある。", "target": "果物", "choices": ["けだもの", "くだもの", "こだもの", "こなもの"], "answer": "くだもの" },
+    { "sentence": "うちのチームは強豪と戦って勝った。", "target": "戦って", "choices": ["かたかって", "たかたって", "かかたって", "たたかって"], "answer": "たたかって" },
+    { "sentence": "毎年、環境問題の国際会議が開かれる。", "target": "国際会議", "choices": ["こくせいかいに", "こくさいかいぎ", "こくさいかいに", "こくせいかいぎ"], "answer": "こくさいかいぎ" },
+    { "sentence": "彼は大学で政治経済を専攻した。", "target": "政治経済", "choices": ["せいちけいざい", "せいじけいざい", "せいちけいさい", "せいじけいさい"], "answer": "せいじけいざい" },
+    { "sentence": "苦しくても最後まで負けないで走った。", "target": "負けないで", "choices": ["なさけないで", "もけないで", "なまけないで", "まけないで"], "answer": "まけないで" },
+    { "sentence": "パンの原料は小麦粉だ。", "target": "原料", "choices": ["ひりょう", "ねんりょう", "げんりょう", "こうりょう"], "answer": "げんりょう" },
+    { "sentence": "空き缶を道に投げ捨てないでください。", "target": "投げ捨てない", "choices": ["なげすてない", "まげすてない", "なげつてない", "まげつてない"], "answer": "なげすてない" },
+    { "sentence": "宿題を済ませてから遊びに行った。", "target": "済ませて", "choices": ["からませて", "さませて", "おわませて", "すませて"], "answer": "すませて" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "じっけんの結果を報告書にまとめた。", "reading": "じっけん", "choices": ["事件", "実験", "試験", "条件"], "answer": "実験" },
+    { "sentence": "せんもんかに意見を聞いた。", "reading": "せんもんか", "choices": ["専門家", "専問家", "千聞家", "千文家"], "answer": "専門家" },
+    { "sentence": "地球おんだんかの対策を考える。", "reading": "おんだんか", "choices": ["温段化", "音暖化", "温暖化", "音断化"], "answer": "温暖化" },
+    { "sentence": "明日は北風がふいて寒くなるだろう。", "reading": "ふいて", "choices": ["吸いて", "吹いて", "欠いて", "比いて"], "answer": "吹いて" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "次の試験は第10（　　）までです。", "target": "第10課", "choices": ["部", "課", "問", "科"], "answer": "課" },
+    { "sentence": "工場は機械（　　）された。", "target": "機械化", "choices": ["比", "的", "性", "化"], "answer": "化" },
+    { "sentence": "個人（　　）な理由で、会社を辞めました。", "target": "個人的", "choices": ["上", "因", "的", "内"], "answer": "的" },
+    { "sentence": "ラジオで天気予（　　）を聞く。", "target": "天気予報", "choices": ["想", "報", "定", "防"], "answer": "報" },
+    { "sentence": "首相はニュースの内容を（　　）定した。", "target": "否定した", "choices": ["否", "内", "無", "正"], "answer": "否" },
+    { "sentence": "電話の相手は電（　　）の届かない所にいるようだ。", "target": "電波", "choices": ["池", "車", "信", "波"], "answer": "波" }
+  ],
+  "passageQuestion": {
+    "passage": "今朝のニュースで、今日の午後から天気が[21]と言っていた。しかし空を見ると、まだ厚い雲が[22]、とても晴れるとは思えなかった。午後になって、ニュースの予報どおり、雲が少しずつ[23]、青空が見えてきた。せっかくの休みなので、公園でサッカーの試合を見ることにした。応援していたチームは前半で1点[24]が、後半で逆転し、最後は3対1で[25]。",
+    "wordBank": ["かいふくする", "ひろがっていて", "きえて", "まけていた", "かった", "くもっていた", "たたかっていた"],
+    "blanks": [
+      { "number": 21, "answer": "かいふくする", "answerKanji": "回復する" },
+      { "number": 22, "answer": "ひろがっていて", "answerKanji": "広がっていて" },
+      { "number": 23, "answer": "きえて", "answerKanji": "消えて" },
+      { "number": 24, "answer": "まけていた", "answerKanji": "負けていた" },
+      { "number": 25, "answer": "かった", "answerKanji": "勝った" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "□に入る部分は？",
+    "translation": "Bagian Mana yang Masuk?",
+    "description": "Beberapa kanji tambahan yang sering muncul di berita dan percakapan sehari-hari — mulai dari sibuk, lupa, festival, kerja keras, sampai perasaan dan lawan bicara. Yuk kenalan dengan kanji tambahan berikut ini sebagai penutup materi Kanji N3.",
+    "kanjiList": [
+      {
+        "id": 329,
+        "character": "亡",
+        "strokes": 3,
+        "onyomi": ["ボウ"],
+        "kunyomi": ["ない"],
+        "words": [
+          { "word": "死亡", "reading": "しぼう", "meaning": "kematian" },
+          { "word": "亡くなる", "reading": "なくなる", "meaning": "meninggal dunia" }
+        ]
+      },
+      {
+        "id": 330,
+        "character": "忙",
+        "strokes": 6,
+        "onyomi": ["ボウ"],
+        "kunyomi": ["いそがしい"],
+        "words": [
+          { "word": "多忙（な）", "reading": "たぼう（な）", "meaning": "sangat sibuk" },
+          { "word": "忙しい", "reading": "いそがしい", "meaning": "sibuk" }
+        ]
+      },
+      {
+        "id": 331,
+        "character": "忘",
+        "strokes": 7,
+        "onyomi": ["ボウ"],
+        "kunyomi": ["わすれる"],
+        "words": [
+          { "word": "忘年会", "reading": "ぼうねんかい", "meaning": "acara akhir tahun" },
+          { "word": "忘れる", "reading": "わすれる", "meaning": "melupakan" }
+        ],
+        "extraWords": [
+          { "word": "忘れ物", "reading": "わすれもの", "meaning": "barang yang tertinggal" }
+        ]
+      },
+      {
+        "id": 332,
+        "character": "祭",
+        "strokes": 11,
+        "onyomi": ["サイ"],
+        "kunyomi": ["まつり"],
+        "words": [
+          { "word": "文化祭", "reading": "ぶんかさい", "meaning": "festival budaya sekolah" },
+          { "word": "（お）祭り", "reading": "（お）まつり", "meaning": "festival" }
+        ]
+      },
+      {
+        "id": 333,
+        "character": "労",
+        "strokes": 7,
+        "onyomi": ["ロウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "苦労", "reading": "くろう", "meaning": "kesulitan, kerja keras" }
+        ],
+        "extraWords": [
+          { "word": "労働者", "reading": "ろうどうしゃ", "meaning": "buruh, pekerja" }
+        ]
+      },
+      {
+        "id": 334,
+        "character": "加",
+        "strokes": 5,
+        "onyomi": ["カ"],
+        "kunyomi": ["くわえる"],
+        "words": [
+          { "word": "参加", "reading": "さんか", "meaning": "partisipasi" },
+          { "word": "加える", "reading": "くわえる", "meaning": "menambahkan" }
+        ],
+        "extraWords": [
+          { "word": "増加", "reading": "ぞうか", "meaning": "peningkatan" }
+        ]
+      },
+      {
+        "id": 335,
+        "character": "情",
+        "strokes": 11,
+        "onyomi": ["ジョウ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "情報", "reading": "じょうほう", "meaning": "informasi" },
+          { "word": "事情", "reading": "じじょう", "meaning": "keadaan, alasan" }
+        ],
+        "extraWords": [
+          { "word": "表情", "reading": "ひょうじょう", "meaning": "ekspresi wajah" },
+          { "word": "感情", "reading": "かんじょう", "meaning": "emosi, perasaan" }
+        ]
+      },
+      {
+        "id": 336,
+        "character": "反",
+        "strokes": 4,
+        "onyomi": ["ハン"],
+        "kunyomi": [],
+        "words": [
+          { "word": "反対", "reading": "はんたい", "meaning": "kebalikan, menentang" }
+        ]
+      }
+    ]
+  }
+}
