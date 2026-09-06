@@ -11,8 +11,6 @@ function getAdmin() {
   );
 }
 
-const MAX_BANK = 120;
-
 const LEVEL_CONFIG = [
   {
     name: "N5",
@@ -191,15 +189,6 @@ async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<str
 // ═══════════════════════════════════════════════════════════════
 // 3. HELPER FUNCTIONS
 // ═══════════════════════════════════════════════════════════════
-async function getBankCount(levelIndex: number, topicId: string): Promise<number> {
-  const { count } = await getAdmin()
-    .from("quiz_questions")
-    .select("*", { count: "exact", head: true })
-    .eq("category", topicId)
-    .eq("level", levelIndex);
-  return count || 0;
-}
-
 async function getUnplayedQuestions(
   userId: string,
   levelIndex: number,
@@ -283,38 +272,17 @@ export async function POST(req: NextRequest) {
     let questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     console.log(`[FLOW] Found ${questions.length} unplayed questions`);
 
-    const needed    = count - questions.length;
-    const bankCount = await getBankCount(levelIndex, topicId);
+    const needed = count - questions.length;
 
-    if (needed > 0 && bankCount < MAX_BANK) {
-      const toGen = Math.min(needed, MAX_BANK - bankCount);
-      console.log(`[FLOW] Generating ${toGen} new questions`);
+    if (needed > 0) {
+      console.log(`[FLOW] Generating ${needed} new questions`);
 
-      const newQs = await generateQuestions(openaiKey, levelIndex, topicId, toGen);
+      const newQs = await generateQuestions(openaiKey, levelIndex, topicId, needed);
       const processed = await Promise.all(
         newQs.map((q) => processSingleQuestion(unsplashKey, q, levelIndex, topicId))
       );
 
       questions = [...questions, ...processed];
-    }
-
-    if (questions.length < count) {
-      console.log(`[FLOW] Resetting cycle`);
-      const { data: allQs } = await getAdmin()
-        .from("quiz_questions")
-        .select("id")
-        .eq("category", topicId)
-        .eq("level", levelIndex);
-
-      const allIds = allQs?.map((q: { id: string }) => q.id) || [];
-      if (allIds.length > 0) {
-        await getAdmin()
-          .from("quiz_user_played")
-          .delete()
-          .eq("user_id", userId)
-          .in("question_id", allIds);
-      }
-      questions = await getUnplayedQuestions(userId, levelIndex, topicId, count);
     }
 
     const result = questions.slice(0, count).map((q) => ({
@@ -327,6 +295,21 @@ export async function POST(req: NextRequest) {
       img_cat: q.img_cat || "",
     }));
 
+    // Tandai semua soal yang dikirim ke client sebagai "sudah keluar" SEKARANG,
+    // bukan menunggu user menjawab — supaya soal yang dilihat tapi tidak
+    // sempat dijawab (user berhenti di tengah kuis) tetap tidak akan muncul
+    // lagi untuk user yang sama.
+    const playableIds = result.filter((r) => r.id).map((r) => r.id);
+    if (playableIds.length > 0) {
+      const { error: markError } = await getAdmin()
+        .from("quiz_user_played")
+        .upsert(
+          playableIds.map((questionId) => ({ user_id: userId, question_id: questionId })),
+          { onConflict: "user_id,question_id" }
+        );
+      if (markError) console.error(`[DB] Failed marking questions as played:`, markError);
+    }
+
     const withPhotos = result.filter(r => r.img_url).length;
     console.log(`[RESPONSE] ${withPhotos}/${result.length} with photos`);
     console.log(`=== END ===\n`);
@@ -335,24 +318,6 @@ export async function POST(req: NextRequest) {
 
   } catch (err) {
     console.error(`[FATAL]`, err);
-    return NextResponse.json({ error: String(err) }, { status: 500 });
-  }
-}
-
-// ═══════════════════════════════════════════════════════════════
-// PUT — Mark as played
-// ═══════════════════════════════════════════════════════════════
-export async function PUT(req: NextRequest) {
-  try {
-    const { userId, questionId } = await req.json();
-    await getAdmin()
-      .from("quiz_user_played")
-      .upsert(
-        { user_id: userId, question_id: questionId },
-        { onConflict: "user_id,question_id" }
-      );
-    return NextResponse.json({ ok: true });
-  } catch (err) {
     return NextResponse.json({ error: String(err) }, { status: 500 });
   }
 }

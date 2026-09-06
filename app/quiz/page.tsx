@@ -122,14 +122,6 @@ async function saveDailyState(uid: string, s: DailyState) {
   }, { onConflict:"user_id,date" });
 }
 
-async function markPlayed(userId: string, questionId: string) {
-  await fetch("/api/generate-quiz", {
-    method:  "PUT",
-    headers: { "Content-Type":"application/json" },
-    body:    JSON.stringify({ userId, questionId }),
-  });
-}
-
 // ─── COMPONENT ───────────────────────────────────────────────
 export default function QuizPage() {
   const { user } = useAuth();
@@ -223,9 +215,6 @@ export default function QuizPage() {
     const pts     = correct ? lv.ptCorrect + bonus : 0;
 
     if (pts > 0) { setFloatPts(pts); setTimeout(() => setFloatPts(null), 900); }
-
-    // Tandai soal sebagai sudah dimainkan
-    await markPlayed(user.id, q.id);
 
     const ns: DailyState = {
       ...state,
