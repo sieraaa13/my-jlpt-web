@@ -1,0 +1,181 @@
+{
+  "week": 3,
+  "day": 6,
+  "title": "携帯電話",
+  "subtitle": "Cell Phones",
+  "translation": "Telepon Genggam",
+  "sceneDescription": "Layar ponsel menampilkan form pesan (tujuan, judul, isi, lampiran), permintaan koneksi jaringan dengan tombol \"接続する／接続しない\", notifikasi pesan terkirim, layar galeri dengan tombol registrasi foto, dan tampilan email yang bisa dibaca lanjutannya.",
+  "signs": [
+    { "text": "ネットワークに接続しますか？", "meaning": "Sambungkan ke jaringan?" },
+    { "text": "接続する ／ 接続しない", "meaning": "Sambungkan / Jangan sambungkan" },
+    { "text": "送信完了", "meaning": "Pengiriman selesai" },
+    { "text": "登録", "meaning": "Daftarkan (simpan)" },
+    { "text": "戻る ／ メニュー", "meaning": "Kembali / Menu" }
+  ],
+  "kanjiList": [
+    {
+      "id": 156,
+      "character": "接",
+      "strokes": 11,
+      "onyomi": ["セツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "接続", "reading": "せつぞく", "meaning": "koneksi, penyambungan" }
+      ],
+      "extraWords": [
+        { "word": "面接", "reading": "めんせつ", "meaning": "wawancara" }
+      ]
+    },
+    {
+      "id": 157,
+      "character": "続",
+      "strokes": 13,
+      "onyomi": ["ゾク"],
+      "kunyomi": ["つづく", "つづける"],
+      "words": [
+        { "word": "接続", "reading": "せつぞく", "meaning": "koneksi, penyambungan" },
+        { "word": "続く", "reading": "つづく", "meaning": "berlanjut" }
+      ],
+      "extraWords": [
+        { "word": "続ける", "reading": "つづける", "meaning": "melanjutkan" }
+      ]
+    },
+    {
+      "id": 158,
+      "character": "示",
+      "strokes": 5,
+      "onyomi": ["ジ"],
+      "kunyomi": ["しめす"],
+      "words": [
+        { "word": "表示", "reading": "ひょうじ", "meaning": "tampilan, indikasi" },
+        { "word": "示す", "reading": "しめす", "meaning": "menunjukkan" }
+      ],
+      "extraWords": [
+        { "word": "指示", "reading": "しじ", "meaning": "instruksi, arahan" }
+      ]
+    },
+    {
+      "id": 159,
+      "character": "戻",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["もどる", "もどす"],
+      "words": [
+        { "word": "戻る", "reading": "もどる", "meaning": "kembali" }
+      ],
+      "extraWords": [
+        { "word": "戻す", "reading": "もどす", "meaning": "mengembalikan" }
+      ]
+    },
+    {
+      "id": 160,
+      "character": "完",
+      "strokes": 7,
+      "onyomi": ["カン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "完了", "reading": "かんりょう", "meaning": "selesai, tuntas" },
+        { "word": "完全", "reading": "かんぜん", "meaning": "sempurna, lengkap" }
+      ]
+    },
+    {
+      "id": 161,
+      "character": "了",
+      "strokes": 2,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "了解", "reading": "りょうかい", "meaning": "mengerti, paham (menyetujui)" }
+      ],
+      "extraWords": [
+        { "word": "終了", "reading": "しゅうりょう", "meaning": "berakhir, tamat" }
+      ]
+    },
+    {
+      "id": 162,
+      "character": "登",
+      "strokes": 12,
+      "onyomi": ["トウ"],
+      "kunyomi": ["のぼる"],
+      "words": [
+        { "word": "登録", "reading": "とうろく", "meaning": "registrasi, pendaftaran" },
+        { "word": "登る", "reading": "のぼる", "meaning": "mendaki" }
+      ],
+      "extraWords": [
+        { "word": "登山", "reading": "とざん", "meaning": "pendakian gunung" }
+      ]
+    },
+    {
+      "id": 163,
+      "character": "録",
+      "strokes": 16,
+      "onyomi": ["ロク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "記録", "reading": "きろく", "meaning": "catatan, rekor" },
+        { "word": "録音", "reading": "ろくおん", "meaning": "merekam suara" }
+      ],
+      "extraWords": [
+        { "word": "録画", "reading": "ろくが", "meaning": "merekam video" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "接続：",
+      "optionA": "つなぐこと",
+      "optionB": "つづくこと",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "完全：",
+      "optionA": "パーフェクト",
+      "optionB": "セーフティ",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "面接：",
+      "optionA": "入院中の人に会うこと",
+      "optionB": "その人を知るために会うこと",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "仕事の内容をノートに（　　）する。",
+      "optionA": "記録",
+      "optionB": "登録",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "医者の（　　）にしたがう。",
+      "optionA": "案内",
+      "optionB": "指示",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "ラジオ番組を（　　）する。",
+      "optionA": "録音",
+      "optionB": "録画",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "「3時に駅に着きます。」「（　　）です。」",
+      "optionA": "了解",
+      "optionB": "理解",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "本日の営業は（　　）しました。",
+      "optionA": "完了",
+      "optionB": "終了",
+      "answer": "B"
+    }
+  ]
+}
