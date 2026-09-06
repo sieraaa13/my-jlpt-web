@@ -55,6 +55,7 @@ import w6d2 from "./week6_day2.json";
 import w6d3 from "./week6_day3.json";
 import w6d4 from "./week6_day4.json";
 import w6d5 from "./week6_day5.json";
+import w6d6 from "./week6_day6.json";
 
 export type { KanjiSignLessonDay, N3KanjiTestDay };
 
@@ -105,6 +106,7 @@ export const n3KanjiLessons: Record<string, Record<string, KanjiSignLessonDay>> 
     "3": w6d3 as KanjiSignLessonDay,
     "4": w6d4 as KanjiSignLessonDay,
     "5": w6d5 as KanjiSignLessonDay,
+    "6": w6d6 as KanjiSignLessonDay,
   },
 };
 

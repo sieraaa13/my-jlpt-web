@@ -1,0 +1,179 @@
+{
+  "week": 6,
+  "day": 6,
+  "title": "政治",
+  "subtitle": "Politics",
+  "translation": "Politik",
+  "sceneDescription": "Seseorang membaca koran dengan judul berita perdana menteri menyatakan sikap negatif terhadap revisi UU dana pensiun, sementara para ahli menilai sulit menutupi semua kelemahan sistem pensiun saat ini lewat revisi tersebut.",
+  "signs": [
+    { "text": "政府は法改正を否定", "meaning": "Pemerintah menolak revisi undang-undang" },
+    { "text": "〇〇首相は年金に関する法の改正について否定的な考えを示した。", "meaning": "Perdana Menteri ○○ menunjukkan sikap negatif terhadap revisi UU dana pensiun." },
+    { "text": "法の改正で現在の年金システムの欠点すべてをカバーすることは難しいと専門家は見ている。", "meaning": "Para ahli menilai sulit menutupi semua kelemahan sistem pensiun saat ini lewat revisi UU." }
+  ],
+  "kanjiList": [
+    {
+      "id": 321,
+      "character": "政",
+      "strokes": 9,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "政治", "reading": "せいじ", "meaning": "politik" }
+      ],
+      "extraWords": [
+        { "word": "政治家", "reading": "せいじか", "meaning": "politisi" }
+      ]
+    },
+    {
+      "id": 322,
+      "character": "府",
+      "strokes": 8,
+      "onyomi": ["フ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "政府", "reading": "せいふ", "meaning": "pemerintah" }
+      ],
+      "extraWords": [
+        { "word": "都道府県", "reading": "とどうふけん", "meaning": "prefektur (satuan wilayah Jepang)" }
+      ]
+    },
+    {
+      "id": 323,
+      "character": "改",
+      "strokes": 7,
+      "onyomi": ["カイ"],
+      "kunyomi": ["あらためる"],
+      "words": [
+        { "word": "改正", "reading": "かいせい", "meaning": "amendemen, revisi" },
+        { "word": "改める", "reading": "あらためる", "meaning": "mengubah, memeriksa" }
+      ],
+      "extraWords": [
+        { "word": "改札口", "reading": "かいさつぐち", "meaning": "gerbang tiket" }
+      ]
+    },
+    {
+      "id": 324,
+      "character": "否",
+      "strokes": 7,
+      "onyomi": ["ヒ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "否定", "reading": "ひてい", "meaning": "penyangkalan, penolakan" }
+      ]
+    },
+    {
+      "id": 325,
+      "character": "的",
+      "strokes": 8,
+      "onyomi": ["テキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "否定的（な）", "reading": "ひていてき（な）", "meaning": "negatif" },
+        { "word": "国際的（な）", "reading": "こくさいてき（な）", "meaning": "bersifat internasional" }
+      ],
+      "extraWords": [
+        { "word": "目的", "reading": "もくてき", "meaning": "tujuan" },
+        { "word": "個人的（な）", "reading": "こじんてき（な）", "meaning": "bersifat pribadi" }
+      ]
+    },
+    {
+      "id": 326,
+      "character": "実",
+      "strokes": 8,
+      "onyomi": ["ジツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "実際に", "reading": "じっさいに", "meaning": "sebenarnya, senyatanya" },
+        { "word": "実験", "reading": "じっけん", "meaning": "eksperimen" }
+      ],
+      "extraWords": [
+        { "word": "実は", "reading": "じつは", "meaning": "sebenarnya (untuk mengaku sesuatu)" }
+      ]
+    },
+    {
+      "id": 327,
+      "character": "欠",
+      "strokes": 4,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["かける"],
+      "words": [
+        { "word": "欠点", "reading": "けってん", "meaning": "kekurangan, kelemahan" },
+        { "word": "欠ける", "reading": "かける", "meaning": "kurang, cuil" }
+      ],
+      "extraWords": [
+        { "word": "欠席", "reading": "けっせき", "meaning": "tidak hadir" }
+      ]
+    },
+    {
+      "id": 328,
+      "character": "専",
+      "strokes": 9,
+      "onyomi": ["セン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "専門", "reading": "せんもん", "meaning": "keahlian, spesialisasi" }
+      ],
+      "extraWords": [
+        { "word": "専門家", "reading": "せんもんか", "meaning": "ahli, pakar" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "欠点：",
+      "optionA": "いいところ",
+      "optionB": "悪いところ",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "欠席：参加",
+      "optionA": "すること",
+      "optionB": "しないこと",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "専門家：",
+      "optionA": "プロ",
+      "optionB": "アマチュア",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "国際的：",
+      "optionA": "パーソナル",
+      "optionB": "インターナショナル",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "日本へ来た（　　）は研究です。",
+      "optionA": "目的",
+      "optionB": "原因",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "（　　）を出た所で待っています。",
+      "optionA": "窓口",
+      "optionB": "改札口",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）は会社を辞めたいんです。",
+      "optionA": "真",
+      "optionB": "実",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "電車の時刻が（　　）された。",
+      "optionA": "改正",
+      "optionB": "変化",
+      "answer": "A"
+    }
+  ]
+}
