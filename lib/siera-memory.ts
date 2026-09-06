@@ -18,6 +18,56 @@ const TYPE_LABEL: Record<Memory["type"], string> = {
   milestone: "Pencapaian",
 };
 
+// Tipe memory yang selalu ikut disertakan (Level 1: profil stabil, jumlahnya
+// kecil) — beda dengan tipe di bawah yang cuma relevan kalau topiknya cocok
+// dengan pesan user saat ini (Level 2).
+const ALWAYS_INCLUDE_TYPES: Memory["type"][] = ["goal", "learning_preference"];
+
+// Jumlah memory topik-spesifik yang dipakai kalau topik pesan user tidak
+// terdeteksi (fallback), supaya tetap jauh lebih hemat daripada kirim semua.
+const FALLBACK_TOPIC_LIMIT = 5;
+
+const TOPIC_KEYWORDS: Record<string, string[]> = {
+  kanji: ["kanji", "漢字", "onyomi", "kunyomi", "cara baca huruf"],
+  goi: ["goi", "kosakata", "kosa kata", "vocab", "vocabulary", "arti kata"],
+  bunpou: ["bunpou", "bunpo", "grammar", "tata bahasa", "pola kalimat", "partikel"],
+  dokkai: ["dokkai", "bacaan", "reading", "membaca teks"],
+  choukai: ["choukai", "listening", "dengar", "mendengarkan"],
+};
+
+/** Deteksi topik JLPT yang disebut di pesan user, berbasis kata kunci sederhana. */
+function detectTopics(message?: string | null): string[] {
+  if (!message) return [];
+  const lower = message.toLowerCase();
+  return Object.entries(TOPIC_KEYWORDS)
+    .filter(([, keywords]) => keywords.some((kw) => lower.includes(kw)))
+    .map(([topic]) => topic);
+}
+
+/**
+ * Memory Retriever sederhana (rule-based, bukan LLM): saring memory supaya
+ * yang dikirim ke prompt cuma yang relevan dengan pesan user saat ini,
+ * bukan semua active memory tiap kali chat.
+ * - goal & learning_preference: selalu ikut (profil stabil, jumlahnya kecil).
+ * - current_difficulty / progress / milestone: cuma ikut kalau topiknya
+ *   cocok dengan topik yang terdeteksi di pesan user (atau topic-nya umum).
+ *   Kalau tidak ada topik yang terdeteksi (mis. pertanyaan umum), fallback
+ *   ke beberapa yang paling penting saja (sudah terurut by importance).
+ */
+function selectRelevantMemories(memories: Memory[], currentMessage?: string | null): Memory[] {
+  const always = memories.filter((m) => ALWAYS_INCLUDE_TYPES.includes(m.type));
+  const topicScoped = memories.filter((m) => !ALWAYS_INCLUDE_TYPES.includes(m.type));
+
+  const detectedTopics = detectTopics(currentMessage);
+
+  const relevant =
+    detectedTopics.length > 0
+      ? topicScoped.filter((m) => !m.topic || m.topic === "general" || detectedTopics.includes(m.topic))
+      : topicScoped.slice(0, FALLBACK_TOPIC_LIMIT);
+
+  return [...always, ...relevant];
+}
+
 export async function getActiveMemories(userId: string, limit = 20): Promise<Memory[]> {
   const { data, error } = await supabase
     .from("memories")
@@ -126,14 +176,16 @@ async function getLatestMonthlySummaryLine(userId: string): Promise<string> {
   return parts.join(" ");
 }
 
-export async function buildMemoryContext(userId: string): Promise<string> {
+export async function buildMemoryContext(userId: string, currentMessage?: string | null): Promise<string> {
   const [memories, progressSummary, monthlySummaryLine] = await Promise.all([
     getActiveMemories(userId),
     getProgressSummary(userId),
     getLatestMonthlySummaryLine(userId),
   ]);
 
-  if (memories.length === 0 && !progressSummary && !monthlySummaryLine) return "";
+  const relevantMemories = selectRelevantMemories(memories, currentMessage);
+
+  if (relevantMemories.length === 0 && !progressSummary && !monthlySummaryLine) return "";
 
   let block = "\n\n===== YANG SIERA INGAT TENTANG USER INI =====\n";
 
@@ -145,9 +197,9 @@ export async function buildMemoryContext(userId: string): Promise<string> {
     block += `\n[Tren Bulanan]\n${monthlySummaryLine}\n`;
   }
 
-  if (memories.length > 0) {
+  if (relevantMemories.length > 0) {
     block += `\n[Memori Jangka Panjang]\n`;
-    memories.forEach((m) => {
+    relevantMemories.forEach((m) => {
       const topicTag = m.topic ? ` (${m.topic}${m.subject ? `: ${m.subject}` : ""})` : "";
       block += `- ${TYPE_LABEL[m.type]}${topicTag}: ${m.description}\n`;
     });

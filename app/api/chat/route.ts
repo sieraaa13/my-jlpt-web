@@ -14,8 +14,15 @@ export async function POST(req: NextRequest) {
 
     const { messages, examContext, level, isExamFinished, userId, userName } = await req.json();
 
+    const lastUserMsg = [...messages].reverse().find((m: any) => m.role === "user");
+
     // ====== SISTEM PROMPT DASAR — KARAKTER SIERA + MEMORI ======
-    let systemPrompt = await buildBaseSystemPrompt({ level, userName, userId });
+    let systemPrompt = await buildBaseSystemPrompt({
+      level,
+      userName,
+      userId,
+      currentMessage: lastUserMsg?.content,
+    });
 
     // ====== MODE 1: UJIAN BERLANGSUNG ======
     if (examContext && examContext.trim().length > 0 && !isExamFinished) {
@@ -249,7 +256,6 @@ Ingat aja, "shuto" mirip kata "shoot" — pusat tembakan = pusat negara!"`;
     const replyContent = data.choices[0].message.content;
 
     if (userId) {
-      const lastUserMsg = [...messages].reverse().find((m: any) => m.role === "user");
       if (lastUserMsg?.content) {
         // Tidak di-await supaya tidak menahan respon ke user; simpan gagal-diam.
         saveChatTurn(userId, lastUserMsg.content, replyContent);

@@ -71,7 +71,11 @@ async function handleTextMessage(lineUserId: string, text: string, replyToken: s
     return;
   }
 
-  const systemPrompt = await buildBaseSystemPrompt({ userName: linked.name, userId: linked.id });
+  const systemPrompt = await buildBaseSystemPrompt({
+    userName: linked.name,
+    userId: linked.id,
+    currentMessage: text,
+  });
 
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",

@@ -10,8 +10,9 @@ export async function buildBaseSystemPrompt(params: {
   level?: string | null;
   userName?: string | null;
   userId?: string | null;
+  currentMessage?: string | null;
 }): Promise<string> {
-  const { level, userName, userId } = params;
+  const { level, userName, userId, currentMessage } = params;
 
   let systemPrompt = `Kamu adalah SIERA, tutor JLPT yang ramah, sabar, dan ahli bahasa Jepang.
 Karaktermu: hangat, suportif, suka memberi semangat, kadang menyelipkan kata Jepang ringan.
@@ -33,7 +34,7 @@ ATURAN UMUM:
   }
 
   if (userId) {
-    const memoryBlock = await buildMemoryContext(userId);
+    const memoryBlock = await buildMemoryContext(userId, currentMessage);
     if (memoryBlock) systemPrompt += memoryBlock;
   }
 
