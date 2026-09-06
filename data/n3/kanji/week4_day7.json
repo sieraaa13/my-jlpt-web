@@ -1,0 +1,145 @@
+{
+  "week": 4,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 4 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "この店の商品は高級で有名だ。", "target": "高級", "choices": ["こうきゅう", "こうきょう", "こうぎゅう", "ごうきゅう"], "answer": "こうきゅう" },
+    { "sentence": "セール中は2割引になる。", "target": "割引", "choices": ["わりびき", "われびき", "わりびけ", "かつびき"], "answer": "わりびき" },
+    { "sentence": "彼は米国で仕事をしている。", "target": "米国", "choices": ["べいこく", "まいこく", "めいこく", "みいこく"], "answer": "べいこく" },
+    { "sentence": "参加希望者は申込書を出す。", "target": "申込書", "choices": ["もうしこみしょ", "しんこくしょ", "もうしこみじょ", "しんせいしょ"], "answer": "もうしこみしょ" },
+    { "sentence": "荷物の配達は午前中に来る。", "target": "配達", "choices": ["はいたつ", "はいだつ", "ばいたつ", "はいたち"], "answer": "はいたつ" },
+    { "sentence": "電話しても不在だった。", "target": "不在", "choices": ["ふざい", "ぶざい", "ふうざい", "ふさい"], "answer": "ふざい" },
+    { "sentence": "携帯電話の電池が切れた。", "target": "携帯", "choices": ["けいたい", "けいだい", "けったい", "けいてい"], "answer": "けいたい" },
+    { "sentence": "食後に紅茶を飲む。", "target": "紅茶", "choices": ["こうちゃ", "べにちゃ", "こうさ", "あかちゃ"], "answer": "こうちゃ" },
+    { "sentence": "大阪支社に転勤する。", "target": "支社", "choices": ["ししゃ", "しじゃ", "してん", "しちゃ"], "answer": "ししゃ" },
+    { "sentence": "商品が入荷したら連絡します。", "target": "入荷", "choices": ["にゅうか", "にゅうが", "にゅうこ", "いりか"], "answer": "にゅうか" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "コーヒーにさとうを入れる。", "reading": "さとう", "choices": ["砂糖", "沙糖", "砂塘", "沙塘"], "answer": "砂糖" },
+    { "sentence": "この服のねだんは高い。", "reading": "ねだん", "choices": ["値段", "直段", "価段", "代段"], "answer": "値段" },
+    { "sentence": "留学のきぼうを伝えた。", "reading": "きぼう", "choices": ["希望", "期望", "気望", "希暴"], "answer": "希望" },
+    { "sentence": "荷物をとどけてもらった。", "reading": "とどけて", "choices": ["届けて", "配けて", "送けて", "運けて"], "answer": "届けて" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "この本は3（　　）で1000円です。", "target": "3冊", "choices": ["枚", "冊", "個", "部"], "answer": "冊" },
+    { "sentence": "商品の（　　）引きサービスがある。", "target": "割引", "choices": ["割", "倍", "額", "値"], "answer": "割" },
+    { "sentence": "（　　）金を下ろしに銀行へ行く。", "target": "預金", "choices": ["預", "取", "配", "届"], "answer": "預" },
+    { "sentence": "本社ではなく（　　）店で働く。", "target": "支店", "choices": ["支", "分", "別", "他"], "answer": "支" },
+    { "sentence": "父は毎日会社に（　　）めている。", "target": "勤めている", "choices": ["努", "勤", "務", "勉"], "answer": "勤" },
+    { "sentence": "スーツケースの（　　）物検査を受けた。", "target": "手荷物", "choices": ["荷", "貨", "化", "何"], "answer": "荷" }
+  ],
+  "passageQuestion": {
+    "passage": "インターネットで新型のスニーカーを注文した。代金は銀行から[21]。数日後、宅配便の不在通知がポストに[22]。仕事で家に[23]、荷物を受け取れなかったからだ。すぐに再配達を希望する日と時間を書いて、はがきをポストに[24]。次の日、時間通りに荷物が[25]、とてもうれしかった。",
+    "wordBank": ["ふりこんだ", "はいっていた", "いなくて", "だした", "とどいて", "かえした", "おくれて"],
+    "blanks": [
+      { "number": 21, "answer": "ふりこんだ", "answerKanji": "振り込んだ" },
+      { "number": 22, "answer": "はいっていた", "answerKanji": "入っていた" },
+      { "number": 23, "answer": "いなくて", "answerKanji": "いなくて" },
+      { "number": 24, "answer": "だした", "answerKanji": "出した" },
+      { "number": 25, "answer": "とどいて", "answerKanji": "届いて" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "読みはどちら？",
+    "translation": "Bacaan yang Mana?",
+    "description": "Beberapa kanji ini punya lebih dari satu cara baca yang gampang tertukar — seperti 船 yang bisa dibaca ふね atau ふな, atau 夫 yang bisa dibaca フ, フウ, atau おっと tergantung katanya. Yuk kenalan dengan kanji tambahan berikut ini.",
+    "kanjiList": [
+      {
+        "id": 219,
+        "character": "細",
+        "strokes": 11,
+        "onyomi": [],
+        "kunyomi": ["ほそい", "こまかい"],
+        "words": [
+          { "word": "細い", "reading": "ほそい", "meaning": "kurus, tipis" },
+          { "word": "細かい", "reading": "こまかい", "meaning": "kecil, terperinci" }
+        ]
+      },
+      {
+        "id": 220,
+        "character": "戸",
+        "strokes": 4,
+        "onyomi": [],
+        "kunyomi": ["と"],
+        "words": [
+          { "word": "戸", "reading": "と", "meaning": "pintu geser" },
+          { "word": "戸だな", "reading": "とだな", "meaning": "lemari, rak" }
+        ],
+        "extraWords": [
+          { "word": "雨戸", "reading": "あまど", "meaning": "penutup jendela dari hujan/angin" }
+        ]
+      },
+      {
+        "id": 221,
+        "character": "湖",
+        "strokes": 12,
+        "onyomi": ["コ"],
+        "kunyomi": ["みずうみ"],
+        "words": [
+          { "word": "びわ湖", "reading": "びわこ", "meaning": "Danau Biwa" },
+          { "word": "湖", "reading": "みずうみ", "meaning": "danau" }
+        ]
+      },
+      {
+        "id": 222,
+        "character": "船",
+        "strokes": 11,
+        "onyomi": ["セン"],
+        "kunyomi": ["ふね", "ふな"],
+        "words": [
+          { "word": "風船", "reading": "ふうせん", "meaning": "balon" },
+          { "word": "船", "reading": "ふね", "meaning": "kapal, perahu" }
+        ],
+        "extraWords": [
+          { "word": "船長", "reading": "せんちょう", "meaning": "kapten kapal" },
+          { "word": "船便", "reading": "ふなびん", "meaning": "pengiriman lewat laut" }
+        ]
+      },
+      {
+        "id": 223,
+        "character": "角",
+        "strokes": 7,
+        "onyomi": ["カク"],
+        "kunyomi": ["かど"],
+        "words": [
+          { "word": "角度", "reading": "かくど", "meaning": "sudut, angle" },
+          { "word": "四角い", "reading": "しかくい", "meaning": "berbentuk persegi" }
+        ],
+        "extraWords": [
+          { "word": "三角形", "reading": "さんかくけい", "meaning": "segitiga" },
+          { "word": "角", "reading": "かど", "meaning": "sudut, pojokan jalan" }
+        ]
+      },
+      {
+        "id": 224,
+        "character": "夫",
+        "strokes": 4,
+        "onyomi": ["フ"],
+        "kunyomi": ["おっと"],
+        "words": [
+          { "word": "夫妻", "reading": "ふさい", "meaning": "suami istri" },
+          { "word": "夫婦", "reading": "ふうふ", "meaning": "pasangan suami istri" }
+        ],
+        "extraWords": [
+          { "word": "夫", "reading": "おっと", "meaning": "suami" }
+        ]
+      },
+      {
+        "id": 225,
+        "character": "苦",
+        "strokes": 8,
+        "onyomi": ["ク"],
+        "kunyomi": ["くるしい", "にがい"],
+        "words": [
+          { "word": "苦労", "reading": "くろう", "meaning": "kesulitan, kesukaran" },
+          { "word": "苦い", "reading": "にがい", "meaning": "pahit" }
+        ],
+        "extraWords": [
+          { "word": "苦しい", "reading": "くるしい", "meaning": "menyakitkan, berat" },
+          { "word": "苦手（な）", "reading": "にがて（な）", "meaning": "tidak jago/kurang suka" }
+        ]
+      }
+    ]
+  }
+}
