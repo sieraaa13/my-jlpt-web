@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { getExamData } from "@/lib/getExamData";
+import { getExamData, getExamLabel } from "@/lib/getExamData";
 import ExamQuestions from "./exam-questions";
 import Link from "next/link";
 
@@ -158,7 +158,9 @@ export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
 
           {!loading && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {examMonths.map((month) => (
+              {examMonths.map((month) => {
+                const customLabel = getExamLabel(level, selectedYear, month.month);
+                return (
                 <Card
                   key={month.month}
                   className={`group relative overflow-hidden bg-gradient-to-br ${month.color} backdrop-blur-sm border-2 ${month.borderColor} hover:border-primary/70 transition-all duration-500 cursor-pointer p-8`}
@@ -170,10 +172,21 @@ export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {month.label} {selectedYear}
-                    </h3>
-                    
+                    {customLabel ? (
+                      <>
+                        <span className="inline-block bg-amber-500/20 text-amber-600 text-xs font-bold px-3 py-1 rounded-full">
+                          Latihan (bukan soal ujian resmi)
+                        </span>
+                        <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                          {customLabel}
+                        </h3>
+                      </>
+                    ) : (
+                      <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {month.label} {selectedYear}
+                      </h3>
+                    )}
+
                     <p className="text-muted-foreground">
                       JLPT {level.toUpperCase()} - Lengkap dengan 3 section: Kanji, Bunpou, dan Dokkai
                     </p>
@@ -191,7 +204,8 @@ export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Card>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

@@ -38,6 +38,11 @@ interface ExamQuestionsProps {
     bunpou: Question[];
     dokkai: DakkaiSection[];
     choukai?: ChoukaiQuestion[];
+    // Judul kustom untuk soal yang BUKAN ujian resmi (mis. paket latihan
+    // orisinal yang mengisi slot tahun/periode tertentu). Kalau ada, ini
+    // dipakai sebagai subjudul menggantikan "Juli/Desember <tahun>" supaya
+    // user tidak salah kira ini soal ujian JLPT asli.
+    label?: string;
   };
   year: string;
   month: string;
@@ -105,7 +110,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
 
   // ★ PERUBAHAN: pakai level dari props, bukan hardcode dari tahun
   const level = levelProp ? levelProp.toUpperCase() : "N3";
-  const examLabel = `${month === "07" ? "Juli" : "Desember"} ${year}`;
+  const examLabel = data.label ?? `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
   // ── AI CONTEXT ──────────────────────────────────────────────
   const aiQuestions = useMemo(() => {

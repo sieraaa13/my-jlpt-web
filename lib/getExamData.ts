@@ -6,6 +6,7 @@ import { exam201307 } from "../data/exams/2013/07";
 import { exam201312 } from "../data/exams/2013/12";
 import { exam201407 } from "../data/exams/2014/07";
 import { exam201412 } from "../data/exams/2014/12";
+import { exam201507 } from "../data/exams/2015/07";
 import { exam201512 } from "../data/exams/2015/12";
 import { exam201607 } from "../data/exams/2016/07";
 import { exam201612 } from "../data/exams/2016/12";
@@ -143,6 +144,7 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
     "2013-12": exam201312,
     "2014-07": exam201407,
     "2014-12": exam201412,
+    "2015-07": exam201507,
     "2015-12": exam201512,
     "2016-07": exam201607,
     "2016-12": exam201612,
@@ -228,6 +230,18 @@ export function getAvailablePeriods(level: string): string[] {
   const levelData = EXAMS_DATA_BY_LEVEL[level.toLowerCase()];
   if (!levelData) return [];
   return Object.keys(levelData).sort((a, b) => b.localeCompare(a));
+}
+
+// ==========================================================
+// HELPER: judul kustom (kalau ada) untuk satu slot ujian, dibaca
+// langsung (tanpa async) supaya UI pemilihan periode bisa menampilkan
+// badge "Latihan" SEBELUM soal benar-benar dimuat, untuk paket soal
+// orisinal yang mengisi slot tahun/periode tertentu (bukan soal ujian
+// resmi JLPT).
+// ==========================================================
+export function getExamLabel(level: string, year: string, period: string): string | undefined {
+  const levelData = EXAMS_DATA_BY_LEVEL[level.toLowerCase()];
+  return levelData?.[`${year}-${period}`]?.label;
 }
 
 export function getAvailableLevels(): string[] {
