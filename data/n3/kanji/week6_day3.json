@@ -1,0 +1,176 @@
+{
+  "week": 6,
+  "day": 3,
+  "title": "スポーツ記事",
+  "subtitle": "A Sports Article",
+  "translation": "Artikel Olahraga",
+  "sceneDescription": "Artikel berita turnamen bisbol anak-anak: tim Falcons menang 5-3 di final dan meraih juara pertama sambil menangis bahagia, sementara pitcher tim Wings yang kalah berkomentar akan berjuang lagi lain kali.",
+  "signs": [
+    { "text": "少年野球大会 ファルコンズ優勝！", "meaning": "Turnamen bisbol remaja: Falcons juara!" },
+    { "text": "少年野球大会の決勝は5対3でファルコンズが勝った。", "meaning": "Di final turnamen bisbol remaja, Falcons menang 5-3." },
+    { "text": "初優勝に喜びの涙を流した。", "meaning": "Mereka menangis bahagia atas kemenangan pertama mereka." },
+    { "text": "今回の結果は残念でしたが、また今度、がんばります。", "meaning": "Hasil kali ini mengecewakan, tapi saya akan berjuang lagi lain kali." }
+  ],
+  "kanjiList": [
+    {
+      "id": 297,
+      "character": "球",
+      "strokes": 11,
+      "onyomi": ["キュウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "地球", "reading": "ちきゅう", "meaning": "planet bumi" },
+        { "word": "電球", "reading": "でんきゅう", "meaning": "bola lampu" }
+      ],
+      "extraWords": [
+        { "word": "野球", "reading": "やきゅう", "meaning": "bisbol" }
+      ]
+    },
+    {
+      "id": 298,
+      "character": "決",
+      "strokes": 7,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["きめる", "きまる"],
+      "words": [
+        { "word": "決して", "reading": "けっして", "meaning": "sama sekali tidak (dengan negasi)" },
+        { "word": "決める", "reading": "きめる", "meaning": "memutuskan" }
+      ],
+      "extraWords": [
+        { "word": "決定", "reading": "けってい", "meaning": "keputusan" },
+        { "word": "決まる", "reading": "きまる", "meaning": "menjadi diputuskan" }
+      ]
+    },
+    {
+      "id": 299,
+      "character": "勝",
+      "strokes": 12,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["かつ"],
+      "words": [
+        { "word": "優勝", "reading": "ゆうしょう", "meaning": "juara" },
+        { "word": "勝つ", "reading": "かつ", "meaning": "menang" }
+      ],
+      "extraWords": [
+        { "word": "決勝", "reading": "けっしょう", "meaning": "pertandingan final" }
+      ]
+    },
+    {
+      "id": 300,
+      "character": "対",
+      "strokes": 7,
+      "onyomi": ["タイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "1対2", "reading": "いちたいに", "meaning": "skor 1 lawan 2" }
+      ],
+      "extraWords": [
+        { "word": "反対", "reading": "はんたい", "meaning": "kebalikan, menentang" }
+      ]
+    },
+    {
+      "id": 301,
+      "character": "流",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["ながれる", "ながす"],
+      "words": [
+        { "word": "流れる", "reading": "ながれる", "meaning": "mengalir" },
+        { "word": "流す", "reading": "ながす", "meaning": "mengalirkan" }
+      ]
+    },
+    {
+      "id": 302,
+      "character": "負",
+      "strokes": 9,
+      "onyomi": ["フ"],
+      "kunyomi": ["まける"],
+      "words": [
+        { "word": "勝負", "reading": "しょうぶ", "meaning": "pertandingan" },
+        { "word": "負ける", "reading": "まける", "meaning": "kalah" }
+      ]
+    },
+    {
+      "id": 303,
+      "character": "投",
+      "strokes": 7,
+      "onyomi": ["トウ"],
+      "kunyomi": ["なげる"],
+      "words": [
+        { "word": "投手", "reading": "とうしゅ", "meaning": "pelempar (pitcher)" },
+        { "word": "投げる", "reading": "なげる", "meaning": "melempar" }
+      ]
+    },
+    {
+      "id": 304,
+      "character": "果",
+      "strokes": 8,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "結果", "reading": "けっか", "meaning": "hasil" }
+      ],
+      "extraWords": [
+        { "word": "果物", "reading": "くだもの", "meaning": "buah-buahan" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "投手：",
+      "optionA": "ピッチャー",
+      "optionB": "バッター",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "勝負：勝ち負けを",
+      "optionA": "決めること",
+      "optionB": "決めないこと",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "家族は留学に（　　）した。",
+      "optionA": "反対",
+      "optionB": "禁止",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "（　　）を新しいのと交換する。",
+      "optionA": "野球",
+      "optionB": "電球",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "涙を（　　）。",
+      "optionA": "流す",
+      "optionB": "流れる",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "お世話になったことは（　　）忘れません。",
+      "optionA": "決して",
+      "optionB": "失して",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "試合は（　　）の同点だ。",
+      "optionA": "3比3",
+      "optionB": "3対3",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "美人コンテストでミス日本が（　　）した。",
+      "optionA": "決勝",
+      "optionB": "決定",
+      "answer": "A"
+    }
+  ]
+}
