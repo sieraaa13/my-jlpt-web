@@ -1,0 +1,183 @@
+{
+  "week": 5,
+  "day": 4,
+  "title": "作文",
+  "subtitle": "A Composition",
+  "translation": "Karangan",
+  "sceneDescription": "Buku catatan dengan kotak-kotak karangan (genkoyoshi) berisi cerita seorang murid tentang menghadiri pernikahan temannya, mendengar pidato, ikut menyanyi, dan begitu bahagianya sampai sulit tidur malam itu.",
+  "signs": [
+    { "text": "昨日は友達の田中君の結婚式でした。", "meaning": "Kemarin adalah hari pernikahan teman saya, Tanaka." },
+    { "text": "奥さんになる人はとてもきれいでした。", "meaning": "Wanita yang akan jadi istrinya sangat cantik." },
+    { "text": "ぼくはお祝いのスピーチをして、歌を一曲歌いました。", "meaning": "Saya memberi pidato ucapan selamat dan menyanyikan satu lagu." },
+    { "text": "とても楽しかったので、夜、なかなか寝られませんでした。", "meaning": "Karena sangat menyenangkan, malamnya saya susah tidur." }
+  ],
+  "kanjiList": [
+    {
+      "id": 251,
+      "character": "昨",
+      "strokes": 9,
+      "onyomi": ["サク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "昨日", "reading": "さくじつ", "meaning": "kemarin" }
+      ],
+      "extraWords": [
+        { "word": "昨夜", "reading": "さくや", "meaning": "tadi malam" },
+        { "word": "昨年", "reading": "さくねん", "meaning": "tahun lalu" }
+      ]
+    },
+    {
+      "id": 252,
+      "character": "君",
+      "strokes": 7,
+      "onyomi": ["クン"],
+      "kunyomi": ["きみ"],
+      "words": [
+        { "word": "〇〇君", "reading": "〇〇くん", "meaning": "panggilan akrab untuk laki-laki yang lebih muda/sederajat" },
+        { "word": "君", "reading": "きみ", "meaning": "kamu" }
+      ]
+    },
+    {
+      "id": 253,
+      "character": "結",
+      "strokes": 12,
+      "onyomi": ["ケツ"],
+      "kunyomi": ["むすぶ"],
+      "words": [
+        { "word": "結構（な）", "reading": "けっこう（な）", "meaning": "bagus, cukup" },
+        { "word": "結局", "reading": "けっきょく", "meaning": "pada akhirnya" }
+      ],
+      "extraWords": [
+        { "word": "結ぶ", "reading": "むすぶ", "meaning": "mengikat, menghubungkan" }
+      ]
+    },
+    {
+      "id": 254,
+      "character": "婚",
+      "strokes": 11,
+      "onyomi": ["コン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "結婚", "reading": "けっこん", "meaning": "pernikahan" },
+        { "word": "婚約", "reading": "こんやく", "meaning": "pertunangan" }
+      ],
+      "extraWords": [
+        { "word": "新婚旅行", "reading": "しんこんりょこう", "meaning": "bulan madu" }
+      ]
+    },
+    {
+      "id": 255,
+      "character": "祝",
+      "strokes": 9,
+      "onyomi": ["シュク"],
+      "kunyomi": ["いわう"],
+      "words": [
+        { "word": "祝日", "reading": "しゅくじつ", "meaning": "hari libur nasional" },
+        { "word": "祝う", "reading": "いわう", "meaning": "merayakan" }
+      ],
+      "extraWords": [
+        { "word": "お祝い", "reading": "おいわい", "meaning": "perayaan, ucapan selamat" }
+      ]
+    },
+    {
+      "id": 256,
+      "character": "曲",
+      "strokes": 6,
+      "onyomi": ["キョク"],
+      "kunyomi": ["まがる", "まげる"],
+      "words": [
+        { "word": "曲", "reading": "きょく", "meaning": "lagu" },
+        { "word": "曲がる", "reading": "まがる", "meaning": "berbelok" }
+      ],
+      "extraWords": [
+        { "word": "曲線", "reading": "きょくせん", "meaning": "garis lengkung" },
+        { "word": "曲げる", "reading": "まげる", "meaning": "membengkokkan" }
+      ]
+    },
+    {
+      "id": 257,
+      "character": "奥",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["おく"],
+      "words": [
+        { "word": "奥さん", "reading": "おくさん", "meaning": "istri orang lain" }
+      ],
+      "extraWords": [
+        { "word": "奥", "reading": "おく", "meaning": "bagian dalam" }
+      ]
+    },
+    {
+      "id": 258,
+      "character": "寝",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["ねる"],
+      "words": [
+        { "word": "寝る", "reading": "ねる", "meaning": "tidur" },
+        { "word": "昼寝", "reading": "ひるね", "meaning": "tidur siang" }
+      ],
+      "extraWords": [
+        { "word": "寝坊", "reading": "ねぼう", "meaning": "kesiangan bangun" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "寝坊：",
+      "optionA": "寝ている赤ちゃん",
+      "optionB": "起きる時間に起きないこと",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "婚約：",
+      "optionA": "結婚の約束",
+      "optionB": "結婚式場の予約",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "この（　　）を聞くと国を思い出す。",
+      "optionA": "曲",
+      "optionB": "局",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "（スーパーのレジで）「袋は（　　）です。」",
+      "optionA": "無断",
+      "optionB": "結構",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "使わないものを押し入れの（　　）にしまう。",
+      "optionA": "込",
+      "optionB": "奥",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "つぎの信号を右に（　　）ください。",
+      "optionA": "曲げて",
+      "optionB": "曲がって",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "行くかどうかまよったが、（　　）行かなかった。",
+      "optionA": "結局",
+      "optionB": "広告",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "明日は（　　）です。",
+      "optionA": "土日",
+      "optionB": "祝日",
+      "answer": "B"
+    }
+  ]
+}
