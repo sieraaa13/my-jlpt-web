@@ -1,0 +1,169 @@
+{
+  "week": 2,
+  "day": 6,
+  "title": "困ったときは",
+  "subtitle": "When You Need Help",
+  "translation": "Saat Mengalami Kesulitan",
+  "sceneDescription": "Papan daftar nomor telepon darurat menunjukkan nomor pemadam kebakaran/ambulans, polisi, dan hotline pesan darurat bencana, sementara di sampingnya seorang anak panik menelepon 119 karena kompor di dapurnya terbakar.",
+  "signs": [
+    { "text": "消防（火事・救急車）119番", "meaning": "Pemadam kebakaran & ambulans: 119" },
+    { "text": "警察（事件・事故）110番", "meaning": "Polisi (kejadian/kecelakaan): 110" },
+    { "text": "災害用伝言ダイヤル 171番", "meaning": "Hotline pesan darurat saat bencana: 171" }
+  ],
+  "kanjiList": [
+    {
+      "id": 99,
+      "character": "困",
+      "strokes": 7,
+      "onyomi": [],
+      "kunyomi": ["こまる"],
+      "words": [
+        { "word": "困る", "reading": "こまる", "meaning": "kesulitan, kebingungan" }
+      ]
+    },
+    {
+      "id": 100,
+      "character": "消",
+      "strokes": 10,
+      "onyomi": ["ショウ"],
+      "kunyomi": ["きえる", "けす"],
+      "words": [
+        { "word": "消防", "reading": "しょうぼう", "meaning": "pemadam kebakaran" },
+        { "word": "消す", "reading": "けす", "meaning": "memadamkan, menghapus" }
+      ],
+      "extraWords": [
+        { "word": "消える", "reading": "きえる", "meaning": "padam, hilang" },
+        { "word": "消しゴム", "reading": "けしごむ", "meaning": "penghapus" }
+      ]
+    },
+    {
+      "id": 101,
+      "character": "防",
+      "strokes": 7,
+      "onyomi": ["ボウ"],
+      "kunyomi": ["ふせぐ"],
+      "words": [
+        { "word": "予防", "reading": "よぼう", "meaning": "pencegahan" },
+        { "word": "防ぐ", "reading": "ふせぐ", "meaning": "mencegah" }
+      ]
+    },
+    {
+      "id": 102,
+      "character": "救",
+      "strokes": 11,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["すくう"],
+      "words": [
+        { "word": "救急車", "reading": "きゅうきゅうしゃ", "meaning": "mobil ambulans" },
+        { "word": "救う", "reading": "すくう", "meaning": "menyelamatkan" }
+      ]
+    },
+    {
+      "id": 103,
+      "character": "警",
+      "strokes": 19,
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "警官", "reading": "けいかん", "meaning": "petugas polisi" }
+      ]
+    },
+    {
+      "id": 104,
+      "character": "察",
+      "strokes": 14,
+      "onyomi": ["サツ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "警察", "reading": "けいさつ", "meaning": "kepolisian" },
+        { "word": "警察署", "reading": "けいさつしょ", "meaning": "kantor polisi" }
+      ]
+    },
+    {
+      "id": 105,
+      "character": "故",
+      "strokes": 9,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "事故", "reading": "じこ", "meaning": "kecelakaan" },
+        { "word": "故障", "reading": "こしょう", "meaning": "kerusakan mesin" }
+      ],
+      "extraWords": [
+        { "word": "故〇〇", "reading": "こ〇〇", "meaning": "mendiang ... (sebutan untuk orang yang telah wafat)" }
+      ]
+    },
+    {
+      "id": 106,
+      "character": "伝",
+      "strokes": 6,
+      "onyomi": ["デン"],
+      "kunyomi": ["つたえる"],
+      "words": [
+        { "word": "伝言", "reading": "でんごん", "meaning": "pesan (yang dititipkan)" },
+        { "word": "伝える", "reading": "つたえる", "meaning": "menyampaikan" }
+      ],
+      "extraWords": [
+        { "word": "手伝う", "reading": "てつだう", "meaning": "membantu" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "故障：機械が",
+      "optionA": "こわれること",
+      "optionB": "うごくこと",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "救急車：病人やけが人を",
+      "optionA": "はこぶ車",
+      "optionB": "みまもる車",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "伝言：",
+      "optionA": "でんわ番号",
+      "optionB": "つたえることば",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "消しゴム：字を",
+      "optionA": "けすもの",
+      "optionB": "かくもの",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "警察署：",
+      "optionA": "けいさつの建物",
+      "optionB": "けいかんの家",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "インフルエンザを（　　）する。",
+      "optionA": "予防",
+      "optionB": "予習",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "みなさんによろしく（　　）ください。",
+      "optionA": "伝えて",
+      "optionB": "助けて",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "日本語がわからなくて（　　）います。",
+      "optionA": "困って",
+      "optionB": "迷って",
+      "answer": "A"
+    }
+  ]
+}
