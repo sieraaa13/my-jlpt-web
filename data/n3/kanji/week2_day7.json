@@ -1,0 +1,136 @@
+{
+  "week": 2,
+  "day": 7,
+  "title": "実戦問題",
+  "subtitle": "Latihan gabungan Minggu 2 (Hari 1-6)",
+  "readingQuestions": [
+    { "sentence": "来週の旅行の準備をしています。", "target": "準備", "choices": ["じゅんび", "じゅんぴ", "じゅうび", "じゅんみ"], "answer": "じゅんび" },
+    { "sentence": "このレストランは全席禁煙です。", "target": "禁煙", "choices": ["きんえん", "きんねん", "きんえい", "きにえん"], "answer": "きんえん" },
+    { "sentence": "駅で観光地図をもらいました。", "target": "観光", "choices": ["かんこう", "かんごう", "がんこう", "かんきょう"], "answer": "かんこう" },
+    { "sentence": "手紙は郵便局から出しました。", "target": "郵便局", "choices": ["ゆびんきょく", "ゆうびんきょく", "ゆうべんきょく", "ゆうびんきょうく"], "answer": "ゆうびんきょく" },
+    { "sentence": "交差点を右に曲がってください。", "target": "交差点", "choices": ["こうさてん", "こうさいてん", "こうさてい", "こうたてん"], "answer": "こうさてん" },
+    { "sentence": "病院の受付で名前を書いた。", "target": "受付", "choices": ["うけつけ", "じゅふ", "うけふ", "じゅつけ"], "answer": "うけつけ" },
+    { "sentence": "足を骨折したので整形外科に行った。", "target": "整形外科", "choices": ["せいけいげか", "せいぎょうげか", "せいけいがいか", "せいがたげか"], "answer": "せいけいげか" },
+    { "sentence": "けがをした人を救急車で運んだ。", "target": "救急車", "choices": ["きゅうきゅうしゃ", "くきゅうしゃ", "きゅうけいしゃ", "きゅうきゅうくるま"], "answer": "きゅうきゅうしゃ" },
+    { "sentence": "落とし物を警察署に届けた。", "target": "警察署", "choices": ["けいさつしょ", "けいさっしょ", "けいさつじょ", "けいかんしょ"], "answer": "けいさつしょ" },
+    { "sentence": "エアコンが故障して修理を呼んだ。", "target": "故障", "choices": ["こしょう", "こじょう", "こそう", "こうしょう"], "answer": "こしょう" }
+  ],
+  "kanjiChoiceQuestions": [
+    { "sentence": "財布を拾ったのでけいさつに届けた。", "reading": "けいさつ", "choices": ["警祭", "警察", "景察", "敬察"], "answer": "警察" },
+    { "sentence": "高速道路でじこがあった。", "reading": "じこ", "choices": ["事古", "事故", "字故", "時故"], "answer": "事故" },
+    { "sentence": "母にでんごんを頼んだ。", "reading": "でんごん", "choices": ["電言", "伝言", "伝話", "電話"], "answer": "伝言" },
+    { "sentence": "病院のうけつけで番号をもらう。", "reading": "うけつけ", "choices": ["受付", "受府", "授付", "受布"], "answer": "受付" }
+  ],
+  "fillBlankQuestions": [
+    { "sentence": "この電車は（　）席指定です。", "target": "全席", "choices": ["満", "空", "全", "次"], "answer": "全" },
+    { "sentence": "駅前の（　）差点で待ち合わせよう。", "target": "交差点", "choices": ["交", "校", "効", "高"], "answer": "交" },
+    { "sentence": "産婦人（　）の受付をする。", "target": "産婦人科", "choices": ["科", "化", "課", "何"], "answer": "科" },
+    { "sentence": "地震に（　）えていろいろな準備をする。", "target": "備える", "choices": ["備", "準", "予", "供"], "answer": "備" },
+    { "sentence": "けが人を救（　）車で運んだ。", "target": "救急車", "choices": ["急", "速", "早", "忙"], "answer": "急" },
+    { "sentence": "警察（　）に落とし物を届けた。", "target": "警察署", "choices": ["署", "所", "局", "庁"], "answer": "署" }
+  ],
+  "passageQuestion": {
+    "passage": "友達と観光地図を見ながら町を歩いていたら、道に[21]。近くにいた警察官に聞いてみると、親切に道を[22]。教えてもらった通りに歩いて橋を[23]、やっと目的地に着いた。ところが、友達が段差でころんで足を[24]。すぐに救急車を呼んで、二人で病院へ[25]。",
+    "wordBank": ["まよった", "おしえてくれた", "わたって", "おった", "むかった", "とまった", "つたえた"],
+    "blanks": [
+      { "number": 21, "answer": "まよった", "answerKanji": "迷った" },
+      { "number": 22, "answer": "おしえてくれた", "answerKanji": "教えてくれた" },
+      { "number": 23, "answer": "わたって", "answerKanji": "渡って" },
+      { "number": 24, "answer": "おった", "answerKanji": "折った" },
+      { "number": 25, "answer": "むかった", "answerKanji": "向かった" }
+    ]
+  },
+  "bonusColumn": {
+    "title": "ことばのパズル",
+    "translation": "Teka-teki Kata",
+    "description": "Beberapa kanji ini sering muncul di kuis atau teka-teki kanji sehari-hari — mulai dari warna, gambar, kelompok, janji, sampai kegiatan mengajar dan menyeberang. Yuk kenalan dengan kanji tambahan berikut ini.",
+    "kanjiList": [
+      {
+        "id": 107,
+        "character": "黄",
+        "strokes": 11,
+        "onyomi": [],
+        "kunyomi": ["き"],
+        "words": [
+          { "word": "黄色", "reading": "きいろ", "meaning": "warna kuning" },
+          { "word": "黄色い", "reading": "きいろい", "meaning": "berwarna kuning" }
+        ]
+      },
+      {
+        "id": 108,
+        "character": "絵",
+        "strokes": 12,
+        "onyomi": ["カイ"],
+        "kunyomi": ["え"],
+        "words": [
+          { "word": "絵画", "reading": "かいが", "meaning": "lukisan" },
+          { "word": "絵", "reading": "え", "meaning": "gambar" }
+        ],
+        "extraWords": [
+          { "word": "絵本", "reading": "えほん", "meaning": "buku bergambar" }
+        ]
+      },
+      {
+        "id": 109,
+        "character": "組",
+        "strokes": 11,
+        "onyomi": [],
+        "kunyomi": ["くみ", "くむ"],
+        "words": [
+          { "word": "〜組", "reading": "くみ", "meaning": "kelompok, pasangan ..." },
+          { "word": "組む", "reading": "くむ", "meaning": "bergabung, menyusun" }
+        ],
+        "extraWords": [
+          { "word": "番組", "reading": "ばんぐみ", "meaning": "acara TV" },
+          { "word": "組み立てる", "reading": "くみたてる", "meaning": "merakit" }
+        ]
+      },
+      {
+        "id": 110,
+        "character": "束",
+        "strokes": 7,
+        "onyomi": ["ソク"],
+        "kunyomi": ["たば"],
+        "words": [
+          { "word": "約束", "reading": "やくそく", "meaning": "janji" },
+          { "word": "〜束", "reading": "たば", "meaning": "seikat, segenggam ..." }
+        ],
+        "extraWords": [
+          { "word": "花束", "reading": "はなたば", "meaning": "buket bunga" }
+        ]
+      },
+      {
+        "id": 111,
+        "character": "授",
+        "strokes": 11,
+        "onyomi": ["ジュ"],
+        "kunyomi": [],
+        "words": [
+          { "word": "授業", "reading": "じゅぎょう", "meaning": "pelajaran, kelas" },
+          { "word": "教授", "reading": "きょうじゅ", "meaning": "profesor" }
+        ]
+      },
+      {
+        "id": 112,
+        "character": "渡",
+        "strokes": 12,
+        "onyomi": [],
+        "kunyomi": ["わたる", "わたす"],
+        "words": [
+          { "word": "渡る", "reading": "わたる", "meaning": "menyeberang" },
+          { "word": "渡す", "reading": "わたす", "meaning": "menyerahkan" }
+        ]
+      },
+      {
+        "id": 113,
+        "character": "昔",
+        "strokes": 8,
+        "onyomi": [],
+        "kunyomi": ["むかし"],
+        "words": [
+          { "word": "昔", "reading": "むかし", "meaning": "dahulu kala, masa lalu" }
+        ]
+      }
+    ]
+  }
+}
