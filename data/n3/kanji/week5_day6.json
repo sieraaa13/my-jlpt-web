@@ -1,0 +1,179 @@
+{
+  "week": 5,
+  "day": 6,
+  "title": "問診票ー健康診断",
+  "subtitle": "A Medical Check Up Questionnaire",
+  "translation": "Formulir Cek Kesehatan",
+  "sceneDescription": "Formulir riwayat kesehatan menanyakan tinggi dan berat badan, kebiasaan minum alkohol dan merokok, nafsu makan, kesulitan tidur, mudah lelah, serta sesak napas atau kesulitan bernapas.",
+  "signs": [
+    { "text": "問診票", "meaning": "Formulir riwayat kesehatan" },
+    { "text": "身長___cm 体重___kg", "meaning": "Tinggi badan ... cm, berat badan ... kg" },
+    { "text": "お酒を飲む／飲まない", "meaning": "Minum / tidak minum alkohol" },
+    { "text": "食欲がない／眠れない／疲れやすい", "meaning": "Tidak nafsu makan / sulit tidur / mudah lelah" },
+    { "text": "息切れがしたり、呼吸が困難になることがある", "meaning": "Kadang sesak napas atau kesulitan bernapas" }
+  ],
+  "kanjiList": [
+    {
+      "id": 267,
+      "character": "身",
+      "strokes": 7,
+      "onyomi": ["シン"],
+      "kunyomi": ["み"],
+      "words": [
+        { "word": "身長", "reading": "しんちょう", "meaning": "tinggi badan" },
+        { "word": "身分", "reading": "みぶん", "meaning": "status sosial" }
+      ],
+      "extraWords": [
+        { "word": "独身", "reading": "どくしん", "meaning": "lajang" },
+        { "word": "刺身", "reading": "さしみ", "meaning": "sashimi" }
+      ]
+    },
+    {
+      "id": 268,
+      "character": "酒",
+      "strokes": 10,
+      "onyomi": ["シュ"],
+      "kunyomi": ["さけ", "さか"],
+      "words": [
+        { "word": "日本酒", "reading": "にほんしゅ", "meaning": "sake Jepang" },
+        { "word": "お酒", "reading": "おさけ", "meaning": "minuman beralkohol" }
+      ],
+      "extraWords": [
+        { "word": "料理酒", "reading": "りょうりしゅ", "meaning": "sake untuk memasak" },
+        { "word": "酒屋", "reading": "さかや", "meaning": "toko minuman keras" }
+      ]
+    },
+    {
+      "id": 269,
+      "character": "吸",
+      "strokes": 6,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["すう"],
+      "words": [
+        { "word": "呼吸", "reading": "こきゅう", "meaning": "pernapasan" },
+        { "word": "吸う", "reading": "すう", "meaning": "menghirup" }
+      ]
+    },
+    {
+      "id": 270,
+      "character": "欲",
+      "strokes": 11,
+      "onyomi": ["ヨク"],
+      "kunyomi": ["ほしい"],
+      "words": [
+        { "word": "食欲", "reading": "しょくよく", "meaning": "nafsu makan" },
+        { "word": "欲しい", "reading": "ほしい", "meaning": "menginginkan" }
+      ],
+      "extraWords": [
+        { "word": "意欲", "reading": "いよく", "meaning": "kemauan, motivasi" }
+      ]
+    },
+    {
+      "id": 271,
+      "character": "眠",
+      "strokes": 10,
+      "onyomi": ["ミン"],
+      "kunyomi": ["ねむい", "ねむる"],
+      "words": [
+        { "word": "睡眠", "reading": "すいみん", "meaning": "tidur" },
+        { "word": "眠い", "reading": "ねむい", "meaning": "mengantuk" }
+      ],
+      "extraWords": [
+        { "word": "眠る", "reading": "ねむる", "meaning": "tidur" }
+      ]
+    },
+    {
+      "id": 272,
+      "character": "疲",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["つかれる"],
+      "words": [
+        { "word": "疲れる", "reading": "つかれる", "meaning": "menjadi lelah" }
+      ]
+    },
+    {
+      "id": 273,
+      "character": "息",
+      "strokes": 10,
+      "onyomi": [],
+      "kunyomi": ["いき"],
+      "words": [
+        { "word": "息", "reading": "いき", "meaning": "napas" }
+      ],
+      "extraWords": [
+        { "word": "息子", "reading": "むすこ", "meaning": "anak laki-laki" },
+        { "word": "息切れ", "reading": "いきぎれ", "meaning": "sesak napas" }
+      ]
+    },
+    {
+      "id": 274,
+      "character": "呼",
+      "strokes": 8,
+      "onyomi": ["コ"],
+      "kunyomi": ["よぶ"],
+      "words": [
+        { "word": "呼吸", "reading": "こきゅう", "meaning": "pernapasan" },
+        { "word": "呼ぶ", "reading": "よぶ", "meaning": "memanggil" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "意欲：",
+      "optionA": "生意気",
+      "optionB": "やる気",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "呼吸：",
+      "optionA": "息をすること",
+      "optionB": "息が切れること",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "息子：",
+      "optionA": "男の子ども",
+      "optionB": "女の子ども",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "独身：",
+      "optionA": "結婚している",
+      "optionB": "結婚していない",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "睡眠：",
+      "optionA": "寝ること",
+      "optionB": "眠れないこと",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "身長：",
+      "optionA": "体の重さ",
+      "optionB": "せの高さ",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "たばこを（　　）。",
+      "optionA": "払う",
+      "optionB": "吸う",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "救急車を（　　）。",
+      "optionA": "呼ぶ",
+      "optionB": "飛ぶ",
+      "answer": "A"
+    }
+  ]
+}
