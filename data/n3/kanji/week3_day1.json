@@ -1,0 +1,184 @@
+{
+  "week": 3,
+  "day": 1,
+  "title": "要冷蔵",
+  "subtitle": "Keep Refrigerated",
+  "translation": "Perlu Didinginkan",
+  "sceneDescription": "Kemasan makanan berlabel \"要冷凍\" (perlu dibekukan) dan \"要冷蔵\" (perlu didinginkan), botol dengan peringatan untuk disimpan jauh dari sinar matahari, serta kotak kue dengan instruksi untuk selalu disimpan di kulkas setelah dibuka.",
+  "signs": [
+    { "text": "要冷凍", "meaning": "Perlu dibekukan" },
+    { "text": "要冷蔵", "meaning": "Perlu didinginkan" },
+    { "text": "日の当たらないところに保存してください", "meaning": "Simpan di tempat yang tidak terkena sinar matahari" },
+    { "text": "冷暗所に保存し、開封後は必ず冷蔵庫に保存してください", "meaning": "Simpan di tempat sejuk & gelap, setelah dibuka wajib disimpan di kulkas" }
+  ],
+  "kanjiList": [
+    {
+      "id": 114,
+      "character": "要",
+      "strokes": 9,
+      "onyomi": ["ヨウ"],
+      "kunyomi": ["いる"],
+      "words": [
+        { "word": "必要", "reading": "ひつよう", "meaning": "perlu, diperlukan" },
+        { "word": "要る", "reading": "いる", "meaning": "membutuhkan, perlu" }
+      ],
+      "extraWords": [
+        { "word": "重要", "reading": "じゅうよう", "meaning": "penting" }
+      ]
+    },
+    {
+      "id": 115,
+      "character": "冷",
+      "strokes": 7,
+      "onyomi": ["レイ"],
+      "kunyomi": ["つめたい", "ひやす", "ひえる", "さめる", "さます"],
+      "words": [
+        { "word": "冷房", "reading": "れいぼう", "meaning": "AC (pendingin ruangan)" },
+        { "word": "冷やす", "reading": "ひやす", "meaning": "mendinginkan" },
+        { "word": "冷める", "reading": "さめる", "meaning": "menjadi dingin (makanan/minuman)" }
+      ],
+      "extraWords": [
+        { "word": "冷たい", "reading": "つめたい", "meaning": "dingin" },
+        { "word": "冷える", "reading": "ひえる", "meaning": "menjadi dingin" },
+        { "word": "冷ます", "reading": "さます", "meaning": "mendinginkan (sesuatu)" }
+      ]
+    },
+    {
+      "id": 116,
+      "character": "蔵",
+      "strokes": 15,
+      "onyomi": ["ゾウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "冷蔵庫", "reading": "れいぞうこ", "meaning": "kulkas" }
+      ]
+    },
+    {
+      "id": 117,
+      "character": "凍",
+      "strokes": 10,
+      "onyomi": ["トウ"],
+      "kunyomi": ["こおる"],
+      "words": [
+        { "word": "冷凍庫", "reading": "れいとうこ", "meaning": "freezer" },
+        { "word": "凍る", "reading": "こおる", "meaning": "membeku" }
+      ]
+    },
+    {
+      "id": 118,
+      "character": "庫",
+      "strokes": 10,
+      "onyomi": ["コ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "金庫", "reading": "きんこ", "meaning": "brankas" }
+      ],
+      "extraWords": [
+        { "word": "車庫", "reading": "しゃこ", "meaning": "garasi" }
+      ]
+    },
+    {
+      "id": 119,
+      "character": "召",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["めす"],
+      "words": [
+        { "word": "召し上がる", "reading": "めしあがる", "meaning": "makan/minum (bentuk hormat)" }
+      ]
+    },
+    {
+      "id": 120,
+      "character": "保",
+      "strokes": 9,
+      "onyomi": ["ホ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "保存する", "reading": "ほぞんする", "meaning": "menyimpan, mengawetkan" }
+      ]
+    },
+    {
+      "id": 121,
+      "character": "存",
+      "strokes": 6,
+      "onyomi": ["ゾン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "ご存じです", "reading": "ごぞんじです", "meaning": "mengetahui (bentuk hormat)" },
+        { "word": "存じません", "reading": "ぞんじません", "meaning": "tidak mengetahui (bentuk merendah)" }
+      ]
+    },
+    {
+      "id": 122,
+      "character": "必",
+      "strokes": 5,
+      "onyomi": ["ヒツ"],
+      "kunyomi": ["かならず"],
+      "words": [
+        { "word": "必要", "reading": "ひつよう", "meaning": "perlu, diperlukan" },
+        { "word": "必ず", "reading": "かならず", "meaning": "pasti, selalu" }
+      ],
+      "extraWords": [
+        { "word": "必死に", "reading": "ひっしに", "meaning": "sekuat tenaga, mati-matian" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "要冷蔵：冷蔵する必要が",
+      "optionA": "ある",
+      "optionB": "ない",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "冷凍食品：",
+      "optionA": "ひえた食品",
+      "optionB": "こおった食品",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "車庫：車を",
+      "optionA": "しまうところ",
+      "optionB": "点検するところ",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "ご存じですか：",
+      "optionA": "持っていますか",
+      "optionB": "知っていますか",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "必死に：",
+      "optionA": "一生懸命に",
+      "optionB": "簡単に",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "熱いですから、少し（　　）お飲みください。",
+      "optionA": "冷まして",
+      "optionB": "冷えて",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "「（　　）買ってきて」と言われたら忘れずに買ってこなければならない。",
+      "optionA": "必ず",
+      "optionB": "重要",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "肉や魚は（　　）に保存したほうがいい。",
+      "optionA": "冷蔵庫",
+      "optionB": "金庫",
+      "answer": "A"
+    }
+  ]
+}
