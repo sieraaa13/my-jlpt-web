@@ -1,0 +1,183 @@
+{
+  "week": 4,
+  "day": 4,
+  "title": "申込書",
+  "subtitle": "Application Forms",
+  "translation": "Formulir Pendaftaran",
+  "sceneDescription": "Contoh formulir pendaftaran yang sudah diisi: furigana nama, nama depan/belakang, usia, jenis kelamin, alamat, dan nomor telepon.",
+  "signs": [
+    { "text": "申込書", "meaning": "Formulir pendaftaran" },
+    { "text": "フリガナ／名前", "meaning": "Cara baca nama / Nama" },
+    { "text": "年齢／性別", "meaning": "Usia / Jenis kelamin" },
+    { "text": "連絡先：住所／電話番号", "meaning": "Kontak: alamat / nomor telepon" }
+  ],
+  "kanjiList": [
+    {
+      "id": 195,
+      "character": "申",
+      "strokes": 5,
+      "onyomi": ["シン"],
+      "kunyomi": ["もうす"],
+      "words": [
+        { "word": "申し込む", "reading": "もうしこむ", "meaning": "mendaftar, mengajukan" },
+        { "word": "申告", "reading": "しんこく", "meaning": "deklarasi, laporan" }
+      ],
+      "extraWords": [
+        { "word": "申込書", "reading": "もうしこみしょ", "meaning": "formulir pendaftaran" },
+        { "word": "申請", "reading": "しんせい", "meaning": "permohonan, aplikasi" },
+        { "word": "申す", "reading": "もうす", "meaning": "berkata (bentuk merendah)" }
+      ]
+    },
+    {
+      "id": 196,
+      "character": "記",
+      "strokes": 10,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "記入", "reading": "きにゅう", "meaning": "mengisi (formulir)" },
+        { "word": "記号", "reading": "きごう", "meaning": "simbol, tanda" }
+      ],
+      "extraWords": [
+        { "word": "日記", "reading": "にっき", "meaning": "buku harian" },
+        { "word": "記事", "reading": "きじ", "meaning": "artikel berita" }
+      ]
+    },
+    {
+      "id": 197,
+      "character": "例",
+      "strokes": 8,
+      "onyomi": ["レイ"],
+      "kunyomi": ["たとえる"],
+      "words": [
+        { "word": "例", "reading": "れい", "meaning": "contoh" }
+      ],
+      "extraWords": [
+        { "word": "例えば", "reading": "たとえば", "meaning": "misalnya" }
+      ]
+    },
+    {
+      "id": 198,
+      "character": "齢",
+      "strokes": 17,
+      "onyomi": ["レイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "年齢", "reading": "ねんれい", "meaning": "usia" }
+      ],
+      "extraWords": [
+        { "word": "高齢", "reading": "こうれい", "meaning": "lanjut usia" }
+      ]
+    },
+    {
+      "id": 199,
+      "character": "歳",
+      "strokes": 13,
+      "onyomi": ["サイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "〜歳", "reading": "〜さい", "meaning": "... tahun (usia)" }
+      ],
+      "extraWords": [
+        { "word": "二十歳", "reading": "はたち", "meaning": "20 tahun" }
+      ]
+    },
+    {
+      "id": 200,
+      "character": "性",
+      "strokes": 8,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "性別", "reading": "せいべつ", "meaning": "jenis kelamin" },
+        { "word": "女性", "reading": "じょせい", "meaning": "wanita" }
+      ],
+      "extraWords": [
+        { "word": "性格", "reading": "せいかく", "meaning": "kepribadian" },
+        { "word": "男性", "reading": "だんせい", "meaning": "pria" }
+      ]
+    },
+    {
+      "id": 201,
+      "character": "連",
+      "strokes": 10,
+      "onyomi": ["レン"],
+      "kunyomi": ["つれる"],
+      "words": [
+        { "word": "連休", "reading": "れんきゅう", "meaning": "libur berturut-turut" },
+        { "word": "連れて行く", "reading": "つれていく", "meaning": "membawa (seseorang) pergi" }
+      ],
+      "extraWords": [
+        { "word": "連れて来る", "reading": "つれてくる", "meaning": "membawa (seseorang) datang" }
+      ]
+    },
+    {
+      "id": 202,
+      "character": "絡",
+      "strokes": 12,
+      "onyomi": ["ラク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "連絡", "reading": "れんらく", "meaning": "kontak, menghubungi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "連休：",
+      "optionA": "休日が続いていること",
+      "optionB": "電車が止まっていること",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "記入：",
+      "optionA": "袋に入れること",
+      "optionB": "書き入れること",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "祖父は（　　）のため、一人で外出できません。",
+      "optionA": "高齢",
+      "optionB": "多齢",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "税金を（　　）する。",
+      "optionA": "申告",
+      "optionB": "申込",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "犬を散歩に（　　）。",
+      "optionA": "連れて行く",
+      "optionB": "持って行く",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "彼女はあまり仕事はできないが、（　　）がいい。",
+      "optionA": "性別",
+      "optionB": "性格",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "新聞（　　）を読む。",
+      "optionA": "記事",
+      "optionB": "記号",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "よろしくお願い（　　）。",
+      "optionA": "申し上げます",
+      "optionB": "召し上がります",
+      "answer": "A"
+    }
+  ]
+}
