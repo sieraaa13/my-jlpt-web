@@ -1,0 +1,180 @@
+{
+  "week": 6,
+  "day": 2,
+  "title": "求人広告",
+  "subtitle": "A Help-Wanted Ad",
+  "translation": "Iklan Lowongan Kerja",
+  "sceneDescription": "Papan pengumuman dengan beberapa selebaran lowongan kerja, salah satunya mencari teknisi pengembang perangkat lunak 3 orang dan staf administrasi umum 2 orang, dengan kontak departemen SDM perusahaan.",
+  "signs": [
+    { "text": "募集", "meaning": "Lowongan/perekrutan" },
+    { "text": "職種・内容：技術者（ソフトウェアの開発）3名、一般事務員 2名", "meaning": "Jenis pekerjaan: teknisi (pengembangan software) 3 orang, staf administrasi umum 2 orang" },
+    { "text": "連絡先：ABC社 人事部人事課", "meaning": "Kontak: Departemen SDM perusahaan ABC" }
+  ],
+  "kanjiList": [
+    {
+      "id": 289,
+      "character": "求",
+      "strokes": 7,
+      "onyomi": ["キュウ"],
+      "kunyomi": ["もとめる"],
+      "words": [
+        { "word": "要求", "reading": "ようきゅう", "meaning": "permintaan, tuntutan" },
+        { "word": "請求書", "reading": "せいきゅうしょ", "meaning": "tagihan, invoice" }
+      ],
+      "extraWords": [
+        { "word": "求人", "reading": "きゅうじん", "meaning": "lowongan kerja" },
+        { "word": "求める", "reading": "もとめる", "meaning": "meminta, menuntut" }
+      ]
+    },
+    {
+      "id": 290,
+      "character": "募",
+      "strokes": 12,
+      "onyomi": ["ボ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "募集", "reading": "ぼしゅう", "meaning": "perekrutan, penerimaan" }
+      ]
+    },
+    {
+      "id": 291,
+      "character": "職",
+      "strokes": 18,
+      "onyomi": ["ショク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "職場", "reading": "しょくば", "meaning": "tempat kerja" },
+        { "word": "転職", "reading": "てんしょく", "meaning": "pindah pekerjaan" }
+      ],
+      "extraWords": [
+        { "word": "職業", "reading": "しょくぎょう", "meaning": "pekerjaan, profesi" },
+        { "word": "職員", "reading": "しょくいん", "meaning": "staf, pegawai" }
+      ]
+    },
+    {
+      "id": 292,
+      "character": "容",
+      "strokes": 10,
+      "onyomi": ["ヨウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "美容院", "reading": "びよういん", "meaning": "salon kecantikan" }
+      ],
+      "extraWords": [
+        { "word": "内容", "reading": "ないよう", "meaning": "isi, kandungan" }
+      ]
+    },
+    {
+      "id": 293,
+      "character": "技",
+      "strokes": 7,
+      "onyomi": ["ギ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "技術", "reading": "ぎじゅつ", "meaning": "teknik, teknologi" }
+      ],
+      "extraWords": [
+        { "word": "技術者", "reading": "ぎじゅつしゃ", "meaning": "teknisi" }
+      ]
+    },
+    {
+      "id": 294,
+      "character": "般",
+      "strokes": 10,
+      "onyomi": ["ハン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "一般", "reading": "いっぱん", "meaning": "umum" }
+      ],
+      "extraWords": [
+        { "word": "一般に", "reading": "いっぱんに", "meaning": "pada umumnya" }
+      ]
+    },
+    {
+      "id": 295,
+      "character": "務",
+      "strokes": 11,
+      "onyomi": ["ム"],
+      "kunyomi": [],
+      "words": [
+        { "word": "事務", "reading": "じむ", "meaning": "pekerjaan administrasi" },
+        { "word": "事務所", "reading": "じむしょ", "meaning": "kantor" }
+      ],
+      "extraWords": [
+        { "word": "公務員", "reading": "こうむいん", "meaning": "pegawai negeri" },
+        { "word": "税務署", "reading": "ぜいむしょ", "meaning": "kantor pajak" }
+      ]
+    },
+    {
+      "id": 296,
+      "character": "課",
+      "strokes": 15,
+      "onyomi": ["カ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "第1課", "reading": "だいいっか", "meaning": "pelajaran ke-1" }
+      ],
+      "extraWords": [
+        { "word": "課長", "reading": "かちょう", "meaning": "kepala seksi" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "技術者：",
+      "optionA": "アーティスト",
+      "optionB": "エンジニア",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "転職：",
+      "optionA": "仕事を変えること",
+      "optionB": "会社をやめること",
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "prompt": "請求書：代金を",
+      "optionA": "払う前にもらうもの",
+      "optionB": "払った後にもらうもの",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "事務所：",
+      "optionA": "オフィス",
+      "optionB": "インフォメーション",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "アルバイトを（　　）する。",
+      "optionA": "要求",
+      "optionB": "募集",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "父は（　　）です。",
+      "optionA": "求人",
+      "optionB": "公務員",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "やる気のある人を（　　）います。",
+      "optionA": "求めて",
+      "optionB": "願って",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "彼とは（　　）で知り合いました。",
+      "optionA": "職業",
+      "optionB": "職場",
+      "answer": "B"
+    }
+  ]
+}
