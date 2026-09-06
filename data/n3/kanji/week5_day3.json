@@ -1,0 +1,194 @@
+{
+  "week": 5,
+  "day": 3,
+  "title": "日本語クラス",
+  "subtitle": "A Japanese Class",
+  "translation": "Kelas Bahasa Jepang",
+  "sceneDescription": "Guru di depan kelas memberi soal latihan berbentuk pilihan ganda dan koreksi kesalahan, dengan tulisan di papan tulis \"lakukan pratinjau dan review\" dan \"cari kata di kamus\", serta pengumuman ada PR.",
+  "signs": [
+    { "text": "練習問題", "meaning": "Soal latihan" },
+    { "text": "予習・復習をしましょう", "meaning": "Ayo lakukan pratinjau & review" },
+    { "text": "辞書を引きましょう", "meaning": "Ayo cari di kamus" },
+    { "text": "宿題です", "meaning": "Ini PR" }
+  ],
+  "kanjiList": [
+    {
+      "id": 242,
+      "character": "練",
+      "strokes": 14,
+      "onyomi": ["レン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "練習", "reading": "れんしゅう", "meaning": "latihan" }
+      ]
+    },
+    {
+      "id": 243,
+      "character": "最",
+      "strokes": 12,
+      "onyomi": ["サイ"],
+      "kunyomi": ["もっとも"],
+      "words": [
+        { "word": "最近", "reading": "さいきん", "meaning": "baru-baru ini" },
+        { "word": "最後", "reading": "さいご", "meaning": "terakhir, akhir" }
+      ],
+      "extraWords": [
+        { "word": "最初", "reading": "さいしょ", "meaning": "pertama, awal" },
+        { "word": "最も", "reading": "もっとも", "meaning": "paling" }
+      ]
+    },
+    {
+      "id": 244,
+      "character": "適",
+      "strokes": 14,
+      "onyomi": ["テキ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "適当（な）", "reading": "てきとう（な）", "meaning": "sesuai, tepat" }
+      ],
+      "extraWords": [
+        { "word": "快適（な）", "reading": "かいてき（な）", "meaning": "nyaman" }
+      ]
+    },
+    {
+      "id": 245,
+      "character": "選",
+      "strokes": 15,
+      "onyomi": ["セン"],
+      "kunyomi": ["えらぶ"],
+      "words": [
+        { "word": "選挙", "reading": "せんきょ", "meaning": "pemilihan umum" },
+        { "word": "選ぶ", "reading": "えらぶ", "meaning": "memilih" }
+      ],
+      "extraWords": [
+        { "word": "選手", "reading": "せんしゅ", "meaning": "atlet, pemain" }
+      ]
+    },
+    {
+      "id": 246,
+      "character": "違",
+      "strokes": 13,
+      "onyomi": [],
+      "kunyomi": ["ちがう", "ちがえる"],
+      "words": [
+        { "word": "違う", "reading": "ちがう", "meaning": "berbeda, salah" },
+        { "word": "間違い", "reading": "まちがい", "meaning": "kesalahan" }
+      ],
+      "extraWords": [
+        { "word": "間違える", "reading": "まちがえる", "meaning": "membuat kesalahan" }
+      ]
+    },
+    {
+      "id": 247,
+      "character": "直",
+      "strokes": 8,
+      "onyomi": ["チョク"],
+      "kunyomi": ["なおる", "なおす"],
+      "words": [
+        { "word": "直線", "reading": "ちょくせん", "meaning": "garis lurus" },
+        { "word": "直る", "reading": "なおる", "meaning": "kembali baik, terperbaiki" }
+      ],
+      "extraWords": [
+        { "word": "直接", "reading": "ちょくせつ", "meaning": "langsung" },
+        { "word": "直す", "reading": "なおす", "meaning": "memperbaiki" }
+      ]
+    },
+    {
+      "id": 248,
+      "character": "復",
+      "strokes": 12,
+      "onyomi": ["フク"],
+      "kunyomi": [],
+      "words": [
+        { "word": "復習", "reading": "ふくしゅう", "meaning": "review pelajaran" },
+        { "word": "回復", "reading": "かいふく", "meaning": "pemulihan" }
+      ],
+      "extraWords": [
+        { "word": "往復", "reading": "おうふく", "meaning": "pulang-pergi" }
+      ]
+    },
+    {
+      "id": 249,
+      "character": "辞",
+      "strokes": 13,
+      "onyomi": ["ジ"],
+      "kunyomi": ["やめる"],
+      "words": [
+        { "word": "辞書", "reading": "じしょ", "meaning": "kamus" },
+        { "word": "辞める", "reading": "やめる", "meaning": "berhenti, mengundurkan diri" }
+      ]
+    },
+    {
+      "id": 250,
+      "character": "宿",
+      "strokes": 11,
+      "onyomi": ["シュク"],
+      "kunyomi": ["やど"],
+      "words": [
+        { "word": "宿題", "reading": "しゅくだい", "meaning": "pekerjaan rumah" },
+        { "word": "宿", "reading": "やど", "meaning": "penginapan" }
+      ],
+      "extraWords": [
+        { "word": "下宿", "reading": "げしゅく", "meaning": "kos, tempat tinggal sewa" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "直線：",
+      "optionA": "まっすぐな線",
+      "optionB": "まがった線",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "復習：",
+      "optionA": "習っていないことを勉強すること",
+      "optionB": "習ったことを勉強すること",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "快適：とても",
+      "optionA": "気分がいいこと",
+      "optionB": "速いこと",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "最近：",
+      "optionA": "このごろ",
+      "optionB": "近い場所",
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "prompt": "回復：天気や病気などが",
+      "optionA": "よくなること",
+      "optionB": "また悪くなること",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "往復：",
+      "optionA": "上りと下り",
+      "optionB": "行きと帰り",
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "prompt": "（　　）で新しい市長を選ぶ。",
+      "optionA": "選手",
+      "optionB": "選挙",
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "prompt": "知り合いの家に（　　）する。",
+      "optionA": "下宿",
+      "optionB": "宿題",
+      "answer": "A"
+    }
+  ]
+}
