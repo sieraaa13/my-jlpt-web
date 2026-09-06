@@ -1,0 +1,173 @@
+{
+  "week": 6,
+  "day": 4,
+  "title": "経済",
+  "subtitle": "The Economy",
+  "translation": "Ekonomi",
+  "sceneDescription": "Grafik pertumbuhan ekonomi Jepang pasca perang (GDP per kapita 1955-2005) yang terus naik, di sampingnya grafik batang negara mitra dagang utama Jepang untuk nilai impor (Cina, Amerika, Arab Saudi) dan ekspor (Amerika, Cina, Korea).",
+  "signs": [
+    { "text": "戦後日本の経済成長（一人あたりGDP）", "meaning": "Pertumbuhan ekonomi Jepang pasca perang (GDP per kapita)" },
+    { "text": "日本の主な貿易相手国と輸出入額", "meaning": "Negara mitra dagang utama Jepang dan nilai ekspor-impornya" },
+    { "text": "輸入額／輸出額", "meaning": "Nilai impor / Nilai ekspor" }
+  ],
+  "kanjiList": [
+    {
+      "id": 305,
+      "character": "戦",
+      "strokes": 13,
+      "onyomi": ["セン"],
+      "kunyomi": ["たたかう"],
+      "words": [
+        { "word": "戦後", "reading": "せんご", "meaning": "pasca perang" },
+        { "word": "戦う", "reading": "たたかう", "meaning": "berperang, bertarung" }
+      ],
+      "extraWords": [
+        { "word": "戦争", "reading": "せんそう", "meaning": "perang" }
+      ]
+    },
+    {
+      "id": 306,
+      "character": "経",
+      "strokes": 11,
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "経験", "reading": "けいけん", "meaning": "pengalaman" }
+      ],
+      "extraWords": [
+        { "word": "経営", "reading": "けいえい", "meaning": "manajemen usaha" }
+      ]
+    },
+    {
+      "id": 307,
+      "character": "済",
+      "strokes": 11,
+      "onyomi": ["サイ"],
+      "kunyomi": ["すむ"],
+      "words": [
+        { "word": "経済", "reading": "けいざい", "meaning": "ekonomi" },
+        { "word": "済む", "reading": "すむ", "meaning": "selesai" }
+      ]
+    },
+    {
+      "id": 308,
+      "character": "成",
+      "strokes": 6,
+      "onyomi": ["セイ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "成長", "reading": "せいちょう", "meaning": "pertumbuhan" }
+      ],
+      "extraWords": [
+        { "word": "完成", "reading": "かんせい", "meaning": "penyelesaian, rampung" }
+      ]
+    },
+    {
+      "id": 309,
+      "character": "貿",
+      "strokes": 12,
+      "onyomi": ["ボウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "貿易", "reading": "ぼうえき", "meaning": "perdagangan" }
+      ]
+    },
+    {
+      "id": 310,
+      "character": "易",
+      "strokes": 8,
+      "onyomi": ["エキ"],
+      "kunyomi": ["やさしい"],
+      "words": [
+        { "word": "貿易", "reading": "ぼうえき", "meaning": "perdagangan" },
+        { "word": "易しい", "reading": "やさしい", "meaning": "mudah, sederhana" }
+      ]
+    },
+    {
+      "id": 311,
+      "character": "輸",
+      "strokes": 16,
+      "onyomi": ["ユ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "輸出", "reading": "ゆしゅつ", "meaning": "ekspor" },
+        { "word": "輸送", "reading": "ゆそう", "meaning": "pengangkutan" }
+      ],
+      "extraWords": [
+        { "word": "輸入", "reading": "ゆにゅう", "meaning": "impor" }
+      ]
+    },
+    {
+      "id": 312,
+      "character": "相",
+      "strokes": 9,
+      "onyomi": ["ソウ"],
+      "kunyomi": ["あい"],
+      "words": [
+        { "word": "相談", "reading": "そうだん", "meaning": "konsultasi" },
+        { "word": "相手", "reading": "あいて", "meaning": "lawan, pasangan" }
+      ],
+      "extraWords": [
+        { "word": "首相", "reading": "しゅしょう", "meaning": "perdana menteri" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "外国と物の売り買いをすること：",
+      "optionA": "戦争",
+      "optionB": "貿易",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "prompt": "建物が（　　）する。",
+      "optionA": "完了",
+      "optionB": "完成",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "戦争を（　　）する。",
+      "optionA": "経験",
+      "optionB": "関係",
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "prompt": "子どもが（　　）した。",
+      "optionA": "完成",
+      "optionB": "成長",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "今日の試験は（　　）。",
+      "optionA": "易しかった",
+      "optionB": "優しかった",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "prompt": "食事が（　　）。",
+      "optionA": "済む",
+      "optionB": "住む",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "レストランを（　　）する。",
+      "optionA": "経営",
+      "optionB": "経済",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "トラックで（　　）する。",
+      "optionA": "郵送",
+      "optionB": "輸送",
+      "answer": "B"
+    }
+  ]
+}
