@@ -18,10 +18,32 @@ const TYPE_LABEL: Record<Memory["type"], string> = {
   milestone: "Pencapaian",
 };
 
-// Tipe memory yang selalu ikut disertakan (Level 1: profil stabil, jumlahnya
-// kecil) — beda dengan tipe di bawah yang cuma relevan kalau topiknya cocok
-// dengan pesan user saat ini (Level 2).
-const ALWAYS_INCLUDE_TYPES: Memory["type"][] = ["goal", "learning_preference"];
+export interface UserProfileEntry {
+  category: "goal" | "learning_preference";
+  description: string;
+  confidence: number;
+}
+
+const PROFILE_CATEGORY_LABEL: Record<UserProfileEntry["category"], string> = {
+  goal: "Tujuan",
+  learning_preference: "Preferensi belajar",
+};
+
+// Tipe-tipe yang sekarang hidup di tabel `user_profile`, bukan `memories`.
+// Dipakai untuk menyaring baris lama (sebelum migrasi 006 dijalankan) supaya
+// tidak dobel muncul bareng data dari `user_profile`.
+const PROFILE_TYPES: Memory["type"][] = ["goal", "learning_preference"];
+
+/** Ambil profil belajar stabil (goal & preferensi) — Level 1, selalu disertakan. */
+export async function getUserProfile(userId: string): Promise<UserProfileEntry[]> {
+  const { data, error } = await supabase
+    .from("user_profile")
+    .select("category, description, confidence")
+    .eq("user_id", userId);
+
+  if (error || !data) return [];
+  return data as UserProfileEntry[];
+}
 
 // Jumlah memory topik-spesifik yang dipakai kalau topik pesan user tidak
 // terdeteksi (fallback), supaya tetap jauh lebih hemat daripada kirim semua.
@@ -45,27 +67,22 @@ function detectTopics(message?: string | null): string[] {
 }
 
 /**
- * Memory Retriever sederhana (rule-based, bukan LLM): saring memory supaya
- * yang dikirim ke prompt cuma yang relevan dengan pesan user saat ini,
- * bukan semua active memory tiap kali chat.
- * - goal & learning_preference: selalu ikut (profil stabil, jumlahnya kecil).
- * - current_difficulty / progress / milestone: cuma ikut kalau topiknya
- *   cocok dengan topik yang terdeteksi di pesan user (atau topic-nya umum).
- *   Kalau tidak ada topik yang terdeteksi (mis. pertanyaan umum), fallback
- *   ke beberapa yang paling penting saja (sudah terurut by importance).
+ * Memory Retriever sederhana (rule-based, bukan LLM): saring memory episodik
+ * (progress / current_difficulty / milestone) supaya yang dikirim ke prompt
+ * cuma yang relevan dengan pesan user saat ini, bukan semua active memory
+ * tiap kali chat. Profil stabil (goal, learning_preference) tidak lewat sini
+ * lagi — itu selalu diambil langsung dari tabel `user_profile` (Level 1).
+ *
+ * Kalau tidak ada topik yang terdeteksi di pesan user (mis. pertanyaan
+ * umum), fallback ke beberapa yang paling penting saja (sudah terurut by
+ * importance), bukan mengirim semuanya.
  */
-function selectRelevantMemories(memories: Memory[], currentMessage?: string | null): Memory[] {
-  const always = memories.filter((m) => ALWAYS_INCLUDE_TYPES.includes(m.type));
-  const topicScoped = memories.filter((m) => !ALWAYS_INCLUDE_TYPES.includes(m.type));
-
+function selectRelevantMemories(episodicMemories: Memory[], currentMessage?: string | null): Memory[] {
   const detectedTopics = detectTopics(currentMessage);
 
-  const relevant =
-    detectedTopics.length > 0
-      ? topicScoped.filter((m) => !m.topic || m.topic === "general" || detectedTopics.includes(m.topic))
-      : topicScoped.slice(0, FALLBACK_TOPIC_LIMIT);
-
-  return [...always, ...relevant];
+  return detectedTopics.length > 0
+    ? episodicMemories.filter((m) => !m.topic || m.topic === "general" || detectedTopics.includes(m.topic))
+    : episodicMemories.slice(0, FALLBACK_TOPIC_LIMIT);
 }
 
 // Kata kunci yang menandakan user secara eksplisit menanyakan sesuatu dari
@@ -249,13 +266,18 @@ async function getLatestMonthlySummaryLine(userId: string): Promise<string> {
 }
 
 export async function buildMemoryContext(userId: string, currentMessage?: string | null): Promise<string> {
-  const [memories, progressSummary, monthlySummaryLine] = await Promise.all([
+  const [memories, userProfile, progressSummary, monthlySummaryLine] = await Promise.all([
     getActiveMemories(userId),
+    getUserProfile(userId),
     getProgressSummary(userId),
     getLatestMonthlySummaryLine(userId),
   ]);
 
-  const relevantMemories = selectRelevantMemories(memories, currentMessage);
+  // Saring tipe goal/learning_preference dari `memories` (harusnya sudah
+  // diarsipkan lewat migrasi 006, ini cuma jaga-jaga kalau migrasi belum
+  // dijalankan) supaya tidak dobel dengan data dari `user_profile`.
+  const episodicMemories = memories.filter((m) => !PROFILE_TYPES.includes(m.type));
+  const relevantMemories = selectRelevantMemories(episodicMemories, currentMessage);
 
   // Level 3 — deep history: cuma dicari kalau user eksplisit menyinggung
   // masa lalu (mis. "dulu kita pernah bahas ini kan?"), bukan tiap chat.
@@ -270,6 +292,7 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
   }
 
   if (
+    userProfile.length === 0 &&
     relevantMemories.length === 0 &&
     !progressSummary &&
     !monthlySummaryLine &&
@@ -280,6 +303,13 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
   }
 
   let block = "\n\n===== YANG SIERA INGAT TENTANG USER INI =====\n";
+
+  if (userProfile.length > 0) {
+    block += `\n[Profil Belajar]\n`;
+    userProfile.forEach((p) => {
+      block += `- ${PROFILE_CATEGORY_LABEL[p.category]}: ${p.description}\n`;
+    });
+  }
 
   if (progressSummary) {
     block += `\n[Progress Belajar]\n${progressSummary}\n`;

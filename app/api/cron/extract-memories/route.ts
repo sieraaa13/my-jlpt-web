@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
-import { getActiveMemories } from "@/lib/siera-memory";
+import { getActiveMemories, getUserProfile } from "@/lib/siera-memory";
 import { MEMORY_EXTRACTOR_SYSTEM_PROMPT, ExtractedMemoryAction } from "@/lib/memory-extractor-prompt";
 import { archiveStaleMemories, computeAndSaveMonthlySummaries, isFirstOfMonthWib } from "@/lib/siera-monthly-summary";
+
+const PROFILE_TYPES: ExtractedMemoryAction["type"][] = ["goal", "learning_preference"];
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -31,16 +33,23 @@ function getYesterdayWibRange() {
 async function callExtractor(
   apiKey: string,
   messages: { role: string; content: string }[],
-  existingMemories: Awaited<ReturnType<typeof getActiveMemories>>
+  existingMemories: Awaited<ReturnType<typeof getActiveMemories>>,
+  existingProfile: Awaited<ReturnType<typeof getUserProfile>>
 ): Promise<ExtractedMemoryAction[]> {
   const userPayload = JSON.stringify({
     conversation_today: messages,
-    existing_active_memories: existingMemories.map((m) => ({
-      id: m.id,
-      type: m.type,
-      topic: m.topic,
-      subject: m.subject,
-      description: m.description,
+    existing_active_memories: existingMemories
+      .filter((m) => !PROFILE_TYPES.includes(m.type))
+      .map((m) => ({
+        id: m.id,
+        type: m.type,
+        topic: m.topic,
+        subject: m.subject,
+        description: m.description,
+      })),
+    existing_user_profile: existingProfile.map((p) => ({
+      category: p.category,
+      description: p.description,
     })),
   });
 
@@ -81,11 +90,44 @@ async function callExtractor(
   return Array.isArray(parsed.memories) ? parsed.memories : [];
 }
 
+/** Upsert/hapus slot profil stabil (goal, learning_preference) di `user_profile`. */
+async function applyProfileAction(userId: string, item: ExtractedMemoryAction): Promise<boolean> {
+  const category = item.type as "goal" | "learning_preference";
+
+  if (item.action === "deactivate") {
+    const { error } = await supabase
+      .from("user_profile")
+      .delete()
+      .eq("user_id", userId)
+      .eq("category", category);
+    return !error;
+  }
+
+  // "create" maupun "update" sama-sama upsert ke satu slot per kategori.
+  const { error } = await supabase.from("user_profile").upsert(
+    {
+      user_id: userId,
+      category,
+      description: item.description,
+      confidence: item.confidence ?? 0.5,
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "user_id,category" }
+  );
+  return !error;
+}
+
 async function applyMemoryActions(userId: string, actions: ExtractedMemoryAction[]) {
   let created = 0;
   let updated = 0;
 
   for (const item of actions) {
+    if (PROFILE_TYPES.includes(item.type)) {
+      const ok = await applyProfileAction(userId, item);
+      if (ok) item.action === "create" ? (created += 1) : (updated += 1);
+      continue;
+    }
+
     if (item.action === "create") {
       const { error } = await supabase.from("memories").insert({
         user_id: userId,
@@ -179,8 +221,11 @@ export async function GET(req: NextRequest) {
 
       if (fetchErr || !msgs || msgs.length === 0) continue;
 
-      const existingMemories = await getActiveMemories(userId, 30);
-      const actions = await callExtractor(apiKey, msgs, existingMemories);
+      const [existingMemories, existingProfile] = await Promise.all([
+        getActiveMemories(userId, 30),
+        getUserProfile(userId),
+      ]);
+      const actions = await callExtractor(apiKey, msgs, existingMemories, existingProfile);
       const { created, updated } = await applyMemoryActions(userId, actions);
 
       summary.created += created;

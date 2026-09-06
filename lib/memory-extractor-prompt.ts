@@ -48,16 +48,40 @@ DEFINISI FIELD:
   bukan cuma kejadian sesaat atau tebakan (0 = dugaan lemah dari satu kalimat
   ambigu, 1 = user menyatakan eksplisit & konsisten).
 
+DUA TEMPAT PENYIMPANAN (penting, tapi tidak mengubah cara kamu menjawab):
+- type "current_difficulty" / "progress" / "milestone" -> ini KEJADIAN/EPISODE,
+  disimpan sebagai baris baru di riwayat memori (bisa banyak per user).
+- type "goal" / "learning_preference" -> ini PROFIL STABIL, cuma ada SATU
+  slot aktif per kategori per user (bukan menumpuk baris). Kalau kamu
+  keluarkan action "create" atau "update" untuk salah satu dua type ini,
+  itu otomatis MENGGANTI isi slot kategori itu sepenuhnya -> memory_id
+  TIDAK diperlukan untuk kedua type ini, cukup isi description dengan versi
+  TERBARU & LENGKAP (gabungkan dengan info lama yang relevan, jangan buang
+  info lama kalau masih berlaku).
+
 MENANGANI MEMORI YANG SUDAH ADA:
-Kamu akan diberi daftar existing_active_memories milik user ini.
+Kamu akan diberi existing_active_memories (daftar current_difficulty /
+progress / milestone yang masih aktif) DAN existing_user_profile (isi
+slot goal & learning_preference saat ini, kalau ada).
 - Kalau percakapan hari ini menunjukkan user SUDAH MENGATASI sebuah
-  current_difficulty yang ada di daftar itu -> keluarkan action "update"
-  untuk memory_id itu dengan status "inactive", DAN pertimbangkan membuat
-  memory baru bertipe "milestone" untuk mencatat pencapaiannya.
+  current_difficulty yang ada di existing_active_memories -> keluarkan
+  action "update" untuk memory_id itu dengan status "inactive", DAN
+  pertimbangkan membuat memory baru bertipe "milestone" untuk mencatat
+  pencapaiannya.
 - Kalau topik/subject hari ini SAMA PERSIS dengan memori aktif yang sudah
   ada dan tidak ada info baru yang signifikan -> JANGAN buat duplikat,
   cukup abaikan (tidak perlu keluarkan apa pun untuk itu).
-- Hanya keluarkan "create" untuk fakta yang benar-benar baru.
+- Kalau user menyampaikan preferensi/tujuan baru yang MELENGKAPI (bukan
+  menggantikan total) existing_user_profile -> keluarkan "update" dengan
+  description gabungan dari yang lama + yang baru dalam satu kalimat utuh.
+  Contoh: lama "User suka penjelasan singkat.", user sekarang bilang untuk
+  grammar sulit dia justru mau penjelasan panjang -> description baru:
+  "User suka penjelasan singkat untuk topik sederhana, tapi untuk grammar
+  sulit lebih suka penjelasan detail."
+- Kalau user jelas-jelas sudah TIDAK punya goal/preferensi itu lagi
+  (jarang terjadi) -> keluarkan action "deactivate" untuk type itu.
+- Hanya keluarkan "create" untuk fakta yang benar-benar baru (belum ada
+  di existing_active_memories maupun existing_user_profile).
 
 ATURAN MENULIS description:
 - Satu kalimat singkat, maksimal sekitar 25 kata.
