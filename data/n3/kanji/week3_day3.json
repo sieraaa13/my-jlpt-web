@@ -1,0 +1,176 @@
+{
+  "week": 3,
+  "day": 3,
+  "title": "自動販売機",
+  "subtitle": "Vending Machines",
+  "translation": "Mesin Penjual Otomatis",
+  "sceneDescription": "Mesin kopi otomatis dengan tombol untuk menambah/mengurangi takaran gula dan krim serta tombol tanpa es, di sebelahnya ada dispenser air panas, air dingin, dan teh dengan tuas pengembalian gelas.",
+  "signs": [
+    { "text": "増量 ／ 減量", "meaning": "Tambah takaran / Kurangi takaran" },
+    { "text": "砂糖なし ／ クリームなし", "meaning": "Tanpa gula / Tanpa krim" },
+    { "text": "氷なしボタン", "meaning": "Tombol tanpa es" },
+    { "text": "返却レバー", "meaning": "Tuas pengembalian" },
+    { "text": "お湯 ／ 冷水 ／ お茶", "meaning": "Air panas / Air dingin / Teh" }
+  ],
+  "kanjiList": [
+    {
+      "id": 131,
+      "character": "販",
+      "strokes": 11,
+      "onyomi": ["ハン"],
+      "kunyomi": [],
+      "words": [
+        { "word": "販売", "reading": "はんばい", "meaning": "penjualan" }
+      ],
+      "extraWords": [
+        { "word": "自動販売機", "reading": "じどうはんばいき", "meaning": "mesin penjual otomatis" }
+      ]
+    },
+    {
+      "id": 132,
+      "character": "機",
+      "strokes": 16,
+      "onyomi": ["キ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "飛行機", "reading": "ひこうき", "meaning": "pesawat terbang" },
+        { "word": "機会", "reading": "きかい", "meaning": "kesempatan" }
+      ]
+    },
+    {
+      "id": 133,
+      "character": "増",
+      "strokes": 14,
+      "onyomi": ["ゾウ"],
+      "kunyomi": ["ふえる", "ふやす"],
+      "words": [
+        { "word": "増加", "reading": "ぞうか", "meaning": "peningkatan" },
+        { "word": "増える", "reading": "ふえる", "meaning": "bertambah" }
+      ],
+      "extraWords": [
+        { "word": "増やす", "reading": "ふやす", "meaning": "menambah" }
+      ]
+    },
+    {
+      "id": 134,
+      "character": "減",
+      "strokes": 12,
+      "onyomi": ["ゲン"],
+      "kunyomi": ["へる", "へらす"],
+      "words": [
+        { "word": "減少", "reading": "げんしょう", "meaning": "penurunan" },
+        { "word": "減る", "reading": "へる", "meaning": "berkurang" }
+      ],
+      "extraWords": [
+        { "word": "減らす", "reading": "へらす", "meaning": "mengurangi" }
+      ]
+    },
+    {
+      "id": 135,
+      "character": "量",
+      "strokes": 12,
+      "onyomi": ["リョウ"],
+      "kunyomi": [],
+      "words": [
+        { "word": "量", "reading": "りょう", "meaning": "takaran, jumlah" },
+        { "word": "増量", "reading": "ぞうりょう", "meaning": "penambahan takaran" }
+      ],
+      "extraWords": [
+        { "word": "数量", "reading": "すうりょう", "meaning": "jumlah, kuantitas" },
+        { "word": "減量", "reading": "げんりょう", "meaning": "pengurangan takaran" }
+      ]
+    },
+    {
+      "id": 136,
+      "character": "氷",
+      "strokes": 5,
+      "onyomi": [],
+      "kunyomi": ["こおり"],
+      "words": [
+        { "word": "氷", "reading": "こおり", "meaning": "es" }
+      ]
+    },
+    {
+      "id": 137,
+      "character": "返",
+      "strokes": 7,
+      "onyomi": ["ヘン"],
+      "kunyomi": ["かえす"],
+      "words": [
+        { "word": "返事", "reading": "へんじ", "meaning": "balasan, jawaban" },
+        { "word": "返す", "reading": "かえす", "meaning": "mengembalikan" }
+      ],
+      "extraWords": [
+        { "word": "返却", "reading": "へんきゃく", "meaning": "pengembalian" }
+      ]
+    },
+    {
+      "id": 138,
+      "character": "湯",
+      "strokes": 12,
+      "onyomi": [],
+      "kunyomi": ["ゆ"],
+      "words": [
+        { "word": "お湯", "reading": "おゆ", "meaning": "air panas" }
+      ]
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "number": 1,
+      "prompt": "販売：",
+      "optionA": "売ること",
+      "optionB": "買うこと",
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "prompt": "機会：",
+      "optionA": "マシン",
+      "optionB": "チャンス",
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "prompt": "返事：",
+      "optionA": "よぶこと",
+      "optionB": "こたえること",
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "prompt": "飛行：",
+      "optionA": "旅行すること",
+      "optionB": "空をとぶこと",
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "prompt": "人口が（　　）する。",
+      "optionA": "減量",
+      "optionB": "減少",
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "prompt": "おつりをもらうときは、（　　）を押す。",
+      "optionA": "返却ボタン",
+      "optionB": "確認ボタン",
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "prompt": "甘くしたいので砂糖を（　　）する。",
+      "optionA": "増量",
+      "optionB": "増加",
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "prompt": "喉が渇いたので自動販売機で（　　）を買った。",
+      "optionA": "冷水",
+      "optionB": "氷",
+      "answer": "A"
+    }
+  ]
+}
