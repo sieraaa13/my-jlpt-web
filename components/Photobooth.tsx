@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
+import PhotoboothDressUp from "./PhotoboothDressUp";
 
 type ThemeInfo = {
   id: string;
@@ -12,7 +13,7 @@ type ThemeInfo = {
 // ═══════════════════════════════════════════════════════════════
 // Resize + kompres foto agar payload tidak melebihi batas Vercel
 // ═══════════════════════════════════════════════════════════════
-async function compressImage(base64: string, maxSize = 1024, quality = 0.7): Promise<string> {
+export async function compressImage(base64: string, maxSize = 1024, quality = 0.7): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
     img.onload = () => {
@@ -43,6 +44,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [cameraOn, setCameraOn] = useState(false);
+  const [mode, setMode] = useState<"themes" | "dressup">("themes");
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -71,6 +73,10 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     streamRef.current = null;
     setCameraOn(false);
   }, []);
+
+  useEffect(() => {
+    if (mode !== "themes") stopCamera();
+  }, [mode, stopCamera]);
 
   const handleClose = () => {
     stopCamera();
@@ -191,10 +197,33 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
 
           <div className="text-center mb-6 pr-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">📸 AI PHOTOBOOTH</h2>
-            <p className="text-xs text-gray-400">Pilih tema → kumpulkan foto → generate!</p>
+            <p className="text-xs text-gray-400">
+              {mode === "themes" ? "Pilih tema → kumpulkan foto → generate!" : "Foto dirimu → tambah item satu per satu → generate!"}
+            </p>
           </div>
 
-          {themes.length > 0 && (
+          <div className="flex justify-center gap-2 mb-6">
+            <button
+              onClick={() => setMode("themes")}
+              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                mode === "themes" ? "bg-pink-500 text-white shadow-lg" : "bg-gray-800 text-gray-400 hover:text-white"
+              }`}
+            >
+              🎨 Koleksi Tema
+            </button>
+            <button
+              onClick={() => setMode("dressup")}
+              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                mode === "dressup" ? "bg-pink-500 text-white shadow-lg" : "bg-gray-800 text-gray-400 hover:text-white"
+              }`}
+            >
+              👕 Dress Up
+            </button>
+          </div>
+
+          {mode === "dressup" && <PhotoboothDressUp isOpen={isOpen} />}
+
+          {mode === "themes" && themes.length > 0 && (
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <label className="text-white text-sm font-semibold">🎨 Pilih Tema:</label>
@@ -249,6 +278,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
             </div>
           )}
 
+          {mode === "themes" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="flex flex-col gap-3">
               <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
@@ -317,6 +347,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
               )}
             </div>
           </div>
+          )}
         </div>
       </div>
     </div>
