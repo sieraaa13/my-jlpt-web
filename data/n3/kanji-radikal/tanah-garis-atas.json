@@ -3,18 +3,13 @@
   "groups": [
     {
       "radikal": "亠 / 土",
-      "label": "亠 / 土 - Garis di Atas & Tanah  (61 kata)",
-      "count": 61,
+      "label": "亠 / 土 - Garis di Atas & Tanah  (52 kata)",
+      "count": 52,
       "words": [
         {
           "kanji": "卒業",
           "bacaan": "そつぎょう",
           "arti": "kelulusan"
-        },
-        {
-          "kanji": "商談",
-          "bacaan": "しょうだん",
-          "arti": "negosiasi bisnis"
         },
         {
           "kanji": "卒論",
@@ -72,31 +67,6 @@
           "arti": "biaya transportasi"
         },
         {
-          "kanji": "商業",
-          "bacaan": "しょうぎょう",
-          "arti": "perdagangan"
-        },
-        {
-          "kanji": "商標",
-          "bacaan": "しょうひょう",
-          "arti": "merek dagang"
-        },
-        {
-          "kanji": "商戦",
-          "bacaan": "しょうせん",
-          "arti": "persaingan bisnis"
-        },
-        {
-          "kanji": "商社",
-          "bacaan": "しょうしゃ",
-          "arti": "perusahaan dagang"
-        },
-        {
-          "kanji": "商売",
-          "bacaan": "しょうばい",
-          "arti": "bisnis / dagang"
-        },
-        {
           "kanji": "夜",
           "bacaan": "よ",
           "arti": "malam"
@@ -152,11 +122,6 @@
           "arti": "suami / pemilik kedai"
         },
         {
-          "kanji": "商人",
-          "bacaan": "しょうにん",
-          "arti": "pedagang"
-        },
-        {
           "kanji": "市民",
           "bacaan": "しみん",
           "arti": "warga kota"
@@ -192,11 +157,6 @@
           "arti": "ijazah"
         },
         {
-          "kanji": "商品",
-          "bacaan": "しょうひん",
-          "arti": "barang dagangan"
-        },
-        {
           "kanji": "市",
           "bacaan": "し",
           "arti": "kota"
@@ -220,11 +180,6 @@
           "kanji": "夜店",
           "bacaan": "よみせ",
           "arti": "kedai malam"
-        },
-        {
-          "kanji": "商店",
-          "bacaan": "しょうてん",
-          "arti": "toko"
         },
         {
           "kanji": "市街",
@@ -313,189 +268,6 @@
         }
       ],
       "section": "main"
-    },
-    {
-      "radikal": "目",
-      "label": "目 - Mata  (35 kata)",
-      "count": 35,
-      "words": [
-        {
-          "kanji": "直ぐ",
-          "bacaan": "すぐ",
-          "arti": ""
-        },
-        {
-          "kanji": "真剣",
-          "bacaan": "しんけん",
-          "arti": ""
-        },
-        {
-          "kanji": "真偽",
-          "bacaan": "しんぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "直ちに",
-          "bacaan": "ただちに",
-          "arti": ""
-        },
-        {
-          "kanji": "直る",
-          "bacaan": "なおる",
-          "arti": ""
-        },
-        {
-          "kanji": "直り",
-          "bacaan": "なおり",
-          "arti": ""
-        },
-        {
-          "kanji": "真似",
-          "bacaan": "まね",
-          "arti": ""
-        },
-        {
-          "kanji": "真っ最中",
-          "bacaan": "まっさいちゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "真っ直ぐ",
-          "bacaan": "まっすぐ",
-          "arti": ""
-        },
-        {
-          "kanji": "真ん中",
-          "bacaan": "まんなか",
-          "arti": ""
-        },
-        {
-          "kanji": "真心",
-          "bacaan": "まごころ",
-          "arti": ""
-        },
-        {
-          "kanji": "直",
-          "bacaan": "じき",
-          "arti": ""
-        },
-        {
-          "kanji": "直覚",
-          "bacaan": "ちょっかく",
-          "arti": ""
-        },
-        {
-          "kanji": "直感",
-          "bacaan": "ちょっかん",
-          "arti": ""
-        },
-        {
-          "kanji": "直後",
-          "bacaan": "ちょくご",
-          "arti": ""
-        },
-        {
-          "kanji": "直前",
-          "bacaan": "ちょくぜん",
-          "arti": ""
-        },
-        {
-          "kanji": "直接",
-          "bacaan": "ちょくせつ",
-          "arti": ""
-        },
-        {
-          "kanji": "真夜中",
-          "bacaan": "まよなか",
-          "arti": ""
-        },
-        {
-          "kanji": "真実",
-          "bacaan": "しんじつ",
-          "arti": ""
-        },
-        {
-          "kanji": "真面目",
-          "bacaan": "まじめ",
-          "arti": ""
-        },
-        {
-          "kanji": "直角",
-          "bacaan": "ちょっかく",
-          "arti": ""
-        },
-        {
-          "kanji": "直径",
-          "bacaan": "ちょっけい",
-          "arti": ""
-        },
-        {
-          "kanji": "直線",
-          "bacaan": "ちょくせん",
-          "arti": ""
-        },
-        {
-          "kanji": "直通",
-          "bacaan": "ちょくつ",
-          "arti": ""
-        },
-        {
-          "kanji": "直訳",
-          "bacaan": "ちょくやく",
-          "arti": ""
-        },
-        {
-          "kanji": "直行",
-          "bacaan": "ちょっこう",
-          "arti": ""
-        },
-        {
-          "kanji": "直行便",
-          "bacaan": "ちょっこうびん",
-          "arti": ""
-        },
-        {
-          "kanji": "真向かい",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "真理",
-          "bacaan": "しんり",
-          "arti": ""
-        },
-        {
-          "kanji": "真空",
-          "bacaan": "しんくう",
-          "arti": ""
-        },
-        {
-          "kanji": "やり直す",
-          "bacaan": "やりなおす",
-          "arti": ""
-        },
-        {
-          "kanji": "直面",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "盲腸",
-          "bacaan": "もうちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "直す",
-          "bacaan": "なおす",
-          "arti": ""
-        },
-        {
-          "kanji": "真似る",
-          "bacaan": "まねる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
     },
     {
       "radikal": "衣",
@@ -1351,124 +1123,6 @@
       "section": "belum"
     },
     {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (22 kata)",
-      "count": 22,
-      "words": [
-        {
-          "kanji": "意義",
-          "bacaan": "いぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "恋愛",
-          "bacaan": "れんあい",
-          "arti": ""
-        },
-        {
-          "kanji": "忘れっぽい",
-          "bacaan": "わるくち",
-          "arti": ""
-        },
-        {
-          "kanji": "意味",
-          "bacaan": "いみ",
-          "arti": ""
-        },
-        {
-          "kanji": "意図",
-          "bacaan": "いと",
-          "arti": ""
-        },
-        {
-          "kanji": "意外",
-          "bacaan": "いがい",
-          "arti": ""
-        },
-        {
-          "kanji": "恋",
-          "bacaan": "こい",
-          "arti": ""
-        },
-        {
-          "kanji": "意欲",
-          "bacaan": "いよく",
-          "arti": ""
-        },
-        {
-          "kanji": "意志",
-          "bacaan": "いし",
-          "arti": ""
-        },
-        {
-          "kanji": "意識",
-          "bacaan": "いしき",
-          "arti": ""
-        },
-        {
-          "kanji": "意",
-          "bacaan": "い",
-          "arti": ""
-        },
-        {
-          "kanji": "意地",
-          "bacaan": "いじ",
-          "arti": ""
-        },
-        {
-          "kanji": "意地汚い",
-          "bacaan": "いじきたない",
-          "arti": ""
-        },
-        {
-          "kanji": "意地悪",
-          "bacaan": "いじわる",
-          "arti": ""
-        },
-        {
-          "kanji": "恋しい",
-          "bacaan": "こいしい",
-          "arti": ""
-        },
-        {
-          "kanji": "意見",
-          "bacaan": "いけん",
-          "arti": ""
-        },
-        {
-          "kanji": "慈愛",
-          "bacaan": "じあい",
-          "arti": ""
-        },
-        {
-          "kanji": "恋人",
-          "bacaan": "こいびと",
-          "arti": ""
-        },
-        {
-          "kanji": "恵まれた",
-          "bacaan": "めぐまれた",
-          "arti": ""
-        },
-        {
-          "kanji": "忘れ物",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "忘年会",
-          "bacaan": "ぼうねんかい",
-          "arti": ""
-        },
-        {
-          "kanji": "忘れる",
-          "bacaan": "わすれる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "文",
       "label": "文 - Tulisan/budaya  (17 kata)",
       "count": 17,
@@ -2068,64 +1722,6 @@
       "section": "belum"
     },
     {
-      "radikal": "口",
-      "label": "口 - Mulut  (10 kata)",
-      "count": 10,
-      "words": [
-        {
-          "kanji": "喜び",
-          "bacaan": "よろこび",
-          "arti": ""
-        },
-        {
-          "kanji": "喪",
-          "bacaan": "も",
-          "arti": ""
-        },
-        {
-          "kanji": "喜劇",
-          "bacaan": "きげき",
-          "arti": ""
-        },
-        {
-          "kanji": "哀れ",
-          "bacaan": "あわれ",
-          "arti": ""
-        },
-        {
-          "kanji": "哀れみ",
-          "bacaan": "あわれみ",
-          "arti": ""
-        },
-        {
-          "kanji": "喜ばす",
-          "bacaan": "よろこばす",
-          "arti": ""
-        },
-        {
-          "kanji": "喜ぶ",
-          "bacaan": "よろこぶ",
-          "arti": ""
-        },
-        {
-          "kanji": "哀れむ",
-          "bacaan": "あわれむ",
-          "arti": ""
-        },
-        {
-          "kanji": "吉",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "喪服",
-          "bacaan": "もふく",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "亅",
       "label": "亅 - Kait  (10 kata)",
       "count": 10,
@@ -2290,54 +1886,6 @@
       "section": "belum"
     },
     {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (8 kata)",
-      "count": 8,
-      "words": [
-        {
-          "kanji": "頼もしい",
-          "bacaan": "たのもしい",
-          "arti": ""
-        },
-        {
-          "kanji": "頼り",
-          "bacaan": "たより",
-          "arti": ""
-        },
-        {
-          "kanji": "頼み",
-          "bacaan": "たのみ",
-          "arti": ""
-        },
-        {
-          "kanji": "顔",
-          "bacaan": "かお",
-          "arti": ""
-        },
-        {
-          "kanji": "顔色",
-          "bacaan": "かおいろ",
-          "arti": ""
-        },
-        {
-          "kanji": "顔つき",
-          "bacaan": "かおつき",
-          "arti": ""
-        },
-        {
-          "kanji": "頼る",
-          "bacaan": "たよる",
-          "arti": ""
-        },
-        {
-          "kanji": "頼む",
-          "bacaan": "たのむ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "大",
       "label": "大 - Besar  (7 kata)",
       "count": 7,
@@ -2382,14 +1930,9 @@
     },
     {
       "radikal": "士",
-      "label": "士 - Kesatria/gelar  (7 kata)",
-      "count": 7,
+      "label": "士 - Kesatria/gelar  (6 kata)",
+      "count": 6,
       "words": [
-        {
-          "kanji": "志願",
-          "bacaan": "しがん",
-          "arti": ""
-        },
         {
           "kanji": "売店",
           "bacaan": "ばいてん",
@@ -2608,39 +2151,6 @@
         {
           "kanji": "刺身",
           "bacaan": "さしみ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "肉",
-      "label": "肉 - Daging  (5 kata)",
-      "count": 5,
-      "words": [
-        {
-          "kanji": "育ち",
-          "bacaan": "そだち",
-          "arti": ""
-        },
-        {
-          "kanji": "育つ",
-          "bacaan": "そだつ",
-          "arti": ""
-        },
-        {
-          "kanji": "育成",
-          "bacaan": "いくせい",
-          "arti": ""
-        },
-        {
-          "kanji": "育児",
-          "bacaan": "いくじ",
-          "arti": ""
-        },
-        {
-          "kanji": "育てる",
-          "bacaan": "そだてる",
           "arti": ""
         }
       ],
@@ -3086,19 +2596,6 @@
         {
           "kanji": "蛮人",
           "bacaan": "ばんじん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "手",
-      "label": "手 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "才能",
-          "bacaan": "さいのう",
           "arti": ""
         }
       ],

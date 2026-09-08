@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "厂 / 广",
-      "label": "厂 / 广 - Tebing / Atap Miring (Pelindung)  (67 kata)",
-      "count": 67,
+      "label": "厂 / 广 - Tebing / Atap Miring (Pelindung)  (65 kata)",
+      "count": 65,
       "words": [
         {
           "kanji": "歴史",
@@ -232,11 +232,6 @@
           "arti": "penghapusan"
         },
         {
-          "kanji": "腐敗",
-          "bacaan": "ふはい",
-          "arti": "pembusukan / korupsi"
-        },
-        {
           "kanji": "店員",
           "bacaan": "てんいん",
           "arti": "pegawai toko"
@@ -250,11 +245,6 @@
           "kanji": "庶民",
           "bacaan": "しょみん",
           "arti": "rakyat jelata"
-        },
-        {
-          "kanji": "腐る",
-          "bacaan": "くさる",
-          "arti": "membusuk"
         },
         {
           "kanji": "廃物",
@@ -745,350 +735,6 @@
         {
           "kanji": "閉じる",
           "bacaan": "とじる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (22 kata)",
-      "count": 22,
-      "words": [
-        {
-          "kanji": "応募",
-          "bacaan": "おうぼ",
-          "arti": ""
-        },
-        {
-          "kanji": "応用",
-          "bacaan": "おうよう",
-          "arti": ""
-        },
-        {
-          "kanji": "応援",
-          "bacaan": "おうえん",
-          "arti": ""
-        },
-        {
-          "kanji": "感電",
-          "bacaan": "かんでん",
-          "arti": ""
-        },
-        {
-          "kanji": "感触",
-          "bacaan": "かんしょく",
-          "arti": ""
-        },
-        {
-          "kanji": "感動",
-          "bacaan": "かんどう",
-          "arti": ""
-        },
-        {
-          "kanji": "感激",
-          "bacaan": "かんげき",
-          "arti": ""
-        },
-        {
-          "kanji": "感じ",
-          "bacaan": "かんじ",
-          "arti": ""
-        },
-        {
-          "kanji": "感情",
-          "bacaan": "かんじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "感謝",
-          "bacaan": "かんしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "感覚",
-          "bacaan": "かんかく",
-          "arti": ""
-        },
-        {
-          "kanji": "感心",
-          "bacaan": "かんしん",
-          "arti": ""
-        },
-        {
-          "kanji": "感想",
-          "bacaan": "かんそう",
-          "arti": ""
-        },
-        {
-          "kanji": "感",
-          "bacaan": "かん",
-          "arti": ""
-        },
-        {
-          "kanji": "慰め",
-          "bacaan": "なぐさめ",
-          "arti": ""
-        },
-        {
-          "kanji": "慰める",
-          "bacaan": "なぐさめる",
-          "arti": ""
-        },
-        {
-          "kanji": "応接",
-          "bacaan": "おうせつ",
-          "arti": ""
-        },
-        {
-          "kanji": "応対",
-          "bacaan": "おうたい",
-          "arti": ""
-        },
-        {
-          "kanji": "応答",
-          "bacaan": "おうとう",
-          "arti": ""
-        },
-        {
-          "kanji": "応じる",
-          "bacaan": "おうじる",
-          "arti": ""
-        },
-        {
-          "kanji": "感じる",
-          "bacaan": "かんじる",
-          "arti": ""
-        },
-        {
-          "kanji": "感染",
-          "bacaan": "かんせん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "冂",
-      "label": "冂 - Batas luar / border  (21 kata)",
-      "count": 21,
-      "words": [
-        {
-          "kanji": "同じ",
-          "bacaan": "おなじ",
-          "arti": ""
-        },
-        {
-          "kanji": "同封",
-          "bacaan": "どうふう",
-          "arti": ""
-        },
-        {
-          "kanji": "同上",
-          "bacaan": "どうじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "同感",
-          "bacaan": "どうかん",
-          "arti": ""
-        },
-        {
-          "kanji": "同盟",
-          "bacaan": "どうめい",
-          "arti": ""
-        },
-        {
-          "kanji": "同意",
-          "bacaan": "どうい",
-          "arti": ""
-        },
-        {
-          "kanji": "同情",
-          "bacaan": "どうじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "同日",
-          "bacaan": "どうじつ",
-          "arti": ""
-        },
-        {
-          "kanji": "同居",
-          "bacaan": "どうきょ",
-          "arti": ""
-        },
-        {
-          "kanji": "同級",
-          "bacaan": "どうきゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "同",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "同一",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "同時",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "同行",
-          "bacaan": "どうこう",
-          "arti": ""
-        },
-        {
-          "kanji": "同窓会",
-          "bacaan": "どうそうかい",
-          "arti": ""
-        },
-        {
-          "kanji": "同様",
-          "bacaan": "どうよう",
-          "arti": ""
-        },
-        {
-          "kanji": "同級生",
-          "bacaan": "どうきゅうせい",
-          "arti": ""
-        },
-        {
-          "kanji": "同僚",
-          "bacaan": "どうりょう",
-          "arti": ""
-        },
-        {
-          "kanji": "同士",
-          "bacaan": "どうし",
-          "arti": ""
-        },
-        {
-          "kanji": "同窓",
-          "bacaan": "どうそう",
-          "arti": ""
-        },
-        {
-          "kanji": "同伴",
-          "bacaan": "どうはん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (21 kata)",
-      "count": 21,
-      "words": [
-        {
-          "kanji": "周り",
-          "bacaan": "まわり",
-          "arti": ""
-        },
-        {
-          "kanji": "司令",
-          "bacaan": "しれい",
-          "arti": ""
-        },
-        {
-          "kanji": "周期的",
-          "bacaan": "しゅうきてき",
-          "arti": ""
-        },
-        {
-          "kanji": "周期",
-          "bacaan": "しゅうき",
-          "arti": ""
-        },
-        {
-          "kanji": "周年",
-          "bacaan": "しゅうねん",
-          "arti": ""
-        },
-        {
-          "kanji": "問題",
-          "bacaan": "もんだい",
-          "arti": ""
-        },
-        {
-          "kanji": "問答",
-          "bacaan": "もんどう",
-          "arti": ""
-        },
-        {
-          "kanji": "問い",
-          "bacaan": "とい",
-          "arti": ""
-        },
-        {
-          "kanji": "問屋",
-          "bacaan": "とんや",
-          "arti": ""
-        },
-        {
-          "kanji": "問う",
-          "bacaan": "とう",
-          "arti": ""
-        },
-        {
-          "kanji": "唇",
-          "bacaan": "くちびる",
-          "arti": ""
-        },
-        {
-          "kanji": "周辺",
-          "bacaan": "しゅうへん",
-          "arti": ""
-        },
-        {
-          "kanji": "周囲",
-          "bacaan": "しゅうい",
-          "arti": ""
-        },
-        {
-          "kanji": "周遊券",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "周遊",
-          "bacaan": "しゅうゆう",
-          "arti": ""
-        },
-        {
-          "kanji": "向かう",
-          "bacaan": "むかう",
-          "arti": ""
-        },
-        {
-          "kanji": "向ける",
-          "bacaan": "むける",
-          "arti": ""
-        },
-        {
-          "kanji": "司令官",
-          "bacaan": "しれいかん",
-          "arti": ""
-        },
-        {
-          "kanji": "司会者",
-          "bacaan": "しかいしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "司令部",
-          "bacaan": "しれいぶ",
-          "arti": ""
-        },
-        {
-          "kanji": "司令塔",
-          "bacaan": "しれいとう",
           "arti": ""
         }
       ],
@@ -2092,34 +1738,6 @@
       "section": "belum"
     },
     {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "願い",
-          "bacaan": "ねがい",
-          "arti": ""
-        },
-        {
-          "kanji": "願望",
-          "bacaan": "がんぼう",
-          "arti": ""
-        },
-        {
-          "kanji": "願う",
-          "bacaan": "ねがう",
-          "arti": ""
-        },
-        {
-          "kanji": "願書",
-          "bacaan": "がんしょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "虍",
       "label": "虍 - Motif harimau  (4 kata)",
       "count": 4,
@@ -2222,29 +1840,6 @@
       "section": "belum"
     },
     {
-      "radikal": "皮",
-      "label": "皮 - Kulit  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "皮肉",
-          "bacaan": "ひにく",
-          "arti": ""
-        },
-        {
-          "kanji": "皮膚",
-          "bacaan": "ひふ",
-          "arti": ""
-        },
-        {
-          "kanji": "皮",
-          "bacaan": "かわ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "攴",
       "label": "攴 - Memukul ringan / tindakan  (3 kata)",
       "count": 3,
@@ -2262,29 +1857,6 @@
         {
           "kanji": "散々",
           "bacaan": "さいこう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "戶",
-      "label": "戶 - Pintu  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "扁桃腺",
-          "bacaan": "へんとうせん",
-          "arti": ""
-        },
-        {
-          "kanji": "肩",
-          "bacaan": "かた",
-          "arti": ""
-        },
-        {
-          "kanji": "肩凝り",
-          "bacaan": "かたこり",
           "arti": ""
         }
       ],
@@ -2363,24 +1935,6 @@
       "section": "belum"
     },
     {
-      "radikal": "耳",
-      "label": "耳 - Telinga  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "聞こえる",
-          "bacaan": "きこえる",
-          "arti": ""
-        },
-        {
-          "kanji": "聞き手",
-          "bacaan": "ききて",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "人",
       "label": "人 - Orang / manusia  (2 kata)",
       "count": 2,
@@ -2447,24 +2001,6 @@
         {
           "kanji": "席",
           "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "目",
-      "label": "目 - Mata  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "眉",
-          "bacaan": "まゆ",
-          "arti": ""
-        },
-        {
-          "kanji": "看護婦",
-          "bacaan": "かんごふ",
           "arti": ""
         }
       ],
@@ -2543,6 +2079,19 @@
       "section": "belum"
     },
     {
+      "radikal": "戶",
+      "label": "戶 - Pintu  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "扁桃腺",
+          "bacaan": "へんとうせん",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
       "radikal": "臣",
       "label": "臣 - Pejabat/menteri  (1 kata)",
       "count": 1,
@@ -2550,19 +2099,6 @@
         {
           "kanji": "臨時",
           "bacaan": "りんじ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "手",
-      "label": "手 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "摩擦",
-          "bacaan": "まさつ",
           "arti": ""
         }
       ],
@@ -2589,19 +2125,6 @@
         {
           "kanji": "留学生",
           "bacaan": "りゅうがくせい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "夂",
-      "label": "夂 - Melangkah pelan  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "愛人",
-          "bacaan": "あいじん",
           "arti": ""
         }
       ],
