@@ -233,99 +233,6 @@
       "section": "belum"
     },
     {
-      "radikal": "戈",
-      "label": "戈 - Tombak/senjata  (17 kata)",
-      "count": 17,
-      "words": [
-        {
-          "kanji": "戯れ",
-          "bacaan": "たわむれ",
-          "arti": ""
-        },
-        {
-          "kanji": "成功",
-          "bacaan": "せいこう",
-          "arti": ""
-        },
-        {
-          "kanji": "成立",
-          "bacaan": "せいりつ",
-          "arti": ""
-        },
-        {
-          "kanji": "成果",
-          "bacaan": "せいか",
-          "arti": ""
-        },
-        {
-          "kanji": "成分",
-          "bacaan": "せいぶん",
-          "arti": ""
-        },
-        {
-          "kanji": "成績",
-          "bacaan": "せいせき",
-          "arti": ""
-        },
-        {
-          "kanji": "成り立ち",
-          "bacaan": "なりたち",
-          "arti": ""
-        },
-        {
-          "kanji": "成り行き",
-          "bacaan": "なりゆき",
-          "arti": ""
-        },
-        {
-          "kanji": "成長",
-          "bacaan": "せいちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "成年",
-          "bacaan": "せいねん",
-          "arti": ""
-        },
-        {
-          "kanji": "成人",
-          "bacaan": "せいじん",
-          "arti": ""
-        },
-        {
-          "kanji": "成金",
-          "bacaan": "なりきん",
-          "arti": ""
-        },
-        {
-          "kanji": "我慢",
-          "bacaan": "がまん",
-          "arti": ""
-        },
-        {
-          "kanji": "我がまま",
-          "bacaan": "わがまま",
-          "arti": ""
-        },
-        {
-          "kanji": "我が",
-          "bacaan": "わが",
-          "arti": ""
-        },
-        {
-          "kanji": "我",
-          "bacaan": "われ",
-          "arti": ""
-        },
-        {
-          "kanji": "我々",
-          "bacaan": "われわれ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "又",
       "label": "又 - Tangan (lagi)  (13 kata)",
       "count": 13,
@@ -461,74 +368,6 @@
         {
           "kanji": "区役所",
           "bacaan": "くやくしょ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "用",
-      "label": "用 - Menggunakan  (12 kata)",
-      "count": 12,
-      "words": [
-        {
-          "kanji": "用事",
-          "bacaan": "ようじ",
-          "arti": ""
-        },
-        {
-          "kanji": "用件",
-          "bacaan": "ようけん",
-          "arti": ""
-        },
-        {
-          "kanji": "用",
-          "bacaan": "よう",
-          "arti": ""
-        },
-        {
-          "kanji": "用語",
-          "bacaan": "ようご",
-          "arti": ""
-        },
-        {
-          "kanji": "用法",
-          "bacaan": "ようほう",
-          "arti": ""
-        },
-        {
-          "kanji": "用意",
-          "bacaan": "ようい",
-          "arti": ""
-        },
-        {
-          "kanji": "用途",
-          "bacaan": "ようと",
-          "arti": ""
-        },
-        {
-          "kanji": "用心",
-          "bacaan": "ようじん",
-          "arti": ""
-        },
-        {
-          "kanji": "用例",
-          "bacaan": "ようれい",
-          "arti": ""
-        },
-        {
-          "kanji": "用紙",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "用具",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "用いる",
-          "bacaan": "もちいる",
           "arti": ""
         }
       ],
@@ -762,54 +601,6 @@
       "section": "belum"
     },
     {
-      "radikal": "斤",
-      "label": "斤 - (radikal jarang, lihat contoh kanji)  (8 kata)",
-      "count": 8,
-      "words": [
-        {
-          "kanji": "断り",
-          "bacaan": "ことわり",
-          "arti": ""
-        },
-        {
-          "kanji": "断言",
-          "bacaan": "だんげん",
-          "arti": ""
-        },
-        {
-          "kanji": "断定",
-          "bacaan": "だんてい",
-          "arti": ""
-        },
-        {
-          "kanji": "断食明け",
-          "bacaan": "だんじきあけ",
-          "arti": ""
-        },
-        {
-          "kanji": "断水",
-          "bacaan": "だんすい",
-          "arti": ""
-        },
-        {
-          "kanji": "断食",
-          "bacaan": "だんじき",
-          "arti": ""
-        },
-        {
-          "kanji": "断る",
-          "bacaan": "ことわる",
-          "arti": ""
-        },
-        {
-          "kanji": "断念",
-          "bacaan": "だんねん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "殳",
       "label": "殳 - Tongkat/senjata pemukul  (8 kata)",
       "count": 8,
@@ -901,44 +692,6 @@
       "section": "belum"
     },
     {
-      "radikal": "皿",
-      "label": "皿 - Piring/wadah  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "監督",
-          "bacaan": "かんとく",
-          "arti": ""
-        },
-        {
-          "kanji": "盛況",
-          "bacaan": "せいきょう",
-          "arti": ""
-        },
-        {
-          "kanji": "盛ん",
-          "bacaan": "さかん",
-          "arti": ""
-        },
-        {
-          "kanji": "盛大",
-          "bacaan": "せいだい",
-          "arti": ""
-        },
-        {
-          "kanji": "監査",
-          "bacaan": "かんさ",
-          "arti": ""
-        },
-        {
-          "kanji": "監視",
-          "bacaan": "かんし",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "麻",
       "label": "麻 - Rami/kebas  (5 kata)",
       "count": 5,
@@ -999,62 +752,6 @@
         {
           "kanji": "奉仕",
           "bacaan": "ほうし",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "糸",
-      "label": "糸 - (radikal jarang, lihat contoh kanji)  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "緊張",
-          "bacaan": "きんちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "緊急",
-          "bacaan": "きんきゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "緊密",
-          "bacaan": "きんみつ",
-          "arti": ""
-        },
-        {
-          "kanji": "緊迫",
-          "bacaan": "きんぱく",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "刀",
-      "label": "刀 - Pedang / pisau  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "劇場",
-          "bacaan": "げきじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "切っ掛け",
-          "bacaan": "きっかけ",
-          "arti": ""
-        },
-        {
-          "kanji": "切り",
-          "bacaan": "きり",
-          "arti": ""
-        },
-        {
-          "kanji": "劇",
-          "bacaan": "げき",
           "arti": ""
         }
       ],
@@ -1163,29 +860,6 @@
       "section": "belum"
     },
     {
-      "radikal": "貝",
-      "label": "貝 - Kerang (dulu = uang)  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "賢い",
-          "bacaan": "かしこい",
-          "arti": ""
-        },
-        {
-          "kanji": "賢明",
-          "bacaan": "けんめい",
-          "arti": ""
-        },
-        {
-          "kanji": "貿易",
-          "bacaan": "ぼうえき",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "女",
       "label": "女 - Wanita/perempuan  (3 kata)",
       "count": 3,
@@ -1268,78 +942,6 @@
       "section": "belum"
     },
     {
-      "radikal": "工",
-      "label": "工 - Pekerjaan / alat  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "巨大",
-          "bacaan": "きょだい",
-          "arti": ""
-        },
-        {
-          "kanji": "巨人",
-          "bacaan": "きょじん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "臼",
-      "label": "臼 - Lesung  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "興奮",
-          "bacaan": "こうふん",
-          "arti": ""
-        },
-        {
-          "kanji": "興味",
-          "bacaan": "きょうみ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "革",
-      "label": "革 - Kulit samak  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "革命",
-          "bacaan": "かくめい",
-          "arti": ""
-        },
-        {
-          "kanji": "革新",
-          "bacaan": "かくしん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "巾",
-      "label": "巾 - Kain  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "希望",
-          "bacaan": "きぼう",
-          "arti": ""
-        },
-        {
-          "kanji": "席",
-          "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "十",
       "label": "十 - Sepuluh  (2 kata)",
       "count": 2,
@@ -1352,55 +954,6 @@
         {
           "kanji": "単身",
           "bacaan": "たんしん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "冖",
-      "label": "冖 - Penutup  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "冠",
-          "bacaan": "かんむり",
-          "arti": ""
-        },
-        {
-          "kanji": "写真",
-          "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "車",
-      "label": "車 - Kereta/roda  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "軍備",
-          "bacaan": "ぐんび",
-          "arti": ""
-        },
-        {
-          "kanji": "軍艦",
-          "bacaan": "ぐんかん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "戶",
-      "label": "戶 - Pintu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "扁桃腺",
-          "bacaan": "へんとうせん",
           "arti": ""
         }
       ],
@@ -1440,19 +993,6 @@
         {
           "kanji": "寿命",
           "bacaan": "じゅみょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "几",
-      "label": "几 - Meja kecil  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "凧",
-          "bacaan": "",
           "arti": ""
         }
       ],

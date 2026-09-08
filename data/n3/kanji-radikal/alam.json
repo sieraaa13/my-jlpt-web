@@ -6184,8 +6184,8 @@
     },
     {
       "radikal": "(belum teridentifikasi)",
-      "label": "(belum teridentifikasi) - Menunggu klasifikasi radikal lebih lanjut  (13 kata)",
-      "count": 13,
+      "label": "(belum teridentifikasi) - Menunggu klasifikasi radikal lebih lanjut  (12 kata)",
+      "count": 12,
       "section": "belum",
       "words": [
         {
@@ -6247,11 +6247,6 @@
           "kanji": "起こる",
           "bacaan": "おこる",
           "arti": "terjadi"
-        },
-        {
-          "kanji": "裁判官",
-          "bacaan": "さいばんかん",
-          "arti": "hakim"
         }
       ]
     },
@@ -6570,29 +6565,6 @@
       ]
     },
     {
-      "radikal": "工",
-      "label": "工 - (radikal jarang, lihat contoh kanji) (bukan alam)  (3 kata)",
-      "count": 3,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "左右",
-          "bacaan": "さゆう",
-          "arti": "kiri-kanan"
-        },
-        {
-          "kanji": "左右対称",
-          "bacaan": "さゆうたいしょう",
-          "arti": "simetris kiri-kanan"
-        },
-        {
-          "kanji": "左",
-          "bacaan": "ひだり",
-          "arti": "kiri"
-        }
-      ]
-    },
-    {
       "radikal": "示",
       "label": "示 - (radikal jarang, lihat contoh kanji) (bukan alam)  (2 kata)",
       "count": 2,
@@ -6611,24 +6583,6 @@
       ]
     },
     {
-      "radikal": "車",
-      "label": "車 - (radikal jarang, lihat contoh kanji) (bukan alam)  (2 kata)",
-      "count": 2,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "輝",
-          "bacaan": "かがやき",
-          "arti": "kilauan"
-        },
-        {
-          "kanji": "輝く",
-          "bacaan": "かがやく",
-          "arti": "bersinar"
-        }
-      ]
-    },
-    {
       "radikal": "寸",
       "label": "寸 - (radikal jarang, lihat contoh kanji) (bukan alam)  (2 kata)",
       "count": 2,
@@ -6643,19 +6597,6 @@
           "kanji": "封鎖",
           "bacaan": "ふうさ",
           "arti": "blokade"
-        }
-      ]
-    },
-    {
-      "radikal": "皿",
-      "label": "皿 - (radikal jarang, lihat contoh kanji) (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "盗み",
-          "bacaan": "ぬすむ",
-          "arti": "mencuri/pencurian"
         }
       ]
     },

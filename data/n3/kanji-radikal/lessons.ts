@@ -4,6 +4,7 @@
 // =================================================================
 import alam from "./alam.json";
 import bagianTubuh from "./bagian-tubuh.json";
+import benda from "./benda.json";
 import binatang from "./binatang.json";
 import garisAtasTopi from "./garis-atas-topi.json";
 import kotak from "./kotak.json";
@@ -21,6 +22,7 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   "bagian-tubuh": bagianTubuh as RadikalFile,
   binatang: binatang as RadikalFile,
   tempat: tempat as RadikalFile,
+  benda: benda as RadikalFile,
   "garis-atas-topi": garisAtasTopi as RadikalFile,
   kotak: kotak as RadikalFile,
   pelindung: pelindung as RadikalFile,
@@ -34,6 +36,7 @@ export const radikalKanjiOrder = [
   "bagian-tubuh",
   "binatang",
   "tempat",
+  "benda",
   "garis-atas-topi",
   "kotak",
   "pelindung",
