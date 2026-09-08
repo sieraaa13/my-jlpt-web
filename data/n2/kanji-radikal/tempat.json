@@ -566,24 +566,6 @@
       "section": "main"
     },
     {
-      "radikal": "厂",
-      "label": "厂 - Tebing / pelindung  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "圧勝",
-          "bacaan": "あっしょう",
-          "arti": "kemenangan telak / kemenangan mutlak / menang besar"
-        },
-        {
-          "kanji": "原稿",
-          "bacaan": "げんこう",
-          "arti": "naskah / draf / manuskrip"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "黑",
       "label": "黑 - Hitam  (2 kata)",
       "count": 2,
@@ -597,6 +579,19 @@
           "kanji": "黒鉛",
           "bacaan": "こくえん",
           "arti": "grafit"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "厂",
+      "label": "厂 - Tebing / pelindung  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "原稿",
+          "bacaan": "げんこう",
+          "arti": "naskah / draf / manuskrip"
         }
       ],
       "section": "main"
@@ -636,32 +631,6 @@
           "kanji": "市外",
           "bacaan": "しがい",
           "arti": "luar kota / pinggiran kota / di luar batas kota"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "果たす",
-          "bacaan": "はたす",
-          "arti": "melaksanakan / memenuhi / menyelesaikan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "垂直",
-          "bacaan": "すいちょく",
-          "arti": "tegak lurus / vertikal / perpendicular"
         }
       ],
       "section": "main"

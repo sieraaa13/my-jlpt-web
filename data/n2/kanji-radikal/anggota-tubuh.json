@@ -1488,44 +1488,6 @@
       ]
     },
     {
-      "radikal": "月",
-      "label": "月 - Bulan (bukan anggota tubuh)  (6 kata)",
-      "count": 6,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "有人",
-          "bacaan": "ゆうじん",
-          "arti": "Orang yang ada (Konstruksi umum / sering digunakan dalam konteks teknis/operasional)"
-        },
-        {
-          "kanji": "有痛",
-          "bacaan": "ゆうつう",
-          "arti": "Nyeri / Menyakitkan / Berasa Sakit"
-        },
-        {
-          "kanji": "有害",
-          "bacaan": "ゆうがい",
-          "arti": "Berbahaya / Merugikan / Beracun / Mendatangkan Kerugian"
-        },
-        {
-          "kanji": "有効",
-          "bacaan": "ゆうこう",
-          "arti": "Sah / Berlaku / Efektif / Valid"
-        },
-        {
-          "kanji": "有益",
-          "bacaan": "ゆうえき",
-          "arti": "Bermanfaat / Berguna / Menguntungkan / Bernilai"
-        },
-        {
-          "kanji": "有無",
-          "bacaan": "うむ",
-          "arti": "Keberadaan atau Ketiadaan (Existence or Non-existence) / Ada atau Tidak Ada / Ketersediaan"
-        }
-      ]
-    },
-    {
       "radikal": "刀",
       "label": "刀 - Pedang / pisau (bukan anggota tubuh)  (6 kata)",
       "count": 6,
@@ -1896,19 +1858,6 @@
           "kanji": "皆無",
           "bacaan": "かいむ",
           "arti": "Sama sekali tidak ada / Nihil / Nol / Mutlak tidak ada"
-        }
-      ]
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah (bukan anggota tubuh)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "在籍",
-          "bacaan": "ざいせき",
-          "arti": "Terdaftar / Terdaftar sebagai anggota / Berada dalam daftar / Keanggotaan"
         }
       ]
     },

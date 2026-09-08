@@ -196,8 +196,8 @@
     },
     {
       "radikal": "宀",
-      "label": "宀 - Atap rumah  (25 kata)",
-      "count": 25,
+      "label": "宀 - Atap rumah  (24 kata)",
+      "count": 24,
       "words": [
         {
           "kanji": "実務",
@@ -213,11 +213,6 @@
           "kanji": "実験施設",
           "bacaan": "じっけんしせつ",
           "arti": "fasilitas eksperimen / fasilitas penelitian / laboratorium"
-        },
-        {
-          "kanji": "案内",
-          "bacaan": "あんない",
-          "arti": "pemandu / petunjuk / informasi"
         },
         {
           "kanji": "完成",
@@ -1001,24 +996,6 @@
       "section": "main"
     },
     {
-      "radikal": "土",
-      "label": "土 - Tanah  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "塞ぐ",
-          "bacaan": "ふさぐ",
-          "arti": "menutup / menyumbat / menghalangi"
-        },
-        {
-          "kanji": "報酬",
-          "bacaan": "ほうしゅう",
-          "arti": "imbalan / bayaran / kompensasi"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "穴",
       "label": "穴 - Lubang / gua  (2 kata)",
       "count": 2,
@@ -1073,24 +1050,6 @@
       "section": "main"
     },
     {
-      "radikal": "干",
-      "label": "干 - Kering / berkaitan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "干渉",
-          "bacaan": "かんしょう",
-          "arti": "mengacu pada tindakan mencampuri atau mengganggu urusan / proses / atau hubungan pihak lain"
-        },
-        {
-          "kanji": "幸福",
-          "bacaan": "こうふく",
-          "arti": "kebahagiaan / kesenangan / berbahagia"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "幺",
       "label": "幺 - Benang kecil / belum dewasa  (2 kata)",
       "count": 2,
@@ -1122,37 +1081,6 @@
           "kanji": "用心",
           "bacaan": "ようじん",
           "arti": "kewaspadaan / kehati-hatian / berjaga-jaga"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "風",
-      "label": "風 - Angin  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "風",
-          "bacaan": "かぜ",
-          "arti": "angin"
-        },
-        {
-          "kanji": "風物",
-          "bacaan": "ふうぶつ",
-          "arti": "pemandangan dan hal-hal yang menjadi ciri khas suatu tempat atau musim"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "石",
-      "label": "石 - Batu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "磨く",
-          "bacaan": "みがく",
-          "arti": "menggosok / menyikat / memoles"
         }
       ],
       "section": "main"
@@ -1244,19 +1172,6 @@
           "kanji": "興味",
           "bacaan": "きょうみ",
           "arti": "minat / ketertarikan / rasa ingin tahu"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "柔軟",
-          "bacaan": "じゅうなん",
-          "arti": "fleksibel / lentur / luwes"
         }
       ],
       "section": "main"
@@ -1361,19 +1276,6 @@
           "kanji": "買い占める",
           "bacaan": "かいしめる",
           "arti": "telah menimbun / telah membeli habis / telah membeli semua"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "夂",
-      "label": "夂 - Melangkah pelan  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "条件",
-          "bacaan": "じょうけん",
-          "arti": "syarat / kondisi / ketentuan"
         }
       ],
       "section": "main"

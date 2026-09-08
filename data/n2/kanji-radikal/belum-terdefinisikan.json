@@ -86,29 +86,6 @@
       "section": "main"
     },
     {
-      "radikal": "丿",
-      "label": "丿 - Coretan miring  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "乏しい",
-          "bacaan": "とぼしい",
-          "arti": "kurang / miskin / sedikit"
-        },
-        {
-          "kanji": "乖離",
-          "bacaan": "かいり",
-          "arti": "pemisahan / penyimpangan / kesenjangan"
-        },
-        {
-          "kanji": "垂",
-          "bacaan": "すい",
-          "arti": "menggantung / menjuntai (radikal)"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "厶",
       "label": "厶 - Milik pribadi  (3 kata)",
       "count": 3,
@@ -196,6 +173,24 @@
           "kanji": "急激",
           "bacaan": "きゅうげき",
           "arti": "mendadak dan drastis"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "丿",
+      "label": "丿 - Coretan miring  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "乏しい",
+          "bacaan": "とぼしい",
+          "arti": "kurang / miskin / sedikit"
+        },
+        {
+          "kanji": "乖離",
+          "bacaan": "かいり",
+          "arti": "pemisahan / penyimpangan / kesenjangan"
         }
       ],
       "section": "main"
@@ -397,32 +392,6 @@
       "section": "main"
     },
     {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "業績",
-          "bacaan": "ぎょうせき",
-          "arti": "kinerja / prestasi / pencapaian"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "基本",
-          "bacaan": "きほん",
-          "arti": "dasar / asas / prinsip dasar"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "丨",
       "label": "丨 - Garis tegak  (1 kata)",
       "count": 1,
@@ -509,19 +478,6 @@
           "kanji": "克服",
           "bacaan": "こくふく",
           "arti": "mengatasi / menaklukkan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "月",
-      "label": "月 - Bulan  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "期待",
-          "bacaan": "きたい",
-          "arti": "harapan / ekspektasi / antisipasi"
         }
       ],
       "section": "main"

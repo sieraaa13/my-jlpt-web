@@ -473,44 +473,6 @@
       "section": "main"
     },
     {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "構造",
-          "bacaan": "こうぞう",
-          "arti": "struktur / konstruksi / susunan"
-        },
-        {
-          "kanji": "本位",
-          "bacaan": "ほんい",
-          "arti": "standar / berbasis pada / mengutamakan"
-        },
-        {
-          "kanji": "標示",
-          "bacaan": "ひょうじ",
-          "arti": "tanda / markah / petunjuk visual"
-        },
-        {
-          "kanji": "標識",
-          "bacaan": "ひょうしき",
-          "arti": "rambu-rambu / tanda pengenal"
-        },
-        {
-          "kanji": "横断帯",
-          "bacaan": "おうだんたい",
-          "arti": "jalur penyeberangan"
-        },
-        {
-          "kanji": "極端",
-          "bacaan": "きょくたん",
-          "arti": "ekstrem / sangat / berlebihan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "糸",
       "label": "糸 - Benang/sutra  (6 kata)",
       "count": 6,
@@ -633,29 +595,6 @@
       "section": "main"
     },
     {
-      "radikal": "水",
-      "label": "水 - Air  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "酒気",
-          "bacaan": "しゅき",
-          "arti": "bau alkohol"
-        },
-        {
-          "kanji": "溝",
-          "bacaan": "みぞ",
-          "arti": "parit / selokan / alur/pola"
-        },
-        {
-          "kanji": "法令",
-          "bacaan": "ほうれい",
-          "arti": "peraturan perundang-undangan / hukum dan peraturan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "心",
       "label": "心 - Hati / pikiran  (3 kata)",
       "count": 3,
@@ -743,24 +682,6 @@
           "kanji": "姿勢",
           "bacaan": "しせい",
           "arti": "postur / posisi tubuh / sikap"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "雨",
-      "label": "雨 - Hujan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "霧",
-          "bacaan": "きり",
-          "arti": "kabut"
-        },
-        {
-          "kanji": "露出",
-          "bacaan": "ろしゅつ",
-          "arti": "eksposur / pendedahan / penyingkapan"
         }
       ],
       "section": "main"
@@ -982,19 +903,6 @@
       "section": "main"
     },
     {
-      "radikal": "艸",
-      "label": "艸 - Tumbuhan/rumput  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "荷台",
-          "bacaan": "にだい",
-          "arti": "rak barang"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "寸",
       "label": "寸 - Ukuran / jari tangan  (1 kata)",
       "count": 1,
@@ -1086,19 +994,6 @@
       "section": "main"
     },
     {
-      "radikal": "石",
-      "label": "石 - Batu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "磨耗",
-          "bacaan": "まもう",
-          "arti": "keausan / pengikisan akibat gesekan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "方",
       "label": "方 - Arah/persegi  (1 kata)",
       "count": 1,
@@ -1185,19 +1080,6 @@
           "kanji": "強制",
           "bacaan": "きょうせい",
           "arti": "paksaan / kewajiban"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "地帯",
-          "bacaan": "ちたい",
-          "arti": "zona / wilayah / jalur area"
         }
       ],
       "section": "main"
@@ -1328,19 +1210,6 @@
           "kanji": "空走",
           "bacaan": "くうそう",
           "arti": "melaju kosong / melaju tanpa pengereman"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "皮",
-      "label": "皮 - Kulit  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "破損",
-          "bacaan": "はそん",
-          "arti": "kerusakan / pecah / rusak"
         }
       ],
       "section": "main"

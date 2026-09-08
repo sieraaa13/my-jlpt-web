@@ -893,43 +893,6 @@
       ]
     },
     {
-      "radikal": "火",
-      "label": "火 - Api  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "無条件",
-          "bacaan": "むじょうけん",
-          "arti": "Tanpa Syarat / Tak Bersyarat / Mutlak"
-        },
-        {
-          "kanji": "無給",
-          "bacaan": "むきゅう",
-          "arti": "Tanpa Gaji / Tidak Dibayar"
-        },
-        {
-          "kanji": "無線",
-          "bacaan": "むせん",
-          "arti": "Nirkabel / Tanpa Kabel / Radio"
-        },
-        {
-          "kanji": "無口",
-          "bacaan": "むくち",
-          "arti": "Pendiam / Tidak banyak bicara / Irit bicara / Bungkam"
-        },
-        {
-          "kanji": "無数",
-          "bacaan": "むすう",
-          "arti": "Tak terhitung / Tak terhingga / Jumlah yang sangat banyak"
-        },
-        {
-          "kanji": "熟読",
-          "bacaan": "じゅくどく",
-          "arti": "Membaca dengan saksama / Membaca secara teliti / Membaca dengan mendalam / Studi mendalam"
-        }
-      ]
-    },
-    {
       "radikal": "頁",
       "label": "頁 - Halaman / kepala  (5 kata)",
       "count": 5,
@@ -1435,23 +1398,6 @@
       ]
     },
     {
-      "radikal": "干",
-      "label": "干 - Kering / berkaitan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "平凡",
-          "bacaan": "へいぼん",
-          "arti": "Biasa / Lumrah / Rata-rata / Tidak Menonjol"
-        },
-        {
-          "kanji": "幸運",
-          "bacaan": "こううん",
-          "arti": "Keberuntungan / Nasib Baik / Hoki"
-        }
-      ]
-    },
-    {
       "radikal": "卩",
       "label": "卩 - Segel / lutut  (2 kata)",
       "count": 2,
@@ -1605,18 +1551,6 @@
       ]
     },
     {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "東西",
-          "bacaan": "とうざい",
-          "arti": "Timur dan Barat / (Metaforis) Di Seluruh Negeri/Dunia / Segalanya"
-        }
-      ]
-    },
-    {
       "radikal": "二",
       "label": "二 - Dua  (1 kata)",
       "count": 1,
@@ -1649,18 +1583,6 @@
           "kanji": "処理",
           "bacaan": "しょり",
           "arti": "Pemrosesan / Penanganan / Pengolahan / Mengurus / Menyelesaikan"
-        }
-      ]
-    },
-    {
-      "radikal": "水",
-      "label": "水 - Air  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "求める",
-          "bacaan": "もとめる",
-          "arti": "Mencari / Meminta / Menuntut / Menginginkan"
         }
       ]
     },
