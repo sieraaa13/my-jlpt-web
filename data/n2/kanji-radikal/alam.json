@@ -1422,19 +1422,6 @@
       ]
     },
     {
-      "radikal": "鹿",
-      "label": "鹿 - Rusa (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "麓",
-          "bacaan": "ふもと",
-          "arti": "Kaki gunung / Dasar gunung / Lereng bawah gunung"
-        }
-      ]
-    },
-    {
       "radikal": "白",
       "label": "白 - Putih (bukan alam)  (1 kata)",
       "count": 1,
@@ -1457,19 +1444,6 @@
           "kanji": "敬意",
           "bacaan": "けいい",
           "arti": "Rasa Hormat / Penghargaan / Kekaguman"
-        }
-      ]
-    },
-    {
-      "radikal": "隹",
-      "label": "隹 - Burung (pendek) (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "難く",
-          "bacaan": "かたく",
-          "arti": "Dengan sulit / Sulit untuk / Tidak mungkin / Dengan susah payah"
         }
       ]
     },

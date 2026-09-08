@@ -1145,28 +1145,6 @@
       ]
     },
     {
-      "radikal": "犬",
-      "label": "犬 - Anjing  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "状",
-          "bacaan": "じょう",
-          "arti": "Status / Keadaan / Kondisi / Penampilan / Bentuk / Surat"
-        },
-        {
-          "kanji": "状勢",
-          "bacaan": "じょうせい",
-          "arti": "Kondisi suatu situasi yang melibatkan dinamika atau kekuatan yang berbeda"
-        },
-        {
-          "kanji": "状況",
-          "bacaan": "じょうきょう",
-          "arti": "Situasi / Keadaan / Kondisi / Status"
-        }
-      ]
-    },
-    {
       "radikal": "寸",
       "label": "寸 - Ukuran / jari tangan  (3 kata)",
       "count": 3,
@@ -1379,23 +1357,6 @@
       ]
     },
     {
-      "radikal": "豕",
-      "label": "豕 - (radikal jarang, lihat contoh kanji)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "象徴",
-          "bacaan": "しょうちょう",
-          "arti": "Simbol / Lambang / Representasi"
-        },
-        {
-          "kanji": "豪華",
-          "bacaan": "ごうか",
-          "arti": "Mewah / megah / indah yang berlimpah / luar biasa"
-        }
-      ]
-    },
-    {
       "radikal": "高",
       "label": "高 - Tinggi  (2 kata)",
       "count": 2,
@@ -1546,18 +1507,6 @@
           "kanji": "よそ者",
           "bacaan": "よそもの",
           "arti": "Orang luar / Orang asing (dari tempat lain) / Pendatang / Bukan anggota komunitas"
-        }
-      ]
-    },
-    {
-      "radikal": "隹",
-      "label": "隹 - Burung (pendek)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "雑談",
-          "bacaan": "ざつだん",
-          "arti": "Obrolan Santai / Obrolan Ringan / Basa-basi / Ngobrol-ngobrol"
         }
       ]
     },

@@ -2,6 +2,69 @@
   "title": "Kumpulan Kanji Radikal Binatang",
   "groups": [
     {
+      "radikal": "犬",
+      "label": "犬 - Anjing  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "独立",
+          "bacaan": "どくりつ",
+          "arti": "Kemerdekaan / Independensi / Berdiri Sendiri"
+        },
+        {
+          "kanji": "独特な",
+          "bacaan": "どくとくな",
+          "arti": "Unik / Khas / Istimewa / Tidak Biasa"
+        },
+        {
+          "kanji": "狭める",
+          "bacaan": "せばめる",
+          "arti": "Mempersempit / Menyempitkan / Membatasi / Mengurangi Lingkup"
+        },
+        {
+          "kanji": "獲得",
+          "bacaan": "かくとく",
+          "arti": "Perolehan / Akuisisi / Memperoleh / Mendapatkan"
+        },
+        {
+          "kanji": "独占",
+          "bacaan": "どくせん",
+          "arti": "Monopoli / Eksklusif / Mendominasi"
+        },
+        {
+          "kanji": "犯人",
+          "bacaan": "はんにん",
+          "arti": "Pelaku Kejahatan / Kriminal / Tersangka / Orang yang Bertanggung Jawab"
+        },
+        {
+          "kanji": "獲物",
+          "bacaan": "えもの",
+          "arti": "Barang tangkapan / Hasil buruan / Mangsa"
+        },
+        {
+          "kanji": "犬岩",
+          "bacaan": "いぬいわ",
+          "arti": "Batu berbentuk anjing (formasi karang alami di pesisir)"
+        },
+        {
+          "kanji": "状",
+          "bacaan": "じょう",
+          "arti": "Status / Keadaan / Kondisi / Penampilan / Bentuk / Surat"
+        },
+        {
+          "kanji": "状勢",
+          "bacaan": "じょうせい",
+          "arti": "Kondisi suatu situasi yang melibatkan dinamika atau kekuatan yang berbeda"
+        },
+        {
+          "kanji": "状況",
+          "bacaan": "じょうきょう",
+          "arti": "Situasi / Keadaan / Kondisi / Status"
+        }
+      ]
+    },
+    {
       "radikal": "牛",
       "label": "牛 - Sapi  (10 kata)",
       "count": 10,
@@ -60,57 +123,9 @@
       ]
     },
     {
-      "radikal": "犬",
-      "label": "犬 - Anjing  (8 kata)",
-      "count": 8,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "独立",
-          "bacaan": "どくりつ",
-          "arti": "Kemerdekaan / Independensi / Berdiri Sendiri"
-        },
-        {
-          "kanji": "独特な",
-          "bacaan": "どくとくな",
-          "arti": "Unik / Khas / Istimewa / Tidak Biasa"
-        },
-        {
-          "kanji": "狭める",
-          "bacaan": "せばめる",
-          "arti": "Mempersempit / Menyempitkan / Membatasi / Mengurangi Lingkup"
-        },
-        {
-          "kanji": "獲得",
-          "bacaan": "かくとく",
-          "arti": "Perolehan / Akuisisi / Memperoleh / Mendapatkan"
-        },
-        {
-          "kanji": "独占",
-          "bacaan": "どくせん",
-          "arti": "Monopoli / Eksklusif / Mendominasi"
-        },
-        {
-          "kanji": "犯人",
-          "bacaan": "はんにん",
-          "arti": "Pelaku Kejahatan / Kriminal / Tersangka / Orang yang Bertanggung Jawab"
-        },
-        {
-          "kanji": "獲物",
-          "bacaan": "えもの",
-          "arti": "Barang tangkapan / Hasil buruan / Mangsa"
-        },
-        {
-          "kanji": "犬岩",
-          "bacaan": "いぬいわ",
-          "arti": "Batu berbentuk anjing (formasi karang alami di pesisir)"
-        }
-      ]
-    },
-    {
       "radikal": "馬",
-      "label": "馬 - Kuda  (3 kata)",
-      "count": 3,
+      "label": "馬 - Kuda  (4 kata)",
+      "count": 4,
       "section": "main",
       "words": [
         {
@@ -127,6 +142,11 @@
           "kanji": "馴染む",
           "bacaan": "なじむ",
           "arti": "Beradaptasi / Menyatu / Akrab / Terbiasa / Cocok / Meresap (pada material)"
+        },
+        {
+          "kanji": "驚く",
+          "bacaan": "おどろく",
+          "arti": "terkejut / tercengang / kaget"
         }
       ]
     },
@@ -155,14 +175,81 @@
     },
     {
       "radikal": "隹",
-      "label": "隹 - Burung (pendek)  (1 kata)",
-      "count": 1,
+      "label": "隹 - Burung (pendek)  (3 kata)",
+      "count": 3,
       "section": "main",
       "words": [
         {
           "kanji": "集落",
           "bacaan": "しゅうらく",
           "arti": "Pemukiman / Desa kecil / Dusun / Komunitas (pedesaan)"
+        },
+        {
+          "kanji": "難く",
+          "bacaan": "かたく",
+          "arti": "Dengan sulit / Sulit untuk / Tidak mungkin / Dengan susah payah"
+        },
+        {
+          "kanji": "雑談",
+          "bacaan": "ざつだん",
+          "arti": "Obrolan Santai / Obrolan Ringan / Basa-basi / Ngobrol-ngobrol"
+        }
+      ]
+    },
+    {
+      "radikal": "豕",
+      "label": "豕 - Babi  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "象徴",
+          "bacaan": "しょうちょう",
+          "arti": "Simbol / Lambang / Representasi"
+        },
+        {
+          "kanji": "豪華",
+          "bacaan": "ごうか",
+          "arti": "Mewah / megah / indah yang berlimpah / luar biasa"
+        }
+      ]
+    },
+    {
+      "radikal": "鹿",
+      "label": "鹿 - Rusa  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "麓",
+          "bacaan": "ふもと",
+          "arti": "Kaki gunung / Dasar gunung / Lereng bawah gunung"
+        }
+      ]
+    },
+    {
+      "radikal": "鳥",
+      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "鳴く",
+          "bacaan": "なく",
+          "arti": "Berkicau / Bersuara (untuk burung) / Mengeong / Menggonggong / Melenguh"
+        }
+      ]
+    },
+    {
+      "radikal": "龜",
+      "label": "龜 - Kura-kura  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "亀裂",
+          "bacaan": "きれつ",
+          "arti": "retakan / celah"
         }
       ]
     }
