@@ -420,59 +420,6 @@
       "section": "main"
     },
     {
-      "radikal": "辵",
-      "label": "辵 - Berjalan/bergerak  (9 kata)",
-      "count": 9,
-      "words": [
-        {
-          "kanji": "追い越す",
-          "bacaan": "おいこす",
-          "arti": "menyalip / melewati"
-        },
-        {
-          "kanji": "道路外",
-          "bacaan": "どうろがい",
-          "arti": "di luar jalan raya / area di luar jalan"
-        },
-        {
-          "kanji": "遠心力",
-          "bacaan": "えんしんりょく",
-          "arti": "gaya sentrifugal"
-        },
-        {
-          "kanji": "進路",
-          "bacaan": "しんろ",
-          "arti": "jalur yang ditempuh / arah jalan / rute"
-        },
-        {
-          "kanji": "違法",
-          "bacaan": "いほう",
-          "arti": "ilegal / melanggar hukum / melawan hukum"
-        },
-        {
-          "kanji": "避ける",
-          "bacaan": "さける",
-          "arti": "menghindar / mengelak / menjauhi"
-        },
-        {
-          "kanji": "道幅",
-          "bacaan": "みちはば",
-          "arti": "lebar jalan"
-        },
-        {
-          "kanji": "遮断機",
-          "bacaan": "しゃだんき",
-          "arti": "palang pintu otomatis"
-        },
-        {
-          "kanji": "過失",
-          "bacaan": "かしつ",
-          "arti": "kelalaian / kealpaan / kesalahan yang tidak disengaja"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "糸",
       "label": "糸 - Benang/sutra  (6 kata)",
       "count": 6,
@@ -631,24 +578,6 @@
       "section": "main"
     },
     {
-      "radikal": "行",
-      "label": "行 - Berjalan/pergi  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "衝突",
-          "bacaan": "しょうとつ",
-          "arti": "tabrakan / benturan / perselisihan"
-        },
-        {
-          "kanji": "行為",
-          "bacaan": "こうい",
-          "arti": "tindakan / perbuatan / aksi"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "見",
       "label": "見 - Melihat  (2 kata)",
       "count": 2,
@@ -703,24 +632,6 @@
       "section": "main"
     },
     {
-      "radikal": "阜",
-      "label": "阜 - Gundukan tanah (阝kiri)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "除き",
-          "bacaan": "のぞき",
-          "arti": "kecuali / dengan pengecualian / selain"
-        },
-        {
-          "kanji": "障害者",
-          "bacaan": "しょうがいしゃ",
-          "arti": "penyandang disabilitas / orang berkebutuhan khusus"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "匚",
       "label": "匚 - Kotak terbuka  (2 kata)",
       "count": 2,
@@ -739,24 +650,6 @@
       "section": "main"
     },
     {
-      "radikal": "宀",
-      "label": "宀 - Atap rumah  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "寄る",
-          "bacaan": "よる",
-          "arti": "merapat / menepi"
-        },
-        {
-          "kanji": "宅配",
-          "bacaan": "たくはい",
-          "arti": "pengiriman ke rumah / layanan antar"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "戶",
       "label": "戶 - Pintu  (2 kata)",
       "count": 2,
@@ -770,19 +663,6 @@
           "kanji": "所有者",
           "bacaan": "しょゆうしゃ",
           "arti": "pemilik / pemegang hak milik"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "回避",
-          "bacaan": "かいひ",
-          "arti": "menghindar / mengelak / mencegah terjadinya sesuatu"
         }
       ],
       "section": "main"
@@ -827,19 +707,6 @@
       "section": "main"
     },
     {
-      "radikal": "日",
-      "label": "日 - Matahari / hari  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "間隔",
-          "bacaan": "かんかく",
-          "arti": "jarak / selang / interval"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "走",
       "label": "走 - Berlari  (1 kata)",
       "count": 1,
@@ -861,19 +728,6 @@
           "kanji": "視界",
           "bacaan": "しかい",
           "arti": "jarak pandang / bidang pandang / penglihatan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "方",
-      "label": "方 - Arah/persegi  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "防止",
-          "bacaan": "ぼうし",
-          "arti": "pencegahan / mencegah"
         }
       ],
       "section": "main"
@@ -996,19 +850,6 @@
       "section": "main"
     },
     {
-      "radikal": "厂",
-      "label": "厂 - Tebing / pelindung  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "原則",
-          "bacaan": "げんそく",
-          "arti": "prinsip / aturan dasar / pada umumnya"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "乙",
       "label": "乙 - Kedua (urutan)  (1 kata)",
       "count": 1,
@@ -1074,19 +915,6 @@
       "section": "main"
     },
     {
-      "radikal": "穴",
-      "label": "穴 - Lubang/gua  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "空走",
-          "bacaan": "くうそう",
-          "arti": "melaju kosong / melaju tanpa pengereman"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "亠",
       "label": "亠 - Garis di atas / tutup  (1 kata)",
       "count": 1,
@@ -1121,32 +949,6 @@
           "kanji": "細々",
           "bacaan": "ほそぼそ",
           "arti": "kecil-kecilan / tipis / samara-samar"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "囗",
-      "label": "囗 - Kotak / bingkai besar  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "図々しく",
-          "bacaan": "ずうずうしく",
-          "arti": "dengan tidak tahu malu / dengan kurang ajar / dengan sembarangan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "广",
-      "label": "广 - Bangunan beratap miring / pelindung  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "度々",
-          "bacaan": "たびたび",
-          "arti": "sering kali / berulang kali / berulang-ulang"
         }
       ],
       "section": "main"

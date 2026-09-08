@@ -720,43 +720,6 @@
       ]
     },
     {
-      "radikal": "行",
-      "label": "行 - Berjalan/pergi  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "行為",
-          "bacaan": "こうい",
-          "arti": "Tindakan / Perbuatan / Perilaku"
-        },
-        {
-          "kanji": "行動",
-          "bacaan": "こうどう",
-          "arti": "Tindakan / Perilaku / Gerak-gerik"
-        },
-        {
-          "kanji": "衝突事故",
-          "bacaan": "しょうとつじこ",
-          "arti": "Kecelakaan Tabrakan / Kecelakaan Benturan"
-        },
-        {
-          "kanji": "行方",
-          "bacaan": "ゆくえ",
-          "arti": "Keberadaan / Jejak / Nasib / Tujuan / Kemana perginya"
-        },
-        {
-          "kanji": "衝突",
-          "bacaan": "しょうとつ",
-          "arti": "Tabrakan / Bentrokan / Konflik / Pertentangan"
-        },
-        {
-          "kanji": "行きずりのひと",
-          "bacaan": "いきずりのひと",
-          "arti": "Orang yang kebetulan lewat / Orang asing yang ditemui di jalan / Orang yang ditemui sebentar secara kebetulan"
-        }
-      ]
-    },
-    {
       "radikal": "癶",
       "label": "癶 - Melangkah dengan kedua kaki  (6 kata)",
       "count": 6,
@@ -1531,18 +1494,6 @@
           "kanji": "立派",
           "bacaan": "りっぱ",
           "arti": "Megah / Hebat / Terkemuka / Terpuji / Layak / Sempurna"
-        }
-      ]
-    },
-    {
-      "radikal": "邑",
-      "label": "邑 - Kota / wilayah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "部門",
-          "bacaan": "ぶもん",
-          "arti": "Departemen / Divisi / Bagian / Sektor"
         }
       ]
     },

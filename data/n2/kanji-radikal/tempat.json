@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "辵",
-      "label": "辵 - Berjalan/bergerak  (55 kata)",
-      "count": 55,
+      "label": "辵 - Berjalan/bergerak  (63 kata)",
+      "count": 63,
       "words": [
         {
           "kanji": "進入",
@@ -280,14 +280,202 @@
           "kanji": "遺伝",
           "bacaan": "いでん",
           "arti": "keturunan / pewarisan sifat / genetika"
+        },
+        {
+          "kanji": "追い越す",
+          "bacaan": "おいこす",
+          "arti": "menyalip / melewati"
+        },
+        {
+          "kanji": "道路外",
+          "bacaan": "どうろがい",
+          "arti": "di luar jalan raya / area di luar jalan"
+        },
+        {
+          "kanji": "遠心力",
+          "bacaan": "えんしんりょく",
+          "arti": "gaya sentrifugal"
+        },
+        {
+          "kanji": "進路",
+          "bacaan": "しんろ",
+          "arti": "jalur yang ditempuh / arah jalan / rute"
+        },
+        {
+          "kanji": "違法",
+          "bacaan": "いほう",
+          "arti": "ilegal / melanggar hukum / melawan hukum"
+        },
+        {
+          "kanji": "道幅",
+          "bacaan": "みちはば",
+          "arti": "lebar jalan"
+        },
+        {
+          "kanji": "遮断機",
+          "bacaan": "しゃだんき",
+          "arti": "palang pintu otomatis"
+        },
+        {
+          "kanji": "過失",
+          "bacaan": "かしつ",
+          "arti": "kelalaian / kealpaan / kesalahan yang tidak disengaja"
         }
       ],
       "section": "main"
     },
     {
+      "radikal": "宀",
+      "label": "宀 - Atap rumah  (28 kata)",
+      "count": 28,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "実務",
+          "bacaan": "じつむ",
+          "arti": "pekerjaan praktis / tugas aktual / praktik bisnis"
+        },
+        {
+          "kanji": "実施",
+          "bacaan": "じっし",
+          "arti": "pelaksanaan / implementasi / melaksanakan"
+        },
+        {
+          "kanji": "実験施設",
+          "bacaan": "じっけんしせつ",
+          "arti": "fasilitas eksperimen / fasilitas penelitian / laboratorium"
+        },
+        {
+          "kanji": "完成",
+          "bacaan": "かんせい",
+          "arti": "selesai / penyelesaian / perampungan"
+        },
+        {
+          "kanji": "寄付",
+          "bacaan": "きふ",
+          "arti": "donasi / sumbangan / kontribusi"
+        },
+        {
+          "kanji": "完璧",
+          "bacaan": "かんぺき",
+          "arti": "sempurna / tanpa cacat / mutlak"
+        },
+        {
+          "kanji": "定価",
+          "bacaan": "ていか",
+          "arti": "harga eceran / harga standar / harga tetap"
+        },
+        {
+          "kanji": "察知",
+          "bacaan": "さっち",
+          "arti": "mendeteksi / mengendus / merasakan"
+        },
+        {
+          "kanji": "家具",
+          "bacaan": "かぐ",
+          "arti": "perabotan / furnitur"
+        },
+        {
+          "kanji": "実用化",
+          "bacaan": "じつようか",
+          "arti": "komersialisasi / penerapan praktis / menjadi praktis"
+        },
+        {
+          "kanji": "寄り",
+          "bacaan": "より",
+          "arti": "lebih dekat / pendekatan / berdekatan"
+        },
+        {
+          "kanji": "容姿",
+          "bacaan": "ようし",
+          "arti": "penampilan fisik / rupa / wajah dan figur"
+        },
+        {
+          "kanji": "実施中",
+          "bacaan": "じっしちゅう",
+          "arti": "sedang berlangsung / dalam pelaksanaan / dalam proses"
+        },
+        {
+          "kanji": "実感",
+          "bacaan": "じっかん",
+          "arti": "perasaan nyata / kesadaran/pemahaman yang mendalam / pengalaman pribadi yang sesungguhnya"
+        },
+        {
+          "kanji": "宣伝用",
+          "bacaan": "せんでんよう",
+          "arti": "untuk tujuan promosi/iklan / digunakan untuk promosi/iklan / bahan promosi"
+        },
+        {
+          "kanji": "定着",
+          "bacaan": "ていちゃく",
+          "arti": "stabilisasi / penetapan / melekat"
+        },
+        {
+          "kanji": "密閉",
+          "bacaan": "みっぺい",
+          "arti": "menutup rapat / menyegel kedap udara/cair / tertutup rapat"
+        },
+        {
+          "kanji": "密着",
+          "bacaan": "みっちゃく",
+          "arti": "menempel erat / melekat / dekat secara intim"
+        },
+        {
+          "kanji": "容易",
+          "bacaan": "ようい",
+          "arti": "mudah / gampang / simpel"
+        },
+        {
+          "kanji": "実践",
+          "bacaan": "じっせん",
+          "arti": "pelaksanaan praktis / praktik nyata / tindakan"
+        },
+        {
+          "kanji": "家事",
+          "bacaan": "かじ",
+          "arti": "urusan rumah tangga"
+        },
+        {
+          "kanji": "客席沿い",
+          "bacaan": "きゃくせきぞい",
+          "arti": "sepanjang sisi kursi penonton / di sepanjang area penonton"
+        },
+        {
+          "kanji": "宿泊",
+          "bacaan": "しゅくはく",
+          "arti": "akomodasi / penginapan / menginap"
+        },
+        {
+          "kanji": "客観視",
+          "bacaan": "きゃっかんし",
+          "arti": "obyektivasi / melihat secara objektif / memandang dari sudut pandang netral"
+        },
+        {
+          "kanji": "安楽",
+          "bacaan": "あんらく",
+          "arti": "kenyamanan / kesenangan / kemudahan"
+        },
+        {
+          "kanji": "安住",
+          "bacaan": "あんじゅう",
+          "arti": "tinggal dengan damai / hidup tenang dan nyaman di suatu tempat / menetap dengan tentram"
+        },
+        {
+          "kanji": "寄る",
+          "bacaan": "よる",
+          "arti": "merapat / menepi"
+        },
+        {
+          "kanji": "宅配",
+          "bacaan": "たくはい",
+          "arti": "pengiriman ke rumah / layanan antar"
+        }
+      ]
+    },
+    {
       "radikal": "門",
-      "label": "門 - Pintu gerbang  (14 kata)",
-      "count": 14,
+      "label": "門 - Pintu gerbang  (15 kata)",
+      "count": 15,
       "words": [
         {
           "kanji": "開始",
@@ -358,14 +546,82 @@
           "kanji": "関わり合い",
           "bacaan": "かかわりあい",
           "arti": "berinteraksi / terlibat / berhubungan"
+        },
+        {
+          "kanji": "間隔",
+          "bacaan": "かんかく",
+          "arti": "jarak / selang / interval"
         }
       ],
       "section": "main"
     },
     {
+      "radikal": "囗",
+      "label": "囗 - Kotak / bingkai besar  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "固定観念",
+          "bacaan": "こていかんねん",
+          "arti": "pandangan yang kaku / prasangka / anggapan yang tetap"
+        },
+        {
+          "kanji": "国際宇宙",
+          "bacaan": "こくさいうちゅう",
+          "arti": "antariksa internasional / kosmos internasional"
+        },
+        {
+          "kanji": "国経済成長",
+          "bacaan": "くにけいざいせいちょう",
+          "arti": "pertumbuhan ekonomi nasional"
+        },
+        {
+          "kanji": "団体",
+          "bacaan": "だんたい",
+          "arti": "kelompok / organisasi / asosiasi"
+        },
+        {
+          "kanji": "国家",
+          "bacaan": "こっか",
+          "arti": "negara / bangsa / negara-bangsa"
+        },
+        {
+          "kanji": "図る",
+          "bacaan": "はかる",
+          "arti": "merencanakan / berkonspirasi / mengupayakan"
+        },
+        {
+          "kanji": "図々しく",
+          "bacaan": "ずうずうしく",
+          "arti": "dengan tidak tahu malu / dengan kurang ajar / dengan sembarangan"
+        },
+        {
+          "kanji": "回路",
+          "bacaan": "かいろ",
+          "arti": "sirkuit / rangkaian / jalur"
+        },
+        {
+          "kanji": "回数",
+          "bacaan": "かいすう",
+          "arti": "jumlah kali / frekuensi / bilangan pengulangan"
+        },
+        {
+          "kanji": "回復",
+          "bacaan": "かいふく",
+          "arti": "pemulihan / pembalihan / perbaikan"
+        },
+        {
+          "kanji": "回避",
+          "bacaan": "かいひ",
+          "arti": "menghindar / mengelak / mencegah terjadinya sesuatu"
+        }
+      ]
+    },
+    {
       "radikal": "田",
-      "label": "田 - Sawah/ladang  (7 kata)",
-      "count": 7,
+      "label": "田 - Sawah/ladang  (11 kata)",
+      "count": 11,
       "words": [
         {
           "kanji": "異なる",
@@ -401,14 +657,271 @@
           "kanji": "畳む",
           "bacaan": "たたむ",
           "arti": "melipat / melipatgandakan / menutup"
+        },
+        {
+          "kanji": "申請",
+          "bacaan": "しんせい",
+          "arti": "aplikasi / permohonan / pengajuan"
+        },
+        {
+          "kanji": "画面",
+          "bacaan": "がめん",
+          "arti": "layar / tampilan / gambar di layar"
+        },
+        {
+          "kanji": "画期的",
+          "bacaan": "かっきてき",
+          "arti": "inovatif / terobosan / revolusioner"
+        },
+        {
+          "kanji": "画用紙",
+          "bacaan": "がようし",
+          "arti": "kertas gambar / kertas lukis"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "阜",
+      "label": "阜 - Gundukan tanah (阝kiri)  (9 kata)",
+      "count": 9,
+      "words": [
+        {
+          "kanji": "隣",
+          "bacaan": "となり",
+          "arti": "sebelah / di samping / bersebelahan"
+        },
+        {
+          "kanji": "防ぐ",
+          "bacaan": "ふせぐ",
+          "arti": "mencegah / menghindari / mempertahankan"
+        },
+        {
+          "kanji": "障害",
+          "bacaan": "しょうがい",
+          "arti": "hambatan / halangan / rintangan"
+        },
+        {
+          "kanji": "陽気",
+          "bacaan": "ようき",
+          "arti": "ceria / riang / gembira"
+        },
+        {
+          "kanji": "隔てる",
+          "bacaan": "へだてる",
+          "arti": "memisahkan / mengisolasi / menjauhkan"
+        },
+        {
+          "kanji": "陸上競技",
+          "bacaan": "りくじょうきょうぎ",
+          "arti": "atletik"
+        },
+        {
+          "kanji": "除き",
+          "bacaan": "のぞき",
+          "arti": "kecuali / dengan pengecualian / selain"
+        },
+        {
+          "kanji": "障害者",
+          "bacaan": "しょうがいしゃ",
+          "arti": "penyandang disabilitas / orang berkebutuhan khusus"
+        },
+        {
+          "kanji": "防止",
+          "bacaan": "ぼうし",
+          "arti": "pencegahan / mencegah"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "行",
+      "label": "行 - Berjalan/pergi  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "衝突",
+          "bacaan": "しょうとつ",
+          "arti": "tabrakan / benturan / perselisihan"
+        },
+        {
+          "kanji": "行為",
+          "bacaan": "こうい",
+          "arti": "tindakan / perbuatan / aksi"
+        },
+        {
+          "kanji": "行動",
+          "bacaan": "こうどう",
+          "arti": "Tindakan / Perilaku / Gerak-gerik"
+        },
+        {
+          "kanji": "衝突事故",
+          "bacaan": "しょうとつじこ",
+          "arti": "Kecelakaan Tabrakan / Kecelakaan Benturan"
+        },
+        {
+          "kanji": "行方",
+          "bacaan": "ゆくえ",
+          "arti": "Keberadaan / Jejak / Nasib / Tujuan / Kemana perginya"
+        },
+        {
+          "kanji": "行きずりのひと",
+          "bacaan": "いきずりのひと",
+          "arti": "Orang yang kebetulan lewat / Orang asing yang ditemui di jalan / Orang yang ditemui sebentar secara kebetulan"
+        }
+      ]
+    },
+    {
+      "radikal": "广",
+      "label": "广 - Bangunan beratap miring / pelindung  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "度",
+          "bacaan": "たび",
+          "arti": "derajat / tingkat / frekuensi"
+        },
+        {
+          "kanji": "度々",
+          "bacaan": "たびたび",
+          "arti": "sering kali / berulang kali / berulang-ulang"
+        },
+        {
+          "kanji": "廃止",
+          "bacaan": "はいし",
+          "arti": "penghapusan / pembatalan / pencabutan"
+        },
+        {
+          "kanji": "広告",
+          "bacaan": "こうこく",
+          "arti": "iklan / periklanan / pengumuman"
+        },
+        {
+          "kanji": "底上げ",
+          "bacaan": "そこあげ",
+          "arti": "mengangkat dasar / menaikkan dasar"
+        },
+        {
+          "kanji": "庇う",
+          "bacaan": "かばう",
+          "arti": "melindungi / membela / menutupi kesalahan"
+        }
+      ]
+    },
+    {
+      "radikal": "穴",
+      "label": "穴 - Lubang / gua  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "突然",
+          "bacaan": "とつぜん",
+          "arti": "tiba-tiba / mendadak / tanpa peringatan"
+        },
+        {
+          "kanji": "突っ込む",
+          "bacaan": "つっこむ",
+          "arti": "menancapkan/menyodokkan ke dalam / menerjang masuk / menabrak"
+        },
+        {
+          "kanji": "突拍子",
+          "bacaan": "とっぴょうし",
+          "arti": "(biasanya digunakan dalam frasa 突拍子もない): sangat aneh / tak terduga / di luar dugaan"
+        },
+        {
+          "kanji": "突き詰める",
+          "bacaan": "つきつめる",
+          "arti": "menganalisis secara mendalam / menyelidiki secara tuntas / menggali sampai akar"
+        },
+        {
+          "kanji": "空想",
+          "bacaan": "くうそう",
+          "arti": "lamunan / fantasi / khayalan"
+        },
+        {
+          "kanji": "空き地",
+          "bacaan": "あきち",
+          "arti": "tanah kosong / lahan kosong / lapangan terbuka"
+        },
+        {
+          "kanji": "空走",
+          "bacaan": "くうそう",
+          "arti": "melaju kosong / melaju tanpa pengereman"
+        }
+      ]
+    },
+    {
+      "radikal": "里",
+      "label": "里 - Desa / satuan jarak  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "野鳥",
+          "bacaan": "やちょう",
+          "arti": "burung liar / burung bebas / burung yang hidup di alam"
+        },
+        {
+          "kanji": "重視",
+          "bacaan": "じゅうし",
+          "arti": "menekankan / memprioritaskan / menganggap penting"
+        },
+        {
+          "kanji": "重苦しい",
+          "bacaan": "おもくるしい",
+          "arti": "berat / menekan / suram"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "邑",
+      "label": "邑 - Kota / wilayah  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "都会",
+          "bacaan": "とかい",
+          "arti": "Kota besar / Metropolis / Pusat perkotaan"
+        },
+        {
+          "kanji": "郵便物",
+          "bacaan": "ゆうびんぶつ",
+          "arti": "kiriman pos / surat"
+        },
+        {
+          "kanji": "部門",
+          "bacaan": "ぶもん",
+          "arti": "Departemen / Divisi / Bagian / Sektor"
+        }
+      ]
+    },
+    {
+      "radikal": "厂",
+      "label": "厂 - Tebing / pelindung  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "原稿",
+          "bacaan": "げんこう",
+          "arti": "naskah / draf / manuskrip"
+        },
+        {
+          "kanji": "原則",
+          "bacaan": "げんそく",
+          "arti": "prinsip / aturan dasar / pada umumnya"
         }
       ],
       "section": "main"
     },
     {
       "radikal": "又",
-      "label": "又 - Tangan (lagi)  (6 kata)",
+      "label": "又 - Tangan (lagi) (bukan tempat)  (6 kata)",
       "count": 6,
+      "section": "belum",
       "words": [
         {
           "kanji": "反発",
@@ -440,51 +953,13 @@
           "bacaan": "はんろん",
           "arti": "sanggahan / bantahan / argumen balasan"
         }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "阜",
-      "label": "阜 - Gundukan tanah (阝kiri)  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "隣",
-          "bacaan": "となり",
-          "arti": "sebelah / di samping / bersebelahan"
-        },
-        {
-          "kanji": "防ぐ",
-          "bacaan": "ふせぐ",
-          "arti": "mencegah / menghindari / mempertahankan"
-        },
-        {
-          "kanji": "障害",
-          "bacaan": "しょうがい",
-          "arti": "hambatan / halangan / rintangan"
-        },
-        {
-          "kanji": "陽気",
-          "bacaan": "ようき",
-          "arti": "ceria / riang / gembira"
-        },
-        {
-          "kanji": "隔てる",
-          "bacaan": "へだてる",
-          "arti": "memisahkan / mengisolasi / menjauhkan"
-        },
-        {
-          "kanji": "陸上競技",
-          "bacaan": "りくじょうきょうぎ",
-          "arti": "atletik"
-        }
-      ],
-      "section": "main"
+      ]
     },
     {
       "radikal": "力",
-      "label": "力 - Tenaga  (3 kata)",
+      "label": "力 - Tenaga (bukan tempat)  (3 kata)",
       "count": 3,
+      "section": "belum",
       "words": [
         {
           "kanji": "励ます",
@@ -501,36 +976,13 @@
           "bacaan": "どうさ",
           "arti": "gerakan / tindakan / gerak tubuh"
         }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "里",
-      "label": "里 - Desa / satuan jarak  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "野鳥",
-          "bacaan": "やちょう",
-          "arti": "burung liar / burung bebas / burung yang hidup di alam"
-        },
-        {
-          "kanji": "重視",
-          "bacaan": "じゅうし",
-          "arti": "menekankan / memprioritaskan / menganggap penting"
-        },
-        {
-          "kanji": "重苦しい",
-          "bacaan": "おもくるしい",
-          "arti": "berat / menekan / suram"
-        }
-      ],
-      "section": "main"
+      ]
     },
     {
       "radikal": "黑",
-      "label": "黑 - Hitam  (2 kata)",
+      "label": "黑 - Hitam (bukan tempat)  (2 kata)",
       "count": 2,
+      "section": "belum",
       "words": [
         {
           "kanji": "黙る",
@@ -542,60 +994,46 @@
           "bacaan": "こくえん",
           "arti": "grafit"
         }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "厂",
-      "label": "厂 - Tebing / pelindung  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "原稿",
-          "bacaan": "げんこう",
-          "arti": "naskah / draf / manuskrip"
-        }
-      ],
-      "section": "main"
+      ]
     },
     {
       "radikal": "寸",
-      "label": "寸 - Ukuran / jari tangan  (1 kata)",
+      "label": "寸 - Ukuran / jari tangan (bukan tempat)  (1 kata)",
       "count": 1,
+      "section": "belum",
       "words": [
         {
           "kanji": "導く",
           "bacaan": "みちびく",
           "arti": "memimpin / membimbing / mengarahkan"
         }
-      ],
-      "section": "main"
+      ]
     },
     {
       "radikal": "巾",
-      "label": "巾 - Kain  (1 kata)",
+      "label": "巾 - Kain (bukan tempat)  (1 kata)",
       "count": 1,
+      "section": "belum",
       "words": [
         {
           "kanji": "市外",
           "bacaan": "しがい",
           "arti": "luar kota / pinggiran kota / di luar batas kota"
         }
-      ],
-      "section": "main"
+      ]
     },
     {
       "radikal": "丿",
-      "label": "丿 - Coretan miring  (1 kata)",
+      "label": "丿 - Coretan miring (bukan tempat)  (1 kata)",
       "count": 1,
+      "section": "belum",
       "words": [
         {
           "kanji": "乗り継ぐ",
           "bacaan": "のりつぐ",
           "arti": "naik dan menyambung"
         }
-      ],
-      "section": "main"
+      ]
     }
   ]
 }

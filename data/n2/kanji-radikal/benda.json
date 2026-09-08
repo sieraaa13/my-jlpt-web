@@ -195,134 +195,6 @@
       "section": "main"
     },
     {
-      "radikal": "宀",
-      "label": "宀 - Atap rumah  (24 kata)",
-      "count": 24,
-      "words": [
-        {
-          "kanji": "実務",
-          "bacaan": "じつむ",
-          "arti": "pekerjaan praktis / tugas aktual / praktik bisnis"
-        },
-        {
-          "kanji": "実施",
-          "bacaan": "じっし",
-          "arti": "pelaksanaan / implementasi / melaksanakan"
-        },
-        {
-          "kanji": "実験施設",
-          "bacaan": "じっけんしせつ",
-          "arti": "fasilitas eksperimen / fasilitas penelitian / laboratorium"
-        },
-        {
-          "kanji": "完成",
-          "bacaan": "かんせい",
-          "arti": "selesai / penyelesaian / perampungan"
-        },
-        {
-          "kanji": "寄付",
-          "bacaan": "きふ",
-          "arti": "donasi / sumbangan / kontribusi"
-        },
-        {
-          "kanji": "完璧",
-          "bacaan": "かんぺき",
-          "arti": "sempurna / tanpa cacat / mutlak"
-        },
-        {
-          "kanji": "定価",
-          "bacaan": "ていか",
-          "arti": "harga eceran / harga standar / harga tetap"
-        },
-        {
-          "kanji": "察知",
-          "bacaan": "さっち",
-          "arti": "mendeteksi / mengendus / merasakan"
-        },
-        {
-          "kanji": "家具",
-          "bacaan": "かぐ",
-          "arti": "perabotan / furnitur"
-        },
-        {
-          "kanji": "実用化",
-          "bacaan": "じつようか",
-          "arti": "komersialisasi / penerapan praktis / menjadi praktis"
-        },
-        {
-          "kanji": "寄り",
-          "bacaan": "より",
-          "arti": "lebih dekat / pendekatan / berdekatan"
-        },
-        {
-          "kanji": "容姿",
-          "bacaan": "ようし",
-          "arti": "penampilan fisik / rupa / wajah dan figur"
-        },
-        {
-          "kanji": "実施中",
-          "bacaan": "じっしちゅう",
-          "arti": "sedang berlangsung / dalam pelaksanaan / dalam proses"
-        },
-        {
-          "kanji": "実感",
-          "bacaan": "じっかん",
-          "arti": "perasaan nyata / kesadaran/pemahaman yang mendalam / pengalaman pribadi yang sesungguhnya"
-        },
-        {
-          "kanji": "宣伝用",
-          "bacaan": "せんでんよう",
-          "arti": "untuk tujuan promosi/iklan / digunakan untuk promosi/iklan / bahan promosi"
-        },
-        {
-          "kanji": "定着",
-          "bacaan": "ていちゃく",
-          "arti": "stabilisasi / penetapan / melekat"
-        },
-        {
-          "kanji": "密閉",
-          "bacaan": "みっぺい",
-          "arti": "menutup rapat / menyegel kedap udara/cair / tertutup rapat"
-        },
-        {
-          "kanji": "密着",
-          "bacaan": "みっちゃく",
-          "arti": "menempel erat / melekat / dekat secara intim"
-        },
-        {
-          "kanji": "容易",
-          "bacaan": "ようい",
-          "arti": "mudah / gampang / simpel"
-        },
-        {
-          "kanji": "実践",
-          "bacaan": "じっせん",
-          "arti": "pelaksanaan praktis / praktik nyata / tindakan"
-        },
-        {
-          "kanji": "家事",
-          "bacaan": "かじ",
-          "arti": "urusan rumah tangga"
-        },
-        {
-          "kanji": "客席沿い",
-          "bacaan": "きゃくせきぞい",
-          "arti": "sepanjang sisi kursi penonton / di sepanjang area penonton"
-        },
-        {
-          "kanji": "宿泊",
-          "bacaan": "しゅくはく",
-          "arti": "akomodasi / penginapan / menginap"
-        },
-        {
-          "kanji": "客観視",
-          "bacaan": "きゃっかんし",
-          "arti": "obyektivasi / melihat secara objektif / memandang dari sudut pandang netral"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "車",
       "label": "車 - Kereta / roda  (10 kata)",
       "count": 10,
@@ -472,87 +344,6 @@
       "section": "main"
     },
     {
-      "radikal": "囗",
-      "label": "囗 - Kotak / bingkai besar  (7 kata)",
-      "count": 7,
-      "words": [
-        {
-          "kanji": "固定観念",
-          "bacaan": "こていかんねん",
-          "arti": "pandangan yang kaku / prasangka / anggapan yang tetap"
-        },
-        {
-          "kanji": "国際宇宙",
-          "bacaan": "こくさいうちゅう",
-          "arti": "antariksa internasional / kosmos internasional"
-        },
-        {
-          "kanji": "国経済成長",
-          "bacaan": "くにけいざいせいちょう",
-          "arti": "pertumbuhan ekonomi nasional"
-        },
-        {
-          "kanji": "団体",
-          "bacaan": "だんたい",
-          "arti": "kelompok / organisasi / asosiasi"
-        },
-        {
-          "kanji": "国家",
-          "bacaan": "こっか",
-          "arti": "negara / bangsa / negara-bangsa"
-        },
-        {
-          "kanji": "図る",
-          "bacaan": "はかる",
-          "arti": "merencanakan / berkonspirasi / mengupayakan"
-        },
-        {
-          "kanji": "図々しく",
-          "bacaan": "ずうずうしく",
-          "arti": "dengan tidak tahu malu / dengan kurang ajar / dengan sembarangan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "广",
-      "label": "广 - Bangunan beratap miring / pelindung  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "度",
-          "bacaan": "たび",
-          "arti": "derajat / tingkat / frekuensi"
-        },
-        {
-          "kanji": "度々",
-          "bacaan": "たびたび",
-          "arti": "sering kali / berulang kali / berulang-ulang"
-        },
-        {
-          "kanji": "廃止",
-          "bacaan": "はいし",
-          "arti": "penghapusan / pembatalan / pencabutan"
-        },
-        {
-          "kanji": "広告",
-          "bacaan": "こうこく",
-          "arti": "iklan / periklanan / pengumuman"
-        },
-        {
-          "kanji": "底上げ",
-          "bacaan": "そこあげ",
-          "arti": "mengangkat dasar / menaikkan dasar"
-        },
-        {
-          "kanji": "庇う",
-          "bacaan": "かばう",
-          "arti": "melindungi / membela / menutupi kesalahan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "弓",
       "label": "弓 - Busur panah  (6 kata)",
       "count": 6,
@@ -657,62 +448,6 @@
       "section": "main"
     },
     {
-      "radikal": "大",
-      "label": "大 - Besar  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "突然",
-          "bacaan": "とつぜん",
-          "arti": "tiba-tiba / mendadak / tanpa peringatan"
-        },
-        {
-          "kanji": "突っ込む",
-          "bacaan": "つっこむ",
-          "arti": "menancapkan/menyodokkan ke dalam / menerjang masuk / menabrak"
-        },
-        {
-          "kanji": "突拍子",
-          "bacaan": "とっぴょうし",
-          "arti": "(biasanya digunakan dalam frasa 突拍子もない): sangat aneh / tak terduga / di luar dugaan"
-        },
-        {
-          "kanji": "突き詰める",
-          "bacaan": "つきつめる",
-          "arti": "menganalisis secara mendalam / menyelidiki secara tuntas / menggali sampai akar"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "凵",
-      "label": "凵 - Wadah cekung  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "画面",
-          "bacaan": "がめん",
-          "arti": "layar / tampilan / gambar di layar"
-        },
-        {
-          "kanji": "画期的",
-          "bacaan": "かっきてき",
-          "arti": "inovatif / terobosan / revolusioner"
-        },
-        {
-          "kanji": "画用紙",
-          "bacaan": "がようし",
-          "arti": "kertas gambar / kertas lukis"
-        },
-        {
-          "kanji": "出世",
-          "bacaan": "しゅっせ",
-          "arti": "sukses dalam karier / kenaikan status sosial / mendapatkan posisi tinggi"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "人",
       "label": "人 - Orang / manusia  (4 kata)",
       "count": 4,
@@ -764,29 +499,6 @@
           "kanji": "予報",
           "bacaan": "よほう",
           "arti": "prakiraan / ramalan / melaporkan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "回路",
-          "bacaan": "かいろ",
-          "arti": "sirkuit / rangkaian / jalur"
-        },
-        {
-          "kanji": "回数",
-          "bacaan": "かいすう",
-          "arti": "jumlah kali / frekuensi / bilangan pengulangan"
-        },
-        {
-          "kanji": "回復",
-          "bacaan": "かいふく",
-          "arti": "pemulihan / pembalihan / perbaikan"
         }
       ],
       "section": "main"
@@ -907,42 +619,6 @@
       "section": "main"
     },
     {
-      "radikal": "女",
-      "label": "女 - Wanita / perempuan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "安楽",
-          "bacaan": "あんらく",
-          "arti": "kenyamanan / kesenangan / kemudahan"
-        },
-        {
-          "kanji": "安住",
-          "bacaan": "あんじゅう",
-          "arti": "tinggal dengan damai / hidup tenang dan nyaman di suatu tempat / menetap dengan tentram"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "穴",
-      "label": "穴 - Lubang / gua  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "空想",
-          "bacaan": "くうそう",
-          "arti": "lamunan / fantasi / khayalan"
-        },
-        {
-          "kanji": "空き地",
-          "bacaan": "あきち",
-          "arti": "tanah kosong / lahan kosong / lapangan terbuka"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "工",
       "label": "工 - Pekerjaan / alat  (2 kata)",
       "count": 2,
@@ -992,6 +668,19 @@
           "kanji": "用心",
           "bacaan": "ようじん",
           "arti": "kewaspadaan / kehati-hatian / berjaga-jaga"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "凵",
+      "label": "凵 - Wadah cekung  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "出世",
+          "bacaan": "しゅっせ",
+          "arti": "sukses dalam karier / kenaikan status sosial / mendapatkan posisi tinggi"
         }
       ],
       "section": "main"

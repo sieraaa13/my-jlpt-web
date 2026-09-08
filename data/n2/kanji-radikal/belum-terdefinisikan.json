@@ -82,8 +82,8 @@
     },
     {
       "radikal": "田",
-      "label": "田 - Sawah / ladang  (3 kata)",
-      "count": 3,
+      "label": "田 - Sawah / ladang  (2 kata)",
+      "count": 2,
       "words": [
         {
           "kanji": "当惑",
@@ -94,11 +94,6 @@
           "kanji": "当事者",
           "bacaan": "とうじしゃ",
           "arti": "pihak yang terlibat / berkepentingan"
-        },
-        {
-          "kanji": "申請",
-          "bacaan": "しんせい",
-          "arti": "aplikasi / permohonan / pengajuan"
         }
       ],
       "section": "main"
@@ -391,19 +386,6 @@
           "kanji": "素直に",
           "bacaan": "すなおに",
           "arti": "dengan jujur / patuh / tulus"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "邑",
-      "label": "邑 - Kota / wilayah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "郵便物",
-          "bacaan": "ゆうびんぶつ",
-          "arti": "kiriman pos / surat"
         }
       ],
       "section": "main"
