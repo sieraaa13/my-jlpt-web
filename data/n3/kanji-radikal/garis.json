@@ -2903,834 +2903,6 @@
       "section": "belum"
     },
     {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (164 kata)",
-      "count": 164,
-      "words": [
-        {
-          "kanji": "林",
-          "bacaan": "はやし",
-          "arti": ""
-        },
-        {
-          "kanji": "柄",
-          "bacaan": "え",
-          "arti": ""
-        },
-        {
-          "kanji": "木塲",
-          "bacaan": "きば",
-          "arti": ""
-        },
-        {
-          "kanji": "校舎",
-          "bacaan": "こうしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "植物園",
-          "bacaan": "しょくぶつえん",
-          "arti": ""
-        },
-        {
-          "kanji": "機械",
-          "bacaan": "きかい",
-          "arti": ""
-        },
-        {
-          "kanji": "機関車",
-          "bacaan": "きかんしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "木工品",
-          "bacaan": "もっこうひん",
-          "arti": ""
-        },
-        {
-          "kanji": "木馬",
-          "bacaan": "もくば",
-          "arti": ""
-        },
-        {
-          "kanji": "木炭",
-          "bacaan": "もくたん",
-          "arti": ""
-        },
-        {
-          "kanji": "木像",
-          "bacaan": "もくぞう",
-          "arti": ""
-        },
-        {
-          "kanji": "木綿",
-          "bacaan": "もめん",
-          "arti": ""
-        },
-        {
-          "kanji": "杯",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "柵",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "松明",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "材料",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "樟脳",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "横",
-          "bacaan": "よこ",
-          "arti": ""
-        },
-        {
-          "kanji": "植民地",
-          "bacaan": "しょくみんち",
-          "arti": ""
-        },
-        {
-          "kanji": "桶",
-          "bacaan": "おけ",
-          "arti": ""
-        },
-        {
-          "kanji": "杭",
-          "bacaan": "くい",
-          "arti": ""
-        },
-        {
-          "kanji": "櫛",
-          "bacaan": "くし",
-          "arti": ""
-        },
-        {
-          "kanji": "橋",
-          "bacaan": "はし",
-          "arti": ""
-        },
-        {
-          "kanji": "まな板",
-          "bacaan": "まないた",
-          "arti": ""
-        },
-        {
-          "kanji": "松葉ばずえ",
-          "bacaan": "まつばずえ",
-          "arti": ""
-        },
-        {
-          "kanji": "植木",
-          "bacaan": "うえき",
-          "arti": ""
-        },
-        {
-          "kanji": "椅子",
-          "bacaan": "いす",
-          "arti": ""
-        },
-        {
-          "kanji": "桟橋",
-          "bacaan": "さんばし",
-          "arti": ""
-        },
-        {
-          "kanji": "板",
-          "bacaan": "いた",
-          "arti": ""
-        },
-        {
-          "kanji": "梅雨",
-          "bacaan": "ばいう",
-          "arti": ""
-        },
-        {
-          "kanji": "相変わらず",
-          "bacaan": "あいかわらず",
-          "arti": ""
-        },
-        {
-          "kanji": "樹木",
-          "bacaan": "じゅもく",
-          "arti": ""
-        },
-        {
-          "kanji": "根",
-          "bacaan": "ね",
-          "arti": ""
-        },
-        {
-          "kanji": "梅雨",
-          "bacaan": "つゆ",
-          "arti": ""
-        },
-        {
-          "kanji": "桜",
-          "bacaan": "さくら",
-          "arti": ""
-        },
-        {
-          "kanji": "植物",
-          "bacaan": "しょくぶつ",
-          "arti": ""
-        },
-        {
-          "kanji": "相応しい",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "木彫り",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "棚",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "梃",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "横丁",
-          "bacaan": "よこちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "楕円",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "楕円形",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "栓",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "枠",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "柱",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "機関",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "槍",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "横笛",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "標識",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "枕",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "槌",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "杖",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "樹液",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "樹脂",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "横顔",
-          "bacaan": "よこがお",
-          "arti": ""
-        },
-        {
-          "kanji": "検死",
-          "bacaan": "けんし",
-          "arti": ""
-        },
-        {
-          "kanji": "木",
-          "bacaan": "き",
-          "arti": ""
-        },
-        {
-          "kanji": "森林",
-          "bacaan": "しんりん",
-          "arti": ""
-        },
-        {
-          "kanji": "極楽",
-          "bacaan": "ごくらく",
-          "arti": ""
-        },
-        {
-          "kanji": "棺桶",
-          "bacaan": "かんおけ",
-          "arti": ""
-        },
-        {
-          "kanji": "核",
-          "bacaan": "かく",
-          "arti": ""
-        },
-        {
-          "kanji": "梯子",
-          "bacaan": "はしご",
-          "arti": ""
-        },
-        {
-          "kanji": "棒",
-          "bacaan": "ぼう",
-          "arti": ""
-        },
-        {
-          "kanji": "査証",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "松",
-          "bacaan": "まつ",
-          "arti": ""
-        },
-        {
-          "kanji": "相談",
-          "bacaan": "そうだん",
-          "arti": ""
-        },
-        {
-          "kanji": "植林",
-          "bacaan": "しょくりん",
-          "arti": ""
-        },
-        {
-          "kanji": "根絶",
-          "bacaan": "こんぜつ",
-          "arti": ""
-        },
-        {
-          "kanji": "横たわる",
-          "bacaan": "よこたわる",
-          "arti": ""
-        },
-        {
-          "kanji": "植える",
-          "bacaan": "うえる",
-          "arti": ""
-        },
-        {
-          "kanji": "模索",
-          "bacaan": "もさく",
-          "arti": ""
-        },
-        {
-          "kanji": "柚子",
-          "bacaan": "ゆず",
-          "arti": ""
-        },
-        {
-          "kanji": "椰子",
-          "bacaan": "やし",
-          "arti": ""
-        },
-        {
-          "kanji": "梅",
-          "bacaan": "うめ",
-          "arti": ""
-        },
-        {
-          "kanji": "梅干し",
-          "bacaan": "うめぼし",
-          "arti": ""
-        },
-        {
-          "kanji": "林檎",
-          "bacaan": "りんご",
-          "arti": ""
-        },
-        {
-          "kanji": "柿",
-          "bacaan": "かき",
-          "arti": ""
-        },
-        {
-          "kanji": "模擬授業",
-          "bacaan": "もぎじゅぎょう",
-          "arti": ""
-        },
-        {
-          "kanji": "模擬試験",
-          "bacaan": "もぎしけん",
-          "arti": ""
-        },
-        {
-          "kanji": "機織り",
-          "bacaan": "はたおり",
-          "arti": ""
-        },
-        {
-          "kanji": "検査",
-          "bacaan": "けんさ",
-          "arti": ""
-        },
-        {
-          "kanji": "森",
-          "bacaan": "もり",
-          "arti": ""
-        },
-        {
-          "kanji": "概念",
-          "bacaan": "がいねん",
-          "arti": ""
-        },
-        {
-          "kanji": "概略",
-          "bacaan": "がいりゃく",
-          "arti": ""
-        },
-        {
-          "kanji": "概要",
-          "bacaan": "がいよう",
-          "arti": ""
-        },
-        {
-          "kanji": "相違",
-          "bacaan": "そうい",
-          "arti": ""
-        },
-        {
-          "kanji": "相当",
-          "bacaan": "そうとう",
-          "arti": ""
-        },
-        {
-          "kanji": "様式",
-          "bacaan": "ようしき",
-          "arti": ""
-        },
-        {
-          "kanji": "様",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "横書き",
-          "bacaan": "よこがき",
-          "arti": ""
-        },
-        {
-          "kanji": "横断",
-          "bacaan": "おうだん",
-          "arti": ""
-        },
-        {
-          "kanji": "欄",
-          "bacaan": "らん",
-          "arti": ""
-        },
-        {
-          "kanji": "様子",
-          "bacaan": "ようす",
-          "arti": ""
-        },
-        {
-          "kanji": "棟",
-          "bacaan": "むね",
-          "arti": ""
-        },
-        {
-          "kanji": "横ばい",
-          "bacaan": "よこばい",
-          "arti": ""
-        },
-        {
-          "kanji": "横切る",
-          "bacaan": "よこぎる",
-          "arti": ""
-        },
-        {
-          "kanji": "根元",
-          "bacaan": "ねもと",
-          "arti": ""
-        },
-        {
-          "kanji": "構想",
-          "bacaan": "こうそう",
-          "arti": ""
-        },
-        {
-          "kanji": "校正",
-          "bacaan": "こうせい",
-          "arti": ""
-        },
-        {
-          "kanji": "構造",
-          "bacaan": "こうぞう",
-          "arti": ""
-        },
-        {
-          "kanji": "根拠",
-          "bacaan": "こんきょ",
-          "arti": ""
-        },
-        {
-          "kanji": "根本",
-          "bacaan": "こんぽん",
-          "arti": ""
-        },
-        {
-          "kanji": "根本的",
-          "bacaan": "こんぽんてき",
-          "arti": ""
-        },
-        {
-          "kanji": "模様",
-          "bacaan": "もよう",
-          "arti": ""
-        },
-        {
-          "kanji": "権利",
-          "bacaan": "けんり",
-          "arti": ""
-        },
-        {
-          "kanji": "権力",
-          "bacaan": "けんりょく",
-          "arti": ""
-        },
-        {
-          "kanji": "桁",
-          "bacaan": "けた",
-          "arti": ""
-        },
-        {
-          "kanji": "模型",
-          "bacaan": "もけい",
-          "arti": ""
-        },
-        {
-          "kanji": "木製",
-          "bacaan": "もくせい",
-          "arti": ""
-        },
-        {
-          "kanji": "木材",
-          "bacaan": "もくざい",
-          "arti": ""
-        },
-        {
-          "kanji": "機能",
-          "bacaan": "きのう",
-          "arti": ""
-        },
-        {
-          "kanji": "材木",
-          "bacaan": "ざいもく",
-          "arti": ""
-        },
-        {
-          "kanji": "朽ちる",
-          "bacaan": "くちる",
-          "arti": ""
-        },
-        {
-          "kanji": "構成",
-          "bacaan": "こうせい",
-          "arti": ""
-        },
-        {
-          "kanji": "検討",
-          "bacaan": "けんとう",
-          "arti": ""
-        },
-        {
-          "kanji": "柄",
-          "bacaan": "がら",
-          "arti": ""
-        },
-        {
-          "kanji": "検疫",
-          "bacaan": "けんえき",
-          "arti": ""
-        },
-        {
-          "kanji": "権限",
-          "bacaan": "けんげん",
-          "arti": ""
-        },
-        {
-          "kanji": "検定",
-          "bacaan": "けんてい",
-          "arti": ""
-        },
-        {
-          "kanji": "検定試験",
-          "bacaan": "けんていしけん",
-          "arti": ""
-        },
-        {
-          "kanji": "横領",
-          "bacaan": "おうりょう",
-          "arti": ""
-        },
-        {
-          "kanji": "樹齢",
-          "bacaan": "じゅれい",
-          "arti": ""
-        },
-        {
-          "kanji": "格差",
-          "bacaan": "かくさ",
-          "arti": ""
-        },
-        {
-          "kanji": "標高",
-          "bacaan": "ひょうこう",
-          "arti": ""
-        },
-        {
-          "kanji": "植民",
-          "bacaan": "しょくみん",
-          "arti": ""
-        },
-        {
-          "kanji": "株",
-          "bacaan": "かぶ",
-          "arti": ""
-        },
-        {
-          "kanji": "権",
-          "bacaan": "けん",
-          "arti": ""
-        },
-        {
-          "kanji": "根回し",
-          "bacaan": "ねまわし",
-          "arti": ""
-        },
-        {
-          "kanji": "模擬",
-          "bacaan": "もぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "概ね",
-          "bacaan": "おおむね",
-          "arti": ""
-        },
-        {
-          "kanji": "極めて",
-          "bacaan": "きわめて",
-          "arti": ""
-        },
-        {
-          "kanji": "構う",
-          "bacaan": "かまう",
-          "arti": ""
-        },
-        {
-          "kanji": "権威",
-          "bacaan": "けんい",
-          "arti": ""
-        },
-        {
-          "kanji": "機敏",
-          "bacaan": "きびん",
-          "arti": ""
-        },
-        {
-          "kanji": "機嫌",
-          "bacaan": "きげん",
-          "arti": ""
-        },
-        {
-          "kanji": "横柄",
-          "bacaan": "おうへい",
-          "arti": ""
-        },
-        {
-          "kanji": "相場",
-          "bacaan": "そうば",
-          "arti": ""
-        },
-        {
-          "kanji": "枯れる",
-          "bacaan": "かれる",
-          "arti": ""
-        },
-        {
-          "kanji": "標本",
-          "bacaan": "ひょうほん",
-          "arti": ""
-        },
-        {
-          "kanji": "標準",
-          "bacaan": "ひょうじゅん",
-          "arti": ""
-        },
-        {
-          "kanji": "相性",
-          "bacaan": "あいしょう",
-          "arti": ""
-        },
-        {
-          "kanji": "極",
-          "bacaan": "ごく",
-          "arti": ""
-        },
-        {
-          "kanji": "模範",
-          "bacaan": "もはん",
-          "arti": ""
-        },
-        {
-          "kanji": "相次いで",
-          "bacaan": "あいついで",
-          "arti": ""
-        },
-        {
-          "kanji": "株主",
-          "bacaan": "かぶぬし",
-          "arti": ""
-        },
-        {
-          "kanji": "相撲",
-          "bacaan": "すもう",
-          "arti": ""
-        },
-        {
-          "kanji": "検事",
-          "bacaan": "けんじ",
-          "arti": ""
-        },
-        {
-          "kanji": "校長",
-          "bacaan": "こうちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "極楽鳥",
-          "bacaan": "ごくらくちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "相手",
-          "bacaan": "あいて",
-          "arti": ""
-        },
-        {
-          "kanji": "極端",
-          "bacaan": "きょくたん",
-          "arti": ""
-        },
-        {
-          "kanji": "機会",
-          "bacaan": "きかい",
-          "arti": ""
-        },
-        {
-          "kanji": "機構",
-          "bacaan": "きこう",
-          "arti": ""
-        },
-        {
-          "kanji": "桝",
-          "bacaan": "ます",
-          "arti": ""
-        },
-        {
-          "kanji": "株式会社",
-          "bacaan": "かぶしきがいしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "様々",
-          "bacaan": "さまざま",
-          "arti": ""
-        },
-        {
-          "kanji": "根性",
-          "bacaan": "こんじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "検事局",
-          "bacaan": "けんじきょく",
-          "arti": ""
-        },
-        {
-          "kanji": "検事総長",
-          "bacaan": "けんじそうちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "木工",
-          "bacaan": "もっこう",
-          "arti": ""
-        },
-        {
-          "kanji": "相互",
-          "bacaan": "そうご",
-          "arti": ""
-        },
-        {
-          "kanji": "梨",
-          "bacaan": "なし",
-          "arti": ""
-        },
-        {
-          "kanji": "桃",
-          "bacaan": "もも",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "糸",
       "label": "糸 - (radikal jarang, lihat contoh kanji)  (160 kata)",
       "count": 160,
@@ -5418,214 +4590,6 @@
       "section": "belum"
     },
     {
-      "radikal": "禾",
-      "label": "禾 - Padi/gandum  (40 kata)",
-      "count": 40,
-      "words": [
-        {
-          "kanji": "積み",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "移植",
-          "bacaan": "いしょく",
-          "arti": ""
-        },
-        {
-          "kanji": "稲妻",
-          "bacaan": "いなずま",
-          "arti": ""
-        },
-        {
-          "kanji": "種",
-          "bacaan": "たね",
-          "arti": ""
-        },
-        {
-          "kanji": "秘訣",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "秤",
-          "bacaan": "はかり",
-          "arti": ""
-        },
-        {
-          "kanji": "移転先",
-          "bacaan": "いてんさき",
-          "arti": ""
-        },
-        {
-          "kanji": "税関",
-          "bacaan": "ぜいかん",
-          "arti": ""
-        },
-        {
-          "kanji": "移動",
-          "bacaan": "いどう",
-          "arti": ""
-        },
-        {
-          "kanji": "積める",
-          "bacaan": "つめる",
-          "arti": ""
-        },
-        {
-          "kanji": "積もる",
-          "bacaan": "つもる",
-          "arti": ""
-        },
-        {
-          "kanji": "積む",
-          "bacaan": "つむ",
-          "arti": ""
-        },
-        {
-          "kanji": "移る",
-          "bacaan": "うつる",
-          "arti": ""
-        },
-        {
-          "kanji": "移す",
-          "bacaan": "うつす",
-          "arti": ""
-        },
-        {
-          "kanji": "稼ぐ",
-          "bacaan": "かせぐ",
-          "arti": ""
-        },
-        {
-          "kanji": "移住",
-          "bacaan": "いじゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "移転",
-          "bacaan": "いてん",
-          "arti": ""
-        },
-        {
-          "kanji": "秩序",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "穂",
-          "bacaan": "ほ",
-          "arti": ""
-        },
-        {
-          "kanji": "稲",
-          "bacaan": "いね",
-          "arti": ""
-        },
-        {
-          "kanji": "稲作",
-          "bacaan": "いなさく",
-          "arti": ""
-        },
-        {
-          "kanji": "穏やか",
-          "bacaan": "おだやか",
-          "arti": ""
-        },
-        {
-          "kanji": "積極",
-          "bacaan": "せっきょく",
-          "arti": ""
-        },
-        {
-          "kanji": "積極的",
-          "bacaan": "せっきょくてき",
-          "arti": ""
-        },
-        {
-          "kanji": "稼ぎ",
-          "bacaan": "かせぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "税",
-          "bacaan": "ぜい",
-          "arti": ""
-        },
-        {
-          "kanji": "税金",
-          "bacaan": "ぜいきん",
-          "arti": ""
-        },
-        {
-          "kanji": "税率",
-          "bacaan": "ぜいりつ",
-          "arti": ""
-        },
-        {
-          "kanji": "税制",
-          "bacaan": "ぜいせい",
-          "arti": ""
-        },
-        {
-          "kanji": "稀",
-          "bacaan": "まれ",
-          "arti": ""
-        },
-        {
-          "kanji": "秘密",
-          "bacaan": "ひみつ",
-          "arti": ""
-        },
-        {
-          "kanji": "程々",
-          "bacaan": "ほどほど",
-          "arti": ""
-        },
-        {
-          "kanji": "種類",
-          "bacaan": "しゅるい",
-          "arti": ""
-        },
-        {
-          "kanji": "移民",
-          "bacaan": "いみん",
-          "arti": ""
-        },
-        {
-          "kanji": "移住民",
-          "bacaan": "いじゅうみん",
-          "arti": ""
-        },
-        {
-          "kanji": "秘書",
-          "bacaan": "ひしょ",
-          "arti": ""
-        },
-        {
-          "kanji": "程度",
-          "bacaan": "ていど",
-          "arti": ""
-        },
-        {
-          "kanji": "称号",
-          "bacaan": "しょうごう",
-          "arti": ""
-        },
-        {
-          "kanji": "稽古",
-          "bacaan": "けいこ",
-          "arti": ""
-        },
-        {
-          "kanji": "秒",
-          "bacaan": "びょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "示",
       "label": "示 - Menunjukkan / altar  (40 kata)",
       "count": 40,
@@ -6587,74 +5551,6 @@
       "section": "belum"
     },
     {
-      "radikal": "攴",
-      "label": "攴 - Memukul ringan / tindakan  (12 kata)",
-      "count": 12,
-      "words": [
-        {
-          "kanji": "枚",
-          "bacaan": "まい",
-          "arti": ""
-        },
-        {
-          "kanji": "牧畜",
-          "bacaan": "ぼくちく",
-          "arti": ""
-        },
-        {
-          "kanji": "牧場",
-          "bacaan": "ぼくじょう",
-          "arti": ""
-        },
-        {
-          "kanji": "牧師",
-          "bacaan": "ぼくし",
-          "arti": ""
-        },
-        {
-          "kanji": "数",
-          "bacaan": "すう",
-          "arti": ""
-        },
-        {
-          "kanji": "数字",
-          "bacaan": "すうじ",
-          "arti": ""
-        },
-        {
-          "kanji": "数詞",
-          "bacaan": "すうし",
-          "arti": ""
-        },
-        {
-          "kanji": "数学",
-          "bacaan": "すうがく",
-          "arti": ""
-        },
-        {
-          "kanji": "数日",
-          "bacaan": "すうじつ",
-          "arti": ""
-        },
-        {
-          "kanji": "数",
-          "bacaan": "かず",
-          "arti": ""
-        },
-        {
-          "kanji": "数珠",
-          "bacaan": "じゅず",
-          "arti": ""
-        },
-        {
-          "kanji": "数える",
-          "bacaan": "かぞえる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "口",
       "label": "口 - Mulut  (12 kata)",
       "count": 12,
@@ -6723,15 +5619,136 @@
       "section": "belum"
     },
     {
-      "radikal": "土",
-      "label": "土 - Tanah  (11 kata)",
+      "radikal": "木",
+      "label": "木 - Pohon / kayu  (11 kata)",
       "count": 11,
       "words": [
         {
-          "kanji": "杜撰",
-          "bacaan": "ずさん",
+          "kanji": "相変わらず",
+          "bacaan": "あいかわらず",
           "arti": ""
         },
+        {
+          "kanji": "相応しい",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "相談",
+          "bacaan": "そうだん",
+          "arti": ""
+        },
+        {
+          "kanji": "相違",
+          "bacaan": "そうい",
+          "arti": ""
+        },
+        {
+          "kanji": "相当",
+          "bacaan": "そうとう",
+          "arti": ""
+        },
+        {
+          "kanji": "相場",
+          "bacaan": "そうば",
+          "arti": ""
+        },
+        {
+          "kanji": "相性",
+          "bacaan": "あいしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "相次いで",
+          "bacaan": "あいついで",
+          "arti": ""
+        },
+        {
+          "kanji": "相撲",
+          "bacaan": "すもう",
+          "arti": ""
+        },
+        {
+          "kanji": "相手",
+          "bacaan": "あいて",
+          "arti": ""
+        },
+        {
+          "kanji": "相互",
+          "bacaan": "そうご",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "攴",
+      "label": "攴 - Memukul ringan / tindakan  (11 kata)",
+      "count": 11,
+      "words": [
+        {
+          "kanji": "牧畜",
+          "bacaan": "ぼくちく",
+          "arti": ""
+        },
+        {
+          "kanji": "牧場",
+          "bacaan": "ぼくじょう",
+          "arti": ""
+        },
+        {
+          "kanji": "牧師",
+          "bacaan": "ぼくし",
+          "arti": ""
+        },
+        {
+          "kanji": "数",
+          "bacaan": "すう",
+          "arti": ""
+        },
+        {
+          "kanji": "数字",
+          "bacaan": "すうじ",
+          "arti": ""
+        },
+        {
+          "kanji": "数詞",
+          "bacaan": "すうし",
+          "arti": ""
+        },
+        {
+          "kanji": "数学",
+          "bacaan": "すうがく",
+          "arti": ""
+        },
+        {
+          "kanji": "数日",
+          "bacaan": "すうじつ",
+          "arti": ""
+        },
+        {
+          "kanji": "数",
+          "bacaan": "かず",
+          "arti": ""
+        },
+        {
+          "kanji": "数珠",
+          "bacaan": "じゅず",
+          "arti": ""
+        },
+        {
+          "kanji": "数える",
+          "bacaan": "かぞえる",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "土",
+      "label": "土 - Tanah  (8 kata)",
+      "count": 8,
+      "words": [
         {
           "kanji": "牡蠣",
           "bacaan": "かき",
@@ -6770,69 +5787,6 @@
         {
           "kanji": "社員",
           "bacaan": "しゃいん",
-          "arti": ""
-        },
-        {
-          "kanji": "墜落",
-          "bacaan": "ついらく",
-          "arti": ""
-        },
-        {
-          "kanji": "堕胎",
-          "bacaan": "だたい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "厶",
-      "label": "厶 - Milik pribadi  (9 kata)",
-      "count": 9,
-      "words": [
-        {
-          "kanji": "払い",
-          "bacaan": "はらい",
-          "arti": ""
-        },
-        {
-          "kanji": "払う",
-          "bacaan": "はらう",
-          "arti": ""
-        },
-        {
-          "kanji": "私費",
-          "bacaan": "しひ",
-          "arti": ""
-        },
-        {
-          "kanji": "私",
-          "bacaan": "わたくし",
-          "arti": ""
-        },
-        {
-          "kanji": "私",
-          "bacaan": "わたし",
-          "arti": ""
-        },
-        {
-          "kanji": "私生児",
-          "bacaan": "しせいじ",
-          "arti": ""
-        },
-        {
-          "kanji": "私鉄",
-          "bacaan": "してつ",
-          "arti": ""
-        },
-        {
-          "kanji": "私用",
-          "bacaan": "しよう",
-          "arti": ""
-        },
-        {
-          "kanji": "私立",
-          "bacaan": "しりつ",
           "arti": ""
         }
       ],
@@ -6888,19 +5842,9 @@
     },
     {
       "radikal": "乙",
-      "label": "乙 - Kedua (urutan)  (7 kata)",
-      "count": 7,
+      "label": "乙 - Kedua (urutan)  (5 kata)",
+      "count": 5,
       "words": [
-        {
-          "kanji": "札",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "札",
-          "bacaan": "ふだ",
-          "arti": ""
-        },
         {
           "kanji": "礼服",
           "bacaan": "",
@@ -6924,49 +5868,6 @@
         {
           "kanji": "礼",
           "bacaan": "れい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "斗",
-      "label": "斗 - Gayung / satuan volume  (7 kata)",
-      "count": 7,
-      "words": [
-        {
-          "kanji": "科学者",
-          "bacaan": "かがくしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "科目",
-          "bacaan": "かもく",
-          "arti": ""
-        },
-        {
-          "kanji": "科",
-          "bacaan": "か",
-          "arti": ""
-        },
-        {
-          "kanji": "科学",
-          "bacaan": "かがく",
-          "arti": ""
-        },
-        {
-          "kanji": "料",
-          "bacaan": "りょう",
-          "arti": ""
-        },
-        {
-          "kanji": "料金",
-          "bacaan": "りょうきん",
-          "arti": ""
-        },
-        {
-          "kanji": "料理",
-          "bacaan": "りょうり",
           "arti": ""
         }
       ],
@@ -7067,34 +5968,6 @@
       "section": "belum"
     },
     {
-      "radikal": "竹",
-      "label": "竹 - Bambu  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "竹",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "竹槍",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "竹林",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "竹輪",
-          "bacaan": "ちくわ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "工",
       "label": "工 - Pekerjaan / alat  (4 kata)",
       "count": 4,
@@ -7145,6 +6018,29 @@
         {
           "kanji": "ちり紙",
           "bacaan": "ちりがみ",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "斗",
+      "label": "斗 - Gayung / satuan volume  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "料",
+          "bacaan": "りょう",
+          "arti": ""
+        },
+        {
+          "kanji": "料金",
+          "bacaan": "りょうきん",
+          "arti": ""
+        },
+        {
+          "kanji": "料理",
+          "bacaan": "りょうり",
           "arti": ""
         }
       ],
@@ -7266,98 +6162,31 @@
       "section": "belum"
     },
     {
-      "radikal": "几",
-      "label": "几 - Meja kecil  (2 kata)",
+      "radikal": "厶",
+      "label": "厶 - Milik pribadi  (2 kata)",
       "count": 2,
       "words": [
         {
-          "kanji": "机",
-          "bacaan": "",
+          "kanji": "払い",
+          "bacaan": "はらい",
           "arti": ""
         },
+        {
+          "kanji": "払う",
+          "bacaan": "はらう",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "几",
+      "label": "几 - Meja kecil  (1 kata)",
+      "count": 1,
+      "words": [
         {
           "kanji": "凭れる",
           "bacaan": "もたれる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "火",
-      "label": "火 - Api  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "焚き火",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "秋",
-          "bacaan": "あき",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "寸",
-      "label": "寸 - Ukuran / jari tangan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "村",
-          "bacaan": "むら",
-          "arti": ""
-        },
-        {
-          "kanji": "村長",
-          "bacaan": "そんちょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "儿",
-      "label": "儿 - Kaki manusia (radikal bawah)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "禿",
-          "bacaan": "はげ",
-          "arti": ""
-        },
-        {
-          "kanji": "禿る",
-          "bacaan": "はげる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "支",
-      "label": "支 - Cabang/menopang  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "枝",
-          "bacaan": "えだ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "彡",
-      "label": "彡 - Bulu / corak  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "杉",
-          "bacaan": "すぎ",
           "arti": ""
         }
       ],

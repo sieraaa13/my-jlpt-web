@@ -3715,64 +3715,6 @@
       "section": "belum"
     },
     {
-      "radikal": "火",
-      "label": "火 - Api  (10 kata)",
-      "count": 10,
-      "words": [
-        {
-          "kanji": "照り",
-          "bacaan": "てり",
-          "arti": ""
-        },
-        {
-          "kanji": "照る",
-          "bacaan": "てる",
-          "arti": ""
-        },
-        {
-          "kanji": "黙読",
-          "bacaan": "もくどく",
-          "arti": ""
-        },
-        {
-          "kanji": "黙礼",
-          "bacaan": "もくれい",
-          "arti": ""
-        },
-        {
-          "kanji": "黙る",
-          "bacaan": "だまる",
-          "arti": ""
-        },
-        {
-          "kanji": "黙考",
-          "bacaan": "もっこう",
-          "arti": ""
-        },
-        {
-          "kanji": "黙々",
-          "bacaan": "もくもく",
-          "arti": ""
-        },
-        {
-          "kanji": "黙認",
-          "bacaan": "もくにん",
-          "arti": ""
-        },
-        {
-          "kanji": "照らす",
-          "bacaan": "てらす",
-          "arti": ""
-        },
-        {
-          "kanji": "照明",
-          "bacaan": "しょうめい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "刀",
       "label": "刀 - Pedang / pisau  (8 kata)",
       "count": 8,
@@ -3815,6 +3757,44 @@
         {
           "kanji": "別科",
           "bacaan": "べっか",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "火",
+      "label": "火 - Api  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "黙読",
+          "bacaan": "もくどく",
+          "arti": ""
+        },
+        {
+          "kanji": "黙礼",
+          "bacaan": "もくれい",
+          "arti": ""
+        },
+        {
+          "kanji": "黙る",
+          "bacaan": "だまる",
+          "arti": ""
+        },
+        {
+          "kanji": "黙考",
+          "bacaan": "もっこう",
+          "arti": ""
+        },
+        {
+          "kanji": "黙々",
+          "bacaan": "もくもく",
+          "arti": ""
+        },
+        {
+          "kanji": "黙認",
+          "bacaan": "もくにん",
           "arti": ""
         }
       ],
@@ -3919,34 +3899,6 @@
         {
           "kanji": "黒字",
           "bacaan": "くろじ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "果物",
-          "bacaan": "くだもの",
-          "arti": ""
-        },
-        {
-          "kanji": "果汁",
-          "bacaan": "かじゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "果たす",
-          "bacaan": "はたす",
-          "arti": ""
-        },
-        {
-          "kanji": "果たして",
-          "bacaan": "はたして",
           "arti": ""
         }
       ],
@@ -4063,38 +4015,12 @@
       "section": "belum"
     },
     {
-      "radikal": "水",
-      "label": "水 - Air  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "泉",
-          "bacaan": "いずみ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "匕",
       "label": "匕 - (radikal jarang, lihat contoh kanji)  (1 kata)",
       "count": 1,
       "words": [
         {
           "kanji": "匙",
-          "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "墨",
           "bacaan": "",
           "arti": ""
         }

@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "亠 / 土",
-      "label": "亠 / 土 - Garis di Atas & Tanah  (110 kata)",
-      "count": 110,
+      "label": "亠 / 土 - Garis di Atas & Tanah  (61 kata)",
+      "count": 61,
       "words": [
         {
           "kanji": "卒業",
@@ -302,259 +302,14 @@
           "arti": "pos polisi"
         },
         {
-          "kanji": "塾",
-          "bacaan": "じゅく",
-          "arti": "bimbingan belajar"
-        },
-        {
-          "kanji": "報知",
-          "bacaan": "ほうち",
-          "arti": "pemberitahuan"
-        },
-        {
-          "kanji": "報道",
-          "bacaan": "ほうどう",
-          "arti": "pemberitaan / laporan berita"
-        },
-        {
-          "kanji": "報告",
-          "bacaan": "ほうこく",
-          "arti": "laporan"
-        },
-        {
           "kanji": "寺院",
           "bacaan": "じいん",
           "arti": "kuil"
         },
         {
-          "kanji": "土手",
-          "bacaan": "どて",
-          "arti": "tanggul"
-        },
-        {
-          "kanji": "報酬",
-          "bacaan": "ほうしゅう",
-          "arti": "imbalan / upah"
-        },
-        {
-          "kanji": "土産",
-          "bacaan": "みやげ",
-          "arti": "oleh-oleh"
-        },
-        {
-          "kanji": "土地",
-          "bacaan": "とち",
-          "arti": "tanah / lahan"
-        },
-        {
-          "kanji": "土",
-          "bacaan": "つち",
-          "arti": "tanah"
-        },
-        {
-          "kanji": "お土産",
-          "bacaan": "おみやげ",
-          "arti": "oleh-oleh"
-        },
-        {
           "kanji": "寺",
           "bacaan": "てら",
           "arti": "kuil (Buddha)"
-        },
-        {
-          "kanji": "地方",
-          "bacaan": "ちほう",
-          "arti": "daerah"
-        },
-        {
-          "kanji": "地域",
-          "bacaan": "ちいき",
-          "arti": "wilayah"
-        },
-        {
-          "kanji": "地上",
-          "bacaan": "ちじょう",
-          "arti": "permukaan tanah"
-        },
-        {
-          "kanji": "地下",
-          "bacaan": "ちか",
-          "arti": "bawah tanah"
-        },
-        {
-          "kanji": "地下道",
-          "bacaan": "ちかどう",
-          "arti": "terowongan bawah tanah"
-        },
-        {
-          "kanji": "地区",
-          "bacaan": "ちく",
-          "arti": "distrik"
-        },
-        {
-          "kanji": "地球",
-          "bacaan": "ちきゅう",
-          "arti": "bumi"
-        },
-        {
-          "kanji": "地名",
-          "bacaan": "ちめい",
-          "arti": "nama tempat"
-        },
-        {
-          "kanji": "地帯",
-          "bacaan": "ちたい",
-          "arti": "kawasan / zona"
-        },
-        {
-          "kanji": "地下鉄",
-          "bacaan": "ちかてつ",
-          "arti": "kereta bawah tanah"
-        },
-        {
-          "kanji": "地図",
-          "bacaan": "ちず",
-          "arti": "peta"
-        },
-        {
-          "kanji": "垢",
-          "bacaan": "あか",
-          "arti": "kotoran (kulit)"
-        },
-        {
-          "kanji": "場合",
-          "bacaan": "ばあい",
-          "arti": "keadaan / kasus"
-        },
-        {
-          "kanji": "地雷",
-          "bacaan": "じらい",
-          "arti": "ranjau darat"
-        },
-        {
-          "kanji": "堆肥",
-          "bacaan": "たいひ",
-          "arti": "kompos"
-        },
-        {
-          "kanji": "堤",
-          "bacaan": "つつみ",
-          "arti": "tanggul / bendungan"
-        },
-        {
-          "kanji": "地盤",
-          "bacaan": "じばん",
-          "arti": "fondasi tanah"
-        },
-        {
-          "kanji": "堤防",
-          "bacaan": "ていぼう",
-          "arti": "tanggul"
-        },
-        {
-          "kanji": "塔",
-          "bacaan": "とう",
-          "arti": "menara"
-        },
-        {
-          "kanji": "垣",
-          "bacaan": "かき",
-          "arti": "pagar"
-        },
-        {
-          "kanji": "城",
-          "bacaan": "じょう",
-          "arti": "kastil (bacaan on)"
-        },
-        {
-          "kanji": "塀",
-          "bacaan": "へい",
-          "arti": "tembok pagar"
-        },
-        {
-          "kanji": "地獄",
-          "bacaan": "じごく",
-          "arti": "neraka"
-        },
-        {
-          "kanji": "地面",
-          "bacaan": "じめん",
-          "arti": "permukaan tanah"
-        },
-        {
-          "kanji": "場",
-          "bacaan": "ば",
-          "arti": "tempat"
-        },
-        {
-          "kanji": "場面",
-          "bacaan": "ばめん",
-          "arti": "adegan / situasi"
-        },
-        {
-          "kanji": "場所",
-          "bacaan": "ばしょ",
-          "arti": "lokasi"
-        },
-        {
-          "kanji": "堪らないので",
-          "bacaan": "たまらないので",
-          "arti": "karena tak tertahankan"
-        },
-        {
-          "kanji": "境遇",
-          "bacaan": "きょうぐう",
-          "arti": "keadaan hidup"
-        },
-        {
-          "kanji": "地震",
-          "bacaan": "じしん",
-          "arti": "gempa bumi"
-        },
-        {
-          "kanji": "城",
-          "bacaan": "しろ",
-          "arti": "kastil (bacaan kun)"
-        },
-        {
-          "kanji": "地元",
-          "bacaan": "じもと",
-          "arti": "daerah setempat"
-        },
-        {
-          "kanji": "埋葬",
-          "bacaan": "まいそう",
-          "arti": "pemakaman"
-        },
-        {
-          "kanji": "埋める",
-          "bacaan": "うめる",
-          "arti": "mengubur / menimbun"
-        },
-        {
-          "kanji": "壊す",
-          "bacaan": "こわす",
-          "arti": "menghancurkan"
-        },
-        {
-          "kanji": "増やす",
-          "bacaan": "ふやす",
-          "arti": "menambah"
-        },
-        {
-          "kanji": "土葬",
-          "bacaan": "どそう",
-          "arti": "penguburan"
-        },
-        {
-          "kanji": "塩",
-          "bacaan": "しお",
-          "arti": "garam"
-        },
-        {
-          "kanji": "増える",
-          "bacaan": "ふえる",
-          "arti": "bertambah"
         }
       ],
       "section": "main"
@@ -2255,122 +2010,6 @@
       "section": "belum"
     },
     {
-      "radikal": "月",
-      "label": "月 - (radikal jarang, lihat contoh kanji)  (10 kata)",
-      "count": 10,
-      "words": [
-        {
-          "kanji": "望ましい",
-          "bacaan": "のぞましい",
-          "arti": ""
-        },
-        {
-          "kanji": "望み",
-          "bacaan": "のぞみ",
-          "arti": ""
-        },
-        {
-          "kanji": "朝刊",
-          "bacaan": "ちょうかん",
-          "arti": ""
-        },
-        {
-          "kanji": "朝",
-          "bacaan": "あさ",
-          "arti": ""
-        },
-        {
-          "kanji": "朝晩",
-          "bacaan": "あさばん",
-          "arti": ""
-        },
-        {
-          "kanji": "望む",
-          "bacaan": "のぞむ",
-          "arti": ""
-        },
-        {
-          "kanji": "朝日",
-          "bacaan": "あさひ",
-          "arti": ""
-        },
-        {
-          "kanji": "朝寝坊",
-          "bacaan": "あさねぼう",
-          "arti": ""
-        },
-        {
-          "kanji": "朝鮮",
-          "bacaan": "ちょうせん",
-          "arti": ""
-        },
-        {
-          "kanji": "望遠鏡",
-          "bacaan": "ぼうえんきょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (10 kata)",
-      "count": 10,
-      "words": [
-        {
-          "kanji": "束",
-          "bacaan": "たば",
-          "arti": ""
-        },
-        {
-          "kanji": "東北",
-          "bacaan": "とうほく",
-          "arti": ""
-        },
-        {
-          "kanji": "東南",
-          "bacaan": "とうなん",
-          "arti": ""
-        },
-        {
-          "kanji": "東西",
-          "bacaan": "とうざい",
-          "arti": ""
-        },
-        {
-          "kanji": "東洋",
-          "bacaan": "とうよう",
-          "arti": ""
-        },
-        {
-          "kanji": "東",
-          "bacaan": "ひがし",
-          "arti": ""
-        },
-        {
-          "kanji": "束の間",
-          "bacaan": "つかのま",
-          "arti": ""
-        },
-        {
-          "kanji": "棗",
-          "bacaan": "なつめ",
-          "arti": ""
-        },
-        {
-          "kanji": "束子",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "未製品",
-          "bacaan": "みせいひん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "青",
       "label": "青 - Biru/hijau muda  (10 kata)",
       "count": 10,
@@ -2651,54 +2290,6 @@
       "section": "belum"
     },
     {
-      "radikal": "火",
-      "label": "火 - Api  (8 kata)",
-      "count": 8,
-      "words": [
-        {
-          "kanji": "熟",
-          "bacaan": "じゅくれん",
-          "arti": ""
-        },
-        {
-          "kanji": "熟考",
-          "bacaan": "じゅっこう",
-          "arti": ""
-        },
-        {
-          "kanji": "熟睡",
-          "bacaan": "じゅくすい",
-          "arti": ""
-        },
-        {
-          "kanji": "熟語",
-          "bacaan": "じゅくご",
-          "arti": ""
-        },
-        {
-          "kanji": "熱",
-          "bacaan": "ねつ",
-          "arti": ""
-        },
-        {
-          "kanji": "熱帯",
-          "bacaan": "ねったい",
-          "arti": ""
-        },
-        {
-          "kanji": "煮る",
-          "bacaan": "にる",
-          "arti": ""
-        },
-        {
-          "kanji": "熱する",
-          "bacaan": "ねっする",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "頁",
       "label": "頁 - Halaman / kepala  (8 kata)",
       "count": 8,
@@ -2741,49 +2332,6 @@
         {
           "kanji": "頼む",
           "bacaan": "たのむ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "生",
-      "label": "生 - Hidup / lahir  (7 kata)",
-      "count": 7,
-      "words": [
-        {
-          "kanji": "産卵",
-          "bacaan": "さんらん",
-          "arti": ""
-        },
-        {
-          "kanji": "産業",
-          "bacaan": "さんぎょう",
-          "arti": ""
-        },
-        {
-          "kanji": "お産",
-          "bacaan": "おさん",
-          "arti": ""
-        },
-        {
-          "kanji": "産婦人科",
-          "bacaan": "さんふじんか",
-          "arti": ""
-        },
-        {
-          "kanji": "産地",
-          "bacaan": "さんち",
-          "arti": ""
-        },
-        {
-          "kanji": "産む",
-          "bacaan": "うむ",
-          "arti": ""
-        },
-        {
-          "kanji": "産物",
-          "bacaan": "さんぶつ",
           "arti": ""
         }
       ],
@@ -3310,29 +2858,6 @@
       "section": "belum"
     },
     {
-      "radikal": "干",
-      "label": "干 - Kering / berkaitan  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "幸せ",
-          "bacaan": "しあわせ",
-          "arti": ""
-        },
-        {
-          "kanji": "幹部",
-          "bacaan": "かんぶ",
-          "arti": ""
-        },
-        {
-          "kanji": "幹",
-          "bacaan": "みき",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "犬",
       "label": "犬 - Anjing  (3 kata)",
       "count": 3,
@@ -3503,17 +3028,12 @@
     },
     {
       "radikal": "殳",
-      "label": "殳 - Tongkat/senjata pemukul  (2 kata)",
-      "count": 2,
+      "label": "殳 - Tongkat/senjata pemukul  (1 kata)",
+      "count": 1,
       "words": [
         {
           "kanji": "殻",
           "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "穀物",
-          "bacaan": "こくもつ",
           "arti": ""
         }
       ],
@@ -3605,19 +3125,6 @@
         {
           "kanji": "広場",
           "bacaan": "ひろば",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "艸",
-      "label": "艸 - Tumbuhan/rumput  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "薪",
-          "bacaan": "",
           "arti": ""
         }
       ],

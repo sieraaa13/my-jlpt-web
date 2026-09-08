@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "丶 / 冫",
-      "label": "丶 / 冫 - Titik / Dua Titik (Es)  (37 kata)",
-      "count": 37,
+      "label": "丶 / 冫 - Titik / Dua Titik (Es)  (17 kata)",
+      "count": 17,
       "words": [
         {
           "kanji": "主張",
@@ -72,11 +72,6 @@
           "arti": "ibu rumah tangga"
         },
         {
-          "kanji": "凄い",
-          "bacaan": "すごい",
-          "arti": "hebat / luar biasa"
-        },
-        {
           "kanji": "次々",
           "bacaan": "つぎつぎ",
           "arti": "berturut-turut"
@@ -87,109 +82,14 @@
           "arti": "tergantung / urutan"
         },
         {
-          "kanji": "冷たい",
-          "bacaan": "つめたい",
-          "arti": "dingin"
-        },
-        {
-          "kanji": "凍結",
-          "bacaan": "とうけつ",
-          "arti": "pembekuan"
-        },
-        {
-          "kanji": "冷却",
-          "bacaan": "れいきゃく",
-          "arti": "pendinginan"
-        },
-        {
-          "kanji": "冷水",
-          "bacaan": "れいすい",
-          "arti": "air dingin"
-        },
-        {
-          "kanji": "冷凍",
-          "bacaan": "れいとう",
-          "arti": "pembekuan (makanan)"
-        },
-        {
-          "kanji": "冷静",
-          "bacaan": "れいせい",
-          "arti": "tenang"
-        },
-        {
-          "kanji": "冷淡",
-          "bacaan": "れいたん",
-          "arti": "dingin / acuh"
-        },
-        {
-          "kanji": "冴える",
-          "bacaan": "さえる",
-          "arti": "jernih / tajam (pikiran)"
-        },
-        {
-          "kanji": "凍る",
-          "bacaan": "こおる",
-          "arti": "membeku"
-        },
-        {
-          "kanji": "冷める",
-          "bacaan": "さめる",
-          "arti": "menjadi dingin"
-        },
-        {
-          "kanji": "冷やかし",
-          "bacaan": "ひやかし",
-          "arti": "godaan / ejekan"
-        },
-        {
-          "kanji": "冷える",
-          "bacaan": "ひえる",
-          "arti": "menjadi dingin"
-        },
-        {
           "kanji": "次回",
           "bacaan": "じかい",
           "arti": "kali berikutnya"
         },
         {
-          "kanji": "冷え性",
-          "bacaan": "ひえしょう",
-          "arti": "mudah kedinginan"
-        },
-        {
           "kanji": "次",
           "bacaan": "つぎ",
           "arti": "berikutnya"
-        },
-        {
-          "kanji": "凝り性",
-          "bacaan": "こりしょう",
-          "arti": "perfeksionis / hobi berat"
-        },
-        {
-          "kanji": "冷房",
-          "bacaan": "れいぼう",
-          "arti": "AC (pendingin ruangan)"
-        },
-        {
-          "kanji": "冷や汗",
-          "bacaan": "ひやあせ",
-          "arti": "keringat dingin"
-        },
-        {
-          "kanji": "凝り",
-          "bacaan": "こり",
-          "arti": "kaku otot"
-        },
-        {
-          "kanji": "冷ます",
-          "bacaan": "さます",
-          "arti": "mendinginkan"
-        },
-        {
-          "kanji": "冷やかす",
-          "bacaan": "ひやかす",
-          "arti": "menggoda / mengejek"
         }
       ],
       "section": "main"
@@ -539,84 +439,6 @@
       "section": "belum"
     },
     {
-      "radikal": "小",
-      "label": "小 - Kecil  (14 kata)",
-      "count": 14,
-      "words": [
-        {
-          "kanji": "尚更",
-          "bacaan": "なおさら",
-          "arti": ""
-        },
-        {
-          "kanji": "尚",
-          "bacaan": "なお",
-          "arti": ""
-        },
-        {
-          "kanji": "蛍光灯",
-          "bacaan": "けいこうとう",
-          "arti": ""
-        },
-        {
-          "kanji": "覚醒剤",
-          "bacaan": "かくせいざい",
-          "arti": ""
-        },
-        {
-          "kanji": "巣",
-          "bacaan": "す",
-          "arti": ""
-        },
-        {
-          "kanji": "覚悟",
-          "bacaan": "かくご",
-          "arti": ""
-        },
-        {
-          "kanji": "覚醒",
-          "bacaan": "かくせい",
-          "arti": ""
-        },
-        {
-          "kanji": "蛍",
-          "bacaan": "ほたる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚える",
-          "bacaan": "おぼえる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚ます",
-          "bacaan": "さます",
-          "arti": ""
-        },
-        {
-          "kanji": "栄える",
-          "bacaan": "さかえる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚める",
-          "bacaan": "さめる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚え",
-          "bacaan": "おぼえ",
-          "arti": ""
-        },
-        {
-          "kanji": "栄養",
-          "bacaan": "えいよう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "貝",
       "label": "貝 - Kerang (dulu = uang)  (13 kata)",
       "count": 13,
@@ -684,6 +506,74 @@
         {
           "kanji": "資金",
           "bacaan": "しきん",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "小",
+      "label": "小 - Kecil  (12 kata)",
+      "count": 12,
+      "words": [
+        {
+          "kanji": "尚更",
+          "bacaan": "なおさら",
+          "arti": ""
+        },
+        {
+          "kanji": "尚",
+          "bacaan": "なお",
+          "arti": ""
+        },
+        {
+          "kanji": "蛍光灯",
+          "bacaan": "けいこうとう",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒剤",
+          "bacaan": "かくせいざい",
+          "arti": ""
+        },
+        {
+          "kanji": "巣",
+          "bacaan": "す",
+          "arti": ""
+        },
+        {
+          "kanji": "覚悟",
+          "bacaan": "かくご",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒",
+          "bacaan": "かくせい",
+          "arti": ""
+        },
+        {
+          "kanji": "蛍",
+          "bacaan": "ほたる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚える",
+          "bacaan": "おぼえる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚ます",
+          "bacaan": "さます",
+          "arti": ""
+        },
+        {
+          "kanji": "覚める",
+          "bacaan": "さめる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚え",
+          "bacaan": "おぼえ",
           "arti": ""
         }
       ],
@@ -1663,34 +1553,6 @@
       "section": "belum"
     },
     {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "梟",
-          "bacaan": "ふくろう",
-          "arti": ""
-        },
-        {
-          "kanji": "楽器",
-          "bacaan": "がっき",
-          "arti": ""
-        },
-        {
-          "kanji": "業務",
-          "bacaan": "ぎょうむ",
-          "arti": ""
-        },
-        {
-          "kanji": "業者",
-          "bacaan": "ぎょうしゃ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "立",
       "label": "立 - Berdiri  (4 kata)",
       "count": 4,
@@ -1775,29 +1637,6 @@
       "section": "belum"
     },
     {
-      "radikal": "厂",
-      "label": "厂 - Tebing / pelindung  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "灰",
-          "bacaan": "はい",
-          "arti": ""
-        },
-        {
-          "kanji": "厳重",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "厳密",
-          "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "皿",
       "label": "皿 - Piring/wadah  (3 kata)",
       "count": 3,
@@ -1815,29 +1654,6 @@
         {
           "kanji": "盗難",
           "bacaan": "とうなん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "火",
-      "label": "火 - Api  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "烏",
-          "bacaan": "からす",
-          "arti": ""
-        },
-        {
-          "kanji": "烏賊",
-          "bacaan": "いか",
-          "arti": ""
-        },
-        {
-          "kanji": "熊",
-          "bacaan": "くま",
           "arti": ""
         }
       ],
@@ -1913,6 +1729,24 @@
       "section": "belum"
     },
     {
+      "radikal": "厂",
+      "label": "厂 - Tebing / pelindung  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "厳重",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "厳密",
+          "bacaan": "",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
       "radikal": "女",
       "label": "女 - Wanita/perempuan  (2 kata)",
       "count": 2,
@@ -1925,24 +1759,6 @@
         {
           "kanji": "姿勢",
           "bacaan": "すがた",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "月",
-      "label": "月 - (radikal jarang, lihat contoh kanji)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "朗読",
-          "bacaan": "ろうどく",
-          "arti": ""
-        },
-        {
-          "kanji": "朗らか",
-          "bacaan": "ほがらか",
           "arti": ""
         }
       ],
@@ -2033,19 +1849,6 @@
         {
           "kanji": "獣",
           "bacaan": "けもの",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "風",
-      "label": "風 - Angin  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "風呂",
-          "bacaan": "ふろ",
           "arti": ""
         }
       ],
@@ -2163,19 +1966,6 @@
         {
           "kanji": "掌",
           "bacaan": "てのひら",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "土",
-      "label": "土 - Tanah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "堂々",
-          "bacaan": "どうどう",
           "arti": ""
         }
       ],
