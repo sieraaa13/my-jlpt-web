@@ -1,0 +1,536 @@
+{
+  "title": "Kumpulan Kanji Belum Terdefinisikan",
+  "groups": [
+    {
+      "radikal": "文",
+      "label": "文 - Tulisan / budaya  (5 kata)",
+      "count": 5,
+      "words": [
+        {
+          "kanji": "文字",
+          "bacaan": "もじ",
+          "arti": "huruf / karakter"
+        },
+        {
+          "kanji": "文字数",
+          "bacaan": "もじすう",
+          "arti": "jumlah karakter"
+        },
+        {
+          "kanji": "文章",
+          "bacaan": "ぶんしょう",
+          "arti": "teks / tulisan / kalimat"
+        },
+        {
+          "kanji": "文具",
+          "bacaan": "ぶんぐ",
+          "arti": "alat tulis"
+        },
+        {
+          "kanji": "文系",
+          "bacaan": "ぶんけい",
+          "arti": "ilmu humaniora / jurusan non-sains"
+        }
+      ]
+    },
+    {
+      "radikal": "目",
+      "label": "目 - Mata  (4 kata)",
+      "count": 4,
+      "words": [
+        {
+          "kanji": "直ちに",
+          "bacaan": "ただちに",
+          "arti": "segera / seketika / langsung"
+        },
+        {
+          "kanji": "直立歩行",
+          "bacaan": "ちょくりつほこう",
+          "arti": "berjalan tegak (bipedalisme)"
+        },
+        {
+          "kanji": "直結",
+          "bacaan": "ちょっけつ",
+          "arti": "koneksi langsung"
+        },
+        {
+          "kanji": "直前",
+          "bacaan": "ちょくぜん",
+          "arti": "tepat sebelum / sesaat sebelum"
+        }
+      ]
+    },
+    {
+      "radikal": "寸",
+      "label": "寸 - Ukuran / jari tangan  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "尋ねる",
+          "bacaan": "たずねる",
+          "arti": "bertanya / mengajukan pertanyaan"
+        },
+        {
+          "kanji": "専念",
+          "bacaan": "せんねん",
+          "arti": "konsentrasi penuh / fokus total"
+        },
+        {
+          "kanji": "専門家",
+          "bacaan": "せんもんか",
+          "arti": "pakar / ahli / spesialis"
+        }
+      ]
+    },
+    {
+      "radikal": "丿",
+      "label": "丿 - Coretan miring  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "乏しい",
+          "bacaan": "とぼしい",
+          "arti": "kurang / miskin / sedikit"
+        },
+        {
+          "kanji": "乖離",
+          "bacaan": "かいり",
+          "arti": "pemisahan / penyimpangan / kesenjangan"
+        },
+        {
+          "kanji": "垂",
+          "bacaan": "すい",
+          "arti": "menggantung / menjuntai (radikal)"
+        }
+      ]
+    },
+    {
+      "radikal": "厶",
+      "label": "厶 - Milik pribadi  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "参加",
+          "bacaan": "さんか",
+          "arti": "partisipasi / keikutsertaan"
+        },
+        {
+          "kanji": "参照",
+          "bacaan": "さんしょう",
+          "arti": "referensi / rujukan"
+        },
+        {
+          "kanji": "弁解",
+          "bacaan": "べんかい",
+          "arti": "pembelaan / pembenaran / alasan"
+        }
+      ]
+    },
+    {
+      "radikal": "田",
+      "label": "田 - Sawah / ladang  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "当惑",
+          "bacaan": "とうわく",
+          "arti": "kebingungan / kecanggungan"
+        },
+        {
+          "kanji": "当事者",
+          "bacaan": "とうじしゃ",
+          "arti": "pihak yang terlibat / berkepentingan"
+        },
+        {
+          "kanji": "申請",
+          "bacaan": "しんせい",
+          "arti": "aplikasi / permohonan / pengajuan"
+        }
+      ]
+    },
+    {
+      "radikal": "小",
+      "label": "小 - Kecil  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "挙げる",
+          "bacaan": "あげる",
+          "arti": "mengangkat / menaikkan"
+        },
+        {
+          "kanji": "小手先",
+          "bacaan": "こてさき",
+          "arti": "trik murahan / usaha dangkal"
+        },
+        {
+          "kanji": "小柄",
+          "bacaan": "こがら",
+          "arti": "bertubuh kecil / mungil"
+        }
+      ]
+    },
+    {
+      "radikal": "心",
+      "label": "心 - Hati / pikiran  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "恐れる",
+          "bacaan": "おそれる",
+          "arti": "takut / khawatir / gentar"
+        },
+        {
+          "kanji": "恵み",
+          "bacaan": "めぐみ",
+          "arti": "berkah / rahmat / anugerah"
+        },
+        {
+          "kanji": "急激",
+          "bacaan": "きゅうげき",
+          "arti": "mendadak dan drastis"
+        }
+      ]
+    },
+    {
+      "radikal": "十",
+      "label": "十 - Sepuluh  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "卑怯",
+          "bacaan": "ひきょう",
+          "arti": "pengecut / licik / curang"
+        },
+        {
+          "kanji": "半減",
+          "bacaan": "はんげん",
+          "arti": "berkurang setengah"
+        }
+      ]
+    },
+    {
+      "radikal": "日",
+      "label": "日 - Matahari / hari  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "春",
+          "bacaan": "はる",
+          "arti": "musim semi"
+        },
+        {
+          "kanji": "普及",
+          "bacaan": "ふきゅう",
+          "arti": "penyebaran / meluas / menjadi umum"
+        }
+      ]
+    },
+    {
+      "radikal": "口",
+      "label": "口 - Mulut  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "司会",
+          "bacaan": "しかい",
+          "arti": "pembawa acara / MC"
+        },
+        {
+          "kanji": "向上",
+          "bacaan": "こうじょう",
+          "arti": "peningkatan / kemajuan"
+        }
+      ]
+    },
+    {
+      "radikal": "欠",
+      "label": "欠 - Kekurangan / menguap  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "歌謡曲",
+          "bacaan": "かようきょく",
+          "arti": "lagu pop Jepang (era Showa)"
+        },
+        {
+          "kanji": "歌詞",
+          "bacaan": "かし",
+          "arti": "lirik / kata-kata lagu"
+        }
+      ]
+    },
+    {
+      "radikal": "貝",
+      "label": "貝 - Kerang (dulu = uang)  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "貿易",
+          "bacaan": "ぼうえき",
+          "arti": "perdagangan internasional"
+        },
+        {
+          "kanji": "貴重",
+          "bacaan": "きちょう",
+          "arti": "berharga / bernilai / penting"
+        }
+      ]
+    },
+    {
+      "radikal": "亅",
+      "label": "亅 - Kait  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "事柄",
+          "bacaan": "ことがら",
+          "arti": "hal / masalah / urusan"
+        },
+        {
+          "kanji": "事典",
+          "bacaan": "じてん",
+          "arti": "ensiklopedia / buku referensi"
+        }
+      ]
+    },
+    {
+      "radikal": "卩",
+      "label": "卩 - Segel / lutut  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "即座に",
+          "bacaan": "そくざに",
+          "arti": "seketika / tempat itu juga"
+        },
+        {
+          "kanji": "即座",
+          "bacaan": "そくざ",
+          "arti": "seketika / segera / di tempat"
+        }
+      ]
+    },
+    {
+      "radikal": "夂",
+      "label": "夂 - Melangkah pelan  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "変更",
+          "bacaan": "へんこう",
+          "arti": "perubahan / modifikasi / revisi"
+        },
+        {
+          "kanji": "変換",
+          "bacaan": "へんかん",
+          "arti": "konversi / transformasi"
+        }
+      ]
+    },
+    {
+      "radikal": "馬",
+      "label": "馬 - Kuda  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "驚く",
+          "bacaan": "おどろく",
+          "arti": "terkejut / tercengang / kaget"
+        }
+      ]
+    },
+    {
+      "radikal": "肉",
+      "label": "肉 - Daging  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "能度",
+          "bacaan": "のうど",
+          "arti": "tingkat kemampuan / derajat kinerja"
+        }
+      ]
+    },
+    {
+      "radikal": "尢",
+      "label": "尢 - Kaki pincang  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "尤もらしい",
+          "bacaan": "もっともらしい",
+          "arti": "tampak paling benar / masuk akal"
+        }
+      ]
+    },
+    {
+      "radikal": "丶",
+      "label": "丶 - Titik  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "丹念に",
+          "bacaan": "たんねんに",
+          "arti": "dengan teliti / saksama / cermat"
+        }
+      ]
+    },
+    {
+      "radikal": "木",
+      "label": "木 - Pohon / kayu  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "業績",
+          "bacaan": "ぎょうせき",
+          "arti": "kinerja / prestasi / pencapaian"
+        }
+      ]
+    },
+    {
+      "radikal": "土",
+      "label": "土 - Tanah  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "基本",
+          "bacaan": "きほん",
+          "arti": "dasar / asas / prinsip dasar"
+        }
+      ]
+    },
+    {
+      "radikal": "丨",
+      "label": "丨 - Garis tegak  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "旧",
+          "bacaan": "きゅう",
+          "arti": "lama / tua / bekas / dahulu"
+        }
+      ]
+    },
+    {
+      "radikal": "二",
+      "label": "二 - Dua  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "元",
+          "bacaan": "もと",
+          "arti": "asal / mula / dasar / semula"
+        }
+      ]
+    },
+    {
+      "radikal": "旡",
+      "label": "旡 - Tersedak / kenyang  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "既に",
+          "bacaan": "すでに",
+          "arti": "sudah / telah / sebelumnya"
+        }
+      ]
+    },
+    {
+      "radikal": "鬼",
+      "label": "鬼 - Hantu / roh  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "魅力",
+          "bacaan": "みりょく",
+          "arti": "daya tarik / pesona / karisma"
+        }
+      ]
+    },
+    {
+      "radikal": "彳",
+      "label": "彳 - Melangkah kecil  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "やむを得ない",
+          "bacaan": "やむをえない",
+          "arti": "mau tidak mau / terpaksa"
+        }
+      ]
+    },
+    {
+      "radikal": "工",
+      "label": "工 - Pekerjaan / alat  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "差",
+          "bacaan": "さ",
+          "arti": "perbedaan / selisih / disparitas"
+        }
+      ]
+    },
+    {
+      "radikal": "儿",
+      "label": "儿 - Kaki manusia  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "克服",
+          "bacaan": "こくふく",
+          "arti": "mengatasi / menaklukkan"
+        }
+      ]
+    },
+    {
+      "radikal": "月",
+      "label": "月 - Bulan  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "期待",
+          "bacaan": "きたい",
+          "arti": "harapan / ekspektasi / antisipasi"
+        }
+      ]
+    },
+    {
+      "radikal": "糸",
+      "label": "糸 - Benang  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "素直に",
+          "bacaan": "すなおに",
+          "arti": "dengan jujur / patuh / tulus"
+        }
+      ]
+    },
+    {
+      "radikal": "邑",
+      "label": "邑 - Kota / wilayah  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "郵便物",
+          "bacaan": "ゆうびんぶつ",
+          "arti": "kiriman pos / surat"
+        }
+      ]
+    },
+    {
+      "radikal": "衣",
+      "label": "衣 - Pakaian  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "表面",
+          "bacaan": "ひょうめん",
+          "arti": "permukaan / bagian luar"
+        }
+      ]
+    }
+  ]
+}
