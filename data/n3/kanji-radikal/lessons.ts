@@ -9,6 +9,7 @@ import garisAtasTopi from "./garis-atas-topi.json";
 import kotak from "./kotak.json";
 import pelindung from "./pelindung.json";
 import tanahGarisAtas from "./tanah-garis-atas.json";
+import tempat from "./tempat.json";
 import titik from "./titik.json";
 import garis from "./garis.json";
 import type { RadikalFile } from "@/data/kanji-radikal-types";
@@ -19,6 +20,7 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   alam: alam as RadikalFile,
   "bagian-tubuh": bagianTubuh as RadikalFile,
   binatang: binatang as RadikalFile,
+  tempat: tempat as RadikalFile,
   "garis-atas-topi": garisAtasTopi as RadikalFile,
   kotak: kotak as RadikalFile,
   pelindung: pelindung as RadikalFile,
@@ -31,6 +33,7 @@ export const radikalKanjiOrder = [
   "alam",
   "bagian-tubuh",
   "binatang",
+  "tempat",
   "garis-atas-topi",
   "kotak",
   "pelindung",

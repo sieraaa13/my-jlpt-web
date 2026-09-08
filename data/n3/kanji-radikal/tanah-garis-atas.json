@@ -1523,74 +1523,6 @@
       "section": "belum"
     },
     {
-      "radikal": "邑",
-      "label": "邑 - Kota/wilayah (阝kanan)  (12 kata)",
-      "count": 12,
-      "words": [
-        {
-          "kanji": "部分",
-          "bacaan": "ぶぶん",
-          "arti": ""
-        },
-        {
-          "kanji": "部",
-          "bacaan": "ぶ",
-          "arti": ""
-        },
-        {
-          "kanji": "部長",
-          "bacaan": "ぶちょう",
-          "arti": ""
-        },
-        {
-          "kanji": "部下",
-          "bacaan": "ぶか",
-          "arti": ""
-        },
-        {
-          "kanji": "部門",
-          "bacaan": "ぶもん",
-          "arti": ""
-        },
-        {
-          "kanji": "部隊",
-          "bacaan": "ぶたい",
-          "arti": ""
-        },
-        {
-          "kanji": "都市",
-          "bacaan": "とし",
-          "arti": ""
-        },
-        {
-          "kanji": "都合",
-          "bacaan": "つごう",
-          "arti": ""
-        },
-        {
-          "kanji": "都心",
-          "bacaan": "としん",
-          "arti": ""
-        },
-        {
-          "kanji": "都",
-          "bacaan": "みやこ",
-          "arti": ""
-        },
-        {
-          "kanji": "都会",
-          "bacaan": "とかい",
-          "arti": ""
-        },
-        {
-          "kanji": "郊外",
-          "bacaan": "こうがい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "夂",
       "label": "夂 - Melangkah pelan  (11 kata)",
       "count": 11,
@@ -1957,44 +1889,6 @@
       "section": "belum"
     },
     {
-      "radikal": "玄",
-      "label": "玄 - Gelap/misterius  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "率直",
-          "bacaan": "そっちょく",
-          "arti": ""
-        },
-        {
-          "kanji": "率",
-          "bacaan": "りつ",
-          "arti": ""
-        },
-        {
-          "kanji": "玄人",
-          "bacaan": "くろうと",
-          "arti": ""
-        },
-        {
-          "kanji": "畜生",
-          "bacaan": "ちくしょう",
-          "arti": ""
-        },
-        {
-          "kanji": "玄米",
-          "bacaan": "げんまい",
-          "arti": ""
-        },
-        {
-          "kanji": "玄関",
-          "bacaan": "げんかん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "巾",
       "label": "巾 - Kain  (6 kata)",
       "count": 6,
@@ -2103,6 +1997,39 @@
         {
           "kanji": "刺身",
           "bacaan": "さしみ",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "玄",
+      "label": "玄 - Gelap/misterius  (5 kata)",
+      "count": 5,
+      "words": [
+        {
+          "kanji": "率直",
+          "bacaan": "そっちょく",
+          "arti": ""
+        },
+        {
+          "kanji": "率",
+          "bacaan": "りつ",
+          "arti": ""
+        },
+        {
+          "kanji": "玄人",
+          "bacaan": "くろうと",
+          "arti": ""
+        },
+        {
+          "kanji": "玄米",
+          "bacaan": "げんまい",
+          "arti": ""
+        },
+        {
+          "kanji": "玄関",
+          "bacaan": "げんかん",
           "arti": ""
         }
       ],
@@ -2389,29 +2316,6 @@
       "section": "belum"
     },
     {
-      "radikal": "里",
-      "label": "里 - Desa / satuan jarak  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "重んじる",
-          "bacaan": "おもんじる",
-          "arti": ""
-        },
-        {
-          "kanji": "重なる",
-          "bacaan": "かさなる",
-          "arti": ""
-        },
-        {
-          "kanji": "重ねる",
-          "bacaan": "かさねる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "女",
       "label": "女 - Wanita/perempuan  (2 kata)",
       "count": 2,
@@ -2481,19 +2385,6 @@
         {
           "kanji": "斡旋",
           "bacaan": "あっせん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "广",
-      "label": "广 - Bangunan beratap miring / pelindung  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "広場",
-          "bacaan": "ひろば",
           "arti": ""
         }
       ],
