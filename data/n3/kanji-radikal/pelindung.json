@@ -1,0 +1,367 @@
+{
+  "title": "Kumpulan Kanji Berbunshu Pelindung",
+  "groups": [
+    {
+      "radikal": "厂 / 广",
+      "label": "厂 / 广 - Tebing / Atap Miring (Pelindung)  (71 kata)",
+      "count": 71,
+      "words": [
+        {
+          "kanji": "歴史",
+          "bacaan": "れきし",
+          "arti": "sejarah"
+        },
+        {
+          "kanji": "厚顔",
+          "bacaan": "こうがん",
+          "arti": "tebal muka"
+        },
+        {
+          "kanji": "原作",
+          "bacaan": "げんさく",
+          "arti": "karya asli"
+        },
+        {
+          "kanji": "原子",
+          "bacaan": "げんし",
+          "arti": "atom"
+        },
+        {
+          "kanji": "原子力",
+          "bacaan": "げんしりょく",
+          "arti": "tenaga nuklir"
+        },
+        {
+          "kanji": "原案",
+          "bacaan": "げんあん",
+          "arti": "rancangan awal"
+        },
+        {
+          "kanji": "原語",
+          "bacaan": "げんご",
+          "arti": "bahasa asli"
+        },
+        {
+          "kanji": "原稿",
+          "bacaan": "げんこう",
+          "arti": "naskah"
+        },
+        {
+          "kanji": "原本",
+          "bacaan": "げんぽん",
+          "arti": "buku asli"
+        },
+        {
+          "kanji": "原因",
+          "bacaan": "げんいん",
+          "arti": "penyebab"
+        },
+        {
+          "kanji": "厚生省",
+          "bacaan": "こうせいしょう",
+          "arti": "kementerian kesejahteraan"
+        },
+        {
+          "kanji": "原価",
+          "bacaan": "げんか",
+          "arti": "harga pokok"
+        },
+        {
+          "kanji": "厳しい",
+          "bacaan": "きびしい",
+          "arti": "ketat / keras"
+        },
+        {
+          "kanji": "原理",
+          "bacaan": "げんり",
+          "arti": "prinsip"
+        },
+        {
+          "kanji": "原始",
+          "bacaan": "げんし",
+          "arti": "purba / primitif"
+        },
+        {
+          "kanji": "厳粛",
+          "bacaan": "げんしゅく",
+          "arti": "khidmat"
+        },
+        {
+          "kanji": "原則",
+          "bacaan": "げんそく",
+          "arti": "prinsip / asas"
+        },
+        {
+          "kanji": "圧力",
+          "bacaan": "あつりょく",
+          "arti": "tekanan"
+        },
+        {
+          "kanji": "厳か",
+          "bacaan": "おごそか",
+          "arti": "khidmat / agung"
+        },
+        {
+          "kanji": "原住民",
+          "bacaan": "げんじゅうみん",
+          "arti": "penduduk asli"
+        },
+        {
+          "kanji": "暦",
+          "bacaan": "こよみ",
+          "arti": "kalender"
+        },
+        {
+          "kanji": "原始林",
+          "bacaan": "げんしりん",
+          "arti": "hutan purba"
+        },
+        {
+          "kanji": "厚生",
+          "bacaan": "こうせい",
+          "arti": "kesejahteraan"
+        },
+        {
+          "kanji": "厚化粧",
+          "bacaan": "あつげしょう",
+          "arti": "dandanan tebal"
+        },
+        {
+          "kanji": "厚い",
+          "bacaan": "あつい",
+          "arti": "tebal"
+        },
+        {
+          "kanji": "厚かましい",
+          "bacaan": "あつかましい",
+          "arti": "tidak tahu malu"
+        },
+        {
+          "kanji": "厚さ",
+          "bacaan": "あつさ",
+          "arti": "ketebalan"
+        },
+        {
+          "kanji": "原型",
+          "bacaan": "げんけい",
+          "arti": "bentuk asli / prototipe"
+        },
+        {
+          "kanji": "原爆",
+          "bacaan": "げんばく",
+          "arti": "bom atom"
+        },
+        {
+          "kanji": "原料",
+          "bacaan": "げんりょう",
+          "arti": "bahan baku"
+        },
+        {
+          "kanji": "原子爆弾",
+          "bacaan": "げんしばくだん",
+          "arti": "bom atom"
+        },
+        {
+          "kanji": "原油",
+          "bacaan": "げんゆ",
+          "arti": "minyak mentah"
+        },
+        {
+          "kanji": "原産地",
+          "bacaan": "げんさんち",
+          "arti": "tempat asal produksi"
+        },
+        {
+          "kanji": "灰皿",
+          "bacaan": "はいざら",
+          "arti": "asbak"
+        },
+        {
+          "kanji": "灰色",
+          "bacaan": "はいいろ",
+          "arti": "abu-abu"
+        },
+        {
+          "kanji": "圧迫",
+          "bacaan": "あっぱく",
+          "arti": "tekanan / penindasan"
+        },
+        {
+          "kanji": "原",
+          "bacaan": "はら",
+          "arti": "padang / dataran"
+        },
+        {
+          "kanji": "度",
+          "bacaan": "たび",
+          "arti": "kali (frekuensi)"
+        },
+        {
+          "kanji": "度々",
+          "bacaan": "たびたび",
+          "arti": "berkali-kali"
+        },
+        {
+          "kanji": "広告",
+          "bacaan": "こうこく",
+          "arti": "iklan"
+        },
+        {
+          "kanji": "序説",
+          "bacaan": "じょせつ",
+          "arti": "pendahuluan / pengantar"
+        },
+        {
+          "kanji": "度",
+          "bacaan": "ど",
+          "arti": "derajat"
+        },
+        {
+          "kanji": "広がる",
+          "bacaan": "ひろがる",
+          "arti": "meluas"
+        },
+        {
+          "kanji": "広げる",
+          "bacaan": "ひろげる",
+          "arti": "memperluas"
+        },
+        {
+          "kanji": "広い",
+          "bacaan": "ひろい",
+          "arti": "luas"
+        },
+        {
+          "kanji": "広まる",
+          "bacaan": "ひろまる",
+          "arti": "menyebar"
+        },
+        {
+          "kanji": "広める",
+          "bacaan": "ひろめる",
+          "arti": "menyebarkan"
+        },
+        {
+          "kanji": "広さ",
+          "bacaan": "ひろさ",
+          "arti": "keluasan"
+        },
+        {
+          "kanji": "廃止",
+          "bacaan": "はいし",
+          "arti": "penghapusan"
+        },
+        {
+          "kanji": "腐敗",
+          "bacaan": "ふはい",
+          "arti": "pembusukan / korupsi"
+        },
+        {
+          "kanji": "店員",
+          "bacaan": "てんいん",
+          "arti": "pegawai toko"
+        },
+        {
+          "kanji": "店主",
+          "bacaan": "てんしゅ",
+          "arti": "pemilik toko"
+        },
+        {
+          "kanji": "庶民",
+          "bacaan": "しょみん",
+          "arti": "rakyat jelata"
+        },
+        {
+          "kanji": "腐る",
+          "bacaan": "くさる",
+          "arti": "membusuk"
+        },
+        {
+          "kanji": "廃物",
+          "bacaan": "はいぶつ",
+          "arti": "barang bekas"
+        },
+        {
+          "kanji": "庭園",
+          "bacaan": "ていえん",
+          "arti": "taman"
+        },
+        {
+          "kanji": "店舗",
+          "bacaan": "てんぽ",
+          "arti": "toko"
+        },
+        {
+          "kanji": "床屋",
+          "bacaan": "とこや",
+          "arti": "tukang cukur"
+        },
+        {
+          "kanji": "座敷",
+          "bacaan": "ざしき",
+          "arti": "ruang tatami"
+        },
+        {
+          "kanji": "床",
+          "bacaan": "ゆか",
+          "arti": "lantai"
+        },
+        {
+          "kanji": "座",
+          "bacaan": "ざ",
+          "arti": "tempat duduk / singgasana"
+        },
+        {
+          "kanji": "座席",
+          "bacaan": "ざせき",
+          "arti": "kursi / tempat duduk"
+        },
+        {
+          "kanji": "座布団",
+          "bacaan": "ざぶとん",
+          "arti": "bantal duduk"
+        },
+        {
+          "kanji": "座談",
+          "bacaan": "ざだん",
+          "arti": "obrolan santai"
+        },
+        {
+          "kanji": "座談会",
+          "bacaan": "ざだんかい",
+          "arti": "forum diskusi"
+        },
+        {
+          "kanji": "座禅",
+          "bacaan": "ざぜん",
+          "arti": "meditasi zen"
+        },
+        {
+          "kanji": "座る",
+          "bacaan": "すわる",
+          "arti": "duduk"
+        },
+        {
+          "kanji": "店",
+          "bacaan": "みせ",
+          "arti": "toko"
+        },
+        {
+          "kanji": "庭",
+          "bacaan": "にわ",
+          "arti": "halaman / taman"
+        },
+        {
+          "kanji": "廊下",
+          "bacaan": "ろうか",
+          "arti": "koridor"
+        },
+        {
+          "kanji": "廃れる",
+          "bacaan": "すたれる",
+          "arti": "ketinggalan zaman / pudar"
+        }
+      ]
+    }
+  ]
+}

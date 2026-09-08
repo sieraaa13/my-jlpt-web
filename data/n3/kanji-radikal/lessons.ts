@@ -5,6 +5,10 @@
 import alam from "./alam.json";
 import bagianTubuh from "./bagian-tubuh.json";
 import garisAtasTopi from "./garis-atas-topi.json";
+import kotak from "./kotak.json";
+import pelindung from "./pelindung.json";
+import tanahGarisAtas from "./tanah-garis-atas.json";
+import titik from "./titik.json";
 
 export type RadikalWord = {
   kanji: string;
@@ -28,6 +32,18 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   alam: alam as RadikalFile,
   "bagian-tubuh": bagianTubuh as RadikalFile,
   "garis-atas-topi": garisAtasTopi as RadikalFile,
+  kotak: kotak as RadikalFile,
+  pelindung: pelindung as RadikalFile,
+  "tanah-garis-atas": tanahGarisAtas as RadikalFile,
+  titik: titik as RadikalFile,
 };
 
-export const radikalKanjiOrder = ["alam", "bagian-tubuh", "garis-atas-topi"];
+export const radikalKanjiOrder = [
+  "alam",
+  "bagian-tubuh",
+  "garis-atas-topi",
+  "kotak",
+  "pelindung",
+  "tanah-garis-atas",
+  "titik",
+];
