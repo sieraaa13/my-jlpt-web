@@ -1323,54 +1323,6 @@
       ]
     },
     {
-      "radikal": "刀",
-      "label": "刀 - Pedang / pisau (bukan alam)  (8 kata)",
-      "count": 8,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "利用",
-          "bacaan": "りよう",
-          "arti": "Penggunaan / Pemanfaatan / Memakai"
-        },
-        {
-          "kanji": "利益",
-          "bacaan": "りえき",
-          "arti": "Keuntungan / Laba / Manfaat / Kepentingan"
-        },
-        {
-          "kanji": "利点",
-          "bacaan": "りてん",
-          "arti": "Keuntungan / Manfaat / Poin yang menguntungkan / Kelebihan"
-        },
-        {
-          "kanji": "利口",
-          "bacaan": "りこう",
-          "arti": "berarti: Pintar / Cerdas / Bijaksana / Pandai berbicara"
-        },
-        {
-          "kanji": "刺激",
-          "bacaan": "しげき",
-          "arti": "Stimulasi / Rangsangan / Dorongan / Iritasi"
-        },
-        {
-          "kanji": "制",
-          "bacaan": "せい",
-          "arti": "Sistem / Aturan / Kontrol / Batasan / Membuat"
-        },
-        {
-          "kanji": "制作",
-          "bacaan": "せいさく",
-          "arti": "Produksi / Pembuatan / Pengerjaan (karya seni / film / musik / dll.) / Membuat"
-        },
-        {
-          "kanji": "制約",
-          "bacaan": "せいやく",
-          "arti": "Batasan / Kendala / Keterbatasan / Kondisi yang mengikat"
-        }
-      ]
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga (bukan alam)  (5 kata)",
       "count": 5,
@@ -1513,19 +1465,6 @@
       ]
     },
     {
-      "radikal": "衣",
-      "label": "衣 - Pakaian (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "製造法",
-          "bacaan": "せいぞうほう",
-          "arti": "Metode Manufaktur / Cara Pembuatan / Proses Produksi"
-        }
-      ]
-    },
-    {
       "radikal": "儿",
       "label": "儿 - Kaki manusia (bukan alam)  (1 kata)",
       "count": 1,
@@ -1535,19 +1474,6 @@
           "kanji": "光源",
           "bacaan": "こうげん",
           "arti": "Sumber cahaya"
-        }
-      ]
-    },
-    {
-      "radikal": "車",
-      "label": "車 - Kereta / roda (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "輝き",
-          "bacaan": "かがやき",
-          "arti": "Kilauan / Cahaya / Kecemerlangan / Kemilau"
         }
       ]
     }

@@ -547,53 +547,6 @@
       ]
     },
     {
-      "radikal": "冂",
-      "label": "冂 - Batas luar / border  (8 kata)",
-      "count": 8,
-      "words": [
-        {
-          "kanji": "再生",
-          "bacaan": "さいせい",
-          "arti": "Putar Ulang / Memainkan Kembali"
-        },
-        {
-          "kanji": "再",
-          "bacaan": "さい",
-          "arti": "Kembali / Lagi / Berulang / Kedua Kali"
-        },
-        {
-          "kanji": "再び",
-          "bacaan": "ふたたび",
-          "arti": "Sekali lagi / Kembali / Lagi-lagi"
-        },
-        {
-          "kanji": "再利用",
-          "bacaan": "さいりよう",
-          "arti": "Daur Ulang / Penggunaan Kembali / Pemanfaatan Ulang"
-        },
-        {
-          "kanji": "再会",
-          "bacaan": "さいかい",
-          "arti": "Bertemu kembali / Reuni"
-        },
-        {
-          "kanji": "再開",
-          "bacaan": "さいかい",
-          "arti": "Pembukaan Kembali / Memulai Kembali / Lanjutan"
-        },
-        {
-          "kanji": "再度",
-          "bacaan": "さいど",
-          "arti": "Sekali lagi / Kembali / Ulang"
-        },
-        {
-          "kanji": "再修理",
-          "bacaan": "さいしゅうり",
-          "arti": "Perbaikan Ulang / Perbaikan Kedua / atau Rework (dalam konteks teknis)"
-        }
-      ]
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga  (8 kata)",
       "count": 8,
@@ -757,43 +710,6 @@
       ]
     },
     {
-      "radikal": "刀",
-      "label": "刀 - Pedang / pisau  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "判断",
-          "bacaan": "はんだん",
-          "arti": "Penilaian / Keputusan / Pertimbangan / Menilai / Memutuskan"
-        },
-        {
-          "kanji": "分野",
-          "bacaan": "ぶんや",
-          "arti": "Bidang / Lapangan / Sektor / Ranah"
-        },
-        {
-          "kanji": "分厚く",
-          "bacaan": "ぶあつく",
-          "arti": "Secara tebal / Tebal-tebal / Dengan tebal yang mencolok"
-        },
-        {
-          "kanji": "分解",
-          "bacaan": "ぶんかい",
-          "arti": "Pembongkaran / Pemisahan / Dekomposisi / Penguraian / Analisis"
-        },
-        {
-          "kanji": "削除",
-          "bacaan": "さくじょ",
-          "arti": "Penghapusan / Penghilangan / Pemotongan"
-        },
-        {
-          "kanji": "削る",
-          "bacaan": "けずる",
-          "arti": "Mengikis / Memangkas / Meraut"
-        }
-      ]
-    },
-    {
       "radikal": "八",
       "label": "八 - Delapan  (5 kata)",
       "count": 5,
@@ -885,33 +801,6 @@
       ]
     },
     {
-      "radikal": "衣",
-      "label": "衣 - Pakaian  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "装置",
-          "bacaan": "そうち",
-          "arti": "Perangkat / Peralatan / Instalasi / Alat"
-        },
-        {
-          "kanji": "装飾的",
-          "bacaan": "そうしょくてき",
-          "arti": "Dekoratif / Berfungsi sebagai hiasan / Bersifat ornamen / Estetis"
-        },
-        {
-          "kanji": "表明",
-          "bacaan": "ひょうめい",
-          "arti": "Pernyataan / deklarasi / pengumuman"
-        },
-        {
-          "kanji": "衰退",
-          "bacaan": "すいたい",
-          "arti": "Kemunduran / Penurunan / Kehancuran / Melemah"
-        }
-      ]
-    },
-    {
       "radikal": "欠",
       "label": "欠 - Kekurangan / menguap  (4 kata)",
       "count": 4,
@@ -939,33 +828,6 @@
       ]
     },
     {
-      "radikal": "貝",
-      "label": "貝 - Kerang (dulu = uang)  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "資源",
-          "bacaan": "しげん",
-          "arti": "Sumber Daya / Kekayaan"
-        },
-        {
-          "kanji": "貢献",
-          "bacaan": "こうけん",
-          "arti": "Kontribusi / Sumbangsih / Peran Positif"
-        },
-        {
-          "kanji": "贔屓",
-          "bacaan": "ひいき",
-          "arti": "Dukungan / bantuan / perlakuan istimewa / favoritisme"
-        },
-        {
-          "kanji": "負担",
-          "bacaan": "ふたん",
-          "arti": "Beban / Tanggungan / Kewajiban"
-        }
-      ]
-    },
-    {
       "radikal": "支",
       "label": "支 - (radikal jarang, lihat contoh kanji)  (4 kata)",
       "count": 4,
@@ -989,33 +851,6 @@
           "kanji": "支配",
           "bacaan": "しはい",
           "arti": "Dominasi / Penguasaan / Kontrol / Kendali / Pemerintahan"
-        }
-      ]
-    },
-    {
-      "radikal": "斤",
-      "label": "斤 - (radikal jarang, lihat contoh kanji)  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "新作",
-          "bacaan": "しんさく",
-          "arti": "Karya Baru / Produk Baru / Edisi Terbaru"
-        },
-        {
-          "kanji": "新品同様",
-          "bacaan": "しんぴんどうよう",
-          "arti": "Sama seperti barang baru / Seperti baru"
-        },
-        {
-          "kanji": "新制度",
-          "bacaan": "しんせいど",
-          "arti": "Sistem Baru / Skema Baru / Institusi Baru"
-        },
-        {
-          "kanji": "新設",
-          "bacaan": "しんせつ",
-          "arti": "Pembentukan Baru / Pendirian Baru / Pembangunan Baru"
         }
       ]
     },
@@ -1126,28 +961,6 @@
           "kanji": "対応",
           "bacaan": "たいおう",
           "arti": "Penanganan / Tanggapan / Respons / Korespondensi / Kepatuhan"
-        }
-      ]
-    },
-    {
-      "radikal": "巾",
-      "label": "巾 - Kain  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "希薄",
-          "bacaan": "きはく",
-          "arti": "Tipis / Langka / Encer / Jarang (konsentrasinya) / Tidak meyakinkan"
-        },
-        {
-          "kanji": "帰省",
-          "bacaan": "きせい",
-          "arti": "Kembali ke kampung halaman (atau rumah orang tua)"
-        },
-        {
-          "kanji": "帰宅",
-          "bacaan": "きたく",
-          "arti": "Pulang ke Rumah / Kembali ke Tempat Tinggal"
         }
       ]
     },
@@ -1378,30 +1191,6 @@
       ]
     },
     {
-      "radikal": "几",
-      "label": "几 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "処理",
-          "bacaan": "しょり",
-          "arti": "Pemrosesan / Penanganan / Pengolahan / Mengurus / Menyelesaikan"
-        }
-      ]
-    },
-    {
-      "radikal": "工",
-      "label": "工 - Pekerjaan / alat  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "工夫",
-          "bacaan": "くふ",
-          "arti": "Upaya / Akal / Cara / Improvisasi / Inovasi Kecil / Kreativitas"
-        }
-      ]
-    },
-    {
       "radikal": "辰",
       "label": "辰 - (radikal jarang, lihat contoh kanji)  (1 kata)",
       "count": 1,
@@ -1446,18 +1235,6 @@
           "kanji": "延長線上に",
           "bacaan": "えんちょうせんじょうに",
           "arti": "Di jalur kelanjutan / Sebagai perpanjangan dari / Dalam urutan logis / Berada dalam kesinambungan"
-        }
-      ]
-    },
-    {
-      "radikal": "糸",
-      "label": "糸 - Benang  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "素材",
-          "bacaan": "そざい",
-          "arti": "Material mentah / bahan baku / bahan dasar"
         }
       ]
     },
@@ -1530,18 +1307,6 @@
           "kanji": "飽きる",
           "bacaan": "あきる",
           "arti": "Bosan / Jenuh / Muak / Merasa Cukup"
-        }
-      ]
-    },
-    {
-      "radikal": "車",
-      "label": "車 - Kereta / roda  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "載る",
-          "bacaan": "のる",
-          "arti": "Dimuat / Tertulis / Terdaftar / Terbit"
         }
       ]
     }

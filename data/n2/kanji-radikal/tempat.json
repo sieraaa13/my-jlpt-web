@@ -735,6 +735,49 @@
       "section": "main"
     },
     {
+      "radikal": "穴",
+      "label": "穴 - Lubang / gua  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "突然",
+          "bacaan": "とつぜん",
+          "arti": "tiba-tiba / mendadak / tanpa peringatan"
+        },
+        {
+          "kanji": "突っ込む",
+          "bacaan": "つっこむ",
+          "arti": "menancapkan/menyodokkan ke dalam / menerjang masuk / menabrak"
+        },
+        {
+          "kanji": "突拍子",
+          "bacaan": "とっぴょうし",
+          "arti": "(biasanya digunakan dalam frasa 突拍子もない): sangat aneh / tak terduga / di luar dugaan"
+        },
+        {
+          "kanji": "突き詰める",
+          "bacaan": "つきつめる",
+          "arti": "menganalisis secara mendalam / menyelidiki secara tuntas / menggali sampai akar"
+        },
+        {
+          "kanji": "空想",
+          "bacaan": "くうそう",
+          "arti": "lamunan / fantasi / khayalan"
+        },
+        {
+          "kanji": "空き地",
+          "bacaan": "あきち",
+          "arti": "tanah kosong / lahan kosong / lapangan terbuka"
+        },
+        {
+          "kanji": "空走",
+          "bacaan": "くうそう",
+          "arti": "melaju kosong / melaju tanpa pengereman"
+        }
+      ]
+    },
+    {
       "radikal": "行",
       "label": "行 - Berjalan/pergi  (6 kata)",
       "count": 6,
@@ -807,49 +850,6 @@
           "kanji": "庇う",
           "bacaan": "かばう",
           "arti": "melindungi / membela / menutupi kesalahan"
-        }
-      ]
-    },
-    {
-      "radikal": "穴",
-      "label": "穴 - Lubang / gua  (7 kata)",
-      "count": 7,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "突然",
-          "bacaan": "とつぜん",
-          "arti": "tiba-tiba / mendadak / tanpa peringatan"
-        },
-        {
-          "kanji": "突っ込む",
-          "bacaan": "つっこむ",
-          "arti": "menancapkan/menyodokkan ke dalam / menerjang masuk / menabrak"
-        },
-        {
-          "kanji": "突拍子",
-          "bacaan": "とっぴょうし",
-          "arti": "(biasanya digunakan dalam frasa 突拍子もない): sangat aneh / tak terduga / di luar dugaan"
-        },
-        {
-          "kanji": "突き詰める",
-          "bacaan": "つきつめる",
-          "arti": "menganalisis secara mendalam / menyelidiki secara tuntas / menggali sampai akar"
-        },
-        {
-          "kanji": "空想",
-          "bacaan": "くうそう",
-          "arti": "lamunan / fantasi / khayalan"
-        },
-        {
-          "kanji": "空き地",
-          "bacaan": "あきち",
-          "arti": "tanah kosong / lahan kosong / lapangan terbuka"
-        },
-        {
-          "kanji": "空走",
-          "bacaan": "くうそう",
-          "arti": "melaju kosong / melaju tanpa pengereman"
         }
       ]
     },
@@ -1006,19 +1006,6 @@
           "kanji": "導く",
           "bacaan": "みちびく",
           "arti": "memimpin / membimbing / mengarahkan"
-        }
-      ]
-    },
-    {
-      "radikal": "巾",
-      "label": "巾 - Kain (bukan tempat)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "市外",
-          "bacaan": "しがい",
-          "arti": "luar kota / pinggiran kota / di luar batas kota"
         }
       ]
     },

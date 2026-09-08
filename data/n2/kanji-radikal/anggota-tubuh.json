@@ -1790,69 +1790,6 @@
       ]
     },
     {
-      "radikal": "金",
-      "label": "金 - Logam (bukan anggota tubuh)  (11 kata)",
-      "count": 11,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "鉢植え",
-          "bacaan": "はちうえ",
-          "arti": "Tanaman dalam pot / Tanaman yang ditanam dalam wadah / Pot plant"
-        },
-        {
-          "kanji": "針",
-          "bacaan": "はり",
-          "arti": "Jarum / Jarum Jam/Kompas / Kawat / Umpan Pancing"
-        },
-        {
-          "kanji": "鍋",
-          "bacaan": "なべ",
-          "arti": "Panci / Panci Masak / Masakan Panci Rebus"
-        },
-        {
-          "kanji": "金額",
-          "bacaan": "きんがく",
-          "arti": "Jumlah Uang / Nilai Moneter / Total Biaya"
-        },
-        {
-          "kanji": "鉛筆",
-          "bacaan": "えんぴつ",
-          "arti": "Pensil"
-        },
-        {
-          "kanji": "鉄則",
-          "bacaan": "てっそく",
-          "arti": "Aturan besi / hukum yang tak tergoyahkan"
-        },
-        {
-          "kanji": "鍵",
-          "bacaan": "かぎ",
-          "arti": "Kunci (fisik) / Kunci (jawaban) / Kunci (elemen penting) / Tombol"
-        },
-        {
-          "kanji": "錆びる",
-          "bacaan": "さびる",
-          "arti": "Berkarat / Mengalami korosi"
-        },
-        {
-          "kanji": "金属製",
-          "bacaan": "きんぞくせい",
-          "arti": "Terbuat dari logam / Berbahan logam / Logam"
-        },
-        {
-          "kanji": "錯覚",
-          "bacaan": "さっかく",
-          "arti": "Ilusi / Delusi / Salah persepsi / Persepsi keliru / Kesalahan sensorik"
-        },
-        {
-          "kanji": "鉄道",
-          "bacaan": "てつどう",
-          "arti": "Kereta Api / Jalur Kereta Api / Perkeretaapian"
-        }
-      ]
-    },
-    {
       "radikal": "攴",
       "label": "攴 - Memukul ringan / tindakan (bukan anggota tubuh)  (10 kata)",
       "count": 10,
@@ -1960,77 +1897,6 @@
           "kanji": "妥当",
           "bacaan": "だと",
           "arti": "Masuk akal / Wajar"
-        }
-      ]
-    },
-    {
-      "radikal": "刀",
-      "label": "刀 - Pedang / pisau (bukan anggota tubuh)  (6 kata)",
-      "count": 6,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "刷り込まれる",
-          "bacaan": "すりこまれる",
-          "arti": "Tertanam / Tercetak (secara mendalam) / Terinternalisasi / Terpatri (di dalam pikiran/tubuh) / Terimprintasi (dalam konteks etologi/biologi)"
-        },
-        {
-          "kanji": "列挙",
-          "bacaan": "れっきょ",
-          "arti": "Pencantuman / Daftar / Menyebutkan satu per satu / Mendaftar"
-        },
-        {
-          "kanji": "創造",
-          "bacaan": "そうぞう",
-          "arti": "Penciptaan / Kreasi / Membuat / Menciptakan"
-        },
-        {
-          "kanji": "創意工夫",
-          "bacaan": "そういくふう",
-          "arti": "Kreativitas dan Inovasi / Ide Orisinal dan Upaya Cerdas / Daya Cipta"
-        },
-        {
-          "kanji": "別角度",
-          "bacaan": "べつかくど",
-          "arti": "Sudut pandang lain / Sudut yang berbeda / Perspektif alternatif"
-        },
-        {
-          "kanji": "別の部署に異動させる",
-          "bacaan": "べつのぶしょにいどうさせる",
-          "arti": "Membuat pindah departemen lain / menyebabkan seseorang dialihkan ke departemen lain"
-        }
-      ]
-    },
-    {
-      "radikal": "貝",
-      "label": "貝 - Kerang (dulu = uang) (bukan anggota tubuh)  (5 kata)",
-      "count": 5,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "購入",
-          "bacaan": "こうにゅう",
-          "arti": "Pembelian / Membeli"
-        },
-        {
-          "kanji": "購買者",
-          "bacaan": "こうばいしゃ",
-          "arti": "Orang yang melakukan pembelian"
-        },
-        {
-          "kanji": "賛否",
-          "bacaan": "さんぴ",
-          "arti": "Pro dan kontra / dukungan dan penolakan"
-        },
-        {
-          "kanji": "賢い",
-          "bacaan": "かしこい",
-          "arti": "Pintar / Cerdas"
-        },
-        {
-          "kanji": "賢者",
-          "bacaan": "けんじゃ",
-          "arti": "Orang bijak / orang pandai / filsuf"
         }
       ]
     },
@@ -2269,19 +2135,6 @@
           "kanji": "老眼鏡",
           "bacaan": "ろうがんきょう",
           "arti": "Kacamata Baca / Kacamata Plus"
-        }
-      ]
-    },
-    {
-      "radikal": "戈",
-      "label": "戈 - Tombak / senjata (bukan anggota tubuh)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "我慢",
-          "bacaan": "がまん",
-          "arti": "Ketahanan / Kesabaran / Menahan Diri / Kontrol Diri"
         }
       ]
     },

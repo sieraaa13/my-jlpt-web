@@ -420,72 +420,6 @@
       "section": "main"
     },
     {
-      "radikal": "糸",
-      "label": "糸 - Benang/sutra  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "経路",
-          "bacaan": "けいろ",
-          "arti": "rute / jalur / jalan yang ditempuh"
-        },
-        {
-          "kanji": "総排気量",
-          "bacaan": "そうはいきりょう",
-          "arti": "total kapasitas mesin / isi silinder"
-        },
-        {
-          "kanji": "続発",
-          "bacaan": "ぞくはつ",
-          "arti": "terjadi berturut-turut / beruntun / terjadi berulang kali"
-        },
-        {
-          "kanji": "素早く",
-          "bacaan": "すばやく",
-          "arti": "dengan cepat / dengan tangkas / segera"
-        },
-        {
-          "kanji": "紛失",
-          "bacaan": "ふんしつ",
-          "arti": "kehilangan / hilang"
-        },
-        {
-          "kanji": "続々と",
-          "bacaan": "ぞくぞくと",
-          "arti": "berbondong-bondong / berurutan / berturut-turut dengan cepat"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "刀",
-      "label": "刀 - Pedang / pisau  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "前後",
-          "bacaan": "ぜんご",
-          "arti": "depan dan belakang"
-        },
-        {
-          "kanji": "前方",
-          "bacaan": "ぜんぽう",
-          "arti": "ke arah depan / bagian depan"
-        },
-        {
-          "kanji": "制動灯",
-          "bacaan": "せいどうとう",
-          "arti": "lampu rem"
-        },
-        {
-          "kanji": "前続",
-          "bacaan": "ぜんぞく",
-          "arti": "yang menyambung di depan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "彳",
       "label": "彳 - Melangkah kecil  (4 kata)",
       "count": 4,
@@ -560,6 +494,29 @@
       "section": "main"
     },
     {
+      "radikal": "見",
+      "label": "見 - Melihat  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "規則",
+          "bacaan": "きそく",
+          "arti": "peraturan / regulasi / kaidah"
+        },
+        {
+          "kanji": "見落とす",
+          "bacaan": "みおとす",
+          "arti": "melewatkan / lalai melihat / gagal menyadari"
+        },
+        {
+          "kanji": "視界",
+          "bacaan": "しかい",
+          "arti": "jarak pandang / bidang pandang / penglihatan"
+        }
+      ],
+      "section": "main"
+    },
+    {
       "radikal": "止",
       "label": "止 - Berhenti  (2 kata)",
       "count": 2,
@@ -573,42 +530,6 @@
           "kanji": "正常",
           "bacaan": "せいじょう",
           "arti": "normal / wajar / berfungsi dengan baik"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "見",
-      "label": "見 - Melihat  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "規則",
-          "bacaan": "きそく",
-          "arti": "peraturan / regulasi / kaidah"
-        },
-        {
-          "kanji": "見落とす",
-          "bacaan": "みおとす",
-          "arti": "melewatkan / lalai melihat / gagal menyadari"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "車",
-      "label": "車 - Kereta/roda  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "車体",
-          "bacaan": "しゃたい",
-          "arti": "badan kendaraan / bodi mobil"
-        },
-        {
-          "kanji": "車庫",
-          "bacaan": "しゃこ",
-          "arti": "garasi / depo kendaraan"
         }
       ],
       "section": "main"
@@ -650,24 +571,6 @@
       "section": "main"
     },
     {
-      "radikal": "戶",
-      "label": "戶 - Pintu  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "所有",
-          "bacaan": "しょゆう",
-          "arti": "kepemilikan / memiliki"
-        },
-        {
-          "kanji": "所有者",
-          "bacaan": "しょゆうしゃ",
-          "arti": "pemilik / pemegang hak milik"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "巛",
       "label": "巛 - Aliran sungai  (1 kata)",
       "count": 1,
@@ -694,19 +597,6 @@
       "section": "main"
     },
     {
-      "radikal": "巾",
-      "label": "巾 - Kain  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "帯びる",
-          "bacaan": "おびる",
-          "arti": "mengenakan / menyandang / mengandung"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "走",
       "label": "走 - Berlari  (1 kata)",
       "count": 1,
@@ -715,19 +605,6 @@
           "kanji": "走行",
           "bacaan": "そうこう",
           "arti": "berjalan / melaju"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "示",
-      "label": "示 - Menunjukkan / altar  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "視界",
-          "bacaan": "しかい",
-          "arti": "jarak pandang / bidang pandang / penglihatan"
         }
       ],
       "section": "main"
@@ -772,45 +649,6 @@
       "section": "main"
     },
     {
-      "radikal": "玉",
-      "label": "玉 - Batu permata (王)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "環状",
-          "bacaan": "かんじょ",
-          "arti": "berbentuk lingkaran / melingkar / jalan lingkar"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "貝",
-      "label": "貝 - Kerang (dulu = uang)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "負傷者",
-          "bacaan": "ふしょうしゃ",
-          "arti": "korban luka / orang yang terluka"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "弓",
-      "label": "弓 - Busur panah  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "強制",
-          "bacaan": "きょうせい",
-          "arti": "paksaan / kewajiban"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga  (1 kata)",
       "count": 1,
@@ -819,19 +657,6 @@
           "kanji": "効き",
           "bacaan": "きき",
           "arti": "efektivitas / daya kerja / seberapa baik sesuatu berfungsi"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "斤",
-      "label": "斤 - Kapak/satuan berat  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "断続的",
-          "bacaan": "だんぞくてき",
-          "arti": "berselang-seling / putus-nyambung / intermiten"
         }
       ],
       "section": "main"
@@ -936,19 +761,6 @@
           "kanji": "一応",
           "bacaan": "いちおう",
           "arti": "untuk sementara"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "田",
-      "label": "田 - Sawah/ladang  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "細々",
-          "bacaan": "ほそぼそ",
-          "arti": "kecil-kecilan / tipis / samara-samar"
         }
       ],
       "section": "main"

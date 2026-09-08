@@ -189,24 +189,6 @@
       "section": "main"
     },
     {
-      "radikal": "貝",
-      "label": "貝 - Kerang (dulu = uang)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "貿易",
-          "bacaan": "ぼうえき",
-          "arti": "perdagangan internasional"
-        },
-        {
-          "kanji": "貴重",
-          "bacaan": "きちょう",
-          "arti": "berharga / bernilai / penting"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "亅",
       "label": "亅 - Kait  (2 kata)",
       "count": 2,
@@ -313,8 +295,8 @@
       "section": "main"
     },
     {
-      "radikal": "旡",
-      "label": "旡 - Tersedak / kenyang  (1 kata)",
+      "radikal": "无",
+      "label": "无 - Tersedak / kenyang  (1 kata)",
       "count": 1,
       "words": [
         {
@@ -352,19 +334,6 @@
       "section": "main"
     },
     {
-      "radikal": "工",
-      "label": "工 - Pekerjaan / alat  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "差",
-          "bacaan": "さ",
-          "arti": "perbedaan / selisih / disparitas"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "儿",
       "label": "儿 - Kaki manusia  (1 kata)",
       "count": 1,
@@ -373,32 +342,6 @@
           "kanji": "克服",
           "bacaan": "こくふく",
           "arti": "mengatasi / menaklukkan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "糸",
-      "label": "糸 - Benang  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "素直に",
-          "bacaan": "すなおに",
-          "arti": "dengan jujur / patuh / tulus"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "衣",
-      "label": "衣 - Pakaian  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "表面",
-          "bacaan": "ひょうめん",
-          "arti": "permukaan / bagian luar"
         }
       ],
       "section": "main"
