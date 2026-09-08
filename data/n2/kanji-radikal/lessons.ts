@@ -4,6 +4,7 @@
 // =================================================================
 import belumTerdefinisikan from "./belum-terdefinisikan.json";
 import benda from "./benda.json";
+import n2referensiSoal from "./n2-referensi-soal.json";
 import type { RadikalFile } from "@/data/kanji-radikal-types";
 
 export type { RadikalWord, RadikalGroup, RadikalFile } from "@/data/kanji-radikal-types";
@@ -11,6 +12,7 @@ export type { RadikalWord, RadikalGroup, RadikalFile } from "@/data/kanji-radika
 export const radikalKanjiFiles: Record<string, RadikalFile> = {
   "belum-terdefinisikan": belumTerdefinisikan as RadikalFile,
   benda: benda as RadikalFile,
+  "n2-referensi-soal": n2referensiSoal as RadikalFile,
 };
 
-export const radikalKanjiOrder = ["belum-terdefinisikan", "benda"];
+export const radikalKanjiOrder = ["belum-terdefinisikan", "benda", "n2-referensi-soal"];

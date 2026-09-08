@@ -1,0 +1,1414 @@
+{
+  "title": "Kumpulan Kanji Referensi Soal N2",
+  "groups": [
+    {
+      "radikal": "(tanpa kanji)",
+      "label": "(tanpa kanji) - Kata yang di file asli hanya ditulis dalam hiragana atau katakana (tanpa kanji), jadi tidak bisa dikelompokkan per radikal  (82 kata)",
+      "count": 82,
+      "words": [
+        {
+          "kanji": "トンネル",
+          "bacaan": "",
+          "arti": "terowongan"
+        },
+        {
+          "kanji": "クラッチ",
+          "bacaan": "",
+          "arti": "kopling"
+        },
+        {
+          "kanji": "ぬかるみ",
+          "bacaan": "",
+          "arti": "jalan berlumpur / becek / tanah lembek"
+        },
+        {
+          "kanji": "せっかく",
+          "bacaan": "",
+          "arti": "dengan susah payah / dengan segenap upaya / kesempatan langka/istimewa"
+        },
+        {
+          "kanji": "あいにく",
+          "bacaan": "",
+          "arti": "sayangnya / kebetulan kurang beruntung / sialnya"
+        },
+        {
+          "kanji": "わざわざ",
+          "bacaan": "",
+          "arti": "dengan sengaja / secara khusus / repot-repot"
+        },
+        {
+          "kanji": "およそ",
+          "bacaan": "",
+          "arti": "kira-kira / kurang lebih / sekitar"
+        },
+        {
+          "kanji": "それぞれ",
+          "bacaan": "",
+          "arti": "masing-masing / tiap-tiap / secara individu"
+        },
+        {
+          "kanji": "とりあえず",
+          "bacaan": "",
+          "arti": "untuk saat ini"
+        },
+        {
+          "kanji": "さっき",
+          "bacaan": "",
+          "arti": "barusan"
+        },
+        {
+          "kanji": "ぐんぐん",
+          "bacaan": "",
+          "arti": "cepat dan kuat / dengan pesat / tanpa henti"
+        },
+        {
+          "kanji": "すいすい",
+          "bacaan": "",
+          "arti": "dengan lancar / dengan mudah / cepat dan ringan"
+        },
+        {
+          "kanji": "ぐらぐら",
+          "bacaan": "",
+          "arti": "goyah / bergoyang hebat / gempa"
+        },
+        {
+          "kanji": "がらがら",
+          "bacaan": "",
+          "arti": "berderak / bergetar / gemerincing"
+        },
+        {
+          "kanji": "ぶらぶら",
+          "bacaan": "",
+          "arti": "jalan-jalan santai tanpa tujuan / menganggur"
+        },
+        {
+          "kanji": "ぼんやり",
+          "bacaan": "",
+          "arti": "kabur / samara-samar / tidak jelas"
+        },
+        {
+          "kanji": "ふんわり",
+          "bacaan": "",
+          "arti": "lembut dan ringan / mengembang / menggembung"
+        },
+        {
+          "kanji": "うっすら",
+          "bacaan": "",
+          "arti": "samar-samar / tipis / sedikit"
+        },
+        {
+          "kanji": "しっとり",
+          "bacaan": "",
+          "arti": "lembap / basah dengan halus / lembut"
+        },
+        {
+          "kanji": "ブーム",
+          "bacaan": "",
+          "arti": "ledakan popularitas / tren / booming"
+        },
+        {
+          "kanji": "ほぼ",
+          "bacaan": "",
+          "arti": "hampir / kira-kira / kurang lebih"
+        },
+        {
+          "kanji": "ごろごろ",
+          "bacaan": "",
+          "arti": "bermalas-malasan / tiduran"
+        },
+        {
+          "kanji": "ゆらゆら",
+          "bacaan": "",
+          "arti": "bergoyang perlahan"
+        },
+        {
+          "kanji": "うろうろ",
+          "bacaan": "",
+          "arti": "berkeliaran / mondar-mandir"
+        },
+        {
+          "kanji": "さらさら",
+          "bacaan": "",
+          "arti": "suara gemericik / suara gesekan halus"
+        },
+        {
+          "kanji": "すらすら",
+          "bacaan": "",
+          "arti": "lancar / fasih / mudah"
+        },
+        {
+          "kanji": "イライラ",
+          "bacaan": "",
+          "arti": "kesal / frustrasi / gelisah"
+        },
+        {
+          "kanji": "わくわく",
+          "bacaan": "",
+          "arti": "bersemangat / gembira / deg-degan"
+        },
+        {
+          "kanji": "ぎっしり",
+          "bacaan": "",
+          "arti": "penuh sesak / padat / rapat"
+        },
+        {
+          "kanji": "きらきら",
+          "bacaan": "",
+          "arti": "berkilauan / berkerlap-kerlip / berbinar-binar"
+        },
+        {
+          "kanji": "すっきり",
+          "bacaan": "",
+          "arti": "segar / jelas / rapi"
+        },
+        {
+          "kanji": "こつこつ",
+          "bacaan": "",
+          "arti": "dengan rajin / sedikit demi sedikit / secara gigih"
+        },
+        {
+          "kanji": "ますます",
+          "bacaan": "",
+          "arti": "semakin lama semakin / semakin hari semakin / meningkat"
+        },
+        {
+          "kanji": "いきいき",
+          "bacaan": "",
+          "arti": "hidup / bersemangat / ceria"
+        },
+        {
+          "kanji": "うとうと",
+          "bacaan": "",
+          "arti": "tidur ayam / tertidur sejenak / setengah tertidur"
+        },
+        {
+          "kanji": "みみっちい",
+          "bacaan": "",
+          "arti": "pelit / kecil/remeh / kikir"
+        },
+        {
+          "kanji": "もやもや",
+          "bacaan": "",
+          "arti": "berkabut / tidak jelas / mengawang-awang"
+        },
+        {
+          "kanji": "やや",
+          "bacaan": "",
+          "arti": "sedikit / agak / lumayan"
+        },
+        {
+          "kanji": "しばしば",
+          "bacaan": "",
+          "arti": "sering / kerap / berulang kali"
+        },
+        {
+          "kanji": "きっぱり",
+          "bacaan": "",
+          "arti": "tegas / jelas / tuntas"
+        },
+        {
+          "kanji": "きっかけ",
+          "bacaan": "",
+          "arti": "pemicu / awal mula / kesempatan"
+        },
+        {
+          "kanji": "ぶかぶか",
+          "bacaan": "",
+          "arti": "kebesaran / longgar / gombrong"
+        },
+        {
+          "kanji": "じっとしていて",
+          "bacaan": "",
+          "arti": "tetap diam / jangan bergerak / diam di tempat"
+        },
+        {
+          "kanji": "かさかさしている",
+          "bacaan": "",
+          "arti": "kering / kasar / kemerisik"
+        },
+        {
+          "kanji": "とっくに",
+          "bacaan": "",
+          "arti": "sudah lama / sudah sejak lama / jauh di masa lalu"
+        },
+        {
+          "kanji": "そもそも",
+          "bacaan": "",
+          "arti": "pada awalnya / pertama-tama / asal-usulnya"
+        },
+        {
+          "kanji": "それであるがゆえに",
+          "bacaan": "",
+          "arti": "karena hal itu ada/terjadi / oleh sebab itu / karena alasannya adalah hal itu"
+        },
+        {
+          "kanji": "さっさと",
+          "bacaan": "",
+          "arti": "dengan cepat / segera / tanpa basa-basi"
+        },
+        {
+          "kanji": "がっしり",
+          "bacaan": "",
+          "arti": "kekar / kuat / kokoh"
+        },
+        {
+          "kanji": "あるいは",
+          "bacaan": "",
+          "arti": "atau"
+        },
+        {
+          "kanji": "および",
+          "bacaan": "",
+          "arti": "dan / serta"
+        },
+        {
+          "kanji": "なお",
+          "bacaan": "",
+          "arti": "selain itu / sebagai tambahan / lebih lanjut"
+        },
+        {
+          "kanji": "すなわち",
+          "bacaan": "",
+          "arti": "dengan kata lain / dengan kata lain"
+        },
+        {
+          "kanji": "おそらく",
+          "bacaan": "",
+          "arti": "mungkin / agaknya / barangkali"
+        },
+        {
+          "kanji": "しっくりいっている",
+          "bacaan": "",
+          "arti": "berjalan dengan lancar/harmonis"
+        },
+        {
+          "kanji": "まちまち",
+          "bacaan": "",
+          "arti": "berbeda-beda / bervariasi / tidak seragam"
+        },
+        {
+          "kanji": "ついていた",
+          "bacaan": "",
+          "arti": "(dulu) beruntung / berada dalam kondisi keberuntungan"
+        },
+        {
+          "kanji": "いかに",
+          "bacaan": "",
+          "arti": "betapa / seberapa / sejauh mana"
+        },
+        {
+          "kanji": "まともな",
+          "bacaan": "",
+          "arti": "normal / wajar / serius"
+        },
+        {
+          "kanji": "やみくもに",
+          "bacaan": "",
+          "arti": "membabi buta / tanpa berpikir / tanpa tujuan yang jelas"
+        },
+        {
+          "kanji": "しつこい",
+          "bacaan": "",
+          "arti": "gigih / bandel / terus-menerus"
+        },
+        {
+          "kanji": "ふと",
+          "bacaan": "",
+          "arti": "secara tiba-tiba / tanpa sengaja / tanpa rencana"
+        },
+        {
+          "kanji": "なぞらえられる",
+          "bacaan": "",
+          "arti": "diibaratkan / disamakan dengan / dibandingkan dengan"
+        },
+        {
+          "kanji": "つきもの",
+          "bacaan": "",
+          "arti": "hal yang menyertai / hal yang melekat / tidak terpisahkan"
+        },
+        {
+          "kanji": "そこそこの",
+          "bacaan": "",
+          "arti": "lumayan / cukup baik / tidak buruk"
+        },
+        {
+          "kanji": "ふさわしい",
+          "bacaan": "",
+          "arti": "sesuai / pantas / cocok"
+        },
+        {
+          "kanji": "くっつく",
+          "bacaan": "",
+          "arti": "menempel / melekat / terikat"
+        },
+        {
+          "kanji": "だらしない",
+          "bacaan": "",
+          "arti": "tidak rapi / ceroboh / longgar"
+        },
+        {
+          "kanji": "わけもなく",
+          "bacaan": "",
+          "arti": "tanpa alasan / tanpa sebab yang jelas"
+        },
+        {
+          "kanji": "にこもっている",
+          "bacaan": "",
+          "arti": "berada di dalam / terkandung di dalam"
+        },
+        {
+          "kanji": "もはや",
+          "bacaan": "",
+          "arti": "sudah / kini / sekarang"
+        },
+        {
+          "kanji": "まるっきりの",
+          "bacaan": "",
+          "arti": "sama sekali / benar-benar / sepenuhnya"
+        },
+        {
+          "kanji": "くどい",
+          "bacaan": "",
+          "arti": "banyak bicara / bertele-tele / repetitif"
+        },
+        {
+          "kanji": "めくる",
+          "bacaan": "",
+          "arti": "membalik / membuka / menyibak"
+        },
+        {
+          "kanji": "むやみに",
+          "bacaan": "",
+          "arti": "sembarangan / tanpa alasan yang jelas / secara berlebihan"
+        },
+        {
+          "kanji": "ナンセンス",
+          "bacaan": "",
+          "arti": "omong kosong / tidak masuk akal / kekonyolan"
+        },
+        {
+          "kanji": "スムーズ",
+          "bacaan": "",
+          "arti": "lancar / mulus / halus"
+        },
+        {
+          "kanji": "ラク",
+          "bacaan": "",
+          "arti": "mudah / nyaman / rileks"
+        },
+        {
+          "kanji": "ダウン",
+          "bacaan": "",
+          "arti": "urun / menurun / bawah"
+        },
+        {
+          "kanji": "カーナビ",
+          "bacaan": "",
+          "arti": "sistem navigasi mobil"
+        },
+        {
+          "kanji": "リズム",
+          "bacaan": "",
+          "arti": "irama / ritme / pola"
+        },
+        {
+          "kanji": "シリーズ",
+          "bacaan": "",
+          "arti": "seri / rangkaian / kelompok"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "辵",
+      "label": "辵 - Berjalan/bergerak  (9 kata)",
+      "count": 9,
+      "words": [
+        {
+          "kanji": "追い越す",
+          "bacaan": "おいこす",
+          "arti": "menyalip / melewati"
+        },
+        {
+          "kanji": "道路外",
+          "bacaan": "どうろがい",
+          "arti": "di luar jalan raya / area di luar jalan"
+        },
+        {
+          "kanji": "遠心力",
+          "bacaan": "えんしんりょく",
+          "arti": "gaya sentrifugal"
+        },
+        {
+          "kanji": "進路",
+          "bacaan": "しんろ",
+          "arti": "jalur yang ditempuh / arah jalan / rute"
+        },
+        {
+          "kanji": "違法",
+          "bacaan": "いほう",
+          "arti": "ilegal / melanggar hukum / melawan hukum"
+        },
+        {
+          "kanji": "避ける",
+          "bacaan": "さける",
+          "arti": "menghindar / mengelak / menjauhi"
+        },
+        {
+          "kanji": "道幅",
+          "bacaan": "みちはば",
+          "arti": "lebar jalan"
+        },
+        {
+          "kanji": "遮断機",
+          "bacaan": "しゃだんき",
+          "arti": "palang pintu otomatis"
+        },
+        {
+          "kanji": "過失",
+          "bacaan": "かしつ",
+          "arti": "kelalaian / kealpaan / kesalahan yang tidak disengaja"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "木",
+      "label": "木 - Pohon / kayu  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "構造",
+          "bacaan": "こうぞう",
+          "arti": "struktur / konstruksi / susunan"
+        },
+        {
+          "kanji": "本位",
+          "bacaan": "ほんい",
+          "arti": "standar / berbasis pada / mengutamakan"
+        },
+        {
+          "kanji": "標示",
+          "bacaan": "ひょうじ",
+          "arti": "tanda / markah / petunjuk visual"
+        },
+        {
+          "kanji": "標識",
+          "bacaan": "ひょうしき",
+          "arti": "rambu-rambu / tanda pengenal"
+        },
+        {
+          "kanji": "横断帯",
+          "bacaan": "おうだんたい",
+          "arti": "jalur penyeberangan"
+        },
+        {
+          "kanji": "極端",
+          "bacaan": "きょくたん",
+          "arti": "ekstrem / sangat / berlebihan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "糸",
+      "label": "糸 - Benang/sutra  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "経路",
+          "bacaan": "けいろ",
+          "arti": "rute / jalur / jalan yang ditempuh"
+        },
+        {
+          "kanji": "総排気量",
+          "bacaan": "そうはいきりょう",
+          "arti": "total kapasitas mesin / isi silinder"
+        },
+        {
+          "kanji": "続発",
+          "bacaan": "ぞくはつ",
+          "arti": "terjadi berturut-turut / beruntun / terjadi berulang kali"
+        },
+        {
+          "kanji": "素早く",
+          "bacaan": "すばやく",
+          "arti": "dengan cepat / dengan tangkas / segera"
+        },
+        {
+          "kanji": "紛失",
+          "bacaan": "ふんしつ",
+          "arti": "kehilangan / hilang"
+        },
+        {
+          "kanji": "続々と",
+          "bacaan": "ぞくぞくと",
+          "arti": "berbondong-bondong / berurutan / berturut-turut dengan cepat"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "刀",
+      "label": "刀 - Pedang / pisau  (4 kata)",
+      "count": 4,
+      "words": [
+        {
+          "kanji": "前後",
+          "bacaan": "ぜんご",
+          "arti": "depan dan belakang"
+        },
+        {
+          "kanji": "前方",
+          "bacaan": "ぜんぽう",
+          "arti": "ke arah depan / bagian depan"
+        },
+        {
+          "kanji": "制動灯",
+          "bacaan": "せいどうとう",
+          "arti": "lampu rem"
+        },
+        {
+          "kanji": "前続",
+          "bacaan": "ぜんぞく",
+          "arti": "yang menyambung di depan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "手",
+      "label": "手 - Tangan  (4 kata)",
+      "count": 4,
+      "words": [
+        {
+          "kanji": "手軽",
+          "bacaan": "てがる",
+          "arti": "praktis / mudah / sederhana"
+        },
+        {
+          "kanji": "損傷",
+          "bacaan": "そんしょう",
+          "arti": "kerusakan / cedera / luka"
+        },
+        {
+          "kanji": "接近",
+          "bacaan": "せっきん",
+          "arti": "mendekat / pendekatan"
+        },
+        {
+          "kanji": "手配",
+          "bacaan": "てはい",
+          "arti": "persiapan / pengaturan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "彳",
+      "label": "彳 - Melangkah kecil  (4 kata)",
+      "count": 4,
+      "words": [
+        {
+          "kanji": "徐行",
+          "bacaan": "じょこう",
+          "arti": "berjalan pelan"
+        },
+        {
+          "kanji": "後退",
+          "bacaan": "こうたい",
+          "arti": "mundur / gerak mundur"
+        },
+        {
+          "kanji": "待避所",
+          "bacaan": "たいひじょ",
+          "arti": "tempat menepi / kantong parkir darurat / area menghindar"
+        },
+        {
+          "kanji": "徐々に",
+          "bacaan": "じょじょに",
+          "arti": "sedikit demi sedikit / perlahan-lahan / berangsur-angsur"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "水",
+      "label": "水 - Air  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "酒気",
+          "bacaan": "しゅき",
+          "arti": "bau alkohol"
+        },
+        {
+          "kanji": "溝",
+          "bacaan": "みぞ",
+          "arti": "parit / selokan / alur/pola"
+        },
+        {
+          "kanji": "法令",
+          "bacaan": "ほうれい",
+          "arti": "peraturan perundang-undangan / hukum dan peraturan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "心",
+      "label": "心 - Hati / pikiran  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "惰力",
+          "bacaan": "だりょく",
+          "arti": "inersia / gaya lembam"
+        },
+        {
+          "kanji": "応じる",
+          "bacaan": "おうじる",
+          "arti": "menanggapi / memenuhi / menyesuaikan"
+        },
+        {
+          "kanji": "怠る",
+          "bacaan": "おこたる",
+          "arti": "lalai / mengabaikan / lupa menjalankan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "人",
+      "label": "人 - Orang / manusia  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "保つ",
+          "bacaan": "たもつ",
+          "arti": "menjaga / mempertahankan / memelihara"
+        },
+        {
+          "kanji": "停留所",
+          "bacaan": "ていりゅうじょ",
+          "arti": "tempat perhentian / halte"
+        },
+        {
+          "kanji": "側方",
+          "bacaan": "そくほう",
+          "arti": "samping / bagian sisi / arah samping"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "目",
+      "label": "目 - Mata  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "直前",
+          "bacaan": "ちょくぜん",
+          "arti": "tepat sebelum / tepat di depan"
+        },
+        {
+          "kanji": "直接",
+          "bacaan": "ちょくせつ",
+          "arti": "langsung"
+        },
+        {
+          "kanji": "直ぐに",
+          "bacaan": "すぐに",
+          "arti": "segera / dengan segera / langsung"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "女",
+      "label": "女 - Wanita/perempuan  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "妨害",
+          "bacaan": "ぼうがい",
+          "arti": "gangguan / hambatan / merintangi"
+        },
+        {
+          "kanji": "妨げ",
+          "bacaan": "さまたげ",
+          "arti": "halangan / rintangan / gangguan"
+        },
+        {
+          "kanji": "姿勢",
+          "bacaan": "しせい",
+          "arti": "postur / posisi tubuh / sikap"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "雨",
+      "label": "雨 - Hujan  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "霧",
+          "bacaan": "きり",
+          "arti": "kabut"
+        },
+        {
+          "kanji": "露出",
+          "bacaan": "ろしゅつ",
+          "arti": "eksposur / pendedahan / penyingkapan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "口",
+      "label": "口 - Mulut  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "右図",
+          "bacaan": "みぎず",
+          "arti": "gambar di sebelah kanan"
+        },
+        {
+          "kanji": "回避",
+          "bacaan": "かいひ",
+          "arti": "menghindar / mengelak / mencegah terjadinya sesuatu"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "止",
+      "label": "止 - Berhenti  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "正面衝突",
+          "bacaan": "しょうめんしょうとつ",
+          "arti": "tabrakan adu banteng / tabrakan dari depan ke depan"
+        },
+        {
+          "kanji": "正常",
+          "bacaan": "せいじょう",
+          "arti": "normal / wajar / berfungsi dengan baik"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "行",
+      "label": "行 - Berjalan/pergi  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "衝突",
+          "bacaan": "しょうとつ",
+          "arti": "tabrakan / benturan / perselisihan"
+        },
+        {
+          "kanji": "行為",
+          "bacaan": "こうい",
+          "arti": "tindakan / perbuatan / aksi"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "足",
+      "label": "足 - Kaki  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "路面",
+          "bacaan": "ろめん",
+          "arti": "permukaan jalan"
+        },
+        {
+          "kanji": "路肩",
+          "bacaan": "ろかた",
+          "arti": "bahu jalan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "見",
+      "label": "見 - Melihat  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "規則",
+          "bacaan": "きそく",
+          "arti": "peraturan / regulasi / kaidah"
+        },
+        {
+          "kanji": "見落とす",
+          "bacaan": "みおとす",
+          "arti": "melewatkan / lalai melihat / gagal menyadari"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "車",
+      "label": "車 - Kereta/roda  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "車体",
+          "bacaan": "しゃたい",
+          "arti": "badan kendaraan / bodi mobil"
+        },
+        {
+          "kanji": "車庫",
+          "bacaan": "しゃこ",
+          "arti": "garasi / depo kendaraan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "言",
+      "label": "言 - Perkataan  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "警音器",
+          "bacaan": "けいおんき",
+          "arti": "alat untuk mengeluarkan suara peringatan"
+        },
+        {
+          "kanji": "譲る",
+          "bacaan": "ゆずる",
+          "arti": "memberikan / mendahulukan / mengalah"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "阜",
+      "label": "阜 - Gundukan tanah (阝kiri)  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "除き",
+          "bacaan": "のぞき",
+          "arti": "kecuali / dengan pengecualian / selain"
+        },
+        {
+          "kanji": "障害者",
+          "bacaan": "しょうがいしゃ",
+          "arti": "penyandang disabilitas / orang berkebutuhan khusus"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "匚",
+      "label": "匚 - Kotak terbuka  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "区間",
+          "bacaan": "くかん",
+          "arti": "seksi / ruas / blok"
+        },
+        {
+          "kanji": "区域",
+          "bacaan": "くいき",
+          "arti": "wilayah / zona / area"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "宀",
+      "label": "宀 - Atap rumah  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "寄る",
+          "bacaan": "よる",
+          "arti": "merapat / menepi"
+        },
+        {
+          "kanji": "宅配",
+          "bacaan": "たくはい",
+          "arti": "pengiriman ke rumah / layanan antar"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "戶",
+      "label": "戶 - Pintu  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "所有",
+          "bacaan": "しょゆう",
+          "arti": "kepemilikan / memiliki"
+        },
+        {
+          "kanji": "所有者",
+          "bacaan": "しょゆうしゃ",
+          "arti": "pemilik / pemegang hak milik"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "巛",
+      "label": "巛 - Aliran sungai  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "巡視員",
+          "bacaan": "じゅんしいん",
+          "arti": "petugas patroli / petugas pengawas"
+        },
+        {
+          "kanji": "順々",
+          "bacaan": "じゅんじゅん",
+          "arti": "berurutan / berturut-turut / secara bergantian"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "艸",
+      "label": "艸 - Tumbuhan/rumput  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "荷台",
+          "bacaan": "にだい",
+          "arti": "rak barang"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "寸",
+      "label": "寸 - Ukuran / jari tangan  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "対向車",
+          "bacaan": "たいこうしゃ",
+          "arti": "kendaraan dari arah berlawanan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "巾",
+      "label": "巾 - Kain  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "帯びる",
+          "bacaan": "おびる",
+          "arti": "mengenakan / menyandang / mengandung"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "日",
+      "label": "日 - Matahari / hari  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "間隔",
+          "bacaan": "かんかく",
+          "arti": "jarak / selang / interval"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "走",
+      "label": "走 - Berlari  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "走行",
+          "bacaan": "そうこう",
+          "arti": "berjalan / melaju"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "示",
+      "label": "示 - Menunjukkan / altar  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "視界",
+          "bacaan": "しかい",
+          "arti": "jarak pandang / bidang pandang / penglihatan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "身",
+      "label": "身 - Tubuh  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "身体",
+          "bacaan": "しんたい",
+          "arti": "tubuh / badan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "龜",
+      "label": "龜 - Kura-kura  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "亀裂",
+          "bacaan": "きれつ",
+          "arti": "retakan / celah"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "石",
+      "label": "石 - Batu  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "磨耗",
+          "bacaan": "まもう",
+          "arti": "keausan / pengikisan akibat gesekan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "方",
+      "label": "方 - Arah/persegi  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "防止",
+          "bacaan": "ぼうし",
+          "arti": "pencegahan / mencegah"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "歹",
+      "label": "歹 - Sisa tulang / kematian  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "死角",
+          "bacaan": "しかく",
+          "arti": "titik buta / area yang tidak terlihat"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "立",
+      "label": "立 - Berdiri  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "端",
+          "bacaan": "はし",
+          "arti": "pinggir / tepi / ujung"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "癶",
+      "label": "癶 - Melangkah dengan kedua kaki  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "発進",
+          "bacaan": "はっしん",
+          "arti": "mulai berjalan / berangkat / meluncur"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "玉",
+      "label": "玉 - Batu permata (王)  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "環状",
+          "bacaan": "かんじょ",
+          "arti": "berbentuk lingkaran / melingkar / jalan lingkar"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "貝",
+      "label": "貝 - Kerang (dulu = uang)  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "負傷者",
+          "bacaan": "ふしょうしゃ",
+          "arti": "korban luka / orang yang terluka"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "弓",
+      "label": "弓 - Busur panah  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "強制",
+          "bacaan": "きょうせい",
+          "arti": "paksaan / kewajiban"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "土",
+      "label": "土 - Tanah  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "地帯",
+          "bacaan": "ちたい",
+          "arti": "zona / wilayah / jalur area"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "力",
+      "label": "力 - Tenaga  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "効き",
+          "bacaan": "きき",
+          "arti": "efektivitas / daya kerja / seberapa baik sesuatu berfungsi"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "斤",
+      "label": "斤 - Kapak/satuan berat  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "断続的",
+          "bacaan": "だんぞくてき",
+          "arti": "berselang-seling / putus-nyambung / intermiten"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "八",
+      "label": "八 - Delapan  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "共同",
+          "bacaan": "きょうどう",
+          "arti": "bersama-sama / kolaborasi / bersama/publik"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "厂",
+      "label": "厂 - Tebing / pelindung  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "原則",
+          "bacaan": "げんそく",
+          "arti": "prinsip / aturan dasar / pada umumnya"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "乙",
+      "label": "乙 - Kedua (urutan)  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "乱反射",
+          "bacaan": "らんはんしゃ",
+          "arti": "pantulan cahaya yang tidak teratur / difusi cahaya"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "攴",
+      "label": "攴 - Memukul ringan / tindakan  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "救護",
+          "bacaan": "きゅうご",
+          "arti": "pertolongan / bantuan medis darurat / penyelamatan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "襾",
+      "label": "襾 - Menutup dari atas  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "要請",
+          "bacaan": "ようせい",
+          "arti": "permohonan resmi / tuntutan / permintaan bantuan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "片",
+      "label": "片 - Papan tipis  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "片側",
+          "bacaan": "かたがわ",
+          "arti": "satu sisi / sebelah sisi"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "尸",
+      "label": "尸 - Tubuh berbaring / atap  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "尾灯",
+          "bacaan": "びとう",
+          "arti": "lampu belakang"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "穴",
+      "label": "穴 - Lubang/gua  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "空走",
+          "bacaan": "くうそう",
+          "arti": "melaju kosong / melaju tanpa pengereman"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "皮",
+      "label": "皮 - Kulit  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "破損",
+          "bacaan": "はそん",
+          "arti": "kerusakan / pecah / rusak"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "亠",
+      "label": "亠 - Garis di atas / tutup  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "交通規制",
+          "bacaan": "こうつうきせい",
+          "arti": "regulasi lalu lintas / pembatasan lalu lintas / rekayasa lalu lintas"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "一",
+      "label": "一 - Satu / garis datar  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "一応",
+          "bacaan": "いちおう",
+          "arti": "untuk sementara"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "田",
+      "label": "田 - Sawah/ladang  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "細々",
+          "bacaan": "ほそぼそ",
+          "arti": "kecil-kecilan / tipis / samara-samar"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "囗",
+      "label": "囗 - Kotak / bingkai besar  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "図々しく",
+          "bacaan": "ずうずうしく",
+          "arti": "dengan tidak tahu malu / dengan kurang ajar / dengan sembarangan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "广",
+      "label": "广 - Bangunan beratap miring / pelindung  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "度々",
+          "bacaan": "たびたび",
+          "arti": "sering kali / berulang kali / berulang-ulang"
+        }
+      ],
+      "section": "main"
+    }
+  ]
+}
