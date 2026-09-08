@@ -4,6 +4,7 @@
 // =================================================================
 import belumTerdefinisikan from "./belum-terdefinisikan.json";
 import benda from "./benda.json";
+import binatang from "./binatang.json";
 import n2referensiSoal from "./n2-referensi-soal.json";
 import tambahan from "./tambahan.json";
 import tempat from "./tempat.json";
@@ -17,6 +18,7 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   "n2-referensi-soal": n2referensiSoal as RadikalFile,
   tempat: tempat as RadikalFile,
   tambahan: tambahan as RadikalFile,
+  binatang: binatang as RadikalFile,
 };
 
-export const radikalKanjiOrder = ["belum-terdefinisikan", "benda", "n2-referensi-soal", "tempat", "tambahan"];
+export const radikalKanjiOrder = ["belum-terdefinisikan", "benda", "n2-referensi-soal", "tempat", "tambahan", "binatang"];

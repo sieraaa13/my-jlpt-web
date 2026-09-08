@@ -1,0 +1,79 @@
+{
+  "title": "Kumpulan Kanji Radikal Binatang",
+  "groups": [
+    {
+      "radikal": "牛",
+      "label": "牛 - Sapi  (10 kata)",
+      "count": 10,
+      "section": "main",
+      "words": [
+        { "kanji": "物価", "bacaan": "ぶっか", "arti": "Harga Barang / Harga Komoditas / Tingkat Harga" },
+        { "kanji": "特効薬", "bacaan": "とっこうやく", "arti": "Obat Mujarab / Obat Ampuh / Obat Spesifik / Obat Ajaib / Solusi Sempurna" },
+        { "kanji": "特徴", "bacaan": "とくちょう", "arti": "Ciri Khas / Karakteristik / Fitur / Keistimewaan" },
+        { "kanji": "物欲", "bacaan": "ぶつよく", "arti": "Materialisme / Hasrat kebendaan / Nafsu akan harta" },
+        { "kanji": "特定", "bacaan": "とくてい", "arti": "Identifikasi / Spesifikasi / Penentuan / Mengidentifikasi / Menentukan" },
+        { "kanji": "物足りない", "bacaan": "ものたりない", "arti": "Ada yang kurang / Tidak memuaskan / Kurang lengkap / Tidak cukup" },
+        { "kanji": "物まね", "bacaan": "ものまね", "arti": "Imitasi / Meniru / Aksi meniru suara atau tingkah laku seseorang" },
+        { "kanji": "物差し", "bacaan": "ものさし", "arti": "Alat pengukur / Penggaris / Meteran" },
+        { "kanji": "物心", "bacaan": "ものごころ", "arti": "Kesadaran akan dunia (dan diri sendiri) / Usia akil balig (awal) / Usia awal ingatan / Saat mulai mengerti" },
+        { "kanji": "物理的", "bacaan": "ぶつりてき", "arti": "Fisik / Material / Secara fisik / Berkaitan dengan fisika" }
+      ]
+    },
+    {
+      "radikal": "犬",
+      "label": "犬 - Anjing  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        { "kanji": "独立", "bacaan": "どくりつ", "arti": "Kemerdekaan / Independensi / Berdiri Sendiri" },
+        { "kanji": "独特な", "bacaan": "どくとくな", "arti": "Unik / Khas / Istimewa / Tidak Biasa" },
+        { "kanji": "狭める", "bacaan": "せばめる", "arti": "Mempersempit / Menyempitkan / Membatasi / Mengurangi Lingkup" },
+        { "kanji": "獲得", "bacaan": "かくとく", "arti": "Perolehan / Akuisisi / Memperoleh / Mendapatkan" },
+        { "kanji": "独占", "bacaan": "どくせん", "arti": "Monopoli / Eksklusif / Mendominasi" },
+        { "kanji": "犯人", "bacaan": "はんにん", "arti": "Pelaku Kejahatan / Kriminal / Tersangka / Orang yang Bertanggung Jawab" },
+        { "kanji": "獲物", "bacaan": "えもの", "arti": "Barang tangkapan / Hasil buruan / Mangsa" },
+        { "kanji": "犬岩", "bacaan": "いぬいわ", "arti": "Batu berbentuk anjing (formasi karang alami di pesisir)" }
+      ]
+    },
+    {
+      "radikal": "馬",
+      "label": "馬 - Kuda  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        { "kanji": "駆け", "bacaan": "かけ", "arti": "Lari / Laju cepat / Sergapan / Bergegas / Buru-buru" },
+        { "kanji": "騒々しく", "bacaan": "そうぞうしく", "arti": "Dengan berisik / Dengan ribut / Dengan gaduh" },
+        { "kanji": "馴染む", "bacaan": "なじむ", "arti": "Beradaptasi / Menyatu / Akrab / Terbiasa / Cocok / Meresap (pada material)" }
+      ]
+    },
+    {
+      "radikal": "魚",
+      "label": "魚 - Ikan  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        { "kanji": "鮮やか", "bacaan": "あざやか", "arti": "Jelas / Hidup / Cerah / Cemerlang / Tajam" },
+        { "kanji": "鮮明", "bacaan": "せんめい", "arti": "Jelas / Terang / Tajam / Hidup / Jernih" },
+        { "kanji": "魚釣り", "bacaan": "さかなつり", "arti": "Memancing ikan / Kegiatan memancing" }
+      ]
+    },
+    {
+      "radikal": "隹",
+      "label": "隹 - Burung (pendek)  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        { "kanji": "集落", "bacaan": "しゅうらく", "arti": "Pemukiman / Desa kecil / Dusun / Komunitas (pedesaan)" }
+      ]
+    },
+    {
+      "radikal": "火",
+      "label": "火 - Api (bukan binatang)  (1 kata)",
+      "count": 1,
+      "section": "belum",
+      "words": [
+        { "kanji": "焦点", "bacaan": "しょうてん", "arti": "Fokus / Titik Fokus / Pusat Perhatian / Inti" }
+      ]
+    }
+  ]
+}
