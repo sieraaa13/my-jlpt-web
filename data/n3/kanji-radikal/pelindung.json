@@ -336,8 +336,8 @@
     },
     {
       "radikal": "尸",
-      "label": "尸 - Tubuh berbaring / atap  (42 kata)",
-      "count": 42,
+      "label": "尸 - Tubuh berbaring / atap  (41 kata)",
+      "count": 41,
       "words": [
         {
           "kanji": "届け",
@@ -422,11 +422,6 @@
         {
           "kanji": "居住者",
           "bacaan": "きょじゅうしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "犀",
-          "bacaan": "さい",
           "arti": ""
         },
         {
@@ -1301,8 +1296,8 @@
     },
     {
       "radikal": "宀",
-      "label": "宀 - Atap rumah  (10 kata)",
-      "count": 10,
+      "label": "宀 - Atap rumah  (9 kata)",
+      "count": 9,
       "words": [
         {
           "kanji": "寝る",
@@ -1342,11 +1337,6 @@
         {
           "kanji": "実",
           "bacaan": "み",
-          "arti": ""
-        },
-        {
-          "kanji": "蜜柑",
-          "bacaan": "みかん",
           "arti": ""
         },
         {
@@ -1917,24 +1907,6 @@
       "section": "belum"
     },
     {
-      "radikal": "鳥",
-      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "鷗",
-          "bacaan": "かもめ",
-          "arti": ""
-        },
-        {
-          "kanji": "鶏",
-          "bacaan": "にわとり",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "人",
       "label": "人 - Orang / manusia  (2 kata)",
       "count": 2,
@@ -2105,19 +2077,6 @@
       "section": "belum"
     },
     {
-      "radikal": "鹿",
-      "label": "鹿 - Rusa  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "鹿",
-          "bacaan": "しか",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "田",
       "label": "田 - Sawah/ladang  (1 kata)",
       "count": 1,
@@ -2144,19 +2103,6 @@
       "section": "belum"
     },
     {
-      "radikal": "羊",
-      "label": "羊 - Kambing/domba  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "群島",
-          "bacaan": "ぐんとう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "寸",
       "label": "寸 - Ukuran / jari tangan  (1 kata)",
       "count": 1,
@@ -2177,19 +2123,6 @@
         {
           "kanji": "凧",
           "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "虫",
-      "label": "虫 - Serangga  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "虱",
-          "bacaan": "しらみ",
           "arti": ""
         }
       ],

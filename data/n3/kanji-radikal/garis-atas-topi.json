@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "宀 (u-kanmuri) / 穴 (ana-kanmuri) / 冖 (wa-kanmuri)",
-      "label": "宀 / 穴 / 冖 - Atap, Gua, Tutup (garis atas & topi)  (195 kata)",
-      "count": 195,
+      "label": "宀 / 穴 / 冖 - Atap, Gua, Tutup (garis atas & topi)  (194 kata)",
+      "count": 194,
       "words": [
         {
           "kanji": "害虫",
@@ -775,11 +775,6 @@
           "kanji": "客室",
           "bacaan": "きゃくしつ",
           "arti": "kamar tamu"
-        },
-        {
-          "kanji": "牢屋",
-          "bacaan": "ろうや",
-          "arti": "penjara"
         },
         {
           "kanji": "寮",
@@ -3074,8 +3069,8 @@
     },
     {
       "radikal": "矢",
-      "label": "矢 - Anak panah  (21 kata)",
-      "count": 21,
+      "label": "矢 - Anak panah  (20 kata)",
+      "count": 20,
       "words": [
         {
           "kanji": "知事",
@@ -3085,11 +3080,6 @@
         {
           "kanji": "知人",
           "bacaan": "ちじん",
-          "arti": ""
-        },
-        {
-          "kanji": "雉子",
-          "bacaan": "きじ",
           "arti": ""
         },
         {
@@ -3480,87 +3470,9 @@
       "section": "belum"
     },
     {
-      "radikal": "魚",
-      "label": "魚 - Ikan  (14 kata)",
-      "count": 14,
-      "words": [
-        {
-          "kanji": "鯨",
-          "bacaan": "くじら",
-          "arti": ""
-        },
-        {
-          "kanji": "鰭",
-          "bacaan": "ひれ",
-          "arti": ""
-        },
-        {
-          "kanji": "鮑",
-          "bacaan": "あわび",
-          "arti": ""
-        },
-        {
-          "kanji": "鰯",
-          "bacaan": "いわし",
-          "arti": ""
-        },
-        {
-          "kanji": "鰹",
-          "bacaan": "かつお",
-          "arti": ""
-        },
-        {
-          "kanji": "魚",
-          "bacaan": "さかな",
-          "arti": ""
-        },
-        {
-          "kanji": "鮭",
-          "bacaan": "さけ",
-          "arti": ""
-        },
-        {
-          "kanji": "鮫",
-          "bacaan": "さめ",
-          "arti": ""
-        },
-        {
-          "kanji": "鮪",
-          "bacaan": "まぐろ",
-          "arti": ""
-        },
-        {
-          "kanji": "鯛",
-          "bacaan": "たい",
-          "arti": ""
-        },
-        {
-          "kanji": "鰻",
-          "bacaan": "うなぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "魚",
-          "bacaan": "うお",
-          "arti": ""
-        },
-        {
-          "kanji": "鰐",
-          "bacaan": "わに",
-          "arti": ""
-        },
-        {
-          "kanji": "魚介",
-          "bacaan": "",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "里",
-      "label": "里 - Desa / satuan jarak  (13 kata)",
-      "count": 13,
+      "label": "里 - Desa / satuan jarak  (12 kata)",
+      "count": 12,
       "words": [
         {
           "kanji": "重み",
@@ -3620,11 +3532,6 @@
         {
           "kanji": "重要性",
           "bacaan": "じゅうようせい",
-          "arti": ""
-        },
-        {
-          "kanji": "鯉",
-          "bacaan": "こい",
           "arti": ""
         }
       ],
@@ -4263,62 +4170,6 @@
       "section": "belum"
     },
     {
-      "radikal": "虫",
-      "label": "虫 - Serangga  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "融資",
-          "bacaan": "ゆうし",
-          "arti": ""
-        },
-        {
-          "kanji": "蚕",
-          "bacaan": "かいこ",
-          "arti": ""
-        },
-        {
-          "kanji": "蝕む",
-          "bacaan": "むしばむ",
-          "arti": ""
-        },
-        {
-          "kanji": "蟹",
-          "bacaan": "かに",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "木",
-      "label": "木 - Pohon / kayu  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "集団",
-          "bacaan": "しゅうだん",
-          "arti": ""
-        },
-        {
-          "kanji": "集合",
-          "bacaan": "しゅうごう",
-          "arti": ""
-        },
-        {
-          "kanji": "集金",
-          "bacaan": "しゅうきん",
-          "arti": ""
-        },
-        {
-          "kanji": "集中",
-          "bacaan": "しゅうちゅう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "曰",
       "label": "曰 - Berkata  (4 kata)",
       "count": 4,
@@ -4369,34 +4220,6 @@
         {
           "kanji": "画鋲",
           "bacaan": "がびょう",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "隹",
-      "label": "隹 - Burung (pendek)  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "雇用",
-          "bacaan": "こよう",
-          "arti": ""
-        },
-        {
-          "kanji": "雇う",
-          "bacaan": "やとう",
-          "arti": ""
-        },
-        {
-          "kanji": "雛",
-          "bacaan": "ひよこ",
-          "arti": ""
-        },
-        {
-          "kanji": "雛",
-          "bacaan": "ひな",
           "arti": ""
         }
       ],
@@ -4509,34 +4332,6 @@
         {
           "kanji": "午後",
           "bacaan": "ごご",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "豕",
-      "label": "豕 - Babi  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "象",
-          "bacaan": "ぞう",
-          "arti": ""
-        },
-        {
-          "kanji": "象牙",
-          "bacaan": "ぞうげ",
-          "arti": ""
-        },
-        {
-          "kanji": "象形文字",
-          "bacaan": "しょうけいもじ",
-          "arti": ""
-        },
-        {
-          "kanji": "象徴",
-          "bacaan": "しょうちょう",
           "arti": ""
         }
       ],
@@ -4676,24 +4471,6 @@
       "section": "belum"
     },
     {
-      "radikal": "疋",
-      "label": "疋 - Kaki / gulungan kain  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "蛋白",
-          "bacaan": "たんぱく",
-          "arti": ""
-        },
-        {
-          "kanji": "蛋白質",
-          "bacaan": "たんぱくしつ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "丶",
       "label": "丶 - Titik  (2 kata)",
       "count": 2,
@@ -4760,24 +4537,6 @@
         {
           "kanji": "久く",
           "bacaan": "かく",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "羊",
-      "label": "羊 - Kambing/domba  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "鮮明",
-          "bacaan": "せんめい",
-          "arti": ""
-        },
-        {
-          "kanji": "鮮やか",
-          "bacaan": "あざやか",
           "arti": ""
         }
       ],
@@ -4869,32 +4628,6 @@
         {
           "kanji": "餌",
           "bacaan": "えさ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "龜",
-      "label": "龜 - Kura-kura  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "亀",
-          "bacaan": "かめ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "牛",
-      "label": "牛 - Sapi  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "牛",
-          "bacaan": "うし",
           "arti": ""
         }
       ],

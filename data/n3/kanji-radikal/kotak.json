@@ -1405,8 +1405,8 @@
     },
     {
       "radikal": "网",
-      "label": "网 - Jaring  (25 kata)",
-      "count": 25,
+      "label": "网 - Jaring  (24 kata)",
+      "count": 24,
       "words": [
         {
           "kanji": "羅針盤",
@@ -1426,11 +1426,6 @@
         {
           "kanji": "買い上げ",
           "bacaan": "かいあげ",
-          "arti": ""
-        },
-        {
-          "kanji": "罵る",
-          "bacaan": "ののしる",
           "arti": ""
         },
         {
@@ -1886,104 +1881,6 @@
       "section": "belum"
     },
     {
-      "radikal": "口",
-      "label": "口 - Mulut  (18 kata)",
-      "count": 18,
-      "words": [
-        {
-          "kanji": "回数券",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "回復",
-          "bacaan": "かいふく",
-          "arti": ""
-        },
-        {
-          "kanji": "回り道",
-          "bacaan": "まわりみち",
-          "arti": ""
-        },
-        {
-          "kanji": "回収",
-          "bacaan": "かいしゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "回転",
-          "bacaan": "かいてん",
-          "arti": ""
-        },
-        {
-          "kanji": "回る",
-          "bacaan": "まわる",
-          "arti": ""
-        },
-        {
-          "kanji": "回す",
-          "bacaan": "まわす",
-          "arti": ""
-        },
-        {
-          "kanji": "回答",
-          "bacaan": "かいとう",
-          "arti": ""
-        },
-        {
-          "kanji": "回覧板",
-          "bacaan": "かいらんばん",
-          "arti": ""
-        },
-        {
-          "kanji": "鳴らす",
-          "bacaan": "ならす",
-          "arti": ""
-        },
-        {
-          "kanji": "鳴き声",
-          "bacaan": "なきごえ",
-          "arti": ""
-        },
-        {
-          "kanji": "鳴く",
-          "bacaan": "なく",
-          "arti": ""
-        },
-        {
-          "kanji": "鳴る",
-          "bacaan": "なる",
-          "arti": ""
-        },
-        {
-          "kanji": "鳴る",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "回虫",
-          "bacaan": "かいちゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "回教",
-          "bacaan": "かいきょう",
-          "arti": ""
-        },
-        {
-          "kanji": "回数",
-          "bacaan": "かいすう",
-          "arti": ""
-        },
-        {
-          "kanji": "回覧",
-          "bacaan": "かいらん",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "冂",
       "label": "冂 - Batas luar / border  (18 kata)",
       "count": 18,
@@ -2082,93 +1979,73 @@
       "section": "belum"
     },
     {
-      "radikal": "虫",
-      "label": "虫 - Serangga  (17 kata)",
-      "count": 17,
+      "radikal": "口",
+      "label": "口 - Mulut  (13 kata)",
+      "count": 13,
       "words": [
         {
-          "kanji": "蜘蛛",
-          "bacaan": "くも",
+          "kanji": "回数券",
+          "bacaan": "",
           "arti": ""
         },
         {
-          "kanji": "虫",
-          "bacaan": "むし",
+          "kanji": "回復",
+          "bacaan": "かいふく",
           "arti": ""
         },
         {
-          "kanji": "蠍",
-          "bacaan": "さそり",
+          "kanji": "回り道",
+          "bacaan": "まわりみち",
           "arti": ""
         },
         {
-          "kanji": "蝉",
-          "bacaan": "せみ",
+          "kanji": "回収",
+          "bacaan": "かいしゅう",
           "arti": ""
         },
         {
-          "kanji": "蛸",
-          "bacaan": "たこ",
+          "kanji": "回転",
+          "bacaan": "かいてん",
           "arti": ""
         },
         {
-          "kanji": "蟻",
-          "bacaan": "あり",
+          "kanji": "回る",
+          "bacaan": "まわる",
           "arti": ""
         },
         {
-          "kanji": "蝶々",
-          "bacaan": "ちょうちょう",
+          "kanji": "回す",
+          "bacaan": "まわす",
           "arti": ""
         },
         {
-          "kanji": "蝦",
-          "bacaan": "えび",
+          "kanji": "回答",
+          "bacaan": "かいとう",
           "arti": ""
         },
         {
-          "kanji": "蛾",
-          "bacaan": "が",
+          "kanji": "回覧板",
+          "bacaan": "かいらんばん",
           "arti": ""
         },
         {
-          "kanji": "蜂",
-          "bacaan": "はち",
+          "kanji": "回虫",
+          "bacaan": "かいちゅう",
           "arti": ""
         },
         {
-          "kanji": "蠅",
-          "bacaan": "はえ",
+          "kanji": "回教",
+          "bacaan": "かいきょう",
           "arti": ""
         },
         {
-          "kanji": "蜻蛉",
-          "bacaan": "とんぼ",
+          "kanji": "回数",
+          "bacaan": "かいすう",
           "arti": ""
         },
         {
-          "kanji": "蛇",
-          "bacaan": "へび",
-          "arti": ""
-        },
-        {
-          "kanji": "蛙",
-          "bacaan": "かえる",
-          "arti": ""
-        },
-        {
-          "kanji": "蝸牛",
-          "bacaan": "かたつむり",
-          "arti": ""
-        },
-        {
-          "kanji": "蟋蟀",
-          "bacaan": "こおろぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "蝙蝠",
-          "bacaan": "こうもり",
+          "kanji": "回覧",
+          "bacaan": "かいらん",
           "arti": ""
         }
       ],
@@ -2762,19 +2639,6 @@
         {
           "kanji": "鼾",
           "bacaan": "いびき",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "鳥",
-      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "鴨",
-          "bacaan": "かも",
           "arti": ""
         }
       ],

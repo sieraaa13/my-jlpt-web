@@ -6100,89 +6100,6 @@
       ]
     },
     {
-      "radikal": "(belum teridentifikasi)",
-      "label": "(belum teridentifikasi) - Menunggu klasifikasi radikal lebih lanjut  (15 kata)",
-      "count": 15,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "天",
-          "bacaan": "てん",
-          "arti": "langit"
-        },
-        {
-          "kanji": "天国",
-          "bacaan": "てんごく",
-          "arti": "surga"
-        },
-        {
-          "kanji": "天気",
-          "bacaan": "てんき",
-          "arti": "cuaca"
-        },
-        {
-          "kanji": "天候",
-          "bacaan": "てんこう",
-          "arti": "keadaan cuaca"
-        },
-        {
-          "kanji": "天然",
-          "bacaan": "てんねん",
-          "arti": "alami"
-        },
-        {
-          "kanji": "天災",
-          "bacaan": "てんさい",
-          "arti": "bencana alam"
-        },
-        {
-          "kanji": "天秤",
-          "bacaan": "てんびん",
-          "arti": "timbangan/neraca"
-        },
-        {
-          "kanji": "豚肉",
-          "bacaan": "ぶたにく",
-          "arti": "daging babi"
-        },
-        {
-          "kanji": "豚",
-          "bacaan": "ぶた",
-          "arti": "babi"
-        },
-        {
-          "kanji": "孝行",
-          "bacaan": "こうこう",
-          "arti": "berbakti (pada orang tua)"
-        },
-        {
-          "kanji": "起立投票",
-          "bacaan": "きりつとうひょう",
-          "arti": "voting berdiri"
-        },
-        {
-          "kanji": "起訴",
-          "bacaan": "きそ",
-          "arti": "penuntutan (hukum)"
-        },
-        {
-          "kanji": "起源",
-          "bacaan": "きげん",
-          "arti": "asal usul"
-        },
-        {
-          "kanji": "起こる",
-          "bacaan": "おこる",
-          "arti": "terjadi"
-        },
-        {
-          "kanji": "裁判官",
-          "bacaan": "さいばんかん",
-          "arti": "hakim"
-        }
-      ]
-    },
-    {
       "radikal": "攴",
       "label": "攴 - (radikal jarang, lihat contoh kanji) (bukan alam)  (15 kata)",
       "count": 15,
@@ -6262,6 +6179,79 @@
           "kanji": "教わる",
           "bacaan": "おそわる",
           "arti": "diajari"
+        }
+      ]
+    },
+    {
+      "radikal": "(belum teridentifikasi)",
+      "label": "(belum teridentifikasi) - Menunggu klasifikasi radikal lebih lanjut  (13 kata)",
+      "count": 13,
+      "section": "belum",
+      "words": [
+        {
+          "kanji": "天",
+          "bacaan": "てん",
+          "arti": "langit"
+        },
+        {
+          "kanji": "天国",
+          "bacaan": "てんごく",
+          "arti": "surga"
+        },
+        {
+          "kanji": "天気",
+          "bacaan": "てんき",
+          "arti": "cuaca"
+        },
+        {
+          "kanji": "天候",
+          "bacaan": "てんこう",
+          "arti": "keadaan cuaca"
+        },
+        {
+          "kanji": "天然",
+          "bacaan": "てんねん",
+          "arti": "alami"
+        },
+        {
+          "kanji": "天災",
+          "bacaan": "てんさい",
+          "arti": "bencana alam"
+        },
+        {
+          "kanji": "天秤",
+          "bacaan": "てんびん",
+          "arti": "timbangan/neraca"
+        },
+        {
+          "kanji": "孝行",
+          "bacaan": "こうこう",
+          "arti": "berbakti (pada orang tua)"
+        },
+        {
+          "kanji": "起立投票",
+          "bacaan": "きりつとうひょう",
+          "arti": "voting berdiri"
+        },
+        {
+          "kanji": "起訴",
+          "bacaan": "きそ",
+          "arti": "penuntutan (hukum)"
+        },
+        {
+          "kanji": "起源",
+          "bacaan": "きげん",
+          "arti": "asal usul"
+        },
+        {
+          "kanji": "起こる",
+          "bacaan": "おこる",
+          "arti": "terjadi"
+        },
+        {
+          "kanji": "裁判官",
+          "bacaan": "さいばんかん",
+          "arti": "hakim"
         }
       ]
     },

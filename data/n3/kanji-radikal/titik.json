@@ -512,74 +512,6 @@
       "section": "belum"
     },
     {
-      "radikal": "小",
-      "label": "小 - Kecil  (12 kata)",
-      "count": 12,
-      "words": [
-        {
-          "kanji": "尚更",
-          "bacaan": "なおさら",
-          "arti": ""
-        },
-        {
-          "kanji": "尚",
-          "bacaan": "なお",
-          "arti": ""
-        },
-        {
-          "kanji": "蛍光灯",
-          "bacaan": "けいこうとう",
-          "arti": ""
-        },
-        {
-          "kanji": "覚醒剤",
-          "bacaan": "かくせいざい",
-          "arti": ""
-        },
-        {
-          "kanji": "巣",
-          "bacaan": "す",
-          "arti": ""
-        },
-        {
-          "kanji": "覚悟",
-          "bacaan": "かくご",
-          "arti": ""
-        },
-        {
-          "kanji": "覚醒",
-          "bacaan": "かくせい",
-          "arti": ""
-        },
-        {
-          "kanji": "蛍",
-          "bacaan": "ほたる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚える",
-          "bacaan": "おぼえる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚ます",
-          "bacaan": "さます",
-          "arti": ""
-        },
-        {
-          "kanji": "覚める",
-          "bacaan": "さめる",
-          "arti": ""
-        },
-        {
-          "kanji": "覚え",
-          "bacaan": "おぼえ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "止",
       "label": "止 - Berhenti  (12 kata)",
       "count": 12,
@@ -836,6 +768,64 @@
         {
           "kanji": "内閣",
           "bacaan": "ないかく",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "小",
+      "label": "小 - Kecil  (10 kata)",
+      "count": 10,
+      "words": [
+        {
+          "kanji": "尚更",
+          "bacaan": "なおさら",
+          "arti": ""
+        },
+        {
+          "kanji": "尚",
+          "bacaan": "なお",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒剤",
+          "bacaan": "かくせいざい",
+          "arti": ""
+        },
+        {
+          "kanji": "巣",
+          "bacaan": "す",
+          "arti": ""
+        },
+        {
+          "kanji": "覚悟",
+          "bacaan": "かくご",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒",
+          "bacaan": "かくせい",
+          "arti": ""
+        },
+        {
+          "kanji": "覚える",
+          "bacaan": "おぼえる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚ます",
+          "bacaan": "さます",
+          "arti": ""
+        },
+        {
+          "kanji": "覚める",
+          "bacaan": "さめる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚え",
+          "bacaan": "おぼえ",
           "arti": ""
         }
       ],
@@ -1326,34 +1316,6 @@
       "section": "belum"
     },
     {
-      "radikal": "羊",
-      "label": "羊 - Kambing/domba  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "群れ",
-          "bacaan": "むれ",
-          "arti": ""
-        },
-        {
-          "kanji": "群衆",
-          "bacaan": "ぐんしゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "羊毛",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "養成所",
-          "bacaan": "ようせいじょ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "皿",
       "label": "皿 - Piring/wadah  (3 kata)",
       "count": 3,
@@ -1477,18 +1439,13 @@
       "section": "belum"
     },
     {
-      "radikal": "犬",
-      "label": "犬 - Anjing  (2 kata)",
-      "count": 2,
+      "radikal": "羊",
+      "label": "羊 - Kambing/domba  (1 kata)",
+      "count": 1,
       "words": [
         {
-          "kanji": "獣",
-          "bacaan": "けだもの",
-          "arti": ""
-        },
-        {
-          "kanji": "獣",
-          "bacaan": "けもの",
+          "kanji": "養成所",
+          "bacaan": "ようせいじょ",
           "arti": ""
         }
       ],
@@ -1521,19 +1478,6 @@
       "section": "belum"
     },
     {
-      "radikal": "爿",
-      "label": "爿 - Kayu belah (kiri)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "状態",
-          "bacaan": "じょうたい",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "鬼",
       "label": "鬼 - Hantu/roh  (1 kata)",
       "count": 1,
@@ -1541,19 +1485,6 @@
         {
           "kanji": "鬼",
           "bacaan": "おに",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "鳥",
-      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "鳥",
-          "bacaan": "とり",
           "arti": ""
         }
       ],

@@ -571,154 +571,6 @@
       "section": "belum"
     },
     {
-      "radikal": "立",
-      "label": "立 - Berdiri  (28 kata)",
-      "count": 28,
-      "words": [
-        {
-          "kanji": "立場",
-          "bacaan": "たちば",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち止まる",
-          "bacaan": "たちどまる",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち直る",
-          "bacaan": "たちなおる",
-          "arti": ""
-        },
-        {
-          "kanji": "章",
-          "bacaan": "しょう",
-          "arti": ""
-        },
-        {
-          "kanji": "立候補",
-          "bacaan": "りっこうほ",
-          "arti": ""
-        },
-        {
-          "kanji": "立体",
-          "bacaan": "りったい",
-          "arti": ""
-        },
-        {
-          "kanji": "端数",
-          "bacaan": "はす",
-          "arti": ""
-        },
-        {
-          "kanji": "童話",
-          "bacaan": "どうわ",
-          "arti": ""
-        },
-        {
-          "kanji": "立派",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "立腹",
-          "bacaan": "",
-          "arti": ""
-        },
-        {
-          "kanji": "競争",
-          "bacaan": "きょうそう",
-          "arti": ""
-        },
-        {
-          "kanji": "童顔",
-          "bacaan": "どうがん",
-          "arti": ""
-        },
-        {
-          "kanji": "童",
-          "bacaan": "わらべ",
-          "arti": ""
-        },
-        {
-          "kanji": "竜",
-          "bacaan": "りゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "立候補者",
-          "bacaan": "りっこうほしゃ",
-          "arti": ""
-        },
-        {
-          "kanji": "竜",
-          "bacaan": "たつ",
-          "arti": ""
-        },
-        {
-          "kanji": "競馬",
-          "bacaan": "けいば",
-          "arti": ""
-        },
-        {
-          "kanji": "端",
-          "bacaan": "はし",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち入り",
-          "bacaan": "たちいり",
-          "arti": ""
-        },
-        {
-          "kanji": "競り",
-          "bacaan": "せり",
-          "arti": ""
-        },
-        {
-          "kanji": "競技",
-          "bacaan": "きょうぎ",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち上がる",
-          "bacaan": "たちあがる",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち向かう",
-          "bacaan": "たちむかう",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち去る",
-          "bacaan": "たちさる",
-          "arti": ""
-        },
-        {
-          "kanji": "競う",
-          "bacaan": "きそう",
-          "arti": ""
-        },
-        {
-          "kanji": "立食",
-          "bacaan": "りっしょく",
-          "arti": ""
-        },
-        {
-          "kanji": "立ち寄る",
-          "bacaan": "たちよる",
-          "arti": ""
-        },
-        {
-          "kanji": "立つ",
-          "bacaan": "たつ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "攴",
       "label": "攴 - Memukul ringan / tindakan  (27 kata)",
       "count": 27,
@@ -856,6 +708,144 @@
         {
           "kanji": "教える",
           "bacaan": "おしえる",
+          "arti": ""
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "立",
+      "label": "立 - Berdiri  (26 kata)",
+      "count": 26,
+      "words": [
+        {
+          "kanji": "立場",
+          "bacaan": "たちば",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち止まる",
+          "bacaan": "たちどまる",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち直る",
+          "bacaan": "たちなおる",
+          "arti": ""
+        },
+        {
+          "kanji": "章",
+          "bacaan": "しょう",
+          "arti": ""
+        },
+        {
+          "kanji": "立候補",
+          "bacaan": "りっこうほ",
+          "arti": ""
+        },
+        {
+          "kanji": "立体",
+          "bacaan": "りったい",
+          "arti": ""
+        },
+        {
+          "kanji": "端数",
+          "bacaan": "はす",
+          "arti": ""
+        },
+        {
+          "kanji": "童話",
+          "bacaan": "どうわ",
+          "arti": ""
+        },
+        {
+          "kanji": "立派",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "立腹",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "競争",
+          "bacaan": "きょうそう",
+          "arti": ""
+        },
+        {
+          "kanji": "童顔",
+          "bacaan": "どうがん",
+          "arti": ""
+        },
+        {
+          "kanji": "童",
+          "bacaan": "わらべ",
+          "arti": ""
+        },
+        {
+          "kanji": "立候補者",
+          "bacaan": "りっこうほしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "競馬",
+          "bacaan": "けいば",
+          "arti": ""
+        },
+        {
+          "kanji": "端",
+          "bacaan": "はし",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち入り",
+          "bacaan": "たちいり",
+          "arti": ""
+        },
+        {
+          "kanji": "競り",
+          "bacaan": "せり",
+          "arti": ""
+        },
+        {
+          "kanji": "競技",
+          "bacaan": "きょうぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち上がる",
+          "bacaan": "たちあがる",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち向かう",
+          "bacaan": "たちむかう",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち去る",
+          "bacaan": "たちさる",
+          "arti": ""
+        },
+        {
+          "kanji": "競う",
+          "bacaan": "きそう",
+          "arti": ""
+        },
+        {
+          "kanji": "立食",
+          "bacaan": "りっしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "立ち寄る",
+          "bacaan": "たちよる",
+          "arti": ""
+        },
+        {
+          "kanji": "立つ",
+          "bacaan": "たつ",
           "arti": ""
         }
       ],
@@ -2005,44 +1995,6 @@
       "section": "belum"
     },
     {
-      "radikal": "隹",
-      "label": "隹 - Burung (pendek)  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "離乳",
-          "bacaan": "りにゅう",
-          "arti": ""
-        },
-        {
-          "kanji": "離婚",
-          "bacaan": "りこん",
-          "arti": ""
-        },
-        {
-          "kanji": "雄",
-          "bacaan": "おす",
-          "arti": ""
-        },
-        {
-          "kanji": "離陸",
-          "bacaan": "りりく",
-          "arti": ""
-        },
-        {
-          "kanji": "離乳食",
-          "bacaan": "りにゅうしょく",
-          "arti": ""
-        },
-        {
-          "kanji": "離れる",
-          "bacaan": "はなれる",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "巾",
       "label": "巾 - Kain  (6 kata)",
       "count": 6,
@@ -2368,29 +2320,6 @@
       "section": "belum"
     },
     {
-      "radikal": "犬",
-      "label": "犬 - Anjing  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "献身",
-          "bacaan": "けんしん",
-          "arti": ""
-        },
-        {
-          "kanji": "献立",
-          "bacaan": "こんだて",
-          "arti": ""
-        },
-        {
-          "kanji": "献血",
-          "bacaan": "けんけつ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "戈",
       "label": "戈 - Tombak/senjata  (3 kata)",
       "count": 3,
@@ -2501,24 +2430,6 @@
       "section": "belum"
     },
     {
-      "radikal": "鳥",
-      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "鶉",
-          "bacaan": "うずら",
-          "arti": ""
-        },
-        {
-          "kanji": "鷲",
-          "bacaan": "わし",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
       "radikal": "貝",
       "label": "貝 - Kerang (dulu = uang)  (2 kata)",
       "count": 2,
@@ -2557,45 +2468,6 @@
         {
           "kanji": "丈夫",
           "bacaan": "じょうぶ",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "豕",
-      "label": "豕 - Babi  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "豪華",
-          "bacaan": "ごうか",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "龍",
-      "label": "龍 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "龍の落とし子",
-          "bacaan": "たつのおとしご",
-          "arti": ""
-        }
-      ],
-      "section": "belum"
-    },
-    {
-      "radikal": "虫",
-      "label": "虫 - Serangga  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "蛮人",
-          "bacaan": "ばんじん",
           "arti": ""
         }
       ],

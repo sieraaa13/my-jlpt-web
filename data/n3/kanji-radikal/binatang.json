@@ -1,0 +1,796 @@
+{
+  "title": "Kumpulan Kanji Radikal Binatang",
+  "groups": [
+    {
+      "radikal": "牛",
+      "label": "牛 - Sapi  (44 kata)",
+      "count": 44,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "牢屋",
+          "bacaan": "ろうや",
+          "arti": "penjara"
+        },
+        {
+          "kanji": "牛",
+          "bacaan": "うし",
+          "arti": ""
+        },
+        {
+          "kanji": "物々交換",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "物体",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "物",
+          "bacaan": "もの",
+          "arti": ""
+        },
+        {
+          "kanji": "物差し",
+          "bacaan": "ものさし",
+          "arti": ""
+        },
+        {
+          "kanji": "物置",
+          "bacaan": "ものおき",
+          "arti": ""
+        },
+        {
+          "kanji": "物品",
+          "bacaan": "ぶっぴん",
+          "arti": ""
+        },
+        {
+          "kanji": "物質",
+          "bacaan": "ぶっし",
+          "arti": ""
+        },
+        {
+          "kanji": "特急",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "特性",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "特製",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "特殊",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "特集",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "特有",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "物語る",
+          "bacaan": "ものがたる",
+          "arti": ""
+        },
+        {
+          "kanji": "物語",
+          "bacaan": "ものがたり",
+          "arti": ""
+        },
+        {
+          "kanji": "物事",
+          "bacaan": "ものごと",
+          "arti": ""
+        },
+        {
+          "kanji": "物音",
+          "bacaan": "ものおと",
+          "arti": ""
+        },
+        {
+          "kanji": "物凄い",
+          "bacaan": "ものすごい",
+          "arti": ""
+        },
+        {
+          "kanji": "物足りない",
+          "bacaan": "ものたりない",
+          "arti": ""
+        },
+        {
+          "kanji": "物笑い",
+          "bacaan": "ものわらい",
+          "arti": ""
+        },
+        {
+          "kanji": "物忘れ",
+          "bacaan": "ものわすれ",
+          "arti": ""
+        },
+        {
+          "kanji": "物好き",
+          "bacaan": "ものずき",
+          "arti": ""
+        },
+        {
+          "kanji": "物品税",
+          "bacaan": "ぶっぴんぜい",
+          "arti": ""
+        },
+        {
+          "kanji": "特色",
+          "bacaan": "とくしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "特別",
+          "bacaan": "とくべつ",
+          "arti": ""
+        },
+        {
+          "kanji": "特徴",
+          "bacaan": "とくちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "特技",
+          "bacaan": "とくぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "特に",
+          "bacaan": "とくに",
+          "arti": ""
+        },
+        {
+          "kanji": "特産",
+          "bacaan": "とくさん",
+          "arti": ""
+        },
+        {
+          "kanji": "特許",
+          "bacaan": "とっきょ",
+          "arti": ""
+        },
+        {
+          "kanji": "特許権",
+          "bacaan": "とっきょけん",
+          "arti": ""
+        },
+        {
+          "kanji": "物質",
+          "bacaan": "ぶっしつ",
+          "arti": ""
+        },
+        {
+          "kanji": "物理",
+          "bacaan": "ぶつり",
+          "arti": ""
+        },
+        {
+          "kanji": "物価",
+          "bacaan": "ぶっか",
+          "arti": ""
+        },
+        {
+          "kanji": "物惜しみ",
+          "bacaan": "ものおしみ",
+          "arti": ""
+        },
+        {
+          "kanji": "犠牲",
+          "bacaan": "ぎせい",
+          "arti": ""
+        },
+        {
+          "kanji": "物知り",
+          "bacaan": "ものしり",
+          "arti": ""
+        },
+        {
+          "kanji": "牧畜",
+          "bacaan": "ぼくちく",
+          "arti": ""
+        },
+        {
+          "kanji": "牧場",
+          "bacaan": "ぼくじょう",
+          "arti": ""
+        },
+        {
+          "kanji": "牧師",
+          "bacaan": "ぼくし",
+          "arti": ""
+        },
+        {
+          "kanji": "牡蠣",
+          "bacaan": "かき",
+          "arti": ""
+        },
+        {
+          "kanji": "犀",
+          "bacaan": "さい",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "虫",
+      "label": "虫 - Serangga  (28 kata)",
+      "count": 28,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "融資",
+          "bacaan": "ゆうし",
+          "arti": ""
+        },
+        {
+          "kanji": "蚕",
+          "bacaan": "かいこ",
+          "arti": ""
+        },
+        {
+          "kanji": "蝕む",
+          "bacaan": "むしばむ",
+          "arti": ""
+        },
+        {
+          "kanji": "蟹",
+          "bacaan": "かに",
+          "arti": ""
+        },
+        {
+          "kanji": "蛋白",
+          "bacaan": "たんぱく",
+          "arti": ""
+        },
+        {
+          "kanji": "蛋白質",
+          "bacaan": "たんぱくしつ",
+          "arti": ""
+        },
+        {
+          "kanji": "蜘蛛",
+          "bacaan": "くも",
+          "arti": ""
+        },
+        {
+          "kanji": "虫",
+          "bacaan": "むし",
+          "arti": ""
+        },
+        {
+          "kanji": "蠍",
+          "bacaan": "さそり",
+          "arti": ""
+        },
+        {
+          "kanji": "蝉",
+          "bacaan": "せみ",
+          "arti": ""
+        },
+        {
+          "kanji": "蛸",
+          "bacaan": "たこ",
+          "arti": ""
+        },
+        {
+          "kanji": "蟻",
+          "bacaan": "あり",
+          "arti": ""
+        },
+        {
+          "kanji": "蝶々",
+          "bacaan": "ちょうちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "蝦",
+          "bacaan": "えび",
+          "arti": ""
+        },
+        {
+          "kanji": "蛾",
+          "bacaan": "が",
+          "arti": ""
+        },
+        {
+          "kanji": "蜂",
+          "bacaan": "はち",
+          "arti": ""
+        },
+        {
+          "kanji": "蠅",
+          "bacaan": "はえ",
+          "arti": ""
+        },
+        {
+          "kanji": "蜻蛉",
+          "bacaan": "とんぼ",
+          "arti": ""
+        },
+        {
+          "kanji": "蛇",
+          "bacaan": "へび",
+          "arti": ""
+        },
+        {
+          "kanji": "蛙",
+          "bacaan": "かえる",
+          "arti": ""
+        },
+        {
+          "kanji": "蝸牛",
+          "bacaan": "かたつむり",
+          "arti": ""
+        },
+        {
+          "kanji": "蟋蟀",
+          "bacaan": "こおろぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "蝙蝠",
+          "bacaan": "こうもり",
+          "arti": ""
+        },
+        {
+          "kanji": "蜜柑",
+          "bacaan": "みかん",
+          "arti": ""
+        },
+        {
+          "kanji": "虱",
+          "bacaan": "しらみ",
+          "arti": ""
+        },
+        {
+          "kanji": "蛮人",
+          "bacaan": "ばんじん",
+          "arti": ""
+        },
+        {
+          "kanji": "蛍光灯",
+          "bacaan": "けいこうとう",
+          "arti": ""
+        },
+        {
+          "kanji": "蛍",
+          "bacaan": "ほたる",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "魚",
+      "label": "魚 - Ikan  (17 kata)",
+      "count": 17,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "鯨",
+          "bacaan": "くじら",
+          "arti": ""
+        },
+        {
+          "kanji": "鰭",
+          "bacaan": "ひれ",
+          "arti": ""
+        },
+        {
+          "kanji": "鮑",
+          "bacaan": "あわび",
+          "arti": ""
+        },
+        {
+          "kanji": "鰯",
+          "bacaan": "いわし",
+          "arti": ""
+        },
+        {
+          "kanji": "鰹",
+          "bacaan": "かつお",
+          "arti": ""
+        },
+        {
+          "kanji": "魚",
+          "bacaan": "さかな",
+          "arti": ""
+        },
+        {
+          "kanji": "鮭",
+          "bacaan": "さけ",
+          "arti": ""
+        },
+        {
+          "kanji": "鮫",
+          "bacaan": "さめ",
+          "arti": ""
+        },
+        {
+          "kanji": "鮪",
+          "bacaan": "まぐろ",
+          "arti": ""
+        },
+        {
+          "kanji": "鯛",
+          "bacaan": "たい",
+          "arti": ""
+        },
+        {
+          "kanji": "鰻",
+          "bacaan": "うなぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "魚",
+          "bacaan": "うお",
+          "arti": ""
+        },
+        {
+          "kanji": "鰐",
+          "bacaan": "わに",
+          "arti": ""
+        },
+        {
+          "kanji": "魚介",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "鯉",
+          "bacaan": "こい",
+          "arti": ""
+        },
+        {
+          "kanji": "鮮明",
+          "bacaan": "せんめい",
+          "arti": ""
+        },
+        {
+          "kanji": "鮮やか",
+          "bacaan": "あざやか",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "隹",
+      "label": "隹 - Burung (pendek)  (15 kata)",
+      "count": 15,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "雉子",
+          "bacaan": "きじ",
+          "arti": ""
+        },
+        {
+          "kanji": "集団",
+          "bacaan": "しゅうだん",
+          "arti": ""
+        },
+        {
+          "kanji": "集合",
+          "bacaan": "しゅうごう",
+          "arti": ""
+        },
+        {
+          "kanji": "集金",
+          "bacaan": "しゅうきん",
+          "arti": ""
+        },
+        {
+          "kanji": "集中",
+          "bacaan": "しゅうちゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "雇用",
+          "bacaan": "こよう",
+          "arti": ""
+        },
+        {
+          "kanji": "雇う",
+          "bacaan": "やとう",
+          "arti": ""
+        },
+        {
+          "kanji": "雛",
+          "bacaan": "ひよこ",
+          "arti": ""
+        },
+        {
+          "kanji": "雛",
+          "bacaan": "ひな",
+          "arti": ""
+        },
+        {
+          "kanji": "離乳",
+          "bacaan": "りにゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "離婚",
+          "bacaan": "りこん",
+          "arti": ""
+        },
+        {
+          "kanji": "雄",
+          "bacaan": "おす",
+          "arti": ""
+        },
+        {
+          "kanji": "離陸",
+          "bacaan": "りりく",
+          "arti": ""
+        },
+        {
+          "kanji": "離乳食",
+          "bacaan": "りにゅうしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "離れる",
+          "bacaan": "はなれる",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "鳥",
+      "label": "鳥 - (radikal jarang, lihat contoh kanji)  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "鳴らす",
+          "bacaan": "ならす",
+          "arti": ""
+        },
+        {
+          "kanji": "鳴き声",
+          "bacaan": "なきごえ",
+          "arti": ""
+        },
+        {
+          "kanji": "鳴く",
+          "bacaan": "なく",
+          "arti": ""
+        },
+        {
+          "kanji": "鳴る",
+          "bacaan": "なる",
+          "arti": ""
+        },
+        {
+          "kanji": "鳴る",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "鴨",
+          "bacaan": "かも",
+          "arti": ""
+        },
+        {
+          "kanji": "鷗",
+          "bacaan": "かもめ",
+          "arti": ""
+        },
+        {
+          "kanji": "鶏",
+          "bacaan": "にわとり",
+          "arti": ""
+        },
+        {
+          "kanji": "鶉",
+          "bacaan": "うずら",
+          "arti": ""
+        },
+        {
+          "kanji": "鷲",
+          "bacaan": "わし",
+          "arti": ""
+        },
+        {
+          "kanji": "鳥",
+          "bacaan": "とり",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "豕",
+      "label": "豕 - Babi  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "豚肉",
+          "bacaan": "ぶたにく",
+          "arti": "daging babi"
+        },
+        {
+          "kanji": "豚",
+          "bacaan": "ぶた",
+          "arti": "babi"
+        },
+        {
+          "kanji": "象",
+          "bacaan": "ぞう",
+          "arti": ""
+        },
+        {
+          "kanji": "象牙",
+          "bacaan": "ぞうげ",
+          "arti": ""
+        },
+        {
+          "kanji": "象形文字",
+          "bacaan": "しょうけいもじ",
+          "arti": ""
+        },
+        {
+          "kanji": "象徴",
+          "bacaan": "しょうちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "豪華",
+          "bacaan": "ごうか",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "犬",
+      "label": "犬 - Anjing  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "献身",
+          "bacaan": "けんしん",
+          "arti": ""
+        },
+        {
+          "kanji": "献立",
+          "bacaan": "こんだて",
+          "arti": ""
+        },
+        {
+          "kanji": "献血",
+          "bacaan": "けんけつ",
+          "arti": ""
+        },
+        {
+          "kanji": "獣",
+          "bacaan": "けだもの",
+          "arti": ""
+        },
+        {
+          "kanji": "獣",
+          "bacaan": "けもの",
+          "arti": ""
+        },
+        {
+          "kanji": "状態",
+          "bacaan": "じょうたい",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "羊",
+      "label": "羊 - Kambing/domba  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "群島",
+          "bacaan": "ぐんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "群れ",
+          "bacaan": "むれ",
+          "arti": ""
+        },
+        {
+          "kanji": "群衆",
+          "bacaan": "ぐんしゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "羊毛",
+          "bacaan": "",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "龍",
+      "label": "龍 - (radikal jarang, lihat contoh kanji)  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "竜",
+          "bacaan": "りゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "竜",
+          "bacaan": "たつ",
+          "arti": ""
+        },
+        {
+          "kanji": "龍の落とし子",
+          "bacaan": "たつのおとしご",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "鹿",
+      "label": "鹿 - Rusa  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "麓",
+          "bacaan": "ふもと",
+          "arti": ""
+        },
+        {
+          "kanji": "鹿",
+          "bacaan": "しか",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "龜",
+      "label": "龜 - Kura-kura  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "亀",
+          "bacaan": "かめ",
+          "arti": ""
+        }
+      ]
+    },
+    {
+      "radikal": "馬",
+      "label": "馬 - Kuda  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "罵る",
+          "bacaan": "ののしる",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}
