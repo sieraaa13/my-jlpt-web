@@ -116,7 +116,8 @@
           "bacaan": "てあらい",
           "arti": "cuci tangan"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "心",
@@ -223,7 +224,8 @@
           "bacaan": "どなる",
           "arti": "membentak / berteriak marah"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "背",
@@ -275,7 +277,8 @@
           "bacaan": "はいけい",
           "arti": "latar belakang"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "骨",
@@ -312,7 +315,8 @@
           "bacaan": "こっとう",
           "arti": "barang antik"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "毛",
@@ -349,7 +353,8 @@
           "bacaan": "けむし",
           "arti": "ulat bulu"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "血",
@@ -386,7 +391,8 @@
           "bacaan": "けつえき",
           "arti": "darah (istilah medis)"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "身",
@@ -408,7 +414,8 @@
           "bacaan": "しんちょう",
           "arti": "tinggi badan"
         }
-      ]
+      ],
+      "section": "main"
     },
     {
       "radikal": "爪",
@@ -440,7 +447,717 @@
           "bacaan": "はちゅうるい",
           "arti": "reptil"
         }
-      ]
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "女",
+      "label": "女 - Wanita/Perempuan  (69 kata)",
+      "count": 69,
+      "words": [
+        {
+          "kanji": "如何",
+          "bacaan": "いかが",
+          "arti": "bagaimana"
+        },
+        {
+          "kanji": "如何に",
+          "bacaan": "いかに",
+          "arti": "betapa / bagaimana"
+        },
+        {
+          "kanji": "如何にも",
+          "bacaan": "いかにも",
+          "arti": "sungguh, benar-benar"
+        },
+        {
+          "kanji": "嫉妬",
+          "bacaan": "しっと",
+          "arti": "cemburu, iri"
+        },
+        {
+          "kanji": "始末",
+          "bacaan": "しまつ",
+          "arti": "pengurusan / akhir"
+        },
+        {
+          "kanji": "姓名",
+          "bacaan": "せいめい",
+          "arti": "nama lengkap (marga+nama)"
+        },
+        {
+          "kanji": "嫁ぐ",
+          "bacaan": "とつぐ",
+          "arti": "menikah (untuk perempuan)"
+        },
+        {
+          "kanji": "妨げ",
+          "bacaan": "さまたげ",
+          "arti": "hambatan"
+        },
+        {
+          "kanji": "姓",
+          "bacaan": "せい",
+          "arti": "marga"
+        },
+        {
+          "kanji": "好評",
+          "bacaan": "こうひょう",
+          "arti": "tanggapan baik"
+        },
+        {
+          "kanji": "好意",
+          "bacaan": "こうい",
+          "arti": "niat baik"
+        },
+        {
+          "kanji": "妊娠",
+          "bacaan": "にんしん",
+          "arti": "kehamilan"
+        },
+        {
+          "kanji": "如き",
+          "bacaan": "ごとき",
+          "arti": "seperti"
+        },
+        {
+          "kanji": "如く",
+          "bacaan": "ごとく",
+          "arti": "seperti"
+        },
+        {
+          "kanji": "妙",
+          "bacaan": "みょう",
+          "arti": "aneh"
+        },
+        {
+          "kanji": "女々しい",
+          "bacaan": "めめしい",
+          "arti": "cengeng, tidak jantan"
+        },
+        {
+          "kanji": "好ましい",
+          "bacaan": "このましい",
+          "arti": "disukai, diinginkan"
+        },
+        {
+          "kanji": "好奇心",
+          "bacaan": "こうきしん",
+          "arti": "rasa ingin tahu"
+        },
+        {
+          "kanji": "嫌",
+          "bacaan": "いや",
+          "arti": "tidak suka"
+        },
+        {
+          "kanji": "嫌がる",
+          "bacaan": "いやがる",
+          "arti": "enggan"
+        },
+        {
+          "kanji": "始発",
+          "bacaan": "しはつ",
+          "arti": "keberangkatan pertama"
+        },
+        {
+          "kanji": "始終",
+          "bacaan": "しじゅう",
+          "arti": "dari awal sampai akhir"
+        },
+        {
+          "kanji": "好き",
+          "bacaan": "すき",
+          "arti": "suka"
+        },
+        {
+          "kanji": "始まり",
+          "bacaan": "はじまり",
+          "arti": "awal"
+        },
+        {
+          "kanji": "始まる",
+          "bacaan": "はじまる",
+          "arti": "dimulai"
+        },
+        {
+          "kanji": "始め",
+          "bacaan": "はじめ",
+          "arti": "awal"
+        },
+        {
+          "kanji": "始める",
+          "bacaan": "はじめる",
+          "arti": "memulai"
+        },
+        {
+          "kanji": "娯楽",
+          "bacaan": "ごらく",
+          "arti": "hiburan"
+        },
+        {
+          "kanji": "妬み",
+          "bacaan": "ねたみ",
+          "arti": "kecemburuan"
+        },
+        {
+          "kanji": "妬む",
+          "bacaan": "ねたむ",
+          "arti": "cemburu / iri"
+        },
+        {
+          "kanji": "好み",
+          "bacaan": "このみ",
+          "arti": "kesukaan"
+        },
+        {
+          "kanji": "好む",
+          "bacaan": "このむ",
+          "arti": "menyukai"
+        },
+        {
+          "kanji": "嫌い",
+          "bacaan": "きらい",
+          "arti": "tidak suka"
+        },
+        {
+          "kanji": "娼婦",
+          "bacaan": "しょうふ",
+          "arti": "pelacur"
+        },
+        {
+          "kanji": "奴",
+          "bacaan": "やつ",
+          "arti": "orang itu (kasar)"
+        },
+        {
+          "kanji": "嫁",
+          "bacaan": "よめ",
+          "arti": "pengantin wanita / menantu perempuan"
+        },
+        {
+          "kanji": "姑",
+          "bacaan": "しゅうとめ",
+          "arti": "ibu mertua"
+        },
+        {
+          "kanji": "妊婦",
+          "bacaan": "にんぷ",
+          "arti": "wanita hamil"
+        },
+        {
+          "kanji": "姉さん",
+          "bacaan": "ねえさん",
+          "arti": "kakak perempuan"
+        },
+        {
+          "kanji": "婿",
+          "bacaan": "むこ",
+          "arti": "menantu laki-laki"
+        },
+        {
+          "kanji": "娘",
+          "bacaan": "むすめ",
+          "arti": "anak perempuan"
+        },
+        {
+          "kanji": "お嬢さん",
+          "bacaan": "おじょうさん",
+          "arti": "anak perempuan orang lain (sapaan)"
+        },
+        {
+          "kanji": "女将",
+          "bacaan": "おかみ",
+          "arti": "nyonya pemilik (penginapan)"
+        },
+        {
+          "kanji": "女",
+          "bacaan": "おんな",
+          "arti": "perempuan"
+        },
+        {
+          "kanji": "女神",
+          "bacaan": "めがみ",
+          "arti": "dewi"
+        },
+        {
+          "kanji": "姪",
+          "bacaan": "めい",
+          "arti": "keponakan perempuan"
+        },
+        {
+          "kanji": "姉妹",
+          "bacaan": "しまい",
+          "arti": "kakak-adik perempuan"
+        },
+        {
+          "kanji": "女優",
+          "bacaan": "じょゆう",
+          "arti": "aktris"
+        },
+        {
+          "kanji": "女房",
+          "bacaan": "にょうぼう",
+          "arti": "istri"
+        },
+        {
+          "kanji": "女中",
+          "bacaan": "じょちゅう",
+          "arti": "pembantu perempuan"
+        },
+        {
+          "kanji": "女王",
+          "bacaan": "じょおう",
+          "arti": "ratu"
+        },
+        {
+          "kanji": "女性",
+          "bacaan": "じょせい",
+          "arti": "wanita"
+        },
+        {
+          "kanji": "女子",
+          "bacaan": "じょし",
+          "arti": "perempuan / wanita"
+        },
+        {
+          "kanji": "姫",
+          "bacaan": "ひめ",
+          "arti": "putri (bangsawan)"
+        },
+        {
+          "kanji": "妹",
+          "bacaan": "いもうと",
+          "arti": "adik perempuan"
+        },
+        {
+          "kanji": "奴隷",
+          "bacaan": "どれい",
+          "arti": "budak"
+        },
+        {
+          "kanji": "婦人",
+          "bacaan": "ふじん",
+          "arti": "wanita (formal)"
+        },
+        {
+          "kanji": "姉",
+          "bacaan": "あね",
+          "arti": "kakak perempuan"
+        },
+        {
+          "kanji": "媒介",
+          "bacaan": "ばいかい",
+          "arti": "perantara"
+        },
+        {
+          "kanji": "妨害",
+          "bacaan": "ぼうがい",
+          "arti": "gangguan / sabotase"
+        },
+        {
+          "kanji": "嬉しい",
+          "bacaan": "うれしい",
+          "arti": "senang"
+        },
+        {
+          "kanji": "好物",
+          "bacaan": "こうぶつ",
+          "arti": "makanan kesukaan"
+        },
+        {
+          "kanji": "始発電車",
+          "bacaan": "しはつでんしゃ",
+          "arti": "kereta pertama"
+        },
+        {
+          "kanji": "婉曲",
+          "bacaan": "えんきょく",
+          "arti": "eufemisme / tidak langsung"
+        },
+        {
+          "kanji": "始発駅",
+          "bacaan": "しはつえき",
+          "arti": "stasiun awal"
+        },
+        {
+          "kanji": "婚約",
+          "bacaan": "こんやく",
+          "arti": "pertunangan"
+        },
+        {
+          "kanji": "婚約者",
+          "bacaan": "こんやくしゃ",
+          "arti": "tunangan"
+        },
+        {
+          "kanji": "妨げる",
+          "bacaan": "さまたげる",
+          "arti": "menghalangi"
+        },
+        {
+          "kanji": "嫌う",
+          "bacaan": "きらう",
+          "arti": "membenci"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "人",
+      "label": "人 - Orang/Manusia  (39 kata)",
+      "count": 39,
+      "words": [
+        {
+          "kanji": "人差し指",
+          "bacaan": "ひとさしゆび",
+          "arti": "jari telunjuk"
+        },
+        {
+          "kanji": "人形",
+          "bacaan": "にんぎょう",
+          "arti": "boneka"
+        },
+        {
+          "kanji": "人通り",
+          "bacaan": "ひとどおり",
+          "arti": "lalu lalang orang"
+        },
+        {
+          "kanji": "人込み",
+          "bacaan": "ひとごみ",
+          "arti": "keramaian orang"
+        },
+        {
+          "kanji": "人殺し",
+          "bacaan": "ひとごろし",
+          "arti": "pembunuhan"
+        },
+        {
+          "kanji": "人気",
+          "bacaan": "にんき",
+          "arti": "populer"
+        },
+        {
+          "kanji": "人数",
+          "bacaan": "にんずう",
+          "arti": "jumlah orang"
+        },
+        {
+          "kanji": "人権",
+          "bacaan": "じんけん",
+          "arti": "hak asasi manusia"
+        },
+        {
+          "kanji": "人口",
+          "bacaan": "じんこう",
+          "arti": "populasi"
+        },
+        {
+          "kanji": "人命",
+          "bacaan": "じんめい",
+          "arti": "nyawa manusia"
+        },
+        {
+          "kanji": "人名",
+          "bacaan": "じんめい",
+          "arti": "nama orang"
+        },
+        {
+          "kanji": "人力",
+          "bacaan": "じんりょく",
+          "arti": "tenaga manusia"
+        },
+        {
+          "kanji": "人生",
+          "bacaan": "じんせい",
+          "arti": "kehidupan"
+        },
+        {
+          "kanji": "人種",
+          "bacaan": "じんしゅ",
+          "arti": "ras"
+        },
+        {
+          "kanji": "人工",
+          "bacaan": "じんこう",
+          "arti": "buatan manusia"
+        },
+        {
+          "kanji": "人材",
+          "bacaan": "じんざい",
+          "arti": "sumber daya manusia"
+        },
+        {
+          "kanji": "人件費",
+          "bacaan": "じんけんひ",
+          "arti": "biaya tenaga kerja"
+        },
+        {
+          "kanji": "人情",
+          "bacaan": "にんじょう",
+          "arti": "rasa kemanusiaan"
+        },
+        {
+          "kanji": "人",
+          "bacaan": "ひと",
+          "arti": "orang"
+        },
+        {
+          "kanji": "人々",
+          "bacaan": "ひとびと",
+          "arti": "orang-orang"
+        },
+        {
+          "kanji": "人出",
+          "bacaan": "ひとで",
+          "arti": "jumlah pengunjung"
+        },
+        {
+          "kanji": "人手",
+          "bacaan": "ひとで",
+          "arti": "tenaga kerja / bantuan orang"
+        },
+        {
+          "kanji": "人道",
+          "bacaan": "じんどう",
+          "arti": "kemanusiaan"
+        },
+        {
+          "kanji": "人格",
+          "bacaan": "じんかく",
+          "arti": "kepribadian"
+        },
+        {
+          "kanji": "人でなし",
+          "bacaan": "ひとでなし",
+          "arti": "orang tidak berperikemanusiaan"
+        },
+        {
+          "kanji": "人柄",
+          "bacaan": "ひとがら",
+          "arti": "karakter orang"
+        },
+        {
+          "kanji": "人見知り",
+          "bacaan": "ひとみしり",
+          "arti": "malu pada orang asing"
+        },
+        {
+          "kanji": "人なり",
+          "bacaan": "ひとなり",
+          "arti": "watak / sifat"
+        },
+        {
+          "kanji": "人並み",
+          "bacaan": "ひとなみ",
+          "arti": "rata-rata orang"
+        },
+        {
+          "kanji": "人前で",
+          "bacaan": "ひとまえで",
+          "arti": "di depan umum"
+        },
+        {
+          "kanji": "人",
+          "bacaan": "にん",
+          "arti": "(penghitung orang)"
+        },
+        {
+          "kanji": "人間",
+          "bacaan": "にんげん",
+          "arti": "manusia"
+        },
+        {
+          "kanji": "人質",
+          "bacaan": "ひとじち",
+          "arti": "sandera"
+        },
+        {
+          "kanji": "人参",
+          "bacaan": "にんじん",
+          "arti": "wortel"
+        },
+        {
+          "kanji": "人",
+          "bacaan": "じん",
+          "arti": "(penunjuk kebangsaan/kelompok)"
+        },
+        {
+          "kanji": "人物",
+          "bacaan": "じんぶつ",
+          "arti": "tokoh / orang"
+        },
+        {
+          "kanji": "人事",
+          "bacaan": "じんじ",
+          "arti": "urusan personalia"
+        },
+        {
+          "kanji": "人民",
+          "bacaan": "じんみん",
+          "arti": "rakyat"
+        },
+        {
+          "kanji": "人類",
+          "bacaan": "じんるい",
+          "arti": "umat manusia"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "子",
+      "label": "子 - Anak  (13 kata)",
+      "count": 13,
+      "words": [
+        {
+          "kanji": "子宮",
+          "bacaan": "しきゅう",
+          "arti": "rahim"
+        },
+        {
+          "kanji": "子育て",
+          "bacaan": "こそだて",
+          "arti": "mengasuh anak"
+        },
+        {
+          "kanji": "子守",
+          "bacaan": "こもり",
+          "arti": "menjaga anak / babysitting"
+        },
+        {
+          "kanji": "孤児院",
+          "bacaan": "こじいん",
+          "arti": "panti asuhan"
+        },
+        {
+          "kanji": "子孫",
+          "bacaan": "しそん",
+          "arti": "keturunan"
+        },
+        {
+          "kanji": "孤独",
+          "bacaan": "こどく",
+          "arti": "kesepian"
+        },
+        {
+          "kanji": "子音",
+          "bacaan": "しいん",
+          "arti": "konsonan"
+        },
+        {
+          "kanji": "子会社",
+          "bacaan": "こがいしゃ",
+          "arti": "anak perusahaan"
+        },
+        {
+          "kanji": "子",
+          "bacaan": "こ",
+          "arti": "anak"
+        },
+        {
+          "kanji": "子供",
+          "bacaan": "こども",
+          "arti": "anak"
+        },
+        {
+          "kanji": "孤児",
+          "bacaan": "こじ",
+          "arti": "anak yatim piatu"
+        },
+        {
+          "kanji": "孫",
+          "bacaan": "まご",
+          "arti": "cucu"
+        },
+        {
+          "kanji": "孔雀",
+          "bacaan": "くじゃく",
+          "arti": "burung merak"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "了",
+      "label": "了 - Selesai/Partikel  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "了解",
+          "bacaan": "りょうかい",
+          "arti": "mengerti / paham"
+        },
+        {
+          "kanji": "了承",
+          "bacaan": "りょうしょう",
+          "arti": "persetujuan"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "疎",
+      "label": "疎 - Jarang/Renggang  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "疎か",
+          "bacaan": "おろそか",
+          "arti": "lalai / terabaikan"
+        },
+        {
+          "kanji": "疎ら",
+          "bacaan": "まばら",
+          "arti": "jarang-jarang"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "力",
+      "label": "力 - Tenaga/Kekuatan  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "努力",
+          "bacaan": "どりょく",
+          "arti": "usaha / kerja keras"
+        },
+        {
+          "kanji": "努める",
+          "bacaan": "つとめる",
+          "arti": "berusaha"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "瓜",
+      "label": "瓜 - Labu/Melon  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "瓜",
+          "bacaan": "うり",
+          "arti": "melon / labu"
+        }
+      ],
+      "section": "belum"
+    },
+    {
+      "radikal": "母",
+      "label": "母 - Ibu  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "母乳",
+          "bacaan": "ぼにゅう",
+          "arti": "ASI (air susu ibu)"
+        }
+      ],
+      "section": "belum"
     }
   ]
 }

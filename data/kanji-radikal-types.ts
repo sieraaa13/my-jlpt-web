@@ -12,6 +12,8 @@ export type RadikalGroup = {
   label: string;
   count: number;
   words: RadikalWord[];
+  /** "main" = cocok dengan tema asli file, "belum" = radikal sebenarnya, dipindah dari sheet Belum Dikelompokkan */
+  section?: "main" | "belum";
 };
 
 export type RadikalFile = {
