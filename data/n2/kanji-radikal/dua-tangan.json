@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Dua Tangan",
+  "groups": [
+    {
+      "radikal": "廾",
+      "label": "廾 - (radikal jarang, lihat contoh kanji)  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "弁解",
+          "bacaan": "べんかい",
+          "arti": "pembelaan / pembenaran / alasan"
+        }
+      ]
+    }
+  ]
+}

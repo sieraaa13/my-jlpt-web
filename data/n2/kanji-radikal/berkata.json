@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Berkata",
+  "groups": [
+    {
+      "radikal": "曰",
+      "label": "曰 - Berkata  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "更",
+          "bacaan": "さら",
+          "arti": "Perubahan / Perbaikan / Selanjutnya / Lagi / Malam Hari"
+        },
+        {
+          "kanji": "曲線",
+          "bacaan": "きょくせん",
+          "arti": "Garis lengkung / Kurva"
+        },
+        {
+          "kanji": "最寄",
+          "bacaan": "もより",
+          "arti": "Terdekat / Paling dekat"
+        }
+      ]
+    }
+  ]
+}

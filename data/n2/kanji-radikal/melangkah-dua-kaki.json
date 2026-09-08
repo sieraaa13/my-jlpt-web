@@ -1,0 +1,48 @@
+{
+  "title": "Kumpulan Kanji Radikal Melangkah Dua Kaki",
+  "groups": [
+    {
+      "radikal": "癶",
+      "label": "癶 - Melangkah dengan kedua kaki  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "発進",
+          "bacaan": "はっしん",
+          "arti": "mulai berjalan / berangkat / meluncur"
+        },
+        {
+          "kanji": "発散",
+          "bacaan": "はっさん",
+          "arti": "Melepaskan / Mengeluarkan / Memancarkan / Menyebarkan / Melepas (stres)"
+        },
+        {
+          "kanji": "発送",
+          "bacaan": "はっそう",
+          "arti": "Pengiriman / Pengiriman Barang / Pengeposan"
+        },
+        {
+          "kanji": "発揮",
+          "bacaan": "はっき",
+          "arti": "Menunjukkan / Memperlihatkan / Mendemonstrasikan / Mengerahkan"
+        },
+        {
+          "kanji": "登録",
+          "bacaan": "とうろく",
+          "arti": "Pendaftaran / Registrasi / Pencatatan Resmi"
+        },
+        {
+          "kanji": "発想",
+          "bacaan": "はっそう",
+          "arti": "Ide / Gagasan / Konsep / Cara berpikir / Mengembangkan ide"
+        },
+        {
+          "kanji": "発達",
+          "bacaan": "はったつ",
+          "arti": "Perkembangan / Pertumbuhan / Kemajuan"
+        }
+      ]
+    }
+  ]
+}

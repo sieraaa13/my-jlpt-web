@@ -916,50 +916,6 @@
         }
       ],
       "section": "main"
-    },
-    {
-      "radikal": "黑",
-      "label": "黑 - Hitam (bukan tempat)  (2 kata)",
-      "count": 2,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "黙る",
-          "bacaan": "だまる",
-          "arti": "diam / bungkam / tidak berbicara"
-        },
-        {
-          "kanji": "黒鉛",
-          "bacaan": "こくえん",
-          "arti": "grafit"
-        }
-      ]
-    },
-    {
-      "radikal": "寸",
-      "label": "寸 - Ukuran / jari tangan (bukan tempat)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "導く",
-          "bacaan": "みちびく",
-          "arti": "memimpin / membimbing / mengarahkan"
-        }
-      ]
-    },
-    {
-      "radikal": "丿",
-      "label": "丿 - Coretan miring (bukan tempat)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "乗り継ぐ",
-          "bacaan": "のりつぐ",
-          "arti": "naik dan menyambung"
-        }
-      ]
     }
   ]
 }

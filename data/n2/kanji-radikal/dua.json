@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Dua",
+  "groups": [
+    {
+      "radikal": "二",
+      "label": "二 - Dua  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "互いに",
+          "bacaan": "たがいに",
+          "arti": "Saling / Satu Sama Lain / Timbal Balik"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Kaki Pincang",
+  "groups": [
+    {
+      "radikal": "尢",
+      "label": "尢 - Kaki pincang  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "尤もらしい",
+          "bacaan": "もっともらしい",
+          "arti": "tampak paling benar / masuk akal"
+        },
+        {
+          "kanji": "就寝",
+          "bacaan": "しゅうしん",
+          "arti": "Pergi tidur / Tidur / Beranjak ke tempat tidur"
+        }
+      ]
+    }
+  ]
+}

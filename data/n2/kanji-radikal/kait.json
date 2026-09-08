@@ -1,0 +1,43 @@
+{
+  "title": "Kumpulan Kanji Radikal Kait",
+  "groups": [
+    {
+      "radikal": "亅",
+      "label": "亅 - Kait  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "事柄",
+          "bacaan": "ことがら",
+          "arti": "hal / masalah / urusan"
+        },
+        {
+          "kanji": "事典",
+          "bacaan": "じてん",
+          "arti": "ensiklopedia / buku referensi"
+        },
+        {
+          "kanji": "予め",
+          "bacaan": "あらかじめ",
+          "arti": "sebelumnya / di muka / lebih awal"
+        },
+        {
+          "kanji": "予想",
+          "bacaan": "よそう",
+          "arti": "prediksi / perkiraan / ekspektasi"
+        },
+        {
+          "kanji": "予測",
+          "bacaan": "よそく",
+          "arti": "prediksi / prakiraan / perkiraan"
+        },
+        {
+          "kanji": "予報",
+          "bacaan": "よほう",
+          "arti": "prakiraan / ramalan / melaporkan"
+        }
+      ]
+    }
+  ]
+}

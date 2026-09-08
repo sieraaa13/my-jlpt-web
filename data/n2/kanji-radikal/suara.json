@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Suara",
+  "groups": [
+    {
+      "radikal": "音",
+      "label": "音 - Suara  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "響く",
+          "bacaan": "ひびく",
+          "arti": "bergaung / bergema / berdenging"
+        }
+      ]
+    }
+  ]
+}

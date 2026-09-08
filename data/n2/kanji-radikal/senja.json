@@ -1,0 +1,68 @@
+{
+  "title": "Kumpulan Kanji Radikal Senja",
+  "groups": [
+    {
+      "radikal": "夕",
+      "label": "夕 - Senja / malam  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "夢中",
+          "bacaan": "むちゅう",
+          "arti": "Terobsesi / Tenggelam (dalam) / Asyik / Sangat Tertarik"
+        },
+        {
+          "kanji": "外見",
+          "bacaan": "がいけん",
+          "arti": "Penampilan Luar / Rupa / Eksterior"
+        },
+        {
+          "kanji": "夕刊",
+          "bacaan": "ゆうかん",
+          "arti": "Koran Sore / Edisi Sore"
+        },
+        {
+          "kanji": "多少",
+          "bacaan": "たしょう",
+          "arti": "Sedikit Banyak / Agak / Kurang Lebih / Jumlah Tertentu"
+        },
+        {
+          "kanji": "外す",
+          "bacaan": "はずす",
+          "arti": "Melepaskan / Melepas / Mencopot / Menghilangkan / Tidak Hadir"
+        },
+        {
+          "kanji": "多額",
+          "bacaan": "たがく",
+          "arti": "Jumlah besar / Sejumlah besar uang / Banyak uang"
+        },
+        {
+          "kanji": "多様化",
+          "bacaan": "たようか",
+          "arti": "Diversifikasi / Penganekaragaman / Menjadi beragam / Melebarkan variasi"
+        },
+        {
+          "kanji": "多彩",
+          "bacaan": "たさい",
+          "arti": "Banyak warna / Beraneka ragam"
+        },
+        {
+          "kanji": "多種多様",
+          "bacaan": "たしゅたよう",
+          "arti": "Beraneka Ragam / Beragam Jenis / Berbagai Macam"
+        },
+        {
+          "kanji": "夜型化",
+          "bacaan": "よるがたか",
+          "arti": "Perubahan menjadi tipe malam / Kecenderungan aktif di malam hari (nocturnal)"
+        },
+        {
+          "kanji": "夜空",
+          "bacaan": "よぞら",
+          "arti": "Langit malam"
+        }
+      ]
+    }
+  ]
+}

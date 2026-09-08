@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Garis Tegak",
+  "groups": [
+    {
+      "radikal": "丨",
+      "label": "丨 - Garis tegak  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "中古",
+          "bacaan": "ちゅうこ",
+          "arti": "Barang Bekas / Barang Seken / Barang"
+        }
+      ]
+    }
+  ]
+}

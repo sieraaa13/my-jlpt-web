@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Papan Tipis",
+  "groups": [
+    {
+      "radikal": "片",
+      "label": "片 - Papan tipis  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "版",
+          "bacaan": "はん",
+          "arti": "Edisi / Versi / Cetakan / Blok Cetak"
+        },
+        {
+          "kanji": "片側",
+          "bacaan": "かたがわ",
+          "arti": "satu sisi / sebelah sisi"
+        }
+      ]
+    }
+  ]
+}

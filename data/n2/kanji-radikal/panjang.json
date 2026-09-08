@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Panjang",
+  "groups": [
+    {
+      "radikal": "長",
+      "label": "長 - (radikal jarang, lihat contoh kanji)  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "長方形",
+          "bacaan": "ちょうほうけい",
+          "arti": "Persegi panjang / Bujur sangkar"
+        },
+        {
+          "kanji": "長編小説",
+          "bacaan": "ちょうへんしょうせつ",
+          "arti": "Novel Panjang / Novel"
+        }
+      ]
+    }
+  ]
+}

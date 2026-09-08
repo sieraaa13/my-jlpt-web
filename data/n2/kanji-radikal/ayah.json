@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Ayah",
+  "groups": [
+    {
+      "radikal": "父",
+      "label": "父 - Ayah  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "父宛",
+          "bacaan": "ちちあて",
+          "arti": "Ditujukan kepada Ayah / Untuk Ayah"
+        }
+      ]
+    }
+  ]
+}

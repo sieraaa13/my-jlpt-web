@@ -1,0 +1,48 @@
+{
+  "title": "Kumpulan Kanji Radikal Kecil",
+  "groups": [
+    {
+      "radikal": "小",
+      "label": "小 - Kecil  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "小手先",
+          "bacaan": "こてさき",
+          "arti": "trik murahan / usaha dangkal"
+        },
+        {
+          "kanji": "小柄",
+          "bacaan": "こがら",
+          "arti": "bertubuh kecil / mungil"
+        },
+        {
+          "kanji": "少数",
+          "bacaan": "しょうすう",
+          "arti": "Jumlah Kecil / Minoritas"
+        },
+        {
+          "kanji": "少年",
+          "bacaan": "しょうねん",
+          "arti": "Anak laki-laki / Remaja laki-laki"
+        },
+        {
+          "kanji": "小島",
+          "bacaan": "こじま",
+          "arti": "Pulau kecil / Pulau yang terpencil"
+        },
+        {
+          "kanji": "当惑",
+          "bacaan": "とうわく",
+          "arti": "kebingungan / kecanggungan"
+        },
+        {
+          "kanji": "当事者",
+          "bacaan": "とうじしゃ",
+          "arti": "pihak yang terlibat / berkepentingan"
+        }
+      ]
+    }
+  ]
+}

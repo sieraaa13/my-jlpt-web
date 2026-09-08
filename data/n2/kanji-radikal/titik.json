@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Titik",
+  "groups": [
+    {
+      "radikal": "丶",
+      "label": "丶 - Titik  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "丹念に",
+          "bacaan": "たんねんに",
+          "arti": "dengan teliti / saksama / cermat"
+        }
+      ]
+    }
+  ]
+}

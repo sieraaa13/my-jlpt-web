@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Sisa Tulang / Kematian",
+  "groups": [
+    {
+      "radikal": "歹",
+      "label": "歹 - Sisa tulang / kematian  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "殊更に",
+          "bacaan": "ことさらに",
+          "arti": "Terutama / Khususnya / Sengaja / Secara Mencolok / Tidak Wajar"
+        },
+        {
+          "kanji": "死守",
+          "bacaan": "ししゅ",
+          "arti": "Mempertahankan sampai mati / Mempertahankan dengan gigih / Membela mati-matian / Perlindungan mutlak"
+        },
+        {
+          "kanji": "死角",
+          "bacaan": "しかく",
+          "arti": "titik buta / area yang tidak terlihat"
+        }
+      ]
+    }
+  ]
+}

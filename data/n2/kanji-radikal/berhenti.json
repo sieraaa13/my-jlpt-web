@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Berhenti",
+  "groups": [
+    {
+      "radikal": "止",
+      "label": "止 - Berhenti  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "正面衝突",
+          "bacaan": "しょうめんしょうとつ",
+          "arti": "tabrakan adu banteng / tabrakan dari depan ke depan"
+        },
+        {
+          "kanji": "正常",
+          "bacaan": "せいじょう",
+          "arti": "normal / wajar / berfungsi dengan baik"
+        },
+        {
+          "kanji": "歪める",
+          "bacaan": "ゆがめ",
+          "arti": "Mendistorsi / Membelokkan / Memutarbalikkan / Membiaskan / Mengubah bentuk"
+        },
+        {
+          "kanji": "正当化",
+          "bacaan": "せいとうか",
+          "arti": "Justifikasi / Pembenaran / Rasionalisasi"
+        },
+        {
+          "kanji": "正解",
+          "bacaan": "せいかい",
+          "arti": "Jawaban yang benar / Jawaban yang tepat / Kebenaran / Menjawab dengan benar"
+        }
+      ]
+    }
+  ]
+}

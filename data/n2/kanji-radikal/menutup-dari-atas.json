@@ -1,0 +1,48 @@
+{
+  "title": "Kumpulan Kanji Radikal Menutup dari Atas",
+  "groups": [
+    {
+      "radikal": "襾",
+      "label": "襾 - Menutup dari atas  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "要請",
+          "bacaan": "ようせい",
+          "arti": "permohonan resmi / tuntutan / permintaan bantuan"
+        },
+        {
+          "kanji": "要点",
+          "bacaan": "ようてん",
+          "arti": "Poin Utama / Inti / Esensi / Ringkasan"
+        },
+        {
+          "kanji": "要求",
+          "bacaan": "ようきゅう",
+          "arti": "Permintaan / Tuntutan / Kebutuhan"
+        },
+        {
+          "kanji": "要所",
+          "bacaan": "ようしょ",
+          "arti": "Poin Penting / Bagian Kunci / Tempat Strategis / Posisi Penting"
+        },
+        {
+          "kanji": "要",
+          "bacaan": "ようし",
+          "arti": "Inti / Pokok / Esensi / Kebutuhan / Hal penting"
+        },
+        {
+          "kanji": "要素",
+          "bacaan": "ようそ",
+          "arti": "Elemen / faktor / komponen"
+        },
+        {
+          "kanji": "覆う",
+          "bacaan": "おおう",
+          "arti": "Menutupi / Menyelimuti / Menyembunyikan / Melindungi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Berlari",
+  "groups": [
+    {
+      "radikal": "走",
+      "label": "走 - Berlari  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "走行",
+          "bacaan": "そうこう",
+          "arti": "berjalan / melaju"
+        },
+        {
+          "kanji": "趣旨",
+          "bacaan": "しゅし",
+          "arti": "Inti / Maksud Utama / Tujuan / Esensi / Pokok Pikiran"
+        },
+        {
+          "kanji": "お越しくださいました",
+          "bacaan": "おこしくださいました",
+          "arti": "Anda telah sudi datang"
+        }
+      ]
+    }
+  ]
+}

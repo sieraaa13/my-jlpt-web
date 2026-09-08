@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Berdiri",
+  "groups": [
+    {
+      "radikal": "立",
+      "label": "立 - Berdiri  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "端",
+          "bacaan": "はし",
+          "arti": "pinggir / tepi / ujung"
+        },
+        {
+          "kanji": "立派",
+          "bacaan": "りっぱ",
+          "arti": "Megah / Hebat / Terkemuka / Terpuji / Layak / Sempurna"
+        }
+      ]
+    }
+  ]
+}

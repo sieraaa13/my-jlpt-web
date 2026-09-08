@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Bulu / Corak",
+  "groups": [
+    {
+      "radikal": "彡",
+      "label": "彡 - Bulu / corak  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "影響",
+          "bacaan": "えいきょう",
+          "arti": "Pengaruh / Dampak / Efek"
+        }
+      ]
+    }
+  ]
+}

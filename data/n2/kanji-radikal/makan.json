@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Makan",
+  "groups": [
+    {
+      "radikal": "食",
+      "label": "食 - Makan  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "餌",
+          "bacaan": "えさ",
+          "arti": "Pakan / Makanan Hewan / Umpan"
+        },
+        {
+          "kanji": "食卓",
+          "bacaan": "しょくたく",
+          "arti": "Meja Makan / Meja Dapur"
+        },
+        {
+          "kanji": "飽きる",
+          "bacaan": "あきる",
+          "arti": "Bosan / Jenuh / Muak / Merasa Cukup"
+        }
+      ]
+    }
+  ]
+}

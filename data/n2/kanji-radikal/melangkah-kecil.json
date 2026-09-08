@@ -1,0 +1,108 @@
+{
+  "title": "Kumpulan Kanji Radikal Melangkah Kecil",
+  "groups": [
+    {
+      "radikal": "彳",
+      "label": "彳 - Melangkah kecil  (19 kata)",
+      "count": 19,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "やむを得ない",
+          "bacaan": "やむをえない",
+          "arti": "mau tidak mau / terpaksa"
+        },
+        {
+          "kanji": "徐行",
+          "bacaan": "じょこう",
+          "arti": "berjalan pelan"
+        },
+        {
+          "kanji": "後退",
+          "bacaan": "こうたい",
+          "arti": "mundur / gerak mundur"
+        },
+        {
+          "kanji": "待避所",
+          "bacaan": "たいひじょ",
+          "arti": "tempat menepi / kantong parkir darurat / area menghindar"
+        },
+        {
+          "kanji": "徐々に",
+          "bacaan": "じょじょに",
+          "arti": "sedikit demi sedikit / perlahan-lahan / berangsur-angsur"
+        },
+        {
+          "kanji": "後光",
+          "bacaan": "ごこう",
+          "arti": "Aura/Cahaya Suci di Belakang Kepala / Halo"
+        },
+        {
+          "kanji": "役割",
+          "bacaan": "やくわり",
+          "arti": "Peran / Tugas / Fungsi"
+        },
+        {
+          "kanji": "循環",
+          "bacaan": "じゅんかん",
+          "arti": "Sirkulasi / Peredaran / Siklus"
+        },
+        {
+          "kanji": "得る",
+          "bacaan": "える",
+          "arti": "Mendapatkan / Memperoleh / Mampu Melakukan"
+        },
+        {
+          "kanji": "徒競走",
+          "bacaan": "ときょうそう",
+          "arti": "Lomba Lari / Perlombaan Lari"
+        },
+        {
+          "kanji": "得意技",
+          "bacaan": "とくいわざ",
+          "arti": "Teknik Spesialisasi / Keahlian Unggulan / Kekuatan"
+        },
+        {
+          "kanji": "後者",
+          "bacaan": "こうしゃ",
+          "arti": "Yang Terakhir / Yang Kedua"
+        },
+        {
+          "kanji": "往復",
+          "bacaan": "おうふく",
+          "arti": "Pulang Pergi / Perjalanan Dua Arah / Bolak-balik"
+        },
+        {
+          "kanji": "従来",
+          "bacaan": "じゅうらい",
+          "arti": "Sampai sekarang / Konvensional / Tradisional / Sudah lama"
+        },
+        {
+          "kanji": "後戻り",
+          "bacaan": "あともどり",
+          "arti": "Kembali ke titik awal / Mundur / Regresi"
+        },
+        {
+          "kanji": "微か",
+          "bacaan": "かすか",
+          "arti": "Samar-samar / Remang-remang / Tipis / Lemah / Kecil sekali"
+        },
+        {
+          "kanji": "従事",
+          "bacaan": "じゅうじ",
+          "arti": "Mengikuti/menurut dan terlibat dalam urusan"
+        },
+        {
+          "kanji": "徹底",
+          "bacaan": "てってい",
+          "arti": "Secara menyeluruh / Sepenuhnya / Tuntas / Radikal / Konsisten"
+        },
+        {
+          "kanji": "徹夜",
+          "bacaan": "てつや",
+          "arti": "begadang semalaman atau tidak tidur sepanjang malam"
+        }
+      ]
+    }
+  ]
+}

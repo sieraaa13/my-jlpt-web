@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Masuk",
+  "groups": [
+    {
+      "radikal": "入",
+      "label": "入 - Masuk  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "入手",
+          "bacaan": "にゅうしゅ",
+          "arti": "mendapatkan / memperoleh / mengakuisisi"
+        }
+      ]
+    }
+  ]
+}

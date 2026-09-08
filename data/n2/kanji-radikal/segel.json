@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Segel",
+  "groups": [
+    {
+      "radikal": "卩",
+      "label": "卩 - Segel / lutut  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "即座に",
+          "bacaan": "そくざに",
+          "arti": "seketika / tempat itu juga"
+        },
+        {
+          "kanji": "即座",
+          "bacaan": "そくざ",
+          "arti": "seketika / segera / di tempat"
+        },
+        {
+          "kanji": "印刷",
+          "bacaan": "いんさつ",
+          "arti": "Cetak / Pencetakan / Mencetak / Penerbitan"
+        },
+        {
+          "kanji": "印象",
+          "bacaan": "いんしょう",
+          "arti": "Kesan / Impresi (Impression)"
+        }
+      ]
+    }
+  ]
+}

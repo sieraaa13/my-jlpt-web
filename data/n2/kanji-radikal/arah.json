@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Arah",
+  "groups": [
+    {
+      "radikal": "方",
+      "label": "方 - Arah / persegi  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "方針",
+          "bacaan": "ほうしん",
+          "arti": "Kebijakan / Prinsip / Pedoman / Arah / Garis Besar"
+        },
+        {
+          "kanji": "方式",
+          "bacaan": "ほうしき",
+          "arti": "Metode / Sistem / Prosedur / Gaya / Format"
+        },
+        {
+          "kanji": "旅全体",
+          "bacaan": "たびぜんたい",
+          "arti": "Seluruh perjalanan / Keseluruhan perjalanan / Perjalanan secara total"
+        },
+        {
+          "kanji": "施設",
+          "bacaan": "しせつ",
+          "arti": "Fasilitas / institusi / instalasi / bangunan yang didirikan"
+        },
+        {
+          "kanji": "旗",
+          "bacaan": "はた",
+          "arti": "Bendera / Panji / Pataka"
+        }
+      ]
+    }
+  ]
+}

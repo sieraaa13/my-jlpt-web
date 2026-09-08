@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Tua",
+  "groups": [
+    {
+      "radikal": "老",
+      "label": "老 - Tua  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "考慮",
+          "bacaan": "こうりょ",
+          "arti": "Pertimbangan / Mempertimbangkan / Memikirkan"
+        },
+        {
+          "kanji": "老眼鏡",
+          "bacaan": "ろうがんきょう",
+          "arti": "Kacamata Baca / Kacamata Plus"
+        },
+        {
+          "kanji": "よそ者",
+          "bacaan": "よそもの",
+          "arti": "Orang luar / Orang asing (dari tempat lain) / Pendatang / Bukan anggota komunitas"
+        }
+      ]
+    }
+  ]
+}

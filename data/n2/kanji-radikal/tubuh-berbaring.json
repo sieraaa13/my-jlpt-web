@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Tubuh Berbaring",
+  "groups": [
+    {
+      "radikal": "尸",
+      "label": "尸 - Tubuh berbaring / atap  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "展開",
+          "bacaan": "てんかい",
+          "arti": "Perkembangan / Ekspansi / Penyebaran / Alur"
+        },
+        {
+          "kanji": "展示",
+          "bacaan": "てんじ",
+          "arti": "Pameran / Pertunjukan / Memamerkan / Mempertontonkan"
+        },
+        {
+          "kanji": "尽きる",
+          "bacaan": "つきる",
+          "arti": "Habis / selesai / berakhir / lenyap"
+        },
+        {
+          "kanji": "尾灯",
+          "bacaan": "びとう",
+          "arti": "lampu belakang"
+        }
+      ]
+    }
+  ]
+}

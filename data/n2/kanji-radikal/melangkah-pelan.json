@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Melangkah Pelan",
+  "groups": [
+    {
+      "radikal": "夂",
+      "label": "夂 - Melangkah pelan  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "変換",
+          "bacaan": "へんかん",
+          "arti": "Konversi / Perubahan / Transformasi / Mengubah"
+        },
+        {
+          "kanji": "変更",
+          "bacaan": "へんこう",
+          "arti": "perubahan / modifikasi / revisi"
+        }
+      ]
+    }
+  ]
+}

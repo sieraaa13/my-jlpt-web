@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Kacang",
+  "groups": [
+    {
+      "radikal": "豆",
+      "label": "豆 - Kacang / wadah upacara  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "豊富",
+          "bacaan": "ほうふ",
+          "arti": "Berlimpah / Kaya / Melimpah ruah / Bervariasi"
+        },
+        {
+          "kanji": "豊か",
+          "bacaan": "ゆたか",
+          "arti": "Kaya / Makmur / Berlimpah / Subur"
+        }
+      ]
+    }
+  ]
+}

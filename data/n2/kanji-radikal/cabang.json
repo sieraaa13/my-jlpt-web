@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Cabang / Menopang",
+  "groups": [
+    {
+      "radikal": "支",
+      "label": "支 - (radikal jarang, lihat contoh kanji)  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "さし支える",
+          "bacaan": "さしささえる",
+          "arti": "menjadi halangan / Mengganggu / Menimbulkan masalah / Merepotkan"
+        },
+        {
+          "kanji": "支給",
+          "bacaan": "しきゅう",
+          "arti": "Pembayaran / Pemberian (uang atau barang) / Penyediaan / Tunjangan"
+        },
+        {
+          "kanji": "支持",
+          "bacaan": "しじ",
+          "arti": "Dukungan"
+        },
+        {
+          "kanji": "支配",
+          "bacaan": "しはい",
+          "arti": "Dominasi / Penguasaan / Kontrol / Kendali / Pemerintahan"
+        }
+      ]
+    }
+  ]
+}

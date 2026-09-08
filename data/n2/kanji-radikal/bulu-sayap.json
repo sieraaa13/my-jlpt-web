@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Bulu Sayap",
+  "groups": [
+    {
+      "radikal": "羽",
+      "label": "羽 - Bulu sayap  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "翼",
+          "bacaan": "つばさ",
+          "arti": "Sayap"
+        },
+        {
+          "kanji": "習得",
+          "bacaan": "しゅうとく",
+          "arti": "Perolehan / Penguasaan / Akuisisi"
+        },
+        {
+          "kanji": "習慣",
+          "bacaan": "しゅうかん",
+          "arti": "Kebiasaan / Adat istiadat / Tradisi / Membiasakan"
+        }
+      ]
+    }
+  ]
+}

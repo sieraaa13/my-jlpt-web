@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Coretan Miring",
+  "groups": [
+    {
+      "radikal": "丿",
+      "label": "丿 - Coretan miring  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "乏しい",
+          "bacaan": "とぼしい",
+          "arti": "kurang / miskin / sedikit"
+        },
+        {
+          "kanji": "乖離",
+          "bacaan": "かいり",
+          "arti": "pemisahan / penyimpangan / kesenjangan"
+        },
+        {
+          "kanji": "乗り継ぐ",
+          "bacaan": "のりつぐ",
+          "arti": "naik dan menyambung"
+        }
+      ]
+    }
+  ]
+}

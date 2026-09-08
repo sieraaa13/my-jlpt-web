@@ -1,0 +1,43 @@
+{
+  "title": "Kumpulan Kanji Radikal Delapan",
+  "groups": [
+    {
+      "radikal": "八",
+      "label": "八 - Delapan  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "共同",
+          "bacaan": "きょうどう",
+          "arti": "bersama-sama / kolaborasi / bersama/publik"
+        },
+        {
+          "kanji": "公式",
+          "bacaan": "こうしき",
+          "arti": "Resmi / Formal / Formula / Rumus"
+        },
+        {
+          "kanji": "公開",
+          "bacaan": "こうかい",
+          "arti": "Publikasi / Mempublikasikan / Pembukaan (untuk umum) / Pengungkapan / Rilis"
+        },
+        {
+          "kanji": "公衆",
+          "bacaan": "こうしゅう",
+          "arti": "Publik / Masyarakat umum / Umum"
+        },
+        {
+          "kanji": "共に",
+          "bacaan": "ともに",
+          "arti": "Bersama-sama / Sekaligus / Dengan / Kedua-duanya"
+        },
+        {
+          "kanji": "共通",
+          "bacaan": "きょうつう",
+          "arti": "Kesamaan / Umum / Bersama"
+        }
+      ]
+    }
+  ]
+}

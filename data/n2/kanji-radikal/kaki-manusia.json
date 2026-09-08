@@ -1,0 +1,53 @@
+{
+  "title": "Kumpulan Kanji Radikal Kaki Manusia",
+  "groups": [
+    {
+      "radikal": "儿",
+      "label": "儿 - Kaki manusia  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "光源",
+          "bacaan": "こうげん",
+          "arti": "Sumber cahaya"
+        },
+        {
+          "kanji": "先",
+          "bacaan": "さき",
+          "arti": "Sebelum / Depan / Ujung / Masa Depan"
+        },
+        {
+          "kanji": "先達",
+          "bacaan": "せんだつ",
+          "arti": "Pelopor / Perintis / Pendahulu / Senior / Pemandu"
+        },
+        {
+          "kanji": "先入観",
+          "bacaan": "せんにゅうかん",
+          "arti": "Prasangka / Pra-anggapan / Pendapat yang sudah terbentuk / Prejudice"
+        },
+        {
+          "kanji": "充実",
+          "bacaan": "じゅうじつ",
+          "arti": "Penuh / Memuaskan / Terpenuhi / Substantif"
+        },
+        {
+          "kanji": "充満",
+          "bacaan": "じゅうまん",
+          "arti": "Terisi penuh / memenuhi / melimpah ruah"
+        },
+        {
+          "kanji": "克服",
+          "bacaan": "こくふく",
+          "arti": "mengatasi / menaklukkan"
+        },
+        {
+          "kanji": "元",
+          "bacaan": "もと",
+          "arti": "asal / mula / dasar / semula"
+        }
+      ]
+    }
+  ]
+}

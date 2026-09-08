@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Membandingkan",
+  "groups": [
+    {
+      "radikal": "比",
+      "label": "比 - Membandingkan  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "比較",
+          "bacaan": "ひかく",
+          "arti": "Perbandingan / Pembandingan"
+        },
+        {
+          "kanji": "比例",
+          "bacaan": "ひれい",
+          "arti": "Proporsi / Perbandingan / Berbanding lurus"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Garis di Atas",
+  "groups": [
+    {
+      "radikal": "亠",
+      "label": "亠 - Garis di atas / tutup  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "交通規制",
+          "bacaan": "こうつうきせい",
+          "arti": "regulasi lalu lintas / pembatasan lalu lintas / rekayasa lalu lintas"
+        },
+        {
+          "kanji": "交代",
+          "bacaan": "こうたい",
+          "arti": "Pergantian / Rotasi / Shift / Penggantian"
+        },
+        {
+          "kanji": "交際",
+          "bacaan": "こうさい",
+          "arti": "Hubungan / Pergaulan / Pacaran"
+        },
+        {
+          "kanji": "交通機関",
+          "bacaan": "こうつうきかん",
+          "arti": "Sarana Transportasi / Alat Transportasi / Moda Transportasi"
+        }
+      ]
+    }
+  ]
+}

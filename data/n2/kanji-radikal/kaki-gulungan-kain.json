@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Kaki / Gulungan Kain",
+  "groups": [
+    {
+      "radikal": "疋",
+      "label": "疋 - Kaki / gulungan kain  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "疑問",
+          "bacaan": "ぎもん",
+          "arti": "Keraguan / Pertanyaan / Kebingungan"
+        }
+      ]
+    }
+  ]
+}

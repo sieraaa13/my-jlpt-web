@@ -1,0 +1,53 @@
+{
+  "title": "Kumpulan Kanji Radikal Kekurangan",
+  "groups": [
+    {
+      "radikal": "欠",
+      "label": "欠 - Kekurangan / menguap  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "欲求",
+          "bacaan": "よっきゅう",
+          "arti": "Hasrat / Keinginan / Kebutuhan / Dorongan"
+        },
+        {
+          "kanji": "欲望",
+          "bacaan": "よくぼう",
+          "arti": "Keinginan / Hasrat / Nafsu / Gairah / Dorongan"
+        },
+        {
+          "kanji": "歌謡曲",
+          "bacaan": "かようきょく",
+          "arti": "lagu pop Jepang (era Showa)"
+        },
+        {
+          "kanji": "歌詞",
+          "bacaan": "かし",
+          "arti": "lirik / kata-kata lagu"
+        },
+        {
+          "kanji": "次々",
+          "bacaan": "つぎつぎ",
+          "arti": "Berurutan / Berturut-turut / Satu demi Satu / Tanpa Henti"
+        },
+        {
+          "kanji": "欠点",
+          "bacaan": "けってん",
+          "arti": "Kekurangan / Kelemahan / Cacat / Cela"
+        },
+        {
+          "kanji": "欠陥",
+          "bacaan": "けっかん",
+          "arti": "Cacat / Kekurangan / Kelemahan / Defect / Flaw"
+        },
+        {
+          "kanji": "歓迎",
+          "bacaan": "かんげい",
+          "arti": "Sambutan / Selamat Datang / Penerimaan Hangat"
+        }
+      ]
+    }
+  ]
+}

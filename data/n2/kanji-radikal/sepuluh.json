@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Sepuluh",
+  "groups": [
+    {
+      "radikal": "十",
+      "label": "十 - Sepuluh  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "卑怯",
+          "bacaan": "ひきょう",
+          "arti": "pengecut / licik / curang"
+        },
+        {
+          "kanji": "半減",
+          "bacaan": "はんげん",
+          "arti": "berkurang setengah"
+        },
+        {
+          "kanji": "古典",
+          "bacaan": "こてん",
+          "arti": "Klasik / Karya klasik / Sastra klasik"
+        },
+        {
+          "kanji": "卒業生",
+          "bacaan": "そつぎょうせい",
+          "arti": "Lulusan / Alumni"
+        }
+      ]
+    }
+  ]
+}

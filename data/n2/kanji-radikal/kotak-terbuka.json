@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Kotak Terbuka",
+  "groups": [
+    {
+      "radikal": "匚",
+      "label": "匚 - Kotak terbuka  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "区間",
+          "bacaan": "くかん",
+          "arti": "seksi / ruas / blok"
+        },
+        {
+          "kanji": "区域",
+          "bacaan": "くいき",
+          "arti": "wilayah / zona / area"
+        }
+      ]
+    }
+  ]
+}

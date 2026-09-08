@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Berhenti / Macan",
+  "groups": [
+    {
+      "radikal": "艮",
+      "label": "艮 - Berhenti / macan  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "良性",
+          "bacaan": "りょうせい",
+          "arti": "Jinak / Non-Kanker / Bersifat Baik"
+        }
+      ]
+    }
+  ]
+}

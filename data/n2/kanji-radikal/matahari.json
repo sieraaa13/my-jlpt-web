@@ -1,0 +1,103 @@
+{
+  "title": "Kumpulan Kanji Radikal Matahari",
+  "groups": [
+    {
+      "radikal": "日",
+      "label": "日 - Matahari / hari  (18 kata)",
+      "count": 18,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "春",
+          "bacaan": "はる",
+          "arti": "musim semi"
+        },
+        {
+          "kanji": "普及",
+          "bacaan": "ふきゅう",
+          "arti": "penyebaran / meluas / menjadi umum"
+        },
+        {
+          "kanji": "景気",
+          "bacaan": "けいき",
+          "arti": "Kondisi Ekonomi / Keadaan Bisnis"
+        },
+        {
+          "kanji": "景色",
+          "bacaan": "けしき",
+          "arti": "Pemandangan / Panorama / Lanskap / Tampilan"
+        },
+        {
+          "kanji": "日課",
+          "bacaan": "にっか",
+          "arti": "Rutinitas Harian / Kegiatan Sehari-hari (yang teratur) / Jadwal Harian"
+        },
+        {
+          "kanji": "明瞭性",
+          "bacaan": "めいりょうせい",
+          "arti": "Kejelasan / Ketajaman / Kejelasan (dalam makna atau ucapan)"
+        },
+        {
+          "kanji": "昨年",
+          "bacaan": "さくねん",
+          "arti": "Tahun Lalu (Last year)"
+        },
+        {
+          "kanji": "明記",
+          "bacaan": "めいき",
+          "arti": "Mencantumkan dengan Jelas / Menyatakan Secara Tertulis / Menyebutkan Secara Spesifik"
+        },
+        {
+          "kanji": "暴れる",
+          "bacaan": "あばれる",
+          "arti": "Mengamuk / Menggila / Berbuat Onar / Berkelahi / Bertindak Liar"
+        },
+        {
+          "kanji": "映す",
+          "bacaan": "うつす",
+          "arti": "Memantulkan / Mencerminkan / Menampilkan / Memproyeksikan"
+        },
+        {
+          "kanji": "日中",
+          "bacaan": "にっちゅう",
+          "arti": "Siang Hari / Selama Hari"
+        },
+        {
+          "kanji": "昇華",
+          "bacaan": "しょうか",
+          "arti": "Sublimasi"
+        },
+        {
+          "kanji": "時間帯",
+          "bacaan": "じかんたい",
+          "arti": "Zona waktu / Periode waktu / Rentang waktu"
+        },
+        {
+          "kanji": "早急",
+          "bacaan": "さっきゅう",
+          "arti": "Segera / Mendesak / Sangat cepat / Secepat mungkin"
+        },
+        {
+          "kanji": "昇進",
+          "bacaan": "しょうしん",
+          "arti": "Promosi / Kenaikan pangkat/jabatan / Naik tingkat"
+        },
+        {
+          "kanji": "映る",
+          "bacaan": "うつる",
+          "arti": "Memantul / terpantul / tercermin / terlihat / memproyeksikan"
+        },
+        {
+          "kanji": "曖昧",
+          "bacaan": "あいまい",
+          "arti": "Samar-samar / Kabur / Tidak jelas / Ambigu / Tidak pasti"
+        },
+        {
+          "kanji": "旧",
+          "bacaan": "きゅう",
+          "arti": "lama / tua / bekas / dahulu"
+        }
+      ]
+    }
+  ]
+}

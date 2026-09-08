@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Hitam",
+  "groups": [
+    {
+      "radikal": "黑",
+      "label": "黑 - Hitam  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "黙る",
+          "bacaan": "だまる",
+          "arti": "diam / bungkam / tidak berbicara"
+        },
+        {
+          "kanji": "黒鉛",
+          "bacaan": "こくえん",
+          "arti": "grafit"
+        }
+      ]
+    }
+  ]
+}

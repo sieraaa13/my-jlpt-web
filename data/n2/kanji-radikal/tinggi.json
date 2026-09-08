@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Tinggi",
+  "groups": [
+    {
+      "radikal": "高",
+      "label": "高 - Tinggi  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "高価",
+          "bacaan": "こうか",
+          "arti": "Mahal / Bernilai Tinggi / Berharga"
+        },
+        {
+          "kanji": "高齢者",
+          "bacaan": "こうれいしゃ",
+          "arti": "Lansia / Orang Tua / Orang Usia Lanjut"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Membungkus",
+  "groups": [
+    {
+      "radikal": "勹",
+      "label": "勹 - Membungkus  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "包む",
+          "bacaan": "つつむ",
+          "arti": "Membungkus / Melingkupi / Menyelimuti / Mengemas"
+        },
+        {
+          "kanji": "旬",
+          "bacaan": "しゅん",
+          "arti": "Musim puncak / Masa terbaik / Kualitas puncak (terutama untuk makanan) / Masa keemasan"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Kumpulan Kanji Radikal Ukuran",
+  "groups": [
+    {
+      "radikal": "寸",
+      "label": "寸 - Ukuran / jari tangan  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "専念",
+          "bacaan": "せんねん",
+          "arti": "konsentrasi penuh / fokus total"
+        },
+        {
+          "kanji": "専門家",
+          "bacaan": "せんもんか",
+          "arti": "pakar / ahli / spesialis"
+        },
+        {
+          "kanji": "対向車",
+          "bacaan": "たいこうしゃ",
+          "arti": "kendaraan dari arah berlawanan"
+        },
+        {
+          "kanji": "将棋",
+          "bacaan": "しょうぎ",
+          "arti": "Shogi (Catur Jepang)"
+        },
+        {
+          "kanji": "対面して",
+          "bacaan": "たいめんして",
+          "arti": "Berhadapan muka / Tatap muka / Secara langsung / Bertemu langsung"
+        },
+        {
+          "kanji": "対応",
+          "bacaan": "たいおう",
+          "arti": "Penanganan / Tanggapan / Respons / Korespondensi / Kepatuhan"
+        },
+        {
+          "kanji": "導く",
+          "bacaan": "みちびく",
+          "arti": "memimpin / membimbing / mengarahkan"
+        },
+        {
+          "kanji": "尋ねる",
+          "bacaan": "たずねる",
+          "arti": "bertanya / mengajukan pertanyaan"
+        }
+      ]
+    }
+  ]
+}

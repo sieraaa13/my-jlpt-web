@@ -1,0 +1,73 @@
+{
+  "title": "Kumpulan Kanji Radikal Besar",
+  "groups": [
+    {
+      "radikal": "大",
+      "label": "大 - Besar  (12 kata)",
+      "count": 12,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "夫婦",
+          "bacaan": "ふうふ",
+          "arti": "Pasangan Suami Istri / Pasangan Menikah"
+        },
+        {
+          "kanji": "奥底",
+          "bacaan": "おくそこ",
+          "arti": "Kedalaman / Dasar terdalam / Lubuk hati / Bagian paling dalam"
+        },
+        {
+          "kanji": "奇抜",
+          "bacaan": "きばつ",
+          "arti": "Aneh / Luar biasa / Orisinal / Mencolok / Ganjil / Mengejutkan (karena kebaruannya)"
+        },
+        {
+          "kanji": "大げさ",
+          "bacaan": "おおげさ",
+          "arti": "Berlebihan (Exaggerated) / Lebay / Bombastis"
+        },
+        {
+          "kanji": "大抵",
+          "bacaan": "たいてい",
+          "arti": "Biasanya / Umumnya / Pada umumnya / Sebagian besar / Mayoritas"
+        },
+        {
+          "kanji": "大福",
+          "bacaan": "だいふく",
+          "arti": "(Mochi manis berisi pasta kacang merah manis)"
+        },
+        {
+          "kanji": "大胆",
+          "bacaan": "だいたん",
+          "arti": "Berani / Nekat / Tegas / Mencolok / Tidak tahu malu / Berani mengambil risiko"
+        },
+        {
+          "kanji": "大臣",
+          "bacaan": "だいじん",
+          "arti": "Menteri / Sekretaris Negara"
+        },
+        {
+          "kanji": "大方",
+          "bacaan": "おおかた",
+          "arti": "Sebagian Besar / Mayoritas / Kira-kira / Mungkin"
+        },
+        {
+          "kanji": "大幅",
+          "bacaan": "おおはば",
+          "arti": "Besar / Luas / Secara signifikan / Secara drastis / Jauh"
+        },
+        {
+          "kanji": "奇妙",
+          "bacaan": "きみょう",
+          "arti": "Aneh / Ganjil / Eksentrik / Luar Biasa"
+        },
+        {
+          "kanji": "太陽光",
+          "bacaan": "たいようこう",
+          "arti": "Sinar Matahari / Cahaya Matahari"
+        }
+      ]
+    }
+  ]
+}

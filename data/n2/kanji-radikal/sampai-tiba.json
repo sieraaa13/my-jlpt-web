@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Sampai / Tiba",
+  "groups": [
+    {
+      "radikal": "至",
+      "label": "至 - Sampai/tiba  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "至急",
+          "bacaan": "しきゅう",
+          "arti": "Mendesak / Segera / Sesegera Mungkin / Urgent"
+        },
+        {
+          "kanji": "至る",
+          "bacaan": "いたる",
+          "arti": "Mencapai / Tiba / Berujung pada / Mengarah ke"
+        },
+        {
+          "kanji": "致す",
+          "bacaan": "いたす",
+          "arti": "Melakukan / Mengerjakan"
+        }
+      ]
+    }
+  ]
+}

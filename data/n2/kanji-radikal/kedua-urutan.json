@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Kedua (Urutan)",
+  "groups": [
+    {
+      "radikal": "乙",
+      "label": "乙 - Kedua (urutan)  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "乾燥地帯",
+          "bacaan": "かんそうちたい",
+          "arti": "Daerah Kering / Zona Kering"
+        },
+        {
+          "kanji": "乱れる",
+          "bacaan": "みだれる",
+          "arti": "berarti: Berantakan / Kacau / Tidak teratur / Terganggu / Tidak stabil"
+        },
+        {
+          "kanji": "乳児",
+          "bacaan": "にゅうじ",
+          "arti": "Anak yang menyusu/bayi"
+        },
+        {
+          "kanji": "乱反射",
+          "bacaan": "らんはんしゃ",
+          "arti": "pantulan cahaya yang tidak teratur / difusi cahaya"
+        }
+      ]
+    }
+  ]
+}

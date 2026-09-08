@@ -1,0 +1,203 @@
+{
+  "title": "Kumpulan Kanji Radikal Perkataan",
+  "groups": [
+    {
+      "radikal": "言",
+      "label": "言 - Perkataan  (38 kata)",
+      "count": 38,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "警音器",
+          "bacaan": "けいおんき",
+          "arti": "alat untuk mengeluarkan suara peringatan"
+        },
+        {
+          "kanji": "譲る",
+          "bacaan": "ゆずる",
+          "arti": "memberikan / mendahulukan / mengalah"
+        },
+        {
+          "kanji": "訪れる",
+          "bacaan": "おとずれる",
+          "arti": "Mengunjungi / Berkunjung"
+        },
+        {
+          "kanji": "課",
+          "bacaan": "か",
+          "arti": "Bagian / Departemen / Seksi"
+        },
+        {
+          "kanji": "設置",
+          "bacaan": "せっち",
+          "arti": "Pemasangan / Pendirian / Penempatan"
+        },
+        {
+          "kanji": "話題",
+          "bacaan": "わだい",
+          "arti": "Topik / Pokok Pembicaraan / Perbincangan"
+        },
+        {
+          "kanji": "記事",
+          "bacaan": "きじ",
+          "arti": "Artikel / Berita / Liputan"
+        },
+        {
+          "kanji": "試着",
+          "bacaan": "しちゃく",
+          "arti": "Mencoba Pakaian / Fitting"
+        },
+        {
+          "kanji": "試す",
+          "bacaan": "ためす",
+          "arti": "Percobaan / Uji Coba / Tes / Sampel"
+        },
+        {
+          "kanji": "評価",
+          "bacaan": "ひょうか",
+          "arti": "Evaluasi / Penilaian / Penghargaan / Opini"
+        },
+        {
+          "kanji": "詰め込まれる",
+          "bacaan": "つめこまれる",
+          "arti": "Dijejalkan / Dipaksa masuk / Diisi penuh secara paksa / Dipaksa belajar"
+        },
+        {
+          "kanji": "試み",
+          "bacaan": "こころみ",
+          "arti": "Upaya / Percobaan / Eksperimen / Usaha"
+        },
+        {
+          "kanji": "課題",
+          "bacaan": "かだい",
+          "arti": "Tugas / Pekerjaan Rumah / Assignment / Isu / Masalah yang Harus Dipecahkan / Tantangan"
+        },
+        {
+          "kanji": "訓練",
+          "bacaan": "くんれん",
+          "arti": "Pelatihan / Latihan / Drill / Penggemblengan"
+        },
+        {
+          "kanji": "認める",
+          "bacaan": "みとめる",
+          "arti": "Mengakui / Menerima / Mengizinkan / Mengesahkan / Mengenali"
+        },
+        {
+          "kanji": "語学",
+          "bacaan": "ごがく",
+          "arti": "Studi Bahasa / Pembelajaran Bahasa / Linguistik"
+        },
+        {
+          "kanji": "調節",
+          "bacaan": "ちょうせつ",
+          "arti": "Penyesuaian / Pengaturan / Regulasi / Modifikasi"
+        },
+        {
+          "kanji": "詳細",
+          "bacaan": "しょうさい",
+          "arti": "Detail / Rincian / Secara Terperinci"
+        },
+        {
+          "kanji": "診断書",
+          "bacaan": "しんだんしょ",
+          "arti": "Surat Keterangan Medis / Surat Keterangan Dokter / Laporan Diagnostik"
+        },
+        {
+          "kanji": "証拠",
+          "bacaan": "しょうこ",
+          "arti": "Bukti / Barang Bukti / Saksi / Indikasi"
+        },
+        {
+          "kanji": "証明",
+          "bacaan": "しょうめい",
+          "arti": "Bukti / Pembuktian / Sertifikasi / Verifikasi"
+        },
+        {
+          "kanji": "誤る",
+          "bacaan": "あやまる",
+          "arti": "Salah / Keliru / Tidak Tepat"
+        },
+        {
+          "kanji": "論理的",
+          "bacaan": "ろんりてき",
+          "arti": "Logis / Rasional / Berdasarkan Nalar"
+        },
+        {
+          "kanji": "諸物",
+          "bacaan": "しょぶつ",
+          "arti": "Berbagai hal / Beraneka ragam benda/objek"
+        },
+        {
+          "kanji": "講義",
+          "bacaan": "こうぎ",
+          "arti": "Kuliah / Ceramah / Pengajaran"
+        },
+        {
+          "kanji": "語る",
+          "bacaan": "かたる",
+          "arti": "Menceritakan / Mengisahkan / Mengungkapkan / Membicarakan dengan mendalam"
+        },
+        {
+          "kanji": "論戦",
+          "bacaan": "ろんせん",
+          "arti": "Perdebatan / Perang kata-kata / Adu argumen / Debat sengit"
+        },
+        {
+          "kanji": "誇り",
+          "bacaan": "ほこり",
+          "arti": "Kebanggaan / Kehormatan / Harga diri / Rasa bangga"
+        },
+        {
+          "kanji": "討論",
+          "bacaan": "とうろん",
+          "arti": "Diskusi / Perdebatan / Debat / Musyawarah"
+        },
+        {
+          "kanji": "誤り",
+          "bacaan": "あやまり",
+          "arti": "Kesalahan / Kekeliruan / Kesilapan / Error / Mistake"
+        },
+        {
+          "kanji": "言うまでもない",
+          "bacaan": "いうまでもない",
+          "arti": "Tidak perlu dikatakan lagi / Jelas / Tentu saja / Sudah pasti"
+        },
+        {
+          "kanji": "認識",
+          "bacaan": "にんしき",
+          "arti": "Pengenalan / Pemahaman / Kesadaran / Kognisi / Pengakuan"
+        },
+        {
+          "kanji": "誰しも",
+          "bacaan": "だれしも",
+          "arti": "Siapa pun / Setiap orang / Semua orang"
+        },
+        {
+          "kanji": "論争",
+          "bacaan": "ろんそう",
+          "arti": "Perdebatan / Kontroversi / Perselisihan / Argumen sengit"
+        },
+        {
+          "kanji": "設計",
+          "bacaan": "せっけい",
+          "arti": "Desain / Perancangan / Perencanaan / Engineering"
+        },
+        {
+          "kanji": "諏訪",
+          "bacaan": "すわ",
+          "arti": "Nama tempat Suwa"
+        },
+        {
+          "kanji": "訂正",
+          "bacaan": "ていせい",
+          "arti": "Koreksi / Pembetulan / Perbaikan / Ralat / Mengoreksi"
+        },
+        {
+          "kanji": "論文",
+          "bacaan": "ろんぶん",
+          "arti": "Tesis / Disertasi / Makalah / Karya tulis ilmiah / Artikel akademik"
+        }
+      ]
+    }
+  ]
+}

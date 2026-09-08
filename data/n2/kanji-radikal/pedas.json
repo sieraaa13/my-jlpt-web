@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Pedas / Pahit",
+  "groups": [
+    {
+      "radikal": "辛",
+      "label": "辛 - Pedas/pahit  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "辞退",
+          "bacaan": "じたい",
+          "arti": "Penolakan / Pengunduran Diri / Menolak (Tawaran/Jabatan) / Menarik Diri"
+        }
+      ]
+    }
+  ]
+}

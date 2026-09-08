@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Putih",
+  "groups": [
+    {
+      "radikal": "白",
+      "label": "白 - Putih  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "的確",
+          "bacaan": "てきかく",
+          "arti": "Tepat / Akurat / Sesuai / Benar"
+        },
+        {
+          "kanji": "皆無",
+          "bacaan": "かいむ",
+          "arti": "Sama sekali tidak ada / Nihil / Nol / Mutlak tidak ada"
+        }
+      ]
+    }
+  ]
+}

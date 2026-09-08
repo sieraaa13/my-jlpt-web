@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Salah / Bukan",
+  "groups": [
+    {
+      "radikal": "非",
+      "label": "非 - Salah / bukan  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "非常",
+          "bacaan": "ひじょう",
+          "arti": "Darurat / Keadaan Darurat / Tidak Normal"
+        },
+        {
+          "kanji": "非効率極まりない",
+          "bacaan": "ひこうりつきわまりない",
+          "arti": "Sangat tidak efisien / Sangat boros / Benar-benar tidak efisien / Tidak ada batasnya dalam ketidakefisienan"
+        },
+        {
+          "kanji": "非難",
+          "bacaan": "ひなん",
+          "arti": "Kritik / Kecaman / Celaan / Menyalahkan"
+        },
+        {
+          "kanji": "非",
+          "bacaan": "ひ",
+          "arti": "Tidak / Bukan / Anti- / Salah / Kesalahan"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Anak",
+  "groups": [
+    {
+      "radikal": "子",
+      "label": "子 - Anak  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "季節",
+          "bacaan": "きせつ",
+          "arti": "Musim / Periode / Waktu Tertentu"
+        },
+        {
+          "kanji": "存じる",
+          "bacaan": "ぞんじる",
+          "arti": "\"Saya tahu / \" \"Saya mengerti / \" \"Saya pikir / \" \"Saya berharap\""
+        },
+        {
+          "kanji": "存在",
+          "bacaan": "そんざい",
+          "arti": "Keberadaan / Eksistensi / Entitas"
+        },
+        {
+          "kanji": "孤独",
+          "bacaan": "こどく",
+          "arti": "Kesepian / Sendirian / Soliter"
+        }
+      ]
+    }
+  ]
+}

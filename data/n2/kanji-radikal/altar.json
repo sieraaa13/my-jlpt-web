@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Altar",
+  "groups": [
+    {
+      "radikal": "示",
+      "label": "示 - Menunjukkan / altar  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "福祉",
+          "bacaan": "ふくし",
+          "arti": "kesejahteraan / kebaikan / kebaikan publik"
+        },
+        {
+          "kanji": "神経",
+          "bacaan": "しんけい",
+          "arti": "Saraf / Neurale / (Metaforis) Sensitivitas / Kepekaan"
+        },
+        {
+          "kanji": "神髄",
+          "bacaan": "しんずい",
+          "arti": "Inti / Esensi / Hakikat / Jiwa / Saripati"
+        },
+        {
+          "kanji": "社会的側面",
+          "bacaan": "しゃかいてきそくめん",
+          "arti": "Aspek Sosial / Sisi Kemasyarakatan"
+        },
+        {
+          "kanji": "祖父",
+          "bacaan": "そふ",
+          "arti": "Kakek (Kakek kandung / baik dari pihak ayah maupun ibu)"
+        }
+      ]
+    }
+  ]
+}
