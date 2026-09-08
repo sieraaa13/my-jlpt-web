@@ -1,0 +1,233 @@
+{
+  "title": "Kumpulan Kanji Radikal Sepuluh",
+  "groups": [
+    {
+      "radikal": "十",
+      "label": "十 - Sepuluh  (44 kata)",
+      "count": 44,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "午前",
+          "bacaan": "ごぜん",
+          "arti": ""
+        },
+        {
+          "kanji": "午後",
+          "bacaan": "ごご",
+          "arti": ""
+        },
+        {
+          "kanji": "協議",
+          "bacaan": "きょうぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "博打",
+          "bacaan": "ばくち",
+          "arti": ""
+        },
+        {
+          "kanji": "博物館",
+          "bacaan": "はくぶつかん",
+          "arti": ""
+        },
+        {
+          "kanji": "卑しい",
+          "bacaan": "いやしい",
+          "arti": ""
+        },
+        {
+          "kanji": "古代",
+          "bacaan": "こだい",
+          "arti": ""
+        },
+        {
+          "kanji": "単身",
+          "bacaan": "たんしん",
+          "arti": ""
+        },
+        {
+          "kanji": "卒業",
+          "bacaan": "そつぎょう",
+          "arti": "kelulusan"
+        },
+        {
+          "kanji": "卒論",
+          "bacaan": "そつろん",
+          "arti": "skripsi"
+        },
+        {
+          "kanji": "卒業証書",
+          "bacaan": "そつぎょうしょうしょ",
+          "arti": "ijazah"
+        },
+        {
+          "kanji": "南",
+          "bacaan": "みなみ",
+          "arti": ""
+        },
+        {
+          "kanji": "南北",
+          "bacaan": "なんぼく",
+          "arti": ""
+        },
+        {
+          "kanji": "南部",
+          "bacaan": "なんぶ",
+          "arti": ""
+        },
+        {
+          "kanji": "南方",
+          "bacaan": "なんぽう",
+          "arti": ""
+        },
+        {
+          "kanji": "古文",
+          "bacaan": "こぶん",
+          "arti": ""
+        },
+        {
+          "kanji": "南米",
+          "bacaan": "なんべい",
+          "arti": ""
+        },
+        {
+          "kanji": "古本屋",
+          "bacaan": "ふるほんや",
+          "arti": ""
+        },
+        {
+          "kanji": "古里",
+          "bacaan": "ふるさと",
+          "arti": ""
+        },
+        {
+          "kanji": "古典",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "古い",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "南極",
+          "bacaan": "なんきょく",
+          "arti": ""
+        },
+        {
+          "kanji": "古墳",
+          "bacaan": "こぶん",
+          "arti": ""
+        },
+        {
+          "kanji": "古本",
+          "bacaan": "ふるほん",
+          "arti": ""
+        },
+        {
+          "kanji": "協力",
+          "bacaan": "きょうりょく",
+          "arti": ""
+        },
+        {
+          "kanji": "協会",
+          "bacaan": "きょうかい",
+          "arti": ""
+        },
+        {
+          "kanji": "博士",
+          "bacaan": "はかせ",
+          "arti": ""
+        },
+        {
+          "kanji": "半身",
+          "bacaan": "はんしん",
+          "arti": ""
+        },
+        {
+          "kanji": "半身不随",
+          "bacaan": "はんしんふずい",
+          "arti": ""
+        },
+        {
+          "kanji": "半袖",
+          "bacaan": "はんそで",
+          "arti": ""
+        },
+        {
+          "kanji": "半導体",
+          "bacaan": "はんどうたい",
+          "arti": ""
+        },
+        {
+          "kanji": "半島",
+          "bacaan": "はんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "半製品",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "単調",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "単",
+          "bacaan": "たん",
+          "arti": ""
+        },
+        {
+          "kanji": "単一",
+          "bacaan": "たんいつ",
+          "arti": ""
+        },
+        {
+          "kanji": "単価",
+          "bacaan": "たんか",
+          "arti": ""
+        },
+        {
+          "kanji": "単純",
+          "bacaan": "たんじゅん",
+          "arti": ""
+        },
+        {
+          "kanji": "単独",
+          "bacaan": "たんどく",
+          "arti": ""
+        },
+        {
+          "kanji": "単語",
+          "bacaan": "たんご",
+          "arti": ""
+        },
+        {
+          "kanji": "単位",
+          "bacaan": "たんい",
+          "arti": ""
+        },
+        {
+          "kanji": "単なる",
+          "bacaan": "たんなる",
+          "arti": ""
+        },
+        {
+          "kanji": "単に",
+          "bacaan": "たんに",
+          "arti": ""
+        },
+        {
+          "kanji": "単数",
+          "bacaan": "たんすう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Wangi",
+  "groups": [
+    {
+      "radikal": "香",
+      "label": "香 - Wangi  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "香り",
+          "bacaan": "かおり",
+          "arti": ""
+        },
+        {
+          "kanji": "香る",
+          "bacaan": "かおる",
+          "arti": ""
+        },
+        {
+          "kanji": "香料",
+          "bacaan": "こうりょう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Kumpulan Kanji Radikal Jangan / Larangan",
+  "groups": [
+    {
+      "radikal": "毋",
+      "label": "毋 - Jangan/larangan  (9 kata)",
+      "count": 9,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "毎",
+          "bacaan": "まい",
+          "arti": ""
+        },
+        {
+          "kanji": "毒",
+          "bacaan": "どく",
+          "arti": ""
+        },
+        {
+          "kanji": "母音",
+          "bacaan": "ぼいん",
+          "arti": ""
+        },
+        {
+          "kanji": "母音",
+          "bacaan": "ぼおん",
+          "arti": ""
+        },
+        {
+          "kanji": "お母さん",
+          "bacaan": "おかあさん",
+          "arti": ""
+        },
+        {
+          "kanji": "母",
+          "bacaan": "はは",
+          "arti": ""
+        },
+        {
+          "kanji": "母親",
+          "bacaan": "ははおや",
+          "arti": ""
+        },
+        {
+          "kanji": "母国",
+          "bacaan": "ぼこく",
+          "arti": ""
+        },
+        {
+          "kanji": "母子",
+          "bacaan": "ぼし",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

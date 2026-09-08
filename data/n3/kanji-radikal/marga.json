@@ -1,0 +1,68 @@
+{
+  "title": "Kumpulan Kanji Radikal Marga",
+  "groups": [
+    {
+      "radikal": "氏",
+      "label": "氏 - Marga / nama keluarga  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "民族",
+          "bacaan": "みんぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "民俗",
+          "bacaan": "みんぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "民法",
+          "bacaan": "みんぽう",
+          "arti": ""
+        },
+        {
+          "kanji": "民放",
+          "bacaan": "みんぽう",
+          "arti": ""
+        },
+        {
+          "kanji": "民主",
+          "bacaan": "みんしゅ",
+          "arti": ""
+        },
+        {
+          "kanji": "民主主義",
+          "bacaan": "みんしゅしゅぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "民主的",
+          "bacaan": "みんしゅてき",
+          "arti": ""
+        },
+        {
+          "kanji": "民間",
+          "bacaan": "みんかん",
+          "arti": ""
+        },
+        {
+          "kanji": "民謡",
+          "bacaan": "みんよう",
+          "arti": ""
+        },
+        {
+          "kanji": "民芸",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "民家",
+          "bacaan": "みんか",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "title": "Kumpulan Kanji Radikal Satu",
+  "groups": [
+    {
+      "radikal": "一",
+      "label": "一 - Satu / garis datar  (61 kata)",
+      "count": 61,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "丁寧",
+          "bacaan": "ていねい",
+          "arti": ""
+        },
+        {
+          "kanji": "丁目",
+          "bacaan": "ちょうめ",
+          "arti": ""
+        },
+        {
+          "kanji": "万全",
+          "bacaan": "ばんぜん",
+          "arti": ""
+        },
+        {
+          "kanji": "万一",
+          "bacaan": "まんいち",
+          "arti": ""
+        },
+        {
+          "kanji": "下半期",
+          "bacaan": "しもはんき",
+          "arti": ""
+        },
+        {
+          "kanji": "万",
+          "bacaan": "まん",
+          "arti": ""
+        },
+        {
+          "kanji": "不平",
+          "bacaan": "ふへい",
+          "arti": ""
+        },
+        {
+          "kanji": "下品",
+          "bacaan": "げひん",
+          "arti": ""
+        },
+        {
+          "kanji": "不渡り",
+          "bacaan": "ふわたり",
+          "arti": ""
+        },
+        {
+          "kanji": "不在",
+          "bacaan": "ふざい",
+          "arti": ""
+        },
+        {
+          "kanji": "不合格",
+          "bacaan": "不合格",
+          "arti": ""
+        },
+        {
+          "kanji": "不合理",
+          "bacaan": "ふごうり",
+          "arti": ""
+        },
+        {
+          "kanji": "不満",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "不振",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "両親",
+          "bacaan": "りょうしん",
+          "arti": ""
+        },
+        {
+          "kanji": "万引き",
+          "bacaan": "まんびき",
+          "arti": ""
+        },
+        {
+          "kanji": "不法",
+          "bacaan": "ふほう",
+          "arti": ""
+        },
+        {
+          "kanji": "不可能",
+          "bacaan": "ふかのう",
+          "arti": ""
+        },
+        {
+          "kanji": "下書き",
+          "bacaan": "したがき",
+          "arti": ""
+        },
+        {
+          "kanji": "下町",
+          "bacaan": "したまち",
+          "arti": ""
+        },
+        {
+          "kanji": "下請け",
+          "bacaan": "したうけ",
+          "arti": ""
+        },
+        {
+          "kanji": "下",
+          "bacaan": "した",
+          "arti": ""
+        },
+        {
+          "kanji": "両側",
+          "bacaan": "りょうがわ",
+          "arti": ""
+        },
+        {
+          "kanji": "両方",
+          "bacaan": "りょうほう",
+          "arti": ""
+        },
+        {
+          "kanji": "両面",
+          "bacaan": "りょうめん",
+          "arti": ""
+        },
+        {
+          "kanji": "両立",
+          "bacaan": "りょうりつ",
+          "arti": ""
+        },
+        {
+          "kanji": "両手",
+          "bacaan": "りょうて",
+          "arti": ""
+        },
+        {
+          "kanji": "下記",
+          "bacaan": "かき",
+          "arti": ""
+        },
+        {
+          "kanji": "下り",
+          "bacaan": "くだり",
+          "arti": ""
+        },
+        {
+          "kanji": "下る",
+          "bacaan": "くだる",
+          "arti": ""
+        },
+        {
+          "kanji": "不利",
+          "bacaan": "ふり",
+          "arti": ""
+        },
+        {
+          "kanji": "下落",
+          "bacaan": "げらく",
+          "arti": ""
+        },
+        {
+          "kanji": "下",
+          "bacaan": "げ",
+          "arti": ""
+        },
+        {
+          "kanji": "下らない",
+          "bacaan": "くだらない",
+          "arti": ""
+        },
+        {
+          "kanji": "不変",
+          "bacaan": "ふへん",
+          "arti": ""
+        },
+        {
+          "kanji": "不幸",
+          "bacaan": "ふこう",
+          "arti": ""
+        },
+        {
+          "kanji": "不公平",
+          "bacaan": "ふこうへい",
+          "arti": ""
+        },
+        {
+          "kanji": "不穏",
+          "bacaan": "ふおん",
+          "arti": ""
+        },
+        {
+          "kanji": "不審",
+          "bacaan": "ふしん",
+          "arti": ""
+        },
+        {
+          "kanji": "不通",
+          "bacaan": "ふつう",
+          "arti": ""
+        },
+        {
+          "kanji": "下旬",
+          "bacaan": "げじゅん",
+          "arti": ""
+        },
+        {
+          "kanji": "ぶら下がる",
+          "bacaan": "ぶらさがる",
+          "arti": ""
+        },
+        {
+          "kanji": "下",
+          "bacaan": "しも",
+          "arti": ""
+        },
+        {
+          "kanji": "下がり",
+          "bacaan": "さがり",
+          "arti": ""
+        },
+        {
+          "kanji": "万病",
+          "bacaan": "まんびょう",
+          "arti": ""
+        },
+        {
+          "kanji": "万年筆",
+          "bacaan": "まんねんひつ",
+          "arti": ""
+        },
+        {
+          "kanji": "丁髷",
+          "bacaan": "ちょんまげ",
+          "arti": ""
+        },
+        {
+          "kanji": "丁度",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "丁子",
+          "bacaan": "ちょうじ",
+          "arti": ""
+        },
+        {
+          "kanji": "両替",
+          "bacaan": "りょうがえ",
+          "arti": ""
+        },
+        {
+          "kanji": "世代",
+          "bacaan": "せだい",
+          "arti": ""
+        },
+        {
+          "kanji": "世紀",
+          "bacaan": "せいき",
+          "arti": ""
+        },
+        {
+          "kanji": "世帯",
+          "bacaan": "せたい",
+          "arti": ""
+        },
+        {
+          "kanji": "上り",
+          "bacaan": "のぼり",
+          "arti": ""
+        },
+        {
+          "kanji": "上がり",
+          "bacaan": "あがり",
+          "arti": ""
+        },
+        {
+          "kanji": "上がり下がり",
+          "bacaan": "あがりさがり",
+          "arti": ""
+        },
+        {
+          "kanji": "上がる",
+          "bacaan": "あがる",
+          "arti": ""
+        },
+        {
+          "kanji": "上げる",
+          "bacaan": "あげる",
+          "arti": ""
+        },
+        {
+          "kanji": "上",
+          "bacaan": "うえ",
+          "arti": ""
+        },
+        {
+          "kanji": "上手い",
+          "bacaan": "うまい",
+          "arti": ""
+        },
+        {
+          "kanji": "丈夫",
+          "bacaan": "じょうぶ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

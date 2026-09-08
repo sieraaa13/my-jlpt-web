@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Rami / Kebas",
+  "groups": [
+    {
+      "radikal": "麻",
+      "label": "麻 - Rami/kebas  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "麻酔",
+          "bacaan": "ますい",
+          "arti": ""
+        },
+        {
+          "kanji": "麻疹",
+          "bacaan": "はしか",
+          "arti": ""
+        },
+        {
+          "kanji": "麻痺",
+          "bacaan": "まひ",
+          "arti": ""
+        },
+        {
+          "kanji": "麻薬",
+          "bacaan": "まやく",
+          "arti": ""
+        },
+        {
+          "kanji": "麻",
+          "bacaan": "あさ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

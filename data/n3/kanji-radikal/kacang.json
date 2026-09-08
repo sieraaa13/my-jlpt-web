@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Kacang",
+  "groups": [
+    {
+      "radikal": "豆",
+      "label": "豆 - Kacang / wadah upacara  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "豆腐",
+          "bacaan": "とうふ",
+          "arti": ""
+        },
+        {
+          "kanji": "豆",
+          "bacaan": "まめ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

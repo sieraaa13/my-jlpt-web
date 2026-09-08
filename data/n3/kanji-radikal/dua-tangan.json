@@ -1,0 +1,43 @@
+{
+  "title": "Kumpulan Kanji Radikal Dua Tangan",
+  "groups": [
+    {
+      "radikal": "廾",
+      "label": "廾 - (radikal jarang, lihat contoh kanji)  (6 kata)",
+      "count": 6,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "弄ぶ",
+          "bacaan": "もてあそぶ",
+          "arti": ""
+        },
+        {
+          "kanji": "弁当",
+          "bacaan": "べんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "弁論",
+          "bacaan": "べんろん",
+          "arti": ""
+        },
+        {
+          "kanji": "弁護士",
+          "bacaan": "べんごし",
+          "arti": ""
+        },
+        {
+          "kanji": "弁償",
+          "bacaan": "べんしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "弁解",
+          "bacaan": "べんかい",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

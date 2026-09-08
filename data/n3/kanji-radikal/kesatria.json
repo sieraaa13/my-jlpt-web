@@ -1,0 +1,48 @@
+{
+  "title": "Kumpulan Kanji Radikal Kesatria / Gelar",
+  "groups": [
+    {
+      "radikal": "士",
+      "label": "士 - Kesatria/gelar  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "売店",
+          "bacaan": "ばいてん",
+          "arti": ""
+        },
+        {
+          "kanji": "売り場",
+          "bacaan": "うりば",
+          "arti": ""
+        },
+        {
+          "kanji": "壷",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "売り物",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "声帯",
+          "bacaan": "せいたい",
+          "arti": ""
+        },
+        {
+          "kanji": "売る",
+          "bacaan": "うる",
+          "arti": ""
+        },
+        {
+          "kanji": "壮大",
+          "bacaan": "そうだい",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

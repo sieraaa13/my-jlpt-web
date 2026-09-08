@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Motif Harimau",
+  "groups": [
+    {
+      "radikal": "虍",
+      "label": "虍 - Motif harimau  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "虚しい",
+          "bacaan": "むなしい",
+          "arti": ""
+        },
+        {
+          "kanji": "虚勢",
+          "bacaan": "きょせい",
+          "arti": ""
+        },
+        {
+          "kanji": "虐殺",
+          "bacaan": "ぎゃくさつ",
+          "arti": ""
+        },
+        {
+          "kanji": "虐待",
+          "bacaan": "ぎゃくたい",
+          "arti": ""
+        },
+        {
+          "kanji": "虎",
+          "bacaan": "とら",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

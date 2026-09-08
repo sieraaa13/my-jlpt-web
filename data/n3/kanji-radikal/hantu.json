@@ -1,0 +1,53 @@
+{
+  "title": "Kumpulan Kanji Radikal Hantu / Roh",
+  "groups": [
+    {
+      "radikal": "鬼",
+      "label": "鬼 - Hantu / roh  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "魂",
+          "bacaan": "たましい",
+          "arti": ""
+        },
+        {
+          "kanji": "魅力",
+          "bacaan": "みりょく",
+          "arti": ""
+        },
+        {
+          "kanji": "魅惑",
+          "bacaan": "みわく",
+          "arti": ""
+        },
+        {
+          "kanji": "魔術",
+          "bacaan": "まじゅつ",
+          "arti": ""
+        },
+        {
+          "kanji": "魔女",
+          "bacaan": "まじょ",
+          "arti": ""
+        },
+        {
+          "kanji": "魔除け",
+          "bacaan": "まよけ",
+          "arti": ""
+        },
+        {
+          "kanji": "魔法",
+          "bacaan": "まほう",
+          "arti": ""
+        },
+        {
+          "kanji": "鬼",
+          "bacaan": "おに",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Gandum",
+  "groups": [
+    {
+      "radikal": "麥",
+      "label": "麥 - (radikal jarang, lihat contoh kanji)  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "麦",
+          "bacaan": "むぎ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

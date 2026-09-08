@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Milik Pribadi",
+  "groups": [
+    {
+      "radikal": "厶",
+      "label": "厶 - Milik pribadi  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "去る",
+          "bacaan": "さる",
+          "arti": ""
+        },
+        {
+          "kanji": "参考",
+          "bacaan": "さんこう",
+          "arti": ""
+        },
+        {
+          "kanji": "参照",
+          "bacaan": "さんしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "参議院",
+          "bacaan": "さんぎいん",
+          "arti": ""
+        },
+        {
+          "kanji": "参加者",
+          "bacaan": "さんかしゃ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

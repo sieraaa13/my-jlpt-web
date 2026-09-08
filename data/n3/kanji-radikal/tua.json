@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Tua",
+  "groups": [
+    {
+      "radikal": "老",
+      "label": "老 - Tua  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "老眼",
+          "bacaan": "ろうがん",
+          "arti": ""
+        },
+        {
+          "kanji": "老舗",
+          "bacaan": "しにせ",
+          "arti": ""
+        },
+        {
+          "kanji": "考える",
+          "bacaan": "かんがえる",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

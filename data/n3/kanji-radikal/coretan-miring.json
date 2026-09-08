@@ -1,0 +1,23 @@
+{
+  "title": "Kumpulan Kanji Radikal Coretan Miring",
+  "groups": [
+    {
+      "radikal": "丿",
+      "label": "丿 - Coretan miring  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "久しぶり",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "久く",
+          "bacaan": "かく",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

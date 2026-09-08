@@ -1,0 +1,103 @@
+{
+  "title": "Kumpulan Kanji Radikal Kecil",
+  "groups": [
+    {
+      "radikal": "小",
+      "label": "小 - Kecil  (18 kata)",
+      "count": 18,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "当番",
+          "bacaan": "とうばん",
+          "arti": ""
+        },
+        {
+          "kanji": "当分",
+          "bacaan": "とうぶん",
+          "arti": ""
+        },
+        {
+          "kanji": "当選",
+          "bacaan": "とうせん",
+          "arti": ""
+        },
+        {
+          "kanji": "当惑",
+          "bacaan": "とうわく",
+          "arti": ""
+        },
+        {
+          "kanji": "当然",
+          "bacaan": "とうぜん",
+          "arti": ""
+        },
+        {
+          "kanji": "当局",
+          "bacaan": "とうきょく",
+          "arti": ""
+        },
+        {
+          "kanji": "当てはまる",
+          "bacaan": "あてはまる",
+          "arti": ""
+        },
+        {
+          "kanji": "当面",
+          "bacaan": "とうめん",
+          "arti": ""
+        },
+        {
+          "kanji": "当初",
+          "bacaan": "とうしょ",
+          "arti": ""
+        },
+        {
+          "kanji": "当座",
+          "bacaan": "とうざ",
+          "arti": ""
+        },
+        {
+          "kanji": "当方",
+          "bacaan": "とうほう",
+          "arti": ""
+        },
+        {
+          "kanji": "当選者",
+          "bacaan": "とうせんしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "当たり前",
+          "bacaan": "あたりまえ",
+          "arti": ""
+        },
+        {
+          "kanji": "当て",
+          "bacaan": "あて",
+          "arti": ""
+        },
+        {
+          "kanji": "当時",
+          "bacaan": "とうじ",
+          "arti": ""
+        },
+        {
+          "kanji": "当日",
+          "bacaan": "とうじつ",
+          "arti": ""
+        },
+        {
+          "kanji": "尚更",
+          "bacaan": "なおさら",
+          "arti": ""
+        },
+        {
+          "kanji": "尚",
+          "bacaan": "なお",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "title": "Kumpulan Kanji Radikal Garis di Atas",
+  "groups": [
+    {
+      "radikal": "亠",
+      "label": "亠 - Garis di atas / tutup  (20 kata)",
+      "count": 20,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "交わり",
+          "bacaan": "まじわり",
+          "arti": "pergaulan / persilangan"
+        },
+        {
+          "kanji": "交通",
+          "bacaan": "こうつう",
+          "arti": "lalu lintas"
+        },
+        {
+          "kanji": "交差",
+          "bacaan": "こうさ",
+          "arti": "persilangan"
+        },
+        {
+          "kanji": "交際",
+          "bacaan": "こうさい",
+          "arti": "pergaulan / berpacaran"
+        },
+        {
+          "kanji": "交尾",
+          "bacaan": "こうび",
+          "arti": "kawin (hewan)"
+        },
+        {
+          "kanji": "交互",
+          "bacaan": "こうご",
+          "arti": "bergantian"
+        },
+        {
+          "kanji": "交渉",
+          "bacaan": "こうしょう",
+          "arti": "negosiasi"
+        },
+        {
+          "kanji": "交通費",
+          "bacaan": "こうつうひ",
+          "arti": "biaya transportasi"
+        },
+        {
+          "kanji": "亡命",
+          "bacaan": "ぼうめい",
+          "arti": "suaka politik / pelarian"
+        },
+        {
+          "kanji": "亭主",
+          "bacaan": "ていしゅ",
+          "arti": "suami / pemilik kedai"
+        },
+        {
+          "kanji": "京楽",
+          "bacaan": "きょうらく",
+          "arti": "kesenangan (di ibu kota)"
+        },
+        {
+          "kanji": "享楽主義者",
+          "bacaan": "きょうらくしゅぎしゃ",
+          "arti": "penganut hedonisme"
+        },
+        {
+          "kanji": "亡命者",
+          "bacaan": "ぼうめいしゃ",
+          "arti": "pelarian politik"
+        },
+        {
+          "kanji": "交差点",
+          "bacaan": "こうさてん",
+          "arti": "persimpangan"
+        },
+        {
+          "kanji": "交替",
+          "bacaan": "こうたい",
+          "arti": "bergantian / shift"
+        },
+        {
+          "kanji": "交換",
+          "bacaan": "こうかん",
+          "arti": "pertukaran"
+        },
+        {
+          "kanji": "交流",
+          "bacaan": "こうりゅう",
+          "arti": "pertukaran / interaksi"
+        },
+        {
+          "kanji": "交わる",
+          "bacaan": "まじわる",
+          "arti": "bersilangan / bergaul"
+        },
+        {
+          "kanji": "亭",
+          "bacaan": "てい",
+          "arti": "kedai / paviliun"
+        },
+        {
+          "kanji": "交番",
+          "bacaan": "こうばん",
+          "arti": "pos polisi"
+        }
+      ]
+    }
+  ]
+}

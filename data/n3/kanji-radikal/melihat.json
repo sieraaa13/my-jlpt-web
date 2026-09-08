@@ -1,0 +1,478 @@
+{
+  "title": "Kumpulan Kanji Radikal Melihat",
+  "groups": [
+    {
+      "radikal": "見",
+      "label": "見 - Melihat  (93 kata)",
+      "count": 93,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "覗く",
+          "bacaan": "のぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "観客",
+          "bacaan": "かんきゃく",
+          "arti": ""
+        },
+        {
+          "kanji": "観音",
+          "bacaan": "かんのん",
+          "arti": ""
+        },
+        {
+          "kanji": "観衆",
+          "bacaan": "かんしゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "観測",
+          "bacaan": "かんそく",
+          "arti": ""
+        },
+        {
+          "kanji": "観点",
+          "bacaan": "かんてん",
+          "arti": ""
+        },
+        {
+          "kanji": "観賞",
+          "bacaan": "かんしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "観覧",
+          "bacaan": "かんらん",
+          "arti": ""
+        },
+        {
+          "kanji": "観念",
+          "bacaan": "かんねん",
+          "arti": ""
+        },
+        {
+          "kanji": "視聴覚",
+          "bacaan": "しちょうかく",
+          "arti": ""
+        },
+        {
+          "kanji": "視覚",
+          "bacaan": "しかく",
+          "arti": ""
+        },
+        {
+          "kanji": "視力",
+          "bacaan": "しりょく",
+          "arti": ""
+        },
+        {
+          "kanji": "視察",
+          "bacaan": "しさつ",
+          "arti": ""
+        },
+        {
+          "kanji": "視線",
+          "bacaan": "しせん",
+          "arti": ""
+        },
+        {
+          "kanji": "見合い",
+          "bacaan": "みあい",
+          "arti": ""
+        },
+        {
+          "kanji": "見合わせる",
+          "bacaan": "みあわせる",
+          "arti": ""
+        },
+        {
+          "kanji": "見舞い",
+          "bacaan": "みまい",
+          "arti": ""
+        },
+        {
+          "kanji": "見回り",
+          "bacaan": "みまわり",
+          "arti": ""
+        },
+        {
+          "kanji": "見習い",
+          "bacaan": "みならい",
+          "arti": ""
+        },
+        {
+          "kanji": "見つかる",
+          "bacaan": "みつかる",
+          "arti": ""
+        },
+        {
+          "kanji": "見つける",
+          "bacaan": "みつける",
+          "arti": ""
+        },
+        {
+          "kanji": "見学",
+          "bacaan": "けんがく",
+          "arti": ""
+        },
+        {
+          "kanji": "見直す",
+          "bacaan": "みなおす",
+          "arti": ""
+        },
+        {
+          "kanji": "見習う",
+          "bacaan": "みならう",
+          "arti": ""
+        },
+        {
+          "kanji": "見なす",
+          "bacaan": "みなす",
+          "arti": ""
+        },
+        {
+          "kanji": "見抜く",
+          "bacaan": "みぬく",
+          "arti": ""
+        },
+        {
+          "kanji": "見送る",
+          "bacaan": "みおくる",
+          "arti": ""
+        },
+        {
+          "kanji": "見下ろす",
+          "bacaan": "みおろす",
+          "arti": ""
+        },
+        {
+          "kanji": "見る",
+          "bacaan": "みる",
+          "arti": ""
+        },
+        {
+          "kanji": "見せびらかす",
+          "bacaan": "みせびらかす",
+          "arti": ""
+        },
+        {
+          "kanji": "見せかける",
+          "bacaan": "みせかける",
+          "arti": ""
+        },
+        {
+          "kanji": "見せる",
+          "bacaan": "みせる",
+          "arti": ""
+        },
+        {
+          "kanji": "見積もる",
+          "bacaan": "みつもる",
+          "arti": ""
+        },
+        {
+          "kanji": "見つめる",
+          "bacaan": "みつめる",
+          "arti": ""
+        },
+        {
+          "kanji": "見切り商品",
+          "bacaan": "みきりしょうひん",
+          "arti": ""
+        },
+        {
+          "kanji": "見回り品",
+          "bacaan": "みまわりひん",
+          "arti": ""
+        },
+        {
+          "kanji": "見取り図",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "見上げる",
+          "bacaan": "みあげる",
+          "arti": ""
+        },
+        {
+          "kanji": "見渡す",
+          "bacaan": "みわたす",
+          "arti": ""
+        },
+        {
+          "kanji": "見張る",
+          "bacaan": "みはる",
+          "arti": ""
+        },
+        {
+          "kanji": "見極める",
+          "bacaan": "みきわめる",
+          "arti": ""
+        },
+        {
+          "kanji": "見込む",
+          "bacaan": "みこむ",
+          "arti": ""
+        },
+        {
+          "kanji": "見下す",
+          "bacaan": "みくだす",
+          "arti": ""
+        },
+        {
+          "kanji": "見守る",
+          "bacaan": "みまもる",
+          "arti": ""
+        },
+        {
+          "kanji": "見舞う",
+          "bacaan": "みまう",
+          "arti": ""
+        },
+        {
+          "kanji": "見回る",
+          "bacaan": "みまわる",
+          "arti": ""
+        },
+        {
+          "kanji": "見積もり",
+          "bacaan": "みつもり",
+          "arti": ""
+        },
+        {
+          "kanji": "見分け",
+          "bacaan": "みわけ",
+          "arti": ""
+        },
+        {
+          "kanji": "見出し",
+          "bacaan": "みだし",
+          "arti": ""
+        },
+        {
+          "kanji": "見当たる",
+          "bacaan": "みあたる",
+          "arti": ""
+        },
+        {
+          "kanji": "見栄え",
+          "bacaan": "みばえ",
+          "arti": ""
+        },
+        {
+          "kanji": "見栄え",
+          "bacaan": "みえ",
+          "arti": ""
+        },
+        {
+          "kanji": "見える",
+          "bacaan": "みえる",
+          "arti": ""
+        },
+        {
+          "kanji": "見晴らし",
+          "bacaan": "みはらし",
+          "arti": ""
+        },
+        {
+          "kanji": "見張り",
+          "bacaan": "みはり",
+          "arti": ""
+        },
+        {
+          "kanji": "見本",
+          "bacaan": "みほん",
+          "arti": ""
+        },
+        {
+          "kanji": "見慣れる",
+          "bacaan": "みなれる",
+          "arti": ""
+        },
+        {
+          "kanji": "見事",
+          "bacaan": "みごと",
+          "arti": ""
+        },
+        {
+          "kanji": "見苦しい",
+          "bacaan": "みぐるしい",
+          "arti": ""
+        },
+        {
+          "kanji": "見かけ",
+          "bacaan": "みかけ",
+          "arti": ""
+        },
+        {
+          "kanji": "見方",
+          "bacaan": "みかた",
+          "arti": ""
+        },
+        {
+          "kanji": "見込み",
+          "bacaan": "みこみ",
+          "arti": ""
+        },
+        {
+          "kanji": "見物",
+          "bacaan": "けんぶつ",
+          "arti": ""
+        },
+        {
+          "kanji": "見物人",
+          "bacaan": "けんぶつにん",
+          "arti": ""
+        },
+        {
+          "kanji": "見切り",
+          "bacaan": "みきり",
+          "arti": ""
+        },
+        {
+          "kanji": "見どころ",
+          "bacaan": "みどころ",
+          "arti": ""
+        },
+        {
+          "kanji": "見逃す",
+          "bacaan": "みのがす",
+          "arti": ""
+        },
+        {
+          "kanji": "見落とす",
+          "bacaan": "みおとす",
+          "arti": ""
+        },
+        {
+          "kanji": "見通し",
+          "bacaan": "みとおし",
+          "arti": ""
+        },
+        {
+          "kanji": "見当",
+          "bacaan": "けんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "見通す",
+          "bacaan": "みとおす",
+          "arti": ""
+        },
+        {
+          "kanji": "見解",
+          "bacaan": "けんかい",
+          "arti": ""
+        },
+        {
+          "kanji": "親しい",
+          "bacaan": "したしい",
+          "arti": ""
+        },
+        {
+          "kanji": "親しみ",
+          "bacaan": "したしみ",
+          "arti": ""
+        },
+        {
+          "kanji": "親密",
+          "bacaan": "しんみつ",
+          "arti": ""
+        },
+        {
+          "kanji": "親切",
+          "bacaan": "しんせつ",
+          "arti": ""
+        },
+        {
+          "kanji": "親善",
+          "bacaan": "しんぜん",
+          "arti": ""
+        },
+        {
+          "kanji": "親族",
+          "bacaan": "しんぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "親",
+          "bacaan": "おや",
+          "arti": ""
+        },
+        {
+          "kanji": "親父",
+          "bacaan": "おやじ",
+          "arti": ""
+        },
+        {
+          "kanji": "親子",
+          "bacaan": "おやこ",
+          "arti": ""
+        },
+        {
+          "kanji": "親類",
+          "bacaan": "しんるい",
+          "arti": ""
+        },
+        {
+          "kanji": "親戚",
+          "bacaan": "しんせき",
+          "arti": ""
+        },
+        {
+          "kanji": "親友",
+          "bacaan": "しんゆう",
+          "arti": ""
+        },
+        {
+          "kanji": "親指",
+          "bacaan": "おやゆび",
+          "arti": ""
+        },
+        {
+          "kanji": "親しむ",
+          "bacaan": "したしむ",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒剤",
+          "bacaan": "かくせいざい",
+          "arti": ""
+        },
+        {
+          "kanji": "覚悟",
+          "bacaan": "かくご",
+          "arti": ""
+        },
+        {
+          "kanji": "覚醒",
+          "bacaan": "かくせい",
+          "arti": ""
+        },
+        {
+          "kanji": "覚える",
+          "bacaan": "おぼえる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚ます",
+          "bacaan": "さます",
+          "arti": ""
+        },
+        {
+          "kanji": "覚める",
+          "bacaan": "さめる",
+          "arti": ""
+        },
+        {
+          "kanji": "覚え",
+          "bacaan": "おぼえ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

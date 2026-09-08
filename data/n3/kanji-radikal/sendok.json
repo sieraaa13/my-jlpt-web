@@ -1,0 +1,58 @@
+{
+  "title": "Kumpulan Kanji Radikal Sendok / Pisau Kecil",
+  "groups": [
+    {
+      "radikal": "匕",
+      "label": "匕 - (radikal jarang, lihat contoh kanji)  (9 kata)",
+      "count": 9,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "化粧室",
+          "bacaan": "けしょうしつ",
+          "arti": ""
+        },
+        {
+          "kanji": "化石",
+          "bacaan": "かせき",
+          "arti": ""
+        },
+        {
+          "kanji": "化粧品",
+          "bacaan": "けしょうひん",
+          "arti": ""
+        },
+        {
+          "kanji": "化粧",
+          "bacaan": "けしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "化ける",
+          "bacaan": "ばける",
+          "arti": ""
+        },
+        {
+          "kanji": "化学",
+          "bacaan": "かがく",
+          "arti": ""
+        },
+        {
+          "kanji": "お化け",
+          "bacaan": "おばけ",
+          "arti": ""
+        },
+        {
+          "kanji": "化け物",
+          "bacaan": "ばけもの",
+          "arti": ""
+        },
+        {
+          "kanji": "匙",
+          "bacaan": "",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

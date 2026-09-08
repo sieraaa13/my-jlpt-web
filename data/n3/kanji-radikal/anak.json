@@ -1,0 +1,123 @@
+{
+  "title": "Kumpulan Kanji Radikal Anak",
+  "groups": [
+    {
+      "radikal": "子",
+      "label": "子 - Anak  (22 kata)",
+      "count": 22,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "字",
+          "bacaan": "じ",
+          "arti": "huruf"
+        },
+        {
+          "kanji": "字幕",
+          "bacaan": "じまく",
+          "arti": "subtitle/teks film"
+        },
+        {
+          "kanji": "字体",
+          "bacaan": "じたい",
+          "arti": "bentuk huruf"
+        },
+        {
+          "kanji": "字引",
+          "bacaan": "じびき",
+          "arti": "kamus"
+        },
+        {
+          "kanji": "学長",
+          "bacaan": "がくちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "学生",
+          "bacaan": "がくせい",
+          "arti": ""
+        },
+        {
+          "kanji": "学者",
+          "bacaan": "がくしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "学期",
+          "bacaan": "がっき",
+          "arti": ""
+        },
+        {
+          "kanji": "学年",
+          "bacaan": "がくねん",
+          "arti": ""
+        },
+        {
+          "kanji": "学費",
+          "bacaan": "がくひ",
+          "arti": ""
+        },
+        {
+          "kanji": "学校",
+          "bacaan": "がっこう",
+          "arti": ""
+        },
+        {
+          "kanji": "学科",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "学部",
+          "bacaan": "がくぶ",
+          "arti": ""
+        },
+        {
+          "kanji": "学ぶ",
+          "bacaan": "まなぶ",
+          "arti": ""
+        },
+        {
+          "kanji": "学位",
+          "bacaan": "がくい",
+          "arti": ""
+        },
+        {
+          "kanji": "学問",
+          "bacaan": "がくもん",
+          "arti": ""
+        },
+        {
+          "kanji": "学歴",
+          "bacaan": "がくれき",
+          "arti": ""
+        },
+        {
+          "kanji": "学力",
+          "bacaan": "がくりょく",
+          "arti": ""
+        },
+        {
+          "kanji": "学説",
+          "bacaan": "がくせつ",
+          "arti": ""
+        },
+        {
+          "kanji": "学会",
+          "bacaan": "がっかい",
+          "arti": ""
+        },
+        {
+          "kanji": "学生数",
+          "bacaan": "がくせいすう",
+          "arti": ""
+        },
+        {
+          "kanji": "学習",
+          "bacaan": "がくしゅう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

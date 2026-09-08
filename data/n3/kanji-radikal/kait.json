@@ -1,0 +1,68 @@
+{
+  "title": "Kumpulan Kanji Radikal Kait",
+  "groups": [
+    {
+      "radikal": "亅",
+      "label": "亅 - Kait  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "争い",
+          "bacaan": "あらそい",
+          "arti": ""
+        },
+        {
+          "kanji": "事",
+          "bacaan": "こと",
+          "arti": ""
+        },
+        {
+          "kanji": "事務",
+          "bacaan": "じむ",
+          "arti": ""
+        },
+        {
+          "kanji": "事件",
+          "bacaan": "じけん",
+          "arti": ""
+        },
+        {
+          "kanji": "事情",
+          "bacaan": "じじょう",
+          "arti": ""
+        },
+        {
+          "kanji": "事柄",
+          "bacaan": "ことがら",
+          "arti": ""
+        },
+        {
+          "kanji": "事故",
+          "bacaan": "じこ",
+          "arti": ""
+        },
+        {
+          "kanji": "事実",
+          "bacaan": "じじつ",
+          "arti": ""
+        },
+        {
+          "kanji": "事項",
+          "bacaan": "じこう",
+          "arti": ""
+        },
+        {
+          "kanji": "事前",
+          "bacaan": "じぜん",
+          "arti": ""
+        },
+        {
+          "kanji": "事務員",
+          "bacaan": "じむいん",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

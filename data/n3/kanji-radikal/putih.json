@@ -1,0 +1,123 @@
+{
+  "title": "Kumpulan Kanji Radikal Putih",
+  "groups": [
+    {
+      "radikal": "白",
+      "label": "白 - Putih  (22 kata)",
+      "count": 22,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "百科事典",
+          "bacaan": "ひゃっかじてん",
+          "arti": ""
+        },
+        {
+          "kanji": "百",
+          "bacaan": "ひゃく",
+          "arti": ""
+        },
+        {
+          "kanji": "百貨店",
+          "bacaan": "ひゃっかてん",
+          "arti": ""
+        },
+        {
+          "kanji": "白血球",
+          "bacaan": "はっけっきゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "白骨",
+          "bacaan": "はっこつ",
+          "arti": ""
+        },
+        {
+          "kanji": "白内障",
+          "bacaan": "はくないしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "白髪",
+          "bacaan": "しらが",
+          "arti": ""
+        },
+        {
+          "kanji": "白",
+          "bacaan": "しろ",
+          "arti": ""
+        },
+        {
+          "kanji": "白い",
+          "bacaan": "しろい",
+          "arti": ""
+        },
+        {
+          "kanji": "白粉",
+          "bacaan": "おしろい",
+          "arti": ""
+        },
+        {
+          "kanji": "白紙",
+          "bacaan": "はくし",
+          "arti": ""
+        },
+        {
+          "kanji": "白檀",
+          "bacaan": "びゃくだん",
+          "arti": ""
+        },
+        {
+          "kanji": "白菜",
+          "bacaan": "はくさい",
+          "arti": ""
+        },
+        {
+          "kanji": "皇居",
+          "bacaan": "こうきょ",
+          "arti": ""
+        },
+        {
+          "kanji": "的",
+          "bacaan": "まと",
+          "arti": ""
+        },
+        {
+          "kanji": "白人",
+          "bacaan": "はくじん",
+          "arti": ""
+        },
+        {
+          "kanji": "皆",
+          "bacaan": "みんな",
+          "arti": ""
+        },
+        {
+          "kanji": "皆",
+          "bacaan": "みな",
+          "arti": ""
+        },
+        {
+          "kanji": "皆様",
+          "bacaan": "みなさま",
+          "arti": ""
+        },
+        {
+          "kanji": "皆さん",
+          "bacaan": "みなさん",
+          "arti": ""
+        },
+        {
+          "kanji": "皇太子",
+          "bacaan": "こうたいし",
+          "arti": ""
+        },
+        {
+          "kanji": "皇后",
+          "bacaan": "こうごう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

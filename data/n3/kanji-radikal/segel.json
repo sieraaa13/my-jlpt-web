@@ -1,0 +1,68 @@
+{
+  "title": "Kumpulan Kanji Radikal Segel",
+  "groups": [
+    {
+      "radikal": "卩",
+      "label": "卩 - Segel / lutut  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "危険",
+          "bacaan": "きけん",
+          "arti": ""
+        },
+        {
+          "kanji": "危機",
+          "bacaan": "きき",
+          "arti": ""
+        },
+        {
+          "kanji": "危篤",
+          "bacaan": "きとく",
+          "arti": ""
+        },
+        {
+          "kanji": "卸値段",
+          "bacaan": "おろしねだん",
+          "arti": ""
+        },
+        {
+          "kanji": "卸",
+          "bacaan": "おろし",
+          "arti": ""
+        },
+        {
+          "kanji": "即席",
+          "bacaan": "そくせき",
+          "arti": ""
+        },
+        {
+          "kanji": "即刻",
+          "bacaan": "そっこく",
+          "arti": ""
+        },
+        {
+          "kanji": "即ち",
+          "bacaan": "すなわち",
+          "arti": ""
+        },
+        {
+          "kanji": "印刷",
+          "bacaan": "いんさつ",
+          "arti": ""
+        },
+        {
+          "kanji": "印",
+          "bacaan": "いん",
+          "arti": ""
+        },
+        {
+          "kanji": "印象",
+          "bacaan": "いんしょう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

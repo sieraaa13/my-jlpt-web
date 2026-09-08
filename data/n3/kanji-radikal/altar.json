@@ -1,0 +1,278 @@
+{
+  "title": "Kumpulan Kanji Radikal Altar",
+  "groups": [
+    {
+      "radikal": "示",
+      "label": "示 - Menunjukkan / altar  (53 kata)",
+      "count": 53,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "票",
+          "bacaan": "ひょう",
+          "arti": ""
+        },
+        {
+          "kanji": "票数",
+          "bacaan": "ひょうすう",
+          "arti": ""
+        },
+        {
+          "kanji": "示す",
+          "bacaan": "しめす",
+          "arti": ""
+        },
+        {
+          "kanji": "禁物",
+          "bacaan": "きんもつ",
+          "arti": ""
+        },
+        {
+          "kanji": "禁じる",
+          "bacaan": "きんじる",
+          "arti": ""
+        },
+        {
+          "kanji": "禁漁",
+          "bacaan": "きんりょう",
+          "arti": ""
+        },
+        {
+          "kanji": "禁猟",
+          "bacaan": "きんりょう",
+          "arti": ""
+        },
+        {
+          "kanji": "禁制",
+          "bacaan": "きんせい",
+          "arti": ""
+        },
+        {
+          "kanji": "禁止",
+          "bacaan": "きんし",
+          "arti": ""
+        },
+        {
+          "kanji": "禁酒",
+          "bacaan": "きんしゅ",
+          "arti": ""
+        },
+        {
+          "kanji": "禁欲",
+          "bacaan": "きんよく",
+          "arti": ""
+        },
+        {
+          "kanji": "禁煙",
+          "bacaan": "きんえん",
+          "arti": ""
+        },
+        {
+          "kanji": "禁輸",
+          "bacaan": "きんゆ",
+          "arti": ""
+        },
+        {
+          "kanji": "禁ずる",
+          "bacaan": "きんずる",
+          "arti": ""
+        },
+        {
+          "kanji": "神経",
+          "bacaan": "しんけい",
+          "arti": ""
+        },
+        {
+          "kanji": "神宮",
+          "bacaan": "じんぐう",
+          "arti": ""
+        },
+        {
+          "kanji": "神社",
+          "bacaan": "じんじゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "神輿",
+          "bacaan": "みこし",
+          "arti": ""
+        },
+        {
+          "kanji": "祖国",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "祝い",
+          "bacaan": "いわい",
+          "arti": ""
+        },
+        {
+          "kanji": "祝う",
+          "bacaan": "いわう",
+          "arti": ""
+        },
+        {
+          "kanji": "福",
+          "bacaan": "ふく",
+          "arti": ""
+        },
+        {
+          "kanji": "祝福",
+          "bacaan": "しゅくふく",
+          "arti": ""
+        },
+        {
+          "kanji": "祝賀",
+          "bacaan": "しゅくが",
+          "arti": ""
+        },
+        {
+          "kanji": "神聖",
+          "bacaan": "しんせい",
+          "arti": ""
+        },
+        {
+          "kanji": "神道",
+          "bacaan": "しんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "神話",
+          "bacaan": "しんわ",
+          "arti": ""
+        },
+        {
+          "kanji": "神秘",
+          "bacaan": "しんぴ",
+          "arti": ""
+        },
+        {
+          "kanji": "神",
+          "bacaan": "かみ",
+          "arti": ""
+        },
+        {
+          "kanji": "祖国愛",
+          "bacaan": "そこくあい",
+          "arti": ""
+        },
+        {
+          "kanji": "福祉",
+          "bacaan": "ふくし",
+          "arti": ""
+        },
+        {
+          "kanji": "祝日",
+          "bacaan": "しゅくじつ",
+          "arti": ""
+        },
+        {
+          "kanji": "祖母",
+          "bacaan": "そぼ",
+          "arti": ""
+        },
+        {
+          "kanji": "祖父",
+          "bacaan": "そふ",
+          "arti": ""
+        },
+        {
+          "kanji": "祖父母",
+          "bacaan": "そふぼ",
+          "arti": ""
+        },
+        {
+          "kanji": "祖先",
+          "bacaan": "そせん",
+          "arti": ""
+        },
+        {
+          "kanji": "神父",
+          "bacaan": "しんぷ",
+          "arti": ""
+        },
+        {
+          "kanji": "神主",
+          "bacaan": "かんぬし",
+          "arti": ""
+        },
+        {
+          "kanji": "社宅",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "社会主義",
+          "bacaan": "しゃかいしゅぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "社交",
+          "bacaan": "しゃこう",
+          "arti": ""
+        },
+        {
+          "kanji": "社説",
+          "bacaan": "しゃせつ",
+          "arti": ""
+        },
+        {
+          "kanji": "社会",
+          "bacaan": "しゃかい",
+          "arti": ""
+        },
+        {
+          "kanji": "社長",
+          "bacaan": "しゃちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "社員",
+          "bacaan": "しゃいん",
+          "arti": ""
+        },
+        {
+          "kanji": "礼服",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "礼状",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "礼儀",
+          "bacaan": "れいぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "礼拝",
+          "bacaan": "れいはい",
+          "arti": ""
+        },
+        {
+          "kanji": "礼",
+          "bacaan": "れい",
+          "arti": ""
+        },
+        {
+          "kanji": "祈願",
+          "bacaan": "きがん",
+          "arti": ""
+        },
+        {
+          "kanji": "祈り",
+          "bacaan": "いのり",
+          "arti": ""
+        },
+        {
+          "kanji": "祈る",
+          "bacaan": "いのる",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

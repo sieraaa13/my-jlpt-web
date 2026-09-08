@@ -1,0 +1,78 @@
+{
+  "title": "Kumpulan Kanji Radikal Cabang / Menopang",
+  "groups": [
+    {
+      "radikal": "支",
+      "label": "支 - (radikal jarang, lihat contoh kanji)  (13 kata)",
+      "count": 13,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "支援者",
+          "bacaan": "しえんしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "支配",
+          "bacaan": "しはい",
+          "arti": ""
+        },
+        {
+          "kanji": "支援",
+          "bacaan": "しえん",
+          "arti": ""
+        },
+        {
+          "kanji": "支持",
+          "bacaan": "しじ",
+          "arti": ""
+        },
+        {
+          "kanji": "支部",
+          "bacaan": "しぶ",
+          "arti": ""
+        },
+        {
+          "kanji": "支え",
+          "bacaan": "ささえ",
+          "arti": ""
+        },
+        {
+          "kanji": "支度",
+          "bacaan": "したく",
+          "arti": ""
+        },
+        {
+          "kanji": "支障",
+          "bacaan": "ししょう",
+          "arti": ""
+        },
+        {
+          "kanji": "支える",
+          "bacaan": "ささえる",
+          "arti": ""
+        },
+        {
+          "kanji": "支店",
+          "bacaan": "してん",
+          "arti": ""
+        },
+        {
+          "kanji": "支払い",
+          "bacaan": "しはらい",
+          "arti": ""
+        },
+        {
+          "kanji": "支給",
+          "bacaan": "しきゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "支払う",
+          "bacaan": "しはらう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

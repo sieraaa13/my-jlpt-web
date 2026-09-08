@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Pedas / Pahit",
+  "groups": [
+    {
+      "radikal": "辛",
+      "label": "辛 - Pedas/pahit  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "辛抱",
+          "bacaan": "しんぼう",
+          "arti": ""
+        },
+        {
+          "kanji": "辛い",
+          "bacaan": "つらい",
+          "arti": ""
+        },
+        {
+          "kanji": "辛い",
+          "bacaan": "からい",
+          "arti": ""
+        },
+        {
+          "kanji": "辛口",
+          "bacaan": "からくち",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

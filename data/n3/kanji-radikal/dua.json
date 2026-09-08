@@ -1,0 +1,33 @@
+{
+  "title": "Kumpulan Kanji Radikal Dua",
+  "groups": [
+    {
+      "radikal": "二",
+      "label": "二 - Dua  (4 kata)",
+      "count": 4,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "互い",
+          "bacaan": "たがい",
+          "arti": ""
+        },
+        {
+          "kanji": "五感",
+          "bacaan": "ごかん",
+          "arti": ""
+        },
+        {
+          "kanji": "五分",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "五色",
+          "bacaan": "ごしき",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Kumpulan Kanji Radikal Papan Tipis",
+  "groups": [
+    {
+      "radikal": "片",
+      "label": "片 - Papan tipis  (7 kata)",
+      "count": 7,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "片腕",
+          "bacaan": "かたうで",
+          "arti": ""
+        },
+        {
+          "kanji": "片方",
+          "bacaan": "かたほう",
+          "arti": ""
+        },
+        {
+          "kanji": "片言",
+          "bacaan": "かたこと",
+          "arti": ""
+        },
+        {
+          "kanji": "片道",
+          "bacaan": "かたみち",
+          "arti": ""
+        },
+        {
+          "kanji": "片思い",
+          "bacaan": "かたおもい",
+          "arti": ""
+        },
+        {
+          "kanji": "片手",
+          "bacaan": "かたて",
+          "arti": ""
+        },
+        {
+          "kanji": "片栗粉",
+          "bacaan": "かたくりこ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

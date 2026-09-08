@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Tikus",
+  "groups": [
+    {
+      "radikal": "鼠",
+      "label": "鼠 - Tikus  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "鼠",
+          "bacaan": "ねずみ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

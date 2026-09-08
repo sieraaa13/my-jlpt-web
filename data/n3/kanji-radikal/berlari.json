@@ -1,0 +1,68 @@
+{
+  "title": "Kumpulan Kanji Radikal Berlari",
+  "groups": [
+    {
+      "radikal": "走",
+      "label": "走 - Berlari  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "趣旨",
+          "bacaan": "しゅし",
+          "arti": ""
+        },
+        {
+          "kanji": "趣味",
+          "bacaan": "しゅみ",
+          "arti": ""
+        },
+        {
+          "kanji": "超える",
+          "bacaan": "こえる",
+          "arti": ""
+        },
+        {
+          "kanji": "越冬",
+          "bacaan": "えっとう",
+          "arti": ""
+        },
+        {
+          "kanji": "走る",
+          "bacaan": "はしる",
+          "arti": ""
+        },
+        {
+          "kanji": "起床",
+          "bacaan": "きしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "起立",
+          "bacaan": "きりつ",
+          "arti": ""
+        },
+        {
+          "kanji": "起伏",
+          "bacaan": "きふく",
+          "arti": ""
+        },
+        {
+          "kanji": "起こす",
+          "bacaan": "おこす",
+          "arti": ""
+        },
+        {
+          "kanji": "起きる",
+          "bacaan": "おきる",
+          "arti": ""
+        },
+        {
+          "kanji": "赴任",
+          "bacaan": "ふにん",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

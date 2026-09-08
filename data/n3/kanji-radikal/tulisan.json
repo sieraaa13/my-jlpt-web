@@ -1,0 +1,103 @@
+{
+  "title": "Kumpulan Kanji Radikal Tulisan",
+  "groups": [
+    {
+      "radikal": "文",
+      "label": "文 - Tulisan / budaya  (18 kata)",
+      "count": 18,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "斑",
+          "bacaan": "はん",
+          "arti": ""
+        },
+        {
+          "kanji": "文字",
+          "bacaan": "もじ",
+          "arti": ""
+        },
+        {
+          "kanji": "文盲",
+          "bacaan": "もんもう",
+          "arti": ""
+        },
+        {
+          "kanji": "文部省",
+          "bacaan": "もんぶしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "文法",
+          "bacaan": "ぶんぽう",
+          "arti": ""
+        },
+        {
+          "kanji": "文",
+          "bacaan": "ぶん",
+          "arti": ""
+        },
+        {
+          "kanji": "文学",
+          "bacaan": "ぶんがく",
+          "arti": ""
+        },
+        {
+          "kanji": "文化",
+          "bacaan": "ぶんか",
+          "arti": ""
+        },
+        {
+          "kanji": "文化財",
+          "bacaan": "ぶんかざい",
+          "arti": ""
+        },
+        {
+          "kanji": "文明",
+          "bacaan": "ぶんめい",
+          "arti": ""
+        },
+        {
+          "kanji": "文脈",
+          "bacaan": "ぶんみゃく",
+          "arti": ""
+        },
+        {
+          "kanji": "文体",
+          "bacaan": "ぶんたい",
+          "arti": ""
+        },
+        {
+          "kanji": "文通",
+          "bacaan": "ぶんつう",
+          "arti": ""
+        },
+        {
+          "kanji": "文句",
+          "bacaan": "もんく",
+          "arti": ""
+        },
+        {
+          "kanji": "文房具",
+          "bacaan": "ぶんぼうぐ",
+          "arti": ""
+        },
+        {
+          "kanji": "文献",
+          "bacaan": "ぶんけん",
+          "arti": ""
+        },
+        {
+          "kanji": "文書",
+          "bacaan": "ぶんしょ",
+          "arti": ""
+        },
+        {
+          "kanji": "文章",
+          "bacaan": "ぶんしょう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

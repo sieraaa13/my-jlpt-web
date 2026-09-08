@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Merah",
+  "groups": [
+    {
+      "radikal": "赤",
+      "label": "赤 - Merah  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "赤痢",
+          "bacaan": "せきり",
+          "arti": ""
+        },
+        {
+          "kanji": "赤血球",
+          "bacaan": "せっけっきゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "赤道",
+          "bacaan": "せきどう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

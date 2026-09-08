@@ -1,0 +1,63 @@
+{
+  "title": "Kumpulan Kanji Radikal Bulu / Corak",
+  "groups": [
+    {
+      "radikal": "彡",
+      "label": "彡 - Bulu / corak  (10 kata)",
+      "count": 10,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "形式",
+          "bacaan": "けいしき",
+          "arti": ""
+        },
+        {
+          "kanji": "形容詞",
+          "bacaan": "けいようし",
+          "arti": ""
+        },
+        {
+          "kanji": "形",
+          "bacaan": "けい",
+          "arti": ""
+        },
+        {
+          "kanji": "形",
+          "bacaan": "かたち",
+          "arti": ""
+        },
+        {
+          "kanji": "形成",
+          "bacaan": "けいせい",
+          "arti": ""
+        },
+        {
+          "kanji": "ひな形",
+          "bacaan": "ひながた",
+          "arti": ""
+        },
+        {
+          "kanji": "影",
+          "bacaan": "かげ",
+          "arti": ""
+        },
+        {
+          "kanji": "影響",
+          "bacaan": "えいきょう",
+          "arti": ""
+        },
+        {
+          "kanji": "彫り",
+          "bacaan": "ほり",
+          "arti": ""
+        },
+        {
+          "kanji": "彫る",
+          "bacaan": "ほる",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

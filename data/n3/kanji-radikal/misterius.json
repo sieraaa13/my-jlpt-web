@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Gelap / Misterius",
+  "groups": [
+    {
+      "radikal": "玄",
+      "label": "玄 - Gelap/misterius  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "率直",
+          "bacaan": "そっちょく",
+          "arti": ""
+        },
+        {
+          "kanji": "率",
+          "bacaan": "りつ",
+          "arti": ""
+        },
+        {
+          "kanji": "玄人",
+          "bacaan": "くろうと",
+          "arti": ""
+        },
+        {
+          "kanji": "玄米",
+          "bacaan": "げんまい",
+          "arti": ""
+        },
+        {
+          "kanji": "玄関",
+          "bacaan": "げんかん",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

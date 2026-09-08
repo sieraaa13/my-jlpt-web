@@ -1,0 +1,58 @@
+{
+  "title": "Kumpulan Kanji Radikal Suara",
+  "groups": [
+    {
+      "radikal": "音",
+      "label": "音 - Suara  (9 kata)",
+      "count": 9,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "音",
+          "bacaan": "おん",
+          "arti": ""
+        },
+        {
+          "kanji": "音痴",
+          "bacaan": "おんち",
+          "arti": ""
+        },
+        {
+          "kanji": "音楽",
+          "bacaan": "おんがく",
+          "arti": ""
+        },
+        {
+          "kanji": "音響",
+          "bacaan": "おんきょう",
+          "arti": ""
+        },
+        {
+          "kanji": "音響効果",
+          "bacaan": "おんきょうこうか",
+          "arti": ""
+        },
+        {
+          "kanji": "音声",
+          "bacaan": "おんせい",
+          "arti": ""
+        },
+        {
+          "kanji": "音速",
+          "bacaan": "おんそく",
+          "arti": ""
+        },
+        {
+          "kanji": "音",
+          "bacaan": "おと",
+          "arti": ""
+        },
+        {
+          "kanji": "音節",
+          "bacaan": "おんせつ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Kumpulan Kanji Radikal Berhenti / Macan",
+  "groups": [
+    {
+      "radikal": "艮",
+      "label": "艮 - Berhenti / macan  (5 kata)",
+      "count": 5,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "良心",
+          "bacaan": "りょうしん",
+          "arti": ""
+        },
+        {
+          "kanji": "良さ",
+          "bacaan": "よさ",
+          "arti": ""
+        },
+        {
+          "kanji": "良好",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "良縁",
+          "bacaan": "りょうえん",
+          "arti": ""
+        },
+        {
+          "kanji": "良かった",
+          "bacaan": "よかった",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

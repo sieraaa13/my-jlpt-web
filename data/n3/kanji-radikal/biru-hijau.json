@@ -1,0 +1,63 @@
+{
+  "title": "Kumpulan Kanji Radikal Biru / Hijau Muda",
+  "groups": [
+    {
+      "radikal": "青",
+      "label": "青 - Biru/hijau muda  (10 kata)",
+      "count": 10,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "静粛",
+          "bacaan": "せいしゅく",
+          "arti": ""
+        },
+        {
+          "kanji": "静まる",
+          "bacaan": "しずまる",
+          "arti": ""
+        },
+        {
+          "kanji": "静か",
+          "bacaan": "しずか",
+          "arti": ""
+        },
+        {
+          "kanji": "青春",
+          "bacaan": "せいしゅん",
+          "arti": ""
+        },
+        {
+          "kanji": "青少年",
+          "bacaan": "せいしょうねん",
+          "arti": ""
+        },
+        {
+          "kanji": "青年",
+          "bacaan": "せいねん",
+          "arti": ""
+        },
+        {
+          "kanji": "青",
+          "bacaan": "あお",
+          "arti": ""
+        },
+        {
+          "kanji": "青い",
+          "bacaan": "あおい",
+          "arti": ""
+        },
+        {
+          "kanji": "青空",
+          "bacaan": "あおぞら",
+          "arti": ""
+        },
+        {
+          "kanji": "青白い",
+          "bacaan": "あおじろい",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

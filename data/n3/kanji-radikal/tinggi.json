@@ -1,0 +1,133 @@
+{
+  "title": "Kumpulan Kanji Radikal Tinggi",
+  "groups": [
+    {
+      "radikal": "高",
+      "label": "高 - Tinggi  (24 kata)",
+      "count": 24,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "高い",
+          "bacaan": "たかい",
+          "arti": ""
+        },
+        {
+          "kanji": "高まる",
+          "bacaan": "たかまる",
+          "arti": ""
+        },
+        {
+          "kanji": "高さ",
+          "bacaan": "たかさ",
+          "arti": ""
+        },
+        {
+          "kanji": "高層",
+          "bacaan": "こうそう",
+          "arti": ""
+        },
+        {
+          "kanji": "高速",
+          "bacaan": "こうそく",
+          "arti": ""
+        },
+        {
+          "kanji": "高圧",
+          "bacaan": "こうあつ",
+          "arti": ""
+        },
+        {
+          "kanji": "高慢",
+          "bacaan": "こうまん",
+          "arti": ""
+        },
+        {
+          "kanji": "高価",
+          "bacaan": "こうか",
+          "arti": ""
+        },
+        {
+          "kanji": "高利",
+          "bacaan": "こうり",
+          "arti": ""
+        },
+        {
+          "kanji": "高ぶる",
+          "bacaan": "たかぶる",
+          "arti": ""
+        },
+        {
+          "kanji": "高度",
+          "bacaan": "こうど",
+          "arti": ""
+        },
+        {
+          "kanji": "高級",
+          "bacaan": "こうきゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "高等",
+          "bacaan": "こうとう",
+          "arti": ""
+        },
+        {
+          "kanji": "高校生",
+          "bacaan": "こうこうせい",
+          "arti": ""
+        },
+        {
+          "kanji": "高温",
+          "bacaan": "こうおん",
+          "arti": ""
+        },
+        {
+          "kanji": "高速道路",
+          "bacaan": "こうそくどうろ",
+          "arti": ""
+        },
+        {
+          "kanji": "高地",
+          "bacaan": "こうち",
+          "arti": ""
+        },
+        {
+          "kanji": "高血圧",
+          "bacaan": "こうけつあつ",
+          "arti": ""
+        },
+        {
+          "kanji": "高熱",
+          "bacaan": "こうねつ",
+          "arti": ""
+        },
+        {
+          "kanji": "高める",
+          "bacaan": "たかめる",
+          "arti": ""
+        },
+        {
+          "kanji": "高原",
+          "bacaan": "こうげん",
+          "arti": ""
+        },
+        {
+          "kanji": "高校",
+          "bacaan": "こうこう",
+          "arti": ""
+        },
+        {
+          "kanji": "高炉",
+          "bacaan": "こうろ",
+          "arti": ""
+        },
+        {
+          "kanji": "高等学校",
+          "bacaan": "こうとうがっこう",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

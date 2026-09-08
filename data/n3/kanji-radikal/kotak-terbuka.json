@@ -1,0 +1,78 @@
+{
+  "title": "Kumpulan Kanji Radikal Kotak Terbuka",
+  "groups": [
+    {
+      "radikal": "匚",
+      "label": "匚 - Kotak terbuka  (13 kata)",
+      "count": 13,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "医科",
+          "bacaan": "いか",
+          "arti": ""
+        },
+        {
+          "kanji": "匿名",
+          "bacaan": "とくめい",
+          "arti": ""
+        },
+        {
+          "kanji": "区々",
+          "bacaan": "まちまち",
+          "arti": ""
+        },
+        {
+          "kanji": "区別",
+          "bacaan": "くべつ",
+          "arti": ""
+        },
+        {
+          "kanji": "医学",
+          "bacaan": "いがく",
+          "arti": ""
+        },
+        {
+          "kanji": "医者",
+          "bacaan": "いしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "医師",
+          "bacaan": "いし",
+          "arti": ""
+        },
+        {
+          "kanji": "医療",
+          "bacaan": "いりょう",
+          "arti": ""
+        },
+        {
+          "kanji": "医院",
+          "bacaan": "いいん",
+          "arti": ""
+        },
+        {
+          "kanji": "医科大学",
+          "bacaan": "いかだいがく",
+          "arti": ""
+        },
+        {
+          "kanji": "区",
+          "bacaan": "く",
+          "arti": ""
+        },
+        {
+          "kanji": "区役所",
+          "bacaan": "くやくしょ",
+          "arti": ""
+        },
+        {
+          "kanji": "匹",
+          "bacaan": "ひき",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

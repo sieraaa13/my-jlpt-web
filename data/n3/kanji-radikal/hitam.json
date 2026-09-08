@@ -1,0 +1,73 @@
+{
+  "title": "Kumpulan Kanji Radikal Hitam",
+  "groups": [
+    {
+      "radikal": "黑",
+      "label": "黑 - Hitam  (12 kata)",
+      "count": 12,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "黴",
+          "bacaan": "かび",
+          "arti": ""
+        },
+        {
+          "kanji": "黙読",
+          "bacaan": "もくどく",
+          "arti": ""
+        },
+        {
+          "kanji": "黙礼",
+          "bacaan": "もくれい",
+          "arti": ""
+        },
+        {
+          "kanji": "黙る",
+          "bacaan": "だまる",
+          "arti": ""
+        },
+        {
+          "kanji": "黙考",
+          "bacaan": "もっこう",
+          "arti": ""
+        },
+        {
+          "kanji": "黙々",
+          "bacaan": "もくもく",
+          "arti": ""
+        },
+        {
+          "kanji": "黙認",
+          "bacaan": "もくにん",
+          "arti": ""
+        },
+        {
+          "kanji": "黒子",
+          "bacaan": "ほくろ",
+          "arti": ""
+        },
+        {
+          "kanji": "黒",
+          "bacaan": "くろ",
+          "arti": ""
+        },
+        {
+          "kanji": "黒板",
+          "bacaan": "こくばん",
+          "arti": ""
+        },
+        {
+          "kanji": "黒人",
+          "bacaan": "こくじん",
+          "arti": ""
+        },
+        {
+          "kanji": "黒字",
+          "bacaan": "くろじ",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

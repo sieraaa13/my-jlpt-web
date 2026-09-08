@@ -1,0 +1,103 @@
+{
+  "title": "Kumpulan Kanji Radikal Kekurangan",
+  "groups": [
+    {
+      "radikal": "欠",
+      "label": "欠 - Kekurangan / menguap  (18 kata)",
+      "count": 18,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "歌",
+          "bacaan": "うすい",
+          "arti": ""
+        },
+        {
+          "kanji": "歌詞",
+          "bacaan": "かし",
+          "arti": ""
+        },
+        {
+          "kanji": "歌謡",
+          "bacaan": "かよう",
+          "arti": ""
+        },
+        {
+          "kanji": "歌謡曲",
+          "bacaan": "かようきょく",
+          "arti": ""
+        },
+        {
+          "kanji": "歌手",
+          "bacaan": "かしゅ",
+          "arti": ""
+        },
+        {
+          "kanji": "歌う",
+          "bacaan": "うたう",
+          "arti": ""
+        },
+        {
+          "kanji": "歌舞伎",
+          "bacaan": "かぶき",
+          "arti": ""
+        },
+        {
+          "kanji": "欠食児童",
+          "bacaan": "けっしょくじどう",
+          "arti": ""
+        },
+        {
+          "kanji": "欠ける",
+          "bacaan": "欠ける",
+          "arti": ""
+        },
+        {
+          "kanji": "欠航",
+          "bacaan": "けっこう",
+          "arti": ""
+        },
+        {
+          "kanji": "欠席",
+          "bacaan": "けっせき",
+          "arti": ""
+        },
+        {
+          "kanji": "欠点",
+          "bacaan": "けってん",
+          "arti": ""
+        },
+        {
+          "kanji": "欠食",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "欠伸",
+          "bacaan": "あくび",
+          "arti": ""
+        },
+        {
+          "kanji": "次々",
+          "bacaan": "つぎつぎ",
+          "arti": "berturut-turut"
+        },
+        {
+          "kanji": "次第",
+          "bacaan": "しだい",
+          "arti": "tergantung / urutan"
+        },
+        {
+          "kanji": "次回",
+          "bacaan": "じかい",
+          "arti": "kali berikutnya"
+        },
+        {
+          "kanji": "次",
+          "bacaan": "つぎ",
+          "arti": "berikutnya"
+        }
+      ]
+    }
+  ]
+}

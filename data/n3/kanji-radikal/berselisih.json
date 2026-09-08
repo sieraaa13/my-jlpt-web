@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Radikal Berselisih",
+  "groups": [
+    {
+      "radikal": "舛",
+      "label": "舛 - Berselisih (kaki bertentangan)  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "舞台",
+          "bacaan": "ぶたい",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

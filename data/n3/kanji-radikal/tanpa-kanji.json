@@ -1,0 +1,18 @@
+{
+  "title": "Kumpulan Kanji Tanpa Radikal",
+  "groups": [
+    {
+      "radikal": "(tanpa kanji)",
+      "label": "(tanpa kanji) - Kata yang di file asli hanya ditulis dalam hiragana, tanpa kanji, jadi tidak bisa dikelompokkan per radikal  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "まむかい",
+          "bacaan": "",
+          "arti": ""
+        }
+      ],
+      "section": "main"
+    }
+  ]
+}

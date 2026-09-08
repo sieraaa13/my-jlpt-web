@@ -1,0 +1,88 @@
+{
+  "title": "Kumpulan Kanji Radikal Titik",
+  "groups": [
+    {
+      "radikal": "丶",
+      "label": "丶 - Titik  (15 kata)",
+      "count": 15,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "主演",
+          "bacaan": "しゅえん",
+          "arti": ""
+        },
+        {
+          "kanji": "主食",
+          "bacaan": "しゅしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "主張",
+          "bacaan": "しゅちょう",
+          "arti": "klaim / pendapat"
+        },
+        {
+          "kanji": "主催",
+          "bacaan": "しゅさい",
+          "arti": "penyelenggaraan"
+        },
+        {
+          "kanji": "主義",
+          "bacaan": "しゅぎ",
+          "arti": "paham / prinsip"
+        },
+        {
+          "kanji": "主語",
+          "bacaan": "しゅご",
+          "arti": "subjek (tata bahasa)"
+        },
+        {
+          "kanji": "主観",
+          "bacaan": "しゅかん",
+          "arti": "subjektif"
+        },
+        {
+          "kanji": "主体",
+          "bacaan": "しゅたい",
+          "arti": "subjek utama / badan utama"
+        },
+        {
+          "kanji": "主な",
+          "bacaan": "おもな",
+          "arti": "utama"
+        },
+        {
+          "kanji": "主に",
+          "bacaan": "おもに",
+          "arti": "terutama"
+        },
+        {
+          "kanji": "主役",
+          "bacaan": "しゅやく",
+          "arti": "peran utama"
+        },
+        {
+          "kanji": "主",
+          "bacaan": "ぬし",
+          "arti": "pemilik / tuan"
+        },
+        {
+          "kanji": "主人",
+          "bacaan": "しゅじん",
+          "arti": "suami / tuan rumah"
+        },
+        {
+          "kanji": "主任",
+          "bacaan": "しゅにん",
+          "arti": "kepala / penanggung jawab"
+        },
+        {
+          "kanji": "主婦",
+          "bacaan": "しゅふ",
+          "arti": "ibu rumah tangga"
+        }
+      ]
+    }
+  ]
+}

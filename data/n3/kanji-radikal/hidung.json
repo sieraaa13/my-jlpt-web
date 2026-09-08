@@ -1,0 +1,28 @@
+{
+  "title": "Kumpulan Kanji Radikal Hidung",
+  "groups": [
+    {
+      "radikal": "鼻",
+      "label": "鼻 - Hidung  (3 kata)",
+      "count": 3,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "鼻",
+          "bacaan": "はな",
+          "arti": ""
+        },
+        {
+          "kanji": "鼻水",
+          "bacaan": "はなみず",
+          "arti": ""
+        },
+        {
+          "kanji": "鼾",
+          "bacaan": "いびき",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

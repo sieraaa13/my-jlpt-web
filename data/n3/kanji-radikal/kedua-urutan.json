@@ -1,0 +1,53 @@
+{
+  "title": "Kumpulan Kanji Radikal Kedua (Urutan)",
+  "groups": [
+    {
+      "radikal": "乙",
+      "label": "乙 - Kedua (urutan)  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "乞食",
+          "bacaan": "こじき",
+          "arti": ""
+        },
+        {
+          "kanji": "乾く",
+          "bacaan": "かわく",
+          "arti": ""
+        },
+        {
+          "kanji": "乾燥",
+          "bacaan": "かんそう",
+          "arti": ""
+        },
+        {
+          "kanji": "乾季",
+          "bacaan": "かんき",
+          "arti": ""
+        },
+        {
+          "kanji": "乾かす",
+          "bacaan": "かわかす",
+          "arti": ""
+        },
+        {
+          "kanji": "乾電池",
+          "bacaan": "かんでんち",
+          "arti": ""
+        },
+        {
+          "kanji": "乱れ",
+          "bacaan": "みだれ",
+          "arti": ""
+        },
+        {
+          "kanji": "乱れる",
+          "bacaan": "みだれる",
+          "arti": ""
+        }
+      ]
+    }
+  ]
+}

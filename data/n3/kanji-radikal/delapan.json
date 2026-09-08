@@ -1,0 +1,73 @@
+{
+  "title": "Kumpulan Kanji Radikal Delapan",
+  "groups": [
+    {
+      "radikal": "八",
+      "label": "八 - Delapan  (12 kata)",
+      "count": 12,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "具体的な",
+          "bacaan": "ぐたいてき",
+          "arti": ""
+        },
+        {
+          "kanji": "具合",
+          "bacaan": "ぐあい",
+          "arti": ""
+        },
+        {
+          "kanji": "共通",
+          "bacaan": "きょうつう",
+          "arti": ""
+        },
+        {
+          "kanji": "共用",
+          "bacaan": "きょうよう",
+          "arti": ""
+        },
+        {
+          "kanji": "共同",
+          "bacaan": "きょうどう",
+          "arti": ""
+        },
+        {
+          "kanji": "共有",
+          "bacaan": "きょうゆう",
+          "arti": ""
+        },
+        {
+          "kanji": "共産主義",
+          "bacaan": "きょうさんしゅぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "共",
+          "bacaan": "とも",
+          "arti": ""
+        },
+        {
+          "kanji": "共産党",
+          "bacaan": "きょうさんとう",
+          "arti": ""
+        },
+        {
+          "kanji": "共感",
+          "bacaan": "きょうかん",
+          "arti": ""
+        },
+        {
+          "kanji": "共稼ぎ",
+          "bacaan": "ともかせぎ",
+          "arti": ""
+        },
+        {
+          "kanji": "六感",
+          "bacaan": "ろっかん",
+          "arti": "indra keenam"
+        }
+      ]
+    }
+  ]
+}
