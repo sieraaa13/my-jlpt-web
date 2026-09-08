@@ -1270,69 +1270,6 @@
       ]
     },
     {
-      "radikal": "肉",
-      "label": "肉 - Daging (bukan alam)  (11 kata)",
-      "count": 11,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "腰",
-          "bacaan": "こし",
-          "arti": "Pinggang / Pinggul / Punggung Bawah"
-        },
-        {
-          "kanji": "膝",
-          "bacaan": "ひざ",
-          "arti": "Lutut (Knee)"
-        },
-        {
-          "kanji": "膨大",
-          "bacaan": "ぼうだい",
-          "arti": "Sangat besar / Luar biasa besar / Masif / Kolosal"
-        },
-        {
-          "kanji": "臆病",
-          "bacaan": "おくびょう",
-          "arti": "Penakut / Pengecut / Gentar / Kurang Keberanian"
-        },
-        {
-          "kanji": "脱出",
-          "bacaan": "だっしゅつ",
-          "arti": "Melarikan diri / Kabur / Lolos / Keluar / Evakuasi (dari tempat sulit)"
-        },
-        {
-          "kanji": "肝心",
-          "bacaan": "かんじん",
-          "arti": "Hati dan sumsum / esensi dan inti"
-        },
-        {
-          "kanji": "脳",
-          "bacaan": "のう",
-          "arti": "Otak / Ensefalon / Pikiran"
-        },
-        {
-          "kanji": "膨らむ",
-          "bacaan": "ふくらむ",
-          "arti": "Mengembang / Membengkak / Menggembung / Membesar"
-        },
-        {
-          "kanji": "胸",
-          "bacaan": "むね",
-          "arti": "Dada / Payudara / Hati (dalam konteks perasaan)"
-        },
-        {
-          "kanji": "肌合いが良い",
-          "bacaan": "はだあいがよい",
-          "arti": "Kepribadiannya cocok / Memiliki sifat yang cocok / Gampang akrab / Cocok secara pribadi"
-        },
-        {
-          "kanji": "背景",
-          "bacaan": "はいけい",
-          "arti": "Latar belakang (visual) / Pemandangan di belakang (Background)"
-        }
-      ]
-    },
-    {
       "radikal": "夕",
       "label": "夕 - Senja / malam (bukan alam)  (9 kata)",
       "count": 9,
@@ -1434,44 +1371,6 @@
       ]
     },
     {
-      "radikal": "目",
-      "label": "目 - Mata (bukan alam)  (6 kata)",
-      "count": 6,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "相当",
-          "bacaan": "そうとう",
-          "arti": "Cukup / Sangat / Lumayan"
-        },
-        {
-          "kanji": "相次いで",
-          "bacaan": "あいついで",
-          "arti": "Berturut-turut / Satu per Satu / Beruntun / Terjadi dalam Jeda Singkat"
-        },
-        {
-          "kanji": "相手",
-          "bacaan": "あいて",
-          "arti": "Mitra / Pasangan / Lawan Bicara / Pihak Lain / Seseorang yang Berinteraksi"
-        },
-        {
-          "kanji": "相反",
-          "bacaan": "そうはん",
-          "arti": "Kontradiksi / Berlawanan / Bertentangan"
-        },
-        {
-          "kanji": "相対的",
-          "bacaan": "そうたいてき",
-          "arti": "Relatif / Secara relatif"
-        },
-        {
-          "kanji": "相場",
-          "bacaan": "そうば",
-          "arti": "Harga pasar / Nilai pasar / Tarif yang berlaku / Perkiraan yang wajar"
-        }
-      ]
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga (bukan alam)  (5 kata)",
       "count": 5,
@@ -1501,65 +1400,6 @@
           "kanji": "勢い",
           "bacaan": "いきおい",
           "arti": "Momentum / Kekuatan / Dorongan / Semangat / Kecepatan"
-        }
-      ]
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut (bukan alam)  (3 kata)",
-      "count": 3,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "和やか",
-          "bacaan": "なごやか",
-          "arti": "Ramah / Akrab / Damai / Tenang / Hangat"
-        },
-        {
-          "kanji": "名器並み",
-          "bacaan": "めいきなみ",
-          "arti": "Seperti Alat Musik Terbaik/Mahakarya"
-        },
-        {
-          "kanji": "名所",
-          "bacaan": "めいしょ",
-          "arti": "Tempat Terkenal / Tempat Wisata Populer / Tempat Pemandangan Indah"
-        }
-      ]
-    },
-    {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran (bukan alam)  (2 kata)",
-      "count": 2,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "想像",
-          "bacaan": "そうぞう",
-          "arti": "Imajinasi / Bayangan / Perkiraan"
-        },
-        {
-          "kanji": "惹かれる",
-          "bacaan": "ひかれる",
-          "arti": "Tertarik / Terpikat / Tergoda / Terpukau"
-        }
-      ]
-    },
-    {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala (bukan alam)  (2 kata)",
-      "count": 2,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "順調",
-          "bacaan": "じゅんちょう",
-          "arti": "Lancar / Berjalan Baik / Sesuai Rencana"
-        },
-        {
-          "kanji": "順々",
-          "bacaan": "じゅんじゅん",
-          "arti": "Berurutan / Berturut-turut / Secara Bergantian / Secara Berurutan"
         }
       ]
     },

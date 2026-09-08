@@ -485,68 +485,6 @@
       ]
     },
     {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (11 kata)",
-      "count": 11,
-      "words": [
-        {
-          "kanji": "感想",
-          "bacaan": "かんそう",
-          "arti": "Kesan / Pendapat / Tanggapan / Reaksi"
-        },
-        {
-          "kanji": "感情的",
-          "bacaan": "かんじょうてき",
-          "arti": "Emosional / Sarat Emosi / Sensitif"
-        },
-        {
-          "kanji": "感受性",
-          "bacaan": "かんじゅせい",
-          "arti": "Sensitivitas / Kepekaan / Daya Tanggap"
-        },
-        {
-          "kanji": "感性",
-          "bacaan": "かんせい",
-          "arti": "Sensibilitas / Kepekaan / Rasa Estetika / Daya Tanggap"
-        },
-        {
-          "kanji": "感化",
-          "bacaan": "かんか",
-          "arti": "Pengaruh / Mempengaruhi / Pencerahan / Transformasi mental/moral / Daya tarik"
-        },
-        {
-          "kanji": "恐怖",
-          "bacaan": "きょうふ",
-          "arti": "Ketakutan / Rasa Ngeri / Teror"
-        },
-        {
-          "kanji": "意図的",
-          "bacaan": "いとてき",
-          "arti": "Sengaja / Disengaja / Bertujuan"
-        },
-        {
-          "kanji": "意識",
-          "bacaan": "いしき",
-          "arti": "Kesadaran / Kesadaran Penuh / Niat"
-        },
-        {
-          "kanji": "意外",
-          "bacaan": "いがい",
-          "arti": "Tak Terduga / Di Luar Dugaan / Mengejutkan"
-        },
-        {
-          "kanji": "意思",
-          "bacaan": "いし",
-          "arti": "Kehendak / Niat / Maksud / Kemauan / Keputusan"
-        },
-        {
-          "kanji": "意図",
-          "bacaan": "いと",
-          "arti": "Niat / Maksud / Tujuan / Tujuan yang direncanakan"
-        }
-      ]
-    },
-    {
       "radikal": "大",
       "label": "大 - Besar  (11 kata)",
       "count": 11,
@@ -893,38 +831,6 @@
       ]
     },
     {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (5 kata)",
-      "count": 5,
-      "words": [
-        {
-          "kanji": "頼り",
-          "bacaan": "たより",
-          "arti": "Ketergantungan / Sandaran / Bantuan / Kabar / Berita"
-        },
-        {
-          "kanji": "頂上",
-          "bacaan": "ちょうじょう",
-          "arti": "Puncak / Puncak gunung / Puncak tertinggi / Summit"
-        },
-        {
-          "kanji": "頑固に",
-          "bacaan": "がんこに",
-          "arti": "Dengan Keras Kepala / Secara Kaku / Dengan Teguh"
-        },
-        {
-          "kanji": "頑丈",
-          "bacaan": "がんじょう",
-          "arti": "Kuat / Kokoh / Tahan lama / Sulit rusak"
-        },
-        {
-          "kanji": "顕著になる",
-          "bacaan": "けんちょになる",
-          "arti": "Menjadi jelas/menonjol"
-        }
-      ]
-    },
-    {
       "radikal": "八",
       "label": "八 - Delapan  (5 kata)",
       "count": 5,
@@ -1012,33 +918,6 @@
           "kanji": "祖父",
           "bacaan": "そふ",
           "arti": "Kakek (Kakek kandung / baik dari pihak ayah maupun ibu)"
-        }
-      ]
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "否定",
-          "bacaan": "ひてい",
-          "arti": "Penyangkalan / Penolakan / Negasi"
-        },
-        {
-          "kanji": "各社",
-          "bacaan": "かくしゃ",
-          "arti": "Setiap Perusahaan / Masing-masing Perusahaan"
-        },
-        {
-          "kanji": "各国",
-          "bacaan": "かくこく",
-          "arti": "Setiap negara / Berbagai negara / Negara-negara (masing-masing)"
-        },
-        {
-          "kanji": "商品",
-          "bacaan": "しょうひん",
-          "arti": "Produk / Barang Dagangan / Komoditas"
         }
       ]
     },
@@ -1587,30 +1466,6 @@
       ]
     },
     {
-      "radikal": "手",
-      "label": "手 - Tangan  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "才能",
-          "bacaan": "さいのう",
-          "arti": "Bakat / Talenta / Kemampuan Alami"
-        }
-      ]
-    },
-    {
-      "radikal": "卜",
-      "label": "卜 - (radikal jarang, lihat contoh kanji)  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "占める",
-          "bacaan": "しめる",
-          "arti": "Menduduki / Mengambil Porsi / Menempati / Mencakup"
-        }
-      ]
-    },
-    {
       "radikal": "工",
       "label": "工 - Pekerjaan / alat  (1 kata)",
       "count": 1,
@@ -1631,18 +1486,6 @@
           "kanji": "農薬",
           "bacaan": "のうやく",
           "arti": "Pestisida / Obat pertanian / Zat kimia pertanian"
-        }
-      ]
-    },
-    {
-      "radikal": "肉",
-      "label": "肉 - Daging  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "肯定",
-          "bacaan": "こうてい",
-          "arti": "Penegasan / Afirmasi / Menyetujui / Mengiyakan"
         }
       ]
     },
@@ -1727,18 +1570,6 @@
           "kanji": "影響",
           "bacaan": "えいきょう",
           "arti": "Pengaruh / Dampak / Efek"
-        }
-      ]
-    },
-    {
-      "radikal": "皮",
-      "label": "皮 - Kulit  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "皺",
-          "bacaan": "しわ",
-          "arti": "Kerutan / Lipatan / Keriput"
         }
       ]
     },

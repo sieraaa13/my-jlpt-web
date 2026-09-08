@@ -482,44 +482,6 @@
       "section": "main"
     },
     {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (6 kata)",
-      "count": 6,
-      "words": [
-        {
-          "kanji": "思想",
-          "bacaan": "しそう",
-          "arti": "ideologi / pikiran / pemikiran"
-        },
-        {
-          "kanji": "思いがけない",
-          "bacaan": "おもいがけない",
-          "arti": "tak terduga / tak disangka-sangka / mengejutkan"
-        },
-        {
-          "kanji": "思い切って",
-          "bacaan": "おもいきって",
-          "arti": "dengan tekad bulat / dengan berani / dengan tegas"
-        },
-        {
-          "kanji": "思い込み",
-          "bacaan": "おもいこみ",
-          "arti": "memasukkan pikiran / mengira/meyakini"
-        },
-        {
-          "kanji": "思いつく",
-          "bacaan": "おもいつく",
-          "arti": "mendapat ide / teringat akan / terpikir oleh"
-        },
-        {
-          "kanji": "思考",
-          "bacaan": "しこう",
-          "arti": "pemikiran / proses berpikir / pertimbangan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga  (3 kata)",
       "count": 3,
@@ -592,19 +554,6 @@
           "kanji": "原稿",
           "bacaan": "げんこう",
           "arti": "naskah / draf / manuskrip"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "願望",
-          "bacaan": "がんぼう",
-          "arti": "harapan kuat / keinginan mendalam / aspirasi"
         }
       ],
       "section": "main"

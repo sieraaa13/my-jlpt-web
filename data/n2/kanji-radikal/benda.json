@@ -624,72 +624,6 @@
       "section": "main"
     },
     {
-      "radikal": "冂",
-      "label": "冂 - Batas luar / border  (5 kata)",
-      "count": 5,
-      "words": [
-        {
-          "kanji": "円滑",
-          "bacaan": "えんかつ",
-          "arti": "bulat dan lancar / halus"
-        },
-        {
-          "kanji": "同郷",
-          "bacaan": "どうきょう",
-          "arti": "berasal dari daerah yang sama / sekampung / senegara"
-        },
-        {
-          "kanji": "同僚",
-          "bacaan": "どうりょう",
-          "arti": "rekan kerja / kolega / sesama pegawai"
-        },
-        {
-          "kanji": "同居",
-          "bacaan": "どうきょ",
-          "arti": "tinggal bersama / serumah"
-        },
-        {
-          "kanji": "同意",
-          "bacaan": "どうい",
-          "arti": "persetujuan / kesepakatan / konsensus"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (5 kata)",
-      "count": 5,
-      "words": [
-        {
-          "kanji": "周囲",
-          "bacaan": "しゅうい",
-          "arti": "lingkungan sekitar / area sekeliling"
-        },
-        {
-          "kanji": "回路",
-          "bacaan": "かいろ",
-          "arti": "sirkuit / rangkaian / jalur"
-        },
-        {
-          "kanji": "回数",
-          "bacaan": "かいすう",
-          "arti": "jumlah kali / frekuensi / bilangan pengulangan"
-        },
-        {
-          "kanji": "回復",
-          "bacaan": "かいふく",
-          "arti": "pemulihan / pembalihan / perbaikan"
-        },
-        {
-          "kanji": "各課",
-          "bacaan": "かくか",
-          "arti": "setiap divisi / setiap seksi / masing-masing departemen/bagian"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "矢",
       "label": "矢 - Anak panah  (5 kata)",
       "count": 5,
@@ -779,34 +713,6 @@
       "section": "main"
     },
     {
-      "radikal": "戶",
-      "label": "戶 - Pintu  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "所以",
-          "bacaan": "ゆえん",
-          "arti": "alasan / sebab / dasar"
-        },
-        {
-          "kanji": "所有欲",
-          "bacaan": "しょゆうよく",
-          "arti": "hasrat kepemilikan / keinginan untuk memiliki / naluri posesif"
-        },
-        {
-          "kanji": "所有",
-          "bacaan": "しょゆう",
-          "arti": "kepemilikan / hak milik / memiliki"
-        },
-        {
-          "kanji": "肩",
-          "bacaan": "かた",
-          "arti": "bahu / pundak"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "人",
       "label": "人 - Orang / manusia  (4 kata)",
       "count": 4,
@@ -863,24 +769,47 @@
       "section": "main"
     },
     {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (3 kata)",
+      "radikal": "口",
+      "label": "口 - Mulut  (3 kata)",
       "count": 3,
       "words": [
         {
-          "kanji": "応答",
-          "bacaan": "おうとお",
-          "arti": "respons / tanggapan / jawaban"
+          "kanji": "回路",
+          "bacaan": "かいろ",
+          "arti": "sirkuit / rangkaian / jalur"
         },
         {
-          "kanji": "惑う",
-          "bacaan": "まどう",
-          "arti": "bingung / ragu / tersesat"
+          "kanji": "回数",
+          "bacaan": "かいすう",
+          "arti": "jumlah kali / frekuensi / bilangan pengulangan"
         },
         {
-          "kanji": "忽ち",
-          "bacaan": "たちまち",
-          "arti": "seketika / dalam sekejap / dengan cepat"
+          "kanji": "回復",
+          "bacaan": "かいふく",
+          "arti": "pemulihan / pembalihan / perbaikan"
+        }
+      ],
+      "section": "main"
+    },
+    {
+      "radikal": "戶",
+      "label": "戶 - Pintu  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "所以",
+          "bacaan": "ゆえん",
+          "arti": "alasan / sebab / dasar"
+        },
+        {
+          "kanji": "所有欲",
+          "bacaan": "しょゆうよく",
+          "arti": "hasrat kepemilikan / keinginan untuk memiliki / naluri posesif"
+        },
+        {
+          "kanji": "所有",
+          "bacaan": "しょゆう",
+          "arti": "kepemilikan / hak milik / memiliki"
         }
       ],
       "section": "main"
@@ -1032,24 +961,6 @@
       "section": "main"
     },
     {
-      "radikal": "面",
-      "label": "面 - Wajah / permukaan  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "面倒",
-          "bacaan": "めんどう",
-          "arti": "merepotkan / sulit / menyusahkan"
-        },
-        {
-          "kanji": "面と向かって",
-          "bacaan": "めんとむかって",
-          "arti": "berhadapan muka / secara langsung"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "幺",
       "label": "幺 - Benang kecil / belum dewasa  (2 kata)",
       "count": 2,
@@ -1086,6 +997,19 @@
       "section": "main"
     },
     {
+      "radikal": "冂",
+      "label": "冂 - Batas luar / border  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "円滑",
+          "bacaan": "えんかつ",
+          "arti": "bulat dan lancar / halus"
+        }
+      ],
+      "section": "main"
+    },
+    {
       "radikal": "鬼",
       "label": "鬼 - Hantu / roh  (1 kata)",
       "count": 1,
@@ -1094,19 +1018,6 @@
           "kanji": "魔法",
           "bacaan": "まほう",
           "arti": "sihir / sulap / ilmu gaib"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "皮",
-      "label": "皮 - Kulit  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "皮膚",
-          "bacaan": "ひふ",
-          "arti": "kulit / organ kulit"
         }
       ],
       "section": "main"
@@ -1146,19 +1057,6 @@
           "kanji": "細々",
           "bacaan": "ほそぼそ",
           "arti": "kecil-kecilan / tipis / samara-samar"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "顧客",
-          "bacaan": "こきゃく",
-          "arti": "pelanggan / klien / nasabah"
         }
       ],
       "section": "main"

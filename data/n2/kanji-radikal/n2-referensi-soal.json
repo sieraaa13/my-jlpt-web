@@ -539,34 +539,6 @@
       "section": "main"
     },
     {
-      "radikal": "手",
-      "label": "手 - Tangan  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "手軽",
-          "bacaan": "てがる",
-          "arti": "praktis / mudah / sederhana"
-        },
-        {
-          "kanji": "損傷",
-          "bacaan": "そんしょう",
-          "arti": "kerusakan / cedera / luka"
-        },
-        {
-          "kanji": "接近",
-          "bacaan": "せっきん",
-          "arti": "mendekat / pendekatan"
-        },
-        {
-          "kanji": "手配",
-          "bacaan": "てはい",
-          "arti": "persiapan / pengaturan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "彳",
       "label": "彳 - Melangkah kecil  (4 kata)",
       "count": 4,
@@ -595,29 +567,6 @@
       "section": "main"
     },
     {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "惰力",
-          "bacaan": "だりょく",
-          "arti": "inersia / gaya lembam"
-        },
-        {
-          "kanji": "応じる",
-          "bacaan": "おうじる",
-          "arti": "menanggapi / memenuhi / menyesuaikan"
-        },
-        {
-          "kanji": "怠る",
-          "bacaan": "おこたる",
-          "arti": "lalai / mengabaikan / lupa menjalankan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "人",
       "label": "人 - Orang / manusia  (3 kata)",
       "count": 3,
@@ -641,29 +590,6 @@
       "section": "main"
     },
     {
-      "radikal": "目",
-      "label": "目 - Mata  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "直前",
-          "bacaan": "ちょくぜん",
-          "arti": "tepat sebelum / tepat di depan"
-        },
-        {
-          "kanji": "直接",
-          "bacaan": "ちょくせつ",
-          "arti": "langsung"
-        },
-        {
-          "kanji": "直ぐに",
-          "bacaan": "すぐに",
-          "arti": "segera / dengan segera / langsung"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "女",
       "label": "女 - Wanita/perempuan  (3 kata)",
       "count": 3,
@@ -682,24 +608,6 @@
           "kanji": "姿勢",
           "bacaan": "しせい",
           "arti": "postur / posisi tubuh / sikap"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "右図",
-          "bacaan": "みぎず",
-          "arti": "gambar di sebelah kanan"
-        },
-        {
-          "kanji": "回避",
-          "bacaan": "かいひ",
-          "arti": "menghindar / mengelak / mencegah terjadinya sesuatu"
         }
       ],
       "section": "main"
@@ -736,24 +644,6 @@
           "kanji": "行為",
           "bacaan": "こうい",
           "arti": "tindakan / perbuatan / aksi"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "足",
-      "label": "足 - Kaki  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "路面",
-          "bacaan": "ろめん",
-          "arti": "permukaan jalan"
-        },
-        {
-          "kanji": "路肩",
-          "bacaan": "ろかた",
-          "arti": "bahu jalan"
         }
       ],
       "section": "main"
@@ -885,19 +775,27 @@
       "section": "main"
     },
     {
+      "radikal": "口",
+      "label": "口 - Mulut  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "回避",
+          "bacaan": "かいひ",
+          "arti": "menghindar / mengelak / mencegah terjadinya sesuatu"
+        }
+      ],
+      "section": "main"
+    },
+    {
       "radikal": "巛",
-      "label": "巛 - Aliran sungai  (2 kata)",
-      "count": 2,
+      "label": "巛 - Aliran sungai  (1 kata)",
+      "count": 1,
       "words": [
         {
           "kanji": "巡視員",
           "bacaan": "じゅんしいん",
           "arti": "petugas patroli / petugas pengawas"
-        },
-        {
-          "kanji": "順々",
-          "bacaan": "じゅんじゅん",
-          "arti": "berurutan / berturut-turut / secara bergantian"
         }
       ],
       "section": "main"
@@ -963,19 +861,6 @@
           "kanji": "視界",
           "bacaan": "しかい",
           "arti": "jarak pandang / bidang pandang / penglihatan"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "身",
-      "label": "身 - Tubuh  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "身体",
-          "bacaan": "しんたい",
-          "arti": "tubuh / badan"
         }
       ],
       "section": "main"

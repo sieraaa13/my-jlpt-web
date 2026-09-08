@@ -3,8 +3,8 @@
   "groups": [
     {
       "radikal": "手",
-      "label": "手 - Tangan  (54 kata)",
-      "count": 54,
+      "label": "手 - Tangan  (59 kata)",
+      "count": 59,
       "section": "main",
       "words": [
         {
@@ -276,13 +276,38 @@
           "kanji": "推測",
           "bacaan": "すいそく",
           "arti": "Dugaan / Spekulasi / Kesimpulan / Inferensi / Menerka"
+        },
+        {
+          "kanji": "挙げる",
+          "bacaan": "あげる",
+          "arti": "mengangkat / menaikkan"
+        },
+        {
+          "kanji": "損傷",
+          "bacaan": "そんしょう",
+          "arti": "kerusakan / cedera / luka"
+        },
+        {
+          "kanji": "接近",
+          "bacaan": "せっきん",
+          "arti": "mendekat / pendekatan"
+        },
+        {
+          "kanji": "手配",
+          "bacaan": "てはい",
+          "arti": "persiapan / pengaturan"
+        },
+        {
+          "kanji": "才能",
+          "bacaan": "さいのう",
+          "arti": "Bakat / Talenta / Kemampuan Alami"
         }
       ]
     },
     {
       "radikal": "心",
-      "label": "心 - Hati / pikiran  (29 kata)",
-      "count": 29,
+      "label": "心 - Hati / pikiran  (57 kata)",
+      "count": 57,
       "section": "main",
       "words": [
         {
@@ -429,13 +454,153 @@
           "kanji": "志願",
           "bacaan": "しがん",
           "arti": "Permohonan yang didorong oleh keinginan atau tujuan pribadi"
+        },
+        {
+          "kanji": "想像",
+          "bacaan": "そうぞう",
+          "arti": "Imajinasi / Bayangan / Perkiraan"
+        },
+        {
+          "kanji": "惹かれる",
+          "bacaan": "ひかれる",
+          "arti": "Tertarik / Terpikat / Tergoda / Terpukau"
+        },
+        {
+          "kanji": "恐れる",
+          "bacaan": "おそれる",
+          "arti": "takut / khawatir / gentar"
+        },
+        {
+          "kanji": "恵み",
+          "bacaan": "めぐみ",
+          "arti": "berkah / rahmat / anugerah"
+        },
+        {
+          "kanji": "急激",
+          "bacaan": "きゅうげき",
+          "arti": "mendadak dan drastis"
+        },
+        {
+          "kanji": "応答",
+          "bacaan": "おうとお",
+          "arti": "respons / tanggapan / jawaban"
+        },
+        {
+          "kanji": "惑う",
+          "bacaan": "まどう",
+          "arti": "bingung / ragu / tersesat"
+        },
+        {
+          "kanji": "忽ち",
+          "bacaan": "たちまち",
+          "arti": "seketika / dalam sekejap / dengan cepat"
+        },
+        {
+          "kanji": "惰力",
+          "bacaan": "だりょく",
+          "arti": "inersia / gaya lembam"
+        },
+        {
+          "kanji": "応じる",
+          "bacaan": "おうじる",
+          "arti": "menanggapi / memenuhi / menyesuaikan"
+        },
+        {
+          "kanji": "怠る",
+          "bacaan": "おこたる",
+          "arti": "lalai / mengabaikan / lupa menjalankan"
+        },
+        {
+          "kanji": "感想",
+          "bacaan": "かんそう",
+          "arti": "Kesan / Pendapat / Tanggapan / Reaksi"
+        },
+        {
+          "kanji": "感情的",
+          "bacaan": "かんじょうてき",
+          "arti": "Emosional / Sarat Emosi / Sensitif"
+        },
+        {
+          "kanji": "感受性",
+          "bacaan": "かんじゅせい",
+          "arti": "Sensitivitas / Kepekaan / Daya Tanggap"
+        },
+        {
+          "kanji": "感性",
+          "bacaan": "かんせい",
+          "arti": "Sensibilitas / Kepekaan / Rasa Estetika / Daya Tanggap"
+        },
+        {
+          "kanji": "感化",
+          "bacaan": "かんか",
+          "arti": "Pengaruh / Mempengaruhi / Pencerahan / Transformasi mental/moral / Daya tarik"
+        },
+        {
+          "kanji": "恐怖",
+          "bacaan": "きょうふ",
+          "arti": "Ketakutan / Rasa Ngeri / Teror"
+        },
+        {
+          "kanji": "意図的",
+          "bacaan": "いとてき",
+          "arti": "Sengaja / Disengaja / Bertujuan"
+        },
+        {
+          "kanji": "意識",
+          "bacaan": "いしき",
+          "arti": "Kesadaran / Kesadaran Penuh / Niat"
+        },
+        {
+          "kanji": "意外",
+          "bacaan": "いがい",
+          "arti": "Tak Terduga / Di Luar Dugaan / Mengejutkan"
+        },
+        {
+          "kanji": "意思",
+          "bacaan": "いし",
+          "arti": "Kehendak / Niat / Maksud / Kemauan / Keputusan"
+        },
+        {
+          "kanji": "意図",
+          "bacaan": "いと",
+          "arti": "Niat / Maksud / Tujuan / Tujuan yang direncanakan"
+        },
+        {
+          "kanji": "思想",
+          "bacaan": "しそう",
+          "arti": "ideologi / pikiran / pemikiran"
+        },
+        {
+          "kanji": "思いがけない",
+          "bacaan": "おもいがけない",
+          "arti": "tak terduga / tak disangka-sangka / mengejutkan"
+        },
+        {
+          "kanji": "思い切って",
+          "bacaan": "おもいきって",
+          "arti": "dengan tekad bulat / dengan berani / dengan tegas"
+        },
+        {
+          "kanji": "思い込み",
+          "bacaan": "おもいこみ",
+          "arti": "memasukkan pikiran / mengira/meyakini"
+        },
+        {
+          "kanji": "思いつく",
+          "bacaan": "おもいつく",
+          "arti": "mendapat ide / teringat akan / terpikir oleh"
+        },
+        {
+          "kanji": "思考",
+          "bacaan": "しこう",
+          "arti": "pemikiran / proses berpikir / pertimbangan"
         }
       ]
     },
     {
       "radikal": "口",
-      "label": "口 - Mulut  (21 kata)",
-      "count": 21,
+      "label": "口 - Mulut  (38 kata)",
+      "count": 38,
       "section": "main",
       "words": [
         {
@@ -542,6 +707,272 @@
           "kanji": "器",
           "bacaan": "うつわ",
           "arti": "Wadah / Bejana / Mangkuk / Piring"
+        },
+        {
+          "kanji": "和やか",
+          "bacaan": "なごやか",
+          "arti": "Ramah / Akrab / Damai / Tenang / Hangat"
+        },
+        {
+          "kanji": "名器並み",
+          "bacaan": "めいきなみ",
+          "arti": "Seperti Alat Musik Terbaik/Mahakarya"
+        },
+        {
+          "kanji": "名所",
+          "bacaan": "めいしょ",
+          "arti": "Tempat Terkenal / Tempat Wisata Populer / Tempat Pemandangan Indah"
+        },
+        {
+          "kanji": "司会",
+          "bacaan": "しかい",
+          "arti": "pembawa acara / MC"
+        },
+        {
+          "kanji": "向上",
+          "bacaan": "こうじょう",
+          "arti": "peningkatan / kemajuan"
+        },
+        {
+          "kanji": "同郷",
+          "bacaan": "どうきょう",
+          "arti": "berasal dari daerah yang sama / sekampung / senegara"
+        },
+        {
+          "kanji": "同僚",
+          "bacaan": "どうりょう",
+          "arti": "rekan kerja / kolega / sesama pegawai"
+        },
+        {
+          "kanji": "同居",
+          "bacaan": "どうきょ",
+          "arti": "tinggal bersama / serumah"
+        },
+        {
+          "kanji": "同意",
+          "bacaan": "どうい",
+          "arti": "persetujuan / kesepakatan / konsensus"
+        },
+        {
+          "kanji": "周囲",
+          "bacaan": "しゅうい",
+          "arti": "lingkungan sekitar / area sekeliling"
+        },
+        {
+          "kanji": "各課",
+          "bacaan": "かくか",
+          "arti": "setiap divisi / setiap seksi / masing-masing departemen/bagian"
+        },
+        {
+          "kanji": "右図",
+          "bacaan": "みぎず",
+          "arti": "gambar di sebelah kanan"
+        },
+        {
+          "kanji": "否定",
+          "bacaan": "ひてい",
+          "arti": "Penyangkalan / Penolakan / Negasi"
+        },
+        {
+          "kanji": "各社",
+          "bacaan": "かくしゃ",
+          "arti": "Setiap Perusahaan / Masing-masing Perusahaan"
+        },
+        {
+          "kanji": "各国",
+          "bacaan": "かくこく",
+          "arti": "Setiap negara / Berbagai negara / Negara-negara (masing-masing)"
+        },
+        {
+          "kanji": "商品",
+          "bacaan": "しょうひん",
+          "arti": "Produk / Barang Dagangan / Komoditas"
+        },
+        {
+          "kanji": "占める",
+          "bacaan": "しめる",
+          "arti": "Menduduki / Mengambil Porsi / Menempati / Mencakup"
+        }
+      ]
+    },
+    {
+      "radikal": "目",
+      "label": "目 - Mata  (17 kata)",
+      "count": 17,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "看板",
+          "bacaan": "かんばん",
+          "arti": "Papan nama / Papan reklame / Plakat"
+        },
+        {
+          "kanji": "瞳",
+          "bacaan": "ひとみ",
+          "arti": "Pupil Mata / Bola Mata / Mata"
+        },
+        {
+          "kanji": "目指す",
+          "bacaan": "めざす",
+          "arti": "Bertujuan untuk / Mengincar / Menargetkan / Menuju ke"
+        },
+        {
+          "kanji": "目的地",
+          "bacaan": "もくてきち",
+          "arti": "Tujuan / Destinasi"
+        },
+        {
+          "kanji": "目印",
+          "bacaan": "めじるし",
+          "arti": "Tanda / Markah tanah / Penanda / Titik acuan / Petunjuk"
+        },
+        {
+          "kanji": "相当",
+          "bacaan": "そうとう",
+          "arti": "Cukup / Sangat / Lumayan"
+        },
+        {
+          "kanji": "相次いで",
+          "bacaan": "あいついで",
+          "arti": "Berturut-turut / Satu per Satu / Beruntun / Terjadi dalam Jeda Singkat"
+        },
+        {
+          "kanji": "相手",
+          "bacaan": "あいて",
+          "arti": "Mitra / Pasangan / Lawan Bicara / Pihak Lain / Seseorang yang Berinteraksi"
+        },
+        {
+          "kanji": "相反",
+          "bacaan": "そうはん",
+          "arti": "Kontradiksi / Berlawanan / Bertentangan"
+        },
+        {
+          "kanji": "相対的",
+          "bacaan": "そうたいてき",
+          "arti": "Relatif / Secara relatif"
+        },
+        {
+          "kanji": "相場",
+          "bacaan": "そうば",
+          "arti": "Harga pasar / Nilai pasar / Tarif yang berlaku / Perkiraan yang wajar"
+        },
+        {
+          "kanji": "直ちに",
+          "bacaan": "ただちに",
+          "arti": "segera / seketika / langsung"
+        },
+        {
+          "kanji": "直立歩行",
+          "bacaan": "ちょくりつほこう",
+          "arti": "berjalan tegak (bipedalisme)"
+        },
+        {
+          "kanji": "直結",
+          "bacaan": "ちょっけつ",
+          "arti": "koneksi langsung"
+        },
+        {
+          "kanji": "直前",
+          "bacaan": "ちょくぜん",
+          "arti": "tepat sebelum / sesaat sebelum"
+        },
+        {
+          "kanji": "直接",
+          "bacaan": "ちょくせつ",
+          "arti": "langsung"
+        },
+        {
+          "kanji": "直ぐに",
+          "bacaan": "すぐに",
+          "arti": "segera / dengan segera / langsung"
+        }
+      ]
+    },
+    {
+      "radikal": "肉",
+      "label": "肉 - Daging  (16 kata)",
+      "count": 16,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "育成",
+          "bacaan": "いくせい",
+          "arti": "Pembinaan / Pengembangan / Pelatihan / Memelihara / Mengembangkan"
+        },
+        {
+          "kanji": "育児",
+          "bacaan": "いくじ",
+          "arti": "Mengasuh Anak / Membesarkan Anak / Pengasuhan Anak"
+        },
+        {
+          "kanji": "腰",
+          "bacaan": "こし",
+          "arti": "Pinggang / Pinggul / Punggung Bawah"
+        },
+        {
+          "kanji": "膝",
+          "bacaan": "ひざ",
+          "arti": "Lutut (Knee)"
+        },
+        {
+          "kanji": "膨大",
+          "bacaan": "ぼうだい",
+          "arti": "Sangat besar / Luar biasa besar / Masif / Kolosal"
+        },
+        {
+          "kanji": "臆病",
+          "bacaan": "おくびょう",
+          "arti": "Penakut / Pengecut / Gentar / Kurang Keberanian"
+        },
+        {
+          "kanji": "脱出",
+          "bacaan": "だっしゅつ",
+          "arti": "Melarikan diri / Kabur / Lolos / Keluar / Evakuasi (dari tempat sulit)"
+        },
+        {
+          "kanji": "肝心",
+          "bacaan": "かんじん",
+          "arti": "Hati dan sumsum / esensi dan inti"
+        },
+        {
+          "kanji": "脳",
+          "bacaan": "のう",
+          "arti": "Otak / Ensefalon / Pikiran"
+        },
+        {
+          "kanji": "膨らむ",
+          "bacaan": "ふくらむ",
+          "arti": "Mengembang / Membengkak / Menggembung / Membesar"
+        },
+        {
+          "kanji": "胸",
+          "bacaan": "むね",
+          "arti": "Dada / Payudara / Hati (dalam konteks perasaan)"
+        },
+        {
+          "kanji": "肌合いが良い",
+          "bacaan": "はだあいがよい",
+          "arti": "Kepribadiannya cocok / Memiliki sifat yang cocok / Gampang akrab / Cocok secara pribadi"
+        },
+        {
+          "kanji": "背景",
+          "bacaan": "はいけい",
+          "arti": "Latar belakang (visual) / Pemandangan di belakang (Background)"
+        },
+        {
+          "kanji": "能度",
+          "bacaan": "のうど",
+          "arti": "tingkat kemampuan / derajat kinerja"
+        },
+        {
+          "kanji": "肩",
+          "bacaan": "かた",
+          "arti": "bahu / pundak"
+        },
+        {
+          "kanji": "肯定",
+          "bacaan": "こうてい",
+          "arti": "Penegasan / Afirmasi / Menyetujui / Mengiyakan"
         }
       ]
     },
@@ -614,6 +1045,117 @@
       ]
     },
     {
+      "radikal": "頁",
+      "label": "頁 - Halaman / kepala  (11 kata)",
+      "count": 11,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "領収書",
+          "bacaan": "りょうしゅうしょ",
+          "arti": "Kwitansi / Tanda terima / Bukti pembayaran"
+        },
+        {
+          "kanji": "領域",
+          "bacaan": "りょういき",
+          "arti": "Area yang dikuasai atau berada dalam batas tertentu"
+        },
+        {
+          "kanji": "順調",
+          "bacaan": "じゅんちょう",
+          "arti": "Lancar / Berjalan Baik / Sesuai Rencana"
+        },
+        {
+          "kanji": "順々",
+          "bacaan": "じゅんじゅん",
+          "arti": "Berurutan / Berturut-turut / Secara Bergantian / Secara Berurutan"
+        },
+        {
+          "kanji": "顧客",
+          "bacaan": "こきゃく",
+          "arti": "pelanggan / klien / nasabah"
+        },
+        {
+          "kanji": "頼り",
+          "bacaan": "たより",
+          "arti": "Ketergantungan / Sandaran / Bantuan / Kabar / Berita"
+        },
+        {
+          "kanji": "頂上",
+          "bacaan": "ちょうじょう",
+          "arti": "Puncak / Puncak gunung / Puncak tertinggi / Summit"
+        },
+        {
+          "kanji": "頑固に",
+          "bacaan": "がんこに",
+          "arti": "Dengan Keras Kepala / Secara Kaku / Dengan Teguh"
+        },
+        {
+          "kanji": "頑丈",
+          "bacaan": "がんじょう",
+          "arti": "Kuat / Kokoh / Tahan lama / Sulit rusak"
+        },
+        {
+          "kanji": "顕著になる",
+          "bacaan": "けんちょになる",
+          "arti": "Menjadi jelas/menonjol"
+        },
+        {
+          "kanji": "願望",
+          "bacaan": "がんぼう",
+          "arti": "harapan kuat / keinginan mendalam / aspirasi"
+        }
+      ]
+    },
+    {
+      "radikal": "足",
+      "label": "足 - Kaki  (8 kata)",
+      "count": 8,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "踏切",
+          "bacaan": "ふみきり",
+          "arti": "Perlintasan Kereta Api"
+        },
+        {
+          "kanji": "跡",
+          "bacaan": "あと",
+          "arti": "Jejak / Bekas / Sisa / Reruntuhan"
+        },
+        {
+          "kanji": "躍起",
+          "bacaan": "やっき",
+          "arti": "Bersemangat (berlebihan) / Bersikeras / Berjuang Keras / Terlalu Berusaha"
+        },
+        {
+          "kanji": "踏む",
+          "bacaan": "ふむ",
+          "arti": "Menginjak / Melangkah / Mengambil Langkah / Mengikuti/Mengalami"
+        },
+        {
+          "kanji": "躓く",
+          "bacaan": "つまずく",
+          "arti": "Tersandung / Terjerembab"
+        },
+        {
+          "kanji": "踏まえる",
+          "bacaan": "ふまえる",
+          "arti": "Mendasarkan pada / Mempertimbangkan / Berpegangan pada (fakta/situasi)"
+        },
+        {
+          "kanji": "路面",
+          "bacaan": "ろめん",
+          "arti": "permukaan jalan"
+        },
+        {
+          "kanji": "路肩",
+          "bacaan": "ろかた",
+          "arti": "bahu jalan"
+        }
+      ]
+    },
+    {
       "radikal": "角",
       "label": "角 - Sudut / tanduk  (7 kata)",
       "count": 7,
@@ -657,122 +1199,56 @@
       ]
     },
     {
-      "radikal": "足",
-      "label": "足 - Kaki  (6 kata)",
-      "count": 6,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "踏切",
-          "bacaan": "ふみきり",
-          "arti": "Perlintasan Kereta Api"
-        },
-        {
-          "kanji": "跡",
-          "bacaan": "あと",
-          "arti": "Jejak / Bekas / Sisa / Reruntuhan"
-        },
-        {
-          "kanji": "躍起",
-          "bacaan": "やっき",
-          "arti": "Bersemangat (berlebihan) / Bersikeras / Berjuang Keras / Terlalu Berusaha"
-        },
-        {
-          "kanji": "踏む",
-          "bacaan": "ふむ",
-          "arti": "Menginjak / Melangkah / Mengambil Langkah / Mengikuti/Mengalami"
-        },
-        {
-          "kanji": "躓く",
-          "bacaan": "つまずく",
-          "arti": "Tersandung / Terjerembab"
-        },
-        {
-          "kanji": "踏まえる",
-          "bacaan": "ふまえる",
-          "arti": "Mendasarkan pada / Mempertimbangkan / Berpegangan pada (fakta/situasi)"
-        }
-      ]
-    },
-    {
-      "radikal": "目",
-      "label": "目 - Mata  (5 kata)",
-      "count": 5,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "看板",
-          "bacaan": "かんばん",
-          "arti": "Papan nama / Papan reklame / Plakat"
-        },
-        {
-          "kanji": "瞳",
-          "bacaan": "ひとみ",
-          "arti": "Pupil Mata / Bola Mata / Mata"
-        },
-        {
-          "kanji": "目指す",
-          "bacaan": "めざす",
-          "arti": "Bertujuan untuk / Mengincar / Menargetkan / Menuju ke"
-        },
-        {
-          "kanji": "目的地",
-          "bacaan": "もくてきち",
-          "arti": "Tujuan / Destinasi"
-        },
-        {
-          "kanji": "目印",
-          "bacaan": "めじるし",
-          "arti": "Tanda / Markah tanah / Penanda / Titik acuan / Petunjuk"
-        }
-      ]
-    },
-    {
-      "radikal": "頁",
-      "label": "頁 - Halaman / kepala  (2 kata)",
-      "count": 2,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "領収書",
-          "bacaan": "りょうしゅうしょ",
-          "arti": "Kwitansi / Tanda terima / Bukti pembayaran"
-        },
-        {
-          "kanji": "領域",
-          "bacaan": "りょういき",
-          "arti": "Area yang dikuasai atau berada dalam batas tertentu"
-        }
-      ]
-    },
-    {
-      "radikal": "肉",
-      "label": "肉 - Daging  (2 kata)",
-      "count": 2,
-      "section": "main",
-      "words": [
-        {
-          "kanji": "育成",
-          "bacaan": "いくせい",
-          "arti": "Pembinaan / Pengembangan / Pelatihan / Memelihara / Mengembangkan"
-        },
-        {
-          "kanji": "育児",
-          "bacaan": "いくじ",
-          "arti": "Mengasuh Anak / Membesarkan Anak / Pengasuhan Anak"
-        }
-      ]
-    },
-    {
       "radikal": "身",
-      "label": "身 - Tubuh  (1 kata)",
-      "count": 1,
+      "label": "身 - Tubuh  (2 kata)",
+      "count": 2,
       "section": "main",
       "words": [
         {
           "kanji": "躾",
           "bacaan": "しつけ",
           "arti": "Disiplin / Etiket / Tata krama / Pembinaan perilaku"
+        },
+        {
+          "kanji": "身体",
+          "bacaan": "しんたい",
+          "arti": "tubuh / badan"
+        }
+      ]
+    },
+    {
+      "radikal": "面",
+      "label": "面 - Wajah / permukaan  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "面倒",
+          "bacaan": "めんどう",
+          "arti": "merepotkan / sulit / menyusahkan"
+        },
+        {
+          "kanji": "面と向かって",
+          "bacaan": "めんとむかって",
+          "arti": "berhadapan muka / secara langsung"
+        }
+      ]
+    },
+    {
+      "radikal": "皮",
+      "label": "皮 - Kulit  (2 kata)",
+      "count": 2,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "皮膚",
+          "bacaan": "ひふ",
+          "arti": "kulit / organ kulit"
+        },
+        {
+          "kanji": "皺",
+          "bacaan": "しわ",
+          "arti": "Kerutan / Lipatan / Keriput"
         }
       ]
     },

@@ -35,34 +35,6 @@
       "section": "main"
     },
     {
-      "radikal": "目",
-      "label": "目 - Mata  (4 kata)",
-      "count": 4,
-      "words": [
-        {
-          "kanji": "直ちに",
-          "bacaan": "ただちに",
-          "arti": "segera / seketika / langsung"
-        },
-        {
-          "kanji": "直立歩行",
-          "bacaan": "ちょくりつほこう",
-          "arti": "berjalan tegak (bipedalisme)"
-        },
-        {
-          "kanji": "直結",
-          "bacaan": "ちょっけつ",
-          "arti": "koneksi langsung"
-        },
-        {
-          "kanji": "直前",
-          "bacaan": "ちょくぜん",
-          "arti": "tepat sebelum / sesaat sebelum"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "寸",
       "label": "寸 - Ukuran / jari tangan  (3 kata)",
       "count": 3,
@@ -133,14 +105,9 @@
     },
     {
       "radikal": "小",
-      "label": "小 - Kecil  (3 kata)",
-      "count": 3,
+      "label": "小 - Kecil  (2 kata)",
+      "count": 2,
       "words": [
-        {
-          "kanji": "挙げる",
-          "bacaan": "あげる",
-          "arti": "mengangkat / menaikkan"
-        },
         {
           "kanji": "小手先",
           "bacaan": "こてさき",
@@ -150,29 +117,6 @@
           "kanji": "小柄",
           "bacaan": "こがら",
           "arti": "bertubuh kecil / mungil"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "心",
-      "label": "心 - Hati / pikiran  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "恐れる",
-          "bacaan": "おそれる",
-          "arti": "takut / khawatir / gentar"
-        },
-        {
-          "kanji": "恵み",
-          "bacaan": "めぐみ",
-          "arti": "berkah / rahmat / anugerah"
-        },
-        {
-          "kanji": "急激",
-          "bacaan": "きゅうげき",
-          "arti": "mendadak dan drastis"
         }
       ],
       "section": "main"
@@ -227,24 +171,6 @@
           "kanji": "普及",
           "bacaan": "ふきゅう",
           "arti": "penyebaran / meluas / menjadi umum"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "口",
-      "label": "口 - Mulut  (2 kata)",
-      "count": 2,
-      "words": [
-        {
-          "kanji": "司会",
-          "bacaan": "しかい",
-          "arti": "pembawa acara / MC"
-        },
-        {
-          "kanji": "向上",
-          "bacaan": "こうじょう",
-          "arti": "peningkatan / kemajuan"
         }
       ],
       "section": "main"
@@ -348,19 +274,6 @@
           "kanji": "驚く",
           "bacaan": "おどろく",
           "arti": "terkejut / tercengang / kaget"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "肉",
-      "label": "肉 - Daging  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "能度",
-          "bacaan": "のうど",
-          "arti": "tingkat kemampuan / derajat kinerja"
         }
       ],
       "section": "main"
