@@ -9,25 +9,9 @@ import kotak from "./kotak.json";
 import pelindung from "./pelindung.json";
 import tanahGarisAtas from "./tanah-garis-atas.json";
 import titik from "./titik.json";
-import belumTerdefinisikan from "./belum-terdefinisikan.json";
+import type { RadikalFile } from "@/data/kanji-radikal-types";
 
-export type RadikalWord = {
-  kanji: string;
-  bacaan: string;
-  arti: string;
-};
-
-export type RadikalGroup = {
-  radikal: string;
-  label: string;
-  count: number;
-  words: RadikalWord[];
-};
-
-export type RadikalFile = {
-  title: string;
-  groups: RadikalGroup[];
-};
+export type { RadikalWord, RadikalGroup, RadikalFile } from "@/data/kanji-radikal-types";
 
 export const radikalKanjiFiles: Record<string, RadikalFile> = {
   alam: alam as RadikalFile,
@@ -37,7 +21,6 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   pelindung: pelindung as RadikalFile,
   "tanah-garis-atas": tanahGarisAtas as RadikalFile,
   titik: titik as RadikalFile,
-  "belum-terdefinisikan": belumTerdefinisikan as RadikalFile,
 };
 
 export const radikalKanjiOrder = [
@@ -48,5 +31,4 @@ export const radikalKanjiOrder = [
   "pelindung",
   "tanah-garis-atas",
   "titik",
-  "belum-terdefinisikan",
 ];

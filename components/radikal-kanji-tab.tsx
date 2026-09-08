@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import {
-  radikalKanjiFiles,
-  radikalKanjiOrder,
-  type RadikalGroup,
-} from "@/data/n3/kanji-radikal/lessons";
+import type { RadikalFile, RadikalGroup } from "@/data/kanji-radikal-types";
 
 function RadikalGroupCard({ group }: { group: RadikalGroup }) {
   const [open, setOpen] = useState(false);
@@ -47,8 +43,13 @@ function RadikalGroupCard({ group }: { group: RadikalGroup }) {
   );
 }
 
-export function RadikalKanjiTab() {
-  const keys = radikalKanjiOrder.filter((k) => radikalKanjiFiles[k]);
+type RadikalKanjiTabProps = {
+  files: Record<string, RadikalFile>;
+  order: string[];
+};
+
+export function RadikalKanjiTab({ files, order }: RadikalKanjiTabProps) {
+  const keys = order.filter((k) => files[k]);
   const [selectedFile, setSelectedFile] = useState(keys[0]);
 
   if (keys.length === 0) {
@@ -59,7 +60,7 @@ export function RadikalKanjiTab() {
     );
   }
 
-  const current = radikalKanjiFiles[selectedFile];
+  const current = files[selectedFile];
 
   return (
     <div className="space-y-6">
@@ -75,7 +76,7 @@ export function RadikalKanjiTab() {
                 : "border-border hover:border-primary/50"
             )}
           >
-            {radikalKanjiFiles[key].title.replace(/^Kumpulan Kanji Berbunshu /i, "")}
+            {files[key].title.replace(/^Kumpulan Kanji Berbunshu /i, "").replace(/^Kumpulan Kanji /i, "")}
           </button>
         ))}
       </div>

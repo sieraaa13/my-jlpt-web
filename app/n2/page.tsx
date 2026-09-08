@@ -4,6 +4,8 @@ import Link from "next/link";
 import { lessons } from "@/data/n2/soumatome/lessons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { N2KanjiTab } from "@/components/n2-kanji-tab";
+import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
+import { radikalKanjiFiles, radikalKanjiOrder } from "@/data/n2/kanji-radikal/lessons";
 
 const weekLabels: Record<string, string> = {
   "1": "第一週",
@@ -30,6 +32,7 @@ export default function N2Page() {
           <TabsList className="mb-8">
             <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
             <TabsTrigger value="kanji">Kanji</TabsTrigger>
+            <TabsTrigger value="radikal-kanji">Radikal Kanji</TabsTrigger>
             <TabsTrigger value="soal">Soal</TabsTrigger>
           </TabsList>
 
@@ -73,6 +76,10 @@ export default function N2Page() {
 
           <TabsContent value="kanji">
             <N2KanjiTab />
+          </TabsContent>
+
+          <TabsContent value="radikal-kanji">
+            <RadikalKanjiTab files={radikalKanjiFiles} order={radikalKanjiOrder} />
           </TabsContent>
 
           <TabsContent value="soal">

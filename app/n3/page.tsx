@@ -5,6 +5,7 @@ import { lessons } from "@/data/n3/soumatome/lessons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { N3KanjiTab } from "@/components/n3-kanji-tab";
 import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
+import { radikalKanjiFiles, radikalKanjiOrder } from "@/data/n3/kanji-radikal/lessons";
 
 // Judul tiap minggu diambil dari main_title hari pertama
 function getWeekTitle(week: string) {
@@ -100,7 +101,7 @@ export default function N3Page() {
           </TabsContent>
 
           <TabsContent value="radikal-kanji">
-            <RadikalKanjiTab />
+            <RadikalKanjiTab files={radikalKanjiFiles} order={radikalKanjiOrder} />
           </TabsContent>
 
           {upcomingMaterials.map((material) => (
