@@ -8,6 +8,7 @@ import belumTerdefinisikan from "./belum-terdefinisikan.json";
 import benda from "./benda.json";
 import binatang from "./binatang.json";
 import n2referensiSoal from "./n2-referensi-soal.json";
+import orang from "./orang.json";
 import tambahan from "./tambahan.json";
 import tempat from "./tempat.json";
 import type { RadikalFile } from "@/data/kanji-radikal-types";
@@ -23,6 +24,7 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   binatang: binatang as RadikalFile,
   "anggota-tubuh": anggotaTubuh as RadikalFile,
   alam: alam as RadikalFile,
+  orang: orang as RadikalFile,
 };
 
 export const radikalKanjiOrder = [
@@ -34,4 +36,5 @@ export const radikalKanjiOrder = [
   "binatang",
   "anggota-tubuh",
   "alam",
+  "orang",
 ];

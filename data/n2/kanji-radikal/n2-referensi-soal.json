@@ -448,29 +448,6 @@
       "section": "main"
     },
     {
-      "radikal": "人",
-      "label": "人 - Orang / manusia  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "保つ",
-          "bacaan": "たもつ",
-          "arti": "menjaga / mempertahankan / memelihara"
-        },
-        {
-          "kanji": "停留所",
-          "bacaan": "ていりゅうじょ",
-          "arti": "tempat perhentian / halte"
-        },
-        {
-          "kanji": "側方",
-          "bacaan": "そくほう",
-          "arti": "samping / bagian sisi / arah samping"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "女",
       "label": "女 - Wanita/perempuan  (3 kata)",
       "count": 3,
