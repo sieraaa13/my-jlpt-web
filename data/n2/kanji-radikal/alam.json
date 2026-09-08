@@ -1323,39 +1323,6 @@
       ]
     },
     {
-      "radikal": "力",
-      "label": "力 - Tenaga (bukan alam)  (5 kata)",
-      "count": 5,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "勝手に",
-          "bacaan": "かってに",
-          "arti": "Sesuka Hati / Semaunya Sendiri / Tanpa Izin / Secara Otomatis"
-        },
-        {
-          "kanji": "勤務",
-          "bacaan": "きんむ",
-          "arti": "Tugas / Kerja / Dinas / Bekerja"
-        },
-        {
-          "kanji": "募金",
-          "bacaan": "ぼきん",
-          "arti": "Penggalangan Dana / Donasi (sebagai tindakan mengumpulkan) / Dana yang Dikumpulkan"
-        },
-        {
-          "kanji": "募集",
-          "bacaan": "ぼしゅう",
-          "arti": "Perekrutan / Pengambilan / Pendaftaran / Merekrut / Mengumpulkan"
-        },
-        {
-          "kanji": "勢い",
-          "bacaan": "いきおい",
-          "arti": "Momentum / Kekuatan / Dorongan / Semangat / Kecepatan"
-        }
-      ]
-    },
-    {
       "radikal": "欠",
       "label": "欠 - Kekurangan / menguap (bukan alam)  (2 kata)",
       "count": 2,
@@ -1383,19 +1350,6 @@
           "kanji": "的確",
           "bacaan": "てきかく",
           "arti": "Tepat / Akurat / Sesuai / Benar"
-        }
-      ]
-    },
-    {
-      "radikal": "攴",
-      "label": "攴 - Memukul ringan / tindakan (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "敬意",
-          "bacaan": "けいい",
-          "arti": "Rasa Hormat / Penghargaan / Kekaguman"
         }
       ]
     },

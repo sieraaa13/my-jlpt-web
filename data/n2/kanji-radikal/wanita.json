@@ -1,0 +1,83 @@
+{
+  "title": "Kumpulan Kanji Radikal Wanita",
+  "groups": [
+    {
+      "radikal": "女",
+      "label": "女 - Wanita / perempuan  (14 kata)",
+      "count": 14,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "姉妹",
+          "bacaan": "しまい",
+          "arti": "Saudara Perempuan / Kakak dan Adik Perempuan"
+        },
+        {
+          "kanji": "好調",
+          "bacaan": "こうちょう",
+          "arti": "Berjalan Baik / Menguntungkan / Dalam Kondisi Prima / Sukses"
+        },
+        {
+          "kanji": "妨げる",
+          "bacaan": "さまたげる",
+          "arti": "Menghalangi / Mencegah / Merintangi / Mengganggu"
+        },
+        {
+          "kanji": "奴",
+          "bacaan": "やつ",
+          "arti": "Orang itu / Dia / Orang / Benda itu"
+        },
+        {
+          "kanji": "好評",
+          "bacaan": "こうひょう",
+          "arti": "Sambutan hangat / Ulasan yang baik / Reputasi yang baik / Pujian"
+        },
+        {
+          "kanji": "好奇心",
+          "bacaan": "こうきしん",
+          "arti": "Rasa ingin tahu / Keingintahuan"
+        },
+        {
+          "kanji": "好奇心旺盛な",
+          "bacaan": "こうきしんおうせいな",
+          "arti": "Sangat ingin tahu / Penuh rasa ingin tahu / Antusias dalam mencari pengetahuan"
+        },
+        {
+          "kanji": "妙",
+          "bacaan": "みょう",
+          "arti": "Aneh / Ganjil / Misterius / Indah (makna kuno)"
+        },
+        {
+          "kanji": "妥当",
+          "bacaan": "だと",
+          "arti": "Masuk akal / Wajar"
+        },
+        {
+          "kanji": "妨害",
+          "bacaan": "ぼうがい",
+          "arti": "gangguan / hambatan / merintangi"
+        },
+        {
+          "kanji": "妨げ",
+          "bacaan": "さまたげ",
+          "arti": "halangan / rintangan / gangguan"
+        },
+        {
+          "kanji": "姿勢",
+          "bacaan": "しせい",
+          "arti": "postur / posisi tubuh / sikap"
+        },
+        {
+          "kanji": "姿",
+          "bacaan": "すがた",
+          "arti": "Penampilan / Bentuk / Sosok / Wujud"
+        },
+        {
+          "kanji": "姿勢次第",
+          "bacaan": "しせいしだい",
+          "arti": "Tergantung pada sikap / Semuanya bergantung pada sikap / Sikap adalah penentunya"
+        }
+      ]
+    }
+  ]
+}

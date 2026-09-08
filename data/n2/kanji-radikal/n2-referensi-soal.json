@@ -448,29 +448,6 @@
       "section": "main"
     },
     {
-      "radikal": "女",
-      "label": "女 - Wanita/perempuan  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "妨害",
-          "bacaan": "ぼうがい",
-          "arti": "gangguan / hambatan / merintangi"
-        },
-        {
-          "kanji": "妨げ",
-          "bacaan": "さまたげ",
-          "arti": "halangan / rintangan / gangguan"
-        },
-        {
-          "kanji": "姿勢",
-          "bacaan": "しせい",
-          "arti": "postur / posisi tubuh / sikap"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "止",
       "label": "止 - Berhenti  (2 kata)",
       "count": 2,
@@ -603,19 +580,6 @@
       "section": "main"
     },
     {
-      "radikal": "力",
-      "label": "力 - Tenaga  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "効き",
-          "bacaan": "きき",
-          "arti": "efektivitas / daya kerja / seberapa baik sesuatu berfungsi"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "八",
       "label": "八 - Delapan  (1 kata)",
       "count": 1,
@@ -637,19 +601,6 @@
           "kanji": "乱反射",
           "bacaan": "らんはんしゃ",
           "arti": "pantulan cahaya yang tidak teratur / difusi cahaya"
-        }
-      ],
-      "section": "main"
-    },
-    {
-      "radikal": "攴",
-      "label": "攴 - Memukul ringan / tindakan  (1 kata)",
-      "count": 1,
-      "words": [
-        {
-          "kanji": "救護",
-          "bacaan": "きゅうご",
-          "arti": "pertolongan / bantuan medis darurat / penyelamatan"
         }
       ],
       "section": "main"

@@ -13,6 +13,9 @@ import orang from "./orang.json";
 import tambahan from "./tambahan.json";
 import tanganLagi from "./tangan-lagi.json";
 import tempat from "./tempat.json";
+import tenaga from "./tenaga.json";
+import tindakan from "./tindakan.json";
+import wanita from "./wanita.json";
 import type { RadikalFile } from "@/data/kanji-radikal-types";
 
 export type { RadikalWord, RadikalGroup, RadikalFile } from "@/data/kanji-radikal-types";
@@ -29,6 +32,9 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   orang: orang as RadikalFile,
   "tangan-lagi": tanganLagi as RadikalFile,
   melihat: melihat as RadikalFile,
+  tenaga: tenaga as RadikalFile,
+  tindakan: tindakan as RadikalFile,
+  wanita: wanita as RadikalFile,
 };
 
 export const radikalKanjiOrder = [
@@ -43,4 +49,7 @@ export const radikalKanjiOrder = [
   "orang",
   "tangan-lagi",
   "melihat",
+  "tenaga",
+  "tindakan",
+  "wanita",
 ];

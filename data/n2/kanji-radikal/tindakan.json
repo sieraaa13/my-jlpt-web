@@ -1,0 +1,108 @@
+{
+  "title": "Kumpulan Kanji Radikal Memukul Ringan / Tindakan",
+  "groups": [
+    {
+      "radikal": "攴",
+      "label": "攴 - Memukul ringan / tindakan  (19 kata)",
+      "count": 19,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "敬意",
+          "bacaan": "けいい",
+          "arti": "Rasa Hormat / Penghargaan / Kekaguman"
+        },
+        {
+          "kanji": "敗れる",
+          "bacaan": "やぶれる",
+          "arti": "Kalah / Dikalahkan / Gagal"
+        },
+        {
+          "kanji": "改",
+          "bacaan": "かい",
+          "arti": "Mengubah / Memperbaiki / Memodifikasi / Membarui"
+        },
+        {
+          "kanji": "改善",
+          "bacaan": "かいぜん",
+          "arti": "Perbaikan / Peningkatan / Pembenahan / Kaizen"
+        },
+        {
+          "kanji": "改正",
+          "bacaan": "かいせい",
+          "arti": "Amandemen / Perubahan / Revisi"
+        },
+        {
+          "kanji": "改造",
+          "bacaan": "かいぞう",
+          "arti": "Modifikasi / Rekonstruksi / Merombak / Mengubah (untuk tujuan yang berbeda/lebih baik)"
+        },
+        {
+          "kanji": "改める",
+          "bacaan": "あらためる",
+          "arti": "Mengubah / Memperbaiki / Merevisi / Membaharui / Mengoreksi"
+        },
+        {
+          "kanji": "改訂",
+          "bacaan": "かいてい",
+          "arti": "Revisi / Amandemen / Perbaikan / Koreksi / Mengubah"
+        },
+        {
+          "kanji": "改良案",
+          "bacaan": "かいりょうあん",
+          "arti": "ancangan perbaikan / Proposal peningkatan / Usulan revisi/modifikasi"
+        },
+        {
+          "kanji": "教授",
+          "bacaan": "きょうじゅ",
+          "arti": "Profesor (Professor)"
+        },
+        {
+          "kanji": "教訓",
+          "bacaan": "きょうくん",
+          "arti": "Pelajaran / Moral / Hikmah / Nasihat / Pelajaran yang dipetik"
+        },
+        {
+          "kanji": "救護",
+          "bacaan": "きゅうご",
+          "arti": "pertolongan / bantuan medis darurat / penyelamatan"
+        },
+        {
+          "kanji": "攻める",
+          "bacaan": "せめる",
+          "arti": "Menyerang / Menyerbu / Menggempur / Mengejar"
+        },
+        {
+          "kanji": "攻撃",
+          "bacaan": "こうげき",
+          "arti": "Serangan / Penyerangan / Agresi / Ofensif"
+        },
+        {
+          "kanji": "攻略",
+          "bacaan": "こうりゃく",
+          "arti": "Strategi Penaklukan/Penaklukkan / Panduan / Cara Menyelesaikan"
+        },
+        {
+          "kanji": "政治",
+          "bacaan": "せいじ",
+          "arti": "Politik / Pemerintahan / Urusan Negara"
+        },
+        {
+          "kanji": "政府",
+          "bacaan": "せいふ",
+          "arti": "Pemerintah / Kabinet / Administrasi"
+        },
+        {
+          "kanji": "放映",
+          "bacaan": "ほうえい",
+          "arti": "Penyiaran / Tayangan / Siaran / Proyeksi"
+        },
+        {
+          "kanji": "放送",
+          "bacaan": "ほうそう",
+          "arti": "Siaran / Penyiaran / Menyiarkan / Menyebarkan (melalui media)"
+        }
+      ]
+    }
+  ]
+}

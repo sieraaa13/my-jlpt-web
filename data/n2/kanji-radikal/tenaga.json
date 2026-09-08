@@ -1,0 +1,113 @@
+{
+  "title": "Kumpulan Kanji Radikal Tenaga",
+  "groups": [
+    {
+      "radikal": "力",
+      "label": "力 - Tenaga  (20 kata)",
+      "count": 20,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "勝手に",
+          "bacaan": "かってに",
+          "arti": "Sesuka Hati / Semaunya Sendiri / Tanpa Izin / Secara Otomatis"
+        },
+        {
+          "kanji": "勤務",
+          "bacaan": "きんむ",
+          "arti": "Tugas / Kerja / Dinas / Bekerja"
+        },
+        {
+          "kanji": "募金",
+          "bacaan": "ぼきん",
+          "arti": "Penggalangan Dana / Donasi (sebagai tindakan mengumpulkan) / Dana yang Dikumpulkan"
+        },
+        {
+          "kanji": "募集",
+          "bacaan": "ぼしゅう",
+          "arti": "Perekrutan / Pengambilan / Pendaftaran / Merekrut / Mengumpulkan"
+        },
+        {
+          "kanji": "勢い",
+          "bacaan": "いきおい",
+          "arti": "Momentum / Kekuatan / Dorongan / Semangat / Kecepatan"
+        },
+        {
+          "kanji": "助手席",
+          "bacaan": "じょしゅせき",
+          "arti": "Kursi Penumpang Depan"
+        },
+        {
+          "kanji": "努める",
+          "bacaan": "つとめる",
+          "arti": "Berusaha keras / Berupaya / Mencoba sekuat tenaga"
+        },
+        {
+          "kanji": "勇ましい",
+          "bacaan": "いさましい",
+          "arti": "berani / gagah berani / heroik"
+        },
+        {
+          "kanji": "効き",
+          "bacaan": "きき",
+          "arti": "efektivitas / daya kerja / seberapa baik sesuatu berfungsi"
+        },
+        {
+          "kanji": "劣化",
+          "bacaan": "れっか",
+          "arti": "Penurunan mutu / degradasi / memburuknya kualitas / kemerosotan"
+        },
+        {
+          "kanji": "劣る",
+          "bacaan": "おとる",
+          "arti": "Lebih rendah (dari) / Kalah (dari) / Lebih buruk (daripada) / Kurang"
+        },
+        {
+          "kanji": "勘違い",
+          "bacaan": "かんちがい",
+          "arti": "Salah paham / Kesalahpahaman / Salah mengerti / Kekeliruan"
+        },
+        {
+          "kanji": "勘定",
+          "bacaan": "かんじょう",
+          "arti": "Perhitungan / Tagihan / Pembayaran / Rekening"
+        },
+        {
+          "kanji": "加速",
+          "bacaan": "かそく",
+          "arti": "Percepatan / Akselerasi / Mempercepat"
+        },
+        {
+          "kanji": "加わり",
+          "bacaan": "くわわり",
+          "arti": "Bergabung / Menyertai / Bertambah / Ditambahkan"
+        },
+        {
+          "kanji": "勧誘",
+          "bacaan": "かんゆう",
+          "arti": "Ajakan / Bujukan / Rekrutmen / Perekrutan"
+        },
+        {
+          "kanji": "効率良く",
+          "bacaan": "こうりつよく",
+          "arti": "Secara efisien / Dengan efektif / Dengan hasil yang maksimal"
+        },
+        {
+          "kanji": "励ます",
+          "bacaan": "はげます",
+          "arti": "mendorong / menyemangati / menghibur"
+        },
+        {
+          "kanji": "動機",
+          "bacaan": "どうき",
+          "arti": "motif / alasan / pendorong"
+        },
+        {
+          "kanji": "動作",
+          "bacaan": "どうさ",
+          "arti": "gerakan / tindakan / gerak tubuh"
+        }
+      ]
+    }
+  ]
+}

@@ -918,29 +918,6 @@
       "section": "main"
     },
     {
-      "radikal": "力",
-      "label": "力 - Tenaga (bukan tempat)  (3 kata)",
-      "count": 3,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "励ます",
-          "bacaan": "はげます",
-          "arti": "mendorong / menyemangati / menghibur"
-        },
-        {
-          "kanji": "動機",
-          "bacaan": "どうき",
-          "arti": "motif / alasan / pendorong"
-        },
-        {
-          "kanji": "動作",
-          "bacaan": "どうさ",
-          "arti": "gerakan / tindakan / gerak tubuh"
-        }
-      ]
-    },
-    {
       "radikal": "黑",
       "label": "黑 - Hitam (bukan tempat)  (2 kata)",
       "count": 2,

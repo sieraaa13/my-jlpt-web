@@ -547,95 +547,6 @@
       ]
     },
     {
-      "radikal": "力",
-      "label": "力 - Tenaga  (8 kata)",
-      "count": 8,
-      "words": [
-        {
-          "kanji": "劣化",
-          "bacaan": "れっか",
-          "arti": "Penurunan mutu / degradasi / memburuknya kualitas / kemerosotan"
-        },
-        {
-          "kanji": "劣る",
-          "bacaan": "おとる",
-          "arti": "Lebih rendah (dari) / Kalah (dari) / Lebih buruk (daripada) / Kurang"
-        },
-        {
-          "kanji": "勘違い",
-          "bacaan": "かんちがい",
-          "arti": "Salah paham / Kesalahpahaman / Salah mengerti / Kekeliruan"
-        },
-        {
-          "kanji": "勘定",
-          "bacaan": "かんじょう",
-          "arti": "Perhitungan / Tagihan / Pembayaran / Rekening"
-        },
-        {
-          "kanji": "加速",
-          "bacaan": "かそく",
-          "arti": "Percepatan / Akselerasi / Mempercepat"
-        },
-        {
-          "kanji": "加わり",
-          "bacaan": "くわわり",
-          "arti": "Bergabung / Menyertai / Bertambah / Ditambahkan"
-        },
-        {
-          "kanji": "勧誘",
-          "bacaan": "かんゆう",
-          "arti": "Ajakan / Bujukan / Rekrutmen / Perekrutan"
-        },
-        {
-          "kanji": "効率良く",
-          "bacaan": "こうりつよく",
-          "arti": "Secara efisien / Dengan efektif / Dengan hasil yang maksimal"
-        }
-      ]
-    },
-    {
-      "radikal": "攴",
-      "label": "攴 - (radikal jarang, lihat contoh kanji)  (7 kata)",
-      "count": 7,
-      "words": [
-        {
-          "kanji": "攻める",
-          "bacaan": "せめる",
-          "arti": "Menyerang / Menyerbu / Menggempur / Mengejar"
-        },
-        {
-          "kanji": "攻撃",
-          "bacaan": "こうげき",
-          "arti": "Serangan / Penyerangan / Agresi / Ofensif"
-        },
-        {
-          "kanji": "攻略",
-          "bacaan": "こうりゃく",
-          "arti": "Strategi Penaklukan/Penaklukkan / Panduan / Cara Menyelesaikan"
-        },
-        {
-          "kanji": "政治",
-          "bacaan": "せいじ",
-          "arti": "Politik / Pemerintahan / Urusan Negara"
-        },
-        {
-          "kanji": "政府",
-          "bacaan": "せいふ",
-          "arti": "Pemerintah / Kabinet / Administrasi"
-        },
-        {
-          "kanji": "放映",
-          "bacaan": "ほうえい",
-          "arti": "Penyiaran / Tayangan / Siaran / Proyeksi"
-        },
-        {
-          "kanji": "放送",
-          "bacaan": "ほうそう",
-          "arti": "Siaran / Penyiaran / Menyiarkan / Menyebarkan (melalui media)"
-        }
-      ]
-    },
-    {
       "radikal": "襾",
       "label": "襾 - Menutup dari atas  (6 kata)",
       "count": 6,
@@ -939,28 +850,6 @@
           "kanji": "対応",
           "bacaan": "たいおう",
           "arti": "Penanganan / Tanggapan / Respons / Korespondensi / Kepatuhan"
-        }
-      ]
-    },
-    {
-      "radikal": "女",
-      "label": "女 - Wanita / perempuan  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "姿",
-          "bacaan": "すがた",
-          "arti": "Penampilan / Bentuk / Sosok / Wujud"
-        },
-        {
-          "kanji": "姿勢",
-          "bacaan": "しせい",
-          "arti": "Postur / Sikap / Posisi Tubuh / Sikap Mental"
-        },
-        {
-          "kanji": "姿勢次第",
-          "bacaan": "しせいしだい",
-          "arti": "Tergantung pada sikap / Semuanya bergantung pada sikap / Sikap adalah penentunya"
         }
       ]
     },
