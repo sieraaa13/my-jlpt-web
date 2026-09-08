@@ -2,6 +2,8 @@
 // 📝 MANIFEST FILE — Daftar kumpulan kanji berbunshu (dikelompokkan per radikal)
 // Ditambah bertahap seiring setiap file dirapikan.
 // =================================================================
+import alam from "./alam.json";
+import anggotaTubuh from "./anggota-tubuh.json";
 import belumTerdefinisikan from "./belum-terdefinisikan.json";
 import benda from "./benda.json";
 import binatang from "./binatang.json";
@@ -19,6 +21,17 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   tempat: tempat as RadikalFile,
   tambahan: tambahan as RadikalFile,
   binatang: binatang as RadikalFile,
+  "anggota-tubuh": anggotaTubuh as RadikalFile,
+  alam: alam as RadikalFile,
 };
 
-export const radikalKanjiOrder = ["belum-terdefinisikan", "benda", "n2-referensi-soal", "tempat", "tambahan", "binatang"];
+export const radikalKanjiOrder = [
+  "belum-terdefinisikan",
+  "benda",
+  "n2-referensi-soal",
+  "tempat",
+  "tambahan",
+  "binatang",
+  "anggota-tubuh",
+  "alam",
+];
