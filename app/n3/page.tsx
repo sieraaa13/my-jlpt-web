@@ -4,6 +4,7 @@ import Link from "next/link";
 import { lessons } from "@/data/n3/soumatome/lessons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { N3KanjiTab } from "@/components/n3-kanji-tab";
+import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
 
 // Judul tiap minggu diambil dari main_title hari pertama
 function getWeekTitle(week: string) {
@@ -56,6 +57,7 @@ export default function N3Page() {
           <TabsList className="mb-8">
             <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
             <TabsTrigger value="kanji">Kanji</TabsTrigger>
+            <TabsTrigger value="radikal-kanji">Radikal Kanji</TabsTrigger>
             {upcomingMaterials.map((material) => (
               <TabsTrigger key={material.title} value={material.title.toLowerCase()}>
                 {material.title}
@@ -95,6 +97,10 @@ export default function N3Page() {
 
           <TabsContent value="kanji">
             <N3KanjiTab />
+          </TabsContent>
+
+          <TabsContent value="radikal-kanji">
+            <RadikalKanjiTab />
           </TabsContent>
 
           {upcomingMaterials.map((material) => (

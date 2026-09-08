@@ -1,0 +1,446 @@
+{
+  "title": "Kumpulan Kanji Berbunshu Bagian Tubuh",
+  "groups": [
+    {
+      "radikal": "手",
+      "label": "手 - Tangan  (22 kata)",
+      "count": 22,
+      "words": [
+        {
+          "kanji": "手術",
+          "bacaan": "しゅじゅつ",
+          "arti": "operasi (bedah)"
+        },
+        {
+          "kanji": "手",
+          "bacaan": "て",
+          "arti": "tangan"
+        },
+        {
+          "kanji": "手の甲",
+          "bacaan": "てのこう",
+          "arti": "punggung tangan"
+        },
+        {
+          "kanji": "手相",
+          "bacaan": "てそう",
+          "arti": "garis tangan (ramalan)"
+        },
+        {
+          "kanji": "手首",
+          "bacaan": "てくび",
+          "arti": "pergelangan tangan"
+        },
+        {
+          "kanji": "手先",
+          "bacaan": "てさき",
+          "arti": "ujung jari tangan"
+        },
+        {
+          "kanji": "手当",
+          "bacaan": "てあて",
+          "arti": "tunjangan / pertolongan pertama"
+        },
+        {
+          "kanji": "手早い",
+          "bacaan": "てばやい",
+          "arti": "cekatan, cepat tangan"
+        },
+        {
+          "kanji": "手頃な",
+          "bacaan": "てごろな",
+          "arti": "terjangkau, pas (harga/ukuran)"
+        },
+        {
+          "kanji": "手袋",
+          "bacaan": "てぶくろ",
+          "arti": "sarung tangan"
+        },
+        {
+          "kanji": "手錠",
+          "bacaan": "てじょう",
+          "arti": "borgol"
+        },
+        {
+          "kanji": "手帳",
+          "bacaan": "てちょう",
+          "arti": "buku catatan kecil"
+        },
+        {
+          "kanji": "手拭き",
+          "bacaan": "てふき",
+          "arti": "lap tangan"
+        },
+        {
+          "kanji": "手紙",
+          "bacaan": "てがみ",
+          "arti": "surat"
+        },
+        {
+          "kanji": "手荷物",
+          "bacaan": "てにもつ",
+          "arti": "barang bawaan tangan"
+        },
+        {
+          "kanji": "手拭い",
+          "bacaan": "てぬぐい",
+          "arti": "kain lap / handuk kecil"
+        },
+        {
+          "kanji": "手縫い",
+          "bacaan": "てぬい",
+          "arti": "jahitan tangan"
+        },
+        {
+          "kanji": "手作り",
+          "bacaan": "てづくり",
+          "arti": "buatan tangan"
+        },
+        {
+          "kanji": "手形",
+          "bacaan": "てがた",
+          "arti": "cap tangan / wesel"
+        },
+        {
+          "kanji": "手探り",
+          "bacaan": "てさぐり",
+          "arti": "meraba-raba"
+        },
+        {
+          "kanji": "手伝う",
+          "bacaan": "てつだう",
+          "arti": "membantu"
+        },
+        {
+          "kanji": "手洗い",
+          "bacaan": "てあらい",
+          "arti": "cuci tangan"
+        }
+      ]
+    },
+    {
+      "radikal": "心",
+      "label": "心 - Hati/Jantung  (20 kata)",
+      "count": 20,
+      "words": [
+        {
+          "kanji": "心筋梗塞",
+          "bacaan": "しんきんこうそく",
+          "arti": "serangan jantung (infark miokard)"
+        },
+        {
+          "kanji": "心臓",
+          "bacaan": "しんぞう",
+          "arti": "jantung"
+        },
+        {
+          "kanji": "心中",
+          "bacaan": "しんじゅう",
+          "arti": "bunuh diri bersama"
+        },
+        {
+          "kanji": "心地",
+          "bacaan": "ここち",
+          "arti": "perasaan / rasa"
+        },
+        {
+          "kanji": "心細い",
+          "bacaan": "こころぼそい",
+          "arti": "merasa cemas / tidak tenang"
+        },
+        {
+          "kanji": "心がける",
+          "bacaan": "こころがける",
+          "arti": "berusaha memperhatikan"
+        },
+        {
+          "kanji": "心配",
+          "bacaan": "しんぱい",
+          "arti": "khawatir"
+        },
+        {
+          "kanji": "心",
+          "bacaan": "しん",
+          "arti": "inti / hati (bacaan on)"
+        },
+        {
+          "kanji": "心理",
+          "bacaan": "しんり",
+          "arti": "psikologi"
+        },
+        {
+          "kanji": "心身",
+          "bacaan": "しんしん",
+          "arti": "jiwa dan raga"
+        },
+        {
+          "kanji": "心",
+          "bacaan": "こころ",
+          "arti": "hati"
+        },
+        {
+          "kanji": "必需品",
+          "bacaan": "ひつじゅひん",
+          "arti": "barang kebutuhan pokok"
+        },
+        {
+          "kanji": "必要",
+          "bacaan": "ひつよう",
+          "arti": "perlu"
+        },
+        {
+          "kanji": "必ず",
+          "bacaan": "かならず",
+          "arti": "pasti"
+        },
+        {
+          "kanji": "必ずしも",
+          "bacaan": "かならずしも",
+          "arti": "belum tentu"
+        },
+        {
+          "kanji": "必死",
+          "bacaan": "ひっし",
+          "arti": "mati-matian"
+        },
+        {
+          "kanji": "怒り",
+          "bacaan": "いかり",
+          "arti": "kemarahan"
+        },
+        {
+          "kanji": "怒る",
+          "bacaan": "いかる",
+          "arti": "marah"
+        },
+        {
+          "kanji": "怒る",
+          "bacaan": "おこる",
+          "arti": "marah"
+        },
+        {
+          "kanji": "怒鳴る",
+          "bacaan": "どなる",
+          "arti": "membentak / berteriak marah"
+        }
+      ]
+    },
+    {
+      "radikal": "背",
+      "label": "背 - Punggung  (9 kata)",
+      "count": 9,
+      "words": [
+        {
+          "kanji": "背",
+          "bacaan": "せ",
+          "arti": "punggung / tinggi badan"
+        },
+        {
+          "kanji": "背骨",
+          "bacaan": "せぼね",
+          "arti": "tulang punggung"
+        },
+        {
+          "kanji": "背中",
+          "bacaan": "せなか",
+          "arti": "punggung"
+        },
+        {
+          "kanji": "背負う",
+          "bacaan": "せおう",
+          "arti": "memikul di punggung"
+        },
+        {
+          "kanji": "背ける",
+          "bacaan": "そむける",
+          "arti": "memalingkan (wajah)"
+        },
+        {
+          "kanji": "背広",
+          "bacaan": "せびろ",
+          "arti": "jas / setelan"
+        },
+        {
+          "kanji": "背く",
+          "bacaan": "そむく",
+          "arti": "mendurhakai / melanggar"
+        },
+        {
+          "kanji": "背",
+          "bacaan": "せい",
+          "arti": "tinggi badan"
+        },
+        {
+          "kanji": "背景",
+          "bacaan": "はいけい",
+          "arti": "latar belakang"
+        }
+      ]
+    },
+    {
+      "radikal": "骨",
+      "label": "骨 - Tulang  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "骸骨",
+          "bacaan": "がいこつ",
+          "arti": "kerangka"
+        },
+        {
+          "kanji": "骨",
+          "bacaan": "ほね",
+          "arti": "tulang"
+        },
+        {
+          "kanji": "骨組み",
+          "bacaan": "ほねぐみ",
+          "arti": "rangka / kerangka"
+        },
+        {
+          "kanji": "骨折",
+          "bacaan": "こっせつ",
+          "arti": "patah tulang"
+        },
+        {
+          "kanji": "骨髄",
+          "bacaan": "こつずい",
+          "arti": "sumsum tulang"
+        },
+        {
+          "kanji": "骨董",
+          "bacaan": "こっとう",
+          "arti": "barang antik"
+        }
+      ]
+    },
+    {
+      "radikal": "毛",
+      "label": "毛 - Bulu/Rambut  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "毛",
+          "bacaan": "け",
+          "arti": "bulu / rambut"
+        },
+        {
+          "kanji": "毛布",
+          "bacaan": "もうふ",
+          "arti": "selimut"
+        },
+        {
+          "kanji": "毛筆",
+          "bacaan": "もうひつ",
+          "arti": "kuas (dari bulu)"
+        },
+        {
+          "kanji": "毬",
+          "bacaan": "まり",
+          "arti": "bola (mainan)"
+        },
+        {
+          "kanji": "毛糸",
+          "bacaan": "けいと",
+          "arti": "benang wol"
+        },
+        {
+          "kanji": "毛虫",
+          "bacaan": "けむし",
+          "arti": "ulat bulu"
+        }
+      ]
+    },
+    {
+      "radikal": "血",
+      "label": "血 - Darah  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "血",
+          "bacaan": "ち",
+          "arti": "darah"
+        },
+        {
+          "kanji": "血液循環",
+          "bacaan": "けつえきじゅんかん",
+          "arti": "sirkulasi darah"
+        },
+        {
+          "kanji": "血管",
+          "bacaan": "けっかん",
+          "arti": "pembuluh darah"
+        },
+        {
+          "kanji": "血栓",
+          "bacaan": "けっせん",
+          "arti": "gumpalan darah (trombus)"
+        },
+        {
+          "kanji": "血圧",
+          "bacaan": "けつあつ",
+          "arti": "tekanan darah"
+        },
+        {
+          "kanji": "血液",
+          "bacaan": "けつえき",
+          "arti": "darah (istilah medis)"
+        }
+      ]
+    },
+    {
+      "radikal": "身",
+      "label": "身 - Tubuh  (3 kata)",
+      "count": 3,
+      "words": [
+        {
+          "kanji": "身",
+          "bacaan": "み",
+          "arti": "tubuh / diri"
+        },
+        {
+          "kanji": "身体",
+          "bacaan": "しんたい",
+          "arti": "tubuh"
+        },
+        {
+          "kanji": "身長",
+          "bacaan": "しんちょう",
+          "arti": "tinggi badan"
+        }
+      ]
+    },
+    {
+      "radikal": "爪",
+      "label": "爪 - Kuku  (5 kata)",
+      "count": 5,
+      "words": [
+        {
+          "kanji": "爪先",
+          "bacaan": "つまさき",
+          "arti": "ujung jari kaki"
+        },
+        {
+          "kanji": "爪",
+          "bacaan": "つめ",
+          "arti": "kuku"
+        },
+        {
+          "kanji": "爪楊枝",
+          "bacaan": "つまようじ",
+          "arti": "tusuk gigi"
+        },
+        {
+          "kanji": "爪で歩く",
+          "bacaan": "つまであるく",
+          "arti": "berjalan berjinjit"
+        },
+        {
+          "kanji": "爬虫類",
+          "bacaan": "はちゅうるい",
+          "arti": "reptil"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2095 @@
+{
+  "title": "Kumpulan Kanji Berbunshu Alam",
+  "groups": [
+    {
+      "radikal": "水",
+      "label": "水 - Air (bentuk utuh)  (46 kata)",
+      "count": 46,
+      "words": [
+        {
+          "kanji": "水圧",
+          "bacaan": "すいあつ",
+          "arti": "tekanan air"
+        },
+        {
+          "kanji": "水分",
+          "bacaan": "すいぶん",
+          "arti": "kadar air"
+        },
+        {
+          "kanji": "水中",
+          "bacaan": "すいちゅう",
+          "arti": "dalam air"
+        },
+        {
+          "kanji": "水平",
+          "bacaan": "すいへい",
+          "arti": "horizontal/datar"
+        },
+        {
+          "kanji": "水力",
+          "bacaan": "すいりょく",
+          "arti": "tenaga air"
+        },
+        {
+          "kanji": "水流",
+          "bacaan": "すいりゅう",
+          "arti": "aliran air"
+        },
+        {
+          "kanji": "水産業",
+          "bacaan": "すいさんぎょう",
+          "arti": "industri perikanan"
+        },
+        {
+          "kanji": "氷柱",
+          "bacaan": "つらら",
+          "arti": "es yang menggantung"
+        },
+        {
+          "kanji": "水蒸気",
+          "bacaan": "すいじょうき",
+          "arti": "uap air"
+        },
+        {
+          "kanji": "水面",
+          "bacaan": "すいめん",
+          "arti": "permukaan air"
+        },
+        {
+          "kanji": "水温",
+          "bacaan": "すいおん",
+          "arti": "suhu air"
+        },
+        {
+          "kanji": "水準",
+          "bacaan": "すいじゅん",
+          "arti": "standar/taraf"
+        },
+        {
+          "kanji": "水量",
+          "bacaan": "すいりょう",
+          "arti": "jumlah/debit air"
+        },
+        {
+          "kanji": "水",
+          "bacaan": "みず",
+          "arti": "air"
+        },
+        {
+          "kanji": "水気",
+          "bacaan": "みずけ",
+          "arti": "kandungan air"
+        },
+        {
+          "kanji": "水臭い",
+          "bacaan": "みずくさい",
+          "arti": "terasa berair/tidak akrab"
+        },
+        {
+          "kanji": "水たまり",
+          "bacaan": "みずたまり",
+          "arti": "genangan air"
+        },
+        {
+          "kanji": "水母",
+          "bacaan": "くらげ",
+          "arti": "ubur-ubur"
+        },
+        {
+          "kanji": "水虫",
+          "bacaan": "みずむし",
+          "arti": "kutu air (penyakit kulit kaki)"
+        },
+        {
+          "kanji": "永住民",
+          "bacaan": "えいじゅうみん",
+          "arti": "penduduk tetap"
+        },
+        {
+          "kanji": "永住",
+          "bacaan": "えいじゅう",
+          "arti": "menetap permanen"
+        },
+        {
+          "kanji": "永住権",
+          "bacaan": "えいじゅうけん",
+          "arti": "hak tinggal permanen"
+        },
+        {
+          "kanji": "氷点",
+          "bacaan": "ひょうてん",
+          "arti": "titik beku"
+        },
+        {
+          "kanji": "水浸し",
+          "bacaan": "みずびたし",
+          "arti": "terendam/kebanjiran"
+        },
+        {
+          "kanji": "永久",
+          "bacaan": "えいきゅう",
+          "arti": "abadi/permanen"
+        },
+        {
+          "kanji": "水牛",
+          "bacaan": "すいぎゅう",
+          "arti": "kerbau"
+        },
+        {
+          "kanji": "水商売",
+          "bacaan": "みずしょうばい",
+          "arti": "bisnis hiburan malam"
+        },
+        {
+          "kanji": "水彩画",
+          "bacaan": "すいさいが",
+          "arti": "lukisan cat air"
+        },
+        {
+          "kanji": "水産",
+          "bacaan": "すいさん",
+          "arti": "hasil perikanan"
+        },
+        {
+          "kanji": "水晶",
+          "bacaan": "すいしょう",
+          "arti": "kristal/kuarsa"
+        },
+        {
+          "kanji": "水槽",
+          "bacaan": "すいそう",
+          "arti": "akuarium/tangki air"
+        },
+        {
+          "kanji": "水筒",
+          "bacaan": "すいとう",
+          "arti": "botol minum"
+        },
+        {
+          "kanji": "水族館",
+          "bacaan": "すいぞくかん",
+          "arti": "akuarium (bangunan)"
+        },
+        {
+          "kanji": "水痘",
+          "bacaan": "すいとう",
+          "arti": "cacar air"
+        },
+        {
+          "kanji": "水色",
+          "bacaan": "みずいろ",
+          "arti": "biru muda"
+        },
+        {
+          "kanji": "水道",
+          "bacaan": "すいどう",
+          "arti": "saluran air/PDAM"
+        },
+        {
+          "kanji": "水着",
+          "bacaan": "みずぎ",
+          "arti": "baju renang"
+        },
+        {
+          "kanji": "水田",
+          "bacaan": "すいでん",
+          "arti": "sawah"
+        },
+        {
+          "kanji": "水位",
+          "bacaan": "すいい",
+          "arti": "ketinggian air"
+        },
+        {
+          "kanji": "氷山",
+          "bacaan": "ひょうざん",
+          "arti": "gunung es"
+        },
+        {
+          "kanji": "永遠",
+          "bacaan": "えいえん",
+          "arti": "keabadian"
+        },
+        {
+          "kanji": "水浴び",
+          "bacaan": "みずあび",
+          "arti": "mandi/berendam air"
+        },
+        {
+          "kanji": "水銀",
+          "bacaan": "すいぎん",
+          "arti": "air raksa"
+        },
+        {
+          "kanji": "氷",
+          "bacaan": "こおり",
+          "arti": "es"
+        },
+        {
+          "kanji": "水葬",
+          "bacaan": "すいそう",
+          "arti": "pemakaman laut"
+        },
+        {
+          "kanji": "水泳",
+          "bacaan": "すいえい",
+          "arti": "berenang"
+        }
+      ]
+    },
+    {
+      "radikal": "氵 (sanzui)",
+      "label": "氵 - Air (makna alam/literal)  (224 kata)",
+      "count": 224,
+      "words": [
+        {
+          "kanji": "汗",
+          "bacaan": "あせ",
+          "arti": "keringat"
+        },
+        {
+          "kanji": "汗疹",
+          "bacaan": "あせも",
+          "arti": "biang keringat"
+        },
+        {
+          "kanji": "塗り薬",
+          "bacaan": "ぬりぐすり",
+          "arti": "salep/obat oles"
+        },
+        {
+          "kanji": "湿疹",
+          "bacaan": "しっしん",
+          "arti": "eksim"
+        },
+        {
+          "kanji": "涎",
+          "bacaan": "よだれ",
+          "arti": "air liur (menetes)"
+        },
+        {
+          "kanji": "洪水",
+          "bacaan": "こうずい",
+          "arti": "banjir"
+        },
+        {
+          "kanji": "浅い",
+          "bacaan": "あさい",
+          "arti": "dangkal"
+        },
+        {
+          "kanji": "泡",
+          "bacaan": "あわ",
+          "arti": "busa/buih"
+        },
+        {
+          "kanji": "波",
+          "bacaan": "なみ",
+          "arti": "gelombang/ombak"
+        },
+        {
+          "kanji": "潮",
+          "bacaan": "しお",
+          "arti": "air pasang/laut"
+        },
+        {
+          "kanji": "津波",
+          "bacaan": "つなみ",
+          "arti": "tsunami"
+        },
+        {
+          "kanji": "渦巻き",
+          "bacaan": "うずまき",
+          "arti": "pusaran air"
+        },
+        {
+          "kanji": "海水",
+          "bacaan": "かいすい",
+          "arti": "air laut"
+        },
+        {
+          "kanji": "溢れる",
+          "bacaan": "あふれる",
+          "arti": "meluap"
+        },
+        {
+          "kanji": "海面",
+          "bacaan": "かいめん",
+          "arti": "permukaan laut"
+        },
+        {
+          "kanji": "海草",
+          "bacaan": "かいそう",
+          "arti": "rumput laut"
+        },
+        {
+          "kanji": "沈没",
+          "bacaan": "ちんぼつ",
+          "arti": "tenggelam"
+        },
+        {
+          "kanji": "汚染",
+          "bacaan": "おせん",
+          "arti": "pencemaran"
+        },
+        {
+          "kanji": "深い",
+          "bacaan": "ふかい",
+          "arti": "dalam"
+        },
+        {
+          "kanji": "消える",
+          "bacaan": "きえる",
+          "arti": "menghilang/padam"
+        },
+        {
+          "kanji": "油",
+          "bacaan": "あぶら",
+          "arti": "minyak"
+        },
+        {
+          "kanji": "油絵",
+          "bacaan": "あぶら、え",
+          "arti": "lukisan cat minyak"
+        },
+        {
+          "kanji": "池",
+          "bacaan": "いけ",
+          "arti": "kolam"
+        },
+        {
+          "kanji": "海",
+          "bacaan": "かい",
+          "arti": "laut"
+        },
+        {
+          "kanji": "海中",
+          "bacaan": "かいちゅう",
+          "arti": "di dalam laut"
+        },
+        {
+          "kanji": "海外",
+          "bacaan": "かいがい",
+          "arti": "luar negeri"
+        },
+        {
+          "kanji": "海岸",
+          "bacaan": "かいがん",
+          "arti": "pantai"
+        },
+        {
+          "kanji": "池",
+          "bacaan": "いけ",
+          "arti": "kolam"
+        },
+        {
+          "kanji": "沈殿",
+          "bacaan": "ちんでん",
+          "arti": "pengendapan"
+        },
+        {
+          "kanji": "漁村",
+          "bacaan": "ぎょそん",
+          "arti": "desa nelayan"
+        },
+        {
+          "kanji": "浜辺",
+          "bacaan": "はまべ",
+          "arti": "tepi pantai"
+        },
+        {
+          "kanji": "沿岸",
+          "bacaan": "えんがん",
+          "arti": "pesisir"
+        },
+        {
+          "kanji": "洞穴",
+          "bacaan": "ほらあな",
+          "arti": "gua"
+        },
+        {
+          "kanji": "酒場",
+          "bacaan": "さかば",
+          "arti": "bar/tempat minum"
+        },
+        {
+          "kanji": "酒屋",
+          "bacaan": "さかや",
+          "arti": "toko minuman keras"
+        },
+        {
+          "kanji": "漂白剤",
+          "bacaan": "ひょうはくざい",
+          "arti": "pemutih"
+        },
+        {
+          "kanji": "温帯",
+          "bacaan": "おんたい",
+          "arti": "iklim sedang"
+        },
+        {
+          "kanji": "港",
+          "bacaan": "みなと",
+          "arti": "pelabuhan"
+        },
+        {
+          "kanji": "溝",
+          "bacaan": "みぞ",
+          "arti": "selokan/parit"
+        },
+        {
+          "kanji": "湖",
+          "bacaan": "みずうみ",
+          "arti": "danau"
+        },
+        {
+          "kanji": "沼",
+          "bacaan": "ぬま",
+          "arti": "rawa"
+        },
+        {
+          "kanji": "沖",
+          "bacaan": "おき",
+          "arti": "laut lepas"
+        },
+        {
+          "kanji": "汽船",
+          "bacaan": "きせん",
+          "arti": "kapal uap"
+        },
+        {
+          "kanji": "汽車",
+          "bacaan": "きしゃ",
+          "arti": "kereta uap"
+        },
+        {
+          "kanji": "汽笛",
+          "bacaan": "きてき",
+          "arti": "peluit kapal/kereta"
+        },
+        {
+          "kanji": "海",
+          "bacaan": "うみ",
+          "arti": "laut"
+        },
+        {
+          "kanji": "湾",
+          "bacaan": "わん",
+          "arti": "teluk"
+        },
+        {
+          "kanji": "浴場",
+          "bacaan": "よくじょう",
+          "arti": "tempat pemandian"
+        },
+        {
+          "kanji": "浴室",
+          "bacaan": "よくしつ",
+          "arti": "kamar mandi"
+        },
+        {
+          "kanji": "漫画",
+          "bacaan": "まんが",
+          "arti": "komik"
+        },
+        {
+          "kanji": "湯沸かし",
+          "bacaan": "ゆわかし",
+          "arti": "pemanas air"
+        },
+        {
+          "kanji": "浴衣",
+          "bacaan": "ゆかた",
+          "arti": "yukata"
+        },
+        {
+          "kanji": "落とし穴",
+          "bacaan": "おとしあな",
+          "arti": "jebakan lubang"
+        },
+        {
+          "kanji": "染料",
+          "bacaan": "せんりょう",
+          "arti": "pewarna (zat celup)"
+        },
+        {
+          "kanji": "潜水艦",
+          "bacaan": "せんすいかん",
+          "arti": "kapal selam"
+        },
+        {
+          "kanji": "洗濯",
+          "bacaan": "せんたく",
+          "arti": "mencuci baju"
+        },
+        {
+          "kanji": "洗濯機",
+          "bacaan": "せんたくき",
+          "arti": "mesin cuci"
+        },
+        {
+          "kanji": "洗剤",
+          "bacaan": "せんざい",
+          "arti": "deterjen"
+        },
+        {
+          "kanji": "瀬戸物",
+          "bacaan": "せともの",
+          "arti": "barang keramik"
+        },
+        {
+          "kanji": "洗面器",
+          "bacaan": "せんめんき",
+          "arti": "baskom cuci muka"
+        },
+        {
+          "kanji": "消防車",
+          "bacaan": "しょうぼうしゃ",
+          "arti": "mobil pemadam kebakaran"
+        },
+        {
+          "kanji": "消火器",
+          "bacaan": "しょうかき",
+          "arti": "alat pemadam api"
+        },
+        {
+          "kanji": "滑り台",
+          "bacaan": "すべりだい",
+          "arti": "perosotan"
+        },
+        {
+          "kanji": "流し",
+          "bacaan": "ながし",
+          "arti": "tempat cuci piring/wastafel"
+        },
+        {
+          "kanji": "海産物",
+          "bacaan": "かいさんぶつ",
+          "arti": "hasil laut"
+        },
+        {
+          "kanji": "浸食",
+          "bacaan": "しんしょく",
+          "arti": "erosi"
+        },
+        {
+          "kanji": "浸水",
+          "bacaan": "しんすい",
+          "arti": "kebanjiran/terendam air"
+        },
+        {
+          "kanji": "洗面所",
+          "bacaan": "せんめんじょ",
+          "arti": "tempat cuci muka"
+        },
+        {
+          "kanji": "浄水機",
+          "bacaan": "じょうすいき",
+          "arti": "alat penjernih air"
+        },
+        {
+          "kanji": "潤滑",
+          "bacaan": "じゅんかつ",
+          "arti": "pelumasan"
+        },
+        {
+          "kanji": "潤滑油",
+          "bacaan": "じゅんかつゆ",
+          "arti": "oli pelumas"
+        },
+        {
+          "kanji": "湿気",
+          "bacaan": "しっけ",
+          "arti": "kelembapan"
+        },
+        {
+          "kanji": "海峡",
+          "bacaan": "かいきょう",
+          "arti": "selat"
+        },
+        {
+          "kanji": "漁船",
+          "bacaan": "ぎょせん",
+          "arti": "kapal nelayan"
+        },
+        {
+          "kanji": "滝",
+          "bacaan": "たき",
+          "arti": "air terjun"
+        },
+        {
+          "kanji": "湖",
+          "bacaan": "こ",
+          "arti": "danau"
+        },
+        {
+          "kanji": "泥",
+          "bacaan": "どろ",
+          "arti": "lumpur"
+        },
+        {
+          "kanji": "江戸",
+          "bacaan": "えど",
+          "arti": "Edo (nama kota lama Tokyo)"
+        },
+        {
+          "kanji": "溶岩",
+          "bacaan": "ようがん",
+          "arti": "lava"
+        },
+        {
+          "kanji": "油田",
+          "bacaan": "ゆでん",
+          "arti": "ladang minyak"
+        },
+        {
+          "kanji": "潜水",
+          "bacaan": "せんすい",
+          "arti": "menyelam"
+        },
+        {
+          "kanji": "洗浄",
+          "bacaan": "せんじょう",
+          "arti": "pencucian/pembersihan"
+        },
+        {
+          "kanji": "洗面",
+          "bacaan": "せんめん",
+          "arti": "cuci muka"
+        },
+        {
+          "kanji": "潜入",
+          "bacaan": "せんにゅう",
+          "arti": "menyusup"
+        },
+        {
+          "kanji": "浴びる",
+          "bacaan": "あびる",
+          "arti": "mandi/menyiram diri"
+        },
+        {
+          "kanji": "泣く",
+          "bacaan": "なく",
+          "arti": "menangis"
+        },
+        {
+          "kanji": "添",
+          "bacaan": "そう",
+          "arti": "menemani/melampirkan"
+        },
+        {
+          "kanji": "添える",
+          "bacaan": "そえる",
+          "arti": "melampirkan/menyertakan"
+        },
+        {
+          "kanji": "染める",
+          "bacaan": "そめる",
+          "arti": "mewarnai"
+        },
+        {
+          "kanji": "流す",
+          "bacaan": "ながす",
+          "arti": "mengalirkan"
+        },
+        {
+          "kanji": "混ざる",
+          "bacaan": "まざる",
+          "arti": "tercampur"
+        },
+        {
+          "kanji": "混じる",
+          "bacaan": "まじる",
+          "arti": "tercampur"
+        },
+        {
+          "kanji": "混ぜる",
+          "bacaan": "まぜる",
+          "arti": "mencampur"
+        },
+        {
+          "kanji": "潜る",
+          "bacaan": "くぐる",
+          "arti": "menerobos/melewati bawah"
+        },
+        {
+          "kanji": "混じる",
+          "bacaan": "まじる",
+          "arti": "tercampur"
+        },
+        {
+          "kanji": "潜る",
+          "bacaan": "もぐる",
+          "arti": "menyelam/masuk ke dalam"
+        },
+        {
+          "kanji": "漏らす",
+          "bacaan": "もらす",
+          "arti": "membocorkan/menumpahkan"
+        },
+        {
+          "kanji": "漫才",
+          "bacaan": "まんざい",
+          "arti": "lawakan duo (manzai)"
+        },
+        {
+          "kanji": "液",
+          "bacaan": "えき",
+          "arti": "cairan"
+        },
+        {
+          "kanji": "液体",
+          "bacaan": "えきたい",
+          "arti": "zat cair"
+        },
+        {
+          "kanji": "海苔",
+          "bacaan": "のり",
+          "arti": "nori/rumput laut kering"
+        },
+        {
+          "kanji": "油",
+          "bacaan": "ゆ",
+          "arti": "minyak"
+        },
+        {
+          "kanji": "湯",
+          "bacaan": "ゆ",
+          "arti": "air panas"
+        },
+        {
+          "kanji": "漬物",
+          "bacaan": "つけもの",
+          "arti": "acar"
+        },
+        {
+          "kanji": "洗う",
+          "bacaan": "あらう",
+          "arti": "mencuci"
+        },
+        {
+          "kanji": "澱粉",
+          "bacaan": "でんぷん",
+          "arti": "tepung pati"
+        },
+        {
+          "kanji": "油揚げ",
+          "bacaan": "あぶらあげ",
+          "arti": "tahu goreng tipis"
+        },
+        {
+          "kanji": "注ぐ",
+          "bacaan": "そそぐ",
+          "arti": "menuang/mengalir"
+        },
+        {
+          "kanji": "汁",
+          "bacaan": "つゆ",
+          "arti": "kuah/sari"
+        },
+        {
+          "kanji": "淡水",
+          "bacaan": "たんすい",
+          "arti": "air tawar"
+        },
+        {
+          "kanji": "海水浴",
+          "bacaan": "かいすいよく",
+          "arti": "berenang di laut"
+        },
+        {
+          "kanji": "汁",
+          "bacaan": "しる",
+          "arti": "kuah/sari"
+        },
+        {
+          "kanji": "浸る",
+          "bacaan": "ひたる",
+          "arti": "terendam/tenggelam dalam (perasaan)"
+        },
+        {
+          "kanji": "浸す",
+          "bacaan": "ひたす",
+          "arti": "merendam"
+        },
+        {
+          "kanji": "冷やす",
+          "bacaan": "ひやす",
+          "arti": "mendinginkan"
+        },
+        {
+          "kanji": "酒",
+          "bacaan": "さけ",
+          "arti": "minuman keras/sake"
+        },
+        {
+          "kanji": "注射",
+          "bacaan": "ちゅうしゃ",
+          "arti": "suntikan"
+        },
+        {
+          "kanji": "海豚",
+          "bacaan": "いるか",
+          "arti": "lumba-lumba"
+        },
+        {
+          "kanji": "油虫",
+          "bacaan": "あぶらむし",
+          "arti": "kutu daun/kecoa"
+        },
+        {
+          "kanji": "涙",
+          "bacaan": "なみだ",
+          "arti": "air mata"
+        },
+        {
+          "kanji": "泣き声",
+          "bacaan": "なきごえ",
+          "arti": "suara tangisan"
+        },
+        {
+          "kanji": "流れ",
+          "bacaan": "ながれ",
+          "arti": "aliran"
+        },
+        {
+          "kanji": "流れる",
+          "bacaan": "ながれる",
+          "arti": "mengalir"
+        },
+        {
+          "kanji": "浮かべる",
+          "bacaan": "うかべる",
+          "arti": "mengapungkan"
+        },
+        {
+          "kanji": "浮かぶ",
+          "bacaan": "うかぶ",
+          "arti": "mengapung/terlintas"
+        },
+        {
+          "kanji": "浮く",
+          "bacaan": "うく",
+          "arti": "mengapung"
+        },
+        {
+          "kanji": "源",
+          "bacaan": "みなもと",
+          "arti": "sumber/asal"
+        },
+        {
+          "kanji": "混じり",
+          "bacaan": "まじり",
+          "arti": "campuran"
+        },
+        {
+          "kanji": "満潮",
+          "bacaan": "まんちょう",
+          "arti": "air pasang naik"
+        },
+        {
+          "kanji": "漁夫",
+          "bacaan": "ぎょふ",
+          "arti": "nelayan"
+        },
+        {
+          "kanji": "渡り鳥",
+          "bacaan": "わたりどり",
+          "arti": "burung migran"
+        },
+        {
+          "kanji": "泥棒",
+          "bacaan": "どろぼう",
+          "arti": "pencuri"
+        },
+        {
+          "kanji": "油性",
+          "bacaan": "ゆせい",
+          "arti": "berbasis minyak"
+        },
+        {
+          "kanji": "油脂",
+          "bacaan": "ゆし",
+          "arti": "lemak dan minyak"
+        },
+        {
+          "kanji": "漸く",
+          "bacaan": "ようやく",
+          "arti": "akhirnya"
+        },
+        {
+          "kanji": "溶ける",
+          "bacaan": "とける",
+          "arti": "meleleh/larut"
+        },
+        {
+          "kanji": "溶く",
+          "bacaan": "とく",
+          "arti": "melarutkan"
+        },
+        {
+          "kanji": "渦巻く",
+          "bacaan": "うずまく",
+          "arti": "berpusar"
+        },
+        {
+          "kanji": "汚す",
+          "bacaan": "よごす",
+          "arti": "mengotori"
+        },
+        {
+          "kanji": "沸かす",
+          "bacaan": "わかす",
+          "arti": "merebus/memanaskan air"
+        },
+        {
+          "kanji": "塗装",
+          "bacaan": "とそう",
+          "arti": "pengecatan"
+        },
+        {
+          "kanji": "渡る",
+          "bacaan": "わたる",
+          "arti": "menyeberang"
+        },
+        {
+          "kanji": "渡す",
+          "bacaan": "わたす",
+          "arti": "menyerahkan"
+        },
+        {
+          "kanji": "溶かす",
+          "bacaan": "とかす",
+          "arti": "melelehkan/melarutkan"
+        },
+        {
+          "kanji": "漬ける",
+          "bacaan": "つける",
+          "arti": "merendam (acar)"
+        },
+        {
+          "kanji": "清める",
+          "bacaan": "きよめる",
+          "arti": "menyucikan"
+        },
+        {
+          "kanji": "海流",
+          "bacaan": "かいりゅう",
+          "arti": "arus laut"
+        },
+        {
+          "kanji": "海運",
+          "bacaan": "かいうん",
+          "arti": "pelayaran/pengangkutan laut"
+        },
+        {
+          "kanji": "染まる",
+          "bacaan": "そまる",
+          "arti": "terwarnai"
+        },
+        {
+          "kanji": "染め",
+          "bacaan": "そめ",
+          "arti": "pewarnaan"
+        },
+        {
+          "kanji": "滑り",
+          "bacaan": "すべり",
+          "arti": "selip/tergelincir"
+        },
+        {
+          "kanji": "滑る",
+          "bacaan": "すべる",
+          "arti": "tergelincir/licin"
+        },
+        {
+          "kanji": "滴る",
+          "bacaan": "したたる",
+          "arti": "menetes"
+        },
+        {
+          "kanji": "沈める",
+          "bacaan": "しずめる",
+          "arti": "menenggelamkan"
+        },
+        {
+          "kanji": "濡らす",
+          "bacaan": "ぬらす",
+          "arti": "membasahi"
+        },
+        {
+          "kanji": "塗る",
+          "bacaan": "ぬる",
+          "arti": "mengoleskan/mengecat"
+        },
+        {
+          "kanji": "泳ぐ",
+          "bacaan": "およぐ",
+          "arti": "berenang"
+        },
+        {
+          "kanji": "溜める",
+          "bacaan": "ためる",
+          "arti": "mengumpulkan/menabung"
+        },
+        {
+          "kanji": "濯ぐ",
+          "bacaan": "すすぐ",
+          "arti": "membilas"
+        },
+        {
+          "kanji": "漁業",
+          "bacaan": "ぎょぎょう",
+          "arti": "perikanan"
+        },
+        {
+          "kanji": "海上",
+          "bacaan": "かいじょう",
+          "arti": "di atas laut"
+        },
+        {
+          "kanji": "溺れる",
+          "bacaan": "おぼれる",
+          "arti": "tenggelam"
+        },
+        {
+          "kanji": "濁る",
+          "bacaan": "にごる",
+          "arti": "keruh"
+        },
+        {
+          "kanji": "滑らか",
+          "bacaan": "なめらか",
+          "arti": "halus/mulus"
+        },
+        {
+          "kanji": "灌漑",
+          "bacaan": "かんがい",
+          "arti": "irigasi"
+        },
+        {
+          "kanji": "泣き虫",
+          "bacaan": "なきむし",
+          "arti": "cengeng"
+        },
+        {
+          "kanji": "清い",
+          "bacaan": "きよい",
+          "arti": "suci/bersih"
+        },
+        {
+          "kanji": "清め",
+          "bacaan": "きよめ",
+          "arti": "penyucian"
+        },
+        {
+          "kanji": "清らか",
+          "bacaan": "きよらか",
+          "arti": "murni/jernih"
+        },
+        {
+          "kanji": "凍える",
+          "bacaan": "こごえる",
+          "arti": "kedinginan/membeku"
+        },
+        {
+          "kanji": "濃い",
+          "bacaan": "こい",
+          "arti": "pekat/kental"
+        },
+        {
+          "kanji": "汚い",
+          "bacaan": "きたない",
+          "arti": "kotor"
+        },
+        {
+          "kanji": "満月",
+          "bacaan": "まんげつ",
+          "arti": "bulan purnama"
+        },
+        {
+          "kanji": "消防",
+          "bacaan": "しょうぼう",
+          "arti": "pemadam kebakaran"
+        },
+        {
+          "kanji": "沸騰",
+          "bacaan": "ふっとう",
+          "arti": "mendidih"
+        },
+        {
+          "kanji": "涼しい",
+          "bacaan": "すずしい",
+          "arti": "sejuk"
+        },
+        {
+          "kanji": "漂流",
+          "bacaan": "ひょうりゅう",
+          "arti": "terapung-apung/hanyut"
+        },
+        {
+          "kanji": "清々しい",
+          "bacaan": "すがすがしい",
+          "arti": "segar"
+        },
+        {
+          "kanji": "激しい",
+          "bacaan": "はげしい",
+          "arti": "hebat/dahsyat"
+        },
+        {
+          "kanji": "滴",
+          "bacaan": "てき",
+          "arti": "tetesan"
+        },
+        {
+          "kanji": "添加",
+          "bacaan": "てんか",
+          "arti": "penambahan (zat)"
+        },
+        {
+          "kanji": "湯気",
+          "bacaan": "ゆげ",
+          "arti": "uap panas"
+        },
+        {
+          "kanji": "温室",
+          "bacaan": "おんしつ",
+          "arti": "rumah kaca"
+        },
+        {
+          "kanji": "汚れ",
+          "bacaan": "よごれ",
+          "arti": "kotoran/noda"
+        },
+        {
+          "kanji": "汚れる",
+          "bacaan": "よごれる",
+          "arti": "menjadi kotor"
+        },
+        {
+          "kanji": "温度",
+          "bacaan": "おんど",
+          "arti": "suhu"
+        },
+        {
+          "kanji": "温泉",
+          "bacaan": "おんせん",
+          "arti": "onsen/pemandian air panas"
+        },
+        {
+          "kanji": "ぬるま湯",
+          "bacaan": "ぬるまゆ",
+          "arti": "air suam-suam kuku"
+        },
+        {
+          "kanji": "濃度",
+          "bacaan": "のうど",
+          "arti": "konsentrasi/kepekatan"
+        },
+        {
+          "kanji": "温み",
+          "bacaan": "ぬくみ",
+          "arti": "kehangatan"
+        },
+        {
+          "kanji": "濡れる",
+          "bacaan": "ぬれる",
+          "arti": "basah"
+        },
+        {
+          "kanji": "塗り",
+          "bacaan": "ぬり",
+          "arti": "pengecatan/olesan"
+        },
+        {
+          "kanji": "潤い",
+          "bacaan": "うるおい",
+          "arti": "kelembapan/keceriaan"
+        },
+        {
+          "kanji": "渦",
+          "bacaan": "うず",
+          "arti": "pusaran"
+        },
+        {
+          "kanji": "沸く",
+          "bacaan": "わく",
+          "arti": "mendidih"
+        },
+        {
+          "kanji": "浄水",
+          "bacaan": "じょうすい",
+          "arti": "air bersih/penjernihan air"
+        },
+        {
+          "kanji": "染色",
+          "bacaan": "せんしょく",
+          "arti": "pewarnaan (kain)"
+        },
+        {
+          "kanji": "洗礼",
+          "bacaan": "せんれい",
+          "arti": "baptisan"
+        },
+        {
+          "kanji": "洗練",
+          "bacaan": "せんれん",
+          "arti": "kehalusan/kecanggihan"
+        },
+        {
+          "kanji": "染みる",
+          "bacaan": "しみる",
+          "arti": "meresap/terasa perih"
+        },
+        {
+          "kanji": "清水",
+          "bacaan": "しみず",
+          "arti": "air jernih"
+        },
+        {
+          "kanji": "漂う",
+          "bacaan": "ただよう",
+          "arti": "melayang/terapung"
+        },
+        {
+          "kanji": "湿っぽい",
+          "bacaan": "しめっぽい",
+          "arti": "lembap"
+        },
+        {
+          "kanji": "湿り",
+          "bacaan": "しめり",
+          "arti": "kelembapan"
+        },
+        {
+          "kanji": "湿る",
+          "bacaan": "しめる",
+          "arti": "menjadi lembap"
+        },
+        {
+          "kanji": "湿った",
+          "bacaan": "しめった",
+          "arti": "lembap"
+        },
+        {
+          "kanji": "染み",
+          "bacaan": "しみ",
+          "arti": "noda"
+        },
+        {
+          "kanji": "濯ぎ",
+          "bacaan": "すすぎ",
+          "arti": "pembilasan"
+        },
+        {
+          "kanji": "淡水魚",
+          "bacaan": "たんすいぎょ",
+          "arti": "ikan air tawar"
+        },
+        {
+          "kanji": "淡白",
+          "bacaan": "たんぱく",
+          "arti": "hambar/sederhana (sifat)"
+        },
+        {
+          "kanji": "湿布",
+          "bacaan": "しっぷ",
+          "arti": "plester obat/koyo"
+        },
+        {
+          "kanji": "沈む",
+          "bacaan": "しずむ",
+          "arti": "tenggelam"
+        },
+        {
+          "kanji": "滴",
+          "bacaan": "しずく",
+          "arti": "tetesan"
+        },
+        {
+          "kanji": "溜まる",
+          "bacaan": "たまる",
+          "arti": "menumpuk"
+        },
+        {
+          "kanji": "浸透",
+          "bacaan": "しんとう",
+          "arti": "peresapan/penyebaran"
+        },
+        {
+          "kanji": "湿度",
+          "bacaan": "しつど",
+          "arti": "kelembapan udara"
+        },
+        {
+          "kanji": "漏れる",
+          "bacaan": "もれる",
+          "arti": "bocor"
+        },
+        {
+          "kanji": "涙脆い",
+          "bacaan": "なみだもろい",
+          "arti": "mudah menangis"
+        },
+        {
+          "kanji": "海女",
+          "bacaan": "あま",
+          "arti": "penyelam wanita (pencari kerang)"
+        },
+        {
+          "kanji": "泥鰌",
+          "bacaan": "どじょう",
+          "arti": "ikan lele kecil (loach)"
+        },
+        {
+          "kanji": "消火",
+          "bacaan": "しょうか",
+          "arti": "pemadaman api"
+        },
+        {
+          "kanji": "漁師",
+          "bacaan": "りょうし",
+          "arti": "nelayan"
+        },
+        {
+          "kanji": "漫才師",
+          "bacaan": "まんざいし",
+          "arti": "pelawak manzai"
+        },
+        {
+          "kanji": "海賊",
+          "bacaan": "かいぞく",
+          "arti": "bajak laut"
+        }
+      ]
+    },
+    {
+      "radikal": "山",
+      "label": "山 - Gunung  (24 kata)",
+      "count": 24,
+      "words": [
+        {
+          "kanji": "炭",
+          "bacaan": "すみ",
+          "arti": "arang"
+        },
+        {
+          "kanji": "峠",
+          "bacaan": "とうげ",
+          "arti": "puncak jalan/tanjakan gunung"
+        },
+        {
+          "kanji": "炭鉱",
+          "bacaan": "たんこう",
+          "arti": "tambang batu bara"
+        },
+        {
+          "kanji": "岩",
+          "bacaan": "いわ",
+          "arti": "batu karang"
+        },
+        {
+          "kanji": "山脈",
+          "bacaan": "さんみゃく",
+          "arti": "pegunungan"
+        },
+        {
+          "kanji": "山荘",
+          "bacaan": "さんそう",
+          "arti": "pondok gunung"
+        },
+        {
+          "kanji": "峰",
+          "bacaan": "みね",
+          "arti": "puncak gunung"
+        },
+        {
+          "kanji": "岬",
+          "bacaan": "みさき",
+          "arti": "tanjung"
+        },
+        {
+          "kanji": "岸",
+          "bacaan": "きし",
+          "arti": "tepi (pantai/sungai)"
+        },
+        {
+          "kanji": "岩石",
+          "bacaan": "がんせき",
+          "arti": "batuan"
+        },
+        {
+          "kanji": "崖",
+          "bacaan": "がけ",
+          "arti": "tebing"
+        },
+        {
+          "kanji": "嵐",
+          "bacaan": "あらし",
+          "arti": "badai"
+        },
+        {
+          "kanji": "崩れ",
+          "bacaan": "くずれ",
+          "arti": "keruntuhan"
+        },
+        {
+          "kanji": "崩れる",
+          "bacaan": "くずれる",
+          "arti": "runtuh"
+        },
+        {
+          "kanji": "炭酸",
+          "bacaan": "たんさん",
+          "arti": "karbonat/soda"
+        },
+        {
+          "kanji": "山",
+          "bacaan": "やま",
+          "arti": "gunung"
+        },
+        {
+          "kanji": "祟る",
+          "bacaan": "たたる",
+          "arti": "mengutuk/membawa sial"
+        },
+        {
+          "kanji": "崩す",
+          "bacaan": "くずす",
+          "arti": "meruntuhkan"
+        },
+        {
+          "kanji": "嵌める",
+          "bacaan": "はめる",
+          "arti": "memasang/menjebak"
+        },
+        {
+          "kanji": "崩壊",
+          "bacaan": "ほうかい",
+          "arti": "keruntuhan"
+        },
+        {
+          "kanji": "祟り",
+          "bacaan": "たたり",
+          "arti": "kutukan"
+        },
+        {
+          "kanji": "炭素",
+          "bacaan": "たんそ",
+          "arti": "karbon"
+        },
+        {
+          "kanji": "崇拝",
+          "bacaan": "すうはい",
+          "arti": "pemujaan"
+        },
+        {
+          "kanji": "山羊",
+          "bacaan": "やぎ",
+          "arti": "kambing"
+        }
+      ]
+    },
+    {
+      "radikal": "火 / 灬",
+      "label": "火 - Api/Panas  (48 kata)",
+      "count": 48,
+      "words": [
+        {
+          "kanji": "炎",
+          "bacaan": "ほのお",
+          "arti": "api/kobaran"
+        },
+        {
+          "kanji": "火薬",
+          "bacaan": "かやく",
+          "arti": "mesiu"
+        },
+        {
+          "kanji": "灯台",
+          "bacaan": "とうだい",
+          "arti": "mercusuar"
+        },
+        {
+          "kanji": "焼き場",
+          "bacaan": "やきば",
+          "arti": "tempat kremasi/pembakaran"
+        },
+        {
+          "kanji": "ガス焜炉",
+          "bacaan": "がすこんろ",
+          "arti": "kompor gas"
+        },
+        {
+          "kanji": "灯油",
+          "bacaan": "とうゆ",
+          "arti": "minyak tanah"
+        },
+        {
+          "kanji": "火葬場",
+          "bacaan": "かそうば",
+          "arti": "tempat kremasi"
+        },
+        {
+          "kanji": "焜炉",
+          "bacaan": "こんろ",
+          "arti": "kompor"
+        },
+        {
+          "kanji": "炬燵",
+          "bacaan": "こたつ",
+          "arti": "kotatsu (meja penghangat)"
+        },
+        {
+          "kanji": "焼却場",
+          "bacaan": "しょうきゃくじょう",
+          "arti": "tempat pembakaran sampah"
+        },
+        {
+          "kanji": "火山",
+          "bacaan": "かざん",
+          "arti": "gunung berapi"
+        },
+        {
+          "kanji": "煙突",
+          "bacaan": "えんとつ",
+          "arti": "cerobong asap"
+        },
+        {
+          "kanji": "畑",
+          "bacaan": "はたけ",
+          "arti": "ladang"
+        },
+        {
+          "kanji": "爆竹",
+          "bacaan": "ばくちく",
+          "arti": "petasan"
+        },
+        {
+          "kanji": "爆弾",
+          "bacaan": "ばくだん",
+          "arti": "bom"
+        },
+        {
+          "kanji": "煩わしい",
+          "bacaan": "わずらわしい",
+          "arti": "merepotkan"
+        },
+        {
+          "kanji": "燃料",
+          "bacaan": "ねんりょう",
+          "arti": "bahan bakar"
+        },
+        {
+          "kanji": "焼き物",
+          "bacaan": "やきもの",
+          "arti": "keramik/gerabah"
+        },
+        {
+          "kanji": "炊飯器",
+          "bacaan": "すいはんき",
+          "arti": "rice cooker"
+        },
+        {
+          "kanji": "煙草",
+          "bacaan": "たばこ",
+          "arti": "rokok"
+        },
+        {
+          "kanji": "炎症",
+          "bacaan": "えんしょう",
+          "arti": "peradangan"
+        },
+        {
+          "kanji": "火傷",
+          "bacaan": "やけど",
+          "arti": "luka bakar"
+        },
+        {
+          "kanji": "火災",
+          "bacaan": "かさい",
+          "arti": "kebakaran"
+        },
+        {
+          "kanji": "爆発",
+          "bacaan": "ばくはつ",
+          "arti": "ledakan"
+        },
+        {
+          "kanji": "火",
+          "bacaan": "ひ",
+          "arti": "api"
+        },
+        {
+          "kanji": "火事",
+          "bacaan": "かじ",
+          "arti": "kebakaran"
+        },
+        {
+          "kanji": "煙い",
+          "bacaan": "けむい",
+          "arti": "berasap/pedih karena asap"
+        },
+        {
+          "kanji": "煙",
+          "bacaan": "けむり",
+          "arti": "asap"
+        },
+        {
+          "kanji": "煉瓦",
+          "bacaan": "れんが",
+          "arti": "batu bata"
+        },
+        {
+          "kanji": "炊事",
+          "bacaan": "すいじ",
+          "arti": "memasak"
+        },
+        {
+          "kanji": "燻製",
+          "bacaan": "くんせい",
+          "arti": "pengasapan (makanan)"
+        },
+        {
+          "kanji": "炒める",
+          "bacaan": "いためる",
+          "arti": "menumis"
+        },
+        {
+          "kanji": "焼く",
+          "bacaan": "やく",
+          "arti": "membakar/memanggang"
+        },
+        {
+          "kanji": "燃やす",
+          "bacaan": "もやす",
+          "arti": "membakar"
+        },
+        {
+          "kanji": "焼き鳥",
+          "bacaan": "やきとり",
+          "arti": "sate ayam (yakitori)"
+        },
+        {
+          "kanji": "煙る",
+          "bacaan": "けむる",
+          "arti": "berasap/mengeluarkan asap"
+        },
+        {
+          "kanji": "焼酎",
+          "bacaan": "しょうちゅう",
+          "arti": "shochu (minuman keras)"
+        },
+        {
+          "kanji": "火葬",
+          "bacaan": "かそう",
+          "arti": "kremasi"
+        },
+        {
+          "kanji": "すき焼き",
+          "bacaan": "すきやき",
+          "arti": "sukiyaki"
+        },
+        {
+          "kanji": "炎症",
+          "bacaan": "えんしょう",
+          "arti": "peradangan"
+        },
+        {
+          "kanji": "燃える",
+          "bacaan": "もえる",
+          "arti": "terbakar"
+        },
+        {
+          "kanji": "爆撃",
+          "bacaan": "ばくげき",
+          "arti": "pengeboman"
+        },
+        {
+          "kanji": "焼却",
+          "bacaan": "しょうきゃく",
+          "arti": "pembakaran (sampah)"
+        },
+        {
+          "kanji": "焼ける",
+          "bacaan": "やける",
+          "arti": "terbakar/matang (dipanggang)"
+        },
+        {
+          "kanji": "焼き",
+          "bacaan": "",
+          "arti": "bakaran (panggang)"
+        },
+        {
+          "kanji": "燃焼",
+          "bacaan": "ねんしょう",
+          "arti": "pembakaran"
+        },
+        {
+          "kanji": "熱湯",
+          "bacaan": "ねっとう",
+          "arti": "air panas mendidih"
+        },
+        {
+          "kanji": "煮える",
+          "bacaan": "にえる",
+          "arti": "matang direbus"
+        }
+      ]
+    },
+    {
+      "radikal": "雨",
+      "label": "雨 - Hujan/Cuaca  (36 kata)",
+      "count": 36,
+      "words": [
+        {
+          "kanji": "霞",
+          "bacaan": "かすみ",
+          "arti": "kabut tipis"
+        },
+        {
+          "kanji": "霞む",
+          "bacaan": "かすむ",
+          "arti": "berkabut/buram"
+        },
+        {
+          "kanji": "震動",
+          "bacaan": "しんどう",
+          "arti": "getaran"
+        },
+        {
+          "kanji": "震源地",
+          "bacaan": "しんげんち",
+          "arti": "pusat gempa"
+        },
+        {
+          "kanji": "震災",
+          "bacaan": "しんさい",
+          "arti": "bencana gempa"
+        },
+        {
+          "kanji": "露",
+          "bacaan": "つゆ",
+          "arti": "embun"
+        },
+        {
+          "kanji": "雨季",
+          "bacaan": "うき",
+          "arti": "musim hujan"
+        },
+        {
+          "kanji": "雨天",
+          "bacaan": "うてん",
+          "arti": "cuaca hujan"
+        },
+        {
+          "kanji": "雪",
+          "bacaan": "ゆき",
+          "arti": "salju"
+        },
+        {
+          "kanji": "雨雲",
+          "bacaan": "あまぐも",
+          "arti": "awan hujan"
+        },
+        {
+          "kanji": "雨漏り",
+          "bacaan": "あまもり",
+          "arti": "bocor (atap saat hujan)"
+        },
+        {
+          "kanji": "雨",
+          "bacaan": "あめ",
+          "arti": "hujan"
+        },
+        {
+          "kanji": "雹",
+          "bacaan": "ひょう",
+          "arti": "hujan es"
+        },
+        {
+          "kanji": "霰",
+          "bacaan": "あられ",
+          "arti": "hujan es kecil"
+        },
+        {
+          "kanji": "霧",
+          "bacaan": "きり",
+          "arti": "kabut"
+        },
+        {
+          "kanji": "霧雨",
+          "bacaan": "きりさめ",
+          "arti": "gerimis"
+        },
+        {
+          "kanji": "零れる",
+          "bacaan": "こぼれる",
+          "arti": "tumpah/berceceran"
+        },
+        {
+          "kanji": "雨宿り",
+          "bacaan": "あまやどり",
+          "arti": "berteduh dari hujan"
+        },
+        {
+          "kanji": "雨戸",
+          "bacaan": "あまど",
+          "arti": "penutup jendela (pelindung hujan)"
+        },
+        {
+          "kanji": "雨具",
+          "bacaan": "あまぐ",
+          "arti": "perlengkapan hujan"
+        },
+        {
+          "kanji": "雪崩",
+          "bacaan": "なだれ",
+          "arti": "longsoran salju"
+        },
+        {
+          "kanji": "雷",
+          "bacaan": "かみなり",
+          "arti": "petir"
+        },
+        {
+          "kanji": "電池",
+          "bacaan": "でんち",
+          "arti": "baterai"
+        },
+        {
+          "kanji": "電柱",
+          "bacaan": "でんちゅう",
+          "arti": "tiang listrik"
+        },
+        {
+          "kanji": "電球",
+          "bacaan": "でんきゅう",
+          "arti": "bola lampu"
+        },
+        {
+          "kanji": "電線",
+          "bacaan": "でんせん",
+          "arti": "kabel listrik"
+        },
+        {
+          "kanji": "電車",
+          "bacaan": "でんしゃ",
+          "arti": "kereta listrik"
+        },
+        {
+          "kanji": "電子レンジ",
+          "bacaan": "でんしれんじ",
+          "arti": "microwave"
+        },
+        {
+          "kanji": "電卓",
+          "bacaan": "でんたく",
+          "arti": "kalkulator"
+        },
+        {
+          "kanji": "電灯",
+          "bacaan": "でんとう",
+          "arti": "lampu listrik"
+        },
+        {
+          "kanji": "電話",
+          "bacaan": "でんわ",
+          "arti": "telepon"
+        },
+        {
+          "kanji": "電話帳",
+          "bacaan": "でんわちょう",
+          "arti": "buku telepon"
+        },
+        {
+          "kanji": "霊柩",
+          "bacaan": "れいきゅう",
+          "arti": "peti jenazah"
+        },
+        {
+          "kanji": "霊柩車",
+          "bacaan": "れいきゅうしゃ",
+          "arti": "mobil jenazah"
+        },
+        {
+          "kanji": "露天",
+          "bacaan": "ろてん",
+          "arti": "tempat terbuka"
+        },
+        {
+          "kanji": "露天風呂",
+          "bacaan": "ろてんぶろ",
+          "arti": "pemandian air panas terbuka"
+        }
+      ]
+    },
+    {
+      "radikal": "天 (bukan radikal, kata utuh)",
+      "label": "天 - Langit  (7 kata)",
+      "count": 7,
+      "words": [
+        {
+          "kanji": "天",
+          "bacaan": "てん",
+          "arti": "langit"
+        },
+        {
+          "kanji": "天国",
+          "bacaan": "てんごく",
+          "arti": "surga"
+        },
+        {
+          "kanji": "天気",
+          "bacaan": "てんき",
+          "arti": "cuaca"
+        },
+        {
+          "kanji": "天候",
+          "bacaan": "てんこう",
+          "arti": "keadaan cuaca"
+        },
+        {
+          "kanji": "天然",
+          "bacaan": "てんねん",
+          "arti": "alami"
+        },
+        {
+          "kanji": "天災",
+          "bacaan": "てんさい",
+          "arti": "bencana alam"
+        },
+        {
+          "kanji": "天秤",
+          "bacaan": "てんびん",
+          "arti": "timbangan/neraca"
+        }
+      ]
+    },
+    {
+      "radikal": "土",
+      "label": "土 - Tanah  (10 kata)",
+      "count": 10,
+      "words": [
+        {
+          "kanji": "境目",
+          "bacaan": "さかいめ",
+          "arti": "garis batas"
+        },
+        {
+          "kanji": "坪",
+          "bacaan": "つぼ",
+          "arti": "tsubo (satuan luas tanah)"
+        },
+        {
+          "kanji": "堆積",
+          "bacaan": "たいせき",
+          "arti": "pengendapan/sedimentasi"
+        },
+        {
+          "kanji": "境",
+          "bacaan": "さかい",
+          "arti": "batas"
+        },
+        {
+          "kanji": "埋没",
+          "bacaan": "まいぼつ",
+          "arti": "terkubur/terpendam"
+        },
+        {
+          "kanji": "境界",
+          "bacaan": "きょうかい",
+          "arti": "perbatasan"
+        },
+        {
+          "kanji": "地理",
+          "bacaan": "ちり",
+          "arti": "geografi"
+        },
+        {
+          "kanji": "塊",
+          "bacaan": "かたまり",
+          "arti": "gumpalan"
+        },
+        {
+          "kanji": "埃",
+          "bacaan": "ほこり",
+          "arti": "debu"
+        },
+        {
+          "kanji": "土台",
+          "bacaan": "どだい",
+          "arti": "fondasi/pijakan"
+        }
+      ]
+    },
+    {
+      "radikal": "月 (bentuk utuh)",
+      "label": "月 - Bulan  (2 kata)",
+      "count": 2,
+      "words": [
+        {
+          "kanji": "月光",
+          "bacaan": "げっこう",
+          "arti": "cahaya bulan"
+        },
+        {
+          "kanji": "月",
+          "bacaan": "つき",
+          "arti": "bulan"
+        }
+      ]
+    },
+    {
+      "radikal": "木",
+      "label": "木 - Tumbuhan (baru benih, tambahkan lagi)  (1 kata)",
+      "count": 1,
+      "words": [
+        {
+          "kanji": "栽培",
+          "bacaan": "さいばい",
+          "arti": "budidaya (tanam)"
+        }
+      ]
+    },
+    {
+      "radikal": "儿 (光) / 車 (輝) - beda radikal",
+      "label": "光/輝 - Cahaya (tema, bukan 1 bushu)  (6 kata)",
+      "count": 6,
+      "words": [
+        {
+          "kanji": "輝",
+          "bacaan": "かがやき",
+          "arti": "kilauan"
+        },
+        {
+          "kanji": "輝く",
+          "bacaan": "かがやく",
+          "arti": "bersinar"
+        },
+        {
+          "kanji": "光景",
+          "bacaan": "こうけい",
+          "arti": "pemandangan"
+        },
+        {
+          "kanji": "光線",
+          "bacaan": "こうせん",
+          "arti": "sinar cahaya"
+        },
+        {
+          "kanji": "光",
+          "bacaan": "ひかり",
+          "arti": "cahaya"
+        },
+        {
+          "kanji": "光る",
+          "bacaan": "ひかる",
+          "arti": "bersinar/berkilau"
+        }
+      ]
+    }
+  ]
+}
