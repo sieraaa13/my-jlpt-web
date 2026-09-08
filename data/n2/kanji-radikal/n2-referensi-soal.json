@@ -471,29 +471,6 @@
       "section": "main"
     },
     {
-      "radikal": "見",
-      "label": "見 - Melihat  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "規則",
-          "bacaan": "きそく",
-          "arti": "peraturan / regulasi / kaidah"
-        },
-        {
-          "kanji": "見落とす",
-          "bacaan": "みおとす",
-          "arti": "melewatkan / lalai melihat / gagal menyadari"
-        },
-        {
-          "kanji": "視界",
-          "bacaan": "しかい",
-          "arti": "jarak pandang / bidang pandang / penglihatan"
-        }
-      ],
-      "section": "main"
-    },
-    {
       "radikal": "止",
       "label": "止 - Berhenti  (2 kata)",
       "count": 2,

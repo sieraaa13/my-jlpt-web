@@ -918,44 +918,6 @@
       "section": "main"
     },
     {
-      "radikal": "又",
-      "label": "又 - Tangan (lagi) (bukan tempat)  (6 kata)",
-      "count": 6,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "反発",
-          "bacaan": "はんぱつ",
-          "arti": "penolakan keras / perlawanan / reaksi negatif"
-        },
-        {
-          "kanji": "反映",
-          "bacaan": "はんえい",
-          "arti": "mencerminkan / merefleksikan / representasi"
-        },
-        {
-          "kanji": "反応",
-          "bacaan": "はんのう",
-          "arti": "reaksi / tanggapan / respons"
-        },
-        {
-          "kanji": "反抗",
-          "bacaan": "はんこう",
-          "arti": "pembangkangan / perlawanan / penentangan"
-        },
-        {
-          "kanji": "反感",
-          "bacaan": "はんかん",
-          "arti": "perasaan tidak suka / antipati / permusuhan"
-        },
-        {
-          "kanji": "反論",
-          "bacaan": "はんろん",
-          "arti": "sanggahan / bantahan / argumen balasan"
-        }
-      ]
-    },
-    {
       "radikal": "力",
       "label": "力 - Tenaga (bukan tempat)  (3 kata)",
       "count": 3,

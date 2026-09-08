@@ -1,0 +1,98 @@
+{
+  "title": "Kumpulan Kanji Radikal Melihat",
+  "groups": [
+    {
+      "radikal": "見",
+      "label": "見 - Melihat  (17 kata)",
+      "count": 17,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "見解",
+          "bacaan": "けんかい",
+          "arti": "Pandangan / Opini / Pendapat / Sudut Pandang"
+        },
+        {
+          "kanji": "見当",
+          "bacaan": "けんとう",
+          "arti": "Perkiraan / Tebakan / Estimasi / Arah / Tujuan"
+        },
+        {
+          "kanji": "見極める",
+          "bacaan": "みきわめる",
+          "arti": "Memastikan / Mengidentifikasi secara jelas / Melihat sampai akhir / Menilai secara akurat"
+        },
+        {
+          "kanji": "見出し",
+          "bacaan": "みだし",
+          "arti": "Menemukan / Mengidentifikasi / Mendeteksi (To find out / To discover / To detect) / 2. Melihat keluar (To look out of) / 3. Memulai / Menemukan awal (To find the start of)"
+        },
+        {
+          "kanji": "見失う",
+          "bacaan": "みうしなう",
+          "arti": "Kehilangan pandangan / Kehilangan jejak / Gagal melacak / Kehilangan arah"
+        },
+        {
+          "kanji": "見込み",
+          "bacaan": "みこみ",
+          "arti": "Mengacu pada apa yang \"terlihat di depan\" atau apa yang mungkin terjadi di masa depan berdasarkan analisis atau situasi saat ini"
+        },
+        {
+          "kanji": "見放す",
+          "bacaan": "みはなす",
+          "arti": "Melihat lalu melepaskan / melihat dan membiarkan pergi"
+        },
+        {
+          "kanji": "規模",
+          "bacaan": "きぼ",
+          "arti": "Skala / Ukuran / Cakupan / Luas"
+        },
+        {
+          "kanji": "規制",
+          "bacaan": "きせい",
+          "arti": "Regulasi / Peraturan / Pembatasan / Kontrol"
+        },
+        {
+          "kanji": "規格",
+          "bacaan": "きかく",
+          "arti": "Standar / Spesifikasi / Norma / Baku Mutu"
+        },
+        {
+          "kanji": "規定",
+          "bacaan": "きてい",
+          "arti": "Aturan / Peraturan / Ketentuan / Regulasi"
+        },
+        {
+          "kanji": "規則",
+          "bacaan": "きそく",
+          "arti": "peraturan / regulasi / kaidah"
+        },
+        {
+          "kanji": "見落とす",
+          "bacaan": "みおとす",
+          "arti": "melewatkan / lalai melihat / gagal menyadari"
+        },
+        {
+          "kanji": "視界",
+          "bacaan": "しかい",
+          "arti": "jarak pandang / bidang pandang / penglihatan"
+        },
+        {
+          "kanji": "視覚",
+          "bacaan": "しかく",
+          "arti": "Penglihatan / Indera Penglihatan / Visual"
+        },
+        {
+          "kanji": "観点",
+          "bacaan": "かんてん",
+          "arti": "Sudut Pandang / Perspektif / Titik Pandang"
+        },
+        {
+          "kanji": "観る",
+          "bacaan": "みる",
+          "arti": "Menonton / Mengamati / Melihat (dengan fokus pada tontonan/pertunjukan)"
+        }
+      ]
+    }
+  ]
+}

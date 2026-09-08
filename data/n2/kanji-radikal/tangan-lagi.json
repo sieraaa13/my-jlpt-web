@@ -1,0 +1,103 @@
+{
+  "title": "Kumpulan Kanji Radikal Tangan (Lagi)",
+  "groups": [
+    {
+      "radikal": "又",
+      "label": "又 - Tangan (lagi)  (18 kata)",
+      "count": 18,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "友情",
+          "bacaan": "ゆうじょう",
+          "arti": "Persahabatan / Ikatan persahabatan / Perasaan teman"
+        },
+        {
+          "kanji": "取得",
+          "bacaan": "しゅとく",
+          "arti": "Perolehan / Akuisisi / Mendapatkan / Memperoleh"
+        },
+        {
+          "kanji": "取ってつけた",
+          "bacaan": "とってつけた",
+          "arti": "Mengambil dan menempelkan / memasang dengan paksa/buatan"
+        },
+        {
+          "kanji": "収穫",
+          "bacaan": "しゅうかく",
+          "arti": "Panen / Hasil Tanaman"
+        },
+        {
+          "kanji": "収納",
+          "bacaan": "しゅうのう",
+          "arti": "Penyimpanan / Menyimpan"
+        },
+        {
+          "kanji": "受講料",
+          "bacaan": "じゅこうりょう",
+          "arti": "Biaya kuliah/kursus / Biaya pendaftaran / Uang sekolah/pelatihan"
+        },
+        {
+          "kanji": "受動的",
+          "bacaan": "じゅどうてき",
+          "arti": "Pasif / Tidak aktif / Defensif / Hanya menerima"
+        },
+        {
+          "kanji": "受講",
+          "bacaan": "じゅこう",
+          "arti": "Mengikuti Kuliah/Kursus / Menghadiri Pelajaran"
+        },
+        {
+          "kanji": "受容",
+          "bacaan": "じゅよう",
+          "arti": "Menerima dan menampung/mengambil"
+        },
+        {
+          "kanji": "取材",
+          "bacaan": "しゅざい",
+          "arti": "Peliputan (berita) / Wawancara / Pengumpulan Data/Informasi"
+        },
+        {
+          "kanji": "取り巻く",
+          "bacaan": "とりまく",
+          "arti": "Mengelilingi / Mengepung / Melingkari / Melayani/Mengejar"
+        },
+        {
+          "kanji": "取り返しのつかない",
+          "bacaan": "とりかえしのつかない",
+          "arti": "Tidak bisa diperbaiki / Tidak dapat ditarik kembali / Fatal / Iparable / Terlanjur"
+        },
+        {
+          "kanji": "反発",
+          "bacaan": "はんぱつ",
+          "arti": "penolakan keras / perlawanan / reaksi negatif"
+        },
+        {
+          "kanji": "反映",
+          "bacaan": "はんえい",
+          "arti": "mencerminkan / merefleksikan / representasi"
+        },
+        {
+          "kanji": "反応",
+          "bacaan": "はんのう",
+          "arti": "reaksi / tanggapan / respons"
+        },
+        {
+          "kanji": "反抗",
+          "bacaan": "はんこう",
+          "arti": "pembangkangan / perlawanan / penentangan"
+        },
+        {
+          "kanji": "反感",
+          "bacaan": "はんかん",
+          "arti": "perasaan tidak suka / antipati / permusuhan"
+        },
+        {
+          "kanji": "反論",
+          "bacaan": "はんろん",
+          "arti": "sanggahan / bantahan / argumen balasan"
+        }
+      ]
+    }
+  ]
+}

@@ -855,28 +855,6 @@
       ]
     },
     {
-      "radikal": "見",
-      "label": "見 - Melihat  (3 kata)",
-      "count": 3,
-      "words": [
-        {
-          "kanji": "視覚",
-          "bacaan": "しかく",
-          "arti": "Penglihatan / Indera Penglihatan / Visual"
-        },
-        {
-          "kanji": "観点",
-          "bacaan": "かんてん",
-          "arti": "Sudut Pandang / Perspektif / Titik Pandang"
-        },
-        {
-          "kanji": "観る",
-          "bacaan": "みる",
-          "arti": "Menonton / Mengamati / Melihat (dengan fokus pada tontonan/pertunjukan)"
-        }
-      ]
-    },
-    {
       "radikal": "止",
       "label": "止 - Berhenti  (3 kata)",
       "count": 3,
