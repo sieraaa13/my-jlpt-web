@@ -204,7 +204,7 @@
         },
         {
           "kanji": "続ける",
-          "bacaan": "つずける",
+          "bacaan": "つづける",
           "arti": "melanjutkan"
         },
         {
@@ -354,12 +354,12 @@
         },
         {
           "kanji": "続き",
-          "bacaan": "つずき",
+          "bacaan": "つづき",
           "arti": "lanjutan"
         },
         {
           "kanji": "続く",
-          "bacaan": "つずく",
+          "bacaan": "つづく",
           "arti": "berlanjut"
         },
         {
@@ -1877,7 +1877,7 @@
           "arti": "peluru"
         },
         {
-          "kanji": "鍋に",
+          "kanji": "鍋",
           "bacaan": "なべ",
           "arti": "panci"
         },
@@ -2824,8 +2824,8 @@
           "arti": "futon/kasur"
         },
         {
-          "kanji": "布",
-          "bacaan": "きれ",
+          "kanji": "布切れ",
+          "bacaan": "ぬのきれ",
           "arti": "kain"
         },
         {
@@ -3858,7 +3858,7 @@
       "words": [
         {
           "kanji": "盗み",
-          "bacaan": "ぬすむ",
+          "bacaan": "ぬすみ",
           "arti": "mencuri/pencurian"
         },
         {
