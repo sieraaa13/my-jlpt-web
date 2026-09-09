@@ -4,7 +4,6 @@
 // =================================================================
 import alam from "./alam.json";
 import altar from "./altar.json";
-import anak from "./anak.json";
 import arakPersembahan from "./arak-persembahan.json";
 import bagianTubuh from "./bagian-tubuh.json";
 import bajak from "./bajak.json";
@@ -19,22 +18,17 @@ import besar from "./besar.json";
 import binatang from "./binatang.json";
 import biruHijau from "./biru-hijau.json";
 import buluCorak from "./bulu-corak.json";
-import buluSayap from "./bulu-sayap.json";
 import cabang from "./cabang.json";
 import coretanMiring from "./coretan-miring.json";
 import delapan from "./delapan.json";
 import dua from "./dua.json";
-import duaTangan from "./dua-tangan.json";
 import gandum from "./gandum.json";
 import garisAtas from "./garis-atas.json";
 import garisTegak from "./garis-tegak.json";
 import hantu from "./hantu.json";
-import hidung from "./hidung.json";
 import hitam from "./hitam.json";
 import kacang from "./kacang.json";
 import kait from "./kait.json";
-import kakiManusia from "./kaki-manusia.json";
-import kakiPincang from "./kaki-pincang.json";
 import kataSambung from "./kata-sambung.json";
 import kecil from "./kecil.json";
 import keduaUrutan from "./kedua-urutan.json";
@@ -57,7 +51,6 @@ import merah from "./merah.json";
 import milikPribadi from "./milik-pribadi.json";
 import misterius from "./misterius.json";
 import motifHarimau from "./motif-harimau.json";
-import orang from "./orang.json";
 import papanTipis from "./papan-tipis.json";
 import pedas from "./pedas.json";
 import pejabat from "./pejabat.json";
@@ -72,7 +65,6 @@ import sendok from "./sendok.json";
 import sepuluh from "./sepuluh.json";
 import suara from "./suara.json";
 import tandaTitik from "./tanda-titik.json";
-import tanganLagi from "./tangan-lagi.json";
 import tanpaKanji from "./tanpa-kanji.json";
 import tempat from "./tempat.json";
 import tenaga from "./tenaga.json";
@@ -81,11 +73,9 @@ import tindakan from "./tindakan.json";
 import tinggi from "./tinggi.json";
 import tongkatPemukul from "./tongkat-pemukul.json";
 import tua from "./tua.json";
-import tubuhBerbaring from "./tubuh-berbaring.json";
 import tulisan from "./tulisan.json";
 import ukuran from "./ukuran.json";
 import wangi from "./wangi.json";
-import wanita from "./wanita.json";
 import warna from "./warna.json";
 import type { RadikalFile } from "@/data/kanji-radikal-types";
 
@@ -97,7 +87,6 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   binatang: binatang as RadikalFile,
   tempat: tempat as RadikalFile,
   benda: benda as RadikalFile,
-  orang: orang as RadikalFile,
   melihat: melihat as RadikalFile,
   "melangkah-kecil": melangkahKecil as RadikalFile,
   satu: satu as RadikalFile,
@@ -105,10 +94,7 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   makan: makan as RadikalFile,
   tindakan: tindakan as RadikalFile,
   sepuluh: sepuluh as RadikalFile,
-  "kaki-manusia": kakiManusia as RadikalFile,
-  "tangan-lagi": tanganLagi as RadikalFile,
   besar: besar as RadikalFile,
-  "tubuh-berbaring": tubuhBerbaring as RadikalFile,
   ukuran: ukuran as RadikalFile,
   berhenti: berhenti as RadikalFile,
   sakit: sakit as RadikalFile,
@@ -117,7 +103,6 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   berkata: berkata as RadikalFile,
   kematian: kematian as RadikalFile,
   tinggi: tinggi as RadikalFile,
-  anak: anak as RadikalFile,
   putih: putih as RadikalFile,
   tenaga: tenaga as RadikalFile,
   "garis-atas": garisAtas as RadikalFile,
@@ -138,28 +123,23 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   segel: segel as RadikalFile,
   "biru-hijau": biruHijau as RadikalFile,
   "bulu-corak": buluCorak as RadikalFile,
-  wanita: wanita as RadikalFile,
   larangan: larangan as RadikalFile,
   sendok: sendok as RadikalFile,
   suara: suara as RadikalFile,
   "tongkat-pemukul": tongkatPemukul as RadikalFile,
-  "bulu-sayap": buluSayap as RadikalFile,
   hantu: hantu as RadikalFile,
   "kedua-urutan": keduaUrutan as RadikalFile,
   kesatria: kesatria as RadikalFile,
   "papan-tipis": papanTipis as RadikalFile,
-  "dua-tangan": duaTangan as RadikalFile,
   macan: macan as RadikalFile,
   "milik-pribadi": milikPribadi as RadikalFile,
   misterius: misterius as RadikalFile,
   "motif-harimau": motifHarimau as RadikalFile,
   rami: rami as RadikalFile,
   dua: dua as RadikalFile,
-  "kaki-pincang": kakiPincang as RadikalFile,
   membungkus: membungkus as RadikalFile,
   pedas: pedas as RadikalFile,
   perkataan: perkataan as RadikalFile,
-  hidung: hidung as RadikalFile,
   merah: merah as RadikalFile,
   tua: tua as RadikalFile,
   wangi: wangi as RadikalFile,
@@ -185,7 +165,6 @@ export const radikalKanjiOrder = [
   "binatang",
   "tempat",
   "benda",
-  "orang",
   "melihat",
   "melangkah-kecil",
   "satu",
@@ -193,10 +172,7 @@ export const radikalKanjiOrder = [
   "makan",
   "tindakan",
   "sepuluh",
-  "kaki-manusia",
-  "tangan-lagi",
   "besar",
-  "tubuh-berbaring",
   "ukuran",
   "berhenti",
   "sakit",
@@ -205,7 +181,6 @@ export const radikalKanjiOrder = [
   "berkata",
   "kematian",
   "tinggi",
-  "anak",
   "putih",
   "tenaga",
   "garis-atas",
@@ -226,28 +201,23 @@ export const radikalKanjiOrder = [
   "segel",
   "biru-hijau",
   "bulu-corak",
-  "wanita",
   "larangan",
   "sendok",
   "suara",
   "tongkat-pemukul",
-  "bulu-sayap",
   "hantu",
   "kedua-urutan",
   "kesatria",
   "papan-tipis",
-  "dua-tangan",
   "macan",
   "milik-pribadi",
   "misterius",
   "motif-harimau",
   "rami",
   "dua",
-  "kaki-pincang",
   "membungkus",
   "pedas",
   "perkataan",
-  "hidung",
   "merah",
   "tua",
   "wangi",
