@@ -3,10 +3,8 @@
 // Ditambah bertahap seiring setiap file dirapikan.
 // =================================================================
 import alam from "./alam.json";
-import aliranSungai from "./aliran-sungai.json";
 import altar from "./altar.json";
 import anak from "./anak.json";
-import arah from "./arah.json";
 import arakPersembahan from "./arak-persembahan.json";
 import bagianTubuh from "./bagian-tubuh.json";
 import bajak from "./bajak.json";
@@ -49,7 +47,6 @@ import larangan from "./larangan.json";
 import macan from "./macan.json";
 import makan from "./makan.json";
 import marga from "./marga.json";
-import matahari from "./matahari.json";
 import melangkahKecil from "./melangkah-kecil.json";
 import melangkahLambat from "./melangkah-lambat.json";
 import melangkahPelan from "./melangkah-pelan.json";
@@ -72,7 +69,6 @@ import sampaiTiba from "./sampai-tiba.json";
 import satu from "./satu.json";
 import segel from "./segel.json";
 import sendok from "./sendok.json";
-import senja from "./senja.json";
 import sepuluh from "./sepuluh.json";
 import suara from "./suara.json";
 import tandaTitik from "./tanda-titik.json";
@@ -102,7 +98,6 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   tempat: tempat as RadikalFile,
   benda: benda as RadikalFile,
   orang: orang as RadikalFile,
-  matahari: matahari as RadikalFile,
   melihat: melihat as RadikalFile,
   "melangkah-kecil": melangkahKecil as RadikalFile,
   satu: satu as RadikalFile,
@@ -114,13 +109,11 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   "tangan-lagi": tanganLagi as RadikalFile,
   besar: besar as RadikalFile,
   "tubuh-berbaring": tubuhBerbaring as RadikalFile,
-  senja: senja as RadikalFile,
   ukuran: ukuran as RadikalFile,
   berhenti: berhenti as RadikalFile,
   sakit: sakit as RadikalFile,
   beras: beras as RadikalFile,
   berdiri: berdiri as RadikalFile,
-  arah: arah as RadikalFile,
   berkata: berkata as RadikalFile,
   kematian: kematian as RadikalFile,
   tinggi: tinggi as RadikalFile,
@@ -173,7 +166,6 @@ export const radikalKanjiFiles: Record<string, RadikalFile> = {
   "coretan-miring": coretanMiring as RadikalFile,
   kacang: kacang as RadikalFile,
   "sampai-tiba": sampaiTiba as RadikalFile,
-  "aliran-sungai": aliranSungai as RadikalFile,
   "arak-persembahan": arakPersembahan as RadikalFile,
   bajak: bajak as RadikalFile,
   berselisih: berselisih as RadikalFile,
@@ -194,7 +186,6 @@ export const radikalKanjiOrder = [
   "tempat",
   "benda",
   "orang",
-  "matahari",
   "melihat",
   "melangkah-kecil",
   "satu",
@@ -206,13 +197,11 @@ export const radikalKanjiOrder = [
   "tangan-lagi",
   "besar",
   "tubuh-berbaring",
-  "senja",
   "ukuran",
   "berhenti",
   "sakit",
   "beras",
   "berdiri",
-  "arah",
   "berkata",
   "kematian",
   "tinggi",
@@ -265,7 +254,6 @@ export const radikalKanjiOrder = [
   "coretan-miring",
   "kacang",
   "sampai-tiba",
-  "aliran-sungai",
   "arak-persembahan",
   "bajak",
   "berselisih",

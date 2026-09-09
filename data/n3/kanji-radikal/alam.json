@@ -3073,6 +3073,724 @@
       ]
     },
     {
+      "radikal": "日",
+      "label": "日 - Matahari / hari  (142 kata)",
+      "count": 142,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "智恵",
+          "bacaan": "ちえ",
+          "arti": ""
+        },
+        {
+          "kanji": "暖かい",
+          "bacaan": "あたたかい",
+          "arti": ""
+        },
+        {
+          "kanji": "暖まる",
+          "bacaan": "あたたまる",
+          "arti": ""
+        },
+        {
+          "kanji": "日光",
+          "bacaan": "にっこう",
+          "arti": ""
+        },
+        {
+          "kanji": "日食",
+          "bacaan": "にっしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "晴天",
+          "bacaan": "せいてん",
+          "arti": ""
+        },
+        {
+          "kanji": "晩",
+          "bacaan": "ばん",
+          "arti": ""
+        },
+        {
+          "kanji": "晩年",
+          "bacaan": "ばんねん",
+          "arti": ""
+        },
+        {
+          "kanji": "曖昧",
+          "bacaan": "あいまい",
+          "arti": ""
+        },
+        {
+          "kanji": "明らか",
+          "bacaan": "あきらか",
+          "arti": ""
+        },
+        {
+          "kanji": "日射病",
+          "bacaan": "にっしゃびょう",
+          "arti": ""
+        },
+        {
+          "kanji": "日差し",
+          "bacaan": "ひざし",
+          "arti": ""
+        },
+        {
+          "kanji": "日本",
+          "bacaan": "にほん",
+          "arti": ""
+        },
+        {
+          "kanji": "時計",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "日用品",
+          "bacaan": "にちようひん",
+          "arti": ""
+        },
+        {
+          "kanji": "日記",
+          "bacaan": "にっき",
+          "arti": ""
+        },
+        {
+          "kanji": "暖簾",
+          "bacaan": "のれん",
+          "arti": ""
+        },
+        {
+          "kanji": "時",
+          "bacaan": "じ",
+          "arti": ""
+        },
+        {
+          "kanji": "日の丸",
+          "bacaan": "ひのまる",
+          "arti": ""
+        },
+        {
+          "kanji": "日本",
+          "bacaan": "にっぽん",
+          "arti": ""
+        },
+        {
+          "kanji": "日陰",
+          "bacaan": "ひかげ",
+          "arti": ""
+        },
+        {
+          "kanji": "映画館",
+          "bacaan": "えいがかん",
+          "arti": ""
+        },
+        {
+          "kanji": "暇",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "晴れ",
+          "bacaan": "はれ",
+          "arti": ""
+        },
+        {
+          "kanji": "晴れる",
+          "bacaan": "はれる",
+          "arti": ""
+        },
+        {
+          "kanji": "暗中",
+          "bacaan": "あんちゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "暗黒",
+          "bacaan": "あんこく",
+          "arti": ""
+        },
+        {
+          "kanji": "暗黙",
+          "bacaan": "あんもく",
+          "arti": ""
+        },
+        {
+          "kanji": "暗殺",
+          "bacaan": "あんさつ",
+          "arti": ""
+        },
+        {
+          "kanji": "暖房",
+          "bacaan": "だんぼう",
+          "arti": ""
+        },
+        {
+          "kanji": "暗示",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "易しい",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "易い",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "曇",
+          "bacaan": "くも",
+          "arti": ""
+        },
+        {
+          "kanji": "曇り",
+          "bacaan": "くもり",
+          "arti": ""
+        },
+        {
+          "kanji": "曇る",
+          "bacaan": "くもる",
+          "arti": ""
+        },
+        {
+          "kanji": "暴動",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "暴風",
+          "bacaan": "ぼうふう",
+          "arti": ""
+        },
+        {
+          "kanji": "暴れる",
+          "bacaan": "あばれる",
+          "arti": ""
+        },
+        {
+          "kanji": "星",
+          "bacaan": "ほし",
+          "arti": ""
+        },
+        {
+          "kanji": "暑い",
+          "bacaan": "あつい",
+          "arti": ""
+        },
+        {
+          "kanji": "暑さ",
+          "bacaan": "あつさ",
+          "arti": ""
+        },
+        {
+          "kanji": "暑中見舞い",
+          "bacaan": "しょちゅうみまい",
+          "arti": ""
+        },
+        {
+          "kanji": "景色",
+          "bacaan": "けしき",
+          "arti": ""
+        },
+        {
+          "kanji": "暗記",
+          "bacaan": "あんき",
+          "arti": ""
+        },
+        {
+          "kanji": "日帰り",
+          "bacaan": "ひがえり",
+          "arti": ""
+        },
+        {
+          "kanji": "映す",
+          "bacaan": "うつす",
+          "arti": ""
+        },
+        {
+          "kanji": "時めき",
+          "bacaan": "ときめき",
+          "arti": ""
+        },
+        {
+          "kanji": "時めく",
+          "bacaan": "ときめく",
+          "arti": ""
+        },
+        {
+          "kanji": "暴走族",
+          "bacaan": "ぼうそうぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "昆虫",
+          "bacaan": "こんちゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "日経",
+          "bacaan": "にっけい",
+          "arti": ""
+        },
+        {
+          "kanji": "明くる日",
+          "bacaan": "あくるひ",
+          "arti": ""
+        },
+        {
+          "kanji": "明後日",
+          "bacaan": "あさって",
+          "arti": ""
+        },
+        {
+          "kanji": "明日",
+          "bacaan": "あした",
+          "arti": ""
+        },
+        {
+          "kanji": "明日",
+          "bacaan": "あす",
+          "arti": ""
+        },
+        {
+          "kanji": "時間割",
+          "bacaan": "じかんわり",
+          "arti": ""
+        },
+        {
+          "kanji": "時刻",
+          "bacaan": "じこく",
+          "arti": ""
+        },
+        {
+          "kanji": "明",
+          "bacaan": "みょう",
+          "arti": ""
+        },
+        {
+          "kanji": "明晩",
+          "bacaan": "みょうばん",
+          "arti": ""
+        },
+        {
+          "kanji": "明年",
+          "bacaan": "みょうねん",
+          "arti": ""
+        },
+        {
+          "kanji": "明日",
+          "bacaan": "みょうにち",
+          "arti": ""
+        },
+        {
+          "kanji": "日中",
+          "bacaan": "にっちゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "日",
+          "bacaan": "にち",
+          "arti": ""
+        },
+        {
+          "kanji": "日没",
+          "bacaan": "にちぼつ",
+          "arti": ""
+        },
+        {
+          "kanji": "日時",
+          "bacaan": "にちじ",
+          "arti": ""
+        },
+        {
+          "kanji": "日常",
+          "bacaan": "にちじょう",
+          "arti": ""
+        },
+        {
+          "kanji": "時",
+          "bacaan": "とき",
+          "arti": ""
+        },
+        {
+          "kanji": "時々",
+          "bacaan": "ときどき",
+          "arti": ""
+        },
+        {
+          "kanji": "曜日",
+          "bacaan": "ようび",
+          "arti": ""
+        },
+        {
+          "kanji": "昨夜",
+          "bacaan": "ゆうべ",
+          "arti": ""
+        },
+        {
+          "kanji": "明け",
+          "bacaan": "あけ",
+          "arti": ""
+        },
+        {
+          "kanji": "明くる",
+          "bacaan": "あくる",
+          "arti": ""
+        },
+        {
+          "kanji": "暫時",
+          "bacaan": "ざんじ",
+          "arti": ""
+        },
+        {
+          "kanji": "明朗",
+          "bacaan": "めいろう",
+          "arti": ""
+        },
+        {
+          "kanji": "暗算",
+          "bacaan": "あんざん",
+          "arti": ""
+        },
+        {
+          "kanji": "時間",
+          "bacaan": "じかん",
+          "arti": ""
+        },
+        {
+          "kanji": "時間表",
+          "bacaan": "じかんひょう",
+          "arti": ""
+        },
+        {
+          "kanji": "日頃",
+          "bacaan": "ひごろ",
+          "arti": ""
+        },
+        {
+          "kanji": "日暮れ",
+          "bacaan": "ひぐれ",
+          "arti": ""
+        },
+        {
+          "kanji": "日",
+          "bacaan": "ひ",
+          "arti": ""
+        },
+        {
+          "kanji": "暴力",
+          "bacaan": "ぼうりょく",
+          "arti": ""
+        },
+        {
+          "kanji": "暇つぶし",
+          "bacaan": "ひまつぶし",
+          "arti": ""
+        },
+        {
+          "kanji": "日の出",
+          "bacaan": "ひので",
+          "arti": ""
+        },
+        {
+          "kanji": "日の入り",
+          "bacaan": "ひのいり",
+          "arti": ""
+        },
+        {
+          "kanji": "時代",
+          "bacaan": "じだい",
+          "arti": ""
+        },
+        {
+          "kanji": "時下",
+          "bacaan": "じか",
+          "arti": ""
+        },
+        {
+          "kanji": "明かり",
+          "bacaan": "あかり",
+          "arti": ""
+        },
+        {
+          "kanji": "明るい",
+          "bacaan": "あかるい",
+          "arti": ""
+        },
+        {
+          "kanji": "昨晩",
+          "bacaan": "さくばん",
+          "arti": ""
+        },
+        {
+          "kanji": "昨日",
+          "bacaan": "さくじつ",
+          "arti": ""
+        },
+        {
+          "kanji": "昨年",
+          "bacaan": "さくねん",
+          "arti": ""
+        },
+        {
+          "kanji": "昨夜",
+          "bacaan": "さくや",
+          "arti": ""
+        },
+        {
+          "kanji": "時期",
+          "bacaan": "じき",
+          "arti": ""
+        },
+        {
+          "kanji": "時差",
+          "bacaan": "じさ",
+          "arti": ""
+        },
+        {
+          "kanji": "明治",
+          "bacaan": "めいじ",
+          "arti": ""
+        },
+        {
+          "kanji": "暢気",
+          "bacaan": "のんき",
+          "arti": ""
+        },
+        {
+          "kanji": "暗い",
+          "bacaan": "くらい",
+          "arti": ""
+        },
+        {
+          "kanji": "景気",
+          "bacaan": "けいき",
+          "arti": ""
+        },
+        {
+          "kanji": "日当",
+          "bacaan": "にっとう",
+          "arti": ""
+        },
+        {
+          "kanji": "暗証",
+          "bacaan": "あんしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "暗証番号",
+          "bacaan": "あんしょうばんご",
+          "arti": ""
+        },
+        {
+          "kanji": "日焼け",
+          "bacaan": "ひやけ",
+          "arti": ""
+        },
+        {
+          "kanji": "日除け",
+          "bacaan": "ひよけ",
+          "arti": ""
+        },
+        {
+          "kanji": "映画",
+          "bacaan": "えいが",
+          "arti": ""
+        },
+        {
+          "kanji": "映像",
+          "bacaan": "えいぞう",
+          "arti": ""
+        },
+        {
+          "kanji": "星占い",
+          "bacaan": "ほしうらない",
+          "arti": ""
+        },
+        {
+          "kanji": "明瞭",
+          "bacaan": "めいりょう",
+          "arti": ""
+        },
+        {
+          "kanji": "是非",
+          "bacaan": "ぜひ",
+          "arti": ""
+        },
+        {
+          "kanji": "お早う",
+          "bacaan": "おはよう",
+          "arti": ""
+        },
+        {
+          "kanji": "明細",
+          "bacaan": "めいさい",
+          "arti": ""
+        },
+        {
+          "kanji": "日程",
+          "bacaan": "にってい",
+          "arti": ""
+        },
+        {
+          "kanji": "日刊",
+          "bacaan": "にっかん",
+          "arti": ""
+        },
+        {
+          "kanji": "映り",
+          "bacaan": "うたがい",
+          "arti": ""
+        },
+        {
+          "kanji": "映る",
+          "bacaan": "うつり",
+          "arti": ""
+        },
+        {
+          "kanji": "明星",
+          "bacaan": "みょうじょう",
+          "arti": ""
+        },
+        {
+          "kanji": "明白",
+          "bacaan": "めいはく",
+          "arti": ""
+        },
+        {
+          "kanji": "昭和",
+          "bacaan": "しょうわ",
+          "arti": ""
+        },
+        {
+          "kanji": "日給",
+          "bacaan": "にっきゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "昨日",
+          "bacaan": "きのう",
+          "arti": ""
+        },
+        {
+          "kanji": "暑中",
+          "bacaan": "しょちゅう",
+          "arti": ""
+        },
+        {
+          "kanji": "早苗",
+          "bacaan": "さなえ",
+          "arti": ""
+        },
+        {
+          "kanji": "早速",
+          "bacaan": "さっそく",
+          "arti": ""
+        },
+        {
+          "kanji": "早朝",
+          "bacaan": "そうちょう",
+          "arti": ""
+        },
+        {
+          "kanji": "早々",
+          "bacaan": "そうそう",
+          "arti": ""
+        },
+        {
+          "kanji": "早い",
+          "bacaan": "はやい",
+          "arti": ""
+        },
+        {
+          "kanji": "早めに",
+          "bacaan": "はやめに",
+          "arti": ""
+        },
+        {
+          "kanji": "早める",
+          "bacaan": "はやめる",
+          "arti": ""
+        },
+        {
+          "kanji": "早道",
+          "bacaan": "はやみち",
+          "arti": ""
+        },
+        {
+          "kanji": "早婚",
+          "bacaan": "そうこん",
+          "arti": ""
+        },
+        {
+          "kanji": "早期発見",
+          "bacaan": "そうきはっけん",
+          "arti": ""
+        },
+        {
+          "kanji": "早期",
+          "bacaan": "そうき",
+          "arti": ""
+        },
+        {
+          "kanji": "旦那",
+          "bacaan": "だんな",
+          "arti": ""
+        },
+        {
+          "kanji": "暦",
+          "bacaan": "こよみ",
+          "arti": "kalender"
+        },
+        {
+          "kanji": "昼",
+          "bacaan": "ひる",
+          "arti": ""
+        },
+        {
+          "kanji": "昼間",
+          "bacaan": "ひるま",
+          "arti": ""
+        },
+        {
+          "kanji": "昼寝",
+          "bacaan": "ひるね",
+          "arti": ""
+        },
+        {
+          "kanji": "昼休み",
+          "bacaan": "ひるやすみ",
+          "arti": ""
+        },
+        {
+          "kanji": "昼食",
+          "bacaan": "ちゅうしょく",
+          "arti": ""
+        },
+        {
+          "kanji": "昔話",
+          "bacaan": "むかしばなし",
+          "arti": ""
+        },
+        {
+          "kanji": "昔",
+          "bacaan": "むかし",
+          "arti": ""
+        },
+        {
+          "kanji": "春夏秋冬",
+          "bacaan": "しゅんかしゅうとう",
+          "arti": ""
+        }
+      ]
+    },
+    {
       "radikal": "火",
       "label": "火 - Api  (119 kata)",
       "count": 119,
@@ -5484,6 +6202,199 @@
       ]
     },
     {
+      "radikal": "夕",
+      "label": "夕 - Senja / malam  (37 kata)",
+      "count": 37,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "外人",
+          "bacaan": "がいじん",
+          "arti": ""
+        },
+        {
+          "kanji": "外国人",
+          "bacaan": "がいこくじん",
+          "arti": ""
+        },
+        {
+          "kanji": "夕べ",
+          "bacaan": "ゆうべ",
+          "arti": ""
+        },
+        {
+          "kanji": "外れ",
+          "bacaan": "はずれ",
+          "arti": ""
+        },
+        {
+          "kanji": "外れる",
+          "bacaan": "はずれる",
+          "arti": ""
+        },
+        {
+          "kanji": "夕方",
+          "bacaan": "ゆうがた",
+          "arti": ""
+        },
+        {
+          "kanji": "外資",
+          "bacaan": "がいし",
+          "arti": ""
+        },
+        {
+          "kanji": "多い",
+          "bacaan": "おおい",
+          "arti": ""
+        },
+        {
+          "kanji": "外交",
+          "bacaan": "がいこう",
+          "arti": ""
+        },
+        {
+          "kanji": "外観",
+          "bacaan": "がいかん",
+          "arti": ""
+        },
+        {
+          "kanji": "外語",
+          "bacaan": "がいご",
+          "arti": ""
+        },
+        {
+          "kanji": "夕日",
+          "bacaan": "ゆうひ",
+          "arti": ""
+        },
+        {
+          "kanji": "夕暮れ",
+          "bacaan": "ゆうぐれ",
+          "arti": ""
+        },
+        {
+          "kanji": "多く",
+          "bacaan": "おおく",
+          "arti": ""
+        },
+        {
+          "kanji": "多少",
+          "bacaan": "たしょう",
+          "arti": ""
+        },
+        {
+          "kanji": "多数",
+          "bacaan": "たすう",
+          "arti": ""
+        },
+        {
+          "kanji": "多量",
+          "bacaan": "たりょう",
+          "arti": ""
+        },
+        {
+          "kanji": "多忙",
+          "bacaan": "たぼう",
+          "arti": ""
+        },
+        {
+          "kanji": "多分",
+          "bacaan": "たぶん",
+          "arti": ""
+        },
+        {
+          "kanji": "外来語",
+          "bacaan": "がいらいご",
+          "arti": ""
+        },
+        {
+          "kanji": "外側",
+          "bacaan": "そとがわ",
+          "arti": ""
+        },
+        {
+          "kanji": "夜間",
+          "bacaan": "やかん",
+          "arti": "malam hari"
+        },
+        {
+          "kanji": "夜行列車",
+          "bacaan": "やこうれっしゃ",
+          "arti": "kereta malam"
+        },
+        {
+          "kanji": "夜",
+          "bacaan": "よ",
+          "arti": "malam"
+        },
+        {
+          "kanji": "夜明け",
+          "bacaan": "よあけ",
+          "arti": "fajar"
+        },
+        {
+          "kanji": "夜通し",
+          "bacaan": "よどおし",
+          "arti": "semalaman"
+        },
+        {
+          "kanji": "夜更け",
+          "bacaan": "よふけ",
+          "arti": "larut malam"
+        },
+        {
+          "kanji": "夜分",
+          "bacaan": "やぶん",
+          "arti": "waktu malam"
+        },
+        {
+          "kanji": "夜中",
+          "bacaan": "よなか",
+          "arti": "tengah malam"
+        },
+        {
+          "kanji": "夜",
+          "bacaan": "よる",
+          "arti": "malam"
+        },
+        {
+          "kanji": "夜警",
+          "bacaan": "やけい",
+          "arti": "penjaga malam"
+        },
+        {
+          "kanji": "夜行性動物",
+          "bacaan": "やこうせいどうぶつ",
+          "arti": "hewan nokturnal"
+        },
+        {
+          "kanji": "夜店",
+          "bacaan": "よみせ",
+          "arti": "kedai malam"
+        },
+        {
+          "kanji": "夜更かし",
+          "bacaan": "よふかし",
+          "arti": "begadang"
+        },
+        {
+          "kanji": "夜行",
+          "bacaan": "やこう",
+          "arti": "perjalanan malam"
+        },
+        {
+          "kanji": "夜景",
+          "bacaan": "やけい",
+          "arti": "pemandangan malam"
+        },
+        {
+          "kanji": "外貨",
+          "bacaan": "がいか",
+          "arti": "mata uang asing"
+        }
+      ]
+    },
+    {
       "radikal": "生",
       "label": "生 - Hidup / lahir  (33 kata)",
       "count": 33,
@@ -5653,6 +6564,139 @@
           "kanji": "産物",
           "bacaan": "さんぶつ",
           "arti": "hasil produksi"
+        }
+      ]
+    },
+    {
+      "radikal": "方",
+      "label": "方 - Arah / persegi  (25 kata)",
+      "count": 25,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "施策",
+          "bacaan": "しさく",
+          "arti": ""
+        },
+        {
+          "kanji": "方向",
+          "bacaan": "ほうこう",
+          "arti": ""
+        },
+        {
+          "kanji": "方面",
+          "bacaan": "ほうめん",
+          "arti": ""
+        },
+        {
+          "kanji": "方言",
+          "bacaan": "ほうげん",
+          "arti": ""
+        },
+        {
+          "kanji": "方法",
+          "bacaan": "ほうほう",
+          "arti": ""
+        },
+        {
+          "kanji": "方角",
+          "bacaan": "ほうがく",
+          "arti": ""
+        },
+        {
+          "kanji": "方式",
+          "bacaan": "ほうしき",
+          "arti": ""
+        },
+        {
+          "kanji": "方針",
+          "bacaan": "ほうしん",
+          "arti": ""
+        },
+        {
+          "kanji": "旅費",
+          "bacaan": "りょひ",
+          "arti": ""
+        },
+        {
+          "kanji": "方々",
+          "bacaan": "かたがた",
+          "arti": ""
+        },
+        {
+          "kanji": "方策",
+          "bacaan": "ほうさく",
+          "arti": ""
+        },
+        {
+          "kanji": "族",
+          "bacaan": "ぞく",
+          "arti": ""
+        },
+        {
+          "kanji": "旋毛",
+          "bacaan": "つむじ",
+          "arti": ""
+        },
+        {
+          "kanji": "旅行社",
+          "bacaan": "りょこうしゃ",
+          "arti": ""
+        },
+        {
+          "kanji": "旅客",
+          "bacaan": "りょきゃく",
+          "arti": ""
+        },
+        {
+          "kanji": "やり方",
+          "bacaan": "やりかた",
+          "arti": ""
+        },
+        {
+          "kanji": "方々",
+          "bacaan": "ほうぼう",
+          "arti": ""
+        },
+        {
+          "kanji": "方",
+          "bacaan": "かた",
+          "arti": ""
+        },
+        {
+          "kanji": "施設",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "旅客機",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "旅券",
+          "bacaan": "",
+          "arti": ""
+        },
+        {
+          "kanji": "旅行",
+          "bacaan": "りょこう",
+          "arti": ""
+        },
+        {
+          "kanji": "施す",
+          "bacaan": "ほどこす",
+          "arti": ""
+        },
+        {
+          "kanji": "旅館",
+          "bacaan": "りょかん",
+          "arti": ""
+        },
+        {
+          "kanji": "旗",
+          "bacaan": "はた",
+          "arti": ""
         }
       ]
     },
@@ -6096,6 +7140,19 @@
           "kanji": "簡略",
           "bacaan": "かんりゃく",
           "arti": "penyederhanaan"
+        }
+      ]
+    },
+    {
+      "radikal": "巛",
+      "label": "巛 - Aliran sungai  (1 kata)",
+      "count": 1,
+      "section": "main",
+      "words": [
+        {
+          "kanji": "巣",
+          "bacaan": "す",
+          "arti": ""
         }
       ]
     },
@@ -6610,19 +7667,6 @@
           "kanji": "婆",
           "bacaan": "ばば",
           "arti": "nenek"
-        }
-      ]
-    },
-    {
-      "radikal": "夕",
-      "label": "夕 - (radikal jarang, lihat contoh kanji) (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "外貨",
-          "bacaan": "がいか",
-          "arti": "mata uang asing"
         }
       ]
     },
