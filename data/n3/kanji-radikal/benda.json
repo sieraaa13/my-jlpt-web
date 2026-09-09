@@ -24,22 +24,22 @@
         },
         {
           "kanji": "綿",
-          "bacaan": "",
+          "bacaan": "わた",
           "arti": "kapas"
         },
         {
           "kanji": "絶品",
-          "bacaan": "",
+          "bacaan": "ぜっぴん",
           "arti": "karya luar biasa/masterpiece"
         },
         {
           "kanji": "線香",
-          "bacaan": "",
+          "bacaan": "せんこう",
           "arti": "dupa"
         },
         {
           "kanji": "紛失",
-          "bacaan": "",
+          "bacaan": "ふんしつ",
           "arti": "kehilangan"
         },
         {
@@ -99,12 +99,12 @@
         },
         {
           "kanji": "繊維",
-          "bacaan": "",
+          "bacaan": "せんい",
           "arti": "serat"
         },
         {
           "kanji": "綱",
-          "bacaan": "",
+          "bacaan": "つな",
           "arti": "tali besar/tambang"
         },
         {
@@ -424,7 +424,7 @@
         },
         {
           "kanji": "統治",
-          "bacaan": "とうちゃく",
+          "bacaan": "とうち",
           "arti": "pemerintahan/penguasaan"
         },
         {
@@ -814,7 +814,7 @@
         },
         {
           "kanji": "細工",
-          "bacaan": "",
+          "bacaan": "さいく",
           "arti": "kerajinan tangan"
         },
         {
@@ -879,7 +879,7 @@
         },
         {
           "kanji": "紙幣",
-          "bacaan": "",
+          "bacaan": "しへい",
           "arti": "uang kertas"
         },
         {
@@ -1077,7 +1077,7 @@
         },
         {
           "kanji": "列車",
-          "bacaan": "",
+          "bacaan": "れっしゃ",
           "arti": "kereta api"
         },
         {
@@ -1257,12 +1257,12 @@
         },
         {
           "kanji": "別れ",
-          "bacaan": "わかい",
+          "bacaan": "わかれ",
           "arti": "perpisahan"
         },
         {
           "kanji": "別れる",
-          "bacaan": "わかれ",
+          "bacaan": "わかれる",
           "arti": "berpisah"
         },
         {
@@ -1342,12 +1342,12 @@
         },
         {
           "kanji": "判",
-          "bacaan": "",
+          "bacaan": "はん",
           "arti": "stempel/cap"
         },
         {
           "kanji": "判子",
-          "bacaan": "",
+          "bacaan": "はんこ",
           "arti": "stempel nama"
         }
       ]
@@ -1370,7 +1370,7 @@
         },
         {
           "kanji": "貪欲",
-          "bacaan": "",
+          "bacaan": "どんよく",
           "arti": "rakus/tamak"
         },
         {
@@ -1420,7 +1420,7 @@
         },
         {
           "kanji": "財布",
-          "bacaan": "",
+          "bacaan": "さいふ",
           "arti": "dompet"
         },
         {
@@ -1445,17 +1445,17 @@
         },
         {
           "kanji": "贈り物",
-          "bacaan": "",
+          "bacaan": "おくりもの",
           "arti": "hadiah/kado"
         },
         {
           "kanji": "財産",
-          "bacaan": "",
+          "bacaan": "ざいさん",
           "arti": "harta/kekayaan"
         },
         {
           "kanji": "贈呈品",
-          "bacaan": "",
+          "bacaan": "ぞうていひん",
           "arti": "barang hadiah"
         },
         {
@@ -1635,7 +1635,7 @@
         },
         {
           "kanji": "買い物",
-          "bacaan": "",
+          "bacaan": "かいもの",
           "arti": "belanja"
         },
         {
@@ -1700,12 +1700,12 @@
         },
         {
           "kanji": "賞品",
-          "bacaan": "",
+          "bacaan": "しょうひん",
           "arti": "hadiah (barang)"
         },
         {
           "kanji": "賞金",
-          "bacaan": "",
+          "bacaan": "しょうきん",
           "arti": "hadiah uang"
         },
         {
@@ -1758,32 +1758,32 @@
         },
         {
           "kanji": "金銀",
-          "bacaan": "",
+          "bacaan": "きんぎん",
           "arti": "emas dan perak"
         },
         {
           "kanji": "鏃",
-          "bacaan": "",
+          "bacaan": "やじり",
           "arti": "mata panah"
         },
         {
           "kanji": "銭",
-          "bacaan": "",
+          "bacaan": "ぜに",
           "arti": "uang logam/receh"
         },
         {
           "kanji": "鍼",
-          "bacaan": "",
+          "bacaan": "はり",
           "arti": "jarum akupunktur"
         },
         {
           "kanji": "鈴",
-          "bacaan": "",
+          "bacaan": "すず",
           "arti": "lonceng kecil"
         },
         {
           "kanji": "錫",
-          "bacaan": "",
+          "bacaan": "すず",
           "arti": "timah"
         },
         {
@@ -1793,42 +1793,42 @@
         },
         {
           "kanji": "鉄鋼",
-          "bacaan": "",
+          "bacaan": "てっこう",
           "arti": "baja"
         },
         {
           "kanji": "鉄橋",
-          "bacaan": "",
+          "bacaan": "てっきょう",
           "arti": "jembatan besi"
         },
         {
           "kanji": "鉄板",
-          "bacaan": "",
+          "bacaan": "てっぱん",
           "arti": "lempeng besi (teppan)"
         },
         {
           "kanji": "鉄砲",
-          "bacaan": "",
+          "bacaan": "てっぽう",
           "arti": "senapan"
         },
         {
           "kanji": "鉄",
-          "bacaan": "",
+          "bacaan": "てつ",
           "arti": "besi"
         },
         {
           "kanji": "鉄道",
-          "bacaan": "",
+          "bacaan": "てつどう",
           "arti": "rel kereta api"
         },
         {
           "kanji": "釣り",
-          "bacaan": "",
+          "bacaan": "つり",
           "arti": "memancing/kembalian uang"
         },
         {
           "kanji": "釣瓶",
-          "bacaan": "",
+          "bacaan": "つるべ",
           "arti": "ember sumur"
         },
         {
@@ -1973,7 +1973,7 @@
         },
         {
           "kanji": "鈍感",
-          "bacaan": "",
+          "bacaan": "どんかん",
           "arti": "tidak peka"
         },
         {
@@ -2103,7 +2103,7 @@
         },
         {
           "kanji": "銀",
-          "bacaan": "",
+          "bacaan": "ぎん",
           "arti": "perak"
         },
         {
@@ -2161,12 +2161,12 @@
         },
         {
           "kanji": "袖",
-          "bacaan": "",
+          "bacaan": "そで",
           "arti": "lengan baju"
         },
         {
           "kanji": "裾",
-          "bacaan": "",
+          "bacaan": "すそ",
           "arti": "ujung bawah pakaian"
         },
         {
@@ -2266,12 +2266,12 @@
         },
         {
           "kanji": "裏",
-          "bacaan": "うんよう",
+          "bacaan": "うら",
           "arti": "belakang"
         },
         {
           "kanji": "裏付け",
-          "bacaan": "うら",
+          "bacaan": "うらづけ",
           "arti": "bukti pendukung/verifikasi"
         },
         {
@@ -2311,22 +2311,22 @@
         },
         {
           "kanji": "衣",
-          "bacaan": "",
+          "bacaan": "ころも",
           "arti": "pakaian"
         },
         {
           "kanji": "褒美",
-          "bacaan": "",
+          "bacaan": "ほうび",
           "arti": "hadiah/pujian"
         },
         {
           "kanji": "衣食",
-          "bacaan": "",
+          "bacaan": "いしょく",
           "arti": "sandang dan pangan"
         },
         {
           "kanji": "衣食住",
-          "bacaan": "",
+          "bacaan": "いしょくじゅう",
           "arti": "sandang, pangan, papan"
         },
         {
@@ -2386,12 +2386,12 @@
         },
         {
           "kanji": "表紙",
-          "bacaan": "",
+          "bacaan": "ひょうし",
           "arti": "sampul (buku)"
         },
         {
           "kanji": "表彰",
-          "bacaan": "",
+          "bacaan": "ひょうしょう",
           "arti": "penghargaan (upacara)"
         },
         {
@@ -2411,17 +2411,17 @@
         },
         {
           "kanji": "装置",
-          "bacaan": "",
+          "bacaan": "そうち",
           "arti": "perangkat/alat"
         },
         {
           "kanji": "装飾",
-          "bacaan": "",
+          "bacaan": "そうしょく",
           "arti": "dekorasi/hiasan"
         },
         {
           "kanji": "装備",
-          "bacaan": "",
+          "bacaan": "そうび",
           "arti": "perlengkapan"
         }
       ]
@@ -2508,8 +2508,8 @@
           "arti": "berbentuk cincin/melingkar"
         },
         {
-          "kanji": "環状腺",
-          "bacaan": "かんじょうせん",
+          "kanji": "甲状腺",
+          "bacaan": "こうじょうせん",
           "arti": "kelenjar tiroid"
         },
         {
@@ -2529,17 +2529,17 @@
         },
         {
           "kanji": "理性",
-          "bacaan": "",
+          "bacaan": "りせい",
           "arti": "akal sehat/rasio"
         },
         {
           "kanji": "理性的",
-          "bacaan": "",
+          "bacaan": "りせいてき",
           "arti": "rasional"
         },
         {
           "kanji": "理想",
-          "bacaan": "",
+          "bacaan": "りそう",
           "arti": "ideal/cita-cita"
         },
         {
@@ -2604,7 +2604,7 @@
         },
         {
           "kanji": "現に",
-          "bacaan": "",
+          "bacaan": "げんに",
           "arti": "pada kenyataannya"
         },
         {
@@ -2614,17 +2614,17 @@
         },
         {
           "kanji": "球",
-          "bacaan": "",
+          "bacaan": "たま",
           "arti": "bola"
         },
         {
           "kanji": "珠",
-          "bacaan": "",
+          "bacaan": "たま",
           "arti": "mutiara/butiran"
         },
         {
           "kanji": "珊瑚",
-          "bacaan": "",
+          "bacaan": "さんご",
           "arti": "karang (laut)"
         },
         {
@@ -2830,7 +2830,7 @@
         },
         {
           "kanji": "布",
-          "bacaan": "",
+          "bacaan": "ぬの",
           "arti": "kain"
         },
         {
@@ -2840,7 +2840,7 @@
         },
         {
           "kanji": "席",
-          "bacaan": "",
+          "bacaan": "せき",
           "arti": "kursi/tempat duduk"
         },
         {
@@ -3063,12 +3063,12 @@
         },
         {
           "kanji": "新聞",
-          "bacaan": "",
+          "bacaan": "しんぶん",
           "arti": "koran"
         },
         {
           "kanji": "新幹線",
-          "bacaan": "",
+          "bacaan": "しんかんせん",
           "arti": "shinkansen (kereta cepat)"
         }
       ]
@@ -3249,32 +3249,32 @@
         },
         {
           "kanji": "扇風機",
-          "bacaan": "",
+          "bacaan": "せんぷうき",
           "arti": "kipas angin"
         },
         {
           "kanji": "扇子",
-          "bacaan": "",
+          "bacaan": "せんす",
           "arti": "kipas lipat"
         },
         {
           "kanji": "扇",
-          "bacaan": "",
+          "bacaan": "おうぎ",
           "arti": "kipas"
         },
         {
           "kanji": "戸",
-          "bacaan": "",
+          "bacaan": "と",
           "arti": "pintu"
         },
         {
           "kanji": "扉",
-          "bacaan": "",
+          "bacaan": "とびら",
           "arti": "pintu/gerbang"
         },
         {
           "kanji": "戸棚",
-          "bacaan": "",
+          "bacaan": "とだな",
           "arti": "lemari"
         },
         {
@@ -3500,7 +3500,7 @@
         },
         {
           "kanji": "差し込み",
-          "bacaan": "",
+          "bacaan": "さしこみ",
           "arti": "colokan/steker"
         }
       ]
@@ -3596,7 +3596,7 @@
       "words": [
         {
           "kanji": "羅針盤",
-          "bacaan": "",
+          "bacaan": "らしんばん",
           "arti": "kompas"
         },
         {
@@ -3714,12 +3714,12 @@
         },
         {
           "kanji": "用紙",
-          "bacaan": "",
+          "bacaan": "ようし",
           "arti": "lembar formulir"
         },
         {
           "kanji": "用具",
-          "bacaan": "",
+          "bacaan": "ようぐ",
           "arti": "peralatan"
         },
         {
@@ -3747,7 +3747,7 @@
         },
         {
           "kanji": "舩ずみ",
-          "bacaan": "",
+          "bacaan": "ふなづみ",
           "arti": "pemuatan kapal"
         },
         {
@@ -3951,7 +3951,7 @@
         },
         {
           "kanji": "凧",
-          "bacaan": "",
+          "bacaan": "たこ",
           "arti": "layang-layang"
         }
       ]
@@ -3989,7 +3989,7 @@
         },
         {
           "kanji": "写真",
-          "bacaan": "",
+          "bacaan": "しゃしん",
           "arti": "foto"
         }
       ]

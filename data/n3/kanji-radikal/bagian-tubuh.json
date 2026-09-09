@@ -304,7 +304,7 @@
         },
         {
           "kanji": "余る",
-          "bacaan": "余る",
+          "bacaan": "あまる",
           "arti": "berlebih/tersisa"
         },
         {
@@ -404,7 +404,7 @@
         },
         {
           "kanji": "個体",
-          "bacaan": "",
+          "bacaan": "こたい",
           "arti": "individu (satu unit)"
         },
         {
@@ -429,32 +429,32 @@
         },
         {
           "kanji": "催涙ガス",
-          "bacaan": "",
+          "bacaan": "さいるいガス",
           "arti": "gas air mata"
         },
         {
           "kanji": "催涙弾",
-          "bacaan": "",
+          "bacaan": "さいるいだん",
           "arti": "granat gas air mata"
         },
         {
           "kanji": "仕切る",
-          "bacaan": "",
+          "bacaan": "しきる",
           "arti": "menyekat/mengatur"
         },
         {
           "kanji": "体温計",
-          "bacaan": "",
+          "bacaan": "たいおんけい",
           "arti": "termometer badan"
         },
         {
           "kanji": "作",
-          "bacaan": "",
+          "bacaan": "さく",
           "arti": "karya/hasil karya"
         },
         {
           "kanji": "作品",
-          "bacaan": "",
+          "bacaan": "さくひん",
           "arti": "karya (seni)"
         },
         {
@@ -469,17 +469,17 @@
         },
         {
           "kanji": "像",
-          "bacaan": "",
+          "bacaan": "ぞう",
           "arti": "patung/gambar"
         },
         {
           "kanji": "傑作",
-          "bacaan": "",
+          "bacaan": "けっさく",
           "arti": "karya masterpiece"
         },
         {
           "kanji": "優待券",
-          "bacaan": "",
+          "bacaan": "ゆうたいけん",
           "arti": "kupon diskon/voucher"
         },
         {
@@ -509,22 +509,22 @@
         },
         {
           "kanji": "低い",
-          "bacaan": "",
+          "bacaan": "ひくい",
           "arti": "rendah"
         },
         {
           "kanji": "付加",
-          "bacaan": "",
+          "bacaan": "ふか",
           "arti": "tambahan"
         },
         {
           "kanji": "偉大",
-          "bacaan": "",
+          "bacaan": "いだい",
           "arti": "hebat/agung"
         },
         {
           "kanji": "傾向",
-          "bacaan": "",
+          "bacaan": "けいこう",
           "arti": "kecenderungan"
         },
         {
@@ -539,12 +539,12 @@
         },
         {
           "kanji": "僅か",
-          "bacaan": "",
+          "bacaan": "わずか",
           "arti": "sedikit sekali"
         },
         {
           "kanji": "催涙",
-          "bacaan": "",
+          "bacaan": "さいるい",
           "arti": "(zat) perih mata"
         },
         {
@@ -559,7 +559,7 @@
         },
         {
           "kanji": "偉い",
-          "bacaan": "",
+          "bacaan": "えらい",
           "arti": "hebat/luar biasa"
         },
         {
@@ -1619,7 +1619,7 @@
         },
         {
           "kanji": "付加価値",
-          "bacaan": "付加価値",
+          "bacaan": "ふかかち",
           "arti": "nilai tambah"
         },
         {
@@ -1834,7 +1834,7 @@
         },
         {
           "kanji": "偉そう",
-          "bacaan": "円満",
+          "bacaan": "えらそう",
           "arti": "sok hebat/sombong"
         },
         {
@@ -1984,7 +1984,7 @@
         },
         {
           "kanji": "侵す",
-          "bacaan": "",
+          "bacaan": "おかす",
           "arti": "melanggar/menyerang"
         },
         {
@@ -7523,7 +7523,7 @@
         },
         {
           "kanji": "元",
-          "bacaan": "",
+          "bacaan": "もと",
           "arti": "asal/mantan"
         },
         {
@@ -7829,7 +7829,7 @@
       "words": [
         {
           "kanji": "又",
-          "bacaan": "Mata",
+          "bacaan": "また",
           "arti": "lagi/juga"
         },
         {
@@ -7849,12 +7849,12 @@
         },
         {
           "kanji": "取り立て",
-          "bacaan": "",
+          "bacaan": "とりたて",
           "arti": "penagihan"
         },
         {
           "kanji": "取り分け",
-          "bacaan": "",
+          "bacaan": "とりわけ",
           "arti": "terutama"
         },
         {
@@ -8014,12 +8014,12 @@
         },
         {
           "kanji": "反映",
-          "bacaan": "",
+          "bacaan": "はんえい",
           "arti": "cerminan/refleksi"
         },
         {
           "kanji": "反射",
-          "bacaan": "",
+          "bacaan": "はんしゃ",
           "arti": "pantulan/refleks"
         }
       ]
@@ -8107,7 +8107,7 @@
         },
         {
           "kanji": "ちんどん屋",
-          "bacaan": "",
+          "bacaan": "ちんどんや",
           "arti": "pemusik jalanan (promosi)"
         },
         {
@@ -8147,7 +8147,7 @@
         },
         {
           "kanji": "屋根瓦",
-          "bacaan": "",
+          "bacaan": "やねがわら",
           "arti": "genteng atap"
         },
         {
@@ -8202,7 +8202,7 @@
         },
         {
           "kanji": "尺八",
-          "bacaan": "",
+          "bacaan": "しゃくはち",
           "arti": "shakuhachi (seruling bambu)"
         },
         {
@@ -8280,7 +8280,7 @@
         },
         {
           "kanji": "学科",
-          "bacaan": "",
+          "bacaan": "がっか",
           "arti": "jurusan/mata pelajaran"
         },
         {
@@ -8820,7 +8820,7 @@
         },
         {
           "kanji": "身元",
-          "bacaan": "みもとｔ",
+          "bacaan": "みもと",
           "arti": "identitas diri"
         },
         {
