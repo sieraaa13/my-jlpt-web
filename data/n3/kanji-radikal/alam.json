@@ -7157,89 +7157,6 @@
       ]
     },
     {
-      "radikal": "攴",
-      "label": "攴 - (radikal jarang, lihat contoh kanji) (bukan alam)  (15 kata)",
-      "count": 15,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "教育",
-          "bacaan": "きょういく",
-          "arti": "pendidikan"
-        },
-        {
-          "kanji": "教養",
-          "bacaan": "きょうよう",
-          "arti": "wawasan/kultur"
-        },
-        {
-          "kanji": "教材",
-          "bacaan": "きょうざい",
-          "arti": "materi ajar"
-        },
-        {
-          "kanji": "キリスト教",
-          "bacaan": "",
-          "arti": "agama Kristen"
-        },
-        {
-          "kanji": "教案",
-          "bacaan": "きょうあん",
-          "arti": "rencana pelajaran"
-        },
-        {
-          "kanji": "教化",
-          "bacaan": "きょうか",
-          "arti": "pembinaan moral"
-        },
-        {
-          "kanji": "教徒",
-          "bacaan": "きょうとう",
-          "arti": "penganut agama"
-        },
-        {
-          "kanji": "教員",
-          "bacaan": "きょういん",
-          "arti": "tenaga pengajar"
-        },
-        {
-          "kanji": "教授",
-          "bacaan": "きょうじゅ",
-          "arti": "profesor"
-        },
-        {
-          "kanji": "教官",
-          "bacaan": "きょうかん",
-          "arti": "instruktur"
-        },
-        {
-          "kanji": "教師",
-          "bacaan": "きょうし",
-          "arti": "guru"
-        },
-        {
-          "kanji": "教頭",
-          "bacaan": "きょうとう",
-          "arti": "wakil kepala sekolah"
-        },
-        {
-          "kanji": "教え子",
-          "bacaan": "おしえご",
-          "arti": "murid (didikan sendiri)"
-        },
-        {
-          "kanji": "教え",
-          "bacaan": "おしえ",
-          "arti": "ajaran"
-        },
-        {
-          "kanji": "教わる",
-          "bacaan": "おそわる",
-          "arti": "diajari"
-        }
-      ]
-    },
-    {
       "radikal": "(belum teridentifikasi)",
       "label": "(belum teridentifikasi) - Menunggu klasifikasi radikal lebih lanjut  (12 kata)",
       "count": 12,
@@ -7594,34 +7511,6 @@
       ]
     },
     {
-      "radikal": "走",
-      "label": "走 - (radikal jarang, lihat contoh kanji) (bukan alam)  (4 kata)",
-      "count": 4,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "超音波",
-          "bacaan": "ちょうおんぱ",
-          "arti": "gelombang ultrasonik"
-        },
-        {
-          "kanji": "超",
-          "bacaan": "ちょう",
-          "arti": "super/melebihi"
-        },
-        {
-          "kanji": "超過",
-          "bacaan": "ちょうか",
-          "arti": "kelebihan"
-        },
-        {
-          "kanji": "趣",
-          "bacaan": "おもむき",
-          "arti": "suasana/cita rasa"
-        }
-      ]
-    },
-    {
       "radikal": "示",
       "label": "示 - (radikal jarang, lihat contoh kanji) (bukan alam)  (2 kata)",
       "count": 2,
@@ -7680,19 +7569,6 @@
           "kanji": "去年",
           "bacaan": "きょねん",
           "arti": "tahun lalu"
-        }
-      ]
-    },
-    {
-      "radikal": "支",
-      "label": "支 - (radikal jarang, lihat contoh kanji) (bukan alam)  (1 kata)",
-      "count": 1,
-      "section": "belum",
-      "words": [
-        {
-          "kanji": "支出",
-          "bacaan": "ししゅつ",
-          "arti": "pengeluaran"
         }
       ]
     }
