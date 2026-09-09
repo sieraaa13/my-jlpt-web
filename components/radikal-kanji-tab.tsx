@@ -4,6 +4,13 @@ import { useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 import type { RadikalFile, RadikalGroup } from "@/data/kanji-radikal-types";
 
+function getDisplayTitle(title: string) {
+  return title
+    .replace(/^Kumpulan Kanji Berbunshu /i, "")
+    .replace(/^Kumpulan Kanji /i, "")
+    .replace(/^Radikal /i, "");
+}
+
 function RadikalGroupCard({ group, forceOpen }: { group: RadikalGroup; forceOpen: boolean }) {
   const [manualOpen, setManualOpen] = useState(false);
   const open = forceOpen || manualOpen;
@@ -104,7 +111,7 @@ export function RadikalKanjiTab({ files, order }: RadikalKanjiTabProps) {
                 : "border-border hover:border-primary/50"
             )}
           >
-            {files[key].title.replace(/^Kumpulan Kanji Berbunshu /i, "").replace(/^Kumpulan Kanji /i, "")}
+            {getDisplayTitle(files[key].title)}
           </button>
         ))}
       </div>
