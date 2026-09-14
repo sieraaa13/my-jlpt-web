@@ -8,39 +8,29 @@ import { Button }   from "@/components/ui/button";
 import { useAuth }  from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
 import { getPlayerLevel, getProgressPct, getPtsToNext, PLAYER_LEVELS } from "@/lib/quiz-levels";
+import {
+  QUIZ_LEVELS, QUIZ_TOPICS as TOPICS,
+  MAX_QUESTIONS_PER_DAY as MAX_Q, MAX_TOPIC_CHANGES_PER_DAY as MAX_T,
+  todayWIB as today, msUntilResetWIB,
+} from "@/lib/quiz-config";
 import Photobooth from "@/components/Photobooth";
 
-// ─── CONSTANTS ───────────────────────────────────────────────
-const MAX_Q   = 5;
-const MAX_T   = 2;
-
-const QUIZ_LEVELS = [
-  { name:"N5", label:"N5 Pemula",      ptCorrect:1, ptStreak:3, color:"#1D9E75" },
-  { name:"N4", label:"N4 Dasar",       ptCorrect:2, ptStreak:3, color:"#534AB7" },
-  { name:"N3", label:"N3 Menengah",    ptCorrect:3, ptStreak:3, color:"#BA7517" },
-  { name:"N2", label:"N2 Lanjut",      ptCorrect:4, ptStreak:5, color:"#D85A30" },
-  { name:"N1", label:"N1 Profesional", ptCorrect:5, ptStreak:5, color:"#A32D2D" },
-];
-
-const TOPICS = [
-  { id:"budaya",   name:"Budaya Umum",          icon:"🎌", desc:"Tradisi & kehidupan sehari-hari" },
-  { id:"makanan",  name:"Makanan & Kuliner",     icon:"🍜", desc:"Kuliner khas Jepang" },
-  { id:"anime",    name:"Anime & Manga",         icon:"⛩️", desc:"Pop culture Jepang" },
-  { id:"tempat",   name:"Tempat Instagrammable", icon:"📸", desc:"Spot foto & wisata populer" },
-  { id:"festival", name:"Festival & Tradisi",    icon:"🎆", desc:"Matsuri & perayaan khas" },
-  { id:"modern",   name:"Jepang Modern",         icon:"🚅", desc:"Teknologi & gaya hidup kini" },
-];
-
-
 // ─── TYPES ───────────────────────────────────────────────────
+// Kunci jawaban & penjelasan tidak dikirim bersama soal; keduanya datang
+// dari /api/quiz-answer setelah user menjawab.
 interface Question {
   id:      string;
   q:       string;
   opts:    string[];
-  ans:     number;
-  explain: string;
   img_url: string;
   img_cat: string;
+}
+
+interface Feedback {
+  correct:     boolean;
+  answer:      number;
+  explanation: string;
+  points:      number;
 }
 
 interface DailyState {
@@ -53,31 +43,35 @@ interface DailyState {
   lvl:             number;
   totalPtsAlltime: number;
   usedTopics:      string[];
+  pending:         number; // soal hari ini yang sudah dikirim tapi belum dijawab
 }
 
 type Phase = "home"|"loading"|"quiz"|"result"|"done";
 
 // ─── HELPERS ─────────────────────────────────────────────────
-// Kuota harian mengikuti hari di WIB (UTC+7, tanpa DST), bukan UTC atau jam
-// lokal browser — supaya tanggal kuota & hitung mundur reset selalu sama.
-const WIB_OFFSET_MS = 7 * 60 * 60 * 1000;
-const DAY_MS        = 24 * 60 * 60 * 1000;
-function today() { return new Date(Date.now() + WIB_OFFSET_MS).toISOString().slice(0,10); }
 function resetIn() {
-  const msLeft = DAY_MS - ((Date.now() + WIB_OFFSET_MS) % DAY_MS);
-  const d = Math.ceil(msLeft / 60000);
+  const d = Math.ceil(msUntilResetWIB() / 60000);
   return `${Math.floor(d/60)}j ${d%60}m`;
 }
 
-// ─── SUPABASE ────────────────────────────────────────────────
+// ─── SUPABASE (baca saja — semua penulisan quiz dilakukan server) ─────
 async function loadDailyState(uid: string): Promise<DailyState> {
+  const date = today();
+
+  const { count: pending } = await supabase
+    .from("quiz_user_played")
+    .select("question_id", { count: "exact", head: true })
+    .eq("user_id", uid)
+    .eq("quiz_date", date)
+    .is("answered_at", null);
+
   // 1. Coba ambil row hari ini
   const { data: todayData } = await supabase
     .from("quiz_daily")
     .select("*")
     .eq("user_id", uid)
-    .eq("date", today())
-    .single();
+    .eq("date", date)
+    .maybeSingle();
 
   // 2. Kalau ada row hari ini → pakai langsung
   if (todayData) {
@@ -91,6 +85,7 @@ async function loadDailyState(uid: string): Promise<DailyState> {
       lvl: todayData.level,
       totalPtsAlltime: todayData.total_pts_alltime ?? 0,
       usedTopics: todayData.used_topics ?? [],
+      pending: pending ?? 0,
     };
   }
 
@@ -101,28 +96,21 @@ async function loadDailyState(uid: string): Promise<DailyState> {
     .eq("user_id", uid)
     .order("date", { ascending: false })
     .limit(1)
-    .single();
+    .maybeSingle();
 
   // 4. Return state baru dengan total_pts_alltime dari kemarin
   return {
-    date: today(),
+    date,
     qUsed: 0,
     tUsed: 0,
     pts: 0,
     streak: lastData?.streak ?? 0,  // Carry over streak
     topicId: lastData?.topic_id ?? "budaya",
     lvl: lastData?.level ?? 0,
-    totalPtsAlltime: lastData?.total_pts_alltime ?? 0,  // ← INI FIX-NYA!
+    totalPtsAlltime: lastData?.total_pts_alltime ?? 0,
     usedTopics: [],
+    pending: pending ?? 0,
   };
-}
-
-async function saveDailyState(uid: string, s: DailyState) {
-  await supabase.from("quiz_daily").upsert({
-    user_id:uid, date:s.date, q_used:s.qUsed, t_used:s.tUsed,
-    total_pts:s.pts, streak:s.streak, topic_id:s.topicId, level:s.lvl,
-    total_pts_alltime:s.totalPtsAlltime, used_topics:s.usedTopics,
-  }, { onConflict:"user_id,date" });
 }
 
 // ─── COMPONENT ───────────────────────────────────────────────
@@ -131,14 +119,16 @@ export default function QuizPage() {
 
   const empty: DailyState = {
     date:today(), qUsed:0, tUsed:0, pts:0, streak:0,
-    topicId:"budaya", lvl:0, totalPtsAlltime:0, usedTopics:[]
+    topicId:"budaya", lvl:0, totalPtsAlltime:0, usedTopics:[], pending:0
   };
 
   const [state,      setState]      = useState<DailyState>(empty);
   const [questions,  setQuestions]  = useState<Question[]>([]);
   const [curQ,       setCurQ]       = useState(0);
-  const [answered,   setAnswered]   = useState(false);
+  const [feedback,   setFeedback]   = useState<Feedback|null>(null);
+  const [submitting, setSubmitting] = useState(false);
   const [selected,   setSelected]   = useState<number|null>(null);
+  const [resumed,    setResumed]    = useState(false);
   const [phase,      setPhase]      = useState<Phase>("home");
   const [imgError,   setImgError]   = useState(false);
   const [floatPts,   setFloatPts]   = useState<number|null>(null);
@@ -149,7 +139,7 @@ export default function QuizPage() {
     if (!user) return;
     loadDailyState(user.id).then(s => {
       setState(s);
-      if (s.qUsed >= MAX_Q) setPhase("done");
+      if (s.qUsed >= MAX_Q && s.pending === 0) setPhase("done");
     });
   }, [user]);
 
@@ -159,104 +149,99 @@ export default function QuizPage() {
     return () => clearInterval(t);
   }, []);
 
-  const lv     = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[0];
-  // Level & topik dikunci selama soal dimuat/dikerjakan, supaya poin soal
-  // yang sedang tampil tidak bisa diubah dengan ganti level di tengah jalan.
-  const locked = phase === "loading" || phase === "quiz";
-  const topic  = TOPICS.find(t => t.id===state.topicId) ?? TOPICS[0];
-  const q      = questions[curQ];
-  const plLvl  = getPlayerLevel(state.totalPtsAlltime);
-  const prog   = getProgressPct(state.totalPtsAlltime);
-  const toNext = getPtsToNext(state.totalPtsAlltime);
+  const lv       = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[0];
+  // Level & topik dikunci selama soal dimuat/dikerjakan (server juga memakai
+  // level saat soal dikirim sebagai dasar poin).
+  const locked   = phase === "loading" || phase === "quiz";
+  const answered = feedback !== null;
+  const topic    = TOPICS.find(t => t.id===state.topicId) ?? TOPICS[0];
+  const q        = questions[curQ];
+  const plLvl    = getPlayerLevel(state.totalPtsAlltime);
+  const prog     = getProgressPct(state.totalPtsAlltime);
+  const toNext   = getPtsToNext(state.totalPtsAlltime);
+  const canStart = state.qUsed < MAX_Q || state.pending > 0;
 
   // ── START QUIZ ───────────────────────────────────────────────
   async function startQuiz() {
     if (!user) return;
 
-    // Catat topik yang digunakan SAAT mulai quiz (bukan saat pilih)
-    let newUsedTopics = [...state.usedTopics];
-    let newTUsed = state.tUsed;
-    if (!newUsedTopics.includes(state.topicId)) {
-      newUsedTopics.push(state.topicId);
-      newTUsed = newUsedTopics.length;
-    }
-    const updated = { ...state, tUsed: newTUsed, usedTopics: newUsedTopics };
-    setState(updated);
-    await saveDailyState(user.id, updated);
-
     setPhase("loading");
-    setQuestions([]); setCurQ(0); setAnswered(false);
-    setSelected(null); setImgError(false);
+    setQuestions([]); setCurQ(0); setFeedback(null);
+    setSelected(null); setImgError(false); setResumed(false);
 
     try {
-      const n   = Math.min(MAX_Q - state.qUsed, 5);
       const res = await fetch("/api/generate-quiz", {
         method:  "POST",
         headers: { "Content-Type":"application/json" },
         body:    JSON.stringify({
           levelIndex: state.lvl,
           topicId:    state.topicId,
-          count:      n,
           userId:     user.id,
         }),
       });
-      if (!res.ok) throw new Error("API error " + res.status);
-      const { questions: qs } = await res.json();
-      setQuestions(qs);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || "Gagal memuat soal. Coba lagi.");
+      setQuestions(data.questions);
+      setResumed(data.resumed);
+      setState(data.state);
       setPhase("quiz");
     } catch(e) {
       console.error(e);
-      alert("Gagal memuat soal. Coba lagi.");
-      setPhase("home");
+      alert(e instanceof Error ? e.message : "Gagal memuat soal. Coba lagi.");
+      // Muat ulang state dari DB supaya kuota yang tampil tetap akurat.
+      const s = await loadDailyState(user.id);
+      setState(s);
+      setPhase(s.qUsed >= MAX_Q && s.pending === 0 ? "done" : "home");
     }
   }
 
-  // ── ANSWER ───────────────────────────────────────────────────
+  // ── ANSWER (diperiksa server) ────────────────────────────────
   async function choose(idx: number) {
-    if (!user || answered) return;
-    setAnswered(true); setSelected(idx);
+    if (!user || !q || answered || submitting) return;
+    setSubmitting(true); setSelected(idx);
 
-    const correct = idx === q.ans;
-    const bonus   = correct && state.streak >= 2 ? lv.ptStreak : 0;
-    const pts     = correct ? lv.ptCorrect + bonus : 0;
+    try {
+      const res = await fetch("/api/quiz-answer", {
+        method:  "POST",
+        headers: { "Content-Type":"application/json" },
+        body:    JSON.stringify({ userId: user.id, questionId: q.id, choice: idx }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || "Gagal mengirim jawaban. Coba lagi.");
 
-    if (pts > 0) { setFloatPts(pts); setTimeout(() => setFloatPts(null), 900); }
-
-    const ns: DailyState = {
-      ...state,
-      qUsed:           state.qUsed + 1,
-      pts:             state.pts + pts,
-      streak:          correct ? state.streak + 1 : 0,
-      totalPtsAlltime: state.totalPtsAlltime + pts,
-    };
-    setState(ns);
-    await saveDailyState(user.id, ns);
+      setFeedback({ correct:data.correct, answer:data.answer, explanation:data.explanation, points:data.points });
+      setState(data.state);
+      if (data.points > 0) { setFloatPts(data.points); setTimeout(() => setFloatPts(null), 900); }
+    } catch(e) {
+      console.error(e);
+      setSelected(null);
+      alert(e instanceof Error ? e.message : "Gagal mengirim jawaban. Coba lagi.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   // ── NEXT ─────────────────────────────────────────────────────
   function nextQ() {
-    if (state.qUsed >= MAX_Q) { setPhase("done"); return; }
-    if (curQ + 1 >= questions.length) { setPhase("result"); return; }
-    setCurQ(c => c+1); setAnswered(false); setSelected(null); setImgError(false);
+    if (curQ + 1 < questions.length) {
+      setCurQ(c => c+1); setFeedback(null); setSelected(null); setImgError(false);
+      return;
+    }
+    setPhase(state.qUsed >= MAX_Q ? "done" : "result");
   }
 
-  // ── CHANGE TOPIC (hanya update pilihan, belum hitung tUsed) ──
-  async function handleChangeTopic(id: string) {
+  // ── CHANGE TOPIC / LEVEL (pilihan lokal; dicatat server saat quiz dimulai) ──
+  function handleChangeTopic(id: string) {
     if (!user || locked || id === state.topicId) return;
     const wouldExceed = !state.usedTopics.includes(id) && state.usedTopics.length >= MAX_T;
     if (wouldExceed) return;
-    const ns = { ...state, topicId: id };
-    setState(ns);
-    await saveDailyState(user.id, ns);
-    setPhase("home");
+    setState(s => ({ ...s, topicId: id }));
+    setPhase(p => p === "result" ? "home" : p);
   }
 
-  // ── CHANGE LEVEL ─────────────────────────────────────────────
-  async function handleChangeLevel(i: number) {
+  function handleChangeLevel(i: number) {
     if (!user || locked || i === state.lvl) return;
-    const ns = { ...state, lvl: i };
-    setState(ns);
-    await saveDailyState(user.id, ns);
+    setState(s => ({ ...s, lvl: i }));
   }
 
   // ── RENDER ───────────────────────────────────────────────────
@@ -446,12 +431,14 @@ export default function QuizPage() {
             <h2 className="text-lg font-semibold mb-1">{topic.name}</h2>
             <p className="text-sm text-muted-foreground mb-1">{lv.label}</p>
             <p className="text-xs text-muted-foreground mb-4">
-              Sisa {MAX_Q - state.qUsed} soal hari ini
+              {state.pending > 0
+                ? `Ada ${state.pending} soal yang belum kamu jawab`
+                : `Sisa ${MAX_Q - state.qUsed} soal hari ini`}
             </p>
             {user ? (
-              <Button onClick={startQuiz} disabled={state.qUsed >= MAX_Q}
+              <Button onClick={startQuiz} disabled={!canStart}
                 className="w-full text-white font-semibold py-3" style={{ background:lv.color }}>
-                Mulai Quiz →
+                {state.pending > 0 ? "Lanjutkan Quiz →" : "Mulai Quiz →"}
               </Button>
             ) : (
               <p className="text-sm text-muted-foreground">Login untuk bermain quiz!</p>
@@ -477,6 +464,11 @@ export default function QuizPage() {
         {/* ── QUIZ ── */}
         {phase === "quiz" && q && (
           <>
+            {resumed && (
+              <div className="text-xs text-muted-foreground bg-muted border border-border rounded-lg px-3 py-2 mb-3">
+                Melanjutkan soal yang belum kamu jawab sebelumnya ({lv.name} • {topic.name}).
+              </div>
+            )}
             <Card className="overflow-hidden mb-3">
               {/* IMAGE */}
               {q.img_url && !imgError ? (
@@ -506,29 +498,34 @@ export default function QuizPage() {
                 <div className="grid grid-cols-2 gap-2">
                   {q.opts.map((opt, i) => {
                     let cls = "border-border hover:bg-muted hover:border-primary/50";
-                    if (answered) {
-                      if (i===q.ans) cls = "bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600";
+                    if (feedback) {
+                      if (i===feedback.answer) cls = "bg-green-100 border-green-500 text-green-800 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600";
                       else if (i===selected) cls = "bg-red-100 border-red-500 text-red-800 dark:bg-red-900/30 dark:text-red-300 dark:border-red-600";
                       else cls = "opacity-50 border-border";
+                    } else if (submitting) {
+                      cls = i===selected ? "border-primary bg-primary/10" : "opacity-50 border-border";
                     }
                     return (
-                      <button key={i} onClick={() => choose(i)} disabled={answered}
+                      <button key={i} onClick={() => choose(i)} disabled={answered || submitting}
                         className={`p-3 rounded-xl border-2 text-sm text-left transition-all leading-snug disabled:cursor-not-allowed ${cls}`}>
                         <span className="text-muted-foreground text-xs mr-1">{i+1}.</span>{opt}
                       </button>
                     );
                   })}
                 </div>
+                {submitting && (
+                  <p className="text-xs text-muted-foreground mt-3">Memeriksa jawaban...</p>
+                )}
               </div>
 
               {/* FEEDBACK */}
-              {answered && (
+              {feedback && (
                 <div className="px-5 pb-5 flex items-start gap-3 border-t border-border pt-4">
-                  <span className="text-lg flex-shrink-0">{selected===q.ans ? "✓" : "✗"}</span>
-                  <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{q.explain}</p>
-                  {selected===q.ans && (
+                  <span className="text-lg flex-shrink-0">{feedback.correct ? "✓" : "✗"}</span>
+                  <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{feedback.explanation}</p>
+                  {feedback.correct && (
                     <span className="text-sm font-semibold whitespace-nowrap" style={{color:lv.color}}>
-                      +{lv.ptCorrect + (state.streak > 2 ? lv.ptStreak : 0)}pt
+                      +{feedback.points}pt
                     </span>
                   )}
                 </div>
@@ -538,7 +535,7 @@ export default function QuizPage() {
             {/* NAV */}
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-sm text-muted-foreground">Soal {answered ? state.qUsed : state.qUsed + 1} dari {MAX_Q}</p>
+                <p className="text-sm text-muted-foreground">Soal {state.qUsed - questions.length + curQ + 1} dari {MAX_Q}</p>
                 <p className="text-xs" style={{color:"#BA7517"}}>
                   {state.streak>=3 ? `🔥 Streak ${state.streak}x! +${lv.ptStreak} bonus` : state.streak>0 ? `Streak ${state.streak}x` : ""}
                 </p>

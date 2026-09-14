@@ -1,4 +1,6 @@
 // /lib/quiz-config.ts
+// Konfigurasi Quiz Harian yang dipakai bersama oleh halaman /quiz (client)
+// dan API route quiz (server), supaya aturan poin & kuota hanya ada di satu tempat.
 import { QuizLevel, QuizTopic } from "@/types/quiz";
 
 export const QUIZ_LEVELS: QuizLevel[] = [
@@ -85,3 +87,27 @@ export const QUIZ_TOPICS: QuizTopic[] = [
 
 export const MAX_QUESTIONS_PER_DAY = 5;
 export const MAX_TOPIC_CHANGES_PER_DAY = 2;
+
+// Kuota harian mengikuti hari di WIB (UTC+7, tanpa DST), bukan UTC atau jam
+// lokal browser — supaya tanggal kuota di client & server selalu sama.
+const WIB_OFFSET_MS = 7 * 60 * 60 * 1000;
+const DAY_MS        = 24 * 60 * 60 * 1000;
+
+export function todayWIB(): string {
+  return new Date(Date.now() + WIB_OFFSET_MS).toISOString().slice(0, 10);
+}
+
+export function previousDate(date: string): string {
+  return new Date(Date.parse(`${date}T00:00:00Z`) - DAY_MS).toISOString().slice(0, 10);
+}
+
+export function msUntilResetWIB(): number {
+  return DAY_MS - ((Date.now() + WIB_OFFSET_MS) % DAY_MS);
+}
+
+// Poin satu jawaban. Bonus streak berlaku mulai jawaban benar ke-3 berturut-turut.
+export function pointsFor(levelIndex: number, correct: boolean, streakBefore: number): number {
+  if (!correct) return 0;
+  const lv = QUIZ_LEVELS[levelIndex] ?? QUIZ_LEVELS[0];
+  return lv.ptCorrect + (streakBefore >= 2 ? lv.ptStreak : 0);
+}
