@@ -58,11 +58,14 @@ interface DailyState {
 type Phase = "home"|"loading"|"quiz"|"result"|"done";
 
 // ─── HELPERS ─────────────────────────────────────────────────
-function today() { return new Date().toISOString().slice(0,10); }
+// Kuota harian mengikuti hari di WIB (UTC+7, tanpa DST), bukan UTC atau jam
+// lokal browser — supaya tanggal kuota & hitung mundur reset selalu sama.
+const WIB_OFFSET_MS = 7 * 60 * 60 * 1000;
+const DAY_MS        = 24 * 60 * 60 * 1000;
+function today() { return new Date(Date.now() + WIB_OFFSET_MS).toISOString().slice(0,10); }
 function resetIn() {
-  const now=new Date(), tmr=new Date(now);
-  tmr.setDate(tmr.getDate()+1); tmr.setHours(0,0,0,0);
-  const d=Math.round((tmr.getTime()-now.getTime())/60000);
+  const msLeft = DAY_MS - ((Date.now() + WIB_OFFSET_MS) % DAY_MS);
+  const d = Math.ceil(msLeft / 60000);
   return `${Math.floor(d/60)}j ${d%60}m`;
 }
 
@@ -108,7 +111,7 @@ async function loadDailyState(uid: string): Promise<DailyState> {
     pts: 0,
     streak: lastData?.streak ?? 0,  // Carry over streak
     topicId: lastData?.topic_id ?? "budaya",
-    lvl: lastData?.level ?? 1,
+    lvl: lastData?.level ?? 0,
     totalPtsAlltime: lastData?.total_pts_alltime ?? 0,  // ← INI FIX-NYA!
     usedTopics: [],
   };
@@ -128,7 +131,7 @@ export default function QuizPage() {
 
   const empty: DailyState = {
     date:today(), qUsed:0, tUsed:0, pts:0, streak:0,
-    topicId:"budaya", lvl:1, totalPtsAlltime:0, usedTopics:[]
+    topicId:"budaya", lvl:0, totalPtsAlltime:0, usedTopics:[]
   };
 
   const [state,      setState]      = useState<DailyState>(empty);
@@ -156,7 +159,10 @@ export default function QuizPage() {
     return () => clearInterval(t);
   }, []);
 
-  const lv     = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[1];
+  const lv     = QUIZ_LEVELS[state.lvl] ?? QUIZ_LEVELS[0];
+  // Level & topik dikunci selama soal dimuat/dikerjakan, supaya poin soal
+  // yang sedang tampil tidak bisa diubah dengan ganti level di tengah jalan.
+  const locked = phase === "loading" || phase === "quiz";
   const topic  = TOPICS.find(t => t.id===state.topicId) ?? TOPICS[0];
   const q      = questions[curQ];
   const plLvl  = getPlayerLevel(state.totalPtsAlltime);
@@ -236,7 +242,7 @@ export default function QuizPage() {
 
   // ── CHANGE TOPIC (hanya update pilihan, belum hitung tUsed) ──
   async function handleChangeTopic(id: string) {
-    if (!user || id === state.topicId) return;
+    if (!user || locked || id === state.topicId) return;
     const wouldExceed = !state.usedTopics.includes(id) && state.usedTopics.length >= MAX_T;
     if (wouldExceed) return;
     const ns = { ...state, topicId: id };
@@ -247,7 +253,7 @@ export default function QuizPage() {
 
   // ── CHANGE LEVEL ─────────────────────────────────────────────
   async function handleChangeLevel(i: number) {
-    if (!user || i === state.lvl) return;
+    if (!user || locked || i === state.lvl) return;
     const ns = { ...state, lvl: i };
     setState(ns);
     await saveDailyState(user.id, ns);
@@ -351,7 +357,8 @@ export default function QuizPage() {
         <div className="flex gap-2 flex-wrap mb-2">
           {QUIZ_LEVELS.map((l,i) => (
             <button key={l.name} onClick={() => handleChangeLevel(i)}
-              className="px-4 py-1.5 rounded-full text-sm font-medium border transition-all"
+              disabled={locked}
+              className="px-4 py-1.5 rounded-full text-sm font-medium border transition-all disabled:cursor-not-allowed disabled:opacity-60"
               style={i===state.lvl
                 ? { background:l.color, color:"#fff", borderColor:l.color }
                 : { borderColor:"var(--border)", background:"transparent" }}>
@@ -371,6 +378,11 @@ export default function QuizPage() {
         </div>
 
         {/* TOPIC SELECTOR */}
+        {locked && (
+          <div className="text-xs text-muted-foreground bg-muted border border-border rounded-lg px-3 py-2 mb-3">
+            Level & topik tidak bisa diganti selama quiz berjalan.
+          </div>
+        )}
         {state.usedTopics.length >= MAX_T && (
           <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 dark:bg-amber-950/30 dark:border-amber-800 dark:text-amber-400 rounded-lg px-3 py-2 mb-3">
             Kamu sudah menggunakan {MAX_T} topik hari ini. Topik terkunci sampai besok.
@@ -383,10 +395,10 @@ export default function QuizPage() {
             const wouldExceed = !used && !active && state.usedTopics.length >= MAX_T;
             return (
               <button key={t.id} onClick={() => handleChangeTopic(t.id)}
-                disabled={wouldExceed}
+                disabled={wouldExceed || locked}
                 className={`flex items-center gap-2 p-3 rounded-xl border text-left transition-all ${
                   active ? "border-primary bg-primary/10"
-                  : wouldExceed ? "opacity-40 cursor-not-allowed border-border"
+                  : wouldExceed || locked ? "opacity-40 cursor-not-allowed border-border"
                   : "border-border hover:bg-muted"}`}>
                 <span className="text-xl">{t.icon}</span>
                 <div className="flex-1 min-w-0">
@@ -526,7 +538,7 @@ export default function QuizPage() {
             {/* NAV */}
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-sm text-muted-foreground">Soal {state.qUsed} dari {MAX_Q}</p>
+                <p className="text-sm text-muted-foreground">Soal {answered ? state.qUsed : state.qUsed + 1} dari {MAX_Q}</p>
                 <p className="text-xs" style={{color:"#BA7517"}}>
                   {state.streak>=3 ? `🔥 Streak ${state.streak}x! +${lv.ptStreak} bonus` : state.streak>0 ? `Streak ${state.streak}x` : ""}
                 </p>
