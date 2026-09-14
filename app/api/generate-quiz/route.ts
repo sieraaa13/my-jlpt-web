@@ -7,6 +7,9 @@ import { MAX_QUESTIONS_PER_DAY, MAX_TOPIC_CHANGES_PER_DAY, todayWIB } from "@/li
 import {
   getQuizAdmin, isUuid, loadDailyRow, saveDailyRow, toClientState, userExists,
 } from "@/lib/quiz-server";
+import {
+  GeneratedQuestion, isPlayableQuestionRow, parseGeneratedQuestions, shuffle,
+} from "@/lib/quiz-questions";
 
 const LEVEL_CONFIG = [
   {
@@ -17,7 +20,7 @@ const LEVEL_CONFIG = [
   {
     name: "N4",
     diff: "easy, for basic level learners",
-    guide: "Practical travel tips and common knowledge. Options are similar but distinguishable with basic understanding."
+    guide: "Common knowledge most people interested in Japan would know. Options are similar but distinguishable with basic understanding."
   },
   {
     name: "N3",
@@ -27,102 +30,96 @@ const LEVEL_CONFIG = [
   {
     name: "N2",
     diff: "difficult, for advanced learners",
-    guide: "Cultural nuances, historical background, local insights. All options plausible, requires cultural understanding."
+    guide: "Cultural nuances, historical background, regional differences. All options plausible, requires cultural understanding."
   },
   {
     name: "N1",
     diff: "very difficult, professional level",
-    guide: "Deep cultural analysis, philosophical connections, expert-level knowledge. Requires comprehensive understanding."
+    guide: "Deep cultural and historical knowledge, origins and meanings behind customs. Requires comprehensive understanding."
   },
 ];
 
-const TOPICS: Record<string, string> = {
-  budaya:   "Japanese culture, traditions, and daily life customs",
-  makanan:  "Japanese food and culinary traditions",
-  anime:    "Anime, manga, and Japanese pop culture",
-  tempat:   "Famous Instagrammable spots, iconic tourist destinations in Japan",
-  festival: "Japanese festivals (matsuri) and traditional celebrations",
-  modern:   "Modern Japan: technology, convenience stores, transportation, lifestyle",
+const TOPICS: Record<string, { desc: string; angles: string }> = {
+  budaya: {
+    desc:   "Japanese culture, traditions, and daily life customs",
+    angles: "etiquette and manners, meaning behind customs, daily life habits, home and family life, traditional arts and clothing, what to do or say in everyday situations",
+  },
+  makanan: {
+    desc:   "Japanese food and culinary traditions",
+    angles: "dishes and their ingredients, regional specialties, eating etiquette, how dishes are made or served, seasonal and festival foods, origins of dishes",
+  },
+  anime: {
+    desc:   "Anime, manga, and Japanese pop culture",
+    angles: "well-known classic series and their creators, genres and terms (shounen, isekai, etc.), studios, how the manga/anime industry works, fan culture and events, influence on Japanese society",
+  },
+  tempat: {
+    desc:   "Famous Instagrammable spots and iconic tourist destinations in Japan",
+    angles: "which prefecture/city a landmark is in, what a place is known for, history and meaning of landmarks, best season to see something, local customs when visiting, differences between similar places",
+  },
+  festival: {
+    desc:   "Japanese festivals (matsuri) and traditional celebrations",
+    angles: "when and where festivals are held, what happens during them, their origins and meaning, traditional items, food and clothing, national holidays and seasonal events",
+  },
+  modern: {
+    desc:   "Modern Japan: technology, convenience stores, transportation, lifestyle",
+    angles: "trains and public transport rules, konbini culture, work and school life, technology and everyday conveniences, social norms in cities, how systems work (garbage sorting, IC cards, etc.)",
+  },
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. GENERATE SOAL via GPT - IMPROVED PROMPT
+// 1. GENERATE SOAL via GPT
 // ═══════════════════════════════════════════════════════════════
 async function generateQuestions(
   apiKey: string,
   levelIndex: number,
   topicId: string,
   count: number
-): Promise<Record<string, unknown>[]> {
+): Promise<GeneratedQuestion[]> {
   const lv    = LEVEL_CONFIG[levelIndex];
   const topic = TOPICS[topicId];
+  // Minta sedikit lebih banyak karena soal yang tidak lolos validasi dibuang.
+  const requestCount = count + 2;
 
   const prompt = `You are an expert quiz creator for a Japanese culture learning platform.
-Create exactly ${count} multiple-choice quiz questions.
+Create exactly ${requestCount} multiple-choice quiz questions.
 
-TOPIC: ${topic}
+TOPIC: ${topic.desc}
 DIFFICULTY: ${lv.diff} (${lv.name})
 LEVEL GUIDE: ${lv.guide}
 
 CRITICAL RULES:
-- 100% factually accurate about Japan
-- Each question MUST BE UNIQUE - no repeated patterns or similar structures
-- ALL questions and explanations in Indonesian (Bahasa Indonesia)
-- img_keyword: 1-3 English words for Unsplash photo search (e.g., "fushimi inari kyoto", "ramen bowl")
+- Only well-established facts that do not change over time. Do NOT ask about prices, opening hours, rankings, "currently trending" things, or recent/upcoming releases.
+- If you are not certain a fact is correct, do not use it.
+- Exactly 4 options per question, exactly one clearly correct answer; the other options must be plausible but definitely wrong.
+- Options will be shuffled: the explanation must NOT refer to option letters, numbers, or positions.
+- img_cat and img_keyword must NOT reveal the correct answer.
+- Each question must be unique - no repeated patterns or similar structures.
+- ALL questions, options, and explanations in Indonesian (Bahasa Indonesia).
+- img_keyword: 1-3 English words describing the general subject for an Unsplash photo search (e.g., "torii gate", "ramen bowl").
 
-QUESTION VARIETY - Mix these types (DON'T repeat patterns):
-
-TRENDING & SEASONAL:
-- Trending spots: What's currently popular among young travelers/influencers?
-- Seasonal recommendations: Best places to visit in spring/summer/fall/winter
-- Hidden gems: Lesser-known spots locals recommend
-
-PRACTICAL EXPERIENCE:
-- What to do: Main activities/experiences at the location
-- Unique experiences: Once-in-a-lifetime things to try there
-- Photo spots: Best angles/locations for Instagram-worthy shots
-- Time management: How long to spend, best route to explore
-
-CULTURAL & CONTEXT:
-- Cultural significance: Why this place matters to Japanese culture
-- Historical background: Stories or legends about the location
-- Local customs: Etiquette or traditions to know
-
-PLANNING & TIPS:
-- Timing: Best time of day/season/weather to visit
-- What to bring: Essential items for the experience
-- Budget tips: How to enjoy without overspending
-- Crowd avoidance: When/how to avoid tourist crowds
-
-COMPARISONS & CHOICES:
-- Similar places: Differences between [X] vs [Y]
-- Local vs tourist: What locals do vs what tourists typically do
+QUESTION ANGLES for this topic (mix them, don't repeat the same angle):
+${topic.angles}
 
 MAKE IT RELATABLE:
-- Use "kamu" (you) to make it personal
-- Focus on real travel scenarios and practical value
-- Include insights travelers would actually use
-- Avoid pure trivia - add context and usefulness
+- Use "kamu" (you) to make it personal where it fits
+- Prefer practical and meaningful knowledge over pure trivia
+- Mix interrogative words (Apa, Kapan, Mengapa, Di mana, Bagaimana) and sentence patterns
 
-VARY QUESTION STRUCTURE:
-- Don't start all questions the same way
-- Mix interrogative words (Apa, Kapan, Mengapa, Di mana, Bagaimana)
-- Change sentence patterns and angles
-- Each question should feel fresh and different
+Respond ONLY with a JSON object in this exact shape:
+{
+  "questions": [
+    {
+      "question": "pertanyaan dalam bahasa Indonesia",
+      "options": ["A","B","C","D"],
+      "answer": 0,
+      "explanation": "penjelasan singkat dalam bahasa Indonesia dengan konteks tambahan",
+      "img_keyword": "english keywords untuk foto Unsplash",
+      "img_cat": "kategori singkat"
+    }
+  ]
+}`;
 
-Respond ONLY with valid JSON array, no markdown:
-[
-  {
-    "question": "pertanyaan dalam bahasa Indonesia yang relatable dan spesifik",
-    "options": ["A","B","C","D"],
-    "answer": 0,
-    "explanation": "penjelasan singkat dalam bahasa Indonesia dengan konteks tambahan",
-    "img_keyword": "english keywords untuk foto Unsplash",
-    "img_cat": "kategori singkat"
-  }
-]`;
-
-  console.log(`[GPT] Generating ${count} questions for ${topic} ${lv.name}`);
+  console.log(`[GPT] Generating ${requestCount} questions for ${topic.desc} ${lv.name}`);
 
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -131,33 +128,33 @@ Respond ONLY with valid JSON array, no markdown:
       "Authorization": `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model:       "gpt-4o-mini",
-      temperature: 0.95, // Increased for more creativity
+      model:           "gpt-4o-mini",
+      temperature:     0.7, // cukup bervariasi tanpa terlalu banyak mengarang fakta
+      response_format: { type: "json_object" },
       messages: [
         { role: "system", content: prompt },
-        { role: "user",   content: `Generate ${count} UNIQUE questions with VARIED structures. Make each one different in approach, angle, and focus.` },
+        { role: "user",   content: `Generate ${requestCount} unique, factually accurate questions with varied angles and structures.` },
       ],
     }),
   });
 
   if (!res.ok) throw new Error(`GPT error: ${res.status}`);
-  const data   = await res.json();
+  const data    = await res.json();
   const content = data.choices?.[0]?.message?.content || "";
-  const parsed = JSON.parse(content.replace(/```json|```/g, "").trim());
-  console.log(`[GPT] ✓ Generated ${parsed.length} questions`);
-  return parsed;
+  const valid   = parseGeneratedQuestions(JSON.parse(content.replace(/```json|```/g, "").trim()));
+  console.log(`[GPT] ✓ ${valid.length}/${requestCount} questions passed validation`);
+  return valid.slice(0, count);
 }
 
 // ═══════════════════════════════════════════════════════════════
-// 2. GET FOTO dari UNSPLASH - IMPROVED SEARCH
+// 2. GET FOTO dari UNSPLASH
 // ═══════════════════════════════════════════════════════════════
 async function getUnsplashPhoto(keyword: string, accessKey: string): Promise<string> {
   console.log(`[UNSPLASH] Searching for: "${keyword}"`);
 
   try {
-    // Improved query for better, more Instagrammable photos
-    const query = `${keyword} japan beautiful travel photography`;
-    const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&order_by=popular&client_id=${accessKey}`;
+    const query = `${keyword} japan`;
+    const url   = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&order_by=relevant&client_id=${accessKey}`;
 
     const res = await fetch(url);
     if (!res.ok) {
@@ -212,7 +209,7 @@ async function getUnplayedQuestions(
 
   const { data } = await query.limit(count * 3);
   if (!data || data.length === 0) return [];
-  return data.sort(() => Math.random() - 0.5).slice(0, count);
+  return shuffle(data.filter(isPlayableQuestionRow)).slice(0, count);
 }
 
 // Hanya field yang aman dikirim ke client — kunci jawaban & penjelasan
@@ -233,11 +230,11 @@ function toClientQuestion(q: Record<string, unknown>) {
 async function processSingleQuestion(
   admin: SupabaseClient,
   unsplashKey: string,
-  q: Record<string, unknown>,
+  q: GeneratedQuestion,
   levelIndex: number,
   topicId: string
 ): Promise<Record<string, unknown>> {
-  const imgUrl = await getUnsplashPhoto(q.img_keyword as string, unsplashKey);
+  const imgUrl = await getUnsplashPhoto(q.img_keyword, unsplashKey);
 
   const { data, error } = await admin
     .from("quiz_questions")
@@ -249,7 +246,7 @@ async function processSingleQuestion(
       answer:      q.answer,
       explanation: q.explanation,
       img_prompt:  q.img_keyword,
-      img_cat:     q.img_cat || "",
+      img_cat:     q.img_cat,
       img_url:     imgUrl,
     })
     .select("id")
