@@ -13,8 +13,9 @@ interface Question {
 type Part = { type: "text"; value: string } | { type: "blank"; star: boolean };
 
 // Kotak kosong di data ditulis dengan beberapa gaya: （　）, （ ★ ）, ( ), (★),
-// （　））, juga __ dan __★__. Semua diubah jadi token "blank".
-const BLANK_RE = /_{2}\s*★\s*_{2}|_{2}|[（(][\s　]*★?[\s　]*[)）]+/g;
+// （　））, juga __ dan __★__, serta gaya Soumatome ＿＿ ＿＿ ★ ＿＿ (★ berdiri
+// sendiri = kotak ★). Semua diubah jadi token "blank".
+const BLANK_RE = /_{2}\s*★\s*_{2}|_{2}|＿{2,}|[（(][\s　]*★?[\s　]*[)）]+|★/g;
 
 /** Pecah soal 文の組み立て jadi teks + 4 kotak. null kalau bukan soal ★. */
 export function parseSortQuestion(q: string): Part[] | null {

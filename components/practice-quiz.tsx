@@ -1,6 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useExamContext } from "@/components/exam-context";
+import { AskButton } from "@/components/ask-siera-button";
+import { SortQuestionCard, SortResultCard, parseSortQuestion, fillSortSentence } from "@/components/sort-question-card";
 
 type Question = {
   number: number;
@@ -10,6 +13,7 @@ type Question = {
   words?: { id: number; word: string }[];
   hint?: string;
   answer?: number;
+  order?: number[]; // soal ★: id kata dalam urutan yang benar
 };
 
 type ExerciseGroup = {
@@ -25,9 +29,53 @@ type ExerciseGroup = {
   };
 };
 
-export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
+// Soal ★ (q.words) dalam format yang dipakai SortQuestionCard: opsi = index kata
+function toSortQuestion(q: Question) {
+  const words = q.words ?? [];
+  const idx = (id: number) => words.findIndex((w) => w.id === id);
+  return {
+    q: q.question ?? "",
+    options: words.map((w) => w.word),
+    correct: q.answer !== undefined ? idx(q.answer) : -1,
+    order: q.order?.map(idx),
+  };
+}
+
+// sortAndAsk: soal ★ disusun dengan drag/klik, dan setelah diperiksa setiap
+// soal punya tombol untuk bertanya ke Siera
+export function PracticeQuiz({ groups, sortAndAsk = false }: { groups: ExerciseGroup[]; sortAndAsk?: boolean }) {
   const [selected, setSelected] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
+  // Susunan kata soal ★ per nomor soal (index ke q.words)
+  const [sortSlots, setSortSlots] = useState<Record<number, (number | null)[]>>({});
+  const { openChatWith } = useExamContext();
+
+  // Lepas fokus chat saat keluar dari halaman latihan
+  useEffect(() => () => openChatWith(null), []);
+
+  const sortPartsOf = (q: Question) => (sortAndAsk && q.words && q.question ? parseSortQuestion(q.question) : null);
+
+  const askAbout = (group: ExerciseGroup, q: Question) => {
+    const choices = q.options?.map((o) => ({ id: o.id, text: o.text })) ?? q.words?.map((w) => ({ id: w.id, text: w.word })) ?? [];
+    const textOf = (id?: number) => choices.find((c) => c.id === id)?.text ?? "";
+    const ua = selected[q.number];
+    const label = `${group.title} no. ${q.number}`;
+    const lines = [`Bagian: ${label}`];
+    if (group.passage?.jp_text) lines.push(`[Bacaan/Teks]\n${group.passage.jp_text.slice(0, 1500)}`);
+    lines.push(`Soal: ${q.question || q.blank || ""}`);
+    lines.push(`Pilihan: ${choices.map((c) => `${c.id}. ${c.text}`).join(" / ")}`);
+    lines.push(`Jawaban user: ${ua !== undefined ? `${ua}. ${textOf(ua)}` : "tidak dijawab"}`);
+    if (q.answer !== undefined) lines.push(`Jawaban benar: ${q.answer}. ${textOf(q.answer)}`);
+    const parts = sortPartsOf(q);
+    if (parts) {
+      const sq = toSortQuestion(q);
+      lines.push("Tipe soal: 文の組み立て (menyusun 4 kata; yang dinilai hanya kata di kotak ★)");
+      lines.push(`Susunan user: ${fillSortSentence(parts, sortSlots[q.number] ?? [null, null, null, null], sq.options)}`);
+      if (sq.order) lines.push(`Susunan benar: ${fillSortSentence(parts, sq.order, sq.options)}`);
+    }
+    if (q.hint) lines.push(`Petunjuk materi: ${q.hint}`);
+    openChatWith({ label, detail: lines.join("\n") });
+  };
 
   const allQuestions = groups.flatMap((g) => g.questions);
   const totalQuestions = allQuestions.length;
@@ -48,6 +96,8 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
 
   const handleReset = () => {
     setSelected({});
+    setSortSlots({});
+    openChatWith(null);
     setShowResults(false);
   };
 
@@ -85,7 +135,41 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
 
           {/* Daftar soal */}
           <div className="space-y-8">
-            {group.questions.map((q) => (
+            {group.questions.map((q) => {
+              const sortParts = sortPartsOf(q);
+              if (sortParts) {
+                const sq = toSortQuestion(q);
+                const slots = sortSlots[q.number] ?? [null, null, null, null];
+                return showResults ? (
+                  <SortResultCard
+                    key={q.number}
+                    index={q.number - 1}
+                    question={sq}
+                    parts={sortParts}
+                    slots={slots}
+                    isCorrect={selected[q.number] === q.answer}
+                    footer={<AskButton onClick={() => askAbout(group, q)} />}
+                  />
+                ) : (
+                  <SortQuestionCard
+                    key={q.number}
+                    index={q.number - 1}
+                    question={sq}
+                    parts={sortParts}
+                    slots={slots}
+                    onChange={(next, starOption) => {
+                      setSortSlots((prev) => ({ ...prev, [q.number]: next }));
+                      setSelected((prev) => {
+                        const copy = { ...prev };
+                        if (starOption === null) delete copy[q.number];
+                        else copy[q.number] = q.words![starOption].id;
+                        return copy;
+                      });
+                    }}
+                  />
+                );
+              }
+              return (
               <div key={q.number}>
                 {/* Nomor + pertanyaan */}
                 <div className="flex gap-3 mb-3">
@@ -133,8 +217,15 @@ export function PracticeQuiz({ groups }: { groups: ExerciseGroup[] }) {
                 {showResults && q.hint && (
                   <p className="ml-12 mt-2 text-xs text-muted-foreground">📘 {q.hint}</p>
                 )}
+
+                {showResults && sortAndAsk && (
+                  <div className="ml-12 mt-3">
+                    <AskButton onClick={() => askAbout(group, q)} />
+                  </div>
+                )}
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       ))}

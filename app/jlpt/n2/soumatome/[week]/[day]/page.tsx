@@ -269,7 +269,7 @@ export default async function Page({
                   <h2 className="text-3xl font-black">実戦問題</h2>
                   <p className="text-muted-foreground mt-1">制限時間：15分 ｜ 1問4点 × 25問 ／100</p>
                 </div>
-                <PracticeQuiz groups={data.exercise_groups as any} />
+                <PracticeQuiz groups={data.exercise_groups as any} sortAndAsk />
               </div>
             </>
           )}

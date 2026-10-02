@@ -47,6 +47,10 @@ export default function FloatingAIChat() {
   // Bukan seluruh daftar soal, supaya tidak melebihi token limit
   const buildExamContext = (): string => {
     if (!examData?.questions || examData.questions.length === 0) {
+      // Di luar halaman ujian (mis. latihan Soumatome) cukup kirim soal yang dipilih
+      if (chatFocus) {
+        return `User sedang membahas soal latihan yang sudah diperiksa.\n\n📍 USER SEDANG MEMBAHAS SOAL BERIKUT (fokuskan jawaban ke soal ini kecuali user menyebut soal lain):\n${chatFocus.detail}\n`;
+      }
       return "";
     }
 
@@ -139,7 +143,8 @@ export default function FloatingAIChat() {
           messages: recentMessages,
           examContext,
           level,
-          isExamFinished: examData?.isExamFinished || false,
+          // Tombol "Tanya" hanya muncul setelah jawaban diperiksa → mode pembahasan
+          isExamFinished: examData?.isExamFinished || !!chatFocus,
           userId: user?.id ?? null,
           userName: user?.name ?? null,
         }),
