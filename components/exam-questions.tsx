@@ -117,8 +117,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
 
   // ★ PERUBAHAN: pakai level dari props, bukan hardcode dari tahun
   const level = levelProp ? levelProp.toUpperCase() : "N3";
-  // Soal ★ bunpou versi drag & klik — saat ini untuk N3 2011 (Juli & Desember)
-  const sortEnabled = level === "N3" && year === "2011";
+  // Soal ★ bunpou (文の組み立て) versi drag & klik untuk semua ujian N3
+  const sortEnabled = level === "N3";
   const examLabel = data.label ?? `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
   // ── TOMBOL "TANYA" DI KARTU HASIL ──────────────────────────

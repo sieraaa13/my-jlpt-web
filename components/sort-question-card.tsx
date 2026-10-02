@@ -120,7 +120,7 @@ export function SortQuestionCard({
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
           {/* Kalimat dengan kotak */}
-          <div className="font-semibold text-base sm:text-lg leading-loose mb-4 break-words text-foreground">
+          <div className="font-semibold text-base sm:text-lg leading-loose mb-4 break-words whitespace-pre-line text-foreground">
             {parts.map((p, pi) => {
               if (p.type === "text") return <span key={pi}>{p.value}</span>;
               const slot = ++blankCounter;
@@ -231,12 +231,12 @@ export function SortResultCard({
         <div className="flex-1 min-w-0 space-y-3">
           <div>
             <p className="text-xs font-semibold text-muted-foreground mb-1">Susunanmu</p>
-            <div className="font-semibold text-base sm:text-lg leading-loose break-words text-foreground">{renderSentence("user")}</div>
+            <div className="font-semibold text-base sm:text-lg leading-loose break-words whitespace-pre-line text-foreground">{renderSentence("user")}</div>
           </div>
           {order && (
             <div>
               <p className="text-xs font-semibold text-muted-foreground mb-1">Susunan benar</p>
-              <div className="font-semibold text-base sm:text-lg leading-loose break-words text-foreground">{renderSentence("correct")}</div>
+              <div className="font-semibold text-base sm:text-lg leading-loose break-words whitespace-pre-line text-foreground">{renderSentence("correct")}</div>
             </div>
           )}
           {!answered && <p className="text-xs sm:text-sm font-semibold text-muted-foreground">Kotak ★ belum diisi.</p>}
