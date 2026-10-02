@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useExamContext } from "@/components/exam-context";
 import { useAuth } from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
+import { SortQuestionCard, parseSortQuestion } from "@/components/sort-question-card";
 
 interface Question {
   q: string;
@@ -63,6 +64,9 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   const [showResults, setShowResults] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [savedToDb, setSavedToDb] = useState(false);
+  // Susunan kata soal ★ (文の組み立て) per soal bunpou — disimpan di sini supaya
+  // tidak hilang saat pindah tab
+  const [sortSlots, setSortSlots] = useState<Record<number, (number | null)[]>>({});
 
   useEffect(() => { setMounted(true); }, []);
 
@@ -110,6 +114,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
 
   // ★ PERUBAHAN: pakai level dari props, bukan hardcode dari tahun
   const level = levelProp ? levelProp.toUpperCase() : "N3";
+  // Soal ★ bunpou versi drag & klik — saat ini untuk N3 2011 (Juli & Desember)
+  const sortEnabled = level === "N3" && year === "2011";
   const examLabel = data.label ?? `${month === "07" ? "Juli" : "Desember"} ${year}`;
 
   // ── AI CONTEXT ──────────────────────────────────────────────
@@ -235,7 +241,28 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           <TabsContent value="bunpou" className="space-y-4 mt-6">
             {showResults
               ? (data.bunpou as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} isCorrect={answers[`bunpou-${i}`] === q.correct} />)
-              : (data.bunpou as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
+              : (data.bunpou as Question[]).map((q, i) => {
+                  const sortParts = sortEnabled ? parseSortQuestion(q.q) : null;
+                  if (!sortParts) return <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />;
+                  return (
+                    <SortQuestionCard
+                      key={i}
+                      index={i}
+                      question={q}
+                      parts={sortParts}
+                      slots={sortSlots[i] ?? [null, null, null, null]}
+                      onChange={(slots, starOption) => {
+                        setSortSlots((prev) => ({ ...prev, [i]: slots }));
+                        setAnswers((prev) => {
+                          const next = { ...prev };
+                          if (starOption === null) delete next[`bunpou-${i}`];
+                          else next[`bunpou-${i}`] = starOption;
+                          return next;
+                        });
+                      }}
+                    />
+                  );
+                })}
           </TabsContent>
 
           {/* DOKKAI */}
@@ -304,7 +331,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
                 })}
               </div>
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
-                <Button onClick={() => { setAnswers({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
+                <Button onClick={() => { setAnswers({}); setSortSlots({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
                 <Button onClick={handleBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
               </div>
             </div>
