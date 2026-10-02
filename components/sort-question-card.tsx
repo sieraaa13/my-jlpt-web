@@ -7,6 +7,7 @@ interface Question {
   q: string;
   options: string[];
   correct: number;
+  order?: number[]; // urutan opsi yang benar untuk 4 kotak (kalau tersedia)
 }
 
 type Part = { type: "text"; value: string } | { type: "blank"; star: boolean };
@@ -31,6 +32,19 @@ export function parseSortQuestion(q: string): Part[] | null {
   const blanks = parts.filter((p) => p.type === "blank") as { type: "blank"; star: boolean }[];
   if (blanks.length !== 4 || blanks.filter((b) => b.star).length !== 1) return null;
   return parts;
+}
+
+/** Kalimat utuh dengan kata di kotak (kotak ★ ditandai 【★…】), untuk konteks AI. */
+export function fillSortSentence(parts: Part[], slots: (number | null)[], options: string[]): string {
+  let k = -1;
+  return parts
+    .map((p) => {
+      if (p.type === "text") return p.value;
+      const opt = slots[++k];
+      const word = opt !== null && opt !== undefined ? options[opt] : "＿＿";
+      return p.star ? `【★${word}】` : `【${word}】`;
+    })
+    .join("");
 }
 
 const slotOfStar = (parts: Part[]) =>
@@ -160,6 +174,75 @@ export function SortQuestionCard({
           <p className="mt-2 text-xs text-muted-foreground">
             Seret atau klik kata untuk mengisi kotak. Klik kotak untuk mengembalikan kata. Yang dinilai adalah kata di kotak ★.
           </p>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+/* ── SORT RESULT CARD: susunan user vs susunan benar ─────────── */
+export function SortResultCard({
+  index,
+  question,
+  parts,
+  slots,
+  isCorrect,
+  footer,
+}: {
+  index: number;
+  question: Question;
+  parts: Part[];
+  slots: (number | null)[];
+  isCorrect: boolean;
+  footer?: React.ReactNode;
+}) {
+  const starSlot = slotOfStar(parts);
+  const answered = slots[starSlot] !== null && slots[starSlot] !== undefined;
+  const order = question.order;
+
+  // mode "user": warnai tiap kotak benar/salah dibanding order; "correct": susunan benar
+  const renderSentence = (mode: "user" | "correct") => {
+    let k = -1;
+    return parts.map((p, pi) => {
+      if (p.type === "text") return <span key={pi}>{p.value}</span>;
+      const slot = ++k;
+      const opt = mode === "correct" ? order![slot] : slots[slot];
+      const filled = opt !== null && opt !== undefined;
+      let tone = "border-dashed border-muted-foreground/50 text-muted-foreground";
+      if (mode === "correct") tone = "bg-green-500/20 border-green-500 text-foreground";
+      else if (filled && order) tone = opt === order[slot] ? "bg-green-500/20 border-green-500 text-foreground" : "bg-red-500/20 border-red-500 text-foreground";
+      else if (filled) tone = "bg-muted border-border text-foreground";
+      return (
+        <span
+          key={pi}
+          className={`relative inline-flex items-center justify-center align-middle mx-1 my-1 min-w-[4.5rem] min-h-[2.25rem] px-2 rounded-md border-2 text-sm sm:text-base ${tone} ${p.star ? "ring-2 ring-amber-500/70" : ""}`}
+        >
+          {p.star && <span className="absolute -top-2.5 -right-2 text-amber-500 text-sm leading-none">★</span>}
+          {filled ? question.options[opt] : " "}
+        </span>
+      );
+    });
+  };
+
+  return (
+    <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : answered ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
+      <div className="flex items-start gap-3 sm:gap-4">
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
+        <div className="flex-1 min-w-0 space-y-3">
+          <div>
+            <p className="text-xs font-semibold text-muted-foreground mb-1">Susunanmu</p>
+            <div className="font-semibold text-base sm:text-lg leading-loose break-words text-foreground">{renderSentence("user")}</div>
+          </div>
+          {order && (
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground mb-1">Susunan benar</p>
+              <div className="font-semibold text-base sm:text-lg leading-loose break-words text-foreground">{renderSentence("correct")}</div>
+            </div>
+          )}
+          {!answered && <p className="text-xs sm:text-sm font-semibold text-muted-foreground">Kotak ★ belum diisi.</p>}
+          {answered && !isCorrect && <p className="text-xs sm:text-sm font-semibold text-red-500">✗ Salah. Kata di kotak ★ yang benar: {question.options[question.correct]}</p>}
+          {isCorrect && <p className="text-xs sm:text-sm font-semibold text-green-500">✓ Benar!</p>}
+          {footer}
         </div>
       </div>
     </Card>

@@ -13,7 +13,7 @@ interface Message {
 }
 
 export default function FloatingAIChat() {
-  const { examData } = useExamContext();
+  const { examData, chatFocus, openChatWith } = useExamContext();
   const { user } = useAuth();
   const level = examData?.level || "General";
 
@@ -37,6 +37,12 @@ export default function FloatingAIChat() {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  // Tombol "Tanya" di kartu hasil → buka chat. Tidak ada pesan otomatis;
+  // user sendiri yang menulis pertanyaannya.
+  useEffect(() => {
+    if (chatFocus) setIsChatOpen(true);
+  }, [chatFocus?.nonce]);
+
   // ★ PERUBAHAN UTAMA: kirim hanya soal yang sedang aktif + beberapa soal sekitar
   // Bukan seluruh daftar soal, supaya tidak melebihi token limit
   const buildExamContext = (): string => {
@@ -59,7 +65,10 @@ export default function FloatingAIChat() {
     }
     ctx += `.\n\n`;
 
-    if (examData.activeQuestion) {
+    if (chatFocus) {
+      ctx += `📍 USER SEDANG MEMBAHAS SOAL BERIKUT (fokuskan jawaban ke soal ini kecuali user menyebut soal lain):\n`;
+      ctx += `${chatFocus.detail}\n\n`;
+    } else if (examData.activeQuestion) {
       ctx += `📍 SAAT INI USER SEDANG MELIHAT SOAL NO. ${examData.activeQuestion.number}\n`;
       ctx += `Status jawaban user: ${examData.activeQuestion.userAnswer}\n\n`;
     }
@@ -198,6 +207,20 @@ export default function FloatingAIChat() {
               <X size={20} className="hidden md:block" />
             </button>
           </div>
+
+          {chatFocus && (
+            <div className="flex items-center gap-2 px-3 py-1.5 border-b bg-cyan-500/10 text-xs text-cyan-700 dark:text-cyan-300 shrink-0">
+              <span className="flex-1 truncate">Membahas: {chatFocus.label}</span>
+              <button
+                type="button"
+                onClick={() => openChatWith(null)}
+                aria-label="Lepas fokus soal"
+                className="hover:bg-cyan-500/20 p-0.5 rounded"
+              >
+                <X size={14} />
+              </button>
+            </div>
+          )}
 
           <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm bg-background">
             {messages.map((msg, i) => (

@@ -7,12 +7,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useExamContext } from "@/components/exam-context";
 import { useAuth } from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
-import { SortQuestionCard, parseSortQuestion } from "@/components/sort-question-card";
+import { SortQuestionCard, SortResultCard, parseSortQuestion, fillSortSentence } from "@/components/sort-question-card";
 
 interface Question {
   q: string;
   options: string[];
   correct: number;
+  order?: number[]; // soal ★: urutan opsi yang benar untuk 4 kotak
 }
 
 interface DakkaiSection {
@@ -52,7 +53,7 @@ interface ExamQuestionsProps {
 }
 
 export default function ExamQuestions({ data, year, month, level: levelProp, onBack }: ExamQuestionsProps) {
-  const { setExamData: setContextExamData } = useExamContext();
+  const { setExamData: setContextExamData, openChatWith } = useExamContext();
   const { user } = useAuth();
 
   const handleBack = onBack ?? (() => {
@@ -69,6 +70,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   const [sortSlots, setSortSlots] = useState<Record<number, (number | null)[]>>({});
 
   useEffect(() => { setMounted(true); }, []);
+  // Lepas fokus chat saat keluar dari halaman ujian
+  useEffect(() => () => openChatWith(null), []);
 
   const hasChoukai = data.choukai && data.choukai.length > 0;
 
@@ -117,6 +120,28 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   // Soal ★ bunpou versi drag & klik — saat ini untuk N3 2011 (Juli & Desember)
   const sortEnabled = level === "N3" && year === "2011";
   const examLabel = data.label ?? `${month === "07" ? "Juli" : "Desember"} ${year}`;
+
+  // ── TOMBOL "TANYA" DI KARTU HASIL ──────────────────────────
+  // Hanya mengirim konteks soal ke chat; pertanyaannya ditulis user sendiri.
+  const sectionLabel: Record<string, string> = { kanji: "Kanji", bunpou: "Bunpou", dokkai: "Dokkai", choukai: "Choukai" };
+  const askAbout = (
+    section: string,
+    num: number,
+    q: Question | ChoukaiQuestion,
+    userAnswer: number | undefined,
+    extra?: { passageTitle?: string; passage?: string; lines?: string[] }
+  ) => {
+    const label = `${sectionLabel[section] ?? section}${extra?.passageTitle ? ` — ${extra.passageTitle}` : ""} no. ${num}`;
+    const lines = [`Bagian: ${label}`];
+    if (extra?.passage) lines.push(`[Bacaan/Teks]\n${extra.passage.slice(0, 1500)}`);
+    lines.push(`Soal: ${q.q}`);
+    lines.push(`Pilihan: ${q.options.map((o, i) => `${i + 1}. ${o}`).join(" / ")}`);
+    lines.push(`Jawaban user: ${userAnswer !== undefined ? `${userAnswer + 1}. ${q.options[userAnswer]}` : "tidak dijawab"}`);
+    lines.push(`Jawaban benar: ${q.correct + 1}. ${q.options[q.correct]}`);
+    if ("transcript" in q && q.transcript) lines.push(`Transkrip audio: ${q.transcript}`);
+    if (extra?.lines) lines.push(...extra.lines);
+    openChatWith({ label, detail: lines.join("\n") });
+  };
 
   // ── AI CONTEXT ──────────────────────────────────────────────
   const aiQuestions = useMemo(() => {
@@ -233,14 +258,35 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           {/* KANJI */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults
-              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} />)
+              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} onAsk={() => askAbout("kanji", i + 1, q, answers[`kanji-${i}`])} />)
               : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
           </TabsContent>
 
           {/* BUNPOU */}
           <TabsContent value="bunpou" className="space-y-4 mt-6">
             {showResults
-              ? (data.bunpou as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} isCorrect={answers[`bunpou-${i}`] === q.correct} />)
+              ? (data.bunpou as Question[]).map((q, i) => {
+                  const ua = answers[`bunpou-${i}`];
+                  const sortParts = sortEnabled ? parseSortQuestion(q.q) : null;
+                  if (!sortParts) return <ResultCard key={i} index={i} question={q} userAnswer={ua} isCorrect={ua === q.correct} onAsk={() => askAbout("bunpou", i + 1, q, ua)} />;
+                  const slots = sortSlots[i] ?? [null, null, null, null];
+                  const sortLines = [
+                    "Tipe soal: 文の組み立て (menyusun 4 kata; yang dinilai hanya kata di kotak ★)",
+                    `Susunan user: ${fillSortSentence(sortParts, slots, q.options)}`,
+                    ...(q.order ? [`Susunan benar: ${fillSortSentence(sortParts, q.order, q.options)}`] : []),
+                  ];
+                  return (
+                    <SortResultCard
+                      key={i}
+                      index={i}
+                      question={q}
+                      parts={sortParts}
+                      slots={slots}
+                      isCorrect={ua === q.correct}
+                      footer={<AskButton onClick={() => askAbout("bunpou", i + 1, q, ua, { lines: sortLines })} />}
+                    />
+                  );
+                })
               : (data.bunpou as Question[]).map((q, i) => {
                   const sortParts = sortEnabled ? parseSortQuestion(q.q) : null;
                   if (!sortParts) return <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />;
@@ -276,7 +322,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
                   <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
                     <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed font-medium break-words">{dk.text}</p>
                   </Card>
-                  {dk.questions.map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} isCorrect={answers[`dokkai-${dk.title}-${i}`] === q.correct} />)}
+                  {dk.questions.map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} isCorrect={answers[`dokkai-${dk.title}-${i}`] === q.correct} onAsk={() => askAbout("dokkai", i + 1, q, answers[`dokkai-${dk.title}-${i}`], { passageTitle: dk.title, passage: dk.text })} />)}
                 </div>
               ))
             ) : (
@@ -298,7 +344,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           {hasChoukai && (
             <TabsContent value="choukai" className="space-y-4 mt-6">
               {showResults
-                ? (data.choukai as ChoukaiQuestion[]).map((q, i) => <ChoukaiResultCard key={i} index={i} question={q} userAnswer={answers[`choukai-${i}`]} isCorrect={answers[`choukai-${i}`] === q.correct} />)
+                ? (data.choukai as ChoukaiQuestion[]).map((q, i) => <ChoukaiResultCard key={i} index={i} question={q} userAnswer={answers[`choukai-${i}`]} isCorrect={answers[`choukai-${i}`] === q.correct} onAsk={() => askAbout("choukai", i + 1, q, answers[`choukai-${i}`])} />)
                 : (data.choukai as ChoukaiQuestion[]).map((q, i) => <ChoukaiQuestionCard key={i} index={i} question={q} userAnswer={answers[`choukai-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
             </TabsContent>
           )}
@@ -331,7 +377,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
                 })}
               </div>
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
-                <Button onClick={() => { setAnswers({}); setSortSlots({}); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
+                <Button onClick={() => { setAnswers({}); setSortSlots({}); openChatWith(null); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
                 <Button onClick={handleBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
               </div>
             </div>
@@ -375,7 +421,7 @@ function QuestionCard({ index, question, userAnswer, onAnswer }: { index: number
 }
 
 /* ── RESULT CARD ─────────────────────────────────────────────── */
-function ResultCard({ index, question, userAnswer, isCorrect }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; }) {
+function ResultCard({ index, question, userAnswer, isCorrect, onAsk }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; }) {
   return (
     <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : userAnswer !== undefined ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
       <div className="flex items-start gap-3 sm:gap-4">
@@ -396,6 +442,7 @@ function ResultCard({ index, question, userAnswer, isCorrect }: { index: number;
           </div>
           {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
           {isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-green-500">✓ Benar!</p>}
+          {onAsk && <div className="mt-3"><AskButton onClick={onAsk} /></div>}
         </div>
       </div>
     </Card>
@@ -486,7 +533,7 @@ function ChoukaiQuestionCard({ index, question, userAnswer, onAnswer }: { index:
 }
 
 /* ── CHOUKAI RESULT CARD ─────────────────────────────────────── */
-function ChoukaiResultCard({ index, question, userAnswer, isCorrect }: { index: number; question: ChoukaiQuestion; userAnswer?: number; isCorrect: boolean; }) {
+function ChoukaiResultCard({ index, question, userAnswer, isCorrect, onAsk }: { index: number; question: ChoukaiQuestion; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; }) {
   const soalRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const handlePlay = () => {
@@ -521,8 +568,22 @@ function ChoukaiResultCard({ index, question, userAnswer, isCorrect }: { index: 
           </div>
           {userAnswer !== undefined && !isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-red-500">✗ Salah. Jawaban benar: opsi {question.correct + 1}</p>}
           {isCorrect && <p className="mt-3 text-xs sm:text-sm font-semibold text-green-500">✓ Benar!</p>}
+          {onAsk && <div className="mt-3"><AskButton onClick={onAsk} /></div>}
         </div>
       </div>
     </Card>
+  );
+}
+
+/* ── TOMBOL TANYA (buka chat dengan konteks soal ini) ────────── */
+function AskButton({ onClick }: { onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:bg-cyan-500/10 border border-cyan-500/40 rounded-lg px-3 py-1.5 transition-colors"
+    >
+      💬 Tanya Siera tentang soal ini
+    </button>
   );
 }
