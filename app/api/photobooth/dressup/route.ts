@@ -3,12 +3,9 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { claimPhotoboothCredit } from "@/lib/photobooth-server";
+import { PhotoboothError, generatePhotoboothImage, toInlineImage } from "@/lib/photobooth-gemini";
 
 export const maxDuration = 120;
-
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
-const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
-const MODEL_IMAGE = "gemini-3-pro-image-preview";
 
 const CATEGORY_FILE = "tema4.json";
 
@@ -17,15 +14,6 @@ type Category = {
   name: string;
   order: number;
   prompt: string;
-};
-
-// SETTINGS GENERAL - sama seperti /api/photobooth/generate
-const GENERAL_CONFIG = {
-  responseModalities: ["IMAGE"],
-  temperature: 0.2,
-  topP: 0.85,
-  topK: 15,
-  candidateCount: 1,
 };
 
 function getBaseUrl(): string {
@@ -39,12 +27,6 @@ async function loadCategories(): Promise<Category[]> {
   if (!res.ok) throw new Error("Gagal load kategori item");
   const parsed = await res.json();
   return Array.isArray(parsed.categories) ? parsed.categories : [];
-}
-
-function toInlineImage(dataUrl: string) {
-  const base64Data = dataUrl.replace(/^data:image\/\w+;base64,/, "");
-  const mimeType = dataUrl.startsWith("data:image/png") ? "image/png" : "image/jpeg";
-  return { inlineData: { mimeType, data: base64Data } };
 }
 
 export async function POST(req: NextRequest) {
@@ -82,47 +64,24 @@ export async function POST(req: NextRequest) {
       toInlineImage(itemPhoto),
     ];
 
-    console.log(`--- Dressup generate kategori "${category.id}" dengan ${MODEL_IMAGE} ---`);
-
-    const res = await fetch(
-      `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts }],
-          generationConfig: GENERAL_CONFIG,
-        }),
-      }
-    );
-
-    if (!res.ok) {
-      const errText = await res.text();
-      throw new Error(`Model Image Error (Status ${res.status}): ${errText}`);
-    }
-
-    const data = await res.json();
-    const resultParts = data.candidates?.[0]?.content?.parts ?? [];
-    const imagePart = resultParts.find((p: any) => p.inlineData?.mimeType?.startsWith("image/"));
-
-    const finalBase64 = imagePart?.inlineData?.data;
-    const finalMime = imagePart?.inlineData?.mimeType ?? "image/png";
-
-    if (!finalBase64) {
-      console.error("Struktur Response Tanpa Gambar:", JSON.stringify(data));
-      throw new Error("Model tidak mengembalikan output gambar.");
-    }
+    const imageUrl = await generatePhotoboothImage(parts, `Dressup kategori "${category.id}"`);
 
     return NextResponse.json({
       success: true,
-      imageUrl: `data:${finalMime};base64,${finalBase64}`,
+      imageUrl,
       categoryId: category.id,
     });
 
   } catch (error: unknown) {
-    await refund?.();
-    const message = error instanceof Error ? error.message : "Terjadi kesalahan sistem";
     console.error("[/api/photobooth/dressup] CRITICAL ERROR:", error);
-    return NextResponse.json({ error: message }, { status: 500 });
+    // Jatah dikembalikan untuk semua kegagalan setelah kuota diambil
+    const refunded = refund !== null;
+    await refund?.();
+    const known = error instanceof PhotoboothError;
+    const message = known ? error.message : "Terjadi kesalahan sistem. Coba lagi.";
+    return NextResponse.json(
+      { error: refunded ? `${message} (Jatah generate-mu tidak terpakai.)` : message },
+      { status: known ? error.status : 500 }
+    );
   }
 }

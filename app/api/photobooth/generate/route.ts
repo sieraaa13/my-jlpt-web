@@ -1,11 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { claimPhotoboothCredit } from "@/lib/photobooth-server";
+import { PhotoboothError, generatePhotoboothImage, toInlineImage } from "@/lib/photobooth-gemini";
 
 export const maxDuration = 120;
-
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY!;
-const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
-const MODEL_IMAGE = "gemini-3-pro-image-preview";
 
 // File pembagi tema
 const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json", "tema5.json"];
@@ -16,15 +13,6 @@ type Theme = {
   template: string;
   maxPhotos: number;
   prompt: string;
-};
-
-// SETTINGS GENERAL - sama untuk semua tema
-const GENERAL_CONFIG = {
-  responseModalities: ["IMAGE"],
-  temperature: 0.2,
-  topP: 0.85,
-  topK: 15,
-  candidateCount: 1,
 };
 
 function getBaseUrl(): string {
@@ -102,52 +90,27 @@ export async function POST(req: NextRequest) {
     }
 
     for (const img of images) {
-      const base64Data = img.replace(/^data:image\/\w+;base64,/, "");
-      const mimeType = img.startsWith("data:image/png") ? "image/png" : "image/jpeg";
-      parts.push({ inlineData: { mimeType, data: base64Data } });
+      parts.push(toInlineImage(img));
     }
 
-    console.log(`--- Generate tema "${theme.id}" dengan ${MODEL_IMAGE} ---`);
-
-    const res = await fetch(
-      `${GEMINI_BASE}/models/${MODEL_IMAGE}:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts }],
-          generationConfig: GENERAL_CONFIG,
-        }),
-      }
-    );
-
-    if (!res.ok) {
-      const errText = await res.text();
-      throw new Error(`Model Image Error (Status ${res.status}): ${errText}`);
-    }
-
-    const data = await res.json();
-    const resultParts = data.candidates?.[0]?.content?.parts ?? [];
-    const imagePart = resultParts.find((p: any) => p.inlineData?.mimeType?.startsWith("image/"));
-
-    const finalBase64 = imagePart?.inlineData?.data;
-    const finalMime = imagePart?.inlineData?.mimeType ?? "image/png";
-
-    if (!finalBase64) {
-      console.error("Struktur Response Tanpa Gambar:", JSON.stringify(data));
-      throw new Error("Model tidak mengembalikan output gambar.");
-    }
+    const imageUrl = await generatePhotoboothImage(parts, `Generate tema "${theme.id}"`);
 
     return NextResponse.json({
       success: true,
-      imageUrl: `data:${finalMime};base64,${finalBase64}`,
+      imageUrl,
       themeId: theme.id,
     });
 
   } catch (error: unknown) {
-    await refund?.();
-    const message = error instanceof Error ? error.message : "Terjadi kesalahan sistem";
     console.error("[/api/photobooth/generate] CRITICAL ERROR:", error);
-    return NextResponse.json({ error: message }, { status: 500 });
+    // Jatah dikembalikan untuk semua kegagalan setelah kuota diambil
+    const refunded = refund !== null;
+    await refund?.();
+    const known = error instanceof PhotoboothError;
+    const message = known ? error.message : "Terjadi kesalahan sistem. Coba lagi.";
+    return NextResponse.json(
+      { error: refunded ? `${message} (Jatah generate-mu tidak terpakai.)` : message },
+      { status: known ? error.status : 500 }
+    );
   }
 }

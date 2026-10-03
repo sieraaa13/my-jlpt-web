@@ -178,11 +178,12 @@ export default function Photobooth({
       // Cek kalau response bukan JSON (misal error 413)
       const contentType = res.headers.get("content-type");
       if (!contentType?.includes("application/json")) {
-        const text = await res.text();
         throw new Error(
           res.status === 413
             ? "Foto terlalu besar. Coba kurangi jumlah foto atau pakai foto lebih kecil."
-            : `Server error: ${text.slice(0, 100)}`
+            : res.status === 504
+              ? "AI terlalu lama memproses. Coba Generate lagi."
+              : `Server error (${res.status}). Coba lagi.`
         );
       }
 
