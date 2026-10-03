@@ -7,6 +7,8 @@ import { N3KanjiTab } from "@/components/n3-kanji-tab";
 import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
 import { radikalKanjiFiles, radikalKanjiOrder } from "@/data/n3/kanji-radikal/lessons";
 import { ExamSelector } from "@/components/exam-selector";
+import { OnomatopeTab } from "@/components/onomatope-tab";
+import { onomatopeN3 } from "@/data/n3/onomatope";
 
 // Judul tiap minggu diambil dari main_title hari pertama
 function getWeekTitle(week: string) {
@@ -56,6 +58,7 @@ export default function N3Page() {
             <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
             <TabsTrigger value="kanji">Kanji</TabsTrigger>
             <TabsTrigger value="radikal-kanji">Radikal Kanji</TabsTrigger>
+            <TabsTrigger value="onomatope">Onomatope</TabsTrigger>
             <TabsTrigger value="soal">Soal</TabsTrigger>
           </TabsList>
 
@@ -95,6 +98,10 @@ export default function N3Page() {
 
           <TabsContent value="radikal-kanji">
             <RadikalKanjiTab files={radikalKanjiFiles} order={radikalKanjiOrder} />
+          </TabsContent>
+
+          <TabsContent value="onomatope">
+            <OnomatopeTab kategori={onomatopeN3} />
           </TabsContent>
 
           {/* Data ujian yang sama dengan menu JLPT → N3 → Latihan Soal */}
