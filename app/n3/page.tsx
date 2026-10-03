@@ -101,7 +101,11 @@ export default function N3Page() {
           </TabsContent>
 
           <TabsContent value="onomatope">
-            <OnomatopeTab kategori={onomatopeN3} />
+            <OnomatopeTab
+              kategori={onomatopeN3}
+              level="N3"
+              deskripsi="yang sering dipakai sehari-hari dan muncul di ujian."
+            />
           </TabsContent>
 
           {/* Data ujian yang sama dengan menu JLPT → N3 → Latihan Soal */}

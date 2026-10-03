@@ -3,19 +3,7 @@
 // muncul di ujian. Arti, kondisi penggunaan & contoh kalimat ditulis sendiri.
 // ujian: true = kata ini muncul di soal/opsi ujian N3 yang ada di data/exams.
 
-export type Onomatope = {
-  kata: string;
-  arti: string;
-  kondisi: string;
-  contoh: string;
-  ujian?: boolean;
-};
-
-export type OnomatopeKategori = {
-  id: string;
-  judul: string;
-  items: Onomatope[];
-};
+import type { OnomatopeKategori } from "@/data/onomatope-types";
 
 export const onomatopeN3: OnomatopeKategori[] = [
   {

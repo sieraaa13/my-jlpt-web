@@ -2,13 +2,15 @@
 
 import { useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
-import type { OnomatopeKategori } from "@/data/n3/onomatope";
+import type { OnomatopeKategori } from "@/data/onomatope-types";
 
 type OnomatopeTabProps = {
   kategori: OnomatopeKategori[];
+  level: string; // "N3", "N1", ...
+  deskripsi: string; // kalimat pengantar setelah jumlah kata
 };
 
-export function OnomatopeTab({ kategori }: OnomatopeTabProps) {
+export function OnomatopeTab({ kategori, level, deskripsi }: OnomatopeTabProps) {
   const [selected, setSelected] = useState<string>("semua");
   const [query, setQuery] = useState("");
   const [onlyUjian, setOnlyUjian] = useState(false);
@@ -41,8 +43,8 @@ export function OnomatopeTab({ kategori }: OnomatopeTabProps) {
   return (
     <div className="space-y-6">
       <p className="text-sm text-muted-foreground">
-        {total} onomatope (擬音語・擬態語) level N3 yang sering dipakai sehari-hari dan muncul di ujian.
-        Tanda <span className="font-bold text-amber-600 dark:text-amber-400">試験</span> = pernah muncul di soal ujian N3 di website ini.
+        {total} onomatope (擬音語・擬態語) level {level} {deskripsi}{" "}
+        Tanda <span className="font-bold text-amber-600 dark:text-amber-400">試験</span> = pernah muncul di soal ujian {level} di website ini.
       </p>
 
       {/* Filter */}
