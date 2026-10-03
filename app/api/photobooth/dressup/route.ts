@@ -4,30 +4,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { claimPhotoboothCredit } from "@/lib/photobooth-server";
 import { PhotoboothError, generatePhotoboothImage, toInlineImage } from "@/lib/photobooth-gemini";
+import { DRESSUP_CATEGORIES } from "@/lib/photobooth-themes";
 
 export const maxDuration = 120;
-
-const CATEGORY_FILE = "tema4.json";
-
-type Category = {
-  id: string;
-  name: string;
-  order: number;
-  prompt: string;
-};
-
-function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
-}
-
-async function loadCategories(): Promise<Category[]> {
-  const res = await fetch(`${getBaseUrl()}/asset/photobooth/themes/${CATEGORY_FILE}`, {
-    cache: "no-store",
-  });
-  if (!res.ok) throw new Error("Gagal load kategori item");
-  const parsed = await res.json();
-  return Array.isArray(parsed.categories) ? parsed.categories : [];
-}
 
 export async function POST(req: NextRequest) {
   // Diisi setelah jatah kuota diambil; dipanggil kalau generate gagal.
@@ -43,8 +22,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const categories = await loadCategories();
-    const category = categories.find((c) => c.id === categoryId);
+    const category = DRESSUP_CATEGORIES.find((c) => c.id === categoryId);
 
     if (!category) {
       return NextResponse.json({ error: "Kategori item tidak ditemukan" }, { status: 404 });

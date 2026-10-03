@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
-import { compressImage } from "./Photobooth";
+import { compressImage, extFromDataUrl } from "./Photobooth";
 
 type CategoryInfo = { id: string; name: string; order: number };
 
@@ -251,7 +251,7 @@ export default function PhotoboothDressUp({
     if (!result) return;
     const a = document.createElement("a");
     a.href = result;
-    a.download = `photobooth-dressup-${Date.now()}.png`;
+    a.download = `photobooth-dressup-${Date.now()}.${extFromDataUrl(result)}`;
     a.click();
   };
 
@@ -406,8 +406,8 @@ export default function PhotoboothDressUp({
               {wornIds.has(activeCategory.id) ? "Ganti" : "Pasang"}: {activeCategory.name}
             </p>
             {itemPhoto && (
-              <div className="relative aspect-square w-24 rounded-lg overflow-hidden border border-gray-700">
-                <img src={itemPhoto} alt="item" className="w-full h-full object-cover" />
+              <div className="relative aspect-square w-24 rounded-lg overflow-hidden border border-gray-700 bg-white">
+                <img src={itemPhoto} alt="item" className="w-full h-full object-contain" />
               </div>
             )}
             <div className="flex gap-2">

@@ -39,6 +39,12 @@ export async function compressImage(base64: string, maxSize = 1024, quality = 0.
   });
 }
 
+// Ekstensi file download sesuai isi data URL (hasil Gemini bisa PNG atau JPEG)
+export function extFromDataUrl(dataUrl: string): string {
+  const mime = /^data:image\/([\w.+-]+);/.exec(dataUrl)?.[1] ?? "png";
+  return mime === "jpeg" ? "jpg" : mime;
+}
+
 export default function Photobooth({
   isOpen, onClose, userId,
 }: { isOpen: boolean; onClose: () => void; userId: string | null }) {
@@ -208,7 +214,7 @@ export default function Photobooth({
     if (!result) return;
     const a = document.createElement("a");
     a.href = result;
-    a.download = `photobooth-${selectedTheme?.id}-${Date.now()}.png`;
+    a.download = `photobooth-${selectedTheme?.id}-${Date.now()}.${extFromDataUrl(result)}`;
     a.click();
   };
 
@@ -225,6 +231,9 @@ export default function Photobooth({
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">📸 AI PHOTOBOOTH</h2>
             <p className="text-xs text-gray-400">
               {mode === "themes" ? "Pilih tema → kumpulkan foto → generate!" : "Foto dirimu → tambah item satu per satu → generate!"}
+            </p>
+            <p className="text-[11px] text-gray-500 mt-1">
+              🔒 Fotomu dikirim ke layanan AI Google Gemini untuk diproses dan tidak disimpan di server web ini.
             </p>
           </div>
 

@@ -1,45 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { claimPhotoboothCredit } from "@/lib/photobooth-server";
 import { PhotoboothError, generatePhotoboothImage, toInlineImage } from "@/lib/photobooth-gemini";
+import { THEMES } from "@/lib/photobooth-themes";
 
 export const maxDuration = 120;
 
-// File pembagi tema
-const THEME_FILES = ["tema1.json", "tema2.json", "tema3.json", "tema4.json", "tema5.json"];
-
-type Theme = {
-  id: string;
-  name: string;
-  template: string;
-  maxPhotos: number;
-  prompt: string;
-};
-
 function getBaseUrl(): string {
   return process.env.NEXT_PUBLIC_BASE_URL ?? "https://my-jlpt-web.vercel.app";
-}
-
-// Baca SEMUA file tema via HTTP (bukan fs - karena Vercel public tidak bisa fs)
-async function loadAllThemes(): Promise<Theme[]> {
-  const baseUrl = getBaseUrl();
-  const allThemes: Theme[] = [];
-
-  for (const file of THEME_FILES) {
-    try {
-      const res = await fetch(`${baseUrl}/asset/photobooth/themes/${file}`, {
-        cache: "no-store",
-      });
-      if (!res.ok) continue;
-      const parsed = await res.json();
-      if (Array.isArray(parsed.themes)) {
-        allThemes.push(...parsed.themes);
-      }
-    } catch (e) {
-      console.warn(`[loadAllThemes] Lewati ${file}:`, e);
-    }
-  }
-
-  return allThemes;
 }
 
 async function fetchTemplateBase64(templateFile: string): Promise<{ data: string; mime: string }> {
@@ -62,9 +29,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
     }
 
-    // Baca semua tema via HTTP, pilih 1
-    const allThemes = await loadAllThemes();
-    const theme = allThemes.find((t) => t.id === themeId) ?? allThemes[0];
+    const theme = THEMES.find((t) => t.id === themeId) ?? THEMES[0];
 
     if (!theme) {
       return NextResponse.json({ error: "Tema tidak ditemukan" }, { status: 404 });
