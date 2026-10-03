@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { claimPhotoboothCredit } from "@/lib/photobooth-server";
 
 export const maxDuration = 120;
 
@@ -63,8 +64,11 @@ async function fetchTemplateBase64(templateFile: string): Promise<{ data: string
 }
 
 export async function POST(req: NextRequest) {
+  // Diisi setelah jatah kuota diambil; dipanggil kalau generate gagal.
+  let refund: (() => Promise<void>) | null = null;
+
   try {
-    const { images, themeId } = await req.json();
+    const { images, themeId, userId } = await req.json();
 
     if (!images || !Array.isArray(images) || images.length === 0) {
       return NextResponse.json({ error: "Tidak ada foto" }, { status: 400 });
@@ -77,6 +81,15 @@ export async function POST(req: NextRequest) {
     if (!theme) {
       return NextResponse.json({ error: "Tema tidak ditemukan" }, { status: 404 });
     }
+
+    if (images.length > (theme.maxPhotos ?? 6)) {
+      return NextResponse.json({ error: "Jumlah foto melebihi batas tema" }, { status: 400 });
+    }
+
+    // Reward quiz + kuota harian (setelah validasi, supaya request salah tidak memakan jatah)
+    const claim = await claimPhotoboothCredit(userId);
+    if (!claim.ok) return claim.response;
+    refund = claim.refund;
 
     // Tema tanpa template (mis. transformasi gaya foto tunggal) tidak perlu
     // gambar canvas dasar — cukup prompt + foto user.
@@ -132,6 +145,7 @@ export async function POST(req: NextRequest) {
     });
 
   } catch (error: unknown) {
+    await refund?.();
     const message = error instanceof Error ? error.message : "Terjadi kesalahan sistem";
     console.error("[/api/photobooth/generate] CRITICAL ERROR:", error);
     return NextResponse.json({ error: message }, { status: 500 });

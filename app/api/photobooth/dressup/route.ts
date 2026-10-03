@@ -2,6 +2,7 @@
 // Ciri khas: export async function POST, generate satu item per panggilan
 
 import { NextRequest, NextResponse } from "next/server";
+import { claimPhotoboothCredit } from "@/lib/photobooth-server";
 
 export const maxDuration = 120;
 
@@ -47,8 +48,11 @@ function toInlineImage(dataUrl: string) {
 }
 
 export async function POST(req: NextRequest) {
+  // Diisi setelah jatah kuota diambil; dipanggil kalau generate gagal.
+  let refund: (() => Promise<void>) | null = null;
+
   try {
-    const { originalPhoto, currentPhoto, itemPhoto, categoryId } = await req.json();
+    const { originalPhoto, currentPhoto, itemPhoto, categoryId, userId } = await req.json();
 
     if (!originalPhoto || !itemPhoto || !categoryId) {
       return NextResponse.json(
@@ -63,6 +67,11 @@ export async function POST(req: NextRequest) {
     if (!category) {
       return NextResponse.json({ error: "Kategori item tidak ditemukan" }, { status: 404 });
     }
+
+    // Reward quiz + kuota harian (setelah validasi, supaya request salah tidak memakan jatah)
+    const claim = await claimPhotoboothCredit(userId);
+    if (!claim.ok) return claim.response;
+    refund = claim.refund;
 
     // Image 1 = foto asli (referensi wajah/identitas), Image 2 = state sekarang
     // (hasil generate terakhir, atau foto asli kalau ini item pertama), Image 3 = item baru
@@ -111,6 +120,7 @@ export async function POST(req: NextRequest) {
     });
 
   } catch (error: unknown) {
+    await refund?.();
     const message = error instanceof Error ? error.message : "Terjadi kesalahan sistem";
     console.error("[/api/photobooth/dressup] CRITICAL ERROR:", error);
     return NextResponse.json({ error: message }, { status: 500 });

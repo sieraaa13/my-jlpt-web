@@ -160,6 +160,9 @@ export default function QuizPage() {
   const prog     = getProgressPct(state.totalPtsAlltime);
   const toNext   = getPtsToNext(state.totalPtsAlltime);
   const canStart = state.qUsed < MAX_Q || state.pending > 0;
+  // Photobooth = reward setelah semua soal hari ini dijawab (server mengecek ulang).
+  const answeredToday  = Math.min(Math.max(state.qUsed - state.pending, 0), MAX_Q);
+  const rewardUnlocked = !!user && answeredToday >= MAX_Q;
 
   // ── START QUIZ ───────────────────────────────────────────────
   async function startQuiz() {
@@ -247,7 +250,7 @@ export default function QuizPage() {
   // ── RENDER ───────────────────────────────────────────────────
   return (
     <main className="min-h-screen bg-background">
-      <Photobooth isOpen={showPhotobooth} onClose={() => setShowPhotobooth(false)} />
+      <Photobooth isOpen={showPhotobooth} onClose={() => setShowPhotobooth(false)} userId={user?.id ?? null} />
       <Navbar />
       <div className="pt-20 pb-24 max-w-2xl mx-auto px-4">
 
@@ -258,14 +261,21 @@ export default function QuizPage() {
             ✦ AI Powered
           </span>
         </div>
-        <button
-  onClick={() => setShowPhotobooth(true)}
-  className="w-full mb-4 px-4 py-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-bold rounded-xl shadow-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
->
-  <span className="text-2xl">🎁</span>
-  <span>REWARD: PHOTOBOOTH!</span>
-  <span className="text-2xl">📸</span>
-</button>
+        {rewardUnlocked ? (
+          <button
+            onClick={() => setShowPhotobooth(true)}
+            className="w-full mb-4 px-4 py-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-bold rounded-xl shadow-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
+          >
+            <span className="text-2xl">🎁</span>
+            <span>REWARD: PHOTOBOOTH!</span>
+            <span className="text-2xl">📸</span>
+          </button>
+        ) : (
+          <div className="w-full mb-4 px-4 py-3 bg-muted text-muted-foreground font-semibold rounded-xl flex items-center justify-center gap-2 text-sm">
+            <span className="text-xl">🔒</span>
+            <span>Reward Photobooth terbuka setelah {MAX_Q} soal hari ini selesai ({answeredToday}/{MAX_Q})</span>
+          </div>
+        )}
 
         {/* PLAYER LEVEL CARD */}
         <Card className="p-4 mb-4 cursor-pointer" onClick={() => setShowLevels(!showLevels)}>

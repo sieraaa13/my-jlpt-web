@@ -5,7 +5,14 @@ import { compressImage } from "./Photobooth";
 
 type CategoryInfo = { id: string; name: string; order: number };
 
-export default function PhotoboothDressUp({ isOpen }: { isOpen: boolean }) {
+export default function PhotoboothDressUp({
+  isOpen, userId, outOfQuota, onGenerated,
+}: {
+  isOpen: boolean;
+  userId: string;
+  outOfQuota: boolean;
+  onGenerated: () => void; // muat ulang sisa kuota
+}) {
   const [categories, setCategories] = useState<CategoryInfo[]>([]);
   const [basePhoto, setBasePhoto] = useState<string | null>(null);
   const [currentResult, setCurrentResult] = useState<string | null>(null);
@@ -107,6 +114,7 @@ export default function PhotoboothDressUp({ isOpen }: { isOpen: boolean }) {
           currentPhoto: currentResult,
           itemPhoto,
           categoryId: activeCategory.id,
+          userId,
         }),
       });
 
@@ -130,6 +138,7 @@ export default function PhotoboothDressUp({ isOpen }: { isOpen: boolean }) {
       setError(err.message);
     } finally {
       setIsLoading(false);
+      onGenerated();
     }
   };
 
@@ -240,7 +249,7 @@ export default function PhotoboothDressUp({ isOpen }: { isOpen: boolean }) {
               <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
             )}
             <div className="flex gap-2">
-              <button onClick={handleGenerateItem} disabled={!itemPhoto || isLoading} className="flex-1 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
+              <button onClick={handleGenerateItem} disabled={!itemPhoto || isLoading || outOfQuota} className="flex-1 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
                 {isLoading ? "✨ AI memproses..." : "✨ Generate"}
               </button>
               <button onClick={handleSkipCategory} disabled={isLoading} className="px-5 py-3 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg">Lewati</button>

@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect } from "react";
 import PhotoboothDressUp from "./PhotoboothDressUp";
+import { PhotoboothStatus } from "@/lib/photobooth-config";
 
 type ThemeInfo = {
   id: string;
@@ -36,7 +37,9 @@ export async function compressImage(base64: string, maxSize = 1024, quality = 0.
   });
 }
 
-export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+export default function Photobooth({
+  isOpen, onClose, userId,
+}: { isOpen: boolean; onClose: () => void; userId: string | null }) {
   const [themes, setThemes] = useState<ThemeInfo[]>([]);
   const [selectedTheme, setSelectedTheme] = useState<ThemeInfo | null>(null);
   const [photos, setPhotos] = useState<string[]>([]);
@@ -45,6 +48,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   const [error, setError] = useState<string | null>(null);
   const [cameraOn, setCameraOn] = useState(false);
   const [mode, setMode] = useState<"themes" | "dressup">("themes");
+  const [status, setStatus] = useState<PhotoboothStatus | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -78,6 +82,22 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
     if (mode !== "themes") stopCamera();
   }, [mode, stopCamera]);
 
+  // Status reward & sisa kuota dari server; dimuat ulang setiap habis generate.
+  const refreshStatus = useCallback(async () => {
+    if (!userId) return;
+    try {
+      const res = await fetch(`/api/photobooth/status?userId=${userId}`, { cache: "no-store" });
+      const data = await res.json();
+      if (data.success) setStatus(data);
+    } catch (err) {
+      console.error("Gagal memuat status Photobooth:", err);
+    }
+  }, [userId]);
+
+  useEffect(() => {
+    if (isOpen) refreshStatus();
+  }, [isOpen, refreshStatus]);
+
   const handleClose = () => {
     stopCamera();
     onClose();
@@ -86,6 +106,8 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
   if (!isOpen) return null;
 
   const maxPhotos = selectedTheme?.maxPhotos ?? 6;
+  const locked = !userId || (status !== null && !status.unlocked);
+  const outOfQuota = status !== null && status.remaining <= 0;
 
   const startCamera = async () => {
     try {
@@ -148,7 +170,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       const res = await fetch("/api/photobooth/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ images: photos, themeId: selectedTheme.id }),
+        body: JSON.stringify({ images: photos, themeId: selectedTheme.id, userId }),
       });
 
       // Cek kalau response bukan JSON (misal error 413)
@@ -169,6 +191,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
       setError(err.message);
     } finally {
       setIsLoading(false);
+      refreshStatus();
     }
   };
 
@@ -221,9 +244,27 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
             </button>
           </div>
 
-          {mode === "dressup" && <PhotoboothDressUp isOpen={isOpen} />}
+          {status && !locked && (
+            <p className={`text-center text-xs mb-4 ${outOfQuota ? "text-red-400" : "text-gray-400"}`}>
+              🎟️ Sisa generate hari ini: <span className="font-bold text-white">{status.remaining}/{status.max}</span>
+              {outOfQuota && " — kembali besok!"}
+            </p>
+          )}
 
-          {mode === "themes" && themes.length > 0 && (
+          {locked && (
+            <div className="max-w-md mx-auto bg-black/30 border border-gray-700 rounded-xl p-6 text-center text-gray-300 text-sm">
+              <div className="text-4xl mb-2">🔒</div>
+              {userId
+                ? "Photobooth adalah reward Quiz Harian. Selesaikan semua soal quiz hari ini dulu, lalu buka lagi di sini!"
+                : "Login dulu untuk memakai Photobooth."}
+            </div>
+          )}
+
+          {!locked && mode === "dressup" && (
+            <PhotoboothDressUp isOpen={isOpen} userId={userId!} outOfQuota={outOfQuota} onGenerated={refreshStatus} />
+          )}
+
+          {!locked && mode === "themes" && themes.length > 0 && (
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <label className="text-white text-sm font-semibold">🎨 Pilih Tema:</label>
@@ -278,7 +319,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
             </div>
           )}
 
-          {mode === "themes" && (
+          {!locked && mode === "themes" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="flex flex-col gap-3">
               <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
@@ -313,7 +354,7 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean; onClo
                 <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
               )}
 
-              <button onClick={handleGenerate} disabled={photos.length === 0 || isLoading || !selectedTheme} className="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
+              <button onClick={handleGenerate} disabled={photos.length === 0 || isLoading || !selectedTheme || outOfQuota} className="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
                 {isLoading ? "✨ AI memproses... (30-60 detik)" : selectedTheme ? `✨ Generate ${selectedTheme.name}` : '✨ Generate'}
               </button>
             </div>
