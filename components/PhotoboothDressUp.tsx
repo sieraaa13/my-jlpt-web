@@ -5,24 +5,15 @@ import { compressImage } from "./Photobooth";
 
 type CategoryInfo = { id: string; name: string; order: number };
 
-// Satu langkah dress-up. image null = kategori dilewati.
-// item disimpan supaya langkah terakhir bisa di-generate ulang.
-// image = hasil asli Gemini (preview & download); compact = versi JPEG kecil
-// yang dikirim balik ke server sebagai foto "sekarang" untuk item berikutnya.
+// Satu item yang sudah dipasang. item disimpan supaya langkah terakhir bisa
+// di-generate ulang. image = hasil asli Gemini (preview & download); compact =
+// versi JPEG kecil yang dikirim balik ke server sebagai foto "sekarang".
 type Step = {
   categoryId: string;
-  item: string | null;
-  image: string | null;
-  compact: string | null;
+  item: string;
+  image: string;
+  compact: string;
 };
-
-// Hasil terbaru setelah langkah-langkah ini (null = belum ada item terpasang).
-function latestStep(steps: Step[]): Step | null {
-  for (let i = steps.length - 1; i >= 0; i--) {
-    if (steps[i].image) return steps[i];
-  }
-  return null;
-}
 
 // Hasil Gemini berupa PNG besar; kualitas sedikit lebih tinggi dari foto
 // input supaya artefak kompresi tidak menumpuk di setiap langkah.
@@ -41,6 +32,8 @@ export default function PhotoboothDressUp({
   const [basePhoto, setBasePhoto] = useState<string | null>(null);
   const [steps, setSteps] = useState<Step[]>([]);
   const [itemPhoto, setItemPhoto] = useState<string | null>(null);
+  // Kategori pilihan user; null = otomatis kategori pertama yang belum dipakai
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [cameraOn, setCameraOn] = useState(false);
@@ -67,10 +60,13 @@ export default function PhotoboothDressUp({
 
   useEffect(() => () => stopCamera(), [stopCamera]);
 
-  const doneIds = steps.map((s) => s.categoryId);
-  const currentResult = latestStep(steps)?.image ?? null;
   const lastStep = steps[steps.length - 1];
-  const activeCategory = categories.find((c) => !doneIds.includes(c.id));
+  const currentResult = lastStep?.image ?? null;
+  const wornIds = new Set(steps.map((s) => s.categoryId));
+  const activeCategory =
+    categories.find((c) => c.id === selectedId) ??
+    categories.find((c) => !wornIds.has(c.id)) ??
+    categories[0];
 
   const startCamera = async () => {
     try {
@@ -138,7 +134,7 @@ export default function PhotoboothDressUp({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           originalPhoto: basePhoto,
-          currentPhoto: latestStep(prevSteps)?.compact ?? null,
+          currentPhoto: prevSteps[prevSteps.length - 1]?.compact ?? null,
           itemPhoto: item,
           categoryId,
           userId,
@@ -161,12 +157,21 @@ export default function PhotoboothDressUp({
       const compact = await compressImage(data.imageUrl, RESULT_MAX_SIZE, RESULT_QUALITY);
       setSteps([...prevSteps, { categoryId, item, image: data.imageUrl, compact }]);
       setItemPhoto(null);
+      setSelectedId(null); // lanjut ke kategori berikutnya yang belum dipakai
     } catch (err: any) {
       setError(err.message);
     } finally {
       setIsLoading(false);
       onGenerated();
     }
+  };
+
+  // Ganti kategori; foto item dikosongkan supaya foto atasan tidak terpasang sebagai topi.
+  const handleSelectCategory = (id: string) => {
+    if (isLoading || id === activeCategory?.id) return;
+    setSelectedId(id);
+    setItemPhoto(null);
+    setError(null);
   };
 
   const handleGenerateItem = () => {
@@ -176,7 +181,7 @@ export default function PhotoboothDressUp({
 
   // Generate ulang langkah terakhir dengan item yang sama (memakai 1 jatah lagi).
   const handleRetry = () => {
-    if (!lastStep?.item) return;
+    if (!lastStep) return;
     generateStep(steps.slice(0, -1), lastStep.categoryId, lastStep.item);
   };
 
@@ -184,14 +189,8 @@ export default function PhotoboothDressUp({
   const handleUndo = () => {
     if (!lastStep) return;
     setSteps((s) => s.slice(0, -1));
+    setSelectedId(lastStep.categoryId);
     setItemPhoto(lastStep.item);
-    setError(null);
-  };
-
-  const handleSkipCategory = () => {
-    if (!activeCategory) return;
-    setSteps((s) => [...s, { categoryId: activeCategory.id, item: null, image: null, compact: null }]);
-    setItemPhoto(null);
     setError(null);
   };
 
@@ -199,6 +198,7 @@ export default function PhotoboothDressUp({
     stopCamera();
     setBasePhoto(null);
     setSteps([]);
+    setSelectedId(null);
     setItemPhoto(null);
     setError(null);
   };
@@ -212,7 +212,7 @@ export default function PhotoboothDressUp({
     a.click();
   };
 
-  const allDone = categories.length > 0 && doneIds.length >= categories.length;
+  const allWorn = categories.length > 0 && categories.every((c) => wornIds.has(c.id));
   const previewImage = currentResult ?? basePhoto;
 
   // ═══ STEP 1: belum ada foto dasar ═══
@@ -242,7 +242,7 @@ export default function PhotoboothDressUp({
     );
   }
 
-  // ═══ STEP 2: foto dasar ada, tambah item satu per satu ═══
+  // ═══ STEP 2: foto dasar ada, pasang item di kategori mana saja ═══
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div className="flex flex-col gap-3">
@@ -267,34 +267,50 @@ export default function PhotoboothDressUp({
             <button onClick={handleUndo} disabled={isLoading} className="flex-1 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg">
               ↶ Undo {categories.find((c) => c.id === lastStep.categoryId)?.name ?? ""}
             </button>
-            {lastStep.item && (
-              <button onClick={handleRetry} disabled={isLoading || outOfQuota} className="flex-1 py-2.5 rounded-xl font-semibold text-white bg-indigo-700 hover:bg-indigo-600 disabled:opacity-40 text-sm shadow-lg">
-                🔁 Coba lagi <span className="text-xs opacity-75">(1 jatah)</span>
-              </button>
-            )}
+            <button onClick={handleRetry} disabled={isLoading || outOfQuota} className="flex-1 py-2.5 rounded-xl font-semibold text-white bg-indigo-700 hover:bg-indigo-600 disabled:opacity-40 text-sm shadow-lg">
+              🔁 Coba lagi <span className="text-xs opacity-75">(1 jatah)</span>
+            </button>
           </div>
         )}
       </div>
 
       <div className="flex flex-col gap-3">
-        <div className="bg-black/30 rounded-xl p-3 max-h-40 overflow-y-auto">
-          {categories.map((c, i) => {
-            const step = steps.find((s) => s.categoryId === c.id);
-            const done = !!step?.image;
-            const skipped = !!step && !step.image;
-            const active = activeCategory?.id === c.id;
-            return (
-              <div key={c.id} className={`flex items-center gap-2 py-1.5 text-sm ${active ? "text-white font-semibold" : done ? "text-emerald-400" : "text-gray-500"}`}>
-                <span className="w-5 text-center">{done ? "✓" : skipped ? "–" : i + 1}</span>
-                <span>{c.name}</span>
-              </div>
-            );
-          })}
+        <div className="bg-black/30 rounded-xl p-3">
+          <p className="text-xs text-gray-400 mb-2">Pilih bagian yang mau dipasang (bebas urutannya):</p>
+          <div className="grid grid-cols-2 gap-1.5">
+            {categories.map((c) => {
+              const worn = wornIds.has(c.id);
+              const active = activeCategory?.id === c.id;
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => handleSelectCategory(c.id)}
+                  disabled={isLoading}
+                  className={`flex items-center gap-2 px-2.5 py-2 rounded-lg text-left text-sm transition-all disabled:opacity-60 ${
+                    active
+                      ? "bg-pink-500 text-white font-semibold shadow"
+                      : worn
+                        ? "bg-emerald-900/40 text-emerald-300 hover:bg-emerald-900/60"
+                        : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  }`}
+                >
+                  <span className="w-4 text-center">{worn ? "✓" : "+"}</span>
+                  <span className="truncate">{c.name}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {allWorn && (
+          <div className="bg-emerald-900/30 border border-emerald-600 rounded-xl p-3 text-center text-emerald-300 text-sm">🎉 Semua bagian sudah terpasang! Kamu masih bisa mengganti item mana pun, atau download hasilnya.</div>
+        )}
 
         {activeCategory ? (
           <div className="flex flex-col gap-3 bg-black/20 rounded-xl p-3">
-            <p className="text-white text-sm font-semibold">Tambah: {activeCategory.name}</p>
+            <p className="text-white text-sm font-semibold">
+              {wornIds.has(activeCategory.id) ? "Ganti" : "Pasang"}: {activeCategory.name}
+            </p>
             {itemPhoto && (
               <div className="relative aspect-square w-24 rounded-lg overflow-hidden border border-gray-700">
                 <img src={itemPhoto} alt="item" className="w-full h-full object-cover" />
@@ -307,20 +323,12 @@ export default function PhotoboothDressUp({
             {error && (
               <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
             )}
-            <div className="flex gap-2">
-              <button onClick={handleGenerateItem} disabled={!itemPhoto || isLoading || outOfQuota} className="flex-1 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
-                {isLoading ? "✨ AI memproses..." : "✨ Generate"}
-              </button>
-              <button onClick={handleSkipCategory} disabled={isLoading} className="px-5 py-3 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg">Lewati</button>
-            </div>
+            <button onClick={handleGenerateItem} disabled={!itemPhoto || isLoading || outOfQuota} className="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-40 text-sm shadow-lg">
+              {isLoading ? "✨ AI memproses..." : "✨ Generate"}
+            </button>
           </div>
-        ) : allDone ? (
-          <>
-            <div className="bg-emerald-900/30 border border-emerald-600 rounded-xl p-4 text-center text-emerald-300 text-sm">🎉 Semua item sudah dipasang! Download hasilnya di kiri.</div>
-            {error && (
-              <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
-            )}
-          </>
+        ) : error ? (
+          <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
         ) : null}
       </div>
     </div>
