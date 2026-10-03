@@ -5,6 +5,18 @@ import { compressImage } from "./Photobooth";
 
 type CategoryInfo = { id: string; name: string; order: number };
 
+// Satu langkah dress-up. image null = kategori dilewati.
+// item disimpan supaya langkah terakhir bisa di-generate ulang.
+type Step = { categoryId: string; item: string | null; image: string | null };
+
+// Foto terbaru setelah langkah-langkah ini (null = belum ada item terpasang).
+function latestImage(steps: Step[]): string | null {
+  for (let i = steps.length - 1; i >= 0; i--) {
+    if (steps[i].image) return steps[i].image;
+  }
+  return null;
+}
+
 export default function PhotoboothDressUp({
   isOpen, userId, outOfQuota, onGenerated,
 }: {
@@ -15,8 +27,7 @@ export default function PhotoboothDressUp({
 }) {
   const [categories, setCategories] = useState<CategoryInfo[]>([]);
   const [basePhoto, setBasePhoto] = useState<string | null>(null);
-  const [currentResult, setCurrentResult] = useState<string | null>(null);
-  const [doneIds, setDoneIds] = useState<string[]>([]);
+  const [steps, setSteps] = useState<Step[]>([]);
   const [itemPhoto, setItemPhoto] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -44,6 +55,9 @@ export default function PhotoboothDressUp({
 
   useEffect(() => () => stopCamera(), [stopCamera]);
 
+  const doneIds = steps.map((s) => s.categoryId);
+  const currentResult = latestImage(steps);
+  const lastStep = steps[steps.length - 1];
   const activeCategory = categories.find((c) => !doneIds.includes(c.id));
 
   const startCamera = async () => {
@@ -100,8 +114,9 @@ export default function PhotoboothDressUp({
     reader.readAsDataURL(file);
   };
 
-  const handleGenerateItem = async () => {
-    if (!basePhoto || !itemPhoto || !activeCategory) return;
+  // Pasang item di atas hasil prevSteps. Kalau gagal, langkah yang ada tidak berubah.
+  const generateStep = async (prevSteps: Step[], categoryId: string, item: string) => {
+    if (!basePhoto) return;
     setIsLoading(true);
     setError(null);
 
@@ -111,9 +126,9 @@ export default function PhotoboothDressUp({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           originalPhoto: basePhoto,
-          currentPhoto: currentResult,
-          itemPhoto,
-          categoryId: activeCategory.id,
+          currentPhoto: latestImage(prevSteps),
+          itemPhoto: item,
+          categoryId,
           userId,
         }),
       });
@@ -131,8 +146,7 @@ export default function PhotoboothDressUp({
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || "Generate gagal");
 
-      setCurrentResult(data.imageUrl);
-      setDoneIds((d) => [...d, activeCategory.id]);
+      setSteps([...prevSteps, { categoryId, item, image: data.imageUrl }]);
       setItemPhoto(null);
     } catch (err: any) {
       setError(err.message);
@@ -142,9 +156,28 @@ export default function PhotoboothDressUp({
     }
   };
 
+  const handleGenerateItem = () => {
+    if (!itemPhoto || !activeCategory) return;
+    generateStep(steps, activeCategory.id, itemPhoto);
+  };
+
+  // Generate ulang langkah terakhir dengan item yang sama (memakai 1 jatah lagi).
+  const handleRetry = () => {
+    if (!lastStep?.item) return;
+    generateStep(steps.slice(0, -1), lastStep.categoryId, lastStep.item);
+  };
+
+  // Batalkan langkah terakhir; foto itemnya dikembalikan supaya bisa diganti atau dipakai lagi.
+  const handleUndo = () => {
+    if (!lastStep) return;
+    setSteps((s) => s.slice(0, -1));
+    setItemPhoto(lastStep.item);
+    setError(null);
+  };
+
   const handleSkipCategory = () => {
     if (!activeCategory) return;
-    setDoneIds((d) => [...d, activeCategory.id]);
+    setSteps((s) => [...s, { categoryId: activeCategory.id, item: null, image: null }]);
     setItemPhoto(null);
     setError(null);
   };
@@ -152,8 +185,7 @@ export default function PhotoboothDressUp({
   const handleReset = () => {
     stopCamera();
     setBasePhoto(null);
-    setCurrentResult(null);
-    setDoneIds([]);
+    setSteps([]);
     setItemPhoto(null);
     setError(null);
   };
@@ -215,18 +247,32 @@ export default function PhotoboothDressUp({
         </div>
         <div className="flex gap-2">
           <button onClick={handleDownload} disabled={!previewImage} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 disabled:opacity-40 text-sm shadow-lg">⬇️ Download</button>
-          <button onClick={handleReset} className="px-5 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 text-sm shadow-lg">🔄 Mulai Ulang</button>
+          <button onClick={handleReset} disabled={isLoading} className="px-5 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg">🔄 Mulai Ulang</button>
         </div>
+        {lastStep && (
+          <div className="flex gap-2">
+            <button onClick={handleUndo} disabled={isLoading} className="flex-1 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg">
+              ↶ Undo {categories.find((c) => c.id === lastStep.categoryId)?.name ?? ""}
+            </button>
+            {lastStep.item && (
+              <button onClick={handleRetry} disabled={isLoading || outOfQuota} className="flex-1 py-2.5 rounded-xl font-semibold text-white bg-indigo-700 hover:bg-indigo-600 disabled:opacity-40 text-sm shadow-lg">
+                🔁 Coba lagi <span className="text-xs opacity-75">(1 jatah)</span>
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col gap-3">
         <div className="bg-black/30 rounded-xl p-3 max-h-40 overflow-y-auto">
           {categories.map((c, i) => {
-            const done = doneIds.includes(c.id);
+            const step = steps.find((s) => s.categoryId === c.id);
+            const done = !!step?.image;
+            const skipped = !!step && !step.image;
             const active = activeCategory?.id === c.id;
             return (
               <div key={c.id} className={`flex items-center gap-2 py-1.5 text-sm ${active ? "text-white font-semibold" : done ? "text-emerald-400" : "text-gray-500"}`}>
-                <span className="w-5 text-center">{done ? "✓" : i + 1}</span>
+                <span className="w-5 text-center">{done ? "✓" : skipped ? "–" : i + 1}</span>
                 <span>{c.name}</span>
               </div>
             );
@@ -256,7 +302,12 @@ export default function PhotoboothDressUp({
             </div>
           </div>
         ) : allDone ? (
-          <div className="bg-emerald-900/30 border border-emerald-600 rounded-xl p-4 text-center text-emerald-300 text-sm">🎉 Semua item sudah dipasang! Download hasilnya di kiri.</div>
+          <>
+            <div className="bg-emerald-900/30 border border-emerald-600 rounded-xl p-4 text-center text-emerald-300 text-sm">🎉 Semua item sudah dipasang! Download hasilnya di kiri.</div>
+            {error && (
+              <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
+            )}
+          </>
         ) : null}
       </div>
     </div>
