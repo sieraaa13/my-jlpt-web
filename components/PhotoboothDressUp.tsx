@@ -7,15 +7,27 @@ type CategoryInfo = { id: string; name: string; order: number };
 
 // Satu langkah dress-up. image null = kategori dilewati.
 // item disimpan supaya langkah terakhir bisa di-generate ulang.
-type Step = { categoryId: string; item: string | null; image: string | null };
+// image = hasil asli Gemini (preview & download); compact = versi JPEG kecil
+// yang dikirim balik ke server sebagai foto "sekarang" untuk item berikutnya.
+type Step = {
+  categoryId: string;
+  item: string | null;
+  image: string | null;
+  compact: string | null;
+};
 
-// Foto terbaru setelah langkah-langkah ini (null = belum ada item terpasang).
-function latestImage(steps: Step[]): string | null {
+// Hasil terbaru setelah langkah-langkah ini (null = belum ada item terpasang).
+function latestStep(steps: Step[]): Step | null {
   for (let i = steps.length - 1; i >= 0; i--) {
-    if (steps[i].image) return steps[i].image;
+    if (steps[i].image) return steps[i];
   }
   return null;
 }
+
+// Hasil Gemini berupa PNG besar; kualitas sedikit lebih tinggi dari foto
+// input supaya artefak kompresi tidak menumpuk di setiap langkah.
+const RESULT_MAX_SIZE = 1024;
+const RESULT_QUALITY = 0.9;
 
 export default function PhotoboothDressUp({
   isOpen, userId, outOfQuota, onGenerated,
@@ -56,7 +68,7 @@ export default function PhotoboothDressUp({
   useEffect(() => () => stopCamera(), [stopCamera]);
 
   const doneIds = steps.map((s) => s.categoryId);
-  const currentResult = latestImage(steps);
+  const currentResult = latestStep(steps)?.image ?? null;
   const lastStep = steps[steps.length - 1];
   const activeCategory = categories.find((c) => !doneIds.includes(c.id));
 
@@ -126,7 +138,7 @@ export default function PhotoboothDressUp({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           originalPhoto: basePhoto,
-          currentPhoto: latestImage(prevSteps),
+          currentPhoto: latestStep(prevSteps)?.compact ?? null,
           itemPhoto: item,
           categoryId,
           userId,
@@ -146,7 +158,8 @@ export default function PhotoboothDressUp({
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || "Generate gagal");
 
-      setSteps([...prevSteps, { categoryId, item, image: data.imageUrl }]);
+      const compact = await compressImage(data.imageUrl, RESULT_MAX_SIZE, RESULT_QUALITY);
+      setSteps([...prevSteps, { categoryId, item, image: data.imageUrl, compact }]);
       setItemPhoto(null);
     } catch (err: any) {
       setError(err.message);
@@ -177,7 +190,7 @@ export default function PhotoboothDressUp({
 
   const handleSkipCategory = () => {
     if (!activeCategory) return;
-    setSteps((s) => [...s, { categoryId: activeCategory.id, item: null, image: null }]);
+    setSteps((s) => [...s, { categoryId: activeCategory.id, item: null, image: null, compact: null }]);
     setItemPhoto(null);
     setError(null);
   };

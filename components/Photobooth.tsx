@@ -33,6 +33,8 @@ export async function compressImage(base64: string, maxSize = 1024, quality = 0.
       ctx.drawImage(img, 0, 0, width, height);
       resolve(canvas.toDataURL("image/jpeg", quality));
     };
+    // Gambar gagal dibaca → pakai apa adanya daripada menggantung selamanya
+    img.onerror = () => resolve(base64);
     img.src = base64;
   });
 }
