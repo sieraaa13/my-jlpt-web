@@ -37,6 +37,10 @@ export default function PhotoboothDressUp({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [cameraOn, setCameraOn] = useState(false);
+  const [facing, setFacing] = useState<"user" | "environment">("user");
+  const [timerSec, setTimerSec] = useState(5);
+  const [countdown, setCountdown] = useState<number | null>(null);
+  const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const baseFileRef = useRef<HTMLInputElement>(null);
@@ -52,11 +56,18 @@ export default function PhotoboothDressUp({
       .catch((err) => setError("Gagal load kategori: " + err.message));
   }, [isOpen]);
 
+  const cancelCountdown = useCallback(() => {
+    if (countdownRef.current) clearInterval(countdownRef.current);
+    countdownRef.current = null;
+    setCountdown(null);
+  }, []);
+
   const stopCamera = useCallback(() => {
+    cancelCountdown();
     streamRef.current?.getTracks().forEach((t) => t.stop());
     streamRef.current = null;
     setCameraOn(false);
-  }, []);
+  }, [cancelCountdown]);
 
   useEffect(() => () => stopCamera(), [stopCamera]);
 
@@ -68,34 +79,65 @@ export default function PhotoboothDressUp({
     categories.find((c) => !wornIds.has(c.id)) ??
     categories[0];
 
-  const startCamera = async () => {
+  // Minta frame portrait; kamera laptop biasanya tetap landscape, jadi hasilnya
+  // dipotong ke 3:4 saat diambil (sama dengan area yang terlihat di preview).
+  const startCamera = async (mode: "user" | "environment" = facing) => {
     try {
+      cancelCountdown();
+      streamRef.current?.getTracks().forEach((t) => t.stop());
       const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: "user", width: { ideal: 1280 }, height: { ideal: 720 } },
+        video: { facingMode: mode, aspectRatio: { ideal: 3 / 4 }, height: { ideal: 1280 } },
       });
       streamRef.current = stream;
       if (videoRef.current) videoRef.current.srcObject = stream;
+      setFacing(mode);
       setCameraOn(true);
+      setError(null);
     } catch (err: any) {
       setError("Gagal mengakses kamera: " + err.message);
     }
   };
 
+  // Kamera belakang lebih cocok kalau difotokan orang lain.
+  const switchCamera = () => startCamera(facing === "user" ? "environment" : "user");
+
+  // Ambil bagian tengah frame dengan rasio 3:4. Tidak di-mirror, supaya
+  // tulisan/logo di baju tetap terbaca benar di hasil akhir.
   const captureBasePhoto = async () => {
-    if (!videoRef.current) return;
     const video = videoRef.current;
+    if (!video || !video.videoWidth) return;
+    const vw = video.videoWidth;
+    const vh = video.videoHeight;
+    const ratio = 3 / 4;
+    const sw = vw / vh > ratio ? vh * ratio : vw;
+    const sh = vw / vh > ratio ? vh : vw / ratio;
     const canvas = document.createElement("canvas");
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
-    const ctx = canvas.getContext("2d")!;
-    ctx.save();
-    ctx.scale(-1, 1);
-    ctx.drawImage(video, -canvas.width, 0);
-    ctx.restore();
+    canvas.width = sw;
+    canvas.height = sh;
+    canvas.getContext("2d")!.drawImage(video, (vw - sw) / 2, (vh - sh) / 2, sw, sh, 0, 0, sw, sh);
     const raw = canvas.toDataURL("image/jpeg", 0.9);
-    const compressed = await compressImage(raw);
-    setBasePhoto(compressed);
+    setBasePhoto(await compressImage(raw));
     stopCamera();
+  };
+
+  // Hitung mundur dulu supaya sempat mundur dan berpose full badan.
+  const startCountdown = () => {
+    if (countdownRef.current) return;
+    if (timerSec === 0) {
+      captureBasePhoto();
+      return;
+    }
+    let left = timerSec;
+    setCountdown(left);
+    countdownRef.current = setInterval(() => {
+      left -= 1;
+      if (left > 0) {
+        setCountdown(left);
+      } else {
+        cancelCountdown();
+        captureBasePhoto();
+      }
+    }, 1000);
   };
 
   const handleBaseUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -219,22 +261,73 @@ export default function PhotoboothDressUp({
   if (!basePhoto) {
     return (
       <div className="max-w-md mx-auto flex flex-col gap-3">
-        <p className="text-center text-sm text-gray-300">Mulai dengan foto dirimu sebagai titik poin — item pakaian akan ditambahkan di atasnya.</p>
-        <div className="relative aspect-[4/3] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
-          <video ref={videoRef} autoPlay playsInline muted className="w-full h-full object-cover scale-x-[-1]" />
+        <p className="text-center text-sm text-gray-300">
+          Mulai dengan foto <span className="font-semibold text-white">full badan</span> dirimu — item pakaian akan dipasang di foto ini.
+        </p>
+        <div className="bg-black/30 rounded-xl p-3 text-xs text-gray-300">
+          <p className="font-semibold text-white mb-1">📋 Tips supaya hasilnya bagus:</p>
+          <ul className="list-disc pl-4 space-y-0.5">
+            <li>Seluruh badan terlihat, dari kepala sampai kaki</li>
+            <li>Berdiri tegak menghadap kamera, tangan sedikit menjauh dari badan</li>
+            <li>Latar polos dan cahaya terang</li>
+            <li>Pakai baju yang pas badan, bukan jaket tebal atau baju sangat longgar</li>
+          </ul>
+        </div>
+
+        <button onClick={() => baseFileRef.current?.click()} className="w-full py-3 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-sm shadow-lg">🖼️ Upload Foto Full Badan</button>
+        <input ref={baseFileRef} type="file" accept="image/*" className="hidden" onChange={handleBaseUpload} />
+
+        <p className="text-center text-xs text-gray-500">— atau ambil foto pakai kamera —</p>
+
+        <div className="relative w-full max-w-xs mx-auto aspect-[3/4] bg-black rounded-xl overflow-hidden border-2 border-cyan-600/50">
+          <video ref={videoRef} autoPlay playsInline muted className={`w-full h-full object-cover ${facing === "user" ? "scale-x-[-1]" : ""}`} />
           {!cameraOn && (
             <div className="absolute inset-0 flex items-center justify-center text-gray-500 text-sm">📷 Kamera mati</div>
           )}
-        </div>
-        <div className="flex gap-2">
-          {!cameraOn ? (
-            <button onClick={startCamera} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-sm shadow-lg">📷 Buka Kamera</button>
-          ) : (
-            <button onClick={captureBasePhoto} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 text-sm shadow-lg">📸 Ambil Foto</button>
+          {cameraOn && (
+            <>
+              {/* Panduan posisi badan: kepala sampai kaki di dalam garis */}
+              <div className="absolute inset-x-[22%] top-[4%] bottom-[3%] border-2 border-dashed border-white/40 rounded-t-[45%] rounded-b-xl pointer-events-none" />
+              <p className="absolute top-2 inset-x-0 text-center text-[10px] text-white/80 pointer-events-none">Kepala sampai kaki di dalam garis</p>
+            </>
           )}
-          <button onClick={() => baseFileRef.current?.click()} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-sm shadow-lg">🖼️ Upload</button>
-          <input ref={baseFileRef} type="file" accept="image/*" className="hidden" onChange={handleBaseUpload} />
+          {countdown !== null && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none">
+              <span className="text-7xl font-bold text-white drop-shadow-lg">{countdown}</span>
+            </div>
+          )}
         </div>
+
+        {!cameraOn ? (
+          <button onClick={() => startCamera()} className="w-full py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-sm shadow-lg">📷 Buka Kamera</button>
+        ) : (
+          <>
+            <div className="flex items-center justify-center gap-1.5 text-xs text-gray-400">
+              <span>⏱️ Timer:</span>
+              {[0, 3, 5, 10].map((sec) => (
+                <button
+                  key={sec}
+                  onClick={() => setTimerSec(sec)}
+                  disabled={countdown !== null}
+                  className={`px-2.5 py-1 rounded-md font-semibold disabled:opacity-50 ${timerSec === sec ? "bg-pink-500 text-white" : "bg-gray-800 text-gray-300 hover:bg-gray-700"}`}
+                >
+                  {sec === 0 ? "Off" : `${sec}s`}
+                </button>
+              ))}
+            </div>
+            <div className="flex gap-2">
+              {countdown === null ? (
+                <button onClick={startCountdown} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 text-sm shadow-lg">📸 Ambil Foto</button>
+              ) : (
+                <button onClick={cancelCountdown} className="flex-1 py-2.5 rounded-xl font-bold text-white bg-red-600 hover:bg-red-500 text-sm shadow-lg">✖ Batal</button>
+              )}
+              <button onClick={switchCamera} disabled={countdown !== null} className="px-4 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 disabled:opacity-40 text-sm shadow-lg" title="Ganti kamera depan/belakang">🔄</button>
+              <button onClick={stopCamera} className="px-4 py-2.5 rounded-xl font-semibold text-gray-200 bg-gray-700 hover:bg-gray-600 text-sm shadow-lg" title="Tutup kamera">✕</button>
+            </div>
+            <p className="text-center text-[11px] text-gray-500">Foto disimpan tidak terbalik (bukan cermin), supaya tulisan di baju terbaca benar.</p>
+          </>
+        )}
+
         {error && (
           <div className="bg-red-900/30 border border-red-600 rounded-xl p-3 text-sm text-red-300">⚠️ {error}</div>
         )}
