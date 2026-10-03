@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { N3KanjiTab } from "@/components/n3-kanji-tab";
 import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
 import { radikalKanjiFiles, radikalKanjiOrder } from "@/data/n3/kanji-radikal/lessons";
+import { ExamSelector } from "@/components/exam-selector";
 
 // Judul tiap minggu diambil dari main_title hari pertama
 function getWeekTitle(week: string) {
@@ -40,10 +41,6 @@ const weekLabels: Record<string, string> = {
   "6": "第六週",
 };
 
-const upcomingMaterials = [
-  { title: "Soal", japanese: "問題" },
-];
-
 export default function N3Page() {
   const sortedWeeks = Object.keys(lessons).sort((a, b) => Number(a) - Number(b));
 
@@ -59,11 +56,7 @@ export default function N3Page() {
             <TabsTrigger value="bunpou">Bunpou</TabsTrigger>
             <TabsTrigger value="kanji">Kanji</TabsTrigger>
             <TabsTrigger value="radikal-kanji">Radikal Kanji</TabsTrigger>
-            {upcomingMaterials.map((material) => (
-              <TabsTrigger key={material.title} value={material.title.toLowerCase()}>
-                {material.title}
-              </TabsTrigger>
-            ))}
+            <TabsTrigger value="soal">Soal</TabsTrigger>
           </TabsList>
 
           <TabsContent value="bunpou">
@@ -104,13 +97,10 @@ export default function N3Page() {
             <RadikalKanjiTab files={radikalKanjiFiles} order={radikalKanjiOrder} />
           </TabsContent>
 
-          {upcomingMaterials.map((material) => (
-            <TabsContent key={material.title} value={material.title.toLowerCase()}>
-              <div className="p-6 rounded-3xl border border-dashed border-border bg-card/50 text-center text-muted-foreground">
-                Materi {material.title} ({material.japanese}) segera hadir.
-              </div>
-            </TabsContent>
-          ))}
+          {/* Data ujian yang sama dengan menu JLPT → N3 → Latihan Soal */}
+          <TabsContent value="soal">
+            <ExamSelector level="n3" embedded />
+          </TabsContent>
         </Tabs>
       </div>
       <Footer />

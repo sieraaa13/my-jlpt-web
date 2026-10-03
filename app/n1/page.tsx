@@ -37,7 +37,7 @@ export default function N1Page() {
           </TabsContent>
 
           <TabsContent value="soal">
-            <ExamSelector level="n1" />
+            <ExamSelector level="n1" embedded />
           </TabsContent>
         </Tabs>
       </div>

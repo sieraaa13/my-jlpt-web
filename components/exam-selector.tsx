@@ -27,6 +27,9 @@ interface ExamData {
 
 interface ExamSelectorProps {
   level?: string;
+  // true = ditampilkan di dalam tab halaman level (mis. /n3 → Soal):
+  // tanpa tombol kembali & judul besar, karena halamannya sudah punya sendiri
+  embedded?: boolean;
 }
 
 const examYears = [
@@ -52,7 +55,7 @@ const examMonths = [
   { month: "12", label: "Desember", color: "from-purple-500/20 to-pink-500/20", borderColor: "border-purple-400/50" },
 ];
 
-export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
+export function ExamSelector({ level = "n3", embedded = false }: ExamSelectorProps) {
   const [selectedYear, setSelectedYear] = useState("2011");
   const [selectedMonth, setSelectedMonth] = useState("");
   const [examData, setExamData] = useState<ExamData | null>(null);
@@ -89,21 +92,25 @@ export function ExamSelector({ level = "n3" }: ExamSelectorProps) {
   }
 
   return (
-    <section className="min-h-screen bg-background py-12">
-      <div className="container mx-auto px-6">
+    <section className={embedded ? "bg-background" : "min-h-screen bg-background py-12"}>
+      <div className={embedded ? "" : "container mx-auto px-6"}>
         {/* Header dengan back button */}
-        <div className="mb-12">
-          <Link 
-            href="/jlpt" 
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
-          >
-            <span>←</span> Kembali ke Pilih Level
-          </Link>
+        <div className={embedded ? "mb-8" : "mb-12"}>
+          {!embedded && (
+            <>
+              <Link
+                href="/jlpt"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+              >
+                <span>←</span> Kembali ke Pilih Level
+              </Link>
 
-          <h1 className="text-5xl lg:text-6xl font-bold mb-4">
-            <span className="text-foreground">JLPT </span>
-            <span className="text-primary">試験問題</span>
-          </h1>
+              <h1 className="text-5xl lg:text-6xl font-bold mb-4">
+                <span className="text-foreground">JLPT </span>
+                <span className="text-primary">試験問題</span>
+              </h1>
+            </>
+          )}
           <p className="text-lg text-muted-foreground max-w-2xl">
             Pilih tahun dan periode untuk memulai ujian JLPT {level.toUpperCase()}. Setiap ujian terdiri dari 3 section: Kanji, Bunpou, dan Dokkai.
           </p>
