@@ -259,8 +259,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           {/* KANJI */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults
-              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} onAsk={() => askAbout("kanji", i + 1, q, answers[`kanji-${i}`])} />)
-              : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
+              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} onAsk={() => askAbout("kanji", i + 1, q, answers[`kanji-${i}`])} />)
+              : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
           </TabsContent>
 
           {/* BUNPOU */}
@@ -399,14 +399,24 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   );
 }
 
+/* ── UNDERLINE MARKER ────────────────────────────────────────── */
+// Soal kanji/goi menandai kata yang ditanya dengan 【…】; tampilkan sebagai garis bawah seperti di JLPT asli.
+function renderUnderlined(text: string) {
+  return text.split(/(【[^】]+】)/).map((part, i) =>
+    part.startsWith("【") && part.endsWith("】")
+      ? <span key={i} className="underline decoration-2 underline-offset-4 decoration-cyan-500">{part.slice(1, -1)}</span>
+      : part
+  );
+}
+
 /* ── QUESTION CARD ───────────────────────────────────────────── */
-function QuestionCard({ index, question, userAnswer, onAnswer }: { index: number; question: Question; userAnswer?: number; onAnswer: (o: number) => void; }) {
+function QuestionCard({ index, question, userAnswer, onAnswer, underline }: { index: number; question: Question; userAnswer?: number; onAnswer: (o: number) => void; underline?: boolean; }) {
   return (
     <Card className="p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all bg-card border-border hover:border-cyan-500/50">
       <div className="flex items-start gap-3 sm:gap-4">
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{underline ? renderUnderlined(question.q) : question.q}</p>
           <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((opt, oi) => (
               <button key={oi} onClick={() => onAnswer(oi)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === oi ? "bg-cyan-500/20 text-cyan-600 border-cyan-500 dark:text-cyan-300" : "bg-background border-border text-foreground hover:border-cyan-400/50"}`}>
@@ -422,13 +432,13 @@ function QuestionCard({ index, question, userAnswer, onAnswer }: { index: number
 }
 
 /* ── RESULT CARD ─────────────────────────────────────────────── */
-function ResultCard({ index, question, userAnswer, isCorrect, onAsk }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; }) {
+function ResultCard({ index, question, userAnswer, isCorrect, onAsk, underline }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; underline?: boolean; }) {
   return (
     <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : userAnswer !== undefined ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
       <div className="flex items-start gap-3 sm:gap-4">
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{question.q}</p>
+          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{underline ? renderUnderlined(question.q) : question.q}</p>
           <div className="space-y-2">
             {question.options.map((opt, oi) => {
               const isUser = userAnswer === oi;
