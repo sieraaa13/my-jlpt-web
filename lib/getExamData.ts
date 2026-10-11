@@ -39,6 +39,10 @@ import { examN1_1707 } from "../data/exams/n1/2017/07";
 import { examN1_1712 } from "../data/exams/n1/2017/12";
 import { examN1_1807 } from "../data/exams/n1/2018/07";
 import { examN1_1812 } from "../data/exams/n1/2018/12";
+import { examN1_1907 } from "../data/exams/n1/2019/07";
+import { examN1_1912 } from "../data/exams/n1/2019/12";
+import { examN1_2012 } from "../data/exams/n1/2020/12";
+import { examN1_2207 } from "../data/exams/n1/2022/07";
 import { examN1_2212 } from "../data/exams/n1/2022/12";
 import { examN1_2307 } from "../data/exams/n1/2023/07";
 import { examN1_2312 } from "../data/exams/n1/2023/12";
@@ -176,6 +180,10 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
     "2017-12": examN1_1712,
     "2018-07": examN1_1807,
     "2018-12": examN1_1812,
+    "2019-07": examN1_1907,
+    "2019-12": examN1_1912,
+    "2020-12": examN1_2012,
+    "2022-07": examN1_2207,
     "2022-12": examN1_2212,
     "2023-07": examN1_2307,
     "2023-12": examN1_2312,
