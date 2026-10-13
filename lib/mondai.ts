@@ -235,8 +235,8 @@ function buildN3Catalog(): Catalog {
       map[`kanji-${i}`] = pq.key;
     });
 
-    // 1-13 文法形式, 14-18 文の組み立て. Soal 19-23 yang ikut di array bunpou
-    // (hanya 2011/07) tidak punya teks bacaannya, jadi tidak dipakai latihan.
+    // 1-13 文法形式, 14-18 文の組み立て. 文章の文法 (19-) ada di dokkai bersama
+    // teksnya; soal 19+ di array bunpou (tanpa teks) tidak dipakai latihan.
     (raw.bunpou ?? []).forEach((q: any, i: number) => {
       if (i >= 18) return;
       const mondai = i < 13 ? 6 : 7;
