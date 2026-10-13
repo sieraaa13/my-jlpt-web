@@ -10,6 +10,7 @@ import { useExamContext } from "@/components/exam-context";
 import { MondaiInfo, PracticeQuestion, PracticeUnit, periodLabel } from "@/lib/n1-mondai";
 import { PracticeItem, formatDuration, savePracticeSession } from "@/lib/n1-progress";
 import { lookupYouhouWord } from "@/data/n1/youhou-words";
+import { iikaeWords } from "@/data/n1/iikae-words";
 
 interface Props {
   mondai: MondaiInfo;
@@ -223,7 +224,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
       <div ref={rootRef}>
         {header}
         <div className="max-w-2xl mx-auto">
-          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={underline} youhou={mondai.n === 4} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
+          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={underline} youhou={mondai.n === 4} iikae={mondai.n === 3} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
           {isChecked && (
             <Button onClick={next} className="w-full mt-4 py-5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold">
               {nextLabel}
@@ -319,13 +320,15 @@ function Passage({ text, label }: { text: string; label?: string }) {
 }
 
 function QuestionBlock({
-  q, userAnswer, checked, underline, youhou, onAnswer, onAsk,
+  q, userAnswer, checked, underline, youhou, iikae: iikaeOn, onAnswer, onAsk,
 }: {
-  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; youhou?: boolean; onAnswer: (o: number) => void; onAsk: () => void;
+  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; youhou?: boolean; iikae?: boolean; onAnswer: (o: number) => void; onAsk: () => void;
 }) {
   const isCorrect = userAnswer === q.correct;
   // 問題4 用法: cara baca tampil sejak awal, arti setelah dijawab
   const word = youhou ? lookupYouhouWord(q.q) : null;
+  // 問題3 言い換え: cara baca kata bergaris bawah di sampingnya, arti setelah dijawab
+  const iikae = iikaeOn ? iikaeWords[q.q.match(/【([^】]+)】/)?.[1] ?? ""] : undefined;
   return (
     <Card className={`gap-0 p-4 sm:p-5 border-2 rounded-xl ${checked ? (isCorrect ? "bg-green-500/10 border-green-500/50" : "bg-red-500/10 border-red-500/50") : "bg-card border-border"}`}>
       {word ? (
@@ -335,6 +338,22 @@ function QuestionBlock({
             {word.r && <span className="ml-2 text-sm sm:text-base font-medium text-cyan-600 dark:text-cyan-400">（{word.r}）</span>}
           </p>
           {checked && <p className="mt-1 text-sm text-muted-foreground">📖 {word.m}</p>}
+        </div>
+      ) : iikae ? (
+        <div className="mb-4">
+          <p className="font-semibold text-base sm:text-lg leading-relaxed break-words whitespace-pre-wrap">
+            {q.q.split(/(【[^】]+】)/).map((part, i) =>
+              part.startsWith("【") ? (
+                <span key={i}>
+                  <span className="underline decoration-2 underline-offset-4 decoration-cyan-500">{part.slice(1, -1)}</span>
+                  {iikae.r && <span className="text-sm sm:text-base font-medium text-cyan-600 dark:text-cyan-400">（{iikae.r}）</span>}
+                </span>
+              ) : (
+                part
+              )
+            )}
+          </p>
+          {checked && <p className="mt-1 text-sm text-muted-foreground">📖 {iikae.m}</p>}
         </div>
       ) : (
         <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words whitespace-pre-wrap">{underline ? renderUnderlined(q.q) : q.q}</p>
