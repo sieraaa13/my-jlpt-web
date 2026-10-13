@@ -9,6 +9,7 @@ import { useAuth } from "@/components/auth-context";
 import { useExamContext } from "@/components/exam-context";
 import { MondaiInfo, PracticeQuestion, PracticeUnit, periodLabel } from "@/lib/n1-mondai";
 import { PracticeItem, formatDuration, savePracticeSession } from "@/lib/n1-progress";
+import { lookupYouhouWord } from "@/data/n1/youhou-words";
 
 interface Props {
   mondai: MondaiInfo;
@@ -222,7 +223,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
       <div ref={rootRef}>
         {header}
         <div className="max-w-2xl mx-auto">
-          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={underline} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
+          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={underline} youhou={mondai.n === 4} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
           {isChecked && (
             <Button onClick={next} className="w-full mt-4 py-5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold">
               {nextLabel}
@@ -318,14 +319,26 @@ function Passage({ text, label }: { text: string; label?: string }) {
 }
 
 function QuestionBlock({
-  q, userAnswer, checked, underline, onAnswer, onAsk,
+  q, userAnswer, checked, underline, youhou, onAnswer, onAsk,
 }: {
-  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; onAnswer: (o: number) => void; onAsk: () => void;
+  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; youhou?: boolean; onAnswer: (o: number) => void; onAsk: () => void;
 }) {
   const isCorrect = userAnswer === q.correct;
+  // 問題4 用法: cara baca tampil sejak awal, arti setelah dijawab
+  const word = youhou ? lookupYouhouWord(q.q) : null;
   return (
     <Card className={`gap-0 p-4 sm:p-5 border-2 rounded-xl ${checked ? (isCorrect ? "bg-green-500/10 border-green-500/50" : "bg-red-500/10 border-red-500/50") : "bg-card border-border"}`}>
-      <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words whitespace-pre-wrap">{underline ? renderUnderlined(q.q) : q.q}</p>
+      {word ? (
+        <div className="mb-4">
+          <p className="font-semibold text-base sm:text-lg leading-relaxed break-words">
+            {q.q.match(/^\d+\./)?.[0]} <span className="text-xl sm:text-2xl">{word.word}</span>
+            {word.r && <span className="ml-2 text-sm sm:text-base font-medium text-cyan-600 dark:text-cyan-400">（{word.r}）</span>}
+          </p>
+          {checked && <p className="mt-1 text-sm text-muted-foreground">📖 {word.m}</p>}
+        </div>
+      ) : (
+        <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words whitespace-pre-wrap">{underline ? renderUnderlined(q.q) : q.q}</p>
+      )}
       <div className="space-y-2">
         {q.options.map((opt, oi) => {
           const selected = userAnswer === oi;
