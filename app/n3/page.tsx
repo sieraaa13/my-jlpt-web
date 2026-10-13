@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { N3KanjiTab } from "@/components/n3-kanji-tab";
 import { RadikalKanjiTab } from "@/components/radikal-kanji-tab";
 import { radikalKanjiFiles, radikalKanjiOrder } from "@/data/n3/kanji-radikal/lessons";
-import { ExamSelector } from "@/components/exam-selector";
+import { SoalTab } from "@/components/soal-tab";
 import { OnomatopeTab } from "@/components/onomatope-tab";
 import { onomatopeN3 } from "@/data/n3/onomatope";
 
@@ -108,9 +108,9 @@ export default function N3Page() {
             />
           </TabsContent>
 
-          {/* Data ujian yang sama dengan menu JLPT → N3 → Latihan Soal */}
+          {/* Ujian lengkap memakai data yang sama dengan menu JLPT → N3 → Latihan Soal */}
           <TabsContent value="soal">
-            <ExamSelector level="n3" embedded />
+            <SoalTab level="n3" />
           </TabsContent>
         </Tabs>
       </div>

@@ -159,9 +159,3 @@ export const youhouWords: Record<string, { r?: string; m: string }> = {
   "間柄": { r: "あいだがら", m: "hubungan (antar orang)" },
 };
 
-// Ambil entri kata dari teks soal mondai 4, mis. "20. 調達" atau "25. 【簡素】"
-export function lookupYouhouWord(q: string) {
-  const word = q.replace(/^\d+\.\s*/, "").replace(/[【】]/g, "").trim();
-  const entry = youhouWords[word];
-  return entry ? { word, ...entry } : null;
-}

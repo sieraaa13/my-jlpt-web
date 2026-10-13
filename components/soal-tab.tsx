@@ -2,12 +2,12 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ExamSelector } from "@/components/exam-selector";
-import { N1MondaiPicker, PracticeSetup } from "@/components/n1-mondai-practice";
-import { N1MondaiStats } from "@/components/n1-mondai-stats";
-import { N1PracticeSession } from "@/components/n1-practice-session";
+import { MondaiPicker, PracticeSetup } from "@/components/mondai-practice";
+import { MondaiStats } from "@/components/mondai-stats";
+import { PracticeSession } from "@/components/practice-session";
 import { useAuth } from "@/components/auth-context";
-import { getMondai } from "@/lib/n1-mondai";
-import { EMPTY_PROGRESS, N1Progress, loadN1Progress } from "@/lib/n1-progress";
+import { Level, getMondai } from "@/lib/mondai";
+import { Progress, emptyProgress, loadProgress } from "@/lib/practice-progress";
 
 type Mode = "exam" | "practice" | "stats";
 
@@ -17,26 +17,26 @@ const MODES: { id: Mode; icon: string; label: string; short: string }[] = [
   { id: "stats", icon: "📊", label: "Statistik", short: "Statistik" },
 ];
 
-// Tab "Soal" halaman N1: ujian lengkap, latihan per tipe soal, dan statistik
-export function N1SoalTab() {
+// Tab "Soal" halaman level: ujian lengkap, latihan per tipe soal, dan statistik
+export function SoalTab({ level }: { level: Level }) {
   const { user } = useAuth();
   const [mode, setMode] = useState<Mode>("exam");
-  const [progress, setProgress] = useState<N1Progress>(EMPTY_PROGRESS);
+  const [progress, setProgress] = useState<Progress>(() => emptyProgress(level));
   const [loading, setLoading] = useState(false);
   const [setupFor, setSetupFor] = useState<number | null>(null);
   const [session, setSession] = useState<(PracticeSetup & { id: number }) | null>(null);
 
   const reload = useCallback(async () => {
-    if (!user) return setProgress(EMPTY_PROGRESS);
+    if (!user) return setProgress(emptyProgress(level));
     setLoading(true);
     try {
-      setProgress(await loadN1Progress(user.id));
+      setProgress(await loadProgress(level, user.id));
     } catch (e) {
-      console.error("Gagal memuat progres N1:", e);
+      console.error(`Gagal memuat progres ${level.toUpperCase()}:`, e);
     } finally {
       setLoading(false);
     }
-  }, [user]);
+  }, [user, level]);
 
   // Muat ulang tiap pindah ke Latihan/Statistik, supaya hasil ujian lengkap
   // yang baru selesai ikut terhitung
@@ -48,9 +48,10 @@ export function N1SoalTab() {
 
   if (session) {
     return (
-      <N1PracticeSession
+      <PracticeSession
         key={session.id}
-        mondai={getMondai(session.mondai)}
+        level={level}
+        mondai={getMondai(level, session.mondai)}
         units={session.units}
         timer={session.timer}
         onSaved={reload}
@@ -82,12 +83,13 @@ export function N1SoalTab() {
         ))}
       </div>
 
-      {mode === "exam" && <ExamSelector level="n1" embedded />}
+      {mode === "exam" && <ExamSelector level={level} embedded />}
       {mode === "practice" && (
-        <N1MondaiPicker progress={progress} loggedIn={!!user} setupFor={setupFor} setSetupFor={setSetupFor} onStart={startSession} />
+        <MondaiPicker level={level} progress={progress} loggedIn={!!user} setupFor={setupFor} setSetupFor={setSetupFor} onStart={startSession} />
       )}
       {mode === "stats" && (
-        <N1MondaiStats
+        <MondaiStats
+          level={level}
           progress={progress}
           loading={loading}
           loggedIn={!!user}

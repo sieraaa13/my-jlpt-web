@@ -2,20 +2,22 @@
 
 import { useMemo } from "react";
 import { Card } from "@/components/ui/card";
-import { AccuracyBar } from "@/components/n1-mondai-practice";
-import { GROUPS, MONDAI } from "@/lib/n1-mondai";
-import { N1Progress, avgSecPerUnit, formatDuration, pct, scoreByGroup, scoreByMondai, weakestMondai } from "@/lib/n1-progress";
+import { AccuracyBar } from "@/components/mondai-practice";
+import { GROUPS, Level, getMondaiList } from "@/lib/mondai";
+import { Progress, avgSecPerUnit, formatDuration, pct, scoreByGroup, scoreByMondai, weakestMondai } from "@/lib/practice-progress";
 
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 
-export function N1MondaiStats({
-  progress, loading, loggedIn, onPractice,
+export function MondaiStats({
+  level, progress, loading, loggedIn, onPractice,
 }: {
-  progress: N1Progress;
+  level: Level;
+  progress: Progress;
   loading: boolean;
   loggedIn: boolean;
   onPractice: (mondai: number) => void;
 }) {
+  const MONDAI = getMondaiList(level);
   const scores = useMemo(() => scoreByMondai(progress), [progress]);
   const groups = useMemo(() => scoreByGroup(progress), [progress]);
   const times = useMemo(() => avgSecPerUnit(progress), [progress]);
@@ -69,7 +71,7 @@ export function N1MondaiStats({
                 onClick={() => onPractice(mondai.n)}
                 className="text-left rounded-xl border-2 border-border bg-background p-3 hover:border-cyan-500/60 transition-colors"
               >
-                <p className="text-xs font-semibold text-cyan-500">問題{mondai.n}</p>
+                <p className="text-xs font-semibold text-cyan-500">{mondai.label}</p>
                 <p className="font-bold truncate">{mondai.jp}</p>
                 <div className="flex items-center justify-between mt-1">
                   <span className="text-red-500 font-bold">{p}%</span>
@@ -143,7 +145,7 @@ export function N1MondaiStats({
                 <button key={m.n} onClick={() => onPractice(m.n)} className="w-full text-left p-3 sm:p-4 hover:bg-muted/50 transition-colors space-y-1.5">
                   <div className="flex items-baseline justify-between gap-2">
                     <p className="font-semibold min-w-0 truncate">
-                      <span className="text-cyan-500 text-xs mr-1.5">問題{m.n}</span>
+                      <span className="text-cyan-500 text-xs mr-1.5">{m.label}</span>
                       {m.jp}
                     </p>
                     <span className="text-xs text-muted-foreground flex-shrink-0">{s.total} soal</span>

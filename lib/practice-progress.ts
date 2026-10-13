@@ -1,8 +1,8 @@
 import { supabase } from "@/lib/supabase";
-import { MONDAI, type MondaiGroup, getMondai, getN1Catalog, mondaiOfKey } from "@/lib/n1-mondai";
+import { type Level, type MondaiGroup, getCatalog, getMondai, getMondaiList, mondaiOfKey } from "@/lib/mondai";
 
 // ==========================================================
-// PROGRES N1 PER MONDAI
+// PROGRES PER MONDAI (N1 / N3)
 // Menggabungkan dua sumber:
 // - practice_history : hasil Latihan per Mondai (per soal + waktu)
 // - exam_history     : hasil Ujian Lengkap (jawaban dipetakan ke mondai)
@@ -29,23 +29,25 @@ export interface PracticeSession {
   completed_at: string;
 }
 
-export interface N1Progress {
+export interface Progress {
+  level: Level;
   attempts: Attempt[];
   sessions: PracticeSession[];
   // status terakhir tiap soal: true = terakhir benar, false = terakhir salah
   lastByKey: Record<string, boolean>;
 }
 
-export const EMPTY_PROGRESS: N1Progress = { attempts: [], sessions: [], lastByKey: {} };
+export const emptyProgress = (level: Level): Progress => ({ level, attempts: [], sessions: [], lastByKey: {} });
 
-export async function loadN1Progress(userId: string): Promise<N1Progress> {
-  const catalog = getN1Catalog();
+export async function loadProgress(level: Level, userId: string): Promise<Progress> {
+  const catalog = getCatalog(level);
+  const dbLevel = level.toUpperCase();
   const attempts: Attempt[] = [];
 
   const [{ data: exams }, { data: practice }] = await Promise.all([
-    supabase.from("exam_history").select("year, month, answers, completed_at").eq("user_id", userId).eq("level", "N1"),
+    supabase.from("exam_history").select("year, month, answers, completed_at").eq("user_id", userId).eq("level", dbLevel),
     // Kalau tabel practice_history belum dibuat, query ini error → dianggap kosong
-    supabase.from("practice_history").select("mondai, units, duration_sec, target_sec, items, completed_at").eq("user_id", userId).eq("level", "N1"),
+    supabase.from("practice_history").select("mondai, units, duration_sec, target_sec, items, completed_at").eq("user_id", userId).eq("level", dbLevel),
   ]);
 
   for (const ex of exams ?? []) {
@@ -81,10 +83,11 @@ export async function loadN1Progress(userId: string): Promise<N1Progress> {
   attempts.sort((a, b) => a.at - b.at);
   const lastByKey: Record<string, boolean> = {};
   attempts.forEach((a) => (lastByKey[a.key] = a.correct));
-  return { attempts, sessions, lastByKey };
+  return { level, attempts, sessions, lastByKey };
 }
 
 export async function savePracticeSession(args: {
+  level: Level;
   userId: string;
   mondai: number;
   units: number;
@@ -95,7 +98,7 @@ export async function savePracticeSession(args: {
   const correct = args.items.filter((i) => i.c).length;
   const { error } = await supabase.from("practice_history").insert({
     user_id: args.userId,
-    level: "N1",
+    level: args.level.toUpperCase(),
     mondai: args.mondai,
     total: args.items.length,
     correct,
@@ -117,9 +120,9 @@ export interface Score {
 
 export const pct = (s: Score) => (s.total > 0 ? Math.round((s.correct / s.total) * 100) : null);
 
-export function scoreByMondai(p: N1Progress): Record<number, Score> {
+export function scoreByMondai(p: Progress): Record<number, Score> {
   const out: Record<number, Score> = {};
-  MONDAI.forEach((m) => (out[m.n] = { correct: 0, total: 0 }));
+  getMondaiList(p.level).forEach((m) => (out[m.n] = { correct: 0, total: 0 }));
   p.attempts.forEach((a) => {
     const s = out[a.mondai];
     if (!s) return;
@@ -129,11 +132,13 @@ export function scoreByMondai(p: N1Progress): Record<number, Score> {
   return out;
 }
 
-export function scoreByGroup(p: N1Progress, since = 0, until = Infinity): Record<MondaiGroup, Score> {
+export function scoreByGroup(p: Progress, since = 0, until = Infinity): Record<MondaiGroup, Score> {
   const out: Record<MondaiGroup, Score> = { moji: { correct: 0, total: 0 }, bunpou: { correct: 0, total: 0 }, dokkai: { correct: 0, total: 0 } };
   p.attempts.forEach((a) => {
     if (a.at < since || a.at >= until) return;
-    const s = out[getMondai(a.mondai).group];
+    const m = getMondai(p.level, a.mondai);
+    if (!m) return;
+    const s = out[m.group];
     s.total++;
     if (a.correct) s.correct++;
   });
@@ -141,7 +146,7 @@ export function scoreByGroup(p: N1Progress, since = 0, until = Infinity): Record
 }
 
 // Rata-rata detik per unit dari sesi latihan yang memakai timer
-export function avgSecPerUnit(p: N1Progress): Record<number, number | null> {
+export function avgSecPerUnit(p: Progress): Record<number, number | null> {
   const sum: Record<number, { sec: number; units: number }> = {};
   p.sessions.forEach((s) => {
     if (!s.duration_sec || !s.units) return;
@@ -150,14 +155,14 @@ export function avgSecPerUnit(p: N1Progress): Record<number, number | null> {
     t.units += s.units;
   });
   const out: Record<number, number | null> = {};
-  MONDAI.forEach((m) => (out[m.n] = sum[m.n] ? Math.round(sum[m.n].sec / sum[m.n].units) : null));
+  getMondaiList(p.level).forEach((m) => (out[m.n] = sum[m.n] ? Math.round(sum[m.n].sec / sum[m.n].units) : null));
   return out;
 }
 
 // Mondai dengan akurasi terendah (minimal 5 soal sudah dikerjakan)
-export function weakestMondai(p: N1Progress, limit = 3) {
+export function weakestMondai(p: Progress, limit = 3) {
   const scores = scoreByMondai(p);
-  return MONDAI.filter((m) => scores[m.n].total >= 5)
+  return getMondaiList(p.level).filter((m) => scores[m.n].total >= 5)
     .map((m) => ({ mondai: m, pct: pct(scores[m.n])! }))
     .filter((x) => x.pct < 70)
     .sort((a, b) => a.pct - b.pct)
@@ -176,11 +181,15 @@ export function formatDuration(sec: number) {
 // Dihitung ulang tiap chat dari database, jadi tidak perlu disimpan ke memori.
 const MIN_SAMPLE = 5;
 
-export function buildN1EvaluationSummary(p: N1Progress): string {
+export function buildEvaluationSummary(p: Progress): string {
   if (p.attempts.length === 0) return "";
+  const MONDAI = getMondaiList(p.level);
+  const LV = p.level.toUpperCase();
+  // N3: nomor 問題 berulang antar lembar, jadi selalu disertai nama tipenya
+  const tag = (m: (typeof MONDAI)[number]) => `${m.label} ${m.jp}`;
   const lines: string[] = [];
   const last = new Date(p.attempts[p.attempts.length - 1].at).toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" });
-  lines.push(`Total ${p.attempts.length} jawaban soal N1 tercatat (Ujian Lengkap + Latihan per Mondai), terakhir ${last}.`);
+  lines.push(`Total ${p.attempts.length} jawaban soal ${LV} tercatat (Ujian Lengkap + Latihan per Mondai), terakhir ${last}.`);
 
   const groups = scoreByGroup(p);
   lines.push(
@@ -198,15 +207,15 @@ export function buildN1EvaluationSummary(p: N1Progress): string {
   const enough = MONDAI.filter((m) => scores[m.n].total >= MIN_SAMPLE);
   const notEnough = MONDAI.filter((m) => scores[m.n].total < MIN_SAMPLE);
   if (enough.length > 0) {
-    lines.push("Akurasi per mondai: " + enough.map((m) => `問題${m.n} ${m.jp} ${pct(scores[m.n])}% (${scores[m.n].total} soal)`).join("; ") + ".");
+    lines.push("Akurasi per mondai: " + enough.map((m) => `${tag(m)} ${pct(scores[m.n])}% (${scores[m.n].total} soal)`).join("; ") + ".");
   }
   if (notEnough.length > 0) {
-    lines.push(`Belum cukup data (< ${MIN_SAMPLE} soal), jangan dinilai: ` + notEnough.map((m) => `問題${m.n}`).join(", ") + ".");
+    lines.push(`Belum cukup data (< ${MIN_SAMPLE} soal), jangan dinilai: ` + notEnough.map(tag).join(", ") + ".");
   }
 
   const weak = weakestMondai(p);
   if (weak.length > 0) {
-    lines.push("Tipe terlemah: " + weak.map((w) => `問題${w.mondai.n} ${w.mondai.jp} ${w.pct}%`).join(", ") + ".");
+    lines.push("Tipe terlemah: " + weak.map((w) => `${tag(w.mondai)} ${w.pct}%`).join(", ") + ".");
   }
 
   const times = avgSecPerUnit(p);
@@ -215,10 +224,10 @@ export function buildN1EvaluationSummary(p: N1Progress): string {
   if (slow.length > 0) {
     lines.push(
       "Terlalu lambat (rata-rata vs target, dari latihan bertimer): " +
-        slow.map((m) => `問題${m.n} ${formatDuration(times[m.n]!)} / ${formatDuration(m.targetSec)} per ${m.passage ? "teks" : "soal"}`).join("; ") + "."
+        slow.map((m) => `${tag(m)} ${formatDuration(times[m.n]!)} / ${formatDuration(m.targetSec)} per ${m.passage ? "teks" : "soal"}`).join("; ") + "."
     );
   }
-  if (onTime.length > 0) lines.push("Sudah sesuai target waktu: " + onTime.map((m) => `問題${m.n}`).join(", ") + ".");
+  if (onTime.length > 0) lines.push("Sudah sesuai target waktu: " + onTime.map(tag).join(", ") + ".");
 
   const WEEK = 7 * 24 * 60 * 60 * 1000;
   const now = Date.now();

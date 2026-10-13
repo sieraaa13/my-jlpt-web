@@ -5,8 +5,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { GROUPS, MONDAI, MondaiInfo, PracticeUnit, getN1Catalog } from "@/lib/n1-mondai";
-import { N1Progress, formatDuration, pct, scoreByMondai } from "@/lib/n1-progress";
+import { GROUPS, Level, MondaiInfo, PracticeUnit, getCatalog, getMondaiList } from "@/lib/mondai";
+import { Progress, formatDuration, pct, scoreByMondai } from "@/lib/practice-progress";
 
 export interface PracticeSetup {
   mondai: number;
@@ -31,24 +31,26 @@ const shuffle = <T,>(arr: T[]) => {
   return a;
 };
 
-/* ── DAFTAR 13 MONDAI ───────────────────────────────────────── */
-export function N1MondaiPicker({
-  progress, loggedIn, setupFor, setSetupFor, onStart,
+/* ── DAFTAR MONDAI ──────────────────────────────────────────── */
+export function MondaiPicker({
+  level, progress, loggedIn, setupFor, setSetupFor, onStart,
 }: {
-  progress: N1Progress;
+  level: Level;
+  progress: Progress;
   loggedIn: boolean;
   setupFor: number | null;
   setSetupFor: (n: number | null) => void;
   onStart: (s: PracticeSetup) => void;
 }) {
-  const catalog = getN1Catalog();
+  const catalog = getCatalog(level);
+  const MONDAI = getMondaiList(level);
   const scores = useMemo(() => scoreByMondai(progress), [progress]);
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
 
   return (
     <div className="space-y-8">
       <p className="text-muted-foreground max-w-2xl">
-        Latih satu tipe soal sekaligus dari semua ujian 2010–2024. Pilih tipe yang ingin dilatih.
+        Latih satu tipe soal sekaligus dari semua ujian {catalog.periods[0].slice(0, 4)}–{catalog.periods[catalog.periods.length - 1].slice(0, 4)}. Pilih tipe yang ingin dilatih.
         {!loggedIn && " Login supaya akurasi dan soal yang salah tercatat."}
       </p>
 
@@ -86,7 +88,7 @@ export function N1MondaiPicker({
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div className="min-w-0">
-                          <p className="text-xs font-semibold text-cyan-500">問題{m.n}</p>
+                          <p className="text-xs font-semibold text-cyan-500">{m.label}</p>
                           <p className="font-bold truncate">{m.jp}</p>
                           <p className="text-sm text-muted-foreground truncate">{m.name}</p>
                         </div>
@@ -109,6 +111,7 @@ export function N1MondaiPicker({
       {setupFor !== null && (
         <SetupDialog
           key={setupFor}
+          level={level}
           mondai={MONDAI.find((m) => m.n === setupFor)!}
           progress={progress}
           loggedIn={loggedIn}
@@ -138,15 +141,16 @@ export function AccuracyBar({ value }: { value: number | null }) {
 
 /* ── PENGATURAN SEBELUM MULAI ───────────────────────────────── */
 function SetupDialog({
-  mondai, progress, loggedIn, onClose, onStart,
+  level, mondai, progress, loggedIn, onClose, onStart,
 }: {
+  level: Level;
   mondai: MondaiInfo;
-  progress: N1Progress;
+  progress: Progress;
   loggedIn: boolean;
   onClose: () => void;
   onStart: (s: PracticeSetup) => void;
 }) {
-  const catalog = getN1Catalog();
+  const catalog = getCatalog(level);
   const years = useMemo(() => Array.from(new Set(catalog.periods.map((p) => p.slice(0, 4)))), [catalog]);
   const [count, setCount] = useState(mondai.counts[0]);
   const [from, setFrom] = useState(years[0]);
@@ -180,7 +184,7 @@ function SetupDialog({
       <DialogContent className="max-h-[90vh] overflow-y-auto p-5 sm:p-6">
         <DialogHeader className="text-left">
           <DialogTitle>
-            問題{mondai.n} <span className="text-cyan-500">{mondai.jp}</span>
+            {mondai.label} <span className="text-cyan-500">{mondai.jp}</span>
           </DialogTitle>
           <DialogDescription>{mondai.name} · 💡 {mondai.tip}</DialogDescription>
         </DialogHeader>

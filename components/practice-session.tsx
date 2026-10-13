@@ -7,12 +7,11 @@ import { AskButton } from "@/components/ask-siera-button";
 import { renderUnderlined } from "@/components/exam-questions";
 import { useAuth } from "@/components/auth-context";
 import { useExamContext } from "@/components/exam-context";
-import { MondaiInfo, PracticeQuestion, PracticeUnit, periodLabel } from "@/lib/n1-mondai";
-import { PracticeItem, formatDuration, savePracticeSession } from "@/lib/n1-progress";
-import { lookupYouhouWord } from "@/data/n1/youhou-words";
-import { iikaeWords } from "@/data/n1/iikae-words";
+import { Level, MondaiInfo, PracticeQuestion, PracticeUnit, WordDict, periodLabel } from "@/lib/mondai";
+import { PracticeItem, formatDuration, savePracticeSession } from "@/lib/practice-progress";
 
 interface Props {
+  level: Level;
   mondai: MondaiInfo;
   units: PracticeUnit[];
   timer: boolean;
@@ -24,7 +23,7 @@ interface Props {
 
 type SaveState = "idle" | "saving" | "saved" | "error";
 
-export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRetry, onSaved }: Props) {
+export function PracticeSession({ level, mondai, units, timer, onExit, onAgain, onRetry, onSaved }: Props) {
   const { user } = useAuth();
   const { openChatWith } = useExamContext();
 
@@ -41,7 +40,6 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
 
   const unit = units[idx];
   const isChecked = !!checked[unit?.id];
-  const underline = mondai.n === 1 || mondai.n === 3;
 
   // Lepas fokus chat saat keluar dari latihan
   useEffect(() => () => openChatWith(null), []);
@@ -98,6 +96,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
     if (!finished || !user || items.length === 0 || saveState !== "idle") return;
     setSaveState("saving");
     savePracticeSession({
+      level,
       userId: user.id,
       mondai: mondai.n,
       units: doneUnits.length,
@@ -112,7 +111,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
 
   const askAbout = (u: PracticeUnit, q: PracticeQuestion) => {
     const ua = answers[q.key];
-    const label = `問題${mondai.n} ${mondai.jp} — ${periodLabel(u.period)}`;
+    const label = `${level.toUpperCase()} ${mondai.label} ${mondai.jp} — ${periodLabel(u.period)}`;
     const lines = [`Bagian: ${label}${u.title ? ` — ${u.title}` : ""}`];
     const passage = u.textA ? `【A】\n${u.textA}\n\n【B】\n${u.textB}` : u.text;
     if (passage) lines.push(`[Bacaan/Teks]\n${passage.slice(0, 1500)}`);
@@ -130,7 +129,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
     return (
       <div ref={rootRef} className="max-w-2xl mx-auto space-y-4">
         <Card className="gap-0 p-5 sm:p-8 border-2 rounded-2xl text-center space-y-3">
-          <p className="text-sm font-semibold text-cyan-500">問題{mondai.n} {mondai.jp}</p>
+          <p className="text-sm font-semibold text-cyan-500">{mondai.label} {mondai.jp}</p>
           <h2 className="text-2xl sm:text-3xl font-bold">Latihan Selesai</h2>
           <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">{percent}%</div>
           <p className="text-muted-foreground">{correctCount} dari {items.length} soal benar</p>
@@ -197,7 +196,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
         </button>
         <div className="flex-1 min-w-0">
           <p className="text-sm sm:text-base font-bold truncate">
-            問題{mondai.n} <span className="text-cyan-500">{mondai.jp}</span>
+            {mondai.label} <span className="text-cyan-500">{mondai.jp}</span>
           </p>
           <p className="text-xs text-muted-foreground">
             {unitWord} {idx + 1}/{units.length} · {periodLabel(unit.period)}
@@ -217,14 +216,14 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
 
   const nextLabel = idx + 1 < units.length ? `${unitWord} berikutnya →` : "Lihat ringkasan";
 
-  // ── MONDAI 1-6: SATU SOAL PER LAYAR ─────────────────────────
+  // ── MONDAI SOAL PENDEK: SATU SOAL PER LAYAR ─────────────────────────
   if (!mondai.passage) {
     const q = unit.questions[0];
     return (
       <div ref={rootRef}>
         {header}
         <div className="max-w-2xl mx-auto">
-          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={underline} youhou={mondai.n === 4} iikae={mondai.n === 3} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
+          <QuestionBlock q={q} userAnswer={answers[q.key]} checked={isChecked} underline={mondai.underline} youhou={mondai.youhou} iikae={mondai.iikae} onAnswer={(o) => answer(q, o)} onAsk={() => askAbout(unit, q)} />
           {isChecked && (
             <Button onClick={next} className="w-full mt-4 py-5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold">
               {nextLabel}
@@ -236,7 +235,7 @@ export function N1PracticeSession({ mondai, units, timer, onExit, onAgain, onRet
     );
   }
 
-  // ── MONDAI 7-13: TEKS + SOAL ────────────────────────────────
+  // ── MONDAI BACAAN: TEKS + SOAL ────────────────────────────────
   const answeredInUnit = unit.questions.filter((q) => answers[q.key] !== undefined).length;
   const correctInUnit = unit.questions.filter((q) => answers[q.key] === q.correct).length;
 
@@ -320,15 +319,17 @@ function Passage({ text, label }: { text: string; label?: string }) {
 }
 
 function QuestionBlock({
-  q, userAnswer, checked, underline, youhou, iikae: iikaeOn, onAnswer, onAsk,
+  q, userAnswer, checked, underline, youhou, iikae: iikaeDict, onAnswer, onAsk,
 }: {
-  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; youhou?: boolean; iikae?: boolean; onAnswer: (o: number) => void; onAsk: () => void;
+  q: PracticeQuestion; userAnswer?: number; checked: boolean; underline?: boolean; youhou?: WordDict; iikae?: WordDict; onAnswer: (o: number) => void; onAsk: () => void;
 }) {
   const isCorrect = userAnswer === q.correct;
-  // 問題4 用法: cara baca tampil sejak awal, arti setelah dijawab
-  const word = youhou ? lookupYouhouWord(q.q) : null;
-  // 問題3 言い換え: cara baca kata bergaris bawah di sampingnya, arti setelah dijawab
-  const iikae = iikaeOn ? iikaeWords[q.q.match(/【([^】]+)】/)?.[1] ?? ""] : undefined;
+  // 用法: cara baca tampil sejak awal, arti setelah dijawab.
+  // Teks soal berupa "20. 調達" atau "25. 【簡素】"
+  const youhouWord = youhou ? q.q.replace(/^\d+\.\s*/, "").replace(/[【】]/g, "").trim() : "";
+  const word = youhou?.[youhouWord] ? { word: youhouWord, ...youhou[youhouWord] } : null;
+  // 言い換え: cara baca kata bergaris bawah di sampingnya, arti setelah dijawab
+  const iikae = iikaeDict?.[q.q.match(/【([^】]+)】/)?.[1] ?? ""];
   return (
     <Card className={`gap-0 p-4 sm:p-5 border-2 rounded-xl ${checked ? (isCorrect ? "bg-green-500/10 border-green-500/50" : "bg-red-500/10 border-red-500/50") : "bg-card border-border"}`}>
       {word ? (

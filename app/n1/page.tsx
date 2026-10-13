@@ -2,7 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { N1SoalTab } from "@/components/n1-soal-tab";
+import { SoalTab } from "@/components/soal-tab";
 import { KanjiTab } from "@/components/kanji-tab";
 import { GoiTab } from "@/components/goi-tab";
 import { OnomatopeTab } from "@/components/onomatope-tab";
@@ -48,7 +48,7 @@ export default function N1Page() {
           </TabsContent>
 
           <TabsContent value="soal">
-            <N1SoalTab />
+            <SoalTab level="n1" />
           </TabsContent>
         </Tabs>
       </div>
