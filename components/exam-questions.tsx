@@ -401,7 +401,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
 
 /* ── UNDERLINE MARKER ────────────────────────────────────────── */
 // Soal kanji/goi menandai kata yang ditanya dengan 【…】; tampilkan sebagai garis bawah seperti di JLPT asli.
-function renderUnderlined(text: string) {
+export function renderUnderlined(text: string) {
   return text.split(/(【[^】]+】)/).map((part, i) =>
     part.startsWith("【") && part.endsWith("】")
       ? <span key={i} className="underline decoration-2 underline-offset-4 decoration-cyan-500">{part.slice(1, -1)}</span>

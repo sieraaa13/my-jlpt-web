@@ -53,7 +53,7 @@ import { examN1_241225 } from "../data/exams/n1/2024/12";
 // CONVERTER: format mondai1-13 (N1) → kanji/bunpou/dokkai
 // Supaya kompatibel dengan exam-questions.tsx tanpa ubah UI
 // ==========================================================
-function convertN1ToStandardFormat(raw: any) {
+export function convertN1ToStandardFormat(raw: any) {
   const kanji = [
     ...(raw.mondai1 || []),
     ...(raw.mondai2 || []),
@@ -258,4 +258,12 @@ export function getAvailableLevels(): string[] {
   return Object.keys(EXAMS_DATA_BY_LEVEL).filter(
     (level) => Object.keys(EXAMS_DATA_BY_LEVEL[level]).length > 0
   );
+}
+
+// ==========================================================
+// HELPER: data mentah (format mondai1-13) semua periode satu level,
+// dipakai Latihan per Mondai untuk mengambil soal lintas tahun
+// ==========================================================
+export function getRawExams(level: string): Record<string, any> {
+  return EXAMS_DATA_BY_LEVEL[level.toLowerCase()] ?? {};
 }
