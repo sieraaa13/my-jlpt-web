@@ -1,5 +1,5 @@
 import { supabase } from "@/lib/supabase";
-import { MONDAI, MondaiGroup, getMondai, getN1Catalog, mondaiOfKey } from "@/lib/n1-mondai";
+import { MONDAI, type MondaiGroup, getMondai, getN1Catalog, mondaiOfKey } from "@/lib/n1-mondai";
 
 // ==========================================================
 // PROGRES N1 PER MONDAI
@@ -168,4 +168,69 @@ export function formatDuration(sec: number) {
   const m = Math.floor(sec / 60);
   const s = sec % 60;
   return `${m}:${s.toString().padStart(2, "0")}`;
+}
+
+// ── RINGKASAN UNTUK SIERA ────────────────────────────────────
+// Angka di sini SAMA dengan yang tampil di tab Statistik, supaya yang
+// Siera sampaikan ke user selalu cocok dengan yang user lihat sendiri.
+// Dihitung ulang tiap chat dari database, jadi tidak perlu disimpan ke memori.
+const MIN_SAMPLE = 5;
+
+export function buildN1EvaluationSummary(p: N1Progress): string {
+  if (p.attempts.length === 0) return "";
+  const lines: string[] = [];
+  const last = new Date(p.attempts[p.attempts.length - 1].at).toLocaleDateString("id-ID", { timeZone: "Asia/Jakarta" });
+  lines.push(`Total ${p.attempts.length} jawaban soal N1 tercatat (Ujian Lengkap + Latihan per Mondai), terakhir ${last}.`);
+
+  const groups = scoreByGroup(p);
+  lines.push(
+    "Akurasi per bagian: " +
+      (["moji", "bunpou", "dokkai"] as MondaiGroup[])
+        .map((g) => {
+          const label = g === "moji" ? "文字・語彙" : g === "bunpou" ? "文法" : "読解";
+          const v = pct(groups[g]);
+          return `${label} ${v === null ? "belum ada data" : `${v}% (${groups[g].total} soal)`}`;
+        })
+        .join(", ") + "."
+  );
+
+  const scores = scoreByMondai(p);
+  const enough = MONDAI.filter((m) => scores[m.n].total >= MIN_SAMPLE);
+  const notEnough = MONDAI.filter((m) => scores[m.n].total < MIN_SAMPLE);
+  if (enough.length > 0) {
+    lines.push("Akurasi per mondai: " + enough.map((m) => `問題${m.n} ${m.jp} ${pct(scores[m.n])}% (${scores[m.n].total} soal)`).join("; ") + ".");
+  }
+  if (notEnough.length > 0) {
+    lines.push(`Belum cukup data (< ${MIN_SAMPLE} soal), jangan dinilai: ` + notEnough.map((m) => `問題${m.n}`).join(", ") + ".");
+  }
+
+  const weak = weakestMondai(p);
+  if (weak.length > 0) {
+    lines.push("Tipe terlemah: " + weak.map((w) => `問題${w.mondai.n} ${w.mondai.jp} ${w.pct}%`).join(", ") + ".");
+  }
+
+  const times = avgSecPerUnit(p);
+  const slow = MONDAI.filter((m) => times[m.n] !== null && times[m.n]! > m.targetSec);
+  const onTime = MONDAI.filter((m) => times[m.n] !== null && times[m.n]! <= m.targetSec);
+  if (slow.length > 0) {
+    lines.push(
+      "Terlalu lambat (rata-rata vs target, dari latihan bertimer): " +
+        slow.map((m) => `問題${m.n} ${formatDuration(times[m.n]!)} / ${formatDuration(m.targetSec)} per ${m.passage ? "teks" : "soal"}`).join("; ") + "."
+    );
+  }
+  if (onTime.length > 0) lines.push("Sudah sesuai target waktu: " + onTime.map((m) => `問題${m.n}`).join(", ") + ".");
+
+  const WEEK = 7 * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+  const thisWeek = scoreByGroup(p, now - WEEK, now);
+  const lastWeek = scoreByGroup(p, now - 2 * WEEK, now - WEEK);
+  const trend = (["moji", "bunpou", "dokkai"] as MondaiGroup[])
+    .filter((g) => thisWeek[g].total > 0 && lastWeek[g].total > 0)
+    .map((g) => `${g === "moji" ? "文字・語彙" : g === "bunpou" ? "文法" : "読解"} ${pct(lastWeek[g])}% → ${pct(thisWeek[g])}%`);
+  if (trend.length > 0) lines.push(`Tren minggu lalu → minggu ini: ${trend.join(", ")}.`);
+
+  const stillWrong = Object.values(p.lastByKey).filter((c) => !c).length;
+  if (stillWrong > 0) lines.push(`${stillWrong} soal masih salah di percobaan terakhirnya (bisa diulang lewat filter "Masih salah").`);
+
+  return lines.join("\n");
 }

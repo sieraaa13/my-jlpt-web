@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase";
+import { buildN1EvaluationSummary, loadN1Progress } from "@/lib/n1-progress";
 
 export interface Memory {
   id: string;
@@ -238,6 +239,16 @@ async function getProgressSummary(userId: string): Promise<string> {
   return lines.join("\n");
 }
 
+/** Data evaluasi N1 per mondai (sama dengan tab Statistik), dihitung ulang tiap chat. */
+async function getN1Evaluation(userId: string): Promise<string> {
+  try {
+    return buildN1EvaluationSummary(await loadN1Progress(userId));
+  } catch (err) {
+    console.error("Gagal memuat evaluasi N1:", err);
+    return "";
+  }
+}
+
 /**
  * Bangun blok teks memori + progress untuk disisipkan ke system prompt Siera.
  * Mengembalikan string kosong kalau user belum punya data sama sekali.
@@ -266,11 +277,12 @@ async function getLatestMonthlySummaryLine(userId: string): Promise<string> {
 }
 
 export async function buildMemoryContext(userId: string, currentMessage?: string | null): Promise<string> {
-  const [memories, userProfile, progressSummary, monthlySummaryLine] = await Promise.all([
+  const [memories, userProfile, progressSummary, monthlySummaryLine, n1Evaluation] = await Promise.all([
     getActiveMemories(userId),
     getUserProfile(userId),
     getProgressSummary(userId),
     getLatestMonthlySummaryLine(userId),
+    getN1Evaluation(userId),
   ]);
 
   // Saring tipe goal/learning_preference dari `memories` (harusnya sudah
@@ -296,6 +308,7 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
     relevantMemories.length === 0 &&
     !progressSummary &&
     !monthlySummaryLine &&
+    !n1Evaluation &&
     archivedMemories.length === 0 &&
     oldMessages.length === 0
   ) {
@@ -317,6 +330,10 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
 
   if (monthlySummaryLine) {
     block += `\n[Tren Bulanan]\n${monthlySummaryLine}\n`;
+  }
+
+  if (n1Evaluation) {
+    block += `\n[Data Evaluasi N1 — sama persis dengan tab Soal → Statistik di web]\n${n1Evaluation}\n`;
   }
 
   if (relevantMemories.length > 0) {
@@ -345,7 +362,27 @@ export async function buildMemoryContext(userId: string, currentMessage?: string
     });
   }
 
-  block += `\nGunakan info ini secara natural kalau relevan dengan pertanyaan user. Jangan\nmenyebutkan semuanya sekaligus atau membacakannya seperti daftar ke user.\n===== AKHIR MEMORI =====`;
+  block += `
+CARA MEMAKAI INFO DI ATAS — ada dua jenis, perlakukan berbeda:
+
+1. KONTEKS PRIBADI ([Profil Belajar], [Memori Jangka Panjang], riwayat lama):
+   pakai diam-diam untuk menyesuaikan cara membantu. Jangan dibacakan seperti
+   daftar, jangan mengutip ulang isinya kata per kata ke user.
+
+2. DATA EVALUASI ([Progress Belajar], [Tren Bulanan], [Data Evaluasi N1]):
+   angka resmi dari database, dihitung ulang tiap chat. BOLEH dan SEBAIKNYA
+   disajikan ke user kalau dia minta evaluasi, menanyakan progres / kelemahan,
+   atau bingung mau belajar apa. Aturannya:
+   - Kutip angkanya persis seperti tertulis, jangan dibulatkan ulang atau dikarang.
+     Kalau datanya tidak ada di atas, bilang belum ada datanya, jangan menebak.
+   - Mondai yang "belum cukup data" jangan dinilai kuat/lemah.
+   - Sajikan ringkas: maksimal 3 poin terpenting (kelemahan terbesar, masalah
+     waktu, tren), lalu beri 1 saran konkret, misalnya "buka Soal → Latihan
+     per Mondai → 問題12, kerjakan 2 teks dengan timer".
+   - Kalau user mau detail lengkap, arahkan ke tab Soal → Statistik di halaman N1.
+   - Di luar permintaan evaluasi, sebut angka hanya kalau benar-benar relevan
+     dengan pertanyaan user.
+===== AKHIR MEMORI =====`;
 
   return block;
 }

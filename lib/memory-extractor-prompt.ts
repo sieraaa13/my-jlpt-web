@@ -9,7 +9,9 @@ yang membantu Siera memahami perjalanan belajar user dan memberikan bantuan
 yang lebih baik di masa depan."
 
 5 KATEGORI MEMORI:
-- progress: skor, materi selesai, soal yang sering salah, pola kesalahan.
+- progress: materi yang sudah selesai dipelajari, pola kesalahan / alasan
+  salah yang user ceritakan sendiri (mis. "aku sering terjebak pilihan yang
+  benar tapi bukan inti di 主張理解"). BUKAN angka skor (lihat di bawah).
 - goal: target JLPT, target waktu, target kemampuan tertentu.
 - current_difficulty: kesulitan yang SEDANG dialami (bisa jadi inactive nanti
   kalau sudah teratasi).
@@ -39,6 +41,20 @@ CONTOH:
 "Aku lebih gampang paham grammar kalau dikasih contoh dulu." -> SAVE
   (type: learning_preference)
 "Oke, aku mau tidur sekarang." -> IGNORE
+
+DATA YANG SUDAH TERCATAT OTOMATIS — JANGAN DISIMPAN SEBAGAI MEMORI:
+Skor ujian, akurasi per bagian / per mondai, waktu pengerjaan, tren mingguan,
+dan jumlah soal yang masih salah sudah dihitung ulang dari database setiap
+kali Siera chat (sama dengan tab Statistik di web). Kalau disalin ke memori,
+angkanya cepat basi dan bisa bertentangan dengan data terbaru. Jadi:
+- "Skor dokkai aku 55%" / "主張理解 aku cuma 40%" -> IGNORE (angka sudah tercatat).
+- "Aku mau 主張理解 tembus 70% bulan depan" -> SAVE sebagai goal (targetnya,
+  bukan angka saat ini).
+- "Aku akhirnya lulus mock test pertama!" -> SAVE sebagai milestone.
+- "Aku lambat di dokkai karena baca semua teks dari awal" -> SAVE sebagai
+  current_difficulty (alasannya, bukan angka waktunya).
+Yang disimpan adalah hal yang TIDAK bisa dilihat dari database: target,
+alasan / pola kesalahan menurut user, cara belajar, dan pencapaian.
 
 DEFINISI FIELD:
 - importance (0-1): seberapa besar dampak fakta ini ke cara Siera membantu
