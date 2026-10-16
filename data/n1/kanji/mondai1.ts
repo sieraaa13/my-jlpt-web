@@ -1,4 +1,5 @@
 import { getRawExams } from "@/lib/getExamData";
+import { mondai1Meanings } from "@/data/n1/kanji/mondai1-words";
 
 // ==========================================================
 // RANGKUMAN KANJI MONDAI 1 (漢字読み) DARI SEMUA UJIAN N1
@@ -18,6 +19,7 @@ export interface Mondai1Occurrence {
 export interface Mondai1Word {
   word: string;
   reading: string;
+  meaning?: string;
   occurrences: Mondai1Occurrence[]; // urut dari ujian terbaru
 }
 
@@ -40,7 +42,7 @@ export function getMondai1WordsN1(): Mondai1Word[] {
       const key = `${parsed.word}|${reading}`;
       let entry = byKey.get(key);
       if (!entry) {
-        entry = { word: parsed.word, reading, occurrences: [] };
+        entry = { word: parsed.word, reading, meaning: mondai1Meanings[parsed.word], occurrences: [] };
         byKey.set(key, entry);
       }
       entry.occurrences.push({

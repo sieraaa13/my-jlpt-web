@@ -109,8 +109,15 @@ export function KanjiMondaiView() {
                 )}
               </div>
 
-              <div className="text-lg font-bold text-primary min-h-7">
-                {open ? w.reading : <span className="text-sm font-normal text-muted-foreground">Ketuk untuk lihat bacaan</span>}
+              <div className="min-h-7">
+                {open ? (
+                  <>
+                    <div className="text-lg font-bold text-primary">{w.reading}</div>
+                    {w.meaning && <div className="text-sm break-words">{w.meaning}</div>}
+                  </>
+                ) : (
+                  <span className="text-sm text-muted-foreground">Ketuk untuk lihat bacaan & arti</span>
+                )}
               </div>
 
               <div className="space-y-3 border-t border-border pt-3">
