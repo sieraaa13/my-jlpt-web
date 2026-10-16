@@ -4,9 +4,43 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { GoiLessonView } from "@/components/goi-lesson-view";
 import { GoiTestView } from "@/components/goi-test-view";
+import { GoiMondaiView } from "@/components/goi-mondai-view";
 import { getOrganizedGoiLessons, goiLessons, goiTests } from "@/data/n1/goi/lessons";
 
+type Section = "harian" | "mondai";
+
+const SECTIONS: { id: Section; label: string }[] = [
+  { id: "harian", label: "Materi Harian" },
+  { id: "mondai", label: "Goi Mondai JLPT" },
+];
+
+// Tab Goi: materi harian per minggu, dan rangkuman kosakata dari soal ujian asli
 export function GoiTab() {
+  const [section, setSection] = useState<Section>("harian");
+
+  return (
+    <div className="space-y-6">
+      <div className="inline-flex flex-wrap gap-1 p-1 rounded-2xl bg-muted">
+        {SECTIONS.map((s) => (
+          <button
+            key={s.id}
+            onClick={() => setSection(s.id)}
+            className={cn(
+              "px-4 py-2 rounded-xl text-sm font-bold transition-colors",
+              section === s.id ? "bg-background text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+
+      {section === "harian" ? <GoiDailyLessons /> : <GoiMondaiView />}
+    </div>
+  );
+}
+
+function GoiDailyLessons() {
   const weeks = getOrganizedGoiLessons();
   const [selectedWeek, setSelectedWeek] = useState(weeks[0]?.week ?? "1");
   const [selectedDay, setSelectedDay] = useState(weeks[0]?.days[0]?.day ?? "1");
