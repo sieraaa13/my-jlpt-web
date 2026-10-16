@@ -76,7 +76,7 @@ export function Navbar() {
               <a href="/quiz" className="text-muted-foreground hover:text-foreground transition-colors">
                 Quiz Harian
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/pelajaran" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pelajaran
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -173,7 +173,7 @@ export function Navbar() {
                 <a href="/jlpt" className="text-muted-foreground hover:text-foreground transition-colors py-2">Ujian JLPT</a>
                 {/* ↓↓↓ QUIZ HARIAN DI MOBILE MENU ↓↓↓ */}
                 <a href="/quiz" className="text-muted-foreground hover:text-foreground transition-colors py-2">Quiz Harian 🎌</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">Pelajaran</a>
+                <a href="/pelajaran" className="text-muted-foreground hover:text-foreground transition-colors py-2">Pelajaran</a>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">Tentang</a>
 
                 <div className="pt-2 border-t border-border">

@@ -1,16 +1,18 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { ReactNode, useMemo, useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { OnomatopeKategori } from "@/data/onomatope-types";
 
 type OnomatopeTabProps = {
   kategori: OnomatopeKategori[];
-  level: string; // "N3", "N1", ...
-  deskripsi: string; // kalimat pengantar setelah jumlah kata
+  level?: string; // "N3", "N1", ...
+  deskripsi?: string; // kalimat pengantar setelah jumlah kata
+  intro?: ReactNode; // pengganti paragraf pengantar (dipakai Kamus Onomatope)
 };
 
-export function OnomatopeTab({ kategori, level, deskripsi }: OnomatopeTabProps) {
+export function OnomatopeTab({ kategori, level, deskripsi, intro }: OnomatopeTabProps) {
   const [selected, setSelected] = useState<string>("semua");
   const [query, setQuery] = useState("");
   const [onlyUjian, setOnlyUjian] = useState(false);
@@ -42,10 +44,15 @@ export function OnomatopeTab({ kategori, level, deskripsi }: OnomatopeTabProps) 
 
   return (
     <div className="space-y-6">
-      <p className="text-sm text-muted-foreground">
-        {total} onomatope (擬音語・擬態語) level {level} {deskripsi}{" "}
-        Tanda <span className="font-bold text-amber-600 dark:text-amber-400">試験</span> = pernah muncul di soal ujian {level} di website ini.
-      </p>
+      {intro ?? (
+        <p className="text-sm text-muted-foreground">
+          {total} onomatope (擬音語・擬態語) level {level} {deskripsi}{" "}
+          Tanda <span className="font-bold text-amber-600 dark:text-amber-400">試験</span> = pernah muncul di soal ujian {level} di website ini.{" "}
+          <Link href="/pelajaran/onomatope" className="font-bold text-primary hover:underline">
+            Lihat Kamus Onomatope lengkap →
+          </Link>
+        </p>
+      )}
 
       {/* Filter */}
       <div className="flex flex-col gap-3">
