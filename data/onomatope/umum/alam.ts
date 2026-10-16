@@ -1,0 +1,27 @@
+import type { Onomatope } from "@/data/onomatope-types";
+
+export const items: Onomatope[] = [
+  { kata: "ざあざあ", arti: "(hujan) deras", kondisi: "Suara dan keadaan hujan yang turun sangat lebat.", contoh: "外は雨がざあざあ降っている。" },
+  { kata: "しとしと", arti: "(hujan) rintik-rintik tenang", kondisi: "Hujan halus yang turun pelan dan lama, khas musim hujan 梅雨.", contoh: "朝から雨がしとしと降り続いている。" },
+  { kata: "ぱらぱら", arti: "(hujan) rintik jarang; membalik halaman", kondisi: "Hujan atau butiran yang jatuh sedikit-sedikit. Juga membalik halaman buku sekilas, atau orang yang sedikit.", contoh: "雨がぱらぱら降ってきた。" },
+  { kata: "ぽつぽつ", arti: "tetes demi tetes, mulai gerimis", kondisi: "Hujan yang baru mulai turun satu-satu; juga sesuatu yang muncul sedikit demi sedikit.", contoh: "雨がぽつぽつ降り出した。" },
+  { kata: "ぽたぽた", arti: "menetes-netes", kondisi: "Cairan yang jatuh setetes demi setetes, seperti air keran atau keringat.", contoh: "蛇口から水がぽたぽた落ちている。" },
+  { kata: "ごろごろ", arti: "(petir) bergemuruh; bermalas-malasan", kondisi: "Suara guntur di kejauhan. Juga berbaring malas-malasan, benda besar menggelinding, atau mata yang mengganjal.", contoh: "遠くで雷がごろごろ鳴っている。" },
+  { kata: "ぴかっと", arti: "berkilat (sekali)", kondisi: "Cahaya yang menyala sekejap, seperti kilat.", contoh: "空がぴかっと光って、雷が鳴った。" },
+  { kata: "びゅうびゅう", arti: "(angin) menderu kencang", kondisi: "Suara angin yang bertiup sangat keras.", contoh: "一晩中、風がびゅうびゅう吹いていた。" },
+  { kata: "そよそよ", arti: "(angin) sepoi-sepoi", kondisi: "Angin lembut yang bertiup pelan dan menyenangkan.", contoh: "春の風がそよそよ吹いている。" },
+  { kata: "ぽかぽか", arti: "hangat nyaman", kondisi: "Cuaca atau badan yang hangat menyenangkan. Juga memukul pelan berkali-kali.", contoh: "今日はぽかぽかして、気持ちがいい。" },
+  { kata: "じめじめ", arti: "lembap, pengap", kondisi: "Udara atau tempat yang lembap dan tidak nyaman.", contoh: "梅雨の時期は部屋がじめじめする。" },
+  { kata: "むしむし", arti: "gerah lembap", kondisi: "Udara panas dan lembap seperti di dalam kukusan.", contoh: "今日はむしむしして、寝苦しい。" },
+  { kata: "からっと", arti: "cerah kering; garing", kondisi: "Cuaca kering yang segar. Juga gorengan yang garing atau sifat yang tidak mendendam.", contoh: "梅雨が明けて、からっと晴れた。" },
+  { kata: "かんかん", arti: "terik menyengat; marah besar", kondisi: "Matahari yang bersinar sangat terik. Juga marah besar (かんかんに怒る) atau bunyi logam.", contoh: "日がかんかん照りつけている。" },
+  { kata: "じりじり", arti: "panas membakar; perlahan mendekat", kondisi: "Sinar matahari yang terasa membakar kulit. Juga sesuatu yang maju sedikit demi sedikit, atau tidak sabar.", contoh: "夏の日差しがじりじりと肌を焼く。" },
+  { kata: "ぎらぎら", arti: "menyilaukan, berkilau tajam", kondisi: "Cahaya yang terlalu terang dan menyengat. Juga mata yang penuh ambisi.", contoh: "真夏の太陽がぎらぎら輝いている。" },
+  { kata: "ひんやり", arti: "dingin sejuk", kondisi: "Rasa dingin yang menyegarkan saat disentuh atau dirasakan.", contoh: "洞窟の中はひんやりしていた。" },
+  { kata: "きらきら", arti: "berkelap-kelip", kondisi: "Cahaya yang berkilau indah seperti bintang atau air; juga mata yang berbinar.", contoh: "夜空に星がきらきら光っている。" },
+  { kata: "どんより", arti: "mendung kelabu", kondisi: "Langit yang gelap berawan; juga suasana atau mata yang suram.", contoh: "朝から空がどんより曇っている。" },
+  { kata: "もくもく", arti: "(asap/awan) bergumpal-gumpal", kondisi: "Asap atau awan yang naik bergulung tebal. Juga bekerja diam tanpa bicara.", contoh: "煙突から煙がもくもく出ている。" },
+  { kata: "ちらちら", arti: "berkelip; (salju) turun sedikit", kondisi: "Cahaya atau salju yang terlihat sebentar-sebentar. Juga melirik berkali-kali.", contoh: "雪がちらちら降り始めた。" },
+  { kata: "めらめら", arti: "(api) berkobar", kondisi: "Api yang menyala besar dan menjilat. Juga semangat atau cemburu yang membara.", contoh: "たき火がめらめらと燃えている。" },
+  { kata: "ちょろちょろ", arti: "mengalir kecil; berlarian kecil", kondisi: "Air yang mengalir sedikit. Juga hewan kecil atau anak yang bergerak lincah ke sana kemari.", contoh: "水道の水がちょろちょろしか出ない。" },
+];
