@@ -5,9 +5,43 @@ import { cn } from "@/lib/utils";
 import { KanjiLessonView } from "@/components/kanji-lesson-view";
 import { KanjiTestView } from "@/components/kanji-test-view";
 import { KunyomiLessonView } from "@/components/kunyomi-lesson-view";
+import { KanjiMondaiView } from "@/components/kanji-mondai-view";
 import { getOrganizedKanjiLessons, kanjiLessons, kanjiTests, kunyomiLessons } from "@/data/n1/kanji/lessons";
 
+type Section = "harian" | "mondai";
+
+const SECTIONS: { id: Section; label: string }[] = [
+  { id: "harian", label: "Materi Harian" },
+  { id: "mondai", label: "Kanji Mondai JLPT" },
+];
+
+// Tab Kanji: materi harian per minggu, dan rangkuman kanji dari soal ujian asli
 export function KanjiTab() {
+  const [section, setSection] = useState<Section>("harian");
+
+  return (
+    <div className="space-y-6">
+      <div className="inline-flex flex-wrap gap-1 p-1 rounded-2xl bg-muted">
+        {SECTIONS.map((s) => (
+          <button
+            key={s.id}
+            onClick={() => setSection(s.id)}
+            className={cn(
+              "px-4 py-2 rounded-xl text-sm font-bold transition-colors",
+              section === s.id ? "bg-background text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+
+      {section === "harian" ? <KanjiDailyLessons /> : <KanjiMondaiView />}
+    </div>
+  );
+}
+
+function KanjiDailyLessons() {
   const weeks = getOrganizedKanjiLessons();
   const [selectedWeek, setSelectedWeek] = useState(weeks[0]?.week ?? "1");
   const [selectedDay, setSelectedDay] = useState(weeks[0]?.days[0]?.day ?? "1");
