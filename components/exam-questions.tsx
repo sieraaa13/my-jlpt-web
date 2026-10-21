@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect, useMemo, useRef, Fragment, type ReactNode } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,18 +9,31 @@ import { useAuth } from "@/components/auth-context";
 import { supabase } from "@/lib/supabase";
 import { AskButton } from "@/components/ask-siera-button";
 import { SortQuestionCard, SortResultCard, parseSortQuestion, fillSortSentence } from "@/components/sort-question-card";
+import type { SoalBantuan, BacaanBantuan } from "@/lib/exam-bantuan";
 
 interface Question {
   q: string;
   options: string[];
   correct: number;
   order?: number[]; // soal ★: urutan opsi yang benar untuk 4 kotak
+  bantuan?: SoalBantuan; // cara baca & arti untuk Mode Latihan
 }
 
 interface DakkaiSection {
   title: string;
   text: string;
   questions: Question[];
+  bantuan?: BacaanBantuan;
+}
+
+// ── MODE LATIHAN: 読 = cara baca (amber), 訳 = arti (violet) ──
+type HelpKind = "yomi" | "arti";
+type HelpFlags = { yomi?: boolean; arti?: boolean };
+interface HelpState {
+  enabled: boolean;   // tombol boleh dipakai (Mode Latihan, atau sesudah lihat hasil)
+  open: HelpFlags;    // panel yang sedang terbuka
+  used: HelpFlags;    // tanda: bantuan yang dibuka selama mengerjakan
+  onToggle: (kind: HelpKind) => void;
 }
 
 interface ChoukaiQuestion {
@@ -69,6 +82,9 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   // Susunan kata soal ★ (文の組み立て) per soal bunpou — disimpan di sini supaya
   // tidak hilang saat pindah tab
   const [sortSlots, setSortSlots] = useState<Record<number, (number | null)[]>>({});
+  const [mode, setMode] = useState<"ujian" | "latihan">("ujian");
+  const [helpOpen, setHelpOpen] = useState<Record<string, HelpFlags>>({});
+  const [helpUsed, setHelpUsed] = useState<Record<string, HelpFlags>>({});
 
   useEffect(() => { setMounted(true); }, []);
   // Lepas fokus chat saat keluar dari halaman ujian
@@ -121,6 +137,28 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
   // Soal ★ bunpou (文の組み立て) versi drag & klik untuk semua ujian N3
   const sortEnabled = level === "N3";
   const examLabel = data.label ?? `${month === "07" ? "Juli" : "Desember"} ${year}`;
+
+  // ── BANTUAN (MODE LATIHAN) ─────────────────────────────────
+  const hasBantuan = useMemo(
+    () =>
+      [...data.kanji, ...data.bunpou].some((q) => q.bantuan) ||
+      data.dokkai.some((d) => d.bantuan || d.questions.some((q) => q.bantuan)),
+    [data]
+  );
+  const usedList = Object.values(helpUsed);
+  const yomiUsedCount = usedList.filter((u) => u.yomi).length;
+  const artiUsedCount = usedList.filter((u) => u.arti).length;
+  const isPractice = mode === "latihan";
+
+  const helpFor = (key: string): HelpState => ({
+    enabled: isPractice || showResults,
+    open: helpOpen[key] ?? {},
+    used: helpUsed[key] ?? {},
+    onToggle: (kind) => {
+      setHelpOpen((prev) => ({ ...prev, [key]: { ...prev[key], [kind]: !prev[key]?.[kind] } }));
+      if (!showResults) setHelpUsed((prev) => ({ ...prev, [key]: { ...prev[key], [kind]: true } }));
+    },
+  });
 
   // ── TOMBOL "TANYA" DI KARTU HASIL ──────────────────────────
   // Hanya mengirim konteks soal ke chat; pertanyaannya ditulis user sendiri.
@@ -178,7 +216,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
 
   // ── AUTO-SAVE ────────────────────────────────────────────────
   useEffect(() => {
-    if (!showResults || !user || savedToDb || total === 0) return;
+    // Hasil Mode Latihan tidak masuk riwayat supaya statistik ujian tetap jujur
+    if (!showResults || !user || savedToDb || total === 0 || isPractice) return;
     const save = async () => {
       try {
         const ss: Record<string, { correct: number; total: number }> = {
@@ -205,7 +244,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
       } catch (e) { console.error(e); }
     };
     save();
-  }, [showResults, user, savedToDb, total]);
+  }, [showResults, user, savedToDb, total, isPractice]);
 
   if (!mounted) return null;
 
@@ -230,6 +269,32 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
             {/* Kosong - dark mode dihandle Navbar */}
             <div className="w-10" />
           </div>
+
+          {hasBantuan && !showResults && (
+            <div className="mt-3">
+              <div className="grid grid-cols-2 gap-1 rounded-lg bg-muted p-1 max-w-sm mx-auto">
+                <button
+                  onClick={() => setMode("ujian")}
+                  disabled={yomiUsedCount + artiUsedCount > 0}
+                  title={yomiUsedCount + artiUsedCount > 0 ? "Bantuan sudah dipakai, ulangi ujian untuk kembali ke Mode Ujian" : undefined}
+                  className={`py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed ${!isPractice ? "bg-background text-cyan-500 shadow-sm" : "text-muted-foreground"}`}
+                >
+                  📝 Mode Ujian
+                </button>
+                <button
+                  onClick={() => setMode("latihan")}
+                  className={`py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all ${isPractice ? "bg-background text-violet-500 shadow-sm" : "text-muted-foreground"}`}
+                >
+                  📖 Mode Latihan
+                </button>
+              </div>
+              {isPractice && (
+                <p className="mt-1.5 text-[11px] sm:text-xs text-center text-muted-foreground">
+                  <span className="font-bold text-amber-500">読</span> cara baca · <span className="font-bold text-violet-500">訳</span> arti — hasil latihan tidak disimpan ke riwayat
+                </p>
+              )}
+            </div>
+          )}
 
           {!showResults && (
             <div className="mt-3">
@@ -259,8 +324,8 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           {/* KANJI */}
           <TabsContent value="kanji" className="space-y-4 mt-6">
             {showResults
-              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} onAsk={() => askAbout("kanji", i + 1, q, answers[`kanji-${i}`])} />)
-              : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />)}
+              ? (data.kanji as Question[]).map((q, i) => <ResultCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} isCorrect={answers[`kanji-${i}`] === q.correct} onAsk={() => askAbout("kanji", i + 1, q, answers[`kanji-${i}`])} help={helpFor(`kanji-${i}`)} />)
+              : (data.kanji as Question[]).map((q, i) => <QuestionCard key={i} index={i} question={q} underline userAnswer={answers[`kanji-${i}`]} onAnswer={(o) => handleAnswer(i, o)} help={helpFor(`kanji-${i}`)} />)}
           </TabsContent>
 
           {/* BUNPOU */}
@@ -269,7 +334,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
               ? (data.bunpou as Question[]).map((q, i) => {
                   const ua = answers[`bunpou-${i}`];
                   const sortParts = sortEnabled ? parseSortQuestion(q.q) : null;
-                  if (!sortParts) return <ResultCard key={i} index={i} question={q} userAnswer={ua} isCorrect={ua === q.correct} onAsk={() => askAbout("bunpou", i + 1, q, ua)} />;
+                  if (!sortParts) return <ResultCard key={i} index={i} question={q} userAnswer={ua} isCorrect={ua === q.correct} onAsk={() => askAbout("bunpou", i + 1, q, ua)} help={helpFor(`bunpou-${i}`)} />;
                   const slots = sortSlots[i] ?? [null, null, null, null];
                   const sortLines = [
                     "Tipe soal: 文の組み立て (menyusun 4 kata; yang dinilai hanya kata di kotak ★)",
@@ -290,7 +355,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
                 })
               : (data.bunpou as Question[]).map((q, i) => {
                   const sortParts = sortEnabled ? parseSortQuestion(q.q) : null;
-                  if (!sortParts) return <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} />;
+                  if (!sortParts) return <QuestionCard key={i} index={i} question={q} userAnswer={answers[`bunpou-${i}`]} onAnswer={(o) => handleAnswer(i, o)} help={helpFor(`bunpou-${i}`)} />;
                   return (
                     <SortQuestionCard
                       key={i}
@@ -317,25 +382,15 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
             {showResults ? (
               (data.dokkai as DakkaiSection[]).map((dk) => (
                 <div key={dk.title} className="space-y-3">
-                  <div className="border-2 rounded-lg p-3 sm:p-4 bg-muted border-border">
-                    <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dk.title}</h3>
-                  </div>
-                  <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
-                    <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed font-medium break-words">{dk.text}</p>
-                  </Card>
-                  {dk.questions.map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} isCorrect={answers[`dokkai-${dk.title}-${i}`] === q.correct} onAsk={() => askAbout("dokkai", i + 1, q, answers[`dokkai-${dk.title}-${i}`], { passageTitle: dk.title, passage: dk.text })} />)}
+                  <PassageCard section={dk} help={helpFor(`passage-${dk.title}`)} />
+                  {dk.questions.map((q, i) => <ResultCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} isCorrect={answers[`dokkai-${dk.title}-${i}`] === q.correct} onAsk={() => askAbout("dokkai", i + 1, q, answers[`dokkai-${dk.title}-${i}`], { passageTitle: dk.title, passage: dk.text })} help={helpFor(`dokkai-${dk.title}-${i}`)} />)}
                 </div>
               ))
             ) : (
               (data.dokkai as DakkaiSection[]).map((dk) => (
                 <div key={dk.title} className="space-y-3">
-                  <div className="border-2 rounded-lg p-3 sm:p-4 bg-muted border-border">
-                    <h3 className="text-base sm:text-lg font-bold text-cyan-500">{dk.title}</h3>
-                  </div>
-                  <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
-                    <p className="text-muted-foreground whitespace-pre-wrap text-sm leading-relaxed font-medium break-words">{dk.text}</p>
-                  </Card>
-                  {dk.questions.map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} onAnswer={(o) => handleAnswer(i, o, dk.title)} />)}
+                  <PassageCard section={dk} help={helpFor(`passage-${dk.title}`)} />
+                  {dk.questions.map((q, i) => <QuestionCard key={i} index={i} question={q} userAnswer={answers[`dokkai-${dk.title}-${i}`]} onAnswer={(o) => handleAnswer(i, o, dk.title)} help={helpFor(`dokkai-${dk.title}-${i}`)} />)}
                 </div>
               ))
             )}
@@ -356,9 +411,21 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
           <Card className="border-2 p-4 sm:p-6 md:p-8 mt-6 rounded-2xl bg-gradient-to-br from-card to-muted border-border">
             <div className="text-center space-y-4">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Hasil Ujian</h2>
-              {user && savedToDb && <p className="text-xs text-green-500 font-medium">✓ Hasil tersimpan ke akun {user.name}</p>}
-              {user && !savedToDb && total > 0 && <p className="text-xs text-muted-foreground italic">💾 Menyimpan hasil...</p>}
-              {!user && <p className="text-xs text-amber-500 font-medium">💡 Login untuk menyimpan hasil ujian secara permanen</p>}
+              {isPractice ? (
+                <div className="space-y-1">
+                  <p className="text-xs text-violet-500 font-semibold">📖 Mode Latihan — hasil tidak disimpan ke riwayat</p>
+                  <p className="text-xs text-muted-foreground">
+                    <span className="inline-block px-1 rounded bg-amber-500 text-white font-bold">読</span> cara baca dibuka di {yomiUsedCount} soal/bacaan ·{" "}
+                    <span className="inline-block px-1 rounded bg-violet-500 text-white font-bold">訳</span> arti dibuka di {artiUsedCount} soal/bacaan
+                  </p>
+                </div>
+              ) : (
+                <>
+                  {user && savedToDb && <p className="text-xs text-green-500 font-medium">✓ Hasil tersimpan ke akun {user.name}</p>}
+                  {user && !savedToDb && total > 0 && <p className="text-xs text-muted-foreground italic">💾 Menyimpan hasil...</p>}
+                  {!user && <p className="text-xs text-amber-500 font-medium">💡 Login untuk menyimpan hasil ujian secara permanen</p>}
+                </>
+              )}
               <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">{percentage}%</div>
               <p className="text-base sm:text-lg text-muted-foreground">{correct} dari {total} soal benar</p>
               <div className={`grid ${hasChoukai ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"} gap-2 sm:gap-4 my-6`}>
@@ -378,7 +445,7 @@ export default function ExamQuestions({ data, year, month, level: levelProp, onB
                 })}
               </div>
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
-                <Button onClick={() => { setAnswers({}); setSortSlots({}); openChatWith(null); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
+                <Button onClick={() => { setAnswers({}); setSortSlots({}); setHelpOpen({}); setHelpUsed({}); openChatWith(null); setShowResults(false); setSavedToDb(false); }} className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-semibold py-3 px-6">🔄 Ulangi Ujian</Button>
                 <Button onClick={handleBack} variant="outline" className="rounded-xl font-semibold py-3 px-6">Pilih Ujian Lain</Button>
               </div>
             </div>
@@ -409,19 +476,169 @@ export function renderUnderlined(text: string) {
   );
 }
 
+/* ── FURIGANA ────────────────────────────────────────────────── */
+// Teks cara baca memakai notasi {漢字|かんじ}; ubah jadi <ruby>.
+function renderRuby(text: string, keyPrefix: string) {
+  const out: ReactNode[] = [];
+  const re = /\{([^|{}]+)\|([^{}]+)\}/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <ruby key={`${keyPrefix}-${m.index}`}>
+        {m[1]}
+        <rt className="text-[0.6em] font-normal text-amber-600 dark:text-amber-400 select-none">{m[2]}</rt>
+      </ruby>
+    );
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
+function renderYomi(text: string, underline?: boolean) {
+  if (!underline) return renderRuby(text, "r");
+  return text.split(/(【[^】]+】)/).map((part, i) =>
+    part.startsWith("【") && part.endsWith("】")
+      ? <span key={i} className="underline decoration-2 underline-offset-4 decoration-cyan-500">{renderRuby(part.slice(1, -1), `u${i}`)}</span>
+      : <Fragment key={i}>{renderRuby(part, `p${i}`)}</Fragment>
+  );
+}
+
+/* ── BANTUAN: TOMBOL, TANDA, PANEL ARTI ──────────────────────── */
+function HelpMarks({ used }: { used?: HelpFlags }) {
+  if (!used?.yomi && !used?.arti) return null;
+  return (
+    <div className="flex flex-col items-start gap-1 mt-1.5">
+      {used.yomi && <span title="Cara baca dibuka" className="px-1.5 rounded bg-amber-500 text-white text-[10px] sm:text-xs font-bold leading-5">読</span>}
+      {used.arti && <span title="Arti dibuka" className="px-1.5 rounded bg-violet-500 text-white text-[10px] sm:text-xs font-bold leading-5">訳</span>}
+    </div>
+  );
+}
+
+function HelpButtons({ help, hasYomi, hasArti }: { help?: HelpState; hasYomi: boolean; hasArti: boolean }) {
+  if (!help?.enabled || (!hasYomi && !hasArti)) return null;
+  const base = "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border-2 text-xs sm:text-sm font-semibold transition-all";
+  return (
+    <div className="flex flex-wrap gap-2 mb-3">
+      {hasYomi && (
+        <button
+          onClick={() => help.onToggle("yomi")}
+          aria-pressed={!!help.open.yomi}
+          className={`${base} ${help.open.yomi ? "bg-amber-500 border-amber-500 text-white" : "border-amber-500/50 text-amber-600 dark:text-amber-400 hover:bg-amber-500/10"}`}
+        >
+          <span className="font-bold">読</span> Cara baca
+        </button>
+      )}
+      {hasArti && (
+        <button
+          onClick={() => help.onToggle("arti")}
+          aria-pressed={!!help.open.arti}
+          className={`${base} ${help.open.arti ? "bg-violet-500 border-violet-500 text-white" : "border-violet-500/50 text-violet-600 dark:text-violet-400 hover:bg-violet-500/10"}`}
+        >
+          <span className="font-bold">訳</span> Arti
+        </button>
+      )}
+    </div>
+  );
+}
+
+function ArtiPanel({ text }: { text: string }) {
+  return (
+    <div className="mb-4 rounded-lg border-l-4 border-violet-500 bg-violet-500/10 px-3 py-2 text-sm leading-relaxed whitespace-pre-wrap break-words text-foreground">
+      <span className="font-bold text-violet-600 dark:text-violet-400 mr-1.5">訳</span>{text}
+    </div>
+  );
+}
+
+// Status bantuan untuk satu soal: apa yang tersedia & apa yang sedang terbuka
+function getSoalHelp(question: Question, help?: HelpState) {
+  const b = question.bantuan;
+  const yomiOn = !!(help?.enabled && help.open.yomi);
+  const artiOn = !!(help?.enabled && help.open.arti);
+  return {
+    b,
+    yomiOn,
+    artiOn,
+    hasYomi: !!(b?.yomi || b?.optYomi?.some(Boolean)),
+    hasArti: !!(b?.arti || b?.optArti?.some(Boolean)),
+  };
+}
+
+function QuestionText({ question, underline, help }: { question: Question; underline?: boolean; help?: HelpState }) {
+  const { b, yomiOn, artiOn, hasYomi, hasArti } = getSoalHelp(question, help);
+  const numPrefix = question.q.match(/^\d+\.\s*/)?.[0] ?? "";
+  return (
+    <>
+      <p className={`font-semibold text-base sm:text-lg mb-4 break-words text-foreground ${yomiOn && b?.yomi ? "leading-[2.3]" : "leading-relaxed"}`}>
+        {yomiOn && b?.yomi
+          ? <>{numPrefix}{renderYomi(b.yomi, underline)}</>
+          : underline ? renderUnderlined(question.q) : question.q}
+      </p>
+      <HelpButtons help={help} hasYomi={hasYomi} hasArti={hasArti} />
+      {artiOn && b?.arti && <ArtiPanel text={b.arti} />}
+    </>
+  );
+}
+
+function OptionText({ question, oi, help }: { question: Question; oi: number; help?: HelpState }) {
+  const { b, yomiOn, artiOn } = getSoalHelp(question, help);
+  const yomi = b?.optYomi?.[oi];
+  const arti = b?.optArti?.[oi];
+  return (
+    <span className={`flex-1 break-words ${yomiOn && yomi ? "leading-[2.2]" : "leading-relaxed"}`}>
+      {yomiOn && yomi ? renderYomi(yomi) : question.options[oi]}
+      {artiOn && arti && <span className="block mt-1 text-xs sm:text-sm font-normal leading-snug text-violet-600 dark:text-violet-300">{arti}</span>}
+    </span>
+  );
+}
+
+/* ── PASSAGE CARD (DOKKAI) ───────────────────────────────────── */
+function PassageCard({ section, help }: { section: DakkaiSection; help?: HelpState }) {
+  const b = section.bantuan;
+  const yomiOn = !!(help?.enabled && help.open.yomi && b?.yomi);
+  const artiOn = !!(help?.enabled && help.open.arti && b?.arti);
+  return (
+    <>
+      <div className="border-2 rounded-lg p-3 sm:p-4 bg-muted border-border flex items-start justify-between gap-2">
+        <h3 className="text-base sm:text-lg font-bold text-cyan-500">{section.title}</h3>
+        <div className="flex gap-1 flex-shrink-0">
+          {help?.used.yomi && <span title="Cara baca dibuka" className="px-1.5 rounded bg-amber-500 text-white text-xs font-bold leading-5">読</span>}
+          {help?.used.arti && <span title="Arti dibuka" className="px-1.5 rounded bg-violet-500 text-white text-xs font-bold leading-5">訳</span>}
+        </div>
+      </div>
+      <Card className="border-2 rounded-lg p-4 sm:p-6 bg-card border-border">
+        <p className={`text-muted-foreground whitespace-pre-wrap text-sm font-medium break-words ${yomiOn ? "leading-[2.4]" : "leading-relaxed"}`}>
+          {yomiOn ? renderYomi(b!.yomi!) : section.text}
+        </p>
+        {help?.enabled && (b?.yomi || b?.arti) && (
+          <div className="mt-4 -mb-3">
+            <HelpButtons help={help} hasYomi={!!b?.yomi} hasArti={!!b?.arti} />
+          </div>
+        )}
+        {artiOn && <div className="mt-4 -mb-4"><ArtiPanel text={b!.arti!} /></div>}
+      </Card>
+    </>
+  );
+}
+
 /* ── QUESTION CARD ───────────────────────────────────────────── */
-function QuestionCard({ index, question, userAnswer, onAnswer, underline }: { index: number; question: Question; userAnswer?: number; onAnswer: (o: number) => void; underline?: boolean; }) {
+function QuestionCard({ index, question, userAnswer, onAnswer, underline, help }: { index: number; question: Question; userAnswer?: number; onAnswer: (o: number) => void; underline?: boolean; help?: HelpState; }) {
   return (
     <Card className="p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all bg-card border-border hover:border-cyan-500/50">
       <div className="flex items-start gap-3 sm:gap-4">
-        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
+          {index + 1}.
+          <HelpMarks used={help?.used} />
+        </div>
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{underline ? renderUnderlined(question.q) : question.q}</p>
+          <QuestionText question={question} underline={underline} help={help} />
           <div className="space-y-2 sm:space-y-2.5">
             {question.options.map((opt, oi) => (
               <button key={oi} onClick={() => onAnswer(oi)} className={`w-full text-left py-3 px-3 sm:px-4 rounded-lg transition-all border-2 text-sm sm:text-base font-medium flex items-start gap-2.5 sm:gap-3 ${userAnswer === oi ? "bg-cyan-500/20 text-cyan-600 border-cyan-500 dark:text-cyan-300" : "bg-background border-border text-foreground hover:border-cyan-400/50"}`}>
                 <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${userAnswer === oi ? "bg-cyan-500 text-white border-cyan-500" : "border-muted-foreground text-muted-foreground"}`}>{oi + 1}</span>
-                <span className="flex-1 break-words leading-relaxed">{opt}</span>
+                <OptionText question={question} oi={oi} help={help} />
               </button>
             ))}
           </div>
@@ -432,13 +649,16 @@ function QuestionCard({ index, question, userAnswer, onAnswer, underline }: { in
 }
 
 /* ── RESULT CARD ─────────────────────────────────────────────── */
-function ResultCard({ index, question, userAnswer, isCorrect, onAsk, underline }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; underline?: boolean; }) {
+function ResultCard({ index, question, userAnswer, isCorrect, onAsk, underline, help }: { index: number; question: Question; userAnswer?: number; isCorrect: boolean; onAsk?: () => void; underline?: boolean; help?: HelpState; }) {
   return (
     <Card className={`p-4 sm:p-5 md:p-6 border-2 rounded-xl transition-all ${isCorrect ? "bg-green-500/10 border-green-500/50" : userAnswer !== undefined ? "bg-red-500/10 border-red-500/50" : "bg-card border-border"}`}>
       <div className="flex items-start gap-3 sm:gap-4">
-        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">{index + 1}.</div>
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-500 flex-shrink-0 min-w-[2rem] sm:min-w-[2.5rem]">
+          {index + 1}.
+          <HelpMarks used={help?.used} />
+        </div>
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-base sm:text-lg leading-relaxed mb-4 break-words text-foreground">{underline ? renderUnderlined(question.q) : question.q}</p>
+          <QuestionText question={question} underline={underline} help={help} />
           <div className="space-y-2">
             {question.options.map((opt, oi) => {
               const isUser = userAnswer === oi;
@@ -446,7 +666,7 @@ function ResultCard({ index, question, userAnswer, isCorrect, onAsk, underline }
               return (
                 <div key={oi} className={`p-3 rounded-lg border-2 flex items-start gap-2.5 sm:gap-3 ${isCorrectAns ? "bg-green-500/20 border-green-500" : isUser ? "bg-red-500/20 border-red-500" : "bg-muted border-border"}`}>
                   <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isCorrectAns ? "bg-green-500 text-white border-green-500" : isUser ? "bg-red-500 text-white border-red-500" : "border-muted-foreground text-muted-foreground"}`}>{isCorrectAns ? "✓" : oi + 1}</div>
-                  <span className="text-sm sm:text-base font-medium flex-1 break-words leading-relaxed text-foreground">{opt}</span>
+                  <span className="text-sm sm:text-base font-medium flex-1 flex text-foreground"><OptionText question={question} oi={oi} help={help} /></span>
                 </div>
               );
             })}

@@ -16,6 +16,7 @@ import { exam201807 } from "../data/exams/2018/07";
 import { exam201812 } from "../data/exams/2018/12";
 import { exam201907 } from "../data/exams/2019/07";
 import { exam202212 } from "../data/exams/2022/12";
+import { getExamBantuan, applyBantuan } from "./exam-bantuan";
 
 // ============ IMPORT CHOUKAI DATA ============
 import { exam201107_choukai } from "../data/exams/2011/choukai/07";
@@ -73,25 +74,28 @@ export function convertN1ToStandardFormat(raw: any) {
       title: `問題7 — ${raw.mondai7.title || "文章の文法"}`,
       text: raw.mondai7.text,
       questions: raw.mondai7.questions,
+      bantuanKey: "7",
     });
   }
 
   if (raw.mondai8) {
-    raw.mondai8.forEach((section: any) => {
+    raw.mondai8.forEach((section: any, i: number) => {
       dokkai.push({
         title: `問題8 — ${section.title}`,
         text: section.text,
         questions: section.questions,
+        bantuanKey: `8-${i + 1}`,
       });
     });
   }
 
   if (raw.mondai9) {
-    raw.mondai9.forEach((section: any) => {
+    raw.mondai9.forEach((section: any, i: number) => {
       dokkai.push({
         title: `問題9 — ${section.title}`,
         text: section.text,
         questions: section.questions,
+        bantuanKey: `9-${i + 1}`,
       });
     });
   }
@@ -101,6 +105,7 @@ export function convertN1ToStandardFormat(raw: any) {
       title: `問題10 — ${raw.mondai10.title || "長文読解"}`,
       text: raw.mondai10.text,
       questions: raw.mondai10.questions,
+      bantuanKey: "10",
     });
   }
 
@@ -111,6 +116,7 @@ export function convertN1ToStandardFormat(raw: any) {
       title: "問題11 — 統合理解（A・B比較）",
       text: combinedText,
       questions: raw.mondai11.questions,
+      bantuanKey: "11",
     });
   }
 
@@ -119,6 +125,7 @@ export function convertN1ToStandardFormat(raw: any) {
       title: `問題12 — ${raw.mondai12.title || "長文読解"}`,
       text: raw.mondai12.text,
       questions: raw.mondai12.questions,
+      bantuanKey: "12",
     });
   }
 
@@ -127,6 +134,7 @@ export function convertN1ToStandardFormat(raw: any) {
       title: `問題13 — ${raw.mondai13.title || "情報検索"}`,
       text: raw.mondai13.info || raw.mondai13.text || "",
       questions: raw.mondai13.questions,
+      bantuanKey: "13",
     });
   }
 
@@ -224,7 +232,9 @@ export async function getExamData(
 
   if (LEVELS_NEED_CONVERT.includes(levelKey)) {
     console.log(`Converting ${levelKey.toUpperCase()} mondai format → standard format`);
-    return convertN1ToStandardFormat(examData);
+    const converted = convertN1ToStandardFormat(examData);
+    const bantuan = getExamBantuan(levelKey, key);
+    return bantuan ? applyBantuan(converted, bantuan) : converted;
   }
 
   console.log(`Loaded exam data for JLPT ${levelKey.toUpperCase()} - ${key}`);
