@@ -6,6 +6,8 @@
 // Soal dicocokkan lewat nomor soal di awal teks ("41." → 41),
 // bacaan dokkai lewat kunci mondai: "7", "8-1", "9-2", "10", "11", "12", "13".
 
+import { bantuanN1_1007 } from "@/data/exams/n1/bantuan/2010-07";
+import { bantuanN1_1012 } from "@/data/exams/n1/bantuan/2010-12";
 import { bantuanN1_2407 } from "@/data/exams/n1/bantuan/2024-07";
 import { bantuanN1_2412 } from "@/data/exams/n1/bantuan/2024-12";
 
@@ -28,6 +30,8 @@ export interface ExamBantuan {
 
 const BANTUAN_BY_LEVEL: Record<string, Record<string, ExamBantuan>> = {
   n1: {
+    "2010-07": bantuanN1_1007,
+    "2010-12": bantuanN1_1012,
     "2024-07": bantuanN1_2407,
     "2024-12": bantuanN1_2412,
   },
