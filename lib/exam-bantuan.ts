@@ -12,6 +12,8 @@ import { bantuanN1_1107 } from "@/data/exams/n1/bantuan/2011-07";
 import { bantuanN1_1112 } from "@/data/exams/n1/bantuan/2011-12";
 import { bantuanN1_1207 } from "@/data/exams/n1/bantuan/2012-07";
 import { bantuanN1_1212 } from "@/data/exams/n1/bantuan/2012-12";
+import { bantuanN1_1307 } from "@/data/exams/n1/bantuan/2013-07";
+import { bantuanN1_1312 } from "@/data/exams/n1/bantuan/2013-12";
 import { bantuanN1_2407 } from "@/data/exams/n1/bantuan/2024-07";
 import { bantuanN1_2412 } from "@/data/exams/n1/bantuan/2024-12";
 
@@ -40,6 +42,8 @@ const BANTUAN_BY_LEVEL: Record<string, Record<string, ExamBantuan>> = {
     "2011-12": bantuanN1_1112,
     "2012-07": bantuanN1_1207,
     "2012-12": bantuanN1_1212,
+    "2013-07": bantuanN1_1307,
+    "2013-12": bantuanN1_1312,
     "2024-07": bantuanN1_2407,
     "2024-12": bantuanN1_2412,
   },
