@@ -55,6 +55,8 @@ import { examN2_1007 } from "../data/exams/n2/2010/07";
 import { examN2_1012 } from "../data/exams/n2/2010/12";
 import { examN2_1107 } from "../data/exams/n2/2011/07";
 import { examN2_1112 } from "../data/exams/n2/2011/12";
+import { examN2_1207 } from "../data/exams/n2/2012/07";
+import { examN2_1212 } from "../data/exams/n2/2012/12";
 
 // ==========================================================
 // CONVERTER: format mondai1-13 (N1) → kanji/bunpou/dokkai
@@ -266,6 +268,8 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
     "2010-12": examN2_1012,
     "2011-07": examN2_1107,
     "2011-12": examN2_1112,
+    "2012-07": examN2_1207,
+    "2012-12": examN2_1212,
   },
   n4: {},
   n5: {},
