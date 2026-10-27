@@ -50,6 +50,10 @@ import { examN1_2312 } from "../data/exams/n1/2023/12";
 import { examN1_2407 } from "../data/exams/n1/2024/07";
 import { examN1_241225 } from "../data/exams/n1/2024/12";
 
+// ============ IMPORT N2 DATA ============
+import { examN2_1007 } from "../data/exams/n2/2010/07";
+import { examN2_1012 } from "../data/exams/n2/2010/12";
+
 // ==========================================================
 // CONVERTER: format mondai1-13 (N1) → kanji/bunpou/dokkai
 // Supaya kompatibel dengan exam-questions.tsx tanpa ubah UI
@@ -142,6 +146,62 @@ export function convertN1ToStandardFormat(raw: any) {
 }
 
 // ==========================================================
+// CONVERTER: format mondai1-14 (N2) → kanji/bunpou/dokkai
+// N2: 問題1-6 語彙, 問題7-8 文法, 問題9 文章の文法,
+//     問題10 短文, 問題11 中文, 問題12 統合, 問題13 主張, 問題14 情報検索
+// ==========================================================
+export function convertN2ToStandardFormat(raw: any) {
+  const kanji = [1, 2, 3, 4, 5, 6].flatMap((n) => raw[`mondai${n}`] || []);
+  const bunpou = [...(raw.mondai7 || []), ...(raw.mondai8 || [])];
+  const dokkai: any[] = [];
+
+  if (raw.mondai9) {
+    dokkai.push({
+      title: `問題9 — ${raw.mondai9.title || "文章の文法"}`,
+      text: raw.mondai9.text,
+      questions: raw.mondai9.questions,
+      bantuanKey: "9",
+    });
+  }
+  for (const n of [10, 11]) {
+    (raw[`mondai${n}`] || []).forEach((section: any, i: number) => {
+      dokkai.push({
+        title: `問題${n} — ${section.title}`,
+        text: section.text,
+        questions: section.questions,
+        bantuanKey: `${n}-${i + 1}`,
+      });
+    });
+  }
+  if (raw.mondai12) {
+    dokkai.push({
+      title: "問題12 — 統合理解（A・B比較）",
+      text: `【A】\n${raw.mondai12.textA}\n\n【B】\n${raw.mondai12.textB}`,
+      questions: raw.mondai12.questions,
+      bantuanKey: "12",
+    });
+  }
+  if (raw.mondai13) {
+    dokkai.push({
+      title: `問題13 — ${raw.mondai13.title || "主張理解"}`,
+      text: raw.mondai13.text,
+      questions: raw.mondai13.questions,
+      bantuanKey: "13",
+    });
+  }
+  if (raw.mondai14) {
+    dokkai.push({
+      title: `問題14 — ${raw.mondai14.title || "情報検索"}`,
+      text: raw.mondai14.info || raw.mondai14.text || "",
+      questions: raw.mondai14.questions,
+      bantuanKey: "14",
+    });
+  }
+
+  return { kanji, bunpou, dokkai };
+}
+
+// ==========================================================
 // DATA REGISTRY — semua exam data terdaftar di sini
 // ==========================================================
 const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
@@ -199,12 +259,15 @@ const EXAMS_DATA_BY_LEVEL: Record<string, Record<string, any>> = {
     "2024-12": examN1_241225,
   },
 
-  n2: {},
+  n2: {
+    "2010-07": examN2_1007,
+    "2010-12": examN2_1012,
+  },
   n4: {},
   n5: {},
 };
 
-const LEVELS_NEED_CONVERT = ["n1"];
+const LEVELS_NEED_CONVERT = ["n1", "n2"];
 
 export async function getExamData(
   year: string,
@@ -232,7 +295,9 @@ export async function getExamData(
 
   if (LEVELS_NEED_CONVERT.includes(levelKey)) {
     console.log(`Converting ${levelKey.toUpperCase()} mondai format → standard format`);
-    const converted = convertN1ToStandardFormat(examData);
+    const converted = levelKey === "n2"
+      ? convertN2ToStandardFormat(examData)
+      : convertN1ToStandardFormat(examData);
     const bantuan = getExamBantuan(levelKey, key);
     return bantuan ? applyBantuan(converted, bantuan) : converted;
   }
